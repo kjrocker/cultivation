@@ -1,0 +1,22 @@
+<Defs><List>
+	<Def Name="Talk_WuDang" Parent="Talk_DanXia">
+		<Hate>
+			<li>说吧，你是来干什么的？</li>
+		</Hate>
+		<Normal>
+			<li>只要价格合理，想买什么都可以。</li>
+		</Normal>
+		<Like>
+			<li>你来了啊，这次买点什么？</li>
+		</Like>
+		<Submiss>
+			<li>稀客来了！有失远迎，还望海涵。</li>
+		</Submiss>
+		<GiftLike>
+			<li>此物正合我心意，我就不客气了！</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>送我这个是什么意思？</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

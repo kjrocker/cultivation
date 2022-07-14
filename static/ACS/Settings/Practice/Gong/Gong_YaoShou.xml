@@ -1,0 +1,135 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_YaoShou">   <!-- 妖兽壳功法-->  
+		<DisplayName>本能修行</DisplayName>
+		<Desc>妖兽依靠本能修行的方法。</Desc>
+		<SelectDesc></SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Hide>3</Hide>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Stages>
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>一境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>一境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage2" Level="2">
+				<DisplayName>二境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>二境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="3">
+				<DisplayName>三境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>三境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage4" Level="4">
+				<DisplayName>四境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>四境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="5">
+				<DisplayName>五境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>五境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage6" Level="6">
+				<DisplayName>六境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>六境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage7" Level="7">
+				<DisplayName>七境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>七境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage8" Level="8">
+				<DisplayName>八境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>八境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage9" Level="9">
+				<DisplayName>九境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>九境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage10" Level="10">
+				<DisplayName>十境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>十境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage11" Level="11">
+				<DisplayName>十一境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>十一境</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage12" Level="12">
+				<DisplayName>十二境</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Die">
+						<DisplayName>十二境</DisplayName>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+		</Stages>
+	</Gong>
+</List></Gongs>

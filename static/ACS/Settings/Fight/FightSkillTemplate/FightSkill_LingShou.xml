@@ -1,0 +1,285 @@
+<FightSkills><List>
+	<Skill Name="Ls_SheildSkill"><!--狗 --> 
+		<DisplayName>厚土之盾</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>100</CD>
+		<LingCost>330</LingCost>
+		<SingAni>Atk</SingAni>
+		<CastAni>Atk</CastAni>
+		<Value>0.4</Value>
+		<Value2>25</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>60</HitEffect>
+	</Skill>
+	
+	<Skill Name="Ls_TransferQi"><!--狗 --> 
+		<DisplayName>舍身诀</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>180</CD>
+		<LingCost>1500</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<Value>3000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>SelectThingNotSelf</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	
+	<Skill Name="Ls_FabaoSkill"><!--狐狸凤凰-->
+		<DisplayName>神剑</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>100</CD>
+		<LingCost>200</LingCost>
+		<SingAni>Atk</SingAni>
+		<CastAni>Atk</CastAni>
+		<Value>0.4</Value>
+		<Value2>30</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>54</HitEffect>
+	</Skill>
+	
+	<Skill Name="Ls_FoxSkillAmp"><!--术法增强基础模板 --> 
+		<DisplayName>焚日</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Skill</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk3</SingAni>
+		<CastAni>Atk3</CastAni>
+		<Value>0.5</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		<Shape>Single</Shape>
+	</Skill>
+	
+	<Skill Name="Ls_SkillWater"><!--龙-->
+		<DisplayName>水雷术</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<SingTime>0.3</SingTime>
+		<CD>40</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk</SingAni>
+		<CastAni>Atk</CastAni>
+		<Value>180</Value>
+		<SelectType>Random</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+	<Skill Name="Ls_SkillWater5" Parent="Ls_SkillWater"><!--龙-->
+		<DisplayName>水雷大法</DisplayName>
+		<SelectCount>5</SelectCount>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>480</LingCost>
+		<Value>240</Value>
+	</Skill>
+	
+	<Skill Name="Ls_Fanshi"><!--龙 --> 
+		<DisplayName>反噬</DisplayName>
+		<Kind>Script</Kind>
+		<IsTemplate>0</IsTemplate>
+		<Desc>使一名敌方受到与其法宝最大灵气有关的伤害，并且一段时间内无法使用法宝。</Desc>
+		<Icon>res\Sprs\ui\icon_jichu</Icon>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>600</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Value>100</Value>
+		<ClassName>lingshou_fanshi</ClassName>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>400002</MissileEffect>
+		<HitEffect>400003</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_Penhuo"><!--凤凰-->
+		<DisplayName>喷火</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Huo</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>45</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<Value2>240</Value2>
+		<SelectType>AllNpc</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>39</HitEffect>
+	</Skill>
+	
+	
+	<Skill Name="Ls_Ci"><!--狗-->
+		<DisplayName>元磁神光</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>100</CD>
+		<LingCost>400</LingCost>
+		<SingAni>Atk</SingAni>
+		<CastAni>Atk</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>61</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_JinThunder"><!--狐狸-->
+		<DisplayName>庚金雷</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Jin</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>100</CD>
+		<LingCost>400</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>20</MissileEffect>
+		<HitEffect>56</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_AddModifier"><!--狗 --> 		
+		<DisplayName>庇体</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>大幅提高一名友方的灵气护盾和秘体坚韧强度。</Desc>
+		<Icon>res\Sprs\ui\icon_huti</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>600</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThingNotSelf</SelectType>
+		<TargetCamp>Friendly</TargetCamp>
+		<Value>1</Value>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_addmodifer</ClassName>
+		<SValue>Modifier_Shelter</SValue>
+	</Skill>
+	
+	<Skill Name="Ls_Confuse"><!--狐狸 --> 		
+		<DisplayName>迷惑</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>迷惑一名敌人使其不会攻击或移动，但是被攻击就会苏醒。</Desc>
+		<Icon>res\Sprs\ui\icon_zhandoufashu</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>600</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_confuse</ClassName>
+		
+		<Value>90</Value>
+	</Skill>
+	
+	<Skill Name="Ls_Rongduan"><!--凤凰 --> 
+		<DisplayName>熔断</DisplayName>
+		<Desc>使用真炎之力对一名敌人造成可分摊的伤害，并使其一段时间内无法使用术法。</Desc>
+		<Icon>res\Sprs\ui\icon_lianqi</Icon>
+		<Kind>Script</Kind>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>600</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Value>1</Value>
+		<ClassName>lingshou_rongduan</ClassName>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>400000</MissileEffect>
+		<HitEffect>400001</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+		</Missile>
+	</Skill>
+</List></FightSkills>

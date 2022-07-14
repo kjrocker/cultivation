@@ -1,0 +1,115 @@
+<ModifierDefs><List>
+	<Modifier Name="Modifier_Magic_XuanWuHeart" Type="Normal">
+		<DisplayName>静心纳气</DisplayName>
+		<Desc>三日内无需进食饮水，也不会疲劳，但移动变缓慢。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="WaterConsumeConstant" AddP="-1"/>
+			<li Name="FatigueConsumeConstant" AddP="-1"/>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_XuanWuShield" Type="Normal">
+		<DisplayName>玄甲庇体</DisplayName>
+		<Desc>短时间内大幅提高灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>25</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_ShieldConversionRateAddP" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="10"/>
+		</Properties>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Shields\Shield Sphere\WaterShield" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="Modifier_XuanWuBreak" Type="Normal">
+		<DisplayName>真武破体</DisplayName>
+		<Desc>短时间内大幅降低灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>25</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_ShieldConversionRateAddP" AddV="-50"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-10"/>
+		</Properties>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Aura\SpinningAura\SpinningStorm" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="Modifier_JinFish" Type="Normal">
+		<DisplayName>金螯精华</DisplayName>
+		<Desc>短时间内提升灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_ShieldConversionRateAddP" AddV="10"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_LongTou1" Type="Normal">
+		<DisplayName>心境澄澈</DisplayName>
+		<Desc>在一年一度的龙头香祭拜上虔诚地祈福，心境略微提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>67200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="MindStateBaseValue" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_LongTou2" Type="Normal">
+		<DisplayName>更上一层</DisplayName>
+		<Desc>在一年一度的龙头香祭拜上虔诚地祈福，突破瓶颈的概率提高了不少。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>67200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		   <li Name="PracticeRateAddPFromDan" AddP="0.15"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_LongTou3" Type="Normal">
+		<DisplayName>逢凶化吉</DisplayName>
+		<Desc>在一年一度的龙头香祭拜上虔诚地祈福，防御得到了略微提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>67200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_ShieldConversionRateAddP" AddV="5"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_LongTou5" Type="Normal">
+		<DisplayName>贪婪折磨</DisplayName>
+		<Desc>在一年一度的龙头香祭拜上贪婪地祈福，虽然得到很多祝福但身体也遭受某种冥冥之中的神罚，五维降低了很多。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>67200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+		    <li Name="PracticeRateAddPFromDan" AddP="0.15"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="5"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="1"/>
+		</Properties>
+		<BaseFive>-8,-8,-8,-8,-8</BaseFive>
+	</Modifier>
+	
+</List></ModifierDefs>

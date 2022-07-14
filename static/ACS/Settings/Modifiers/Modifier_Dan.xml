@@ -1,0 +1,953 @@
+<ModifierDefs><List>
+	<Modifier Name="Dan_BasePracticeDrug" Type="Normal">
+		<DisplayName>筑基丹</DisplayName>
+		<Desc>激活身体之潜力，暂时提高神识，根骨，悟性各3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>3,3,0,3,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Dan_WuHuangDan" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,2.3,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Dan_JingYuan" Type="Normal">
+		<DisplayName>精元丹</DisplayName>
+		<Desc>服用精元丹，在7天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>4200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLGH_NOTEATPRACTICEFOOD</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="1"/>
+			<li Name="NutritionToJingYuanK" AddV="0.005"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Dan_JingYuan2" Type="Normal">
+		<DisplayName>参芝九窍丸</DisplayName>
+		<Desc>服用参芝九窍丸，在14天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>8400</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLGH_NOTEATPRACTICEFOOD</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="1.5"/>
+			<li Name="NutritionToJingYuanK" AddV="0.005"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Dan_JingYuan3" Type="Normal">
+		<DisplayName>血竭散</DisplayName>
+		<Desc>服用血竭散，在28天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLGH_NOTEATPRACTICEFOOD</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="2"/>
+			<li Name="NutritionToJingYuanK" AddV="0.005"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_Ling1" Type="Normal">
+		<DisplayName>聚灵丹</DisplayName>
+		<Desc>灵气恢复速度提高2000%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="20"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_Ling2" Type="Normal">
+		<DisplayName>紫阳丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_Ling3" Type="Normal">
+		<DisplayName>万灵散</DisplayName>
+		<Desc>灵气上限提高100000点。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="100000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_Defense" Type="Normal">
+		<DisplayName>真罡丹</DisplayName>
+		<Desc>基础护体真气强度提高30%</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_FiveBaseFromLife" Type="Normal">
+		<DisplayName>五毒五蕴五炁丸</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,1,1,1</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-60"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_FiveBase1" Type="Normal">
+		<DisplayName>通天丸</DisplayName>
+		<Desc>二十四个时辰内增强神识3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>3,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-3"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Dan_FiveBase2" Type="Normal">
+		<DisplayName>纳地丸</DisplayName>
+		<Desc>二十四个时辰内增强根骨3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>0,3,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-3"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Dan_FiveBase3" Type="Normal">
+		<DisplayName>逸仙丸</DisplayName>
+		<Desc>二十四个时辰内增强魅力3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>0,0,3,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-3"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Dan_FiveBase4" Type="Normal">
+		<DisplayName>明通丸</DisplayName>
+		<Desc>二十四个时辰内增强悟性3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>0,0,0,3,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-3"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Dan_FiveBase5" Type="Normal">
+		<DisplayName>神佑丸</DisplayName>
+		<Desc>二十四个时辰内增强机缘3成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,3</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_PracticeRate" Type="Normal">
+		<DisplayName>提高瓶颈突破概率</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="PracticeRateAddPFromDan" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_PracticeSpeed" Type="Normal">
+		<DisplayName>提高修炼速度（黄芽）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.3"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Dan_HundredRefine" Type="Normal">
+		<DisplayName>提高修炼速度（九转）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+		</Properties>
+	</Modifier> 	
+	
+	<Modifier Name="Dan_CalmDown" Type="Normal">
+		<DisplayName>清心丹</DisplayName>
+		<Desc>食用清心丹，一定程度上平复心境，且再一天之内降低心境波动。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+			<li Name="SpeedOfMindStateCoefficient" AddP="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_Happiness" Type="Normal">
+		<DisplayName>极乐丹</DisplayName>
+		<Desc>食用极乐丹，在两天之内会沉浸在快乐之中，但是工作效率大受影响。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="-0.5"/>
+			<li Name="HappyConsumeConstant" AddP="-1"/>
+		</Properties>
+		<Moods>
+			<li>Dan_Happiness</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Dan_NoHunger" Type="Normal">
+		<DisplayName>饮气丹</DisplayName>
+		<Desc>服用饮气丹，在两天之内获得饮气能力，自动回复饮食度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NutritionWaterAutoRecover" AddV="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_NoHunger1" Type="Normal">
+		<DisplayName>兵粮丸</DisplayName>
+		<Desc>服用兵粮丸，两天之内饥饿速度降低，疲劳速度降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-0.5"/>
+			<li Name="FatigueConsumeConstant" AddP="-0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Dan_NoHunger2" Type="Normal">
+		<DisplayName>辟谷丹</DisplayName>
+		<Desc>服用辟谷丹，大幅降低食物和饮水消耗速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="WaterConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Dan_NoHunger3" Type="Normal">
+		<DisplayName>五气辟谷丹</DisplayName>
+		<Desc>服用五气辟谷丹，大幅降低食物和饮水消耗速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>18000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="WaterConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Dan_LostSoul" Type="Normal">
+		<DisplayName>摄神丹</DisplayName>
+		<Desc>很基础的金石丹方，服用后会抑制大脑活性，使之陷入昏迷之中三天三夜。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	
+	<Modifier Name="Dan_IncreaseLife1" Type="Normal">
+		<DisplayName>长生丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="180"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_IncreaseLife2" Type="Normal">
+		<DisplayName>玄牝续命散</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="200"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_IncreaseLife3" Type="Normal">
+		<DisplayName>五极灵丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,1,1,1</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="500"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_IncreaseLife4" Type="Normal">
+		<DisplayName>再造金丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="256"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_IncreaseLife5" Type="Normal">
+		<DisplayName>未来星宿化劫丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="490"/>
+			<li Name="NeckCountdownAddV" AddV="29400"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_IncreaseLife6" Type="Normal">
+		<DisplayName>长生泉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="99"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_IncreaseLife7" Type="Normal">
+		<DisplayName>灵芝</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_IncreaseLife8" Type="Normal">
+		<DisplayName>紫芝</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="NpcLingMaxValue" AddV="100"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Anodyne" Type="Normal">
+		<DisplayName>止痛药</DisplayName>
+		<Desc>缓解疼痛，药效持续五天左右。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="PainTolerance" AddV="2" AddP="0"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Mint" Type="Normal">
+		<DisplayName>清心草</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="4"/>
+			<li Name="EmotionAmplificationFactor" AddP="-0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_EarthEssence" Type="Normal">
+		<DisplayName>地母灵液</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_SanHuaHuangJing" Type="Normal">
+		<DisplayName>三花黄精</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="600"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_EarthEssence1" Type="Normal">
+		<DisplayName>邪脉血泉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.3"/>
+			<li Name="MindStateBaseValue" AddV="-10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_EarthEssence_1" Type="Normal">
+		<DisplayName>灵髓脂</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,0,1,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="-50"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_EarthEssence1_1" Type="Normal">
+		<DisplayName>血髓脂</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>-1,-1,0,-1,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="50"/>
+		</Properties>
+		<Damages>
+			<li Part="TheWholeBody" Damage="SevereInjury" Value="0.4"/>
+		</Damages>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_Ginseng" Type="Normal">
+		<DisplayName>人参</DisplayName>
+		<Desc>短时间内提高自然恢复力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="RecoveryPower" AddP="1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_RedGinseng" Type="Normal">
+		<DisplayName>赤参</DisplayName>
+		<Desc>短时间内大幅度提高自然恢复力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Modifiers>
+			<li>Modifier_Item_RedGinseng1</li>
+		</Modifiers>
+		<Properties>
+			<li Name="RecoveryPower" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_RedGinseng1" Type="Normal">
+		<DisplayName>赤参（子）</DisplayName>
+		<Desc>提高灵气最大值</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="100"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Laxative" Type="Normal">
+		<DisplayName>通泻丸</DisplayName>
+		<MaxStack>1</MaxStack>
+		<ClassName>Modifier_Item_Laxative</ClassName>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<EndModifier>Modifier_Item_Laxative1</EndModifier>
+		<Moods>
+			<li>Mood_Item_Laxative</li>
+		</Moods>
+		<Properties>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Laxative1" Type="Normal">
+		<DisplayName>虚弱</DisplayName>
+		<Desc>吃了通泻丸后，十分虚弱，工作效率极低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="-0.5"/>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_LongXianGuo" Type="Normal">
+		<DisplayName>龙涎果</DisplayName>
+		<Desc>服用龙涎果，半天之内不会饥饿，不会疲劳</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="FatigueConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_Item_LingWater" Type="Normal">
+		<DisplayName>灵初露</DisplayName>
+		<Desc>服用灵初露，短时间内大幅提高伤势的恢复速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>100</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="RecoveryPower" AddP="3"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Dan_LingStone" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用灵石修炼，与灵气产生共鸣，能提高灵气恢复速度，并从根本上提高修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.1"/>
+			<li Name="LingAbsorbSpeed" AddP="5"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Dan_LingCrystal" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.2"/>
+			<li Name="LingAbsorbSpeed" AddP="15"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Dan_IncreaseNeckCountdown1" Type="Normal">
+		<DisplayName>乾元避劫丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="64800"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_IncreaseNeckCountdown2" Type="Normal">
+		<DisplayName>碧血丹青</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="16200"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_Fail1" Type="Normal">
+		<DisplayName>炼毁的丹药</DisplayName>
+		<Desc>吃了那颗奇怪的丹药，身体突然缩小了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<ModScale>-0.4</ModScale>
+	</Modifier> 
+	<Modifier Name="Dan_Fail2" Type="Normal">
+		<DisplayName>炼毁的丹药</DisplayName>
+		<Desc>吃了那颗奇怪的丹药，身体突然放大了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<ModScale>0.4</ModScale>
+	</Modifier> 
+	<Modifier Name="Dan_Fail3" Type="Normal">
+		<DisplayName>炼毁的丹药</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="Hips" Damage="Hemorrhoids" Value="0.76"/>
+			<li Part="RightLeg" Damage="Boil" Value="0.35" />
+			<li Part="LeftArm" Damage="Boil" Value="0.88"/>
+		</Damages>
+	</Modifier> 
+	<Modifier Name="Dan_Fail4" Type="Normal">
+		<DisplayName>炼毁的丹药</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="Heart" Damage="Huo_VisceralBurn" Value="0.22"/>
+			<li Part="Liver" Damage="Huo_VisceralBurn" Value="0.32"/>
+			<li Part="Spleen" Damage="Huo_VisceralBurn" Value="0.36"/>
+			<li Part="Lung" Damage="Huo_VisceralBurn" Value="0.23"/>
+			<li Part="Kidney" Damage="Huo_VisceralBurn" Value="0.17"/>
+		</Damages>
+		<Properties>
+			<li Name="MaxAge" AddV="-20"/>
+			<li Name="NpcLingMaxValue" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Dan_Fail5" Type="Normal">
+		<DisplayName>炼毁的丹药</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="Brain" Damage="Faint" Value="1"/>
+		</Damages>
+	</Modifier> 
+	<Modifier Name="Dan_Soul1" Type="Normal">
+		<DisplayName>神泣丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="-9"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Dan_Soul2" Type="Normal">
+		<DisplayName>通玄丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="-10"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Dan_Soul3" Type="Normal">
+		<DisplayName>凝珀丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,-0.1,0</BaseFive>
+		<Damages>
+			<li Part="Brain" Damage="Dan_Soul3_Damage" Value="0.005"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="Dan_Soul4" Type="Normal">
+		<DisplayName>燃魂丹</DisplayName>
+		<Desc>燃烧寿命，在1个时辰内获取超凡的智慧，但之后会永久损伤智慧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>50</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<EndModifier>Dan_Soul4_D</EndModifier>
+		<Properties>
+			<li Name="IntelligenceSkillEXPConstant" AddP="2"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Dan_Soul4_D" Type="Normal">
+		<DisplayName>燃魂丹负面</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,-2,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-100"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Dan_LunHui1" Type="Normal">
+		<DisplayName>被感动</DisplayName>
+		<Desc>被这段异世界的记忆感动。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>30000</Duration>
+		<Display>1</Display>
+		<Moods>
+			<li>Dan_LunHui1</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Dan_XianBone" Type="Normal">
+		<DisplayName>仙人遗骨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_XianBoneBall" Type="Normal">
+		<DisplayName>神舍利</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPractice_GodPowerAddV" AddV="25"/>
+			<li Name="GodCity_MaxResident" AddV="50000"/>
+			<li Name="MindStateBaseValue" AddV="25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_LingYuanZhong" Type="Normal">
+		<DisplayName>灵源种（服用）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="250"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Dan_LingYuanZhong_Equip" Type="Normal">
+		<DisplayName>灵源种（装备）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_YuanHunLu" Type="Normal">
+		<DisplayName>元魂露</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,-1,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_XieHunLu" Type="Normal">
+		<DisplayName>邪魂露</DisplayName>
+		<Desc>服用邪魂露，悟性提高，学习能力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Modifiers>
+			<li>Modifier_Item_XieHunLu1</li>
+		</Modifiers>
+		<Properties>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_XieHunLu1" Type="Normal">
+		<DisplayName>邪魂露（伤害）</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="Brain" Damage="Damage_TianDaoBenYuan1" Value="0.25"/>
+		</Damages>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_YanDaoGuo" Type="Normal">
+		<DisplayName>演道果</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="64"/>
+			<li Name="GodPenaltyAddV" AddV="-64"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_QieDaoGuo" Type="Normal">
+		<DisplayName>窃道果</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-64"/>
+			<li Name="GodPenaltyAddV" AddV="64"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_ZaoHuaYuLu" Type="Normal">
+		<DisplayName>造化玉露</DisplayName>
+		<Desc>服用造化玉露，元神进入寂灭。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>48600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Modifiers>
+			<li>Modifier_Item_ZaoHuaYuLu1</li>
+		</Modifiers>
+		<Damages>
+			<li Part="Brain" Damage="ZaoHuaYuLu_YuanShenJiMie" Value="0.8"/>
+		</Damages>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_ZaoHuaYuLu1" Type="Normal">
+		<DisplayName>造化玉露效果</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>2,2,2,2,2</BaseFive>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-81"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_XianShiChongSheng" Type="Normal">
+		<DisplayName>神识重生</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_XieShiChongSheng" Type="Normal">
+		<DisplayName>邪识重生</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_Boss_Meat" Type="Normal">
+		<DisplayName>神兽血肉</DisplayName>
+		<Desc>从根本上提高灵气最大值提高寿命</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+			<li Name="MaxAge" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Item_BossZhuLong_Meat" Type="Normal">
+		<DisplayName>原初血肉</DisplayName>
+		<Desc>降低道行提高寿命</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-2"/>
+			<li Name="MaxAge" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_Dan_FabaoNumAdd" Type="Normal">
+		<DisplayName>法宝数加1</DisplayName>
+		<Desc>最大法宝数加一</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Dan_LieShenDan" Type="Normal">
+		<DisplayName>裂神丹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Dan_TiShen" Type="Normal">
+		<DisplayName>替身丹</DisplayName>
+		<Desc>可从拍卖会上逃脱。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>CanEscapeFromAuction</li>
+		</SpecialFlags>
+	</Modifier>
+	
+</List></ModifierDefs>

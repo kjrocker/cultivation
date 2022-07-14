@@ -1,0 +1,244 @@
+<Defs><List>
+	<Def Name="Policy_TianDaoShenDan">
+		<Base>0</Base>
+		<CostPerDay>
+			<Influence>50</Influence>
+		</CostPerDay>
+		
+		<DisplayName>收集天道</DisplayName>
+		<Desc>可观测星象或风水，每隔一段时间便生成天道神丹。</Desc>
+		
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_TreeEXP" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		
+		<IntervalDay>10</IntervalDay>
+		<Focus>
+			<IntervalDay>5</IntervalDay>
+			<CostScale>2</CostScale>
+		</Focus>
+	</Def>
+	
+	<Def Name="Policy_Base">
+		<IntervalDay>10/(0.4*k+0.6)*k</IntervalDay> <!-- k是数量，外部传入 -->
+		<Focus>
+			<IntervalDay>5</IntervalDay>
+			<CostScale>2</CostScale>
+		</Focus>
+	</Def>
+	
+	<Def Name="Policy_TreasureHunt" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_TreasureHunt" WaitSec="120" Weight="40"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>20</Influence>
+		</CostPerDay>
+		<DisplayName>寻珍</DisplayName>
+		<Desc>前往未开辟过的地方寻找稀世珍宝。不同珍宝需要的悟性高低和方法不尽相同。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Acceleration" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Product1" WaitSec="120" Weight="40"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>20</Influence>
+		</CostPerDay>
+		<DisplayName>劳作</DisplayName>
+		<Desc>让代理人和弟子去监督劳作，不定期会有额外产出。农田产出受到农耕属性影响，矿场和灵石广场产出受到金石影响，伐木场产出受到人数影响。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Discipline" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Disp2" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Disp3" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Disp4" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Disp5" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="2"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>20</Influence>
+		</CostPerDay>
+		<DisplayName>受戒</DisplayName>
+		<Desc>警醒世人切莫放纵为恶。不同情况下，需要采取不同的戒律。成功与否受到战斗影响。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Secret" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Secret1" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Secret2" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Secret3" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Secret4" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="2"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>20</Influence>
+		</CostPerDay>
+		<DisplayName>密谋</DisplayName>
+		<Desc>让信奉其他代理势力的人转投我方，或是干扰其他代理势力的行为，或是扰乱常人生活。想要成功需要一定的悟性，或是某种特殊方法。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Sermon" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Sermon1" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Sermon2" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Sermon3" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Sermon4" WaitSec="120" Weight="8"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="2"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="2"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>20</Influence>
+		</CostPerDay>
+		<DisplayName>传道</DisplayName>
+		<Desc>向世人宣传我们教的好处。过程中需要应对各种问题，结果受到魅力、吸引力、稳定度影响。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Give" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Give2" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give3" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give4" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give5" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give6" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give7" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give8" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give9" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give13" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give14" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give15" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give16" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give17" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give18" WaitSec="120" Weight="10"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wheat" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<DisplayName>布施</DisplayName>
+		<Desc>以我们所有送给有需要的人，过程中需要应对各种问题。能收获少量信众，吸引力，或是影响值。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Missionary" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Give2" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give3" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give4" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give5" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give6" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give7" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give8" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give9" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give13" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give14" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give15" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give16" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give17" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give18" WaitSec="120" Weight="10"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wheat" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<DisplayName>布施</DisplayName>
+		<Desc>以我们所有送给有需要的人，过程中需要应对各种问题。能收获少量信众，吸引力，或是影响值。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Submiss" Parent="Policy_Base">
+		<Base>0</Base>
+		<NoSupervise>1</NoSupervise>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Give2" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give3" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give4" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give5" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give6" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give7" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give8" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give9" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give13" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give14" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give15" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give16" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give17" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Give18" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Sermon1" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Sermon2" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Sermon3" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Sermon4" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Disp2" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Disp3" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Disp4" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Disp5" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Secret1" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Secret2" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Secret3" WaitSec="120" Weight="1"/>
+				<li Story="PolicyStory_Secret4" WaitSec="120" Weight="1"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Influence>200</Influence>
+		</CostPerDay>
+		
+		<IntervalDay>4</IntervalDay>
+		<Focus>
+			<IntervalDay>2</IntervalDay>
+			<CostScale>2</CostScale>
+		</Focus>
+		
+		<DisplayName>收编</DisplayName>
+		<Desc>成为此地的唯一代理。期间，需要通过各种事件的重重考验，获取收编进度，达到20即可完成收编。如中途一步疏漏，凡人便对我们心有余悸，必须重新开始。如中途采取了其他政策，收编也会中断。</Desc>
+	</Def>
+	
+	<Def Name="Policy_God" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_God1" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		<DisplayName>神迹</DisplayName>
+		<Desc>让神修弟子在此地展现神迹。</Desc>
+	</Def>
+</List></Defs>

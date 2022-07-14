@@ -1,0 +1,211 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_9_Mu">   
+		<DisplayName>长生六道轮回经</DisplayName>
+		<Desc>太一门镇派五行真诀之一，此法修行每个境界开始即为巅峰，随修为加深修行者却步步退转，最后如同凡人。直到突破轮回，再次新生，才能脱胎换骨更进一步。因此特质，此功法虽然广为流行，但却少有人大成。</Desc>
+		<SelectDesc>此功法战斗力很强，不擅长炼丹炼器。只是修炼过程中要经历轮回，实力会逐渐下降，直到进入下一个巅峰。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>4, 6, -1, 6, 3</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Mu</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>人道</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong9_1_1</AddModifier>
+					</Neck>
+					<Neck Location="0.66" Kind="Chance">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ResourceCost>
+							<Resource kind="Age" value="10"/>
+						</ResourceCost>
+						<AddModifier>Gong9_1_2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>轮回</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong9_1_3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>傍生道</DisplayName>
+				<Desc></Desc>
+				<Value>2000</Value>
+				<Necks>
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong9_2_1</AddModifier>
+					</Neck>
+					<Neck Location="0.66" Kind="Chance">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<ResourceCost>
+							<Resource kind="Age" value="30"/>
+						</ResourceCost>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong9_2_2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>轮回</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong9_2_3</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="7">
+				<DisplayName>恶鬼道</DisplayName>
+				<Desc></Desc>
+				<Value>50000</Value>
+				<Necks>
+					
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong9_3_1</AddModifier>
+					</Neck>
+				
+					<Neck Location="0.66" Kind="Chance">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<ResourceCost>
+							<Resource kind="Age" value="60"/>
+						</ResourceCost>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong9_3_2</AddModifier>
+					</Neck>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>轮回</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong9_3_3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>地狱道</DisplayName>
+				<Desc></Desc>
+				<Value>120000</Value>
+				<Necks>
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+						<AddModifier>Gong9_4_1</AddModifier>
+					</Neck>
+					
+					<Neck Location="0.66" Kind="Explore">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+						<AddModifier>Gong9_4_2</AddModifier>
+					</Neck>
+					
+					<Neck Location="1" Kind="Work">
+						<DisplayName>轮回</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong9_4_3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="10">
+				<DisplayName>修罗道</DisplayName>
+				<Desc></Desc>
+				<Value>2340000</Value>
+				<Necks>
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_1_1_3</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+						<AddModifier>Gong9_5_1</AddModifier>
+					</Neck>
+					<Neck Location="0.66" Kind="Chance">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<ResourceCost>
+							<Resource kind="Age" value="120"/>
+						</ResourceCost>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong9_5_2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>轮回</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>35000</ThunderValue>
+						<NeckCountdown>3600</NeckCountdown>
+						<AddModifier>Gong9_5_3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage6" Level="12">
+				<DisplayName>天道</DisplayName>
+				<Desc></Desc>
+				<Value>4560000</Value>
+				<Necks>
+					<Neck Location="0.33" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Intelligence_1_1_3</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+						<AddModifier>Gong9_6_1</AddModifier>
+					</Neck>
+					<Neck Location="0.66" Kind="Chance">
+						<DisplayName>沉沦</DisplayName>
+						<Desc></Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ResourceCost>
+							<Resource kind="Age" value="180"/>
+						</ResourceCost>
+						<AddModifier>Gong9_6_2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>轮回</DisplayName>
+						<Desc>此去轮回即脱离六道之外，长生久视。</Desc>
+						<ThunderValue>560000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

@@ -1,0 +1,141 @@
+<BodyDefs><List>
+
+<BodyDef Name="YGAnimal_SnakeBody">
+	<Groups>
+		<Group Name="RightArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftLegMovement" MaxValue="0.6"/>
+		<Group Name="RightLegMovement" MaxValue="0.6"/>
+	</Groups>
+	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="AllHead" DisplayName="头部"  Kind="Virtual" Rate="0.05">
+				<Parts>
+					<li Name="Skull" DisplayName="头骨" Kind="Bone" Rate="0.5" Deadly="1"/>
+
+					<li Name="Brain" DisplayName="脑" Kind="Organ" Rate="0.1" Deadly="1" BPQLabelBaseCache="BaseCache_Brain">
+<!--					<Links>
+							<li>LeftEye</li>
+						</Links>-->
+						<Function>
+							<li Kind="Consciousness" Value="0.8"/>
+						</Function>
+					</li>
+					
+					<li Name="LeftEye" DisplayName="左眼" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="RightEye" DisplayName="右眼" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="Nose" DisplayName="鼻" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Nose"/>
+					<li Name="Mouth" DisplayName="口" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Mouth"/>
+					<li Name="Throat" DisplayName="喉" Kind="Organ" Rate="0.2" Deadly="1" BPQLabelBaseCache="BaseCache_Throat"/>
+					<li Name="UpCanineTooth" DisplayName="上尖牙" Kind="Bone" Rate="0.05"/>
+					<li Name="DownCanineTooth" DisplayName="下尖牙" Kind="Bone" Rate="0.05"/>
+					<li Name="LongTongue" DisplayName="长舌" Kind="Organ" Rate="0.1"/>
+					<li Name="Head" DisplayName="头" Kind="Organ" Rate="1" Deadly="1"  CantPractice="1"/>
+
+				</Parts>
+			</li>
+			
+			<li Name="AllBody" DisplayName="身躯" Kind="Virtual" Rate="0.28" Deadly="1">
+				<Parts>
+					<li Name="SamllRibs" DisplayName="密集肋骨" Kind="Bone" Rate="0.05"/>
+					<li Name="Spine" DisplayName="脊柱" Kind="Bone" Rate="0.02" BPQLabelBaseCache="BaseCache_Spine">
+						<Function>
+							<li Kind="Movement" Value="1"/>
+							<li Kind="Operation" Value="1"/>
+						</Function>
+					</li>
+					<li Name="Heart" DisplayName="心" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Heart"/>
+					<li Name="Liver" DisplayName="肝" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Liver"/>
+					<li Name="Spleen" DisplayName="脾" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Spleen"/>
+					<li Name="Lung" DisplayName="肺" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Lung"/>
+					<li Name="Kidney" DisplayName="肾" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Kidney"/>
+					<li Name="Stomach"  DisplayName="胃" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Stomach"/>
+					<li Name="Intestines" DisplayName="肠" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Intestines"/>
+					<li Name="Genitals" DisplayName="鞭" Kind="Organ" Rate="0.005" BPQLabelBaseCache="BaseCache_Genitals"/>
+					<li Name="BodyFlesh" DisplayName="身躯肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="BodyScale" DisplayName="鳞片" Kind="Flesh" Rate="0.05"/>
+					<li Name="Body" DisplayName="躯干" Kind="Organ" Rate="1" Deadly="1"  CantPractice="1"/>
+					<li Name="LongTail" DisplayName="长尾" Kind="Bone" Rate="0.1"/>
+				</Parts>
+			</li>
+			
+			
+			<li Name="TheWholeBody" DisplayName="全身" Kind="Virtual" Rate="0" Deadly="1">
+				<Function>
+					<li Kind="Consciousness" Value="1"/>
+				</Function>
+			</li>
+			
+			<li Name="Meridian" DisplayName="经脉" Kind="Virtual" Rate="0" Deadly="1">
+				<Parts>
+					<li Name="UpperElixirField" DisplayName="紫府" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="MiddleElixirField" DisplayName="绛宫" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="LowerElixirField" DisplayName="丹田" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="RenChannel" DisplayName="任脉" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="DuChannel" DisplayName="督脉" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="ChongChannel" DisplayName="冲脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="BeltChannel" DisplayName="带脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="YinWeiChannel" DisplayName="阴维脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YinHeelChannel" DisplayName="阴跷脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangWeiChannel" DisplayName="阳维脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangHeelChannel" DisplayName="阳跷脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+				</Parts>
+			</li>
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>

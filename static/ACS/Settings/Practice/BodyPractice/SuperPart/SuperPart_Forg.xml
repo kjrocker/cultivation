@@ -1,0 +1,109 @@
+<BPSuperPartDefs><List>
+	
+	<Def Name="SuperPart_Forg_1"><!--测试秘体-->
+		<Prefix>无漏</Prefix>
+		<Suffix>射影</Suffix>
+		<Desc>蛙妖的天赋秘体，一旦练成便十分擅长镇压法宝，极少有失手。</Desc>
+		<DefaultBody>YGAnimal_FrogBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_washe01</AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="LongTongue">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="RightEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>巨量提高秘体法宝镇压几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SuperPart_Forg_2"><!--测试秘体-->
+		<Prefix>妖雷</Prefix>
+		<Suffix>啸</Suffix>
+		<Desc>蛙妖的天赋秘体，练成后可以运转全身之力发出蕴含特殊真炁的音浪，十分擅长击破法宝其中的灵气，以镇压法宝。</Desc>
+		<DefaultBody>YGAnimal_FrogBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="SingingBag">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_SiHunZhiXi" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			
+			<li Name="Throat">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_SiHunZhiXi" Levels="0,1,4"/>
+				</Labels>
+			</li>		
+			<li Name="Mouth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_SiHunZhiXi" Levels="0,1,4"/>
+				</Labels>
+			</li>
+			<li Name="Lung">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_SiHunZhiXi" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高镇压法宝几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高镇压法宝几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高镇压法宝几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

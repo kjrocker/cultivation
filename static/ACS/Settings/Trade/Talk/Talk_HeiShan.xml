@@ -1,0 +1,30 @@
+<Defs><List>
+	<Def Name="Talk_HeiShan" Parent="Talk_BaiMan">
+		<Hate>
+			<li>你怎么又来了？</li>
+			<li>别凑太近，小心我一不小心打死你。</li>
+			<li>你是一个人吗？</li>
+		</Hate>
+		<Normal>
+			<li>哦，你好。有话快说。</li>
+			<li>快快，别打扰我们练剑。</li>
+		</Normal>
+		<Like>
+			<li>（放下剑）你来了啊，请随便。</li>
+			<li>哦？是你啊。最近有没有什么突破啊？</li>
+		</Like>
+		<Submiss>
+			<li>哦？您来了啊，要不要给你当陪练啊？下手轻一点啊。</li>
+			<li>你好啊，我看你近日又有精进，恭喜恭喜啊。</li>
+		</Submiss>
+		<GiftLike>
+			<li>此物我等了几百年，终于有人相送了啊。</li>
+			<li>看来，我们有缘千里来相会。</li>
+			<li>我曾梦见有人送我此物，此梦成真了啊。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>嗯，此物可以拿来试试剑锋不锋利。</li>
+			<li>（出剑）你看它碎成了两半。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

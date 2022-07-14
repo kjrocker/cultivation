@@ -1,0 +1,38 @@
+<JobDefs><List>
+	<JobDef Name="JobFreePatrol">
+		<DriverClass>JobFreePatrol</DriverClass>
+		<DisplayName>巡逻</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobFreeFollow">
+		<DriverClass>JobFreeFollow</DriverClass>
+		<DisplayName>跟随</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobFollow">
+		<DriverClass>JobFollow</DriverClass>
+		<DisplayName>跟随</DisplayName>
+	</JobDef>
+	<JobDef Name="JobGoOutspread">
+		<DriverClass>JobGoOutspread</DriverClass>
+		<DisplayName>上任主持</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLeaveOutspread">
+		<DriverClass>JobLeaveOutspread</DriverClass>
+		<DisplayName>卸任回归</DisplayName>
+	</JobDef>
+	<JobDef Name="JobGoOutsMember">
+		<DriverClass>JobGoOutsMember</DriverClass>
+		<DisplayName>成为弟子</DisplayName>
+	</JobDef>
+	<JobDef Name="JobSpringXiaoYao">
+		<DriverClass>JobSpringXiaoYao</DriverClass>
+		<DisplayName>小妖巡游</DisplayName>
+	</JobDef>
+	<JobDef Name="JobSpringXiaoYaoEscape">
+		<DriverClass>JobSpringXiaoYaoEscape</DriverClass>
+		<DisplayName>受惊逃跑</DisplayName>
+	</JobDef>
+	<JobDef Name="JobDiMuWish">
+		<DriverClass>JobDiMuWish</DriverClass>
+		<DisplayName>前往许愿</DisplayName>
+	</JobDef>
+</List></JobDefs>

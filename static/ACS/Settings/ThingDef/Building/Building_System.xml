@@ -1,0 +1,649 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Building" Name="SYS_LOASBUILDING" Parent="FurnitureBase">
+		<ThingName>失落的建筑</ThingName>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）</Desc>
+		<TexPath>res/Sprs/ui/icon_del</TexPath>
+		<TexScale>1</TexScale>
+		<SelectAble>1</SelectAble>
+		<CastShadow>0</CastShadow>
+		<VisionRadius>0</VisionRadius>
+		<BlockLight>0</BlockLight>
+		<ColliderKind>None</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[4,4,4],
+			[4,1,4],
+			[4,4,4],
+			</Data>
+			<Offset>
+				<x>0</x>
+			</Offset>
+		</Collider>
+
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>99999</BurningPoint>
+		</Flammability>
+
+
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<NoFengshui>1</NoFengshui>
+			<NoFight>0</NoFight>
+			<TerrainAffordanceNeeded>None</TerrainAffordanceNeeded>
+			<CanMakeRoom>0</CanMakeRoom>
+			<MaxWorker>8</MaxWorker>
+			<BeMade>
+				<WorkToMake>99999</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+				</StuffCategories>
+				<CostStuffCount>9999</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Sys_HideBuilding">
+		<TileID>0</TileID>
+		<SelectAble>0</SelectAble>
+		<CastShadow>0</CastShadow>
+		<BlockMissile>0</BlockMissile>
+		<VisionRadius>0</VisionRadius>
+		<ColliderKind>None</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[2]
+			</Data>
+		</Collider>
+
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<NoFengshui>1</NoFengshui>
+			<CanMakeRoom>0</CanMakeRoom>
+			<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+			<RemovePriceFactor>0</RemovePriceFactor>
+			<BePackage>0</BePackage>
+			<BlockLight>0</BlockLight>
+			<RestEffectiveness>1</RestEffectiveness>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="FillBase">
+		<TileID>223</TileID>
+		<Desc>RoofBase</Desc>
+		<SelectAble>1</SelectAble>
+		<CastShadow>0</CastShadow>
+		<Beauty>2</Beauty>
+		<BlockMissile>0</BlockMissile>
+		<VisionRadius>0</VisionRadius>
+		<ColliderKind>None</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[2]
+			</Data>
+		</Collider>
+
+		<NotDoTongLing>1</NotDoTongLing>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+
+			<NoFengshui>1</NoFengshui>
+			<FillTarrain>Mud</FillTarrain>
+			<BuildMode>Rect</BuildMode>
+			<CanMakeRoom>0</CanMakeRoom>
+			<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+			<RemovePriceFactor>0.5</RemovePriceFactor>
+			<BePackage>0</BePackage>
+			<BlockLight>0</BlockLight>
+			<RestEffectiveness>1</RestEffectiveness>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<BeMade>
+				<WorkToMake>5</WorkToMake>
+				<Quality>0</Quality>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="FillSoil" Parent="FillBase">
+		<Color>EEEE00FF</Color>
+		<ThingName>土地改造</ThingName>
+		<Desc>将一块区域改造成土地，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>Soil</FillTarrain>
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>7200</WorkToMake>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillFertileSoil" Parent="FillBase">
+		<Color>C1FFC1FF</Color>
+		<ThingName>沃土改造</ThingName>
+		<Desc>将一块陆地区域改造成沃土，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>FertileSoil</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>9600</WorkToMake>
+				<CostItems>
+					<Item name="Item_Shit" count="10"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillShallowWater" Parent="FillBase">
+		<Color>98F5FFFF</Color>
+		<ThingName>浅水改造</ThingName>
+		<Desc>将一块陆地区域改造成浅水，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>ShallowWater</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>4800</WorkToMake>
+				<CostItems>
+					<Item name="Item_Water" count="100"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+
+
+	<ThingDef Type="Building" Name="NPCBornPoint_SchoolCore" Parent="BuildingBase">
+	<ThingName>门派核心角色生成点</ThingName>
+	<TexPath>res\Sprs\ui\icon_moveto</TexPath>
+	<Desc></Desc>
+<!--	<TileID>271</TileID>-->
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1000</MaxHitPoints>
+	<VisionRadius>0</VisionRadius>
+	<BlockMissile>0</BlockMissile>
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>999999</BurningPoint>
+	</Flammability>
+	<ColliderKind>None</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[2],
+		</Data>
+	</Collider>
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<HelperClass></HelperClass>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+			<CostStuffCount>0</CostStuffCount>
+		</BeMade>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NPCBornPoint_Ordinary" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>凡人生成点</ThingName>
+	<Color>FFFFFFFF</Color>
+	<Tags>
+		<Tag Name="NPCBornPoint" Level="1"/>
+	</Tags>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="NPCBornPoint_Random" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>标准修行者</ThingName>
+	<Color>FF8C00FF</Color>
+	<Tags>
+		<Tag Name="NPCBornPoint" Level="1"/>
+	</Tags>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NPCBornPoint_Fill" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>填充修行者</ThingName>
+	<Color>BDB76BFF</Color>
+	<Tags>
+		<Tag Name="NPCBornPoint" Level="1"/>
+	</Tags>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NPCBornPoint_JYMonster" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>妖兽生成点</ThingName>
+	<Color>FF0000FF</Color>
+	<Tags>
+		<Tag Name="NPCBornPoint" Level="1"/>
+	</Tags>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NPCBornPoint_Animal" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>动物生成点</ThingName>
+	<Color>FF1493FF</Color>
+	<Tags>
+		<Tag Name="NPCBornPoint" Level="1"/>
+	</Tags>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="BDSetPoint_Gong" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>功法生成点</ThingName>
+	<Color>0000FF</Color>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NPCBornPoint_RPG" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>角色出生点</ThingName>
+	<Color>FFFFFFFF</Color>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="NormalPoint_RPG" Parent="NPCBornPoint_SchoolCore">
+	<ThingName>逻辑点</ThingName>
+	<Color>FF0000FF</Color>
+	<Building>
+		<TerrainAffordanceNeeded>All</TerrainAffordanceNeeded>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="BDSetPoint_Outs" Parent="NPCBornPoint_SchoolCore">
+		<ThingName>扩张建筑基点</ThingName>
+		<Color>FFFFFFFF</Color>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<!-- 这里只是指示位置，逻辑的大小跟collider无关 -->
+			<Data>
+			[2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1],
+			[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.01</x><y>0.01</y></li>
+				<li><x>0.01</x><y>0.01</y></li>
+				<li><x>0.01</x><y>0.01</y></li>
+				<li><x>0.01</x><y>0.01</y></li>
+			</OffsetGroup>
+		</Collider>
+		<StoryBnts>
+			<li Name="输出建筑内容" Desc="" Script="print(CS.XiaWorld.FightMapMgr.GetRegionBuildStr(bind))" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+
+
+
+	<ThingDef Type="Building" Name="FillBuild_Hide" Parent="FillBase">	<!--灵源种，脑子抽了取这么个名字-->
+		<TileID>0</TileID>
+		<SelectAble>0</SelectAble>
+		<ClassName>FillHide</ClassName>
+		<Desc>隐藏建筑，用来刷地表</Desc>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<DontRemoveVirtual>1</DontRemoveVirtual>
+			<FillTarrain></FillTarrain>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+				<CostStuffCount>0</CostStuffCount>
+			</BeMade>
+		</Building>
+		<Light>
+			<Value>15</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>0</FailRadius>
+			<Radius>1</Radius>
+			<Color>62F8FFFF</Color>
+		</Light>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillBuild_Empty" Parent="FillBase">	<!--灵源种，脑子抽了取这么个名字-->
+		<TileID>0</TileID>
+		<SelectAble>0</SelectAble>
+		<ClassName>FillHide</ClassName>
+		<Desc>隐藏建筑，用来定位用</Desc>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<DontRemoveVirtual>1</DontRemoveVirtual>
+			<FillTarrain></FillTarrain>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+				<CostStuffCount>0</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="HideBuild_Empty" Parent="FillBase">
+		<TileID>0</TileID>
+		<SelectAble>0</SelectAble>
+		<Desc>隐藏建筑，用来定位用，本身无意义</Desc>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<DontRemoveVirtual>1</DontRemoveVirtual>
+			<FillTarrain></FillTarrain>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+				<CostStuffCount>0</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="BuildingRuins">
+		<TexPath>res/Sprs/building_broken/building_posunjianzhu01</TexPath>
+		<Desc>RoofBase</Desc>
+		<SelectAble>1</SelectAble>
+		<CastShadow>0</CastShadow>
+		<Beauty>2</Beauty>
+		<BlockMissile>0</BlockMissile>
+		<VisionRadius>0</VisionRadius>
+		<ColliderKind>None</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[2]
+			</Data>
+		</Collider>
+
+		<NotDoTongLing>1</NotDoTongLing>
+		<Building>
+			<NotRandom>1</NotRandom>
+
+			<NoFengshui>1</NoFengshui>
+			<BuildMode>Rect</BuildMode>
+			<CanMakeRoom>0</CanMakeRoom>
+			<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+			<RemovePriceFactor>0.5</RemovePriceFactor>
+			<BePackage>0</BePackage>
+			<BlockLight>0</BlockLight>
+			<RestEffectiveness>1</RestEffectiveness>
+			<IsVirtualBuilding>1</IsVirtualBuilding>
+			<BeMade>
+				<WorkToMake>5</WorkToMake>
+				<Quality>0</Quality>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+
+	<!--征伐用-->
+	<ThingDef Type="Building" Name="Building_SwordTower" Parent="Building_Tower">
+		<ThingName>镇剑塔</ThingName>
+		<Desc>地下的巨塔，似乎用来镇压什么</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_SwordTower" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_HenZhiBei" Parent="Building_ShiBei">
+		<ThingName>恨之碑</ThingName>
+		<Desc>一个碑，上面写着恨之碑，恨是谁呢？</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_HenZhiBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_LongZhiBei" Parent="Building_ShiBei">
+		<ThingName>龙之碑</ThingName>
+		<Desc>上面写着龙之碑，而且发出恶心的味道。龙也需要埋葬吗？</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_LongZhiBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_ShouZhiBei" Parent="Building_ShiBei">
+		<ThingName>兽之碑</ThingName>
+		<Desc>写着兽之碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_ShouZhiBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_JiZhiBei" Parent="Building_ShiBei">
+		<ThingName>极之碑</ThingName>
+		<Desc>写着极之碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_JiZhiBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_HuanZhiBei" Parent="Building_ShiBei">
+		<ThingName>幻之碑</ThingName>
+		<Desc>写着幻之碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_HuanZhiBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_ZhongBei" Parent="Building_ShiBei">
+		<ThingName>终碑</ThingName>
+		<Desc>写着终碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_ZhongBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_LingBei" Parent="Building_ShiBei">
+		<ThingName>灵碑</ThingName>
+		<Desc>写着灵碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_LingBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_XingBei" Parent="Building_ShiBei">
+		<ThingName>星碑</ThingName>
+		<Desc>写着星碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_XingBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_MuBei" Parent="Building_ShiBei">
+	<ThingName>木碑</ThingName>
+	<Desc>写着木碑。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识与之接触。" Story="Story_Building_MuBei" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_TaiYiMen" Parent="Build_TheBigGate">
+	<ThingName>太一山门</ThingName>
+	<Desc>太一门的山门。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="拜门" Desc="拜太一门" Story="Story_Building_TaiYi" Appoint="3" Scope = "2" Ani="ketou" Icon="res/Sprs/ui/icon_baishi01"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="StreetNoLight" Parent="FurnitureBase">
+	<ThingName>灯柱</ThingName>
+	<Desc>精美的照明建筑，会在夜晚点亮，照亮周围。</Desc>
+	<Tags>
+		<Tag Name="Light_FSZW" Level="1"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_streetlight001a</TexPath>
+	<TexScale>0.8</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<ShadowSize>
+		<x>0.7</x>
+		<y>1.1</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.25</y>
+		</Offset>
+	</Collider>
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Building>
+		<NotRandom>1</NotRandom>
+		<NoFengshui>1</NoFengshui>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_streetlight001b</WorkTexPath>
+		<BeMade>
+			<WorkToMake>75</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.78</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<StoryBnts>
+		<li Name="查看" Desc="查看" Story="Story_Building_NoLight" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FireLantern" Parent="Lantern1">
+	<ThingName>灯笼</ThingName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="查看" Desc="查看" Story="Story_Building_FireLantern" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Building" Name="GolemLantern" Parent="StreetLight1">
+	<ThingName>灯柱</ThingName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="查看" Desc="查看" Story="Story_Building_GolemLantern" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="OddLantern" Parent="Lantern">
+	<ThingName>灯笼</ThingName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="查看" Desc="查看" Story="Story_Building_OddLantern" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_TaiYiTower" Parent="Building_Tower">
+		<ThingName>镇塔</ThingName>
+		<Desc>太一门的宝塔。在灭门惨案中幸存了下来。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<StoryBnts>
+			<li Name="寻宝" Desc="尝试入内寻宝。" Story="Story_Building_TaiYiTower" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+</List></ThingDefs>

@@ -1,0 +1,169 @@
+<ModifierDefs><List>
+	<Modifier Name="Gong_Qi" Type="Normal">
+		<DisplayName>Gong_Qi</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="NpcLingMaxValue" AddP="2.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+			
+
+			<li Name="ToleranceTMin" AddV="-15"/>
+			<li Name="ToleranceTMax" AddV="60"/>
+			
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			
+			<li Name="NutritionConsumeConstant" AddP="1"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_Gold" Type="Normal">
+		<DisplayName>Gong_Gold</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddP="6"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="2"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-20"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+			
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.15"/>
+			
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+			
+			
+			<li Name="NutritionConsumeConstant" AddP="3"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.4"/>
+			<li Name="FatigueConsumeConstant" AddV="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_Thunder1" Type="Normal">
+		<DisplayName>Gong_Thunder1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="60"/>
+			<li Name="NpcLingMaxValue" AddP="12"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="2"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.2"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="3"/>
+			
+			<li Name="ToleranceTMin" AddV="-30"/>
+			<li Name="ToleranceTMax" AddV="120"/>
+			
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.2"/>
+			
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.8"/>
+			<li Name="FatigueConsumeConstant" AddV="-0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_Thunder2" Type="Normal">
+		<DisplayName>Gong_Thunder2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="120"/>
+			<li Name="NpcLingMaxValue" AddP="24"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="5"/>
+			
+			<li Name="ToleranceTMin" AddV="-40"/>
+			<li Name="ToleranceTMax" AddV="200"/>
+			
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.25"/>
+			
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="3"/>
+			
+			
+			<li Name="NutritionConsumeConstant" AddP="6"/>
+			<li Name="NutritionWaterAutoRecover" AddV="1.6"/>
+			<li Name="FatigueConsumeConstant" AddV="-0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_Thunder3" Type="Normal">
+		<DisplayName>Gong_Thunder3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="180"/>
+			<li Name="NpcLingMaxValue" AddP="40"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="10"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="10"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="10"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="8"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="8"/>
+			
+			<li Name="ToleranceTMin" AddV="-45"/>
+			<li Name="ToleranceTMax" AddV="550"/>
+			
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.3"/>
+			
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="5"/>
+			
+			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="BaseEmotionAddV" AddV="200"/>
+			<li Name="RecoveryPower" AddP="20"/>
+			<li Name="PainTolerance" AddP="20"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/>
+
+			<li Name="NutritionConsumeConstant" AddP="10"/>
+			<li Name="NutritionWaterAutoRecover" AddV="10"/>
+			<li Name="WaterConsumeConstant" AddV="-10"/>
+			<li Name="HappyConsumeConstant" AddV="-10"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

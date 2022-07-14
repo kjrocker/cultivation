@@ -1,0 +1,473 @@
+<ThingDefs><List>
+<ThingDef Type="Item" Name="MetalBase" Parent="MaterialBase">
+	
+	
+	
+	<TexPath>Item/Iron</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>-5</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>
+	<Rate>2</Rate>
+	<ElementKind>Jin</ElementKind>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	
+	<Frags>	
+		<li Frag="Mines" />
+	</Frags>	
+	
+	<Item Lable="Metal">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>金,印,碑,珏,圭,阙,镇</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Rough2</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<SharpDamageMultiplier>0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>2.2</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+		
+		<!--<Rot>
+			<RotSpeed>0.00005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		
+	</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_IronRock" Parent="MetalBase">
+	<TexPath>res\Sprs\object\object_ore</TexPath>
+	<ThingName>铁矿石</ThingName>
+	<Desc>最常见的金属矿石。拥有较高的硬度，且易于加工。</Desc>	
+	<Rate>2</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Jin</ElementKind>
+	
+	<Color>573B00FF</Color>
+	<Item>	
+		<BeMaterial>
+			<NamePrefix>铁</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<StuffTexPath>res/mattex/mtl_ironstone</StuffTexPath>
+			
+			<RateWhenBeMain>2</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>3</SharpDamageMultiplier>
+			<BluntDamageMultiplier>3</BluntDamageMultiplier>
+			<LingDamageMultiplier>0.6</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>2</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>15</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>2.2</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>8</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>2</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CopperRock" Parent="MetalBase">
+	<TexPath>res\Sprs\object\object_ore</TexPath>
+	<ThingName>火铜矿石</ThingName>
+	<Desc>富含火气的金属矿，靠近会有灼热的感觉。</Desc>
+	<Rate>5</Rate>
+	<Beauty>4</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Color>9E5100FF</Color>
+	<Frags>			
+		<li Frag="Sweat" />
+	</Frags>
+	<Item>
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>20</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="25"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMaterial>
+			<NamePrefix>火铜</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_copper</StuffTexPath>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1.5</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.7</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>2.2</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>20</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>15</Value>
+		<Radius>3</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SilverRock" Parent="MetalBase">
+	<TexPath>res\Sprs\object\object_ore</TexPath>
+	<ThingName>寒晶矿石</ThingName>
+	<Desc>蕴含有寒气的金属矿，其质地类似银矿，靠近会觉得寒气逼人，十分漂亮。</Desc>	
+	<Rate>5</Rate>
+	<Beauty>10</Beauty>
+	<Frags>			
+		<li Frag="Sneeze" />
+	</Frags>		
+
+	<ElementKind>Shui</ElementKind>
+	<Color>D3F4FFFF</Color>
+	<Item>
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>20</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="25"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMaterial>
+			<NamePrefix>寒晶</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.6</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>2.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+			<LingDamageMultiplier>4</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.9</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>0.25</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>0.25</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>4</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>0.25</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>0.25</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>8</MaxHitPointsPerNum>
+			<LingNumberRate>0.6</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>-0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>2.2</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>25</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>-15</Value>
+		<Radius>3</Radius>
+		<RoomValue>-30</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DarksteelRock" Parent="MetalBase">
+	<TexPath>res\Sprs\object\object_ore</TexPath>	
+	<ThingName>玄铁矿石</ThingName>
+	<Desc>罕见的金属，其色泽黝黑，极其沉重且坚硬，是难得的神兵材料。</Desc>	
+	<Rate>6</Rate>
+	<Beauty>4</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Color>115C80FF</Color>
+	<Item>
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>10</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="15"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="20" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Rough2</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>玄铁</NamePrefix>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+			<RateWhenBeMain>5</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>10</SharpDamageMultiplier>
+			<BluntDamageMultiplier>10</BluntDamageMultiplier>
+			<LingDamageMultiplier>10</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>10</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>10</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>10</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>10</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>10</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<LingNumberRate>0.8</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>4.2</WorktoMakeRate>
+			<WorktoBuildRate>6</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>38</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_StarEssence" Parent="MetalBase">
+	<TexPath>res\Sprs\object\object_xingsui01</TexPath>	
+	<ThingName>星髓</ThingName>
+	<Desc>陨星的精华，拥有特殊的物性，是修行界难得的珍宝。</Desc>	
+	<Rate>9</Rate>
+	<Beauty>5</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Frags>	
+		<li Frag="Meteriod" />
+	</Frags>	
+
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>3</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<NotRandom>2</NotRandom>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>星髓</NamePrefix>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>10</SharpDamageMultiplier>
+			<BluntDamageMultiplier>10</BluntDamageMultiplier>
+			<LingDamageMultiplier>10</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>10</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>10</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>10</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>10</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>10</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<LingNumberRate>0.8</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>5</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>4.2</WorktoMakeRate>
+			<WorktoBuildRate>6</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.6</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>75</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

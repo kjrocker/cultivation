@@ -1,0 +1,309 @@
+<ModifierDefs><List>
+	<Modifier Name="Modifier_SpNpc_BasePropertie" Type="Normal">
+		<DisplayName>保底属性</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" Level="20"/>
+			<li Name="FightSkill" Level="20"/>
+			<li Name="Barrier" Level="20"/>
+		</Skills>
+		<EffectBind>
+			<li Path="Effect/System/fx_daneng" Bip="Root"/>
+		</EffectBind>
+		<Properties>
+			
+			<li Name="NpcLingMaxValue" AddV="1000000"/>
+			<li Name="NpcLingMaxValue" AddP="100"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_FabaoNum" AddP="1"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.8"/>
+			
+			<li Name="FatigueConsumeConstant" AddP="-10"/> 
+			<li Name="NutritionConsumeConstant" AddP="-10"/> 
+			<li Name="WaterConsumeConstant" AddP="-10"/> 
+			<li Name="HappyConsumeConstant" AddP="-10"/> 
+			
+			<li Name="ToleranceTMin" AddV="-273"/>
+			<li Name="ToleranceTMax" AddV="3000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_BaseFightPropertie" Type="Normal">
+		<DisplayName>基础战斗属性</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1500000"/>
+			<li Name="NpcLingMaxValue" AddP="150"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="150"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_Ling" Type="Normal">
+		<DisplayName>灵</DisplayName>
+		<Desc>此人根基深厚，灵气深不可测。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1500000"/>
+			<li Name="NpcLingMaxValue" AddP="150"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SpNpc_Shield" Type="Normal">
+		<DisplayName>护</DisplayName>
+		<Desc>此人铜躯铁干，极擅护体之术。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_SpNpc_FabaoAtk" Type="Normal">
+		<DisplayName>锐</DisplayName>
+		<Desc>此人御器如雷，威力惊世骇俗。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_SpNpc_FabaoLing" Type="Normal">
+		<DisplayName>重</DisplayName>
+		<Desc>此人御器如山，其势极为浑厚。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_FabaoSpeed" Type="Normal">
+		<DisplayName>速</DisplayName>
+		<Desc>此人御器如电，其速快如奔雷。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_FabaoDisp" Type="Normal">
+		<DisplayName>秀</DisplayName>
+		<Desc>此人御器之法华丽无双。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddP="0.5"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_FabaoNum" Type="Normal">
+		<DisplayName>分</DisplayName>
+		<Desc>此人剑光分化，可御六合之器。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddP="1.5"/>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_FightSkillAtk" Type="Normal">
+		<DisplayName>法</DisplayName>
+		<Desc>此人术法威力天下无双</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="100"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_FightSkillCD" Type="Normal">
+		<DisplayName>迅</DisplayName>
+		<Desc>此人术法调息极快。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SpellCoolDownAddP" AddV="-0.2"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_SpNpc_Comeback" Type="Normal">
+		<DisplayName>宿敌</DisplayName>
+		<Desc>宿敌见面，仇恨之下实力比以往更胜一筹。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1500000"/>
+			<li Name="NpcLingMaxValue" AddP="150"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="240"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="120"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="120"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="150"/> 
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_NomalNpc_BasePropertie_Qi" Type="Normal">
+		<DisplayName>练气期保底</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+			<li Name="FightSkill" LevelOver="1"/>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="500"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/> 
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_NomalNpc_BasePropertie_Dan1" Type="Normal">
+		<DisplayName>结丹期保底</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="2"/>
+			<li Name="FightSkill" LevelOver="2"/>
+			<li Name="Barrier" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="35"/>
+			<li Name="NpcLingMaxValue" AddV="800"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="2.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="2.5"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="2.5"/> 
+			
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.25"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_NomalNpc_BasePropertie_Dan2" Type="Normal">
+		<DisplayName>金丹期保底</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+			<li Name="FightSkill" LevelOver="3"/>
+			<li Name="Barrier" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="200"/>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="15"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="15"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="15"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/> 
+			
+			<li Name="AbilityLvAddV" AddV="50"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_NomalNpc_BasePropertie_God" Type="Normal">
+		<DisplayName>元神期保底</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="4"/>
+			<li Name="FightSkill" LevelOver="4"/>
+			<li Name="Barrier" LevelOver="4"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="500"/>
+			<li Name="NpcLingMaxValue" AddP="25"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="40"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="40"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="40"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="40"/> 
+			
+			<li Name="AbilityLvAddV" AddV="100"/>
+			
+			<li Name="NpcFight_FabaoNum" AddP="1"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.6"/>
+			
+			
+			<li Name="FatigueConsumeConstant" AddP="-10"/> 
+			<li Name="NutritionConsumeConstant" AddP="-10"/> 
+			<li Name="WaterConsumeConstant" AddP="-10"/> 
+			<li Name="HappyConsumeConstant" AddP="-10"/> 
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

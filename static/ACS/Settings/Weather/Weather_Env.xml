@@ -1,0 +1,83 @@
+﻿<Weathers><List>
+	<Weather Name="YinChaos">
+		<DisplayName>永夜（阴阳奇石）</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/icon_yinzhiyongye01</Icon>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>1</DurationMax>
+		<LockHour>23</LockHour>
+		<CantDispel>1</CantDispel>
+	</Weather>
+	<Weather Name="Hotpot_Heat">
+		<DisplayName>热浪（地肺之口）</DisplayName>
+		<StoryDesc>地肺之口最近不太稳定，不断喷出热浪。</StoryDesc>
+		<Icon>res/Sprs/ui/icon_relang01</Icon>
+		<Kind>Type3</Kind>
+		<ClassName></ClassName>
+		<DurationMin>1</DurationMin>
+		<DurationMax>3</DurationMax>
+		<SunColor>FEFFCCFF</SunColor>		
+		<CantDispel>1</CantDispel>
+		
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="0.8"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="12"/>
+			
+			<li Name="MuBroken" Value="0.04"/>
+			<li Name="HuoBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+
+	<Weather Name="ColdHole_Cold">
+		<DisplayName>寒气（玄冰丹炉）</DisplayName>
+		<StoryDesc>玄冰丹炉不太稳定，寒气不断从中喷出。</StoryDesc>
+		<Icon>res/Sprs/ui/icon_hanliu01</Icon>
+		<Kind>Type3</Kind>
+		<ClassName></ClassName>
+		<DurationMin>1</DurationMin>
+		<DurationMax>3</DurationMax>
+		<SunColor>8090FFFF</SunColor>	
+		<CantDispel>1</CantDispel>
+		
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-1"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="-10"/>
+			
+			<li Name="JinBroken" Value="0.04"/>
+			<li Name="ShuiBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="Lightning_DragonHole" Parent="LightningStorm">
+		<DisplayName>雷暴（神秘洞穴）</DisplayName>
+	</Weather>
+	
+	<Weather Name="DustStorm_Dimu" Parent="DustStorm">
+		<DisplayName>尘暴（地母石碑）</DisplayName>
+	</Weather>
+	
+</List></Weathers>

@@ -1,0 +1,1178 @@
+<MoodDefs><List>
+	<Mood Name="Drink1">
+		<DisplayName>喝了脏水</DisplayName>
+		<Desc>喝水的时候似乎看见有东西在游动。</Desc>
+		<StoryDesc>刚因为喝了脏水而干呕了两下</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Dan_Happiness">
+		<DisplayName>飘飘欲仙</DisplayName>
+		<Desc>感觉身心及其放松，好快乐，什么都不想干。</Desc>
+		<StoryDesc>正因极度的快乐而满脸幸福</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>120</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="Eat1">
+		<DisplayName>恶心的食物</DisplayName>
+		<Desc>这些这东西能吃吗？为什么我不得不吃掉它们，好恶心啊……</Desc>
+		<StoryDesc>正因吃了什么东西而恶心</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	<Mood Name="Eat3">
+		<DisplayName>味同爵蜡</DisplayName>
+		<Desc>这东西的味道真是一场灾难。</Desc>
+		<StoryDesc>正因吃了什么东西而面容凝重</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat4">
+		<DisplayName>吃生食</DisplayName>
+		<Desc>吃了生的食物，真是难以下咽。</Desc>
+		<StoryDesc>正因生吃食材而耿耿于怀</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat5">
+		<DisplayName>吃土</DisplayName>
+		<Desc>我实在是太饿了，只能吃土了，话说我还能活多久？</Desc>
+		<StoryDesc>正因饿到吃土而心如死灰</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-25</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat6">
+		<DisplayName>吃饱了</DisplayName>
+		<Desc>吃的还不错，很饱很充实。</Desc>
+		<StoryDesc>刚因吃饱饭而打了个嗝</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.7</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+		<Mood Name="Eat7">
+		<DisplayName>家常便饭</DisplayName>
+		<Desc>味道很棒，吃的很满足。</Desc>
+		<StoryDesc>正因吃了顿家常饭而面露满足</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat8">
+		<DisplayName>美食</DisplayName>
+		<Desc>[TXT]真的太好吃了，我觉得很幸福。</Desc>
+		<StoryDesc>正因吃到美食而一脸幸福</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.5</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat9">
+		<DisplayName>美味绝伦</DisplayName>
+		<Desc>[TXT]真的是人间的食物么！我已经不想修仙啦！</Desc>
+		<StoryDesc>正沉浸在刚刚吃到的珍馐佳肴中</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>25</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+		<Mood Name="Eat10">
+		<DisplayName>粗糙的食物</DisplayName>
+		<Desc>今天吃的[TXT]真的粗糙，如果可以我不想再吃这样的东西了。</Desc>
+		<StoryDesc>正因刚刚吃的粗糙而不满</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat11">
+		<DisplayName>勉强的一餐</DisplayName>
+		<Desc>今天吃的[TXT]真的很一般，想吃点更好的。</Desc>
+		<StoryDesc>正因刚刚吃的太简单而有点不满足</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Eat12">
+		<DisplayName>吔屎</DisplayName>
+		<Desc>我到底造了什么孽……</Desc>
+		<StoryDesc>正因为吃了屎而发呆</StoryDesc>
+		<MaxStack>10</MaxStack>
+		<StackRatio>0.7</StackRatio>
+		<Value>-15</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="Sleep1">
+		<DisplayName>睡眠充沛</DisplayName>
+		<Desc>很好的一次睡眠，精力充沛。</Desc>
+		<StoryDesc>正因刚刚睡了个好觉而精力充沛</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.5</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Sleep2">
+		<DisplayName>做噩梦</DisplayName>
+		<Desc>做了噩梦，没睡好……</Desc>
+		<StoryDesc>正因做了一晚噩梦而满面倦容</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.8</Duration>
+	</Mood>
+	<Mood Name="Sleep8">
+		<DisplayName>做美梦</DisplayName>
+		<Desc>做了美梦，真的棒……</Desc>
+		<StoryDesc>正因做了好梦而一脸回味</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>0.8</Duration>
+	</Mood>
+	<Mood Name="Sleep3">
+		<DisplayName>睡觉被打扰</DisplayName>
+		<Desc>总感觉有东西在周围活动，没有睡踏实。</Desc>
+		<StoryDesc>正因睡觉被打扰而打着哈欠</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Sleep4">
+		<DisplayName>睡觉觉得冷</DisplayName>
+		<Desc>好冷啊，冻醒好几次，没睡好。</Desc>
+		<StoryDesc>正因天冷没睡好而精神不振</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Sleep5">
+		<DisplayName>睡觉觉得热</DisplayName>
+		<Desc>好热啊，热醒好几次，没睡好。</Desc>
+		<StoryDesc>正因天热没睡好而精神萎靡</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Sleep6">
+		<DisplayName>睡在地上</DisplayName>
+		<Desc>在地板上睡了一夜，全身骨头要散架了。</Desc>
+		<StoryDesc>正因在地板上睡了一夜而全身酸痛</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Sleep7">
+		<DisplayName>睡在野外</DisplayName>
+		<Desc>睡在野外，一晚上担惊受怕，没有睡好。</Desc>
+		<StoryDesc>正因在野外睡觉而暗自抱怨</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Work">
+		<DisplayName>有趣的工作</DisplayName>
+		<Desc>[TXT]好有趣，让人乐在其中。</Desc>
+		<StoryDesc>正因为刚才做了有趣的工作而满足</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="FavoriteWork">
+		<DisplayName>痴迷的工作</DisplayName>
+		<Desc>[TXT]真有意思，沉浸其中完全察觉不到时间流逝。</Desc>
+		<StoryDesc>正因为刚才做了痴迷的工作而意犹未尽</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact9">
+		<DisplayName>被治愈</DisplayName>
+		<Desc>被[TXT]的温柔融化，觉得很治愈</Desc>
+		<StoryDesc>刚刚被某人的温柔治愈</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	
+	<Mood Name="SocialContact14">
+		<DisplayName>表白被拒绝</DisplayName>
+		<Desc>向[TXT]表白，被拒绝了，好难受。</Desc>
+		<StoryDesc>还沉浸在表白失败的痛苦中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	
+	<Mood Name="SocialContact15">
+		<DisplayName>成为情侣</DisplayName>
+		<Desc>和[TXT]成为情侣，觉得好幸福。</Desc>
+		<StoryDesc>还沉浸在表白成功的幸福中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>25</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<!--
+	<Mood Name="SocialContact1">
+		<DisplayName>聊天</DisplayName>
+		<Desc>和[TXT]简单聊了聊，挺开心的。</Desc>
+		<StoryDesc>刚和别人聊完天</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact2">
+		<DisplayName>谈心</DisplayName>
+		<Desc>和[TXT]谈了谈心里话，觉得舒服了很多。</Desc>
+		<StoryDesc>刚跟别人谈了谈心，似乎很有触动</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact3">
+		<DisplayName>打架</DisplayName>
+		<Desc>和[TXT]那个混蛋打了一架，好疼好气。</Desc>
+		<StoryDesc>刚跟别人打了一架，看上还很激动</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact4">
+		<DisplayName>吵架</DisplayName>
+		<Desc>和[TXT]那个混蛋吵了一架，一定要让他好看。</Desc>
+		<StoryDesc>刚跟别人吵了一架，还在骂骂咧咧</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact5">
+		<DisplayName>被侮辱</DisplayName>
+		<Desc>被[TXT]侮辱了，我心里很不舒服。</Desc>
+		<StoryDesc>刚被别人辱骂，正觉得心里很堵</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact6">
+		<DisplayName>被鼓励</DisplayName>
+		<Desc>被[TXT]鼓励了，觉得很开心。</Desc>
+		<StoryDesc>刚被别人鼓励，看上去很振奋</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact7">
+		<DisplayName>辣眼睛</DisplayName>
+		<Desc>[TXT]真的丑，让我心情都变差了。</Desc>
+		<StoryDesc>正在嘀咕刚才那个人真丑</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact8">
+		<DisplayName>养眼</DisplayName>
+		<Desc>[TXT]好漂亮，赏心悦目。</Desc>
+		<StoryDesc>正在惊叹刚才那个人真养眼</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+
+	<Mood Name="SocialContact10">
+		<DisplayName>如沐春风</DisplayName>
+		<Desc>被[TXT]的开朗感染，觉得心情好了不少。</Desc>
+		<StoryDesc>刚刚被某人的开朗感染</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact11">
+		<DisplayName>阴森森</DisplayName>
+		<Desc>[TXT]真是一个阴沉的人，这让我不是很舒服。</Desc>
+		<StoryDesc>正嘀咕刚才那个人好阴沉</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SocialContact12">
+		<DisplayName>感情背叛</DisplayName>
+		<Desc>[TXT]居然背叛了我们的感情……我要原谅么。</Desc>
+		<StoryDesc>正在为恋人背叛而感到痛苦纠结</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-25</Value>
+		<Duration>15</Duration>
+	</Mood>
+	<Mood Name="SocialContact13">
+		<DisplayName>被表白</DisplayName>
+		<Desc>被[TXT]表白了，很开心。</Desc>
+		<StoryDesc>正因为被表白而开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>15</Value>
+		<Duration>3</Duration>
+	</Mood>
+	<Mood Name="SocialContact16">
+		<DisplayName>成为夫妻</DisplayName>
+		<Desc>和[TXT]成为夫妻，觉得生活无限美好。</Desc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>40</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<Mood Name="SocialContact17">
+		<DisplayName>离婚</DisplayName>
+		<Desc>和[TXT]离婚了，我的生活一片灰暗……</Desc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-25</Value>
+		<Duration>10</Duration>
+	</Mood>-->
+	
+	<Mood Name="Death1"  Group="BloodThirsty">
+		<DisplayName>有人死亡</DisplayName>
+		<Desc>有人死了，觉得有点悲伤。</Desc>
+		<StoryDesc>正因生命逝去而略有哀伤</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-4</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="Death2">
+		<DisplayName>同门去世</DisplayName>
+		<Desc>有一个同门死了，很难过……</Desc>
+		<StoryDesc>正因同门逝去而难过</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="Death3">
+		<DisplayName>朋友去世</DisplayName>
+		<Desc>[TXT]…你怎么就走了，怀念我们相处的时光…</Desc>
+		<StoryDesc>刚因想起去世的朋友而抹了抹眼泪</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<Mood Name="Death4">
+		<DisplayName>爱人去世</DisplayName>
+		<Desc>为什么！上天为什么要这么对我……好痛苦……[TXT]……我好想你</Desc>
+		<StoryDesc>刚因想起去世的恋人而痛苦万分</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>30</Duration>
+	</Mood>
+	<Mood Name="Death5">
+		<DisplayName>宠物死亡</DisplayName>
+		<Desc>我可爱的[TXT]，你陪了我这么久，终于还是离我而去。</Desc>
+		<StoryDesc>因为爱宠去世而十分怀念</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>6</Duration>
+	</Mood>
+	<Mood Name="Death6">
+		<DisplayName>亲人去世</DisplayName>
+		<Desc>我的[TXT]去世了，这让我倍感孤独和难过。</Desc>
+		<StoryDesc>正沉浸在亲人去世的哀痛中</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>20</Duration>
+	</Mood>
+	<Mood Name="Death7">
+		<DisplayName>敌人死亡</DisplayName>
+		<Desc>[TXT]这个该死的家伙，终于死了。</Desc>
+		<StoryDesc>正为敌人的死亡而击掌称快</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="Death8">	<!--直系同门死亡-->
+		<DisplayName>同门去世</DisplayName>
+		<Desc>我的[TXT]永远离开了我们..</Desc>
+		<StoryDesc>正因为同门去世而感到悲痛不已</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice1" Group="TaoismPracticeRank">
+		<DisplayName>突破边缘</DisplayName>
+		<Desc>我感到我的境界即将突破了！</Desc>
+		<StoryDesc>正因修炼到破关边缘而充满干劲</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice2" Group="TaoismPracticeRank">
+		<DisplayName>突破成功</DisplayName>
+		<Desc>突破成功了，修为又进一步，很开心。</Desc>
+		<StoryDesc>正因突破境界而志得意满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice3" Group="TaoismPracticeRank">
+		<DisplayName>突破失败</DisplayName>
+		<Desc>遗憾，境界突破失败了……</Desc>
+		<StoryDesc>正因突破境界失败而遗憾</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice4" Group="TaoismPracticeTest">
+		<DisplayName>天劫将临</DisplayName>
+		<Desc>我感到我的天劫即将来临了，忐忑。</Desc>
+		<StoryDesc>正因面临天劫而显得有些忐忑不安</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice5" Group="TaoismPracticeTest">
+		<DisplayName>渡劫成功</DisplayName>
+		<Desc>渡劫成功了！</Desc>
+		<StoryDesc>正因渡劫成功而笑容满面</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TaoismPractice6" Group="TaoismPracticeTest">
+		<DisplayName>渡劫失败</DisplayName>
+		<Desc>唔……渡劫失败，损失惨重………</Desc>
+		<StoryDesc>正因渡劫失败而心如死灰</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="MakeArt">
+		<DisplayName>艺术品</DisplayName>
+		<Desc>做出了一件艺术品，这是我的心血！</Desc>
+		<StoryDesc>正因为做出一件精品而满意的点头</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="Health1">
+		<DisplayName>受伤了</DisplayName>
+		<Desc>受伤了，好痛……</Desc>
+		<StoryDesc>正因为受伤而咧了咧嘴角</StoryDesc>
+		<MaxStack>4</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="Health2">
+		<DisplayName>生病了</DisplayName>
+		<Desc>生病了，好难受……</Desc>
+		<StoryDesc>正因生病而满面苦涩</StoryDesc>
+		<MaxStack>4</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="Health3">
+		<DisplayName>残疾了</DisplayName>
+		<Desc>残疾了……觉得前途一片黯淡……</Desc>
+		<StoryDesc>正因成为残疾而面色灰暗</StoryDesc>
+		<MaxStack>4</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="SeeSomething1">
+		<DisplayName>看到尸体</DisplayName>
+		<Desc>我看到一个尸体放在了显眼的位置。</Desc>
+		<StoryDesc>正因刚刚看到的尸体而不适</StoryDesc>
+		<MaxStack>4</MaxStack>
+		<StackRatio>0.5</StackRatio>
+		<Value>-8</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="SeeSomething2">
+		<DisplayName>看到血迹</DisplayName>
+		<Desc>一滩血迹…不舒服…</Desc>
+		<StoryDesc>正因刚刚看到的满地血迹而面露不快</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="NotBury">
+		<DisplayName>没有埋葬</DisplayName>
+		<Desc>我们没能体面的埋葬[TXT]。</Desc>
+		<StoryDesc>正因过世同门没有被妥善安葬而腹诽不已</StoryDesc>
+		<MaxStack>4</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<!-- 社交相关-->
+	<Mood Name="SayHi">
+		<DisplayName>打招呼</DisplayName>
+		<Desc>和[TXT]打了个招呼。</Desc>
+		<StoryDesc>刚刚和某人打了个招呼</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="AfterTalk">
+		<DisplayName>聊天</DisplayName>
+		<Desc>和[TXT]聊了聊天，这真的很不错。</Desc>
+		<StoryDesc>刚刚和人聊了会天，看上去心情不错</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="DeepTalk">
+		<DisplayName>谈心</DisplayName>
+		<Desc>和[TXT]谈了谈心事，心里舒服多了。</Desc>
+		<StoryDesc>刚刚和人谈了谈心，似乎很有触动</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="Neglect">
+		<DisplayName>怠慢</DisplayName>
+		<Desc>和[TXT]说了两句话，[IT]似乎懒得理我，刚好我也懒得理[IT]。</Desc>
+		<StoryDesc>正因刚才被怠慢而嘀嘀咕咕</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Quarrel">
+		<DisplayName>吵架</DisplayName>
+		<Desc>和[TXT]大吵了一架，真的很气。</Desc>
+		<StoryDesc>正为刚才的吵架而一肚子气</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-8</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="Insult">
+		<DisplayName>侮辱</DisplayName>
+		<Desc>被[TXT]侮辱了，心里很难过。</Desc>
+		<StoryDesc>正为刚才被侮辱而耿耿于怀</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-8</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="SayHiFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[TXT]寒暄了一下，但是不知道为什么双方都莫名动了火气，结果打了一架，真是糟糕。</Desc>
+		<StoryDesc>正因为刚才的打架感到莫名其妙</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="AfterTalkFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[TXT]聊了聊天，但是不知道为什么双方都莫名动了火气，结果打了一架，真是糟糕。</Desc>
+		<StoryDesc>正因为刚才的打架感到莫名其妙</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="DeepTalkFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[TXT]谈了谈心里话，但是我们却发生了激烈的分歧，最终甚至动了手。这真的很伤感情。</Desc>
+		<StoryDesc>正为刚才动手感到暗暗后悔</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="NeglectFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我和[TXT]说两句话，但是我们轻慢的态度惹火了对方，忍不住动手打了一架。</Desc>
+		<StoryDesc>正因刚才的打架而小声咒骂</StoryDesc>
+		<MaxStack>6</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="QuarrelFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[TXT]发生了口角，既然话不投机，只能动手解决问题了。</Desc>
+		<StoryDesc>正因刚才的打架而小声咒骂</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="InsultFight">
+		<DisplayName>打架</DisplayName>
+		<Desc>我和[TXT]互相侮辱了对方，这种没教养的家伙只能用拳头教育。</Desc>
+		<StoryDesc>正揉着被打的部位并大声咒骂着</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="Fighting">
+		<DisplayName>打架</DisplayName>
+		<Desc>和[TXT]打了一架，[IT]真的是个混蛋。</Desc>
+		<StoryDesc>正揉着被打的部位并小声咒骂着</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-15</Value>
+		<Duration>2</Duration>
+	</Mood>
+	
+	<Mood Name="BuildBody">
+		<DisplayName>身体重塑</DisplayName>
+		<Desc>我的身体恢复了,哈哈</Desc>
+		<StoryDesc>还处在因为身体残疾被重塑的兴奋中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>25</Value>
+		<Duration>4</Duration>
+	</Mood>
+	
+	<Mood Name="FailInLove">
+		<DisplayName>沦陷</DisplayName>
+		<Desc>我爱上了[TXT]，这感觉真奇妙</Desc>
+		<StoryDesc>正因为恋爱而傻笑</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>4</Duration>
+	</Mood>
+	
+	<Mood Name="SleepWithWhat">
+		<DisplayName>糟糕的安排</DisplayName>
+		<Desc>我不能和那个人睡在一起</Desc>
+		<StoryDesc>正因为昨晚糟糕的住宿安排而愤怒不已</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-40</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	<Mood Name="StayWithGood"> <!--作用于喜欢的人在身边的时候-->
+		<DisplayName>幸福</DisplayName>
+		<Desc>喜欢和[TXT]待在一起</Desc>
+		<StoryDesc>正回味刚才和喜欢的人在一起的感觉</StoryDesc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>10</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>5</Value>
+		<Duration>0.2</Duration>
+	</Mood>
+	<Mood Name="SleepWithSpouse"><!--夫妻睡在一起-->
+		<DisplayName>温存</DisplayName>
+		<Desc>和[TXT]住在一起</Desc>
+		<StoryDesc>正因想起恋人而露出幸福的微笑</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>5</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="SleepWithLover"><!--恋人住在一起-->
+		<DisplayName>羞涩</DisplayName>
+		<Desc>和[TXT]住在一起</Desc>
+		<StoryDesc>正因为想起恋人而微微不好意思</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>5</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	<Mood Name="FoundOrganization1">
+		<DisplayName>门派建立</DisplayName>
+		<Desc>我们隐居于此，避世修行，而且还修行有成，建立了自己的小门派。这是个很不错的开始。</Desc>
+		<StoryDesc>正因为建立门派而振奋</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="FoundOrganization2">
+		<DisplayName>门派壮大</DisplayName>
+		<Desc>我们的门派也逐渐显露出了名声，这真的很不容易。让我们将他继续经营壮大。</Desc>
+		<StoryDesc>正因想起门派扩张而摩拳擦掌</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>8</Duration>
+	</Mood>
+	<Mood Name="FoundOrganization3">
+		<DisplayName>洞天落成</DisplayName>
+		<Desc>这是属于我们自己的洞天仙境。</Desc>
+		<StoryDesc>正因门派成为洞天福地而自豪</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>12</Duration>
+	</Mood>
+	<Mood Name="BeSchoolMaster" Group="School_ZhangMen">
+		<DisplayName>成为掌门</DisplayName>
+		<Desc>我一定会带领大家步上仙途。</Desc>
+		<StoryDesc>正因刚就任掌门而满面红光</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="INeedTrousersM" Group="NeedTrousers">
+		<DisplayName>需要裤子</DisplayName>
+		<Desc>门派连条裤子都没有？</Desc>
+		<StoryDesc>正因为没裤子穿而满脸怒容</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="INeedClothesF" Group="NeedClothes">
+		<DisplayName>需要衣服</DisplayName>
+		<Desc>啊！为什么我没有穿衣服？/捂胸</Desc>
+		<StoryDesc>正因为没衣服穿而满脸羞愤</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="INeedTrousersF" Group="NeedTrousers">
+		<DisplayName>需要裤子</DisplayName>
+		<Desc>啊！为什么我没有...?/捂脸</Desc>
+		<StoryDesc>正因为没裤子穿而满脸羞愤</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Kick1">
+		<DisplayName>有人被驱逐</DisplayName>
+		<Desc>有人被驱逐了。</Desc>
+		<StoryDesc>正因为有人被逐出门派而有点难过</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-4</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="Kick2">
+		<DisplayName>同门被驱逐</DisplayName>
+		<Desc>一个同门被驱逐了，太遗憾了</Desc>
+		<StoryDesc>正因为同门被驱逐而不满</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="Kick3">
+		<DisplayName>朋友被驱逐</DisplayName>
+		<Desc>你们在干什么？为什么要让我的[TXT]离开？</Desc>
+		<StoryDesc>正因为好友被逐出门派而满脸不可置信</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<Mood Name="Kick4">
+		<DisplayName>爱人被驱逐</DisplayName>
+		<Desc>你们在干什么？为什么要让我的[TXT]离开？</Desc>
+		<StoryDesc>正因为恋人被逐出门派而怒不可遏</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>30</Duration>
+	</Mood>
+	<Mood Name="Kick5">
+		<DisplayName>亲人被驱逐</DisplayName>
+		<Desc>你们在干什么？为什么要让我的[TXT]离开？</Desc>
+		<StoryDesc>正因为亲人被逐出门派而气恼</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-25</Value>
+		<Duration>20</Duration>
+	</Mood>
+	<Mood Name="Kick6">	<!--直系同门被驱逐-->
+		<DisplayName>师门被驱逐</DisplayName>
+		<Desc>我的[TXT]被迫离开了，一定是哪里出了问题.</Desc>
+		<StoryDesc>正因同门被逐出门派而愤愤不平</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-25</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="Kick7">	<!--仇人被驱逐-->
+		<DisplayName>仇人被驱逐</DisplayName>
+		<Desc>[TXT]被赶走了吗？哈哈哈</Desc>
+		<StoryDesc>正因仇人被逐出门派而喜笑颜开</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	
+	<Mood Name="Defection1">
+		<DisplayName>有人叛逃</DisplayName>
+		<Desc>有人叛逃出门派了，这可真是……</Desc>
+		<StoryDesc>正因为有人叛逃出门派而纳闷</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>-8</Value>
+		<Duration>4</Duration>
+	</Mood>
+	<Mood Name="Defection2">
+		<DisplayName>亲人叛逃</DisplayName>
+		<Desc>我的[TXT]叛逃出了门派，为什么会这样……</Desc>
+		<StoryDesc>正因为亲人叛逃出门派而惊怒</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>-25</Value>
+		<Duration>20</Duration>
+	</Mood>
+	<Mood Name="Defection3">
+		<DisplayName>朋友叛逃</DisplayName>
+		<Desc>我的[TXT]叛逃出了门派，为什么会这样……</Desc>
+		<StoryDesc>正因为朋友叛逃出门派而惊怒</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>-15</Value>
+		<Duration>20</Duration>
+	</Mood>
+	<Mood Name="Defection4">
+		<DisplayName>爱人叛逃</DisplayName>
+		<Desc>我的[TXT]叛逃出了门派，为什么会这样……</Desc>
+		<StoryDesc>正因为朋友叛逃出门派而一脸不敢相信</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>-25</Value>
+		<Duration>30</Duration>
+	</Mood>
+	<Mood Name="Defection5">
+		<DisplayName>仇人叛逃</DisplayName>
+		<Desc>[TXT]跑了？算他识趣。</Desc>
+		<StoryDesc>正因为仇人叛逃出门派而摩拳擦掌</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>15</Value>
+		<Duration>20</Duration>
+	</Mood>
+	
+	<Mood Name="DiscontentMood">
+		<DisplayName>不满</DisplayName>
+		<Desc>对现在的生活多少有些不满……</Desc>
+		<StoryDesc>正因为对现状的不满而一脸怒色</StoryDesc>
+		<MaxStack>10</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_BasePracticeAchievements1">
+		<DisplayName>筑基小成</DisplayName>
+		<Desc>每日锻炼似乎有效果……我觉得身体比过去健康了些！</Desc>
+		<StoryDesc>正因为筑基小成而兴奋</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_BasePracticeAchievements2">
+		<DisplayName>筑基有成</DisplayName>
+		<Desc>每日锻炼是有效果的，我觉得身体比过去健康了很多，做事也更轻松了。</Desc>
+		<StoryDesc>正因为筑基有成而振奋</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="BecomeDisciple">
+		<DisplayName>新世界</DisplayName>
+		<Desc>踏上修仙之路</Desc>
+		<StoryDesc>正因为开启修仙之门而志得意满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	
+	<Mood Name="SeeGod">
+		<DisplayName>目睹飞升</DisplayName>
+		<Desc>亲眼看到有人飞升此界，备受鼓舞。</Desc>
+		<StoryDesc>正因为目睹有人飞升此界而在心里暗下决心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="TerribleThing1">
+		<DisplayName>经历可怕的事</DisplayName>
+		<Desc>我身上发生了可怕的事，他怎么可以这样对我。</Desc>
+		<StoryDesc>正因为刚刚发生的可怕的事而惊恐</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-25</Value>
+		<Duration>20</Duration>
+	</Mood>
+	<Mood Name="TerribleThing2">
+		<DisplayName>目睹可怕的事</DisplayName>
+		<Desc>目睹了[TXT]身上发生了可怕的事。</Desc>
+		<StoryDesc>正因为目睹发生的可怕的事而担惊受怕</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="TerribleThing3">
+		<DisplayName>为朋友难过</DisplayName>
+		<Desc>目睹了我的[TXT]身上发生了可怕的事，真担心。</Desc>
+		<StoryDesc>正因为目睹朋友身上发生的可怕的事而又怒又怕</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TerribleThing4">
+		<DisplayName>为爱人难过</DisplayName>
+		<Desc>目睹了我的[TXT]身上发生了可怕的事，真担心。</Desc>
+		<StoryDesc>正因为目睹恋人身上发生的可怕的事而又怒又怕</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-20</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="TerribleThing5">
+		<DisplayName>为亲人难过</DisplayName>
+		<Desc>目睹了我的[TXT]身上发生了可怕的事，怎么能这样？</Desc>
+		<StoryDesc>正因为目睹亲人身上发生的可怕的事而又怒又怕</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-15</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<Mood Name="TerribleThing6">
+		<DisplayName>目睹可怕的事</DisplayName>
+		<Desc>目睹了一件很可怕的事。</Desc>
+		<StoryDesc>正因为目睹发生的可怕的事而担忧</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-8</Value>
+		<Duration>2</Duration>
+	</Mood>
+	
+	<Mood Name="NiceThing1" Group="NiceThing">
+		<DisplayName>仙法</DisplayName>
+		<Desc>我被施展了仙法。好奇妙</Desc>
+		<StoryDesc>正因刚刚被施展奇妙仙术而回味</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>15</Value>
+		<Duration>10</Duration>
+	</Mood>
+	
+	<Mood Name="NiceThing1_1" Group="NiceThing">
+		<DisplayName>美妙的体验</DisplayName>
+		<Desc>我经历了一次难忘的体验，这滋味太美妙了。</Desc>
+		<StoryDesc>正因刚刚被施展奇妙仙术而痴迷留恋</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>15</Value>
+		<Duration>10</Duration>
+	</Mood>	
+	
+	
+	<Mood Name="NiceThing2">
+		<DisplayName>目睹神通</DisplayName>
+		<Desc>目睹了[TXT]被施展仙法，好羡慕。</Desc>
+		<StoryDesc>正因看到他人被施展仙术而羡慕</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>5</Duration>
+	</Mood>
+	
+	<Mood Name="NiceThing2_1">
+		<DisplayName>目睹神奇</DisplayName>
+		<Desc>目睹有人施展仙法，好神奇。</Desc>
+		<StoryDesc>正因看到仙人施法而憧憬</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>8</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="NiceThing3">
+		<DisplayName>为朋友开心</DisplayName>
+		<Desc>目睹了我的[TXT]被仙法垂青，真开心。</Desc>
+		<StoryDesc>正因看到朋友被施展仙术而开心</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>15</Value>
+		<Duration>5</Duration>
+	</Mood>
+	<Mood Name="NiceThing4">
+		<DisplayName>为爱人开心</DisplayName>
+		<Desc>目睹了我的[TXT]被仙法垂青，真的好棒。</Desc>
+		<StoryDesc>正因看到恋人被施展仙术而开心</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>25</Value>
+		<Duration>15</Duration>
+	</Mood>
+	<Mood Name="NiceThing5">
+		<DisplayName>为亲人开心</DisplayName>
+		<Desc>目睹了我的[TXT]被仙法垂青，感到高兴。</Desc>
+		<StoryDesc>正因看到亲人被施展仙术而开心</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>15</Value>
+		<Duration>10</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_LingStone">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>跟灵气水乳交融的感觉真棒。</Desc>
+		<StoryDesc>正因为在灵气浓郁中修炼而一脸舒畅</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_LingStone1">
+		<DisplayName>深度灵气共鸣</DisplayName>
+		<Desc>跟灵气水乳交融的感觉真棒。</Desc>
+		<StoryDesc>正因为在灵气浓郁中修炼而一脸舒畅</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>12</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Equipment_Fun">
+		<DisplayName>有趣的玩具</DisplayName>
+		<Desc>随身带个小玩具，没事玩玩还挺有趣的。</Desc>
+		<StoryDesc>正饶有兴致的玩着一个小玩具</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>4</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="Mood_PracticeFoodScanty">
+		<DisplayName>精元不足</DisplayName>
+		<Desc>精元不足，无法修炼。</Desc>
+		<StoryDesc>正因精元不足无法修炼而苦恼</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="SeeBodyPuppet">
+		<DisplayName>有点渗人</DisplayName>
+		<Desc>我看了一个可怕的东西，它还在动！</Desc>
+		<StoryDesc>正因为刚看见什么灵异的事物而觉得有点渗人</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-6</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="Illusion1">
+		<DisplayName>幸福幻觉</DisplayName>
+		<Desc>哇，世界真奇妙！</Desc>
+		<StoryDesc>看见了美妙的事物，他人无法得知</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>200</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="Illusion2">
+		<DisplayName>可怕幻觉</DisplayName>
+		<Desc>呃，太恶心了！</Desc>
+		<StoryDesc>看见了诡异的事物，他人无法得知</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.4</StackRatio>
+		<Value>-200</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+		
+	<Mood Name="BeResurrection">
+		<DisplayName>复活</DisplayName>
+		<Desc>我复活了！哈哈！</Desc>
+		<StoryDesc>还处在复活的快乐中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>30</Value>
+		<Duration>5</Duration>
+	</Mood>
+	
+	<Mood Name="PaoZhang1">
+		<DisplayName>有趣的烟花</DisplayName>
+		<Desc>这玩意真不错，看上去蛮漂亮的。</Desc>
+		<StoryDesc>沉浸在有趣的烟花中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>20</Value>
+		<Duration>1</Duration>
+	</Mood>
+	
+	<Mood Name="PaoZhang2">
+		<DisplayName>太恶心了</DisplayName>
+		<Desc>哇！太恶心了！</Desc>
+		<StoryDesc>沉浸在剧烈的恶心中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.8</StackRatio>
+		<Value>-30</Value>
+		<Duration>3</Duration>
+	</Mood>
+</List></MoodDefs>

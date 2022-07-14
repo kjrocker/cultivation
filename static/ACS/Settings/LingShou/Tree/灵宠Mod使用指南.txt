@@ -1,0 +1,39 @@
+灵宠的配置方法看起来非常难懂。为了方便大家更方便地做mod，这里作一个简单的说明。
+大概说明：基本上灵宠根据不同Action的权重，随机从中挑选并执行。Action的权重玩家可以自己调整。
+一个Action指是灵宠面板上可调整权重的行为，它只存在于配置表中，Tree里面只是用到了Action的权重，以及指定在什么时候触发Action。
+
+配置主要分为两块:
+1. Tree
+2. 配置表
+
+Tree
+Tree中的语句看起来很难理解，但其实是简单的行为树结构，比较类似python。有这几个要点：
+1. 树的结构，树的子节点与父节点是通过分行和Tab关联的。比如:
+Sequence
+	Job,Eat
+Job,Eat就是Sequence的子节点。
+2. 几个主要的父节点:
+	Sequence, 依次执行其子节点，直到返回值为0
+	Selector, 依次执行子节点，直到返回值为1。
+	WeightRandom, 从其子节点中按照权重随机一个执行。可以用固定值W,1或者从表格中读取LsW,Weight，从表格中读取的值也是灵宠训练权重调整的值。
+	IfElse
+		A
+		B
+		C
+	子节点A判断true or false，为true执行B，为false执行C
+3. 执行到没有子节点了之后就会重新执行。
+4. 函数，参考StandardJobExp_2Param，会把这颗行为树中的字段替换成函数的参数。
+5. 打断，有State,Event,Reset响应这几种。State和Event用的很少，只有进战斗和内门回来，触发之后会转移到另一个树上。Reset会某个权重被调整了之后触发，并且
+会将树从此节点开始重新执行。Reset几乎所有行为都会用，因为调整权重调整到最低档位，灵宠就会立即停止当前行为。
+6.条件C, 用C,xxxxx的形式，让一个节点在C判断为true的时候才会执行。同样WeightRandom也只会选择C判断为True的节点。
+
+配置表
+为了完成一个Action的配置，需要用到以下表格：
+1. lsacion: 这里注册一个action
+2. ActionType: 将action分一下大类，便于查看
+3. CD: 有些行为有cd需要在这里注册，需要用CheckCD和SetCD
+4. CValue: 行为与参数关联。行为权重调整之后，其关联的参数也会变化为固定档位。其实只用了其档位（1-5）和（0-200）权重。
+5. flag2action: 只是记录用，查看一个行为有没有执行过，以便在列表中可看见。
+6. Jobp2act: 把实际的job与action关联，并且由于很多job只是一个realjob的变种，所以实际上可以关联到Realjob。Realjob并没有很多。
+7. jobp: action各个权重档位所说的话
+8. Talk: 各种说话内容

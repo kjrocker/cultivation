@@ -1,0 +1,64 @@
+<ModifierDefs><List>
+	<Modifier Name="FoodToHuman" Type="Normal">
+		<DisplayName>食物精怪</DisplayName>
+		<Desc>天生拥有高的服气能力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+			<li Name="NutritionWaterAutoRecover" AddV="5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="LingStoneToHuman" Type="Normal">
+		<DisplayName>灵石精怪</DisplayName>
+		<Desc>根本灵气天生很高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Qi" Level="20"/>
+			<li Name="Qi" LevelOver="5"/>
+		</Skills>
+		<Properties>  
+			<li Name="NpcLingMaxValue" BAddV="300"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="FabaoToHuman" Type="Normal">
+		<DisplayName>法宝精怪</DisplayName>
+		<Desc>法宝灵气恢复速度和转换比率天生超强。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="DanToHuman" Type="Normal">
+		<DisplayName>丹药成灵</DisplayName>
+		<Desc>下一次服用的灵丹药物没有耐药性。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="PlantToHuman" Type="Normal">
+		<DisplayName>自我成长</DisplayName>
+		<Desc>每天都会缓慢的成长。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="BuildToHuman" Type="Normal">
+		<DisplayName>自我修复</DisplayName>
+		<Desc>当前修复度：{0}\n 当修复度满100后，就会修复所有失去的肢体，并使累积的修复度归零。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+</List></ModifierDefs>

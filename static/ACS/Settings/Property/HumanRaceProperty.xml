@@ -1,0 +1,79 @@
+<Properties><List>
+		
+	<Property Name="HumanRaceMaxAge">
+		<BaseValue>7</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>50</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceMoveSpeed">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "0.4"  Base = "0"/>
+		</FiveBase>
+		<AddValue>2.4</AddValue>	
+	</Property>
+	
+	<Property Name="HumanRaceMaxHp">
+		<BaseValue>40</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>100</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceComfyTMin">
+		<BaseValue>-1</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>6</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceComfyTMax">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>30</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceToleranceTMin">
+		<BaseValue>-2</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>-4</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceToleranceTMax">
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>34</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceVisionRadius">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Perception" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>5</AddValue>	
+	</Property>	
+	
+	<Property Name="HumanRaceBaseWorkSpeed">
+		<BaseValue>4</BaseValue>
+	</Property>	
+	
+	<Property Name="HumanRaceRecoveryPower">
+		<BaseValue>0.08</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>0.01</AddValue>	
+	</Property>	
+	
+</List></Properties>

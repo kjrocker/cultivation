@@ -1,0 +1,150 @@
+﻿<JobDefs><List>
+	<JobDef Name="JobPracticeFeeling">
+		<DriverClass>JobPracticeFeeling</DriverClass>
+		<DisplayName>感悟</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobPractice">
+		<DriverClass>JobPractice</DriverClass>
+		<DisplayName>修炼</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobBrokenNeck">
+		<DriverClass>JobBrokenNeck</DriverClass>
+		<DisplayName>突破</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobPracticeSkill">
+		<DriverClass>JobPracticeSkill</DriverClass>
+		<DisplayName>练习</DisplayName>
+		<CheckStay>1</CheckStay>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobReceiveApprentice">
+		<DriverClass>JobReceiveApprentice</DriverClass>
+		<DisplayName>收徒</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobBuildBody">
+		<DriverClass>JobBuildBody</DriverClass>
+		<DisplayName>铸体</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobRobBody">
+		<DriverClass>JobRobBody</DriverClass>
+		<DisplayName>夺舍</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobAbsorbLing">
+		<DriverClass>JobAbsorbLing</DriverClass>
+		<DisplayName>吸灵</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobRefiningFabao">
+		<DriverClass>JobRefiningFabao</DriverClass>
+		<DisplayName>炼制法宝</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+	<JobDef Name="JobPaintCharm">
+		<DriverClass>JobPaintCharm</DriverClass>
+		<DisplayName>绘制符咒</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+	<JobDef Name="JobTeachHim">
+		<DriverClass>JobTeachHim</DriverClass>
+		<DisplayName>传授秘籍</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobLeave2Explore">
+		<DriverClass>JobLeave2Explore</DriverClass>
+		<DisplayName>历练</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobMasterHelp">
+		<DriverClass>JobMasterHelp</DriverClass>
+		<DisplayName>护法</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobFeelEsoterica">
+		<DriverClass>JobFeelEsoterica</DriverClass>
+		<DisplayName>参悟秘籍</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobAbsorbGong">
+		<DriverClass>JobAbsorbGong</DriverClass>
+		<DisplayName>获取修为</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobMelting">
+		<DriverClass>JobMelting</DriverClass>
+		<DisplayName>熔炼</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobEatPracticeFood">
+		<DriverClass>JobEatPracticeFood</DriverClass>
+		<DisplayName>服用</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobJiangdao">
+		<DriverClass>JobJiangdao</DriverClass>
+		<DisplayName>讲道</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMagicNormal">
+		<DriverClass>JobMagicNormal</DriverClass>
+		<DisplayName>神通通用</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobGodPractice">
+		<DriverClass>JobGodPractice</DriverClass>
+		<DisplayName>平衡</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobCangJingGe">
+		<DriverClass>JobCangJingGe</DriverClass>
+		<DisplayName>藏经阁</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+    <JobDef Name="JobGodPractice_Renunciation">
+		<DriverClass>JobGodPractice_Renunciation</DriverClass>
+		<DisplayName>克己</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobBodyPractice">
+		<DriverClass>JobBodyPractice</DriverClass>
+		<DisplayName>淬体</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobToHumanThunder">
+		<DriverClass>JobToHumanThunder</DriverClass>
+		<DisplayName>化形天劫</DisplayName>
+		<TianJie>1</TianJie>
+		<Desc>test job</Desc>
+	</JobDef>
+	
+	<JobDef Name="JobBodyTuna">
+		<DriverClass>JobBodyTuna</DriverClass>
+		<DisplayName>吐纳之法</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+</List></JobDefs>

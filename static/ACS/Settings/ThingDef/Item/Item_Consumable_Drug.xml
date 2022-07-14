@@ -1,0 +1,3295 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="DrugBase" Parent="ConsumableBase">
+	
+	<MaxStack>100</MaxStack>
+	<TexPath></TexPath>
+
+	<Desc>Desc.</Desc>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>1</Rate>
+	<Beauty>1</Beauty>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Drug">
+		<CustomKind>Drug</CustomKind>
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<!--<Stuff name = "Metallic"/>-->
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.05</LingNumberRate>
+			
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Fruit" Parent="DrugBase">
+	<ThingName>龙涎果</ThingName>
+	<TexPath>res\Sprs\object\object_gaomijiangguo</TexPath>	
+	<Desc>一把龙涎果，服用后可以半天之内不会饥饿，不感到疲劳。但是一旦摘下，会很快腐烂。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>10</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<IllustratedHandLabel>Food</IllustratedHandLabel>
+	<Item>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		<FabaoSuffix>果,珠,丸,球</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>Modifier_Item_LongXianGuo</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>
+			<FunAddion>25</FunAddion>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-50</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingWater" Parent="DrugBase">
+	<ThingName>灵初露</ThingName>
+	<TexPath>res\Sprs\object\object_dimulingye02</TexPath>
+	<TexScale>0.5</TexScale>	
+	<Desc>灵草之上的一滴富含生气的露水。一旦离开灵草会很快散化。服用后可以补充大量精元，并短时间内大幅提高身体恢复速度。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="50"/>
+		<Tag Name="TameLing" Level="1"/>
+	</Tags>
+	<MaxStack>10</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>Modifier_Item_LingWater</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>150</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.5</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-80</TempMin>
+			<LingMax>800</LingMax>
+		</Rot>
+	</Item>
+	
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_ZaoHuaYuLu" Parent="DrugBase">
+	<ThingName>造化玉露</ThingName>
+	<TexPath>res\Sprs\object\object_dimulingye02</TexPath>
+	<TexScale>0.5</TexScale>	
+	<Desc>天地灵根上凝结的蕴含造化之力的露水。一旦离开灵根，会很快消散。服用后会元神寂灭，进入假死状态九九八十一天，恢复所有伤势。而后脱胎换骨，五维提升2成，道行大幅度下降。此物一人只能服用一次，若再次服用，元神则会永久寂灭，彻底消散。</Desc>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<MaxStack>1</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		
+		<Elixir>
+			<RecoveryLable>
+				<li>Soul</li>
+				<li>OldScar</li>
+				<li>Jin</li>
+				<li>Mu</li>
+				<li>Shui</li>
+				<li>Huo</li>
+				<li>Tu</li>
+				<li>Ling</li>
+			</RecoveryLable>
+			<RecoveryValue>10</RecoveryValue>
+			<RecoveryDuration>1</RecoveryDuration>
+			<Modifier>Modifier_Item_ZaoHuaYuLu</Modifier>
+			<Fesistance>2</Fesistance>
+		</Elixir>
+		<Rot>
+			<RotSpeed>0.5</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-80</TempMin>
+			<LingMax>800</LingMax>
+		</Rot>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+		</DevourDatas>
+	</Item>
+	
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SilverGrit" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_SilverGrit" Level="1"/>
+	</Tags>	
+
+	<ThingName>寒晶沙</ThingName>
+	<TexPath>res\Sprs\object\object_kuangsha01</TexPath>	
+	<Desc>寒晶矿石磨成的矿砂，可以入药。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>4</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Color>D3F4FFFF</Color>
+	
+	<IllustratedHandLabel>WOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<CostItems>
+				<Item name = "Item_SilverRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<DevourDatas>
+		</DevourDatas>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+	</Element>
+	<Heat>
+		<Value>-25</Value>
+		<Radius>3</Radius>
+		<RoomValue>-40</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>7</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CopperGrit" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_CopperGrit" Level="1"/>
+	</Tags>	
+
+	<ThingName>火铜砂</ThingName>
+	<TexPath>res\Sprs\object\object_kuangsha01</TexPath>	
+	<Desc>火铜矿石磨成的矿砂，可以入药。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>4</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Color>9E5100FF</Color>
+	
+	<IllustratedHandLabel>WOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<CostItems>
+				<Item name = "Item_CopperRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<DevourDatas>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+	</Element>
+	<Heat>
+		<Value>25</Value>
+		<Radius>3</Radius>
+		<RoomValue>40</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Cinnabar" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_Cinnabar" Level="1"/>
+	</Tags>	
+
+	<ThingName>朱砂</ThingName>
+	<TexPath>res\Sprs\object\object_kuangsha01</TexPath>	
+	<Desc>特殊的矿物，是炼丹画符常用的媒介材料。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>3</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Color>FF0202E6</Color>
+	
+	<IllustratedHandLabel>WOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<DevourDatas>
+		</DevourDatas>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>
+		<Radius>1</Radius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>12</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_JinEssence" Parent="DrugBase">
+	
+	<ThingName>琅琊果</ThingName>
+	<TexPath>res\Sprs\object\object_langyaguo01</TexPath>	
+	<Desc>天地神药，五行属金，蕴含磅礴的灵气。传说天极峰，飞云涧有出产。</Desc>
+	<TonglingHair>hairlangyaguo</TonglingHair>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Tags>
+		<Tag Name = "ESSENCE" Level="1"/>
+		<Tag Name = "Item_JinEssence" Level="1"/>
+	</Tags>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<Elixir>
+			<Ling>500000</Ling>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXJin" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Jin')" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+		
+	<ThingDef Type="Item" Name="Item_MuEssence" Parent="DrugBase">
+	
+	<ThingName>木枯藤</ThingName>
+	<TexPath>res\Sprs\object\object_mukuteng01</TexPath>	
+	<TonglingHair>hairmukuteng</TonglingHair>
+	<Desc>天地神药，五行属木，蕴含磅礴的灵气，不可直接服用。传说龙虎山和南荒虫谷有木枯藤的踪迹。</Desc>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Tags>
+		<Tag Name = "ESSENCE" Level="1"/>
+		<Tag Name = "Item_MuEssence" Level="1"/>
+	</Tags>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>藤,锁,链,绳,索</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Soft2</li>
+		</PhysicalLables>
+		<Elixir>
+			<Ling>500000</Ling>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Mu')" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+		
+	<ThingDef Type="Item" Name="Item_ShuiEssence" Parent="DrugBase">
+	<ThingName>五色金莲</ThingName>
+	<TonglingHair>hairwucailian</TonglingHair>
+	<Tags>
+		<Tag Name = "ESSENCE" Level="1"/>
+		<Tag Name = "Item_ShuiEssence" Level="1"/>
+	</Tags>
+	<TexPath>res\Sprs\object\object_wucailian01</TexPath>	
+	<Frags>		
+		<li Frag="Lake" />
+	</Frags>
+	<Desc>天地神药，五行属水，蕴含磅礴的灵气，不可直接服用。传说丹霞山五龙池有一株五色金莲。</Desc>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>莲,台,印,罩,界</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<Elixir>
+			<Ling>500000</Ling>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Shui')" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+		
+	<ThingDef Type="Item" Name="Item_HuoEssence" Parent="DrugBase">
+		<Tags>
+			<Tag Name = "ESSENCE" Level="1"/>
+			<Tag Name = "Item_HuoEssence" Level="1"/>
+		</Tags>
+		<ThingName>朱果</ThingName>
+		<TonglingHair>hairzhuguo</TonglingHair>
+		<TexPath>res\Sprs\object\object_zhuguo01</TexPath>
+		<Frags>		
+			<li Frag="Sun" />
+		</Frags>	
+
+		<Desc>天地神药，五行属火，蕴含磅礴的灵气，不可直接服用。传说蜀山凝碧崖，大漠火穴之中有朱果生长。</Desc>
+		<MaxStack>1</MaxStack>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>8</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>珠,丸,球</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>500000</Ling>
+			</Elixir>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+				<LingNumberRate>0.45</LingNumberRate>
+			</BeMaterial>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+			</DevourDatas> 	
+			
+		</Item>
+		
+		<StoryBnts>
+				<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Huo')" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Heat>
+			<Value>300</Value>
+			<Radius>5</Radius>
+			<RoomValue>900</RoomValue>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
+	</ThingDef>
+	
+		
+	<ThingDef Type="Item" Name="Item_TuEssence" Parent="DrugBase">
+
+		<ThingName>赭黄精</ThingName>
+		<TexPath>res\Sprs\object\object_huangjing01</TexPath>	
+		<TonglingHair>hairhuangjing</TonglingHair>
+		<Desc>天地神药，五行属土，蕴含磅礴的灵气，不可直接服用。传说昆仑山龙脉洞窟之中有赭黄精生长。</Desc>
+		<MaxStack>1</MaxStack>
+		<Frags>	
+			<li Frag="Earth" />
+		</Frags>	
+
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>8</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Tags>
+			<Tag Name = "ESSENCE" Level="1"/>
+			<Tag Name = "Item_TuEssence" Level="1"/>
+		</Tags>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>偶,傀,根,印</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Knock</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>500000</Ling>
+			</Elixir>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+				<LingNumberRate>0.45</LingNumberRate>
+			</BeMaterial>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXTu" Count="1" Rate="0.1"/>
+			</DevourDatas> 	
+		</Item>
+		
+		<StoryBnts>
+				<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Tu')" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_LingMuXueJie" Parent="DrugBase">
+	<ThingName>灵木血竭</ThingName>
+	<MaxStack>500</MaxStack>
+	<TexPath>res\Sprs\object\object_lingmuxuejie01</TexPath>	
+	<Desc>天地灵根蕴养后析出的胶状物，蕴含有大量可被人体直接吸收的精元。</Desc>
+	<Tags>
+		<Tag Name="PracticeFood" Level="6"/>
+		<Tag Name="Item_LingMuXueJie" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>7</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>None</ElementKind>
+	
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>10</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Water>0</Water>
+			<PracticeNutrition>200</PracticeNutrition>		
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>15</ElementPowerWhenBeMain>
+			<LingNumberRate>0.8</LingNumberRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_EarthEssence" Parent="DrugBase">
+	<ThingName>地母灵液</ThingName>
+	<Tags>
+		<Tag Name = "ESSENCE" Level="1"/>
+		<Tag Name = "Item_EarthEssence" Level="1"/>
+	</Tags>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_dimulingye01</TexPath>	
+	<Desc>地壳深处的精华，呈乳白色液体，是炼制多种神丹的材料。直接服用可以大补精元，并扩充气海，从根本上大幅提高灵气最大值。多次服用，扩充气海的效果会大大降低。传说合欢岛和蜀山玉泉洞有地母灵液的泉眼。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="100"/>
+		<Tag Name="TameLing" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="200" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="300" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_EarthEssence</Modifier>
+			<Fesistance>0.1</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Water>0</Water>
+			<PracticeNutrition>60</PracticeNutrition>		
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>15</ElementPowerWhenBeMain>
+			<LingNumberRate>0.8</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiLing" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_EarthEssence1" Parent="DrugBase">
+	<ThingName>邪脉血泉</ThingName>
+	<MaxStack>1</MaxStack>
+	<Tags>
+		<Tag Name = "ESSENCE" Level="1"/>
+	</Tags>
+	<TexPath>res\Sprs\object\object_xiemaixuequan01</TexPath>	
+	<Desc>地壳深处的精华，色泽鲜红。直接服用可以大补精元，并扩充气海，提高灵气最大值。此物耐药性很弱，可多次服用，只是煞气内敛，会永久影响心性，若服用过多将严重影响修行。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Color>FD6A6AE6</Color>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="200" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="300" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_EarthEssence1</Modifier>
+			<Fesistance>0.9</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Water>0</Water>
+			<PracticeNutrition>60</PracticeNutrition>		
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>15</ElementPowerWhenBeMain>
+			<LingNumberRate>0.8</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_WuHui" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_SiWang" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiSha" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_EarthEssence_1" Parent="DrugBase">
+	<ThingName>灵髓脂</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_lingsuizhi01</TexPath>	
+	<Desc>地母灵液凝结而成的膏状物，可以将灵气散化为本命元气，从根本上降低灵气最大值，可治疗所有伤势，并提升神识，根骨，悟性各1成。只有第一次服用有效。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="100"/>
+		<Tag Name="TameLing" Level="1"/>
+		<Tag Name="Item_EarthEssence_1" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>10</Rate>
+	<Beauty>15</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<RecoveryLable>
+				<li>None</li>
+				<li>OldScar</li>
+				<li>Jin</li>
+				<li>Mu</li>
+				<li>Shui</li>
+				<li>Huo</li>
+				<li>Tu</li>
+				<li>Ling</li>
+			</RecoveryLable>
+			<RecoveryValue>1000</RecoveryValue>
+			<RecoveryDuration>0.04</RecoveryDuration>
+			<Modifier>Modifier_Item_EarthEssence_1</Modifier>
+			<Fesistance>0</Fesistance>
+		</Elixir>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiLing" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_EarthEssence1_1" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_SnakeGallbladder" Level="1"/>
+		<Tag Name="Item_EarthEssence1_1" Level="1"/>
+	</Tags>	
+
+	<ThingName>血髓脂</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xuesuizhi01</TexPath>	
+	<Desc>邪脉血泉凝结而成的膏状物，可以将本命元气化为灵气，从根本上提高灵气最大值，但是服用后元气大伤，降低神识，根骨，悟性各1成。可多次服用。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>10</Rate>
+	<Beauty>15</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Color>FD6A6AE6</Color>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_EarthEssence1_1</Modifier>
+			<Fesistance>0.9</Fesistance>
+		</Elixir>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_SiWang" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_SiWang" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_SiWang" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiSha" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LifeStream" Parent="DrugBase">
+	<ThingName>长生泉</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_changshengquan01</TexPath>	
+	<Desc>传说喝了可以长生的神泉，是炼制多种神丹的材料。直接饮用可延寿九十九年，多次服用效果会大大降低。传说五莲山天池中有长生泉的泉眼。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="70"/>
+		<Tag Name="TameLing" Level="1"/>
+		<Tag Name="Item_LifeStream" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="200" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="300" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Dan_IncreaseLife6</Modifier>
+			<Fesistance>0.2</Fesistance>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>10</ElementPowerWhenBeMain>
+			<LingNumberRate>0.8</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>30</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>10</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Ginseng" Parent="DrugBase">
+	
+	<ThingName>人参</ThingName>
+	<MaxStack>500</MaxStack>
+	<TexPath>res\Sprs\object\object_ginseng</TexPath>	
+	<Desc>昂贵的药材，直接服用可以在一个时辰内提高人的自然恢复力。外门弟子服用可促进筑基，常用来炼药。但是多次服用效果就会大大降低。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="15"/>
+		<Tag Name="TameLing" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>4</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>偶,傀,儡</FabaoSuffix>
+	
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		<Elixir>
+			<ZhuJi>1000</ZhuJi>
+			<Fesistance>0.5</Fesistance>
+			<Modifier>Modifier_Item_Ginseng</Modifier>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>55</Nutrition>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>6</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_GanodermaLucidum" Parent="DrugBase">
+	
+	<ThingName>芝草</ThingName>
+	<MaxStack>500</MaxStack>
+	<TexPath>res\Sprs\object\object_zhicao01</TexPath>	
+	<Desc>昂贵的药材，直接服用能续命三年。外门弟子服用可促进筑基，常用来炼药。但是多次服用效果就会大大降低。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="15"/>
+		<Tag Name="TameLing" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>4</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>如意,芝,散,伞</FabaoSuffix>
+		
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		<Elixir>
+			<ZhuJi>1000</ZhuJi>
+			<Modifier>Dan_IncreaseLife7</Modifier>
+			<Fesistance>0.5</Fesistance>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>25</Nutrition>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>6</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_RedGinseng" Parent="DrugBase">
+		<Tags>			
+			<Tag Name="Item_RedGinseng" Level="1"/>
+		</Tags>	
+
+		<ThingName>赤参</ThingName>
+		<TexPath>res\Sprs\object\object_ginseng</TexPath>	
+		<Desc>人参中的极品，颜色赤红，外门弟子服用可大幅促进筑基，内门弟子服用可补充少量精元，常常用来炼制一些丹药。直接服用可以在一个时辰内大幅提高人的自然恢复力，并提高些许灵气最大值，但是多次服用效果就会降低。</Desc>
+		<Tags>
+			<Tag Name="Tame" Level="45"/>
+			<Tag Name="TameLing" Level="1"/>
+		</Tags>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>6</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Color>DB4D4DE6</Color>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>偶,傀,儡</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>LowDensity1</li>
+			</PhysicalLables>
+			<Elixir>
+				<ZhuJi>8000</ZhuJi>
+				<Modifier>Modifier_Item_RedGinseng</Modifier>
+				<Fesistance>0.65</Fesistance>
+			</Elixir>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>50</PracticeNutrition>
+			</Food>	
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>2</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>8</Value>         
+			<Radius>2</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>6</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PurpleGanodermaLucidum" Parent="DrugBase">
+		<Tags>			
+			<Tag Name="Item_PurpleGanodermaLucidum" Level="1"/>
+		</Tags>	
+
+		<ThingName>紫芝</ThingName>
+		<TexPath>res\Sprs\object\object_zhicao01</TexPath>	
+		<Desc>灵芝中的极品，通体紫红色，外门弟子服用可大幅促进筑基，内门弟子服用可补充少量精元，可以用来炼制一些珍稀丹药。直接服用可以续命十年，且略微提高灵气最大值，但是多次服用效果就会大大降低。</Desc>
+		<Tags>
+			<Tag Name="Tame" Level="45"/>
+			<Tag Name="TameLing" Level="1"/>
+		</Tags>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>6</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Color>CF23E1E6</Color>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>如意,芝,散,伞</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>LowDensity1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>50</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<ZhuJi>8000</ZhuJi>
+				<Modifier>Dan_IncreaseLife8</Modifier>
+				<Fesistance>0.65</Fesistance>
+			</Elixir>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>2</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>8</Value>         
+			<Radius>2</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>6</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SoulPearl" Parent="DrugBase">
+	
+	<ThingName>玄牝珠</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_yaodan01</TexPath>	
+	<Desc>妖兽的内丹，内含庞大的阴性灵气。百蛮山千尸洞中有玄牝珠的踪迹。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="200" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="300" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Smooth2</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<Elixir>
+			<Ling>500000</Ling>
+		</Elixir>
+		<BeMaterial>
+			<NamePrefix>妖胎</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>15</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas> 
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>15</Value>         
+		<Radius>4</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>45</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.7</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	
+	<Heat>
+		<Value>-150</Value>
+		<Radius>5</Radius>
+		<RoomValue>-600</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>5</Radius>
+		<Color>004CFFFF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MonsterBlood" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_MonsterBlood" Level="1"/>
+	</Tags>	
+
+	<ThingName>妖灵血</ThingName>
+	<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>	
+	<Desc>妖兽的血液，含有奔腾的灵气，就算装在瓶子里还是觉得滚烫。在百蛮山万蛇坑与大漠鸣沙村可以获得妖灵血。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>6</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Color>FD6A6AE6</Color>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>30</Nutrition>
+			<Water>30</Water>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.05"/>
+		</DevourDatas> 
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Heat>
+		<Value>75</Value>
+		<Radius>2</Radius>
+		<RoomValue>120</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Mint" Parent="DrugBase">
+	<Tags>		
+		<Tag Name="Item_Mint" Level="1"/>
+	</Tags>	
+
+	<ThingName>清心草</ThingName>
+	<MaxStack>500</MaxStack>
+	<TexPath>res\Sprs\object\object_qingxincao01</TexPath>	
+	<Desc>常见的药材，药性清凉，直接服用可以让人安神宁气，如果是内门弟子还可以少量提升心境。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>5</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>花,蕊</FabaoSuffix>
+		<PhysicalLables>
+			<li>Soft1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<Elixir>
+			<Modifier>Modifier_Item_Mint</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MagicHerb" Parent="DrugBase">
+	<ThingName>灵仙草</ThingName>
+	<MaxStack>500</MaxStack>
+	<TexPath>res\Sprs\object\object_lingxiancao01</TexPath>	
+	<Desc>富含灵力的药草，药性温和，十分泛用，可以配合各种材料练成丹药。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="12"/>
+		<Tag Name="TameLing" Level="1"/>
+		<Tag Name="Item_MagicHerb" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>5</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+		<Radius>1</Radius>
+		<Color>62F8FFFF</Color>
+	</Light>	
+	
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>花,蕊</FabaoSuffix>
+		<PhysicalLables>
+			<li>Soft1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>		
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Ginkgo" Parent="DrugBase">
+	<ThingName>银杏果</ThingName>
+	<TexPath>res\Sprs\object\object_SomeGinkgobiloba</TexPath>	
+	<Desc>银杏树的果实，可以炼制一些补气安神的药物。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="12"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>3</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>WOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>果,珠,丸,球,罩</FabaoSuffix>
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>	
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>2</FunAddion>
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+		<Radius>1</Radius>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_SnakeGallbladder" Parent="DrugBase">
+		<Tags>
+			<Tag Name="Item_SnakeGallbladder" Level="1"/>
+		</Tags>
+		<ThingName>蛇胆</ThingName>
+		<TexPath>res\Sprs\object\object_shedan01</TexPath>	
+		<Desc>蛇的胆囊，可以补充少量精元，也可入药。凡人生吞可以补益身体，促进筑基。</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>丸,胆</FabaoSuffix>
+			<PhysicalLables>
+				<li>Soft1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>35</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<ZhuJi>1500</ZhuJi>
+				<Fesistance>0.9</Fesistance>
+			</Elixir>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>2</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<Rot>
+				<RotSpeed>0.02</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BearGallbladder" Parent="DrugBase">
+		<Tags>			
+			<Tag Name="Item_BearGallbladder" Level="1"/>
+		</Tags>	
+
+		<ThingName>熊胆</ThingName>
+		<TexPath>res\Sprs\object\object_shedan01</TexPath>	
+		<Desc>熊的胆囊，可以补充精元，也可入药。凡人生吞可以补益身体，促进筑基。</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>丸,胆</FabaoSuffix>
+			<PhysicalLables>
+				<li>Soft1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>45</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<ZhuJi>4000</ZhuJi>
+				<Fesistance>0.9</Fesistance>
+			</Elixir>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>2</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<Rot>
+				<RotSpeed>0.02</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Healroot" Parent="DrugBase">
+		<ThingName>药草</ThingName>
+		<MaxStack>500</MaxStack>
+		<TexPath>res\Sprs\object\object_herbal</TexPath>
+		<Desc>常见的药材，可以用来治疗各种伤病，但是效果有限。</Desc>
+		<Tags>
+			<Tag Name="Drug" Level="1"/>
+			<Tag Name="Item_Healroot" Level="1"/>
+		</Tags>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>3</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+		<FabaoSuffix>叶</FabaoSuffix>
+			<PhysicalLables>
+				<li>Soft1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Drug>
+				<Value>0.15</Value>
+				<Duration>1</Duration>
+				<Parts>
+					<li>Any</li>
+				</Parts>
+			</Drug>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>2</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Hemostatics" Parent="DrugBase">
+		<ThingName>金疮药</ThingName>
+		<TexPath>res\Sprs\object\object_HemostaticDrug</TexPath>
+		<Desc>常见的药物，可用于治疗皮肉创伤，有明显疗效。</Desc>	
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Drug>
+				<Value>0.4</Value>
+				<Duration>1</Duration>
+				<Parts>
+					<li>Flesh</li>
+					<li>Virtual</li>
+				</Parts>
+			</Drug>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Healroot" count = "2"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SmallCycle" Parent="DrugBase">
+		<ThingName>小还丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao03</TexPath>
+		<Desc>常见的药物，可用于治疗内脏伤，有明显疗效。</Desc>	
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>珠,丸,球</FabaoSuffix>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Drug>
+				<Value>0.4</Value>
+				<Duration>1</Duration>
+				<Parts>
+					<li>Organ</li>
+				</Parts>
+			</Drug>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Ginkgo" count = "5"/>
+					<Item name = "Item_Healroot" count = "2"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Plaster" Parent="DrugBase">
+		<ThingName>接骨膏</ThingName>
+		<TexPath>res\Sprs\object\object_plaster</TexPath>
+		<Desc>常见的药物，可用于治疗骨骼损伤，有明显疗效。</Desc>	
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Drug>
+				<Value>0.4</Value>
+				<Duration>1</Duration>
+				<Parts>
+					<li>Bone</li>
+				</Parts>
+			</Drug>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Healroot" count = "2"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_StoneEssenceDrug" Parent="DrugBase">
+		<ThingName>石髓散</ThingName>
+		<TexPath>res\Sprs\object\object_guanyinsoil04</TexPath>
+		<Desc>将石髓磨成粉，配合药草而制成的药物。对于治疗外门伤病有奇效。</Desc>
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>	
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>5</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Drug>
+				<Value>0.6</Value>
+				<Duration>1</Duration>
+				<Parts>
+					<li>Any</li>
+				</Parts>
+			</Drug>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_StoneEssence" count = "1"/>
+					<Item name = "Item_Healroot" count = "5"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Anodyne" Parent="DrugBase">
+		<ThingName>止痛散</ThingName>
+		<TexPath>res\Sprs\object\object_HemostaticDrug04</TexPath>
+		<Desc>常见的药物，能有效的缓解疼痛。</Desc>	
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>4</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+	
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Modifier_Item_Anodyne</Modifier>
+				<Fesistance>1</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Healroot" count = "2"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Laxative" Parent="DrugBase">
+		<ThingName>通泻散</ThingName>
+		<TexPath>res\Sprs\object\object_guanyinsoil05</TexPath>
+		<Desc>常见的药物，能通泻浊污，治疗腹胀，吃土等症状。但是药效结束后会倍感虚弱。</Desc>	
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>3</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		
+		<Tags>		
+			<Tag Name="Item_Laxative" Level="1"/>
+		</Tags>
+
+		
+		<IllustratedHandLabel>WOther</IllustratedHandLabel>
+		<Item Lable="Drug">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Dfood</li>
+				</RecoveryLable>
+				<RecoveryValue>1.5</RecoveryValue>
+				<RecoveryDuration>1</RecoveryDuration>
+				<Modifier>Modifier_Item_Laxative</Modifier>
+				<Fesistance>1</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>35</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Healroot" count = "5"/>
+					<Item name = "Item_SilverGrit" count = "15"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_ThunderAir" Parent="DrugBase">
+		<Frags>	
+			<li Frag="Thunder" />
+		</Frags>	
+		
+		<ThingName>天劫之息</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>
+		<Desc>以偷天之法盗出的一丝天劫气息，有骇人的威能在其中流转。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>12</Rate>
+		<Beauty>75</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>息,劫</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Ling</li>
+				<li>Sharp</li>
+			</PhysicalLables>
+			
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_JieMie" Count="1" Rate="0.01"/>
+				<li Name="Item_BodyPractice_JieMie" Count="1" Rate="0.01"/>
+				<li Name="Item_BodyPractice_JieMie" Count="1" Rate="0.01"/>
+				<li Name="Item_BodyPractice_JieMie" Count="1" Rate="0.01"/>
+			</DevourDatas>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XianBone" Parent="DrugBase">
+		<ThingName>仙人遗骨</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\building_JJ01</TexPath>
+		<Desc>毁掉仙人遗蜕后留下的蕴含神力的骸骨。如果能承受住其神力，炼入身体，可以融合天道气息，大幅度降低道行。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>骨,骸</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Ling</li>
+				<li>Sharp</li>
+			</PhysicalLables>
+			<Elixir>
+				<Fesistance>0.8</Fesistance>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_XianBone</Modifier>
+			</Elixir>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<!-- <DevourDatas>
+				<li Name="Item_BodyPractice_XianSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_XianSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_XianSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_XianSui" Count="1" Rate="0.1"/>
+			</DevourDatas> -->
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XianBoneBall" Parent="Item_XianBone">
+		<ThingName>神舍利</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_jianwan01</TexPath>
+		<Desc>毁掉神灵遗蜕后留下的蕴含信仰之力的舍利。如果能承受住其神力，炼入身体，可以大幅提高神性，并永久提高心境，提高神民上限。佩戴在身上也有少量效果。</Desc>	
+		<Item Lable="Drug">
+			<Elixir>
+				<Fesistance>0.5</Fesistance>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_XianBoneBall</Modifier>
+			</Elixir>
+			<Equip>
+				<ToolModifier>Modifier_Item_XianBoneBall</ToolModifier>
+			</Equip>
+			<!-- <DevourDatas>
+				<li Name="Item_BodyPractice_ShenSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShenSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShenSui" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShenSui" Count="1" Rate="0.1"/>
+			</DevourDatas> -->
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ZaoHuaYuZi" Parent="DrugBase">
+		<ThingName>造化玉籽</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_zaohuaYZ01</TexPath>
+		<Desc>昆仑山龙脉洞窟深处凝结的精华。十分凝练，必须以特殊的秘法才能使用此物。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>玉,印</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>1000000</Ling>
+			</Elixir>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BenYuan_None" Parent="DrugBase">
+		<ThingName>天道本源-无</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_benyuanwu01</TexPath>
+		<Desc>蕴含纯粹天道本源的结晶。只有修习无属性功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。随着炼化次数，效果会逐渐降低。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>-10</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>晶</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_TaiXu" Count="1" Rate="0.01"/>
+			</DevourDatas> 
+		</Item>
+		<StoryBnts>
+			<li Name="炼化" Desc="尝试炼化天道本源。"  Appoint="2" Story="Story_Item_BenYuan" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BenYuan_Jin" Parent="Item_BenYuan_None">
+		<ThingName>天道本源-金</ThingName>
+		<TexPath>res\Sprs\object\object_benyuanjin01</TexPath>
+		<Desc>蕴含金系天道本源的结晶。只有修习金属功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。随着炼化次数，效果会逐渐降低。</Desc>	
+		
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Drug">
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXJin" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+		</Element>
+	</ThingDef>
+		
+	<ThingDef Type="Item" Name="Item_BenYuan_Mu" Parent="Item_BenYuan_None">
+		<ThingName>天道本源-木</ThingName>
+		<TexPath>res\Sprs\object\object_benyuanmu01</TexPath>
+		<Desc>蕴含木系天道本源的结晶。只有修习木属功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。随着炼化次数，效果会逐渐降低。</Desc>	
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Drug">
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BenYuan_Shui" Parent="Item_BenYuan_None">
+		<ThingName>天道本源-水</ThingName>
+		<TexPath>res\Sprs\object\object_benyuanshui01</TexPath>
+		<Desc>蕴含水系天道本源的结晶。只有修习水属功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。随着炼化次数，效果会逐渐降低。</Desc>	
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Drug">
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BenYuan_Huo" Parent="Item_BenYuan_None">
+		<ThingName>天道本源-火</ThingName>
+		<TexPath>res\Sprs\object\object_benyuanhuo01</TexPath>
+		<Desc>蕴含火系天道本源的结晶。只有修习火属功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。随着炼化次数，效果会逐渐降低。</Desc>	
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Drug">
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BenYuan_Tu" Parent="Item_BenYuan_None">
+		<ThingName>天道本源-土</ThingName>
+		<TexPath>res\Sprs\object\object_benyuantu01</TexPath>
+		随着炼化次数，效果会逐渐降低。<Desc>蕴含土系天道本源的结晶。只有修习土属功法，才有可能将其炼化。如果成功炼化，则会降低道行，如果失败，则会受伤且增加天谴。道行越高，炼化成功率越高。</Desc>	
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Drug">
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.1"/>
+				<li Name="Item_BodyPractice_EXTu" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_YuanHunLu" Parent="DrugBase">
+	<ThingName>元魂露</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_yuanhunlu01</TexPath>	
+	<Desc>蕴含妖兽灵魂精华的露水。服用可以使人思虑放缓，恢复元神损伤。只是思虑放缓的代价多少会影响思考能力，悟性会降低1成。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>9</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<RecoveryLable>
+				<li>Soul</li>
+			</RecoveryLable>
+			<RecoveryValue>0.02</RecoveryValue>
+			<RecoveryDuration>112</RecoveryDuration>
+			<Modifier>Modifier_Item_YuanHunLu</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.5"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>5</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XieHunLu" Parent="DrugBase">
+	<ThingName>邪魂露</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xiehunlu01</TexPath>	
+	<Desc>蕴含妖兽灵魂精华的露水。服用可以使人一季度内思虑敏捷，悟性提高1成，学习能力提高。但此举透支神魂，有损元神。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>9</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_XieHunLu</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+		</Food>	
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.5"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>5</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_YanDaoGuo" Parent="DrugBase">
+	<ThingName>演道果</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_yandaoguo01</TexPath>	
+	<Desc>蕴含天劫之息的奇特果实。服用可以观天道演变之妙，大幅度提高道行，并以身合道，大幅度降低天谴。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		<Elixir>
+			<Modifier>Modifier_Item_YanDaoGuo</Modifier>
+			<Fesistance>0</Fesistance>
+		</Elixir>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_QieDaoGuo" Parent="DrugBase">
+	<ThingName>窃道果</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_qiedaoguo01</TexPath>	
+	<Desc>蕴含天劫之息的奇特果实。服用可窃天之道，大幅度降低道行，同时遭天道所忌，大幅度提高天谴。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		<Elixir>
+			<Modifier>Modifier_Item_QieDaoGuo</Modifier>
+			<Fesistance>0</Fesistance>
+		</Elixir>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+			<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="0.01"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XianDaoShenNian" Parent="DrugBase">
+	<ThingName>仙识神念</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xianshishennian01</TexPath>	
+	<Desc>仙人遗骨中析出的一缕神念，修行者可借助此物重塑身心。重生时得仙人遗识护佑，可保留一小部分参悟不散。第一次借助此物重生，在神念滋润下，还可提高一些潜力。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>魄,魂</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Light2</li>
+			<li>GreatThing_AttackLow</li>
+		</PhysicalLables>
+		<Elixir>
+			<Fesistance>1</Fesistance>
+			<Lingering>1</Lingering>
+			<Reborn>2</Reborn>
+		</Elixir>
+		<!-- <DevourDatas>
+			<li Name="Item_BodyPractice_XianSui" Count="1" Rate="1"/>
+		</DevourDatas> -->
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XianDaoXieNian" Parent="DrugBase">
+	<ThingName>仙识邪念</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xianshixienian01</TexPath>	
+	<Desc>飞升仙人的遗骨通过天地灵根而析出的一缕邪念，修行者可借助此物重塑身心。重生时得仙人遗识护佑，可保留大部分参悟，但此物煞性很重，第一次借助此物重生，会透支一些潜力。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>魄,魂</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Light2</li>
+			<li>GreatThing_AttackLow</li>
+		</PhysicalLables>
+		<Elixir>
+			<Fesistance>1</Fesistance>
+			<Lingering>1</Lingering>
+			<Reborn>3</Reborn>
+		</Elixir>
+		<!-- <DevourDatas>
+			<li Name="Item_BodyPractice_XianSui" Count="1" Rate="1"/>
+		</DevourDatas> -->
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>45</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<!--征伐用-->
+	<ThingDef Type="Item" Name="Item_WinterWarm" Parent="DrugBase">
+	<ThingName>冬虫</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_ginseng</TexPath>	
+	<Desc>冬虫夏草冬天成熟的形态，服用后可少量提高耐寒能力。</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Color>B823B5E6</Color>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>虫</FabaoSuffix>
+		<Rot>
+			<RotSpeed>0.012</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<Elixir>
+			<Modifier>Modifier_Sys_WinterWarm</Modifier>
+			<Fesistance>0</Fesistance>
+		</Elixir>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SummerHerb" Parent="DrugBase">
+	<ThingName>夏草</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_qingxincao01</TexPath>	
+	<Desc>冬虫夏草夏天成熟的形态，服用后可少量提高耐热能力。</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Color>B823B5E6</Color>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>草</FabaoSuffix>
+		<Rot>
+			<RotSpeed>0.012</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<Elixir>
+			<Modifier>Modifier_Sys_SummerHerb</Modifier>
+			<Fesistance>0</Fesistance>
+		</Elixir>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_God_ZhiNianJieJing" Parent="DrugBase">
+		<ThingName>执念结晶</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_benyuanwu01</TexPath>
+		<Desc>自人心执念中析出的结晶，其中含有强烈的七情六欲与杂念浊息，不知道可以有什么用。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>9</Rate>
+		<Beauty>9</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>-10</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>晶</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+		</DevourDatas>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_God_JieHui" Parent="DrugBase">
+		<ThingName>劫灰</ThingName>
+		<MaxStack>100</MaxStack>
+		<TexPath>res\Sprs\object_WuDangDLC\object_jiehui01</TexPath>
+		<Desc>身负天谴之人陨落后会析出的奇特粉末，传闻乃是其身所附孽业凝聚而成。</Desc>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>-10</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>粉</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+		</DevourDatas>
+	</ThingDef>
+</List></ThingDefs>

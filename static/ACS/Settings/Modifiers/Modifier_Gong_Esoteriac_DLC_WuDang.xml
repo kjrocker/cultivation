@@ -1,0 +1,520 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Gong13_Esoterica_1" Type="Normal">
+		<DisplayName>Gong13_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.4"/>
+			<li Name="NpcLingMaxValue" AddP="-0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Qi" Level="-3"/>
+		</Skills>
+	</Modifier> 
+
+
+	<Modifier Name="Gong13_Esoterica_2" Type="Normal">
+		<DisplayName>Gong13_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-10"/>
+			<li Name="NutritionWaterAutoRecover" AddV="-0.4"/>
+			<li Name="NpcLingMaxValue" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Qi" Level="3"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_3" Type="Normal">
+		<DisplayName>Gong13_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>3,3,3,3,3</BaseFive>
+		<Properties>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="1"/>
+			<li Name="MaxAccumulativeLingAddV" AddV="500"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_4" Type="Normal">
+		<DisplayName>Gong13_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" Level="-5"/>
+			<li Name="FightSkill" Level="-5"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_5" Type="Normal">
+		<DisplayName>Gong13_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" Level="5"/>
+			<li Name="FightSkill" Level="5"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_6" Type="Normal">
+		<DisplayName>Gong13_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+			<li Name="FightSkill" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_7" Type="Normal">
+		<DisplayName>Gong13_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+		<Skills>
+			<li Name="Fight" Level="20"/>
+			<li Name="Art" Level="-20"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_8" Type="Normal">
+		<DisplayName>Gong13_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+		<Skills>
+			<li Name="Fight" Level="-20"/>
+			<li Name="Art" Level="20"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_9" Type="Normal">
+		<DisplayName>Gong13_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Barrier" LevelOver="3"/>
+			<li Name="Qi" Level="12"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Gong13_Esoterica_10" Type="Normal"><!--傀儡附带modifier-->
+		<DisplayName>Gong13_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_YINYANGSPILT</li>
+		</SpecialFlags>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_11" Type="Normal">
+		<DisplayName>Gong13_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.75"/>
+			<li Name="MaxAge" AddV="-120"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_12" Type="Normal">
+		<DisplayName>Gong13_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-0.75"/>
+			<li Name="MaxAge" AddV="120"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_13" Type="Normal">
+		<DisplayName>Gong13_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_14" Type="Normal">
+		<DisplayName>Gong13_Esoterica_14</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="75"/>
+			<li Name="MindStateBaseValue" AddV="-45"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_15" Type="Normal">
+		<DisplayName>Gong13_Esoterica_15</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="-75"/>
+			<li Name="MindStateBaseValue" AddV="45"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_16" Type="Normal">
+		<DisplayName>Gong13_Esoterica_16</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-49"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_17" Type="Normal">
+		<DisplayName>Gong13_Esoterica_17</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GongMatch_JinAddV" AddV="0.25"/>
+			<li Name="GongMatch_MuAddV" AddV="0.25"/>
+			<li Name="GongMatch_ShuiAddV" AddV="0.25"/>
+			<li Name="GongMatch_HuoAddV" AddV="0.25"/>
+			<li Name="GongMatch_TuAddV" AddV="0.25"/>
+			<li Name="GongMatch_NoneAddV" AddV="0.25"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_18" Type="Normal">
+		<DisplayName>Gong13_Esoterica_18</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="9"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-9"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_19" Type="Normal">
+		<DisplayName>Gong13_Esoterica_19</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-9"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="9"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_20" Type="Normal">
+		<DisplayName>Gong13_Esoterica_20</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_21" Type="Normal">
+		<DisplayName>Gong13_Esoterica_21</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="2"/>
+			<li Name="NpcFight_FightSkillSoul" AddV="-2"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_22" Type="Normal">
+		<DisplayName>Gong13_Esoterica_22</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="-2"/>
+			<li Name="NpcFight_FightSkillSoul" AddV="2"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_23" Type="Normal">
+		<DisplayName>Gong13_Esoterica_23</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.75"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.75"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_24" Type="Normal">
+		<DisplayName>Gong13_Esoterica_24</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="20"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_25" Type="Normal">
+		<DisplayName>Gong13_Esoterica_25</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-15"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-20"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_26" Type="Normal">
+		<DisplayName>Gong13_Esoterica_26</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_27" Type="Normal">
+		<DisplayName>Gong13_Esoterica_27</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SneakValue" AddV="-9"/> <!--降低隐匿值-->
+			<li Name="MoveSpeed" AddP="3"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_28" Type="Normal">
+		<DisplayName>Gong13_Esoterica_28</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SneakValue" AddV="9"/> <!--降低隐匿值-->
+			<li Name="MoveSpeed" AddP="-3"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong13_Esoterica_29" Type="Normal">
+		<DisplayName>Gong13_Esoterica_29</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WorldMapFlySpeedAddP" AddV="6"/>
+		</Properties>
+	</Modifier> 
+
+
+	<Modifier Name="Gong13_Esoterica_30" Type="Normal">
+		<DisplayName>Gong13_Esoterica_30</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="64"/>
+		</Properties>
+	</Modifier> 
+	
+
+	<Modifier Name="Gong13_Esoterica_31" Type="Normal">
+		<DisplayName>Gong13_Esoterica_31</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-15"/>
+		</Properties>
+		<Damages>
+			<li Part="LowerElixirField" Damage="NeiQiWenLuan" Value="1"/>
+		</Damages>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang1" Type="Normal">
+		<DisplayName>纯阳</DisplayName>
+		<Desc>一身纯阳道行，精纯之极，以之御剑，无物不摧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="49"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang2" Type="Normal">
+		<DisplayName>太阳</DisplayName>
+		<Desc>一身道行几近纯阳，可以从根本上提高御使法宝对敌的能力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="7"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang3" Type="Normal">
+		<DisplayName>老阳</DisplayName>
+		<Desc>全身道行阴阳失衡，不光影响心境，而且驾驭自身灵气护体时也会大受影响。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-100"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" Level="-15"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang4" Type="Normal">
+		<DisplayName>少阳</DisplayName>
+		<Desc>全身道行虽有瑕疵，但亦基本平衡，可以提高心境，且提高护体能力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="50"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="5"/>
+			<li Name="Barrier" Level="10"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang5" Type="Normal">
+		<DisplayName>太极</DisplayName>
+		<Desc>全身道行达成阴阳圆融的平衡之境，心境无暇无垢，周身罡气亦如阴阳轮转，辟易万法。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="200"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="15"/>
+			<li Name="Barrier" Level="20"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang6" Type="Normal">
+		<DisplayName>少阴</DisplayName>
+		<Desc>全身道行虽有瑕疵，但亦基本平衡，可以提高心境，且提高护体能力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="50"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="5"/>
+			<li Name="Barrier" Level="10"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang7" Type="Normal">
+		<DisplayName>老阴</DisplayName>
+		<Desc>全身道行阴阳失衡，不光影响心境，而且驾驭自身灵气护体时也会大受影响。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-100"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" Level="-15"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang8" Type="Normal">
+		<DisplayName>太阴</DisplayName>
+		<Desc>一身道行几近纯阴，可以从根本上提高施展法术对敌的能力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="7"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang9" Type="Normal">
+		<DisplayName>纯阴</DisplayName>
+		<Desc>一身纯阴道行，精纯之极，以之施法，法御万物。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="49"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_DLC_WuDang_YinYang10" Type="Normal">
+		<DisplayName>无</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		</Properties>
+	</Modifier>
+	
+</List></ModifierDefs>

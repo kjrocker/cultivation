@@ -1,0 +1,63 @@
+<Stories><List>	
+	<Story Name="DiMuWish"  Parent="BaseFillingStory">
+		<DisplayName>祭拜地母</DisplayName>
+		<Desc>向地母石碑献上灵石</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>祈求灵石</Display>
+				<OKResult>
+					local t = story.target
+					local v = t.luaclass:GetTable(me)
+					v:GetLingStone(me)
+				</OKResult>
+			</li>
+			<li>
+				<Display>祈求自然</Display>
+				<OKResult>
+					local t = story.target
+					local v = t.luaclass:GetTable(me)
+					v:ToNature(me)
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="YinYangCanWu"  Parent="BaseFillingStory">
+		<DisplayName>阴阳参悟</DisplayName>
+		<Desc>阴阳奇石中蕴含天地阴阳法则，可从中参悟出修行之法。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阴阳参悟</Display>
+				<OKResult>
+					local t = story.target
+					local v = t.luaclass:GetTable(me)
+					v:CanWu(me)
+				</OKResult>
+			</li>
+			<li>
+				<Display>无事发生</Display>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="FeelQi"  Parent="BaseFillingStory">
+		<DisplayName>感受灵气</DisplayName>
+		<Desc>蕴灵树周围有不可思议的灵气，可与之共鸣。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>感受灵气</Display>
+				<OKResult>
+					<![CDATA[
+						me:AddMsg(XT("[NAME]靠近蕴灵树后感受其中玄妙，自身灵气运转更加流畅了。"));
+						me:AddModifier("Dan_LingTree");
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>无事发生</Display>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

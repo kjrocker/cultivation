@@ -1,0 +1,227 @@
+<ModifierDefs><List>
+	<!--神修功法基础属性-->
+	<Modifier Name="GodPractice_Gong_Qi" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.5,0,0</BaseFive>
+		<Properties>  
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			
+			<li Name="ToleranceTMin" AddV="-20"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+			
+			<li Name="GodPractice_GodPowerAddV" AddV="3"/>
+			
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier> 	
+	
+	<Modifier Name="GodPractice_Gong_GodCity" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>  
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="3"/>
+			
+			<li Name="ToleranceTMin" AddV="-35"/>
+			<li Name="ToleranceTMax" AddV="260"/>
+			
+			<li Name="GodPractice_GodPowerAddV" AddV="5"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="3"/>
+		</Skills>
+	</Modifier> 	
+	
+	<Modifier Name="GodPractice_Gong_God" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,2,0,0</BaseFive>
+		<Properties>  
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="5"/>
+			
+			<li Name="ToleranceTMin" AddV="-45"/>
+			<li Name="ToleranceTMax" AddV="500"/>
+			
+			<li Name="GodPractice_GodPowerAddV" AddV="7"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="5"/>
+		</Skills>
+		<UnLockGodCityBuildings>  
+			<li>GodCity_CoreHousing_A</li>
+			<li>GodCity_CoreHousing_B</li>
+			<li>GodCity_CoreHousing_C</li>
+			<li>GodCity_CoreHousing_D</li>
+			<li>GodCity_CoreHousing_E</li>
+		</UnLockGodCityBuildings>
+	</Modifier> 	
+	
+	<Modifier Name="GodPractice_Gong1_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_LeiBu_5</li>
+			<li>Guard_LeiBu_6</li>
+			<li>Guard_LeiBu_7</li>
+			<li>Guard_LeiBu_8</li>
+			<li>Guard_LeiBu_9</li>
+		</UnLockGodGuards>
+	</Modifier> 	
+	<Modifier Name="GodPractice_Gong1_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_LeiBu_3</li>
+			<li>Guard_LeiBu_4</li>
+		</UnLockGodGuards>
+		<UnLockGodCityBuildings>  
+			<li>GodCity_WishTree</li>
+			<li>GodCity_LiuLiShenDian</li>
+			<li>GodCity_XinyangShendian</li>
+		</UnLockGodCityBuildings>
+	</Modifier> 
+	<Modifier Name="GodPractice_Gong1_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_LeiBu_1</li>
+			<li>Guard_LeiBu_2</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	
+	<Modifier Name="GodPractice_Gong2_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_4</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_7</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_6</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_8</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_3</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_5</li>
+		</UnLockGodGuards>
+		<UnLockGodCityBuildings>  
+			<li>GodCity_WishTree</li>
+			<li>GodCity_LiuLiShenDian</li>
+			<li>GodCity_XinyangShendian</li>
+		</UnLockGodCityBuildings>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_2</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong2_8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_BaBuZhong_1</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="GodPractice_Gong3_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_YouMing_6</li>
+			<li>Guard_YouMing_7</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong3_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_YouMing_4</li>
+			<li>Guard_YouMing_5</li>
+		</UnLockGodGuards>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong3_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_YouMing_2</li>
+			<li>Guard_YouMing_3</li>
+		</UnLockGodGuards>
+		<UnLockGodCityBuildings>  
+			<li>GodCity_WishTree</li>
+			<li>GodCity_LiuLiShenDian</li>
+			<li>GodCity_XinyangShendian</li>
+		</UnLockGodCityBuildings>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Gong3_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_YouMing_1</li>
+		</UnLockGodGuards>
+	</Modifier> 
+</List></ModifierDefs>

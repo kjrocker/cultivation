@@ -1,0 +1,72 @@
+<Magics><List>
+	<Magic Name="Other_BuryObject" Type="Class">
+		<!--<DisplayName>掩埋物体</DisplayName>-->
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>NoBuilding|InLight</SelectTarget>
+		<ClassName>Other_Magic_BuryObject</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	<Magic Name="Other_CreateLingPlant" Type="Class">
+		<Icon>res\Sprs\ui\icon_tianyao01</Icon>
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>NoBuilding|InLight|NoPlant|NoItem</SelectTarget>
+		<ClassName>Other_Magic_CreateLingPlant</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	<Magic Name="Other_BuildMine" Type="Class">
+		<DisplayName>系统造山术</DisplayName>
+		<Desc></Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Rect</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>Soil</sParam1>
+		<SelectTarget>None</SelectTarget>
+		<ClassName>Sys_Magic_BuildMine</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>0</CostLing>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="Item_TrackNpc" Type="Class">
+		<DisplayName>追踪</DisplayName>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<TargetDesc>请选择需要追踪的角色</TargetDesc>
+		<Param1>10</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>LJjineng09</Ani>
+		<ClassName>Magic_Item_TrackNpc</ClassName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>	
+	
+	<Magic Name="Other_Item_Firecracker" Type="Class">
+		<DisplayName>炮仗</DisplayName>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<TargetDesc>请选择需要释放的地点</TargetDesc>
+		<Param1>10</Param1><!--消耗时间-->
+		<Param2>0</Param2><!--类型-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>NoBuilding|InLight|Walkable</SelectTarget>
+		<Ani>LJjineng09</Ani>
+		<ClassName>Magic_Item_Firecracker</ClassName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="Other_Item_FirecrackerShit" Type="Class">
+		<DisplayName>炮仗屎</DisplayName>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<TargetDesc>请选择需要释放的地点</TargetDesc>
+		<Param1>10</Param1><!--消耗时间-->
+		<Param2>1</Param2><!--类型-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>NoBuilding|InLight|Walkable</SelectTarget>
+		<Ani>LJjineng09</Ani>
+		<ClassName>Magic_Item_Firecracker</ClassName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+
+</List></Magics>

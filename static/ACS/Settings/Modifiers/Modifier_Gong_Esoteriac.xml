@@ -1,0 +1,1601 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="God2_Fabao" Type="Normal">
+		<DisplayName>God2_Fabao</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_TwelveRateChance" AddP="10"/>
+			<li Name="FabaoMake_SpeedAddV" AddV="-10"/>
+		</Properties>
+	</Modifier>
+	<!--==================================================-->
+	<Modifier Name="Gong1_Esoterica_1" Type="Normal">
+		<DisplayName>Gong1_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong1_Esoterica_2" Type="Normal">
+		<DisplayName>Gong1_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_3" Type="Normal">
+		<DisplayName>Gong1_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.3"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_4" Type="Normal">
+		<DisplayName>Gong1_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="5"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_5" Type="Normal">
+		<DisplayName>Gong1_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_6" Type="Normal">
+		<DisplayName>Gong1_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_7" Type="Normal">
+		<DisplayName>Gong1_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_8" Type="Normal">
+		<DisplayName>Gong1_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li Name="NutritionWaterAutoRecover" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong1_Esoterica_9" Type="Normal">
+		<DisplayName>Gong1_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	<!--==================================================-->
+	<Modifier Name="Gong2_Esoterica_1" Type="Normal">
+		<DisplayName>Gong2_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.1"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_2" Type="Normal">
+		<DisplayName>Gong2_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_QualityAddV" AddV="0.05"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_3" Type="Normal">
+		<DisplayName>Gong2_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ToleranceTMax" AddV="200"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="20"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.75"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_4" Type="Normal">
+		<DisplayName>Gong2_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_QualityAddV" AddV="0.1"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_5" Type="Normal">
+		<DisplayName>Gong2_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_6" Type="Normal">
+		<DisplayName>Gong2_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" Level="2"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_7" Type="Normal">
+		<DisplayName>Gong2_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_8" Type="Normal">
+		<DisplayName>Gong2_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.3"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.5"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.5"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_9" Type="Normal">
+		<DisplayName>Gong2_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="1.5"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong2_Esoterica_10" Type="Normal">
+		<DisplayName>Gong2_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.5"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="1"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="1"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	<!--==================================================-->
+	<Modifier Name="Gong3_Esoterica_1" Type="Normal">
+		<DisplayName>Gong3_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_2" Type="Normal">
+		<DisplayName>Gong3_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,2,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_3" Type="Normal">
+		<DisplayName>Gong3_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="10"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="20"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="20"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_4" Type="Normal">
+		<DisplayName>Gong3_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_5" Type="Normal">
+		<DisplayName>Gong3_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Gong3_Esoterica_6" Type="Normal">
+		<DisplayName>Gong3_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.1"/>
+		
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_7" Type="Normal">
+		<DisplayName>Gong3_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_8" Type="Normal">
+		<DisplayName>Gong3_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="0.1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.1"/>
+		
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_9" Type="Normal">
+		<DisplayName>Gong3_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/>
+		
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_10" Type="Normal">
+		<DisplayName>Gong3_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+			
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="45"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="45"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_11" Type="Normal">
+		<DisplayName>Gong3_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_12" Type="Normal">
+		<DisplayName>Gong3_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_13" Type="Normal">
+		<DisplayName>Gong3_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_14" Type="Normal">
+		<DisplayName>Gong3_Esoterica_14</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_15" Type="Normal">
+		<DisplayName>Gong3_Esoterica_15</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_16" Type="Normal">
+		<DisplayName>Gong3_Esoterica_16</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_17" Type="Normal">
+		<DisplayName>Gong3_Esoterica_17</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="7.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_18" Type="Normal">
+		<DisplayName>Gong3_Esoterica_18</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.9"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong3_Esoterica_19" Type="Normal">
+		<DisplayName>Gong3_Esoterica_19</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="12"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--==================================================-->
+	<Modifier Name="Gong4_Esoterica_1" Type="Normal">
+		<DisplayName>Gong4_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="100"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="2"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_2" Type="Normal">
+		<DisplayName>Gong4_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,1</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_3" Type="Normal">
+		<DisplayName>Gong4_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_4" Type="Normal">
+		<DisplayName>Gong4_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="60"/>
+			<li Name="NpcLingMaxValue" AddP="1"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_5" Type="Normal">
+		<DisplayName>Gong4_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_6" Type="Normal">
+		<DisplayName>Gong4_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="25"/>
+			<li Name="MaxAge" AddV="250"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="16"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="16"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong4_Esoterica_7" Type="Normal">
+		<DisplayName>Gong4_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="25"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_8" Type="Normal">
+		<DisplayName>Gong4_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_9" Type="Normal">
+		<DisplayName>Gong4_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="120"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_10" Type="Normal">
+		<DisplayName>Gong4_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_11" Type="Normal">
+		<DisplayName>Gong4_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="9"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="9"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong4_Esoterica_12" Type="Normal">
+		<DisplayName>Gong4_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,1</BaseFive>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.08"/>
+		</Properties>
+	</Modifier> 
+		<!--==================================================-->
+		
+	<Modifier Name="Gong5_Esoterica_1" Type="Normal">
+		<DisplayName>Gong5_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,-2,0,0</BaseFive>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_2" Type="Normal">
+		<DisplayName>Gong5_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>-2,1,0,0,0</BaseFive>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_3" Type="Normal">
+		<DisplayName>Gong5_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,-2,0</BaseFive>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_4" Type="Normal">
+		<DisplayName>Gong5_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,-2</BaseFive>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_5" Type="Normal">
+		<DisplayName>Gong5_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="500"/>
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_6" Type="Normal">
+		<DisplayName>Gong5_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="12"/>
+			<li Name="NpcLingMaxValue" AddP="1"/>
+		</Properties>
+		<Damages>
+			<li Part="Heart" Damage="XueGuLianXing" Value="1"/>
+		</Damages>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_7" Type="Normal">
+		<DisplayName>Gong5_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong5_Esoterica_8" Type="Normal">
+		<DisplayName>Gong5_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="60"/>
+			
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_9" Type="Normal">
+		<DisplayName>Gong5_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="160"/>
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_10" Type="Normal">
+		<DisplayName>Gong5_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="120000"/>
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_11" Type="Normal">
+		<DisplayName>Gong5_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddP="5"/>
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Gong5_Esoterica_12" Type="Normal">
+		<DisplayName>Gong5_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="450"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--==================================================-->
+	
+	<Modifier Name="Gong6_Esoterica_1" Type="Normal">
+		<DisplayName>Gong6_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="35"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_2" Type="Normal">
+		<DisplayName>Gong6_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_3" Type="Normal">
+		<DisplayName>Gong6_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong6_Esoterica_4" Type="Normal">
+		<DisplayName>Gong6_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_5" Type="Normal">
+		<DisplayName>Gong6_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.3"/>
+			<li Name="DanMake_SpeedAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Gong6_Esoterica_6" Type="Normal">
+		<DisplayName>Gong6_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_YieldAddP" AddV="0.3"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.5"/>
+			<li Name="DanMake_SpeedAddV" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong6_Esoterica_7" Type="Normal">
+		<DisplayName>Gong6_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_8" Type="Normal">
+		<DisplayName>Gong6_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_9" Type="Normal">
+		<DisplayName>Gong6_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SpeedAddV" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_10" Type="Normal">
+		<DisplayName>Gong6_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_YieldAddP" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_11" Type="Normal">
+		<DisplayName>Gong6_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_12" Type="Normal">
+		<DisplayName>Gong6_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_13" Type="Normal">
+		<DisplayName>Gong6_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.3"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong6_Esoterica_14" Type="Normal">
+		<DisplayName>Gong6_Esoterica_14</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="240"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--==================================================-->
+	<Modifier Name="Gong7_Esoterica_1" Type="Normal">
+		<DisplayName>Gong7_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="5"/>
+			
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_2" Type="Normal">
+		<DisplayName>Gong7_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_3" Type="Normal">
+		<DisplayName>Gong7_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Skills>
+			<li Name="SocialContact" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_4" Type="Normal">
+		<DisplayName>Gong7_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="40"/>
+			<li Name="PainTolerance" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_5" Type="Normal">
+		<DisplayName>Gong7_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="RecoveryPower" AddP="0.8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_6" Type="Normal">
+		<DisplayName>Gong7_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="40"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong7_Esoterica_7" Type="Normal">
+		<DisplayName>Gong7_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.3"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong7_Esoterica_8" Type="Normal">
+		<DisplayName>Gong7_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="490"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_9" Type="Normal">
+		<DisplayName>Gong7_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="40"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_10" Type="Normal">
+		<DisplayName>Gong7_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_11" Type="Normal">
+		<DisplayName>Gong7_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.45"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_12" Type="Normal">
+		<DisplayName>Gong7_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong7_Esoterica_13" Type="Normal">
+		<DisplayName>Gong7_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.75"/>
+		</Properties>
+	</Modifier> 
+	<!--==================================================-->
+	<Modifier Name="Gong8_Esoterica_1" Type="Normal">
+		<DisplayName>Gong8_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.75"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong8_Esoterica_2" Type="Normal">
+		<DisplayName>Gong8_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.75"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_3" Type="Normal">
+		<DisplayName>Gong8_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong8_Esoterica_4" Type="Normal">
+		<DisplayName>Gong8_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Gong8_Esoterica_5" Type="Normal">
+		<DisplayName>Gong8_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_6" Type="Normal">
+		<DisplayName>Gong8_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="12"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_7" Type="Normal">
+		<DisplayName>Gong8_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="12"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong8_Esoterica_8" Type="Normal">
+		<DisplayName>Gong8_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_9" Type="Normal">
+		<DisplayName>Gong8_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_10" Type="Normal">
+		<DisplayName>Gong8_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="6"/>
+			
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_11" Type="Normal">
+		<DisplayName>Gong8_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="25"/>
+			
+			<li Name="MindStateBaseValue" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong8_Esoterica_12" Type="Normal">
+		<DisplayName>Gong8_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="-120"/>
+			<li Name="NpcLingMaxValue" BAddP="-0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Gong8_Esoterica_13" Type="Normal">
+		<DisplayName>Gong8_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<NoFog>1</NoFog>
+		<BaseFive>2,0,0,0,0</BaseFive>
+	</Modifier>
+	
+	<!--==================================================-->
+	<Modifier Name="Gong9_Esoterica_1" Type="Normal">
+		<DisplayName>Gong9_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_2" Type="Normal">
+		<DisplayName>Gong9_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_Esoterica_3" Type="Normal">
+		<DisplayName>Gong9_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="60"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="8"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_Esoterica_4" Type="Normal">
+		<DisplayName>Gong9_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="18"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_Esoterica_5" Type="Normal">
+		<DisplayName>Gong9_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="30"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_6" Type="Normal">
+		<DisplayName>Gong9_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_7" Type="Normal">
+		<DisplayName>Gong9_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NutritionWaterAutoRecover" AddV="0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_8" Type="Normal">
+		<DisplayName>Gong9_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.25"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_9" Type="Normal">
+		<DisplayName>Gong9_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_10" Type="Normal">
+		<DisplayName>Gong9_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.5,0.5,0,0</BaseFive>
+		<Properties>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_11" Type="Normal">
+		<DisplayName>Gong9_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_12" Type="Normal">
+		<DisplayName>Gong9_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="RecoveryPower" AddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_13" Type="Normal">
+		<DisplayName>Gong9_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="150"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_Esoterica_14" Type="Normal">
+		<DisplayName>Gong9_Esoterica_14</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="8"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/>
+		</Properties>
+	</Modifier> 
+	<!--==================================================-->
+	<Modifier Name="Gong10_Esoterica_1" Type="Normal">
+		<DisplayName>Gong10_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong10_Esoterica_2" Type="Normal">
+		<DisplayName>Gong10_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ToleranceTMax" AddV="200"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="8"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong10_Esoterica_3" Type="Normal">
+		<DisplayName>Gong10_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong10_Esoterica_4" Type="Normal">
+		<DisplayName>Gong10_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="10"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_5" Type="Normal">
+		<DisplayName>Gong10_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_6" Type="Normal">
+		<DisplayName>Gong10_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+		<Properties>
+			<li Name="NutritionToJingYuanK" AddV="0.0025"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_7" Type="Normal">
+		<DisplayName>Gong10_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.75"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_8" Type="Normal">
+		<DisplayName>Gong10_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_9" Type="Normal">
+		<DisplayName>Gong10_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="45"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="45"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_10" Type="Normal">
+		<DisplayName>Gong10_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong10_Esoterica_11" Type="Normal">
+		<DisplayName>Gong10_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,0.5</BaseFive>
+	</Modifier> 
+	
+	<!--==================================================-->
+	
+	<Modifier Name="Gong11_Esoterica_1" Type="Normal">
+		<DisplayName>Gong11_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BanBodyParts>
+			<li>Genitals</li>
+		</BanBodyParts>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="15"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong11_Esoterica_2" Type="Normal">
+		<DisplayName>Gong11_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_3" Type="Normal">
+		<DisplayName>Gong11_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_4" Type="Normal">
+		<DisplayName>Gong11_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,2</BaseFive>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="12"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_5" Type="Normal">
+		<DisplayName>Gong11_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_6" Type="Normal">
+		<DisplayName>Gong11_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_7" Type="Normal">
+		<DisplayName>Gong11_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.5,0.5,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_8" Type="Normal">
+		<DisplayName>Gong11_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddP="5"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_9" Type="Normal">
+		<DisplayName>Gong11_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="800"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_10" Type="Normal">
+		<DisplayName>Gong11_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="-0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_11" Type="Normal">
+		<DisplayName>Gong11_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_12" Type="Normal">
+		<DisplayName>Gong11_Esoterica_12</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_13" Type="Normal">
+		<DisplayName>Gong11_Esoterica_13</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="-0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_14" Type="Normal">
+		<DisplayName>Gong11_Esoterica_14</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_15" Type="Normal">
+		<DisplayName>Gong11_Esoterica_15</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" Level="5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Gong11_Esoterica_16" Type="Normal">
+		<DisplayName>Gong11_Esoterica_16</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="15000"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--==================================================-->
+	
+	<Modifier Name="Gong12_Esoterica_8" Type="Normal">
+		<DisplayName>Gong12_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WorldMapFlySpeedAddP" AddV="9"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong12_Esoterica_9" Type="Normal">
+		<DisplayName>Gong12_Esoterica_9</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong12_Esoterica_10" Type="Normal">
+		<DisplayName>Gong12_Esoterica_10</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong12_Esoterica_11" Type="Normal">
+		<DisplayName>Gong12_Esoterica_11</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,2,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="300"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

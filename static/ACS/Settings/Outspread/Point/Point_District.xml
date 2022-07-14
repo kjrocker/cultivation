@@ -1,0 +1,208 @@
+<Defs><List>
+	<Def Name="Point_FarmBase">
+		<BuildSymbols>
+			<li>Food</li>
+		</BuildSymbols>
+		<Product>
+			<li Type="Food1" Product="Farm" Count="20" />
+			<li Type="Food2" Product="Farm" Count="20" />
+			<li Type="Food3" Product="Farm" Count="20" />
+		</Product>
+		<DisplayName>农田</DisplayName>
+	</Def>
+	<Def Name="Point_MineBase">
+		<BuildSymbols>
+			<li>Stone</li>
+		</BuildSymbols>
+		<Product>
+			<li Type="Stone1" Product="Stone" Count="15" />
+			<li Type="Stone2" Product="Stone" Count="15" />
+			<li Type="Stone3" Product="Stone" Count="15" />
+		</Product>
+		<DisplayName>矿场</DisplayName>
+	</Def>
+	<Def Name="Point_LumberBase">
+		<BuildSymbols>
+			<li>Wood</li>
+		</BuildSymbols>
+		<Product>
+			<li Type="Wood1" Product="Lumber" Count="15" />
+			<li Type="Wood2" Product="Lumber" Count="15" />
+			<li Type="Wood3" Product="Lumber" Count="15" />
+		</Product>
+		<DisplayName>伐木场</DisplayName>
+	</Def>
+	<Def Name="Point_LingBase">
+		<BuildSymbols>
+			<li>Ling</li>
+		</BuildSymbols>
+		<Product>
+			<li Type="LingStone1" Product="LingStone" Count="20" />
+			<li Type="LingStone2" Product="LingStone" Count="20" />
+			<li Type="LingStone3" Product="LingStone" Count="20" />
+		</Product>
+		<DisplayName>灵石矿场</DisplayName>
+	</Def>
+	
+	<!--中原-->
+	<Def Name="Point_CentralPlains4" Parent="Point_FarmBase">
+		<DisplayName>五华村</DisplayName>
+	</Def>
+	<Def Name="Point_CentralPlains2" Parent="Point_LumberBase">
+		<DisplayName>炼丹峰</DisplayName>
+	</Def>
+	<Def Name="Point_CentralPlains5" Parent="Point_MineBase">
+		<DisplayName>芦墟村</DisplayName>
+	</Def>
+	<Def Name="Point_CentralPlains1" Parent="Point_MineBase">
+		<DisplayName>云台山</DisplayName>
+		<AdvanceProduct>
+			<li Type="Stone1" Product="ZhongYuan_2" Count="1" />
+			<li Type="Stone2" Product="ZhongYuan_2" Count="1" />
+			<li Type="Stone3" Product="ZhongYuan_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_CentralPlains3" Parent="Point_MineBase">
+		<DisplayName>平顶山</DisplayName>
+		<AdvanceProduct>
+			<li Type="Stone1" Product="ZhongYuan_3" Count="1" />
+			<li Type="Stone2" Product="ZhongYuan_3" Count="1" />
+			<li Type="Stone3" Product="ZhongYuan_3" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	
+	<!--本地-->
+	<Def Name="Point_BirthPlace12" Parent="Point_LumberBase">
+		<DisplayName>月轮山</DisplayName>
+		<AdvanceProduct>
+			<li Type="Wood1" Product="OurPlace_1" Count="1" />
+			<li Type="Wood2" Product="OurPlace_1" Count="1" />
+			<li Type="Wood3" Product="OurPlace_1" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_BirthPlace14" Parent="Point_MineBase">
+		<DisplayName>铜陵山</DisplayName>
+		<AdvanceProduct>
+			<li Type="Stone1" Product="OurPlace_2" Count="1" />
+			<li Type="Stone2" Product="OurPlace_2" Count="1" />
+			<li Type="Stone3" Product="OurPlace_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_BirthPlace15" Parent="Point_MineBase">
+		<DisplayName>太一遗迹</DisplayName>
+		<BuildSymbols>
+			<li>Arena</li>
+		</BuildSymbols>
+		<Product>
+		</Product>
+		<DisplayName>演武场</DisplayName>
+	</Def>
+	<Def Name="Point_BirthPlace13" Parent="Point_FarmBase">
+		<AdvanceProduct>
+			<li Type="Food1" Product="OurPlace_3" Count="1" />
+			<li Type="Food2" Product="OurPlace_3" Count="1" />
+			<li Type="Food3" Product="OurPlace_3" Count="1" />
+		</AdvanceProduct>
+		<DisplayName>小凉山</DisplayName>
+	</Def>
+	<Def Name="Point_BirthPlace11" Parent="Point_FarmBase">
+		<DisplayName>南屏村</DisplayName>
+	</Def>
+	
+	<!--江岸沃野-->
+	<Def Name="Point_FertileField3" Parent="Point_FarmBase">
+		<DisplayName>稻香村</DisplayName>
+	</Def>
+	<Def Name="Point_FertileField4" Parent="Point_FarmBase">
+		<DisplayName>桂山</DisplayName>
+		<AdvanceProduct>
+			<li Type="Food1" Product="JiangAn_1" Count="1" />
+			<li Type="Food2" Product="JiangAn_1" Count="1" />
+			<li Type="Food3" Product="JiangAn_1" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_FertileField5" Parent="Point_FarmBase">
+		<DisplayName>卢山</DisplayName>
+	</Def>
+	<Def Name="Point_FertileField1" Parent="Point_MineBase">
+		<DisplayName>寒山镇</DisplayName>
+		<AdvanceProduct>
+			<li Type="Stone1" Product="JiangAn_2" Count="1" />
+			<li Type="Stone2" Product="JiangAn_2" Count="1" />
+			<li Type="Stone3" Product="JiangAn_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_FertileField2" Parent="Point_FarmBase">
+		<DisplayName>落霞镇</DisplayName>
+		<AdvanceProduct>
+			<li Type="Food1" Product="JiangAn_3" Count="1" />
+			<li Type="Food2" Product="JiangAn_3" Count="1" />
+			<li Type="Food3" Product="JiangAn_3" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	
+	<!--大漠-->
+	<Def Name="Point_Desert2" Parent="Point_LingBase">
+		<DisplayName>幻沙原</DisplayName>
+		<AdvanceProduct>
+			<li Type="LingStone1" Product="DaMo_1" Count="1" />
+			<li Type="LingStone2" Product="DaMo_1" Count="1" />
+			<li Type="LingStone3" Product="DaMo_1" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_Desert4" Parent="Point_LingBase">
+		<DisplayName>鸣沙村</DisplayName>
+		<AdvanceProduct>
+			<li Type="LingStone1" Product="DaMo_2" Count="1" />
+			<li Type="LingStone2" Product="DaMo_2" Count="1" />
+			<li Type="LingStone3" Product="DaMo_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_Desert3" Parent="Point_MineBase">
+		<DisplayName>火穴</DisplayName>
+		<AdvanceProduct>
+			<li Type="Stone1" Product="DaMo_3" Count="1" />
+			<li Type="Stone2" Product="DaMo_3" Count="1" />
+			<li Type="Stone3" Product="DaMo_3" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	
+	<!--大雪原-->
+	<Def Name="Point_Snowfield1" Parent="Point_LingBase">
+		<DisplayName>天螺峪</DisplayName>
+		<AdvanceProduct>
+			<li Type="LingStone1" Product="DaXueYuan_1" Count="1" />
+			<li Type="LingStone2" Product="DaXueYuan_1" Count="1" />
+			<li Type="LingStone3" Product="DaXueYuan_1" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_Snowfield3" Parent="Point_LingBase">
+		<DisplayName>雪峰原</DisplayName>
+		<AdvanceProduct>
+			<li Type="LingStone1" Product="DaXueYuan_2" Count="1" />
+			<li Type="LingStone2" Product="DaXueYuan_2" Count="1" />
+			<li Type="LingStone3" Product="DaXueYuan_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_Snowfield2" Parent="Point_MineBase">
+		<DisplayName>玉晶潭</DisplayName>
+	</Def>
+	
+	<!--南荒-->
+	<Def Name="Point_SouthForest1" Parent="Point_LumberBase">
+		<DisplayName>万古桃花瘴</DisplayName>
+		<AdvanceProduct>
+			<li Type="Wood1" Product="NanHuang_1" Count="1" />
+			<li Type="Wood2" Product="NanHuang_1" Count="1" />
+			<li Type="Wood3" Product="NanHuang_1" Count="1" />
+		</AdvanceProduct>
+	</Def>
+	<Def Name="Point_SouthForest3" Parent="Point_LumberBase">
+		<DisplayName>虫谷</DisplayName>
+		<AdvanceProduct>
+			<li Type="Wood1" Product="NanHuang_2" Count="1" />
+			<li Type="Wood2" Product="NanHuang_2" Count="1" />
+			<li Type="Wood3" Product="NanHuang_2" Count="1" />
+		</AdvanceProduct>
+	</Def>
+</List></Defs>

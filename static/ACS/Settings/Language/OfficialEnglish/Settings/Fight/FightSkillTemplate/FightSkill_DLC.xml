@@ -1,0 +1,11 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Ls_OC">
+			<DisplayName>Otherworld Magneto-light</DisplayName>
+		</Text>
+		<Text Name="Ls_Erosion">
+			<DisplayName>Yin Yang Corrosion</DisplayName>
+			<Desc>Greatly Reduce enemy's defense with Yin Yang Power.</Desc>
+		</Text>
+	</List>
+</Texts>

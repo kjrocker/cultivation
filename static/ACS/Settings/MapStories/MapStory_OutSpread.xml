@@ -1,0 +1,218 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	
+	<Story Name="OutSpread_Start" Parent="BaseFillingStory">
+		<DisplayName>重建代理势力</DisplayName>
+		<Desc>这里百姓以前都在供奉太一门，现在无人可供奉，不少人失去了职业。</Desc>
+		<Selections>
+			<li>
+				<Display>一问究竟</Display>
+				<OKResult><![CDATA[	
+				
+				me:AddMsg(XT("村民说：“这附近以前有一块太一门的封地，建有太一门的主殿，现在被拆了。既然你们是太一门逃出来的，也许能建设一番。”"));
+				me:UnLockPlace("Place_SouthMount");
+				story:FinishSecret(); 
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Accelerate" Parent="BaseFillingStory"> 
+		<DisplayName>劳作事件</DisplayName>
+		<Desc>代理人[NAME]监督劳作归来。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult>
+				<![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					local tProduct = cRegion:GetProductInfo(false)
+					tbTable:AddProduction(tProduct, cRegion, WorldLua);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_TreasureHunt" Parent="BaseFillingStory"> 
+		<DisplayName>寻珍事件</DisplayName>
+		<Desc>代理人[NAME]寻珍归来。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					local tProduct = cRegion:GetProductInfo(true);
+					tbTable:AddTreasure(tProduct, cRegion, WorldLua, solve);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Outs1"  Parent="BaseFillingStory">
+		<DisplayName>在路上</DisplayName>
+		<Desc>代理人[NAME]遇到了抢劫。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>送点灵石</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story.target.ResourcesLevel > 0
+				]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+					story.target.ResourcesLevel = story.target.ResourcesLevel - 1;
+					WorldLua:AddMsg(XT("代理人真诚地给了他们一点灵石，说道：“我只剩这么一点了，不行就只能帮你们干活了”。他们看代理人也不是啥有钱人，也没啥力气干活，就让他走了。"));
+					WorldLua:AddMsg(XT("代理人携带的灵石变少了。"));
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>说服</Display>
+				<OKResult>
+					<![CDATA[
+					local PlaceName = CS.XiaWorld.OutspreadMgr.Instance:GetRegionDef(story.target.GotoName).DisplayName;
+					story.target.NeedWait = story.target.NeedWait + 30;
+					WorldLua:AddMsg(XT("代理人发挥口才，给他们挨个讲道，劝说他们去做平民。花费了好一阵子之后，他们实在受不了，决定放了代理人。"));
+					WorldLua:AddMsg(XT("耽误了一些时间。"));
+					]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Outs2"  Parent="BaseFillingStory">
+		<DisplayName>在路上</DisplayName>
+		<Desc>代理人[NAME]遇到一群流民。他们无家可归，十分可怜。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>送点灵石</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story.target.ResourcesLevel > 0
+				]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+					local PlaceName = CS.XiaWorld.OutspreadMgr.Instance:GetRegionDef(story.target.GotoName).DisplayName;
+					story.target.ResourcesLevel = story.target.ResourcesLevel - 1;
+					local k = WorldLua:RandomInt(1000, 2000);
+					story.target.AddPerson = story.target.AddPerson + k;
+					WorldLua:AddMsg(XT("代理人给了他们一点灵石，说道：“跟我走吧，前方就是{0}”。他们感谢了代理人，大约{1}人跟随其一同前往。"), PlaceName, k);
+					WorldLua:AddMsg(XT("代理人携带的灵石变少了。"));
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>说服</Display>
+				<OKResult>
+					<![CDATA[
+					story.target.NeedWait = story.target.NeedWait + 30;
+					WorldLua:AddMsg(XT("代理人发挥口才，劝他们跟随其前往{0}。但无法解决他们的生存问题，并不愿意去。"), PlaceName);
+					WorldLua:AddMsg(XT("耽误了一些时间。"));
+					]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Outs3"  Parent="BaseFillingStory">
+		<DisplayName>在路上</DisplayName>
+		<Desc>代理人[NAME]遇到几个散修在欺负几个农民。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>送点灵石</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story.target.ResourcesLevel > 0
+				]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+					local PlaceName = CS.XiaWorld.OutspreadMgr.Instance:GetRegionDef(story.target.GotoName).DisplayName;
+					story.target.ResourcesLevel = story.target.ResourcesLevel - 1;
+					local k = WorldLua:RandomInt(1000, 2000);
+					story.target.AddPerson = story.target.AddPerson + k;
+					WorldLua:AddMsg(XT("代理人地给了他们一点灵石，说道“算了算了，这些灵石你们拿去修炼吧，从他们身上也拿不到什么好东西。”散修看了他一眼，拿了灵石就走了。那几个农民其实是{0}的居民，有大约{1}人成为了我们的信徒。"), PlaceName, k);
+					WorldLua:AddMsg(XT("代理人携带的灵石变少了。"));
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>说服</Display>
+				<OKResult>
+					<![CDATA[
+					local PlaceName = CS.XiaWorld.OutspreadMgr.Instance:GetRegionDef(story.target.GotoName).DisplayName;
+					story.target.NeedWait = story.target.NeedWait + 30;
+					WorldLua:AddMsg(XT("代理人发挥口才，尝试说服散修。但散修好歹也是有法力之人，将代理人打晕在地。过了半天代理人才醒来。"), PlaceName);
+					WorldLua:AddMsg(XT("耽误了一些时间。"));
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>装作没看见</Display>
+				<OKResult>
+					<![CDATA[
+					WorldLua:AddMsg(XT("代理人装作路人，绕路走了过去，无事发生"));
+					]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="CollectFaith" Parent="BaseFillingStory">
+		<DisplayName>收集信仰</DisplayName>
+		<Desc>在此地有我们的信徒，可收集信仰。</Desc>
+		<Selections>
+			<li>
+				<Display>收集</Display>
+				<OKResult><![CDATA[
+				local region = story.target;
+				local k = region.Faith;
+				if me:IsGodPractice() == true then
+					me:AddFaith(region.Faith);
+					region.Faith = 0;
+				else
+					me:AddTreeExp(math.abs(region.Faith), true);
+					region.Faith = 0;
+					if k == 0 then
+						me:AddMsg(XT("[NAME]没有收集到任何参悟。"));
+					end
+				end
+				MessageMgr:RemoveMessageByOther2(30009, region.RegionName)
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_GoodMood"  Parent="BaseFillingStory">
+		<DisplayName>绿楼坊</DisplayName>
+		<Desc>绿楼坊可供修仙弟子娱乐。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>娱乐</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddModifier("Modifier_GreenBrothel");
+					me:AddMsg(XT("[NAME]尽情放纵，十分舒适。获得了5日的好心情。"));
+					]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

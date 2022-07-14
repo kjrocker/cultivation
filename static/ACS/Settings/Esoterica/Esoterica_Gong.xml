@@ -1,0 +1,2291 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="God2_Dan">
+		<DisplayName>天道神丹</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<GLevel>God2</GLevel>
+		<Desc>既度天劫，洞彻天道。如炼丹造诣登峰造极，即可领悟窃天道炼制神丹之术。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n天道神丹[/color][/size]</EffectDesc>
+		<Dans>
+			<li>Dan_TreeEXP</li>
+		</Dans>
+	</Esoterica> 
+	
+	<Esoterica Name="God2_Fabao">
+		<DisplayName>天道神器</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<GLevel>God2</GLevel>
+		<Desc>既度天劫，洞彻天道。如炼器造诣登峰造极，即可领悟窃天道炼制神器之术。</Desc>
+		<Element>None</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高神器炼成功率\n大幅降低法宝炼制速度[/color][/size]</EffectDesc>
+		<Modifier>God2_Fabao</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Gong1_Esoterica_1">
+		<DisplayName>五泉涤心法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>观想清泉洗涤心灵，依此法练气可进一步沟通天地，使心境澄澈，并提高饮气效率。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n提高饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1_Esoterica_2">
+		<DisplayName>太和御气诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>太和十六洞天内记载的御气之术，讲究以意如潮汐，以意御气。习得此法能增强秘术之威力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1_Esoterica_3">
+		<DisplayName>乘风诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>记载了御剑借风而动技巧的秘诀。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高历练飞行速度\n提高飞剑灵活性[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1_Esoterica_4">
+		<DisplayName>罡煞合流</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>将天地间的罡气煞气炼化入元神之中的秘法。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]小幅提高法术威力\n小幅灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1_Esoterica_5">
+		<DisplayName>奔流诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>将全身灵气化为一束，在经脉之间奔腾不休。至此无丹田之桎梏，真气所在，处处为丹田。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_5</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong1_Esoterica_6">
+		<DisplayName>采水诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>以神念采集天地间先天真水之气，以补人后天之亏损。修习此法可改善根基，从根本上提高灵气最大值。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_6</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong1_Esoterica_7">
+		<DisplayName>水精真形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以先天真水补精血之元，抵至真形之境。修习此术可使根骨大幅增强。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong1_Esoterica_8</li>
+			<li>Gong1_Esoterica_9</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_7</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong1_Esoterica_8">
+		<DisplayName>水气真形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以先天真水补气脉之元，抵至真形之境。修习此术可使魅力大幅增强，并提高饮气效率。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong1_Esoterica_7</li>
+			<li>Gong1_Esoterica_9</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高魅力1成\n大幅提高饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_8</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong1_Esoterica_9">
+		<DisplayName>水神真形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以先天真水补神念之元，抵至真形之境。修习此术可使悟性大幅增强。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong1_Esoterica_7</li>
+			<li>Gong1_Esoterica_8</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高悟性1成[/color][/size]</EffectDesc>
+		<Modifier>Gong1_Esoterica_9</Modifier>	
+	</Esoterica>
+	<!--==================================================-->
+	<Esoterica Name="Gong2_Esoterica_1">
+		<DisplayName>百炼诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>丹霞山入门功课，可反复修炼淬炼身躯，夯实基础。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高神识半成\n提高根骨半成\n小幅提高灵气最大值\n小幅提高法宝炼制成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_1</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_2">
+		<DisplayName>灵淬法</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianqi</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>讲述以灵气淬炼材料的法门，修习可提高炼制法宝的技巧。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝炼制质量\n提高法宝炼制成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_2</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_3">
+		<DisplayName>丙丁雷泽火</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以秘法在体内凝练一朵丙丁雷泽火，有种种妙用。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<Mutex>
+			<li>Gong2_Esoterica_4</li>
+			<li>Gong2_LvUpEsoterica_7</li>
+			<li>Gong2_Esoterica_5</li>
+			<li>Gong2_LvUpEsoterica_8</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高极限温度\n大幅提高法术威力\n大幅提高炼器成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_3</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_4">
+		<DisplayName>上清先天真焰</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianqi</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以秘法在体内凝练一朵上清先天真焰，有种种妙用。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<Mutex>
+			<li>Gong2_Esoterica_3</li>
+			<li>Gong2_LvUpEsoterica_6</li>
+			<li>Gong2_Esoterica_5</li>
+			<li>Gong2_LvUpEsoterica_8</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高炼器成功率\n提高炼器质量[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_4</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_5">
+		<DisplayName>心焰</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以秘法在体内凝练一朵心焰，有种种妙用。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong2_Esoterica_3</li>
+			<li>Gong2_LvUpEsoterica_6</li>
+			<li>Gong2_Esoterica_4</li>
+			<li>Gong2_LvUpEsoterica_7</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值\n提高悟性1成[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_5</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_6">
+		<DisplayName>上清真气</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>采先天清气凝练成上清真气。可以提升气感。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高气感2级[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_6</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_7">
+		<DisplayName>博物志</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianqi</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载九州之内常见材料物性特征的书册。可以提高炼器成功率。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]提高炼器成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong2_Esoterica_8">
+		<DisplayName>炼器十要</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianqi</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>讲述炼器之术的入门技巧，在修行界也广为流传。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝炼制速度\n提高法宝炼制成功率\n提高法宝炼制品阶加成\n提高法宝炼制质量[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_8</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_9">
+		<DisplayName>琢玉册</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianqi</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>记载有炼制法宝过程中雕琢法宝的技巧，可以大幅提高法宝炼制品阶加成。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝炼制品阶加成\n提高法宝炼制成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_9</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong2_Esoterica_10">
+		<DisplayName>上清秘传造化真解</DisplayName>
+		<Icon>res/Sprs/ui/icon_peifang</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>灵宝天尊门下独传的炼器之术，合万物物性之奥妙于一册，堪称炼器术的无上秘典。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝炼制速度\n大幅提高法宝炼制成功率\n大幅提高法宝炼制品阶加成\n大幅提高法宝炼制质量\n\n习得 符图：\n太上通宝符\n五方灵宝符[/color][/size]</EffectDesc>
+		<Modifier>Gong2_Esoterica_10</Modifier>
+		<Spells>
+			<li>Spell_FabaoMake_SuccessRateAddV</li>
+			<li>Spell_FabaoMake_LingInheritRateAddV</li>
+		</Spells>
+	</Esoterica>
+	
+	<!--==================================================-->
+	<Esoterica Name="Gong3_Esoterica_1">
+		<DisplayName>杀意</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>七杀剑诀之入门，凝练纯粹的杀意，可以从根本上提高法宝威力。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n从根本上提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_2">
+		<DisplayName>七杀魔体</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>借助杀意淬炼经脉，铸就七杀魔体。能大幅提高根骨。此外还记载有剑丸的炼制方法。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨2成\n小幅提高灵气最大值\n习得 丹方：剑丸[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_2</Modifier>	
+		<Dans>
+			<li>Dan_SwordBall</li>
+		</Dans>		
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_3">
+		<DisplayName>魔流剑意</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>七杀魔宫镇宫剑意心法，先以剑饲魔，再借剑御魔，能全面增强御器之术的威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n提高法宝灵气恢复速度\n提高法宝灵气值\n提高法宝速度\n提高法宝转向速度\n提高法宝拖尾长度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_3</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_4">
+		<DisplayName>御剑术</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>七杀剑诀记载的御器入门之术，依此法御物可使气脉悠长。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提升法宝回灵倍率[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_5">
+		<DisplayName>剑心通明</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>极情于剑，不为外物纷扰，是为通明剑心。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_6</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n从根本上提高法宝威力\n从根本上提高法宝速度\n从根本上提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_6">
+		<DisplayName>心剑交感</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>以心感剑，如鱼得水，是为心剑交感。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_5</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n从根本上提高法宝威力\n从根本上提高法宝灵气值\n从根本上提高法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_7">
+		<DisplayName>神御剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>专注与剑本身之灵性，完全发挥剑意，谓神御之剑。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_8</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n从根本上提高法宝威力\n从根本上提高法宝速度\n从根本上提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_8">
+		<DisplayName>神合剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>心神与剑相合，谓神合之剑。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_7</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n从根本上提高法宝威力\n从根本上提高法宝灵气值\n从根本上提高法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_9">
+		<DisplayName>极剑·一</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以剑唯一，舍剑无物，此法可大幅提升心境及法宝速度。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_10</li>
+			<li>Gong3_LvUpEsoterica_7</li>
+			<li>Gong3_LvUpEsoterica_9</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高心境\n大幅提高法宝速度\n大幅提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_10">
+		<DisplayName>我剑·一</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以元神合剑的绝世剑法秘诀，此法可大幅提升心境及法宝灵气。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong3_Esoterica_9</li>
+			<li>Gong3_LvUpEsoterica_6</li>
+			<li>Gong3_LvUpEsoterica_8</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高心境\n大幅提高法宝灵气值\n大幅提高法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_11">
+		<DisplayName>击字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_12">
+		<DisplayName>刺字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝速度[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_13">
+		<DisplayName>洗字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气值[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_14">
+		<DisplayName>崩字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_14</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_15">
+		<DisplayName>点字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝速度[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_15</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_16">
+		<DisplayName>劈字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气值[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_16</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_17">
+		<DisplayName>御字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_17</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_18">
+		<DisplayName>化字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝速度[/color][/size] </EffectDesc>
+		<Modifier>Gong3_Esoterica_18</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong3_Esoterica_19">
+		<DisplayName>分字诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>七杀剑诀记载的练剑秘术，需下苦功磨练。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气值[/color][/size]</EffectDesc>
+		<Modifier>Gong3_Esoterica_19</Modifier>	
+	</Esoterica>
+	
+	
+	<!--==================================================-->
+	<Esoterica Name="Gong4_Esoterica_1">
+		<DisplayName>玉京飞流法</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>昆仑宫独创的锤炼气脉之秘法，可以扩充气海。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值\n提高法术威力[/color][/size] </EffectDesc>
+		<Modifier>Gong4_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_2">
+		<DisplayName>和光同尘</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>以身顺应天意，和其光同其尘，可以提高机缘。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高机缘1成[/color][/size] </EffectDesc>
+		<Modifier>Gong4_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_3">
+		<DisplayName>回光诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>玉虚门下不传之秘，洞彻灵气流动之奥妙的秘诀。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]降低术法释放时间[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_4">
+		<DisplayName>五气归源</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>五行复归五脏，调和自身内息。可延长生命，提高灵气，并大幅提高饮气效率。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加寿命\n提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_5">
+		<DisplayName>万法归藏</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>将自身所学融会贯通，以盗天机。可以在不影响实力的情况下，降低自身道行。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]降低道行10点[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_6">
+		<DisplayName>谷神大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>谷神不死，是谓玄牝。习成此法可让寿元大增，且极大的增强灵气的容量。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加寿命\n提高灵气最大值\n提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_7">
+		<DisplayName>元始之胎</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>玉虚门下不传之秘，以秘法锤炼元胎，将其练成元始之胎。可以极大的增强元婴与外界灵气的沟通能力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高灵气恢复速度\n提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_8">
+		<DisplayName>庚金元神</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>凝练庚金元神，提高神识，大幅提高御器威力。且可以庚金之道为引，分化一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong4_Esoterica_9</li>
+			<li>Gong4_Esoterica_10</li>
+			<li>Gong4_Esoterica_11</li>
+			<li>Gong4_Esoterica_12</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高神识1成\n提高御器威力\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_9">
+		<DisplayName>甲木元神</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>凝练甲木元神，提高根骨，大幅提高寿命。且可以甲木之道为引，分化一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong4_Esoterica_8</li>
+			<li>Gong4_Esoterica_10</li>
+			<li>Gong4_Esoterica_11</li>
+			<li>Gong4_Esoterica_12</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n提高寿命\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_10">
+		<DisplayName>壬水元神</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>凝练壬水元神，提高魅力，提高灵气最大值。且可以壬水之道为引，分化一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong4_Esoterica_8</li>
+			<li>Gong4_Esoterica_9</li>
+			<li>Gong4_Esoterica_11</li>
+			<li>Gong4_Esoterica_12</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高魅力1成\n提高灵气最大值\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_11">
+		<DisplayName>丙火元神</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>凝练丙火元神，提高悟性，提高法术威力。且可以丙火之道为引，分化一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong4_Esoterica_8</li>
+			<li>Gong4_Esoterica_9</li>
+			<li>Gong4_Esoterica_10</li>
+			<li>Gong4_Esoterica_12</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高悟性1成\n提高法术威力\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong4_Esoterica_12">
+		<DisplayName>戊土元神</DisplayName>
+		<Icon>res/Sprs/ui/icon_huti</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>凝练戊土元神，提高机缘，提高灵气护盾强度。且可以戊土之道为引，分化一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong4_Esoterica_8</li>
+			<li>Gong4_Esoterica_9</li>
+			<li>Gong4_Esoterica_10</li>
+			<li>Gong4_Esoterica_11</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高机缘1成\n提高灵气护盾效果\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong4_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<!--==================================================-->
+	
+	<Esoterica Name="Gong5_Esoterica_1">
+		<DisplayName>形容之蚀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>偷天诀记载之邪法，自损形容，小幅提升根骨。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n降低魅力2成[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_2">
+		<DisplayName>五感之蚀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>偷天诀记载之邪法，自损五感，小幅提升根骨。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n降低神识2成[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_3">
+		<DisplayName>神智之蚀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>偷天诀记载之邪法，自损神智，小幅提升根骨。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n降低悟性2成[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_4">
+		<DisplayName>气运之蚀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>偷天诀记载之邪法，自损机缘，小幅提升根骨。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n降低机缘2成[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_5">
+		<DisplayName>九幽返照</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>四蚀之后，借助自身之衰败，引九幽之气返照自身，以此大幅度提高寿元。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<PreNeed>
+			<li>Gong5_Esoterica_1</li>
+			<li>Gong5_Esoterica_2</li>
+			<li>Gong5_Esoterica_3</li>
+			<li>Gong5_Esoterica_4</li>
+		</PreNeed>
+		<EffectDesc>[size=10][color=#D06508]大幅提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong5_Esoterica_6">
+		<DisplayName>血骨炼形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>秘法祭炼心脏，以血气化灵气，生生不息。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高灵气恢复速度\n小幅提高灵气最大值\n心脏受损！[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_7">
+		<DisplayName>护体血罡</DisplayName>
+		<Icon>res/Sprs/ui/icon_huti</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古时期的修行者从无尽的战斗中总结出的技巧，可以提升护盾抵御伤害的能力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Barrier</Type>
+		<EffectDesc>[size=10][color=#D06508]提升灵气护盾效果[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_7</Modifier>
+	</Esoterica>
+	<Esoterica Name="Gong5_Esoterica_8">
+		<DisplayName>龟息诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>上古流传的秘诀，吐纳仿龟息之胎，可延长寿命。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]增加寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_9">
+		<DisplayName>蛰命法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>蛰伏自身气息，以躲天道巡视。修习此法，可极大延长寿命。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅增加寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_10">
+		<DisplayName>欺天</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>上古流程秘法，修习此法，可使下一次天劫降临时间大幅度延长。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅延长下次天劫降临时间[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_11">
+		<DisplayName>窃天</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>上古流传的秘诀，以秘法欺夺天机，可提高5倍基础寿元。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高5倍基础寿元[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong5_Esoterica_12">
+		<DisplayName>偷天</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>偷窃天机，大幅提高寿命。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong5_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	
+	<!--==================================================-->
+	
+	<Esoterica Name="Gong6_Esoterica_1">
+		<DisplayName>玉液炼形诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>道教入门练气之法诀，以玉液炼周天，可以驱除身体之杂质，提高灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提升根骨1成\n从根本上提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_1</Modifier>	
+		
+	</Esoterica>
+	
+	<Esoterica Name="Gong6_Esoterica_2">
+		<DisplayName>洗心咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>以玉液洗练心灵，可以提高悟性</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提升悟性1成[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong6_Esoterica_3">
+		<DisplayName>道德清净法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>道教至高心法，修持道德之念，得清净之心。修成之后可提高心境。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境基础值[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	
+	
+	<Esoterica Name="Gong6_Esoterica_4">
+		<DisplayName>药典</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>道门记录基础丹药的书册。熟读可提高炼丹成功率。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]提高炼丹成功率\n习得 丹方：\n筑基丹\n疗伤丹\n归源散\n极乐丹\n饮气丹\n清心丹[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_4</Modifier>
+		<Dans>
+			<li>BasePracticeDrug</li>
+			<li>Dan_CureFiveElementDamage</li>
+			<li>Dan_Restore</li>
+			<li>Dan_Happiness</li>
+			<li>Dan_NoHunger</li>
+			<li>Dan_CalmDown</li>
+		</Dans>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong6_Esoterica_5">
+		<DisplayName>百草金石录</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>习得此书可通晓天地万物药性，能极大的提升炼丹之术。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]提高炼丹成功率\n提高炼丹速度\n习得 丹方：\n庚金万化丹\n碧春丹\n天一承气散\n火真丹\n定坤丹[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_5</Modifier>	
+		<Dans>
+			<li>Dan_CureJinDamage</li>
+			<li>Dan_CureMuDamage</li>
+			<li>Dan_CureShuiDamage</li>
+			<li>Dan_CureHuoDamage</li>
+			<li>Dan_CureTuDamage</li>
+		</Dans>
+	</Esoterica>
+	<Esoterica Name="Gong6_Esoterica_6">
+		<DisplayName>太上丹经</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>太上所传炼丹秘要，是道家千百年外丹术的精华。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n紫阳丹\n黄庭丹\n黄芽丹\n血竭散\n长生丹\n玄牝续命散\n九转金丹\n万灵散\n\n习得 符图：\n兜率神符\n万化承丹符\n\n大幅提高炼丹产量\n大幅提高炼丹成功率\n提高炼丹速度[/color][/size]</EffectDesc>
+		<Dans>
+			<li>Dan_Ling2</li>
+			<li>Dan_PracticeRate</li>
+			<li>Dan_PracticeSpeed</li>
+			<li>Dan_HundredRefine</li>
+			<li>Dan_IncreaseLife1</li>
+			<li>Dan_IncreaseLife2</li>
+			<li>Dan_JingYuan3</li>
+			<li>Dan_Ling3</li>
+		</Dans>
+		<Spells>
+			<li>Spell_DanMake_SuccessRateAddV</li>
+			<li>Spell_DanMake_YieldAddP</li>
+		</Spells>
+		<Modifier>Gong6_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	
+	
+	<Esoterica Name="Gong6_Esoterica_7">
+		<DisplayName>明目诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>以秘法淬炼双目，以提高神识。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高神识1成[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_8">
+		<DisplayName>开炉九诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>古人总结成丹开炉时的九种手法，可以大幅提高炼丹成功率</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高炼丹成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_9">
+		<DisplayName>速炼法</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>太上门下炼丹秘法，修习可以大幅提高炼丹速度。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高炼丹速度[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_10">
+		<DisplayName>精炼法</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>太上门下炼丹秘法，修习可以大幅提高炼丹产量。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高炼丹产量[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_11">
+		<DisplayName>神炼法</DisplayName>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>太上门下炼丹秘法，修习可以大幅提高炼丹成功率。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高炼丹成功率[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_12">
+		<DisplayName>菁华诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>采集丹草之精华滋润肉身，可提高根骨。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_13">
+		<DisplayName>归元诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>菁华诀之进阶，进一步将肉体中残余的药力炼化，可提高灵气最大值，并提高饮气效率。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值\n提高饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong6_Esoterica_14">
+		<DisplayName>太上内经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>太上门下对人身皮囊研究之精粹，修习可大幅提高寿命。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong6_Esoterica_14</Modifier>	
+	</Esoterica>
+
+	<!--==================================================-->
+	
+	
+	<Esoterica Name="Gong7_Esoterica_1">
+		<DisplayName>心斋</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>心斋之法以收束意念，此举可提高心情基础值，增加修炼速度。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心情基础值\n提高修炼速度[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_2">
+		<DisplayName>寄情之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>寄情于山水草木，感受死物之态，不为风雨雷动。修习此法可小幅提高魅力，提高心境。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高魅力1成\n提高心境[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_3">
+		<DisplayName>同心诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>以心念体会鸟兽他人之心，感受万灵之态。修习此法可大幅提高魅力与处世能力，且于同心之中增强自身灵力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高魅力1成\n大幅提高处世技能\n大幅提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_4">
+		<DisplayName>太上忘情</DisplayName>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>阅览万情，而后忘情。以忘情之心阅人间，万事具足。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高基础心情\n不会感到疼痛[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_5">
+		<DisplayName>脱胎换骨</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>以长生诀之心法重塑肉体，可大幅提高根骨与自然恢复力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n大幅提高自然恢复力[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_6">
+		<DisplayName>养吾经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>调理身心的妙法，可以增强魅力，增加灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高魅力1成\n从根本上提高灵气最大值\n提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_6</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong7_Esoterica_7">
+		<DisplayName>坐忘论</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>极天宫炼气之术，长久修持可增强心境，提升修行速度。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境基础值\n提升修行速度\n提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_7</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong7_Esoterica_8">
+		<DisplayName>长生诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>传自上古仙家的奇书，能开发身体奇穴之潜力，极大的延长寿命。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_9">
+		<DisplayName>风神云体</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>身与神合，风云随体。修成此法可大幅提高灵气最大值，巨幅提高魅力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高灵气最大值\n提高魅力1成[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_9</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong7_Esoterica_10">
+		<DisplayName>斩道见我</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>太上忘情道最高心法，慧剑斩道，得见真我。能极大的提高修行速度。若用在剑法之上，则可大幅提高御器威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高修行速度\n大幅提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_11">
+		<DisplayName>心剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>修成此剑则有洞彻人心之力，灵活非常，威力惊人。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n提高法宝转弯速度[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_12">
+		<DisplayName>七情剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>凝聚七情于剑上，大幅增加飞剑灵性，但是七情伤人，飞剑恢复速度会很慢。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气最大值\n降低法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong7_Esoterica_13">
+		<DisplayName>极情剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>御器之上凝聚极致浓烈之感情，迅如飞鸿，无物不斩。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝威力\n大幅提高法宝速度[/color][/size]</EffectDesc>
+		<Modifier>Gong7_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	<!--==================================================-->
+	<Esoterica Name="Gong8_Esoterica_1">
+		<DisplayName>真武录</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>讲述静坐中观想北斗真武之神的心法，也是北斗洞心之基础。修习此法可使神念通明。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n提高悟性1成\n提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_2">
+		<DisplayName>司南经</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>记载借天星之力淬炼自我的秘法，也是北斗七绝的总纲。修炼此法可借北斗星力提高根骨。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n提高灵气最大值\n提高法宝灵气最大值\n提高法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_3">
+		<DisplayName>天枢诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集天枢星之力为己用，天枢星辉杀意凛然，以之化入法宝之中可使御器威力大增。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_4">
+		<DisplayName>天璇诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集天璇星之力为己用，天璇星辉闪烁轻灵，以之化入法宝之中可使御器时灵动如风。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_5">
+		<DisplayName>天玑诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集天玑星之力为己用，天玑星辉尊贵华丽，以之化入法宝之中可使御器时外邪辟易。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝抗击退能力[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_6">
+		<DisplayName>天权诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集天权星之力为己用，天权星辉混元中正，以之化入法宝之中可使御器时底力深厚。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气值[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_7">
+		<DisplayName>玉衡诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集玉衡星之力为己用，玉衡星辉悠长绵延，以之化入法宝之中可使御器时后劲不绝。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_8">
+		<DisplayName>开阳诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集开阳星之力为己用，开阳星辉浓烈澎湃，以之化入法宝之中可使御器时势不可挡。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝击退距离[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_9">
+		<DisplayName>摇光诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>采集摇光星之力为己用，摇光星辉璀璨明锐，以之化入法宝之中可使御器时迅如疾电。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝速度[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_10">
+		<DisplayName>北斗绝式-七星诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>北斗洞心劫法最高秘诀，威力绝伦。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n提高法宝速度\n提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_11">
+		<DisplayName>洞心咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>置身于周天穹宇，以此抛却我执，洞彻本心。修习此法可以提高心性。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n提高基础情绪[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_12">
+		<DisplayName>劫心咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>消耗本源心血淬炼肉身，全面提升五维。此法会消耗二甲子寿命，并亏损一成的灵气值。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]降低寿命\n从根本上降低灵气最大值\n提高五维半成[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong8_Esoterica_13">
+		<DisplayName>星斗之眼</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>以双目沟通星宿之力，大幅提高神识，并可借天星之力照彻四方。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高神识2成\n破除地图迷雾(一次)[/color][/size]</EffectDesc>
+		<Modifier>Gong8_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	<!--==================================================-->
+	
+	<Esoterica Name="Gong9_Esoterica_1">
+		<DisplayName>轮回心眼</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>以秘法锻炼双目，有透彻心灵的能力。修习此法，可使神识大增。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高神识1成[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_2">
+		<DisplayName>三世洞真法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>昏瞑之中捕捉流散于三世之间的记忆，逐步明晰自我。修习此法，使心境平稳，不再惧怕生死之迷，提高修行速度。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高修炼速度\n提高心境[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_3">
+		<DisplayName>生死录</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>记载生死之间转化的道理之秘册，传自古仙归真子。修习此册可增加寿命，提高法术威力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]增加寿命\n提高术法威力[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong9_Esoterica_4">
+		<DisplayName>轮回之体</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以生死录记载的秘法催动胎化易形，重塑身躯为轮回之体。以轮回之体施法可在消耗灵气不变的情况下，大幅提高法术威力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_4</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_5">
+		<DisplayName>轮回之心</DisplayName>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>观百世轮回悲欢离合，以磨炼心境，洞彻万法，修成轮回之心。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_6">
+		<DisplayName>轮回经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>传自地府之秘法，乃是长生轮回经之核心根基。修习此法可从根本上提高灵气最大值。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_7">
+		<DisplayName>养身法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>借天地草木之息蕴养自身。修习此法，可提高些许根骨，并提高饮气效率。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨1成\n少量提高饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_8">
+		<DisplayName>合物志</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>同调自身于万物，借他山之石，攻己山之玉。修习此法可全面提高御器能力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n提高法宝灵气恢复速度\n提高法宝灵气值\n提高法宝速度\n提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong9_Esoterica_9">
+		<DisplayName>通息诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>同调万物的基础上，进一步与万物通息同感。修习此法可提高灵气最大值，并提高灵气恢复速度。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值\n提高灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_9</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_10">
+		<DisplayName>胎化易形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>重塑身躯之秘法，修习此法可以提高根骨与魅力，并提高潜力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong9_Esoterica_11</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高根骨半成\n提高魅力半成\n提高潜力[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_10</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_11">
+		<DisplayName>神截经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>将六道神妙截于自身，修习此法可提高悟性。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong9_Esoterica_10</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高悟性1成[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_11</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_12">
+		<DisplayName>天人之体·一阶</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>将身躯初步转化为天人之体，提高寿命，自然恢复力以及法术威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<Mutex>
+			<li>Gong9_Esoterica_13</li>
+			<li>Gong9_LvUpEsoterica_7</li>
+			<li>Gong9_LvUpEsoterica_10</li>
+			<li>Gong9_Esoterica_14</li>
+			<li>Gong9_LvUpEsoterica_8</li>
+			<li>Gong9_LvUpEsoterica_11</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高寿命\n提高自然恢复力\n提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_12</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_13">
+		<DisplayName>真吾之体·一阶</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>将自身身躯借六道神妙凝练完美，适宜快速突破境界后，根基不稳之人学习，可从根本上大幅提高灵气最大值，弥补根基。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong9_Esoterica_12</li>
+			<li>Gong9_LvUpEsoterica_6</li>
+			<li>Gong9_LvUpEsoterica_9</li>
+			<li>Gong9_Esoterica_14</li>
+			<li>Gong9_LvUpEsoterica_8</li>
+			<li>Gong9_LvUpEsoterica_11</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]从根本上大幅提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_13</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong9_Esoterica_14">
+		<DisplayName>修罗之体·一阶</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>借修罗道之神妙将身躯转化为修罗之体，大幅提高战斗能力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong9_Esoterica_12</li>
+			<li>Gong9_LvUpEsoterica_6</li>
+			<li>Gong9_LvUpEsoterica_9</li>
+			<li>Gong9_Esoterica_13</li>
+			<li>Gong9_LvUpEsoterica_7</li>
+			<li>Gong9_LvUpEsoterica_10</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n提高法术威力\n提高灵气护盾效果[/color][/size]</EffectDesc>
+		<Modifier>Gong9_Esoterica_14</Modifier>	
+	</Esoterica>
+	
+	<!--==================================================-->
+	
+	<Esoterica Name="Gong10_Esoterica_1">
+		<DisplayName>御真秘典</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>上古失传之秘法，能从根本上提高法术的威力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<Exp>4000</Exp>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_1</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong10_Esoterica_2">
+		<DisplayName>三阳赤心咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>以心之念催动全身灵气奔腾，可提高法术威力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<Exp>4000</Exp>
+		<EffectDesc>[size=10][color=#D06508]提高极限温度\n提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_2</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong10_Esoterica_3">
+		<DisplayName>始日真诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>借助天地间至阳之力，大幅提高法术威力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<Exp>4000</Exp>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_3</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong10_Esoterica_4">
+		<DisplayName>真火炼身</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>借助天地真火淬炼身躯，能极大的提高法术相性，提高法术威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法术威力[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_5">
+		<DisplayName>金乌观</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>观想太阳真形，以集聚真气。修习此法可从根本上提高灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_6">
+		<DisplayName>五内蕴火</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>凝聚丙火之力淬炼五脏，提高脏器功能，可略微提高五维，并提高精元转化率。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<Exp>4000</Exp>
+		<EffectDesc>[size=10][color=#D06508]提高五维各半成\n提高精元转化率[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_7">
+		<DisplayName>三阳真脉</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>以三阳真火淬炼经脉，可提高灵气最大值，并提高少量根骨。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值\n提升根骨1成[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_8">
+		<DisplayName>心火</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>点燃心念之火，大幅度降低施法间隔和施法消耗。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]降低法术灵气消耗[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_9">
+		<DisplayName>通天神火咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>火法至高秘术，修习可大幅提高法术伤害。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<Exp>4000</Exp>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法术伤害[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_10">
+		<DisplayName>净火灼心</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>以纯净之火灼烧心念，大幅提高悟性。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高悟性1成[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong10_Esoterica_11">
+		<DisplayName>天火同人</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>天火同人，天下大同。修习此法可大幅提高机缘。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高机缘半成[/color][/size]</EffectDesc>
+		<Modifier>Gong10_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	
+	
+	<!--==================================================-->
+	
+	<Esoterica Name="Gong11_Esoterica_1">
+		<DisplayName>太阴锻体</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>以太阴之气淬炼身躯。如是男儿身修炼，性别会发生逆转。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]转化为纯阴之体\n从根本上提高灵气最大值\n提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_1</Modifier>	
+		<MyTreasure>1</MyTreasure>
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_2">
+		<DisplayName>辟邪真法</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>以纯阴之气御物的法门，可以大幅提高法宝速度。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝速度[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_3">
+		<DisplayName>太虚元罡</DisplayName>
+		<Icon>res/Sprs/ui/icon_huti</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>讲述借助坤元之力凝练灵气护盾的秘册。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Barrier</Type>
+		<EffectDesc>[size=10][color=#D06508]提升灵气护盾效果[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_4">
+		<DisplayName>虚空谒神法</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>寄托虚空，以见神灵。大幅提高机缘，法宝威力。并借此分化一条元神分神。此乃葵花炼神宝典之最高奥秘。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<Mutex>
+			<li>Gong11_Esoterica_9</li>
+		</Mutex>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]提高机缘2成\n大幅提高法宝威力\n增加一条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_5">
+		<DisplayName>九州大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>观想九州大地之形，凝练元气。可以有效提高灵气最大值。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_6">
+		<DisplayName>灵视神观</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>借助坤元之力凝聚双眼，可识破大多数障眼术法，并提高神识。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高神识1成[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_7">
+		<DisplayName>八极炼形诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>天地有八极，人身亦有八极。凝练身体八极之窍，有脱胎换骨之效。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨半成\n提高魅力半成[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_8">
+		<DisplayName>神行术</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>缩地成寸，以为神行。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高移动速度\n提高历练飞行速度[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_9">
+		<DisplayName>厚德篇</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>地势坤，君子以厚德载物。修习此法，以后天之德抵先天之劫，可极大的延长寿命。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong11_Esoterica_4</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]巨量提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_10">
+		<DisplayName>幽剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>传承自幽冥的剑法，以牺牲后劲为代价，换取极强的杀伤力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n从根本上降低法宝灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_11">
+		<DisplayName>瞬霎诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>传承自幽冥的剑法，出剑极快，诡异绝伦。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong11_Esoterica_12</li>
+			<li>Gong11_Esoterica_13</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝转向速度[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_12">
+		<DisplayName>太阴诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>传承自幽冥的剑法，以纯阴之息凝聚剑神，能极大的提高抗击退能力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong11_Esoterica_11</li>
+			<li>Gong11_Esoterica_13</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝抗击退能力[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_13">
+		<DisplayName>渊狱诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>传承自幽冥的剑法，以降低法宝灵气恢复速度为代价，大量提升法宝威力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<Mutex>
+			<li>Gong11_Esoterica_11</li>
+			<li>Gong11_Esoterica_12</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n降低法宝灵气恢复速度[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_14">
+		<DisplayName>坏灭诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>幽冥绝剑，大幅提高法宝威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_14</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_15">
+		<DisplayName>地母玄经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>记载诸多驱使魂魄之术的秘册，传说流传自六地母神宫。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高气感[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_15</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong11_Esoterica_16">
+		<DisplayName>坤元真气</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>炼化一缕先天坤元之气，大幅提高灵气最大值。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值15000点[/color][/size]</EffectDesc>
+		<Modifier>Gong11_Esoterica_16</Modifier>	
+	</Esoterica>
+	
+	
+	<!--==================================================-->
+	
+	
+	<Esoterica Name="Gong12_Esoterica_1">
+		<DisplayName>通符书</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>记载修行所需常用符咒的秘册。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n分影遁空符\n天心符\n宁心符\n文昌符\n武昌符</EffectDesc>
+		<Spells>
+			<li>Spell_WorldMapFlySpeed</li>
+			<li>Spell_MindState1</li>
+			<li>Spell_DeepPracticeSpeedSpecialCoefficient1</li>
+			<li>Spell_Intelligence</li>
+			<li>Spell_Fight</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_2">
+		<DisplayName>玄符录</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>记载可增强护御之力的符咒。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n玄甲符</EffectDesc>
+		<Spells>
+			<li>Spell_Shield1</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_3">
+		<DisplayName>剑符录</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>记载可增强御剑之力的符咒。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n利剑符</EffectDesc>
+		<Spells>
+			<li>Spell_FaBao1</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_4">
+		<DisplayName>咒符录</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>记载可增强咒法之力的符咒。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n厉咒符</EffectDesc>
+		<Spells>
+			<li>Spell_FightSkill1</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_5">
+		<DisplayName>通天符法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>记载当今修行界早已失传的威力强大的符咒，这些符咒甚至能强行提升佩戴者资质，故称通天。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n通天符</EffectDesc>
+		<Spells>
+			<li>Spell_TongTian1</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_6">
+		<DisplayName>借天符</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>此书记载的符咒传闻能借引天道之力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n借天符</EffectDesc>
+		<Spells>
+			<li>Spell_JieTian1</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_7">
+		<DisplayName>无上神符</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>流传于上古的符咒，传闻乃是为神道修行所绘，于今早已失传。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n神居符\n神感符\n神威符\n神隐符</EffectDesc>
+		<Spells>
+			<li>Spell_GodPractice1</li>
+			<li>Spell_GodPractice2</li>
+			<li>Spell_GodPractice3</li>
+			<li>Spell_GodPractice4</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_8">
+		<DisplayName>云行法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自云烟之变中领悟出的妙法，修持可大幅提高历练飞行速度。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高历练飞行速度[/color][/size]</EffectDesc>
+		<Modifier>Gong12_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_9">
+		<DisplayName>云气汇流</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>独特的运气之法，可以提高灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值1000点[/color][/size]</EffectDesc>
+		<Modifier>Gong12_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_10">
+		<DisplayName>结云经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>将全身灵气凝结为如同云朵一般的模样，能有效提高灵气护盾的防御效果。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气护盾效果[/color][/size]</EffectDesc>
+		<Modifier>Gong12_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_11">
+		<DisplayName>天真论</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>上古之人，春秋皆度百岁，而动作不衰，修习此术能大幅提高根骨寿元。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提高根骨2成，提升寿元三百年。[/color][/size]</EffectDesc>
+		<Modifier>Gong12_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong12_Esoterica_12">
+		<DisplayName>东木分神书</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>东方木神宫所传分神秘法，修到极致可斩十道分神，玄妙无匹。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]增加一条元神分神[/color][/size]</EffectDesc>
+	</Esoterica>
+</List></Esotericas>

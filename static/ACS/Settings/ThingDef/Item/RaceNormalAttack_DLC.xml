@@ -1,0 +1,95 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="Panda_NormalAttack" Parent="Bear_NormalAttack">
+	<ThingName>貊攻击</ThingName>
+	<Rate>7</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.4</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.45" DescTags="爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="撞击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="15"/>
+				<li Name="Atk2" HitPoint="20"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYPanda_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>貊飞掌</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.7</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYBearAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Huo_VisceralBurn" Rate="0.25" DescTags="地煞妖雷"/>
+				<li PartKind="Bone" Name="Huo_MarrowDry" Rate="0.45" DescTags="地煞妖雷"/>
+				<li PartKind="Flesh" Name="Huo_BurnOfPain" Rate="0.45" DescTags="地煞妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="15" Bip="Bip001 R Hand"/>
+				<li Name="Atk2" HitPoint="30" Bip="Bone001"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="LsPanda1_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>天貊内丹</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Huo</ElementKind>
+	<TexPath>res\Sprs\object_xiongmaoDLC\object_xiongmaoneidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>2.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Shui_ColdPoison" Rate="0.15" DescTags="至阳异雷"/>
+				<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.15" DescTags="至阳异雷"/>
+				<li PartKind="Flesh" Name="Shui_ColdPoison" Rate="0.15" DescTags="至阳异雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="23"/>
+				<li Name="Atk2" HitPoint="23"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="LsPanda2_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>天貊内丹</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<TexPath>res\Sprs\object_xiongmaoDLC\object_xiongmaoneidan02</TexPath>
+	<Item>
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.7</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYBearAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Huo_VisceralBurn" Rate="0.25" DescTags="至阴异雷"/>
+				<li PartKind="Bone" Name="Huo_MarrowDry" Rate="0.45" DescTags="至阴异雷"/>
+				<li PartKind="Flesh" Name="Huo_BurnOfPain" Rate="0.45" DescTags="至阴异雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="15" Bip="Bip001 R Hand"/>
+				<li Name="Atk2" HitPoint="30" Bip="Bone001"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

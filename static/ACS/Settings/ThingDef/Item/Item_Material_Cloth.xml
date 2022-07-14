@@ -1,0 +1,242 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="ClothBase" Parent="MaterialBase">
+	
+	
+	<ThingName></ThingName>
+	<TexPath>Item/Cloth</TexPath>
+	<Desc>棉花织成的布料，可以用来制作衣物等。</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<ElementKind>Mu</ElementKind>
+	<Rate>2</Rate>	
+	
+	<Flammability>
+		<Flammability>0.6</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>120</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Cloth">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>帛,纱,罗</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft2</li>
+		</PhysicalLables>
+		 
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<CostItems>
+				<Item name = "Item_Cotton" count = "4"/>
+			</CostItems>
+		</BeMade> 
+		 
+		<BeMaterial>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>布</NamePrefix>
+			
+			<WorkSpeedCoefficientWhenBeMain>1</WorkSpeedCoefficientWhenBeMain>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-3</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-6</TemperatureMinAddWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<ColorWhenBeMain>5F6D7BFF</ColorWhenBeMain>
+			
+			<BurningPointWhenBeMain>120</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.7</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.65</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CottonCloth" Parent="ClothBase">
+	
+	<ThingName>花布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【花色】布料，可以用来制作衣物等。</Desc>
+	<Color>FF6C2AFF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>花布</NamePrefix>
+			<ClothesColorID>3</ClothesColorID>
+			<ColorWhenBeMain>FF6C2AFF</ColorWhenBeMain>
+			<ColorWhenBeFloor>DA5D25FF</ColorWhenBeFloor>
+			<ColorWhenBeCape>FB6B2AFF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DeepBlueCloth" Parent="ClothBase">
+	
+	<ThingName>靛蓝布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【靛蓝色】布料，可以用来制作衣物等。</Desc>
+	<Color>80AAFFFF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>靛蓝布</NamePrefix>
+			<ClothesColorID>1</ClothesColorID>
+			<ColorWhenBeMain>80AAFFFF</ColorWhenBeMain>
+			<ColorWhenBeFloor>69E0FFFF</ColorWhenBeFloor>
+			<ColorWhenBeCape>6F8AD8FF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PurpleCloth" Parent="ClothBase">
+	
+	<ThingName>紫布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【紫色】布料，可以用来制作衣物等。</Desc>
+	<Color>E472F6FF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>紫布</NamePrefix>
+			<ClothesColorID>2</ClothesColorID>
+			<ColorWhenBeMain>E472F6FF</ColorWhenBeMain>
+			<ColorWhenBeFloor>A962A7FF</ColorWhenBeFloor>
+			<ColorWhenBeCape>5A5392FF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YellowCloth" Parent="ClothBase">
+	
+	<ThingName>黄布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【黄色】布料，可以用来制作衣物等。</Desc>
+	<Color>F6ED77FF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>黄布</NamePrefix>
+			<ClothesColorID>4</ClothesColorID>
+			<ColorWhenBeMain>F6ED77FF</ColorWhenBeMain>
+			<ColorWhenBeFloor>FFD329FF</ColorWhenBeFloor>
+			<ColorWhenBeCape>FB6B2AFF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BlueCloth" Parent="ClothBase">
+	
+	<ThingName>蓝布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【蓝色】布料，可以用来制作衣物等。</Desc>
+	<Color>4779CAFF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>蓝布</NamePrefix>
+			<ClothesColorID>5</ClothesColorID>
+			<ColorWhenBeMain>4779CAFF</ColorWhenBeMain>
+			<ColorWhenBeFloor>4B90BAFF</ColorWhenBeFloor>
+			<ColorWhenBeCape>74B6F8FF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_RedCloth" Parent="ClothBase">
+	
+	<ThingName>红布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【红色】布料，可以用来制作衣物等。</Desc>
+	<Color>EA7276FF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>红布</NamePrefix>
+			<ClothesColorID>6</ClothesColorID>
+			<ColorWhenBeMain>EA7276FF</ColorWhenBeMain>
+			<ColorWhenBeFloor>D41C1CFF</ColorWhenBeFloor>
+			<ColorWhenBeCape>EA4343FF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WhiteCloth" Parent="ClothBase">
+	
+	<ThingName>白布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【白色】布料，可以用来制作衣物等。</Desc>
+	<Color>FFFFFFFF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>白布</NamePrefix>
+			<ClothesColorID>7</ClothesColorID>
+			<ColorWhenBeMain>FFFFFFFF</ColorWhenBeMain>
+			<ColorWhenBeFloor>F9F9F4FFF</ColorWhenBeFloor>
+			<ColorWhenBeCape>F2F6FFFF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BlackCloth" Parent="ClothBase">
+	
+	<ThingName>黑布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>棉花织成的【黑色】布料，可以用来制作衣物等。</Desc>
+	<Color>4F4B4BFF</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>黑布</NamePrefix>
+			<ClothesColorID>8</ClothesColorID>
+			<ColorWhenBeMain>4F4B4BFF</ColorWhenBeMain>
+			<ColorWhenBeFloor>6F6F6FFF</ColorWhenBeFloor>
+			<ColorWhenBeCape>3C4047FF</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+
+</List></ThingDefs>

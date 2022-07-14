@@ -1,0 +1,23 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="Ls_FirstNoLing">
+			<DisplayName>Pet Qi Exhausted</DisplayName>
+			<Desc>The Qi of the pet has been exhausted. You have to build the corresponding statue in order to resurrect it, and the process of which will take three days.</Desc>
+			<Selections.0.Display>Okay</Selections.0.Display>
+		</Text>
+		<Text Name="Ls_SecLs">
+			<DisplayName>Second Pet</DisplayName>
+			<Desc>You can only have one pet. This pet will disappear for a while. To summon this pet, you need to build its statue first.</Desc>
+		</Text>
+		<Text Name="Ls_Outspread_Stability">
+			<DisplayName>Renowned Might</DisplayName>
+			<Desc>Floating dragon is flying high above, with dark clouds, lightning and thunders filling the sky. Those who have done wrongful acts shall be very afraid.</Desc>
+			<Selections.0.Display>Okay</Selections.0.Display>
+		</Text>
+		<Text Name="Ls_Outspread_Attractive">
+			<DisplayName>Auspicious Signs</DisplayName>
+			<Desc>Dark Phoenix hovered in the sky for several days before it fell on top of the main hall, made three long cries and flew away. Most people believe that this is a very good Seven-Slaughtering.</Desc>
+			<Selections.0.Display>Okay</Selections.0.Display>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,15 @@
+<Magics><List>
+	<Magic Name="Magic_MakeHorse" Type="Class">
+		<DisplayName>封灵术</DisplayName>
+		<Desc>对低于自己境界的昏迷或倒地的妖兽使用，将其封印为灵契。</Desc>
+		<Icon>res\Sprs\ui\icon_YaoShouFengYin01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<CostLing>1000</CostLing>
+		<ClassName>Magic_JY2Horse</ClassName>
+		<ShowInPAttacker>1</ShowInPAttacker>
+		<TargetDesc>请选择一个昏迷的妖兽</TargetDesc>
+	</Magic>
+</List></Magics>

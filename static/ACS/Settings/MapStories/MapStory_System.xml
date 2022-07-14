@@ -1,0 +1,810 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	<Story Name="sys_getnothing"> 
+		<DisplayName>一无所获</DisplayName>
+		<Desc>我们没能得到任何有用的东西。</Desc>
+		<Kind>None</Kind>
+	</Story>
+	
+	<Story Name="sys_noreaction"> 
+		<DisplayName>毫无反应</DisplayName>
+		<Desc>似乎毫无反应。</Desc>
+		<Kind>None</Kind>
+	</Story>
+	
+	<Story Name="sys_brokenneck"> <!--突破瓶颈默认事件-->
+		<DisplayName>顿悟</DisplayName>
+		<Desc>[NAME]突然有所感悟，久久没有反应的功法瓶颈瓶颈似乎有了松动的现象，[IT]赶紧坐了下来。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:AddMsg(XT("瓶颈突破成功！"));</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="sys_openplacelink"> <!--地点初打探默认事件-->
+		<DisplayName>初次抵达</DisplayName>
+		<Desc>第一次来到[PLACE]，[NAME]找人打探了一下周边的消息。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:OpenPlaceLinks(story.Place);</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="sys_openplace"> <!--进度到了解锁地点-->
+		<DisplayName>解锁地点</DisplayName>
+		<Desc>多次来到[PLACE]，[NAME]对此地渐渐熟悉，发现了一个有趣的去处。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:UnLockRandomChild(story.Place);</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="sys_test">
+		<DisplayName>顿悟</DisplayName>
+		<Desc>[NAME]突然有所感悟，久久没有反应的功法瓶颈似乎有了松动的现象，[IT]赶紧坐了下来。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:DropFabao(0,"Item_SummerTrousers",nil,XT("好牛逼"),XT("好牛逼的法宝"))</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	
+	<Story Name="Story_SoulSeach">
+		<DisplayName>搜魂</DisplayName>
+		<Desc>[NAME]对这个弥留的修行者施展了搜魂大法，试图获得一些有用的信息。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult><![CDATA[	
+			local tnpc = story:GetBindNpc();
+			local rs = false;
+			local nK = 1 
+			if tnpc ~= nil then
+				if me:GetRoomFengshui() == 4 then
+					nK = 1.2
+				elseif me:GetRoomFengshui() == 5 then
+					nK = 1.5
+				elseif me:GetRoomFengshui() == 6 then
+					nK = 2
+				end
+				if tnpc.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body then
+					if tnpc.npcObj.bDaNeng == true then
+						if rs == false then
+							--获得秘籍
+							for i = 1, world:RandomInt(2,6) do
+								me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+							end
+							rs = true;
+						end
+					elseif (tnpc.npcObj.IsEliteEnemy) then
+						rs = false
+					else
+						if rs == false and world:CheckRate(0.2 * nK) then
+							--获得功法
+							local gname = tnpc:GetGongName();
+							if gname ~= nil then
+								me:UnLockGong(gname);
+								rs = true;
+							end
+						end
+						if world:CheckRate(0.25 * nK) then
+							--获得秘闻
+							me:AddSecret(me:RandomInt(1, 23));
+							rs = true;
+						end
+						if rs == false and world:CheckRate(0.5 * nK) then
+							--获得秘籍
+							local ename = tnpc:GetRandomEsotericName();
+							if ename ~= nil then
+								me:DropEsoteric(ename);
+								rs = true;
+							end
+						end
+					end
+				else
+					if rs == false and world:CheckRate(1 * nK) then
+						--获得功法
+						local gname = tnpc:GetGongName();
+						if gname ~= nil then
+							me:UnLockGong(gname);
+							rs = true;
+						end
+					end
+				end
+			end
+			if rs == false then
+				me:AddMsg(XT("一无所获"));
+			end
+		]]>
+		</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="Story_JiangDao" Parent="BaseFillingStory">
+		<DisplayName>忽有所悟</DisplayName>
+		<Desc>[NAME]沉浸在玄妙之道中，</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult><![CDATA[	
+			local nR = me:RandomInt(0,11)
+			if nR <=4 then
+				me:AddMsg(XT("[NAME]虽然听的似懂非懂，但依然大有所获。"));me:AddTreeExp(me:GetGLevel() * 1000);
+			elseif nR > 4 and nR <= 6 then
+				me:AddMsg(XT("[NAME]渐渐听得入迷，条条玄妙流淌中大有参悟。"));me:AddTreeExp(me:GetGLevel() * 4000);
+			elseif nR > 6 and nR <= 9 then
+				me:AddMsg(XT("[NAME]从玄妙的声音中竟然领悟出一套秘法。"));me:DropRandomItem("Esoterica");
+			elseif nR > 9  then
+				local nR = me:RandomInt(4, 4 + me:GetIntelligence() + me:GetLuck())
+				me:AddMsg(XT("[NAME]听得仙人讲法，竟然福至心灵的领悟到一丝偷天机的法门。") );me:AddMsg(string.format(XT("[NAME]道行降低了%s点。"), tostring(nR)) );me:ModifierProperty("AbilityLvAddV",-nR);
+			end
+		]]>
+		</GlobleOKResult>
+	</Story>
+	
+	<Story Name="Story_TitleGold">
+		<DisplayName>成丹</DisplayName>
+		<Desc>[NAME]修为达到金丹之境，修行界的同道给予其一个称号。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>
+			<![CDATA[
+				if me:GetGoldLevel() == 1 then
+					if me:GetGoldValue() >= 300000 then
+						local tR = {XT("鸿蒙"),XT("混沌"),XT("玄黄"),XT("太昊"),XT("太初"),XT("元初"),XT("太始"),XT("玄穹"),XT("通天"),XT("玄德"),XT("造化"),XT("万灵"),XT("紫薇"),XT("周天"),XT("阴阳"),XT("六道")}
+						local titlepre = tR[me:RandomInt(1, #tR + 1)]
+						me:AddTitle(string.format(XT("%s真人"), tostring(titlepre)), XT("结丹超品，冠绝当世！"), 4);
+					else
+						me:AddRandomTitle(1, XT("结丹一品！"), 3);
+					end
+				elseif me:GetGoldLevel() <= 3 then
+					me:AddRandomTitle(1, XT("结丹上品！"), 2);
+				elseif me:GetGoldLevel() <= 6 then
+					me:AddRandomTitle(1, XT("结丹中品！"), 1);
+				else
+					me:AddRandomTitle(1, XT("结丹下品！"), 0);
+				end
+			]]>
+		</GlobleOKResult>
+	</Story>
+	
+	
+	<Story Name="Story_TitleRandom">
+		<DisplayName>渐有名号</DisplayName>
+		<Desc>[NAME]下山历练，在修行界也渐渐传开了名号。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>
+			<![CDATA[
+				local nR = me:RandomInt(1,11)
+				local nL = 0
+				if nR == 10 then
+					nL = 4
+				elseif nR <10 and nR >=8  then
+					nL = 3
+				elseif nR <8 and nR >=5  then
+					nL = 2
+				elseif nR <5 and nR >=1  then
+					nL = 1
+				end
+				me:AddRandomTitle(-1, XT("行走天下所得"), nL);
+			]]>
+		</GlobleOKResult>
+	</Story>
+	
+	
+	<Story Name="Story_sys_BossLong_Wish">
+		<DisplayName>许愿</DisplayName>
+		<Desc>神秘洞穴中的意念似乎别具神通，可以付出一些代价来请求它做一些特殊的事。但如果不能满足它提出的要求，也会召来它的愤怒。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>祈求获得秘闻</Display> 
+				<OKResult>
+				<![CDATA[	
+				local meName = me.npcObj:GetName()
+				me:AddMsg(XT("[NAME]对着神秘洞穴祈求，希望能获得一些修行界的秘闻。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了[NAME]的祈求。"));
+				MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    %s对着神秘洞穴祈求，希望能获得一些修行界的秘闻。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了%s的祈求。"), tostring(meName), tostring(meName)), 0, 0, null, XT("神秘洞穴"));
+				story.target:Wish(me, 1);
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>祈求灵气弥漫</Display> 
+				<OKResult>
+				<![CDATA[	
+				local meName = me.npcObj:GetName()
+				me:AddMsg(XT("[NAME]对着神秘洞穴祈求，希望能使附近的灵气浓郁一些。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了[NAME]的祈求。"));
+				MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    %s对着神秘洞穴祈求，希望能使附近的灵气浓郁一些。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了%s的祈求。"), tostring(meName), tostring(meName)), 0, 0, null, XT("神秘洞穴"));story.target:Wish(me, 2);
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>祈求自我提升</Display> 
+				<OKResult>
+				<![CDATA[					
+				if me:GetFlag(85) == 0 then
+					local meName = me.npcObj:GetName()
+					me:AddMsg(XT("[NAME]对着神秘洞穴祈求，希望能获一些能力提升。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了[NAME]的祈求。"));
+					MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    %s对着神秘洞穴祈求，希望能获一些能力提升。神秘洞穴趁机提出一些要求，如果得到满足，它将会回应了%s的祈求。"), tostring(meName), tostring(meName)), 0, 0, null, XT("神秘洞穴"));story.target:Wish(me, 3);
+				else
+					me:AddMsg(XT("[NAME]已经享受过神秘洞穴的馈赠了。"));
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+				me:AddMsg(XT("[NAME]想了想，决定还是放弃对神秘洞穴许愿。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_sys_BossLong_WishSuccess">
+		<DisplayName>实现愿望</DisplayName>
+		<Desc>神秘洞穴很满意这次献祭，它实现了[NAME]的祈求。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>
+			<![CDATA[
+				local nT = story.target
+				local meName = me.npcObj:GetName()
+				if nT == 1 then
+					local tS = {1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,49}
+					me:AddSecret(tS[me:RandomInt(1, #tS + 1)]);
+					MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    神秘洞穴对祭祀很满意，它实现了%s的愿望。"), tostring(meName)), 0, 0, null, XT("神秘洞穴"));
+				elseif nT == 2 then
+					world:BeginWeather("LingUpWave_Little");
+					MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    神秘洞穴对祭祀很满意，它实现了%s的愿望。"), tostring(meName)), 0, 0, null, XT("神秘洞穴"));
+				elseif nT == 3 then
+					me:AddModifier("Modifier_Story_BossLong_Wish"..world:RandomInt(1,5));me:SetFlag(85,1);
+					MessageMgr:AddChainEventMessage(1, -1, string.format(XT("    神秘洞穴对祭祀很满意，它实现了%s的愿望。"), tostring(meName)), 0, 0, null, XT("神秘洞穴"));
+				end
+			]]>
+		</GlobleOKResult>
+	</Story>
+	
+	<Story Name="System_RobGreateBuilding">
+		<DisplayName>夺取奇观</DisplayName>
+		<Desc>[NAME]试图夺取镇派奇观中凝聚多年的精华。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Condition>WorldLua:GetFightMapHelper() ~= nil and WorldLua:GetFightMapHelper():IsSubmission() == true</Condition>
+				<Display>夺取精华</Display>
+				<OKResult>
+				<![CDATA[
+				local bindthingname = story:GetBindThing():GetName()
+				me:AddMsg(string.format(XT("[NAME]施展神通，自%s中提取出其凝聚多年之玄妙精华。"), tostring(bindthingname)));
+				local tBuildList = {
+				["Building_BaBaoGongDe"] = "Item_Wonder_BaBaoGongDe",
+				["Building_WanDaoZunFaZuo"] = "Item_Wonder_WanDaoZunFaZuo",
+				["Building_QiQingQingTongShu"] = "Item_Wonder_QiQingQingTongShu",
+				["Building_ZhouTianXingDouPan"] = "Item_Wonder_ZhouTianXingDouPan",
+				["Building_WuLongXuanJinTa"] = "Item_Wonder_WuLongXuanJinTa",
+				["Building_ShuShanJianChi"] = "Item_Wonder_ShuShanJianChi",
+				["Building_LingYuFeng"] = "Item_Wonder_LingYuFeng",
+				["Building_WanGuXieFaTan"] = "Item_Wonder_WanGuXieFaTan",
+				["Building_XuanCiTianKeng"] = "Item_Wonder_XuanCiTianKeng",
+				["Building_QiShaShenBei"] = "Item_Wonder_QiShaShenBei",
+				["Building_XuanYinShengQuan"] = "Item_Wonder_XuanYinShengQuan",
+				["Building_YaoZuYiHai"] = "Item_Wonder_YaoZuYiHai"
+				};
+				local items = me:DropAwardItem(tBuildList[story:GetBindThing().def.Name],1);
+				WorldLua:GetFightMapHelper():SetWonderItem(items[0]);
+				WorldLua:GetFightMapHelper():RobWonderBuilding(story:GetBindThing());
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg(XT("[NAME]居然试图对镇派建筑意图不轨，整个门派震怒，必将严惩这无礼之行为。")); local helper = WorldLua:GetFightMapHelper();if helper ~= nil then helper:BeginSchoolAttack(me.npcObj) end</NOResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+			</li>
+		</Selections>
+	</Story>	
+		
+	<Story Name="System_LearnGreateBuilding">
+		<DisplayName>参悟大道</DisplayName>
+		<Desc>传闻这座奇观中蕴含着某种阵法之道，[NAME]试图参悟该奇观中蕴含的天地法则以领悟什么。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>参悟大道</Display>
+				<Tip>境界/悟性/机缘/阵法技能</Tip>
+				<OKResult>
+				<![CDATA[
+				local tBuildList = {
+					["Building_BaBaoGongDe_Our"] = "Esoterica_ZhenFa_18",
+					["Building_WanDaoZunFaZuo_Our"] = "Esoterica_ZhenFa_22",
+					["Building_QiQingQingTongShu_Our"] = "Esoterica_ZhenFa_17",
+					["Building_ZhouTianXingDouPan_Our"] = "Esoterica_ZhenFa_16",
+					["Building_WuLongXuanJinTa_Our"] = "Esoterica_ZhenFa_19",
+					["Building_ShuShanJianChi_Our"] = "Esoterica_ZhenFa_20",
+					["Building_LingYuFeng_Our"] = "Esoterica_ZhenFa_24",
+					["Building_WanGuXieFaTan_Our"] = "Esoterica_ZhenFa_26",
+					["Building_XuanCiTianKeng_Our"] = "Esoterica_ZhenFa_25",
+					["Building_QiShaShenBei_Our"] = "Esoterica_ZhenFa_27",
+					["Building_XuanYinShengQuan_Our"] = "Esoterica_ZhenFa_21"
+					};
+				if me:IsLearnedEsoteric(tBuildList[story:GetBindThing().def.Name]) == true then
+					me:AddMsg(XT("[NAME]已经参悟这些奥妙了。"))
+				else
+					if me:GetGLevel() >= 12 and (me:GetIntelligence() + me:GetLuck() >= 18) and me:GetSkillLevel("Zhen") >=15 then
+						local bindthingname = story:GetBindThing():GetName()
+						me:AddMsg(string.format(XT("[NAME]运转元神，尝试参悟%s中蕴含的大道。竟然从中领悟出一些阵法的奥义。"), tostring(bindthingname)));
+						me:LearnEsoteric(tBuildList[story:GetBindThing().def.Name])
+						if tBuildList[story:GetBindThing().def.Name] == "Building_ZhouTianXingDouPan" then
+							me:LearnEsoteric("Esoterica_ZhenFa_23")
+						end
+					else 
+						local bindthingname = story:GetBindThing():GetName()
+						me:AddMsg(string.format(XT("[NAME]运转元神，尝试参悟%s中蕴含的大道，然而受限于自身积累不足，最终一无所获。"), tostring(bindthingname)));
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，决定还是不要冒失。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>	
+	
+	<Story Name="System_LearnGreateBuilding_WuDang">
+		<DisplayName>参悟大道</DisplayName>
+		<Desc>武当金殿，其中蕴含着一种玄妙的道韵，似乎在向参拜者传递着某种信息。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>参悟大道</Display>
+				<Tip>境界/悟性/机缘</Tip>
+				<OKResult>
+				<![CDATA[
+				
+				if world:IsGongUnLocked("Gong_13_None") == true  then
+					me:AddMsg(XT("[NAME]已经参悟这些奥妙了。"))
+				else
+					if me:GetGLevel() >= 9 and (me:GetIntelligence() + me:GetLuck() >= 16) then
+						local bindthingname = story:GetBindThing():GetName()
+						me:AddMsg(string.format(XT("[NAME]运转元神，尝试参悟%s中蕴含的大道。竟然从中领悟出一套功法。"), tostring(bindthingname)));
+						me:UnLockGong("Gong_13_None");
+					else 
+						local bindthingname = story:GetBindThing():GetName()
+						me:AddMsg(string.format(XT("[NAME]运转元神，尝试参悟%s中蕴含的大道，然而受限于自身积累不足，最终一无所获。"), tostring(bindthingname)));
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，决定还是不要冒失。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="System_FightMap_ZhenWuShenXiang">
+		<DisplayName>祭拜</DisplayName>
+		<Desc>向真武大帝神像祭拜，以求取一丝神威灵引。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>祭拜</Display>
+				<OKResult>
+				<![CDATA[
+					if world:GetWorldFlag(98) = 0 then
+						me:AddMsg(XT("[NAME]满怀对先行者大能的敬意祭拜真武大帝的神像。竟然获得了一丝真武大帝神威灵引。"));world:SetWorldFlag(98,1);
+						local items = me:DropAwardItem("Item_Wonder_ZhenWuShenNian",1);
+						items:SetCamp("Player");
+					elseif world:GetWorldFlag(98) = 1 then
+						me:AddMsg(XT("[NAME]满怀对先行者大能的敬意祭拜真武大帝的神像。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，决定还是不要冒失。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="System_EnterQianKunJie">
+		<DisplayName>小乾坤界</DisplayName>
+		<Desc>由太一门密藏乾坤灵晶为核心建成的神奇建筑，其内自成空间，可以凭心念收纳取用万物。但其内有一种奇特的封界阻隔神念，任你多高的修为也无法强行查看内中详情，似乎隐藏着什么隐秘。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>神念探查</Display>
+				<OKResult>
+				<![CDATA[
+					if me.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body and me:GetGLevel() >= 7 then
+						if me:CheckItemEquptCount("Item_TaiYiMiDian") == 1 then
+							me:AddMsg(XT("[NAME]以神念探查，却感觉怀中《太一秘典》一震。小乾坤界中本来阻隔神念的封界竟豁然洞开。"));
+							me:TriggerStory("System_EnterQianKunJie1")
+						else
+							me:AddMsg(XT("[NAME]以神念探查，但一如既往的毫无成效。"));
+						end
+					else 
+						me:AddMsg(XT("[NAME]无法发出神念。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]放弃了这次尝试。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>	
+	
+	<Story Name="System_EnterQianKunJie1">
+		<DisplayName>小乾坤界</DisplayName>
+		<Desc>[NAME]简单查看了这个入口，发现封界的对面似乎是一个几尽停滞的空间，并无什么危险的迹象。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>进入其中</Display>
+				<OKResult>
+				<![CDATA[
+					RPGMapMgr:EnterRPGWorld({me.npcObj}, "RpgQianKun");
+				]]>
+				</OKResult>
+			</li>
+			<!--  -->
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]放弃了这次尝试。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>	
+	
+	<Story Name="System_FightMap_NormalTalk">
+		<DisplayName>交谈</DisplayName>
+		<Desc>凡人的生活就是那么枯燥，且快乐。</Desc>		
+		<Kind>None</Kind>		
+		<TalkMode>1</TalkMode>
+		<Selections>
+			<li>
+				<Display>闲聊</Display>
+				<Say>近日有何新鲜事？</Say>
+				<OKResult>
+				<![CDATA[	
+					if world:GetFightMapPlace() == "Place_DanXia" then
+						me:AddMsg(XT("传闻本派八宝功德池中蕴含宇宙之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_KunLun" then
+						me:AddMsg(XT("传闻本派万道尊法座中蕴含天地开辟之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_TianJi" then
+						me:AddMsg(XT("传闻本派七情建木中蕴含阴阳之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_JiuHua" then
+						me:AddMsg(XT("传闻本派周天星斗盘中蕴含时空衍生与日月之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_LongHu" then
+						me:AddMsg(XT("传闻本派五龙玄阳塔中蕴含始终之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_Shu" then
+						me:AddMsg(XT("传闻本派剑池中蕴含生灭之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_WuLian" then
+						me:AddMsg(XT("传闻本派灵玉峰中蕴含万灵生发之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_BaiMan" then
+						me:AddMsg(XT("传闻本派万骨邪法坛中蕴含时空尽衰之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_XianKong" then
+						me:AddMsg(XT("传闻本派玄磁天坑中蕴含天地归寂之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_Hei" then
+						me:AddMsg(XT("传闻本派七杀神碑中蕴含万物陨灭之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					elseif world:GetFightMapPlace() == "Place_HeHuan" then
+						me:AddMsg(XT("传闻本派玄阴圣泉中蕴含造化之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+					else
+						local nR = world:RandomInt(1,8)
+						if nR == 1 then
+							me:AddMsg(XT("听说老王家邻居又添了个新丁，羡慕死了！"));
+						elseif nR == 2 then
+							me:AddMsg(XT("最近我们村的有的年轻人也着了魔怔，天天堵在村口，闹什么罢工，还动手打捕快。真是造孽。"));
+						elseif nR == 3 then
+							me:AddMsg(XT("没有什么新鲜事啊，一切都平淡无奇！好想也能有仙缘降临在我身上啊。可是我从来都没见过仙人，真让人沮丧……"));
+						elseif nR == 4 then
+							me:AddMsg(XT("前几天遇到个配钥匙的，说的话可真让人生气。"));
+						elseif nR == 5 then
+							me:AddMsg(XT("最近村里的吃的老是不见，奇怪。"));
+						elseif nR == 6 then
+							me:AddMsg(XT("你说有没有一种可能，那些高来高去的仙人也会偷偷拿我们的东西？"));
+						elseif nR == 7 then
+							if world:GetFightMapPlace() == "Place_BirthPlace14" then
+								local nW = world:RandomInt(1,3)
+								if nW == 1 then
+									me:AddMsg(XT("此处是铜陵山地界，近日东南方似乎有个怪人出没……真让人担心……"));
+								else
+									me:AddMsg(XT("天下诸多削铁如泥之利器，却少闻削泥如铁之钝器。利器专于采粗琢坚，钝器专于集脆建筑，各有所用也。吾辈所用皆为利器，闻世上稀有采玉之钝器，但不知何处可循。"));
+								end
+							elseif world:GetFightMapPlace() == "Place_JiuHua1" then
+								me:AddMsg(XT("之前看到个卖艺的，他带着各种野兽，那些野兽还会自己排阵排列。有一次他来，被一个穿兽皮的人叫住了说了几句，所有野兽都被那穿兽皮的收走，卖艺的也跟他走了，后来就再也没来过了。"));
+							elseif world:GetFightMapPlace() == "Place_Desert4" then
+								me:AddMsg(XT("这里虽然干旱，可也有下雨的时候。"));
+							elseif world:GetFightMapPlace() == "Place_FertileField1" then
+								me:AddMsg(XT("我爷爷说，世上那最高峰山顶有个池子，以前还会喷火！"));
+							elseif world:GetFightMapPlace() == "Place_FertileField2" then
+								me:AddMsg(XT("神木林中有些奇怪的蘑菇，吃了之后看见有好多精灵在帮我切石，好快乐啊！"));
+							elseif world:GetFightMapPlace() == "Place_FertileField3" then
+								me:AddMsg(XT("我以前去过大漠做生意，有个村子里的人啊，只吃生肉啊……面粉他们根本不会吃也不会做！"));
+							elseif world:GetFightMapPlace() == "Place_CentralPlains4" then
+								me:AddMsg(XT("前几天村里有个人吃了外地买来的蘑菇，昏睡三天，睡觉的时候时而大汗不止，时而哈哈大笑。结果醒来之后跟我们说他在梦中看见整个村子的人都变成了鸟，我们都觉得他疯了，但他后来也挺正常的。"));
+							elseif world:GetFightMapPlace() == "Place_CentralPlains5" then
+								me:AddMsg(XT("有一天有个外地人卖蘑菇，很便宜，我买了点回家吃了之后，感觉墙上都是花朵，我就一直采一直采……不知多少天之后，发现大家都用异样的眼神看着我，原来我一直在墙边挖土……"));
+							elseif world:GetFightMapPlace() == "Place_BirthPlace11" then
+								me:AddMsg(XT("江岸沃野面粉产量奇高，我们祖上小麦产量不弱于他们，可面粉产量却不及其半也不知为何。"));
+							elseif world:GetFightMapPlace() == "Place_BirthPlace13" then
+								me:AddMsg(XT("我们的棉花很多都卖给了芦墟村，那里的人缝纫速度极快无比，其中女工都佩戴一种似护腕的东西……"));
+							else
+								me:AddMsg(XT("太阳底下哪有什么新鲜事……无非是柴米油盐酱醋茶罢了"));
+							end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>告辞</Display>
+			</li>
+		</Selections>
+	</Story>	
+	
+	<Story Name="System_FightMap_DiscipleTalk">
+		<DisplayName>交谈</DisplayName>
+		<Desc>修行之路，逆水行舟，不进则退………</Desc>		
+		<Kind>None</Kind>		
+		<TalkMode>1</TalkMode>
+		<Selections>
+			<li>
+				<Display>问询</Display>
+				<Say>道友，最近可有什么新鲜事？</Say>
+				<OKResult><![CDATA[	
+					local nR = world:RandomInt(1,6)
+					if nR == 1 then
+						me:AddMsg(XT("说来令人生气，那日我与人斗法，才使出半招，就被人说偷学那西域的绝学。真的气煞我也……须知天下剑术起手无非就是那几种定式……不分辨清楚后续变化，又怎能武断下此结论？"));
+					elseif nR == 2 then
+						me:AddMsg(XT("近日师弟总是催我快快突破境界，但突破境界兹事体大，怎能草率？我也只能说一句快了快了，真是苦恼。"));
+					elseif nR == 3 then
+						me:AddMsg(XT("近日吾突然有所悟：修行之道，与他人而说，无论好坏毁誉，既不能掌握，亦皆为外物。道之所在，终尽归于自身。能无愧于心，便足矣。"));
+					elseif nR == 4 then
+						if world:GetFightMapPlace() == "Place_DanXia" then
+							me:AddMsg(XT("传闻本派八宝功德池中蕴含宇宙之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_KunLun" then
+							me:AddMsg(XT("传闻本派万道尊法座中蕴含天地开辟之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_TianJi" then
+							me:AddMsg(XT("传闻本派七情建木中蕴含阴阳之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_JiuHua" then
+							me:AddMsg(XT("传闻本派周天星斗盘中蕴含时空衍生与日月之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_LongHu" then
+							me:AddMsg(XT("传闻本派五龙玄阳塔中蕴含始终之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_Shu" then
+							me:AddMsg(XT("传闻本派剑池中蕴含生灭之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_WuLian" then
+							me:AddMsg(XT("传闻本派灵玉峰中蕴含万灵生发之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_BaiMan" then
+							me:AddMsg(XT("传闻本派万骨邪法坛中蕴含时空尽衰之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_XianKong" then
+							me:AddMsg(XT("传闻本派玄磁天坑中蕴含天地归寂之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_Hei" then
+							me:AddMsg(XT("传闻本派七杀神碑中蕴含万物陨灭之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						elseif world:GetFightMapPlace() == "Place_HeHuan" then
+							me:AddMsg(XT("传闻本派玄阴圣泉中蕴含造化之道，将其运用于阵法威力无穷……不知道是不是真的……"));
+						else
+							me:AddMsg(XT("没有……"));
+						end
+					elseif nR == 5 then
+						if world:GetFightMapPlace() == "Place_DanXia" then
+							me:AddMsg(XT("前几日看见派中有人在演练《先天甲乙木神阵》，先天木灵界展开后，真让人身心俱新。"));
+						elseif world:GetFightMapPlace() == "Place_KunLun" then
+							me:AddMsg(XT("前几日看见派中有人在演练《诸天六御行法仪轨》，以阵法布下诸天六御清灵胜境后，竟然让人全身灵息充沛，端的神奇。"));
+						elseif world:GetFightMapPlace() == "Place_TianJi" then
+							me:AddMsg(XT("前几日看见派中有人在演练《真凰羽剑阵》，涅槃之法真有绝境逆转的玄妙。"));
+						elseif world:GetFightMapPlace() == "Place_JiuHua" then
+							me:AddMsg(XT("前几日看见派中有人在演练《阴阳二行神阵》，阵法灵动变化如天马行空，真是无迹可寻。"));
+						elseif world:GetFightMapPlace() == "Place_LongHu" then
+							me:AddMsg(XT("前几日看见派中有人在演练《天地五方不灭阵》，天地五方不灭界笼罩之下，真是万法辟易。"));
+						elseif world:GetFightMapPlace() == "Place_Shu" then
+							me:AddMsg(XT("前几日看见派中有人在演练《八门玄金天劫剑阵》，阵法生门死门变化间，真是攻守皆备。"));
+						elseif world:GetFightMapPlace() == "Place_WuLian" then
+							me:AddMsg(XT("前几日看见派中有人在演练《五峰镇归墟》，五峰御界笼罩之下，真可谓坚若磐石……"));
+						elseif world:GetFightMapPlace() == "Place_BaiMan" then
+							me:AddMsg(XT("前几日看见派中有人在演练《九御赋龙形阵》，龙魂裂神法远看之下亦让人生出神魂动摇之感，真是凌厉非常。"));
+						elseif world:GetFightMapPlace() == "Place_XianKong" then
+							me:AddMsg(XT("前几日看见派中有人在演练《北斗真武戮魔大阵》，北斗破妄的秘术竟有洞穿万物之威，真乃无上仙阵。"));
+						elseif world:GetFightMapPlace() == "Place_Hei" then
+							me:AddMsg(XT("前几日看见派中有人在演练《诛仙剑阵》，四剑齐发之下万物灰灰，不愧是太古第一杀阵。"));
+						elseif world:GetFightMapPlace() == "Place_HeHuan" then
+							me:AddMsg(XT("前几日看见派中有人在演练《三阴三绝阵》，以纯阴之力御法，竟有如此威力，让人叹为观止。"));
+						else
+							me:AddMsg(XT("别说话，静心。"));
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>告辞</Display>
+			</li>
+		</Selections>
+	</Story>	
+	
+	
+	<Story Name="System_Tribute" Parent="Secrets_FabaoAppear3">
+		<DisplayName>进贡</DisplayName>
+		<Desc>[NAME]来到[PLACE]，准备收取每年的贡品。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>收取贡品</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("见[NAME]到来，[SCHOOL]恭恭敬敬的献上今年的贡品。"));
+					if story.School == 1 then  
+						me:DropAwardItemFromCache(story.ItemCache, 1);me:DropAwardItemFromCache(story.ItemCache, 1);
+					elseif story.School == 2 then
+						me:DropAwardItem("Item_QieDaoGuo", me:RandomInt(1,4));me:DropAwardItem("Item_YanDaoGuo", me:RandomInt(1,4));
+					elseif story.School == 3 then
+						me:DropAwardItem("Item_ZaoHuaYuZi", me:RandomInt(1,5));me:DropAwardItem("Item_Dan_LingYuanZhong", me:RandomInt(1,3));
+					elseif story.School == 4 then
+						me:DropAwardItem("Item_Dan_ExtremeLofty", me:RandomInt(3,7));me:DropAwardItem("Item_Dan_HundredRefine", me:RandomInt(2,6));
+					elseif story.School == 5 then
+						me:DropAwardItem("Item_ThunderAir", me:RandomInt(4,11));
+					elseif story.School == 6 then
+						me:DropAwardItem("Item_Dan_LongDan1", 1);me:DropAwardItem("Item_Dan_FengDan1", 1);me:DropAwardItem("Item_Dan_ZhuLongDan1", 1);
+					elseif story.School == 7 then
+						me:DropAwardItem("Item_Dan_TreeEXP", me:RandomInt(7,16));
+					elseif story.School == 8 then
+						me:DropAwardItem("Item_BenYuan_None", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Jin", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Mu", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Shui", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Huo", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Tu", me:RandomInt(2,5));
+					elseif story.School == 9 then
+						me:DropAwardItem("Item_Dan_ReBorn_4", me:RandomInt(3,6));
+					elseif story.School == 10 then
+						me:DropAwardItem("Item_XianBone", me:RandomInt(4,7));
+					elseif story.School == 11 then
+						me:DropAwardItem("Item_XianDaoShenNian", me:RandomInt(2,4));me:DropAwardItem("Item_XianDaoXieNian", me:RandomInt(2,4));
+					elseif story.School == 12 then
+						me:DropAwardItem("Item_XianBone", me:RandomInt(4,7));me:DropAwardItem("Item_BenYuan_None", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Jin", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Mu", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Shui", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Huo", me:RandomInt(2,5));me:DropAwardItem("Item_BenYuan_Tu", me:RandomInt(2,5));
+					end;
+					story:FinishSecret();
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>告辞</Display>
+			</li>
+		</Selections>
+	</Story>
+
+	
+	<Story Name="System_FightMap_UnlockPlant">
+		<DisplayName>采样</DisplayName>
+		<Desc>[NAME]尝试采集此物的样本。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>采集</Display>
+				<OKResult>
+				<![CDATA[	
+				local storybindthingthingname = story:GetBindThing().def.ThingName
+				if story:GetBindThing().def.Name == "TreePeach" or story:GetBindThing().def.Name == "Building_TaoShu1" or story:GetBindThing().def.Name == "Building_TaoShu2" or story:GetBindThing().def.Name == "Building_TaoShu3" then
+					if world:IsBuildingUnlocked("Building_TaoShu1") == false then
+						me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));world:UnlockBuilding("Building_TaoShu1");world:UnlockBuilding("Building_TaoShu2");world:UnlockBuilding("Building_TaoShu3");
+					else
+						me:AddMsg(XT("我们已经拥有了此物的样本。"));
+					end
+				elseif story:GetBindThing().def.Name == "TreeJade" or story:GetBindThing().def.Name == "Building_YuShu1" or story:GetBindThing().def.Name == "Building_YuShu2" or story:GetBindThing().def.Name == "Building_YuShu3" or story:GetBindThing().def.Name == "Building_YuShu4" or story:GetBindThing().def.Name == "Building_YuShu5" or story:GetBindThing().def.Name == "Building_YuShu6" then
+					if world:IsBuildingUnlocked("Building_YuShu1") == false then
+						me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));world:UnlockBuilding("Building_YuShu1");world:UnlockBuilding("Building_YuShu2");world:UnlockBuilding("Building_YuShu3");world:UnlockBuilding("Building_YuShu4");world:UnlockBuilding("Building_YuShu5");world:UnlockBuilding("Building_YuShu6");
+					else
+						me:AddMsg(XT("我们已经拥有了此物的样本。"));
+					end
+				elseif story:GetBindThing().def.Name == "TreeBone" or story:GetBindThing().def.Name == "Building_ShaShenMu1" or story:GetBindThing().def.Name == "Building_ShaShenMu2" or story:GetBindThing().def.Name == "Building_ShaShenMu3" or story:GetBindThing().def.Name == "Building_ShaShenMu4" then
+					if world:IsBuildingUnlocked("Building_ShaShenMu1") == false then
+						me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));world:UnlockBuilding("Building_ShaShenMu1");world:UnlockBuilding("Building_ShaShenMu2");world:UnlockBuilding("Building_ShaShenMu3");world:UnlockBuilding("Building_ShaShenMu4");
+					else
+						me:AddMsg(XT("我们已经拥有了此物的样本。"));
+					end
+				else
+					if world:IsBuildingUnlocked(story:GetBindThing().def.Name) == false then
+						me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));world:UnlockBuilding(story:GetBindThing().def.Name);
+					else
+						me:AddMsg(XT("我们已经拥有了此物的样本。"));
+					end
+				end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>	
+	<!-- 	
+		local storybindthingthingname = story:GetBindThing().def.ThingName
+		elseif story:GetBindThing().def.Name == "Building_LingShu1" or story:GetBindThing().def.Name == "Building_LingShu2" or story:GetBindThing().def.Name == "Building_LingShu3" then
+			if world:IsBuildingUnlocked("Building_LingShu1") == false then
+				me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(XT("解锁：" .. storybindthingthingname));world:UnlockBuilding("Building_LingShu1");world:UnlockBuilding("Building_LingShu2");world:UnlockBuilding("Building_LingShu3");
+			else
+				me:AddMsg(XT("我们已经拥有了此物的样本。"));
+			end	
+		elseif story:GetBindThing().def.Name == "Building_LingShu4" or story:GetBindThing().def.Name == "Building_LingShu5" or story:GetBindThing().def.Name == "Building_LingShu6" then
+			if world:IsBuildingUnlocked("Building_LingShu4") == false then
+				me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(XT("解锁：" .. storybindthingthingname));world:UnlockBuilding("Building_LingShu4");world:UnlockBuilding("Building_LingShu5");world:UnlockBuilding("Building_LingShu6");
+			else
+				me:AddMsg(XT("我们已经拥有了此物的样本。"));
+			end	
+		elseif story:GetBindThing().def.Name == "Building_ShuiShenHuaShu1" or story:GetBindThing().def.Name == "Building_ShuiShenHuaShu2" or story:GetBindThing().def.Name == "Building_ShuiShenHuaShu3" then
+			if world:IsBuildingUnlocked("Building_ShuiShenHuaShu1") == false then
+				me:AddMsg(XT("[NAME]施展手段，将此物样本收集了起来。"));me:AddMsg(XT("解锁：" .. storybindthingthingname));world:UnlockBuilding("Building_ShuiShenHuaShu1");world:UnlockBuilding("Building_ShuiShenHuaShu2");world:UnlockBuilding("Building_ShuiShenHuaShu3");
+			else
+				me:AddMsg(XT("我们已经拥有了此物的样本。"));
+			end	 
+	-->
+	<Story Name="System_FightMap_UnlockBuilding">
+		<DisplayName>观摩</DisplayName>
+		<Desc>[NAME]尝试了解该建筑的建造方法。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>观摩</Display>
+				<OKResult>
+				<![CDATA[	
+				local storybindthingthingname = story:GetBindThing().def.ThingName
+				if world:IsBuildingUnlocked(story:GetBindThing().def.Name) == false then
+					me:AddMsg(XT("[NAME]仔细观摩了此建筑的模样。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));world:UnlockBuilding(story:GetBindThing().def.Name);
+				else
+					me:AddMsg(XT("我们已经知晓了此物如何建造。"));
+				end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_SuperPartItem">
+		<DisplayName>参悟奥义</DisplayName>
+		<Desc>尝试参悟这块肢体中蕴含的锻体之法的奥义。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>参悟</Display>
+				<OKResult>
+				<![CDATA[	
+				if me.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body then
+					me:AddMsg(XT("[NAME]无法参悟此中奥义。"))
+					return;
+				end
+				local itemobj = story:GetBindThing()
+				local name = itemobj.SuperPart;
+				if name == nil then
+					return;
+				end
+				if me:UnLockSuperPart(name) == true then
+					story:RemoveBindItem();
+				end
+				]]>	
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>	
+				me:AddMsg(XT("[NAME]还是决定放弃参悟奥义。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Fight">
+		<DisplayName>切磋技艺</DisplayName>
+		<Desc>让弟子们在此处切磋技艺。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>比武</Display>
+				<OKResult>	
+					CS.Wnd_SelectNpc4Map.ShowRPGWorld("RpgArena")
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想决定离开。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

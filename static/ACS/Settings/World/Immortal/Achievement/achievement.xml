@@ -1,0 +1,367 @@
+<Defs><List>
+	<Def Name="HardLeaveA">
+		<Achievement>3021</Achievement>
+		<Constraint>
+			<li>HardLeave</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<BornNpcLive>1</BornNpcLive>
+				<Day>224</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="HardNatureA">
+		<Achievement>3022</Achievement>
+		<Constraint>
+			<li>HardNature</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<BornNpcLive>1</BornNpcLive>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="MoreYaoShouA">
+		<Achievement>3023</Achievement>
+		<Constraint>
+			<li>MoreYaoShou4</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<KillYaoShou>1</KillYaoShou>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="HardBuildA">
+		<Achievement>3024</Achievement>
+		<Constraint>
+			<li>HardBuild</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<Build>Building_SleeveSpace</Build>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="LostPracticeA">
+		<Achievement>3025</Achievement>
+		<Constraint>
+			<li>LostPractice</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<SchoolLevel>Dong</SchoolLevel>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="SourceLimitA">
+		<Achievement>3026</Achievement>
+		<Constraint>
+			<li>SourceLimit</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<Build>Building_SleeveSpace</Build>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="DaoShuaiA">
+		<Achievement>3027</Achievement>
+		<Constraint>
+			<li>DaoShuai</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<MinFiveBase>5</MinFiveBase>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="StrictWTraderA">
+		<Achievement>3028</Achievement>
+		<Constraint>
+			<li>StrictWTrader</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<BuyTradeRate>10</BuyTradeRate>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="TianDaoWenLuanA">
+		<Achievement>3029</Achievement>
+		<Constraint>
+			<li>TianDaoWenLuan</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<gLevel>10</gLevel>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="PetWeakA">
+		<Achievement>3030</Achievement>
+		<Constraint>
+			<li>PetWeak</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<LingShouKillYaoShou>6</LingShouKillYaoShou>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="ColdMortalA">
+		<Achievement>3031</Achievement>
+		<Constraint>
+			<li>ColdMortal</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<LeaderFavour>8190</LeaderFavour>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="YaoComingA">
+		<Achievement>3032</Achievement>
+		<Constraint>
+			<li>YaoComing3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<EnemyKill>t101</EnemyKill>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="KillerComingA">
+		<Achievement>3033</Achievement>
+		<Constraint>
+			<li>KillerComing3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<EnemyKill>t102</EnemyKill>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="DragonHoleStay">
+		<Achievement>3034</Achievement>
+		<Constraint>
+			<li>SoonDragon3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<DragonHoleStayDay>200</DragonHoleStayDay>
+				<Year>-1</Year>
+			</li>
+			<li>
+				<LongDie>1</LongDie>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="StrictDragonA">
+		<Achievement>3035</Achievement>
+		<Constraint>
+			<li>StrictDragon</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<DragonHoleStayDay>200</DragonHoleStayDay>
+				<Year>-1</Year>
+			</li>
+			<li>
+				<LongDie>1</LongDie>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="MortalThings">
+		<Achievement>3036</Achievement>
+		<Constraint>
+			<li>MoreMortal</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<OutsMinLevel>3</OutsMinLevel>
+				<Day>336</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="ColdRealmA">
+		<Achievement>3037</Achievement>
+		<Constraint>
+			<li>ColdRealm</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<BuySchoolRate>12</BuySchoolRate>
+				<Day>112</Day>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="SchoolPowerA">
+		<Achievement>3038</Achievement>
+		<Constraint>
+			<li>SchoolPower3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<Submiss>1</Submiss>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="KillDragon">
+		<Achievement>3039</Achievement>
+		<Constraint>
+			<li>DragonPower3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<LongDie>1</LongDie>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="KillPhx">
+		<Achievement>3040</Achievement>
+		<Constraint>
+			<li>FengPower3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<FengDie>1</FengDie>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="KillZhuLong">
+		<Achievement>3041</Achievement>
+		<Constraint>
+			<li>ZhulongPower3</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<ZLDie>1</ZLDie>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="NoLimitA">
+		<Achievement>3042</Achievement>
+		<Constraint>
+			<li>NoLimit</li>
+		</Constraint>
+		<Condition>
+			<li>
+				<EnemyKill>t103</EnemyKill>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="FlyGod1">
+		<Achievement>3043</Achievement>
+		<LevelNeed>Level1</LevelNeed>
+		<Condition>
+			<li>
+				<God>1</God>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="FlyGod4">
+		<Achievement>3046</Achievement>
+		<LevelNeed>Level4</LevelNeed>
+		<Condition>
+			<li>
+				<God>1</God>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="FlyGod7">
+		<Achievement>3049</Achievement>
+		<LevelNeed>Level7</LevelNeed>
+		<Condition>
+			<li>
+				<God>1</God>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+	<Def Name="Submission1">
+		<Achievement>3052</Achievement>
+		<LevelNeed>Level1</LevelNeed>
+		<Condition>
+			<li>
+				<Submiss>1</Submiss>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="Submission4">
+		<Achievement>3055</Achievement>
+		<LevelNeed>Level4</LevelNeed>
+		<Condition>
+			<li>
+				<Submiss>1</Submiss>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	<Def Name="Submission7">
+		<Achievement>3058</Achievement>
+		<LevelNeed>Level7</LevelNeed>
+		<Condition>
+			<li>
+				<Submiss>1</Submiss>
+				<Year>-1</Year>
+			</li>
+		</Condition>
+	</Def>
+	
+</List></Defs>

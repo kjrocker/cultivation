@@ -1,0 +1,1308 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>互斥特性
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature>
+	-->
+	<Feature Name="SonOfDestiny" Type="Backstory">
+		<DisplayName>命运之子</DisplayName>
+		<Desc>此人钟天地气运而生，是不折不扣的命运之子。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_BaseHitChance" AddV="0.4"/>
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.2"/>
+
+				<li Name="PracticeRateAddPFromDan" AddP="0.2"/>
+
+				<li Name="InspirationCoefficient" AddP="1"/>
+				<li Name="ExperienceNeckTimeCostCoefficient" AddP="-0.5"/>
+
+				<li Name="FabaoMake_SuccessRateAddV" AddV="0.25"/>
+				<li Name="DanMake_SuccessRate" AddV="0.25"/>
+			</Properties>
+		</ModifierDef>
+	    <LHPath>res/Sprs/rolepainting/man-LH001_YinJ01</LHPath>
+	</Feature>
+
+	<Feature Name="YinBody" Type="Normal">
+		<DisplayName>纯阴之体</DisplayName>
+		<Desc>此人体质纯阴，寿命很短。但是却极有魅力，且拥有极佳的修行天赋。</Desc>
+		<Mutex>
+			<li>YangBody</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>0,-1,3,1,0</BaseFive>
+			<Skills>
+				<li Name="Qi" Level="6"/>
+			</Skills>
+			<Properties>
+				<li Name="MaxAge" AddV="-40"/>
+			</Properties>
+		</ModifierDef>
+	    <LHPath>res/Sprs/rolepainting/man-LH001_YinJ02</LHPath>
+	</Feature>
+
+	<Feature Name="YangBody" Type="Normal">
+		<DisplayName>纯阳之体</DisplayName>
+		<Desc>此人体质纯阳，寿命悠长，天生好斗且极富魅力。但是他却很难控制自己的心境。</Desc>
+		<Mutex>
+			<li>YinBody</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>0,1,3,-1,0</BaseFive>
+			<Skills>
+				<li Name="Fight" Level="6"/>
+			</Skills>
+			<Properties>
+				<li Name="MaxAge" AddV="40"/>
+				<li Name="SpeedOfMindStateCoefficient" AddP="0.6"/>
+			</Properties>
+		</ModifierDef>
+	    <LHPath>res/Sprs/rolepainting/man-LH001_YinJ03</LHPath>
+	</Feature>
+
+	<Feature Name="Cleanliness" Type="Normal">
+		<DisplayName>洁癖</DisplayName>
+		<Desc>此人有洁癖。</Desc>
+		<Opposition><!--对立的特性-->
+			<li>Slovenly</li>
+		</Opposition>
+		<Close><!--亲近特性-->
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch>
+			<li Old="BedroomExpect4" New="BedroomExpect3"/>
+			<li Old="BedroomExpect3" New="BedroomExpect2"/>
+		</MoodBranch>
+
+		<ModifierDef>
+			<Properties>
+				<li Name="CleanSpeed" AddP="1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Slovenly" Type="Normal">
+		<DisplayName>邋遢</DisplayName>
+		<Desc>此人十分邋遢。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="CleanSpeed" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="DragonBlood" Type="Normal">
+		<DisplayName>龙血者</DisplayName>
+		<Desc>此人身体中有稀薄的龙之血脉，这让[IT]比他人敏锐且强壮。但这传承自先祖的野性也让[IT]更难控制自己的情绪。</Desc>
+		<Close><!--亲近特性-->
+			<li>DragonBlood</li>
+		</Close>
+		<Opposition><!--对立的特性-->
+			<li>DemonBlood</li>
+		</Opposition>
+		<Mutex>
+			<li>DemonBlood</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>1,1,0,0,0</BaseFive>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	    <LHPath>res/Sprs/rolepainting/man-LH001_YinJ04</LHPath>
+	</Feature>
+
+	<Feature Name="DemonBlood" Type="Normal">
+		<DisplayName>魔血者</DisplayName>
+		<Desc>此人身体中有稀薄的魔族血脉，这让[IT]对内气敏感。但也让[IT]的心境易受波动。</Desc>
+		<Close><!--亲近特性-->
+			<li>DemonBlood</li>
+		</Close>
+		<Opposition><!--对立的特性-->
+			<li>DragonBlood</li>
+		</Opposition>
+		<Mutex>
+			<li>DragonBlood</li>
+		</Mutex>
+		<ModifierDef>
+			<Skills>
+				<li Name="Qi" Level="5"/>
+			</Skills>
+			<Properties>
+				<li Name="SpeedOfMindStateCoefficient" AddP="1"/>
+			</Properties>
+		</ModifierDef>
+	    <LHPath>res/Sprs/rolepainting/man-LH001_YinJ05</LHPath>
+	</Feature>
+
+	<Feature Name="Realization" Type="Backstory">
+		<DisplayName>觉悟</DisplayName>
+		<Desc>虽然此人无法察觉自己是轮回者的事实，但[IT]依然拥有一种与生俱来的觉悟，这让他更好的专注眼下的生活。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="0.2"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Retarded" Type="Backstory">
+		<DisplayName>智障</DisplayName>
+		<HideInUI>2</HideInUI>
+		<Desc>智障特性标签</Desc>
+	</Feature>
+
+	<Feature Name="LunHui_1" Type="Normal">
+		<DisplayName>明察秋毫</DisplayName>
+		<Desc>此人眼明如电，明察秋毫。</Desc>
+		<ModifierDef>
+			<BaseFive>1,0,0,0,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="LunHui_2" Type="Normal">
+		<DisplayName>灵性</DisplayName>
+		<Desc>此人深具灵性，拥有过人的悟性。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,0,3,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_3" Type="Normal">
+		<DisplayName>胸有大志</DisplayName>
+		<Desc>此人一心向道，相比其他人更能耐得住修行之苦。</Desc>
+		<MoodBranch>
+			<li Old="BottleNeck3" New="BottleNeck5"/>
+		</MoodBranch>
+	</Feature>
+
+	<Feature Name="LunHui_4" Type="Normal">
+		<DisplayName>不眠者</DisplayName>
+		<Desc>此人天赋异禀，精力充沛，熬夜不在话下。</Desc>
+		<ModifierDef>
+			<BaseFive>0,1,0,0,0</BaseFive>
+			<Properties>
+				<li Name="FatigueConsumeConstant" AddV="-0.75"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_5" Type="Normal">
+		<DisplayName>龟速</DisplayName>
+		<Desc>此人走的很慢，真的很慢。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="10"/>
+				<li Name="MoveSpeed" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_6" Type="Backstory">
+		<DisplayName>穿越之人</DisplayName>
+		<Desc>穿越的过程让此人拥有了漫长的寿命和不惧寒暑的特殊体质。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="50"/>
+
+				<li Name="ToleranceTMin" AddV="-25"/>
+				<li Name="ToleranceTMax" AddV="25"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_7" Type="Backstory">
+		<DisplayName>凤凰血脉</DisplayName>
+		<Desc>此人秉承凤凰血脉出生，只是在修炼之法早已断绝的现代社会没什么用。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Qi" Level="8"/>
+				<li Name="DanQi" Level="-10"/>
+				<li Name="Fight" Level="-20"/>
+				<li Name="Manual" Level="-8"/>
+				<li Name="Medicine" Level="-5"/>
+			</Skills>
+			<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.5"/>
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_8" Type="Backstory">
+		<DisplayName>现代人</DisplayName>
+		<Desc>来自现代的知识和思维虽然让[IT]在这个世界无比耀眼，也让[IT]无法胜任古代的很多工作。同时来自现代的眼光也让[IT]不可能爱上这个世界的任何人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<BanRelations>
+			<li>Fancy</li>
+			<li>Lover</li>
+			<li>Spouse</li>
+		</BanRelations>
+		<ModifierDef>
+			<BanJobs>
+				<li>Plant</li>
+				<li>Cooking</li>
+				<li>Mine</li>
+				<li>Build</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_9" Type="Backstory">
+		<DisplayName>天生功德</DisplayName>
+		<Desc>此人出生就带有大功德，上苍对其格外宽容。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GodPenaltyAddV" AddV="-20"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_10" Type="Backstory">
+		<DisplayName>现代人</DisplayName>
+		<Desc>来自现代的知识和思维让[IT]拥有超人的知识，但对封建迷信的强烈抵触使[IT]修行之路倍加艰难。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Qi" Level="-10"/>
+				<li Name="DouFa" Level="-10"/>
+				<li Name="DanQi" Level="-10"/>
+			</Skills>
+			<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.5"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_11" Type="Backstory">
+		<DisplayName>现代人</DisplayName>
+		<Desc>现代的生活让他习惯隐藏自己的存在，存在感极低的[IT]甚至被此界天道忽略，天生道行较少。习惯现代生活的[IT]无法胜任很多古代的工作，[IT]一心想通过飞升回归自己的世界，不愿在此界留情。</Desc>
+		<HideInUI>-1</HideInUI>
+		<BanRelations>
+			<li>Fancy</li>
+			<li>Lover</li>
+			<li>Spouse</li>
+		</BanRelations>
+		<ModifierDef>
+			<BaseFive>0,2,0,1,0</BaseFive>
+			<Skills>
+				<li Name="Art" Level="-5"/>
+			</Skills>
+			<BanJobs>
+				<li>Plant</li>
+				<li>Mine</li>
+				<li>Build</li>
+			</BanJobs>
+			<Properties>
+				<li Name="AbilityLvAddV" AddV="-15"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_12" Type="Backstory">
+		<DisplayName>人定胜天</DisplayName>
+		<Desc>此人以四十年如一日的苦练弥补了天缺之体，为修行打下了坚实的基础。这些经历也让他比别人更能耐得住修行之苦。</Desc>
+		<HideInUI>-1</HideInUI>
+		<MoodBranch>
+			<li Old="BottleNeck3" New="BottleNeck5"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,-3,-2,0,0</BaseFive>
+			<Skills>
+				<li Name="SocialContact" Level="-5"/>
+				<li Name="Medicine" Level="-5"/>
+				<li Name="Cooking" Level="-5"/>
+				<li Name="Building" Level="-5"/>
+				<li Name="Farming" Level="-5"/>
+				<li Name="Mining" Level="-5"/>
+				<li Name="Cooking" Level="-5"/>
+				<li Name="Art" Level="-5"/>
+				<li Name="Manual" Level="-5"/>
+			</Skills>
+			<Properties>
+				<li Name="NpcLingMaxValue" BAddV="40"/>
+				<li Name="MindStateBaseValue" AddV="15"/>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_13" Type="Normal">
+		<DisplayName>摸鱼</DisplayName>
+		<Desc>[IT]做事不紧不慢，经常路上瞎晃悠。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_FREEPATH</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_14" Type="Backstory">
+		<DisplayName>策划</DisplayName>
+		<Desc>常年的办公室生活让他不擅长劳作。然而丰富的想象力让他快速的融入了这个世界。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>0,0,0,1,1</BaseFive>
+			<Skills>
+				<li Name="Art" Level="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="LunHui_15" Type="Backstory">
+		<DisplayName>邪息入体</DisplayName>
+		<Desc>此人层因修炼邪门功法而获得奇特的体质，虽然筑基比他人更难，但是他的潜力却超过旁人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Qi" Level="10"/>
+			</Skills>
+			<Properties>
+				<li Name="NpcLingMaxValue" BAddV="50"/>
+				<li Name="BasepracticeSpeedCoefficient" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="LunHui_16" Type="Backstory">
+		<DisplayName>神授</DisplayName>
+		<Desc>此人曾被仙人托梦，改换了体质，拥有悠长的寿命。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Qi" Level="4"/>
+			</Skills>
+			<Properties>
+				<li Name="MaxAge" AddV="50"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_17" Type="Backstory">
+		<DisplayName>剑痴</DisplayName>
+		<Desc>此人骨子里嗜剑如命，简直可以称得上是为剑而生。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="Fabao" Level="8"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_18" Type="Backstory">
+		<DisplayName>现代人</DisplayName>
+		<Desc>常年的现代生活让他体质孱弱，但他却拥有开阔的视野和先进的思维方式。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>0,-1,0,2,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_19" Type="Backstory">
+		<DisplayName>踏雪无痕</DisplayName>
+		<Desc>此人从飞貂身上领悟出踏雪无痕的步伐，这让他移动速度远超常人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="1.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_20" Type="Backstory">
+		<DisplayName>仗义</DisplayName>
+		<Desc>此人为人仗义，让别人心生好感。</Desc>
+		<ModifierDef>
+			<GiveFavours>
+				<li>Loyal</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_21" Type="Backstory">
+		<DisplayName>鲁莽</DisplayName>
+		<Desc>此人鲁莽，做事大大咧咧，易冲动。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="-0.3"/>
+				<li Name="TreatSuccessChance" AddP="-0.3"/>
+				<li Name="CookingSuccessChance" AddP="-0.3"/>
+				<li Name="ConstructSuccessChance" AddP="-0.3"/>
+				<li Name="MadeQualityAddValue" AddP="-0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="-0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="-0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_22" Type="Backstory">
+		<DisplayName>胆小</DisplayName>
+		<Desc>此人胆小，做事十分谨慎。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="0.3"/>
+				<li Name="TreatSuccessChance" AddP="0.3"/>
+				<li Name="CookingSuccessChance" AddP="0.3"/>
+				<li Name="ConstructSuccessChance" AddP="0.3"/>
+				<li Name="MadeQualityAddValue" AddP="0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_23" Type="Backstory">
+		<DisplayName>掠草惊风</DisplayName>
+		<Desc>此人身法迅速，移动速度十分迅捷。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_24" Type="Backstory">
+		<DisplayName>嗜睡</DisplayName>
+		<Desc>此人很喜欢睡觉，动不动就犯困。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="FatigueConsumeConstant" AddV="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_25" Type="Backstory">
+		<DisplayName>魏晋之风</DisplayName>
+		<Desc>此人有魏晋风骨，学识渊博，有独特的魅力。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>0,0,1,1,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_26" Type="Backstory">
+		<DisplayName>骨头爱好者</DisplayName>
+		<Desc>此人对骨头有狂热的兴趣。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+	<Feature Name="LunHui_27" Type="Backstory">
+		<DisplayName>渔民</DisplayName>
+		<Desc>此人擅长捕鱼，眼疾手快。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+	<Feature Name="LunHui_28" Type="Backstory">
+		<DisplayName>塞壬之歌</DisplayName>
+		<Desc>此人歌声美妙，如传说中的塞壬一般具有魔力。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+
+	<Feature Name="LunHui_29" Type="Backstory">
+		<DisplayName>文艺青年</DisplayName>
+		<Desc>此人拥有丰富的情感和敏感的内心，[IT]天生拥有超人的想象力。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MadeQualityAddValue" AddV="0.1"/>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="SpeedOfMindStateCoefficient" AddP="0.4"/>
+				<li Name="EmotionAmplificationFactor" AddP="0.2"/>
+				<li Name="FavourChangeSpeedRate" AddP="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_30" Type="Backstory">
+		<DisplayName>悠闲</DisplayName>
+		<Desc>此人胸有成竹，时刻都看上去很悠闲，从不显慌乱。</Desc>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_FREEPATH</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_31" Type="Backstory">
+		<DisplayName>背锅侠</DisplayName>
+		<Desc>此人被动接锅，深的大家喜爱。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<GiveFavours>
+				<li>BeiGuoXia</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_32" Type="Backstory">
+		<DisplayName>幸运儿</DisplayName>
+		<Desc>此人天生的幸运儿，让人羡慕。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,2</BaseFive>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_33" Type="Backstory">
+		<DisplayName>抖S</DisplayName>
+		<Desc>此人是个抖S，emmm。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+
+	<Feature Name="LunHui_34" Type="Backstory">
+		<DisplayName>气运超群</DisplayName>
+		<Desc>此人天生的气运超群。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,1</BaseFive>
+			<Properties>
+				<li Name="MaxAge" AddV="30"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_35" Type="Backstory">
+		<DisplayName>动物之友</DisplayName>
+		<Desc>此人热爱动物，不能从事狩猎工作。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,2</BaseFive>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_36" Type="Backstory">
+		<DisplayName>未来科技</DisplayName>
+		<Desc>此人掌握着未来科技的奥义，工作效率更高，移动速度更快。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="0.2"/>
+				<li Name="MoveSpeed" AddP="0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_37" Type="Backstory">
+		<DisplayName>董事长</DisplayName>
+		<Desc>作为深得民心的董事长，深得员工们的喜爱。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<GiveFavours>
+				<li>DongShiZhang</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_38" Type="Backstory">
+		<DisplayName>灵巧侠盗</DisplayName>
+		<Desc>此人是个侠盗，心怀正义，身法迅捷。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+
+	<Feature Name="LunHui_39" Type="Backstory">
+		<DisplayName>散人干不死</DisplayName>
+		<Desc>此人有过人的韧性，耐寒耐热，身手敏捷，寿元悠长。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.4"/>
+				<li Name="WorldMapFlySpeedAddP" AddV="0.4"/>
+				<li Name="MaxAge" AddV="30"/>
+				<li Name="ToleranceTMin" AddV="-15"/>
+				<li Name="ToleranceTMax" AddV="30"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_40" Type="Backstory">
+		<DisplayName>强迫症</DisplayName>
+		<Desc>此人有强迫症，做事儿很慢，但是做的比较好。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="0.3"/>
+				<li Name="TreatSuccessChance" AddP="0.3"/>
+				<li Name="CookingSuccessChance" AddP="0.3"/>
+				<li Name="ConstructSuccessChance" AddP="0.3"/>
+				<li Name="MadeQualityAddValue" AddP="0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_41" Type="Backstory">
+		<DisplayName>侠义豪爽</DisplayName>
+		<Desc>此人侠义心肠，性格豪爽，让人一见便心生好感。</Desc>
+		<ModifierDef>
+			<GiveFavours>
+				<li>HaoShuang</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_42" Type="Backstory">
+		<DisplayName>神厨</DisplayName>
+		<Desc>此人厨艺盖世。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="Cooking" Level="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_43" Type="Backstory">
+		<DisplayName>完美主义</DisplayName>
+		<Desc>此人有完美主义，做事儿很慢，但是做的比较好。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="0.3"/>
+				<li Name="TreatSuccessChance" AddP="0.3"/>
+				<li Name="CookingSuccessChance" AddP="0.3"/>
+				<li Name="ConstructSuccessChance" AddP="0.3"/>
+				<li Name="MadeQualityAddValue" AddP="0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_44" Type="Backstory">
+		<DisplayName>三百六十行</DisplayName>
+		<Desc>对什么都感兴趣，做啥都开心。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_45" Type="Backstory">
+		<DisplayName>神行百变</DisplayName>
+		<Desc>此人行动敏捷，目光如电。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.4"/>
+				<li Name="WorldMapFlySpeedAddP" AddV="0.4"/>
+				<li Name="VisionRadius" AddP="1"/>
+				<li Name="NpcFight_BaseHitChance" AddP="0.3"/>
+				<li Name="GlobalEfficiency" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_46" Type="Backstory">
+		<DisplayName>腹语术</DisplayName>
+		<Desc>此人不爱开口，以腹语术与人交流。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="-1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_47" Type="Backstory">
+		<DisplayName>人在江湖</DisplayName>
+		<Desc>此人天生的江湖人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.4"/>
+				<li Name="LingAbsorbSpeed" AddP="2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_48" Type="Backstory">
+		<DisplayName>受欢迎</DisplayName>
+		<Desc>此人天生受到所有人欢迎！</Desc>
+		<ModifierDef>
+			<GiveFavours>
+				<li>BeReceived</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_49" Type="Backstory">
+		<DisplayName>失忆</DisplayName>
+		<Desc>此人忘记了过去，只享受现在的生活！</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Moods>
+				<li>Mood_LunHui_ShiYi</li>
+			</Moods>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_50" Type="Backstory">
+		<DisplayName>咕咕咕</DisplayName>
+		<Desc>咕咕咕</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.5"/>
+				<li Name="WorldMapFlySpeedAddP" AddV="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_51" Type="Backstory">
+		<DisplayName>天赋异禀</DisplayName>
+		<Desc>此人天赋异禀，天生耐寒耐热，颇具修行资质。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="ToleranceTMin" AddV="-25"/>
+				<li Name="ToleranceTMax" AddV="25"/>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.4"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_52" Type="Backstory">
+		<DisplayName>痔之诅咒</DisplayName>
+		<Desc>此人被命运诅咒，永远被痔疮困扰。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Damages>
+				<li Part="Hips" Damage="HemorrhoidsEX" Value="1"/>
+			</Damages>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_53" Type="Backstory">
+		<DisplayName>懒人</DisplayName>
+		<Desc>不可能做苦力的，一辈子也不可能做苦力的！</Desc>
+		<ModifierDef>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Carry</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_54" Type="Backstory">
+		<DisplayName>长度惊人</DisplayName>
+		<Desc>此人长度惊人，让人叹为观止。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+
+	<Feature Name="LunHui_55" Type="Normal">
+		<DisplayName>夜观星象</DisplayName>
+		<Desc>此人常年夜观星象，练成了几乎不怎么睡觉的强大本领。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="FatigueConsumeConstant" AddV="-0.75"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_56" Type="Normal">
+		<DisplayName>嘴炮</DisplayName>
+		<Desc>此人嘴炮功力十足，非常擅长说服别人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactBaseSuccess" AddP="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_57" Type="Backstory">
+		<DisplayName>修行之种</DisplayName>
+		<Desc>此人天赋异禀，颇具修行资质。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.4"/>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_58" Type="Backstory">
+		<DisplayName>真实</DisplayName>
+		<Desc>此人的真实经历令其他人刮目相看。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<GiveFavours>
+				<li>BeTrueMan</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="LunHui_59" Type="Backstory">
+		<DisplayName>科学</DisplayName>
+		<Desc>此人的科学经历令他心中充满信念。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Moods>
+				<li>Mood_LunHui_XinNian</li>
+			</Moods>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_60" Type="Backstory">
+		<DisplayName>天赋异禀</DisplayName>
+		<Desc>此人天赋异禀，聪慧过人，学东西很快。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_61" Type="Backstory">
+		<DisplayName>医者仁心</DisplayName>
+		<Desc>此人医术高明，以救死扶伤为己任。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="Medicine" Level="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_62" Type="Backstory">
+		<DisplayName>修仙狂魔</DisplayName>
+		<Desc>此人一心修仙，每天修仙15小时以上，如疯似魔。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+
+	<Feature Name="LunHui_63" Type="Backstory">
+		<DisplayName>神匠</DisplayName>
+		<Desc>此人天赋异禀，制作物品品质很高。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MadeQualityAddValue" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="LunHui_64" Type="Backstory">
+		<DisplayName>丹青</DisplayName>
+		<Desc></Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_65" Type="Backstory">
+		<DisplayName>画符师</DisplayName>
+		<Desc>此人亲手画过无数符咒，可称画符宗师。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_66" Type="Backstory">
+		<DisplayName>人美胸大</DisplayName>
+		<Desc>此人人美胸大，魅力惊人。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>0,0,2,0,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="LunHui_67" Type="Backstory">
+		<DisplayName>医疗兵</DisplayName>
+		<Desc>此人医术惊人，妙手回春。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Medicine" Level="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_1" Type="Normal">
+		<DisplayName>傲娇</DisplayName>
+		<Desc>此人性格十分别扭，对别人关心却无法说出口。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_2" Type="Normal">
+		<DisplayName>毒舌</DisplayName>
+		<Desc>此人嘴巴十分毒，经常噎的别人说不出话。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+	<Feature Name="LunHui_Kong_3" Type="Normal">
+		<DisplayName>正直</DisplayName>
+		<Desc>此人十分正直。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_4" Type="Normal">
+		<DisplayName>狡猾</DisplayName>
+		<Desc>此人十分狡猾，对谁都不信任。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="FavourChangeSpeedRate" AddV="0" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_5" Type="Backstory">
+		<DisplayName>爱唱歌</DisplayName>
+		<Desc>此人自信而奔放，很爱唱歌。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_6" Type="Backstory">
+		<DisplayName>执着</DisplayName>
+		<Desc>此人拥有坚韧的意志，更能对抗修行的迷惘。</Desc>
+		<MoodBranch>
+			<li Old="BottleNeck3" New="BottleNeck5"/>
+		</MoodBranch>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_7" Type="Backstory">
+		<DisplayName>声线迷人</DisplayName>
+		<Desc>此人拥有迷人的声线，让人听了之后情不自禁的身心放松。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_8" Type="Normal">
+		<DisplayName>不善交际</DisplayName>
+		<Desc>此人长期自闭，不善交际。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialInclination" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_9" Type="Backstory">
+		<DisplayName>寿命补正</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_10" Type="Backstory">
+		<DisplayName>演技出众</DisplayName>
+		<Desc>此人天赋异禀，演技出众！</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_11" Type="Backstory">
+		<DisplayName>八卦</DisplayName>
+		<Desc>这个人很八卦，对什么事儿都喜欢打听。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_12" Type="Backstory">
+		<DisplayName>寿命补正大</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="150"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_13" Type="Backstory">
+		<DisplayName>偷天换日</DisplayName>
+		<Desc>此人拥有万里无一偷天换日之命格，他似乎被老天遗忘，天生寿元极长。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="80"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_14" Type="Backstory">
+		<DisplayName>掌门</DisplayName>
+		<Desc>直播间道友爱称。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_15" Type="Backstory">
+		<DisplayName>知名解说</DisplayName>
+		<Desc>此人极有魅力，在为别人解说的过程中收获了大量追随者和粉丝。</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+
+	<Feature Name="LunHui_Kong_16" Type="Backstory">
+		<DisplayName>White hair</DisplayName>
+		<Desc>This person's hair is pure white.</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_WHITEHAIR</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature>
+
+
+	<Feature Name="Inborn_Jin_lost" Type="Backstory">
+		<DisplayName>先天金损</DisplayName>
+		<Desc>修习金属性功法更加艰难，且更容易受到火属性伤害。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_JinAddV" AddV="-0.5"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Mu_lost" Type="Backstory">
+		<DisplayName>先天木损</DisplayName>
+		<Desc>修习木属性功法更加艰难，且更容易受到金属性伤害。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_MuAddV" AddV="-0.5"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Shui_lost" Type="Backstory">
+		<DisplayName>先天水损</DisplayName>
+		<Desc>修习水属性功法更加艰难，且更容易受到土属性伤害。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_ShuiAddV" AddV="-0.5"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Huo_lost" Type="Backstory">
+		<DisplayName>先天火损</DisplayName>
+		<Desc>修习火属性功法更加艰难，且更容易受到水属性伤害。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_HuoAddV" AddV="-0.5"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Tu_lost" Type="Backstory">
+		<DisplayName>先天土损</DisplayName>
+		<Desc>修习土属性功法更加艰难，且更容易受到木属性伤害。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_TuAddV" AddV="-0.5"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Jin_Add" Type="Backstory">
+		<DisplayName>先天金德</DisplayName>
+		<Desc>修习金属性功法更为容易，且可更好的抵御木属性伤害。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_JinAddV" AddV="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Mu_Add" Type="Backstory">
+		<DisplayName>先天木德</DisplayName>
+		<Desc>修习木属性功法更为容易，且可更好的抵御土属性伤害。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_MuAddV" AddV="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Shui_Add" Type="Backstory">
+		<DisplayName>先天水德</DisplayName>
+		<Desc>修习水属性功法更为容易，且可更好的抵御火属性伤害。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_ShuiAddV" AddV="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Inborn_Huo_Add" Type="Backstory">
+		<DisplayName>先天火德</DisplayName>
+		<Desc>修习火属性功法更为容易，且可更好的抵御金属性伤害。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_HuoAddV" AddV="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Inborn_Tu_Add" Type="Backstory">
+		<DisplayName>先天土德</DisplayName>
+		<Desc>修习土属性功法更为容易，且可更好的抵御水属性伤害。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="GongMatch_TuAddV" AddV="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Features_JingGuai_0" Type="Backstory">
+		<DisplayName>精怪之魂</DisplayName>
+		<Desc>其本为天地间的死物，偶感玄妙诞生意识。其天性散漫，难以沉下心神参悟道法。不过也因为其心思单纯，很难受执念，杂念干扰，从这个角度讲，是一流的修行心性。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MindStateBaseValue" AddV="40"/>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" BAddP="-0.25"/>
+				<li Name="IntelligenceSkillEXPConstant" BAddP="-0.25"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Features_JingGuai_1" Type="Backstory">
+		<DisplayName>灵铸之体</DisplayName>
+		<Desc>其原身乃灵石成灵，天生根本灵气便高人一等。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcLingMaxValue" BAddP="0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Features_JingGuai_2" Type="Backstory">
+		<DisplayName>饮气之体</DisplayName>
+		<Desc>其原身乃餐食之物，天生便拥有极高的饮气能力，不会饥饿。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="NutritionWaterAutoRecover" AddV="5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Features_JingGuai_3" Type="Backstory">
+		<DisplayName>御器之体</DisplayName>
+		<Desc>其原身乃法宝成灵，天生便更擅长驾驭法宝。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_FabaoLingRecoverK" AddV="4"/>
+			</Properties>
+			<Skills>
+				<li Name="Fabao" LevelOver="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Sys_YuSheTeXing1" Type="Backstory">
+		<DisplayName>预设1</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="Mining" Level="10"/>
+				<li Name="Fight" Level="5"/>
+				<li Name="Building" Level="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Sys_YuSheTeXing2" Type="Backstory">
+		<DisplayName>预设2</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<BaseFive>3,-2,2,1,0</BaseFive>
+			<Skills>
+				<li Name="Manual" Level="15"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Sys_YuSheTeXing3" Type="Backstory">
+		<DisplayName>预设3</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<Skills>
+				<li Name="SocialContact" Level="9"/>
+				<li Name="Cooking" Level="11"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Sys_YuSheTeXing4" Type="Backstory">
+		<DisplayName>预设4</DisplayName>
+		<HideInUI>2</HideInUI>
+		<ModifierDef>
+			<BaseFive>-1,-1,0,2,1</BaseFive>
+			<Skills>
+				<li Name="Farming" Level="12"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+</List></FeatureDefs>

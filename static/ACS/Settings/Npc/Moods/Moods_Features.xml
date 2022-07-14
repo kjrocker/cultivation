@@ -1,0 +1,35 @@
+<MoodDefs><List>
+
+	<Mood Name="Optimistic">
+		<DisplayName>乐观</DisplayName>
+		<Desc>事情嘛，总在往好的方向发展，不是么？</Desc>
+		<StoryDesc>正一如既往的满脸乐观</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Pessimism">
+		<DisplayName>悲观</DisplayName>
+		<Desc>这个世界完蛋了，我们为什么要苟延残喘的活着。</Desc>
+		<StoryDesc>正一如既往的满脸悲观</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Depressed">
+		<DisplayName>消沉</DisplayName>
+		<Desc>没意思，真的没意思……</Desc>
+		<StoryDesc>正一如既往的一脸消沉</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Regret">
+		<DisplayName>悔恨</DisplayName>
+		<Desc>我好后悔……当时不该这么做。就让我的余生沉浸在痛苦中，为此赎罪吧</Desc>
+		<StoryDesc>正一如既往的沉浸在悔恨中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+</List></MoodDefs>

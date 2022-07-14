@@ -1,0 +1,469 @@
+<ModifierDefs><List>	
+
+	
+	<Modifier Name="Modifier_BodyPractice_GBase" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="500"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="100"/>
+			
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddP="-100"/>
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.4"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.4"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+			
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.3"/>
+			<li Name="PainTolerance" AddV="2"/>
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			<li Name="ToleranceTMin" AddV="-80"/>
+			<li Name="ToleranceTMax" AddV="800"/>
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="MoveSpeed" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="200"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+			
+			<li Name="PainTolerance" AddV="1"/>
+			<li Name="BodyPratice_BodyStrong" AddV="1"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+			<li Name="ToleranceTMax" AddV="250"/>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="200"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="75"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="75"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+			
+			<li Name="PainTolerance" AddV="1"/>
+			<li Name="BodyPratice_BodyStrong" AddV="1"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+			<li Name="ToleranceTMax" AddV="250"/>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="200"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+			
+			<li Name="PainTolerance" AddV="1"/>
+			<li Name="BodyPratice_BodyStrong" AddV="1"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+			<li Name="ToleranceTMax" AddV="250"/>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="400"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="150"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="150"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.15"/>
+			
+			<li Name="PainTolerance" AddV="2"/>
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			<li Name="ToleranceTMin" AddV="-50"/>
+			<li Name="ToleranceTMax" AddV="400"/>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="400"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="200"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="200"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.15"/>
+			
+			<li Name="PainTolerance" AddV="2"/>
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			<li Name="ToleranceTMin" AddV="-50"/>
+			<li Name="ToleranceTMax" AddV="400"/>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="400"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="40"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="250"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="250"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.15"/>
+			
+			<li Name="PainTolerance" AddV="2"/>
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			<li Name="ToleranceTMin" AddV="-50"/>
+			<li Name="ToleranceTMax" AddV="400"/>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="800"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="80"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="500"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="500"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.2"/>
+			
+			<li Name="PainTolerance" AddV="3"/>
+			<li Name="BodyPratice_BodyStrong" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-80"/>
+			<li Name="ToleranceTMax" AddV="600"/>
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="800"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="80"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="600"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="600"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.2"/>
+			
+			<li Name="PainTolerance" AddV="3"/>
+			<li Name="BodyPratice_BodyStrong" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-80"/>
+			<li Name="ToleranceTMax" AddV="600"/>
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv9" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="800"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="80"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="700"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="700"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.2"/>
+			
+			<li Name="PainTolerance" AddV="3"/>
+			<li Name="BodyPratice_BodyStrong" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-80"/>
+			<li Name="ToleranceTMax" AddV="600"/>
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv10" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="1500"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="200"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.25"/>
+			
+			<li Name="PainTolerance" AddV="4"/>
+			<li Name="BodyPratice_BodyStrong" AddV="4"/>
+			<li Name="ToleranceTMin" AddV="-100"/>
+			<li Name="ToleranceTMax" AddV="800"/>
+			<li Name="MaxAge" AddV="800"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv11" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="1500"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="200"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="2000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="2000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.25"/>
+			
+			<li Name="PainTolerance" AddV="4"/>
+			<li Name="BodyPratice_BodyStrong" AddV="4"/>
+			<li Name="ToleranceTMin" AddV="-100"/>
+			<li Name="ToleranceTMax" AddV="800"/>
+			<li Name="MaxAge" AddV="800"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Glv12" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="1500"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="200"/>
+
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="3000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="3000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.25"/>
+			
+			<li Name="PainTolerance" AddV="4"/>
+			<li Name="BodyPratice_BodyStrong" AddV="4"/>
+			<li Name="ToleranceTMin" AddV="-100"/>
+			<li Name="ToleranceTMax" AddV="800"/>
+			<li Name="MaxAge" AddV="800"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_BaseValue" Type="Normal">
+		<DisplayName>体修大能保底属性</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<EffectBind>
+			<li Path="Effect/System/fx_daneng" Bip="Root"/>
+		</EffectBind>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="2500"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="500"/>
+			
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="-100"/>
+			<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddP="-100"/>
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.95"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.95"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.3"/>
+			
+			<li Name="MaxAge" AddV="3000"/>
+			<li Name="MoveSpeed" AddV="10"/>
+			
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.3"/>
+			<li Name="FatigueConsumeConstant" AddP="-10"/> 
+			<li Name="NutritionConsumeConstant" AddP="-10"/> 
+			<li Name="WaterConsumeConstant" AddP="-10"/> 
+			<li Name="HappyConsumeConstant" AddP="-10"/> 
+			
+			<li Name="ToleranceTMin" AddV="-273"/>
+			<li Name="ToleranceTMax" AddV="3000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_BaseFightValue" Type="Normal">
+		<DisplayName>体修大能战斗保底属性</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="10"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddP="10"/>
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="50000"/>
+			
+			<li Name="PainTolerance" AddV="10"/>
+			<li Name="BodyPratice_BodyStrong" AddV="10"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_Atk" Type="Normal">
+		<DisplayName>威</DisplayName>
+		<Desc>此人秘体摧山填海，威力无比。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="10"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50000"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_Def" Type="Normal">
+		<DisplayName>韧</DisplayName>
+		<Desc>此人秘体无物可破，坚韧无比。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddP="10"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="50000"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_Dodge" Type="Normal">
+		<DisplayName>避</DisplayName>
+		<Desc>此人行动敏捷，灵动无影。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_CatchFabao" Type="Normal">
+		<DisplayName>夺</DisplayName>
+		<Desc>此人手法精妙，非常擅长镇压法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.15"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_ArmorPenetration" Type="Normal">
+		<DisplayName>穿</DisplayName>
+		<Desc>此人运劲巧妙，非常擅长穿透灵气护盾造成伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	
+	<Modifier Name="Modifier_BodyPractice_Boss_Strong" Type="Normal">
+		<DisplayName>壮</DisplayName>
+		<Desc>此人肉体无比强壮，精深也异常强韧，不惧疼痛。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="PainTolerance" AddV="3"/>
+			<li Name="BodyPratice_BodyStrong" AddV="3"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

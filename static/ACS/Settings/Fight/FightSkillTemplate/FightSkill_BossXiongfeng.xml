@@ -1,0 +1,56 @@
+<FightSkills><List>	
+
+	<Skill Name="Xiongfeng_penhuo"><!--喷火对npc的伤害-->
+		<DisplayName>喷火</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Huo</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>100</Value>
+		<SelectType>SelectThing</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>39</HitEffect>		
+	</Skill>
+	<Skill Name="Jiaolong_fennuhuodan">
+		<DisplayName>火弹</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Huo</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<TargetType>Building</TargetType>
+		<Value>150</Value>
+		<SelectType>Random</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>89</MissileEffect>
+		<BombEffect>39</BombEffect>
+		<HitEffect>39</HitEffect>
+		<Radius>10</Radius>
+		<ClassName>xiongfeng_huodan</ClassName>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>35</Speed>
+			<Shake>1</Shake>
+			<BombRadius>25</BombRadius>
+		</Missile>
+	</Skill>	
+	
+	<Skill Name="Xiongfeng_penhuoaoe"><!--喷火AOE-->
+		<DisplayName>喷火</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Huo</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>75</Value>
+		<SelectType>AllNpc</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>39</HitEffect>		
+		<Radius>10</Radius>
+	</Skill>
+</List></FightSkills>

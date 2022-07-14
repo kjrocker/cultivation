@@ -1,0 +1,285 @@
+<MoodDefs><List>
+
+	<Mood Name="BottleNeck1" Group="BottleNeck">
+		<DisplayName>突破瓶颈</DisplayName>
+		<Desc>终于突破，修为更进一步。</Desc>
+		<StoryDesc>正沉浸在突破瓶颈的喜悦中</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="BottleNeck2">
+		<DisplayName>破关失败</DisplayName>
+		<Desc>唔……修道艰难……</Desc>
+		<StoryDesc>正因为突破失败而暗暗反思</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>-8</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="BottleNeck3" Group="BottleNeck">
+		<DisplayName>仙路迷茫……</DisplayName>
+		<Desc>停留在这个境界很久了……破关无望</Desc>
+		<StoryDesc>正因为卡在瓶颈中许久而满脸焦躁</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>30</DeeponMax>
+	</Mood>
+	<Mood Name="BottleNeck4" Group="BottleNeck">
+		<DisplayName>终于突破</DisplayName>
+		<Desc>功夫不负有心人，终于突破了这个瓶颈！</Desc>
+		<StoryDesc>正因为终于突破滞留许久的瓶颈而狂喜</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>2</Duration>
+	</Mood>
+	
+	<Mood Name="BottleNeck5" Group="BottleNeck">
+		<DisplayName>仙路动摇</DisplayName>
+		<Desc>停留在这个境界很久了……破关无望</Desc>
+		<StoryDesc>正因为卡在瓶颈中许久而满脸焦躁</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-8</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>20</DeeponMax>
+	</Mood>
+	
+	<Mood Name="ThunderDisaster1" Group="BottleNeck">
+		<DisplayName>雷劫临头</DisplayName>
+		<Desc>感受到了天劫的气息。</Desc>
+		<StoryDesc>正因面临天劫而显得有些忐忑不安</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="ThunderDisaster2" Group="BottleNeck">
+		<DisplayName>渡劫成功！</DisplayName>
+		<Desc>险之又险，总算又过一灾。</Desc>
+		<StoryDesc>正因渡劫成功而笑容满面</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>1.5</StackRatio>
+		<Value>25</Value>
+		<Duration>4</Duration>
+	</Mood>
+	<Mood Name="ThunderDisaster3" Group="BottleNeck">
+		<DisplayName>道基已毁</DisplayName>
+		<Desc>天劫凶险，道基已毁，飞升无望。</Desc>
+		<StoryDesc>正因渡劫渡劫失敗，道基被毀而心如死灰</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-60</Value>
+		<Duration>10</Duration>
+	</Mood>
+	<Mood Name="Dan1" Group="Dan">
+		<DisplayName>地仙在望</DisplayName>
+		<Desc>地仙境界就在眼前，长生有望！</Desc>
+		<StoryDesc>正因地仙境界在望而振奋</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Dan2" Group="Dan">
+		<DisplayName>成为地仙</DisplayName>
+		<Desc>结成金丹，成为地仙，这只是我修仙路上的第一步！</Desc>
+		<StoryDesc>正因为成功结成金丹而长舒一口气</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>25</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="Dan3" Group="Dan">
+		<DisplayName>上品金丹</DisplayName>
+		<Desc>结成了上品真丹，未来仙途成就无量！</Desc>
+		<StoryDesc>正因为结成上品金丹而自傲</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>25</Value>
+		<Duration>4</Duration>
+	</Mood>
+	<Mood Name="Dan4" Group="Dan">
+		<DisplayName>中品金丹</DisplayName>
+		<Desc>结丹中品，已是百里挑一。</Desc>
+		<StoryDesc>正因为结成中品金丹而满足</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>3</Duration>
+	</Mood>
+	<Mood Name="StageUp" Group="StageUp">
+		<DisplayName>境界提升</DisplayName>
+		<Desc>修行许久，总算又突破一个境界！</Desc>
+		<StoryDesc>正因为突破了一个境界而充满喜悦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="FrameOfMind1" Group="FrameOfMind">
+		<DisplayName>心境崩溃</DisplayName>
+		<Desc>千万念头纷杂，心态崩了！</Desc>
+		<StoryDesc>正因心境杂乱而崩溃</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="FrameOfMind2" Group="FrameOfMind">
+		<DisplayName>心境不稳</DisplayName>
+		<Desc>心烦意乱，无法静下心来……</Desc>
+		<StoryDesc>正因思绪泛滥而满脸躁怒</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="FrameOfMind3" Group="FrameOfMind">
+		<DisplayName>心境中正</DisplayName>
+		<Desc>平常心，不好不坏。</Desc>
+		<StoryDesc>心里正感叹一句一切如常</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>4</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="FrameOfMind4" Group="FrameOfMind">
+		<DisplayName>心境圆润</DisplayName>
+		<Desc>心如皎月，意如潮汐。</Desc>
+		<StoryDesc>正因为心境圆润而神色温润</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="FrameOfMind5" Group="FrameOfMind">
+		<DisplayName>心境通明</DisplayName>
+		<Desc>心似明镜，通透清明。</Desc>
+		<StoryDesc>正因为心境通明而神气淡然</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="FrameOfMind6" Group="FrameOfMind">
+		<DisplayName>心境无暇</DisplayName>
+		<Desc>心念若有似无，无暇无垢，洞彻本心。</Desc>
+		<StoryDesc>正因为心境无暇而充满出尘的气息</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>25</Value>
+		<Duration>0</Duration>
+	</Mood>
+	
+	<Mood Name="TravelExperience" Group="TravelExperience">
+		<DisplayName>想出去走走</DisplayName>
+		<Desc>好久没有下山历练了，有点动了尘思。</Desc>
+		<StoryDesc>正因好久没有下山历练而动了尘思</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>12</DeeponMax>
+	</Mood>
+	
+	<Mood Name="SitCrosslegged1" Group="SitCrosslegged">
+		<DisplayName>在地面打坐</DisplayName>
+		<Desc>要是能有个舒服点的地方修炼就好了……</Desc>
+		<StoryDesc>正因在地上打坐而一瘸一拐</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="SitCrosslegged2" Group="SitCrosslegged">
+		<DisplayName>舒适的修行</DisplayName>
+		<Desc>这种修行事半功倍~</Desc>
+		<StoryDesc>正因舒适的修行设施而低声赞叹</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>8</Value>
+		<Duration>1</Duration>
+	</Mood>
+	<Mood Name="PracticeLing1" Group="PracticeLing">
+		<DisplayName>灵气浓烈</DisplayName>
+		<Desc>此处灵气浓烈，乃是修行之宝地。</Desc>
+		<StoryDesc>正因在灵气浓烈处修行而畅快不已</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeLing2" Group="PracticeLing">
+		<DisplayName>灵气充足</DisplayName>
+		<Desc>此处灵气充足，是个不错的修行之地。</Desc>
+		<StoryDesc>正因在灵气充足处修行而满意的点头</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeLing3" Group="PracticeLing">
+		<DisplayName>灵气不足</DisplayName>
+		<Desc>此处灵气匮乏，于此修行将就了些。</Desc>
+		<StoryDesc>正因在灵气不足处修行而皱眉</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeLing4" Group="PracticeLing">
+		<DisplayName>灵气贫瘠</DisplayName>
+		<Desc>此处灵气贫瘠，实在不适合修行。</Desc>
+		<StoryDesc>正因在灵气贫瘠处修行而心生不满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	<Mood Name="PracticeElement1" Group="PracticeElement">
+		<DisplayName>五行完美</DisplayName>
+		<Desc>此处五行和我的功法完美匹配，于此修行真是畅快。</Desc>
+		<StoryDesc>正因修行地五行完美而感到如鱼得水</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeElement2" Group="PracticeElement">
+		<DisplayName>五行融洽</DisplayName>
+		<Desc>此处五行之气和我的功法调和融洽，算是个不错的修行场所。</Desc>
+		<StoryDesc>正因修行地五行融洽而感到畅快</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeElement3" Group="PracticeElement">
+		<DisplayName>五行排斥</DisplayName>
+		<Desc>此处五行与我修炼的功法相冲，于此打坐气息不稳。</Desc>
+		<StoryDesc>正因修行地五行排斥而感到心浮气躁</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	<Mood Name="PracticeElement4" Group="PracticeElement">
+		<DisplayName>五行相克</DisplayName>
+		<Desc>此处五行与我相克，不宜久留。</Desc>
+		<StoryDesc>正因修行地五行排斥而感到心魔丛生</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1.2</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+</List></MoodDefs>

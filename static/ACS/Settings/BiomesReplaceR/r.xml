@@ -1,0 +1,293 @@
+<Defs><List>
+	<Def Name="Valley">
+		<Terrain>
+		</Terrain>
+		<Plant>
+			<li>
+				<Rate>0.2</Rate>
+				<From>RockBrown</From>
+				<ToList>
+					<li W="5" V="RockJade"/>
+					<li W="5" V="RockCinnabar"/>
+					<li W="1" V="Darksteel"/>
+				</ToList>
+			</li>
+		</Plant>
+	</Def>
+
+	<Def Name="Wet">
+		<Terrain>
+			<li>
+				<From>Soil</From>
+				<To>ShallowWater</To>
+				<Rate>1</Rate> 
+			</li>
+			<li>
+				<From>WetLand</From>
+				<To>FertileSoil</To>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<From>Mud</From>
+				<To>ShallowWater</To>
+				<Rate>1</Rate>
+			</li>
+		</Terrain>
+	</Def>
+	
+	<Def Name="BattleField">
+		<Terrain>
+			<li>
+				<From>ShallowWater</From>
+				<To>BloodWater</To>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<From>DepthWater</From>
+				<To>BloodWater</To>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<From>DepthDepthWater</From>
+				<To>BloodWater</To>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<From>WetLand</From>
+				<To>BloodWater</To>
+				<Rate>1</Rate>
+			</li>
+		</Terrain>
+		<Plant>
+			<li>
+				<From>Grass</From>
+				<ToList>
+					<li W="1" V="Box_Corpse"/>
+					<li W="1" V="Box_Cargo"/>
+				</ToList>
+				<Rate>0.1</Rate>
+			</li>
+		</Plant>
+	</Def>
+	
+	<Def Name="Forest">
+		<Terrain>
+			<li>
+				<From>StoneLand</From>
+				<To>Soil</To>
+				<Neq>0</Neq>
+				<Rate>1</Rate>
+			</li>
+		</Terrain>
+		<Plant>
+			<li>
+				<From>RockBrown</From>
+				<ToList>
+					<li W="2" V="Grass"/>
+					<li W="2" V="LongGrass"/>
+					<li W="2" V="Flower1"/>
+					<li W="2" V="Flower2"/>
+					<li W="2" V="Flower3"/>
+					<li W="2" V="Flower4"/>
+					<li W="2" V="Flower5"/>
+					<li W="1" V="TreeGinkgo"/>
+					<li W="1" V="TreePoplar"/>
+					<li W="1" V="TreePine"/>
+					<li W="1" V="TreePear"/>
+				</ToList>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>RockGray</From>
+				<ToList>
+					<li W="2" V="Grass"/>
+					<li W="2" V="LongGrass"/>
+					<li W="2" V="Flower1"/>
+					<li W="2" V="Flower2"/>
+					<li W="2" V="Flower3"/>
+					<li W="2" V="Flower4"/>
+					<li W="2" V="Flower5"/>
+					<li W="1" V="TreeGinkgo"/>
+					<li W="1" V="TreePoplar"/>
+					<li W="1" V="TreePine"/>
+					<li W="1" V="TreePear"/>
+				</ToList>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>Grass</From>
+				<ToList>
+					<li W="2" V="Flower1"/>
+					<li W="2" V="Flower2"/>
+					<li W="2" V="Flower3"/>
+					<li W="2" V="Flower4"/>
+					<li W="2" V="Flower5"/>
+					<li W="1" V="TreeGinkgo"/>
+					<li W="1" V="TreePoplar"/>
+					<li W="1" V="TreePine"/>
+					<li W="1" V="TreePear"/>
+				</ToList>
+				<Rate>0.8</Rate>
+			</li>
+			<li>
+				<From>IronOre</From>
+				<To>TreeGinkgo</To>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>CopperOre</From>
+				<To>TreePoplar</To>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>SilverOre</From>
+				<To>TreePine</To>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>RockJade</From>
+				<To>TreePear</To>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>RockCinnabar</From>
+				<To>TreePear</To>
+				<Rate>0.5</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>Darksteel</From>
+				<ToList>
+					<li W="5" V="Raspberry"/>
+					<li W="5" V="TreePine_Big"/>
+				</ToList>
+				<Rate>1</Rate>
+			</li>
+		</Plant>
+	</Def>
+	
+	<Def Name="Desert">
+		<Terrain>
+			<li>
+				<From>Soil</From>
+				<To>Sand</To>
+				<Neq>0</Neq>
+				<Rate>1</Rate>
+			</li>
+		</Terrain>
+		<Plant>
+			<li>
+				<From>Grass</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+				</ToList>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<From>LongGrass</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+				</ToList>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<From>TreeGinkgo</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+					<li W="1" V=""/>
+				</ToList>
+				<Rate>0.3</Rate>
+			</li>
+			<li>
+				<From>TreePoplar</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+					<li W="1" V=""/>
+				</ToList>
+				<Rate>0.3</Rate>
+			</li>
+			<li>
+				<From>TreePear</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+					<li W="1" V=""/>
+				</ToList>
+				<Rate>0.3</Rate>
+			</li>
+			<li>
+				<From>TreePine</From>
+				<ToList>
+					<li W="1" V="ShiChe"/>
+					<li W="1" V="CongRong"/>
+					<li W="1" V="CamelSting"/>
+					<li W="1" V=""/>
+				</ToList>
+				<Rate>0.3</Rate>
+			</li>
+			<li>
+				<From>RockBrown</From>
+				<To>RockLing</To>
+				<Rate>0.5</Rate>
+			</li>
+		</Plant>
+	</Def>
+	
+	<Def Name="HighLand">
+		<Terrain>
+			<li>
+				<From>ShallowWater</From>
+				<To>LingWater</To>
+				<Rate>1</Rate>
+			</li>
+		</Terrain>
+		<Plant>
+			<li>
+				<From>Grass</From>
+				<ToList>
+					<li W="1" V="IceFlower1"/>
+				</ToList>
+				<Rate>0.7</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>LongGrass</From>
+				<ToList>
+					<li W="1" V="IceFlower1"/>
+				</ToList>
+				<Rate>0.7</Rate>
+				<RemoveIfNoNew>1</RemoveIfNoNew>
+			</li>
+			<li>
+				<From>TreeGinkgo</From>
+				<To>TreePine</To>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<From>TreePoplar</From>
+				<To>TreePine</To>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<From>TreePear</From>
+				<To>TreePine</To>
+				<Rate>0.5</Rate>
+			</li>
+		</Plant>
+	</Def>
+</List></Defs>

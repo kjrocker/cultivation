@@ -1,0 +1,172 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_6_Huo">
+		<DisplayName>九转金丹直指</DisplayName>
+		<Desc>老君嫡传真法，道门外丹术之无上宝典。修行此法不擅神通争斗，只求以外丹饵药辅佐，勇猛精进。此法共九重境界，九转功成大道坦途直指金仙。</Desc>
+		<SelectDesc>此功法擅长炼丹术，每次突破需要外丹辅助。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>6,5,-1,6,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Huo</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>cuiti</li>
+			<li>ciqi</li>
+			<li>guanding</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>九窍</DisplayName>
+				<Desc></Desc>
+				<Value>500</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>九窍</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_JingYuan"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage2" Level="3">
+				<DisplayName>周天</DisplayName>
+				<Desc></Desc>
+				<Value>800</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>周天</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_Ling"/>
+						</ItemCost>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="5">
+				<DisplayName>铅汞</DisplayName>
+				<Desc></Desc>
+				<Value>1600</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>铅汞</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_DredgeQi1"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage4" Level="6">
+				<DisplayName>金丸</DisplayName>
+				<Desc></Desc>
+				<Value>3500</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>金丸</DisplayName>
+						<Desc></Desc>
+						<ItemCost>
+							<Item name="Item_Dan_Restore"/>
+						</ItemCost>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="7">
+				<DisplayName>摄御</DisplayName>
+				<Desc></Desc>
+				<Value>60000</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>摄御</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_IncreaseLife1"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage6" Level="8">
+				<DisplayName>还珠</DisplayName>
+				<Desc></Desc>
+				<Value>120000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>还珠</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_Ling2"/>
+						</ItemCost>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage7" Level="9">
+				<DisplayName>婴孩</DisplayName>
+				<Desc></Desc>
+				<Value>150000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>婴孩</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+						<ItemCost>
+							<Item name="Item_Dan_JingYuan3"/>
+						</ItemCost>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage8" Level="10">
+				<DisplayName>苦海</DisplayName>
+				<Desc></Desc>
+				<Value>2200000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>苦海</DisplayName>
+						<Desc>以元神游苦海觅天道之妙，一旦过此关，将直面天劫。</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_Dan_HundredRefine"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage9" Level="12">
+				<DisplayName>纯阳</DisplayName>
+				<Desc></Desc>
+				<Value>3600000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>纯阳</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>450000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

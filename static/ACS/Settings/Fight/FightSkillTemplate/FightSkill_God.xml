@@ -1,0 +1,150 @@
+<FightSkills><List>
+	<Skill Name="FightSkill_God_Damage1">
+		<DisplayName>御龙啸</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Jin</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>1</CD>
+		<LingCost>75</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>20</MissileEffect>
+		<HitEffect>56</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="FightSkill_God_Damage2"><!--伤害技能基础模板 --> 
+		<DisplayName>七杀戮魔神雷</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>45</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<MissileEffect>30</MissileEffect>
+		<HitEffect>51</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>1</p1>
+			<p2>0</p2>
+			<p3>1</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+
+	
+	<Skill Name="FightSkill_God_FaBao1">
+		<DisplayName>修罗剑</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>30</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng8</CastAni>
+		<Value>0.4</Value>
+		<Value2>30</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>54</HitEffect>
+	</Skill>
+	
+	
+	<Skill Name="FightSkill_God_FightSkill1"><!--术法增强基础模板 --> 
+		<DisplayName>夜叉血咒</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Skill</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>90</CD>
+		<LingCost>400</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng9</CastAni>
+		<Value>3</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>71</HitEffect>
+	</Skill>
+	
+	
+	<Skill Name="FightSkill_God_Sheild1"><!--护体真强基础模板 --> 
+		<DisplayName>无常之护</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>25</CD>
+		<LingCost>330</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>0.4</Value>
+		<Value2>25</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>60</HitEffect>
+	</Skill>
+	
+	<Skill Name="FightSkill_God_Health1"><!--恢复技能基础模板 --> 
+		<DisplayName>万花咒</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>45</CD>
+		<LingCost>500</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>800</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	
+	<Skill Name="FightSkill_God_Health2"><!--恢复技能基础模板 --> 
+		<DisplayName>宁静</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>700</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>250</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>66</HitEffect>
+	</Skill>
+	
+</List></FightSkills>

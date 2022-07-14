@@ -1,0 +1,4 @@
+WndID	Layer	Resource
+ui1	1	ui/ui1
+worldlayer	0	ui/ui_worldlayer
+mainmenu	1	ui/ui_mainmenu

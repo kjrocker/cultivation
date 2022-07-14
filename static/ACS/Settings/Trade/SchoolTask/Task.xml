@@ -1,0 +1,429 @@
+<Defs><List>
+	<Def Name="War1">
+		<Force>0</Force>
+		<DisplayName>斩孽除恶</DisplayName>
+		<Secret><!-- 需要去秘闻表里配置 -->
+			<li Id="9003" Weight="1" Place="Place_BirthPlace14|Place_BirthPlace13|Place_BirthPlace11|Place_BirthPlace12|Place_CentralPlains4|Place_CentralPlains2|Place_CentralPlains5|Place_CentralPlains1|Place_CentralPlains3|Place_FertileField3|Place_FertileField4|Place_FertileField5|Place_FertileField1|Place_FertileField2|Place_Desert2|Place_Desert4|Place_Desert3|Place_Snowfield1|Place_Snowfield3|Place_Snowfield2|Place_SouthForest1|Place_SouthForest3" />
+		</Secret>
+		<Desc>{0}有一位弟子外出历练时遭到恶人斩杀，但他们出于门派考虑无法处理，希望有人能帮他们报一箭之仇。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="War2">
+		<Force>0</Force>
+		<DisplayName>肃清间谍</DisplayName>
+		<Secret><!-- 需要去秘闻表里配置 -->
+			<li Id="9004" Weight="1" Place="Place_BirthPlace14|Place_BirthPlace13|Place_BirthPlace11|Place_BirthPlace12|Place_CentralPlains4|Place_CentralPlains2|Place_CentralPlains5|Place_CentralPlains1|Place_CentralPlains3|Place_FertileField3|Place_FertileField4|Place_FertileField5|Place_FertileField1|Place_FertileField2|Place_Desert2|Place_Desert4|Place_Desert3|Place_Snowfield1|Place_Snowfield3|Place_Snowfield2|Place_SouthForest1|Place_SouthForest3" />
+		</Secret>
+		<Desc>{0}发现了其门下有一名弟子其实是间谍，但碍于门派事务无法自行处理。他们期望有人能去将其肃清。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="War3">
+		<Force>0</Force>
+		<DisplayName>清除叛徒</DisplayName>
+		<Secret><!-- 需要去秘闻表里配置 -->
+			<li Id="9005" Weight="1" Place="Place_BirthPlace14|Place_BirthPlace13|Place_BirthPlace11|Place_BirthPlace12|Place_CentralPlains4|Place_CentralPlains2|Place_CentralPlains5|Place_CentralPlains1|Place_CentralPlains3|Place_FertileField3|Place_FertileField4|Place_FertileField5|Place_FertileField1|Place_FertileField2|Place_Desert2|Place_Desert4|Place_Desert3|Place_Snowfield1|Place_Snowfield3|Place_Snowfield2|Place_SouthForest1|Place_SouthForest3" />
+		</Secret>
+		<Desc>{0}有一位弟子违反戒律，在外逃窜。他们希望有缘人能够帮他们解决这个问题。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	
+	<Def Name="Rest1">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_CureMuDamage" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治弟子</DisplayName>
+		<Desc>{0}一名高级弟子身受“土”类型重伤，门派上下竟找不到可医治的丹药，急需仁义之士帮助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest2">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_CureJinDamage" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治弟子</DisplayName>
+		<Desc>{0}一名高级弟子身受“木”类型重伤，门派上下竟找不到可医治的丹药，急需仁义之士帮助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest3">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_CureShuiDamage" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治弟子</DisplayName>
+		<Desc>{0}一名高级弟子身受“火”类型重伤，门派上下竟找不到可医治的丹药，急需仁义之士帮助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest4">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_CureHuoDamage" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治弟子</DisplayName>
+		<Desc>{0}一名高级弟子身受“金”类型重伤，门派上下竟找不到可医治的丹药，急需仁义之士帮助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest5">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_CureTuDamage" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治弟子</DisplayName>
+		<Desc>{0}一名高级弟子身受“水”类型重伤，门派上下竟找不到可医治的丹药，急需仁义之士帮助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	
+	<Def Name="Rest6">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_ShuiEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治长老</DisplayName>
+		<Desc>{0}一名长老深受重伤，普通丹药无法医治，需在大量水属性灵气陪同下持续运功才能恢复。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20078" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest7">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_HuoEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治长老</DisplayName>
+		<Desc>{0}一名长老深受重伤，普通丹药无法医治，需在大量火属性灵气陪同下持续运功才能恢复。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20079" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest8">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_JinEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治长老</DisplayName>
+		<Desc>{0}一名长老深受重伤，普通丹药无法医治，需在大量金属性灵气陪同下持续运功才能恢复。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20080" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest9">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_MuEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治长老</DisplayName>
+		<Desc>{0}一名长老突深受重伤，普通丹药无法医治，需在大量木属性灵气陪同下持续运功才能恢复。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20078" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest10">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_TuEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>医治长老</DisplayName>
+		<Desc>{0}一名长老突深受重伤，普通丹药无法医治，需在大量土属性灵气陪同下持续运功才能恢复。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20079" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	
+	<Def Name="Rest11">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_IncreaseNeckCountdown1" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>延缓天劫</DisplayName>
+		<Desc>{0}一名长老有要事要办，无奈天劫将至，想找其他门派讨要又碍于面子。若有有缘之人伸出援手，能得重谢。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest12">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_IncreaseLife5" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>延缓天劫</DisplayName>
+		<Desc>{0}一名长老修为仍待精进，但天劫即将到来，急需延寿避劫的丹药。</Desc>
+		<Success FriendPoint="2" Event="20080" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest13">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_IncreaseLife1" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>大限将至</DisplayName>
+		<Desc>{0}一位高级弟子因为凡间事务消耗了不少寿元，大限将至。急需一枚延寿丹药，但门派内竟然一颗也不剩。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Rest14">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Dan_IncreaseLife2" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>大限将至</DisplayName>
+		<Desc>{0}一位长老因为凡间事务消耗了不少寿元，大限将至，不甘心就此入轮回，向广大仙家求助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	
+	<Def Name="Rest15">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_ShuiEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>瓶颈突破</DisplayName>
+		<Desc>{0}一名长老突破瓶颈过程中，水属性灵气突然消散，门派内又无天地灵根可用。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20078" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest16">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_HuoEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>瓶颈突破</DisplayName>
+		<Desc>{0}一名长老突破瓶颈过程中，火属性灵气突然消散，门派内又无天地灵根可用。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20079" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest17">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_JinEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>瓶颈突破</DisplayName>
+		<Desc>{0}一名长老突破瓶颈过程中，金属性灵气突然消散，门派内又无天地灵根可用。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20080" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest18">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_MuEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>瓶颈突破</DisplayName>
+		<Desc>{0}一名长老突破瓶颈过程中，木属性灵气突然消散，门派内又无天地灵根可用。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20078" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Rest19">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_TuEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>瓶颈突破</DisplayName>
+		<Desc>{0}一名长老突破瓶颈过程中，土属性灵气突然消散，门派内又无天地灵根可用。如有相赠，必感激不尽。</Desc>
+		<Success FriendPoint="2" Event="20079" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	
+	<Def Name="Build1">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_SkyStone" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}建设奇观过程中，由于计算疏漏缺少关键材料天柱石，即将功亏一篑。如有人赠与，必将获得重谢。</Desc>
+		<Success FriendPoint="2" Event="20076" Relation="200"/>
+		<Fail FriendPoint="-2" Event="20076" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Build2">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_StarEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}建设奇观过程中，由于计算疏漏缺少关键材料星髓，即将功亏一篑。如有人赠与，必将获得重谢。</Desc>
+		<Success FriendPoint="2" Event="20080" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Build3">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_StoneEssence" MinCount="100" MaxCount="100" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}想要建造新的门厅，但石髓竟然不够用了。如有人火中送碳，则有重谢。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build4">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_JadeEssence" MinCount="100" MaxCount="100" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}准备建设新的浴池，可惜玉髓有限。希望各大门派能伸出援手。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build5">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_CopperRock" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}需要大量火铜矿来建设丹炉，但一时间，门派上下居然都无法满足需求。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build6">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_SilverRock" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}需要大量寒晶矿来建设丹炉，但一时间，门派上下居然都无法满足需求。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build7">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_HardWood" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}正在整修大殿，仓库突发大火，库存的金丝灵木皆化为灰烬，但大殿又不能停止维修。望有缘人相赠。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build8">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_HardWood" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>门派建设</DisplayName>
+		<Desc>{0}需要扩建膳房，然而门派中的木材由于处理不当，被虫孑腐蚀。望有缘人相赠。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build9">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_SkyStone" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}山门突然倒塌，急需天柱石修复，否则颜面无存。如有人赠与，必将获得重谢。</Desc>
+		<Success FriendPoint="2" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Build10">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_StarEssence" MinCount="1" MaxCount="1" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}磨练法宝过程中，由于一时疏忽，法宝破损，急需星髓才能修复。如有人赠与，必将获得重谢。</Desc>
+		<Success FriendPoint="2" Event="20080" Relation="200"/>
+		<Fail FriendPoint="-2" Relation="-200"/>
+		<AddWaitNotify>1</AddWaitNotify>
+		<Level>3</Level>
+	</Def>
+	<Def Name="Build11">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_StoneEssence" MinCount="100" MaxCount="100" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}地基有损，需要大量石髓填补缝隙。如有人火中送碳，则有重谢。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build12">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_JadeEssence" MinCount="100" MaxCount="100" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}需要大量玉髓打造雕像，但门派上下并无存量。希望各大门派能伸出援手。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build13">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_CopperRock" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}需要建造高温房间用于修行渡劫，但门派中可用的火铜矿石寥寥无几。望有缘人相助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build14">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_SilverRock" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}需要建造极寒房间用于修行渡劫，但门派中可用的寒晶矿石寥寥无几。望有缘人相助。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+	<Def Name="Build15">
+		<Force>0</Force>
+		<ItemNeed>
+			<Item Name="Item_Cinnabar" MinCount="200" MaxCount="200" />
+		</ItemNeed>
+		<DisplayName>资源缺乏</DisplayName>
+		<Desc>{0}想要深入探究符修，需大量朱砂绘制各类神符，但门派中并无此物囤积。如有人相赠，必万分感激。</Desc>
+		<Success Relation="50"/>
+		<Fail Relation="-50"/>
+		<Level>1</Level>
+	</Def>
+</List></Defs>

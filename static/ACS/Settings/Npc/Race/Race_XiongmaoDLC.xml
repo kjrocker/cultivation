@@ -1,0 +1,492 @@
+<RaceDefs><List>
+	<RaceDef Name="YGPanda">
+		<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+		<RebornRace>YGPanda</RebornRace>
+		<FromRace>Panda</FromRace>
+		<DisplayName>貊妖</DisplayName>
+		<GentrateNpc>1</GentrateNpc>
+		<Desc>觉醒灵智而化形为妖：貊妖</Desc>
+		<RaceType>Wisdom</RaceType>
+		<MaleName>男</MaleName>
+		<FemaleName>女</FemaleName>
+		<NameGeneratorPrefix>RaceName/Prefix_Panda.txt</NameGeneratorPrefix>
+		<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+		<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+		<NormalAttack>Human_NormalAttack</NormalAttack>
+		<Body>YGAnimal_PandaBody</Body>
+		<HasGenders>1</HasGenders>
+		<HasEquip>1</HasEquip>
+		<GenerateMinAge>14</GenerateMinAge>
+		<GenerateMaxAge>60</GenerateMaxAge>
+		<ChildhoodAge>6</ChildhoodAge>
+		<AdultAge>14</AdultAge>
+		<EventAge>1</EventAge>
+		<YearSkillPoint>0.15</YearSkillPoint>
+		<MonsterRun>3</MonsterRun>
+		<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+		<TexPath>tex://res/Sprs/tujian/TJ_xiongmaoyao01</TexPath>
+		<ExtraFoodTag>Bamboo</ExtraFoodTag>
+		<BornMagic>
+			<li>Magic_YG_RealYinYang</li>
+		</BornMagic>
+		
+		<RaceSuperPart>
+			<li>SuperPart_Panda_1</li>
+			<li>SuperPart_Panda_2</li>
+		</RaceSuperPart>
+		
+		<AnimalModifier>
+			<li>Modifier_YG_NormalPower</li>
+		</AnimalModifier>
+		
+		<AnimalModifierRemove>
+			<li>Modifier_YG_NormalPower</li>
+			<li>Modifier_YG_RealPower</li>
+			<li>Modifier_YG_RealRecover</li>
+			<li>Modifier_YG_RealWisdom</li>
+			<li>Modifier_YG_RealShield</li>
+			<li>Modifier_YG_YinYangForce</li>
+		</AnimalModifierRemove>
+		
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,5,2,1,3</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,5,2,1,3</li> 
+		</BaseFive>
+		<BaseP>
+			<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+			<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+	</RaceDef>
+	
+	<RaceDef Name="Panda">
+		<DisplayName>貊</DisplayName>
+		<Desc>普通的动物：貊</Desc>
+		
+		<Mod>Mod/Npc/Panda/Base</Mod>
+		<RaceType>Animal</RaceType>
+		<Revive>1</Revive>
+		<TexPath>tex://res/Sprs/tujian/TJ_xiongmao01</TexPath>
+		<Rolepaint>res/Sprs/tujian/TJ_xiongmao01</Rolepaint>
+		<FreeAnis>
+			<li Name="Free" Length="2.0"/>
+			<li Name="Free2" Length="8.10"/>
+			<li Name="Free3" Length="9.10"/>
+		</FreeAnis>
+		<TalkBefore>嘤嘤，</TalkBefore>
+		<TalkAfter>，嘤!</TalkAfter>
+		<AnimatorAnimal>1</AnimatorAnimal>
+		<MaleName>公</MaleName>
+		<FemaleName>母</FemaleName>
+		<NormalAttack>Panda_NormalAttack</NormalAttack>
+		<Body>QuadrupedBody</Body>
+		<HasGenders>1</HasGenders>
+		<HasEquip>0</HasEquip>
+		<GenerateMinAge>0.5</GenerateMinAge>
+		<GenerateMaxAge>12</GenerateMaxAge>
+		<AdultAge>3</AdultAge>
+		<FreeLength>2.7</FreeLength>
+		<WarningRange>0</WarningRange>
+		<StrikeBack>0.2</StrikeBack>
+		<WinterHide>1</WinterHide>
+		<YGRace>YGPanda</YGRace>
+		<JYRace>JYPanda</JYRace>
+		<IllustratedHandLabel>Animal</IllustratedHandLabel>
+		<ExtraFoodTag>Bamboo</ExtraFoodTag>
+		<HorseData>
+			<Mod>Mod/Npc/Panda/Base</Mod>
+			<RideBip>Bip001 Spine1</RideBip>
+			<Scale>1</Scale>
+			<OffsetX>0</OffsetX>
+			<OffsetY>-0.35</OffsetY>
+			<OffsetZ>0</OffsetZ>
+		</HorseData>
+		<AutoSpeedScale>1.75</AutoSpeedScale>
+		
+		<BreedingLikeTame>
+			<li>TameBamboo</li>
+		</BreedingLikeTame>
+		<!-- 
+		<Products>
+			<li>
+				<ProductTime>17</ProductTime>			
+				<ProductItems>
+					<li>
+						<ThingDef>Item_WolfLeather</ThingDef>
+						<Count>40</Count>
+						<Rate>1</Rate>
+					</li>
+				</ProductItems>
+			</li>
+		</Products> 
+		-->
+		<RacePregnant>
+			<PregnantTime>7200</PregnantTime>
+			<PregnantInterval>9600</PregnantInterval>
+			<PregnantRate>0.01</PregnantRate>
+			<MinBirthCount>2</MinBirthCount>
+			<MaxBirthCount>4</MaxBirthCount>
+			<PregnantItem></PregnantItem>
+		</RacePregnant>
+		
+		<SlaughterItems>
+		</SlaughterItems>
+		
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+			<li Sex="Male" 	 AgeMin="5" 	AgeMax="20"	>5,7,2,1,3</li> 
+			<li Sex="Male" 	 AgeMin="21" 	AgeMax="42"	>5,5,2,2,3</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+			<li Sex="Female" 	 AgeMin="5" 	AgeMax="20"	>5,7,2,1,3</li> 
+			<li Sex="Female" 	 AgeMin="21" 	AgeMax="42"	>5,5,2,2,3</li> 
+		</BaseFive>
+		<BaseP>
+			<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+			<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+	</RaceDef>
+	
+	<RaceDef Name="JYPanda" Parent="JYBase">
+		<DisplayName>妖貊</DisplayName>
+		<Desc>未觉醒灵智而获得力量的动物：妖貊</Desc>
+		<Mod>Mod/Npc/JYPanda/Base</Mod>
+		<NameGeneratorPrefix>JYAnimal/Prefix_Panda.txt</NameGeneratorPrefix>
+		<Revive>0</Revive>
+		<RaceType>Animal</RaceType>
+		<AnimatorAnimal>1</AnimatorAnimal>
+		<MaleName>公</MaleName>
+		<FemaleName>母</FemaleName>
+		<NormalAttack>JYPanda_NormalAttack</NormalAttack>
+		<Body>QuadrupedBody</Body>
+		<HorseItem>Item_HorseFromJY_Panda</HorseItem>     
+		<HorseData>
+			<Mod>Mod/Npc/JYPanda/Base</Mod>
+			<RideBip>Bip001 Spine1</RideBip>
+			<Scale>1</Scale>
+			<OffsetX>0</OffsetX>
+			<OffsetY>-0.32</OffsetY>
+			<OffsetZ>0</OffsetZ>
+		</HorseData>
+		<FreeAnis>
+			<li Name="Free" Length="2.0"/>
+			<li Name="Free2" Length="8.10"/>
+			<li Name="Free3" Length="9.10"/>
+		</FreeAnis>
+		<HasGenders>1</HasGenders>
+		<HasEquip>0</HasEquip>
+		<GenerateMinAge>3</GenerateMinAge>
+		<GenerateMaxAge>35</GenerateMaxAge>
+		<AdultAge>5</AdultAge>
+		<StrikeBack>1</StrikeBack>
+		<WarningRange>0</WarningRange>
+		<RebornRace>Panda</RebornRace>
+		<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+		<TexPath>tex://res/Sprs/tujian/TJ_JYxiongmao01</TexPath>
+		<Rolepaint>res/Sprs/tujian/TJ_xiongmao01</Rolepaint>
+		
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,1,0],
+			[1,3,1],
+			[0,1,0],
+			</Data>
+		</Collider>
+		<ForbidFly>1</ForbidFly>
+		
+		<AutoSpeedScale>0.7</AutoSpeedScale>
+		
+		<EliteDrops>
+			<Drop MinJinJie="1" MaxJinJie="12">
+				<Items>
+					<li>
+						<ThingDef>Item_MonsterBlood</ThingDef>
+						<Count>3</Count>
+						<Rate>0.25</Rate>
+					</li>
+					<li>
+						<ThingDef>Item_MonsterBlood</ThingDef>
+						<Count>1</Count>
+						<Rate>1</Rate>
+					</li>
+					<li>
+						<ThingDef>Item_YaoLeather</ThingDef>
+						<Count>15</Count>
+						<Rate>1</Rate>
+					</li>
+				</Items>
+			</Drop>
+			<Drop MinJinJie="4" MaxJinJie="9">
+				<Items>
+					<li>
+						<ThingDef>Item_YaoLeather</ThingDef>
+						<Count>35</Count>
+						<Rate>0.25</Rate>
+					</li>
+				</Items>
+			</Drop>
+			<Drop MinJinJie="7" MaxJinJie="12">
+				<Items>
+					<li>
+						<ThingDef>Item_SoulPearl</ThingDef>
+						<Count>1</Count>
+						<Rate>1</Rate>
+					</li>
+					<li>
+						<ThingDef>Item_MonsterBlood</ThingDef>
+						<Count>2</Count>
+						<Rate>0.25</Rate>
+					</li>
+				</Items>
+			</Drop>
+			<Drop MinJinJie="10" MaxJinJie="12">
+				<Items>
+					<li>
+						<ThingDef>Item_YaoLeather</ThingDef>
+						<Count>40</Count>
+						<Rate>1</Rate>
+					</li>
+					<li>
+						<ThingDef>Item_YaoLeather1</ThingDef>
+						<Count>15</Count>
+						<Rate>0.2</Rate>
+					</li>
+					<li>
+						<ThingDef>Item_MonsterBlood</ThingDef>
+						<Count>5</Count>
+						<Rate>0.25</Rate>
+					</li>
+				</Items>
+			</Drop>
+		</EliteDrops>
+		
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+			<li Sex="Male" 	 AgeMin="5" 	AgeMax="20"	>5,7,2,1,3</li> 
+			<li Sex="Male" 	 AgeMin="21" 	AgeMax="42"	>5,5,2,2,3</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+			<li Sex="Female" 	 AgeMin="5" 	AgeMax="20"	>5,7,2,1,3</li> 
+			<li Sex="Female" 	 AgeMin="21" 	AgeMax="42"	>5,5,2,2,3</li> 
+		</BaseFive>
+		<BaseP>
+			<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+			<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Fast"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+	</RaceDef>
+	
+	<RaceDef Name="LsPandaXian">
+		<DisplayName>天貊仙仙</DisplayName>
+		<Desc>天貊仙仙乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+		<Mod>Mod/Npc/LsPandaXL/Base</Mod>
+		<RaceType>Animal</RaceType>
+		<SymbiosisLs>Panda</SymbiosisLs>
+		<SymbiosisLsV>2</SymbiosisLsV>
+		<AnimalType>2</AnimalType>
+		<Revive>1</Revive>
+		<NormalAttack>LsPanda1_NormalAttack</NormalAttack>
+		<Body>QuadrupedBody</Body>
+		<HasGenders>0</HasGenders>
+		<HasEquip>0</HasEquip>
+		<LingShouMove>1</LingShouMove>
+		<GenerateMinAge>0.5</GenerateMinAge>
+		<GenerateMaxAge>12</GenerateMaxAge>
+		<AdultAge>3</AdultAge>
+		<FreeLength>2.7</FreeLength>
+		<WarningRange>0</WarningRange>
+		<StrikeBack>0.2</StrikeBack>
+		<TalkBefore>嘤嘤，</TalkBefore>
+		<TalkAfter>，嘤!</TalkAfter>
+		<ExtraFoodTag>Bamboo</ExtraFoodTag>
+		<LcHand>Dummy001</LcHand>
+		<!-- 
+		<Products>
+			<li>
+				<ProductTime>17</ProductTime>			
+				<ProductItems>
+					<li>
+						<ThingDef>Item_WolfLeather</ThingDef>
+						<Count>40</Count>
+						<Rate>1</Rate>
+					</li>
+				</ProductItems>
+			</li>
+		</Products> 
+		-->
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+		</BaseFive>
+		
+		<ReplaceAni>
+			<li Name="EatSmall" Value="Eat" />
+			<li Name="assemble" Value="Atk2" />
+			<li Name="PlayItem" Value="Atk2" />
+			<li Name="PlayBuild" Value="Free2" />
+			<li Name="Pee" Value="Free2" />
+			<li Name="PlayNpc" Value="Atk2" />
+			<li Name="Lay" Value="Free" />
+			<li Name="kszdpugong4" Value="Atk2" />
+			<li Name="TrainLingZhi" Value="weiqu01" />
+			<li Name="TrainHuTi" Value="weiqu01" />
+			<li Name="TrainQiGan" Value="weiqu01" />
+			<li Name="TrainNeiDan" Value="Atk1" />
+			<li Name="TrainShuFa" Value="ShiFaLoop" />
+			<li Name="Drink" Value="Eat" />
+			<li Name="gain" Value="Eat" />
+			<li Name="slaughter" Value="Eat" />
+		</ReplaceAni>
+		
+		<BaseP>
+			<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+			<li Name="RaceMoveSpeed" Value="LsMoveSpeed"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+
+		<ReplaceP>
+			<li Name="NpcLingMaxValue" Value="LsPandaLingMaxValue"/>
+			<li Name="NpcFight_FabaoPowerAddP" Value="LsFabaoPowerAddP"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+			<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+			<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" Value="LsShieldConversionRateAddP"/>
+			<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+		</ReplaceP>
+		<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+		<TexPath>tex://res/Sprs/tujian/TJ_lingchongxiongmao02</TexPath>
+	</RaceDef>
+	
+	<RaceDef Name="LsPandaXiu">
+		<DisplayName>天貊修修</DisplayName>
+		<Desc>天貊修修乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+		<Mod>Mod/Npc/LsPandaS/Base</Mod>
+		<RaceType>Animal</RaceType>
+		<AnimalType>2</AnimalType>
+		<SymbiosisLs>Panda</SymbiosisLs>
+		<SymbiosisLsV>1</SymbiosisLsV>
+		<LsTreeName>Panda2</LsTreeName>
+		<Revive>1</Revive>
+		<NormalAttack>LsPanda2_NormalAttack</NormalAttack>
+		<Body>QuadrupedBody</Body>
+		<HasGenders>0</HasGenders>
+		<HasEquip>0</HasEquip>
+		<LingShouMove>1</LingShouMove>
+		<GenerateMinAge>0.5</GenerateMinAge>
+		<GenerateMaxAge>12</GenerateMaxAge>
+		<AdultAge>3</AdultAge>
+		<FreeLength>2.7</FreeLength>
+		<WarningRange>0</WarningRange>
+		<StrikeBack>0.2</StrikeBack>
+		<TalkBefore>嘤嘤，</TalkBefore>
+		<TalkAfter>，嘤!</TalkAfter>
+		<ExtraFoodTag>Bamboo</ExtraFoodTag>
+		<LcHand>Dummy001</LcHand>
+		<!-- 
+		<Products>
+			<li>
+				<ProductTime>17</ProductTime>			
+				<ProductItems>
+					<li>
+						<ThingDef>Item_WolfLeather</ThingDef>
+						<Count>40</Count>
+						<Rate>1</Rate>
+					</li>
+				</ProductItems>
+			</li>
+		</Products> 
+		-->
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+		</BaseFive>
+		
+		<ReplaceAni>
+			<li Name="EatSmall" Value="Eat" />
+			<li Name="assemble" Value="Atk2" />
+			<li Name="PlayItem" Value="Atk2" />
+			<li Name="PlayBuild" Value="Free2" />
+			<li Name="Pee" Value="Free2" />
+			<li Name="PlayNpc" Value="Atk2" />
+			<li Name="Lay" Value="Free" />
+			<li Name="kszdpugong4" Value="ShiFaLoop" />
+			<li Name="TrainLingZhi" Value="weiqu01" />
+			<li Name="TrainHuTi" Value="weiqu01" />
+			<li Name="TrainQiGan" Value="weiqu01" />
+			<li Name="TrainNeiDan" Value="Atk1" />
+			<li Name="TrainShuFa" Value="ShiFaLoop" />
+			<li Name="Drink" Value="Eat" />
+			<li Name="gain" Value="Eat" />
+			<li Name="slaughter" Value="Eat" />
+		</ReplaceAni>
+		
+		<BaseP>
+			<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+			<li Name="RaceMoveSpeed" Value="LsMoveSpeed_Slow"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+
+		<ReplaceP>
+			<li Name="NpcLingMaxValue" Value="LsPandaLingMaxValue"/>
+			<li Name="NpcFight_FabaoPowerAddP" Value="LsPandaFabaoPowerAddP"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+			<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+			<li Name="NpcFight_SpellPowerAddP" Value="LsPandaSpellPowerAddP"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" Value="LsShieldConversionRateAddP"/>
+			<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+		</ReplaceP>
+		<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+		<TexPath>tex://res/Sprs/tujian/TJ_lingchongxiongmao01</TexPath>
+	</RaceDef>
+</List></RaceDefs>

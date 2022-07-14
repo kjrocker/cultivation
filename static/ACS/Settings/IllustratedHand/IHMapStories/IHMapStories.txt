@@ -1,0 +1,17 @@
+ID	MapStoryID	DisplayName	Desc	Hide
+1	Secrets_Baozang_EX1	虫谷秘闻	破解虫谷秘闻的秘密	
+2	Secrets_Baozang_EX2	毒龙秘宝	破解毒龙秘宝的秘密	
+3	Secrets_Baozang_EX3	医仙内府	破解医仙内府的秘密	
+4	Secrets_Baozang_EX4	火穴探宝	破解火穴探宝的秘密	
+5	Secrets_Baozang_EX5	天池藏宝	破解天池藏宝的秘密	
+6	Secrets_Baozang_EX6	天魔遗骸	破解天魔遗骸的秘密	
+7	Secrets_KunLunFaHui	昆仑法会	参与昆仑法会	
+8	Secrets_GuangShouMenTu	仙缘大会	参加仙缘大会	
+9	Secrets_XieDiLing	邪帝陵开启	参与邪帝陵开启的事件	
+10	Secrets_DuGuiXingZong	赌鬼叶玄	与赌鬼叶玄对赌	
+11	Secrets_TianJi	古天极符	破解古天极符的秘密	
+12	BaoZang_QingLianShan	青莲仙山	破解青莲仙山的秘密	
+13	BaoZang_XuanKong	琳琅仙府	破解琳琅仙府的秘密	
+14	BaoZang_ChiLianYuan	琼楼仙府	破解琼楼仙府的秘密	
+15	BaoZang_DengXian	东华遗宝	破解东华遗宝的秘密	
+16	LingWu_JiuHua1	龙潜凤栖	破解龙潜凤栖的秘密	

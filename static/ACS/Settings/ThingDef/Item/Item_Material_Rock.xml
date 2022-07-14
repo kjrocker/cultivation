@@ -1,0 +1,585 @@
+<ThingDefs><List>
+
+<ThingDef Type="Item" Name="RockBase" Parent="MaterialBase">
+	
+	
+	
+	<TexPath>Item/BrownRock</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>600</MaxHitPoints>
+	<Rate>1</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>900</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Rock">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>石,印,碑,珏,圭,阙,镇</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Rough2</li>
+		</PhysicalLables>
+		 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<RateWhenBeMain>2</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1</WorkSpeedCoefficientWhenBeMain>
+			
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>900</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>-3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1.2</WorktoMakeRate>
+			<WorktoBuildRate>1.5</WorktoBuildRate>
+		</BeMaterial>
+		
+		<!--<Rot>
+			<RotSpeed>0.00005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+
+
+	
+	<ThingDef Type="Item" Name="Item_BrownRock" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_stone</TexPath>
+	<ThingName>棕石</ThingName>
+	<Frags>
+		<li Frag="SmellDirt" />
+	</Frags>
+	
+	<Desc>棕色的岩石，十分常见。</Desc>
+	<Color>8C6F14FF</Color>		
+	<Item>
+		<BeMaterial>
+			<NamePrefix>棕石</NamePrefix>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_GrayRock" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_stone</TexPath>
+	<ThingName>灰石</ThingName>
+	<Desc>灰色的岩石，十分常见。</Desc>
+	<Color>34332EFF</Color>
+	<Frags>
+		<li Frag="SmellDirt" />
+	</Frags>
+	<Item>
+		<BeMaterial>
+			<NamePrefix>灰石</NamePrefix>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Marble" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_stone</TexPath>
+	<ThingName>大理石</ThingName>	
+	<Desc>大理石，常见的石材，纹理比较美观。</Desc>
+	<Color>5F6D7BFF</Color>
+	<Rate>2</Rate>
+	<Item>
+		<BeMaterial>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<NamePrefix>大理石</NamePrefix>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Jade" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_stone</TexPath>
+	<ThingName>玉石</ThingName>	
+	<Desc>质细而坚硬的石头，有光泽，略透明，十分美观而富有灵性。</Desc>
+	<Color>25CDF9E6</Color>
+	<Rate>4</Rate>
+	<Beauty>4</Beauty>
+	<Item>
+		<PhysicalLables>
+			<li>Smooth1</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>玉</NamePrefix>
+				<CostMultiplier>2</CostMultiplier>
+				
+				<RateWhenBeMain>4</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>4</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>16</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_JadeEssence" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_yusui01</TexPath>
+	<ThingName>玉髓</ThingName>	
+	<Desc>玉石的精华，质轻而光滑，非常美丽，常用来做高端装饰品，也可入药。</Desc>
+	<Rate>6</Rate>
+	<Beauty>28</Beauty>
+	<Frags>		
+		<li Frag="Jade" />
+	</Frags>	
+
+	<Item>
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="75" />
+				<SalePrice Value="35" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Smooth1</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+				<NamePrefix>玉髓</NamePrefix>
+				<CostMultiplier>2</CostMultiplier>
+				
+				<RateWhenBeMain>6</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>25</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>32</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_StoneEssence" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_shisui01</TexPath>
+	<ThingName>石髓</ThingName>	
+	<Desc>石头的精华，轻盈而坚硬，可用来入药。</Desc>
+	<Rate>5</Rate>
+	<Beauty>12</Beauty>
+	<Item>
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>10</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="25"/>
+				<SalePrice Value="5" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="6" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+				<NamePrefix>石髓</NamePrefix>
+				<RateWhenBeMain>5</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>4</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>20</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>18</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SkyStone" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_tianzhushi</TexPath>
+	<ThingName>天柱石</ThingName>	
+	<Desc>罕见的岩石，传说是天柱之上挖掘出的石块，蕴含磅礴的土属性灵气。</Desc>
+	<Rate>8</Rate>
+	<Beauty>18</Beauty>
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>天柱石</NamePrefix>
+				<StuffTexPath>res/mattex/mtl_xianzhu</StuffTexPath>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>7</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>18</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>8</Value>         
+		<Radius>4</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ExtremeJade" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_qianlengyu01</TexPath>
+	<ThingName>千棱神玉</ThingName>	
+	<Desc>修行界趋之若鹜的珍宝，天然呈现柱状结晶，有超群的灵气适应性。</Desc>
+	<Rate>9</Rate>
+	<Beauty>150</Beauty>
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>千棱玉</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>150</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingStone" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingshi01</TexPath>
+	<ThingName>灵石</ThingName>	
+	<Desc>灵气高度凝聚而成的固体，可以服用恢复500点灵气，并在一段时间增强对灵气的亲和。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Tags>
+		<Tag Name="Dan_LingStone" Level="1"/>
+	</Tags>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>500</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="1" />
+				<Fix>1</Fix>
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+				<Fix>1</Fix>
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+				<Fix>1</Fix>
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>灵石</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>6</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+				<BeautyWhenBeMain>8</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>500</Ling>
+			<Modifier>Dan_LingStone</Modifier>
+		</Elixir>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingCrystal" Parent="RockBase">
+	<TexPath>res\Sprs\object\object_lingjing01</TexPath>
+	<ThingName>灵晶</ThingName>	
+	<Desc>灵气高度凝聚而成的结晶体，可以服用恢复20000点灵气，并在一段时间大幅增强对灵气的亲和。</Desc>
+	<Rate>7</Rate>
+	<Beauty>12</Beauty>
+	<Tags>
+		<Tag Name="Dan_LingCrystal" Level="1"/>
+	</Tags>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="120"/>
+				<SalePrice Value="50" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="120" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>7</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>12</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>20000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "100"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>0082ACFF</Color>
+	</Light>
+	</ThingDef>
+	
+</List></ThingDefs>

@@ -1,0 +1,136 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="AgentConstructionHeYin">
+			<Title>Proxy construction - Riverback City</Title>
+			<Desc>Proxy construction - Riverback City</Desc>
+		</Text>
+		<Text Name="AgentManagementHeYin">
+			<Title>Agent management - Riverback City</Title>
+			<Desc>Agent management - Riverback City</Desc>
+		</Text>
+		<Text Name="BeliefManagementHeYin">
+			<Title>Belief management - Riverback City</Title>
+			<Desc>Belief management - Riverback City</Desc>
+		</Text>
+		<Text Name="AgentConstructionGuanHai">
+			<Title>Proxy construction - Seascape City</Title>
+			<Desc>Proxy construction - Seascape City</Desc>
+		</Text>
+		<Text Name="AgentManagementGuanHai">
+			<Title>Agent management - Seascape City</Title>
+			<Desc>Agent management - Seascape City</Desc>
+		</Text>
+		<Text Name="BeliefManagementGuanhai">
+			<Title>Belief management - Seascape City</Title>
+			<Desc>Belief management - Seascape City</Desc>
+		</Text>
+		<Text Name="AgentConstructionPanShe">
+			<Title>Proxy construction - Snaketail Village</Title>
+			<Desc>Proxy construction - Snaketail Village</Desc>
+		</Text>
+		<Text Name="AgentManagementPanShe">
+			<Title>Agent management - Snaketail Village</Title>
+			<Desc>Agent management - Snaketail Village</Desc>
+		</Text>
+		<Text Name="BeliefManagementPanShe">
+			<Title>Belief management - Snaketail Village</Title>
+			<Desc>Belief management - Snaketail Village</Desc>
+		</Text>
+		<Text Name="AgentConstructionFeng">
+			<Title>Proxy construction - City of Abundance</Title>
+			<Desc>Proxy construction - City of Abundance</Desc>
+		</Text>
+		<Text Name="AgentManagementFeng">
+			<Title>Agent management - City of Abundance</Title>
+			<Desc>Agent management - City of Abundance</Desc>
+		</Text>
+		<Text Name="BeliefManagementFeng">
+			<Title>Belief management - City of Abundance</Title>
+			<Desc>Belief management - City of Abundance</Desc>
+		</Text>
+		<Text Name="AgentConstructionDaLiang">
+			<Title>Proxy construction - City of Desolation</Title>
+			<Desc>Proxy construction - City of Desolation</Desc>
+		</Text>
+		<Text Name="AgentManagementDaLiang">
+			<Title>Agent management - City of Desolation</Title>
+			<Desc>Agent management - City of Desolation</Desc>
+		</Text>
+		<Text Name="BeliefManagementDaLiang">
+			<Title>Belief management - City of Desolation</Title>
+			<Desc>Belief management - City of Desolation</Desc>
+		</Text>
+		<Text Name="AgentConstructionZhongYuan">
+			<Title>Proxy construction - Central Plains</Title>
+			<Desc>Proxy construction - Central Plains</Desc>
+		</Text>
+		<Text Name="AgentManagementZhongYuan">
+			<Title>Agent management - Central Plains</Title>
+			<Desc>Agent management - Central Plains</Desc>
+		</Text>
+		<Text Name="BeliefManagementZhongYuan">
+			<Title>Belief management - Central Plains</Title>
+			<Desc>Belief management - Central Plains</Desc>
+		</Text>
+		<Text Name="AgentConstructionJiangAnWoYe">
+			<Title>Proxy construction - Riverbank Plains</Title>
+			<Desc>Proxy construction - Riverbank Plains</Desc>
+		</Text>
+		<Text Name="AgentManagementJiangAnWoYe">
+			<Title>Agent management - Riverbank Plains</Title>
+			<Desc>Agent management - Riverbank Plains</Desc>
+		</Text>
+		<Text Name="BeliefManagementJiangAnWoYe">
+			<Title>Belief management - Riverbank Plains</Title>
+			<Desc>Belief management - Riverbank Plains</Desc>
+		</Text>
+		<Text Name="AgentConstructionDaXueYuan">
+			<Title>Proxy construction - the Great Snowland</Title>
+			<Desc>Proxy construction - the Great Snowland</Desc>
+		</Text>
+		<Text Name="AgentManagementDaXueYuan">
+			<Title>Agent management - the Great Snowland</Title>
+			<Desc>Agent management - the Great Snowland</Desc>
+		</Text>
+		<Text Name="BeliefManagementDaXueYuan">
+			<Title>Belief management - the Great Snowland</Title>
+			<Desc>Belief management - the Great Snowland</Desc>
+		</Text>
+		<Text Name="AgentConstructionDaMo">
+			<Title>Proxy construction - Great Desert</Title>
+			<Desc>Proxy construction - Great Desert</Desc>
+		</Text>
+		<Text Name="AgentManagementDaMo">
+			<Title>Agent management - Great Desert</Title>
+			<Desc>Agent management - Great Desert</Desc>
+		</Text>
+		<Text Name="BeliefManagementDaMo">
+			<Title>Belief management - Great Desert</Title>
+			<Desc>Belief management - Great Desert</Desc>
+		</Text>
+		<Text Name="AgentConstructionNanHuang">
+			<Title>Proxy construction - Wild South</Title>
+			<Desc>Proxy construction - Wild South</Desc>
+		</Text>
+		<Text Name="AgentManagementNanHuang">
+			<Title>Agent management - Wild South</Title>
+			<Desc>Agent management - Wild South</Desc>
+		</Text>
+		<Text Name="BeliefManagementNanHuang">
+			<Title>Belief management - Wild South</Title>
+			<Desc>Belief management - Wild South</Desc>
+		</Text>
+		<Text Name="AgentConstructionOurPlace">
+			<Title>Proxy construction - Mt. South</Title>
+			<Desc>Proxy construction - Mt. South</Desc>
+		</Text>
+		<Text Name="AgentManagementOurPlace">
+			<Title>Agent management - Mt. South</Title>
+			<Desc>Agent management - Mt. South</Desc>
+		</Text>
+		<Text Name="BeliefManagementOurPlace">
+			<Title>Belief management - Mt. South</Title>
+			<Desc>Belief management - Mt. South</Desc>
+		</Text>
+	</List>
+</Texts>

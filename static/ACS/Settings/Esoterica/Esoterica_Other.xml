@@ -1,0 +1,344 @@
+﻿<Esotericas><List>
+
+	<Esoterica Name="Esoterica_SYS_LOST">
+		<DisplayName>模组丢失</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）</Desc>
+		<Type>None</Type>
+		<GLevel>None</GLevel>
+		<Element>None</Element>
+		<EffectDesc>无</EffectDesc>
+	</Esoterica>
+	
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	
+	<Esoterica Name="Esoterica_LunHui1">
+		<DisplayName>野球拳</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>来自现代的神秘秘籍，有改换体质的妙用。</Desc>
+		<Type>None</Type>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>提高神识1成\n提高悟性1成\n提高机缘1成</EffectDesc>
+		<Modifier>Esoterica_LunHui1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LunHui2">
+		<DisplayName>春回大地</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>来自现代的神奇秘籍，可以将灵气汇聚头部，让人思维灵动，提高悟性。顺便……</Desc>
+		<Type>None</Type>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>提高神识1成\n提高悟性1成</EffectDesc>
+		<Modifier>Esoterica_LunHui2</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Esoterica_LunHui3">
+		<DisplayName>爆发之力</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>独孤星独门绝技，可以突然爆发出强大的力量。</Desc>
+		<Type>None</Type>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：爆发之力\n独孤星独门绝技，可以突然爆发出强大的力量。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_9_3</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LunHui4">
+		<DisplayName>昆仑仙法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>昆仑不知名仙人所传授的秘法，可以提高悟性与根骨</Desc>
+		<Type>None</Type>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>提高悟性1成\n提高根骨1成</EffectDesc>
+		<Modifier>Esoterica_LunHui4</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Esoterica_LunHui5">
+		<DisplayName>申申符</DisplayName>
+		<Desc>让人感到平安快乐的符咒。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n申申符</EffectDesc>
+		<Spells>
+			<li>Spell_LunHui_ShenShen</li>
+		</Spells>
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Other_Esoterica_DanXia1">
+		<DisplayName>松影千霞</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>从丹霞山绝壁丹霞之景色中领悟出的奇术，可以提高法术伤害。</Desc>
+		<Type>Skill</Type>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<EffectDesc>提高法术伤害</EffectDesc>
+		<Modifier>Other_Esoterica_DanXia1</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Other_Esoterica_DanXia2">
+		<DisplayName>紫霞丹霄</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>从丹霞山绝壁丹霞之景色中领悟出的心法，长期修持可以调节心境，稳固元气。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>提高心境\n增加寿命</EffectDesc>
+		<Modifier>Other_Esoterica_DanXia2</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Other_Esoterica_DengXian1">
+		<DisplayName>东华秘典-紫薇剑</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>东华帝君所创之绝世剑法，以元神采紫薇帝星皇极之意融入剑气，摧枯拉朽无物不摧。此册还记录有东华帝君所创道门秘宝，太乙分光剑的炼制方法。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>提高法宝威力\n习得 秘宝：\n太乙分光剑</EffectDesc>
+		<Modifier>Other_Esoterica_DengXian1</Modifier>	
+		<Fabaos>
+			<li>MiBaoFormula_TaiYiFenGuangJian</li>
+		</Fabaos>
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_JiuHua">
+		<DisplayName>龙凤宝典</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古大能解析龙凤体内气脉运行路径而领悟的秘法。学成此法可将凡人肉身转化成龙凤之体，全面提高身体素质。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>提高神识1成\n提高根骨1成\n提高魅力1成\n提高悟性1成\n增加寿命</EffectDesc>
+		<Modifier>Other_Esoterica_JiuHua</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_LongHu1">
+		<DisplayName>奔流剑意</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>观龙虎山飞流瀑白虹裂石之景领悟的剑意，融入剑法之中可使法宝冲击力大增。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>增强法宝冲击力</EffectDesc>
+		<Modifier>Other_Esoterica_LongHu1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_LongHu2">
+		<DisplayName>飞流心法</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>观龙虎山飞流瀑飞流绵延不绝而领悟的吐纳之术，可以提高灵气恢复速度。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>提高灵气恢复速度</EffectDesc>
+		<Modifier>Other_Esoterica_LongHu2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_ChiLianYuan">
+		<DisplayName>坤离炼宝法</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>古仙南宫红炼器之术的秘传，以此术炼宝，可以极大的提高炼制成功率。\n[color=#D06508]以此感谢本游戏第一位渡劫成功的玩家：琼楼[/color]</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>Refining</Type>
+		<EffectDesc>大幅提高法宝炼制成功率</EffectDesc>
+		<Modifier>Other_Esoterica_ChiLianYuan</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Other_Esoterica_ChiLianYuan1">
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<DisplayName>秘传南宫渡厄宝录</DisplayName>
+		<Desc>古仙南宫红飞升之前总结出的一套秘法，修炼之后可以偷天换日，提高修行者之修行根基。\n[color=#D06508]以此感谢本游戏第一位渡劫成功的玩家：琼楼[/color]</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>提高神识1成\n提高悟性1成</EffectDesc>
+		<Modifier>Other_Esoterica_ChiLianYuan1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_XuanKong">
+		<DisplayName>天机化运法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>古仙袁若雪于天劫中领悟出偷天转运的逆天秘法，可以巨量提高机缘。\n[color=#D06508]以此纪念本游戏第一位以最下品资质逆天改命，结丹一品最终飞升的玩家：其实不是我[/color]</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>提高机缘2成</EffectDesc>
+		<Modifier>Other_Esoterica_XuanKong</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_ShanHeJue">
+		<DisplayName>山河诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>天极老祖从龙脉运转中领悟的秘法，其中记载有借助造化玉籽再造山河的种种妙法。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  开湖术\n  造陆术\n  造化灵土\n  造化灵池\n  造化沃土\n习得丹方：\n  灵源种\n  造化玉砂\n解锁建筑：\n  造化玉池[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildLing</li>
+			<li>BuildLingWater</li>
+			<li>BuildFertileSoil</li>
+			<li>BuildSea</li>
+			<li>BuildLand</li>
+		</Magics>
+		<Buildings>
+			<li>SmallPool</li>
+		</Buildings>
+		<Dans>
+			<li>Dan_LingYuanSha</li>
+			<li>Dan_LingYuanZhong</li>
+		</Dans>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Other_Esoterica_LongDan">
+		<DisplayName>龙魂真灵法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>从蛟龙的记忆碎片中领悟出的秘法。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n龙魂真灵丹\n从根本上大幅提高法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Esoterica_Boss_Long1</Modifier>	
+		<Dans>
+			<li>Dan_LongDan1</li>
+		</Dans>
+	</Esoterica>
+	<Esoterica Name="Other_Esoterica_FengDan">
+		<DisplayName>凤魂真灵法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>从凶凤的记忆碎片中领悟出的秘法。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n凤魂真灵丹\n从根本上大幅提高术法威力[/color][/size]</EffectDesc>
+		<Modifier>Esoterica_Boss_Feng1</Modifier>	
+		<Dans>
+			<li>Dan_FengDan1</li>
+		</Dans>
+	</Esoterica>
+	<Esoterica Name="Other_Esoterica_ZhuLongDan">
+		<DisplayName>阴阳真灵法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>从烛龙的记忆碎片中领悟出的秘法。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n阴阳真灵丹\n习得 秘宝：\n龙心阴阳圭\n从根本上大幅提高护盾强度[/color][/size]</EffectDesc>
+		<Modifier>Esoterica_Boss_ZhuLong1</Modifier>	
+		<Dans>
+			<li>Dan_ZhuLongDan1</li>
+		</Dans>
+		<Fabaos>
+			<li>MiBaoFormula_LongXinYinYangGui</li>
+		</Fabaos>
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_FenShen1">
+		<DisplayName>一气化三清</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>上古道门炼神秘法，早已失传。修炼此术可使元神分化，产生三条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加三条元神分神[/color][/size]</EffectDesc>
+		<GodSoulCount>3</GodSoulCount>
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_FenShen2">
+		<DisplayName>三尸分神法：善我之斩</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古修士以斩三尸成道之法为蓝本而创出的分神秘术。修习此册可以自身善念为引，分出一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加一条元神分神[/color][/size]</EffectDesc>
+		<GodSoulCount>1</GodSoulCount>
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_FenShen3">
+		<DisplayName>三尸分神法：恶我之斩</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古修士以斩三尸成道之法为蓝本而创出的分神秘术。修习此册可以自身恶念为引，分出一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加一条元神分神[/color][/size]</EffectDesc>
+		<GodSoulCount>1</GodSoulCount>
+	</Esoterica>
+	
+	<Esoterica Name="Other_Esoterica_FenShen4">
+		<DisplayName>三尸分神法：本我之斩</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古修士以斩三尸成道之法为蓝本而创出的分神秘术。修习此册可以本我之念为引，分出一条元神分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加一条元神分神[/color][/size]</EffectDesc>
+		<GodSoulCount>1</GodSoulCount>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Other_Esoterica_YanHuangTongShi">
+		<DisplayName>炎黄通史</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>炎黄国五千年通史，其中记载有庞杂而精深的内容，其中许多思想对修行亦大有启发。</Desc>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>提高悟性2成\n提高气感5点</EffectDesc>
+		<Modifier>Other_Esoterica_YanHuangTongShi</Modifier>	
+	</Esoterica>
+</List></Esotericas>

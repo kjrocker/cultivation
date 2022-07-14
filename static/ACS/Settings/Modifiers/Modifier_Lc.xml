@@ -1,0 +1,66 @@
+<ModifierDefs><List>
+	<Modifier Name="LcForbidFabao" Type="Normal">
+		<DisplayName>禁用法宝</DisplayName>
+		<Desc>受到浮龙的反噬，无法使用法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>150</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Beams\Impact\WaterBeamImpact" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="LcForbidSkill" Type="Normal">
+		<DisplayName>禁用术法</DisplayName>
+		<Desc>被玄凤的熔断影响，无法使用术法。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>150</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FORBID_SKILL</li>
+		</SpecialFlags>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Beams\Impact\FireBeamImpact" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="LcConfuse" Type="Normal">
+		<DisplayName>迷惑</DisplayName>
+		<Desc>迷惑</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>90</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Aura\SpinningAura\SpinningModular" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="LcTrainEffect" Type="Normal">
+		<DisplayName>普通训练特效</DisplayName>
+		<Desc>普通训练特效</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>99999</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<EffectBind>			
+			<li Path="Effect\gsq\Prefab\DaZuo" />
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="AtkByLc" Type="Normal">
+		<DisplayName></DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>10</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+	</Modifier>
+</List></ModifierDefs>

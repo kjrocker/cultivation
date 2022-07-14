@@ -1,0 +1,386 @@
+﻿<TerrainDefs><List>
+	<TerrainDef Name="TerrainBase">
+		<DisplayName>地标基础</DisplayName>
+		<StoryDesc>道路上</StoryDesc>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>10</RenderLayer>
+		<PathCost>20</PathCost>
+		<NextBase>0</NextBase>
+		<TerrainType>Ground</TerrainType>
+		<Fertility>1</Fertility>
+		<TerrainFilthDef></TerrainFilthDef>
+		<IsSnowed>1</IsSnowed>
+		<Beauty>0</Beauty>
+	
+		<BasePracticeEffectiveness>0.8</BasePracticeEffectiveness>
+		<PracticeEffectiveness>0.6</PracticeEffectiveness>
+	</TerrainDef>
+	
+	<TerrainDef Name="Null" Parent="TerrainBase">
+		<DisplayName>无</DisplayName>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>10</RenderLayer>
+		<PathCost>0</PathCost>
+		<Fertility>0</Fertility>
+		<DustPower>0</DustPower>
+		<Beauty>0</Beauty>
+	</TerrainDef>
+	
+<!--	<TerrainDef Name="Sand" Parent="TerrainBase">
+		<ElementKind>Tu</ElementKind>
+		<DisplayName>沙地</DisplayName>
+		<StoryDesc>黄沙之上,风沙之中,荒沙之上</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<MiniColor>D2C94FFF</MiniColor>
+		<Beauty>-2</Beauty>
+		<Fertility>0.2</Fertility>
+		<Elements>
+			<li Kind="Tu" Power="2"/>
+			<li Kind="Huo" Power="1"/>
+		</Elements>		
+	</TerrainDef>-->
+	<TerrainDef Name="Soil" Parent="TerrainBase">
+		<OutFix>WetLand</OutFix>
+		<DisplayName>土地</DisplayName>
+		<StoryDesc>松柏之侧,绿荫之下</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>10</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>1</Fertility>
+		<MiniColor>715C37FF</MiniColor>
+		<DustPower>1</DustPower>
+		<Beauty>-1</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="2"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="Soil_Sand" Parent="TerrainBase">
+		<OutFix>WetLand</OutFix>
+		<DisplayName>沙地</DisplayName>
+		<StoryDesc>黄沙之上</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>10</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>1</Fertility>
+		<MiniColor>715C37FF</MiniColor>
+		<DustPower>1</DustPower>
+		<Beauty>-1</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="2"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="Mud" Parent="TerrainBase">
+		<DisplayName>泥地</DisplayName>
+		<StoryDesc>泥泞之中,污泥之上</StoryDesc>
+		<Tags>
+			<Tag Name="Mud" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<MiniColor>61522CFF</MiniColor>
+<!--		<OutFix>Soil</OutFix>-->
+		<RenderLayer>11</RenderLayer>
+		<NextBase>1</NextBase>
+		<PathCost>20</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>1</Fertility>
+		<Beauty>-2</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="1.5"/>
+			<li Kind="Shui" Power="1.5"/>
+		</Elements>
+	</TerrainDef>
+	
+	
+	
+	<TerrainDef Name="BlackB" Parent="TerrainBase">
+		<DisplayName>虚空</DisplayName>
+		<StoryDesc>虚空之中</StoryDesc>
+		<Tags>
+		</Tags>
+		<Color>00000000</Color>
+		<MiniColor>000000FF</MiniColor>
+<!--		<OutFix>Soil</OutFix>-->
+		<RenderLayer>11</RenderLayer>
+		<TerrainType>DepthWater</TerrainType>
+		<NextBase>1</NextBase>
+		<PathCost>100</PathCost>
+		<DustPower>0</DustPower>
+		<Fertility>0</Fertility>
+		<Beauty>0</Beauty>
+		<IsSnowed>0</IsSnowed>
+	</TerrainDef>
+	
+	<TerrainDef Name="WetLand" Parent="TerrainBase">
+		<DisplayName>湿地</DisplayName>
+		<StoryDesc>泥泞之中,湿地之上</StoryDesc>
+		<Tags>
+			<Tag Name="WetLand" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<RenderLayer>11</RenderLayer>
+		<NextBase>1</NextBase>
+		<TerrainType>Ground</TerrainType>
+		<Color>0D0000FF</Color>
+		<MiniColor>6B4B20FF</MiniColor>
+		<DustPower>1</DustPower>
+		<PathCost>15</PathCost>
+		<Fertility>1</Fertility>
+		<Beauty>-2</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+			<li Kind="Shui" Power="1.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="FertileSoil" Parent="TerrainBase">
+		<DisplayName>沃土</DisplayName>
+		<StoryDesc>松柏之侧,绿荫之下</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<RenderLayer>12</RenderLayer>
+		<PathCost>10</PathCost>
+		<OutFix>WetLand</OutFix>
+		<DustPower>1</DustPower>
+		<Fertility>1.4</Fertility>
+		<Beauty>-2</Beauty>
+		<MiniColor>989039FF</MiniColor>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="StoneLand" Parent="TerrainBase">
+		<DisplayName>岩石地表</DisplayName>
+		<StoryDesc>山崖之畔,崎岖山路上</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OverLayer>0</OverLayer>
+		<OutFix>WetLand</OutFix>
+		<RenderLayer>13</RenderLayer>
+		<PathCost>10</PathCost>
+		<DustPower>1</DustPower>
+		<Fertility>0</Fertility>
+		<MiniColor>AC9254FF</MiniColor>
+		<Beauty>-1</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="0.25"/>
+			<li Kind="Jin" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="SandLand" Parent="TerrainBase">
+		<DisplayName>沙地</DisplayName>
+		<StoryDesc>山崖之畔,崎岖山路上</StoryDesc>
+		<Tags>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OverLayer>0</OverLayer>
+		<OutFix>WetLand</OutFix>
+		<RenderLayer>13</RenderLayer>
+		<PathCost>10</PathCost>
+		<Color>BA8E1BFF</Color>
+		<DustPower>1</DustPower>
+		<Fertility>0</Fertility>
+		<MiniColor>BA8E1BFF</MiniColor>
+		<Beauty>-1</Beauty>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="LingSoil" Parent="TerrainBase">
+		<DisplayName>灵土</DisplayName>
+		<StoryDesc>灵秀之所,灵气环绕中</StoryDesc>
+		<Tags>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>21</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>2</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>1</Beauty>
+		<MiniColor>006550E5</MiniColor>
+		<AddionLing>40</AddionLing>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+		
+	</TerrainDef>
+	<TerrainDef Name="DepthDepthWater" Parent="TerrainBase">
+		<DisplayName>深水</DisplayName>
+		<Tags>
+			<Tag Name="DepthWater" Level="1"/>
+			<Tag Name="Water" Level="1"/>
+		</Tags>
+		<Color>00010DFF</Color>
+		<OutFix>Mud</OutFix>
+		<TerrainType>DepthWater</TerrainType>
+		<RenderLayer>22</RenderLayer>
+		<PathCost>100</PathCost>
+		<Fertility>0.6</Fertility>
+		<Beauty>1</Beauty>
+		<MiniColor>4F798CFF</MiniColor>
+		<IsSnowed>0</IsSnowed>
+		<Elements>
+			<li Kind="Shui" Power="3"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="DepthWater" Parent="TerrainBase">
+		<DisplayName>深水</DisplayName>
+		<Tags>
+			<Tag Name="DepthWater" Level="1"/>
+			<Tag Name="Water" Level="1"/>
+		</Tags>
+		<TerrainType>DepthWater</TerrainType>
+		<OutFix>Mud</OutFix>
+		<RenderLayer>22</RenderLayer>
+		<PathCost>100</PathCost>
+		<Fertility>0.6</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<MiniColor>4F798CFF</MiniColor>
+		<Beauty>1</Beauty>
+		<Elements>
+			<li Kind="Shui" Power="2.5"/>
+			<li Kind="Tu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+	
+	
+	
+	<TerrainDef Name="YunHai" Parent="TerrainBase">
+		<Tags>
+			<Tag Name="DepthWater" Level="1"/>
+			<Tag Name="Water" Level="1"/>
+		</Tags>
+		<DisplayName>云海</DisplayName>
+		<TerrainType>DepthWater</TerrainType>
+		<OutFix>Mud</OutFix>
+		<RenderLayer>22</RenderLayer>
+		<PathCost>100</PathCost>
+		<Fertility>0.6</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<MiniColor>4F798CFF</MiniColor>
+		<Beauty>1</Beauty>
+	</TerrainDef>
+	
+	<TerrainDef Name="ShallowWater" Parent="TerrainBase">
+		<DisplayName>浅水</DisplayName>
+		<StoryDesc>湖畔树下,秀水之侧</StoryDesc>
+		<Tags>
+			<Tag Name="Water_FSZW" Level="1"/>
+			<Tag Name="ShallowWater" Level="1"/>
+		</Tags>
+		<OutFix>Mud</OutFix>
+		<TerrainType>ShallowWater</TerrainType>
+		<RenderLayer>23</RenderLayer>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>1.6</Fertility>
+		<IsSnowed>0.5</IsSnowed>
+		<Beauty>1</Beauty>
+		<MiniColor>5C8690FF</MiniColor>
+		<Elements>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="BloodWater" Parent="TerrainBase">
+		<DisplayName>血水</DisplayName>
+		<StoryDesc>通常来自于屠杀生物</StoryDesc>
+		<Tags>
+			<Tag Name="Water_FSZW" Level="1"/>
+			<Tag Name="ShallowWater" Level="1"/>
+		</Tags>
+		<Color>B70F1300</Color>
+		<OutFix>Mud</OutFix>
+		<TerrainType>ShallowWater</TerrainType>
+		<RenderLayer>23</RenderLayer>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>1.6</Fertility>
+		<IsSnowed>0.5</IsSnowed>
+		<Beauty>1</Beauty>
+		<MiniColor>B70F13FF</MiniColor>
+		<Elements>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="DepthBloodWater" Parent="DepthDepthWater">
+		<DisplayName>深血水</DisplayName>
+		<Tags>
+			<Tag Name="DepthWater" Level="1"/>
+			<Tag Name="Water" Level="1"/>
+		</Tags>
+		<TerrainType>DepthWater</TerrainType>
+		<OutFix>Mud</OutFix>
+		<RenderLayer>22</RenderLayer>
+		<PathCost>100</PathCost>
+		<Fertility>0.6</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<MiniColor>800000FF</MiniColor>
+		<Beauty>1</Beauty>
+		<Elements>
+			<li Kind="Shui" Power="2.5"/>
+			<li Kind="Tu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+	<TerrainDef Name="LingWater" Parent="TerrainBase">
+		<DisplayName>灵水</DisplayName>
+		<StoryDesc>湖畔树下,秀水之侧</StoryDesc>
+		<Tags>
+			<Tag Name="Water_FSZW" Level="1"/>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+		</Tags>
+		<Color>113E40FF</Color>
+		<OutFix>Mud</OutFix>
+		<TerrainType>ShallowWater</TerrainType>
+		<RenderLayer>23</RenderLayer>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>2</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>3</Beauty>
+		<MiniColor>2EE2E8FF</MiniColor>
+		<AddionLing>40</AddionLing>
+		<Elements>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="Sand" Parent="Soil">
+		<DisplayName>沙地</DisplayName>
+		<Fertility>0.3</Fertility>
+	</TerrainDef>
+
+	<TerrainDef Name="WetSnow" Parent="WetLand">
+		<Color>000022FF</Color>
+	</TerrainDef>
+	<TerrainDef Name="StoneSnow" Parent="StoneLand">
+		<Color>222204FF</Color>
+	</TerrainDef>
+</List></TerrainDefs>

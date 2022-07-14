@@ -1,0 +1,268 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>AgentConstructionHeYin</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 河阴城</Title>
+            <Desc>代理建设 - 河阴城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementHeYin</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 河阴城</Title>
+            <Desc>代理人管理 - 河阴城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementHeYin</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 河阴城</Title>
+            <Desc>信仰管理 - 河阴城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionGuanHai</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 观海城</Title>
+            <Desc>代理建设 - 观海城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementGuanHai</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 观海城</Title>
+            <Desc>代理人管理 - 观海城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementGuanhai</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 观海城</Title>
+            <Desc>信仰管理 - 观海城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionPanShe</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 盘蛇寨</Title>
+            <Desc>代理建设 - 盘蛇寨</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementPanShe</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 盘蛇寨</Title>
+            <Desc>代理人管理 - 盘蛇寨</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementPanShe</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 盘蛇寨</Title>
+            <Desc>信仰管理 - 盘蛇寨</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionFeng</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 丰城</Title>
+            <Desc>代理建设 - 丰城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementFeng</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 丰城</Title>
+            <Desc>代理人管理 - 丰城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementFeng</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 丰城</Title>
+            <Desc>信仰管理 - 丰城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionDaLiang</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 大凉城</Title>
+            <Desc>代理建设 - 大凉城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementDaLiang</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 大凉城</Title>
+            <Desc>代理人管理 - 大凉城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementDaLiang</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 大凉城</Title>
+            <Desc>信仰管理 - 大凉城</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionZhongYuan</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 中原</Title>
+            <Desc>代理建设 - 中原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementZhongYuan</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 中原</Title>
+            <Desc>代理人管理 - 中原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementZhongYuan</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 中原</Title>
+            <Desc>信仰管理 - 中原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionJiangAnWoYe</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 江岸沃野</Title>
+            <Desc>代理建设 - 江岸沃野</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementJiangAnWoYe</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 江岸沃野</Title>
+            <Desc>代理人管理 - 江岸沃野</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementJiangAnWoYe</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 江岸沃野</Title>
+            <Desc>信仰管理 - 江岸沃野</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionDaXueYuan</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 大雪原</Title>
+            <Desc>代理建设 - 大雪原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementDaXueYuan</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 大雪原</Title>
+            <Desc>代理人管理 - 大雪原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementDaXueYuan</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 大雪原</Title>
+            <Desc>信仰管理 - 大雪原</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionDaMo</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 大漠</Title>
+            <Desc>代理建设 - 大漠</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementDaMo</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 大漠</Title>
+            <Desc>代理人管理 - 大漠</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementDaMo</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 大漠</Title>
+            <Desc>信仰管理 - 大漠</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionNanHuang</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 南荒</Title>
+            <Desc>代理建设 - 南荒</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementNanHuang</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 南荒</Title>
+            <Desc>代理人管理 - 南荒</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementNanHuang</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 南荒</Title>
+            <Desc>信仰管理 - 南荒</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentConstructionOurPlace</Name>
+            <Notes></Notes>
+            <Title>代理建设 - 岭南</Title>
+            <Desc>代理建设 - 岭南</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>AgentManagementOurPlace</Name>
+            <Notes></Notes>
+            <Title>代理人管理 - 岭南</Title>
+            <Desc>代理人管理 - 岭南</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>BeliefManagementOurPlace</Name>
+            <Notes></Notes>
+            <Title>信仰管理 - 岭南</Title>
+            <Desc>信仰管理 - 岭南</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

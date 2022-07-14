@@ -1,0 +1,44 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="MainUIWorldTime">
+			<Notes>Comment Panel of World Clock</Notes>
+			<Title>World Clock</Title>
+			<Desc>Time of the world, the numbers of which increase as the game progresses.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]World Clock[/color].</Tips>
+		</Text>
+		<Text Name="MainUIWeather">
+			<Notes>Only used to show tips at the entrance of comment panel of Weather.</Notes>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Weather[/color].</Tips>
+		</Text>
+		<Text Name="MainUISectFengShui">
+			<Notes>Comment Panel of Sect's Feng Shui</Notes>
+			<Title>Sect's Feng Shui</Title>
+			<Desc>The Feng Shui of a sect.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Sect's Feng Shui[/color].</Tips>
+		</Text>
+		<Text Name="MainUIRoomFengShui">
+			<Notes>Comment Panel of Room's Feng Shui</Notes>
+			<Title>Room's Feng Shui</Title>
+			<Desc>The Feng Shui of a room.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Room's Feng Shui[/color].</Tips>
+		</Text>
+		<Text Name="MainUILingShi">
+			<Notes>Comment Panel of Spirit Stone</Notes>
+			<Title>Spirit Stone Coin</Title>
+			<Desc>Universally accepted commodity that can be used as currency to trade with others.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Spirit Stone[/color].</Tips>
+		</Text>
+		<Text Name="MainUIInfluence">
+			<Notes>Comment Panel of Influence</Notes>
+			<Title>Influence</Title>
+			<Desc>The influence of your sect in the mortal world, can be used to expand your power in the mortal world.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Influence[/color].</Tips>
+		</Text>
+		<Text Name="MainUIWuXingGraph">
+			<Notes>Comment Panel of Five Element Diagram</Notes>
+			<Title>Five Element Diagram</Title>
+			<Desc>The Five Element Diagram shows each of the connective and counteractive relationships between the five elements - Metal, Wood, Water, Fire and Earth.</Desc>
+			<Tips>Right-click to open the comment panel of [color=#D06508]Five Element Diagram[/color].</Tips>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,20 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Build_Discipline">
+			<DisplayName>Discipline Temple</DisplayName>
+			<Desc>The Discipline Temple is where disciples receive initiations and hold Abstinence Ceremonies. Commoners can also watch them. Unlocks Discipline policies. Handle social unrests by displaying punishments.</Desc>
+		</Text>
+		<Text Name="Build_Secret">
+			<DisplayName>Secret Pavilion</DisplayName>
+			<Desc>The Secret Pavilion is located above a room corner, usually inaccessible for commoners. Unlocks Plotting policies. Destabilize the society or the other agencies through schemes.</Desc>
+		</Text>
+		<Text Name="Build_Sermon">
+			<DisplayName>Divine Temple</DisplayName>
+			<Desc>There are statues sculpted in the Divine Temple. People can worship the statues and go preaching your religion. Preaching methods unlocked. Influence the world with the appeal of our sect.</Desc>
+		</Text>
+		<Text Name="Build_Recuit">
+			<DisplayName>Spirit Master Hall</DisplayName>
+			<Desc>The Spirit Master Hall is used for admittance rites. The right people can join our sect here. Recruit skills unlocked. Used to recruit more talents.</Desc>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,82 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Wolf_1"><!--测试秘体-->
+		<Prefix>汲灵之</Prefix>
+		<Suffix>吻</Suffix>
+		<Desc>狼妖的天赋秘体，可以大幅提高吞噬时的精华获取几率，但是精华的获取数量会大量降低。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_langya01</AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="UpCanineTooth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="DownCanineTooth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="9"/>
+				</Labels>
+			</li>		
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_SiHunZhiXi" Levels="4"/>
+				</Labels>
+			</li>		
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者吞噬物品获得精华的几率\n大量降低炼体者吞噬物品获得精华的数量</Desc>
+				<Modifier>Modifier_SuperPart_Wolf_1</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Wolf_2"><!--测试秘体-->
+		<Prefix>荒魂之</Prefix>
+		<Suffix>体</Suffix>
+		<Desc>狼妖的天赋秘体，修成此术，可大幅提高身体强度，并不畏疼痛。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Heart">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_WuHuiJingHua" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_WuHuiJingHua" Levels="4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者身体强度\n大量提高炼体者疼痛忍耐</Desc>
+				<Modifier>Modifier_SuperPart_Wolf_2</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

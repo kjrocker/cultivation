@@ -1,0 +1,270 @@
+<ModifierDefs><List>	
+
+	<Modifier Name="Modifier_LingZhi_DiaoXie" Type="Normal">
+		<DisplayName>交感</DisplayName>
+		<Desc>与灵根交感，感受到凋谢中的灵植透露出哀伤的气息，心境略有扰动。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>  
+			<li Name="MindStateBaseValue" AddV="-5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_GT0_Jin" Type="Normal">
+		<DisplayName>金灵交感</DisplayName>
+		<Desc>在金灵根附近修炼，与其进入交感之态。神识提高，心境提高，修炼速度降低，潜力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>2,0,0,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_LT0_Jin" Type="Normal">
+		<DisplayName>金煞交感</DisplayName>
+		<Desc>在金灵根附近修炼，与其进入交感之态。神识提高，心境降低，修炼速度提高，潜力降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>2,0,0,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1"/>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_GT0_Mu" Type="Normal">
+		<DisplayName>木灵交感</DisplayName>
+		<Desc>在木灵根附近修炼，与其进入交感之态。根骨提高，心境提高，修炼速度降低，潜力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,2,0,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_LT0_Mu" Type="Normal">
+		<DisplayName>木煞交感</DisplayName>
+		<Desc>在木灵根附近修炼，与其进入交感之态。根骨提高，心境降低，修炼速度提高，潜力降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,2,0,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1"/>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_GT0_Shui" Type="Normal">
+		<DisplayName>水灵交感</DisplayName>
+		<Desc>在水灵根附近修炼，与其进入交感之态。魅力提高，心境提高，修炼速度降低，潜力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,2,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_LingZhi_LT0_Shui" Type="Normal">
+		<DisplayName>水煞交感</DisplayName>
+		<Desc>在水灵根附近修炼，与其进入交感之态。魅力提高，心境降低，修炼速度提高，潜力降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,2,0,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1"/>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_GT0_Huo" Type="Normal">
+		<DisplayName>火灵交感</DisplayName>
+		<Desc>在火灵根附近修炼，与其进入交感之态。悟性提高，心境提高，修炼速度降低，潜力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,2,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_LingZhi_LT0_Huo" Type="Normal">
+		<DisplayName>火煞交感</DisplayName>
+		<Desc>在火灵根附近修炼，与其进入交感之态。悟性提高，心境降低，修炼速度提高，潜力降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,2,0</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1"/>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_GT0_Tu" Type="Normal">
+		<DisplayName>土灵交感</DisplayName>
+		<Desc>在土灵根附近修炼，与其进入交感之态。机缘提高，心境提高，修炼速度降低，潜力提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,2</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingZhi_LT0_Tu" Type="Normal">
+		<DisplayName>土煞交感</DisplayName>
+		<Desc>在土灵根附近修炼，与其进入交感之态。机缘提高，心境降低，修炼速度提高，潜力降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,2</BaseFive>
+		<Properties>  
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="-1"/>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Story_LingZhi_XinJing1" Type="Normal">
+		<DisplayName>心境空明</DisplayName>
+		<Desc>短期内心境提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_LingZhi_XinJing2" Type="Normal">
+		<DisplayName>心境紊乱</DisplayName>
+		<Desc>短期内心境降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_LingZhi_MaxLing1" Type="Normal">
+		<DisplayName>灵气被夺</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="-100"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_LingZhi_RipeLing1" Type="Normal">
+		<DisplayName>灵植成熟灵性效果1</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+		<Modifiers>
+			<li>Story_LingZhi_RipeLing_A</li>
+		</Modifiers>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingZhi_RipeLing2" Type="Normal">
+		<DisplayName>灵植成熟灵性效果2</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Modifiers>
+			<li>Story_LingZhi_RipeLing_A</li>
+		</Modifiers>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingZhi_RipeLing3" Type="Normal">
+		<DisplayName>灵植成熟灵性效果3</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Modifiers>
+			<li>Story_LingZhi_RipeLing_A</li>
+		</Modifiers>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingZhi_RipeLing4" Type="Normal">
+		<DisplayName>灵植成熟灵性效果4</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Modifiers>
+			<li>Story_LingZhi_RipeLing_A</li>
+		</Modifiers>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingZhi_RipeLing5" Type="Normal">
+		<DisplayName>灵植成熟灵性效果5</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,1</BaseFive>
+		<Modifiers>
+			<li>Story_LingZhi_RipeLing_A</li>
+		</Modifiers>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_LingZhi_RipeLing_A" Type="Normal">
+		<DisplayName>灵息涤荡</DisplayName>
+		<Desc>受灵植成熟的气息滋润，全身的内门伤势都在好转。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_LingZhi_RipeSha" Type="Normal">
+		<DisplayName>灵植成熟煞性效果</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="-100"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

@@ -1,0 +1,47 @@
+<Defs><List>
+	<Def Name="Level1">
+		<Point>9</Point>
+		<Rate>0</Rate>
+		<DisplayName>一劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level2">
+		<Point>18</Point>
+		<Rate>1</Rate>
+		<DisplayName>二劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level3">
+		<Point>27</Point>
+		<Rate>1</Rate>
+		<DisplayName>三劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level4">
+		<Point>36</Point>
+		<Rate>2</Rate>
+		<DisplayName>四劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level5">
+		<Point>45</Point>
+		<Rate>2</Rate>
+		<DisplayName>五劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level6">
+		<Point>54</Point>
+		<Rate>3</Rate>
+		<DisplayName>六劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level7">
+		<Point>63</Point>
+		<Rate>3</Rate>
+		<DisplayName>七劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level8">
+		<Point>72</Point>
+		<Rate>4</Rate>
+		<DisplayName>八劫真仙</DisplayName>
+	</Def>
+	<Def Name="Level9">
+		<Point>81</Point>
+		<Rate>5</Rate>
+		<DisplayName>九劫真仙</DisplayName>
+	</Def>
+</List></Defs>

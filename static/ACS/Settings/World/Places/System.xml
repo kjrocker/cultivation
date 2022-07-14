@@ -1,0 +1,91 @@
+<Places><List>
+	<Place Name="_OnTheWay"><!--在路上-->
+		<DisplayName>路上</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="Join" Rate="0.5"/>
+			<li Name="Story" Rate="3"/>
+			<li Name="GoodFight" Rate="1"/>
+			<li Name="BadFight" Rate="1"/>
+		</Events>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+	<Place Name="_GodOnTheWay"><!--在路上-->
+		<DisplayName>神在路上</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="GodStory" Rate="1"/>
+		</Events>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	<Place Name="_InMap"><!--在场景里，场景里所有的触发故事都调用这个地点-->
+		<DisplayName>场景</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+	<Place Name="_StayFree"><!--轮空地点，可能在家，可能在别的地方-->
+		<DisplayName>四处历练，行踪不定</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+	
+	<Place Name="_InNpcStory"><!--在角色事件里，所有角色事件的触发都调用这个地点-->
+		<DisplayName>NpcStory</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>	
+	
+	<Place Name="Place_OldSchool" Parent="Place_Level1Base">
+		<DisplayName>老门派</DisplayName>
+		<UnLocked>0</UnLocked>
+		<Location X="1175" Y="721"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc></Desc>
+		<School>1000000</School>
+		<Events><!-- 嗯-->
+			<li Name="Visit_Old" Rate="5"/>
+			<li Name="Treasure" Rate="1"/>
+		</Events>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+	<Place Name="_TestMap"><!--在路上-->
+		<DisplayName>路上</DisplayName>
+		<UIKind>1</UIKind>
+		<School>12</School>
+		<UnLocked>0</UnLocked>
+		<FightMap>
+			<Name>TestMap</Name>
+			<Class></Class>
+			<Biome>TestFightMapBiome</Biome>
+			<Snow>0.5</Snow>
+			<Weather>MouldRains</Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+		
+	<Place Name="_LOSTPALCE"><!--在场景里，场景里所有的触发故事都调用这个地点-->
+		<DisplayName>失落之地(模组丢失)</DisplayName>
+		<UIKind>1</UIKind>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Place>
+	
+	
+</List></Places>

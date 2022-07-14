@@ -1,0 +1,153 @@
+<DifficultyLabel><List>
+	<Label Name="MapSize">
+		<DisplayName>地图尺寸</DisplayName>
+		<Desc></Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="小" Value="0" Desc="96x96的地图尺寸"/>
+			<li Name="中" Value="1" Desc="128x128的地图尺寸"/>
+			<li Name="大" Value="2" Desc="196x196的地图尺寸"/>
+		</Values>
+	</Label>
+	<Label Name="ThunderAddion">
+		<DisplayName>天劫难度</DisplayName>
+		<Desc>渡劫时候的天劫的强度</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="极弱" Value="-0.75" Desc="0.25倍的天劫难度"/>
+			<li Name="弱" Value="-0.3" Desc="0.7倍的天劫难度"/>
+			<li Name="正常" Value="0" Desc="正常的天劫难度"/>
+			<li Name="强" Value="0.2" Desc="1.2倍的天劫难度"/>
+			<li Name="极强" Value="0.4" Desc="1.4倍的天劫难度"/>
+		</Values>
+	</Label>
+	<Label Name="FightDifficultCoefficient">
+		<DisplayName>战斗难度</DisplayName>
+		<Desc>修行者，妖兽，上古之兽，上古修行者，门派实力等敌对单位的强度。</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="极弱" Value="0.2" Desc="0.33倍的战斗难度"/>
+			<li Name="弱" Value="0.4" Desc="0.67倍的战斗难度"/>
+			<li Name="正常" Value="0.6" Desc="正常的战斗难度"/>
+			<li Name="强" Value="0.8" Desc="1.33倍的战斗难度"/>
+			<li Name="极强" Value="1" Desc="1.67倍的战斗难度"/>
+		</Values>
+	</Label>	
+	<Label Name="LiveDifficulty">
+		<DisplayName>生存难度</DisplayName>
+		<Desc>植物的生长速度及作物的产量倍率</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极低" Value="0,1" Desc="2倍的生长速度，2倍的收获产量"/>
+			<li Name="低" Value="-0.25,0.5" Desc="1.5倍的生长速度，1.5倍的收获产量"/>
+			<li Name="正常" Value="-0.5,0" Desc="正常的生长速度，正常的收获产量"/> <!--GrowAddp,DropAddp-->
+		</Values>
+	</Label>
+	<Label Name="BaseMood">
+		<DisplayName>基础心情</DisplayName>
+		<Desc>角色在默认状态的下的基础心情值</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极高" Value="1" Desc="2倍的基础心情"/>
+			<li Name="高" Value="0.5" Desc="1.5倍的基础心情"/>
+			<li Name="正常" Value="0" Desc="正常的基础心情"/>
+		</Values>
+	</Label>
+	
+	<Label Name="WorkAddp">
+		<DisplayName>基础工作效率</DisplayName>
+		<Desc>角色执行大多数工作时的速度</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极快" Value="1" Desc="2倍的工作效率"/>
+			<li Name="快" Value="0.5" Desc="1.5倍的工作效率"/>
+			<li Name="正常" Value="0" Desc="正常的工作效率"/>
+		</Values>
+	</Label>
+	
+	<Label Name="PracticeAddp">
+		<DisplayName>基础修炼速度</DisplayName>
+		<Desc>角色修炼时修炼值的增加速度</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极快" Value="1" Desc="2倍的修炼速度"/>
+			<li Name="快" Value="0.5" Desc="1.5倍的修炼速度"/>
+			<li Name="正常" Value="0" Desc="正常的修炼速度"/>
+		</Values>
+	</Label>
+	
+	<Label Name="MapExploringAddp">
+		<DisplayName>基础历练速度</DisplayName>
+		<Desc>角色在世界中历练时的速度</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极快" Value="1" Desc="2倍的历练速度"/>
+			<li Name="快" Value="0.5" Desc="1.5倍的历练速度"/>
+			<li Name="正常" Value="0" Desc="正常的历练速度"/>
+		</Values>
+	</Label>
+	
+	<Label Name="TreeExpAddtion">
+		<DisplayName>参悟消耗</DisplayName>
+		<Desc>角色学习秘籍时参悟值的消耗量</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="极少" Value="-0.5" Desc="0.5倍的参悟消耗"/>
+			<li Name="少" Value="-0.25" Desc="0.75倍的参悟消耗"/>
+			<li Name="正常" Value="0" Desc="正常的参悟消耗"/>
+		</Values>
+	</Label>
+	
+	<Label Name="AverageTimePerEvent">
+		<DisplayName>事件发生间隔</DisplayName>
+		<Desc>各类事件发生的间隔时间</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="极长" Value="3" Desc="平均每3天发生一次事件"/>
+			<li Name="长" Value="2.5" Desc="平均每2.5天发生一次事件"/>
+			<li Name="正常" Value="2" Desc="平均每2天发生一次事件"/>
+			<li Name="短" Value="1.5" Desc="平均每1.5天发生一次事件"/>
+			<li Name="极短" Value="1" Desc="平均每1天发生一次事件"/>
+		</Values>
+	</Label>
+	
+	<Label Name="DoubleRate">
+		<DisplayName>双倍事件发生几率</DisplayName>
+		<Desc>发生一次事件时，触发2个事件的几率</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="不会发生双倍事件"/>
+			<li Name="低" Value="0.1" Desc="10%的概率发生双倍事件"/>
+			<li Name="中" Value="0.2" Desc="20%的概率发生双倍事件"/>
+			<li Name="高" Value="0.3" Desc="30%的概率发生双倍事件"/>
+			<li Name="极高" Value="0.4" Desc="40%的概率发生双倍事件"/>
+		</Values>
+	</Label>	
+		
+	<Label Name="TripleRate">
+		<DisplayName>三倍事件发生几率</DisplayName>
+		<Desc>发生一次事件时，触发3个事件的几率</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="不会发生三倍事件"/>
+			<li Name="低" Value="0.1" Desc="5%的概率发生三倍事件"/>
+			<li Name="中" Value="0.2" Desc="10%的概率发生三倍事件"/>
+			<li Name="高" Value="0.3" Desc="15%的概率发生三倍事件"/>
+			<li Name="极高" Value="0.4" Desc="20%的概率发生三倍事件"/>
+		</Values>
+	</Label>
+	
+	<Label Name="BlankWeight">
+		<DisplayName>轮空事件几率</DisplayName>
+		<Desc>发生一次事件时，触发轮空事件的几率</Desc>
+		<Default>4</Default>
+		<Values>
+			<li Name="极高" Value="0.6" Desc="60%的几率触发轮空事件"/>
+			<li Name="高" Value="0.45" Desc="45%的几率触发轮空事件"/>
+			<li Name="中" Value="0.3" Desc="30%的几率触发轮空事件"/>
+			<li Name="低" Value="0.15" Desc="15%的几率触发轮空事件"/>
+			<li Name="无" Value="0" Desc="不会触发轮空事件"/>
+		</Values>
+	</Label>
+	
+</List></DifficultyLabel>

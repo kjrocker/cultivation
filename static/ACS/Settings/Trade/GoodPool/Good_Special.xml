@@ -1,0 +1,8 @@
+<Defs><List>	
+	<Def Name="Special">
+		<Item Weight="1" CountName="ReallyRare">
+			<ItemName>Item_Dan_TiShen</ItemName>
+			<AucType>Trash</AucType>
+		</Item>
+	</Def>
+</List></Defs>

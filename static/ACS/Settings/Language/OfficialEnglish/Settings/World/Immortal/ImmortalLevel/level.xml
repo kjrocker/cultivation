@@ -1,0 +1,31 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Level1">
+			<DisplayName>Tribulation I</DisplayName>
+		</Text>
+		<Text Name="Level2">
+			<DisplayName>Tribulation II</DisplayName>
+		</Text>
+		<Text Name="Level3">
+			<DisplayName>Tribulation III</DisplayName>
+		</Text>
+		<Text Name="Level4">
+			<DisplayName>Tribulation IV</DisplayName>
+		</Text>
+		<Text Name="Level5">
+			<DisplayName>Tribulation V</DisplayName>
+		</Text>
+		<Text Name="Level6">
+			<DisplayName>Tribulation VI</DisplayName>
+		</Text>
+		<Text Name="Level7">
+			<DisplayName>Tribulation VII</DisplayName>
+		</Text>
+		<Text Name="Level8">
+			<DisplayName>Tribulation VIII</DisplayName>
+		</Text>
+		<Text Name="Level9">
+			<DisplayName>Tribulation IX</DisplayName>
+		</Text>
+	</List>
+</Texts>

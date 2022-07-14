@@ -1,0 +1,344 @@
+<ThingDefs><List>
+
+
+<ThingDef Type="Item" Name="WoodBase" Parent="MaterialBase">
+	
+	
+	
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>-2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>1</Rate>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>140</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Wood">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>木,枝,柱,桩</FabaoSuffix>
+		<BeMaterial>
+			<!--<NamePrefix>木头的</NamePrefix>-->
+			<CostMultiplier>1</CostMultiplier>
+			<BuildingTileIDWhenBeMain>-10</BuildingTileIDWhenBeMain>
+			
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>0.8</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>8A4700FF</ColorWhenBeMain>
+			<ColorWhenBeFloor>6B5234FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>9E7149FF</ColorWhenBeRoof>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			<StuffTexPath>res/mattex/mtl_wood</StuffTexPath>
+			
+			<BurningPointWhenBeMain>140</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.8</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>-1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+	<!--	<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+	</Item>
+
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_Wood" Parent="WoodBase">
+	<ThingName>原木</ThingName>
+	<TexPath>res\Sprs\object\object_wood</TexPath>
+	<Desc>优良的木材，常见的制作材料。</Desc>
+	<Item>
+		<PhysicalLables>
+			<li>Rough2</li>
+		</PhysicalLables>
+		<FuelMultiplier>4</FuelMultiplier>
+		<BeMaterial>
+			<NamePrefix>木</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>0.8</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+		
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.8</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>-1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HardWood" Parent="WoodBase">
+	<ThingName>金丝灵木</ThingName>
+	<TexPath>res\Sprs\object\object_wood01</TexPath>
+	<Desc>珍贵的百年金丝木，质地坚硬，极其沉重。</Desc>
+	<Rate>4</Rate>
+	<Beauty>6</Beauty>
+<!--	<Color>8C6F14FF</Color>	-->	
+	<Flammability>
+		<Flammability>0.6</Flammability>
+		<BurningPoint>240</BurningPoint>
+	</Flammability>
+	<Item>
+		<PhysicalLables>
+			<li>Rough1</li>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<FuelMultiplier>4</FuelMultiplier>
+		<BeMaterial>
+			<NamePrefix>金丝木</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_wood1</StuffTexPath>
+			
+			<RateWhenBeMain>4</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>0.8</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+		
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>240</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.6</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>12</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ParasolWood" Parent="WoodBase">
+	<ThingName>梧桐神木</ThingName>
+	<TexPath>res\Sprs\object\object_wood02</TexPath>
+	<Desc>凤凰栖息的神木，其表面光滑如洗，质地极其坚硬，富含灵气，举世罕见。</Desc>
+	<Rate>7</Rate>
+	<Beauty>16</Beauty>
+	<!--	<Color>8C6F14FF</Color>	-->
+	<Flammability>
+		<Flammability>0</Flammability>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<FuelMultiplier>4</FuelMultiplier>
+		<BeMaterial>
+			<NamePrefix>梧桐木</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			
+			<RateWhenBeMain>7</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+		
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>16</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingWood" Parent="WoodBase">
+	<ThingName>灵木</ThingName>
+	<TexPath>res\Sprs\object\object_lingwood</TexPath>
+	<Desc>受灵气洗练的木材，十分坚硬而不易燃。</Desc>
+	<Rate>5</Rate>
+	<Beauty>12</Beauty>
+	<!--	<Color>8C6F14FF</Color>	-->
+	<Flammability>
+		<Flammability>0</Flammability>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>15</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="50" />
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<FuelMultiplier>2</FuelMultiplier>
+		<BeMaterial>
+			<NamePrefix>灵木</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			
+			<RateWhenBeMain>5</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+		
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>4</MaxHitPointsPerNum>
+			<LingNumberRate>0.45</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>12</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>20</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>5</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

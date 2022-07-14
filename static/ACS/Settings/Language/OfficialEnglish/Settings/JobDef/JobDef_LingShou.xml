@@ -1,0 +1,70 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobLsDecide">
+			<DisplayName>Hesitant</DisplayName>
+		</Text>
+		<Text Name="JobEatItem2">
+			<DisplayName>Eat</DisplayName>
+		</Text>
+		<Text Name="JobAtk4Fun">
+			<DisplayName>Attack</DisplayName>
+		</Text>
+		<Text Name="JobGoShit">
+			<DisplayName>Go defecate</DisplayName>
+		</Text>
+		<Text Name="JobLsCarry">
+			<DisplayName>Hauling</DisplayName>
+		</Text>
+		<Text Name="JobLsCutoff">
+			<DisplayName>Chopping</DisplayName>
+		</Text>
+		<Text Name="JobLsMine">
+			<DisplayName>Mining</DisplayName>
+		</Text>
+		<Text Name="JobLsCarryToBed">
+			<DisplayName>Hauling</DisplayName>
+		</Text>
+		<Text Name="JobLsCarryToDest">
+			<DisplayName>Hauling</DisplayName>
+		</Text>
+		<Text Name="JobPlayWithSelf">
+			<DisplayName>Having fun</DisplayName>
+		</Text>
+		<Text Name="JobPlayWithSth">
+			<DisplayName>Playing</DisplayName>
+		</Text>
+		<Text Name="JobLsFun">
+			<DisplayName>Playing</DisplayName>
+		</Text>
+		<Text Name="JobLsHelpPlay">
+			<DisplayName>Playing</DisplayName>
+		</Text>
+		<Text Name="JobLsTrain">
+			<DisplayName>Exercising</DisplayName>
+		</Text>
+		<Text Name="JobLsPee">
+			<DisplayName>Watering</DisplayName>
+		</Text>
+		<Text Name="JobLsCure">
+			<DisplayName>Healing</DisplayName>
+		</Text>
+		<Text Name="JobLsFollow">
+			<DisplayName>Following</DisplayName>
+		</Text>
+		<Text Name="JobLsFeedHim">
+			<DisplayName>Feeding</DisplayName>
+		</Text>
+		<Text Name="JobLsSleep">
+			<DisplayName>Sleep</DisplayName>
+		</Text>
+		<Text Name="JobLsSleepWithNpc">
+			<DisplayName>Sleep</DisplayName>
+		</Text>
+		<Text Name="JobLsGotoThing">
+			<DisplayName>Go to</DisplayName>
+		</Text>
+		<Text Name="JobConfuse">
+			<DisplayName>Confuse</DisplayName>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,1844 @@
+<BodyQuenchingLabelDefs><List>
+	<Def Name="BQLabel_LOST">
+		<DisplayName>失落之物</DisplayName>
+		<Group></Group>		
+		<MaxLevel>1</MaxLevel>
+	</Def>	
+	
+	<Def Name="QuenchingLabel_Lv0_Base">
+		<DisplayName>壳词条</DisplayName>
+		<Group></Group>		
+		<Desc></Desc>
+		<MaxLevel>999</MaxLevel>
+		<Rate>1</Rate>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Special1">
+		<DisplayName>九烈之脊</DisplayName>
+		<Group></Group>		
+		<LabelNumAddBone>1</LabelNumAddBone>		
+		<Desc>以特殊的秘法淬炼脊柱，使其发生根本性的异变。[size=10][color=#D06508]\n大量提高炼体者骨骼淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Special2">
+		<DisplayName>太虚之脑</DisplayName>
+		<Group></Group>		
+		<LabelNumAddOrgan>1</LabelNumAddOrgan>		
+		<Desc>以特殊的秘法淬炼大脑，使其发生根本性的异变。[size=10][color=#D06508]\n大量提高炼体者器官淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Special3">
+		<DisplayName>超越之心</DisplayName>
+		<Group></Group>			
+		<LabelNumAddFlesh>1</LabelNumAddFlesh>		
+		<Desc>以特殊的秘法淬炼心脏，使其发生根本性的异变。[size=10][color=#D06508]\n大量提高炼体者血肉淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Base_Organ">
+		<DisplayName>百炼脏腑</DisplayName>
+		<Group></Group>		
+		<Desc>器官经过淬炼，生机变得更加充盈。使用生机精华，生命本源，造化命元淬炼躯体，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者真炁最大值\n少量提高所属秘体的真炁恢复速度\n少量提高炼体者身体强度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Base_Organ</Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Base_Bone">
+		<DisplayName>百炼骨骼</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更加强韧。使用生机精华，生命本源，造化命元淬炼躯体，可以加速该过程。[size=10][color=#D06508]\n从根本上中量提高所属秘体的威力\n从根本上中量提高所属秘体的坚韧\n微量提高炼体者真炁最大值\n少量提高所属秘体的真炁消耗速度\n少量提高炼体者身体强度\n少量提高炼体者寿命\n少量提高炼体者食量[/color][/size]</Desc>
+		<MaxLevel>999</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Base_Bone</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="1.5"/>
+			<li Name="DefPower" BAddV="3"/>
+			<li Name="FightCost" AddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Base_Flesh">
+		<DisplayName>百炼血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉经过淬炼，变得更加灵活。使用生机精华，生命本源，造化命元淬炼躯体，可以加速该过程。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n微量提高炼体者真炁最大值\n少量提高所属秘体的真炁消耗速度\n少量提高炼体者身体强度\n少量提高炼体者寿命\n少量提高炼体者食量[/color][/size]</Desc>
+		<MaxLevel>999</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Base_Flesh</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="1"/>
+			<li Name="DefPower" BAddV="2"/>
+			<li Name="AtkRate" BAddV="0.00002"/>
+			<li Name="DefRate" BAddV="0.00002"/>
+			<li Name="FightCost" AddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Spine">
+		<DisplayName>百炼之脊</DisplayName>
+		<Group></Group>		
+		<LabelNumAddBone>0.02</LabelNumAddBone>		
+		<Desc>脊柱经过淬炼，变得更加强韧。使用生机精华，生命本源，造化命元淬炼躯体，可以加速该过程。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n微量提高炼体者真炁最大值\n少量提高所属秘体的真炁消耗速度\n少量提高炼体者身体强度\n少量提高炼体者寿命\n少量提高炼体者食量\n微量提高炼体者骨骼淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Base_Bone</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="1.5"/>
+			<li Name="DefPower" BAddV="3"/>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Brain">
+		<DisplayName>百炼之脑</DisplayName>
+		<Group></Group>		
+		<LabelNumAddOrgan>0.02</LabelNumAddOrgan>		
+		<Desc>大脑经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提升痛苦追忆最大记忆数量\n微量提高炼体者激狂之怒的持续时间\n少量提高所属秘体的真炁消耗速度\n大量提高炼体者疼痛忍耐\n微量提高炼体者器官淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Brain</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Eye">
+		<DisplayName>百炼之眼</DisplayName>
+		<Group></Group>			
+		<Desc>眼经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的全局躲闪率\n微量提高炼体者所有秘体的攻击命中率\n微量提高炼体者所有秘体的防御成功率\n微量提高炼体者所有秘体的法宝镇压几率\n微量提高炼体者感知范围\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Eye</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Ear">
+		<DisplayName>百炼之耳</DisplayName>
+		<Group></Group>			
+		<Desc>耳经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的全局躲闪率\n微量提高炼体者所有秘体的攻击命中率\n微量提高炼体者所有秘体的防御成功率\n微量提高炼体者所有秘体的法宝镇压几率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Ear</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Nose">
+		<DisplayName>百炼之鼻</DisplayName>
+		<Group></Group>			
+		<Desc>鼻经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的真炁恢复速度\n微量提高炼体者的吐纳效率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Nose</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Mouth">
+		<DisplayName>百炼之口</DisplayName>
+		<Group></Group>			
+		<Desc>口经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者吞噬物品的最高品阶\n微量提高炼体者吞噬物品获得精华的几率\n微量提高炼体者吞噬物品获得精华的数量\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Mouth</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Throat">
+		<DisplayName>百炼之喉</DisplayName>
+		<Group></Group>			
+		<Desc>喉经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的真炁恢复速度\n微量提高炼体者的吐纳效率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Throat</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv0_Heart">
+		<DisplayName>百炼之心</DisplayName>
+		<Group></Group>			
+		<LabelNumAddFlesh>0.02</LabelNumAddFlesh>		
+		<Desc>心脏经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者激狂之怒时的能力提升倍率\n微量提高炼体者的淬体速度\n微量提高炼体者血肉淬炼条目上限\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Heart</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Liver">
+		<DisplayName>百炼之肝</DisplayName>
+		<Group></Group>				
+		<Desc>肝脏经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的淬体速度\n微量提高炼体者吞噬物品获得精华的数量\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Liver</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Spleen">
+		<DisplayName>百炼之脾</DisplayName>
+		<Group></Group>				
+		<Desc>脾脏经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者肉体自愈率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc><!-- 未完成 -->
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Spleen</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Lung">
+		<DisplayName>百炼之肺</DisplayName>
+		<Group></Group>				
+		<Desc>肺经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的真炁恢复速度\n微量提高炼体者的吐纳效率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Lung</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Kidney">
+		<DisplayName>百炼之肾</DisplayName>
+		<Group></Group>				
+		<Desc>肾脏经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者的真炁恢复速度\n微量提高炼体者的真炁上限\n中量提高炼体者精元获得率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Kidney</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Stomach">
+		<DisplayName>百炼之胃</DisplayName>
+		<Group></Group>				
+		<Desc>胃经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n少量提高炼体者吞噬物品的最高品阶\n微量提高炼体者吞噬物品获得精华的几率\n微量提高炼体者吞噬物品获得精华的数量\n中量提高炼体者食物消耗加成\n中量提高炼体者精元获得率\n少量提高所属秘体的真炁消耗速度\n大量提高炼体者食量[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Stomach</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Intestines">
+		<DisplayName>百炼之肠</DisplayName>
+		<Group></Group>				
+		<Desc>肠经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者吞噬物品的最高品阶\n微量提高炼体者吞噬物品获得精华的几率\n微量提高炼体者吞噬物品获得精华的数量\n中量提高炼体者食物消耗加成\n中量提高炼体者精元获得率\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Intestines</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv0_Genitals">
+		<DisplayName>百炼之器</DisplayName>
+		<Group></Group>				
+		<Desc>阳根经过淬炼，其基础机能得到加强。使用生机精华，生命本源，造化命元淬炼，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者心情基础值\n少量提高所属秘体的真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Genitals</Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv1_F01_All">
+		<DisplayName>灵化血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉变得更有灵性，甚至可以随心意而动，此种变化在正常淬炼血肉时，有更高几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.002"/>
+			<li Name="DefRate" BAddV="0.002"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv1_B01_All">
+		<DisplayName>锐化骨骼</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼锐化，变得更具攻击性。此种变化在正常淬炼骨骼时，有更高几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_B02_All">
+		<DisplayName>钢化骨骼</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼刚化，变得更能抵抗伤害。此种变化在正常淬炼骨骼时，有更高几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv1_O01_All">
+		<DisplayName>机能活化</DisplayName>
+		<Group></Group>		
+		<Desc>器官的机能更加活化，为炼体者提供更多真炁。此种变化在正常淬炼内脏时，有更高几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高炼体者真炁最大值[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv1_O01_All</Modifier> <!-- 有modifier -->
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_All">
+		<DisplayName>血肉增生</DisplayName>
+		<Group></Group>		
+		<Desc>血肉大量生长，变得更加厚实粗壮，此种变化在正常淬炼血肉时，有几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n中量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.4"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv2_F02_All">
+		<DisplayName>侵蚀之血</DisplayName>
+		<Group></Group>		
+		<Desc>血液变得具有侵蚀性，在炼体者进攻时流动更快，此种变化在正常淬炼血肉时，有几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n中量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv2_B01_All">
+		<DisplayName>玄煞之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼附着玄煞之力，在进攻时拥有强大的穿透力，此种变化在正常淬炼骨骼时，有几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上中量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" BAddV="0.005"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv2_O01_All">
+		<DisplayName>无生之息</DisplayName>
+		<Group></Group>		
+		<Desc>器官内蕴生出玄妙，可无中生有诞出真炁。此种变化在正常淬炼器官时，有几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n中量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv3_F01_All">
+		<DisplayName>活化血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉活化，在面临威胁时会自动绷紧，此种变化在正常淬炼血肉时，有小几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上少量提高所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="CatchFabao" BAddV="0.002"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv3_B01_All">
+		<DisplayName>通灵玉骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼变得更有灵性，如意随心，此种变化在正常淬炼骨骼时，有小几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.004"/>
+			<li Name="DefRate" BAddV="0.004"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv3_O01_All">
+		<DisplayName>绝境潜能</DisplayName>
+		<Group></Group>		
+		<Desc>激发器官内蕴的潜能，可在绝境之中爆发而出。此种变化在正常淬炼器官时，有小几率获得。使用风水煞力淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量缩短炼体者在真炁耗尽后的虚弱时间[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O01_All</Modifier><!-- 有modifier -->
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv3_O02_All">
+		<DisplayName>先天返照</DisplayName>
+		<Group></Group>		
+		<Desc>器官中融入一缕先天之气，可源源不绝产生真炁。此种变化在正常淬炼器官时，有小几率获得。使用风水灵机淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n中量提高炼体者真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O02_All</Modifier><!-- 有modifier -->
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv4_F01_All">
+		<DisplayName>原祖化</DisplayName>
+		<Group></Group>		
+		<Desc>觉醒千万年前先祖的血脉，使血肉大幅度加强。此种变化在正常淬炼器官时，有极小几率获得。[size=10][color=#D06508]\n从根本上大量提高所属秘体的攻击命中率\n从根本上大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.05"/>
+			<li Name="DefRate" BAddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv4_B01_All">
+		<DisplayName>原祖化</DisplayName>
+		<Group></Group>		
+		<Desc>觉醒千万年前先祖的血脉，使骨骼大幅度加强。此种变化在正常淬炼器官时，有极小几率获得。[size=10][color=#D06508]\n大量提高所属秘体的威力\n大量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="10"/>
+			<li Name="DefPower" AddP="10"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv4_O01_All">
+		<DisplayName>原祖化</DisplayName>
+		<Group></Group>		
+		<Desc>觉醒千万年前先祖的血脉，使器官大幅度加强。此种变化在正常淬炼器官时，有极小几率获得。[size=10][color=#D06508]\n大量提高炼体者真炁最大值[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_O01_All</Modifier><!-- 有modifier -->
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_A01_Jin">
+		<DisplayName>金灵化</DisplayName>
+		<Group>WuXing</Group>		
+		<Desc>将金灵之力炼入躯体，使之具备金之灵效，此种变化在正常淬炼躯体时，有小几率获得。使用金精淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上少量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" BAddV="0.0008"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_A01_Mu">
+		<DisplayName>木灵化</DisplayName>
+		<Group>WuXing</Group>		
+		<Desc>将木灵之力炼入躯体，使之具备木之灵效，此种变化在正常淬炼躯体时，有小几率获得。使用木精淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0008"/>
+			<li Name="DefRate" BAddV="0.0008"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_A01_Shui">
+		<DisplayName>水灵化</DisplayName>
+		<Group>WuXing</Group>		
+		<Desc>将水灵之力炼入躯体，使之具备水之灵效，此种变化在正常淬炼躯体时，有小几率获得。使用水精淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="0.16"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_A01_Huo">
+		<DisplayName>火灵化</DisplayName>
+		<Group>WuXing</Group>		
+		<Desc>将火灵之力炼入躯体，使之具备火之灵效，此种变化在正常淬炼躯体时，有小几率获得。使用火精淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.08"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv1_A01_Tu">
+		<DisplayName>土灵化</DisplayName>
+		<Group>WuXing</Group>		
+		<Desc>将土灵之力炼入躯体，使之具备土之灵效，此种变化在正常淬炼躯体时，有小几率获得。使用土精淬炼，则会在此基础上大幅提高该几率。[size=10][color=#D06508]\n少量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>16</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.08"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_Chun">
+		<DisplayName>再生之血</DisplayName>
+		<Group></Group>		
+		<Desc>血液拥有一定的再生性，可减轻使用时的真炁负荷。此种变化在使用萌发之精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_Chun">
+		<DisplayName>复原之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼产生一定的自动修复能力，可减轻使用时的真炁负荷。此种变化在使用萌发之精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_O01_Chun">
+		<DisplayName>机能复新</DisplayName>
+		<Group></Group>		
+		<Desc>器官拥有更迭复新之力，可以产生更多真炁，此种变化在使用萌发之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_Xia">
+		<DisplayName>激涌之血</DisplayName>
+		<Group></Group>		
+		<Desc>血液流动变得激烈，使肌体反应更加敏捷。此种变化在使用盛放之精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n少量提高所属秘体的攻击命中率\n少量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.05"/>
+			<li Name="DefRate" AddP="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_Xia">
+		<DisplayName>激生之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼再度生长，使强度得到进一步提升。此种变化在使用盛放之精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n少量提高所属秘体的威力\n少量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.4"/>
+			<li Name="DefPower" AddP="0.4"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_O01_Xia">
+		<DisplayName>机能激化</DisplayName>
+		<Group></Group>		
+		<Desc>器官机能得到激化，在关键时刻拥有更强的爆发力。此种变化在使用盛放之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量提高炼体者激狂之怒时的能力提升倍率。[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_O01_Xia</Modifier><!-- 有buff -->
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_Qiu">
+		<DisplayName>凋零之血</DisplayName>
+		<Group></Group>		
+		<Desc>血液发生改变，具备一定的腐蚀性，但这些腐蚀性也会影响自身抗打击能力。此种变化在使用衰亡之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量提高所属秘体的灵气护盾穿透率\n少量降低所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddP="0.05"/>
+			<li Name="DefPower" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_Qiu">
+		<DisplayName>极尽之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼结构发生改变，加强骨骼爆发力量的能力，但会损失一些抗打击能力。此种变化在使用衰亡之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n少量降低所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.4"/>
+			<li Name="DefPower" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_O01_Qiu">
+		<DisplayName>机能圆熟</DisplayName>
+		<Group></Group>		
+		<Desc>器官完全发挥出自身机能，但也一定程度透支所属秘体的能量，损失一些抗打击能力。此种变化在使用衰亡之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体真炁恢复速度\n少量降低所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="1"/>
+			<li Name="DefPower" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_Dong">
+		<DisplayName>沉眠之血</DisplayName>
+		<Group></Group>		
+		<Desc>血液发生改变，流动极其缓慢，降低了反应速度，但提高了关键时刻的爆发力，此种变化在使用归藏之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量降低所属秘体的攻击命中率\n少量降低所属秘体的防御成功率\n中量提高炼体者激狂之怒时的能力提升倍率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_F01_Dong</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_Dong">
+		<DisplayName>封绝之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼结构发生改变，失去一定强度，但提高了关键时刻的爆发力，此种变化在使用归藏之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量降低所属秘体的威力\n少量降低所属秘体的坚韧\n中量提高炼体者激狂之怒时的能力提升倍率。[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_B01_Dong</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.1"/>
+			<li Name="DefPower" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_O01_Dong">
+		<DisplayName>机能归藏</DisplayName>
+		<Group></Group>		
+		<Desc>器官机能内敛，降低了真炁运转的效率，但提高了关键时刻的爆发力，此种变化在使用归藏之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体真炁恢复速度\n中量提高炼体者激狂之怒时的能力提升倍率。[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_O01_Dong</Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_DaYaoYuanJing">
+		<DisplayName>妖蚀血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉被妖力侵蚀发生变异，反应大幅提高，但更难掌控。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的攻击命中率\n少量降低所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.08"/>
+			<li Name="DefRate" AddP="-0.04"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv2_B01_DaYaoYuanJing">
+		<DisplayName>妖蚀骸骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼被妖力侵蚀发生变异，强度大幅提高，但更难驱动。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量提高所属秘体的灵气护盾穿透率\n少量提高所属秘体真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddP="0.05"/>
+			<li Name="FightCost" AddV="0.5"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv2_O01_DaYaoYuanJing">
+		<DisplayName>妖蚀脏器</DisplayName>
+		<Group></Group>		
+		<Desc>器官被妖力侵蚀发生变异，能力大幅提高，但会损伤根源。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体真炁恢复速度\n中量降低炼体者真炁最大值[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_O01_DaYaoYuanJing</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing">
+		<DisplayName>狂气之血</DisplayName>
+		<Group></Group>		
+		<Desc>血肉被妖力侵蚀发生变异，充满狂猛的力量。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n少量降低所属秘体的攻击命中率\n少量降低所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.4"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing">
+		<DisplayName>狂气之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼被妖力侵蚀发生变异，充满狂猛的力量。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n少量降低所属秘体的攻击命中率\n少量降低所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.6"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv2_O02_DaYaoYuanJing">
+		<DisplayName>狂气化生</DisplayName>
+		<Group></Group>		
+		<Desc>器官被妖力侵蚀发生变异，可以催生出极具进攻性的异种真炁。此种变化在使用大妖元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n少量降低所属秘体的攻击命中率\n少量降低所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.4"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_GuShouJingXue">
+		<DisplayName>失控血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉产生异变，产生了一丝本能意识，虽然控制力下降导致秘体威力和坚韧降低，但血肉本能反应却可以根据各种情况作出最恰当的应对。此种变化在使用古兽精血淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体的威力\n中量降低所属秘体的坚韧\n大量提高所属秘体的攻击命中率\n大量提高所属秘体的防御成功率\n大量提高所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.3"/>
+			<li Name="DefPower" AddP="-0.3"/>
+			<li Name="AtkRate" AddP="0.2"/>
+			<li Name="DefRate" AddP="0.2"/>
+			<li Name="CatchFabao" AddP="0.1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_GuShouGuFen">
+		<DisplayName>蛮化骨骼</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼产生异变，如蛮荒古兽的骨骼一般疯狂生长。虽然这样的骨骼对正常炼体者而言非常难以控制，但其威力也确实异常强大。此种变化在使用古兽骨粉淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的威力\n中量降低所属秘体的攻击命中率\n中量降低所属秘体的防御成功率\n中量降低所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="1"/>
+			<li Name="AtkRate" AddP="-0.2"/>
+			<li Name="DefRate" AddP="-0.2"/>
+			<li Name="CatchFabao" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_F01_SiHunZhiXi">
+		<DisplayName>灭活血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉发生变异，可激发出能够灭杀活性的真炁。此种变化在使用死灵之息淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n少量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.4"/>
+			<li Name="ArmorPenetration" AddP="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_F01_SiHunZhiXi">
+		<DisplayName>渴血之肌</DisplayName>
+		<Group></Group>		
+		<Desc>血肉发生变异，细微血脉坏死，肌肉因此渴望从外界获得鲜血而变得充满攻击性。此种变化在使用死灵之息淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的威力\n中量提高所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="0.6"/>
+			<li Name="AtkRate" AddP="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_F02_SiHunZhiXi">
+		<DisplayName>无感之肌</DisplayName>
+		<Group></Group>		
+		<Desc>血肉表层角质化，失去大部分感觉。其护御更强，且不惧普通侵伤。此种变化在使用死灵之息淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的坚韧\n中量提高所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.6"/>
+			<li Name="CatchFabao" AddP="1.6"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_SiHunZhiXi">
+		<DisplayName>灰化骨骼</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼被死气侵染，色泽转为灰色。可激发出具有衰弱力量的真炁。此种变化在使用死灵之息淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的坚韧\n少量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.4"/>
+			<li Name="DefRate" AddP="0.1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_SiHunZhiXi">
+		<DisplayName>空髓骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼发生异变，变为空心结构。极大的增强灵敏度。此种变化在使用死灵之息淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的攻击命中率\n中量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.3"/>
+			<li Name="DefRate" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv2_O01_SiHunZhiXi">
+		<DisplayName>腐生脏器</DisplayName>
+		<Group></Group>		
+		<Desc>器官发生坏死性异变，可以产生出腐蚀性极强的真炁。此种变化在使用死灵之息淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddP="0.1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_SiHunZhiXi">
+		<DisplayName>潜默冥息</DisplayName>
+		<Group></Group>		
+		<Desc>器官抵抗死气侵染时发生异变，可自虚空中凭空蕴生奇特的冥息供给自身。此种变化在使用死灵之息淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O01_SiHunZhiXi</Modifier><!-- 有buff -->
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv2_F01_WuHuiJingHua">
+		<DisplayName>突触增变</DisplayName>
+		<Group></Group>		
+		<Desc>血肉在恶劣的刺激中发生异变，生长出许多攀附性的肉芽。此种变化在使用污秽之精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="CatchFabao" AddP="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_F01_WuHuiJingHua">
+		<DisplayName>寄生肉瞳</DisplayName>
+		<Group></Group>		
+		<Desc>血肉在恶劣的刺激中发生异变，生长出许多拥有感知能力的肉眼。此种变化在使用污秽之精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的攻击命中率\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.4"/>
+			<li Name="DefRate" AddP="0.4"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_B01_WuHuiJingHua">
+		<DisplayName>邪生骨纹</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼在恶劣的刺激中发生异变，生长出许多邪异的纹理，极大的提高了爆发时的承担力。此种变化在使用污秽之精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n少量提高炼体者激狂之怒状态的持续时间[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_B01_WuHuiJingHua</Modifier><!-- 有modifier -->
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_WuHuiJingHua">
+		<DisplayName>吞灵之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼在恶劣的刺激中发生异变，极度渴望能量，虽然提高了驾驭的负担，但也使其可以更好的削弱敌人的灵气护盾。此种变化在使用污秽之精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的灵气护盾穿透率\n中量提高所属秘体真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddP="0.3"/>
+			<li Name="FightCost" AddV="2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B02_WuHuiJingHua">
+		<DisplayName>外殖畸生</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼在恶劣的刺激中发生异变，突破血肉在体外形成一些畸变结构，畸生的骨骼影响操控力，但也大幅提高了强度。此种变化在使用污秽之精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的坚韧\n中量降低所属秘体的攻击命中率\n中量降低所属秘体的防御成功率\n中量降低所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="1"/>
+			<li Name="AtkRate" AddP="-0.2"/>
+			<li Name="DefRate" AddP="-0.2"/>
+			<li Name="CatchFabao" AddP="-0.1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv2_O01_WuHuiJingHua">
+		<DisplayName>内体激变</DisplayName>
+		<Group></Group>		
+		<Desc>器官在恶劣的刺激中发生异变，增生出应激性产生真炁的组织。此种变化在使用污秽之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量缩短炼体者在真炁耗尽后的虚弱时间[/color][/size]</Desc>
+		<MaxLevel>9</MaxLevel>
+		<Rate>7</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv2_O01_WuHuiJingHua</Modifier><!-- 有modifier -->
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_WuHuiJingHua">
+		<DisplayName>脏器裂殖</DisplayName>
+		<Group></Group>		
+		<Desc>器官在恶劣的刺激中发生异变，分裂出多个自体，虽然对身体的负荷提高，但可大幅提高抗打击能力。此种变化在使用污秽之精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体的坚韧\n中量提高所属秘体真炁消耗速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="0.6"/>
+			<li Name="FightCost" AddV="2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_WuXingZhiJing">
+		<DisplayName>虚化血肉</DisplayName>
+		<Group></Group>		
+		<Desc>血肉逐渐变化为无形无色的虚化血肉，虽然其强度下降，但却可让人难以察觉与注意到自身动作的细节。此种变化在使用无形之精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体的威力\n中量提高所属秘体的攻击命中率\n中量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="-0.3"/>
+			<li Name="AtkRate" AddP="0.3"/>
+			<li Name="DefRate" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_WuXingZhiJing">
+		<DisplayName>幻形之骨</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼逐渐变得柔软，可随心意改变形态，虽然其强度有所下降，但却可以完成更多高难度的技巧。此种变化在使用无形之精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体的坚韧\n中量提高所属秘体的灵气护盾穿透率\n中量提高所属秘体的法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.3"/>
+			<li Name="ArmorPenetration" AddP="0.2"/>
+			<li Name="CatchFabao" AddP="0.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_WuXingZhiJing">
+		<DisplayName>空化之力</DisplayName>
+		<Group></Group>		
+		<Desc>器官发生变异，可产生出环绕周身的无色无形的空化之力。此种变化在使用无形之精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量提高炼体者的全局躲闪率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O01_WuXingZhiJing</Modifier> <!-- 有modifier -->
+	</Def>
+	
+	<!-- 
+	<Def Name="QuenchingLabel_Lv3_F01_DiMuJingSui">
+		<DisplayName>地灵之血</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_DiMuJingSui">
+		<DisplayName>地灵之骨</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_DiMuJingSui">
+		<DisplayName>蕴生之力</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_XieMaiXueSui">
+		<DisplayName>邪脉之血</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_XieMaiXueSui">
+		<DisplayName>邪脉之骨</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_XieMaiXueSui">
+		<DisplayName>损益之力</DisplayName>
+		<Group></Group>		
+		<Desc>基础标签</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddV="0.01"/>
+			<li Name="RecoverQi" AddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	 -->
+	
+	<Def Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing">
+		<DisplayName>龙鳞化</DisplayName>
+		<Group></Group>		
+		<Desc>血肉发生异变，生长出如同龙鳞般的鳞片。此种变化在使用蛟龙元精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv3_B01_JiaoLongYuanJing">
+		<DisplayName>龙纹角骨</DisplayName>
+		<Group></Group>
+		<Desc>骨骼发生异变，生长出如同龙角般的纹理。此种变化在使用蛟龙元精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_JiaoLongYuanJing">
+		<DisplayName>雷御之息</DisplayName>
+		<Group></Group>		
+		<Desc>器官发生异变，可以生出融入雷霆之力的奇特真炁，使之带有强烈的麻痹之力。此种变化在使用蛟龙元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="CatchFabao" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_XiongFengYuanJing">
+		<DisplayName>嗜火之血</DisplayName>
+		<Group></Group>		
+		<Desc>血肉发生异变，融入如同凤血般炙热而激烈。此种变化在使用凶凤元精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_XiongFengYuanJing">
+		<DisplayName>空坚凤髓</DisplayName>
+		<Group></Group>		
+		<Desc>骨骼发生异变，如同凶凤般坚硬且轻盈。此种变化在使用凶凤元精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_XiongFengYuanJing">
+		<DisplayName>火御之息</DisplayName>
+		<Group></Group>		
+		<Desc>器官发生异变，可以滋生出的奇特真炁会如同火焰般附着在目标上持续灼烧。此种变化在使用凶凤元精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing">
+		<DisplayName>幽影之血</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>血液发生异变，融入玄阴之力，漆黑如墨。此种变化在使用烛龙元精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体的坚韧\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="-0.7"/>
+			<li Name="DefRate" AddP="0.8"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing">
+		<DisplayName>明光之肌</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>肌肉发生异变，融入纯阳之力，以真炁催动便会散发出辉光。此种变化在使用烛龙元精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的坚韧\n中量降低所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="1.4"/>
+			<li Name="DefRate" AddP="-0.4"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing">
+		<DisplayName>恶狱之骸</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>骨骼发生异变，其内淤积恶魄之息，在必要时可以爆发而出。此种变化在使用烛龙元精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体的威力\n中量降低所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="1.4"/>
+			<li Name="AtkRate" AddP="-0.4"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing">
+		<DisplayName>善庭之骨</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>骨骼发生异变，其中蕴养有温润之力，虽然丧失了锐气，但胜于中正平和，稳定如山。此种变化在使用烛龙元精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量降低所属秘体的威力\n大量提高所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.7"/>
+			<li Name="AtkRate" AddP="0.8"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_ZhuLongYuanJing">
+		<DisplayName>幽明轮转</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>器官发生异变，衍生出阴阳两股真炁轮转不息，带来极其绵长的气机，但一旦真炁耗尽，便会难以恢复。此种变化在使用烛龙元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n大量提高炼体者真炁恢复速度\n大量延长炼体者在真炁耗尽后的虚弱时间[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O01_ZhuLongYuanJing</Modifier><!-- 有modifier -->
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O02_ZhuLongYuanJing">
+		<DisplayName>善恶兼形</DisplayName>
+		<Group>YinYang</Group>		
+		<Desc>器官发生异变，蕴生出的恶魄之力与温润之力共存相冲，激荡不休，迫使器官机能保持在过载状态。此种变化在使用烛龙元精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n大量提高所属秘体真炁消耗速度\n大量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="FightCost" AddV="9"/>
+			<li Name="RecoverQi" AddV="9"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_YongJiJingSui">
+		<DisplayName>斥异血肉</DisplayName>
+		<Group></Group>		
+		<LabelNumAddFlesh>0.025</LabelNumAddFlesh>	
+		<Desc>血肉发生诡异的变化，正受到身体其他部位的排斥而产生一些局部性坏死。此种变化在使用永寂之精髓淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n少量降低所属秘体性能\n少量提高炼体者血肉淬炼条目上限\n中量延缓下一次天劫来临时间[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_ChiYi</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.2"/>
+			<li Name="DefPower" AddP="-0.2"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+			<li Name="ArmorPenetration" AddP="-0.05"/>
+			<li Name="CatchFabao" AddP="-0.05"/>
+			<li Name="RecoverQi" AddP="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_YongJiJingSui">
+		<DisplayName>斥异之骸</DisplayName>
+		<Group></Group>		
+		<LabelNumAddBone>0.025</LabelNumAddBone>		
+		<Desc>骨骼发生诡异的变化，正受到身体其他部位的排斥而产生一些局部性坏死。此种变化在使用永寂之精髓淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n少量降低所属秘体性能\n少量提高炼体者骨骼淬炼条目上限\n中量延缓下一次天劫来临时间[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_ChiYi</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.2"/>
+			<li Name="DefPower" AddP="-0.2"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+			<li Name="ArmorPenetration" AddP="-0.05"/>
+			<li Name="CatchFabao" AddP="-0.05"/>
+			<li Name="RecoverQi" AddP="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_YongJiJingSui">
+		<DisplayName>斥异之力</DisplayName>
+		<Group></Group>		
+		<LabelNumAddOrgan>0.025</LabelNumAddOrgan>	
+		<Desc>器官发生诡异的变化，正受到身体其他部位的排斥而产生一些局部性坏死。此种变化在使用永寂之精髓淬炼器官时有更高几率获得。[size=10][color=#D06508]\n少量降低所属秘体性能\n少量提高炼体者器官淬炼条目上限\n中量延缓下一次天劫来临时间[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_ChiYi</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="-0.2"/>
+			<li Name="DefPower" AddP="-0.2"/>
+			<li Name="AtkRate" AddP="-0.05"/>
+			<li Name="DefRate" AddP="-0.05"/>
+			<li Name="ArmorPenetration" AddP="-0.05"/>
+			<li Name="CatchFabao" AddP="-0.05"/>
+			<li Name="RecoverQi" AddP="-0.5"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_EXJin">
+		<DisplayName>五灵通雷之肌</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>血肉融入先天金行之力而发生蜕变，此种变化在使用先天金精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n大量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0025"/>
+			<li Name="DefRate" BAddV="0.0025"/>
+			<li Name="ArmorPenetration" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_EXJin">
+		<DisplayName>天金刃化之骨</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>骨骼融入先天金行之力而发生蜕变，此种变化在使用先天金精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n大量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="25"/>
+			<li Name="DefPower" BAddV="25"/>
+			<li Name="ArmorPenetration" AddP="0.3"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_EXJin">
+		<DisplayName>庚辛金极化相</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>器官融入先天金行之力而发生蜕变，此种变化在使用先天金精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量削弱所属秘体承受的木属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ResistanceMu" AddV="0.06"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_EXMu">
+		<DisplayName>重明蔓生之肌</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>血肉融入先天木行之力而发生蜕变，此种变化在使用先天木精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n大量提高所属秘体的攻击命中率\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0025"/>
+			<li Name="DefRate" BAddV="0.0025"/>
+			<li Name="AtkRate" AddP="0.6"/>
+			<li Name="DefRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_EXMu">
+		<DisplayName>生玄木化之骨</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>骨骼融入先天木行之力而发生蜕变，此种变化在使用先天木精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n大量提高所属秘体的攻击命中率\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="25"/>
+			<li Name="DefPower" BAddV="25"/>
+			<li Name="AtkRate" AddP="0.6"/>
+			<li Name="DefRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_EXMu">
+		<DisplayName>甲乙木极化相</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>器官融入先天木行之力而发生蜕变，此种变化在使用先天木精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量削弱所属秘体承受的土属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ResistanceTu" AddV="0.06"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_EXShui">
+		<DisplayName>万流汇灵之血</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>血肉融入先天水行之力而发生蜕变，此种变化在使用先天水精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n大量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0025"/>
+			<li Name="DefRate" BAddV="0.0025"/>
+			<li Name="RecoverQi" AddV="9"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_EXShui">
+		<DisplayName>通形彻鸣之髓</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>骨骼融入先天水行之力而发生蜕变，此种变化在使用先天水精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n大量提高所属秘体真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="25"/>
+			<li Name="DefPower" BAddV="25"/>
+			<li Name="RecoverQi" AddV="9"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_EXShui">
+		<DisplayName>壬癸水极化相</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>器官融入先天水行之力而发生蜕变，此种变化在使用先天水精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量削弱所属秘体承受的火属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ResistanceHuo" AddV="0.06"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_EXHuo">
+		<DisplayName>煌尽炽燃之血</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>血肉融入先天火行之力而发生蜕变，此种变化在使用先天火精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n大量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0025"/>
+			<li Name="DefRate" BAddV="0.0025"/>
+			<li Name="AtkPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_EXHuo">
+		<DisplayName>地火千炼之骨</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>骨骼融入先天火行之力而发生蜕变，此种变化在使用先天火精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n大量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="25"/>
+			<li Name="DefPower" BAddV="25"/>
+			<li Name="AtkPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_EXHuo">
+		<DisplayName>丙丁火极化相</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>器官融入先天火行之力而发生蜕变，此种变化在使用先天火精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量削弱所属秘体承受的金属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ResistanceJin" AddV="0.06"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_EXTu">
+		<DisplayName>聚生沙化血肉</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>血肉融入先天土行之力而发生蜕变，此种变化在使用先天土精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的攻击命中率\n从根本上少量提高所属秘体的防御成功率\n大量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkRate" BAddV="0.0025"/>
+			<li Name="DefRate" BAddV="0.0025"/>
+			<li Name="DefPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_EXTu">
+		<DisplayName>岩化万钧之骨</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>骨骼融入先天土行之力而发生蜕变，此种变化在使用先天土精淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n从根本上少量提高所属秘体的威力\n从根本上少量提高所属秘体的坚韧\n大量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="25"/>
+			<li Name="DefPower" BAddV="25"/>
+			<li Name="DefPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_EXTu">
+		<DisplayName>戊己土极化相</DisplayName>
+		<Group>EXWuXing</Group>		
+		<Desc>器官融入先天土行之力而发生蜕变，此种变化在使用先天土精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量削弱所属秘体承受的水属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ResistanceShui" AddV="0.06"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_TaiYangJingHua">
+		<DisplayName>日辉之血</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>血液发生异变，滚烫而发出耀眼的光芒，此种变化在使用太阳精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的淬体速度\n大量提高所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_TaiYangJingHua</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="AtkRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_TaiYangJingHua">
+		<DisplayName>燃炽之骸</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>骨骼发出异变，自内而外蔓延出炽烈的热量，仿佛有无形的火焰剧烈燃烧。此种变化在使用太阳精华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的淬体速度\n大量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_TaiYangJingHua</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_TaiYangJingHua">
+		<DisplayName>太阳之息</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>器官内核诞生出一片空腔，其中产生如同微型太阳般的反应，可在需要爆发时提供狂猛的真炁。此种变化在使用太阳精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的淬体速度\n大量提高炼体者激狂之怒时的能力提升倍率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_O01_TaiYangJingHua</Modifier><!-- 有buff -->
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv3_F01_TaiYinJingHua">
+		<DisplayName>月华之肌</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>血肉发生进化，变得晶莹剔透，如同月华附着，此种变化在使用太阴精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的全局躲闪率\n大量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_TaiYinJingHua</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="DefRate" AddP="0.6"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_B01_TaiYinJingHua">
+		<DisplayName>寒彻之骨</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>骨骼发生进化，自内而外产生惊人的低温，仿佛骨髓化为寒冰一般，此种变化在使用太阴精华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的全局躲闪率\n大量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_TaiYinJingHua</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="DefPower" AddP="1.2"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv3_O01_TaiYinJingHua">
+		<DisplayName>太阴之息</DisplayName>
+		<Group>RiYue</Group>		
+		<Desc>器官内核诞生出一片空腔，其中蕴生出可将炽烈化为平静的真炁。此种变化在使用太阴精华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高炼体者的全局躲闪率\n中量削弱所属秘体承受的属性攻击强度[/color][/size]</Desc>
+		<MaxLevel>4</MaxLevel>
+		<Rate>9</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv3_TaiYinJingHua</Modifier><!-- 有buff -->
+		<SuperPartProperties>
+			<li Name="ResistanceJin" AddV="0.03"/>
+			<li Name="ResistanceMu" AddV="0.03"/>
+			<li Name="ResistanceShui" AddV="0.03"/>
+			<li Name="ResistanceHuo" AddV="0.03"/>
+			<li Name="ResistanceTu" AddV="0.03"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	
+	<Def Name="QuenchingLabel_Lv4_A01_JieMieJingHua">
+		<DisplayName>破灭之力</DisplayName>
+		<Group></Group>		
+		<Desc>身体融入一丝天道气息而产生异变，天刑无亲，破灭一切。此种变化在使用劫灭精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n从根本上巨量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" BAddV="200"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A02_JieMieJingHua">
+		<DisplayName>道化之力</DisplayName>
+		<Group></Group>		
+		<Desc>身体融入一丝天道气息而产生异变，化躯为道，外邪无不慑服。此种变化在使用劫灭精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n从根本上巨量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="DefPower" BAddV="200"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A03_JieMieJingHua">
+		<DisplayName>天地之光尘</DisplayName>
+		<Group></Group>		
+		<Desc>身体融入一丝天道气息而产生异变，和天之光，同地之尘。此种变化在使用劫灭精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n大量提高炼体者吐纳效率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A03_JieMieJingHua</Modifier><!-- 有buff -->
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv4_F01_JiuYangZhenHua">
+		<DisplayName>三阳赤血</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>血液融合三阳之力而变的仿佛红色流沙一般的质地。此种变化在使用九阳真华淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上中量提高所属秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="AtkRate" BAddV="0.02"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_B01_JiuYangZhenHua">
+		<DisplayName>九煌炎骸</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>骨骼融入太阳之力的精粹而蜕变，每一寸骨骼都生出九朵真焱环绕。此种变化在使用九阳真华淬炼骨骼时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上中量提高所属秘体的威力[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="AtkPower" BAddV="100"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_O01_JiuYangZhenHua">
+		<DisplayName>洪炉外演</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>器官内部发生剧烈的反应，如同烘炉以流经的真炁为铜，将之百炼成刚。此种变化在使用九阳真华淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上中量提高所属秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="ArmorPenetration" BAddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+	
+	<Def Name="QuenchingLabel_Lv4_F01_XuanYueZhenJing">
+		<DisplayName>太素冰肌</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>血肉融合三阴之力而变得如同水晶一般的质地。此种变化在使用玄月真精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上中量提高所属秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="DefRate" BAddV="0.02"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_B01_XuanYueZhenJing">
+		<DisplayName>灵明玉骨</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>骨骼结合太阴之力的精粹发生异变，色泽化为青白玉质，其上生出螺旋状的光斑。此种变化在使用玄月真精淬炼血肉时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上中量提高所属秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="DefPower" BAddV="100"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_O01_XuanYueZhenJing">
+		<DisplayName>玄窍内生</DisplayName>
+		<Group>EXRiYue</Group>		
+		<Desc>器官内部结构发生改变，应九阴之力而产生九枚空腔，使真炁拥有百折千柔的特性。此种变化在使用玄月真精淬炼器官时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n从根本上提升所属秘体法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+			<li Name="CatchFabao" BAddV="0.01"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	<Def Name="QuenchingLabel_Lv4_A01_TaiXuJingHua">
+		<DisplayName>太虚神元</DisplayName>
+		<Group></Group>		
+		<Desc>身体与时间之源头太虚天窟产生冥冥之中的联系，体内真炁略微染上一丝太虚神元。此种变化在使用太虚精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的威力[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A01_TaiXuJingHua</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A02_TaiXuJingHua">
+		<DisplayName>八极真力</DisplayName>
+		<Group></Group>		
+		<Desc>身体与空间之源头八极地窍产生冥冥之中的联系，体内真炁略微染上一丝八极真力。此种变化在使用太虚精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的坚韧[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A02_TaiXuJingHua</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A03_TaiXuJingHua">
+		<DisplayName>五行万化</DisplayName>
+		<Group></Group>		
+		<Desc>身体与混沌之力产生冥冥之中的联系，拥有了一丝细微的衍化五行万物的力量。此种变化在使用太虚精华淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的法宝镇压几率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A03_TaiXuJingHua</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	
+	
+	
+	
+	<Def Name="QuenchingLabel_Lv4_A01_XuanTianZiQi">
+		<DisplayName>周天星辉</DisplayName>
+		<Group></Group>		
+		<Desc>身体与周天三百六十五星斗产生冥冥之中的联系，体内真炁略微染上一丝周天星辉。此种变化在使用玄天紫气淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的攻击命中率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A01_XuanTianZiQi</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A02_XuanTianZiQi">
+		<DisplayName>三垣尊力</DisplayName>
+		<Group></Group>		
+		<Desc>身体与紫微，太微，天市三垣产生冥冥之中的联系，体内真炁略微染上一丝三垣尊力。此种变化在使用玄天紫气淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的防御成功率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A02_XuanTianZiQi</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	<Def Name="QuenchingLabel_Lv4_A03_XuanTianZiQi">
+		<DisplayName>五德辟劫</DisplayName>
+		<Group></Group>		
+		<Desc>身体与混沌之力产生冥冥之中的联系，拥有了一丝细微的隔绝五行万物的力量。此种变化在使用玄天紫气淬炼身体时有更高几率获得。[size=10][color=#D06508]\n中量提高所属秘体性能\n少量提升炼体者所有秘体的灵气护盾穿透率[/color][/size]</Desc>
+		<MaxLevel>1</MaxLevel>
+		<Rate>12</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv4_A03_XuanTianZiQi</Modifier><!-- 缺buff -->
+		<SuperPartProperties>
+			<li Name="AtkPower" AddP="5"/>
+			<li Name="DefPower" AddP="5"/>
+			<li Name="AtkRate" AddP="1.5"/>
+			<li Name="DefRate" AddP="1.5"/>
+			<li Name="ArmorPenetration" AddP="1.5"/>
+			<li Name="CatchFabao" AddP="1.5"/>
+			<li Name="RecoverQi" AddP="1"/>
+		</SuperPartProperties>
+	</Def>
+	<!-- 
+	<Def Name="BQLabel_Test1">
+		<DisplayName>测试1</DisplayName>
+		<Group></Group>		
+		<Desc>测试测试1</Desc>
+		<Rate>1</Rate>
+		<MaxLevel>1</MaxLevel>
+		<Modifier>SysConcealmentModifier</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddV="100"/>
+			<li Name="AtkRate" AddV="0.02"/>
+			<li Name="FightCost" AddV="0.5"/>
+			<li Name="DefPower" AddV="1000"/>
+			<li Name="DefRate" AddV="0.5"/>
+		</SuperPartProperties>
+	</Def>	
+	<Def Name="BQLabel_Test2">
+		<DisplayName>测试2</DisplayName>
+		<Group></Group>		
+		<Desc>测试测试2</Desc>
+		<Rate>4</Rate>
+		<MaxLevel>1</MaxLevel>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddV="100"/>
+			<li Name="AtkRate" AddV="0.02"/>
+		</SuperPartProperties>
+	</Def>	
+	
+	
+	<Def Name="BQLabel_TestG1">
+		<DisplayName>测试组1</DisplayName>
+		<Group>TestGroup</Group>		
+		<Desc>测试组1</Desc>
+		<Rate>9</Rate>
+		<MaxLevel>1</MaxLevel>
+		<Modifier></Modifier>
+		<SuperPartProperties>
+			<li Name="ArmorPenetration" AddV="0.5"/>
+			<li Name="DefRate" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>	
+	<Def Name="BQLabel_TestG2">
+		<DisplayName>测试组2</DisplayName>
+		<Group>TestGroup</Group>		
+		<Desc>测试组2</Desc>
+		<Rate>12</Rate>
+		<MaxLevel>1</MaxLevel>
+		<Modifier>SysExploreEatModifier</Modifier>
+		<SuperPartProperties>
+			<li Name="AtkPower" AddV="200"/>
+			<li Name="AtkRate" AddV="0.02"/>
+			<li Name="CatchFabao" AddV="0.2"/>
+		</SuperPartProperties>
+	</Def>	 -->
+</List></BodyQuenchingLabelDefs>

@@ -1,0 +1,142 @@
+<FightDef><List>
+	<Damage Name="FaBao">
+		<Packs><!--法宝物理-->
+			<li PartKind="Bone" Name="Fracture4" Rate="0.25" DescTags="法宝重击"/>
+			<li PartKind="Bone" Name="Fabao_CutOff" Rate="0.25" DescTags="法宝重击"/>
+			<li PartKind="Organ" Name="Destroy" Rate="0.05" DescTags="法宝重击"/>
+			<li PartKind="Flesh" Name="Fabao_Tear" Rate="0.45" DescTags="法宝重击"/>
+		</Packs>
+	</Damage>
+	<Damage Name="GongBroken">
+		<Packs><!--法宝物理-->
+			<li PartKind="Bone" Name="Fracture4" Rate="0.25" DescTags="法宝重击"/>
+			<li PartKind="Bone" Name="Fabao_CutOff" Rate="0.25" DescTags="法宝重击"/>
+			<li PartKind="Organ" Name="Destroy" Rate="0.05" DescTags="法宝重击"/>
+			<li PartKind="Flesh" Name="Fabao_Tear" Rate="0.45" DescTags="法宝重击"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Skill">
+		<Packs><!--术法-->
+			<li PartKind="Bone" Name="Fracture4" Rate="0.25" DescTags="法术轰击"/>
+			<li PartKind="Bone" Name="FightSkill_Disintegrate" Rate="0.25" DescTags="法术轰击"/>
+			<li PartKind="Organ" Name="Destroy" Rate="0.05" DescTags="法术轰击"/>
+			<li PartKind="Flesh" Name="FightSkill_Evaporate" Rate="0.45" DescTags="法术轰击"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Jin">
+		<Packs><!--金-->
+			<li Rate="0.62"/>
+			<li PartKind="Bone" Name="Jin_BoneNail" Rate="0.02" DescTags="金属性伤害"/>
+			<li PartKind="Organ" Name="Jin_ThunderDamage" Rate="0.02" DescTags="金属性伤害"/>
+			<li PartKind="Flesh" Name="Jin_ThunderDamage" Rate="0.02" DescTags="金属性伤害"/>
+			<li PartKind="Meridian" Name="DiffEnergyInvade" Rate="0.3" DescTags="金属性伤害"/>
+			<li PartName="TheWholeBody" Name="Jin_SwordLight1" Rate="0.02" DescTags="金属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Mu">
+		<Packs><!--木-->
+			<li Rate="0.62"/>
+			<li PartKind="Bone" Name="Mu_Corrosion" Rate="0.02" DescTags="木属性伤害"/>
+			<li PartKind="Organ" Name="Mu_Failure" Rate="0.02" DescTags="木属性伤害"/>
+			<li PartKind="Organ" Name="Mu_Parasitic" Rate="0.02" DescTags="木属性伤害"/>
+			<li PartKind="Flesh" Name="Mu_Corrosion" Rate="0.02" DescTags="木属性伤害"/>
+			<li PartKind="Meridian" Name="DiffEnergyInvade" Rate="0.3" DescTags="木属性伤害"/>
+			<li PartName="TheWholeBody" Name="Mu_VitalityDevour1" Rate="0.02" DescTags="木属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Shui">
+		<Packs><!--水-->
+			<li Rate="0.62"/>
+			<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.02" DescTags="水属性伤害"/>
+			<li PartKind="Organ" Name="Shui_Frostbite" Rate="0.02" DescTags="水属性伤害"/>
+			<li PartKind="Flesh" Name="Shui_Frostbite" Rate="0.02" DescTags="水属性伤害"/>
+			<li PartKind="Meridian" Name="DiffEnergyInvade" Rate="0.3" DescTags="水属性伤害"/>
+			<li PartName="TheWholeBody" Name="Shui_ColdBlood" Rate="0.02" DescTags="水属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Huo">
+		<Packs><!--火-->
+			<li Rate="0.62"/>
+			<li PartKind="Bone" Name="Huo_MarrowDry" Rate="0.02" DescTags="火属性伤害"/>
+			<li PartKind="Organ" Name="Huo_VisceralBurn" Rate="0.02" DescTags="火属性伤害"/>
+			<li PartKind="Flesh" Name="Huo_BurnOfPain" Rate="0.02" DescTags="火属性伤害"/>
+			<li PartKind="Meridian" Name="DiffEnergyInvade" Rate="0.3" DescTags="火属性伤害"/>
+			<li PartName="Heart" Name="Huo_HeartBurn" Rate="0.02" DescTags="火属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="Tu">
+		<Packs><!--土-->
+			<li Rate="0.62"/>
+			<li PartKind="Bone" Name="Tu_Weathering" Rate="0.02" DescTags="土属性伤害"/>
+			<li PartKind="Organ" Name="Tu_Petrifaction1" Rate="0.02" DescTags="土属性伤害"/>
+			<li PartKind="Flesh" Name="Tu_Petrifaction1" Rate="0.02" DescTags="土属性伤害"/>
+			<li PartKind="Meridian" Name="DiffEnergyInvade" Rate="0.3" DescTags="土属性伤害"/>
+			<li PartName="TheWholeBody" Name="Tu_Petrifaction1" Rate="0.02" DescTags="土属性伤害"/>
+			<li PartName="Brain" Name="Tu_BrainClose" Rate="0.02" DescTags="土属性伤害"/>
+		</Packs>
+	</Damage>
+	
+<!--体修-->
+	<Damage Name="BodyAttackNormal">
+		<Packs><!--体修对别人造成通用伤害-->
+			<li PartKind="Bone" Name="Fracture4" Rate="0.5" DescTags="重击"/>
+			<li PartKind="Bone" Name="Fabao_CutOff" Rate="0.5" DescTags="重击"/>
+			<li PartKind="Organ" Name="Destroy" Rate="0.5" DescTags="重击"/>
+			<li PartKind="Flesh" Name="Fabao_Tear" Rate="0.45" DescTags="重击"/>
+		</Packs>
+	</Damage>
+	
+	
+	<Damage Name="BodyDefense_Normal">
+		<Packs><!--体修防御受伤_普通攻击/保底-->
+			<li Name="BodyPractice_Bhit1" Rate="0.5" DescTags="刮蹭"/>
+			<li Name="BodyPractice_Bhit2" Rate="0.5" DescTags="刮蹭"/>
+			<li Name="BodyPractice_Bhit3" Rate="0.5" DescTags="刮蹭"/>
+		</Packs>
+	</Damage>
+	
+	<Damage Name="BodyDefense_Skill">
+		<Packs><!--体修防御受伤_技能-->
+			<li Name="Fabao_Tear" Rate="0.25" DescTags="法术重击"/>
+		</Packs>
+	</Damage>
+	
+	<Damage Name="BodyDefense_Fabao">
+		<Packs><!--体修防御受伤_法宝-->
+			<li Name="Fabao_Tear" Rate="0.25" DescTags="法宝重击"/>
+		</Packs>
+	</Damage>
+	
+	<Damage Name="BodyDefense_Jin">
+		<Packs><!--体修防御受伤_金-->
+			<li Name="BodyPractice_Jin_ThunderDamage" Rate="0.25" DescTags="金属性伤害"/>
+			<li Name="BodyPractice_Jin_SwordLight2" Rate="0.25" DescTags="金属性伤害"/>
+		</Packs>
+	</Damage>
+	
+	<Damage Name="BodyDefense_Mu">
+		<Packs><!--体修防御受伤_木-->
+			<li Name="BodyPractice_Mu_Failure" Rate="0.25" DescTags="木属性伤害"/>
+			<li Name="BodyPractice_Mu_Corrosion" Rate="0.25" DescTags="木属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="BodyDefense_Shui">
+		<Packs><!--体修防御受伤_水-->
+			<li Name="BodyPractice_Shui_ColdPoison" Rate="0.25" DescTags="水属性伤害"/>
+			<li Name="BodyPractice_Shui_Frostbite" Rate="0.25" DescTags="水属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="BodyDefense_Huo">
+		<Packs><!--体修防御受伤_火-->
+			<li Name="BodyPractice_Huo_BurnOfPain" Rate="0.25" DescTags="火属性伤害"/>
+			<li Name="BodyPractice_Huo_VisceralBurn" Rate="0.25" DescTags="火属性伤害"/>
+		</Packs>
+	</Damage>
+	<Damage Name="BodyDefense_Tu">
+		<Packs><!--体修防御受伤_土-->
+			<li Name="BodyPractice_Tu_Petrifaction1" Rate="0.25" DescTags="土属性伤害"/>
+			<li Name="BodyPractice_Tu_Petrifaction2" Rate="0.25" DescTags="土属性伤害"/>
+		</Packs>
+	</Damage>
+	
+</List></FightDef>

@@ -1,0 +1,704 @@
+<DamageDefs><List>
+
+<!--老伤痕-->
+
+	<Damage Name="Shit">
+		<DisplayName>恶臭</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.05</ValueMin>
+		<ValueMax>0.05</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+	</Damage>
+	
+	<Damage Name="BurnScar">
+		<DisplayName>烫伤伤疤</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	<Damage Name="Scar">
+		<DisplayName>伤疤</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	<Damage Name="Osteodynia">
+		<DisplayName>骨痛</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	<Damage Name="DeformedSkeleton">
+		<DisplayName>畸形骨骼</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	<Damage Name="ViscusInjury">
+		<DisplayName>脏腑旧损</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.15</ValueMin>
+		<ValueMax>0.15</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	
+	<Damage Name="Deaf">
+		<DisplayName>耳疾</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.85</ValueMin>
+		<ValueMax>0.85</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	
+	<Damage Name="MeridianBlocking">
+		<DisplayName>滞塞</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.99</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Palpitation">
+		<DisplayName>心悸</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+<!--全局病症-->
+	<Damage Name="Poisoning1">
+		<DisplayName>中毒（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.15</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next>Poisoning2</Next>
+	</Damage>
+	<Damage Name="Poisoning2">
+		<DisplayName>中毒（中）</DisplayName>
+		<ValueMin>0.15</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.4</Trend>
+		<Previous></Previous>
+		<Next>Poisoning3</Next>
+	</Damage>
+	<Damage Name="Poisoning3">
+		<DisplayName>中毒（重）</DisplayName>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0.8</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BloodFreezing1">
+		<DisplayName>凝血症（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next>BloodFreezing2</Next>
+	</Damage>
+	<Damage Name="BloodFreezing2">
+		<DisplayName>凝血症（重）</DisplayName>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0.8</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Cold1">
+		<DisplayName>风邪（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next>Cold2</Next>
+	</Damage>
+	<Damage Name="Cold2">
+		<DisplayName>风邪（重）</DisplayName>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.2</Trend>
+		<Previous>Cold1</Previous>
+		<Next></Next>
+	</Damage>
+<!--骨骼伤害-->
+
+	<Damage Name="Fracture1">
+		<DisplayName>开裂</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Fracture2">
+		<DisplayName>折断</DisplayName>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next>DeformedSkeleton</Next>
+	</Damage>
+	<Damage Name="Fracture3">
+		<DisplayName>碎裂</DisplayName>
+		<ValueMin>0.7</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<!--内门骨骼伤害-->
+	<Damage Name="Fracture4">
+		<DisplayName>粉碎</DisplayName>
+		<ValueMin>0.8</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0.3</Trend>
+		<Previous>Osteodynia</Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Fabao_CutOff">
+		<DisplayName>斩断</DisplayName>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="FightSkill_Disintegrate">
+		<DisplayName>崩碎</DisplayName>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+<!--外伤-->
+	<Damage Name="Corrosion">
+		<DisplayName>腐蚀</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.8</Trend>
+		<Previous>Scar</Previous>
+		<Next>Infection</Next>
+	</Damage>
+	<Damage Name="ForgLick">
+		<DisplayName>湿哒哒</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.01</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.02</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Boil">
+		<DisplayName>疖子</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>-0.01</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Toothache">
+		<DisplayName>牙疼</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.02</ValueMin>
+		<ValueMax>0.02</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>-0.006</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Faint">
+		<DisplayName>昏厥</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.99</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.07</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Hemorrhoids">
+		<DisplayName>痔疮</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>-0.01</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="HemorrhoidsEX">
+		<DisplayName>永久之痔</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.35</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Frostbite1">
+		<DisplayName>冻伤（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next>Frostbite2</Next>
+	</Damage>
+	
+	<Damage Name="Frostbite2">
+		<DisplayName>冻伤（中）</DisplayName>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.3</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next>Frostbite3</Next>
+	</Damage>
+	
+	<Damage Name="Frostbite3">
+		<DisplayName>冻伤（重）</DisplayName>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0.54</Trend>
+		<Previous></Previous>
+		<Next>Infection</Next>
+	</Damage>
+	
+	<Damage Name="Scald1">
+		<DisplayName>烫伤（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Scald2">
+		<DisplayName>烫伤（中）</DisplayName>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.3</Trend>
+		<Previous>BurnScar</Previous>                                                   
+		<Next>Infection</Next>
+	</Damage>
+	
+	<Damage Name="Scald3">
+		<DisplayName>烫伤（重）</DisplayName>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.54</Trend>
+		<Previous>BurnScar</Previous>
+		<Next>Infection</Next>
+	</Damage>
+	
+	<Damage Name="Bruise1">
+		<DisplayName>瘀伤（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.3</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Bruise2">
+		<DisplayName>瘀伤（中）</DisplayName>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Bruise3">
+		<DisplayName>瘀伤（重）</DisplayName>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.4</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Infection">
+		<DisplayName>恶化感染</DisplayName>
+		<ValueMin>0.5</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.4</Trend>
+		<Previous>Scar</Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Cut1">
+		<DisplayName>割裂（轻）</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.3</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next>Infection</Next>
+	</Damage>
+	<Damage Name="Cut2">
+		<DisplayName>割裂（中）</DisplayName>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0.3</Trend>
+		<Previous></Previous>
+		<Next>Infection</Next>
+	</Damage>
+	
+	<Damage Name="Cut3">
+		<DisplayName>割裂（重）</DisplayName>
+		<ValueMin>0.245</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.6</Trend>
+		<Previous>Scar</Previous>
+		<Next>Infection</Next>
+	</Damage>
+	<Damage Name="Puncture">
+		<DisplayName>穿刺</DisplayName>
+		<ValueMin>0.4</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.5</Trend>
+		<Previous></Previous>
+		<Next>Infection</Next>
+	</Damage>
+	
+<!--内门外伤-->
+	<Damage Name="Fabao_Tear">
+		<DisplayName>撕碎</DisplayName>
+		<ValueMin>0.99</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.8</Trend>
+		<Previous>Scar</Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="FightSkill_Evaporate">
+		<DisplayName>蒸发</DisplayName>
+		<ValueMin>0.99</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0.7</Pain>
+		<Trend>0.8</Trend>
+		<Previous>Scar</Previous>
+		<Next></Next>
+	</Damage>
+<!--内脏伤-->
+	<Damage Name="Deterioration">
+		<DisplayName>坏变</DisplayName>
+		<ValueMin>0.7</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.6</Trend>
+		<Previous>ViscusInjury</Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="VisceralRupture">
+		<DisplayName>破裂</DisplayName>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.7</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.28</Trend>
+		<Previous></Previous>
+		<Next>Deterioration</Next>
+	</Damage>
+	
+	<Damage Name="VisceralCut">
+		<DisplayName>割裂</DisplayName>
+		<ValueMin>0.5</ValueMin>
+		<ValueMax>0.7</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.5</Trend>
+		<Previous></Previous>
+		<Next>Deterioration</Next>
+	</Damage>
+	
+
+<!--内门内脏伤-->
+	<Damage Name="Destroy">
+		<DisplayName>摧毁</DisplayName>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+
+<!--全身伤-->
+	<Damage Name="Wound">
+		<DisplayName>伤口</DisplayName>
+		<TreatConstant>1</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.35</Pain>
+		<Trend>0.15</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+
+	<Damage Name="FrostbiteInside">
+		<DisplayName>冻伤</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="SnakeVenom">
+		<DisplayName>蛇毒</DisplayName>
+		<TreatConstant>0.4</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.08</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="DiseaseBreath">
+		<DisplayName>疫病之息</DisplayName>
+		<TreatConstant>0.4</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0.08</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="HolyJudgement">
+		<DisplayName>灵力侵染</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.75</Pain>
+		<Trend>-0.04</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+
+	<Damage Name="FirebiteInside">
+		<DisplayName>中暑</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="FoodDamage">
+		<DisplayName>缺食</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.3</Pain>
+		<Trend>-0.3</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="WaterDamage">
+		<DisplayName>缺水</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.3</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="GuanyinDamage">
+		<DisplayName>吃土</DisplayName>
+		<Lable>Dfood</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="AbdominalDistention">
+		<DisplayName>腹胀</DisplayName>
+		<Lable>Dfood</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>-0.3</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="AbdominalPain">
+		<DisplayName>腹痛</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="SysTooTired">
+		<DisplayName>劳累过度</DisplayName>
+		<Lable>OldScar</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.65</ValueMax>
+		<Pain>2</Pain>
+		<Trend>-0.05</Trend>
+	</Damage>
+	
+	<Damage Name="DevilBlood_LianHun">
+		<DisplayName>炼魂之痛</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.05</ValueMin>
+		<ValueMax>0.05</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>-0.5</Trend>
+	</Damage>
+	
+	<Damage Name="Anaesthesia">
+		<DisplayName>麻醉</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.4</Trend>
+	</Damage>
+	
+	<Damage Name="TEST_FULL">
+		<DisplayName>测试伤害</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>1</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	
+	<Damage Name="Puppet_Abrasion">
+		<DisplayName>磨损</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+	
+	<Damage Name="SYS_LOST">
+		<DisplayName>模组遗失</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.1</Trend>
+	</Damage>
+	
+	<Damage Name="BloodFeed">
+		<DisplayName>精血</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+	</Damage>
+
+<!-- 灵兽咬的伤害 -->
+	<Damage Name="LsBiteLighty">
+		<DisplayName>轻咬</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.01</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="LsBite">
+		<DisplayName>重咬</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.01</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Pollinosis">
+		<DisplayName>花粉症</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+</List></DamageDefs>

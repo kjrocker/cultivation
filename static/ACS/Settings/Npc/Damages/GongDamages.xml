@@ -1,0 +1,671 @@
+<DamageDefs><List>
+
+	<Damage Name="Tower_FuBai">
+		<DisplayName>衰灭之败亡</DisplayName><!--tower-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.03</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.5</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+
+<!-- 体修 -->
+		
+	
+	<Damage Name="BodyPractice_Bhit1">
+		<DisplayName>擦伤</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.05</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BodyPractice_Bhit2">
+		<DisplayName>轻伤</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.05</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BodyPractice_Bhit3">
+		<DisplayName>小伤口</DisplayName>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0.05</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="BodyPractice_Jin_ThunderDamage">
+		<DisplayName>雷殛</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>Jin</Lable>            <!--伤害类别-->
+		<TreatConstant>0</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>0.2</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>0.2</Pain>               <!--疼痛程度-->
+		<Trend>0.2</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	
+	
+	<Damage Name="BodyPractice_Jin_SwordLight2">
+		<DisplayName>剑气入体（重）</DisplayName><!--全身-->
+		<Lable>Jin</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BodyPractice_Mu_Failure">
+		<DisplayName>衰竭</DisplayName><!--内脏-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.4</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="BodyPractice_Mu_Corrosion">
+		<DisplayName>腐败</DisplayName><!--骨骼，血肉-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="BodyPractice_Shui_Frostbite">
+		<DisplayName>冻创</DisplayName><!--内脏，血肉-->
+		<Lable>Shui</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="BodyPractice_Shui_ColdPoison">
+		<DisplayName>寒毒</DisplayName><!--骨-->
+		<Lable>Shui</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.6</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="BodyPractice_Huo_VisceralBurn">
+		<DisplayName>内焚</DisplayName><!--内脏-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.06</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="BodyPractice_Huo_BurnOfPain">
+		<DisplayName>灼痛</DisplayName><!--血肉-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.4</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BodyPractice_Tu_Weathering">
+		<DisplayName>风化</DisplayName><!--骨骼-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="BodyPractice_Tu_Petrifaction2">
+		<DisplayName>僵化（重）</DisplayName><!--全身，内脏，血肉-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.5</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.25</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+<!--特殊-->
+
+	<Damage Name="FivePoison">
+		<DisplayName>五毒之息</DisplayName>
+		<Lable>Mu</Lable>
+		<ValueMin>0.05</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-1</Trend>
+		<Previous></Previous>
+	</Damage>
+	
+	<Damage Name="SwordBallDamage">
+		<DisplayName>剑气裂体</DisplayName>
+		<Lable>Jin</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.6</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>1</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="XueGuLianXing">
+		<DisplayName>炼心咒</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.25</ValueMin>
+		<ValueMax>0.25</ValueMax>
+		<Pain>0.75</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Dan_Soul3_Damage">
+		<DisplayName>神智有损</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="ZaoHuaYuLu_YuanShenJiMie">
+		<DisplayName>元神寂灭</DisplayName>
+		<Lable>Special</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.8</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="SoulOutOfBrain">
+		<DisplayName>魂魄不合</DisplayName>
+		<Lable>Soul</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>0.4</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="LostSoul">
+		<DisplayName>锁闭</DisplayName>
+		<Lable>Soul</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.8</ValueMin>
+		<ValueMax>0.8</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="Damage_GongXinYin_Damage">
+		<DisplayName>神魂重创</DisplayName>
+		<Lable>Soul</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Damage_TianDaoBenYuan1">
+		<DisplayName>神魂受损</DisplayName>
+		<Lable>Soul</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="Damage_Kidnap_MiHun">
+		<DisplayName>迷魂术</DisplayName>
+		<Lable>Soul</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.8</ValueMin>
+		<ValueMax>0.8</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.5</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Damage_TianDaoBenYuan2">
+		<DisplayName>神识湮灭</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.5</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="Damage_ZhenFaZhenDang">
+		<DisplayName>阵法震荡</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.75</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.08</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+<!--经脉伤-->
+	<Damage Name="DiffEnergyInvade">
+		<DisplayName>异种真气</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.6</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.08</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="MeridianRupture">
+		<DisplayName>断裂</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.6</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0.3</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="MeridianIncomplete">
+		<DisplayName>残缺</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.99</ValueMin>
+		<ValueMax>0.99</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="ElixirFieldShock">
+		<DisplayName>丹田震荡</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="NeiQiWenLuan">
+		<DisplayName>内息紊乱</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.7</ValueMin>
+		<ValueMax>0.7</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="Damage_Boss_LingBoom">
+		<DisplayName>真气暴走</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.9</ValueMin>
+		<ValueMax>0.9</ValueMax>
+		<Pain>2</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	
+	<Damage Name="Damage_Sys_SuppressGodCall">
+		<DisplayName>压制天劫</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.5</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="JieNanHuangu">
+		<DisplayName>换骨之苦</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.4</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<!--全身伤-->
+	
+	<Damage Name="LingSpillsInjury_Sp">  <!-- 神秘修行者特殊 -->
+		<DisplayName>经脉重伤</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>1</ValueMin>  
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="LingSpillsInjury">
+		<DisplayName>真气溢伤</DisplayName>
+		<Lable>Ling</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>  
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<Damage Name="SevereInjury">
+		<DisplayName>元气大伤</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.0005</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<!--金属性伤-->
+	<Damage Name="Jin_ThunderDamage">
+		<DisplayName>雷殛</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>Jin</Lable>            <!--伤害类别-->
+		<TreatConstant>0</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>0.2</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>1</Pain>               <!--疼痛程度-->
+		<Trend>0.2</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	<Damage Name="Jin_BoneNail">
+		<DisplayName>骨刺</DisplayName><!--骨骼-->
+		<Lable>Jin</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.1</ValueMax>
+		<Pain>1.5</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Jin_SwordLight1">
+		<DisplayName>剑气入体（轻）</DisplayName><!--全身-->
+		<Lable>Jin</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>0.3</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next>Jin_SwordLight2</Next>
+	</Damage>
+	<Damage Name="Jin_SwordLight2">
+		<DisplayName>剑气入体（重）</DisplayName><!--全身-->
+		<Lable>Jin</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>1</Pain>
+		<Trend>0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<!--木属性伤-->
+	<Damage Name="Mu_VitalityDevour1">
+		<DisplayName>蚀命之息（轻）</DisplayName><!--全身-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.2</ValueMax>
+		<Pain>1</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next>Mu_VitalityDevour2</Next>
+	</Damage>
+	<Damage Name="Mu_VitalityDevour2">
+		<DisplayName>蚀命之息（重）</DisplayName><!--全身-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>1</Pain>
+		<Trend>0.8</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Mu_Failure">
+		<DisplayName>衰竭</DisplayName><!--内脏-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.1</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.4</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Mu_Corrosion">
+		<DisplayName>腐败</DisplayName><!--骨骼，血肉-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Mu_Parasitic">
+		<DisplayName>寄生</DisplayName><!--内脏-->
+		<Lable>Mu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.05</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.6</Pain>
+		<Trend>0.4</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<!--水属性伤-->
+	<Damage Name="Shui_Frostbite">
+		<DisplayName>冻创</DisplayName><!--内脏，血肉-->
+		<Lable>Shui</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Shui_ColdBlood">
+		<DisplayName>寒脉</DisplayName><!--全身-->
+		<Lable>Shui</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Shui_ColdPoison">
+		<DisplayName>寒毒</DisplayName><!--骨-->
+		<Lable>Shui</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.6</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	
+	<!--火属性伤-->
+	<Damage Name="Huo_VisceralBurn">
+		<DisplayName>内焚</DisplayName><!--内脏-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0.06</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Huo_BurnOfPain">
+		<DisplayName>灼痛</DisplayName><!--血肉-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>0.4</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Huo_MarrowDry">
+		<DisplayName>枯髓之症</DisplayName><!--骨骼-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Huo_HeartBurn">
+		<DisplayName>焚心</DisplayName><!--心脏-->
+		<Lable>Huo</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.2</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.8</Pain>
+		<Trend>0.25</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<!--土属性伤-->
+	<Damage Name="Tu_Weathering">
+		<DisplayName>风化</DisplayName><!--骨骼-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.3</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.2</Pain>
+		<Trend>0.05</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Tu_Petrifaction1">
+		<DisplayName>僵化（轻）</DisplayName><!--全身，内脏，血肉-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0</ValueMin>
+		<ValueMax>0.5</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0.1</Trend>
+		<Previous></Previous>
+		<Next>Tu_Petrifaction2</Next>
+	</Damage>
+	<Damage Name="Tu_Petrifaction2">
+		<DisplayName>僵化（重）</DisplayName><!--全身，内脏，血肉-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.5</ValueMin>
+		<ValueMax>1</ValueMax>
+		<Pain>0.1</Pain>
+		<Trend>0.25</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+	<Damage Name="Tu_BrainClose">
+		<DisplayName>锁神症</DisplayName><!--大脑-->
+		<Lable>Tu</Lable>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.8</ValueMin>
+		<ValueMax>0.8</ValueMax>
+		<Pain>0</Pain>
+		<Trend>0</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+</List></DamageDefs>

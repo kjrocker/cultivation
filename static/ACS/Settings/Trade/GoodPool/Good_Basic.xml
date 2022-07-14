@@ -1,0 +1,13 @@
+<Defs><List>	
+	<Def Name="Basic">
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_Wheat</ItemName>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_BrownRock</ItemName>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_Wood</ItemName>
+		</Item>
+	</Def>
+</List></Defs>

@@ -1,0 +1,13 @@
+<FightDriverDefs><List>
+	<Driver Name="ZhuLongSP">
+		<EnterSkill>zhulongSP_dengchang</EnterSkill><!--出场skill-->
+		<DieSkill>zhulongSP_siwang</DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li>
+				<Skills>						
+					<li Type="Normal" Name="zhulongSP_idle" Rate="1" CoolDown="0"/>								
+				</Skills>
+			</li>
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

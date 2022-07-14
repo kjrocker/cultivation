@@ -1,0 +1,152 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="RoofBase">	
+	<Desc>RoofBase</Desc>
+	<TileID>-14</TileID>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>2</Beauty>
+	<VisionRadius>0</VisionRadius>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1]
+		</Data>
+	</Collider>
+	
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+			
+		<NoFengshui>1</NoFengshui>
+		<IsRoof>1</IsRoof>
+		<BuildMode>Rect</BuildMode>
+		<CanMakeRoom>0</CanMakeRoom>
+		<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+		<RemovePriceFactor>0.5</RemovePriceFactor>
+		<BePackage>0</BePackage>
+		<BlockLight>0</BlockLight>
+		<RestEffectiveness>1</RestEffectiveness>
+		<IsVirtualBuilding>1</IsVirtualBuilding>
+		<BeMade>
+			<WorkToMake>5</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="GrassRoof" Parent="WoodRoof">	
+	<Color>#9E7149FF</Color>
+<!--	<Desc>屋顶，仅仅是装饰，并不会影响风水。</Desc>
+	<ThingName>屋顶</ThingName>
+	<TileID>-14</TileID>
+	<Building>
+		<AutoUnLock>0</AutoUnLock>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "Plant"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>0</InheritStuffTileID>
+		</BeMade>
+	</Building>-->
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="CaveRoof" Parent="RoofBase">	
+	<ThingName>山洞顶</ThingName>
+	<TileID>-41</TileID>
+	<Building>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="YaoRoof" Parent="RoofBase">	
+	<Desc>屋顶，仅仅是装饰，并不会影响风水。</Desc>
+	<ThingName>屋顶</ThingName>
+	<TileID>-46</TileID>
+	<Building>
+		<NoColor>1</NoColor>
+		<AutoUnLock>0</AutoUnLock>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>0</InheritStuffTileID>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Building" Name="WoodRoof" Parent="RoofBase">	
+	<ThingName>屋顶</ThingName>
+	<Desc>屋顶，仅仅是装饰，并不会影响风水。</Desc>
+	<TileID>-13</TileID>
+	<Color>385C79FF</Color>
+	<Building>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>-1</InheritStuffTileID>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="StoneRoof" Parent="RoofBase">
+	<ThingName>屋顶</ThingName>	
+	<Desc>屋顶，仅仅是装饰，并不会影响风水。</Desc>
+	<TileID>-40</TileID>
+	<Color>385C79FF</Color>
+	<Building>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>-1</InheritStuffTileID>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WoodRoof_SpringFestival" Parent="RoofBase">	
+	<ThingName>屋顶-迎春</ThingName>
+	<Desc>春节特供屋顶，增添了喜庆气息，仅仅是装饰，并不会影响风水。</Desc>
+	<TileID>-33</TileID>
+	<Building>
+		<AutoUnLock>0</AutoUnLock>
+		<SpringFlag>1</SpringFlag>
+		<NoColor>1</NoColor>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>-1</InheritStuffTileID>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="StoneRoof_SpringFestival" Parent="RoofBase">
+	<ThingName>屋顶-纳福</ThingName>	
+	<Desc>春节特供屋顶，增添了喜庆气息，仅仅是装饰，并不会影响风水。</Desc>
+	<TileID>-43</TileID>	
+	<Building>
+		<AutoUnLock>0</AutoUnLock>
+		<SpringFlag>1</SpringFlag>
+		<NoColor>1</NoColor>
+		<BeMade>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<InheritStuffTileID>-1</InheritStuffTileID>
+		</BeMade>
+	</Building>
+	</ThingDef>
+</List></ThingDefs>

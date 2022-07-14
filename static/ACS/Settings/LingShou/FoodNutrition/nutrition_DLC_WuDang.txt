@@ -1,0 +1,8 @@
+DefName	Type	Lv	NeiDan	ShuFa	QiGan	HuTi	LingZhi	Fat	Strong	HungryNeed	FoodAdd	DeclineSec	Modifier
+Item_WuDang_HuangJing	DiXian	1	0	6	0	0	0	0	0	20	0	600	
+Fish_SkySnake	ShengRou	1	4	0	0	0	0	0	0	70	0	600	
+Fish_SkyFish	ShengRou	2	8	0	0	0	0	0	0	70	0	600	
+Fish_SkyCrab	ShengRou	3	12	0	0	0	0	0	0	70	0	600	
+Item_WuDang_HuangJingFen	Drug		0	12	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Dan_WuQiNoHunger2	Drug		0	0	0	0	0	-5	-5	0	9999	1800	Modifier_Dan_ColdDown
+Item_Dan_SanHuaHuangJing	Drug		0	0	20	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown

@@ -1,0 +1,194 @@
+<Defs><List>
+	<Def Name="Region_Base">
+		<BasicProduct>
+			<li Type="Hall1" Product="Hall" Count="10"/>
+			<li Type="Hall2" Product="Hall" Count="15"/>
+			<li Type="Hall3" Product="Hall" Count="20"/>
+		</BasicProduct>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。</Desc>
+		
+		<ClickPlace>Place_CentralPlains</ClickPlace>
+		
+		<Population>0</Population>
+		<Stability>0</Stability>
+		<Suprivise>
+			<NeedPercent>0.7</NeedPercent>
+			<NeedDay>5</NeedDay>
+			<IntervalDay>1</IntervalDay>
+			<Stories>
+				<li>Sup</li>
+			</Stories>
+		</Suprivise>
+		
+		<AttractiveSource>
+			<DaySub>2</DaySub>
+		</AttractiveSource>
+		<Type>Rural</Type>
+		<FaithNpcPolicy>Policy_God</FaithNpcPolicy>
+	</Def>
+	
+	<Def Name="zhongyuan" Parent ="Region_Base">
+		<DisplayName>中原</DisplayName>
+		<Landform>
+			<li>Plain</li>
+		</Landform>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。可产出大量棕石，少量原木和小麦。</Desc>
+		
+		<FirstHall>MainLobby_ZhongYuan</FirstHall>
+		<Point>
+			<li Point="Point_CentralPlains4" Place="Place_CentralPlains4"/>
+			<li Point="Point_CentralPlains2" Place="Place_CentralPlains2"/>
+			<li Point="Point_CentralPlains5" Place="Place_CentralPlains5"/>
+			<li Point="Point_CentralPlains1" Place="Place_CentralPlains1"/>
+			<li Point="Point_CentralPlains3" Place="Place_CentralPlains3"/>
+		</Point>
+		
+		<ClickPlace>Place_CentralPlains</ClickPlace>
+		
+		<Population>350000</Population>
+		<Stability>25</Stability>
+		<Religions>
+			<li School="7" Attractive="75" Population="175000" />
+			<li School="1" Attractive="50" Population="70000" />
+			<li School="5" Attractive="50" Population="35000" />
+			<li School="10" Attractive="20" Population="35000" />
+		</Religions>
+	</Def>
+	
+	<Def Name="JiangAnWoYe" Parent ="Region_Base">
+		<DisplayName>江岸沃野</DisplayName>
+		<Landform>
+			<li>Aqua</li>
+		</Landform>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。可产出大量小麦，少量棕石。</Desc>
+		
+		<FirstHall>MainLobby_JiangAn</FirstHall>
+		<Point>
+			<li Point="Point_FertileField3" Place="Place_FertileField3"/>
+			<li Point="Point_FertileField4" Place="Place_FertileField4"/>
+			<li Point="Point_FertileField5" Place="Place_FertileField5"/>
+			<li Point="Point_FertileField1" Place="Place_FertileField1"/>
+			<li Point="Point_FertileField2" Place="Place_FertileField2"/>
+		</Point>
+		
+		<ClickPlace>Place_FertileField</ClickPlace>
+		
+		<Population>350000</Population>
+		<Stability>25</Stability>
+		<Religions>
+			<li School="1" Attractive="50" Population="140000" />
+			<li School="11" Attractive="40" Population="105000" />
+			<li School="10" Attractive="40" Population="70000" />
+		</Religions>
+	</Def>
+	
+	<Def Name="DaXueYuan" Parent ="Region_Base">
+		<DisplayName>大雪原</DisplayName>
+		<Landform>
+			<li>Plain</li>
+		</Landform>
+		<FirstHall>MainLobby_DaXueYuan</FirstHall>
+		<Point>
+			<li Point="Point_Snowfield1" Place="Place_Snowfield1"/>
+			<li Point="Point_Snowfield3" Place="Place_Snowfield3"/>
+			<li Point="Point_Snowfield2" Place="Place_Snowfield2"/>
+		</Point>
+		
+		<ClickPlace>Place_Snowfield</ClickPlace>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。可产出大量灵石，少量原木。</Desc>
+		
+		<Population>50000</Population>
+		<Stability>-25</Stability>
+		<Religions>
+			<li School="10" Attractive="75" Population="20000" />
+			<li School="2" Attractive="20" Population="5000" />
+			<li School="3" Attractive="20" Population="5000" />
+		</Religions>
+		
+	</Def>
+	
+	<Def Name="DaMo" Parent ="Region_Base">
+		<DisplayName>大漠</DisplayName>
+		<Landform>
+			<li>Plain</li>
+		</Landform>
+		<FirstHall>MainLobby_DaMo</FirstHall>
+		<Point>
+			<li Point="Point_Desert2" Place="Place_Desert2"/>
+			<li Point="Point_Desert4" Place="Place_Desert4"/>
+			<li Point="Point_Desert3" Place="Place_Desert3"/>
+		</Point>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。可产出大量灵石，少量石料。</Desc>
+		
+		<ClickPlace>Place_Desert</ClickPlace>
+		
+		<Population>70000</Population>
+		<Stability>-25</Stability>
+		<Religions>
+			<li School="2" Attractive="75" Population="28000" />
+			<li School="3" Attractive="20" Population="14000" />
+			<li School="7" Attractive="20" Population="7000" />
+			<li School="9" Attractive="20" Population="7000" />
+		</Religions>
+	</Def>
+	
+	<Def Name="NanHuang" Parent ="Region_Base">
+		<DisplayName>南荒</DisplayName>
+		<Landform>
+			<li>Forest</li>
+		</Landform>
+		<FirstHall>MainLobby_NanHuang</FirstHall>
+		<Point>
+			<li Point="Point_SouthForest1" Place="Place_SouthForest1"/>
+			<li Point="Point_SouthForest3" Place="Place_SouthForest3"/>
+		</Point>
+		
+		<ClickPlace>Place_SouthForest</ClickPlace>
+		
+		<Desc>此地为地区，可建设各类生产型建筑。可产出大量原木。</Desc>
+		
+		<Population>50000</Population>
+		<Stability>-25</Stability>
+		<Religions>
+			<li School="8" Attractive="75" Population="10000" />
+			<li School="6" Attractive="20" Population="5000" />
+		</Religions>
+		
+	</Def>
+	
+	<Def Name="OurPlace" Parent ="Region_Base">
+		<DisplayName>岭南</DisplayName>
+		<Desc>此地为地区，可建设各类生产型建筑。可产出原木，石料，小麦。</Desc>
+		<Landform>
+			<li>Mountain</li>
+			<li>Plain</li>
+			<li>Forest</li>
+			<li>Aqua</li>
+		</Landform>
+		<FirstHall>MainLobby_OurPlace</FirstHall>
+		
+		<ClickPlace>Place_SouthMount</ClickPlace>
+		
+		<Point>
+			<li Point="Point_BirthPlace12" Place="Place_BirthPlace12"/>
+			<li Point="Point_BirthPlace14" Place="Place_BirthPlace14"/>
+			<li Point="Point_BirthPlace13" Place="Place_BirthPlace13"/>
+			<li Point="Point_BirthPlace11" Place="Place_BirthPlace11"/>
+			<li Point="Point_BirthPlace15" Place="Place_BirthPlace15"/>
+		</Point>
+		
+		<Religions>
+			<li School="-1" Attractive="10" Population="15000" />
+		</Religions>
+		
+		<Population>60000</Population>
+		<Stability>25</Stability>
+		<Religions>
+		</Religions>
+	</Def>
+</List></Defs>

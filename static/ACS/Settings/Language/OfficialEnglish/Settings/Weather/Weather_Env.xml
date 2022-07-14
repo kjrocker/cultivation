@@ -1,0 +1,21 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="YinChaos">
+			<DisplayName>Polar Night (Stela)</DisplayName>
+		</Text>
+		<Text Name="Hotpot_Heat">
+			<DisplayName>Heat Wave (Fiery Chasm)</DisplayName>
+			<StoryDesc>The Fiery Chasm becomes unstable, emitting heat wave ceaselessly.</StoryDesc>
+		</Text>
+		<Text Name="ColdHole_Cold">
+			<DisplayName>Chilling Air (Frozen Furnace)</DisplayName>
+			<StoryDesc>The Frozen Furnace becomes unstable, emitting freezing air ceaselessly.</StoryDesc>
+		</Text>
+		<Text Name="Lightning_DragonHole">
+			<DisplayName>Thunderstorm (Mysterious Cavern)</DisplayName>
+		</Text>
+		<Text Name="DustStorm_Dimu">
+			<DisplayName>Dust Storm (Earthmother Shrine)</DisplayName>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,178 @@
+<CommandTypes><List>
+	<CommandType Name="CloseToTreat" Class="CommandCloseTo">
+	<Kind>Treat</Kind>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="MoveToBed" Class="CommandMoveToBed">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="IamDemon" Class="CommandIamDemon">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SysFlagCommand" Class="CommandSysFlag">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="EatItem" Class="CommandEatItem">
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="EquipItem" Class="CommandEquipItem">
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="BuryMe" Class="CommandBuryMe">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SimpleAction" Class="CommandSimpleAction">
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="ZhenAction" Class="CommandSimpleAction">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AlarmbellAction" Class="CommandSimpleAction">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="Linhunkaowen" Class="CommandSimpleAction">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="WalkerAccept" Class="CommandWalkerHelp">
+	<Kind>Care</Kind>
+	<Param>1</Param>
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	</CommandType>
+	
+	<CommandType Name="WalkerHelp" Class="CommandWalkerHelp">
+	<Kind>Care</Kind>
+	<Param>2</Param>
+	<Single>1</Single> 
+	<SingleInKind>1</SingleInKind>
+	</CommandType>
+	
+	<CommandType Name="WalkerExpel" Class="CommandWalkerHelp">
+	<Kind>Care</Kind>
+	<Param>3</Param>
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	</CommandType>
+	
+	<CommandType Name="WalkerPersuade" Class="CommandWalkerHelp">
+	<Kind>Care</Kind>
+	<Param>4</Param>
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	</CommandType>
+	
+	<CommandType Name="Alarmbell" Class="CommandAlarmbell">
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	</CommandType>
+	
+	<CommandType Name="MoveTo" Class="CommandMoveTo">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SlaughterBoss" Class="CommandSlaughterBoss">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="YunYang" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>it:LingPlantYunYang(moveItem)</SParam>
+	</CommandType>
+	<CommandType Name="LongWish" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>it.luaclass:GetTable():NpcWish(me)</SParam>
+	<SParam2>前往许愿</SParam2>
+	</CommandType>
+	
+	<CommandType Name="RobItem" Class="CommandRobItem">
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="TryTalk" Class="CommandTryTalk">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="MibaoChoosesAction" Class="CommandMibaoChoosesAction">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="MoveToTalk" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>GameUlt.WalkTraderTalk(it)</SParam>
+	<SParam2>前往与行商交谈</SParam2>
+	</CommandType>
+	<CommandType Name="MoveToTrade" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>GameUlt.WalkTraderTrade(it)</SParam>
+	<SParam2>前往与行商交易</SParam2>
+	</CommandType>
+	<CommandType Name="Move2UnlockGong" Class="CommandGotoAndStay">
+	<Single>1</Single>
+	<Param>2</Param>
+	<SParam>dazuo|10|me:UnLockGong(it.GongName);ThingMgr:RemoveThing(it)</SParam>
+	<SParam2>前往阅读功法</SParam2>
+	</CommandType>
+	
+	<CommandType Name="JGTunShi" Class="CommandJGTunShi">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="JGTunShiItem" Class="CommandBagCarryItem">
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="MoveToTake" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>CS.XiaWorld.FightMapMgr.Instance:CatchAnimal(it, Worker)</SParam>
+	<SParam2>前往捕获动物</SParam2>
+	</CommandType>
+	<CommandType Name="GoToActiveLcBuild" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>CS.XiaWorld.LingShouMgr.Instance:ActiveLcBuild(it)</SParam>
+	<SParam2>前往激活雕像</SParam2>
+	</CommandType>
+	<CommandType Name="MoveToTakeLc" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>GameUlt.TakeLc(it)</SParam>
+	<SParam2>前往收养</SParam2>
+	</CommandType>
+	<CommandType Name="MoveToRefuseLc" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>GameUlt.RefuceLc(it)</SParam>
+	<SParam2>前往驱逐</SParam2>
+	</CommandType>
+	<CommandType Name="MoveToKickoutAnimal" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>WorldLua:KickoutAnimal(it)</SParam>
+	<SParam2>前往驱逐</SParam2>
+	<SParam3>驱逐,ksjujue,3</SParam3>
+	</CommandType>
+	<CommandType Name="MoveToFreePackAnimal" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>GameUlt.FreePackAnimal(it)</SParam>
+	<SParam2>前往打开</SParam2>
+	<SParam3>打开,gain,3</SParam3>
+	</CommandType>
+	<CommandType Name="GoWishDimu" Class="CommandGoWishDimu">
+		<Single>1</Single>
+		<Param>500</Param>
+		<SParam>Item_LingStone</SParam>
+	</CommandType>
+	<CommandType Name="MoveToCanWu" Class="CommandMoveThingTo">
+	<Single>1</Single>
+	<SParam>MapStoryMgr:TriggerStorySelection("YinYangCanWu", Worker, nil, nil, nil, it)</SParam>
+	<SParam2>前往参悟</SParam2>
+	<SParam3>参悟,dazuo,3</SParam3>
+	</CommandType>
+</List></CommandTypes>

@@ -1,0 +1,128 @@
+<ModifierDefs><List>
+	<!--神性附加效果-->
+	<Modifier Name="GodPractice_GodPowerEffect" Type="Normal">
+		<DisplayName>神性</DisplayName>
+		<Desc>随着神性提高，角色对神力的掌控就越高，战斗能力也越强，同时心情的缩放系数也会提高。</Desc>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<SpecialFlags>
+			<li>GodPowerEffectCount</li><!--这个不要删-->
+		</SpecialFlags>
+		<Properties>  
+			<li Name="EmotionAmplificationFactor" BAddP="-0.005"/>
+		</Properties>
+	</Modifier> 	
+	<Modifier Name="GodPractice_GodPowerEffect_A" Type="Normal">
+		<DisplayName>神性</DisplayName>
+		<Desc>0-30点神性的实际效果</Desc>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<SpecialFlags>
+			<li>GodPowerEffectCountA</li><!--这个不要删-->
+		</SpecialFlags>
+		
+		<Properties>  
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.02"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="-0.02"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="-0.02"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddP="-0.02"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.02"/>
+			<li Name="NpcFight_SpellLingCostAddP" BAddP="-0.02"/>
+		</Properties>
+	</Modifier> 	
+	
+	<Modifier Name="GodPractice_GodPowerEffect_B" Type="Normal">
+		<DisplayName>神性</DisplayName>
+		<Desc>30-100点神性的实际效果</Desc>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<SpecialFlags>
+			<li>GodPowerEffectCountB</li><!--这个不要删-->
+		</SpecialFlags>
+		
+		<Properties>  
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.02"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.02"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="0.02"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddP="0.02"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.02"/>
+			<li Name="NpcFight_SpellLingCostAddP" BAddP="0.02"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--心斋-->
+	<Modifier Name="GodPractice_Xinzhai" Type="Normal">
+		<DisplayName>心斋</DisplayName>
+		<Desc>通过心斋，暂时降低心情的影响，心斋所花的时间越长，心斋成功后效果持续时间越长。在心斋过程中，心境不会改变。</Desc>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="EmotionAmplificationFactor" BAddP="-0.009"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_MINDHOLD</li>
+			<li>FLAG_LOCKMINDSTATE</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_GodLike" Type="Normal">
+		<DisplayName>神化</DisplayName>
+		<Desc>暂时将神性调整到99.99%，持续300秒，在结束后永久获得1%神性。</Desc>
+		<LuaClassName>modifier_godpractice_godlike</LuaClassName>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<ModScale>0.5</ModScale>
+		<SpecialFlags>
+			<li>FLAG_GODPRACTICE_GODLIKE</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Sys_XinYang_KeJi" Type="Normal">
+		<DisplayName>克己</DisplayName>
+		<Desc>信仰修行-克己</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="FatigueConsumeConstant" BAddP="-0.35"/>
+			<li Name="NutritionConsumeConstant" BAddP="-0.35"/>
+			<li Name="WaterConsumeConstant" BAddP="-0.35"/>
+			<li Name="HappyConsumeConstant" BAddP="-0.35"/>
+			<li Name="EmotionAmplificationFactor" BAddP="-0.25"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_NOCOMMUNICATE</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_XinYang_ZongYu" Type="Normal">
+		<DisplayName>纵欲</DisplayName>
+		<Desc>信仰修行-纵欲</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="FatigueConsumeConstant" BAddP="1.75"/>
+			<li Name="NutritionConsumeConstant" BAddP="1.75"/>
+			<li Name="WaterConsumeConstant" BAddP="1.75"/>
+			<li Name="HappyConsumeConstant" BAddP="1.75"/>
+			<li Name="EmotionAmplificationFactor" BAddP="0.5"/>
+		</Properties>
+	</Modifier>	
+	
+</List></ModifierDefs>

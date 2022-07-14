@@ -1,0 +1,68 @@
+<Properties><List>	
+
+<!--信仰转灵气系数-->
+<Property Name="GodPractice_LingConvert">
+	<BaseValue>50</BaseValue>
+</Property>
+
+<!--神民上限-->
+<Property Name="GodCity_MaxResident">
+	<DisplayName>神民上限</DisplayName>
+	<Desc>神道修行者所能接受的信徒上限。</Desc>
+	<PropertyType>God</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1000</BaseValue>
+	<MaxValue>20000000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--核心信徒上限-->
+<Property Name="GodCity_MaxCoreBeliever">
+	<DisplayName>核心信徒上限</DisplayName>
+	<Desc>神道修行者所能拥有的核心信徒上限。</Desc>
+	<PropertyType>God</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>6</BaseValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--神国天劫调整值-->
+<Property Name="GodCity_ThunderAddion">
+	<BaseValue>0</BaseValue>
+	<MaxValue>1</MaxValue>
+	<MinValue>-0.75</MinValue> 
+</Property>
+
+<!--神国信仰获取增幅系数-->
+<Property Name="GodCity_PracticeEffect">
+	<DisplayName>神国信仰获取加成</DisplayName>
+	<Desc>神道修行者从神国获得的信仰值的加成</Desc>
+	<PropertyType>God</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--神国护法数值增幅系数-->
+<Property Name="GodCity_GuardEffect">
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--神性加值-->
+<Property Name="GodPractice_GodPowerAddV">
+	<DisplayName>神性</DisplayName>
+	<Desc>神道修行者的神性加值。</Desc>
+	<PropertyType>God</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>100</MaxValue>
+	<MinValue>-100</MinValue> 
+</Property>
+</List></Properties>

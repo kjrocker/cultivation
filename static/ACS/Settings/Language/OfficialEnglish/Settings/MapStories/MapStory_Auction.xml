@@ -1,0 +1,10 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="TradeAuction">
+			<DisplayName>Auction</DisplayName>
+			<Desc>Arriving at [PLACE], [NAME] discovered an Auction House.</Desc>
+			<Selections.0.Display>Take part in the auction</Selections.0.Display>
+			<Selections.1.Display>Depart</Selections.1.Display>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,19 @@
+<DanFormulas><List>
+	
+	<!--五气辟谷-->
+	<Dan Name="Dan_WuQiNoHunger2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_WuQiNoHunger2</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--三花黄精-->
+	<Dan Name="Dan_SanHuaHuangJing">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_SanHuaHuangJing</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>0.1</Count>
+	</Dan>
+</List></DanFormulas>

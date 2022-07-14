@@ -1,0 +1,392 @@
+<ThingDefs><List>
+<ThingDef Type="Item" Name="ClothesBase" Parent="EquipmentBase">
+	
+	<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<Frags>	
+		<li Frag="Coat" />
+	</Frags>	
+
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="5" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="10" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>衣,甲,御,衫</FabaoSuffix>
+		 <BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!--<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>-->
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>-->
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Item" Name="Item_SummerClothes" Parent="ClothesBase">
+	<ThingName>薄衣衫</ThingName>
+	<TexPath>res/Sprs/object/object_danyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>比较透气的衣物，也可轻微御寒。</Desc>
+	<Item Lable="Clothes">
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>35</CostStuffCount>
+		</BeMade> 	
+
+		<Equip>
+			<ModelID>1</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>3</TemperatureMaxAdd>
+			<TemperatureMinAdd>-1</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1.2</PropertyScaleFromStuff>
+		</Equip> 		
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SilkClothes" Parent="ClothesBase">
+	<ThingName>清凉衣衫</ThingName>
+	<TexPath>res/Sprs/object/object_danyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>清爽宽松的衣物，穿上去会觉得很凉快。</Desc>
+	<Item Lable="Clothes">
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade> 	
+
+		<Equip>
+			<ModelID>2</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>5</TemperatureMaxAdd>
+			<TemperatureMinAdd>2</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1.2</PropertyScaleFromStuff>
+		</Equip> 		
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_PracticeClothes" Parent="ClothesBase">
+	<ThingName>修行衣衫</ThingName>
+	<TexPath>res/Sprs/object/object_mianyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>门派制式衣物，比较保暖，但是不太透气。</Desc>
+	<Item Lable="Clothes">
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>60</CostStuffCount>
+		</BeMade> 	
+
+		<Equip>
+			<ModelID>3</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-1</TemperatureMaxAdd>
+			<TemperatureMinAdd>-4</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1.2</PropertyScaleFromStuff>
+		</Equip> 		
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_FormalClothes" Parent="ClothesBase">
+	<ThingName>休闲衣衫</ThingName>
+	<TexPath>res/Sprs/object/object_mianyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>很日常的衣物，比较保暖，但是不太透气。</Desc>
+	<Item Lable="Clothes">
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>45</CostStuffCount>
+		</BeMade> 	
+
+		<Equip>
+			<ModelID>4</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-2</TemperatureMaxAdd>
+			<TemperatureMinAdd>-4</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1.2</PropertyScaleFromStuff>
+		</Equip> 		
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_WinterClothes" Parent="ClothesBase">
+	<ThingName>厚制衣衫</ThingName>
+	<TexPath>res/Sprs/object/object_mianyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>做工厚实，十分保暖。</Desc>
+	<Item Lable="Clothes">
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>80</CostStuffCount>
+		</BeMade> 	
+
+		<Equip>
+			<ModelID>5</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-4</TemperatureMaxAdd>
+			<TemperatureMinAdd>-6</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1.2</PropertyScaleFromStuff>
+		</Equip> 		
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes1" Parent="ClothesBase">
+	<ThingName>龙鳞法衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>以龙鳞编织的法衣，穿着可提高护体技能等级。</Desc>
+	<Rate>9</Rate>
+	<Beauty>15</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1000</BurningPoint>
+	</Flammability>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>100</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "SPStuffCategories"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 	
+		<Equip>
+			<NeedSex>Male</NeedSex>
+			<ModelID>6</ModelID>
+			<TemperatureMaxAdd>250</TemperatureMaxAdd>
+			<TemperatureMinAdd>-100</TemperatureMinAdd>
+			<ToolModifier>Modifier_Item_SP_Clothes1</ToolModifier>
+		</Equip> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>		
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes2" Parent="Item_SP_Clothes1">
+	<ThingName>阴寰法衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>凝聚纯阴之力的法衣，穿着可提高术法技能等级。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<ModelID>7</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes2</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes3" Parent="Item_SP_Clothes1">
+	<ThingName>烬灭法衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>凝聚纯阳之力的法衣，穿着可提高御器技能等级。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<ModelID>8</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes3</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes4" Parent="Item_SP_Clothes1">
+	<ThingName>蔽天法衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>可以遮蔽天机的法衣，穿着可以降低道行。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<ModelID>9</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes4</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes5" Parent="Item_SP_Clothes1">
+	<ThingName>阳华羽衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>附有辟魔之力的法衣，穿着可以驱除心魔，提高心境。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<ModelID>10</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes5</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes6" Parent="Item_SP_Clothes1">
+	<ThingName>日炎金袍</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>凝聚纯阳之力的法衣，穿着可提高御器技能等级。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>6</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes6</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes7" Parent="Item_SP_Clothes1">
+	<ThingName>火浣衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>以异兽火光鼠之皮缝制的法衣，穿着可提高护体技能等级，并有效降低火属性伤害。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>7</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes7</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes8" Parent="Item_SP_Clothes1">
+	<ThingName>玄海流仙袍</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>可以遮蔽天机的法衣，穿着可以降低道行。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>8</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes8</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes9" Parent="Item_SP_Clothes1">
+	<ThingName>幽玄法衣</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>凝聚纯阴之力的法衣，穿着可提高术法技能等级。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>9</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes9</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Clothes10" Parent="Item_SP_Clothes1">
+	<ThingName>青鹤云裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+	<Desc>附有辟魔之力的法衣，穿着可以驱除心魔，提高心境。</Desc>
+	<Item Lable="Clothes">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>10</ModelID>
+			<ToolModifier>Modifier_Item_SP_Clothes10</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+</List></ThingDefs>

@@ -1,0 +1,166 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="Esoterica_MiBao_1">
+		<DisplayName>诛仙剑典：残卷一</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>上古时代所传的剑道秘册，其上记载有古代仙人为仿制诛戮陷绝四仙剑而做的探索。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n诛仙剑[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_ZhuXianJian</li>
+		</Fabaos>
+	</Esoterica> 
+	<Esoterica Name="Esoterica_MiBao_2">
+		<DisplayName>诛仙剑典：残卷二</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>上古时代所传的剑道秘册，其上记载有古代仙人为仿制诛戮陷绝四仙剑而做的探索。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n戮仙剑[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_LuXianJian</li>
+		</Fabaos>
+	</Esoterica> 
+	<Esoterica Name="Esoterica_MiBao_3">
+		<DisplayName>诛仙剑典：残卷三</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>上古时代所传的剑道秘册，其上记载有古代仙人为仿制诛戮陷绝四仙剑而做的探索。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n陷仙剑[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_XianXianJian</li>
+		</Fabaos>
+	</Esoterica> 
+	<Esoterica Name="Esoterica_MiBao_4">
+		<DisplayName>诛仙剑典：残卷四</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>上古时代所传的剑道秘册，其上记载有古代仙人为仿制诛戮陷绝四仙剑而做的探索。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n绝仙剑[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_JueXianJian</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Esoterica_MiBao_5">
+		<DisplayName>百毒真经残卷</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>21</Difficulty>
+		<Desc>上古南方魔教镇派宝典道统所鉴，可惜大部分内容早已遗失，只有残卷流传。此册记录有三种魔门至宝的炼制方法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n五毒诛仙剑\n代身珠\n十二煞神魔灵砂[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_WuDuZhuXianSword</li>
+			<li>MiBaoFormula_DaiShenZhu</li>
+			<li>MiBaoFormula_ShiErShaShenMoLingSha</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Esoterica_MiBao_6">
+		<DisplayName>广成天书残卷</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>18</Difficulty>
+		<Desc>传闻广成子成道时留下的衣钵道统，可惜大部分内容早已遗失，只有残卷流传。此册记录有两件广成秘宝的炼制方法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n九天元阳尺\n五气雷符[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_JiuTianYuanYangChi</li>
+			<li>MiBaoFormula_WuqiLeiFu</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_MiBao_7">
+		<DisplayName>两界十方大藏宝录残卷</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>18</Difficulty>
+		<Desc>本为佛门无上经典，如今只有残卷传世，其中只有几门秘宝的炼制方法依然完整。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n元神心剑\n金莲神座\n青莲宝色旗[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_JinLianShenZuo</li>
+			<li>MiBaoFormula_YuanShenXinJian</li>
+			<li>MiBaoFormula_MuFabao</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_MiBao_8">
+		<DisplayName>修罗血河宝录残卷</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>24</Difficulty>
+		<Desc>修罗界流传而出的秘册，其中记载了许多魔道秘宝的炼制方法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n天狼钉\n天魔化血神刀\n饮魂珠[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_TianLangDing</li>
+			<li>MiBaoFormula_TianMoHuaXueShenDao</li>
+			<li>MiBaoFormula_YinHunZhu</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_MiBao_9">
+		<DisplayName>星河遗录</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>18</Difficulty>
+		<Desc>来自异界的书册，其创作者已不可考。其中记载有许多传统修行界前所未见之秘宝。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n吸星神梭\n吞灵神剪[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_XiXingShenSuo</li>
+			<li>MiBaoFormula_TunLingShenJian</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_MiBao_10">
+		<DisplayName>瑶池玉书</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>传闻乃是西王母所传，其中记载有天地五方旗之一的炼制之法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n素色云界旗[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_JinFabao</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_MiBao_11">
+		<DisplayName>真武荡魔秘宝录</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>传闻乃是天庭真武大帝所传，其中记载有天地五方旗之一的炼制之法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n真武皂雕旗[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_ShuiFabao</li>
+		</Fabaos>
+	</Esoterica> 
+</List></Esotericas>

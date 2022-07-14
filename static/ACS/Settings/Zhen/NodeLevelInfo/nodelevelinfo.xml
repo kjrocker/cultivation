@@ -1,0 +1,7 @@
+<Defs><List>
+	<Def Name="0" DisplayName="零级阵眼" Color="FFFFFF"/>
+	<Def Name="1" DisplayName="一级阵眼" Color="00c400"/>
+	<Def Name="2" DisplayName="二级阵眼" Color="0099CC"/>
+	<Def Name="3" DisplayName="三级阵眼" Color="C800FF"/>
+	<Def Name="4" DisplayName="四级阵眼" Color="FF8B00"/>
+</List></Defs>

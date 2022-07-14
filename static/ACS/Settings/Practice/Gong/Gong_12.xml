@@ -1,0 +1,134 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_12_None">    
+		<DisplayName>太元五符云箓</DisplayName>
+		<Desc>传闻乃是金仙云中子道统，在传统金丹修行的体系中另辟蹊径，借助破关之机，可凝结五道本命真符，别有玄妙。</Desc>
+		<SelectDesc>此功法随着修为加深，可凝结五道本命真符获得符咒之力的永久加持。但其功法本身于斗法一途上有所缺陷，不擅争斗。</SelectDesc>
+		<FiveBaseNeed>8, -1, 4, 8, -1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Hide>1</Hide>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>化气之境</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>汇流</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>观海</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="5">
+				<DisplayName>初动之境</DisplayName>
+				<Desc></Desc>
+				<Value>3200</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>厚积</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>Physique_1_5_25</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="FuPractice">
+						<DisplayName>初符</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="6">
+				<DisplayName>水火之境</DisplayName>
+				<Desc></Desc>
+				<Value>6000</Value>
+				<Necks>
+					
+					<Neck Location="0.2" Kind="FuPractice">
+						<DisplayName>火符</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+					</Neck>
+				
+					<Neck Location="0.6" Kind="FuPractice">
+						<DisplayName>水符</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>成丹</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>元丹之境</DisplayName>
+				<Desc></Desc>
+				<Value>250000</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Explore">
+						<DisplayName>混成</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="FuPractice">
+						<DisplayName>元符</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>纯阳之境</DisplayName>
+				<Desc></Desc>
+				<Value>7550000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>化形</DisplayName>
+						<Desc></Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="0.8" Kind="FuPractice">
+						<DisplayName>神符</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>云升</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>650000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

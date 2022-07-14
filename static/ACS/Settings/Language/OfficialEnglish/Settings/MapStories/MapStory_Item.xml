@@ -1,0 +1,222 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="Story_BoxFind1">
+			<DisplayName>Search the Box</DisplayName>
+			<Desc>[NAME] found an old box that had some useful things inside.</Desc>
+		</Text>
+		<Text Name="Story_BoxFind2">
+			<DisplayName>Search the corpse.</DisplayName>
+			<Desc>[NAME] carefully searched the corpse and found that nothing other than the weapon could be used.</Desc>
+		</Text>
+		<Text Name="Story_BoxFind3">
+			<DisplayName>Search the corpse.</DisplayName>
+			<Desc>[NAME] carefully searched the corpse, a beam of light shot out of it and went straight into [NAME]'s brain. [NAME] was surprised to find that many more methods of cultivation have now appeared in memory. \n\n[color=#000000]"What on earth happened here? Where did these Laws come from? What exactly happened to this person before they died? " While pleasantly surprised, [/color]\n[NAME] couldn't help but ask questions. \n\nUnfortunately, these past events could not be cleared up...</Desc>
+		</Text>
+		<Text Name="Story_BoxFind4">
+			<DisplayName>Search the corpse.</DisplayName>
+			<Desc>[NAME] carefully searched the corpse and found that nothing other than the weapon could be used.</Desc>
+		</Text>
+		<Text Name="Story_Item_StoneBox">
+			<DisplayName>Stone Casket</DisplayName>
+			<Desc>A mysterious Taoist Priest gave you all a Stone Casket, about a foot square. Neither water nor fire could get inside. It was quite otherworldly. The exterior shone with a light from time to time, this couldn't be a normal item.</Desc>
+			<Selections.0.Display>Use hands to open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_StoneBox1">
+			<DisplayName>Stone Casket</DisplayName>
+			<Desc>This is the chest that the hunter Zhang Erwa from Nanping Village got off of the corpse at the foot of Mt. FullMoon. There is a longsword crossed with a liquor gourd on the exterior, this is the mark of a fellow disciple back in Taiyi Sect. [NAME] remembered the fellow disciple and how he was as a person.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_StoneBox2">
+			<DisplayName>Ancient Casket</DisplayName>
+			<Desc>A stone casket dug out of the boulder that looked like it had been there for decades. Who knows what contents it holds.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_E_FaBaoBox">
+			<DisplayName>Polaris Chest</DisplayName>
+			<Desc>On the night of the attack, the artifact room was breached. You couldn't bear to see such rarities get looted, and so you risked your life to save a few.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_E_DanBox">
+			<DisplayName>Polaris Chest</DisplayName>
+			<Desc>On the night of the attack, the elixir room was breached. You couldn't bear to see such rarities get looted, and so you risked your life to save a few.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_E_MiJiBox">
+			<DisplayName>Polaris Chest</DisplayName>
+			<Desc>On the night of the attack, the Scriptorium was breached. You couldn't bear to see such rarities get looted, and so you risked your life to save a few.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_E_FuBox">
+			<DisplayName>Polaris Chest</DisplayName>
+			<Desc>On the night of the attack, the talisman room was breached. You couldn't bear to see such rarities get looted, and so you risked your life to save a few.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_LunHui_Box1">
+			<DisplayName>Magical Talisman Box</DisplayName>
+			<Desc>Mrs. Lu carries a magical talisman box with three mysterious talismans inside.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_LunHui_Box2">
+			<DisplayName>Magic Talisman Casket</DisplayName>
+			<Desc>Yang Shu carries a magical talisman box with one extremely rare talisman inside.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_ZuShiZhiCi">
+			<DisplayName>Gift of the Master</DisplayName>
+			<Desc>There is a precious treasure within the Gift of the Master.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_BenYuan">
+			<DisplayName>Refine the Heavenly Font</DisplayName>
+			<Desc>To refine the Heavenly Font, the same class of Law must be used at the highest State, otherwise there is no hope of success. The higher your Attainment, the higher the success rate of refining. If you fail, you will sustain injury and it will increase Condemnation. Are you sure you want to refine the Heavenly Font?</Desc>
+			<Selections.0.Display>Refine</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Item_SuoYingZhiJuan">
+			<DisplayName>Miniature Scroll</DisplayName>
+			<Desc>This is a miniature record of all that has happened since the birth of heaven and earth. If you know the true name of the creature in question, you can summon it from the scroll. This is one the 12 Chaotic Numinous Treasures left over from the creation of the world.</Desc>
+			<Selections.0.Display>Give up</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_BossSoulItem">
+			<DisplayName>Inspiration</DisplayName>
+			<Desc>[NAME] attempted to obtain some useful information from it.</Desc>
+			<Selections.0.Display>Use Primordial Spirit</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_OldSchool_Letter">
+			<DisplayName>Mysterious Letter</DisplayName>
+			<Desc>This is the letter left behind by the one that saved you all from danger while you all were fleeing after the destruction of the Sect.</Desc>
+			<Selections.0.Display>Read</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Boss_FengYin">
+			<DisplayName>Inspect</DisplayName>
+			<Desc>It didn't look like there was anything out of the ordinary. Who knows what mysteries it holds.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+			<Selections.1.Display>Destroy</Selections.1.Display>
+			<Selections.2.Display>Give up</Selections.2.Display>
+		</Text>
+		<Text Name="Story_Item_Boss_FengYin1">
+			<DisplayName>Destroy</DisplayName>
+			<Desc>Although [NAME] had no way of discerning what was so dangerous about this item, but when trying to destroy it all of a sudden, an unspeakable sense of terror rose up in the pit of the stomach...what would happen if this were destroyed? Are you sure you want to destroy it? (If you confirm, an ancient beast will be summoned. Your Sect may be completely destroyed if you are not sufficiently prepared. Please consider your choices wisely)</Desc>
+			<Selections.0.Display>Destroy</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Item_Boss_FengYin2">
+			<DisplayName>Destroy</DisplayName>
+			<Desc>[NAME] destroyed the item, but nothing happened.</Desc>
+			<Selections.0.Display>Okay</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Eat_StrangeMush">
+			<DisplayName>Have a Taste</DisplayName>
+			<Desc>[NAME] tasted the strange mushroom with curiosity.</Desc>
+			<Selections.0.Display>Eat it despite the risk</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Item_ZhenTu">
+			<DisplayName>Inspiration</DisplayName>
+			<Desc>[NAME] attempted to meditated on the Formation Diagram.</Desc>
+			<Selections.0.Display>Meditate on the Formation Diagram</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Portia_YijieZhiWu">
+			<DisplayName>Inspect this item</DisplayName>
+			<Desc>[NAME] attempted to inspect this item.</Desc>
+			<Selections.0.Display>Inspect this item</Selections.0.Display>
+			<Selections.1.Display>Unseal</Selections.1.Display>
+			<Selections.2.Display>Give up</Selections.2.Display>
+		</Text>
+		<Text Name="Story_Item_Portia_YijieZhiWu1">
+			<DisplayName>Inspect this item</DisplayName>
+			<Desc>[NAME] feels that the seal of this object is very familiar, having seemingly encountered it before.</Desc>
+			<Selections.0.Display>Carefully examine</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Portia_YijieZhiWu2">
+			<DisplayName>Scattered and disappeared</DisplayName>
+			<Desc>After the spiritual information finished playing, objects from the Otherworld start to get rejected by the ways of Heaven of this world, and gradually become reduced to ashes.</Desc>
+			<Selections.0.Display>Carefully examine</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_GodPractice_MiJuan">
+			<DisplayName>Ancient Scroll</DisplayName>
+			<Desc>A secret scroll passed down from ancient times, its content unknown.</Desc>
+			<Selections.0.Display>Read</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_GodPractice_MiJuan_1">
+			<DisplayName>Learn</DisplayName>
+			<Desc>A book page that recorded how the ancient Shendao cultivators congealed some kind of special miracle.</Desc>
+			<Selections.0.Display>Read</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_God_Guard">
+			<DisplayName>Refine</DisplayName>
+			<Desc>[NAME] attempted to refine this item.</Desc>
+			<Selections.0.Display>Read</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_GodPractice_MiJuan_2">
+			<DisplayName>Unseal</DisplayName>
+			<Desc>[NAME] attempted to lift the seal of this item.</Desc>
+			<Selections.0.Display>Unseal</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Gong12">
+			<DisplayName>Examine scroll</DisplayName>
+			<Desc>[NAME] studied the scroll carefully.</Desc>
+			<Selections.0.Display>Acquired Law</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Body_Gong_2">
+			<DisplayName>Examine scroll</DisplayName>
+			<Desc>[NAME] studied the scroll carefully.</Desc>
+			<Selections.0.Display>Acquired Law</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_Body_Gong_5">
+			<DisplayName>Examine scroll</DisplayName>
+			<Desc>[NAME] studied the scroll carefully.</Desc>
+			<Selections.0.Display>Acquired Law</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_God_GongAll">
+			<DisplayName>Examine Collection</DisplayName>
+			<Desc>[NAME] studied the Collection.</Desc>
+			<Selections.0.Display>Acquired Law</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Item_SpringBox">
+			<DisplayName>Festive Goods</DisplayName>
+			<Desc>Attempt to open this item.</Desc>
+			<Selections.0.Display>Open</Selections.0.Display>
+		</Text>
+		<Text Name="Story_ZhuLongXuYuan_1">
+			<DisplayName>Wish for great fortune</DisplayName>
+			<Desc>Under the influence of the ways of heaven of the Otherworld, some temporary changes have occurred to the heavenly ways in this world as well. Even Torch Dragon, the manifestation of the Rule of Yin and Yang, has been acting less frantically than before, as it become interested in a kind of metal disc called "coins" from the Otherworld. As this coin has harbored many wishes for riches, the Torch Dragon can harness the power of wish onto it to bring you a manifestation of fortune.</Desc>
+			<Selections.0.Display>A large amount of Spiritstone</Selections.0.Display>
+			<Selections.1.Display>A large amount of Ingredient</Selections.1.Display>
+			<Selections.2.Display>A large amount of Wood</Selections.2.Display>
+			<Selections.3.Display>A large amount of Stone</Selections.3.Display>
+			<Selections.4.Display>A large amount of Iron</Selections.4.Display>
+			<Selections.5.Display>Forget it, I dedicate my faith to the Creed of Heaven and seek nothing in return!</Selections.5.Display>
+		</Text>
+		<Text Name="Story_ZhuLongXuYuan_2">
+			<DisplayName>Wish for fine medicines</DisplayName>
+			<Desc>Under the influence of the ways of heaven of the Otherworld, some temporary changes have occurred to the heavenly ways in this world as well. Even Torch Dragon, the manifestation of the Rule of Yin and Yang, has been acting less frantically than before, as it become interested in a kind of metal disc called "coins" from the Otherworld. As this coin has harbored many wishes for health, the Torch Dragon can harness the power of wish onto it to bring you a manifestation of some miraculous medicines.</Desc>
+			<Selections.0.Display>1 Metal Elemental Medicine</Selections.0.Display>
+			<Selections.1.Display>1 Wood Elemental Medicine</Selections.1.Display>
+			<Selections.2.Display>1 Water Elemental Medicine</Selections.2.Display>
+			<Selections.3.Display>1 Fire Elemental Medicine</Selections.3.Display>
+			<Selections.4.Display>1 Earth Elemental Medicine</Selections.4.Display>
+			<Selections.5.Display>15 Resin Essence</Selections.5.Display>
+			<Selections.6.Display>3 Earth Flux</Selections.6.Display>
+			<Selections.7.Display>1 Panacea Pill</Selections.7.Display>
+			<Selections.8.Display>1 set of Prolonging Pill</Selections.8.Display>
+			<Selections.9.Display>1 Enlightenment Pill</Selections.9.Display>
+			<Selections.10.Display>Forget it, I dedicate my faith to the Creed of Heaven and seek nothing in return!</Selections.10.Display>
+		</Text>
+		<Text Name="Story_ZhuLongXuYuan_3">
+			<DisplayName>Wish for exquisite equipments</DisplayName>
+			<Desc>Under the influence of the ways of heaven of the Otherworld, some temporary changes have occurred to the heavenly ways in this world as well. Even Torch Dragon, the manifestation of the Rule of Yin and Yang, has been acting less frantically than before, as it become interested in a kind of metal disc called "coins" from the Otherworld. As this coin has harbored many wishes for fresh clothing, the Torch Dragon can harness the power of wish onto it to bring you a manifestation of a set of protective gear.</Desc>
+			<Selections.0.Display>Cloth that can help you with defense</Selections.0.Display>
+			<Selections.1.Display>Cloth that can help you with spells</Selections.1.Display>
+			<Selections.2.Display>Cloth that can help you with crafting and Psychokinesis</Selections.2.Display>
+			<Selections.3.Display>Cloth that can help you with exploiting the ways of Heaven</Selections.3.Display>
+			<Selections.4.Display>Cloth that can help you with exorcising demons and keeping a tranquil mind</Selections.4.Display>
+			<Selections.5.Display>Skirt that can help you with defense</Selections.5.Display>
+			<Selections.6.Display>Skirt that can help you with spells</Selections.6.Display>
+			<Selections.7.Display>Skirt that can help you with crafting and Psychokinesis</Selections.7.Display>
+			<Selections.8.Display>Skirt that can help you with exploiting the ways of Heaven</Selections.8.Display>
+			<Selections.9.Display>Skirt that can help you with exorcising demons and keeping a tranquil mind</Selections.9.Display>
+			<Selections.10.Display>Forget it, I dedicate my faith to the Creed of Heaven and seek nothing in return!</Selections.10.Display>
+		</Text>
+	</List>
+</Texts>

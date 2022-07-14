@@ -1,0 +1,312 @@
+<ModifierDefs><List>
+	<Modifier Name="Modifier_SuperPart_BaseOn_1_LV1" Type="Normal">
+		<DisplayName>赤玉瞳1</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.02"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.02"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_SuperPart_BaseOn_1_LV2" Type="Normal">
+		<DisplayName>赤玉瞳2</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.02"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.02"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_SuperPart_BaseOn_1_LV3" Type="Normal">
+		<DisplayName>赤玉瞳3</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_2_LV1" Type="Normal">
+		<DisplayName>真阳玲珑心1</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_SuperPart_BaseOn_2_LV2" Type="Normal">
+		<DisplayName>真阳玲珑心2</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_2_1_LV1" Type="Normal">
+		<DisplayName>玄阴琉璃心1</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_SuperPart_BaseOn_2_1_LV2" Type="Normal">
+		<DisplayName>玄阴琉璃心2</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_CatchFaboValue" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_3_LV1" Type="Normal">
+		<DisplayName>天龙脊</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_4_LV1" Type="Normal">
+		<DisplayName>天地烘炉1</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NutritionConsumeConstant" AddV="0.5"/>
+			<li Name="PracticeFoodRecoveryConstant" AddV="0.5"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="25"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_4_LV2" Type="Normal">
+		<DisplayName>天地烘炉2</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="0.5"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.25"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="50"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_4_LV3" Type="Normal">
+		<DisplayName>天地烘炉3</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NutritionConsumeConstant" AddV="1"/>
+			<li Name="PracticeFoodRecoveryConstant" AddV="1"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="75"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_BaseOn_4_LV4" Type="Normal">
+		<DisplayName>天地烘炉4</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="1"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.5"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="100"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_SuperPart_Gong_2_10" Type="Normal">
+		<DisplayName>八极之眼</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_3_16" Type="Normal">
+		<DisplayName>定星尾</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.075"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.075"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.075"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.04"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_5_5" Type="Normal">
+		<DisplayName>逐日腿</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.04"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_5_6" Type="Normal">
+		<DisplayName>虚化之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_5_7" Type="Normal">
+		<DisplayName>千触邪臂</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<BaseFive>0,0,-2,0,0</BaseFive>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_5_8_LV1" Type="Normal">
+		<DisplayName>洞真之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<BaseFive>0,0,-3,0,0</BaseFive>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.02"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.02"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.02"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Gong_5_8_LV2" Type="Normal">
+		<DisplayName>洞真之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<BaseFive>0,0,-5,0,0</BaseFive>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Boar_1" Type="Normal">
+		<DisplayName>血神鬃</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Cat_1" Type="Normal">
+		<DisplayName>九生玄命</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_BodyStrong" AddV="3"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Cat_2" Type="Normal">
+		<DisplayName>九夜玄晶</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Cattle_1" Type="Normal">
+		<DisplayName>四象玄化腹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemMaxRate" AddV="4"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="2"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="1"/>
+			<li Name="NutritionConsumeConstant" AddV="1"/>
+			<li Name="NutritionToJingYuanK" AddV="0.1"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="200"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_SuperPart_Chicken_2" Type="Normal">
+		<DisplayName>天阳真行冠</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_QuenchingSpeed" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Rabbit_2" Type="Normal">
+		<DisplayName>虚化之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Tiger_2" Type="Normal">
+		<DisplayName>御风之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_SuperPart_Wolf_1" Type="Normal">
+		<DisplayName>汲灵之吻</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemMaxRate" AddV="4"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="4"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="-0.8"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SuperPart_Wolf_2" Type="Normal">
+		<DisplayName>荒魂之体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			<li Name="PainTolerance" AddV="35"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

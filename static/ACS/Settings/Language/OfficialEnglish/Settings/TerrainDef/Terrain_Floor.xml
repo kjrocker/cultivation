@@ -1,0 +1,17 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="FloorBase">
+			<DisplayName>Flooring</DisplayName>
+			<StoryDesc>It is within a Sect</StoryDesc>
+		</Text>
+		<Text Name="WoodFloor1">
+			<DisplayName>Wood Flooring</DisplayName>
+		</Text>
+		<Text Name="WoodFloor2">
+			<DisplayName>Wood Flooring</DisplayName>
+		</Text>
+		<Text Name="Carpet1">
+			<StoryDesc>It is on the magnificent, soft red carpeting</StoryDesc>
+		</Text>
+	</List>
+</Texts>

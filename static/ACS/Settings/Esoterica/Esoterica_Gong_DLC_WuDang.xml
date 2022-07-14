@@ -1,0 +1,449 @@
+﻿<Esotericas><List>
+	
+	<Esoterica Name="Gong13_Esoterica_Dan">
+		<DisplayName>北斗真丹方</DisplayName>
+		<Hide>2</Hide>
+		<StarLevel>1</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>记录武当山玄天门下秘传丹药的炼制方法。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n五气辟谷丹\n三花黄精丸</EffectDesc>
+		<Dans>
+			<li>Dan_WuQiNoHunger2</li>
+			<li>Dan_SanHuaHuangJing</li>
+		</Dans>
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Gong13_Esoterica_Fabao1">
+		<DisplayName>真武剑册</DisplayName>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<Desc>武当山秘传的宝卷，其上记载有玄天真武大帝佩剑的炼制方法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n真武荡魔神剑[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_ZhenWuDangMoShenJian</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Gong13_Esoterica_Fabao2">
+		<DisplayName>紫霄万道书</DisplayName>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>武当山秘传的宝卷，其上记载有镇派秘宝紫霄尺的炼制方法。</Desc>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n紫霄尺[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_ZiXiaoChi</li>
+		</Fabaos>
+	</Esoterica> 
+	
+	<Esoterica Name="Gong13_Esoterica_1">
+		<DisplayName>升清观</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>观想清气上升的图景，提高心境，饮气效率。但会使根基不稳，降低灵气最大值，气感。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高心境\n提高饮气效率\n降低气感\n降低灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_2">
+		<DisplayName>凝浊法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>观想浊气凝聚的图景，增强根基，提高灵气最大值，提高气感，但浊息也会影响心境，降低饮气效率。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高气感\n提高灵气最大值\n降低心境\n降低饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_3">
+		<DisplayName>内景开辟</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>以清浊二气于体内开辟内景，改换自身资质，大幅提高五维，并提升角色潜力，并大幅提高角色鼎炉之限。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高五维3成\n大量提高角色潜力\n大幅提高鼎炉之限[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_4">
+		<DisplayName>阳火诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>调动体内绛宫元气，化为无形之火，煅烧周身杂质，大幅提高修炼速度，但会降低御器，术法能力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高修炼速度\n降低5级御器技能等级\n降低5级术法技能等级[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_5">
+		<DisplayName>阴符书</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>观天之道，执天之行。修习此书可运转天地人之杀机于攻伐之中，提高御器，术法能力，但会降低修炼速度。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高5级御器技能等级\n提高5级术法技能等级\n大幅降低修炼速度[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_6">
+		<DisplayName>无极妙录</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>外进阳火，内退阴符，以身为无极。修习此法阴阳调和，可以少量突破御器术法护体之道的极限。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]领悟御器真意，突破御器技能极限3级。\n领悟术法真意，突破术法技能极限3级。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_7">
+		<DisplayName>六阳真形</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以纯阳之力淬炼身躯，凝练六阳之体。将战斗技能提高到极限，但也会失去对艺术的感知，而且会使人浮躁，大量降低心境。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]战斗技能提高20级\n雅艺技能降低20级\n大幅降低心境[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_8">
+		<DisplayName>九阴玄脉</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以纯阴之力淬炼身躯，凝练九阴玄脉。可将雅艺技能提高到极限，大幅提高心境，但也会极度厌倦战斗。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]雅艺技能提高20级\n大幅提高心境\n战斗技能降低20级[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_9">
+		<DisplayName>六九两仪仙体</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>熔炼阴阳之力归一，凝练六九两仪仙体。大幅提高气感，并突破护御之道的极限</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Barrier</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高气感\n领悟护体真意，突破护体技能极限3级。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_9</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_10">
+		<DisplayName>玄天阴阳元神</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>两仪妙道所记载的无上妙法，可凝练一道玄天阴阳元神。玄天阴阳元神会同步本体御剑施法。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]获得玄天阴阳元神[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_10</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong13_Esoterica_11">
+		<DisplayName>穹天吐纳法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>以特有的呼吸之法吐纳天穹之息，修习此法可提高灵气最大值，但会使自身元气剧烈发散，损失二甲子寿命。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高灵气最大值\n大幅降低寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_11</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_12">
+		<DisplayName>元胎呼息法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>运转气脉，将自身转化为胎息状态，修习此法可大幅提高寿命，但会使自身元气沉寂，降低灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]降低灵气最大值\n大幅提高寿命[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_12</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_13">
+		<DisplayName>玄极经</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>洞彻身体内外玄秘之法，修习可辟易五行，提高五行伤害减免。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Barrier</Type>
+		<EffectDesc>[size=10][color=#D06508]提高五行伤害减免[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_13</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_14">
+		<DisplayName>纯阳真罡</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>凝练纯阳真罡于体内，可从根本上提高灵气最大值，但会大幅降低心境。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上大幅提高灵气最大值\n大幅降低心境[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_14</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_15">
+		<DisplayName>太阴心流</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>以太阴之息洗练内心，可大幅提高心境，但会从根本上降低灵气最大值。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高心境\n从根本上大幅降低灵气最大值[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_15</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_16">
+		<DisplayName>周流御气诀</DisplayName>
+		<Hide>2</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>变动不居，周流六虚，上下无常，刚柔相易。此法述尽万法变易之道的真理，修习可大幅降低道行。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_16</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_17">
+		<DisplayName>万妙一谛</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>此法归万妙于一，修习可全面提高功法匹配度。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]提高功法匹配度。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_17</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_18">
+		<DisplayName>虚极剑</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>致虚极，守静笃。修习此法可以大幅提高法宝威力，但是会降低法宝灵气上限。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝威力\n降低法宝灵气值[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_18</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_19">
+		<DisplayName>帝象剑</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>蕴含磅礴大气的御器之法，修习可大幅提高法宝灵气，但会降低法宝威力。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝灵气法宝灵气值\n降低法宝威力[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_19</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_20">
+		<DisplayName>归道剑</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>返璞归真的剑法，可以提高法宝回灵倍率，并突破御器之道的极限。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高法宝回灵倍率\n领悟御器真意，突破御器技能极限3级。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_20</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_21">
+		<DisplayName>为剑</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以阴阳之力御剑，可以增加御使法宝的数量，但精力全部集中在剑法上，会降低术法元灵。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Fabao</Type>
+		<EffectDesc>[size=10][color=#D06508]提高2点法宝数量\n降低2点术法元灵[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_21</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_22">
+		<DisplayName>为法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>以阴阳之力施法，可以增加术法元灵的数量，但精力全部集中在术法上，会降低驾驭法宝的数量。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]提高2点术法元灵\n降低2点法宝数量[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_22</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_23">
+		<DisplayName>为道</DisplayName>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>遵阴阳之理修行，可以巨幅提高学习速度，巨幅提高修炼速度。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]巨幅提高学习速度\n巨幅提高修炼速度[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_23</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_24">
+		<DisplayName>观复诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>万物并作，吾以观复。修习此法可大幅提高术法威力，但会提高术法消耗。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]提高术法威力\n提高术法消耗[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_24</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_25">
+		<DisplayName>抱一法</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>抱元守一，修习此法可大幅降低术法消耗，但术法威力也会降低。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]降低术法威力\n降低术法消耗[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_25</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_26">
+		<DisplayName>无离真法</DisplayName>
+		<Hide>2</Hide>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>载营魄抱一，能无离乎？修习此法可从根本上提高术法威力，并突破术法之道的极限。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]从根本上提高术法威力\n领悟术法真意，突破术法技能极限3级。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_26</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_27">
+		<DisplayName>登霄六步</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>传闻乃是观真武大帝成道飞升所留之遁法，上天入地只需六步。修习此法可提高移动速度，但此法极为潇洒，十分引人注目。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高移动速度\n大幅降低潜行值[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_27</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_28">
+		<DisplayName>潜云无形流</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>可以将身形化入空气中的绝世身法，修习此法会大幅降低移动速度，但会遮人耳目让人难以察觉。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低移动速度\n大幅提高潜行值[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_28</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong13_Esoterica_29">
+		<DisplayName>阴阳化御神遁</DisplayName>
+		<Hide>2</Hide>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>驾驭天地间阴阳之气而行的遁法，可御风千里，瞬息而至。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高历练飞行速度[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_29</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong13_Esoterica_30">
+		<DisplayName>纯阳无极功-正</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>正练纯阳无极功，可从根本上提高灵气最大值。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong13_Esoterica_31</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]从根本上大幅提高灵气最大值。[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_30</Modifier>	
+	</Esoterica>
+	
+	
+	<Esoterica Name="Gong13_Esoterica_31">
+		<DisplayName>纯阳无极功-逆</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>逆练纯阳无极功，可降低道行，但会对丹田造成内息紊乱的伤势。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<Mutex>
+			<li>Gong13_Esoterica_30</li>
+		</Mutex>
+		<EffectDesc>[size=10][color=#D06508]降低道行\n丹田内息紊乱[/color][/size]</EffectDesc>
+		<Modifier>Gong13_Esoterica_31</Modifier>	
+	</Esoterica>
+</List></Esotericas>

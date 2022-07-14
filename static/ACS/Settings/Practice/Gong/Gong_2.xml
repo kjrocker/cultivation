@@ -1,0 +1,180 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_2_Mu">
+		<DisplayName>己寅九冲多宝真解</DisplayName>
+		<Desc>上清灵宝天尊嫡传，丹霞山的镇派秘法，道门的无上炼宝真诀。此法非天资聪颖之人不能修行，通晓此法可炼万物为法宝。其修行共分五重天，十五宫。修行完满便可飞升成仙，超脱凡尘。</Desc>
+		<SelectDesc>此功法擅长炼器术，然而于战斗一道并不在行。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>8,-1,-1,5,3</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Mu</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>kaiguang</li>
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>无想天</DisplayName>
+				<Desc>第一重天，于无想之境中寻得先天灵光，开启修仙大道，故称无想天。</Desc>
+				<Value>1500</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>五心宫</DisplayName>
+						<Desc>以五心朝天之姿静坐，分一心为五心，搏动气血运转。[color=#D06508]\n此瓶颈悟性越高，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_2_25_5</SuccessChange>
+						<FailedChangeAdd>0.1</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>五气宫</DisplayName>
+						<Desc>静中生动，气血奔腾之下，感受五气自然生发于血脉，随气血游走壮大。[color=#D06508]\n此瓶颈根骨越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="5"/>
+						</ResourceCost>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>朝元宫</DisplayName>
+						<Desc>以神念将五气归于气海之中，重复此过程，修为逐渐精深。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>0</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>长生天</DisplayName>
+				<Desc>第二重天，修成此境则成就金丹，神通寿元大增，故称长生天。</Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="0.1" Kind="Chance">
+						<DisplayName>洞玄宫</DisplayName>
+						<Desc>以灵气轰开紫府玄关，沟通天地。仙凡自此两别。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。[/color]</Desc>
+						<CostTime>125</CostTime>
+						<SuccessChange>0</SuccessChange>
+						<FailedChangeAdd>0.25</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>阳和宫</DisplayName>
+						<Desc>以自身之元气，引天地之灵气，法力日渐深厚。[color=#D06508]\n此瓶颈根骨越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.1"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>金灵宫</DisplayName>
+						<Desc>精气神合一，结成金丹，奠定道基。</Desc>
+						<Esoterocas>
+							<li>Magic_ClosedDoor_1</li>
+						</Esoterocas>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="7">
+				<DisplayName>造化天</DisplayName>
+				<Desc>第三重天，于此境界参悟天地万物之性，借他山之石，攻己之玉。为元婴诞生打下根基。</Desc>
+				<Value>140000</Value>
+				<Necks>
+					<Neck Location="0.2" Kind="Chance">
+						<DisplayName>火真宫</DisplayName>
+						<Desc>以金丹之境催发真火三味，熔炼万物。[color=#D06508]\n此瓶颈根骨越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<Damages>
+							<li PartKind="Flesh" Name="Scald1" Rate="0.2"/>
+							<li PartKind="Flesh" Name="Scald2" Rate="0.4"/>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.4"/>
+						</Damages>
+					</Neck>
+					
+					<Neck Location="0.8" Kind="Explore">
+						<DisplayName>万象宫</DisplayName>
+						<Desc>入红尘之中，以真火三味披览万物之妙，成竹在胸。</Desc>
+						<ExploreValue>2</ExploreValue>
+					</Neck>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>妙成宫</DisplayName>
+						<Desc>静坐闭关十二个时辰，于定境之中将所见所学熔于一炉，修行至此，炼器之术已有小成，元婴之妙亦有所得。</Desc>
+						<CostTime>600</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>纯阳天</DisplayName>
+				<Desc>第四重天，以真火锻炼金丹，明心见性，成就上清纯阳元婴，故称纯阳天。</Desc>
+				<Value>250000</Value>
+				<Necks>
+					<Neck Location="0.2" Kind="Chance">
+						<DisplayName>摄悟宫</DisplayName>
+						<Desc>感悟真我，金丹一点灵光现。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。[/color]</Desc>
+						<CostTime>30</CostTime>
+						<SuccessChange>0.2</SuccessChange>
+						<FailedChangeAdd>0.05</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.45" Kind="Chance">
+						<DisplayName>真胎宫</DisplayName>
+						<Desc>温养金丹，壮大真我。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。[/color]</Desc>
+						<CostTime>30</CostTime>
+						<SuccessChange>0.2</SuccessChange>
+						<FailedChangeAdd>0.05</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="10"/>
+						</ResourceCost>
+					</Neck>
+					<Neck Location="1" Kind="Work">
+						<DisplayName>神婴宫</DisplayName>
+						<Desc>金丹破碎，元婴出现。</Desc>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>禹余天</DisplayName>
+				<Desc>第五重天，度过最终雷劫，成就纯阳上清元神，飞升禹余天。</Desc>
+				<Value>6680000</Value>
+				<Necks>
+					<Neck Location="0.2" Kind="Chance">
+						<DisplayName>逍遥宫</DisplayName>
+						<Desc>以元气凝练元神，使之出窍无碍，得以逍遥。[color=#D06508]\n突破此瓶颈会大损寿元，需要注意。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ResourceCost>
+							<Resource kind="Age" value="120"/>
+						</ResourceCost>
+					</Neck>
+					<Neck Location="0.35" Kind="Chance">
+						<DisplayName>定劫宫</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>紫薇宫</DisplayName>
+						<Desc>褪去凡胎，飞升成仙。</Desc>
+						<NeckCountdown>3000</NeckCountdown>
+						<ThunderValue>420000</ThunderValue>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

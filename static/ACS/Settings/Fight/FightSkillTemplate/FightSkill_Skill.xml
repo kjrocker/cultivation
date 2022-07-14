@@ -1,0 +1,50 @@
+<FightSkills><List>
+
+	<Skill Name="SYS_LOST">
+		<DisplayName>模组丢失</DisplayName>
+		<IsTemplate>1</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>999999</CD>
+		<LingCost>999999</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>0</Value>
+		<TargetCamp>Friendly</TargetCamp>
+	</Skill>
+	
+	<Skill Name="TSkillSkill"><!--术法增强基础模板 --> 
+		<DisplayName>术法增强</DisplayName>
+		<IsTemplate>1</IsTemplate>
+		<Kind>Skill</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>240</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng9</CastAni>
+		<Value>0.5</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+	</Skill>
+	
+	<Skill Name="SkillSkill_Gong10_1"><!--术法增强基础模板 --> 
+		<DisplayName>焚日真法</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Skill</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>90</CD>
+		<LingCost>400</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng9</CastAni>
+		<Value>3</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>71</HitEffect>
+	</Skill>
+</List></FightSkills>

@@ -1,0 +1,186 @@
+<JobDefs><List>
+	<JobDef Name="JobCloseTo">
+		<DriverClass>JobCloseTo</DriverClass>
+		<DisplayName>靠近</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobMoveToBed">
+		<DriverClass>JobMoveToBed</DriverClass>
+		<DisplayName>休养</DisplayName>
+	</JobDef>	
+	
+	<JobDef Name="JobDemonLoseSoul">
+		<DriverClass>JobDemonLoseSoul</DriverClass>
+		<DisplayName>五感封闭</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobDemonClaustrophobia">
+		<DriverClass>JobDemonClaustrophobia</DriverClass>
+		<DisplayName>幽闭</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobDemonWail">
+		<DriverClass>JobDemonWail</DriverClass>
+		<DisplayName>恸哭</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobDemonBlank">
+		<DriverClass>JobDemonBlank</DriverClass>
+		<DisplayName>茫然</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobObtainThing">
+		<DriverClass>JobObtainThing</DriverClass>
+		<DisplayName>获取</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobEatItem">
+		<DriverClass>JobEatItem</DriverClass>
+		<DisplayName>吃东西</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobEquipItem">
+		<DriverClass>JobEquipItem</DriverClass>
+		<DisplayName>装备</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobFaceIdle">
+		<DriverClass>JobFaceIdle</DriverClass>
+		<DisplayName>交互</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobFighting"><!--战斗核心模块-->
+		<DriverClass>JobFighting</DriverClass>
+		<DisplayName>战斗中</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobFight">
+		<DriverClass>JobFight</DriverClass>
+		<DisplayName>战斗</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobFightDriver">
+		<DriverClass>JobFightDriver</DriverClass>
+		<DisplayName>战斗中</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobZhenFighting"><!-- 阵法战斗 -->
+		<DriverClass>JobZhenFighting</DriverClass>
+		<DisplayName>战斗中</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobBodyFighting"><!-- 体修战斗 -->
+		<DriverClass>JobBodyFighting</DriverClass>
+		<DisplayName>战斗中</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobLeaveMap">
+		<DriverClass>JobLeaveMap</DriverClass>
+		<DisplayName>离开</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobWaitHelp">
+		<DriverClass>JobWaitHelp</DriverClass>
+		<DisplayName>路人</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobTalk">
+		<DriverClass>JobTalk</DriverClass>
+		<DisplayName>交际</DisplayName>
+		<LowOrder>9</LowOrder>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobSimpleAction">
+		<DriverClass>JobSimpleAction</DriverClass>
+		<DisplayName>行为</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobWalkerHelp">
+		<DriverClass>JobWalkerHelp</DriverClass>
+		<DisplayName>帮助</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobAlarmbell">
+		<DriverClass>JobAlarmbell</DriverClass>
+		<DisplayName>警钟</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMoveTo">
+		<DriverClass>JobMoveTo</DriverClass>
+		<DisplayName>移动到</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMoveThingTo">
+		<DriverClass>JobMoveThingTo</DriverClass>
+		<DisplayName>搬运</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobYSSleep">
+		<DriverClass>JobYSSleep</DriverClass>
+		<DisplayName>沉睡</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobWaitCMD">
+		<DriverClass>JobWaitCMD</DriverClass>
+		<DisplayName>等候命令</DisplayName>
+		<LowOrder>9</LowOrder>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobRobItem">
+		<DriverClass>JobRobItem</DriverClass>
+		<DisplayName>抢夺</DisplayName>
+	</JobDef>	
+	<JobDef Name="JobZhenStart">
+		<DriverClass>JobZhenStart</DriverClass>
+		<DisplayName>结阵</DisplayName>
+	</JobDef>
+	<JobDef Name="JobStayInZhen">
+		<DriverClass>JobStayInZhen</DriverClass>
+		<DisplayName>运转阵法</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRebuildZhen">
+		<DriverClass>JobRebuildZhen</DriverClass>
+		<DisplayName>变阵</DisplayName>
+	</JobDef>
+	<JobDef Name="JobPerformWithBuilding">
+		<DriverClass>JobPerformWithBuilding</DriverClass>
+		<DisplayName>工作</DisplayName>
+	</JobDef>
+	
+	<JobDef Name="JobPerformFree">
+		<DriverClass>JobPerformFree</DriverClass>
+		<DisplayName>闲逛</DisplayName>
+	</JobDef>
+	
+	<JobDef Name="JobTryTalk">
+		<DriverClass>JobTryTalk</DriverClass>
+		<DisplayName>交流</DisplayName>
+	</JobDef>
+	<JobDef Name="JobGotoAndStay">
+		<DriverClass>JobGotoAndStay</DriverClass>
+		<DisplayName>前往</DisplayName>
+		<Desc>前往</Desc>
+	</JobDef>	
+	
+	<JobDef Name="JobJGTunShi">
+		<DriverClass>JobJGTunShi</DriverClass>
+		<DisplayName>精怪吞噬</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobJGRevival">
+		<DriverClass>JobJGRevival</DriverClass>
+		<DisplayName>塑体苏醒</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobYsThink">
+		<DriverClass>JobYsThink</DriverClass>
+		<DisplayName>思考</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobStudyThing">
+		<DriverClass>JobStudyThing</DriverClass>
+		<DisplayName>观察</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobYsToHuman">
+		<DriverClass>JobYsToHuman</DriverClass>
+		<DisplayName>觉醒灵智</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>	
+	<JobDef Name="JobGoFishing">
+		<DriverClass>JobGoFishing</DriverClass>
+		<DisplayName>垂钓</DisplayName>
+	</JobDef>	
+</List></JobDefs>

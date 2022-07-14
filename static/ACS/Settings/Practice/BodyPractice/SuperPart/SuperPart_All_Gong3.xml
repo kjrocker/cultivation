@@ -1,0 +1,818 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Gong_3_1"><!--测试秘体-->
+		<Prefix>妖毒</Prefix>
+		<Suffix>牙</Suffix>
+		<Desc>将双牙淬炼，使之带上毒素腐蚀之气，擅长击破修行者的灵气护盾。</Desc>
+		<DefaultBody>YGAnimal_BearBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_langya01</AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="UpCanineTooth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv1_A01_Mu" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="DownCanineTooth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv1_A01_Mu" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_All" Levels="0,1,4"/>
+				</Labels>
+			</li>		
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>		
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体攻击性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="150"/>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="ArmorPenetration" AddV="0.15"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体攻击命中率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>从根本上中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SuperPart_Gong_3_2"><!--测试秘体-->
+		<Prefix>妖影裂风</Prefix>
+		<Suffix>尾</Suffix>
+		<Desc>将长尾淬炼至如臂指使，可断影裂空，善于镇压法宝。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_huwei01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYhuwei01</DefEffect>
+		
+		<Parts>
+			<li Name="LongTail">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Hips">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>			
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体攻击性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="100"/>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="CatchFabao" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体法宝镇压几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>从根本上中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SuperPart_Gong_3_3"><!--测试秘体-->
+		<Prefix>洞虚</Prefix>
+		<Suffix>爪</Suffix>
+		<Desc>将四爪淬炼到锋锐无匹，一旦练成，其威能可洞穿虚空，轮番使出让人无法躲避。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXxiajiquan</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_shouzhua01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshouzhua01</DefEffect>
+		
+		<Parts>
+			<li Name="LeftFClawBone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_Xia" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftFClawFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+				</Labels>
+			</li>
+			<li Name="RightFClawBone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_Xia" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="RightFClawFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftBClawBone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_Xia" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftBClawFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+				</Labels>
+			</li>
+			<li Name="RightBClawBone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_Xia" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="RightBClawFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+				</Labels>
+			</li>			
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>中幅提高秘体攻击命中率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>大幅提高秘体攻击命中率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>从根本上中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SuperPart_Gong_3_4"><!--测试秘体-->
+		<Prefix>凌霄</Prefix>
+		<Suffix>踏</Suffix>
+		<Desc>威力无比的秘体，以阴阳之力炼入身躯，传闻远古时妖族大圣以此踏碎凌霄，横扫诸仙家无敌，因此得名。</Desc>
+		<DefaultBody>YGAnimal_BoarBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXzuanxintui</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_niuti01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYniuti01</DefEffect>
+		
+		<Parts>
+			<li Name="LeftRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="LeftFHoof">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>		
+			<li Name="RightRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="RightForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="RightFHoof">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>		
+			
+			
+			<li Name="LeftTibia">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="LeftBHoof">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>			
+			<li Name="RightTibia">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="RightCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="RightBHoof">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1"/>
+				</Labels>
+			</li>		
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="SuperPart_Gong_3_5"><!--测试秘体-->
+		<Prefix>千芒妖</Prefix>
+		<Suffix>鬃</Suffix>
+		<Desc>以秘法淬炼脖颈部的硬鬃，以真炁催动便好似千万银芒攒射而出，专破护体罡气。</Desc>
+		<DefaultBody>YGAnimal_BoarBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="Bristles">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_All" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="0,0,1"/>
+				</Labels>
+			</li>	
+			<li Name="RightShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="0,0,1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+
+	
+	<Def Name="SuperPart_Gong_3_6"><!--测试秘体-->
+		<Prefix>蚀骨</Prefix>
+		<Suffix>神风</Suffix>
+		<Desc>以秘法淬炼羽翼，可以发出具有强烈侵蚀力的真炁，擅长穿透灵气护盾。</Desc>
+		<DefaultBody>YGAnimal_ChickenBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXlianhuanzhang</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_chibang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYchibang01</DefEffect>
+		
+		<Parts>
+			<li Name="LeftArmFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>		
+			<li Name="LeftForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="RightArmFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="RightShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+			<li Name="RightPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>		
+			<li Name="RightForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_All" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="0,1,4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>少量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>少量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	
+	<Def Name="SuperPart_Gong_3_7"><!--测试秘体-->
+		<Prefix>浑天妖</Prefix>
+		<Suffix>甲</Suffix>
+		<Desc>将全身皮毛淬炼为浑然一体，可抵御周身侵害。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYpimao01</DefEffect>
+		
+		<Parts>
+			<li Name="HeadFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="BodyFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftArmFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>		
+			<li Name="RightArmFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftLegFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>		
+			<li Name="RightLegFur">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="200"/>
+					<li Name="QuenchingLabel_Lv3_F02_SiHunZhiXi" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>超巨量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Gong_3_8"><!--测试秘体-->
+		<Prefix>妖御</Prefix>
+		<Suffix>玄鳞</Suffix>
+		<Desc>将身体肌肉进化为类似龙鳞的存在，十分擅长抵御强大的冲击。</Desc>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="Hips">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="1,9"/>
+				</Labels>
+			</li>	
+			<li Name="Chest">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="1,9"/>
+				</Labels>
+			</li>	
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="1,9"/>
+				</Labels>
+			</li>		
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="1,9"/>
+				</Labels>
+			</li>	
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="1,9"/>
+				</Labels>
+			</li>		
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上中量提高秘体坚韧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>大量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="SuperPart_Gong_3_9"><!--测试秘体-->
+		<Prefix>万化</Prefix>
+		<Suffix>羽衣</Suffix>
+		<Desc>传闻孔雀妖圣所传护身秘体，以万化之力淬炼羽毛，妙用无穷。</Desc>
+		<DefaultBody>YGAnimal_ChickenBody</DefaultBody>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="HeadFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,1,1"/>
+				</Labels>
+			</li>	
+			<li Name="BodyFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="1,1,1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftArmFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,1,1"/>
+				</Labels>
+			</li>		
+			<li Name="RightArmFeather">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,1,1"/>
+				</Labels>
+			</li>	
+			<li Name="TailFeather1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,0,1"/>
+				</Labels>                                                  
+			</li>	                                                       
+			<li Name="TailFeather2">                                       
+				<Labels>                                                   
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,0,1"/>
+				</Labels>                                                  
+			</li>	                                                       
+			<li Name="TailFeather3">                                       
+				<Labels>                                                   
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,0,1"/>
+				</Labels>                                                  
+			</li>	                                                       
+			<li Name="TailFeather4">                                       
+				<Labels>                                                   
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,0,1"/>
+				</Labels>                                                  
+			</li>	                                                       
+			<li Name="TailFeather5">                                       
+				<Labels>                                                   
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,0,1"/>
+				</Labels>
+			</li>		
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上上大量提高秘体坚韧\n大量提高秘体法宝镇压几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="CatchFabao" AddV="0.15"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>从根本上上大量提高秘体坚韧\n大量提高秘体法宝镇压几率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1500"/>
+					<li Name="CatchFabao" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+
+	
+	
+	
+	<Def Name="SuperPart_Gong_3_10"><!--测试秘体-->
+		<Prefix>太虚妖</Prefix>
+		<Suffix>识</Suffix>
+		<Desc>以无上妖力淬炼大脑，凝练太虚妖识。以此淬炼可有效提高淬炼效果，若是淬炼大脑，更可使大脑发生异变，开发出全身器官的进化潜力。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_TaiXuJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>习得淬炼法：太虚妖识</Desc>
+				<QuenchingMethods>
+					<li>BPQuenchingMethods_Sp2</li>
+				</QuenchingMethods>
+			</li>
+		</Levels>
+	</Def>
+	<Def Name="SuperPart_Gong_3_11"><!--测试秘体-->
+		<Prefix>万兽归</Prefix>
+		<Suffix>息</Suffix>
+		<Desc>集合万兽呼吸吐纳的奥妙，最终修成的秘体。可以大幅提高真炁恢复力。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="Nose">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O01_Chun" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Mouth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O01_Chun" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Throat">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O01_Chun" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Lung">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_O01_Chun" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv4_O01_XuanYueZhenJing" Levels="0,0,1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体真炁恢复</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="15"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体真炁恢复</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="30"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体真炁恢复</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="90"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SuperPart_Gong_3_12"><!--测试秘体-->
+		<Prefix>定星</Prefix>
+		<Suffix>尾</Suffix>
+		<Desc>别出机杼的秘体之法，以特殊手法淬炼尾巴，使之具备呼应周天星斗的力量，大幅提高炼体者的平衡力，继而提升全局的准确度。</Desc>
+		<DefaultBody>YGAnimal_RabbitBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		
+		<Parts>
+			<li Name="ShortTail">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_XuanTianZiQi" Levels="1"/>
+				</Labels>                                                  
+			</li>	                                                       
+			<li Name="Hips">                                              
+				<Labels>                                                   
+					<li Name="QuenchingLabel_Lv4_A02_XuanTianZiQi" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者所有秘体攻击命中率\n大量提高炼体者所有秘体防御成功率\n大量提高炼体者所有秘体法宝镇压几率\n大量提高炼体者所有全局躲闪率</Desc>
+				<Modifier>Modifier_SuperPart_Gong_3_16</Modifier>
+			</li>
+		</Levels>
+	</Def>
+</List></BPSuperPartDefs>

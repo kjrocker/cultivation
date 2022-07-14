@@ -1,0 +1,45 @@
+<Stories><List>	
+	<Story Name="RPGOnlineNpc"  Parent="BaseFillingStory">
+		<DisplayName>测试</DisplayName>
+		<Desc>testtest</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>上传当前角色</Display>
+				<OKResult><![CDATA[	
+				local cur = WorldLua:GetSelectThing()
+				RPGMapMgr.OnlineFightNpc:UploadNpc(cur)
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>召唤一个敌人</Display>
+				<OKResult><![CDATA[	 
+				local k = me.npcObj.Key
+				CS.Wnd_Message.Show("", 2,
+				function(rs)
+					if (rs == nil or rs == "" or rs == "0") then
+						return
+					end
+					RPGMapMgr.OnlineFightNpc:DownloadAndCreateRandomNpc(rs, k, 
+						function(npc) 
+							if (npc == nil) then
+								CS.Wnd_Message.Show(XT("分享码错误或者召唤失败，请重新再试"), 1)
+								return
+							end
+						end
+					)
+				end, 
+				true, XT("请输入分享码"), 1);
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

@@ -1,0 +1,685 @@
+<GodGuardDefs><List>	
+	<Def Name="Guard_LeiBu_1">
+		<DisplayName>雷公</DisplayName>
+		<Rate>12</Rate>
+		<Names>荧</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_lei</Icon>
+		<Desc>掌控雷鸣之力的护法，供奉可全面提高各项能力，并额外提高御器技能等级，法宝威力，但会降低法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_1</Modifier>
+	</Def>	
+	<Def Name="Guard_LeiBu_2">
+		<DisplayName>电母</DisplayName>
+		<Rate>12</Rate>
+		<Names>江</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_dian</Icon>
+		<Desc>掌控闪电之力的护法，供奉可全面提高各项能力，并额外提高御器技能等级，法宝灵气恢复速度，但会降低法宝威力。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_2</Modifier>
+	</Def>	
+	
+	<Def Name="Guard_LeiBu_3">
+		<DisplayName>云霆神将</DisplayName>
+		<Rate>9</Rate>
+		<Names>闪</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_yun</Icon>
+		<Desc>掌控布云操风之力的护法，供奉可少量提高各项能力，并额外提高护体技能等级，但会降低法宝威力。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_3</Modifier>
+	</Def>
+	
+	<Def Name="Guard_LeiBu_4">
+		<DisplayName>御雷神将</DisplayName>
+		<Rate>9</Rate>
+		<Names>震</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_yu01</Icon>
+		<Desc>掌控化雨生雷之力的护法，供奉可少量提高各项能力，并额外提高护体技能等级，但会降低法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_4</Modifier>
+		
+	</Def>	
+	
+	<Def Name="Guard_LeiBu_5">
+		<DisplayName>列缺使</DisplayName>
+		<Rate>6</Rate>
+		<Names>宫</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_lie</Icon>
+		<Desc>雷部五使之一，供奉可提高寿命和灵气最大值，并额外提高法宝威力，法宝灵气，法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_5</Modifier>
+	</Def>	
+	
+	<Def Name="Guard_LeiBu_6">
+		<DisplayName>霹雳使</DisplayName>
+		<Rate>6</Rate>
+		<Names>雷</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_pi</Icon>
+		<Desc>雷部五使之一，供奉可提高寿命和灵气最大值，并额外提高法宝威力，但会降低护盾强度。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_6</Modifier>
+	</Def>
+	
+	<Def Name="Guard_LeiBu_7">
+		<DisplayName>神宵使</DisplayName>
+		<Rate>6</Rate>
+		<Names>玄</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_shen</Icon>
+		<Desc>雷部五使之一，供奉可提高寿命和灵气最大值，并额外提高法宝威力，术法威力，术法消耗。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_7</Modifier>
+		
+	</Def>	
+
+	<Def Name="Guard_LeiBu_8">
+		<DisplayName>天都使</DisplayName>
+		<Rate>6</Rate>
+		<Names>定</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_tian</Icon>
+		<Desc>雷部五使之一，供奉可提高寿命和灵气最大值，并额外提高御器技能等级，术法技能等级，护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_8</Modifier>
+	</Def>	
+	
+	<Def Name="Guard_LeiBu_9">
+		<DisplayName>玉枢使</DisplayName>
+		<Rate>6</Rate>
+		<Names>宙</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_yu</Icon>
+		<Desc>雷部五使之一，供奉可大幅提高寿命和灵气最大值，并习得神通：归一观。</Desc>
+		<Modifier>Modifier_Guard_LeiBu_9</Modifier>
+		<Magic>God_Xiuwei2</Magic>
+	</Def>	
+		
+		
+	<Def Name="Guard_BaBuZhong_1">
+		<DisplayName>天人</DisplayName>
+		<Rate>12</Rate>
+		<Names>帝</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_tian</Icon>
+		<Desc>八部众之首，供奉可大幅全面提高所有能力，并习得神通：神心观。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_1</Modifier>
+		<Magic>God_Xiuwei1</Magic>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_2">
+		<DisplayName>龙王</DisplayName>
+		<Rate>9</Rate>
+		<Names>龙</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_long</Icon>
+		<Desc>八部众之中掌控海洋众生之王，供奉可少量提高所有能力，习得术法：御龙啸，并额外提高术法技能等级，术法威力，但会加倍提高术法消耗。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_2</Modifier>
+		<FightSkill>FightSkill_God_Damage1</FightSkill>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_3">
+		<DisplayName>夜叉</DisplayName>
+		<Rate>9</Rate>
+		<Names>罗</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_ye</Icon>
+		<Desc>八部众之中代表敏捷与隐秘的护法之王，供奉可少量提高各项能力，习得术法：夜叉血咒，并额外提高术法威力，术法消耗，降低术法吟唱时间，调息时间。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_3</Modifier>
+		<FightSkill>FightSkill_God_FightSkill1</FightSkill>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_4">
+		<DisplayName>乾达婆</DisplayName>
+		<Rate>9</Rate>
+		<Names>幻</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_qian</Icon>
+		<Desc>八部众之中代表缥缈变化之护法，供奉可少量提高各项能力，并额外提高法宝灵气恢复速度，降低术法灵气消耗。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_4</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_5">
+		<DisplayName>阿修罗</DisplayName>
+		<Rate>9</Rate>
+		<Names>魔</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_a</Icon>
+		<Desc>八部众之中代表杀戮恶念之护法，供奉可少量提高各项能力，习得术法：修罗剑，并额外提高战斗技能等级，御器技能等级，术法技能等级，护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_5</Modifier>
+		<FightSkill>FightSkill_God_FaBao1</FightSkill>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_6">
+		<DisplayName>迦楼罗</DisplayName>
+		<Rate>9</Rate>
+		<Names>鹏</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jia</Icon>
+		<Desc>八部众之中代表神威庄严之护法，供奉可少量提高各项能力，并额外提高御器飞行速度，法宝速度，法宝转弯速度。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_6</Modifier>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_7">
+		<DisplayName>紧那罗</DisplayName>
+		<Rate>9</Rate>
+		<Names>乐</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jin</Icon>
+		<Desc>八部众之中代表美好宁静之护法，供奉可少量提高各项能力，习得术法：宁静，并额外提高魅力，寿命，灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_7</Modifier>
+		<FightSkill>FightSkill_God_Health2</FightSkill>
+	</Def>	
+		
+	<Def Name="Guard_BaBuZhong_8">
+		<DisplayName>摩乎罗伽</DisplayName>
+		<Rate>9</Rate>
+		<Names>劫</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_mo</Icon>
+		<Desc>八部众之中代表地表众生之王，供奉可少量提高各项能力，获得神通：归一观，并额外提高护盾技能等级，护盾强度。</Desc>
+		<Modifier>Modifier_Guard_BaBuZhong_8</Modifier>
+		<Magic>God_Xiuwei2</Magic>
+	</Def>	
+	
+	<Def Name="Guard_YouMing_1">
+		<DisplayName>通幽判官</DisplayName>
+		<Rate>12</Rate>
+		<Names>李</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_tong</Icon>
+		<Desc>幽冥世界掌管生死之护法，供奉可提高所有能力，并获得神通：阴阳逆转，额外提高护御技能等级，灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_YouMing_1</Modifier>
+		<Magic>God_ResurrectionB</Magic>
+	</Def>	
+	
+		
+	<Def Name="Guard_YouMing_2">
+		<DisplayName>黑衣无常</DisplayName>
+		<Rate>9</Rate>
+		<Names>范</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_hei</Icon>
+		<Desc>幽冥世界勾魂使，供奉可少量提高所有能力，习得术法：无常之护，并额外提高御器技能等级，法宝威力，法宝灵气，法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_YouMing_2</Modifier>
+		<FightSkill>FightSkill_God_Sheild1</FightSkill>
+	</Def>	
+	
+		
+	<Def Name="Guard_YouMing_3">
+		<DisplayName>白袍无常</DisplayName>
+		<Rate>9</Rate>
+		<Names>谢</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_bai</Icon>
+		<Desc>幽冥世界勾魂使，供奉可少量提高所有能力，并额外提高术法技能等级，术法威力，术法消耗。</Desc>
+		<Modifier>Modifier_Guard_YouMing_3</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_YouMing_4">
+		<DisplayName>牛头幽使</DisplayName>
+		<Rate>9</Rate>
+		<Names>牛</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_niu</Icon>
+		<Desc>幽冥世界巡查者，供奉可少量提高所有能力，并额外提高护盾强度，法宝威力。</Desc>
+		<Modifier>Modifier_Guard_YouMing_4</Modifier>
+		
+	</Def>	
+	
+	<Def Name="Guard_YouMing_5">
+		<DisplayName>马面鬼将</DisplayName>
+		<Rate>9</Rate>
+		<Names>马</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_ma</Icon>
+		<Desc>幽冥世界巡查者，供奉可少量提高所有能力，并额外提高护盾强度，术法威力。</Desc>
+		<Modifier>Modifier_Guard_YouMing_5</Modifier>
+	</Def>	
+	
+	<Def Name="Guard_YouMing_6">
+		<DisplayName>引渡人</DisplayName>
+		<Rate>6</Rate>
+		<Names>孟</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_yien</Icon>
+		<Desc>幽冥世界冥河引渡人，供奉可提高寿命和灵气最大值，并额外获得神通：还魂术，额外提高法宝威力，术法威力。</Desc>
+		<Modifier>Modifier_Guard_YouMing_6</Modifier>	
+		<Magic>God_ResurrectionA</Magic>
+	</Def>	
+		
+	<Def Name="Guard_YouMing_7">
+		<DisplayName>阴山卫</DisplayName>
+		<Rate>6</Rate>
+		<Names>何</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_yin</Icon>
+		<Desc>幽冥世界阴山守卫者，供奉可提高寿命和灵气最大值，并额外提高护盾强度，并额外获得神通：归一观。</Desc>
+		<Modifier>Modifier_Guard_YouMing_7</Modifier>
+		<Magic>God_Xiuwei2</Magic>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_1">
+		<DisplayName>贪狼星</DisplayName>
+		<Rate>12</Rate>
+		<Names>戮</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_tan</Icon>
+		<Desc>星宿之灵，凶煞非常，供奉会提高所有能力，并额外提升法宝威力，法术威力，但会大幅降低寿命。</Desc>
+		<Modifier>Modifier_Guard_Other_1</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_2">
+		<DisplayName>七杀星</DisplayName>
+		<Rate>12</Rate>
+		<Names>杀</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_qi</Icon>
+		<Desc>星宿之灵，凶煞非常，供奉会提高所有能力，并额外提升法宝威力，法术威力，但会大幅降低灵气上限。</Desc>
+		<Modifier>Modifier_Guard_Other_2</Modifier>
+		<FightSkill>FightSkill_God_Damage2</FightSkill>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_3">
+		<DisplayName>破军星</DisplayName>
+		<Rate>12</Rate>
+		<Names>军</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_po</Icon>
+		<Desc>星宿之灵，凶煞非常，供奉会提高所有能力，并额外提升法宝威力，法术威力，但会大幅降低护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Other_3</Modifier>	
+	</Def>	
+		
+	<Def Name="Guard_Other_4">
+		<DisplayName>赤灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>赤</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_chi</Icon>
+		<Desc>上古五方五行护法，供奉会少量提高所有能力，并额外提高法术技能等级，法术威力。</Desc>
+		<Modifier>Modifier_Guard_Other_4</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_5">
+		<DisplayName>白灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>白</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_bai</Icon>
+		<Desc>上古五方五行护法，供奉会少量提高所有能力，并额外提高法宝技能等级，法宝威力，法宝灵气上限，法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_Other_5</Modifier>
+	</Def>	
+		
+	<Def Name="Guard_Other_6">
+		<DisplayName>黄灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>姬</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_huang</Icon>
+		<Desc>上古五方五行护法，供奉会少量提高所有能力，并额外提高护体技能等级，护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Other_6</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_7">
+		<DisplayName>黑灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>汁</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_hei</Icon>
+		<Desc>上古五方五行护法，供奉会少量提高所有能力，并额外提高气感。</Desc>
+		<Modifier>Modifier_Guard_Other_7</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_8">
+		<DisplayName>青灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>灵</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_qing</Icon>
+		<Desc>上古五方五行护法，供奉会少量提高所有能力，并额外提高灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_Other_8</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_9">
+		<DisplayName>海灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>汪</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_hai</Icon>
+		<Desc>不知传自何种神道的护法，供奉会少量提高所有能力，并额外提高术法威力。</Desc>
+		<Modifier>Modifier_Guard_Other_9</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_10">
+		<DisplayName>山灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>泰</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_shan</Icon>
+		<Desc>山脉护法之灵，供奉会少量提高所有能力，并额外提升护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Other_10</Modifier>
+		
+	</Def>	
+		
+	<Def Name="Guard_Other_11">
+		<DisplayName>花灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>香</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_hua</Icon>
+		<Desc>百花护法之灵，供奉会少量提高所有能力，习得术法：万花咒，并额外提高灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_Other_11</Modifier>	
+		<FightSkill>FightSkill_God_Health1</FightSkill>
+	</Def>	
+		
+	<Def Name="Guard_Other_12">
+		<DisplayName>巨灵</DisplayName>
+		<Rate>9</Rate>
+		<Names>崇</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_ju</Icon>
+		<Desc>身负巨力的护法，供奉会少量提高所有能力，并额外提高法宝击退能力，法宝抗击退能力。</Desc>
+		<Modifier>Modifier_Guard_Other_12</Modifier>
+	</Def>	
+	
+	
+	<Def Name="Guard_Base_1">
+		<DisplayName>金精</DisplayName>
+		<Rate>6</Rate>
+		<Names>刃</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝技能等级，法宝威力，法宝灵气上限，法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_Base_1</Modifier>
+	</Def>
+	<Def Name="Guard_Base_2">
+		<DisplayName>木精</DisplayName>
+		<Rate>6</Rate>
+		<Names>叶</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_Base_2</Modifier>
+	</Def>
+	<Def Name="Guard_Base_3">
+		<DisplayName>水精</DisplayName>
+		<Rate>6</Rate>
+		<Names>流</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高气感。</Desc>
+		<Modifier>Modifier_Guard_Base_3</Modifier>
+	</Def>
+	<Def Name="Guard_Base_4">
+		<DisplayName>火精</DisplayName>
+		<Rate>6</Rate>
+		<Names>焱</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法术技能等级，法术威力。</Desc>
+		<Modifier>Modifier_Guard_Base_4</Modifier>
+	</Def>
+	<Def Name="Guard_Base_5">
+		<DisplayName>土精</DisplayName>
+		<Rate>6</Rate>
+		<Names>尘</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高护体技能等级，护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Base_5</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_6">
+		<DisplayName>土煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>参</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高寿命。</Desc>
+		<Modifier>Modifier_Guard_Base_6</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_7">
+		<DisplayName>木煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>灵</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高最大灵气值。</Desc>
+		<Modifier>Modifier_Guard_Base_7</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_8">
+		<DisplayName>金煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>灭</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝威力。</Desc>
+		<Modifier>Modifier_Guard_Base_8</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_9">
+		<DisplayName>湖精</DisplayName>
+		<Rate>6</Rate>
+		<Names>于</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝灵气恢复速度。</Desc>
+		<Modifier>Modifier_Guard_Base_9</Modifier>
+	</Def>
+	
+	
+	<Def Name="Guard_Base_10">
+		<DisplayName>晶精</DisplayName>
+		<Rate>6</Rate>
+		<Names>明</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝灵气。</Desc>
+		<Modifier>Modifier_Guard_Base_10</Modifier>
+	</Def>
+	
+	
+	<Def Name="Guard_Base_11">
+		<DisplayName>岩精</DisplayName>
+		<Rate>6</Rate>
+		<Names>厚</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Base_11</Modifier>
+	</Def>
+	<Def Name="Guard_Base_12">
+		<DisplayName>火煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>炽</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法术伤害。</Desc>
+		<Modifier>Modifier_Guard_Base_12</Modifier>
+	</Def>
+	<Def Name="Guard_Base_13">
+		<DisplayName>水煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>决</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以降低法术消耗。</Desc>
+		<Modifier>Modifier_Guard_Base_13</Modifier>
+	</Def>
+	<Def Name="Guard_Base_14">
+		<DisplayName>风精</DisplayName>
+		<Rate>6</Rate>
+		<Names>啸</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_jing</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法术法宝飞行速度。</Desc>
+		<Modifier>Modifier_Guard_Base_14</Modifier>
+	</Def>
+	<Def Name="Guard_Base_15">
+		<DisplayName>风煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>鸣</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝转弯速度。</Desc>
+		<Modifier>Modifier_Guard_Base_15</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_16">
+		<DisplayName>岩煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>执</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝击退距离。</Desc>
+		<Modifier>Modifier_Guard_Base_16</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_17">
+		<DisplayName>韧煞</DisplayName>
+		<Rate>6</Rate>
+		<Names>坚</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_sha</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝击退抵抗。</Desc>
+		<Modifier>Modifier_Guard_Base_17</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_18">
+		<DisplayName>木罡</DisplayName>
+		<Rate>6</Rate>
+		<Names>叶</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_gang</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以降低法术吟唱时间。</Desc>
+		<Modifier>Modifier_Guard_Base_18</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_19">
+		<DisplayName>水罡</DisplayName>
+		<Rate>6</Rate>
+		<Names>波</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_gang</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以降低法术消耗。</Desc>
+		<Modifier>Modifier_Guard_Base_19</Modifier>
+	</Def>
+	
+	
+	<Def Name="Guard_Base_20">
+		<DisplayName>金罡</DisplayName>
+		<Rate>6</Rate>
+		<Names>铜</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_gang</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高御器技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_20</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_21">
+		<DisplayName>火罡</DisplayName>
+		<Rate>6</Rate>
+		<Names>焰</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_gang</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高术法技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_21</Modifier>
+	</Def>
+	<Def Name="Guard_Base_22">
+		<DisplayName>土罡</DisplayName>
+		<Rate>6</Rate>
+		<Names>脉</Names>
+		<Icon>res/Sprs/ui/icon_shenguo_gang</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_22</Modifier>
+	</Def>
+	<!-- 
+	<Def Name="Guard_Base_23">
+		<DisplayName>水精</DisplayName>
+		<Names>流</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高根骨。</Desc>
+		<Modifier>Modifier_Guard_Base_23</Modifier>
+	</Def>
+	<Def Name="Guard_Base_24">
+		<DisplayName>火精</DisplayName>
+		<Names>焱</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高神识。</Desc>
+		<Modifier>Modifier_Guard_Base_24</Modifier>
+	</Def>
+	<Def Name="Guard_Base_25">
+		<DisplayName>土精</DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高魅力。</Desc>
+		<Modifier>Modifier_Guard_Base_25</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_26">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高悟性。</Desc>
+		<Modifier>Modifier_Guard_Base_26</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_27">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高机缘。</Desc>
+		<Modifier>Modifier_Guard_Base_27</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_28">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝威力，法术威力。</Desc>
+		<Modifier>Modifier_Guard_Base_28</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_29">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝灵气恢复速度，降低法术消耗。</Desc>
+		<Modifier>Modifier_Guard_Base_29</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_30">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高法宝威力，护体效果。</Desc>
+		<Modifier>Modifier_Guard_Base_30</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_31">
+		<DisplayName>金精</DisplayName>
+		<Names>刃</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高术法威力，护体效果。</Desc>
+		<Modifier>Modifier_Guard_Base_31</Modifier>
+	</Def>
+	<Def Name="Guard_Base_32">
+		<DisplayName>木精</DisplayName>
+		<Names>叶</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高御器技能等级，护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_32</Modifier>
+	</Def>
+	<Def Name="Guard_Base_33">
+		<DisplayName>水精</DisplayName>
+		<Names>流</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高术法技能等级，护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_33</Modifier>
+	</Def>
+	<Def Name="Guard_Base_34">
+		<DisplayName>火精</DisplayName>
+		<Names>焱</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高御器技能等级，术法技能等级，护体技能等级。</Desc>
+		<Modifier>Modifier_Guard_Base_34</Modifier>
+	</Def>
+	<Def Name="Guard_Base_35">
+		<DisplayName>土精</DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高灵气最大值，法宝威力。</Desc>
+		<Modifier>Modifier_Guard_Base_35</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_36">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高灵气最大值，术法威力。</Desc>
+		<Modifier>Modifier_Guard_Base_36</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_37">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高灵气最大值，护盾强度。</Desc>
+		<Modifier>Modifier_Guard_Base_37</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_38">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高寿命，灵气最大值。</Desc>
+		<Modifier>Modifier_Guard_Base_38</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_39">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高寿命，法宝威力。</Desc>
+		<Modifier>Modifier_Guard_Base_39</Modifier>
+	</Def>
+	
+	<Def Name="Guard_Base_40">
+		<DisplayName></DisplayName>
+		<Names>尘</Names>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		<Desc>天地间随处可见无主护法。供奉此护法可以提高寿命，术法威力。</Desc>
+		<Modifier>Modifier_Guard_Base_40</Modifier>
+	</Def> -->
+</List></GodGuardDefs>

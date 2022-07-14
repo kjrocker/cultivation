@@ -1,0 +1,176 @@
+<Places><List>
+	<Place Name="Place_Level3Base">
+		<Desc>3级地点模板</Desc>
+		<Level>3</Level>
+		<Scale>0.75</Scale>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<ExploreNum>0</ExploreNum>
+		<!--<Events><!{1}** 除外都是随便逛逛**{1}>
+			<li Name="HighFind" Rate="0.1"/>
+			<li Name="Story" Rate="0.2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>4</Count>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Stuff>Item_IronBlock</Stuff>
+				<Count>1</Count>
+			</li> 
+		</HighProduce>-->
+	</Place>
+	
+	
+	<Place Name="Place_QingLianShan" Parent="Place_Level3Base">
+		<Location X="883" Y="981"/>
+		<DisplayName>青莲山</DisplayName>
+		<Desc>此地乃是青莲仙人飞升前隐居之所，藏在南海一滴壬癸真水中。如无秘法指引，不可能找得到这座仙山。</Desc>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="BaoZang_QingLianShan" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_ChiLianYuan" Parent="Place_Level3Base">
+		<DisplayName>琼楼</DisplayName>
+		<Desc>此地乃是本世界第一位飞升的仙人南宫红留下的别府，藏于海天之间一方仙家洞天之中，若没有传承秘法，不可能找到此地。</Desc>
+		<Location X="527" Y="744"/>
+		<Icon>res/Sprs/map/map_xuanwo01</Icon>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="BaoZang_ChiLianYuan" Rate="1"/>
+		</Events>
+	</Place>
+	
+<!-- 	<Place Name="Place_YuLun" Parent="Place_Level3Base">
+		<DisplayName>玉轮仙府</DisplayName>
+		<Desc></Desc>
+		<Location X="338" Y="263"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="BaoZang_YuLun" Rate="1"/>
+		</Events>
+	</Place>
+	 -->
+	<Place Name="Place_LongTai" Parent="Place_Level3Base">
+		<DisplayName>龙台</DisplayName>
+		<Desc>传闻昔日龙族在龙台藏有万千宝藏，并施加无数禁制封印。如今岁月流逝，再加上千年灵潮的冲击，这些禁制大多失效，不乏有人冒险入龙台求取机缘。</Desc>
+		<Location X="84" Y="93"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="HighFind_SpPlace" Rate="0.1"/>
+		</Events>
+	</Place>
+		
+	<Place Name="Place_XuanKongDong" Parent="Place_Level3Base">
+		<DisplayName>玄空洞</DisplayName>
+		<Desc>古仙袁若雪归隐之处，传说袁若雪将毕生珍藏都留在这座别府，留给后世有缘人。常有初出茅庐的正道修行者来此处撞撞机缘。</Desc>
+		<Location X="1643" Y="1001"/>
+		<Icon>res/Sprs/map/map_shandong05</Icon>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="BaoZang_XuanKong" Rate="1"/>
+		</Events>
+	</Place>
+		<!-- 
+	<Place Name="Place_JiangYuanMiJing" Parent="Place_Level3Base">
+		<DisplayName>江源秘境</DisplayName>
+		<Desc></Desc>
+		<Location X="1841" Y="52"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="HighFind" Rate="0.1"/>
+			<li Name="Story" Rate="0.2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>4</Count>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Stuff>Item_IronBlock</Stuff>
+				<Count>1</Count>
+			</li> 
+		</HighProduce>
+	</Place>
+		
+	<Place Name="Place_TianKeng" Parent="Place_Level3Base">
+		<DisplayName>天坑</DisplayName>
+		<Desc></Desc>
+		<Location X="713" Y="889"/>
+		<Icon>res/Sprs/map/map_shangu04</Icon>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="HighFind" Rate="0.1"/>
+			<li Name="Story" Rate="0.2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>4</Count>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Stuff>Item_IronBlock</Stuff>
+				<Count>1</Count>
+			</li> 
+		</HighProduce>
+	</Place> -->
+		
+	<Place Name="Place_GuZhanChang" Parent="Place_Level3Base">
+		<DisplayName>仙魔战场</DisplayName>
+		<Desc>上古时代末期第一次仙魔大战的战场遗迹，其中珍藏无数，但也密布时空破片，凶险异常。彼时修行界渐渐诞生正邪之分，古修士之间争端愈演越烈，最终于南陆爆发决战。此战持续月余，生灵涂炭。天地间阴阳之道于此崩裂，竟然于人间显化出烛龙之真形。烛龙一怒，陆沉海升，南陆崩裂，终结了仙魔第一次大战。这也是如今南荒之地的由来。</Desc>
+		<Location X="302" Y="752"/>
+		<Scale>0.55</Scale>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<Events><!-- 除外都是随便逛逛-->
+			<li Name="HighFind_SpPlace" Rate="0.1"/>
+		</Events>
+	</Place>
+		
+	<Place Name="Place_YiJieLieFeng" Parent="Place_Level3Base">
+		<DisplayName>异界裂缝</DisplayName>
+		<Desc>传说这片破碎的空间可以通向各个异常的时空，乃是上古第二次仙魔大战的产物，数千年来消失无踪，谁料此刻竟然再度现世。不过此地异常凶险，如无特殊机缘，就算大罗金仙也会失陷其中。</Desc>
+		<Location X="1314" Y="159"/>
+		<Icon>res/Sprs/map/map_xuanwo01</Icon>
+		<Events>
+			<li Name="Story_YiJieLieFeng" Rate="1"/>
+		</Events>
+	</Place>
+		<!-- 
+	<Place Name="Place_ShengDianYiJi" Parent="Place_Level3Base">
+		<DisplayName>圣殿遗迹</DisplayName>
+		<Desc></Desc>
+		<Location X="405" Y="192"/>
+		<Scale>0.55</Scale>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="HighFind" Rate="0.1"/>
+			<li Name="Story" Rate="0.2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>4</Count>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Stuff>Item_IronBlock</Stuff>
+				<Count>1</Count>
+			</li> 
+		</HighProduce>
+	</Place> -->
+</List></Places>

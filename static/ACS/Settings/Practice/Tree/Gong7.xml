@@ -1,0 +1,597 @@
+﻿<SkillTree><List>	
+	<Node Name="Gong7_a1" Gong="Gong_7_Huo">
+		<Esoterica>Magic_AbsorbGong_8_1</Esoterica>
+		<DisplayName>清心咒</DisplayName>
+		<Level>Qi</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_a3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong7_a2" Gong="Gong_7_Huo">
+		<Level>Qi</Level>
+		<Index>2</Index>
+		<Line>0,1,0,2,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_a3" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_1</Esoterica>
+		<DisplayName>心斋</DisplayName>
+		<Level>Qi</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<Layers>
+			<li>Gong7_a3_1</li>
+			<li>Gong7_a3_2</li>
+		</Layers>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_a3_1" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_1</Esoterica>
+		<DisplayName>心斋</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_a3_2" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_2</Esoterica>
+		<DisplayName>心斋</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_a7" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_6</Esoterica>
+		<DisplayName>养吾经</DisplayName>
+		<Level>Qi</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b0" Gong="Gong_7_Huo">
+		<Esoterica>Magic_AbsorbLing_Item_1</Esoterica>
+		<DisplayName>吸星掌</DisplayName>
+		<Level>Dan1</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b1" Gong="Gong_7_Huo">
+		<Esoterica>Magic_KongZhi3</Esoterica>
+		<DisplayName>天魔舞</DisplayName>
+		<Level>Dan1</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b2" Gong="Gong_7_Huo">
+		<Esoterica>Magic_KongZhi2</Esoterica>
+		<DisplayName>心印诀</DisplayName>
+		<Level>Dan1</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b3" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_2</Esoterica>
+		<DisplayName>寄情之术</DisplayName>
+		<Level>Dan1</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong7_a3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b7" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_7</Esoterica>
+		<DisplayName>坐忘论</DisplayName>
+		<Level>Dan1</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong7_a7</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_b10" Gong="Gong_7_Huo">
+		<Level>Dan1</Level>
+		<Index>10</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_b11" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_12</Esoterica>
+		<DisplayName>七情剑</DisplayName>
+		<Level>Dan1</Level>
+		<Index>11</Index>
+		<Line>0,0,0,0,1,0,1,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c0" Gong="Gong_7_Huo">
+		<Esoterica>Magic_AbsorbGong_6_1</Esoterica>
+		<DisplayName>魂体寄生</DisplayName>
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c1" Gong="Gong_7_Huo">
+		<Esoterica>Magic_AbsorbGong_2_1</Esoterica>
+		<DisplayName>风月幻境</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong7_c1_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong7_c3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c1_1" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_3</Esoterica>
+		<DisplayName>如意幻境</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_c2" Gong="Gong_7_Huo">
+		<Level>Dan2</Level>
+		<Index>2</Index>
+		<Line>0,1,0,2,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_c3" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_3</Esoterica>
+		<DisplayName>同心诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,1,2,0</Line>
+		<PreUnit>
+			<li>Gong7_b3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c4" Gong="Gong_7_Huo">
+		<Level>Dan2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong7_c5" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_5</Esoterica>
+		<DisplayName>脱胎换骨</DisplayName>
+		<Level>Dan2</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_c7</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c6" Gong="Gong_7_Huo">
+		<Level>Dan2</Level>
+		<Index>6</Index>
+		<Line>0,1,0,2,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_c7" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_8</Esoterica>
+		<DisplayName>长生诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<Layers>
+			<li>Gong7_c7_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong7_b7</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_c7_1" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_4</Esoterica>
+		<DisplayName>长生诀</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_c10" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_11</Esoterica>
+		<DisplayName>心剑</DisplayName>
+		<Level>Dan2</Level>
+		<Index>10</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_b11</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong7_c11" Gong="Gong_7_Huo">
+		<Level>Dan2</Level>
+		<Index>11</Index>
+		<Line>1,0,1,0,1,0,2,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_d0" Gong="Gong_7_Huo">
+		<Esoterica>Magic_Healing_Charisma_1</Esoterica>
+		<DisplayName>再造形神</DisplayName>
+		<Level>God</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_d3" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_4</Esoterica>
+		<DisplayName>太上忘情</DisplayName>
+		<Level>God</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong7_d3_1</li>
+			<li>Gong7_d3_2</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong7_c3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_d3_1" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_5</Esoterica>
+		<DisplayName>太上忘情</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	
+	<Node Name="Gong7_d3_2" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_7</Esoterica>
+		<DisplayName>秘宝：清宁飞羽</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_d4" Gong="Gong_7_Huo">
+		<Esoterica>Magic_AbsorbGong_10_1</Esoterica>
+		<DisplayName>慧剑斩念</DisplayName>
+		<Level>God</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_c3</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_d7" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_9</Esoterica>
+		<DisplayName>风神云体</DisplayName>
+		<Level>God</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_c7</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_d8" Gong="Gong_7_Huo">
+		<Level>God</Level>
+		<Index>8</Index>
+		<Line>0,2,0,1,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_d9" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_10</Esoterica>
+		<DisplayName>斩道见我</DisplayName>
+		<Level>God</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong7_d9_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong7_d7</li>
+			<li>Gong7_d11</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_d9_1" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_LvUpEsoterica_6</Esoterica>
+		<DisplayName>斩念剑</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong7_d10" Gong="Gong_7_Huo">
+		<Level>God</Level>
+		<Index>10</Index>
+		<Line>0,1,0,2,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong7_d11" Gong="Gong_7_Huo">
+		<Esoterica>Gong7_Esoterica_13</Esoterica>
+		<DisplayName>极情剑</DisplayName>
+		<Level>God</Level>
+		<Index>11</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong7_b11</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong7_e4" Gong="Gong_7_Huo">
+		<Esoterica>God2_Dan</Esoterica>
+		<DisplayName>天道神丹</DisplayName>
+		<Level>God2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong7_e8" Gong="Gong_7_Huo">
+		<Esoterica>God2_Fabao</Esoterica>
+		<DisplayName>天道神器</DisplayName>
+		<Level>God2</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+</List></SkillTree> 

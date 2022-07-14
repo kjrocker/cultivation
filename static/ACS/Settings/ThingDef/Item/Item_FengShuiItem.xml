@@ -1,0 +1,729 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="FengShuiItemBase" Parent="ItemBase">
+	
+	<ThingName></ThingName>
+	<Desc>Desc.</Desc>
+	<TexPath></TexPath>
+	
+	<Rate>1</Rate>
+	<MaxStack>1</MaxStack>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+
+	<Beauty>9</Beauty>
+	
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>999</BurningPoint>
+	</Flammability>
+	
+	<IllustratedHandLabel>FSItem</IllustratedHandLabel>
+	
+	<Item  Lable="Other">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FuelMultiplier>1</FuelMultiplier>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix></FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_FengShuiLing" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_FengShuiLing" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiLing" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_FengShuiSha" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_FengShuiSha" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_FengShuiSha" Count="2" Rate="0.1"/>
+		</DevourDatas> 
+	</Item>
+	<Ling>
+		<AddionLing>50</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.75</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_YinZhang1" Parent="FengShuiItemBase">
+	
+	<ThingName>道德印</ThingName>
+	<Desc>传自三十三天的至宝，三清印之一，有镇压风水之妙用。</Desc>
+	<TexPath>res/Sprs/object/object_taiqing</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>印</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>None</Localtion>
+			<Modifiers>
+				<li>SP_FSZhenWu_1a</li>
+			</Modifiers>
+			<Specials>
+				<li>20000</li>
+			</Specials>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_YinZhang2" Parent="FengShuiItemBase">
+	
+	<ThingName>元始印</ThingName>
+	<Desc>传自三十三天的至宝，三清印之一，有镇压风水之妙用。</Desc>
+	<TexPath>res/Sprs/object/object_yuqing</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>印</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>None</Localtion>
+			<Modifiers>
+				<li>SP_FSZhenWu_1b</li>
+			</Modifiers>
+			<Specials>
+				<li>20000</li>
+			</Specials>
+		</Fengshui>				
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_YinZhang3" Parent="FengShuiItemBase">
+	
+	<ThingName>灵宝印</ThingName>
+	<Desc>传自三十三天的至宝，三清印之一，有镇压风水之妙用。</Desc>
+	<TexPath>res/Sprs/object/object_shangqing</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>印</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>None</Localtion>
+			<Modifiers>
+				<li>SP_FSZhenWu_1c</li>
+			</Modifiers>
+			<Specials>
+				<li>20000</li>
+			</Specials>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Ta1" Parent="FengShuiItemBase">
+	
+	<ThingName>天工塔</ThingName>
+	<Desc>传自上古开物宗的宝物，神光莹然，有镇压风水之用。</Desc>
+	<TexPath>res/Sprs/object/object_ta01</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>塔</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>Huo</ElementKind>
+			<ElementPower>0.3</ElementPower>
+			<RoomKind>WorkRoom</RoomKind>
+			<RoomLevel>4</RoomLevel>
+			<Localtion>DontStickingWall</Localtion>
+			<Modifiers>
+				<li>SP_FSZhenWu_2</li>
+			</Modifiers>
+			<Specials>
+				<li>74</li>
+				<li>75</li>
+				<li>20000</li>
+			</Specials>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Ta2" Parent="FengShuiItemBase">
+	
+	<ThingName>万灵塔</ThingName>
+	<Desc>以万年灵晶雕琢的金塔，灵气逼人，可镇压风水。</Desc>
+	<TexPath>res/Sprs/object/object_ta02</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>塔</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>4</RoomLevel>
+			<Localtion>None</Localtion>
+			<Specials>
+				<li>10001</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_3</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	<Ling>
+		<AddionLing>150</AddionLing>
+		<AddionRadius>7</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>200</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Ping1" Parent="FengShuiItemBase">
+	
+	<ThingName>汇阴瓶</ThingName>
+	<Desc>不知从何地出土的邪物，能汇集风水煞气并将之逆转，十分灵异。</Desc>
+	<TexPath>res\Sprs\buildingnew\building_huaping02</TexPath>
+	<TexScale>0.75</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>瓶</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Hard2</li>
+			<li>Smooth2</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>CornerThree</Localtion>
+			<Specials>
+				<li>91</li>
+				<li>10002</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_4</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Ding1" Parent="FengShuiItemBase">
+	
+	<ThingName>十州鼎</ThingName>
+	<Desc>古代仙人祭天地的宝鼎，传说有沟通天道的作用。</Desc>
+	<TexPath>res\Sprs\buildingnew\building_smallding02_F</TexPath>
+	<TexScale>0.6</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>鼎</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>4</RoomLevel>
+			<Localtion>None</Localtion>
+			<Specials>
+				<li>10003</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_5</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Bei1" Parent="FengShuiItemBase">
+	
+	<ThingName>无字灵碑</ThingName>
+	<Desc>魔帝付辟空所铸灵碑，其上无字，却能返照真灵，让人灵智洞开。</Desc>
+	<TexPath>res/Sprs/object/object_shibei1</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>碑</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>None</Localtion>
+			<Specials>
+				<li>10004</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_6</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_ShiZi1" Parent="FengShuiItemBase">
+	
+	<ThingName>辟邪玉狮子</ThingName>
+	<Desc>以雷霆淬炼的宝玉雕刻成的玉石狮子，能辟邪清乱，使人心神舒缓。</Desc>
+	<TexPath>res/Sprs/object/object_shizi01</TexPath>
+	<TexScale>0.5</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>狮</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>BedRoom</RoomKind>
+			<RoomLevel>2</RoomLevel>
+			<Localtion>BesideDoor</Localtion>
+			<Specials>
+				<li>92</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_7</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_ShiTou1" Parent="FengShuiItemBase">
+	
+	<ThingName>不周元石</ThingName>
+	<Desc>不周山中心具有神力的岩石，富含生发之息，滋润生灵。</Desc>
+	<TexPath>res\Sprs\object\object_zaohuaYZ01</TexPath>
+	<TexScale>0.6</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>石</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>Smooth2</li>
+			<li>GreatThing_Knock</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>Huo</ElementKind>
+			<ElementPower>1.2</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>CornerThree</Localtion>
+			<Specials>
+				<li>51</li>
+				<li>54</li>
+				<li>68</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_8</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_TuHua1" Parent="FengShuiItemBase">
+	
+	<ThingName>三才阴阳榜</ThingName>
+	<Desc>蕴含天地人三才阴阳变换的字卷，藏有精气转化之妙谛。</Desc>
+	<TexPath>res\Sprs\object\object_shuahua01</TexPath>
+	<TexScale>0.6</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>图</FabaoSuffix>
+		<PhysicalLables>			
+			<li>Light1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>Jin</ElementKind>
+			<ElementPower>0.7</ElementPower>
+			<RoomKind>BedRoom</RoomKind>
+			<RoomLevel>3</RoomLevel>
+			<Localtion>BesideBedRoom</Localtion>
+			<Specials>
+				<li>30</li>
+				<li>33</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_9</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_ShuJi1" Parent="FengShuiItemBase">
+	
+	<ThingName>群鲜录</ThingName>
+	<Desc>其上绘有许多无法辨认的图形，据说是来自天庭的菜谱，可镇压风水。</Desc>
+	<TexPath>res\Sprs\object\object_shuji01</TexPath>
+	<TexScale>0.7</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>书,册</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>Huo</ElementKind>
+			<ElementPower>0.7</ElementPower>
+			<RoomKind>Kitchen</RoomKind>
+			<RoomLevel>3</RoomLevel>
+			<Localtion>BesideKitchen</Localtion>
+			<Specials>
+				<li>60</li>
+				<li>10005</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_10</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_QiJu1" Parent="FengShuiItemBase">
+	
+	<ThingName>仙机谱</ThingName>
+	<Desc>一张传自上古的棋局，传说其中暗含修行之道演化之玄机。观之使人对仙道艰辛充满敬畏而忘我投入。</Desc>
+	<TexPath>res\Sprs\object\object_qiju01</TexPath>
+	<TexScale>0.6</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>谱</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>AncestorRoom</RoomKind>
+			<RoomLevel>4</RoomLevel>
+			<Localtion>DnotBesideAncestorRoom</Localtion>
+			<Specials>
+				<li>10006</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_11</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_FuZhou1" Parent="FengShuiItemBase">
+	
+	<ThingName>锁阴符</ThingName>
+	<Desc>来自上古御尸宗的灵符，积累了厚重的尸气已无法佩戴。但如果布置得当却可以镇压风水。</Desc>
+	<TexPath>res\Sprs\object\object_fuzhou03b</TexPath>
+	<TexScale>0.8</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>符</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>BesideDoor</Localtion>
+			<Specials>
+				<li>10007</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_12</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_Jian1" Parent="FengShuiItemBase">
+	
+	<ThingName>灵宝剑</ThingName>
+	<Desc>蕴含造物之道的宝剑，不可用来杀敌，但却可镇压风水。</Desc>
+	<TexPath>res\Sprs\object\object_weaponjian01</TexPath>
+	<TexScale>0.8</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>剑</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>BaoRoom</RoomKind>
+			<RoomLevel>3</RoomLevel>
+			<Localtion>StickingWall</Localtion>
+			<Specials>
+				<li>10008</li>
+				<li>10009</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_13</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_HuLu1" Parent="FengShuiItemBase">
+	
+	<ThingName>兜率葫芦</ThingName>
+	<Desc>传说兜率宫中用来装药的葫芦，不知何故流落人间，可镇压风水。</Desc>
+	<TexPath>res\Sprs\object\object_HULUdanyao01</TexPath>
+	<TexScale>0.8</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>葫</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Hard2</li>
+			<li>Smooth2</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>DanRoom</RoomKind>
+			<RoomLevel>3</RoomLevel>
+			<Localtion>BesideDanRoom</Localtion>
+			<Specials>
+				<li>10008</li>
+				<li>10009</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_14</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="FengShuiItem_BaoBei1" Parent="FengShuiItemBase">
+	
+	<ThingName>赤龙之根</ThingName>
+	<Desc>上古赤龙之根，传说赤龙乃天地真阳孕育，此物虽然性烈，但其中蕴含之真阳之息却可促人修行。</Desc>
+	<TexPath>res\Sprs\object\building_JJ01</TexPath>
+	<TexScale>0.9</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>根</FabaoSuffix>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>BedRoom</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>BesideBedRoom</Localtion>
+			<Specials>
+				<li>28</li>
+				<li>32</li>
+				<li>10010</li>
+				<li>10011</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_15</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FengShuiItem_SheLi1" Parent="FengShuiItemBase">
+	
+	<ThingName>慧光</ThingName>
+	<Desc>上古神修至宝，可镇压风水。神修流传自上古，近代其传人宝物几近绝迹，此物出土似乎昭示着什么。</Desc>
+	<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+	<TexScale>0.9</TexScale>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item Lable="Other">
+		<FuelMultiplier>1</FuelMultiplier>
+		<FabaoSuffix>舍利</FabaoSuffix>
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>Smooth2</li>
+		</PhysicalLables>
+		<Fengshui>
+			<AddV>30</AddV>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+			<RoomKind>None</RoomKind>
+			<RoomLevel>0</RoomLevel>
+			<Localtion>None</Localtion>
+			<Specials>
+				<li>92</li>
+				<li>20000</li>
+			</Specials>
+			<Modifiers>
+				<li>SP_FSZhenWu_16</li>
+			</Modifiers>
+		</Fengshui>			
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

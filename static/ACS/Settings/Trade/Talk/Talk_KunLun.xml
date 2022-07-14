@@ -1,0 +1,13 @@
+<Defs><List>
+	<Def Name="Talk_KunLun" Parent="Talk_DanXia">
+		<Submiss>
+			<li>失敬失敬，说说你来的目的吧。</li>
+		</Submiss>
+		<GiftLike>
+			<li>我本以为自己对凡尘已毫无眷恋，可看到了此物，还是倍感欣慰。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>此物毫无价值。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

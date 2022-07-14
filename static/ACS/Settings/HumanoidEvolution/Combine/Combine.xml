@@ -1,0 +1,41 @@
+<Defs><List>	
+	<Def Name="ATarget">
+		<T>ATarget</T>
+		<DisplayName>认知</DisplayName>
+		<Type>
+			<li T="Target" Scale="1"/>
+			<li T="Target" Scale="0"/>
+			<li T="Target" Scale="0"/>
+		</Type>
+	</Def>
+	
+	<Def Name="AScene">
+		<T>AScene</T>
+		<DisplayName>理智</DisplayName>
+		<Type>
+			<li T="Scene" Scale="1"/>
+			<li T="Scene" Scale="0"/>
+			<li T="Scene" Scale="0"/>
+		</Type>
+	</Def>
+	
+	<Def Name="AEmotion">
+		<T>AEmotion</T>
+		<DisplayName>感知</DisplayName>
+		<Type>
+			<li T="Emotion" Scale="1"/>
+			<li T="Emotion" Scale="0"/>
+			<li T="Emotion" Scale="0"/>
+		</Type>
+	</Def>
+	
+	<Def Name="FNode">
+		<T>FNode</T>
+		<DisplayName>灵智碎片</DisplayName>
+		<Type>
+			<li T="AScene" Scale="1"/>
+			<li T="ATarget" Scale="1"/>
+			<li T="AEmotion" Scale="1"/>
+		</Type>
+	</Def>
+</List></Defs>

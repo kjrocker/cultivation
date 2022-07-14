@@ -1,0 +1,14 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="MainMenuEnv">
+			<Notes>Comment about Environment of Main Menu UI</Notes>
+			<Title>Environment</Title>
+			<Desc>By choosing monsters, Abode, Relics to change the environment, makes the game different from the beginning.</Desc>
+		</Text>
+		<Text Name="MainMenuImmortal">
+			<Notes>Comment about Environment of Main Menu UI</Notes>
+			<Title>Immortal Mode</Title>
+			<Desc>Increase the game difficulty by some selections. There is also a varieties of challenges and achievements.</Desc>
+		</Text>
+	</List>
+</Texts>

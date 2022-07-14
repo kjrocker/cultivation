@@ -1,0 +1,39 @@
+ID	Name	Des	InitialKey1	InitialKey2	IgnoreCombinationkeys	Lock	Type
+功能ID	功能名称	功能描述	快捷键组1	快捷键组2	忽略组合键冲突	锁定，玩家不可修改	类型
+Up	上		W	UpArrow	LeftAlt+LeftShift+LeftControl+RightAlt+RightShift+RightControl		玩家
+down	下		S	DownArrow	LeftAlt+LeftShift+LeftControl+RightAlt+RightShift+RightControl		玩家
+left	左		A	LeftArrow	LeftAlt+LeftShift+LeftControl+RightAlt+RightShift+RightControl		玩家
+right	右		D	RightArrow	LeftAlt+LeftShift+LeftControl+RightAlt+RightShift+RightControl		玩家
+GamePauseOrPlay	物品交互		E				玩家
+SwitchPlayer	切换队长		LeftControl				玩家
+SwichNpc	切换对象		Tab				玩家
+MinMap	小地图		Comma				界面
+Interact1	交互选项1		F1				交互
+Interact2	交互选项2		F2				交互
+Interact3	交互选项3		F3				交互
+Interact4	交互选项4		F4				交互
+Interact5	交互选项5		F5				交互
+Interact6	交互选项6		F6				交互
+Interact7	交互选项7		F7				交互
+Interact8	交互选项8		F8				交互
+Interact9	交互选项9		F9				交互
+Interact10	交互选项10		F10				交互
+Interact11	交互选项11		F11				交互
+Interact12	交互选项12		F12				交互
+Miracle1	技能1		Alpha1				技能
+Miracle2	技能2		Alpha2				技能
+Miracle3	技能3		Alpha3				技能
+Miracle4	技能4		Alpha4				技能
+Miracle5	技能5		Alpha5				技能
+Miracle6	技能6		Alpha6				技能
+Miracle7	技能7		Alpha7				技能
+Miracle8	技能8		Alpha8				技能
+Miracle9	技能9		Alpha9				技能
+Miracle10	技能10		Alpha0				技能
+MiraclePrevPage	技能面板上一页		Minus				技能
+MiracleNextPage	技能面板下一页		Equals				技能
+Flying	切换飞行状态		Space		LeftAlt+LeftShift+LeftControl+RightAlt+RightShift+RightControl		玩家
+Attack	选择攻击对象		BackQuote				玩家
+Sprint	冲刺		LeftShift				玩家
+ShowOrHide	隐藏/显示UI		F11				系统
+StopJob	打断行为	打断当前行为，部分行为无法打断。	LeftAlt+S				玩家

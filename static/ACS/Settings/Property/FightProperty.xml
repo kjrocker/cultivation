@@ -1,0 +1,495 @@
+﻿<Properties><List>	
+	<!--基础命中-->
+	<Property Name="NpcFight_BaseHitChance">
+		<DisplayName>战斗命中</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>外门攻击命中敌人的几率。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MaxValue>0.95</MaxValue> 
+		<MinValue>0</MinValue> 
+		
+		<Functions>
+			<li Name="Operation" Weight="0.5"/>
+			<li Name="Feeling" Weight="0.5"/>
+		</Functions>
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0.7" Addion="0.02"/>
+		</Skills>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>	
+	
+	<!--基础闪避-->
+	<Property Name="NpcFight_BaseDodgeChance">
+		<DisplayName>战斗闪避</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼体者直接闪避攻击的几率。</Desc>
+		<PropertyType>Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MaxValue>0.95</MaxValue> 
+		<MinValue>0</MinValue> 
+		
+		<Functions>
+			<li Name="Movement" Weight="0.5"/>
+			<li Name="Feeling" Weight="0.5"/>
+		</Functions>
+		
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0.05" Addion="0.01"/>
+		</Skills>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>	
+	
+	<!--护盾转化率装备附加值-->
+	<Property Name="NpcFight_ShieldConversionEquipAdd">
+		<BaseValue>0</BaseValue>
+	</Property>	
+	
+	
+	<Property Name="NpcFight_FabaoNum">
+		<DisplayName>法宝数量</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>角色可以携带的法宝数量。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		<MaxValue>6</MaxValue> 
+	</Property>
+	
+	<Property Name="NpcFight_FabaoLingRecoverK">
+		<DisplayName>法宝回灵倍率</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>法宝从角色身上吸取灵气回灵的倍率。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		<BaseValue>2</BaseValue>
+		<MinValue>0.25</MinValue>
+	</Property>
+	
+	<Property Name="NpcFight_FabaoPowerAddP">
+		<DisplayName>法宝威力加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝造成伤害的能力。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.5</BaseValue>
+		<MinValue>0.001</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="0.75" Base="1" Addion="0.1"/>
+			<li Name="Fight" Weight="0.25" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoLingRecoverAddP">
+		<DisplayName>法宝灵气恢复速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝恢复灵气的速度。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.001</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoCoolDownAddP">
+		<DisplayName>法宝攻击间隔加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝发动攻击的最小间隔。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>-0.6</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="0.5" Base="1.3" Addion="-0.03"/>
+			<li Name="Fight" Weight="0.5" Base="1.3" Addion="-0.03"/>
+		</Skills>
+		<AddValue>-1</AddValue>
+	</Property>
+	<Property Name="NpcFight_FabaoMaxLingAddP">
+		<DisplayName>法宝灵气最大值加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝容纳灵气的最大值。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.01</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoRepelDistanceAddV">
+		<DisplayName>法宝击退距离加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝与其他法宝争斗时，将其击退的距离。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="0.5" Base="0.1" Addion="0.02"/>
+			<li Name="Fight" Weight="0.5" Base="0.1" Addion="0.02"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoFlySpeedAddP">
+		<DisplayName>法宝飞行速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>驾驭法宝飞行的速度。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.25</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="0.7" Base="0.7" Addion="0.03"/>
+			<li Name="Fight" Weight="0.3" Base="0.7" Addion="0.03"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoTurnSpeedAddP">
+		<DisplayName>法宝转向速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>驾驭法宝转弯的速度。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.25</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="0.75" Base="1" Addion="0.065"/>
+			<li Name="Fight" Weight="0.25" Base="1" Addion="0.04"/>
+		</Skills>
+	</Property>
+	<Property Name="NpcFight_FabaoRepelResistanceAddV">
+		<DisplayName>法宝击退距离抗性</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝与其他法宝争斗时，抵抗其击退的能力。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="0.1" Addion="0.02"/>
+		</Skills>
+	</Property>
+	
+	<Property Name="NpcFight_FabaoTrailingLengthAddP">
+		<DisplayName>法宝拖尾长度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>法宝飞行时，拖尾的长度。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.25</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="1" Addion="0.2"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_SpellPowerAddP">
+		<DisplayName>术法威力加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>释放伤害或恢复类术法时，术法的效果大小。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.5</BaseValue>
+		<MinValue>0.001</MinValue> 
+		<Skills>
+			<li Name="FightSkill" Weight="0.75" Base="1" Addion="0.1"/>
+			<li Name="Fight" Weight="0.25" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>	
+	<Property Name="NpcFight_SpellLingCostAddP">
+		<DisplayName>术法灵气消耗加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>释放术法时，消耗的灵气。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.2</BaseValue>
+		<MinValue>0.001</MinValue> 
+		
+		<Skills>
+			<li Name="FightSkill" Weight="0.75" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>	
+	<Property Name="NpcFight_SpellCastTimeAddP">
+		<DisplayName>术法吟唱时间加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>释放术法时准备所属的时间长短。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.2</MinValue> 
+		
+		<Skills>
+			<li Name="FightSkill" Weight="1" Base="1.3" Addion="-0.03"/>
+		</Skills>
+	</Property>	
+	<Property Name="NpcFight_SpellCoolDownAddP">
+		<DisplayName>术法冷却时间加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc></Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<SupportCustom>0</SupportCustom>
+		<BaseValue>1</BaseValue>
+		<MinValue>0.5</MinValue> 
+		
+		<Skills>
+			<li Name="FightSkill" Weight="1" Base="0" Addion="-0.01"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_FightSkillSoul">
+		<DisplayName>术法元灵</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>术法之道登峰造极的人才能凝练而出。将之附着到法术上，法术就会在战斗中自动释放。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<MinValue>0</MinValue> 
+		<MaxValue>9</MaxValue>
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="FightSkill" Weight="1" Base="-4" Addion="0.25"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldConversionRate">
+		<DisplayName>护盾强度加值</DisplayName>
+		<DisplayValue>{0:N3}点伤害/灵气</DisplayValue>
+		<Desc>遭受攻击时，灵气护盾每点灵气抵挡伤害的加值。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<Skills>
+			<li Name="Barrier" Weight="0.75" Base="1" Addion="0.05"/>
+			<li Name="Fight" Weight="0.25" Base="1" Addion="0.05"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldConversionRateAddP">
+		<DisplayName>护盾强度加成</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>遭受攻击时，灵气护盾每点灵气抵挡伤害的加成。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.1"/>
+		</Skills>
+	</Property>	
+	
+	
+	<Property Name="NpcFight_ZhenKeyPointNum">
+		<DisplayName>阵法规模</DisplayName>
+		<DisplayValue>{0:N}</DisplayValue>
+		<Desc>此人作为阵枢时，能驾驭的阵法规模。阵法人数越多，规模越大。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>4</MinValue> 
+		<Skills>
+			<li Name="Zhen" Weight="1" Base="2" Addion="0.25"/>
+		</Skills>
+		<AddValue>2</AddValue>	
+	</Property>	
+	
+	<Property Name="NpcFight_ZhenEnginePower">
+		<DisplayName>阵法负荷能力</DisplayName>
+		<DisplayValue>{0:N}</DisplayValue>
+		<Desc>此人作为阵枢时，能承担的阵法负荷。阵法越复杂，负荷越高。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		<BaseValue>4</BaseValue>
+		<MinValue>14</MinValue> 
+		<Skills>
+			<li Name="Zhen" Weight="1" Base="1" Addion="1"/>
+		</Skills>
+		<AddValue>10</AddValue>	
+	</Property>	
+
+	
+	<Property Name="NpcFight_ShieldResistanceToJin">
+		<DisplayName>金属性伤害减免</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>修行者遭受金属性伤害时的减免程度。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.005"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldResistanceToMu">
+		<DisplayName>木属性伤害减免</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>修行者遭受木属性伤害时的减免程度。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.005"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldResistanceToShui">
+		<DisplayName>水属性伤害减免</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>修行者遭受水属性伤害时的减免程度。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.005"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldResistanceToHuo">
+		<DisplayName>火属性伤害减免</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>修行者遭受火属性伤害时的减免程度。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.005"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_ShieldResistanceToTu">
+		<DisplayName>土属性伤害减免</DisplayName>
+		<DisplayValue>{0:P4}</DisplayValue>
+		<Desc>修行者遭受土属性伤害时的减免程度。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>战斗属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="0.005"/>
+		</Skills>
+	</Property>	
+	
+	<Property Name="NpcFight_MoveSpeedAdd">
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>		
+		<BaseValue>0</BaseValue>
+	</Property>	
+	
+
+</List></Properties>

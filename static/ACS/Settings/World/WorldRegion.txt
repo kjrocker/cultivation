@@ -1,0 +1,25 @@
+WorldPart	SchoolId	Region
+1	3	
+2		DaXueYuan
+3	10	
+4	2	
+5		zhongyuan
+6	1	
+7		GuanHai
+8	9	
+9	8	
+10		DaMo
+11	12
+12	5	
+13	7	
+14		Feng
+15	4	
+16		OurPlace
+17	6	
+18		JiangAnWoYe
+19		HeYin
+20	11	
+21		PanShe
+22		NanHuang
+23		DaLiang
+24	13

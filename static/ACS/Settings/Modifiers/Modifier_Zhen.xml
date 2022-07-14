@@ -1,0 +1,140 @@
+<ModifierDefs><List>
+	<Modifier Name="Zhen_XianTianMuLing" Type="Normal">
+		<DisplayName>先天木灵界</DisplayName>
+		<Desc>激活身体之潜力，提高自身对肉体伤势的恢复力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="RecoveryPower" AddV="5"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Zhen_ZTLYQLSJ" Type="Normal">
+		<DisplayName>诸天六御清灵胜境</DisplayName>
+		<Desc>提高心情、心境、修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="999"/>
+			<li Name="BaseEmotionAddV" AddV="50"/>
+			<li Name="MindStateBaseValue" AddV="20"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Zhen_ZhenEnginePower1" Type="Normal">
+		<DisplayName>少量阵法负荷能力</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ZhenEnginePower" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_ZhenEnginePower2" Type="Normal">
+		<DisplayName>中量阵法负荷能力</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ZhenEnginePower" AddV="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_ZhenEnginePower3" Type="Normal">
+		<DisplayName>大量阵法负荷能力</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ZhenEnginePower" AddV="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_ZhenEnginePower4" Type="Normal">
+		<DisplayName>高级阵法</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ZhenKeyPointNum" AddV="1"/>
+			<li Name="NpcFight_ZhenEnginePower" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_FashuhejiEffect" Type="Normal">
+		<DisplayName>法术合击</DisplayName>
+		<Desc>以阵法中所有人之力释放下一个法术</Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<EffectBind>			
+			<li Path="Effect/A/Prefabs/Aura/SpinningAura/SpinningLight" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_LinkEffect" Type="Normal">
+		<DisplayName>结阵</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<EffectBind>			
+			<li Path="Effect/gsq/Prefab/ZhenFa01" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier> 
+	<Modifier Name="Zhen_LinkEffectCore" Type="Normal">
+		<DisplayName>阵枢</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<EffectBind>			
+			<li Path="Effect/gsq/Prefab/ZhenFa02" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Zhen_RevealEffect" Type="Normal">
+		<DisplayName>暴露阵眼</DisplayName>
+		<Desc>这个阵眼已暴露，攻击他可以造成更多伤害，也可以通过变阵来掩盖。</Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<EffectBind>			
+			<li Path="Effect/gsq/Prefab/ZhenFa03" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="Zhen_CancelZhenRecover" Type="Normal">
+		<DisplayName>恢复阵法</DisplayName>
+		<Desc>处于阵法的恢复状态</Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>CancelZhenRecover</li>
+		</SpecialFlags>
+	</Modifier>	
+		
+	<Modifier Name="Zhen_ChangeEffect" Type="Normal">
+		<DisplayName>变阵</DisplayName>
+		<Desc>临时改变了阵枢，持续时间结束将会还原。</Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier>
+	
+	<Modifier Name="BDPW_Lock" Type="Normal">
+		<DisplayName>标记</DisplayName>
+		<Desc>被北斗破妄标记</Desc>  
+		<MaxStack>3</MaxStack>
+		<Duration>9</Duration>
+		<Display>1</Display>		
+		<EffectBind>			
+			<li Path="Effect/gsq/Zhen/skill/fx_QiXingPoWang01_biaoji" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier>
+</List></ModifierDefs>

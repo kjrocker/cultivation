@@ -1,0 +1,1631 @@
+<RaceDefs><List>
+	
+<RaceDef Name="JYBase">
+	<NameGeneratorMaleSuffix>JYAnimal/Suffix_All.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>JYAnimal/Suffix_All.txt</NameGeneratorFemaleSuffix>
+</RaceDef>
+
+<RaceDef Name="JYRabbit" Parent="JYBase">
+	<DisplayName>妖兔</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖兔</Desc>
+	<Mod>Mod/Npc/JYRabbit/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Rabbit.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYRabbit_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<FreeAni>
+		<li>Free</li>
+		<li>Free2</li>
+	</FreeAni>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0.2</StrikeBack>
+	<WinterHide>0</WinterHide>
+	<RebornRace>Rabbit</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYtuzi01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYtuzi01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Rabbit</HorseItem>
+	<HorseData>
+		<Mod>Mod/Npc/JYRabbit/Base</Mod>
+		<RideBip>Bip001 Head</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>-0.04</OffsetX>
+		<OffsetY>0</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_RabbitLuck</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="JYChicken"  Parent="JYBase">
+	<DisplayName>妖鸡</DisplayName>            
+	<Desc>未觉醒灵智而获得力量的动物：妖鸡</Desc>                                 
+	<Mod>Mod/Npc/JYChicken/Base</Mod>                                           
+	<Revive>0</Revive>                                                        
+	<NameGeneratorPrefix>JYAnimal/Prefix_Chicken.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>                                               
+	<MaleName>公</MaleName>                                                   
+	<FemaleName>母</FemaleName>                                               
+	<NormalAttack>Chicken_NormalAttack</NormalAttack>                         
+	<Body>QuadrupedBody</Body>                                                
+	<HasGenders>1</HasGenders>                                                
+	<HasEquip>0</HasEquip>                                                    
+	<GenerateMinAge>0.5</GenerateMinAge>                                      
+	<GenerateMaxAge>12</GenerateMaxAge>                                       
+	<AdultAge>3</AdultAge>                                                    
+	<FreeAnis>
+		<li Name="Free" Length="3.3"/>
+		<li Name="Free2" Length="3.2"/>
+	</FreeAnis>                                       
+	<WarningRange>0</WarningRange>                                            
+	<StrikeBack>0.2</StrikeBack>                                              
+	<WinterHide>0</WinterHide>                                                
+	<RebornRace>Chicken</RebornRace>    
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>   
+	<TexPath>tex://res/Sprs/tujian/TJ_JYji01</TexPath>      
+	<Rolepaint>res/Sprs/tujian/TJ_JYji01</Rolepaint>   
+	<HorseItem>Item_HorseFromJY_Chicken</HorseItem>                          
+	<HorseData>
+		<Mod>Mod/Npc/JYChicken/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>-0.015</OffsetX>
+		<OffsetY>-0.09</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>                                                                                    
+	<EliteDrops>                                                                                      
+		<Drop MinJinJie="1" MaxJinJie="12">                                                           
+			<Items>                                                                                   
+				<li>                                                                                  
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_ChickenGuan</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="JYWolf" Parent="JYBase">
+	<DisplayName>妖狼</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖狼</Desc>
+	<Mod>Mod/Npc/JYWolf/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Wolf.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYWolf_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="1.8"/>
+		<li Name="Free2" Length="2.0"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<RebornRace>Wolf</RebornRace>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,0],
+		[1,3,1],
+		[0,1,0],
+		</Data>
+	</Collider>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYlang01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYlang01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Wolf</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYWolf/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.1</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_WolfAtk</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYSnake" Parent="JYBase">
+	<DisplayName>妖蛇</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖蛇</Desc>
+	<Mod>Mod/Npc/JYSnake/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Snake.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>JYSnake_NormalAttack</NormalAttack>
+	<Body>SnakeBody</Body>
+	<HasGenders>1</HasGenders>
+	<FreeLength>2</FreeLength>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>45</GenerateMaxAge>
+	<AdultAge>40</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<WinterHide>0</WinterHide>
+	<RebornRace>Snake</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYshe01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYshe01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Snake</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYSnake/Base</Mod>
+		<Scale>2</Scale>
+		<RideBip>B_bone08</RideBip>
+		<OffsetX>0</OffsetX>
+		<OffsetY>0.075</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>		
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,0,1,0,0],
+		[0,1,1,1,0],
+		[1,1,3,1,1],
+		[0,1,1,1,0],
+		[0,0,1,0,0],
+		</Data>
+	</Collider>
+	<ForbidFly>1</ForbidFly>
+	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_SnakeHanLin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Male" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Female" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYBoar" Parent="JYBase">
+	<DisplayName>妖猪</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖猪</Desc>
+	<Mod>Mod/Npc/JYBoar/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Boar.txt</NameGeneratorPrefix>
+	<Revive>0</Revive>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYBoar_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>2.667</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>6</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<RebornRace>Boar</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYyezhu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYyezhu01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Boar</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYBoar/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.2</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,0],
+		[1,3,1],
+		[0,1,0],
+		</Data>
+	</Collider>
+	<ForbidFly>1</ForbidFly>
+	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_BoarMeat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_Yao_BoarMeat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_Yao_BoarMeat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="15"	>4,6,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="16" 	AgeMax="20"	>3,4,1,2,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,2,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="15"	>4,6,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="16" 	AgeMax="20"	>3,4,1,2,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYBear" Parent="JYBase">
+	<DisplayName>妖熊</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖熊</Desc>
+	<Mod>Mod/Npc/JYBear/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Bear.txt</NameGeneratorPrefix>
+	<Revive>0</Revive>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYBear_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="5.66"/>
+		<li Name="Free2" Length="2.333"/>
+		<li Name="Free3" Length="2.833"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>3</GenerateMinAge>
+	<GenerateMaxAge>35</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<RebornRace>Bear</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYxiong01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYxiong01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Bear</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYBear/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.28</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,0],
+		[1,3,1],
+		[0,1,0],
+		</Data>
+	</Collider>
+	<ForbidFly>1</ForbidFly>
+	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_BearPiMao</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="5" 	AgeMax="20"	>7,9,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="21" 	AgeMax="42"	>6,7,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="5" 	AgeMax="20"	>7,9,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="21" 	AgeMax="42"	>6,7,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYFrog" Parent="JYBase">
+	<DisplayName>妖蛙</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖蛙</Desc>
+	<Mod>Mod/Npc/JYFrog/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Frog.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>JYFrog_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="2.83"/>
+		<li Name="Free2" Length="1.333"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>1</GenerateMinAge>
+	<GenerateMaxAge>14</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<StrikeBack>0.5</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<RebornRace>Frog</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYwa01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYwa01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Frog</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYFrog/Base</Mod>
+		<RideBip>Bip01 Spine</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.26</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="3"	>1,1,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="4" 	AgeMax="9"	>1,1,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="15"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="3"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="4" 	AgeMax="9"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="15"	>1,1,1,1,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYTurtle" Parent="JYBase">
+	<DisplayName>妖龟</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖龟</Desc>
+	<Mod>Mod/Npc/JYTurtle/Base</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Turtle.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>JYTurtle_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>3.333</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>3</GenerateMinAge>
+	<GenerateMaxAge>200</GenerateMaxAge>
+	<AdultAge>10</AdultAge>
+	<StrikeBack>0.3</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<RebornRace>Turtle</RebornRace>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,0,1,0,0],
+		[0,1,1,1,0],
+		[1,1,3,1,1],
+		[0,1,1,1,0],
+		[0,0,1,0,0],
+		</Data>
+	</Collider>
+	<ForbidFly>1</ForbidFly>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYgui01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYgui01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Turtle</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYTurtle/Base</Mod>
+		<RideBip>Bip001 Spine</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>-0.1</OffsetX>
+		<OffsetY>-0.863</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_TurtleKe</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="10"	>2,2,1,2,6</li> 
+		<li Sex="Male" 	 AgeMin="11" 	AgeMax="80"	>2,4,1,3,6</li> 
+		<li Sex="Male" 	 AgeMin="81" 	AgeMax="200"	>2,3,1,7,6</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="10"	>2,2,1,2,6</li> 
+		<li Sex="Female" 	 AgeMin="11" 	AgeMax="80"	>2,4,1,3,6</li> 
+		<li Sex="Female" 	 AgeMin="81" 	AgeMax="200"	>2,3,1,7,6</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_200"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+
+<RaceDef Name="JYCat" Parent="JYBase">
+	<DisplayName>妖猫</DisplayName>               
+	<Desc>未觉醒灵智而获得力量的动物：妖猫</Desc>                                     	
+	<Mod>Mod/Npc/JYCat/Base</Mod>                                                      	
+	<Revive>0</Revive>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Cat.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>                                                       	
+	<MaleName>公</MaleName>                                                          	
+	<FemaleName>母</FemaleName>                                                      	
+	<NormalAttack>JYCat_NormalAttack</NormalAttack>                                     	
+	<Body>QuadrupedBody</Body>                                                        	
+	<FreeAnis>
+		<li Name="Free" Length="1.733"/>
+		<li Name="Free2" Length="9.833"/>
+		<li Name="Free3" Length="4.867"/>
+	</FreeAnis>                                                  	
+	<HasGenders>1</HasGenders>                                                   
+	<HasEquip>0</HasEquip>                                                            	
+	<GenerateMinAge>0.5</GenerateMinAge>                                              	
+	<GenerateMaxAge>16</GenerateMaxAge>                                               	
+	<AdultAge>2</AdultAge>                                                            	
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYmao01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYmao01</Rolepaint>
+	<RebornRace>Cat</RebornRace>
+	<HorseItem>Item_HorseFromJY_Cat</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYCat/Base</Mod>
+		<RideBip>Bip001 Spine2</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.1</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	                                                                                  	
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_CatSoul</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,8,1,4</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="8"	>4,3,6,5,4</li> 
+		<li Sex="Male" 	 AgeMin="9" 	AgeMax="20"	>3,2,4,6,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,8,1,4</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="8"	>4,3,6,5,4</li> 
+		<li Sex="Female" 	 AgeMin="9" 	AgeMax="20"	>3,2,4,6,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="JYCattle" Parent="JYBase">
+	<DisplayName>妖牛</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖牛</Desc>
+	<Mod>Mod/Npc/JYCattle/Base</Mod>
+	<Revive>0</Revive>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Cattle.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYCattle_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="4.4"/>
+		<li Name="Free2" Length="6.333"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>35</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<RebornRace>Cattle</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYniu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYniu01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Cattle</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYCattle/Base</Mod>
+		<RideBip>Bip001 Spine2</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.17</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_CattleJiao</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>1,4,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="5" 	AgeMax="25"	>4,7,1,3,1</li> 
+		<li Sex="Male" 	 AgeMin="25" 	AgeMax="35"	>3,6,1,3,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>1,4,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="5" 	AgeMax="25"	>4,7,1,3,1</li> 
+		<li Sex="Female" 	 AgeMin="25" 	AgeMax="35"	>3,6,1,3,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="JYTiger" Parent="JYBase">
+	<DisplayName>妖虎</DisplayName>
+	<Desc>未觉醒灵智而获得力量的动物：妖虎</Desc>
+	<Mod>Mod/Npc/JYTiger/Base</Mod>
+	<Revive>0</Revive>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Tiger.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>JYTiger_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="4.467"/>
+		<li Name="Free2" Length="2.833"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>25</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>6</WarningRange>
+	<RebornRace>Tiger</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_JYlaohu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_JYlaohu01</Rolepaint>
+	<HorseItem>Item_HorseFromJY_Tiger</HorseItem>     
+	<HorseData>
+		<Mod>Mod/Npc/JYTiger/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.05</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<EliteDrops>
+		<Drop MinJinJie="1" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>15</Count>
+					<Rate>1</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="4" MaxJinJie="9">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>35</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="7" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>2</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_YaoLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YaoLeather1</ThingDef>
+					<Count>15</Count>
+					<Rate>0.2</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_MonsterBlood</ThingDef>
+					<Count>5</Count>
+					<Rate>0.25</Rate>
+				</li>
+			</Items>
+		</Drop>
+		<Drop MinJinJie="10" MaxJinJie="12">
+			<Items>
+				<li>
+					<ThingDef>Item_Yao_TigerZhui</ThingDef>
+					<Count>1</Count>
+					<Rate>0.1</Rate>
+				</li>
+			</Items>
+		</Drop>
+	</EliteDrops>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="3"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="4" 	AgeMax="18"	>6,6,1,4,2</li> 
+		<li Sex="Male" 	 AgeMin="19" 	AgeMax="25"	>5,5,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="3"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="4" 	AgeMax="18"	>6,6,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="19" 	AgeMax="25"	>5,5,1,3,2</li> 
+	</BaseFive>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="JYLongpuNight" Parent="JYBase">
+	<DisplayName>龙之仆役(夜)</DisplayName>
+	<Desc>阴阳之力衍化出的仆役</Desc>
+	<Mod>Mod/Npc/Longzhipuyi_night/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<NormalAttack>JYLongPu_Night_NormalAttack</NormalAttack>
+	<Body>SnakeBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>45</GenerateMaxAge>
+	<AdultAge>40</AdultAge>
+	<LeaveBody>0</LeaveBody>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<WinterHide>0</WinterHide>
+	<RebornRace>Snake</RebornRace>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_longzhipuyiye01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_longzhipuyiye01</Rolepaint>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<!--<CastBip>Bip01 R Hand</CastBip>-->
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,0,1,0,0],
+		[0,1,1,1,0],
+		[1,1,3,1,1],
+		[0,1,1,1,0],
+		[0,0,1,0,0],
+		</Data>
+	</Collider>
+	<ForbidFly>1</ForbidFly>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Male" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Female" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="JYLongpuDay" Parent="JYLongpuNight">
+	<DisplayName>龙之仆役(昼)</DisplayName>
+	<Desc>阴阳之力衍化出的仆役</Desc>
+	<Mod>Mod/Npc/Longzhipuyi_day/Base</Mod>
+	<NormalAttack>JYLongPu_Day_NormalAttack</NormalAttack>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_longzhipuyizhou01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_longzhipuyizhou01</Rolepaint>
+</RaceDef>
+
+
+<RaceDef Name="JYZhuLongENian" Parent="JYLongpuNight">
+	<DisplayName>恶念龙形</DisplayName>
+	<Desc>心中恶念的具象衍化</Desc>
+	<Mod>Mod/Npc/Longzhipuyi_Dark/Base</Mod>
+	<NormalAttack>JYLongPu_Night_NormalAttack</NormalAttack>
+	<LingKill>1</LingKill>
+	<NoLingering>1</NoLingering>
+	<FightDriver>Enian</FightDriver>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_enianlongxing01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_enianlongxing01</Rolepaint>
+</RaceDef>
+
+<RaceDef Name="JYZhuLongShanNian" Parent="JYLongpuNight">
+	<DisplayName>善念龙形</DisplayName>
+	<Desc>心中善念的具象衍化</Desc>
+	<Mod>Mod/Npc/Longzhipuyi_Light/Base</Mod>
+	<NormalAttack>JYLongPu_Day_NormalAttack</NormalAttack>
+	<FightDriver>Shannian</FightDriver>
+	<LingKill>1</LingKill>
+	<NoLingering>1</NoLingering>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_shannianlongxing01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_shannianlongxing01</Rolepaint>
+</RaceDef>
+
+</List></RaceDefs>

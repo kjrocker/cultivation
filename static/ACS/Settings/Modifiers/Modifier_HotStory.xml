@@ -1,0 +1,183 @@
+<ModifierDefs><List>
+	<Modifier Name="HotStory_SocialContactLv" Type="Normal">
+		<DisplayName>处世技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_MedicineLv" Type="Normal">
+		<DisplayName>岐黄技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Medicine" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_CookingLv" Type="Normal">
+		<DisplayName>烹饪技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Cooking" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_BuildingLv" Type="Normal">
+		<DisplayName>建筑技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Building" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_FarmingLv" Type="Normal">
+		<DisplayName>耕作技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Farming" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_ManualLv" Type="Normal">
+		<DisplayName>制作技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Manual" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_MiningLv" Type="Normal">
+		<DisplayName>采掘技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Mining" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_ArtLv" Type="Normal">
+		<DisplayName>雅艺技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Art" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="HotStory_QiLv" Type="Normal">
+		<DisplayName>气感技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_FabaoLv" Type="Normal">
+		<DisplayName>御器技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Fabao" Level="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="HotStory_FightSkillLv" Type="Normal">
+		<DisplayName>术法技能领悟增加</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="FightSkill" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="HotStory_MakeBigSuccess" Type="Normal">
+		<DisplayName>制作大成功</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="SmithingQualityAddValue" AddV="1"/>
+			<li Name="HandworkQualityAddValue" AddV="1"/>
+			<li Name="TailoringQualityAddValue" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="HotStory_BrokeningChance" Type="Normal">
+		<DisplayName>突破概率提升</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PracticeRateAddPFromDan" AddV="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="HotStory_Ling" Type="Normal">
+		<DisplayName>灵气上限提升</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="25"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="HotStory_DanNum" Type="Normal">
+		<DisplayName>丹药产量提升</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_YieldAddP" AddV="1.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="HotStory_FabaoQ" Type="Normal">
+		<DisplayName>法宝品质提升</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_QualityAddV" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="HotStory_FabaoR" Type="Normal">
+		<DisplayName>法宝品质提升</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_QualityAddV" AddV="1"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="100"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="1"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

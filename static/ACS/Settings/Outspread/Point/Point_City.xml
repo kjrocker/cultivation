@@ -1,0 +1,38 @@
+<Defs><List>
+	<Def Name="Point_Discipline">
+		<BuildSymbols>
+			<li>Discipline</li>
+			<li>Secret</li>
+			<li>Sermon</li>
+			<li>Recuit</li> 
+		</BuildSymbols>
+		<DisplayName>空地</DisplayName>
+	</Def>
+	<Def Name="Point_Secret">
+		<BuildSymbols>
+			<li>Discipline</li>
+			<li>Secret</li>
+			<li>Sermon</li>
+			<li>Recuit</li>
+		</BuildSymbols>
+		<DisplayName>空地</DisplayName>
+	</Def>
+	<Def Name="Point_Sermon">
+		<BuildSymbols>
+			<li>Discipline</li>
+			<li>Secret</li>
+			<li>Sermon</li>
+			<li>Recuit</li>
+		</BuildSymbols>
+		<DisplayName>空地</DisplayName>
+	</Def>
+	<Def Name="Point_Recuit">
+		<BuildSymbols>
+			<li>Discipline</li>
+			<li>Secret</li>
+			<li>Sermon</li>
+			<li>Recuit</li>
+		</BuildSymbols>
+		<DisplayName>空地</DisplayName>
+	</Def>
+</List></Defs>

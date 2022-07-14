@@ -1,0 +1,93 @@
+<Defs><List>
+	<Def Name="WuDangN">
+		<Item CountName="Normal">
+			<ItemName>Item_WuDang_HuangJing</ItemName>
+		</Item>
+	</Def>
+
+	<Def Name="WuDangR">
+		<Item CountName="Rare">
+			<ItemName>Item_WuDang_HuangJingFen</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_WuQiNoHunger2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuDangSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Dan_SanHuaHuangJing</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence1</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuDangSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Tu</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_None</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuDangMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WeaponLance</oitemname>
+				<ostuffname>Item_StarEssenceBlock</ostuffname>
+				<DisplayName>夺天尺</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="HitCountAddDamage" nParam1="20" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每20次攻击修行者本体，会穿透护盾造成额外伤害。"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+</List></Defs>

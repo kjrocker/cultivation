@@ -1,0 +1,224 @@
+<Properties><List>
+	<Property Name="LingShouLingZhi">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>100</MaxValue>
+	</Property>
+	<Property Name="LingShouQiGan">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>100</MaxValue>
+	</Property>
+	<Property Name="LingShouNeiDan">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>100</MaxValue>
+	</Property>
+	<Property Name="LingShouHuTi">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>100</MaxValue>
+	</Property>
+	<Property Name="LingShouShuFa">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>100</MaxValue>
+	</Property>
+	<Property Name="LingShouFat">
+		<BaseValue>0</BaseValue>
+		<MinValue>-250</MinValue>
+		<MaxValue>250</MaxValue>
+	</Property>
+	<Property Name="LingShouStronger">
+		<BaseValue>0</BaseValue>
+		<MinValue>-250</MinValue>
+		<MaxValue>250</MaxValue>
+	</Property>
+	<Property Name="LingShouJustice">
+		<BaseValue>0</BaseValue>
+		<MinValue>-50</MinValue>
+		<MaxValue>50</MaxValue>
+	</Property>
+	<Property Name="GrowProperty">
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue>
+		<MaxValue>10</MaxValue>
+	</Property>
+	<Property Name="LingShouToleranceTMin">
+		<BaseValue>-30</BaseValue>
+		<AddValue>0</AddValue>	
+	</Property>	
+	<Property Name="LingShouToleranceTMax">
+		<BaseValue>150</BaseValue>
+		<AddValue>0</AddValue>	
+	</Property>
+	<Property Name="LingShouVisionRadius">
+		<MathProperty>
+			<Value>
+				<Expression>GrowProperty + 10</Expression>
+			</Value>
+		</MathProperty>
+	</Property>	
+	<Property Name="LsLingMaxValue">
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>SLing</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>LingShouQiGan^2*300+(20000*(1-x))+LsFat*500000</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	
+	<Property Name="LsFabaoPowerAddP">
+		<MinValue>1</MinValue>
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>SFabao</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>(30*LingShouNeiDan/200+30*LingShouNeiDan/200*(0-LsBadGood)/5)*(1-x)</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsFabaoCoolDownAddP">
+		<MinValue>0.1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>(0-0.04)*LingShouNeiDan/10</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsFabaoMaxLingAddP">
+		<MathProperty>
+			<Value>
+				<Expression>2*LingShouNeiDan</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsFabaoFlySpeedAddP">
+		<MathProperty>
+			<Value>
+				<Expression>10*LingShouNeiDan/2000</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	
+	<Property Name="LsBadGood">
+		<MinValue>-2</MinValue>
+		<MinValue>2</MinValue>
+	</Property>
+	
+	<Property Name="LsFat">
+		<MinValue>0</MinValue>
+		<MinValue>2</MinValue>
+	</Property>
+	
+	<Property Name="LsFabaoTurnSpeedAddP">
+		<MathProperty>
+			<Value>
+				<Expression>10*LingShouNeiDan/2000</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsFabaoLingRecoverAddP">
+		<MathProperty>
+			<Value>
+				<Expression>LingShouNeiDan*1+1</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsSpellLingCostAddP">
+		<MathProperty>
+			<Value>
+				<Expression>LingShouShuFa/10</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsSpellPowerAddP">
+		<MinValue>1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>LingShouShuFa*LingShouShuFa/50+LingShouShuFa*LingShouShuFa/50*(0-LsBadGood)/5</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsShieldConversionRateAddP">
+		<MinValue>0.1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>LingShouHuTi*0.5+0.1+LingShouHuTi*0.5*LsBadGood/5</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsSpellCoolDownAddP">
+		<MathProperty>
+			<Value>
+				<Expression>LingShouFat</Expression>
+				<VarPipes>
+					<li>
+						<Min>0</Min>
+						<Max>20</Max>
+						<Value>
+							<Expression>0-0.5</Expression>
+						</Value>
+					</li>
+					<li>
+						<Min>20</Min>
+						<Max>50</Max>
+						<Value>
+							<Expression>0-0.25</Expression>
+						</Value>
+					</li>
+				</VarPipes>
+			</Value>
+		</MathProperty>
+	</Property>
+	
+	<Property Name="LsMoveSpeed">
+		<MathProperty>
+			<Value>
+				<Expression>(4.5+GrowProperty*1.4)*(1-LingShouFat*0.0005)</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsMoveSpeed_Slow">
+		<MathProperty>
+			<Value>
+				<Expression>(4.5+GrowProperty*1.4)*(1-LingShouFat*0.0005) / 3</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsFoxMoveSpeed">
+		<MathProperty>
+			<Value>
+				<Expression>(4.5+GrowProperty*1.1)*(1-LingShouFat*0.0005)</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsNutritionP">
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		<MaxValue>10</MaxValue>	
+	</Property>
+	<Property Name="LsFoodNeedAddP">
+		<BaseValue>1</BaseValue>
+		<MinValue>0.1</MinValue> 
+		<MaxValue>10</MaxValue>	
+	</Property>
+	<Property Name="LsWaterNeedAddP">
+		<BaseValue>1</BaseValue>
+		<MinValue>0.1</MinValue> 
+		<MaxValue>10</MaxValue>	
+	</Property>
+</List></Properties>

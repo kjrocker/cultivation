@@ -1,0 +1,903 @@
+<ZhenNodeDefs><List>
+	<!-- 阵枢 -->
+	<Def Name="ZhenMainNode_Lv2_4_1" DisplayName="天地和合" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_6</li>
+			<li>SlotSuit_7</li>
+			<li>SlotSuit_10</li>
+			<li>SlotSuit_11</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="1"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+			<li SlotName="Lv2_Li" Pos="3"/>
+			<li SlotName="Lv2_Kan" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv2_4_2" DisplayName="风雷应中" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_8</li>
+			<li>SlotSuit_9</li>
+			<li>SlotSuit_12</li>
+			<li>SlotSuit_13</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="1"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+			<li SlotName="Lv2_Gen" Pos="3"/>
+			<li SlotName="Lv2_Dui" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv2_4_3" DisplayName="阴极生阳" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_6</li>
+			<li>SlotSuit_9</li>
+			<li>SlotSuit_11</li>
+			<li>SlotSuit_13</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+			<li SlotName="Lv2_Li" Pos="4"/>
+			<li SlotName="Lv2_Dui" Pos="5"/>
+		</Slot>
+	</Def>
+	<Def Name="ZhenMainNode_Lv2_4_4" DisplayName="阳极化阴" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_7</li>
+			<li>SlotSuit_8</li>
+			<li>SlotSuit_10</li>
+			<li>SlotSuit_12</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+			<li SlotName="Lv2_Kan" Pos="4"/>
+			<li SlotName="Lv2_Gen" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv2_4_5" DisplayName="玄阴之道" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_7</li>
+			<li>SlotSuit_9</li>
+			<li>SlotSuit_11</li>
+			<li>SlotSuit_13</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="1"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+			<li SlotName="Lv2_Li" Pos="3"/>
+			<li SlotName="Lv2_Dui" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv2_4_6" DisplayName="至阳之道" Main="1" Base="2">
+		<Lv>2</Lv>
+		<SlotSuits>
+			<li>SlotSuit_6</li>
+			<li>SlotSuit_8</li>
+			<li>SlotSuit_10</li>
+			<li>SlotSuit_12</li>
+			<li>SlotSuit_14</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="1"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+			<li SlotName="Lv2_Kan" Pos="3"/>
+			<li SlotName="Lv2_Gen" Pos="4"/>
+		</Slot>
+	</Def>
+	<!-- 阵眼 -->
+	
+	
+	<Def Name="ZhenNode_Lv2_1_1" DisplayName="天" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_2" DisplayName="地" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_3" DisplayName="水" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_4" DisplayName="火" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_5" DisplayName="雷" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_6" DisplayName="风" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_7" DisplayName="山" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_1_8" DisplayName="泽" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_9" DisplayName="乾" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_10" DisplayName="坤" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_11" DisplayName="坎" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_12" DisplayName="离" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_13" DisplayName="震" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_14" DisplayName="巽" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_15" DisplayName="艮" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_16" DisplayName="兑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_17" DisplayName="泰" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_18" DisplayName="大壮" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_19" DisplayName="大畜" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_20" DisplayName="大有" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_21" DisplayName="需" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_22" DisplayName="夬" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_23" DisplayName="小畜" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Qian" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_24" DisplayName="否" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_25" DisplayName="豫" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_26" DisplayName="剥" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_27" DisplayName="晋" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_28" DisplayName="比" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_29" DisplayName="萃" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_30" DisplayName="观" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Kun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_31" DisplayName="无妄" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_32" DisplayName="复" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_33" DisplayName="颐" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_34" DisplayName="噬嗑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_35" DisplayName="屯" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_36" DisplayName="随" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_37" DisplayName="益" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Zhen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_38" DisplayName="遁" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_39" DisplayName="谦" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_40" DisplayName="小过" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_41" DisplayName="旅" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_42" DisplayName="蹇" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_43" DisplayName="咸" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_44" DisplayName="渐" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Gen" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_45" DisplayName="同人" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_46" DisplayName="明夷" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_47" DisplayName="丰" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_48" DisplayName="贲" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_49" DisplayName="既济" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_50" DisplayName="革" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_51" DisplayName="家人" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Li" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_52" DisplayName="讼" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_53" DisplayName="师" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_54" DisplayName="解" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_55" DisplayName="蒙" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_56" DisplayName="未济" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_57" DisplayName="困" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_58" DisplayName="涣" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Kan" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_59" DisplayName="履" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_60" DisplayName="临" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_61" DisplayName="归妹" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_62" DisplayName="损" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_63" DisplayName="睽" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_64" DisplayName="节" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_65" DisplayName="中孚" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv2_Dui" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_66" DisplayName="姤" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_67" DisplayName="升" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_68" DisplayName="恒" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_69" DisplayName="蛊" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_70" DisplayName="鼎" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_71" DisplayName="井" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_2_72" DisplayName="大过" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv2_Xun" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenNode_Lv2_3_1" DisplayName="乾御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_2" DisplayName="乾衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_3" DisplayName="乾凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Qian" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenNode_Lv2_3_4" DisplayName="坤御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_5" DisplayName="坤衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_6" DisplayName="坤凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kun" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_7" DisplayName="震御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_8" DisplayName="震衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_9" DisplayName="震凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Zhen" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_10" DisplayName="巽御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_11" DisplayName="巽衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_12" DisplayName="巽凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Xun" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_13" DisplayName="坎御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_14" DisplayName="坎衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_15" DisplayName="坎凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Kan" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_16" DisplayName="离御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_17" DisplayName="离衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_18" DisplayName="离凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Li" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_19" DisplayName="艮御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_20" DisplayName="艮衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_21" DisplayName="艮凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Gen" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	
+	<Def Name="ZhenNode_Lv2_3_22" DisplayName="兑御剑" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv1_Jian" Pos="2"/>
+			<li SlotName="Lv1_Jian" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_23" DisplayName="兑衍法" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv1_Fa" Pos="2"/>
+			<li SlotName="Lv1_Fa" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv2_3_24" DisplayName="兑凝罡" Main="0" Base="2">
+		<Lv>2</Lv>
+		<Slot>
+			<li SlotName="Lv2_Dui" Pos="0"/>
+			<li SlotName="Lv1_Gang" Pos="2"/>
+			<li SlotName="Lv1_Gang" Pos="4"/>
+		</Slot>
+	</Def>
+</List></ZhenNodeDefs>

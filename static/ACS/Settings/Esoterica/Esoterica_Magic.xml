@@ -1,0 +1,862 @@
+﻿<Esotericas><List>
+	<!-- 这个文件不要动，不要动，不要动，如果要加magic要加新配置 -->
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>[size=10][color=#D06508]各种强大的功能[/color][/size]</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="Magic_FenShenZhiShu">
+		<DisplayName>分神之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>God</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：分神之术\n  运转本命元神，强行将其分裂，以获得额外一条分神。在这个过程中会损失最大灵气上限，并快速衰老。运用分神之术的次数越多，付出的代价也越大。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>FenShenZhiShu</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_FengshuiItemOpen">
+		<DisplayName>风水鉴定</DisplayName>
+		<Icon>res/Sprs/ui/icon_tianyan01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>Dan1</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：风水鉴定\n  消耗灵石，激发风水镇物，以识别其特性。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>FengshuiItemOpen</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_GanLingShu">
+		<DisplayName>甘霖术</DisplayName>
+		<Icon>res/Sprs/ui/icon_qiuyu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>4</Difficulty>
+		<GLevel>Dan1</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：甘霖术\n  在一片区域中召唤一片甘霖，可以熄灭火焰，并稍微提高植物的生长速度。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildRain</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_KongZhi1">
+		<DisplayName>灵犀咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_tongxiu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：灵犀咒\n  以神念交感对方神念，尝试说服对方加入我方阵营。自身道行越高，双方境界与感知差距越大，越容易成功，如果双方差距太大，则有可能被反向控制。如果目标有修为，则目标必须处于昏迷状态。对同一个目标只能使用一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingXiZhou</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_KongZhi2">
+		<DisplayName>心印诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_tongxiu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：心印诀\n  以心相印，产生共鸣，以说服对方加入我方阵营。自身道行越高，双方境界差距越大，越容易成功，如果双方差距太大，则有可能被反向控制。如果双方有相似的出生历世特性或亲戚关系，则大幅度提高成功率。如果目标有修为，则目标必须处于昏迷状态。此法十分凶险，一旦失败，目标死亡，自身也会受伤。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>XinYinJue</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_KongZhi3">
+		<DisplayName>天魔舞</DisplayName>
+		<Icon>res/Sprs/ui/icon_tongxiu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：天魔舞\n  施展天魔舞，将目标转化到我方阵营，如果双方差距太大，则有可能被反向控制。随着时间流逝，目标清醒的可能性逐渐提高。双方境界与魅力差距越大，清醒的几率越低。如果目标有修为，则目标必须处于昏迷状态。此法每次施展都会损伤目标神志。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>TianMoWu</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_KongZhi4">
+		<DisplayName>五印刻神</DisplayName>
+		<Icon>res/Sprs/ui/icon_tongxiu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：五印刻神\n  以霸道的法术强行洗脑，将目标转化到我方阵营一段时间，如果双方差距太大，则有可能被反向控制。双方境界与悟性差距越大，持续的时间越长。如果目标有修为，则目标必须处于昏迷状态。此法每次施展都会极大的延长持续时间，但是会对目标神识产生不可逆转的损害。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>WuYinKeShen</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_BuildMine">
+		<DisplayName>元坤妙法</DisplayName>
+		<Icon>res/Sprs/ui/icon_youcui01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>5</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：造山术\n  消耗大量灵力，将地埋深处的矿产拔出地表。\n习得神通：开湖术\n  施展神通，将一片区域改造为浅水。\n习得神通：造陆术\n  施展神通，将一片区域改造为土地。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildMine</li>
+			<li>BuildLand</li>
+			<li>BuildSea</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	
+	<Esoterica Name="Magic_BuildMine_KaiHu">
+		<DisplayName>开湖术</DisplayName>
+		<Icon>res/Sprs/ui/icon_youcui01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>5</Difficulty>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：开湖术\n  施展神通，将一片区域改造为浅水。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildSea</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_BuildMine_ZaoLu">
+		<DisplayName>造陆术</DisplayName>
+		<Icon>res/Sprs/ui/icon_youcui01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>5</Difficulty>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：造陆术\n  施展神通，将一片区域改造为土地。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildLand</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_RebornSelf">
+		<DisplayName>玄牝重生法</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n玄牝重生丹\n习得神通：玄牝重生法\n太一门独门秘法，以玄牝珠为引，自毁修为，燃尽金丹，逆转造化，重回凡胎。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>RebornSelf</li>
+		</Magics>
+		<Dans>
+			<li>Dan_ReBorn</li>
+		</Dans>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_JieHuiDaoPowerUp">
+		<DisplayName>道淬之法</DisplayName>
+		<Icon>res/Sprs/ui/icon_daocui01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<!--<Desc>对一个物品使用，消耗幽珀一个，有几率提高物品阶级1阶。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：道淬之法\n对一个物品使用，消耗劫灰一个，有几率提高物品阶级1阶。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>JieHuiDaoPowerUp</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_SoulCrystalYouPowerUp">
+		<DisplayName>幽淬之法</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<!--<Desc>对一个物品使用，消耗幽珀一个，有几率提高物品阶级1阶。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：幽淬之法\n对一个物品使用，消耗幽珀一个，有几率提高物品阶级1阶。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SoulCrystalYouPowerUp</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_SoulCrystalLingPowerUp">
+		<DisplayName>灵淬之法</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<!--<Desc>对一个物品使用，消耗灵珀一个，有几率提高物品的灵气容纳率（如果是法宝则会提高其灵气容量）。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：灵淬之法\n对一个物品使用，消耗灵珀一个，有几率提高物品的灵气容纳率（如果是法宝则会提高其灵气容量）。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SoulCrystalLingPowerUp</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_MakeSoulCrystal">
+		<DisplayName>凝珀诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>对凡人或弥留的修行者使用，收取其珀。对同一个单位只能使用一次。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：凝珀诀\n对无修为的角色，弥留中的角色或精怪使用，收取其珀。对同一个单位只能使用一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MakeSoulCrystal</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_MakePuppet">
+		<DisplayName>御灵术</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：御灵术\n对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MakePuppet</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_BuidPuppet">
+		<DisplayName>赋灵术</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>对傀儡释放，赋予其灵性。赋灵的傀儡可以承担一些简单的苦力劳动，其素质与傀儡制作的品阶有关。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：赋灵术\n对傀儡释放，赋予其灵性。赋灵的傀儡可以承担一些简单的苦力劳动，其素质与傀儡制作的品阶有关。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuidPuppet</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="SeachSoul">
+		<DisplayName>搜魂大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>以秘法搜索濒死之人的魂魄，试图获得一些有价值消息。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：搜魂大法\n对弥留中的角色使用，有一定的概率得到他的功法秘籍或者其他知识。在凶煞之地施展会提高获取信息的概率。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SeachSoul</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_ClosedDoor_1">
+		<DisplayName>入定之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_ruding01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>进入定境之中修炼，会快速消耗寿命和精元。可以快速获得修为，并提升灵气最大值。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：入定\n进入定境之中修炼，会快速消耗寿命和精元。可以快速获得修为，并提升灵气最大值。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>ClosedDoor</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbLing_Aoe_1">
+		<DisplayName>灵息诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingxi01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>吸收指定地点附近的灵气。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：灵息诀\n前往指定地点吸收环境中的灵气。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Aoe</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbLing_Live_1">
+		<DisplayName>冥灵真法</DisplayName>
+		<Icon>res/Sprs/ui/icon_mingling01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>吸收无修为活物的寿命，转为自身灵气。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：冥灵真法\n对无修为的活物释放，消耗目标的寿命，增加自己的灵气。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Live</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbLing_Body_1">
+		<DisplayName>天妖化血术</DisplayName>
+		<Icon>res/Sprs/ui/icon_tianyao01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>炼化一具躯体，转为自身灵气，躯体生前境界越高，获得的灵气越多。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：天妖化血术\n炼化一具躯体，转为自身灵气，躯体生前境界越高，获得的灵气越多。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Body</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbLing_Thing_1">
+		<DisplayName>托体同山诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_tuoshan01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>吸收沉淀在自然界中事物中的灵气。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：托体同山诀\n对场景中的建筑、植物、矿物释放，可以吸取其中的灵气。目标灵气越多，自身灵气上限越多，吸收速度越快。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Thing</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_AbsorbLing_Item_1">
+		<DisplayName>吸星掌</DisplayName>
+		<Icon>res/Sprs/ui/icon_xixing01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>可以吸收物品中蕴含的灵气。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：吸星掌\n可以吸收物品中蕴含的灵气。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Item</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_Healing_Damage_1">
+		<DisplayName>化伤术</DisplayName>
+		<Icon>res/Sprs/ui/icon_huashang01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>运功替一个目标治疗其受到的内门伤害。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：化伤术\n运功替一个目标治疗其受到的内门伤害。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Damage</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_BuildBody_1">
+		<DisplayName>再造术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zaizao01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<!--<Desc>对一个目标进行断肢再生,重铸他失去的所有部位。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：再造术\n对一个目标进行断肢再生,重铸他失去的所有部位。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildBody</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_RobBodyLow_1">
+		<DisplayName>阴神夺舍</DisplayName>
+		<Icon>res/Sprs/ui/icon_yinshen01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>低端夺舍方式，夺取一个无修为活物的身体。但会因此魂魄不合。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：阴神夺舍\n低端夺舍方式，夺取一个无修为活物的身体。但会损失许多苦修，并因此魂魄不合。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>RobBodyLow</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_RobBodyHigh_1">
+		<DisplayName>阳神夺舍</DisplayName>
+		<Icon>res/Sprs/ui/icon_yangshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<!--<Desc>高级夺舍方式，完全夺取一个无修为活物的身体，无负面作用。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：阳神夺舍\n高级夺舍方式，完全夺取一个无修为活物的身体，但会损失许多苦修。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>RobBodyHigh</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_AbsorbGong_1_1">
+		<DisplayName>鼎炉吸真术</DisplayName>
+		<Icon>res/Sprs/ui/icon_dinglu01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>吸取一个无修为活物的寿命，并增加自身修为，并同时获取参悟。目标体质越高，效果越强。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：鼎炉吸真术\n吸取一个无修为活物的寿命，并增加自身修为，并同时获取参悟。目标体质越高，效果越强。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_1</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_2_1">
+		<DisplayName>风月幻境</DisplayName>
+		<Icon>res/Sprs/ui/icon_fengyue01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用幻境迷惑一个无修为的同类异性，在幻境中夺取其寿命，增加自身修为，并同时获取参悟。目标魅力越高，效果越强。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：风月幻境\n利用幻境迷惑一个无修为的同类异性，在幻境中夺取其寿命，增加自身修为，并同时获取参悟。目标魅力越高，效果越强。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_2</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_3_1">
+		<DisplayName>摄神御鬼大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_sheshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<!--<Desc>夺取一个活物的魂魄，将其炼化来增加自身修为，并同时获取参悟。目标悟性越高，效果越强。。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：摄神御鬼大法\n夺取一个无修为生物的魂魄，将其炼化来增加自身修为，并同时获取参悟。目标悟性越高，效果越强。。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_3</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_4_1">
+		<DisplayName>天魔化身术</DisplayName>
+		<Icon>res/Sprs/ui/icon_lianhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<!--<Desc>将自身意识沟通魔界，获得超出常人的修行速度。但与此同时，魂魄终日被魔火焚烧，永不宁息，只能通过折磨活物来取悦魔念，以此得到喘息之机。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：魔化\n将自身意识沟通魔界，获得超出常人的修行速度。但与此同时，魂魄终日被魔火焚烧，永不宁息，只能通过折磨活物来取悦魔念，以此得到喘息之机。\n习得神通：炼魂\n对一个无修为的同类施展炼魂酷刑，使其感受巨大痛苦。并从中获得乐趣。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_4</li>
+		</Magics>
+		<Modifier>Gong_DevilBlood</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_5_1">
+		<DisplayName>他化自在大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_tahuazizai01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<!--<Desc>对一个无修为的同类施法，利用目标的情绪心念之力增强自己的修为，并从中获取参悟。目标的情绪越极端，神通的效果就越强。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：他化自在大法\n对一个无修为的同类施法，当目标处在极端情绪时（160以上或40以下），就可以从中获得参悟与修为。神通一旦释放就会持续作用，目标的情绪越极端，神通的效果就越强。\n每对一个目标施展，自身心情与心境的基础值就会降低一些，目标则会因此变得更容易激动易怒。对已经释放的目标再次释放，可以收回神通。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_5</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_6_1">
+		<DisplayName>魂体寄生</DisplayName>
+		<Icon>res/Sprs/ui/icon_hunti01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<!--<Desc>对一个无修为的同类施法，每天0点将寄生对象的筑基值全数转化为自身的等值的修为与参悟。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：魂体寄生\n对一个无修为的同类施法，将自身一缕元神寄生于其上，每天0点将寄生对象的筑基值全数转化为自身的等值的修为与参悟。\n每寄生一个单位，自身会因为分魂而损害神智，目标则会因被寄生而虚弱。对已经释放的目标再次释放，可以收回神通。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_6</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_7_1">
+		<DisplayName>献祭</DisplayName>
+		<Icon>res/Sprs/ui/icon_xianji01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>7</Difficulty>
+		<!--<Desc>将一名无修为的同类献祭给魔魂，魔魂会随机夺取祭品若干个器官，并反馈给你大量修为与参悟。目标的五维属性越强，献祭的效果就越强。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：献祭\n将一名无修为的同类献祭给魔魂，魔魂会随机夺取祭品若干个器官，并反馈给你大量修为与参悟。目标的五维属性越强，献祭的效果就越强。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_7</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_8_1">
+		<DisplayName>清心咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhufu01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<!--<Desc>施展法术，给一名无修为的同类增加一个好心情。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：清心咒\n施展法术，给一名无修为的同类增加一个好心情。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_8</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_PlantGrowUp_1">
+		<DisplayName>御木诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_yumu01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<!--<Desc>将自身元气凝聚，灌注到目标植物中，将其生长速度提高100倍，持续1天。此法极伤元气，慎用。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：御木诀\n将自身元气凝聚，灌注到目标植物中，将其生长速度大幅提高，持续1天。目标植物品阶越高，效果越差。此法极伤元气，慎用。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PlantGrowUp</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_9_1">
+		<DisplayName>天心正法</DisplayName>
+		<Icon>res/Sprs/ui/icon_tianxin01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>消耗寿命，短时间提高自身能力且恢复灵气值。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：天心正法\n消耗寿命，短时间提高自身能力且恢复灵气值。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_9_1</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_AbsorbGong_9_2">
+		<DisplayName>天魔解体大法</DisplayName>
+		<Icon>res/Sprs/ui/icon_tianmo01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>消耗寿命，短时间提高自身能力且恢复灵气值。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：天魔解体大法\n消耗寿命，短时间提高自身能力且恢复灵气值。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_9_2</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_AbsorbGong_10_1">
+		<DisplayName>慧剑斩念</DisplayName>
+		<Icon>res/Sprs/ui/icon_huanjian01</Icon>
+		<Desc>以忘情之心遍斩杂念，修习此法可习得神通慧剑斩念，且可以杂念为引，分化一条元神分神。</Desc>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<!--<Desc>对一名无修为的生物施展法术，移除目标全部的短期情绪。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<GodSoulCount>1</GodSoulCount>
+		<EffectDesc>[size=10][color=#D06508]习得神通：慧剑斩念\n对一名无修为的生物施展法术，移除目标全部的短期情绪。\n\n增加一条元神分神。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_10</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_LingStoneMake_1">
+		<DisplayName>炼制灵石之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingjshi01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<!--<Desc>将灵气凝结为灵石。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingStoneMake</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_LingCrystalMake_1">
+		<DisplayName>炼制灵晶之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingjing01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>将灵气凝结为灵晶。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵晶\n将灵气凝结为灵晶。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingCrystalMake</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_Prophesy_1">
+		<DisplayName>周天神算</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>尝试预测门派所在地未来几天可能发生的事情。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：周天神算\n尝试预测门派所在地未来几天可能发生的事情。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Prophesy</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_Prophesy_MapStory_1">
+		<DisplayName>大衍神算</DisplayName>
+		<Icon>res/Sprs/ui/icon_dayan01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>4</Difficulty>
+		<!--<Desc>尝试预测某个地点未来可能发生的事情。</Desc>-->
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：大衍神算\n尝试预测某个地点未来可能发生的事情。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Prophesy_MapStory</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_LiuRenShensuan">
+		<DisplayName>六壬神算</DisplayName>
+		<Icon>res/Sprs/ui/icon_dayan01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<!--<Desc>尝试预测某个地点未来可能发生的事情。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：六壬神算\n选择一个角色，尝试获取其行踪。道行越高，了解的信息越多，获取行踪的成功率越高。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LiuRenShensuan</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_PrayForRain_1">
+		<DisplayName>求雨术</DisplayName>
+		<Icon>res/Sprs/ui/icon_qiuyu01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<!--<Desc>利用神通求得一场雨。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：求雨术\n利用神通求得一场雨，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForRain</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_PrayForSun_1">
+		<DisplayName>驱云诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_quyun01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：驱云诀\n利用神通使天放晴，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForSun</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_PrayForRainstorm">
+		<DisplayName>暴雨术</DisplayName>
+		<Icon>res/Sprs/ui/icon_qiuyu01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：暴雨术\n在冬季夏季，利用神通召唤一场暴雨，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForRainstorm</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_PrayForFohn">
+		<DisplayName>焚风术</DisplayName>
+		<Icon>res/Sprs/ui/icon_chifeng01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：焚风术\n在夏季秋季，利用神通召唤一场焚风，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForFohn</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_PrayForDustStorm">
+		<DisplayName>尘暴术</DisplayName>
+		<Icon>res/Sprs/ui/icon_feisha01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：尘暴术\n在冬季春季，利用神通召唤一场尘暴，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForDustStorm</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_PrayForMiasma">
+		<DisplayName>毒瘴术</DisplayName>
+		<Icon>res/Sprs/ui/icon_qizhang01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：毒瘴术\n在春季夏季，利用神通召唤一片瘴气，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForMiasma</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_PrayForLightningStorm">
+		<DisplayName>雷暴术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhaolei01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：雷暴术\n在夏季秋季，利用神通召唤一场雷暴，但是此举有干天数，会折损寿元。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForLightningStorm</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_PrayForWeather">
+		<DisplayName>祈天经</DisplayName>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>利用神通使天放晴。</Desc>-->
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：驱云诀\n习得神通：暴雨术\n习得神通：焚风术\n习得神通：尘暴术\n习得神通：毒瘴术\n习得神通：雷暴术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForSun</li>
+			<li>PrayForRainstorm</li>
+			<li>PrayForFohn</li>
+			<li>PrayForDustStorm</li>
+			<li>PrayForMiasma</li>
+			<li>PrayForLightningStorm</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_Healing_Physique_1">
+		<DisplayName>伐毛洗髓之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_xisui01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物伐毛洗髓，使他的根骨得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：伐毛洗髓\n对一名无修为的生物伐毛洗髓，使他的根骨得到增加，初始值越低效果就越好，最少会提高2成根骨。目标一生只能被施展一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Physique</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_Healing_Intelligence_1">
+		<DisplayName>醍醐灌顶之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_tihu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物醍醐灌顶，使他的悟性得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：醍醐灌顶\n对一名无修为的生物醍醐灌顶，使他的悟性得到增加，初始值越低效果就越好，最少会提高2成悟性。目标一生只能被施展一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Intelligence</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_Healing_Charisma_1">
+		<DisplayName>再造形神之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zaizaoxingshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物再造形神，使他的魅力得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：再造形神\n对一名无修为的生物再造形神，使他的魅力得到增加，初始值越低效果就越好，最少会提高2成魅力。目标一生只能被施展一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Charisma</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_Healing_Perception_1">
+		<DisplayName>开天眼之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_tianyan01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：开天眼\n对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好，最少会提高2成神识。目标一生只能被施展一次。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Perception</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_FenShenZhiShu_1">
+		<DisplayName>分神之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：分神之术\n能够获得分神。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>FenShenZhiShu</li>
+		</Magics>
+	</Esoterica>
+</List></Esotericas>

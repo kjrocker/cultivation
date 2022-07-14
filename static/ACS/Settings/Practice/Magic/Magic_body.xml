@@ -1,0 +1,80 @@
+<Magics><List>	
+	<Magic Name="Body_ModifierTest" Type="Class">
+		<DisplayName>Modifier_Test</DisplayName>
+		<Desc>演示加Modifier的神通，再次释放会移除</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>3</Param1><!--施法时间-->
+		<sParam1>BodyPractice_Attitude_Atk</sParam1><!--modifier-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_ModifierAddNormal</ClassName>
+		<TargetDesc></TargetDesc>
+		<Ani>shentong3</Ani>
+	</Magic>	
+
+	<Magic Name="Magic_Body_JingXi" Type="Class">
+		<DisplayName>鲸息吐纳法</DisplayName>
+		<Desc>在目标地点发动剧烈的吐纳，效率是平常的百倍。施展此法后胸肺负荷过大，十天内吐纳效率大幅下降。</Desc>
+		<Icon>res\Sprs\ui\icon_jingxituna01</Icon>
+		<Param1>18</Param1><!--持续时间-->
+		<Param2>1800</Param2><!--相当于多少秒的吐纳-->
+		<sParam1>Modifier_BodyPractice_Magic_JingXi</sParam1><!--结束之后加的MODIFIER 这个效果要可以叠加-->
+		<SelectMode>Single</SelectMode>
+		<CheckTag>Practice</CheckTag>
+		<SelectTarget>Point|InLight|WorkPractice|Walkable</SelectTarget>
+		<ClassName>Magic_BodyJingxituna</ClassName>
+		<TargetDesc>选择一个进行吐纳的地点</TargetDesc>
+		<Ani>dazuo</Ani>
+	</Magic>	
+	
+	
+	<Magic Name="Magic_Body_TuJin" Type="Class">
+		<DisplayName>吞尽之口</DisplayName>
+		<Desc>开启吞尽之口，开启此秘体会加速身体机能运转，并强行吞吸天地间的养分补益自身。再次释放技能会停止此效果。</Desc>
+		<Icon>res\Sprs\ui\icon_jiasuxiaohua01</Icon>
+		<Param1>3</Param1><!--施法时间-->
+		<sParam1>Modifier_BodyPractice_Magic_TunJin</sParam1><!--modifier-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_ModifierAddNormal</ClassName>
+		<TargetDesc></TargetDesc>
+		<Ani>shentong3</Ani>
+	</Magic>	
+	
+	<Magic Name="Magic_Body_ChiYi1" Type="Class">
+		<DisplayName>此生倏忽</DisplayName>
+		<Desc>以斥异之体所产生的真炁运转周身，大幅提高生命消耗速度，大幅提高淬体速度。再次释放技能会停止此效果。</Desc>
+		<Icon>res\Sprs\ui\icon_ranshaoshengming01</Icon>
+		<Param1>3</Param1><!--施法时间-->
+		<sParam1>Modifier_BodyPractice_Magic_ChiYi1</sParam1><!--modifier-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_ModifierAddNormal</ClassName>
+		<TargetDesc></TargetDesc>
+		<Ani>shentong3</Ani>
+	</Magic>
+	
+	<Magic Name="Magic_Body_ChiYi2" Type="Class">
+		<DisplayName>此生虚妄</DisplayName>
+		<Desc>以斥异之体所产生的真炁运转周身，大幅提高生命消耗速度，大幅提高淬体效率。再次释放技能会停止此效果。</Desc>
+		<Icon>res\Sprs\ui\icon_bomingcuiti01</Icon>
+		<Param1>3</Param1><!--施法时间-->
+		<sParam1>Modifier_BodyPractice_Magic_ChiYi2</sParam1><!--modifier-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_ModifierAddNormal</ClassName>
+		<TargetDesc></TargetDesc>
+		<Ani>shentong3</Ani>
+	</Magic>
+	
+	<Magic Name="Magic_Body_Banyunqixue" Type="Class">
+		<DisplayName>搬运气血</DisplayName>
+		<Desc>消耗50个生机精华，搬运周身气血，恢复自身伤势，持续100秒。</Desc>
+		<Icon>res\Sprs\ui\icon_bomingcuiti01</Icon>
+		<Param1>100</Param1><!--持续时间-->
+		<sParam1>Modifier_BodyPractice_Magic_XiuFu</sParam1><!--增加的Modifier-->
+		<SelectMode>None</SelectMode>	
+		<ClassName>Magic_ModifierKeep</ClassName>
+		<Ani>dazuo</Ani>
+		<ItemCost>
+			<li name="Item_BodyPractice_ShengMingLv1" count="50" quenching="1"/>
+		</ItemCost>
+	</Magic>	
+</List></Magics>

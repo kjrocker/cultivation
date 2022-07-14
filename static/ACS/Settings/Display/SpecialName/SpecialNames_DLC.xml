@@ -1,0 +1,1543 @@
+<SpecialNames><List>
+	<SpecialItem Name="Item_HomeFood">
+		<Item_BambooShoot>
+			<li Name="凉拌竹笋" Desc=""/>
+			<li Name="炒竹笋" Desc=""/>
+			<li Name="卤汁嫩笋" Desc=""/>
+			<li Name="竹笋炒肉" Desc=""/>
+			<li Name="香辣脆笋" Desc=""/>
+			<li Name="油焖竹笋" Desc=""/>
+			<li Name="竹笋炒腊肉" Desc=""/>
+		</Item_BambooShoot>
+		<Fish_StoneCrab>
+			<li Name="清蒸螃蟹" Desc=""/>
+			<li Name="螃蟹汤" Desc=""/>
+			<li Name="家常炒螃蟹" Desc=""/>
+			<li Name="蟹肉粥" Desc=""/>
+			<li Name="豆腐炖蟹" Desc=""/>
+			<li Name="辣卤蟹" Desc=""/>
+			<li Name="香卤蟹" Desc=""/>
+			<li Name="蟹肉炒饭" Desc=""/>
+		</Fish_StoneCrab>
+		<Fish_ChillyCrab>
+			<li Name="清蒸螃蟹" Desc=""/>
+			<li Name="螃蟹汤" Desc=""/>
+			<li Name="家常炒螃蟹" Desc=""/>
+			<li Name="蟹肉粥" Desc=""/>
+			<li Name="豆腐炖蟹" Desc=""/>
+			<li Name="辣卤蟹" Desc=""/>
+			<li Name="香卤蟹" Desc=""/>
+			<li Name="蟹肉炒饭" Desc=""/>
+		</Fish_ChillyCrab>
+		<Fish_JadeCrab>
+			<li Name="清蒸螃蟹" Desc=""/>
+			<li Name="螃蟹汤" Desc=""/>
+			<li Name="家常炒螃蟹" Desc=""/>
+			<li Name="蟹肉粥" Desc=""/>
+			<li Name="豆腐炖蟹" Desc=""/>
+			<li Name="辣卤蟹" Desc=""/>
+			<li Name="香卤蟹" Desc=""/>
+			<li Name="蟹肉炒饭" Desc=""/>
+		</Fish_JadeCrab>
+		<Fish_FireCrab>
+			<li Name="清蒸螃蟹" Desc=""/>
+			<li Name="螃蟹汤" Desc=""/>
+			<li Name="家常炒螃蟹" Desc=""/>
+			<li Name="蟹肉粥" Desc=""/>
+			<li Name="豆腐炖蟹" Desc=""/>
+			<li Name="辣卤蟹" Desc=""/>
+			<li Name="香卤蟹" Desc=""/>
+			<li Name="蟹肉炒饭" Desc=""/>
+		</Fish_FireCrab>
+
+		<Fish_r2>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r2>
+		<Fish_r3>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r3>
+		<Fish_r4>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r4>
+		<Fish_r5>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r5>
+		<Fish_r6>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r6>
+		<Fish_r7>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r7>
+		<Fish_r8>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r8>
+		<Fish_r9>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r9>
+		<Fish_r10>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r10>
+		<Fish_r11>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r11>
+		<Fish_r12>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r12>
+		<Fish_r13>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_r13>
+
+		<Fish_BaiHuang>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_BaiHuang>
+		<Fish_Black>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_Black>
+		<Fish_BlueFish>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_BlueFish>
+		<Fish_FenLi>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_FenLi>
+		<Fish_HongGui>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_HongGui>
+		<Fish_HongHuang>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_HongHuang>
+		<Fish_Huang>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_Huang>
+		<Fish_Ji>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_Ji>
+		<Fish_QingHei>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_QingHei>
+		<Fish_RedFish>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_RedFish>
+		<Fish_s1>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s1>
+		<Fish_s10>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s10>
+		<Fish_s11>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s11>
+		<Fish_s12>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s12>
+		<Fish_s2>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s2>
+		<Fish_s3>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s3>
+		<Fish_s4>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s4>
+		<Fish_s5>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s5>
+		<Fish_s6>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s6>
+		<Fish_s7>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s7>
+		<Fish_s8>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s8>
+		<Fish_s9>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_s9>
+		<Fish_t1>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t1>
+		<Fish_t10>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t10>
+		<Fish_t11>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t11>
+		<Fish_t12>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t12>
+		<Fish_t2>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t2>
+		<Fish_t3>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t3>
+		<Fish_t4>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t4>
+		<Fish_t5>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t5>
+		<Fish_t6>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t6>
+		<Fish_t7>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t7>
+		<Fish_t8>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t8>
+		<Fish_t9>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_t9>
+		<Fish_XieLi>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_XieLi>
+		<Shrimp1>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp1>
+		<Shrimp2>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp2>
+		<Shrimp3>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp3>
+		<Shrimp4>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp4>
+		<Shrimp5>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp5>
+		<Shrimp6>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp6>
+		<Shrimp7>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp7>
+		<Shrimp8>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp8>
+		<Shrimp9>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp9>
+		<Shrimp10>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp10>
+		<Shrimp11>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp11>
+		<Shrimp12>
+			<li Name="清蒸虾" Desc=""/>
+			<li Name="炒虾仁" Desc=""/>
+		</Shrimp12>
+	</SpecialItem>
+	<SpecialItem Name="Item_DeliciousFood">
+		<Item_BambooShoot>
+			<li Name="竹笋排骨" Desc=""/>
+			<li Name="烤竹笋" Desc=""/>
+			<li Name="青笋炒木耳" Desc=""/>
+			<li Name="三色笋丝" Desc=""/>
+			<li Name="豆干竹笋" Desc=""/>
+			<li Name="酸笋汤粉" Desc=""/>
+			<li Name="蛋炒竹笋" Desc=""/>
+		</Item_BambooShoot>
+
+		<Fish_StoneCrab>
+			<li Name="蟹肉煲" Desc=""/>
+			<li Name="香辣蟹" Desc=""/>
+			<li Name="清蒸蟹腿" Desc=""/>
+			<li Name="蟹黄粉丝煲" Desc=""/>
+			<li Name="醉蟹" Desc=""/>
+			<li Name="蟹粉豆腐" Desc=""/>
+			<li Name="酱爆秋蟹" Desc=""/>
+		</Fish_StoneCrab>
+		<Fish_ChillyCrab>
+			<li Name="蟹肉煲" Desc=""/>
+			<li Name="香辣蟹" Desc=""/>
+			<li Name="清蒸蟹腿" Desc=""/>
+			<li Name="蟹黄粉丝煲" Desc=""/>
+			<li Name="醉蟹" Desc=""/>
+			<li Name="蟹粉豆腐" Desc=""/>
+			<li Name="酱爆秋蟹" Desc=""/>
+		</Fish_ChillyCrab>
+		<Fish_JadeCrab>
+			<li Name="蟹肉煲" Desc=""/>
+			<li Name="香辣蟹" Desc=""/>
+			<li Name="清蒸蟹腿" Desc=""/>
+			<li Name="蟹黄粉丝煲" Desc=""/>
+			<li Name="醉蟹" Desc=""/>
+			<li Name="蟹粉豆腐" Desc=""/>
+			<li Name="酱爆秋蟹" Desc=""/>
+		</Fish_JadeCrab>
+		<Fish_FireCrab>
+			<li Name="蟹肉煲" Desc=""/>
+			<li Name="香辣蟹" Desc=""/>
+			<li Name="清蒸蟹腿" Desc=""/>
+			<li Name="蟹黄粉丝煲" Desc=""/>
+			<li Name="醉蟹" Desc=""/>
+			<li Name="蟹粉豆腐" Desc=""/>
+			<li Name="酱爆秋蟹" Desc=""/>
+		</Fish_FireCrab>
+
+		<Fish_r2>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r2>
+		<Fish_r3>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r3>
+		<Fish_r4>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r4>
+		<Fish_r5>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r5>
+		<Fish_r6>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r6>
+		<Fish_r7>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r7>
+		<Fish_r8>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r8>
+		<Fish_r9>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r9>
+		<Fish_r10>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r10>
+		<Fish_r11>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r11>
+		<Fish_r12>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r12>
+		<Fish_r13>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_r13>
+
+		<Fish_BaiHuang>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_BaiHuang>
+		<Fish_Black>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_Black>
+		<Fish_BlueFish>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_BlueFish>
+		<Fish_FenLi>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_FenLi>
+		<Fish_HongGui>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_HongGui>
+		<Fish_HongHuang>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_HongHuang>
+		<Fish_Huang>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_Huang>
+		<Fish_Ji>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_Ji>
+		<Fish_QingHei>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_QingHei>
+		<Fish_RedFish>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_RedFish>
+		<Fish_s1>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s1>
+		<Fish_s10>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s10>
+		<Fish_s11>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s11>
+		<Fish_s12>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s12>
+		<Fish_s2>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s2>
+		<Fish_s3>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s3>
+		<Fish_s4>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s4>
+		<Fish_s5>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s5>
+		<Fish_s6>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s6>
+		<Fish_s7>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s7>
+		<Fish_s8>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s8>
+		<Fish_s9>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_s9>
+		<Fish_t1>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t1>
+		<Fish_t10>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t10>
+		<Fish_t11>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t11>
+		<Fish_t12>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t12>
+		<Fish_t2>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t2>
+		<Fish_t3>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t3>
+		<Fish_t4>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t4>
+		<Fish_t5>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t5>
+		<Fish_t6>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t6>
+		<Fish_t7>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t7>
+		<Fish_t8>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t8>
+		<Fish_t9>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_t9>
+		<Fish_XieLi>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_XieLi>
+		<Shrimp1>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp1>
+		<Shrimp2>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp2>
+		<Shrimp3>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp3>
+		<Shrimp4>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp4>
+		<Shrimp5>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp5>
+		<Shrimp6>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp6>
+		<Shrimp7>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp7>
+		<Shrimp8>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp8>
+		<Shrimp9>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp9>
+		<Shrimp10>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp10>
+		<Shrimp11>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp11>
+		<Shrimp12>
+			<li Name="黄金虾仁炒饭" Desc=""/>
+			<li Name="虾饺皇" Desc=""/>
+		</Shrimp12>
+	</SpecialItem>
+	<SpecialItem Name="Item_DelicacyFood">
+		<Item_BambooShoot>
+			<li Name="梅肉春笋" Desc="将五花肉与新鲜竹笋一同放入锅中，并加入绍酒焖煮。开盖的瞬间，香气扑鼻，令人垂涎欲滴。"/>
+			<li Name="玉版横枝" Desc="采用春天的鲜嫩竹笋，切成小片之后加以刀工雕饰，摆出玉树的样子，色味俱佳。"/>
+		</Item_BambooShoot>
+
+		<Fish_StoneCrab>
+			<li Name="龙袍汤包" Desc="将新鲜的蟹黄与肉混合，再用薄薄的面皮包裹做成小笼包的样子，蒸煮后整个包子内都被金黄的蟹油填满，有传言皇帝连龙袍有不要也要吸上一口。"/>
+			<li Name="黄酒蒸蟹" Desc="使用上好的黄酒蒸煮晚秋的螃蟹，黄酒可去除蟹肉中的阴寒，补充阳气。蟹肉鲜甜的口感和黄酒的甘醇完美融合，乃人间绝配。"/>
+		</Fish_StoneCrab>
+		<Fish_ChillyCrab>
+			<li Name="龙袍汤包" Desc="将新鲜的蟹黄与肉混合，再用薄薄的面皮包裹做成小笼包的样子，蒸煮后整个包子内都被金黄的蟹油填满，有传言皇帝连龙袍有不要也要吸上一口。"/>
+			<li Name="黄酒蒸蟹" Desc="使用上好的黄酒蒸煮晚秋的螃蟹，黄酒可去除蟹肉中的阴寒，补充阳气。蟹肉鲜甜的口感和黄酒的甘醇完美融合，乃人间绝配。"/>
+		</Fish_ChillyCrab>
+		<Fish_JadeCrab>
+			<li Name="龙袍汤包" Desc="将新鲜的蟹黄与肉混合，再用薄薄的面皮包裹做成小笼包的样子，蒸煮后整个包子内都被金黄的蟹油填满，有传言皇帝连龙袍有不要也要吸上一口。"/>
+			<li Name="黄酒蒸蟹" Desc="使用上好的黄酒蒸煮晚秋的螃蟹，黄酒可去除蟹肉中的阴寒，补充阳气。蟹肉鲜甜的口感和黄酒的甘醇完美融合，乃人间绝配。"/>
+		</Fish_JadeCrab>
+		<Fish_FireCrab>
+			<li Name="龙袍汤包" Desc="将新鲜的蟹黄与肉混合，再用薄薄的面皮包裹做成小笼包的样子，蒸煮后整个包子内都被金黄的蟹油填满，有传言皇帝连龙袍有不要也要吸上一口。"/>
+			<li Name="黄酒蒸蟹" Desc="使用上好的黄酒蒸煮晚秋的螃蟹，黄酒可去除蟹肉中的阴寒，补充阳气。蟹肉鲜甜的口感和黄酒的甘醇完美融合，乃人间绝配。"/>
+		</Fish_FireCrab>
+
+		<Fish_r2>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r2>
+		<Fish_r3>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r3>
+		<Fish_r4>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r4>
+		<Fish_r5>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r5>
+		<Fish_r6>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r6>
+		<Fish_r7>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r7>
+		<Fish_r8>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r8>
+		<Fish_r9>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r9>
+		<Fish_r10>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r10>
+		<Fish_r11>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r11>
+		<Fish_r12>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r12>
+		<Fish_r13>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_r13>
+
+		<Fish_BaiHuang>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_BaiHuang>
+		<Fish_Black>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_Black>
+		<Fish_BlueFish>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_BlueFish>
+		<Fish_FenLi>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_FenLi>
+		<Fish_HongGui>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_HongGui>
+		<Fish_HongHuang>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_HongHuang>
+		<Fish_Huang>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_Huang>
+		<Fish_Ji>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_Ji>
+		<Fish_QingHei>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_QingHei>
+		<Fish_RedFish>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_RedFish>
+		<Fish_s1>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s1>
+		<Fish_s10>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s10>
+		<Fish_s11>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s11>
+		<Fish_s12>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s12>
+		<Fish_s2>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s2>
+		<Fish_s3>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s3>
+		<Fish_s4>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s4>
+		<Fish_s5>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s5>
+		<Fish_s6>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s6>
+		<Fish_s7>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s7>
+		<Fish_s8>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s8>
+		<Fish_s9>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_s9>
+		<Fish_t1>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t1>
+		<Fish_t10>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t10>
+		<Fish_t11>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t11>
+		<Fish_t12>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t12>
+		<Fish_t2>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t2>
+		<Fish_t3>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t3>
+		<Fish_t4>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t4>
+		<Fish_t5>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t5>
+		<Fish_t6>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t6>
+		<Fish_t7>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t7>
+		<Fish_t8>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t8>
+		<Fish_t9>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_t9>
+		<Fish_XieLi>		
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_XieLi>
+
+		<Shrimp1>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp1>
+		<Shrimp2>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp2>
+		<Shrimp3>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp3>
+		<Shrimp4>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp4>
+		<Shrimp5>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp5>
+		<Shrimp6>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp6>
+		<Shrimp7>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp7>
+		<Shrimp8>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp8>
+		<Shrimp9>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp9>
+		<Shrimp10>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp10>
+		<Shrimp11>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp11>
+		<Shrimp12>
+			<li Name="醉虾" Desc="使用高度的酒浸泡虾，柔软甜美。"/>
+			<li Name="凤尾虾" Desc="用面粉裹住虾尾，炸出松软酥脆，外焦里嫩的口感。"/>
+		</Shrimp12>
+	</SpecialItem>
+</List></SpecialNames>

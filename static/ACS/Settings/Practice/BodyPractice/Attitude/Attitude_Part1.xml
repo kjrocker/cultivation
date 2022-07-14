@@ -1,0 +1,11 @@
+<BPAttitudes><List>
+
+	
+	<Def Name="Test3"><!--姿态1-->
+		<DisplayName>防御姿态</DisplayName>
+		<Desc>防御姿态防御姿态</Desc>
+		<NoAtk>1</NoAtk><!--不会进攻-->
+		<AtkFabaoCount>1</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier></Modifier>
+	</Def>
+</List></BPAttitudes>

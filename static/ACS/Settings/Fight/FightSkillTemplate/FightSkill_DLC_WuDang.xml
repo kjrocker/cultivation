@@ -1,0 +1,198 @@
+<FightSkills><List>
+	<Skill Name="Ls_XuanWuShield">	
+		<DisplayName>玄甲庇体</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>大幅提高一名友方的灵气护盾和秘体坚韧强度。</Desc>
+		<Icon>res\Sprs\ui\icon_hudunzengqiang01</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>600</CD>
+		<LingCost>1000</LingCost>
+		<AttackRange>500</AttackRange>
+		<SingAni>ShiFaStart</SingAni>
+		<CastAni>ShiFaLoop</CastAni>
+		<SelectType>SelectThingNotSelf</SelectType>
+		<TargetCamp>Friendly</TargetCamp>
+		<Value>1</Value>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_addmodifer</ClassName>
+		<SValue>Modifier_XuanWuShield</SValue>
+	</Skill>
+	
+	<Skill Name="Ls_XuanWuBreak">		
+		<DisplayName>真武破体</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>大幅降低一名敌人的灵气护盾和秘体坚韧强度。</Desc>
+		<Icon>res\Sprs\ui\icon_zhandoufashu</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>600</CD>
+		<LingCost>1000</LingCost>
+		<AttackRange>500</AttackRange>
+		<SingAni>ShiFaStart</SingAni>
+		<CastAni>ShiFaLoop</CastAni>
+		<SelectType>SelectThingNotSelf</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Value>1</Value>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_addmodifer</ClassName>
+		<SValue>Modifier_XuanWuBreak</SValue>
+	</Skill>
+	
+	<Skill Name="Ls_XuanWuWater">
+		<DisplayName>波涌术</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>40</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk3</SingAni>
+		<CastAni>Atk3</CastAni>
+		<Value>240</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		<SelectType>SelectThingNotSelf</SelectType>
+		<AttackRange>500</AttackRange>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>400015</MissileEffect>
+		<BombEffect>400016</BombEffect>
+		<HitEffect>400016</HitEffect>
+		<Radius>20</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="LsXuanWuFire">
+		<DisplayName>天焚</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Huo</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>40</CD>
+		<LingCost>100</LingCost>
+		<SingAni>Atk3</SingAni>
+		<CastAni>Atk3</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<SelectCount>1</SelectCount>
+		<AttackRange>500</AttackRange>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>89</MissileEffect>
+		<BombEffect>39</BombEffect>
+		<HitEffect>39</HitEffect>
+		<Radius>20</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_XuanWuForm">	
+		<DisplayName>龟甲之形</DisplayName>
+		<Desc>使友方阵法稳定度提高，并获得一个阵法灵机。必须对战斗中的阵法使用。</Desc>
+		<Icon>res\Sprs\ui\icon_huti</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_addStabilityAndPoint</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>900</CD>
+		<LingCost>50000</LingCost>
+		<SingAni>ShiFaStart</SingAni>
+		<CastAni>ShiFaLoop</CastAni>
+		<Value>1000</Value>
+		<Value2>10</Value2>
+		<AttackRange>500</AttackRange>
+		<TargetCamp>Friendly</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>AllZhen</SelectType>
+		<MissileEffect>400010</MissileEffect>
+		<BombEffect>400009</BombEffect>
+		<HitEffect>400009</HitEffect>
+		<Radius>20</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_XuanWuDefac">		
+		<DisplayName>游离之形</DisplayName>
+		<Desc>使敌方阵法暴露阵眼。</Desc>
+		<Icon>res\Sprs\ui\icon_lianqi</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_revealzhen</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>900</CD>
+		<LingCost>50000</LingCost>
+		<AttackRange>500</AttackRange>
+		<SingAni>ShiFaStart</SingAni>
+		<CastAni>ShiFaLoop</CastAni>
+		<Value>1000</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Zhen</SelectType>
+		<MissileEffect>400012</MissileEffect>
+		<BombEffect>400011</BombEffect>
+		<HitEffect>400011</HitEffect>
+		<Radius>20</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="LsXuanWuNormal">
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<CD>3</CD>
+		<SingTime>0</SingTime>
+		<CastTime>0</CastTime>
+		<AttackRange>500</AttackRange>
+		<CastEndTime>0.5</CastEndTime>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>16</MissileEffect>
+		<HitEffect>50</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+		</Missile>
+	</Skill>
+</List></FightSkills>

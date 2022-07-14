@@ -1,0 +1,147 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_BambooShoot" Parent="Item_Wheat">
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_zhusun01</TexPath>	
+		<ThingName>竹笋</ThingName>
+		<Desc>几根竹笋，是竹子的根部，可以用来做菜，清脆爽口。</Desc>
+		
+		<Tags>
+			<Tag Name="BambooShoot"/>
+			<Tag Name="Tame" Level="25"/>
+			<Tag Name="TameBamboo" Level="1"/>
+			<Tag Name="Item_BambooShoot" Level="1"/>
+		</Tags>
+		
+		<Item>
+			<FabaoSuffix>索,丝</FabaoSuffix>
+			<BeMaterial>
+				<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<Food>
+				<EatDirectable>0</EatDirectable>
+				<Nutrition>25</Nutrition>
+			</Food>
+			<PhysicalLables>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+		</Item>
+		
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Bamboo" Parent="WoodBase">
+		<ThingName>竹竿</ThingName>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_zhuzi01</TexPath>
+		<Desc>一捆竹子，可以用来制作鱼竿和一些建筑。只有貊可以食用。</Desc>
+		
+		<Tags>
+			<Tag Name="Bamboo" Level="2"/>
+			<Tag Name="Tame" Level="25"/>
+			<Tag Name="TameBamboo" Level="1"/>
+			<Tag Name="Item_Bamboo" Level="1"/>
+		</Tags>	
+		
+		<Item Lable="BambooBlock">
+			<FabaoSuffix>竿</FabaoSuffix>
+			<Food>
+				<FoodTag>Bamboo</FoodTag>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>25</Nutrition>
+			</Food>
+			<PhysicalLables>
+				<li>Light2</li>
+				<li>Smooth1</li>
+			</PhysicalLables>
+			 <BeMaterial>
+				<BuildingTileIDWhenBeMain>-47</BuildingTileIDWhenBeMain>
+				<ColorWhenBeMain>#83C772FF</ColorWhenBeMain>
+			</BeMaterial>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FishStick" Parent="ToolBase">
+		<ThingName>鱼竿</ThingName>	
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_yugan01</TexPath>
+		<Desc>一根鱼竿。稀有鱼类更容易被高品阶鱼竿吸引。有些鱼类只会被特定五行的鱼竿吸引，同时也只在特定季节和时间出没。</Desc> 
+		<Beauty>4</Beauty>
+		<Tags>
+		<Tag Name="FishStick" Level="1"/>
+     	</Tags>
+		
+		<Rate>1</Rate>
+		<Flammability>
+			<Flammability>0.7</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>	
+		
+		<Item Kind="Equipment">
+			<FabaoSuffix>竿,丝,索</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+			</PhysicalLables>	
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>		
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_Bamboo" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<Equip>
+				<Modifier></Modifier>
+			</Equip>
+		</Item>
+		<ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>HandWorkTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+        </ProduceMode>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PandaJade" Parent="Item_BossFeng_FengYin">
+		<ThingName>天貊玉佩</ThingName>
+		<Desc>从大竹林找到的玉佩，似乎是一套物品中的一件。</Desc>
+		<StoryBnts>
+			<li Name="查看" Desc="查看天貊玉佩。" Appoint="2" Story="Ls_CallPanda" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<ElementKind>None</ElementKind>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_xiongmaoyupei01</TexPath>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Panda" Parent="Item_HorseBase">	
+		<ThingName>灵契:貊</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Panda_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYPanda</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+</List></ThingDefs>

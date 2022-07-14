@@ -1,0 +1,538 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature> 
+	-->
+	<Feature Name="FacialScar" Type="Backstory">
+		<DisplayName>脸部疤痕</DisplayName>
+		<Desc>一道狰狞的疤痕留在脸上。</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<Damages>
+				<li Part="Face" Damage="Scar" Value="0.4"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="UglyFace1" Type="Normal">
+		<DisplayName>面相丑陋</DisplayName>
+		<Desc>此人长的很丑，让人厌恶。</Desc>
+		<Mutex>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+			<li>UglyFace2</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,-1,0,0</BaseFive>
+			<GiveFavours>
+				<li>Evilfaced</li>
+			</GiveFavours>
+		</ModifierDef>
+		<AppearanceLevel>1</AppearanceLevel>
+	</Feature> 
+	<Feature Name="UglyFace2" Type="Normal">
+		<DisplayName>丑陋至极</DisplayName>
+		<Desc>此人长的不成人形，让人望而生畏。</Desc>
+		<Mutex>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+			<li>UglyFace1</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,-2,0,0</BaseFive>
+			<GiveFavours>
+				<li>Evilfaced</li>
+			</GiveFavours>
+		</ModifierDef>
+		<AppearanceLevel>1</AppearanceLevel>
+	</Feature> 
+	
+	<Feature Name="BeautifulFace1" Type="Normal">
+		<DisplayName>容貌俊美</DisplayName>
+		<Desc>此人的面孔异常俊美。</Desc>
+		<Mutex>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace2</li>
+		</Mutex>
+		<Close>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,1,0,0</BaseFive>
+			<GiveFavours>
+				<li>BeautifulFace</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BeautifulFace2" Type="Normal">
+		<DisplayName>惊世美貌</DisplayName>
+		<Desc>此人的面孔异常俊美。</Desc>
+		<Mutex>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace1</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,2,0,0</BaseFive>
+			<GiveFavours>
+				<li>BeautifulFace</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="OldViscusInjury" Type="Backstory">
+		<DisplayName>脏腑旧损</DisplayName>
+		<Desc>此人脏腑受过重伤，迟迟不能痊愈。</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<Damages>
+				<li Part="Body" Damage="ViscusInjury" Value="0.2"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="CrippleLeft" Type="Backstory">
+		<DisplayName>瘸腿（左）</DisplayName>
+		<Desc>此人的左腿因为顽疾而不太灵便。</Desc>
+		<HideInUI>1</HideInUI>
+		<Close>
+			<li>CrippleLeft</li>
+			<li>CrippleRight</li>
+		</Close>
+		<ModifierDef>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Osteodynia" Value="0.2"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="CrippleRight" Type="Backstory">
+		<DisplayName>瘸腿（右）</DisplayName>
+		<Desc>此人的右腿因为顽疾而不太灵便。</Desc>
+		<HideInUI>1</HideInUI>
+		<Close>
+			<li>CrippleLeft</li>
+			<li>CrippleRight</li>
+		</Close>
+		<ModifierDef>
+			<Damages>
+				<li Part="RightThighbone" Damage="Osteodynia" Value="0.2"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	
+	
+	<Feature Name="BanLeftTibia" Type="Backstory">
+		<DisplayName>断腿（左）</DisplayName>
+		<Desc>此人的右腿断掉了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>LeftTibia</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanRightTibia" Type="Backstory">
+		<DisplayName>断腿（右）</DisplayName>
+		<Desc>此人的右腿断掉了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>RightTibia</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	
+	
+	<Feature Name="BanLeftScapula" Type="Backstory">
+		<DisplayName>断臂（左）</DisplayName>
+		<Desc>此人的左手齐肩断掉了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>LeftScapula</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanRightScapula" Type="Backstory">
+		<DisplayName>断臂（右）</DisplayName>
+		<Desc>此人的右手齐肩断掉了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>RightScapula</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Deaf" Type="Backstory">
+		<DisplayName>耳聋</DisplayName>
+		<Desc>此人有先天耳疾。</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<Damages>
+				<li Part="LeftEar" Damage="Deaf" Value="0.1"/>
+				<li Part="RightEar" Damage="Deaf" Value="0.1"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="BanLeftEye" Type="Backstory">
+		<DisplayName>瞎眼（左）</DisplayName>
+		<Desc>左眼瞎了</Desc>
+		<HideInUI>1</HideInUI>
+		<Close>
+			<li>BanRightEye</li>
+			<li>BanLeftEye</li>
+		</Close>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanRightEye" Type="Backstory">
+		<DisplayName>瞎眼（右）</DisplayName>
+		<Desc>右眼瞎了</Desc>
+		<HideInUI>1</HideInUI>
+		<Close>
+			<li>BanRightEye</li>
+			<li>BanLeftEye</li>
+		</Close>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>RightEye</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="BanLeftEar" Type="Backstory">
+		<DisplayName>耳聋（左）</DisplayName>
+		<Desc>左耳聋了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>LeftEar</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanRightEar" Type="Backstory">
+		<DisplayName>耳聋（右）</DisplayName>
+		<Desc>右耳聋了</Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>RightEar</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	
+	
+	<Feature Name="MeridianIncomplete" Type="Backstory">
+		<DisplayName>经脉残缺</DisplayName>
+		<Desc>此人天生经脉残缺。</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+			<Damages>
+				<li Part="YinWeiChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="YinHeelChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="YangWeiChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="YangHeelChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="RenChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="DuChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="ChongChannel" Damage="MeridianBlocking" Value="0.99"/>
+				<li Part="BeltChannel" Damage="MeridianBlocking" Value="0.99"/>
+			</Damages>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="HealthOverdraft1" Type="Normal">
+		<DisplayName>身体透支</DisplayName>
+		<Desc>此人透支了身体，比一般人短命。</Desc>
+		<Mutex>
+			<li>HealthOverdraft2</li>
+			<li>HealthMaintain1</li>
+			<li>HealthMaintain2</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="-15" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="HealthOverdraft2" Type="Backstory">
+		<DisplayName>身体衰竭</DisplayName>
+		<Desc>此人严重透支了身体，比一般人短命很多。</Desc>
+		<Mutex>
+			<li>HealthOverdraft1</li>
+			<li>HealthMaintain1</li>
+			<li>HealthMaintain2</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="-25" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="HealthMaintain1" Type="Normal">
+		<DisplayName>保养良好</DisplayName>
+		<Desc>此人很懂保养，比一般人长寿。</Desc>
+		<Mutex>
+			<li>HealthOverdraft1</li>
+			<li>HealthOverdraft2</li>
+			<li>HealthMaintain2</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="15" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="HealthMaintain2" Type="Backstory">
+		<DisplayName>养尊处优</DisplayName>
+		<Desc>此人很懂保养，比一般人长寿很多。</Desc>
+		<Mutex>
+			<li>HealthOverdraft1</li>
+			<li>HealthOverdraft2</li>
+			<li>HealthMaintain1</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="25" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="ColdPatience" Type="Normal">
+		<DisplayName>耐寒</DisplayName>
+		<Desc>此人常年生活在寒冷地区，能很好的适应寒冷。</Desc>
+		<Mutex>
+			<li>HotPatience</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="ComfyTMin" AddV="-10" AddP="0"/>
+				<li Name="ToleranceTMin" AddV="-15" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="HotPatience" Type="Normal">
+		<DisplayName>耐热</DisplayName>
+		<Desc>此人常年生活在炎热地区，能很好的适应炎热。</Desc>
+		<Mutex>
+			<li>ColdPatience</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="ComfyTMax" AddV="8" AddP="0"/>
+				<li Name="ToleranceTMax" AddV="12" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="DarkPatience" Type="Normal">
+		<DisplayName>喜欢黑暗</DisplayName>
+		<Desc>此人喜欢黑暗的地方。</Desc>
+		<MoodBranch> 
+			<li Old="Light3" New="Light5"/>
+			<li Old="Light4" New="Light6"/>
+		</MoodBranch>
+	</Feature> 
+	
+	<Feature Name="HighMan" Type="Normal">
+		<DisplayName>高大</DisplayName>
+		<Desc>此人身形比一般人高大很多，强壮的身体让他习惯用暴力解决问题。</Desc>
+		<Mutex>
+			<li>LowMan</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>0,1,0,-1,0</BaseFive>
+			<ModScale>0.2</ModScale>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="LowMan" Type="Normal">
+		<DisplayName>矮小</DisplayName>
+		<Desc>此人身形矮小，像个孩童，身体的弱小让他更习惯思考和观察去解决问题。</Desc>
+		<Mutex>
+			<li>HighMan</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>1,-2,0,1,0</BaseFive>
+			<ModScale>-0.2</ModScale>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="NoHair" Type="Normal">
+		<DisplayName>光头</DisplayName>
+		<Desc>此人没有头发。</Desc>
+		<HideInUI>1</HideInUI>
+		<NoHair>1</NoHair>
+		<ModifierDef>
+			<Properties>
+				<li Name="SpeedOfMindStateCoefficient" AddP="-0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="LeftHanded"  Type="Normal">
+		<DisplayName>左撇子</DisplayName>
+		<Desc>此人习惯使用左手。</Desc>
+		<Mutex>
+		</Mutex>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_LEFTHANDED</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="Mute"  Type="Normal">
+		<DisplayName>哑巴</DisplayName>
+		<Desc>此人无法与他人交流</Desc>
+		<Mutex>
+		</Mutex>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_NOCOMMUNICATE</li>
+				<li>FLAG_MUTE</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanRightMiddleFinger" Type="Backstory">
+		<DisplayName>断手指</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>RightMiddleFinger</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="BanPenis" Type="Backstory">
+		<DisplayName>BanPenis</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<ModifierDef>
+			<BanBodyParts>
+				<li>Genitals</li>
+			</BanBodyParts>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="RunFast" Type="Normal">
+		<DisplayName>步履如飞</DisplayName>
+		<Desc>此人腿脚轻便，步履如飞。</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddP="0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="Indigestion" Type="Normal">
+		<DisplayName>消化不良</DisplayName>
+		<Desc>此人肠胃不好，对食物吸收差。</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="NutritionToJingYuanK" AddP="-0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="IronStomach" Type="Normal">
+		<DisplayName>铁胃</DisplayName>
+		<Desc>此人天生体质异常，对食物的吸收特别好。</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="NutritionToJingYuanK" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="GoodEyesight" Type="Normal">
+		<DisplayName>视力好</DisplayName>
+		<Desc>此人眼神很好，能看的很远。</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="VisionRadius" AddP="1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	<Feature Name="ShallowSleep" Type="Normal">
+		<DisplayName>浅睡眠</DisplayName>
+		<Desc>此人睡不踏实。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="FatigueRecoveryConstant" AddV="0" AddP="-0.4"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+</List></FeatureDefs>

@@ -1,0 +1,7 @@
+<CommandTypes><List>
+	<CommandType Name="BirthMe" Class="CommandBirthMe">
+	<Single>1</Single>
+	</CommandType>
+	<CommandType Name="StudyThing" Class="CommandStudyThing">
+	</CommandType>
+</List></CommandTypes>

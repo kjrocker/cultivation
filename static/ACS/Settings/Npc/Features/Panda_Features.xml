@@ -1,0 +1,31 @@
+﻿<FeatureDefs><List>
+	<Feature Name="Panda1" Type="Backstory">
+		<DisplayName>懒惰调皮</DisplayName>
+		<Desc>既懒惰又调皮，做事情慢且粗心，但却让人喜爱万分。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,1,0,0</BaseFive>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="-0.2"/>
+				<li Name="TreatSuccessChance" AddP="-0.2"/>
+				<li Name="CookingSuccessChance" AddP="-0.2"/>
+				<li Name="ConstructSuccessChance" AddP="-0.2"/>
+				<li Name="MadeQualityAddValue" AddP="-0.2"/>
+				<li Name="ManufactureExpectQuality" AddP="-0.2"/>
+				<li Name="DisasterFightingSuccessChance" AddP="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Panda2" Type="Backstory">
+		<DisplayName>阴阳躯体</DisplayName>
+		<Desc>身体为阴阳造化之物，淬体速度和学习速度均得到提高。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,0,1,0</BaseFive>
+			<Properties>
+				<li Name="IntelligenceSkillEXPConstant" BAddP="0.3"/>
+				<li Name="BodyPratice_QuenchingSpeed" BAddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+</List></FeatureDefs>

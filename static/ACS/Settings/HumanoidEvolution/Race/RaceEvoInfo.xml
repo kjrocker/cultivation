@@ -1,0 +1,426 @@
+<Defs><List>
+	<Def Name="All">
+		<Type>Meat</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<MaxThink>40</MaxThink>
+		<MaxThinkCache>10</MaxThinkCache>
+		
+		<ThinkLast>6</ThinkLast>
+		<AggLast>6</AggLast>
+		
+		<PeferEnvironment>
+			<Desc>喜欢</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+			</Light>
+			<Plant>
+			</Plant>
+			
+			<MinLiveCount>0</MinLiveCount>
+			<MaxLiveCount>0</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+			</LiveRace>
+		</PeferEnvironment>
+		<Frag>
+			<Weight>5</Weight>
+			<FragR>
+				<li Type="Emotion">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Scene">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Target">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+			</FragR>
+		</Frag>
+	</Def>
+	
+	<Def Name="Snake" Parent="All">
+		<Type>Meat</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>嘶嘶，嘶嘶嘶嘶！</NaiveTalk>
+		<PeferEnvironment>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>InRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+			</Plant>
+			<LightDesc>喜欢室内。</LightDesc>
+			<LiveDesc>只喜欢小型动物。</LiveDesc>
+			<Desc>只喜欢小型动物。\n喜欢室内。\n</Desc>
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+				<li>Small</li>
+			</LiveSize>
+		</PeferEnvironment>
+		
+		<Frag>
+			<Weight>5</Weight>
+			<FragR>
+				<li Type="Scene">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="See" Weight="2" />
+						<li Tag="Self" Weight="8" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Emotion">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Target">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+			</FragR>
+		</Frag>
+	</Def>
+	
+	<Def Name="Bear" Parent="All">
+		<Type>Both</Type> <!-- Meat, Veg, Both -->
+		<Size>Big</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>嚎嚎，嚎嚎嚎！</NaiveTalk>
+		<PeferEnvironment>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>喜欢有食草动物在附近</LiveDesc>
+			<Desc>喜欢有食草动物在附近。\n喜欢室外。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+			</Plant>
+			
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+				<li>Veg</li>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+		</PeferEnvironment>
+	</Def>
+	
+	<Def Name="Rabbit" Parent="All">
+		<Type>Veg</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>咕咕，咕咕呜呜！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有野草在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>只喜欢同类</LiveDesc>
+			<Desc>喜欢有野草在附近。\n喜欢室外。只喜欢同类。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+				<li>Grass</li>
+			</Plant>
+			
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+				<li>Rabbit</li>
+			</LiveRace>
+		</PeferEnvironment>
+		
+		<Frag>
+			<Weight>5</Weight>
+			<FragR>
+				<li Type="Emotion">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Fear3" Weight="8" />
+						<li Tag="Fear2" Weight="8" />
+						<li Tag="Fear1" Weight="8" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Target">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+				<li Type="Scene">
+					<ModifyTagWeight>
+						<li Tag="Exotic" Weight="3" />
+						<li Tag="Trash" Weight="-1" />
+					</ModifyTagWeight>
+				</li>
+			</FragR>
+		</Frag>
+	</Def>
+	
+	<Def Name="Chicken" Parent="All">
+		<Type>Veg</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>咯咯，咯咯哒！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有小麦在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>讨厌食肉动物</LiveDesc>
+			<Desc>喜欢有小麦在附近。\n喜欢室外。讨厌食肉动物。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li>
+			</Light>
+			<Plant>
+				<li>Wheat</li>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+				<li>Veg</li>
+				<li>Both</li>
+			</LiveType>
+			<LiveRace>
+			</LiveRace>
+		</PeferEnvironment>
+	</Def>
+	
+	<Def Name="Wolf" Parent="All">
+		<Type>Meat</Type> <!-- Meat, Veg, Both -->
+		<Size>Mid</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>嗷呜，嗷呜！</NaiveTalk>
+		<PeferEnvironment>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>只喜欢同类</LiveDesc>
+			<Desc>喜欢同类。喜欢室外。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li>
+			</Light>
+			<Plant>
+			</Plant>
+			
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>50</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+				<li>Wolf</li>
+			</LiveRace>
+		</PeferEnvironment>
+	</Def>
+	
+	<Def Name="Boar" Parent="All">
+		<Type>Both</Type> <!-- Meat, Veg, Both -->
+		<Size>Big</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>哼哼，哼哼！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有蘑菇在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<Desc>喜欢有蘑菇在附近。喜欢室外。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+				<li>Mushroom</li>
+			</Plant>
+			
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+			</LiveRace>
+		</PeferEnvironment>
+	</Def>
+	
+	<Def Name="Frog" Parent="All">
+		<Type>Both</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>呱呱，呱呱！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有莲花在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>讨厌食肉动物</LiveDesc>
+			<Desc>喜欢有莲花在附近。喜欢室外。\n不喜欢食肉动物。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+				<li>Lotus</li>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+				<li>Veg</li>
+				<li>Both</li>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+		</PeferEnvironment>
+		
+	</Def>
+	
+	<Def Name="Turtle" Parent="All">
+		<Type>Both</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>卡拉，卡拉！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有芦苇在附近</PlantDesc>
+			<LightDesc>喜欢室内</LightDesc>
+			<Desc>喜欢有芦苇在附近。喜欢室内。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>InRoom</li>
+			</Light>
+			<Plant>
+				<li>Reed</li>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+			</LiveRace>
+		</PeferEnvironment>
+	</Def>
+	
+	<Def Name="Cat" Parent="All">
+		<Type>Meat</Type> <!-- Meat, Veg, Both -->
+		<Size>Small</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>喵，喵呜！</NaiveTalk>
+		<PeferEnvironment>
+			<LightDesc>喜欢室内</LightDesc>
+			<LiveDesc>讨厌任何其他动物</LiveDesc>
+			<Desc>喜欢室内。讨厌任何其他动物。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>InRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>1</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+				<li>Cat</li>
+			</LiveRace>
+		</PeferEnvironment>
+		
+	</Def>
+	
+	<Def Name="Tiger" Parent="All">
+		<Type>Meat</Type> <!-- Meat, Veg, Both -->
+		<Size>Big</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>吼吼，吼吼！</NaiveTalk>
+		<PeferEnvironment>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>讨厌任何其他动物</LiveDesc>
+			<Desc>喜欢室外。讨厌任何其他动物。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>1</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+				<li>Tiger</li>
+			</LiveRace>
+			<!-- race存在取race，否则取type+size -->
+		</PeferEnvironment>
+	</Def>
+	<Def Name="Cattle" Parent="All">
+		<Type>Veg</Type> <!-- Meat, Veg, Both -->
+		<Size>Big</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>哞哞哞，哞哞！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有长草在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>讨厌任何食肉动物</LiveDesc>
+			<Desc>喜欢有长草在附近。喜欢室外。\n讨厌任何食肉动物。\n</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li> <!-- li之间是or，li中是and -->
+			</Light>
+			<Plant>
+				<li>LongGrass</li>
+			</Plant>
+			
+			<MinLiveCount>1</MinLiveCount>
+			<MaxLiveCount>9999</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+				<li>Veg</li>
+				<li>Both</li>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+		</PeferEnvironment>
+	</Def>
+</List></Defs>

@@ -1,0 +1,143 @@
+<ZhenNodeDefs><List>
+	<!-- 阵枢 -->
+	
+	<Def Name="ZhenMainNode_School_1" DisplayName="丹霞阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_1</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_School_2" DisplayName="昆仑阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_2</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_School_3" DisplayName="极天阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_3</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_School_4" DisplayName="紫霄阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_4</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_School_5" DisplayName="正一阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_5</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_School_6" DisplayName="青莲阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_6</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_School_7" DisplayName="栖霞阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_7</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_School_8" DisplayName="百蛮阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_8</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_School_9" DisplayName="七千阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_9</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_School_10" DisplayName="七杀阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_10</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_School_11" DisplayName="合欢阵枢" Main="1" Base="0">
+		<Lv>5</Lv>
+		<SlotSuits>
+			<li>SlotSuit_School_11</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+</List></ZhenNodeDefs>

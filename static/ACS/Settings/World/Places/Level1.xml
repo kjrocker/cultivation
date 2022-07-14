@@ -1,0 +1,1249 @@
+<Places><List>
+	<Place Name="Place_Level1Base">
+		<Desc>1级地点模板</Desc>
+		<Location X="0" Y="0"/>
+		<Level>1</Level>
+		<Scale>0.5</Scale>
+		<UnLocked>1</UnLocked>
+		<School>-1</School>
+		<ExploreNum>0</ExploreNum>
+		<FightMap>
+			<NormalTalk>System_FightMap_NormalTalk</NormalTalk>
+			<DiscipleTalk>System_FightMap_DiscipleTalk</DiscipleTalk>
+		</FightMap>
+		<Secrets>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>29</li>
+			<li>30</li>
+			<li>31</li>
+			<li>32</li>
+			<li>33</li>
+			<li>34</li>
+		</Secrets>
+		<!--<Children>
+			<li>wudang_21</li>
+			<li>wudang_22</li>
+		</Children>
+		<Secrets>
+			<li>1</li>
+			<li>2</li>
+		</Secrets>
+		<Events><!{1}** 嗯**{1}>
+			<li Name="Free" Rate="0"/>
+			<li Name="Join" Rate="0"/>
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="GoodFight" Rate="0"/>
+			<li Name="BadFight" Rate="0"/>
+			<li Name="Treasure" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+			<ThingDef>Item_HardWood</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Stuff>Item_IronBlock</Stuff>
+				<Count>1</Count>
+			</li> 
+		</HighProduce>-->
+	</Place>
+	<Place Name="Place_DanXia" Parent="Place_Level1Base">
+		<DisplayName>丹霞山</DisplayName>
+		<Location X="1080" Y="265"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Flipping>1</Flipping>
+		<Desc>天下名山，道门十大洞天之三，丹霞洞天山门所在。其山势雄浑庄正，奇伟壮丽，以日落时绝壁丹霞的奇景闻名天下。丹霞山盛产老参，传闻其山内有一妙处唤作五龙池，丹霞洞天的天地灵根五色金莲就种植于此。 </Desc>
+		<School>1</School>
+		<FightMap>
+			<Name>School_DanXiaDongTian</Name>
+			<Class>School_DanXiaDongTian</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>15</ExploreNum>
+		<Children>
+			<li>Place_DanXia1</li>
+			<li>Place_DanXia2</li>
+			<li>Place_DanXia3</li>
+		</Children>
+		<Events>
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	<Place Name="Place_KunLun" Parent="Place_Level1Base">
+		<DisplayName>昆仑山</DisplayName>
+		<Location X="315" Y="378"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>亘古无双圣境，天下第一仙山，乃是神州龙脉之源，也是道门十大洞天之首：昆仑宫玉虚洞天所在。昆仑山特产石矿，更有天柱石出产。其山中有一洞穴直通龙脉，据说昆仑宫便在此龙脉洞窟中，培育天地灵根赭黄精。</Desc>
+		<School>2</School>
+		<FightMap>
+			<BGM>
+				<li>bgm10</li>
+			</BGM>
+			<Name>School_KunLun</Name>
+			<Class>School_KunLun</Class>
+			<Biome>TestFightMapBiomeIce</Biome>
+			<Snow>1</Snow>
+			<Weather>LightSnow_Fov</Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>24</ExploreNum>
+		<Children>
+			<li>Place_KunLun1</li>
+			<li>Place_KunLun2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.4</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Count>2</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_TianJi" Parent="Place_Level1Base">
+		<DisplayName>天极峰</DisplayName>
+		<Location X="500" Y="84"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>天极峰山高万仞，孤峰一座，直插云霄。神秘避世宗派极天宫就坐落在天极峰之巅。极天宫行事亦正亦邪，门下弟子皆为俊男美女，行走江湖往往引得修仙者争相追逐。天极峰盛产清心草，其山巅有一绝地，叫做飞云涧，据说极天宫拥有天地灵根琅琊果，就种植于此地绝壁之上。</Desc>
+		<School>3</School>
+		<FightMap>
+			<BGM>
+				<li>bgm5</li>
+			</BGM>
+			<Name>School_JiTianGong</Name>
+			<Class>School_JiTianGong</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>18</ExploreNum>
+		<Children>
+			<li>Place_TianJi1</li>
+			<li>Place_TianJi2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Mint</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_JiuHua" Parent="Place_Level1Base">
+		<DisplayName>九华山</DisplayName>
+		<Location X="1435" Y="513"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>九华山九峰重叠掩映，山势幽深，乃是道门十大洞天紫霄宗所在，传说古代有仙人于九华山御龙凤登天。山中多产优质石材，甚至有人曾在山中开采到千棱之神玉，引为趣谈。</Desc>
+		<School>4</School>
+		<FightMap>
+			<Name>School_ZiXiaoZong</Name>
+			<Class>School_ZiXiaoZong</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>19</ExploreNum>
+		<Children>
+			<li>Place_JiuHua1</li>
+			<li>Place_JiuHua2</li>
+			<li>Place_JiuHua3</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_Marble</ThingDef>
+				<Count>20</Count>
+				<Rate>0.5</Rate>
+			</li> 
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.4</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Count>5</Count>
+				<Rate>0.4</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_LongHu" Parent="Place_Level1Base">
+		<DisplayName>龙虎山</DisplayName>
+		<Location X="726" Y="455"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>地处中原的道教名山，自古文人佳客络绎不绝，更有正派名门玄一道坐落于此。传闻龙虎山中隐秘处有一片神木林，其中灵木神材比比皆是，龙虎山将天地灵根木枯藤种植于此。</Desc>
+		<School>5</School>
+		<FightMap>
+			<BGM>
+				<li>bgm11</li>
+			</BGM>
+			<Name>School_ZhengYiDao</Name>
+			<Class>School_ZhengYiDao</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>20</ExploreNum>
+		<Children>
+			<li>Place_LongHu1</li>
+			<li>Place_LongHu2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>60</Count>
+				<Rate>0.6</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HardWood</ThingDef>
+				<Count>20</Count>
+				<Rate>0.4</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_ParasolWood</ThingDef>
+				<Count>2</Count>
+				<Rate>0.5</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_Shu" Parent="Place_Level1Base">
+		<DisplayName>蜀山</DisplayName>
+		<Location X="1002" Y="890"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>天下第一奇山，山势险峻奇诡，猿猱难度，道门十大洞天之一的青莲洞天就坐落于蜀山深处云霭之外。蜀山自古深艰，多生龙蛇异兽，盛产良矿名泉，以之铸剑常为绝品。传闻青莲剑宗的仙人曾经得到五大神药之一朱果的仙种，将之种植于蜀山灵脉凝碧崖之上。</Desc>
+		<School>6</School>
+		<FightMap>
+			<BGM>
+				<li>bgm9</li>
+			</BGM>
+			<Name>School_QingLianJianZong</Name>
+			<Class>School_QingLianJianZong</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>35</ExploreNum>
+		<Children>
+			<li>Place_Shu1</li>
+			<li>Place_Shu2</li>
+			<li>Place_Shu3</li>
+			<li>Place_Shu4</li>
+			<li>Place_Shu5</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_IronRock</ThingDef>
+				<Count>40</Count>
+				<Rate>0.3</Rate>
+			</li>	
+			<li>
+				<ThingDef>Item_CopperRock</ThingDef>
+				<Count>40</Count>
+				<Rate>0.3</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Count>40</Count>
+				<Rate>0.3</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Count>10</Count>
+				<Rate>0.2</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_WuLian" Parent="Place_Level1Base">
+		<DisplayName>五莲山</DisplayName>
+		<Location X="1002" Y="640"/>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<Desc>地处西部边陲，山有五峰，山势远观如莲花迎风，故称五莲山，道门十大洞天之一的栖霞洞天就立派于此。五莲山以天池圣泉闻名天下，山中多有灵泉芝草，栖霞派借地利之便，其炼丹术在修行界大为有名。</Desc>
+		<School>7</School>
+		<FightMap>
+			<Name>School_QiXiaDongTian</Name>
+			<Class>School_QiXiaDongTian</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>14</ExploreNum>
+		<Children>
+			<li>Place_WuLian1</li>
+			<li>Place_WuLian2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_GanodermaLucidum</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PurpleGanodermaLucidum</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_LifeStream</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_BaiMan" Parent="Place_Level1Base">
+		<DisplayName>百蛮山</DisplayName>
+		<Location X="170" Y="593"/>
+		<Icon>res/Sprs/map/map_xiepai01</Icon>
+		<Desc>西方魔教之道场，乃是一座高大的石山，山上生灵罕见，铺满了一种叫血荆棘的剧毒植物，十里之外可闻腥臭扑鼻。百蛮山多生毒虫蛇蝎，最适合西方魔教的百毒真经修行。</Desc>
+		
+		<School>8</School>
+		<FightMap>
+			<BGM>
+				<li>bgm6</li>
+			</BGM>
+			<Name>School_BaiManShan</Name>
+			<Class>School_BaiManShan</Class>
+			<Biome>Biome_BaiManShan</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>9</ExploreNum>
+		<Children>
+			<li>Place_BaiMan1</li>
+			<li>Place_BaiMan2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="4"/>
+			<li Name="Story" Rate="1"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="BadFight" Rate="1.5"/>
+			<li Name="HighFind" Rate="1.5"/>
+			<li Name="Secret" Rate="1.5"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_XianKong" Parent="Place_Level1Base">
+		<DisplayName>陷空山</DisplayName>
+		<Location X="118" Y="447"/>
+		<Icon>res/Sprs/map/map_xiepai01</Icon>
+		<Desc>神州边境的一座奇山，山中有一无底大洞，直通地壳，被认为是通向大地之母怀抱的捷径，因此被一个信奉地母的名为七仟坞的邪教占为总坛。陷空山山势低平，因无底大洞中泄露的地壳元磁之气吸引，常常有流星陨落于此。</Desc>
+		
+		<School>9</School>
+		<FightMap>
+			<BGM>
+				<li>bgm4</li>
+			</BGM>
+			<Name>School_QiQianWu</Name>
+			<Class>School_QiQianWu</Class>
+			<Biome>Biome_QiQianWu</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>7</ExploreNum>
+		<Children>
+			<li>Place_XianKong1</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="BadFight" Rate="1.5"/>
+			<li Name="Find" Rate="1"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_StarEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Hei" Parent="Place_Level1Base">
+		<DisplayName>黑山</DisplayName>
+		<Location X="749" Y="133"/>
+		<Icon>res/Sprs/map/map_xiepai01</Icon>
+		<Desc>北方魔教七杀魔宫所在，七杀魔宫号称天下第一魔窟，镇派法诀七杀剑诀杀伐之力天下绝伦。黑山有三柱顶峰，三山相依成三才之势，被七杀大法借势练成一座大阵，鬼神难犯。历年来，正邪两派在黑山山脉发生数次大战，至今仍然可见散落在七杀大阵中的残骨遗骸。</Desc>
+		<School>10</School>
+		<FightMap>
+			<Name>School_QiSha</Name>
+			<Class>School_QiSha</Class>
+			<Biome>Biome_QiSha</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>54</ExploreNum>
+		<Children>
+			<!-- <li>Place_Hei1</li>
+			<li>Place_Hei2</li>
+			<li>Place_Hei3</li> -->
+			<li>Place_Hei4</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="1"/>
+			<li Name="BadFight" Rate="1.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_HeHuan" Parent="Place_Level1Base">
+		<DisplayName>合欢岛</DisplayName>
+		<Location X="1708" Y="411"/>
+		<Icon>res/Sprs/map/map_xiepai01</Icon>
+		<Desc>东方魔教的大本营，乃是东海之上一座仙境圣地，灵气充裕。合欢教苦心经营百年，围绕岛屿五十里建立六欲桃花阵，常有凡人渔夫误入阵中，就会被魔法迷惑，沦为练功鼎炉。合欢岛弟子大多青春常驻，有人猜测合欢岛上应有一口地母灵液之泉眼。</Desc>
+		
+		<School>11</School>
+		<FightMap>
+			<BGM>
+				<li>bgm5</li>
+			</BGM>
+			<Name>School_HeHuanPai</Name>
+			<Class>School_HeHuanPai</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<ExploreNum>22</ExploreNum>
+		<Children>
+			<li>Place_HeHuan1</li>
+			<li>Place_HeHuan2</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="1"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="BadFight" Rate="1.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1.5"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_EarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_EarthEssence1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_Desert" Parent="Place_Level1Base">
+		<DisplayName>大漠</DisplayName>
+		<Location X="389" Y="480"/>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>万里无垠的大沙漠，无尽黄沙下藏有数不尽的秘闻遗迹，传说神秘的万妖殿就在西荒大漠深处。</Desc>
+		<ExploreNum>36</ExploreNum>
+		<Children>
+			<!-- <li>Place_Desert1</li> -->
+			<li>Place_Desert2</li>
+			<li>Place_Desert3</li>
+			<li>Place_Desert4</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="1.5"/>
+			<li Name="BadFight" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_LingCrystal</ThingDef>
+				<Count>5</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<!--
+	<Place Name="Place_SouthSea" Parent="Place_Level1Base">
+		<DisplayName>南海</DisplayName>
+		<Location X="828" Y="953"/>
+		<Desc>神州南部汪洋，终年风浪剧烈，极易发生海难。</Desc>
+		
+		<Children>
+			<li>Place_SouthSea1</li>
+			<li>Place_SouthSea2</li>
+			<li>Place_SouthSea1</li>
+			<li>Place_SouthSea2</li>
+			<li>Place_SouthSea3</li>
+		</Children>
+		<Events><!{1}** 嗯**{1}>
+			<li Name="Story" Rate="3"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="Secret" Rate="5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_FishMeat</ThingDef>
+				<Count>25</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_EastSea" Parent="Place_Level1Base">
+		<DisplayName>东海</DisplayName>
+		<Location X="996" Y="591"/>
+		<Desc>神州东部汪洋，传说海眼就深藏在东海之下。</Desc>
+		
+		<Children>
+			<li>Place_EastSea1</li>
+			<li>Place_EastSea2</li>
+			<li>Place_EastSea2</li>
+			<li>Place_EastSea2</li>
+			<li>Place_EastSea3</li>
+		</Children>
+		<Events><!{1}** 嗯**{1}>
+			<li Name="Story" Rate="3"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="Secret" Rate="5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_FishMeat</ThingDef>
+				<Count>25</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_NorthSea" Parent="Place_Level1Base">
+		<DisplayName>北海</DisplayName>
+		<Location X="941" Y="200"/>
+		<Desc>神州北部汪洋，常年风雪肆虐，人迹罕至。</Desc>
+		
+		<Children>
+			<li>Place_NorthSea1</li>
+			<li>Place_NorthSea2</li>
+			<li>Place_NorthSea2</li>
+			<li>Place_NorthSea2</li>
+		</Children>
+		<Events><!{1}** 嗯**{1}>
+			<li Name="Story" Rate="3"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="Secret" Rate="5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_FishMeat</ThingDef>
+				<Count>25</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>-->
+	
+	<Place Name="Place_SouthForest" Parent="Place_Level1Base">
+		<DisplayName>南荒</DisplayName>
+		<Location X="100" Y="1006"/>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>神州南部的蛮荒，终年毒瘴弥漫，蛇虫鼠蚁横行。传说南荒有一绝地，称为虫谷，其中虫豸毒障弥漫，十分凶险，但其湿热之环境特别适合神药木枯藤生长。另有传闻，千年前南方魔教教祖邪帝的陵寝就藏在南荒深处。</Desc>
+		
+		<!--<Links>
+			<li>Place_PanSheCity</li>
+		</Links>-->
+		<ExploreNum>18</ExploreNum>
+		<Children>
+			<li>Place_SouthForest1</li>
+			<li>Place_SouthForest2</li>
+			<li>Place_SouthForest3</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HardWood</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_ParasolWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.75</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Snowfield" Parent="Place_Level1Base">
+		<DisplayName>大雪原</DisplayName>
+		<Location X="859" Y="37"/>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>北境一望无际的大雪原，冰天雪地中均为大片的人迹罕至的山脉松林，多产老参美玉，但是开采艰难。据说雪原深处有一永不冻结的灵泉玉晶潭，其中有天地灵根五色金莲生长。</Desc>
+		<ExploreNum>33</ExploreNum>
+		<Children>
+			<li>Place_Snowfield1</li>
+			<li>Place_Snowfield2</li>
+			<li>Place_Snowfield3</li>
+		</Children>
+		<Events>
+			<li Name="Story_Cold" Rate="2"/>
+			<li Name="Find_Cold" Rate="2"/>
+			<li Name="HighFind_Cold" Rate="1"/>
+			<li Name="Secret_Cold" Rate="2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Count>5</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_FertileField" Parent="Place_Level1Base">
+		<DisplayName>江岸沃野</DisplayName>
+		<Location X="1707" Y="195"/>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>大江沿岸肥沃的平原，人口密集，粮食产量丰富。沃野其东有一山名卢山，山势奇绝，传闻绝壁之上有天地灵根琅琊果生长，不知真假。</Desc>
+		
+		<ExploreNum>15</ExploreNum>
+		<Children>
+			<li>Place_FertileField1</li>
+			<li>Place_FertileField2</li>
+			<li>Place_FertileField3</li>
+			<li>Place_FertileField4</li>
+			<li>Place_FertileField5</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="Join" Rate="1"/>
+			<li Name="GoodFight" Rate="1"/>
+			<li Name="BadFight" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Flour</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_CentralPlains" Parent="Place_Level1Base">
+		<DisplayName>中原</DisplayName>
+		<Location X="826" Y="322"/>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>中部高原，人口密集，盛产各类农作物，名山圣地众多，其中有一山曰炼丹峰，乃是医仙昔日培植天地灵根赭黄精之地。</Desc>
+		
+		<!--<Links>
+			<li>Place_DaLiangCity</li>
+			<li>Place_Snowfield</li>
+			<li>Place_SouthForest</li>
+		</Links>-->
+		<ExploreNum>12</ExploreNum>
+		<Children>
+			<li>Place_CentralPlains1</li>
+			<li>Place_CentralPlains2</li>
+			<li>Place_CentralPlains3</li>
+			<li>Place_CentralPlains4</li>
+			<li>Place_CentralPlains5</li>
+		</Children>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="Join" Rate="1"/>
+			<li Name="GoodFight" Rate="1"/>
+			<li Name="BadFight" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Flour</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_SouthMount" Parent="Place_Level1Base">
+		<DisplayName>岭南</DisplayName>
+		<Location X="1325" Y="768"/>
+		<UnLocked>0</UnLocked>
+		<Icon>res/Sprs/map/map_tongyong01</Icon>
+		<Desc>岭南位于南部，人烟稀少，有很多未被开发的资源。原太一门位于这里，大部分百姓也都信奉他们。</Desc>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="Join" Rate="1"/>
+			<li Name="GoodFight" Rate="1"/>
+			<li Name="BadFight" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="2"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_BoarMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Beef</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Count>40</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	<Place Name="Place_HeYinCity" Parent="Place_Level1Base">
+		<DisplayName>河阴城</DisplayName>
+		<Location X="1648" Y="194"/>
+		<Icon>res/Sprs/map/map_chengzhen01</Icon>
+		<Desc>建立在大江沿岸的巨大城池，得益于其物产丰富，居民不愁吃穿，故而发展出浓郁的文化氛围。也因此，此处居民往往思维灵动，不拘一格。</Desc>
+		<!--<Children>
+			<li>Place_HeHuan</li>
+			<li>Place_HeHuan</li>
+		
+			<li>Place_DanXia</li>
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_JiuHua</li>
+			<li>Place_LongHu</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+		</Children>-->
+		<Events>
+			<li Name="City" Rate="1"/>
+		</Events>
+		<!--<Links>
+			<li>Place_FertileField</li>
+		</Links>-->
+	</Place>
+	<Place Name="Place_HuCity" Parent="Place_HeYinCity">
+		<DisplayName>观海城</DisplayName>
+		<Location X="1247" Y="283"/>
+		<Icon>res/Sprs/map/map_chengzhen01</Icon>
+		<Desc>建立于东海之畔的城池，交通发达，商业繁茂，人口非常稠密。观海城之人大多从商，这些经历让他们精于察言观色，神识过人。</Desc>
+		<!--<Children>
+			<li>Place_DanXia</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+			<li>Place_DanXia</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+			
+			<li>Place_DanXia</li>
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_JiuHua</li>
+			<li>Place_LongHu</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+		</Children>-->
+		<!--<Links>
+			<li>Place_HeYinCity</li>
+		</Links>-->
+	</Place>
+	<Place Name="Place_PanSheCity" Parent="Place_HeYinCity">
+		<DisplayName>盘蛇寨</DisplayName>
+		<Location X="208" Y="901"/>
+		<Icon>res/Sprs/map/map_chengzhen01</Icon>
+		<Desc>南荒丛林的门户，也是南荒第一大城。盘蛇寨风俗敬畏厚土苍天，其居民往往也更具福缘。</Desc>
+		<!--<Children>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+		
+			<li>Place_DanXia</li>
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_JiuHua</li>
+			<li>Place_LongHu</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+		</Children>-->
+		<!--<Links>
+			<li>Place_SouthForest</li>
+		</Links>-->
+	</Place>
+	<Place Name="Place_ShanCity" Parent="Place_HeYinCity">
+		<DisplayName>丰城</DisplayName>
+		<Location X="1129" Y="489"/>
+		<Icon>res/Sprs/map/map_chengzhen01</Icon>
+		<Desc>中南部的大城，其地处要道，依山而建，靠货运而繁荣。丰城人待人爽朗，很容易得到他人好感，具有独特的魅力。</Desc>
+		<!--<Children>
+			<li>Place_DanXia</li>
+			<li>Place_JiuHua</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_LongHu</li>
+			<li>Place_DanXia</li>
+			<li>Place_JiuHua</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_LongHu</li>
+			
+			<li>Place_DanXia</li>
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_JiuHua</li>
+			<li>Place_LongHu</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+		</Children>-->
+		<!--<Links>
+			<li>Place_CentralPlains</li>
+			<li>Place_HuCity</li>
+		</Links>-->
+	</Place>
+	<Place Name="Place_DaLiangCity" Parent="Place_HeYinCity">
+		<DisplayName>大凉城</DisplayName>
+		<Location X="583" Y="400"/>
+		<Icon>res/Sprs/map/map_chengzhen01</Icon>
+		<Desc>西部边陲的大城，建立在中原与大沙漠交接的戈壁之上。此地盛产矿物，石料，自古民风彪悍，其居民往往身体健硕。</Desc>
+		<!--<Children>
+			<li>Place_LongHu</li>	
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_Hei</li>
+			<li>Place_LongHu</li>	
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_Hei</li>
+		
+			<li>Place_DanXia</li>
+			<li>Place_KunLun</li>
+			<li>Place_TianJi</li>
+			<li>Place_JiuHua</li>
+			<li>Place_LongHu</li>
+			<li>Place_Shu</li>
+			<li>Place_WuLian</li>
+			<li>Place_BaiMan</li>
+			<li>Place_XianKong</li>
+			<li>Place_Hei</li>
+			<li>Place_HeHuan</li>
+		</Children>-->
+		<!--<Links>
+			<li>Place_Desert</li>
+			<li>Place_Desert4</li>
+		</Links>-->
+	</Place>
+</List></Places>

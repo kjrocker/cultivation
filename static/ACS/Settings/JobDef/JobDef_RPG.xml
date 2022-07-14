@@ -1,0 +1,72 @@
+<JobDefs><List>
+	<JobDef Name="JobAIPathMove">
+		<DriverClass>JobAIPathMove</DriverClass>
+		<DisplayName>移动</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGAIFree">
+		<DriverClass>JobRPGAIFree</DriverClass>
+		<DisplayName>闲逛</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGAIStay">
+		<DriverClass>JobRPGAIStay</DriverClass>
+		<DisplayName>停留</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGAIRoute">
+		<DriverClass>JobRPGAIRoute</DriverClass>
+		<DisplayName>巡逻</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGAIPatrol">
+		<DriverClass>JobRPGAIPatrol</DriverClass>
+		<DisplayName>游荡</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGPlayerMove">
+		<DriverClass>JobRPGPlayerMove</DriverClass>
+		<DisplayName>移动</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGOpt">
+		<DriverClass>JobRPGOpt</DriverClass>
+		<DisplayName>移动</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGMine">
+		<DriverClass>JobRPGMine</DriverClass>
+		<DisplayName>挖矿</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGCutoff">
+		<DriverClass>JobRPGCutoff</DriverClass>
+		<DisplayName>砍树</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGPickup">
+		<DriverClass>JobRPGPickup</DriverClass>
+		<DisplayName>拾取</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGEat">
+		<DriverClass>JobRPGEat</DriverClass>
+		<DisplayName>食用</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGDialog">
+		<DriverClass>JobRPGDialog</DriverClass>
+		<DisplayName>对话</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGEquip">
+		<DriverClass>JobRPGEquip</DriverClass>
+		<DisplayName>装备</DisplayName>
+	</JobDef>
+	<JobDef Name="JobRPGPassiveMove">
+		<DriverClass>JobRPGPassiveMove</DriverClass>
+		<DisplayName>移动</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobRPGMoveTo">
+		<DriverClass>JobRPGMoveTo</DriverClass>
+		<DisplayName>移动到</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobLua">
+		<DriverClass>JobLua</DriverClass>
+	</JobDef>
+	<JobDef Name="JobRPGSlaughter">
+		<DriverClass>JobRPGSlaughter</DriverClass>
+		<DisplayName>屠宰</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+</List></JobDefs>

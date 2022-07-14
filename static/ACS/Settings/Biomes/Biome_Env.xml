@@ -1,0 +1,158 @@
+﻿<BiomeDefs><List>
+	
+	<Biome Name="LingShu128" Parent="128Biome">
+		<EnvironmentDisease>
+			<Base><!--地域伤病-->
+				<li Name="Pollinosis" Rate="0.0001" PartName = "TheWholeBody"/>
+			</Base>
+		</EnvironmentDisease>	
+	</Biome>
+	
+	<Biome Name="LingShu192" Parent="192Biome">
+		<EnvironmentDisease>
+			<Base><!--地域伤病-->
+				<li Name="Pollinosis" Rate="0.0001" PartName = "TheWholeBody"/>
+			</Base>
+		</EnvironmentDisease>	
+	</Biome>
+	
+	<Biome Name="LingShu" Parent="BiomeBase">
+		<EnvironmentDisease>
+			<Base><!--地域伤病-->
+				<li Name="Pollinosis" Rate="0.0001" PartName = "TheWholeBody"/>
+			</Base>
+		</EnvironmentDisease>	
+	</Biome>
+	
+	<Biome Name="Sand128" Parent="128Biome">
+		<BurshLayer1>
+			<Texture0>Terrain/Texs/other/Sand_002</Texture0>
+			<Texture1>Terrain/Texs/other/Sand_001</Texture1>
+			<Texture2>Terrain/Texs/other/richsoil</Texture2>
+			<Texture3>Terrain/Texs/other/Sand_003</Texture3>
+		</BurshLayer1>
+		<BurshLayer2>
+			<Texture0>Terrain/Texs/other/Sand_001</Texture0>
+			<Texture1>Terrain/Texs/test/Ling</Texture1>
+			<Texture2>Terrain/Texs/test/WaterDeep</Texture2>
+			<Texture3>Terrain/Texs/test/WaterShallow</Texture3>
+		</BurshLayer2>
+		<PlantGroup>Normal</PlantGroup>
+		<Weather>
+			<TempTopMin>40</TempTopMin>
+			<TempTopMax>10</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+		</Weather>
+	</Biome>
+	<Biome Name="Sand192" Parent="192Biome">
+		<BurshLayer1>
+			<Texture0>Terrain/Texs/other/Sand_002</Texture0>
+			<Texture1>Terrain/Texs/other/Sand_001</Texture1>
+			<Texture2>Terrain/Texs/other/richsoil</Texture2>
+			<Texture3>Terrain/Texs/other/Sand_003</Texture3>
+		</BurshLayer1>
+		<BurshLayer2>
+			<Texture0>Terrain/Texs/other/Sand_001</Texture0>
+			<Texture1>Terrain/Texs/test/Ling</Texture1>
+			<Texture2>Terrain/Texs/test/WaterDeep</Texture2>
+			<Texture3>Terrain/Texs/test/WaterShallow</Texture3>
+		</BurshLayer2>
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>40</TempTopMin>
+			<TempTopMax>10</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+		</Weather>
+	</Biome>
+	
+	<Biome Name="Ice128" Parent="128Biome">
+		<PlantGroup>Normal</PlantGroup>	
+		<Seasons>
+			<Spring Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.3" Duration="0.3"  Thunder = "15"/>
+					<li Kind="Rain" Rate="0.00001" Weight="0.1" Duration="0.3"/>
+				</Weathers>
+				<DaySound>Spring_Day</DaySound>
+				<NightSound>Spring_Night</NightSound>
+			</Spring>
+			<Summer Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.3" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.4" Duration="0.2"  Thunder = "10"/>
+					<li Kind="Hail" Rate="0.00002" Weight="0.4" Duration="0.1" />
+				</Weathers>
+				<DaySound>Summer_Day</DaySound>
+				<NightSound>Summer_Night</NightSound>
+			</Summer>
+			<Autumn Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.4" />
+				</Weathers>
+				<DaySound>Autumn_Day</DaySound>
+				<NightSound>Autumn_Night</NightSound>
+			</Autumn>
+			<Winter Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00002" Weight="0.3" Duration="0.2" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.6" Duration="1" />
+				</Weathers>
+			</Winter>
+		</Seasons>
+		<Weather>
+			<TempTopMin>-30</TempTopMin>
+			<TempTopMax>-1</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>-15</TempOffset>			
+		</Weather>
+	</Biome>
+	<Biome Name="Ice192" Parent="192Biome">
+		<Seasons>
+			<Spring Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.3" Duration="0.3"  Thunder = "15"/>
+					<li Kind="Rain" Rate="0.00001" Weight="0.1" Duration="0.3"/>
+				</Weathers>
+				<DaySound>Spring_Day</DaySound>
+				<NightSound>Spring_Night</NightSound>
+			</Spring>
+			<Summer Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.3" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.4" Duration="0.2"  Thunder = "10"/>
+					<li Kind="Hail" Rate="0.00002" Weight="0.4" Duration="0.1" />
+				</Weathers>
+				<DaySound>Summer_Day</DaySound>
+				<NightSound>Summer_Night</NightSound>
+			</Summer>
+			<Autumn Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.4" />
+				</Weathers>
+				<DaySound>Autumn_Day</DaySound>
+				<NightSound>Autumn_Night</NightSound>
+			</Autumn>
+			<Winter Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00002" Weight="0.3" Duration="0.2" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.6" Duration="1" />
+				</Weathers>
+			</Winter>
+		</Seasons>
+		
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>-30</TempTopMin>
+			<TempTopMax>-1</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>-15</TempOffset>			
+		</Weather>
+	</Biome>
+	
+</List></BiomeDefs>

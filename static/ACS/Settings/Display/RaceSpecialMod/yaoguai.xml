@@ -1,0 +1,276 @@
+<RaceSpecialModDefs><List>
+<!--这里的命名必须是种族_性别   None所有Male男Female女-->
+
+	<!--乌龟-->
+	<Def Name="YGTurtle_None">
+		<Original>Mod/YaoGuaiPart/monster_gui01</Original>
+		<ModelName>monster01_gui01</ModelName>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_gui01_tezheng</FeatureMod>
+		<FeatureBip>Bip001 Spine1</FeatureBip>
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<ReplaceHead>1</ReplaceHead>
+		<NoHair>0</NoHair>
+		<Back>1</Back>
+		<Tail>1</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYgui01</MainTex>
+		<!--<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#824A92FF</li>
+			<li>#415FB8FF</li>
+			<li>#895B2AFF</li>
+			<li>#FFFFFFFF</li><!--无效-->
+			<li>#214B13FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--野鸡-->
+	<Def Name="YGChicken_None" Parent="YGTurtle_None">
+		<Original>Mod/YaoGuaiPart/monster_yeji01</Original>
+		<ModelName>monster01_ji01</ModelName>		
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYji01</MainTex>		
+		<HeadName>{0}_tou01</HeadName>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_ji01_tezheng</FeatureMod>
+		<SkinColor>
+			<li>#424BA7FF</li>
+			<li>#893420FF</li>
+			<li>#A592AEFF</li>
+			<li>#FFFFFFFF</li>
+			<li>#2D6226FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--青蛙-->
+	<Def Name="YGFrog_None">
+		<Original>Mod/YaoGuaiPart/monster_wa01</Original>
+		<ModelName>monster01_wa01</ModelName>
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<ReplaceHead>1</ReplaceHead>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_wa01_tezheng</FeatureMod>
+		<NoHair>0</NoHair>
+		<Back>0</Back>
+		<Tail>0</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYwa01</MainTex>
+		<!--<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#310E0EFF</li>
+			<li>#071B40FF</li>
+			<li>#0C240AFF</li>
+			<li>#FFFFFFFF</li>
+			<li>#083531FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+		<!--狼-->
+	<Def Name="YGWolf_None">
+		<Original>Mod/YaoGuaiPart/monster_lang01</Original>
+		<ModelName>monster01_lang01</ModelName>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_lang01_tezheng</FeatureMod>
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<ReplaceHead>1</ReplaceHead>
+		<LhandName>{0}_Lhand01</LhandName>
+		<RhandName>{0}_Rhand01</RhandName>
+		<NoHair>0</NoHair>
+		<Back>0</Back>
+		<Tail>1</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYlang01</MainTex>
+		<!--<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#FF4F4FFF</li>
+			<li>#4FC5FFFF</li>
+			<li>#F0AB43FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#22BC5DFF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--老虎-->
+	<Def Name="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_laohu01</Original>
+		<ModelName>monster01_laohu01</ModelName>	
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_laohu01_tezheng</FeatureMod>		
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<ReplaceHead>1</ReplaceHead>
+		<NoHair>0</NoHair>
+		<Back>0</Back>
+		<Tail>1</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_jingyinglaohu01</MainTex>	
+		<!--<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#4D1313FF</li>
+			<li>#311D0FFF</li>
+			<li>#17212FFF</li>
+			<li>#999999FF</li>
+			<li>#0D1804FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--牛-->
+	<Def Name="YGCattle_None"  Parent="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_niu01</Original>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_niu01_tezheng</FeatureMod>		
+		<ModelName>monster01_niu01</ModelName>		
+		<MainTex>Mod/YaoGuaiPart/tex/mod_jingyingniu01</MainTex>	
+		<SkinColor>
+			<li>#D4D3C6FF</li>
+			<li>#7E63D0FF</li>
+			<li>#5152C1FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#327438FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--蛇-->
+	<Def Name="YGSnake_None" Parent="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_she01</Original>
+		<ModelName>monster01_she01</ModelName>		
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYshe01</MainTex>	
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_she01_tezheng</FeatureMod>	
+		<SkinColor>
+			<li>#702F7AFF</li>
+			<li>#A75926FF</li>
+			<li>#124F60FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#0B5621FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--熊-->
+	<Def Name="YGBear_None" Parent="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_xiong01</Original>
+		<ModelName>monster01_xiong01</ModelName>		
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_xiong01_tezheng</FeatureMod>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYxiong01</MainTex>	
+		<SkinColor>
+			<li>#764E94FF</li>
+			<li>#6D612EFF</li>
+			<li>#345D96FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#38602EFF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--野猪-->
+	<Def Name="YGBoar_None" Parent="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_yezhu01</Original>
+		<ModelName>monster01_yezhu01</ModelName>	
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_yezhu01_tezheng001</FeatureMod>		
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYyezhu01</MainTex>	
+		<SkinColor>
+			<li>#8F62DBFF</li>
+			<li>#8E3A34FF</li>
+			<li>#6398E1FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#3D9A49FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--猫男-->
+	<Def Name="YGCat_Male">
+		<Original>Mod/YaoGuaiPart/monster_miaonan01</Original>
+		<ModelName>monster01_miaonan01</ModelName>
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_miaoTY_tezheng</FeatureMod>	
+		<ReplaceHead>1</ReplaceHead>
+		<NoHair>0</NoHair>
+		<Back>0</Back>
+		<Tail>1</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYmao01</MainTex>
+	<!--	<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#4D4A74FF</li>
+			<li>#654F3DFF</li>
+			<li>#563535FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#1D421DFF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--猫女-->
+	<Def Name="YGCat_Female" Parent="YGCat_Male">
+		<Original>Mod/YaoGuaiPart/monster_maonv01</Original>
+		<ModelName>monster01_maonv01</ModelName>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_miaoTY_tezheng</FeatureMod>	
+		<ReplaceBody>0</ReplaceBody>
+		<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>
+		<SkinColor>
+			<li>#424654FF</li>
+			<li>#5C433AFF</li>
+			<li>#58493AFF</li>
+			<li>#444444FF</li>
+			<li>#38442AFF</li><!--傀儡-->
+		</SkinColor>
+		<BodyTexs>
+			<li>Mod/YaoGuaiPart/tex/monster01_maonv01_body</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_maonv02_body</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_maonv03_body</li>
+		</BodyTexs>
+		<BodyMaskTexs>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu01_body_alp</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu02_body_alp</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu03_body_alp</li>
+		</BodyMaskTexs>
+	</Def>
+	
+	<!--兔男-->
+	<Def Name="YGRabbit_Male">
+		<Original>Mod/YaoGuaiPart/monster_nantu01</Original>
+		<ModelName>monster01_nantu01</ModelName>
+		<ReplaceBody>1</ReplaceBody>
+		<ReplaceHand>1</ReplaceHand>
+		<ReplaceArms>1</ReplaceArms>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_nantu01_tezheng</FeatureMod>	
+		<ReplaceHead>1</ReplaceHead>
+		<NoHair>0</NoHair>
+		<Back>0</Back>
+		<Tail>1</Tail>
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYtuzi01</MainTex>
+		<!--<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>-->
+		<SkinColor>
+			<li>#470B0BFF</li>
+			<li>#30285AFF</li>
+			<li>#0C4452FF</li>
+			<li>#FFFFFFFF</li>
+			<li>#112713FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+	<!--兔女-->
+	<Def Name="YGRabbit_Female" Parent="YGRabbit_Male">
+		<Original>Mod/YaoGuaiPart/monster_nvtu01</Original>
+		<ReplaceBody>0</ReplaceBody>
+		<ModelName>monster01_nvtu01</ModelName>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_nvtu01_tezheng</FeatureMod>	
+		<MainTex>Mod/YaoGuaiPart/tex/mod_tuzi1</MainTex>
+		<MainMaskTex>Mod/Npc/Human/TEX/empty_alp</MainMaskTex>
+		<LhandName>{0}_Lhands01</LhandName>
+		<RhandName>{0}_Rhands001</RhandName>
+		<BodyTexs>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu01_body</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu02_body</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu03_body</li>
+		</BodyTexs>
+		<BodyMaskTexs>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu01_body_alp</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu02_body_alp</li>
+			<li>Mod/YaoGuaiPart/tex/monster01_nvtu03_body_alp</li>
+		</BodyMaskTexs>
+		<SkinColor>
+			<li>#4B493EFF</li>
+			<li>#33375EFF</li>
+			<li>#543D52FF</li>
+			<li>#444444FF</li>
+			<li>#203C17FF</li><!--傀儡-->
+		</SkinColor>
+	</Def>
+	
+</List></RaceSpecialModDefs>

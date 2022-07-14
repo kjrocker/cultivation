@@ -1,0 +1,32 @@
+<BPAttitudes><List>
+	<Def Name="LostPart"><!--失落之物-->
+		<DisplayName>失落之物</DisplayName>
+	</Def>	
+	
+	<Def Name="SYS_ATK"><!--通用进攻-->
+		<DisplayName>进攻姿态</DisplayName>
+		<Desc>炼体者全力突击敌人本体，但会因此削弱秘体的防御能力。</Desc>		
+		<NoAtk>0</NoAtk><!--不会进攻-->
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>BodyPractice_Attitude_Atk</Modifier><!--用可见的modfieir-->
+	</Def>
+	<Def Name="SYS_NORMAL"><!--通用常驻-->
+		<DisplayName>普通姿态</DisplayName>
+		<Desc>炼体者正常的战斗方案，会优先解决敌人的飞剑，再进攻敌人本体，此状态下攻守兼备，各方面能力也比较平均。</Desc>
+		<AtkFabaoCount>1</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>BodyPractice_Attitude_Normal</Modifier><!--用可见的modfieir-->
+	</Def>
+	
+	<Def Name="BPAttitudes_ManJi"><!--通用常驻-->
+		<DisplayName>蛮极战意</DisplayName>
+		<Desc>以强烈的战斗意识支配全身行动，直接突击敌人本体，大幅提高进攻力，并保持本能的防御能力。</Desc>
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>BodyPractice_Attitude_ManJi</Modifier><!--用可见的modfieir-->
+	</Def>
+	<Def Name="BPAttitudes_WangZhe"><!--通用常驻-->
+		<DisplayName>王者战意</DisplayName>
+		<Desc>以王道之心面对战斗，从容不迫，降低秘体消耗。</Desc>
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>BodyPractice_Attitude_WangZhe</Modifier><!--用可见的modfieir-->
+	</Def>
+</List></BPAttitudes>

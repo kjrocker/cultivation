@@ -1,0 +1,307 @@
+ID	Kind	Name	WorldFlag	Weight	UnLockLevel	PopTip	Desc	ClassName	sParam1	fParam1	sParam2	fParam2	sParam3	fParam3	sParam4	fParam4	FromFightMap	MsgShowType	RuntimeFlag
+ID	类型 空：被动触发	名字	对WorldFlag的要求		解锁等级	事件发生时弹出默认提示 0不开 1开启 	介绍	类名	(天气:s天气类型)  (进攻:进攻富有等级) (妖兽:妖兽种族) (宝物:物品类型lable 权重:ID|ID.)  (角色:数据名字) (秘闻:随机秘闻ID|ID) (路人：行为描述)(动物进攻：种族)（精怪来临：精怪类型）	（天气：1为100%，通灵概率）（进攻:强度等级加成(默认等级+系数)）（ 妖兽:持续时间） （宝物:最小品阶 权重:值）(角色:0心情 1modifier) (拜师：数量)(路人：数量)(动物进攻：最少个数)	(路人：附加标记)（精怪来临：具体名称  用|隔开。必须要有种族）	（宝物:最大品阶）  （进攻:持续时间秒） （权重:持续时间(天)） （角色：0玩家角色 1所有角色）(路人：类型 1普通2拜师3暂住 10内门强住)(动物进攻：最大个数)					会从战斗地图带回来	消息类型，用于消息管理	
+1	Lv1	晴天		1		1	    天气变的十分晴朗，不知这好天气会持续多久。	EventWeather	SunnyDay									t1	
+2	Lv1	阴天		1		1	    天空变的阴沉沉的，不知这阴天会持续多久。	EventWeather	Overcast									t1	
+3	Lv1	小雨		1		1	    一场小雨来临。	EventWeather	LightRain									t1	
+4	Lv1	大雨		1		1	    一场大雨来临。	EventWeather	HeavyRain									t1	
+5	Lv1	大雾		1		1	    突然起了一场大雾。	EventWeather	DenseFog									t1	
+6	Lv1	愁绪弥漫		1		1	    一阵莫名的愁绪在门派中蔓延开来。	EventWeather	Melancholy									t1	
+7	Lv2	暧昧的气息		7		1	    一股暧昧的气息在门派中蔓延开来。	EventWeather	Ambiguous									t1	
+8	Lv2	浮躁之风		7		1	    一股浮躁的风气突然在门派中蔓延起来。	EventWeather	Impetuous									t1	
+9	Lv2	冰雹		0		1	    一场冰雹袭来。（未实装）	EventWeather	Impetuous									t1	
+10	Lv2	梅雨		7		1	    一场梅雨来临。	EventWeather	MouldRains									t1	
+11	Lv2	干旱		7		1	    一场干旱来临。	EventWeather	Drought									t1	
+12	Lv2	暴雨		7		1	    一场猛烈的暴风雨袭来，天地间的水属性异常活跃。	EventWeather	Rainstorm	0.3								t2	NO_MoreElementWeather
+13	Lv2	焚风		7		1	    一场炎热的焚风刮来，天地间的火属性异常活跃。	EventWeather	Fohn	0.3								t2	NO_MoreElementWeather
+14	Lv2	尘暴		7		1	    一场尘暴席卷而来，天地间的土属性异常活跃。	EventWeather	DustStorm	0.3								t2	NO_MoreElementWeather
+15	Lv2	灵气枯潮		7		1	    不知道什么原因，天地间的灵气进入了短暂的低潮。	EventWeather	LingRarefiedWave									t2	NO_LessLingWeather
+16	Lv3	酷暑		1	4	1	    酷暑来临，这个夏天将会格外炎热，注意避暑。	EventWeather	HeatWave									t2	
+17	Lv3	凛冬		1	4	1	    凛冬将至，这个冬天将会格外寒冷，注意保暖。	EventWeather	ColdWave									t2	
+18	Lv3	永夜		1	4	1	    一股妖云遮天蔽日，将持续一段时间不见阳光。	EventWeather	PermanentNight									t2	
+19	Lv3	瘟气		1	4	1	    一场瘴气笼罩整个地区，天地间的木属性异常活跃。	EventWeather	Miasma	0.3								t2	NO_MoreElementWeather
+20	Lv3	雷暴		1	4	1	    一场雷暴降临，天地间的金属性异常活跃。	EventWeather	LightningStorm	0.3								t2	NO_MoreElementWeather
+21	Lv3	妖兽		2		1	    一只蜚出现在附近，带来持续的阴雨和疾病。	EventMonster	Fei	3600									
+22	Lv3	妖兽		2		1	    一只鹿蜀出现在附近，带来晴朗的天气和祥瑞之氛围。	EventMonster	Lushu	3600									
+23	Lv3	奇怪的小妖精		4		1	    一群来自异界的小妖带着来一些财宝四处游荡，路过你的门派。这些小妖虽然十分胆小，但似乎是两界法则不同，修仙界的常用手段无法影响到它们，因此这些家伙常常肆无忌惮的四处游荡。若想从他们手中得到这些宝物，还需要想想办法。	EventSpringXiaoYao	Lushu	3600									
+24	Lv3	妖兽		0	4	1	    妖兽D出现在附近。	EventMonster	Null										
+25	Lv2	宝物		7	4	1	    天边飞来一道光华落在附近，不知是什么东西。	EventItemDrop	FightFabao	4		6						t3	
+26	Lv2	宝物		7	5	1	    不远处的天空发生了一场激烈的斗法，有什么东西落到了附近。	EventItemDrop	FightFabao	6		8						t3	
+27	Lv3	宝物		1	5	1	    附近突然有一道宝光直冲斗牛，似乎有什么宝物现世了。	EventItemDrop	FightFabao	8		10						t3	
+28	Join	难民路过		5		0	    一名逃避战乱的难民路过此地，[IT]希望加入你们。	EventJoin	Human									t_vistor	NO_LessWalker
+29	Secrets	秘闻		11	4	0		EventSecret	1										
+30	Secrets	秘闻		11	4	0		EventSecret	2										
+31	Secrets	秘闻		11	4	0		EventSecret	3										
+32	Secrets	秘闻		11	4	0		EventSecret	4										
+33	Secrets	秘闻		11	4	0		EventSecret	5										
+34	Enemy	进攻		2		1	    一群来自南荒丛林的蛮人对你发动袭击。	EventAttack	Poorest		Human	300						t6	
+35	Enemy	进攻		2		1	    一群在江湖中四处流窜，以劫掠为生的强盗对你发动袭击。	EventAttack	Poor		Human	300						t6	
+36	Enemy	进攻		2	4	1	    一群来自东海的散修觊觎你的财产，对你发动袭击。	EventAttack	Normal	1	Human	300						t6	
+37	EnemyLv2	强力进攻		3	5	1	    一群西域的邪派修行者对你发动袭击。	EventAttack	Rich	1	Human	300						t6	
+38	EnemyLv2	强力进攻		3	5	1	    一些四处游荡的邪派弟子攻打你的门派。	EventAttack	Richest	1	Human	300						t6	
+39	EnemyLv2	强力进攻		3	5	1	    一伙强大的修行者前来攻击你的门派。	EventAttack	Normal	2	Human	300						t6	
+40	EnemyLv2	强力进攻		3	5	1	    一群凶名昭著的邪派修行者来袭击你的门派。	EventAttack	Normal	2	Human	300						t6	
+41	Lv3	时代开启		2	5	1	    最近南荒发生地裂之灾，大量的南荒蛮人和强盗流窜出来。	EventWeight	33|34	1000		6							
+42	Join	仙友来访		5	4	0	    一名仙友来拜访你的门派，他大概是想住几天。	EventVisitor	仙友来访	10	Human							t_vistor	
+43	Join	迷路的路人		5		0	    一名路人在附近迷了路，[IT]希望得到我们的帮助。	EventWalker	迷路的路人			1	Human					t_vistor	NO_LessWalker
+44	Join	好奇的路人		5		0	    一名充满好奇的路人偶然到了这里，[IT]特别想知道我们到底在干什么。	EventWalker	好奇的路人			1	Human					t_vistor	NO_LessWalker
+45	Join	受伤的路人		5		0	    一名路人受伤了，[IT]希望临时留下来休息并得到我们的帮助。	EventWalker	受伤的路人		RandomDamage	3	Human					t_vistor	NO_LessWalker
+46	Lv1	小雪		1		1	    一场小雪来临。	EventWeather	LightSnow									t1	
+47	Lv1	大雪		1		1	    一场大雪来临。	EventWeather	HeavySnow									t1	
+48	Lv2	观察者		20		0	    一名修行者正在观察你们，似乎并没有恶意。	EventVisitor	观察者	11	Human							t_vistor	
+49	Enemy	野兽来袭		1	5	1	    一群饥饿的狼出现在附近，它们充满了敌意。	EventAnimalAttack	Wolf	4		9						t5	
+50	Enemy	野兽来袭		0	5	1	    一群发狂的兔子出现在附近，它们充满了敌意。	EventAnimalAttack	Rabbit	8		15						t5	
+51	Enemy	野兽来袭		1	5	1	    一群充满攻击性的蛇出现在附近，它们充满了敌意。	EventAnimalAttack	Snake	3		7						t5	
+52	Enemy	野兽来袭		1	5	1	    一群狂暴的野猪出现在附近，它们充满了敌意。	EventAnimalAttack	Boar	4		7						t5	
+53	Secrets	秘闻		11	4	0		EventSecret	6										
+54	Secrets	秘闻		11	4	0		EventSecret	7										
+55	Secrets	秘闻		11	4	0		EventSecret	8										
+56	Secrets	秘闻		11	4	0		EventSecret	9										
+57	Secrets	秘闻		11	4	0		EventSecret	10										
+58	Secrets	秘闻		11	2	0		EventSecret	11										
+59	Secrets	秘闻		11	2	0		EventSecret	11										
+61	Secrets	秘闻		11	4	0		EventSecret	14										
+62	Secrets	秘闻		11	4	0		EventSecret	15										
+63	Secrets	秘闻		11	4	0		EventSecret	16										
+64	Secrets	秘闻		11	4	0		EventSecret	17										
+65	Secrets	秘闻		11	4	0		EventSecret	18										
+66	Secrets	秘闻		11	4	0		EventSecret	19										
+67	Secrets	秘闻		11	4	0		EventSecret	20										
+68	Secrets	秘闻		11	4	0		EventSecret	21										
+69	Secrets	秘闻		11	4	0		EventSecret	22										
+70	Secrets	秘闻		1	4	0		EventSecret	29										
+71	Secrets	秘闻		1	4	0		EventSecret	30										
+72	Secrets	秘闻		1	4	0		EventSecret	31										
+73	Secrets	秘闻		1	4	0		EventSecret	32										
+74	Secrets	秘闻		1	4	0		EventSecret	33										
+75	Secrets	秘闻		1	4	0		EventSecret	34										
+80	Lv3	暖流		1	4	1	    冬日之中，一股暖流经过此地，这个冬天将会温和很多。	EventWeather	HeatWaveInWinter									t2	
+81	Lv3	凉风		1	4	1	    夏日之中，一股寒流经过此地，这个夏天将会凉爽很多。	EventWeather	ColdWaveInSummer									t2	
+82	Lv1	丰收的气息		8		1	    丰收的气息弥漫开来。	EventWeather	HarvestAir									t2	
+83	Lv2	灵气爆发		7		1	    不知道什么原因，天地间的灵气突然爆发了。部分植物受此侵染，化为灵木。	EventWeather	LingUpWave	0.3								t2	NO_LessLingWeather
+84	Secrets	秘闻		4	4	0		EventSecret	49										
+85	Lv1	春天的气息		8		1	    春天的气息弥漫开来。	EventWeather	SpringAir									t2	
+86	EnemyLv2	妖兽入侵		2	5	1	    一些兔妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYRabbit		TongYong_DropList							t7	
+87	EnemyLv2	妖兽入侵		2	5	1	    一些狼妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYWolf		TongYong_DropList							t7	
+88	EnemyLv2	妖兽入侵		2	5	1	    一些蛇妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYSnake		TongYong_DropList							t7	
+89	EnemyLv2	妖兽入侵		2	5	1	    一些猪妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYBoar		TongYong_DropList							t7	
+90	EnemyLv2	妖兽入侵		2	5	1	    一些熊妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYBear		TongYong_DropList							t7	
+91	EnemyLv2	妖兽入侵		2	5	1	    一些巨蛙出现在附近，它们充满敌意。	EventYaoShouAttack	JYFrog		TongYong_DropList							t7	
+92	EnemyLv2	妖兽入侵		2	5	1	    一些巨龟出现在附近，它们充满敌意。	EventYaoShouAttack	JYTurtle		TongYong_DropList							t7	
+93	EnemyLv2	妖兽入侵		10	5	1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		1	TongYong_DropList							t7	
+94	Lv4	妖龙踪迹	Boss_FinishJiaoLong	1	4	0		EventSecret	53										
+95	Lv4	凶凤踪迹	Boss_FinishXiongFeng	1	4	0		EventSecret	54										
+96	Lv4	烛龙踪迹	Boss_FinishZhulong	1	4	0		EventSecret	55										
+97	Lv4	上古修行者	DaNeng_Begin	4	4	0		EventSecret	56										
+98	Secrets	秘闻		11	4	0		EventSecret	59										
+99	Secrets	秘闻		11	4	0		EventSecret	60										
+100	Secrets	秘闻		11	4	0		EventSecret	61										
+101	Secrets	秘闻		11	4	0		EventSecret	62										
+102		仙友来访					    一名仙友受邀来拜访你的门派，他会住几天。	EventVisitorSeed	仙友来访								1	t_vistor	
+103		发现踪迹						EventTrackNpc									1		
+104	Secrets	秘闻		4	18	0		EventSecret	64										
+105	Lv3	精怪路过		2		0	    一个通灵的[NAME]出现在附近，它充满好奇。	EventJGComing											
+106	Lv3	精怪路过		2		0	    一个通灵的[NAME]出现在附近，它充满好奇。	EventJGComing	Building										
+107	EnemyLv2	妖兽入侵		2	5	1	    一些鸡妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYChicken		TongYong_DropList							t7	
+108	EnemyLv2	妖兽入侵		2	5	1	    一些猫妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYCat		TongYong_DropList							t7	
+109	EnemyLv2	妖兽入侵		2	5	1	    一些牛妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYCattle		TongYong_DropList							t7	
+110	EnemyLv2	妖兽入侵		2	5	1	    一些虎妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYTiger		TongYong_DropList							t7	
+111	Enemy	野兽来袭		0	5	1	    一群发狂的鸡出现在附近，它们充满了敌意。	EventAnimalAttack	Chicken	7		13						t5	
+112	Enemy	野兽来袭		1	5	1	    一只充满攻击性的熊出现在附近，它充满了敌意。	EventAnimalAttack	Bear	1		1						t5	
+113	Enemy	野兽来袭		0	5	1	    一群狂暴的乌龟出现在附近，它们充满了敌意。	EventAnimalAttack	Turtle	4		7						t5	
+114	Enemy	野兽来袭		0	5	1	    一群发狂的青蛙出现在附近，它们充满了敌意。	EventAnimalAttack	Frog	4		7						t5	
+115	Enemy	野兽来袭		0	5	1	    一只充满攻击性的猫出现在附近，它充满了敌意。	EventAnimalAttack	Cat	1		1						t5	
+116	Enemy	野兽来袭		1	5	1	    一群疯狂的牛出现在附近，它们充满了敌意。	EventAnimalAttack	Cattle	2		5						t5	
+117	Enemy	野兽来袭		1	5	1	    一只充满攻击性的老虎出现在附近，它充满了敌意。	EventAnimalAttack	Tiger	1		1						t5	
+118	Enemy	进攻		2		1	    一群妖族修行者觊觎你门派的财产，他们满怀敌意的出现在附近。	EventAttack	Poorest		RANDOMYAOGUAI	300						t6	
+119	Enemy	进攻		2		1	    一群妖族修行者意图颠覆你的门派，他们带着嗜血的目光在附近徘徊。	EventAttack	Poor		RANDOMYAOGUAI	300						t6	
+120	Enemy	进攻		2	4	1	    一群妖族修行者不知为何对你的门派满怀仇恨，他们即将发动袭击。	EventAttack	Normal	1	RANDOMYAOGUAI	300						t6	
+121	EnemyLv2	强力进攻		3	5	1	    一群强大的妖族修行者意图抢夺你门派的底蕴来充实自身。	EventAttack	Rich	1	RANDOMYAOGUAI	300						t6	
+122	EnemyLv2	强力进攻		3	5	1	    一群强大的妖族修行者试图血洗你的门派。	EventAttack	Richest	1	RANDOMYAOGUAI	300						t6	
+123	EnemyLv2	强力进攻		3	5	1	    一伙疯狂的妖族修行者试图攻击你的门派。	EventAttack	Normal	2	RANDOMYAOGUAI	300						t6	
+124	Join	请求庇护		5		0	    一名刚刚化形的妖族请求你的庇护，希望能在你的帮助下度过化形天劫。	EventJoin	RANDOMYAOGUAI									t_vistor	
+125	Join	动物加入		1	0	0	    一只猫来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Cat										
+126	Join	动物加入		1	0	0	    一只鸡来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Chicken										
+127	Join	动物加入		1	0	0	    一头牛来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Cattle										
+128	Join	动物加入		1	0	0	    一只乌龟来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Turtle										
+129	Join	动物加入		1	0	0	    一只兔子来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Rabbit										
+130	Join	动物加入		1	0	0	    一只青蛙来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Frog										
+																			
+																			
+																			
+																			
+																			
+																			
+1000		龙路过				0		EventItemDrop			Item_DragonShit|Item_DragonScale								
+1001		灵气爆发				0		EventLingUpWave										t2	
+1002		凤路过				0		EventItemDrop			Item_BossFeng_HuoYu								
+																			
+10000		建立门派				1	    我们隐居于此，重入仙门，而且还重新建立了自己的小门派。这会是一个崭新传奇的开始么？\n\n[color=#D06508]    解锁装饰类建筑\n    解锁更多修炼建筑[/color]	EventNpc	FoundOrganization1	0		0							
+10001		名声大震				1	    我们的门派也逐渐显露出了名声，这真的很不容易。让我们将他继续经营壮大。\n\n[color=#D06508]    门派人口上限提升！[/color]	EventNpc	FoundOrganization2	0		0							
+10002		赫赫威名				1	    我们的门派在修行界也已经有了赫赫威名，成了人人向往的修行圣地。\n\n[color=#D06508]    门派人口上限提升！\n    可以通过门派结构功能开设分堂了！[/color]	EventNpc	FoundOrganization3	0		0							
+10003		掌门上任				1	    [NAME]成为了我们的掌门，[IT]一定可以带领大家走向仙途。												
+10004		缺少掌门				1	    我们需要有人来担任掌门。\n[color=#D06508]可以在门派面板的[门派结构中]设置掌门[/color]												
+10005		引荐弟子				1	    被引荐的弟子快要到了。											t8	
+10006		逃离乱世				1	    由于匆忙出逃，并没有携带太多物资。连日的奔波几乎耗光了你们的精力。\n    没有别的选择，你们只能暂时于此休整，以待后话。	EventNpc	BaseExpect1	0		0							
+10007		惊魂初定				1	    温暖的篝火稍稍驱散了疲劳和不安。短暂的讨论后，你们觉得应该已经逃离危险，于是决定在此建立一个临时驻地。\n\n[color=#D06508]    解锁结构建筑\n    解锁基础家具\n    解锁基础工作台\n    解锁地板及屋顶[/color]	EventNpc	BaseExpect2	0		0							
+10008		安居于此				1	    这段时间里，虽然失去师兄长辈的悲痛依然纠缠，但你们逐渐放松下来。察觉到此处人迹罕至，追兵似乎已经放弃了追索，你们商量了一下，决定再这里生活下去。\n\n[color=#D06508][/color]												
+10009		新家园				1	    你们似乎都习惯了这里的生活：虽然不如师门尤在时的心安，但也能自给自足。这未尝不是一种修行？\n    这是乱世之中的新家园，它将会是一个不错的开始吗？所有人都饱含期待。\n\n[color=#D06508]    解锁进阶家具\n    解锁进阶工作台[/color]	EventNpc	BaseExpect3	0		0							
+10010		外门弟子叛逃				1	    你的外门弟子[NAME]因为无法忍受现在的生活而在深夜叛逃了。												
+10011		重入仙门				1	    我们中有人突破了那层限制！\n    [IT]立刻感受到了天地间那股强大能量：\n    灵气！\n    修仙之门向我们敞开了！\n\n[color=#D06508]    灵气变得可见了！\n    可以建立门派了！[/color]												
+10012		离别				1	    我不知道我做错了什么，但既然你们要求，那我便离开了。谢谢大家这段时间的照顾！\n[TXT] 和你们在一起，我很快乐。												
+10013		预测				1	    [NAME]对未来的预测结果是：\n[TXT]												
+10014		石匣发光				1	    今夜是月圆之夜，当初道士赐予你们的石匣在午夜子时突然发出光芒，随后裂开一条缝隙，似乎可以轻松的打开了。												
+10015		获得修炼法诀				1	    获得了新的修炼法诀：[TXT]												
+10016		开启修炼系统				1	    你们获得了第一本修行法诀，获取了踏上仙路的资格。仙路艰难，但乱世如苦海，人生似浮萍，求证飞升之道也许是唯一的超脱途径。\n\n[color=#D06508]    解锁修炼系统！\n    解锁修炼建筑！\n    (门派面板可以随时查看所有功法)[/color]												
+10017		敌人入侵				1	    一波充满敌意的家伙出现在了附近。											t6	
+10018		飞升				1	    [NAME]历经劫难，终于超脱此界，飞升成仙。只留下仙人遗蜕，供后世之人瞻仰。\n有诗为证：\n[color=#D06508]    混沌初分盘古先，太极两仪四象悬。\n    女娲抟土万灵出，伏羲画卦阴阳前。\n    百年修行刀兵祸，定中不觉已千年。\n    劫来散尽无余说，凡尘此去尽如烟。[/color]	EventNpc	SeeGod	1		0							
+10019		强力进攻				1	    [TXT]派出一队精英弟子前来报复。	EventAttack	Rich	3	Human	1200						t6	
+10020		强力进攻				1	    [TXT]派出门中高手前来报复。	EventAttack	Rich	6	Human	1200						t6	
+10021		强力进攻				1	    [TXT]派出派中长老前来报复。	EventAttack	Rich	9	Human	1200						t6	
+10022		怒火				1	    你的行为惹怒了[TXT]，他们即将采取措施。												
+10023		天劫将至				1	    [NAME]的修为达到了瓶颈，天劫即将降临！												
+10024		神秘仙人				1	    几日内，你们昼伏夜出，终于逃到了一处隐秘的山坳。就在刚刚放松时，一道遁光突然落下，显出一名修行者的身形。												
+10025		神秘仙人				1	    神秘的修行者深深地看了一眼四周，化为一道遁光消失在了远方。												
+10026		新手模式				1	    恭喜你，你已经基本掌握了《了不起的修仙模拟器》的玩法内容。\n    接下来你可以通过经典模式，建立自己的角色，开始真正的修行之旅。当然你也可在新手模式中继续游玩。\n    祝您游戏愉快。												
+10027		殒命				1	    世事艰难，你们的仙路尚未开启竟已断绝。只留天地悠悠，令人怆然而泣。												
+10028		灭门				1	    [TXT]只留天地悠悠，令人怆然而泣。												
+10029		新的开始				1	    一名避难山中的旅人发现了这片遗迹，无路可走之下，[IT]决定暂时在此居住下来。												
+10030		神秘仙人				1	    你们感觉到一道温和的气息在身边停留了片刻，然后逐渐变弱并消失，好像从来没出现过……												
+10031		仙家洞天				1	    [TXT]成为仙家洞天，一时气象万千，名声大增。												
+10032		静修				1	    [NAME]由于驻扎在外时间过长，即将返回门派静修。												
+10033		驻扎受伤				1	    [NAME]由于驻扎期间受伤，即将返回门派修养。												
+10034		融入门派				1	    经过一段时间的相处，[NAME]彻底融入了门派。												
+10035		蠢蠢欲动				1	    感应到金丹修士的气息，生存于此的[NAME]似乎感到了不安……												
+10036		进攻				1	    为防止你们继续壮大，生存于此的[NAME]发动袭击了！												
+10037		蠢蠢欲动				1	    感受到你们门派似乎并没有什么潜藏的威胁，生存于此的[NAME]渐渐起了歹意……												
+10038		进攻				1	    无法忍受血食的诱惑，生存于此的[NAME]发动袭击了！												
+10039		进化妖兽				1	    受天气灵气影响，一只[NAME]福至心灵，化为了妖兽。												
+10040		凶煞之气				1	    [NAME]行至此处，突然感到一阵危险的气息，似乎有什么凶物盘踞在附近。在[NAME]感应中，这股气息甚至不亚于金丹期修士，还是远离此处为妙。												
+10041		神秘洞穴				1	    近日，门派地下日益频繁的震动忽然停了下来，于此同时，一个神秘的洞穴出现在地表。从洞穴中传出晦涩而强大的意念，不知道是什么来历。\n    近日屡有上古修行者出世，也许可以向他们打探一些消息。												
+10042		需求祭祀				1	    神秘洞穴中忽然传递出饱含威胁的意念，它要你[TXT]。												
+10043		完成祭祀				1	    你在洞穴前完成了祭祀，神秘的意念很满足。												
+10044		暴雨之灾				1	    神秘的意念十分震怒，一场暴雨应声而来。	EventWeather	Rainstorm_AllSeason	1									
+10045		灵气枯潮				1	    神秘的意念十分震怒，洞穴入口传出强大的吸力，将四周灵气掠夺一空。	EventWeather	LingRarefiedWave	1									
+10046		永夜之灾				1	    神秘的意念十分震怒，怒火之下，一场永夜降临了。	EventWeather	PermanentNight	1									
+10047		妖兽入侵				1	    神秘的意念十分震怒，招来了一些妖兽入侵。	EventYaoShouAttack		3									
+10048		怒火降临				1	    神秘的意念十分震怒，喷出几道愤怒的洪流，破坏了地表。												
+10049		龙出土				1	    神秘意念的不满达到了极致，伴随着一阵天崩地裂的巨响，一只庞然巨物破土而出了。												
+10050		异常的高温				1	    不知什么原因，天地间温度突然提高了许多，这种天气变化远远超过正常天气的范畴，似乎蕴含着什么非同寻常的情况。	EventWeather	Weather_Boss_Drought										
+10051		暴乱的野兽				1	    异常的干旱气候使周边的野兽陷入疯狂，一群暴乱的野兽出现在门派附近！	EventAnimalAttack	Wolf|Rabbit|Snake|Boar	6		12							
+10052		天坠火羽				1	    一股热浪划过天空，似乎有什么东西坠落下来。	EventItemDrop			Item_BossFeng_HuoYu								
+10053		加剧的干旱				1	    持续的高温带来了一场干旱，不知是不是错觉，温度似乎越来越高了，如果不采取什么对策，情况也许会变得更加恶劣。	EventWeather	Weather_Boss_HighTemp	1									
+10054		发狂的妖兽				1	    一些妖兽似乎因恐惧而发狂，竟然离开自己的领地开始四处破坏！	EventYaoShouAttack											
+10055		天坠火羽				1	    一股热浪划过天空，似乎有什么东西坠落下来。	EventItemDrop		2	Item_BossFeng_HuoYu	4							
+10056		凄厉的凶鸣				1	    在施法驱散这日益加剧的干旱后，天地间似乎诡异的安静了半柱香的时间。短暂的安静过后，远处群山突然惊起大片飞鸟，一阵凄厉的凶鸣响彻九霄！												
+10057		凶凰降临				1	    凶凰降临了。												
+10058		永夜开始				1	    不知何故，天地间阴阳之力突然陷入混乱，门派附近百里竟然陷入漆黑的深夜。												
+10059		阴之卵出现				1	    深夜中，一些奇特的卵突然出现在附近，其中似乎孕育着什么……												
+10060		极昼开始				1	    不知何故，天地间阴阳之力突然陷入混乱，门派附近百里突然转为正午时分……不知道这此阴阳混乱会持续多久？												
+10061		阳之卵出现				1	    白昼中，一些奇特的卵突然出现在附近，其中似乎孕育着什么……												
+10062		烛龙登场				1	    持续混乱的阴阳之息终于到达极致，伴随一阵悠长的叹息，一头庞大的身影自天地间显化而出！												
+10063		烛龙出现				1	    随着奇特的卵孵化，天地间的阴阳之息开始陷入混乱！												
+10064		烛龙出现				1	    随着奇特的卵被破坏，天地间的阴阳之息开始陷入混乱！												
+10065		天地异变				1	    近日，中原腹地突然发生了一次灵气爆发。最初并无人重视，只认为此乃寻常的灵脉异动。然而随着时间推移，众人才发现此次灵气爆发规模与强度均远超预期，以爆发点为圆心一路蔓延，已经持续月余，竟然是一场波及整个修行界的剧变。\n    而今，灵气爆发的余波已经蔓延到了你的门派，众人在享受丰沛灵气的同时也不禁疑惑这场剧变意味着什么……	EventWeather	LingUpWave_Sp										
+10066		千年灵潮				1	    自灵气狂潮席卷修行界已过数日，修行界各大门派也从门派典籍中渐渐确定，此次异变应当是三千年一次轮回的灵气潮汐再度来临。受此千年灵潮影响，一些因各种原因沉睡的上古修行者也陆续苏醒。\n    上古之时，修行界尚无如今的秩序，只是奉行弱肉强食的理念。这些奉行上古之道的修行者以强横的修为，在短短数天，已在修行界掀起了波澜……												
+10067		南荒异变				1	    近日，北疆群山中发生一场神秘的天灾。据说当时山摇地动数十息，声震千里。等附近的修行者赶到时，只发现百里山川尽数化为泽国，现场只感受到庞大的妖气弥漫。\n    看来受千年灵潮的影响，一些平日隐藏于深山大泽难得一见的上古妖兽似乎也开始变得活跃起来。												
+10068		地下异声				1	    千年灵潮已经即将过去，短短月余时间，古代修行者出世，上古妖兽重新活跃……修行界格局已经发生巨变。不过随着时间的推移，修行界也渐渐重新达成新的稳定，一切似乎都重新走向正轨。\n    不过近日，门派地下似乎震动频繁，不知是什么原因……												
+10069		古修入侵				1	    一路追踪之下，这名古代修行者成功找到你的山门。												
+10070		凶兽苏醒				1	    盘踞在此地的妖兽苏醒了。												
+10071		天威屠龙				1	    天劫之力将未完全孵化的蛟龙之生机尽数湮灭……												
+10072		异界动荡				1	    江湖传言，近日异界裂缝突然开启，数到光华自裂缝中飞射而出，落于世界各地。冥冥之中你生出感应，似乎这些物品与自己大有缘法，看来有必要搜寻一番。												
+10073		异界动荡				1	    江湖传言，近日异界裂缝突然开启，数到光华自裂缝中飞射而出，落于世界各地。冥冥之中你生出感应，似乎这些物品与自己大有缘法，看来有必要搜寻一番。												
+10074		异界动荡				1	    江湖传言，近日异界裂缝突然开启，数到光华自裂缝中飞射而出，落于世界各地。冥冥之中你生出感应，似乎这些物品与自己大有缘法，看来有必要搜寻一番。												
+10075		异界动荡				1	    江湖传言，近日异界裂缝突然开启，数到光华自裂缝中飞射而出，落于世界各地。冥冥之中你生出感应，似乎这些物品与自己大有缘法，看来有必要搜寻一番。												
+10076		离别				1	    为何要把我赠送给[TXT]？												
+10077		飞升				1	    [NAME]神性圆满，失去一切凡人的情感，斩断一切凡间因果缘法，彻底神化，成为此间世界的一方神灵。	EventNpc	SeeGod	1		0							
+10078		行商行会的谴责				1	    由于你的野蛮行为，行商行会决定永久不再与你交易												
+10079		复仇				1	    [TXT]亲友师长气势汹汹的来到你的门派，前来讨个说法。	EventAttack	Rich	9		1200							
+10080		复仇				1	    [TXT]因你而叛出师门，其原来的亲友师长十分气愤，他们即将前来讨个说法。												
+10081		人情				1	    [TXT]的弟子因你而叛出门派，但由于双方人情往来，他们门派高层施压，阻止了事态恶化。\n(扣除人情)												
+10082		人情				1	    [TXT]的弟子因你而叛出门派，但由于双方人情往来，他们尽力阻止了事态恶化。不过他们欠你的人情似乎不足以完全压下此事。\n(扣除人情)												
+10083		行商行会的拜访				1	    来自行商商会的[NAME]前来拜访，他将在此地停留一天。												
+10084		异界归人				1	    前些日子，行商总会一波商人在异界裂缝探索时失踪。就在众人以为这些人已遭不测时，异界裂缝再度开启，这些行商竟然全部安全返回了，甚至还从异界带来了许多的奇怪的货物。\n    然而，大量来自异界的物品携带了异界的天道之气，受异界天道的影响，本方世界天道也发生了一些临时性的改变。 甚至阴阳之道的化身烛龙都变得有些奇怪了起来……												
+10085	Lv2	启智的熊		1		0		EventA2HAnimal	Bear,10,10,10,10,10,3,Target,,3		在[TXT]，一只熊机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10086	Lv2	启智的兔子		1		0		EventA2HAnimal	Rabbit,10,10,10,10,10,3,Target,,3		在[TXT]，一只兔子机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10087	Lv2	启智的鸡		1		0		EventA2HAnimal	Chicken,10,10,10,10,10,3,Target,,3		在[TXT]，一只鸡机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10088	Lv2	启智的狼		1		0		EventA2HAnimal	Wolf,10,10,10,10,10,3,Target,,3		在[TXT]，一只狼机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10089	Lv2	启智的蛇		1		0		EventA2HAnimal	Snake,10,10,10,10,10,3,Target,,3		在[TXT]，一只蛇机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10090	Lv2	启智的野猪		1		0		EventA2HAnimal	Boar,10,10,10,10,10,3,Target,,3		在[TXT]，一只野猪机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10091	Lv2	启智的蛙		1		0		EventA2HAnimal	Frog,10,10,10,10,10,3,Target,,3		在[TXT]，一只蛙机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10092	Lv2	启智的乌龟		1		0		EventA2HAnimal	Turtle,10,10,10,10,10,3,Target,,3		在[TXT]，一只乌龟机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10093	Lv2	启智的猫		1		0		EventA2HAnimal	Cat,10,10,10,10,10,3,Target,,3		在[TXT]，一只猫机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10094	Lv2	启智的虎		1		0		EventA2HAnimal	Tiger,10,10,10,10,10,3,Target,,3		在[TXT]，一只虎机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10095	Lv2	启智的牛		1		0		EventA2HAnimal	Cattle,10,10,10,10,10,3,Target,,3		在[TXT]，一只牛机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10096		大能点化				1	    [NAME]机缘天造，于[TIME]，受[TNAME]点化而通灵，成为精怪。												
+10097		天地通灵				1	    [NAME]机缘天造，于[TIME]，在[WEATHER]之中偶获天地灵机，竟然觉醒自我意识，成为精怪。												
+10098		觉醒灵机				1	    [NAME]机缘天造，在[TNAME]身边年深日久，聆听玄妙，灵性慢慢累积，竟然于[TIME]偶然觉醒自我意识，成为精怪。												
+10099	Lv2	启智的熊		1		0		EventA2HAnimal	Bear,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只熊不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10100	Lv2	启智的兔子		1		0		EventA2HAnimal	Rabbit,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只兔子不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10101	Lv2	启智的鸡		1		0		EventA2HAnimal	Chicken,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只鸡不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10102	Lv2	启智的狼		1		0		EventA2HAnimal	Wolf,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只狼不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10103	Lv2	启智的蛇		1		0		EventA2HAnimal	Snake,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只蛇机缘巧合，自行认知了[FRAG]，产生了灵智。								
+10104	Lv2	启智的野猪		1		0		EventA2HAnimal	Boar,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只野猪不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10105	Lv2	启智的蛙		1		0		EventA2HAnimal	Frog,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只蛙不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10106	Lv2	启智的乌龟		1		0		EventA2HAnimal	Turtle,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只乌龟不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10107	Lv2	启智的猫		1		0		EventA2HAnimal	Cat,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只猫不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10108	Lv2	启智的虎		1		0		EventA2HAnimal	Tiger,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只虎不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10109	Lv2	启智的牛		1		0		EventA2HAnimal	Cattle,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只牛不知何故，意外感受到多次[FRAG]，产生了灵智。								
+10110	Lv2	启智的熊		1		0		EventA2HAnimal	Bear,10,10,10,10,10,3,Scene,,3		在[TXT]，一只熊多次[FRAG]之后，突发奇想，产生了灵智。								
+10111	Lv2	启智的兔子		1		0		EventA2HAnimal	Rabbit,10,10,10,10,10,3,Scene,,3		在[TXT]，一只兔子多次[FRAG]之后，突发奇想，产生了灵智。								
+10112	Lv2	启智的鸡		1		0		EventA2HAnimal	Chicken,10,10,10,10,10,3,Scene,,3		在[TXT]，一只鸡多次[FRAG]之后，突发奇想，产生了灵智。								
+10113	Lv2	启智的狼		1		0		EventA2HAnimal	Wolf,10,10,10,10,10,3,Scene,,3		在[TXT]，一只狼多次[FRAG]之后，突发奇想，产生了灵智。								
+10114	Lv2	启智的蛇		1		0		EventA2HAnimal	Snake,10,10,10,10,10,3,Scene,,3		在[TXT]，一只蛇多次[FRAG]之后，突发奇想，产生了灵智。								
+10115	Lv2	启智的野猪		1		0		EventA2HAnimal	Boar,10,10,10,10,10,3,Scene,,3		在[TXT]，一只野猪多次[FRAG]之后，突发奇想，产生了灵智。								
+10116	Lv2	启智的蛙		1		0		EventA2HAnimal	Frog,10,10,10,10,10,3,Scene,,3		在[TXT]，一只蛙多次[FRAG]之后，突发奇想，产生了灵智。								
+10117	Lv2	启智的乌龟		1		0		EventA2HAnimal	Turtle,10,10,10,10,10,3,Scene,,3		在[TXT]，一只乌龟多次[FRAG]之后，突发奇想，产生了灵智。								
+10118	Lv2	启智的猫		1		0		EventA2HAnimal	Cat,10,10,10,10,10,3,Scene,,3		在[TXT]，一只猫多次[FRAG]之后，突发奇想，产生了灵智。								
+10119	Lv2	启智的虎		1		0		EventA2HAnimal	Tiger,10,10,10,10,10,3,Scene,,3		在[TXT]，一只虎多次[FRAG]之后，突发奇想，产生了灵智。								
+10120	Lv2	启智的牛		1		0		EventA2HAnimal	Cattle,10,10,10,10,10,3,Scene,,3		在[TXT]，一只牛多次[FRAG]之后，突发奇想，产生了灵智。								
+10121		退却的敌人				1	    有一波充满敌意的存在意图进攻你们，但想到你门派在修行界的名声，最终还是选择了退却。											t6	
+10122		飞升				1	    [NAME]以肉身成圣，破碎虚空，超脱此界，飞升成仙。只留下传说供后人瞻仰。\n有诗为证：\n[color=#D06508]    混沌初分盘古先，太极两仪四象悬。\n    女娲抟土万灵出，伏羲画卦阴阳前。\n    百年修行刀兵祸，定中不觉已千年。\n    劫来散尽无余说，凡尘此去尽如烟。[/color]	EventNpc	SeeGod	1		0							
+10123		异界行商				1	    来自行商商会的[NAME]被异界裂缝传送至此。												
+10124		异界裂隙				1	    一群发狂的野兽被异界裂缝传送至此。												
+10125		异界裂隙				1	    一些妖兽被异界裂缝传送至此。												
+10126		异界裂隙				1	    一群敌人被异界裂缝传送至此。												
+10127		气运凝结				1	    在以无匹的实力征伐各派后，整个修行界的气运凝聚于你的门派。受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10128		气运凝结				1	    短短几年间，你门派中飞升的人数竟合大衍之数，庞大的天道气运因此凝聚于你的门派。受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10129		气运凝结				1	    经历艰苦修行，你派中竟有金丹修者渡九重天劫，无上修为引天地气运汇聚。受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10130		气运凝结				1	    岁月如梭，你立派于此转眼已数十载，漫长岁月让你门派的气运渐渐与此处天地合一。受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10131		气运凝结				1	    为解太一门灭门之谜，你经过艰辛的探查，没想到竟然逐渐接触到了这个世界最古老的隐秘。在探查过程中，大量的天道气运汇聚。受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10132		气运凝结				1	    近日，天道发生剧变，受此影响，小乾坤界竟隐隐发出光芒，生出了奇异的变化。												
+10133		天时将至				1	    小乾坤界突然发出异动，你想起与付辟空的约定，看来是天时将至了……												
+																			
+10123		异界行商				1	    来自行商商会的[NAME]被异界裂缝传送至此。												
+10124		异界裂隙				1	    一群发狂的野兽被异界裂缝传送至此。												
+10125		异界裂隙				1	    一些妖兽被异界裂缝传送至此。												
+10126		异界裂隙				1	    一群敌人被异界裂缝传送至此。												
+																			
+30001		妖兽入侵				1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		5	TongYong_DropList	6000		3				t7	YaoComing1
+30002		妖兽入侵				1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		5	TongYong_DropList	6000		3				t7	YaoComing2
+30003		妖兽入侵				1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		5	TongYong_DropList	6000		3	t101			t7	YaoComing3
+30004		强力进攻				1	    一些神秘杀手受命来攻打你的门派。	EventSpecialAttack	Richest	18	Human	6000						t6	KillerComing1
+30005		强力进攻				1	    一些神秘杀手受命来攻打你的门派。	EventSpecialAttack	Richest	18	Human	6000						t6	KillerComing2
+30006		强力进攻				1	    一些神秘杀手受命来攻打你的门派。	EventSpecialAttack	Richest	18	Human	6000			t102			t6	KillerComing3
+30008		永夜		15		1	   阴阳奇石有点失常，导致阴性失衡，太阳始终没有升起。	EventWeather	YinChaos	0.3								t2	
+30009	Lv2	热浪		10		1	    地肺之口不太稳定，导致温度异常升高。	EventWeather	Hotpot_Heat									t2	HotPot
+30010	Lv2	寒气		10		1	    玄冰丹炉不太稳定，导致温度异常降低。	EventWeather	ColdHole_Cold									t2	ColdHole
+30012	Lv2	暴雨		15		1	    一场猛烈的暴风雨袭来，天地间的水属性异常活跃。	EventWeather	Rainstorm	0.3								t2	MoreElementWeather
+30013	Lv2	焚风		15		1	    一场炎热的焚风刮来，天地间的火属性异常活跃。	EventWeather	Fohn	0.3								t2	MoreElementWeather
+30014	Lv2	尘暴		15		1	    一场尘暴席卷而来，天地间的土属性异常活跃。	EventWeather	DustStorm	0.3								t2	MoreElementWeather
+30015	Lv2	灵气枯潮		7		1	    不知道什么原因，天地间的灵气进入了短暂的低潮。	EventWeather	LingRarefiedWave_Longer									t2	LessLingWeather
+30018		永夜		1	4	1	    一股妖云遮天蔽日，将持续一段时间不见阳光。	EventWeather	PolarNight									t2	PolarNight
+30019	Lv3	瘟气		5	4	1	    一场瘴气笼罩整个地区，天地间的木属性异常活跃。	EventWeather	Miasma	0.3								t2	MoreElementWeather
+30020	Lv3	雷暴		5	4	1	    一场雷暴降临，天地间的金属性异常活跃。	EventWeather	LightningStorm	0.3								t2	MoreElementWeather
+30021		强力进攻		3	5	1	    一些神秘杀手受命来攻打你的门派。	EventDNAttack	Normal	3	Human	6000			t103				NoLimit
+30022		雷暴		5	4	1	    神秘洞穴与天地感应，产生了一场雷暴。	EventWeather	Lightning_DragonHole	0.3								t2	LongDongThunder
+30028	Join	难民路过		2		0	    一名逃避战乱的难民路过此地，[IT]希望加入你们。	EventJoin	Human									t_vistor	LessWalker
+30043	Join	迷路的路人		2		0	    一名路人在附近迷了路，[IT]希望得到我们的帮助。	EventWalker	迷路的路人			1	Human					t_vistor	LessWalker
+30044	Join	好奇的路人		2		0	    一名充满好奇的路人偶然到了这里，[IT]特别想知道我们到底在干什么。	EventWalker	好奇的路人			1	Human					t_vistor	LessWalker
+30045	Join	受伤的路人		2		0	    一名路人受伤了，[IT]希望临时留下来休息并得到我们的帮助。	EventWalker	受伤的路人		RandomDamage	3	Human					t_vistor	LessWalker
+30083	Lv2	灵气爆发		7		1	    不知道什么原因，天地间的灵气突然爆发了。部分植物受此侵染，化为灵木。	EventWeather	LingUpWave_Shorter	0.3								t2	LessLingWeather
+30111		尘暴	DiMuBuildingEvent1			1	    在地母石碑的影响下，一场尘暴席卷而来。	EventWeather	DustStorm_Dimu	0.3								t2	
+30112		妖兽入侵				1	    地母石碑吸收土地养分激怒了一些妖兽，它们充满敌意！												
+30113		妖兽入侵	DiMuBuildingEvent3			1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		6		6000						t7	
+30114		妖兽入侵	DiMuBuildingEvent4			1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		7		6000						t7	
+30115		妖兽入侵	DiMuBuildingEvent5			1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		8		6000						t7	
+30116		妖兽入侵	DiMuBuildingEvent6			1	    一些妖兽出现在附近，它们充满敌意。	EventYaoShouAttack		9		6000						t7	
+30117		应天台				1	    应天台凝聚灵石完成！												

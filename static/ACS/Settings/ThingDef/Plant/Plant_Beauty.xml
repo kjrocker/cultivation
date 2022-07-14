@@ -1,0 +1,268 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="Dandelion" Parent="PlantBase">
+	
+	<ThingName>蒲公英</ThingName>
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_pugongying001_a;
+	res\Sprs\scene_TemperateForest_plant\scene_pugongying001_b
+	</TexPath>
+	<Desc>美丽的小花。</Desc>
+	
+	<SelectAble>0</SelectAble>
+	<Beauty>4</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Plant>		
+		<NotRandom>1</NotRandom>
+		<WildClusterSizeRangemin>30</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>50</WildClusterSizeRangemax>
+		<WildClusterRadius>18</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.8</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>16</LifespanFraction>
+		<GrowDays>2</GrowDays>
+		<ReproduceRadius>25</ReproduceRadius>	
+	</Plant>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Flower1" Parent="PlantBase">
+	
+	<ThingName>春希草</ThingName>
+	<ElementKind>Mu</ElementKind>
+
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_xiaohua001_a;
+	res\Sprs\scene_TemperateForest_plant\scene_xiaohua001_b;
+	res\Sprs\scene_TemperateForest_plant\scene_xiaohua001_c
+	</TexPath>
+	<Desc>美丽的植物，比较好看，有微弱的木属性。</Desc>
+	
+	<SelectAble>0</SelectAble>
+	<Beauty>8</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<NotDoTongLing>1</NotDoTongLing>
+	<Plant>
+		<NotRandom>1</NotRandom>
+
+		<WildClusterSizeRangemin>30</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>50</WildClusterSizeRangemax>
+		<WildClusterRadius>18</WildClusterRadius>
+		
+		<NoDisappear>1</NoDisappear>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>16</LifespanFraction>
+		<GrowDays>16</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>25</ReproduceRadius>	
+		
+		<TempMin>5</TempMin>
+		<TempMax>45</TempMax>
+		<SnowRenderData>
+			<x>2.2</x>
+			<y>3.6</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>0.5</Value>         
+		<Radius>2</Radius>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>	
+		
+		
+	<ThingDef Type="Plant" Name="IceFlower1" Parent="Flower1">
+	<ThingName>冰花</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Frags>	
+		<li Frag="Flower" />
+	</Frags>	
+	<Plant>
+		<NotRandom>1</NotRandom>
+
+		<WildClusterSizeRangemin>30</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>50</WildClusterSizeRangemax>
+		<WildClusterRadius>18</WildClusterRadius>
+		
+		<NoDisappear>1</NoDisappear>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>16</LifespanFraction>
+		<GrowDays>16</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>25</ReproduceRadius>	
+		
+		<TempMin>-50</TempMin>
+		<TempMax>10</TempMax>
+		<SnowRenderData>
+			<x>2.2</x>
+			<y>3.6</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_icexiaohua001_a
+	</TexPath>
+	<Desc>美丽的植物，比较好看，有微弱的木属性。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Plant" Name="Flower2" Parent="Flower1">
+	<Frags>	
+		<li Frag="Flower" />
+	</Frags>
+		<ThingName>金霞花</ThingName>
+	    <ElementKind>Jin</ElementKind>
+		<Desc>美丽的植物，比较好看，有微弱的金属性。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua002_a;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua002_b;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua002_c
+		</TexPath>
+		<Element>
+			<Kind>Jin</Kind>
+		</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Flower3" Parent="Flower1">
+	<Frags>	
+		<li Frag="Flower" />	
+	</Frags>
+	<ThingName>赤染香</ThingName>
+	    <ElementKind>Huo</ElementKind>
+		<Desc>美丽的植物，比较好看，有微弱的火属性。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua003_a;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua003_b;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua003_c
+		</TexPath>
+		<Element>
+			<Kind>Huo</Kind>
+		</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Flower4" Parent="Flower1">
+	<Frags>	
+		<li Frag="Flower" />
+		<li Frag="SeeNorth" />
+	</Frags>
+		<ThingName>水蓝仙</ThingName>
+	    <ElementKind>Shui</ElementKind>
+		<Desc>美丽的植物，比较好看，有微弱的水属性。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua004_a;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua004_b;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua004_c
+		</TexPath>
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>	
+	<ThingDef Type="Plant" Name="Flower5" Parent="Flower1">
+		<Frags>	
+			<li Frag="Flower" />
+		</Frags>
+		<ThingName>沉烟花</ThingName>
+	    <ElementKind>Tu</ElementKind>
+		<Desc>美丽的植物，比较好看，有微弱的土属性。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua005_a;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua005_b;
+		res\Sprs\scene_TemperateForest_plant\scene_xiaohua005_c
+		</TexPath>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="ShiChe" Parent="Flower1">
+		<Frags>	
+			<li Frag="Flower" />
+		</Frags>
+		<ThingName>矢车菊</ThingName>
+	    <ElementKind>Tu</ElementKind>
+		<SelectAble>1</SelectAble>
+		<Desc>美丽的植物，生长在沙漠中。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_shicheju01;
+		res\Sprs\scene_TemperateForest_plant\scene_shicheju02;
+		res\Sprs\scene_TemperateForest_plant\scene_shicheju03
+		</TexPath>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+		<Plant>
+			<TempMin>0</TempMin>
+			<TempMax>50</TempMax>
+			<FertilityMin>0.1</FertilityMin>
+		</Plant>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="CongRong" Parent="Flower1">
+		<Frags>	
+			<li Frag="Flower" />
+		</Frags>
+		<ThingName>苁蓉</ThingName>
+		<SelectAble>1</SelectAble>
+	    <ElementKind>Tu</ElementKind>
+		<Desc>美丽的植物，生长在沙漠中。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_congrong01;
+		res\Sprs\scene_TemperateForest_plant\scene_congrong02
+		</TexPath>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+		<Plant>
+			<TempMin>0</TempMin>
+			<TempMax>50</TempMax>
+			<FertilityMin>0.1</FertilityMin>
+		</Plant>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="CamelSting" Parent="Flower1">
+		<SelectAble>1</SelectAble>
+		<ThingName>骆驼刺</ThingName>
+	    <ElementKind>Tu</ElementKind>
+		<Desc>美丽的植物，生长在沙漠中。</Desc>
+		<TexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_luotuocao01
+		</TexPath>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+		<Plant>
+			<TempMin>0</TempMin>
+			<TempMax>50</TempMax>
+			<FertilityMin>0.1</FertilityMin>
+		</Plant>
+	</ThingDef>	
+</List></ThingDefs>

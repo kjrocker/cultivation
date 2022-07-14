@@ -1,0 +1,92 @@
+<BiomeDefs><List>
+	<Biome Name="TestFightMapBiome" Parent="BiomeBase">
+		<BurshLayer1>
+			<Texture0>Terrain/Texs/test/soil</Texture0>
+			<Texture1>Terrain/Texs/test/mud</Texture1>
+			<Texture2>Terrain/Texs/test/richsoil</Texture2>
+			<Texture3>Terrain/Texs/test/stone</Texture3>
+		</BurshLayer1>
+		<BurshLayer2>
+			<Texture0>Terrain/Texs/test/mud</Texture0>
+			<Texture1>Terrain/Texs/test/Ling</Texture1>
+			<Texture2>Terrain/Texs/test/WaterDeep</Texture2>
+			<Texture3>Terrain/Texs/test/WaterShallow</Texture3>
+		</BurshLayer2>
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>-50</TempTopMin>
+			<TempTopMax>-10</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+		</Weather>
+		<BGM>
+			<li>bgm1</li>
+			<li>bgm2</li>
+			<li>bgm3</li>
+			<li>bgm4</li>
+			<li>bgm_open</li>
+		</BGM>
+		<EnvironmentDisease>
+			<Base><!--地域伤病-->
+				<li Name="Cold1" Rate="0.00005" PartName = "TheWholeBody"/>
+				<li Name="Boil" Rate="0.00001" PartName = "Face"/>
+				<li Name="Boil" Rate="0.00001" PartName = "LeftLeg"/>
+				<li Name="Boil" Rate="0.00001" PartName = "RightLeg"/>
+				<li Name="Boil" Rate="0.00001" PartName = "LeftArm"/>
+				<li Name="Boil" Rate="0.00001" PartName = "RightArm"/>
+				<li Name="Hemorrhoids" Rate="0.00001" PartName = "Hips"/>
+				<li Name="Toothache" Rate="0.00001" PartName = "AllHead"/>
+				<li Rate="0.99945"/>
+			</Base>
+		</EnvironmentDisease>	
+	</Biome>
+	<Biome Name="Cold" Parent="BiomeBase">
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>-30</TempTopMin>
+			<TempTopMax>-5</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>5</TempOffset>			
+		</Weather>
+		<BGM>
+			<li>bgm1</li>
+			<li>bgm2</li>
+			<li>bgm3</li>
+			<li>bgm4</li>
+		</BGM>	
+	</Biome>
+	<Biome Name="Normal" Parent="BiomeBase">
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>0</TempTopMin>
+			<TempTopMax>20</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+		</Weather>
+		<BGM>
+			<li>bgm1</li>
+			<li>bgm2</li>
+			<li>bgm3</li>
+			<li>bgm4</li>
+		</BGM>	
+	</Biome>
+	<Biome Name="Hot" Parent="BiomeBase">
+		<PlantGroup>Normal</PlantGroup>	
+		<Weather>
+			<TempTopMin>30</TempTopMin>
+			<TempTopMax>40</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+		</Weather>
+		<BGM>
+			<li>bgm1</li>
+			<li>bgm2</li>
+			<li>bgm3</li>
+			<li>bgm4</li>
+		</BGM>	
+	</Biome>
+</List></BiomeDefs>

@@ -1,0 +1,306 @@
+<MoodDefs><List>
+
+	<Mood Name="BaseExpect1" Group="BaseExpect">
+		<DisplayName>惊魂稍定</DisplayName>
+		<Desc>多日的逃亡真的让人精疲力尽，不过不管怎么样，能活下来就好……</Desc>
+		<StoryDesc>正暗自庆幸从灾难中逃出来</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>35</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BaseExpect2" Group="BaseExpect">
+		<DisplayName>远离乱世</DisplayName>
+		<Desc>虽然这里什么都没有，但是不管怎样，远离外界的乱世就是最大的幸福。</Desc>
+		<StoryDesc>正在享受这远离纷乱的平静</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>50</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BaseExpect3" Group="BaseExpect">
+		<DisplayName>新生活</DisplayName>
+		<Desc>你们似乎都喜欢上了这里的生活：没有战乱，没有繁重的苛捐杂税，虽然日子苦了一点，但也能自给自足。这会是一个新开始么？所有人都饱含期待。</Desc>
+		<StoryDesc>正暗自期待新生活的开始</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>25</Value>
+		<Duration>15</Duration>
+	</Mood>
+	
+	<Mood Name="BedroomExpect1" Group="BedroomExpect">
+		<DisplayName>恶劣的住房</DisplayName>
+		<Desc>这种地方算的上是给人住的房间么？</Desc>
+		<StoryDesc>刚刚因为糟糕的住房而大发脾气</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomExpect2" Group="BedroomExpect">
+		<DisplayName>可怕的住房</DisplayName>
+		<Desc>可怕的环境，我也许睡在野外都要比这里舒服。</Desc>
+		<StoryDesc>正低声抱怨这恶劣的居所</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomExpect3" Group="BedroomExpect">
+		<DisplayName>糟糕的住房</DisplayName>
+		<Desc>真的很粗糙，仅仅是个能够遮风挡雨的地方罢了。</Desc>
+		<StoryDesc>正因为简陋的房间而面露不愉</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-10</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomExpect4" Group="BedroomExpect">
+		<DisplayName>普通的房间</DisplayName>
+		<Desc>中规中矩的一间房屋，布置很普通。</Desc>
+		<StoryDesc>正琢磨怎么改善一下房间</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>4</Value>
+		<Duration>0</Duration>
+	</Mood>
+
+	<Mood Name="BedroomExpect5" Group="BedroomExpect">
+		<DisplayName>不错的房间</DisplayName>
+		<Desc>房子里的布置看上去还不错。</Desc>
+		<StoryDesc>正因不错的房间而面露微笑</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BedroomExpect6" Group="BedroomExpect">
+		<DisplayName>精致的房间</DisplayName>
+		<Desc>这里的布置很用心，看的出来是费了功夫的。</Desc>
+		<StoryDesc>正因为温馨的房间而满面笑容</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BedroomExpect7" Group="BedroomExpect">
+		<DisplayName>华丽的房间</DisplayName>
+		<Desc>房间的布置太华丽了，简直尽善尽美。</Desc>
+		<StoryDesc>正因为华丽的卧室而开心不已</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>25</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BedroomExpect8" Group="BedroomExpect">
+		<DisplayName>需要房间</DisplayName>
+		<Desc>我想要个房间！</Desc>
+		<StoryDesc>正因为没有住房而恼火</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="IndependentRoomNeed">
+		<DisplayName>与外门同住</DisplayName>
+		<Desc>外门弟子的浊息杂念实在会干扰修行……我希望和外门弟子分室而居。</Desc>
+		<StoryDesc>正因和外门弟子同室修行而苦恼</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>2</DeeponMax>
+	</Mood>
+	
+	<Mood Name="LiveWithBadMan">
+		<DisplayName>尴尬的同居</DisplayName>
+		<Desc>我和[TXT]还没有熟到同室修行的地步，这真的很尴尬。</Desc>
+		<StoryDesc>正因和不太熟的人同室修行而苦恼</StoryDesc>
+		<MaxStack>5</MaxStack>
+		<StackRatio>0.75</StackRatio>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>2</DeeponMax>
+	</Mood>
+	
+	<Mood Name="BedroomFengShuiExpect1" Group="BedroomFengShuiExpect">
+		<DisplayName>房间风水差</DisplayName>
+		<Desc>我住的地方风水不是很好。</Desc>
+		<StoryDesc>正因房间风水不好而面露烦恼</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-8</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomFengShuiExpect2" Group="BedroomFengShuiExpect">
+		<DisplayName>凶宅</DisplayName>
+		<Desc>我的房间简直可以说是个凶宅，住在这里真的没问题么。</Desc>
+		<StoryDesc>正因房间风水差而面色衰败</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomFengShuiExpect3" Group="BedroomFengShuiExpect">
+		<DisplayName>房间没法住</DisplayName>
+		<Desc>这间房风水奇差，真的没法住。</Desc>
+		<StoryDesc>正因房间风水奇差而看起来满面怒容</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>2</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomFengShuiExpect4" Group="BedroomFengShuiExpect">
+		<DisplayName>房间风水好</DisplayName>
+		<Desc>我的房间风水还不错，这让我心情愉悦。</Desc>
+		<StoryDesc>正因房间风水好而一脸喜色</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BedroomFengShuiExpect5" Group="BedroomFengShuiExpect">
+		<DisplayName>吉宅</DisplayName>
+		<Desc>我的房间风水相当好，不是懂行的人布置不出来这样的房间。</Desc>
+		<StoryDesc>正因房间风水极好而笑容满面</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BedroomExpect9" Group="BedroomLayerExpect">
+		<DisplayName>拥挤的房间</DisplayName>
+		<Desc>这个房间实在是太拥挤了！</Desc>
+		<StoryDesc>正因想起拥挤的房间而满脸愁容</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BedroomExpect10" Group="BedroomLayerExpect">
+		<DisplayName>空旷的房间</DisplayName>
+		<Desc>这房间空荡荡的，不太舒服。</Desc>
+		<StoryDesc>正因自己空旷的房间而低声抱怨</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="ClosedRoom">
+		<DisplayName>出不去</DisplayName>
+		<Desc>这个房间没有门，我被困住了！</Desc>
+		<StoryDesc>正因自己被困到房间里而怒发冲冠</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-40</Value>
+		<Duration>-1</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="ClothesExpect1" Group="ClothesExpect">
+		<DisplayName>糟糕的衣服</DisplayName>
+		<Desc>我只能穿这样的破烂么？（品质小于30）</Desc>
+		<StoryDesc>正因穿着简陋而不满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-10</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="ClothesExpect2" Group="ClothesExpect">
+		<DisplayName>合适的衣装</DisplayName>
+		<Desc>衣服穿得很合身。</Desc>
+		<StoryDesc>正因穿着合身而开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>10</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="ClothesExpect3" Group="ClothesExpect">
+		<DisplayName>华丽的衣装</DisplayName>
+		<Desc>这一身衣服不光穿着舒服，而且看上去非常出众。</Desc>
+		<StoryDesc>正因穿着华丽而容光焕发</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	
+	<Mood Name="BeautyExpect1" Group="BeautyExpect">
+		<DisplayName>恶劣的环境</DisplayName>
+		<Desc>周围的环境真的是太丑陋了，连乞丐都不愿意呆在这里。</Desc>
+		<StoryDesc>正因周围恶劣的环境而一脸厌恶</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BeautyExpect2" Group="BeautyExpect">
+		<DisplayName>脏乱的环境</DisplayName>
+		<Desc>这个地方又脏又乱，让人很烦躁。</Desc>
+		<StoryDesc>正因周围脏乱的环境而烦躁</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="BeautyExpect3" Group="BeautyExpect">
+		<DisplayName>普通的景观</DisplayName>
+		<Desc>这里风景还不错。</Desc>
+		<StoryDesc>正因周围普通环境而微微点头</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>4</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BeautyExpect4" Group="BeautyExpect">
+		<DisplayName>别致的风景</DisplayName>
+		<Desc>别致的景观，让人赏心悦目。</Desc>
+		<StoryDesc>刚沉浸在别致的风景中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BeautyExpect5" Group="BeautyExpect">
+		<DisplayName>人间绝景</DisplayName>
+		<Desc>此处风景真是绝美，人间难寻。</Desc>
+		<StoryDesc>刚因周围绝美的风景而发出一声叹息</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="BeautyExpect6" Group="BeautyExpect">
+		<DisplayName>宛如仙境</DisplayName>
+		<Desc>这里难道是仙境么？</Desc>
+		<StoryDesc>正沉醉在如仙境一般的风景中</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>25</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="NeedFabao">
+		<DisplayName>需要法宝</DisplayName>
+		<Desc>已入仙途，怎可没有法宝。</Desc>
+		<StoryDesc>正因为没有法宝而感到不满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="NeedWeapon">
+		<DisplayName>需要武器</DisplayName>
+		<Desc>我需要一件武器防身杀敌。</Desc>
+		<StoryDesc>正因为没有武器而感到不安</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Jingguai_HappyHuman">
+		<DisplayName>化身为人</DisplayName>
+		<Desc>我..我变成人了？我终于变成人啦！！</Desc>
+		<StoryDesc>正为化身为人而高兴</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>50</Value>
+		<Duration>10</Duration>
+	</Mood>
+</List></MoodDefs>

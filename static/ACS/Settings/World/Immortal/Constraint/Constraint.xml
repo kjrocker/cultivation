@@ -1,0 +1,856 @@
+<Defs><List>
+	
+	<Def Name="TwoRandom">
+		<DisplayName>天涯沦落</DisplayName>
+		<Desc>在逃出来的路上，有两名你不太熟的同门弟子请求加入了你们。</Desc>
+		<Point>1</Point>
+		<BornNpc>
+			<Count>2</Count>
+			<AllRandom>1</AllRandom>
+		</BornNpc>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="Coma50">
+		<DisplayName>宅心仁厚</DisplayName>
+		<Desc>在逃出来的路上，一名重伤的同门弟子请求你们救救他，带上他一起走。</Desc>
+		<Point>1</Point>
+		<BornNpc>
+			<Count>1</Count>
+			<Coma>50</Coma>
+		</BornNpc>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="Thunder100">
+		<DisplayName>一视同仁</DisplayName>
+		<Desc>在逃出来的路上，一只后山上化形的妖族请求你带上他一起逃亡。他一百天后就面临化形天劫了。</Desc>
+		<Point>1</Point>
+		<BornNpc>
+			<Count>1</Count>
+			<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+			<ComingThunder>100</ComingThunder>
+		</BornNpc>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="HardLeave">
+		<DisplayName>艰难逃离</DisplayName>
+		<Desc>逃难过程中，会有数名不可挑选的陌生同门请求加入你们的队伍。</Desc>
+		<Collection>
+			<li>TwoRandom</li>
+			<li>Coma50</li>
+			<li>Thunder100</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="HotSummer">
+		<Point>1</Point>
+		<DisplayName>酷暑</DisplayName>
+		<Desc>此地天候异常，夏天更加炎热。</Desc>
+		<PSet>
+			<li P="SeasonTempAdd_Summer" V="10" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ColdWinter">
+		<DisplayName>寒冬</DisplayName>
+		<Desc>此地天候异常，冬天更加寒冷。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="SeasonTempAdd_Winter" V="-10" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="OffensiveThunder">
+		<DisplayName>狂雷</DisplayName>
+		<Desc>此地地理异常，一旦发生雷电，就会特别猛烈，更容易击中人。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="ThunderStrikeScale" V="3"/>
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="HardNature">
+		<DisplayName>恶劣环境</DisplayName>
+		<Desc>此地自然环境更加恶劣。</Desc>
+		<Collection>
+			<li>HotSummer</li>
+			<li>ColdWinter</li>
+			<li>OffensiveThunder</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="MoreYaoShou2">
+		<Point>1</Point>
+		<DisplayName>初始增加1只妖兽</DisplayName>
+		<Desc>初始增加1只妖兽。</Desc>
+		<PSet>
+			<li P="BornYaoShouN" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MoreYaoShou3">
+		<Point>2</Point>
+		<DisplayName>初始增加2只妖兽</DisplayName>
+		<Desc>初始增加2只妖兽。</Desc>
+		<PSet>
+			<li P="BornYaoShouN" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MoreYaoShou4">
+		<DisplayName>初始增加3只妖兽</DisplayName>
+		<Desc>初始增加3只妖兽。</Desc>
+		<Point>3</Point>
+		<PSet>
+			<li P="BornYaoShouN" V="4" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="YaoGuaiMore">
+		<DisplayName>妖兽纵横</DisplayName>
+		<Desc>初始妖兽数量提高。</Desc>
+		<Selector>
+			<li>MoreYaoShou2</li>
+			<li>MoreYaoShou3</li>
+			<li>MoreYaoShou4</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>MoreYaoShouA</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="BuildMoreCost">
+		<DisplayName>粗糙工艺</DisplayName>
+		<Desc>建筑建造所需材料翻倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="BuildMatCostScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="BuildSlow">
+		<DisplayName>精雕细琢</DisplayName>
+		<Desc>建筑建造速度减少到三分之一。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="BuildSpeedScale" V="0.33" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="BuildLessHp">
+		<DisplayName>物料风化</DisplayName>
+		<Desc>建筑耐久度变的很低。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="BuildHpScale" V="0.1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="HardBuild">
+		<DisplayName>艰难建设</DisplayName>
+		<Desc>建筑的难度更高。</Desc>
+		<Collection>
+			<li>BuildMoreCost</li>
+			<li>BuildSlow</li>
+			<li>BuildLessHp</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="InferiorFengShui">
+		<DisplayName>风水失传</DisplayName>
+		<Desc>建造观星台后，只能看见风水的结果，无法了解风水详情。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="InferiorFengShui" V="1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="InferiorDan">
+		<DisplayName>丹道失传</DisplayName>
+		<Desc>炼丹时有额外的失败几率，炼丹消耗的材料加倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="RefineDanFailRate" V="0.2" />
+			<li P="RefineDanCostScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LostPractice">
+		<DisplayName>失传</DisplayName>
+		<Desc>有些修行的玄妙法门失传了。</Desc>
+		<Collection>
+			<li>InferiorFengShui</li>
+			<li>InferiorDan</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="FastRot">
+		<DisplayName>腐败之息</DisplayName>
+		<Desc>物品腐烂速度翻倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="RotSpeedScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="HighPrice"> <!-- 物品购买价格增加，拍卖的人携带灵石增加 -->
+		<DisplayName>连城之价</DisplayName>
+		<Desc>物品购买价格翻倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="PriceGlobalScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessGain"> <!-- 野外地图资源减少 -->
+		<DisplayName>稀缺之物</DisplayName>
+		<Desc>野外地图物品数量变少。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="FightMapItemCountScale" V="0.4" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SourceLimit">
+		<DisplayName>物资短缺</DisplayName>
+		<Desc>资源更加珍贵难寻。</Desc>
+		<Collection>
+			<li>FastRot</li>
+			<li>HighPrice</li>
+			<li>LessGain</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="LessWalker"> <!-- 路过的人变少 -->
+		<DisplayName>远离世俗</DisplayName>
+		<Desc>路过的凡人数量变少。</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>LessWalker</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessMember"> <!-- 弟子数量减少 -->
+		<DisplayName>精简门派</DisplayName>
+		<Desc>门派弟子数量上限减少。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="SchoolNpcScale" V="0.5" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessZhaolan"> <!-- 招揽来人减半 -->
+		<DisplayName>浮躁时代</DisplayName>
+		<Desc>凡人浮躁，不思修行，招揽来人减半。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="ZhaoLanCountScale" V="0.5" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessFiveBase"> <!-- 凡人资质变差 -->
+		<DisplayName>人才难寻</DisplayName>
+		<Desc>凡人资质变差。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="FiveBaseScale" V="0.7" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="DaoShuai">
+		<DisplayName>道衰之世</DisplayName>
+		<Desc>优秀的修行资质更加难得。</Desc>
+		<Collection>
+			<li>LessWalker</li>
+			<li>LessMember</li>
+			<li>LessZhaolan</li>
+			<li>LessFiveBase</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="LessWalkTrader"> <!-- 行商频率减少 -->
+		<DisplayName>路途艰险</DisplayName>
+		<Desc>行商前来的频率减少。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="WalkerIntervalScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessWalkLStone"> <!-- 行商携带灵石变少 -->
+		<DisplayName>货币危机</DisplayName>
+		<Desc>行商携带的灵石变少。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="WalkerLingStoneScale" V="0.5" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="StrictWalker"> <!-- 更严格的行商 -->
+		<DisplayName>无商不奸</DisplayName>
+		<Desc>行商每次前来只会收买某种类型的物品。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="StrictWalker" V="1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="StrictWTrader">
+		<DisplayName>生意难做</DisplayName>
+		<Desc>与行商的交易条件更难。</Desc>
+		<Collection>
+			<li>LessWalkTrader</li>
+			<li>LessWalkLStone</li>
+			<li>StrictWalker</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="MoreElementWeather"> <!-- 更频繁的出现元素天气 -->
+		<DisplayName>五行紊乱</DisplayName>
+		<Desc>五行天灾会更频繁地出现。</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>MoreElementWeather</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="LessLingWeather"> <!-- 灵气苦潮时间延长，爆发时间变短 -->
+		<DisplayName>灵气衰弱</DisplayName>
+		<Desc>灵气枯潮时间延长，爆发时间变短。</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>LessLingWeather</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ForeverNight20"> <!-- 每年固定20天永夜 -->
+		<DisplayName>阴阳不调</DisplayName>
+		<Desc>每年固定时间会有永夜。</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>PolarNight</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="TianDaoWenLuan">
+		<DisplayName>天道紊乱</DisplayName>
+		<Desc>超凡天象变得更加严重。</Desc>
+		<Collection>
+			<li>MoreElementWeather</li>
+			<li>LessLingWeather</li>
+			<li>ForeverNight20</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="PetReviveInterval">
+		<DisplayName>黄泉路长</DisplayName>
+		<Desc>灵宠复活时间变长。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="LingShouRebornNeedTAdd" V="1800" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="PetLingMax">
+		<DisplayName>灵脉断裂</DisplayName>
+		<Desc>灵宠灵气上限降低。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="LingShouMaxLingSpecial" V="0.7" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="PetFabao">
+		<DisplayName>内丹难成</DisplayName>
+		<Desc>灵宠内丹和术法威力降低。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="LingShouFabaoSpecial" V="0.25" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="PetWeak">
+		<DisplayName>羸弱灵宠</DisplayName>
+		<Desc>灵宠的属性变低。</Desc>
+		<Collection>
+			<li>PetReviveInterval</li>
+			<li>PetLingMax</li>
+			<li>PetFabao</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="FavorDown">
+		<DisplayName>代理斗争</DisplayName>
+		<Desc>入驻代理点会降低其他门派声望。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="OpenupRegionSubSchoolRelation" V="100" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ColdMan">
+		<DisplayName>人心冷漠</DisplayName>
+		<Desc>红尘中有更多人是冷漠性格。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="MoreApathy" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="NoTeacher">
+		<DisplayName>无依无靠</DisplayName>
+		<Desc>神秘修行者不再前来。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="NoTeacher" V="1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ColdMortal">
+		<DisplayName>冰冷人间</DisplayName>
+		<Desc>世界对你更加冷漠。</Desc>
+		<Collection>
+			<li>NoTeacher</li>
+			<li>FavorDown</li>
+			<li>ColdMan</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="YaoComing1">
+		<DisplayName>群妖将在160天前来</DisplayName>
+		<Desc>群妖将在160天前来</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>YaoComing1</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="YaoComing2">
+		<DisplayName>群妖将在120天前来</DisplayName>
+		<Desc>群妖将在120天前来</Desc>
+		<Point>2</Point>
+		<PFlag>
+			<li>YaoComing2</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="YaoComing3">
+		<DisplayName>群妖将在80天前来</DisplayName>
+		<Desc>群妖将在80天前来</Desc>
+		<Point>3</Point>
+		<PFlag>
+			<li>YaoComing3</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="YaoGuaiComing">
+		<DisplayName>妖族肆虐</DisplayName>
+		<Desc>妖兽横行肆虐，会攻击你的门派。</Desc>
+		<Selector>
+			<li>YaoComing1</li>
+			<li>YaoComing2</li>
+			<li>YaoComing3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>YaoComingA</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="KillerComing1">
+		<DisplayName>追杀者在250天到来</DisplayName>
+		<Desc>在灭门之后，有一波神秘人持续追杀太一门余孽。其中的一伙会在250天来到。</Desc>
+		<Point>1</Point>
+		<PFlag>
+			<li>KillerComing1</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="KillerComing2">
+		<DisplayName>追杀者在200天到来</DisplayName>
+		<Desc>在灭门之后，有一波神秘人持续追杀太一门余孽。其中的一伙会在200天来到。</Desc>
+		<Point>2</Point>
+		<PFlag>
+			<li>KillerComing2</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="KillerComing3">
+		<DisplayName>追杀者在150天到来</DisplayName>
+		<Desc>在灭门之后，有一波神秘人持续追杀太一门余孽。其中的一伙会在150天来到。</Desc>
+		<Point>3</Point>
+		<PFlag>
+			<li>KillerComing3</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="KillerComing">
+		<DisplayName>不留后患</DisplayName>
+		<Desc>在灭门之后，一伙神秘人持续寻找追杀太一门余孽。</Desc>
+		<Selector>
+			<li>KillerComing1</li>
+			<li>KillerComing2</li>
+			<li>KillerComing3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>KillerComingA</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="SoonDragon1">
+		<DisplayName>神秘洞穴在160天出现</DisplayName>
+		<Desc>神秘洞穴将在160天出现。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="DragonHoleDay" V="160" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SoonDragon2">
+		<DisplayName>神秘洞穴在80天出现</DisplayName>
+		<Desc>神秘洞穴将在80天出现。</Desc>
+		<Point>2</Point>
+		<PSet>
+			<li P="DragonHoleDay" V="80" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SoonDragon3">
+		<DisplayName>神秘洞穴在30天出现</DisplayName>
+		<Desc>神秘洞穴将在30天出现。</Desc>
+		<Point>3</Point>
+		<PSet>
+			<li P="DragonHoleDay" V="30" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SoonDragon">
+		<DisplayName>龙穴之灾</DisplayName>
+		<Desc>神秘洞穴更早出现。</Desc>
+		<Selector>
+			<li>SoonDragon1</li>
+			<li>SoonDragon2</li>
+			<li>SoonDragon3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>DragonHoleStay</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="RequiredSacrifice">
+		<DisplayName>龙威盖世</DisplayName>
+		<Desc>神秘洞穴无法再被镇压。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="DragonHoleMustSacrifice" V="1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="Basfff">
+		<Point>1</Point>
+		<DisplayName>胃口大开</DisplayName>
+		<Desc>神秘洞穴的要求更加苛刻。</Desc>
+		<PSet>
+			<li P="StrictDragonHole" V="1" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ThunderBeast">
+		<DisplayName>雷电权能</DisplayName>
+		<Desc>雷暴天气变多。</Desc>
+		
+		<Point>1</Point>
+		<PFlag>
+			<li>LongDongThunder</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="StrictDragon">
+		<DisplayName>上古严威</DisplayName>
+		<Desc>神秘洞穴处理难度更大。</Desc>
+		<Collection>
+			<li>ThunderBeast</li>
+			<li>RequiredSacrifice</li>
+			<li>Basfff</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="LowerPointEvent">
+		<DisplayName>政令难行</DisplayName>
+		<Desc>政策事件频率降低。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="OutsPolicyIntervalScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MoreBuilding">
+		<DisplayName>奢靡享受</DisplayName>
+		<Desc>代理点建筑消耗加倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="OutsBuildMatNeedScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MorePolicy">
+		<DisplayName>尾大不掉</DisplayName>
+		<Desc>政策消耗加倍。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="PolicyCostScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MoreMortal">
+		<DisplayName>凡间琐事</DisplayName>
+		<Desc>代理点的事务更加麻烦。</Desc>
+		<Collection>
+			<li>LowerPointEvent</li>
+			<li>MoreBuilding</li>
+			<li>MorePolicy</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="LowFavor">
+		<DisplayName>高门大派</DisplayName>
+		<Desc>其他门派初始好感度降低。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="SchoolBaseRelation" V="-100" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="HardFavor">
+		<DisplayName>戒心十足</DisplayName>
+		<Desc>其他门派好感度提高速度变慢。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="SchoolAddRelationScale" V="0.5" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="MorePoint">
+		<DisplayName>不讲情面</DisplayName>
+		<Desc>其他门派交易人情需求提高。</Desc>
+		<Point>1</Point>
+		<PSet>
+			<li P="FriendPointGlobalScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ColdRealm">
+		<DisplayName>仙家无情</DisplayName>
+		<Desc>与其他们门派交易更加不易</Desc>
+		<Collection>
+			<li>LowFavor</li>
+			<li>HardFavor</li>
+			<li>MorePoint</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="NoLimit1">
+		<DisplayName>日渐艰难</DisplayName>
+		<Desc>前来的敌人会越来越强。</Desc>
+		<Point>3</Point>
+		<PSet>
+			<li P="NoLimitEnemy" V="1" />
+		</PSet>
+		<PFlag>
+			<li>NoLimit</li>
+		</PFlag>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="NoLimit">
+		<DisplayName>日渐艰难</DisplayName>
+		<Desc>前来的敌人会越来越强。</Desc>
+		<Collection>
+			<li>NoLimit1</li>
+		</Collection>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	
+	<Def Name="SchoolPower1">
+		<DisplayName>门派实力3倍</DisplayName>
+		<Desc>各个门派实力提高到3倍。</Desc>
+		<Point>3</Point>
+		<PSet>
+			<li P="SchoolPowerScale" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SchoolPower2">
+		<DisplayName>门派实力6倍</DisplayName>
+		<Desc>各个门派实力提高到6倍。</Desc>
+		<Point>6</Point>
+		<PSet>
+			<li P="SchoolPowerScale" V="6" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SchoolPower3">
+		<DisplayName>门派实力9倍</DisplayName>
+		<Desc>各个门派实力提高到9倍。</Desc>
+		<Point>9</Point>
+		<PSet>
+			<li P="SchoolPowerScale" V="9" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="SchoolPower">
+		<DisplayName>仙界巨擎</DisplayName>
+		<Desc>其他门派的实力大幅提高。</Desc>
+		<Selector>
+			<li>SchoolPower1</li>
+			<li>SchoolPower2</li>
+			<li>SchoolPower3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>SchoolPowerA</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="DragonPower1">
+		<DisplayName>蛟龙实力2倍</DisplayName>
+		<Desc>蛟龙实力2倍</Desc>
+		<Point>2</Point>
+		<PSet>
+			<li P="DragonPowerScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="DragonPower2">
+		<DisplayName>蛟龙实力3倍</DisplayName>
+		<Desc>蛟龙实力3倍</Desc>
+		<Point>4</Point>
+		<PSet>
+			<li P="DragonPowerScale" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="DragonPower3">
+		<DisplayName>蛟龙实力4倍</DisplayName>
+		<Desc>蛟龙实力4倍</Desc>
+		<Point>6</Point>
+		<PSet>
+			<li P="DragonPowerScale" V="4" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="DragonPower">
+		<DisplayName>玄水之力</DisplayName>
+		<Desc>蛟龙的实力提高。</Desc>
+		<Selector>
+			<li>DragonPower1</li>
+			<li>DragonPower2</li>
+			<li>DragonPower3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>KillDragon</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="FengPower1">
+		<DisplayName>凶凤实力2倍</DisplayName>
+		<Desc>凶凤实力2倍</Desc>
+		<Point>2</Point>
+		<PSet>
+			<li P="FengPowerScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="FengPower2">
+		<DisplayName>凶凤实力3倍</DisplayName>
+		<Desc>凶凤实力3倍</Desc>
+		<Point>4</Point>
+		<PSet>
+			<li P="FengPowerScale" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="FengPower3">
+		<DisplayName>凶凤实力4倍</DisplayName>
+		<Desc>凶凤实力4倍</Desc>
+		<Point>6</Point>
+		<PSet>
+			<li P="FengPowerScale" V="4" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="FengPower">
+		<DisplayName>炽火之力</DisplayName>
+		<Desc>凶凤的实力全面提高。</Desc>
+		<Selector>
+			<li>FengPower1</li>
+			<li>FengPower2</li>
+			<li>FengPower3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>KillPhx</li>
+		</ShowImmortalAchievement>
+	</Def>
+	
+	<Def Name="ZhulongPower1">
+		<DisplayName>烛龙实力2倍</DisplayName>
+		<Desc>烛龙实力2倍</Desc>
+		<Point>2</Point>
+		<PSet>
+			<li P="ZhulongPowerScale" V="2" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ZhulongPower2">
+		<DisplayName>烛龙实力3倍</DisplayName>
+		<Desc>烛龙实力3倍</Desc>
+		<Point>4</Point>
+		<PSet>
+			<li P="ZhulongPowerScale" V="3" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ZhulongPower3">
+		<DisplayName>烛龙实力4倍</DisplayName>
+		<Desc>烛龙实力4倍</Desc>
+		<Point>6</Point>
+		<PSet>
+			<li P="ZhulongPowerScale" V="4" />
+		</PSet>
+		<ImmortalOnly>1</ImmortalOnly>
+	</Def>
+	<Def Name="ZhulongPower">
+		<DisplayName>阴阳之力</DisplayName>
+		<Desc>烛龙的实力提高</Desc>
+		<Selector>
+			<li>ZhulongPower1</li>
+			<li>ZhulongPower2</li>
+			<li>ZhulongPower3</li>
+		</Selector>
+		<ImmortalOnly>1</ImmortalOnly>
+		<ShowImmortalAchievement>
+			<li>KillZhuLong</li>
+		</ShowImmortalAchievement>
+	</Def>
+</List></Defs>

@@ -1,0 +1,363 @@
+<BodyDefs><List>
+
+<BodyDef Name="YGAnimal_TurtleBody">
+	<Groups>
+		<Group Name="RightArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftLegMovement" MaxValue="0.45"/>
+		<Group Name="RightLegMovement" MaxValue="0.45"/>
+	</Groups>
+	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="AllHead" DisplayName="头部"  Kind="Virtual" Rate="0.05" EquipType="Hat">
+				<Parts>
+					<li Name="Skull" DisplayName="头骨" Kind="Bone" Rate="0.5" Deadly="1"/>
+
+					<li Name="Brain" DisplayName="脑" Kind="Organ" Rate="0.1" Deadly="1" BPQLabelBaseCache="BaseCache_Brain">
+<!--					<Links>
+							<li>LeftEye</li>
+						</Links>-->
+						<Function>
+							<li Kind="Consciousness" Value="0.8"/>
+						</Function>
+					</li>
+					
+					<li Name="LeftEye" DisplayName="左眼" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="RightEye" DisplayName="右眼" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="LeftEar" DisplayName="左耳" Kind="Organ" Rate="0.05" BPQLabelBaseCache="BaseCache_Ear">
+						<Function>
+							<li Kind="Feeling" Value="0.15"/>
+						</Function>
+					</li>
+					<li Name="RightEar" DisplayName="右耳" Kind="Organ" Rate="0.05" BPQLabelBaseCache="BaseCache_Ear">
+						<Function>
+							<li Kind="Feeling" Value="0.15"/>
+						</Function>
+					</li>
+					<li Name="Nose" DisplayName="鼻" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Nose"/>
+					<li Name="Mouth" DisplayName="口" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Mouth"/>
+					
+					<li Name="Throat" DisplayName="喉" Kind="Organ" Rate="0.2" Deadly="1" BPQLabelBaseCache="BaseCache_Throat"/>
+					<li Name="Face" DisplayName="脸" Kind="Flesh" Rate="0.3" CantPractice="1"/>
+					<li Name="HeadFlesh" DisplayName="头部肌肉" Kind="Flesh" Rate="0.3"/>
+					<li Name="Head" DisplayName="头" Kind="Organ" Rate="0.5" Deadly="1" CantPractice="1">
+						<Function>
+							<li Kind="Consciousness" Value="0.5"/>
+						</Function>
+					</li>
+				</Parts>
+			</li>
+			
+			<li Name="AllBody" DisplayName="躯干"  Kind="Virtual" Rate="0.28" Deadly="1" EquipType="Clothes">
+				<Parts>
+					<li Name="LeftRibs1" DisplayName="左肋骨" Kind="Bone" Rate="0.05"/>
+					<li Name="RightRibs1" DisplayName="右肋骨" Kind="Bone" Rate="0.05"/>
+					<li Name="Spine" DisplayName="脊柱" Kind="Bone" Rate="0.02" BPQLabelBaseCache="BaseCache_Spine">
+						<Function>
+							<li Kind="Movement" Value="1"/>
+							<li Kind="Operation" Value="1"/>
+						</Function>
+					</li>
+					<li Name="Pelvis" DisplayName="骨盆" Kind="Bone" Rate="0.03">
+						<Function>
+							<li Kind="Movement" Value="0.8"/>
+						</Function>
+					</li>
+					<li Name="Heart" DisplayName="心" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Heart"/>
+					<li Name="Liver" DisplayName="肝" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Liver"/>
+					<li Name="Spleen" DisplayName="脾" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Spleen"/>
+					<li Name="Lung" DisplayName="肺" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Lung"/>
+					<li Name="Kidney" DisplayName="肾" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Kidney"/>
+					<li Name="Stomach"  DisplayName="胃" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Stomach"/>
+					<li Name="Intestines" DisplayName="肠" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Intestines"/>
+					<li Name="Genitals" DisplayName="鞭" Kind="Organ" Rate="0.005" BPQLabelBaseCache="BaseCache_Genitals"/>
+					<li Name="Hips" DisplayName="臀部肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="Chest" DisplayName="胸部肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="Dorsum" DisplayName="背部肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="Belly" DisplayName="腹部肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="Loin" DisplayName="腰部肌肉" Kind="Flesh" Rate="0.05"/>
+					<li Name="BackShell" DisplayName="背甲" Kind="Bone" Rate="0.1"/>
+					<li Name="AbdominalShell" DisplayName="腹甲" Kind="Bone" Rate="0.1"/>
+					<li Name="ShortTail" DisplayName="短尾" Kind="Bone" Rate="0.1"/>
+					<li Name="Body" DisplayName="躯干" Kind="Organ" Rate="0.3" Deadly="1" CantPractice="1"/>
+				</Parts>
+			</li>
+			
+			<li Name="LeftArm" DisplayName="左前腿" Kind="Virtual" Rate="0.025">
+				<Parts>
+					<li Name="LeftArmFur" DisplayName="左前腿毛皮" Kind="Flesh" Rate="2"/>
+					<li Name="LeftScapula" DisplayName="左肩骨" Kind="Bone" Rate="0.5">
+						<Function>
+							<li Kind="Operation" Value="0.7" Group="LeftArmMovement"/>
+						</Function>
+						<Parts>
+							<li Name="LeftShoulder" DisplayName="左肩肌肉" Kind="Flesh" Rate="2">
+								<Function>
+									<li Kind="Operation" Value="0.5" Group="LeftArmMovement"/>
+								</Function>
+							</li>
+							<li Name="LeftHumerus" DisplayName="左前大腿骨" Kind="Bone" Rate="1">
+								<Function>
+									<li Kind="Operation" Value="0.7" Group="LeftArmMovement"/>
+								</Function>
+								<Parts>
+									<li Name="LeftPostbrachium" DisplayName="左前大腿肌肉" Kind="Flesh" Rate="2">
+										<Function>
+											<li Kind="Operation" Value="0.5" Group="LeftArmMovement"/>
+										</Function>
+									</li>
+									<li Name="LeftRadiusAndUlna" DisplayName="左前腿骨" Kind="Bone" Rate="1">
+										<Function>
+											<li Kind="Operation" Value="0.7" Group="LeftArmMovement"/>
+										</Function>
+										<Parts>
+											<li Name="LeftForearm" DisplayName="左前腿肌肉" Kind="Flesh" Rate="1.5">
+												<Function>
+													<li Kind="Operation" Value="0.5" Group="LeftArmMovement"/>
+												</Function>
+											</li>
+											<li Name="LeftFClawBone" DisplayName="左前爪骨" Kind="Bone" Rate="0.5">
+												<Function>
+													<li Kind="Operation" Value="0.5" Group="LeftArmMovement"/>
+												</Function>
+												<Parts>
+													<li Name="LeftFClawFlesh" DisplayName="左前爪肌肉" Kind="Flesh" Rate="1">
+														<Function>
+															<li Kind="Operation" Value="0.4" Group="LeftArmMovement"/>
+														</Function>
+													</li>
+												</Parts>
+											</li>
+										</Parts>
+									</li>
+								</Parts>
+							</li>
+						</Parts>
+					</li>
+				</Parts>
+			</li>
+			
+			<li Name="RightArm" DisplayName="右前腿" Kind="Virtual" Rate="0.025">
+				<Parts>
+					<li Name="RightArmFur" DisplayName="右前腿毛皮" Kind="Flesh" Rate="2"/>
+					<li Name="RightScapula" DisplayName="右肩骨" Kind="Bone" Rate="0.5">
+						<Function>
+							<li Kind="Operation" Value="0.7" Group="RightArmMovement"/>
+						</Function>
+						<Parts>
+							<li Name="RightShoulder" DisplayName="右肩肌肉" Kind="Flesh" Rate="2">
+								<Function>
+									<li Kind="Operation" Value="0.5" Group="RightArmMovement"/>
+								</Function>
+							</li>
+							<li Name="RightHumerus" DisplayName="右前大腿骨" Kind="Bone" Rate="1">
+								<Function>
+									<li Kind="Operation" Value="0.7" Group="RightArmMovement"/>
+								</Function>
+								<Parts>
+									<li Name="RightPostbrachium" DisplayName="右前大腿肌肉" Kind="Flesh" Rate="2">
+										<Function>
+											<li Kind="Operation" Value="0.5" Group="RightArmMovement"/>
+										</Function>
+									</li>
+									<li Name="RightRadiusAndUlna" DisplayName="右前腿骨" Kind="Bone" Rate="1">
+										<Function>
+											<li Kind="Operation" Value="0.7" Group="RightArmMovement"/>
+										</Function>
+										<Parts>
+											<li Name="RightForearm" DisplayName="右前腿肌肉" Kind="Flesh" Rate="1.5">
+												<Function>
+													<li Kind="Operation" Value="0.5" Group="RightArmMovement"/>
+												</Function>
+											</li>
+											<li Name="RightFClawBone" DisplayName="右前爪骨" Kind="Bone" Rate="0.5">
+												<Function>
+													<li Kind="Operation" Value="0.5" Group="RightArmMovement"/>
+												</Function>
+												<Parts>
+													<li Name="RightFClawFlesh" DisplayName="右前爪肌肉" Kind="Flesh" Rate="1">
+														<Function>
+															<li Kind="Operation" Value="0.4" Group="RightArmMovement"/>
+														</Function>
+													</li>
+												</Parts>
+											</li>
+										</Parts>
+									</li>
+								</Parts>
+							</li>
+						</Parts>
+					</li>
+				</Parts>
+			</li>
+			
+			<li Name="LeftLeg" DisplayName="左后腿" Kind="Virtual" Rate="0.05">
+				<Parts>
+					<li Name="LeftLegFur" DisplayName="左后腿毛皮" Kind="Flesh" Rate="2"/>
+					<li Name="LeftThighbone" DisplayName="左后大腿骨" Kind="Bone" Rate="0.45">
+						<Links>
+							<li>YangWeiChannel</li>
+							<li>YangHeelChannel</li>
+						</Links>
+						<Function>
+							<li Kind="Movement" Value="0.7" Group="LeftLegMovement"/>
+						</Function>
+						<Parts>
+							<li Name="LeftThigh" DisplayName="左后大腿肌肉" Kind="Flesh" Rate="2.3">
+								<Function>
+									<li Kind="Movement" Value="0.5" Group="LeftLegMovement"/>
+								</Function>
+							</li>
+							<li Name="LeftTibia" DisplayName="左后腿骨" Kind="Bone" Rate="1">
+								<Function>
+									<li Kind="Movement" Value="0.7" Group="LeftLegMovement"/>
+								</Function>
+								<Parts>
+									<li Name="LeftCrus" DisplayName="左后腿肌肉" Kind="Flesh" Rate="1.3">
+										<Function>
+											<li Kind="Movement" Value="0.5" Group="LeftLegMovement"/>
+										</Function>
+									</li>
+									<li Name="LeftBClawBone" DisplayName="左后爪骨" Kind="Bone" Rate="0.3">
+										<Function>
+											<li Kind="Movement" Value="0.7" Group="LeftLegMovement"/>
+										</Function>
+										<Parts>
+											<li Name="LeftBClawFlesh" DisplayName="左后爪肌肉" Kind="Flesh" Rate="2">
+												<Function>
+													<li Kind="Movement" Value="0.5" Group="LeftLegMovement"/>
+												</Function>
+											</li>
+										</Parts>
+									</li>
+								</Parts>
+							</li>
+						</Parts>
+					</li>
+				</Parts>
+			</li>
+			
+			<li Name="RightLeg" DisplayName="右后腿" Kind="Virtual" Rate="0.05">
+				<Parts>
+					<li Name="RightLegFur" DisplayName="右后腿毛皮" Kind="Flesh" Rate="2"/>
+					<li Name="RightThighbone" DisplayName="右后大腿骨" Kind="Bone" Rate="0.45">
+						<Links>
+							<li>YinWeiChannel</li>
+							<li>YinHeelChannel</li>
+						</Links>
+						<Function>
+							<li Kind="Movement" Value="0.7" Group="RightLegMovement"/>
+						</Function>
+						<Parts>
+							<li Name="RightThigh" DisplayName="右后大腿肌肉" Kind="Flesh" Rate="2.3">
+								<Function>
+									<li Kind="Movement" Value="0.5" Group="RightLegMovement"/>
+								</Function>
+							</li>
+							<li Name="RightTibia" DisplayName="右后腿骨" Kind="Bone" Rate="1">
+								<Function>
+									<li Kind="Movement" Value="0.7" Group="RightLegMovement"/>
+								</Function>
+								<Parts>
+									<li Name="RightCrus" DisplayName="右后腿肌肉" Kind="Flesh" Rate="1.3">
+										<Function>
+											<li Kind="Movement" Value="0.5" Group="RightLegMovement"/>
+										</Function>
+									</li>
+									<li Name="RightBClawBone" DisplayName="右后爪骨" Kind="Bone" Rate="0.3">
+										<Function>
+											<li Kind="Movement" Value="0.7" Group="RightLegMovement"/>
+										</Function>
+										<Parts>
+											<li Name="RightBClawFlesh" DisplayName="右后爪肌肉" Kind="Flesh" Rate="2">
+												<Function>
+													<li Kind="Movement" Value="0.5" Group="RightLegMovement"/>
+												</Function>
+											</li>
+										</Parts>
+									</li>
+								</Parts>
+							</li>
+						</Parts>
+					</li>
+				</Parts>
+			</li>
+			
+			<li Name="TheWholeBody" DisplayName="全身" Kind="Virtual" Rate="0" Deadly="1"  EquipType="Clothes">
+				<Function>
+					<li Kind="Consciousness" Value="1"/>
+				</Function>
+			</li>
+			<li Name="Meridian" DisplayName="经脉" Kind="Virtual" Rate="0" Deadly="1">
+				<Parts>
+					<li Name="UpperElixirField" DisplayName="紫府" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="MiddleElixirField" DisplayName="绛宫" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="LowerElixirField" DisplayName="丹田" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="RenChannel" DisplayName="任脉" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="DuChannel" DisplayName="督脉" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="ChongChannel" DisplayName="冲脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="BeltChannel" DisplayName="带脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="YinWeiChannel" DisplayName="阴维脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YinHeelChannel" DisplayName="阴跷脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangWeiChannel" DisplayName="阳维脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangHeelChannel" DisplayName="阳跷脉" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+				</Parts>
+			</li>
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>

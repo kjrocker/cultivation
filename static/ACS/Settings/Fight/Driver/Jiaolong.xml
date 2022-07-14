@@ -1,0 +1,48 @@
+<FightDriverDefs><List>
+	<Driver Name="Jiaolong">
+		<EnterSkill>jiaolong_potu</EnterSkill><!--出场skill-->
+		<DieSkill>jiaolong_siwang</DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li>
+				<Skills>								
+					<li Type="Normal" Name="jiaolong_baoyu" Rate="0" CoolDown="-1"/><!--开局下雨 只执行一次-->
+					<li Type="Normal" Name="jiaolong_jiaowangci" Rate="0" CoolDown="-1"/><!--开局招法宝 只执行一次-->
+					
+					<li Type="Check"	Name="jiaolong_zhenshui" sParam1="LingP" fParam1="0" fParam2="0.75" Rate="0"  CoolDown="-1"/><!--灵气低于75%切阶段-->
+					<li Type="Check"	Name="jiaolong_zeguo"  sParam1="ModifierStack"  sParam2="Boss_Jiaolong_Shuiling" fParam1="100" fParam2="100"  Rate="0" CoolDown="0"/><!--100层水灵放泽国-->					
+					<li Type="Event"	Name="jiaolong_longnu"  sParam1="WeatherRemove" sParam2="jiaolong_baoyu" Rate="0" CoolDown="0"/><!--暴雨被驱散时触发龙怒-->	
+					<li Type="Event"	Name="jiaolong_longnu2"  sParam1="ModifierRemove" sParam2="Boss_Jiaolong_LongNu,Boss_Jiaolong_LongNu_Test" Rate="0" CoolDown="0"/><!--龙怒BUFF消失时-->	
+					<li Type="Event"	Name="jiaolong_baoyu"  sParam1="CastSkill" sParam2="jiaolong_longnu2" Rate="0" CoolDown="0"/><!--龙怒二阶段结束时-->		
+					<li Type="Event"	Name="jiaolong_hanyu"  sParam1="BodyPartBroken" sParam2="" Rate="0" CoolDown="0"/><!--部位破坏 寒域-->		
+					
+					<li Type="Normal" Name="jiaolong_move" Rate="0" CoolDown="30"  ProtectTime="60"/><!--移动-->
+					<li Type="Normal" Name="jiaolong_nuhou" Rate="0.5" CoolDown="15"/><!--怒吼-->
+					<li Type="Normal" Name="jiaolong_panxuan" Rate="0.2" CoolDown="100"  ProtectTime="60"/><!--盘旋-->					
+					<li Type="Normal" Name="jiaolong_guishuilei" Rate="0.5" CoolDown="0" fParam1="1"/><!--单体水雷-->
+					<li Type="Normal" Name="jiaolong_shuibao" Rate="0.5" CoolDown="0"/><!--水爆-->
+					<li Type="Normal" Name="jiaolong_yeshou" Rate="0.2" CoolDown="120"/>	<!--召唤野兽-->								
+				</Skills>
+			</li>
+			<li>
+				<Skills>
+					<li Type="Event"	Name="jiaolong_longnu"  sParam1="WeatherRemove" sParam2="jiaolong_baoyu" Rate="0" CoolDown="0"/><!--暴雨被驱散时触发龙怒-->	
+					<li Type="Event"	Name="jiaolong_longnu2"  sParam1="ModifierRemove" sParam2="Boss_Jiaolong_LongNu,Boss_Jiaolong_LongNu_Tes" Rate="0" CoolDown="0"/><!--龙怒BUFF消失时-->	
+					<li Type="Event"	Name="jiaolong_baoyu"  sParam1="CastSkill" sParam2="jiaolong_longnu2" Rate="0" CoolDown="0"/><!--龙怒二阶段结束时-->	
+					<li Type="Event"	Name="jiaolong_hanyu"  sParam1="BodyPartBroken" sParam2="" Rate="0" CoolDown="0"/><!--部位破坏 寒域-->
+					<li Type="Check"	Name="jiaolong_zeguo"  sParam1="ModifierStack"  sParam2="Boss_Jiaolong_Shuiling"  fParam1="100" fParam2="100"  Rate="0" CoolDown="0"/><!--100层水灵放泽国-->
+
+					
+					<li Name="jiaolong_move" Type="Normal" Rate="0" CoolDown="30"/><!--移动-->
+					<li Name="jiaolong_nuhou" Type="Normal" Rate="0.2" CoolDown="15"/><!--怒吼-->
+					
+					<li Name="jiaolong_longxi"  Type="Normal" Rate="0" CoolDown="90"/><!--龙吸术-->
+					<li Name="jiaolong_guishuilei" Type="Normal" Rate="0.5" CoolDown="0"  fParam1="2"/><!--多个水雷-->
+					<li Name="jiaolong_shuibao" Type="Normal" Rate="1.5" CoolDown="0"/><!--水爆-->
+					<li Name="jiaolong_yeshou" Type="Normal" Rate="1" CoolDown="120"/><!--召唤野兽-->	
+					<li Name="jiaolong_fanshi" Type="Normal" Rate="1" CoolDown="60"/><!--反噬-->	
+					<li Name="jiaolong_tianyaohuaxue" Type="Normal" Rate="0" CoolDown="150"/><!--天妖化血-->	
+				</Skills>
+			</li>
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

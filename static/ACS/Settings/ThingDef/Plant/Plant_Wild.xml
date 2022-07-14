@@ -1,0 +1,447 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="Grass" Parent="PlantBase">
+	<ThingName>野草</ThingName>
+	
+	<Frags>	
+		<li Frag="Weed" />
+	</Frags>	
+
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_xiaocao001_a;
+	res/Sprs/scene_TemperateForest_plant/scene_xiaocao001_b;
+	res/Sprs/scene_TemperateForest_plant/scene_xiaocao001_c;
+	res/Sprs/scene_TemperateForest_plant/scene_xiaocao001_d
+	</TexPath>
+	<Desc>野草。</Desc>
+	
+	<SelectAble>0</SelectAble>
+	<Beauty>-1</Beauty>
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Flammability>
+		<BurningPoint>80</BurningPoint>
+	</Flammability>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Plant>
+		<NotRandom>1</NotRandom>
+
+		<WildClusterSizeRangemin>150</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>250</WildClusterSizeRangemax>
+		<WildClusterRadius>10</WildClusterRadius>
+		<GlowTexPath>
+		res/Sprs/scene_sp/scene_xiaocao001_a_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_b_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_c_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_d_sp
+		</GlowTexPath>	
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.1</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>56</LifespanFraction>
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<GrowDays>2</GrowDays>
+		<ReproduceRadius>5</ReproduceRadius>	
+		
+		<TempMin>-30</TempMin>
+		<TempMax>60</TempMax>
+		
+		<WitherAble>1</WitherAble>
+		<WitherDestroy>1</WitherDestroy>
+		
+		<SnowRenderData>
+			<x>2.35</x>
+			<y>3.32</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>15</HarvestWork> 
+		<DropWork>15</DropWork>
+		<HarvestTag>
+		</HarvestTag>  
+		<HighDropItems>
+			<li>
+				<ThingDef>Item_LingWater</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</HighDropItems>  
+	</Harvest>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="IceGrass" Parent="Grass">
+	<ThingName>冰草</ThingName>
+	
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_icexiaocao001_a;
+	res/Sprs/scene_TemperateForest_plant/scene_icexiaocao001_b;
+	res/Sprs/scene_TemperateForest_plant/scene_icexiaocao001_c;
+	res/Sprs/scene_TemperateForest_plant/scene_icexiaocao001_d
+	</TexPath>
+	<Desc>冰原生长的野草。</Desc>
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<GlowTexPath>
+		res/Sprs/scene_sp/scene_xiaocao001_a_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_b_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_c_sp;
+		res/Sprs/scene_sp/scene_xiaocao001_d_sp
+		</GlowTexPath>	
+		
+		<WitherAble>0</WitherAble>
+		<WitherDestroy>0</WitherDestroy>
+	</Plant>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Reed" Parent="PlantBase">
+	
+	
+	<ThingName>芦苇</ThingName>
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_luwei001_a;
+	res/Sprs/scene_TemperateForest_plant/scene_luwei001_b
+	</TexPath>
+	<Desc>长于水边的植物，外形美观。</Desc>
+	
+	<SelectAble>0</SelectAble>
+	<Beauty>2</Beauty>
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Flammability>
+		<BurningPoint>80</BurningPoint>
+	</Flammability>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Plant>
+		<NotRandom>1</NotRandom>
+		
+		<WildClusterSizeRangemin>15</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>30</WildClusterSizeRangemax>
+		<WildClusterRadius>6</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.1</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag>Mud</SowPlaceTag>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>56</LifespanFraction>
+		<GrowDays>6</GrowDays>
+		<ReproduceRadius>5</ReproduceRadius>	
+		
+		<WitherAble>1</WitherAble>
+		<WitherDestroy>1</WitherDestroy>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Plant" Name="LongGrass" Parent="PlantBase">
+	
+	
+	<ThingName>长草</ThingName>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_zhongcao001_a;
+			res/Sprs/scene_TemperateForest_plant/scene_zhongcao001_b</TexPath>
+	<Desc>野草。</Desc>
+	
+	<SelectAble>0</SelectAble>
+	<Beauty>-1</Beauty>
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Flammability>
+		<BurningPoint>80</BurningPoint>
+	</Flammability>
+	
+	<NotDoTongLing>1</NotDoTongLing>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<NotRandom>1</NotRandom>
+		
+		<WildClusterSizeRangemin>10</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>10</WildClusterSizeRangemax>
+		<WildClusterRadius>10</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_zhongcao003_a;
+						res/Sprs/scene_TemperateForest_plant/scene_zhongcao003_b</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.5</VisualSizeMin>
+		<VisualSizeMax>0.7</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>56</LifespanFraction>
+		<GrowDays>2</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>5</ReproduceRadius>
+		
+		<WitherAble>1</WitherAble>
+		<WitherDestroy>1</WitherDestroy>
+		
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.6</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Raspberry" Parent="PlantBase">
+	
+	
+	<ThingName>龙涎果</ThingName>
+	
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_gaomojiangguo_a</TexPath>
+	<Desc>龙涎灌溉后的野果，其果实别有灵异，食用可以半天之内不饿不疲。但是一旦摘下会很快腐烂。</Desc>
+	
+	<SelectAble>1</SelectAble>
+	<Beauty>-1</Beauty>
+	<Rate>6</Rate>	
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Plant>
+		<PlantLayer>PlantLow</PlantLayer>
+		<WildClusterSizeRangemin>10</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>10</WildClusterSizeRangemax>
+		<WildClusterRadius>10</WildClusterRadius>
+		
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_gaomojiangguo_b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.6</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>80</LifespanFraction>
+		<GrowDays>46</GrowDays>
+		<HarvestDays>68</HarvestDays>
+		<ReproduceRadius>3</ReproduceRadius>	
+		<SnowRenderData>
+			<x>2.65</x>
+			<y>3.55</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>25</HarvestWork> 
+		<DropWork>25</DropWork> 			
+		<HarvestValueMin>0.8</HarvestValueMin>  
+		<HarvestFailable>0</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>SquatCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>1</Count>
+			</li>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="Lotus" Parent="PlantBase">
+	
+	
+	<ThingName>莲</ThingName>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_heye001a;
+	res/Sprs/scene_TemperateForest_plant/scene_heye001b;
+	res/Sprs/scene_TemperateForest_plant/scene_heye001c;
+	res/Sprs/scene_TemperateForest_plant/scene_heye001d
+	</TexPath>
+	<Desc>水生植物，外形美丽。其根茎可以食用。</Desc>
+	<Frags>		
+		<li Frag="Lake" />
+	</Frags>
+	<SelectAble>1</SelectAble>
+	<Beauty>15</Beauty>
+	<Rate>3</Rate>	
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Plant>
+		<PlantLayer>PlantLow</PlantLayer>
+		<WildClusterSizeRangemin>2</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>8</WildClusterSizeRangemax>
+		<WildClusterRadius>4</WildClusterRadius>
+		<RipedTexPath>
+		res/Sprs/scene_TemperateForest_plant/scene_hehua001a;
+		res/Sprs/scene_TemperateForest_plant/scene_hehua001b;
+		res/Sprs/scene_TemperateForest_plant/scene_hehua001c;
+		res/Sprs/scene_TemperateForest_plant/scene_hehua001d
+		</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<WindEffect>0</WindEffect>
+		<VisualSizeMin>0.5</VisualSizeMin>
+		<VisualSizeMax>0.7</VisualSizeMax>	
+		<SowPlaceKind>Water</SowPlaceKind>
+		<SowPlaceTag>ShallowWater</SowPlaceTag>		
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>80</LifespanFraction>
+		<GrowDays>10</GrowDays>
+		<HarvestDays>14</HarvestDays>
+		<ReproduceRadius>5</ReproduceRadius>
+		<SnowRenderData>
+			<x>2</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	<Harvest>
+		<HarvestWork>25</HarvestWork> 
+		<DropWork>25</DropWork> 			
+		<HarvestValueMin>0.8</HarvestValueMin>  
+		<HarvestFailable>0</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>SquatCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Lotusroot</ThingDef>
+				<Count>4</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="LittleRock" Parent="RockBase">
+	<ThingName>小岩块</ThingName>
+	<Tags>
+		<Tag Name="_LittleRock" Level="1"/>
+	</Tags>
+	<Frags>	
+		<li Frag="Earth" />
+	</Frags>
+	<CastShadow>0</CastShadow>
+	<MaxStack>1</MaxStack>
+	<BlockLight>0</BlockLight>
+	<BlockMissile>0</BlockMissile>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0]
+		</Data>
+	</Collider>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001a;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001b;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001c;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001d;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001e;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001f;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001g;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001h;
+	res/Sprs/scene_TemperateForest_plant/scene_shitou001i
+	</TexPath>
+	
+	<Desc>散落在地表的小石块。</Desc>
+	
+	<Beauty>-1</Beauty>
+	
+	<Plant Kind="LowPlant">
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WindEffect>0</WindEffect>	
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>3</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	
+	<Harvest>
+		<DropWork>25</DropWork>      		
+		<DropItems>
+			<li>
+				<ThingDef>Item_BrownRock</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</DropItems>
+	</Harvest>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+</ThingDef>
+
+
+	<ThingDef Type="Plant" Name="IceLittleRock" Parent="LittleRock">
+	<ThingName>小冰岩</ThingName>
+	<Tags>
+		<Tag Name="_LittleRock" Level="1"/>
+	</Tags>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001a;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001b;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001c;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001d;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001e;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001f;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001g;
+	res/Sprs/scene_TemperateForest_plant/scene_iceshitou001h
+	</TexPath>
+	
+	<Desc>散落在地表的小石块。</Desc>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</ThingDef>
+</List></ThingDefs>

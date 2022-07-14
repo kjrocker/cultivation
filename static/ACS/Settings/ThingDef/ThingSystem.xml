@@ -1,0 +1,6 @@
+<ThingDefs><List>
+	<ThingDef Type="CMD" Name="CMDThing">
+	<SelectAble>0</SelectAble>
+	<VisualAble>0</VisualAble>
+	</ThingDef>
+</List></ThingDefs>

@@ -1,0 +1,505 @@
+<BPLabelCacheDefs><List>
+	<Def Name="LostCache"><!--失落之物-->
+	</Def>
+	
+	<Def Name="BaseCache"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Base_Organ" Lv="1" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv0_Base_Bone" Lv="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv0_Base_Flesh" Lv="1" BodyPart="Flesh"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Spine"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Spine" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Brain"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Brain" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Eye"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Eye" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Ear"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Ear" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Nose"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Nose" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Mouth"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Mouth" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Throat"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Throat" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Heart"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Heart" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Liver"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Liver" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Spleen"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Spleen" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Lung"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Lung" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Kidney"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Kidney" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Stomach"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Stomach" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Intestines"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Intestines" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="BaseCache_Genitals"><!--基础标签池-->
+		<Labels>
+			<li Label="QuenchingLabel_Lv0_Genitals" Lv="1" BodyPart="Any"/>
+		</Labels>		
+	</Def>	
+	
+	<Def Name="Cache1"><!--池子1-->
+		<BaseRate>4</BaseRate>
+		<WeightProperty>BodyPractice_RollAddtion_Cache1</WeightProperty>
+		<Labels>
+			<li Label="QuenchingLabel_Lv1_F01_All" Lv="1" Weight="1000" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv1_B01_All" Lv="1" Weight="1000" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv1_B02_All" Lv="1" Weight="1000" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv1_O01_All" Lv="1" Weight="1000" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_All" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_F02_All" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_All" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_All" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_All" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_All" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_All" Lv="1" Weight="1" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O02_All" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<!-- 通用基础 -->
+			<li Label="QuenchingLabel_Lv1_A01_Jin" Lv="1" Weight="5" BodyPart="Any"/>
+			<li Label="QuenchingLabel_Lv1_A01_Mu" Lv="1" Weight="5" BodyPart="Any"/>
+			<li Label="QuenchingLabel_Lv1_A01_Shui" Lv="1" Weight="5" BodyPart="Any"/>
+			<li Label="QuenchingLabel_Lv1_A01_Huo" Lv="1" Weight="5" BodyPart="Any"/>
+			<li Label="QuenchingLabel_Lv1_A01_Tu" Lv="1" Weight="5" BodyPart="Any"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Chun" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Chun" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Chun" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Xia" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Xia" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Xia" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Qiu" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Qiu" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Qiu" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Dong" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Dong" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Dong" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_GuShouJingXue" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_GuShouGuFen" Lv="1" Weight="1" BodyPart="Bone"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F02_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B02_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Organ"/>
+		
+			<!-- 物品对应 -->
+			<li Label="QuenchingLabel_Lv1_A01_Jin" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_Jin"/>
+			<li Label="QuenchingLabel_Lv1_A01_Mu" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_Mu"/>
+			<li Label="QuenchingLabel_Lv1_A01_Shui" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_Shui"/>
+			<li Label="QuenchingLabel_Lv1_A01_Huo" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_Huo"/>
+			<li Label="QuenchingLabel_Lv1_A01_Tu" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_Tu"/>
+			
+			<li Label="QuenchingLabel_Lv0_Base" Lv="1" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv1"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="2" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv1"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="3" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv1"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="1" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="2" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="3" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="1" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="2" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="3" Weight="1800" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+		
+			
+			<li Label="QuenchingLabel_Lv1_F01_All" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_FengShuiLing"/>
+			<li Label="QuenchingLabel_Lv1_B01_All" Lv="1" Weight="2500" BodyPart="Bone" LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv1_B02_All" Lv="1" Weight="2500" BodyPart="Bone" LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv1_O01_All" Lv="1" Weight="2500" BodyPart="Organ" LinkItem="Item_BodyPractice_FengShuiLing"/>
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache2"><!--池子2-->
+		<BaseRate>6</BaseRate>
+		<WeightProperty>BodyPractice_RollAddtion_Cache2</WeightProperty>
+		<Labels>
+			<li Label="QuenchingLabel_Lv2_F01_All" Lv="1" Weight="1000" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_F02_All" Lv="1" Weight="1000" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_All" Lv="1" Weight="1000" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_All" Lv="1" Weight="1000" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_All" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_All" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_All" Lv="1" Weight="5" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O02_All" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv4_F01_All" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv4_B01_All" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv4_O01_All" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			
+			<!-- 通用基础 -->
+			
+			<li Label="QuenchingLabel_Lv2_F01_Chun" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Chun" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Chun" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Xia" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Xia" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Xia" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Qiu" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Qiu" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Qiu" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Dong" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_Dong" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_Dong" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_GuShouJingXue" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_GuShouGuFen" Lv="1" Weight="1" BodyPart="Bone"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F02_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O01_SiHunZhiXi" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv2_B01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B02_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv2_O01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuHuiJingHua" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="1" BodyPart="Organ"/>
+			
+			
+			
+			<!-- 物品对应 -->
+			<li Label="QuenchingLabel_Lv0_Base" Lv="4" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="5" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="6" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv2"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="4" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="5" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="6" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			
+			                                                      
+			<li Label="QuenchingLabel_Lv2_F01_All" Lv="1" Weight="1800" BodyPart="Flesh" LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv2_F02_All" Lv="1" Weight="1800" BodyPart="Flesh" LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv2_B01_All" Lv="1" Weight="1800" BodyPart="Bone"  LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv2_O01_All" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_FengShuiLing"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Chun" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_Chun"/>
+			<li Label="QuenchingLabel_Lv2_B01_Chun" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_Chun"/>
+			<li Label="QuenchingLabel_Lv2_O01_Chun" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_Chun"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Xia" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_Xia"/>
+			<li Label="QuenchingLabel_Lv2_B01_Xia" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_Xia"/>
+			<li Label="QuenchingLabel_Lv2_O01_Xia" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_Xia"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Qiu" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_Qiu"/>
+			<li Label="QuenchingLabel_Lv2_B01_Qiu" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_Qiu"/>
+			<li Label="QuenchingLabel_Lv2_O01_Qiu" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_Qiu"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_Dong" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_Dong"/>
+			<li Label="QuenchingLabel_Lv2_B01_Dong" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_Dong"/>
+			<li Label="QuenchingLabel_Lv2_O01_Dong" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_Dong"/>
+			
+			
+			<li Label="QuenchingLabel_Lv2_F01_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			<li Label="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			<li Label="QuenchingLabel_Lv2_B01_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			<li Label="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			<li Label="QuenchingLabel_Lv2_O01_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Organ" LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			<li Label="QuenchingLabel_Lv2_O02_DaYaoYuanJing" Lv="1" Weight="2500" BodyPart="Organ" LinkItem="Item_BodyPractice_DaYaoYuanJing|Item_BodyPractice_GuShouJingXue|Item_BodyPractice_GuShouGuFen"/>
+			
+			
+			
+			<li Label="QuenchingLabel_Lv2_F01_SiHunZhiXi" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_SiWang"/>
+			<li Label="QuenchingLabel_Lv2_B01_SiHunZhiXi" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_SiWang"/>
+			<li Label="QuenchingLabel_Lv2_O01_SiHunZhiXi" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_SiWang"/>
+			
+			<li Label="QuenchingLabel_Lv2_F01_WuHuiJingHua" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_WuHui"/>
+			<li Label="QuenchingLabel_Lv2_B01_WuHuiJingHua" Lv="1" Weight="5000" BodyPart="Bone" LinkItem="Item_BodyPractice_WuHui"/>
+			<li Label="QuenchingLabel_Lv2_O01_WuHuiJingHua" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_WuHui"/>
+			
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache3"><!--池子3-->
+		<BaseRate>8</BaseRate>
+		<WeightProperty>BodyPractice_RollAddtion_Cache3</WeightProperty>
+		<Labels>
+			<li Label="QuenchingLabel_Lv3_F01_All" Lv="1" Weight="1000" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_All" Lv="1" Weight="1000" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_All" Lv="1" Weight="1000" BodyPart="Organ"/>
+			<li Label="QuenchingLabel_Lv3_O02_All" Lv="1" Weight="1000" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv4_F01_All" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv4_B01_All" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv4_O01_All" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			
+			<!-- 通用基础 -->
+			
+			<li Label="QuenchingLabel_Lv3_F01_GuShouJingXue" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_GuShouGuFen" Lv="1" Weight="5" BodyPart="Bone"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_F02_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_SiHunZhiXi" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_B02_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuHuiJingHua" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="5" BodyPart="Organ"/>
+			
+			
+			<!-- 物品对应 -->
+			<li Label="QuenchingLabel_Lv0_Base" Lv="7" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="8" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			<li Label="QuenchingLabel_Lv0_Base" Lv="9" Weight="1000" BodyPart="Any" LinkItem="Item_BodyPractice_ShengMingLv3"/>
+			
+			
+			<li Label="QuenchingLabel_Lv3_F01_GuShouJingXue" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_GuShouJingXue"/>
+			<li Label="QuenchingLabel_Lv3_B01_GuShouGuFen"   Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_GuShouGuFen"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_SiHunZhiXi" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_SiWang"/>
+			<li Label="QuenchingLabel_Lv3_F02_SiHunZhiXi" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_SiWang"/>
+			<li Label="QuenchingLabel_Lv3_B01_SiHunZhiXi" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_SiWang"/>
+			<li Label="QuenchingLabel_Lv3_O01_SiHunZhiXi" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_SiWang"/>
+			
+			<li Label="QuenchingLabel_Lv3_F01_WuHuiJingHua" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_WuHui"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuHuiJingHua" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_WuHui"/>
+			<li Label="QuenchingLabel_Lv3_B02_WuHuiJingHua" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_WuHui"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuHuiJingHua" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_WuHui"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_All" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_FengShuiLing"/>
+			<li Label="QuenchingLabel_Lv3_B01_All" Lv="1" Weight="5000" BodyPart="Bone" LinkItem="Item_BodyPractice_FengShuiLing"/>
+			<li Label="QuenchingLabel_Lv3_O01_All" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_FengShuiSha"/>
+			<li Label="QuenchingLabel_Lv3_O02_All" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_FengShuiLing"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_JiaoLongYuanJing" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_JiaoLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_B01_JiaoLongYuanJing" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_JiaoLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_O01_JiaoLongYuanJing" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_JiaoLongYuanJing"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_XiongFengYuanJing" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_XiongFengYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_B01_XiongFengYuanJing" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_XiongFengYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_O01_XiongFengYuanJing" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_XiongFengYuanJing"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Flesh" LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Bone"  LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_O01_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Organ" LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			<li Label="QuenchingLabel_Lv3_O02_ZhuLongYuanJing" Lv="1" Weight="2500" BodyPart="Organ" LinkItem="Item_BodyPractice_ZhuLongYuanJing"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_TaiYangJingHua" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_TaiYang"/>
+			<li Label="QuenchingLabel_Lv3_B01_TaiYangJingHua" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_TaiYang"/>
+			<li Label="QuenchingLabel_Lv3_O01_TaiYangJingHua" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_TaiYang"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_TaiYinJingHua" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_TaiYin"/>
+			<li Label="QuenchingLabel_Lv3_B01_TaiYinJingHua" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_TaiYin"/>
+			<li Label="QuenchingLabel_Lv3_O01_TaiYinJingHua" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_TaiYin"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_EXJin" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_EXJin"/>
+			<li Label="QuenchingLabel_Lv3_B01_EXJin" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_EXJin"/>
+			<li Label="QuenchingLabel_Lv3_O01_EXJin" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_EXJin"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_EXMu" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_EXMu"/>
+			<li Label="QuenchingLabel_Lv3_B01_EXMu" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_EXMu"/>
+			<li Label="QuenchingLabel_Lv3_O01_EXMu" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_EXMu"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_EXShui" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_EXShui"/>
+			<li Label="QuenchingLabel_Lv3_B01_EXShui" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_EXShui"/>
+			<li Label="QuenchingLabel_Lv3_O01_EXShui" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_EXShui"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_EXHuo" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_EXHuo"/>
+			<li Label="QuenchingLabel_Lv3_B01_EXHuo" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_EXHuo"/>
+			<li Label="QuenchingLabel_Lv3_O01_EXHuo" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_EXHuo"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_EXTu" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_EXTu"/>
+			<li Label="QuenchingLabel_Lv3_B01_EXTu" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_EXTu"/>
+			<li Label="QuenchingLabel_Lv3_O01_EXTu" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_EXTu"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_YongJiJingSui" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_YongYe"/>
+			<li Label="QuenchingLabel_Lv3_B01_YongJiJingSui" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_YongYe"/>
+			<li Label="QuenchingLabel_Lv3_O01_YongJiJingSui" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_YongYe"/>
+			                                                      <!-- 
+			<li Label="QuenchingLabel_Lv3_F01_DiMuJingSui" Lv="1" Weight="500" BodyPart="Flesh" LinkItem="Item_BodyPractice_DiMu"/>
+			<li Label="QuenchingLabel_Lv3_B01_DiMuJingSui" Lv="1" Weight="500" BodyPart="Bone"  LinkItem="Item_BodyPractice_DiMu"/>
+			<li Label="QuenchingLabel_Lv3_O01_DiMuJingSui" Lv="1" Weight="500" BodyPart="Organ" LinkItem="Item_BodyPractice_DiMu"/>
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_XieMaiXueSui" Lv="1" Weight="500" BodyPart="Flesh" LinkItem="Item_BodyPractice_XieMai"/>
+			<li Label="QuenchingLabel_Lv3_B01_XieMaiXueSui" Lv="1" Weight="500" BodyPart="Bone"  LinkItem="Item_BodyPractice_XieMai"/>
+			<li Label="QuenchingLabel_Lv3_O01_XieMaiXueSui" Lv="1" Weight="500" BodyPart="Organ" LinkItem="Item_BodyPractice_XieMai"/> -->
+			                                                      
+			<li Label="QuenchingLabel_Lv3_F01_WuXingZhiJing" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_WuXing"/>
+			<li Label="QuenchingLabel_Lv3_B01_WuXingZhiJing" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_WuXing"/>
+			<li Label="QuenchingLabel_Lv3_O01_WuXingZhiJing" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_WuXing"/>
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache4"><!--池子4-->
+		<BaseRate>11</BaseRate>
+		<WeightProperty>BodyPractice_RollAddtion_Cache4</WeightProperty>
+		<Labels>
+			<li Label="QuenchingLabel_Lv4_F01_All" Lv="1" Weight="1000" BodyPart="Flesh"/>
+			<li Label="QuenchingLabel_Lv4_B01_All" Lv="1" Weight="1000" BodyPart="Bone"/>
+			<li Label="QuenchingLabel_Lv4_O01_All" Lv="1" Weight="1000" BodyPart="Organ"/>
+			                
+			<!-- 物品对应 -->                                      
+			
+			<li Label="QuenchingLabel_Lv4_F01_JiuYangZhenHua" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_JiuYang"/>
+			<li Label="QuenchingLabel_Lv4_B01_JiuYangZhenHua" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_JiuYang"/>
+			<li Label="QuenchingLabel_Lv4_O01_JiuYangZhenHua" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_JiuYang"/>
+			
+			<li Label="QuenchingLabel_Lv4_F01_XuanYueZhenJing" Lv="1" Weight="5000" BodyPart="Flesh" LinkItem="Item_BodyPractice_XuanYue"/>
+			<li Label="QuenchingLabel_Lv4_B01_XuanYueZhenJing" Lv="1" Weight="5000" BodyPart="Bone"  LinkItem="Item_BodyPractice_XuanYue"/>
+			<li Label="QuenchingLabel_Lv4_O01_XuanYueZhenJing" Lv="1" Weight="5000" BodyPart="Organ" LinkItem="Item_BodyPractice_XuanYue"/>
+			
+			<li Label="QuenchingLabel_Lv4_A01_TaiXuJingHua" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_TaiXu"/>
+			<li Label="QuenchingLabel_Lv4_A02_TaiXuJingHua" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_TaiXu"/>
+			<li Label="QuenchingLabel_Lv4_A03_TaiXuJingHua" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_TaiXu"/>
+			
+			<li Label="QuenchingLabel_Lv4_A01_XuanTianZiQi" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_XuanTian"/>
+			<li Label="QuenchingLabel_Lv4_A02_XuanTianZiQi" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_XuanTian"/>
+			<li Label="QuenchingLabel_Lv4_A03_XuanTianZiQi" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_XuanTian"/>
+			
+			<li Label="QuenchingLabel_Lv4_A01_JieMieJingHua" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_JieMie"/>
+			<li Label="QuenchingLabel_Lv4_A02_JieMieJingHua" Lv="1" Weight="5000" BodyPart="Any"  LinkItem="Item_BodyPractice_JieMie"/>
+			<li Label="QuenchingLabel_Lv4_A03_JieMieJingHua" Lv="1" Weight="5000" BodyPart="Any" LinkItem="Item_BodyPractice_JieMie"/>
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache5"><!--池子5九烈神血-->
+		<BaseRate>11</BaseRate>
+		<Labels>
+			<li Label="QuenchingLabel_Special1" Lv="1" Weight="1000" BodyPart="Spine"/>
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache6"><!--池子6太虚妖识-->
+		<BaseRate>11</BaseRate>
+		<Labels>
+			<li Label="QuenchingLabel_Special2" Lv="1" Weight="1000" BodyPart="Brain"/>
+		</Labels>		
+	</Def>		
+	
+	<Def Name="Cache7"><!--池子7超越之心-->
+		<BaseRate>11</BaseRate>
+		<Labels>
+			<li Label="QuenchingLabel_Special3" Lv="1" Weight="1000" BodyPart="Heart"/>
+		</Labels>		
+	</Def>		
+</List></BPLabelCacheDefs>

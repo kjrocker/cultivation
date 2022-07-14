@@ -1,0 +1,106 @@
+<Defs><List>
+	<Def Name="Build_Discipline">
+		<Base>1</Base>
+		<BuildCondition>
+			<Symbols>
+				<li>Discipline</li>
+			</Symbols>
+		</BuildCondition>
+		
+		<DisplayName>戒律院</DisplayName>
+		<BuildType>Point</BuildType>
+		<BuildDay>1</BuildDay>
+		
+		<UnlockPolicy>
+			<li>Policy_Discipline</li>
+		</UnlockPolicy>
+		
+		<Icon>res/Sprs/outspread/extendmap_lvtang01</Icon>
+		<Desc>戒律院是弟子受戒的地方，普通百姓也可观摩受戒仪式。解锁受戒政策，以威严整治社会动乱。</Desc>
+		
+		<Cost>
+			<Influence>0</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="50"/>
+			</Mats>
+		</Cost>
+	</Def>
+	<Def Name="Build_Secret">
+		<Base>1</Base>
+		<BuildCondition>
+			<Symbols>
+				<li>Secret</li>
+			</Symbols>
+		</BuildCondition>
+		
+		<DisplayName>密阁</DisplayName>
+		<BuildType>Point</BuildType>
+		<BuildDay>1</BuildDay>
+		
+		<Icon>res/Sprs/outspread/extendmap_mige01</Icon>
+		<Desc>密阁藏在某一个墙角之上，通常不对百姓开放。解锁密谋政策，以阴谋动摇社会安定或其他代理势力。</Desc>
+		
+		<UnlockPolicy>
+			<li>Policy_Secret</li>
+		</UnlockPolicy>
+		
+		<Cost>
+			<Influence>0</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="50"/>
+			</Mats>
+		</Cost>
+	</Def>
+	<Def Name="Build_Sermon">
+		<Base>1</Base>
+		<BuildCondition>
+			<Symbols>
+				<li>Sermon</li>
+			</Symbols>
+		</BuildCondition>
+		
+		<DisplayName>神殿</DisplayName>
+		<BuildType>Point</BuildType>
+		<BuildDay>1</BuildDay>
+		
+		<Icon>res/Sprs/outspread/extendmap_shendian01</Icon>
+		<Desc>神殿建有神像，百姓可以在神像前参拜，可以传播道法。解锁传道倾向，以我门派的魅力感染众生。</Desc>
+		
+		<UnlockPolicy>
+			<li>Policy_Sermon</li>
+		</UnlockPolicy>
+		
+		<Cost>
+			<Influence>0</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="50"/>
+			</Mats>
+		</Cost>
+	</Def>
+	<Def Name="Build_Recuit">
+		<Base>1</Base>
+		<BuildCondition>
+			<Symbols>
+				<li>Recuit</li>
+			</Symbols>
+		</BuildCondition>
+		
+		<DisplayName>灵官殿</DisplayName>
+		<BuildType>Point</BuildType>
+		<BuildDay>1</BuildDay>
+		
+		<Icon>res/Sprs/outspread/extendmap_linggingdian01</Icon>
+		<Desc>灵官殿用于举行入教仪式，有缘人可在此加入我们门派。解锁招揽技能，可广收人才。</Desc>
+		
+		<UnlockSkill>
+			<li>zhaolan</li>
+		</UnlockSkill>
+		
+		<Cost>
+			<Influence>0</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="50"/>
+			</Mats>
+		</Cost>
+	</Def>
+</List></Defs>

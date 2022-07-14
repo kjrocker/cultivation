@@ -1,0 +1,10 @@
+<JobDefs><List>
+	<JobDef Name="JobLcSchool">
+		<DriverClass>JobLcSchool</DriverClass>
+		<DisplayName></DisplayName>
+	</JobDef>
+	<JobDef Name="JobCallOfPanda">
+		<DriverClass>JobCallOfPanda</DriverClass>
+		<DisplayName>呼朋唤友</DisplayName>
+	</JobDef>
+</List></JobDefs>

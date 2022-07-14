@@ -1,0 +1,53 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="System_FightMap_RedWall">
+			<DisplayName>Observe</DisplayName>
+			<Desc>[NAME] tried to learn how this building was constructed.</Desc>
+			<Selections.0.Display>Observe</Selections.0.Display>
+		</Text>
+		<Text Name="System_FightMap_DragonIncense">
+			<DisplayName>Observe</DisplayName>
+			<Desc>[NAME] tried to learn how this building was constructed.</Desc>
+			<Selections.0.Display>Observe</Selections.0.Display>
+		</Text>
+		<Text Name="System_FightMap_DragonIncense">
+			<DisplayName>Make a Wish</DisplayName>
+			<Desc>[NAME] attempts to make a wish with Dragon Incense.</Desc>
+			<Selections.0.Display>Wish for Clear Mind</Selections.0.Display>
+			<Selections.1.Display>Wish for Higher Level</Selections.1.Display>
+			<Selections.2.Display>Wish for Good Fortune</Selections.2.Display>
+			<Selections.3.Display>Wish for Enlightenment</Selections.3.Display>
+			<Selections.4.Display>Wish for Them All</Selections.4.Display>
+			<Selections.5.Display>Give up</Selections.5.Display>
+		</Text>
+		<Text Name="Story_Building_TaiZiDian">
+			<DisplayName>Interact</DisplayName>
+			<Desc>[NAME] sits at the table and tries to communicate with it using Perception.</Desc>
+			<Selections.0.Display>Interact</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Building_ZiXiaoJianZhen">
+			<DisplayName>Interact</DisplayName>
+			<Desc>[NAME] sits beside the sword shield and try to use perception to communicate.</Desc>
+			<Selections.0.Display>Interact</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Building_ZiXiaoDanLu">
+			<DisplayName>Interact</DisplayName>
+			<Desc>[NAME] sits by the Alchemy Furnace and tries to communicate with it using Perception.</Desc>
+			<Selections.0.Display>Interact</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Ls_CallXuanWu">
+			<DisplayName>Touch</DisplayName>
+			<Desc>The spiritual jade has two kinds of glow, exuding an air of the Black Tortoise.</Desc>
+			<Selections.0.Display>Touch</Selections.0.Display>
+		</Text>
+		<Text Name="Story_Building_ZiXiaoShiBei">
+			<DisplayName>Touch</DisplayName>
+			<Desc>[NAME] touches the words engraved on the stele.</Desc>
+			<Selections.0.Display>Touch</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+	</List>
+</Texts>

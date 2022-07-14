@@ -1,0 +1,212 @@
+<Defs><List>
+	<Def Name="BodyAnimal">
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Rabbit</Race>
+				<DisplayName>兔笼</DisplayName>
+				<Tip>里面装了一只开智期的兔子，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="HearLoud"/>
+					<li Frag="HearLoud"/>
+					<li Frag="Sculpture"/>
+					<li Frag="Sculpture"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Chicken</Race>
+				<DisplayName>鸡笼</DisplayName>
+				<Tip>里面装了一只开智期的鸡，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="HearLoud"/>
+					<li Frag="HearLoud"/>
+					<li Frag="SeeStone"/>
+					<li Frag="SeeStone"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Wolf</Race>
+				<DisplayName>狼笼</DisplayName>
+				<Tip>里面装了一只开智期的狼，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="HearLoud"/>
+					<li Frag="HearLoud"/>
+					<li Frag="ClimbHigh"/>
+					<li Frag="ClimbHigh"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Snake</Race>
+				<DisplayName>蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="HearLoud"/>
+					<li Frag="HearLoud"/>
+					<li Frag="Jade"/>
+					<li Frag="Jade"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Boar</Race>
+				<DisplayName>野猪笼</DisplayName>
+				<Tip>里面装了一只开智期的野猪，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="SeeStone"/>
+					<li Frag="SeeStone"/>
+					<li Frag="ClimbHigh"/>
+					<li Frag="ClimbHigh"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Bear</Race>
+				<DisplayName>熊笼</DisplayName>
+				<Tip>里面装了一只开智期的熊，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="SeeStone"/>
+					<li Frag="SeeStone"/>
+					<li Frag="Jade"/>
+					<li Frag="Jade"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Turtle</Race>
+				<DisplayName>龟笼</DisplayName>
+				<Tip>里面装了一只开智期的龟，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="SeeStone"/>
+					<li Frag="SeeStone"/>
+					<li Frag="Sculpture"/>
+					<li Frag="Sculpture"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Frog</Race>
+				<DisplayName>蛙笼</DisplayName>
+				<Tip>里面装了一只开智期的蛙，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="ClimbHigh"/>
+					<li Frag="ClimbHigh"/>
+					<li Frag="Jade"/>
+					<li Frag="Jade"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Cat</Race>
+				<DisplayName>猫笼</DisplayName>
+				<Tip>里面装了一只开智期的猫，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="ClimbHigh"/>
+					<li Frag="ClimbHigh"/>
+					<li Frag="Sculpture"/>
+					<li Frag="Sculpture"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Cattle</Race>
+				<DisplayName>牛笼</DisplayName>
+				<Tip>里面装了一只开智期的牛，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="Jade"/>
+					<li Frag="Jade"/>
+					<li Frag="Sculpture"/>
+					<li Frag="Sculpture"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>BodyAnimal</AnimalFlag>
+				<Box>Item_BodyAnimalBox</Box>
+				<Race>Tiger</Race>
+				<DisplayName>虎笼</DisplayName>
+				<Tip>里面装了一只开智期的虎，对体修之法有所体悟。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="HearLoud"/>
+					<li Frag="HearLoud"/>
+					<li Frag="SeeStone"/>
+					<li Frag="SeeStone"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+</List></Defs>

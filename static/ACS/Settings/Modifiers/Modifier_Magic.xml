@@ -1,0 +1,166 @@
+<ModifierDefs><List>
+	<Modifier Name="Gong_SnatchBody" Type="Normal">  <!--阴神夺舍的负面效果-->
+		<DisplayName>阴神夺舍</DisplayName>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="SoulOutOfBrain" />
+		</Damages>
+	</Modifier> 
+	
+	<Modifier Name="Gong_LifeBurning" Type="Normal">  <!--燃烧生命的buff-->
+		<DisplayName>燃烧生命</DisplayName>
+		<Desc>短时间提高能力，结束时会对身体产生伤害。</Desc>
+		<SpecialFlags>
+			<li>FLAG_AbsorbGong_9</li>
+		</SpecialFlags>
+		<EndModifier>Gong_LifeBurning_End</EndModifier>
+		<MaxStack>1</MaxStack>
+		<Duration>100</Duration>
+		<Display>1</Display>
+		<BaseFive>3,3,3,3,3</BaseFive>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_FabaoPowerAddP" BAddP="0.3"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_LifeBurning_End" Type="Normal">  <!--燃烧生命的buff结束效果-->
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="TheWholeBody" Damage="SevereInjury" Value="0.15" />
+		</Damages>
+	</Modifier> 
+	
+	<Modifier Name="Gong_DevilBlood" Type="Normal">  <!--魔神血脉的buff-->
+		<DisplayName>魔化</DisplayName>
+		<Desc>沟通天魔，将身体完全魔化，身体素质大幅度上升，修炼速度大幅度上升，但从此天人共弃。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>4,4,-4,0,-4</BaseFive>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="4"/>
+			<li Name="IntelligenceSkillEXPConstant" AddV="4"/>
+		</Properties>
+		<Moods>
+			 <li>DevilBlood</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Gong_DevilBlood_LianHun" Type="Normal">  <!--魔神血脉目标的buff-->
+		<MaxStack>10</MaxStack>
+		<DisplayName>炼魂</DisplayName>
+		<Desc>被折磨，灵魂忍受巨大的痛苦。</Desc>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="PainTolerance" AddP="0.2"/>
+		</Properties>
+		<Damages>
+			<li Part="TheWholeBody" Damage="DevilBlood_LianHun" Value="1"/>
+		</Damages>
+		<Moods>
+			 <li>DevilBlood_LianHun</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Gong_HunTin_Self" Type="Normal">  <!--魂体寄生自身debuff-->
+		<DisplayName>分魂</DisplayName>
+		<Desc>因分出一部分元神施展魂体寄生，角色的神智受损。悟性，修炼速度，参悟获取速度略微降低。</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,-0.5,0</BaseFive>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="-0.2"/>
+			<li Name="IntelligenceSkillEXPConstant" AddV="-0.2"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Gong_TaHua_Self" Type="Normal">  <!--他化自身debuff-->
+		<DisplayName>他化共情</DisplayName>
+		<Desc>施展他化大法，从众生心念中获取参悟和修为。但受此影响，会降低心情与心境的基础值。</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="-5"/>
+			<li Name="MindStateBaseValue" AddV="-5"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Gong_TaHua_Self1" Type="Normal">  <!--他化自身debuff-->
+		<DisplayName>他化共情</DisplayName>
+		<Desc>施展他化大法，从众生心念中获取参悟和修为。但受此影响，会降低心情与心境的基础值。</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>598</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="-5"/>
+			<li Name="MindStateBaseValue" AddV="-1"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Gong_TianMoWu" Type="Normal">  
+		<DisplayName>天魔迷神</DisplayName>
+		<Desc></Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="-5"/>
+			<li Name="MindStateBaseValue" AddV="-1"/>
+		</Properties>
+	</Modifier>	
+	<Modifier Name="Gong_SoulKeYin" Type="Normal">  
+		<DisplayName>神魂刻印</DisplayName>
+		<Desc></Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="-5"/>
+			<li Name="MindStateBaseValue" AddV="-1"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_GongXinYin_Damage" Type="Normal">  <!--心印诀反噬-->
+		<DisplayName>心印诀反噬</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="Brain" Damage="Damage_GongXinYin_Damage" Value="0.75"/>
+		</Damages>
+	</Modifier> 
+	
+	<Modifier Name="WuYinKeShenRestore" Type="Normal">
+		<DisplayName>五印刻神恢复</DisplayName>
+		<ClassName>Modifier_RestoreCampAfterTime</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+	</Modifier>	
+	
+	<Modifier Name="TianMoWuRestore" Type="Normal">
+		<DisplayName>天魔舞恢复</DisplayName>
+		<ClassName>Modifier_TianMoWuRestore</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+	</Modifier>	
+</List></ModifierDefs>

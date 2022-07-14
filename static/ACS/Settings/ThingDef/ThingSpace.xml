@@ -1,0 +1,25 @@
+<ThingDefs><List>
+	<ThingDef Type="Space" Name="StorageSpace">
+	<MaxStack>1000</MaxStack>
+	<SelectAble>0</SelectAble>
+	<VisualAble>0</VisualAble>
+	</ThingDef>
+	
+	<ThingDef Type="Space" Name="PlantSpace">
+	<MaxStack>1</MaxStack>
+	<SelectAble>0</SelectAble>
+	<VisualAble>0</VisualAble>
+	</ThingDef>
+	
+	<ThingDef Type="Space" Name="RoomSpace">
+	<SelectAble>0</SelectAble>
+	<VisualAble>0</VisualAble>
+	</ThingDef>
+	
+	<ThingDef Type="Space" Name="TradeSpace">
+	<MaxStack>1000</MaxStack>
+	<SelectAble>0</SelectAble>
+	<VisualAble>0</VisualAble>
+	</ThingDef>
+	
+</List></ThingDefs>

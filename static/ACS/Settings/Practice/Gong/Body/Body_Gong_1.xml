@@ -1,0 +1,116 @@
+﻿<Gongs><List>
+	<Gong Name="Body_Gong_1">
+		<DisplayName>太古形意六合真体</DisplayName>
+		<Desc>传承自太古的炼体之法，取诸生灵之形，享应乾坤之意，通御六合之法。此法擅长与自然合一吐纳玄妙，层层演进，最终可铸造六合万化之玄真妙体，肉身成圣，破碎虚空。</Desc>
+		<SelectDesc>踏上体修之路意味着与精气神三者彻底合一，与灵气绝缘，无法使用任何玄妙之物，从此行走天地只凭肉身，确定要走上这条路么？</SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<ElementKind>None</ElementKind>
+		<GongKind>Body</GongKind>
+		<Hide>1</Hide>
+		<SuperParts>
+			<li>SuperPart_Gong_1_1</li>
+			<li>SuperPart_Gong_1_1_1</li>
+			<li>SuperPart_Gong_2_4</li>
+			<li>SuperPart_Gong_2_4_1</li>
+		</SuperParts>
+		<QuenchingMethods>
+			<li>BPQuenchingMethods_1</li>
+			<li>BPQuenchingMethods_ReQuenching</li>
+		</QuenchingMethods>
+		<Magic>
+			<li>Magic_Body_Banyunqixue</li>
+		</Magic>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>淬体期</DisplayName>
+				<Desc></Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>血肉新生</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_1</AddModifier>
+
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_1_1</li>
+						</QuenchingMethods>
+
+						<SuperParts>
+							<li>SuperPart_Gong_1_2</li>
+							<li>SuperPart_Gong_1_9</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>洗髓期</DisplayName>
+				<Desc></Desc>
+				<Value>50000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>洗髓换骨</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_2</AddModifier>
+
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_3</li>
+						</QuenchingMethods>
+
+						<SuperParts>
+							<li>SuperPart_Gong_1_3</li>
+							<li>SuperPart_Gong_1_10</li>
+							<li>SuperPart_Gong_1_11</li>
+							<li>SuperPart_Gong_1_11_1</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>脱胎期</DisplayName>
+				<Desc></Desc>
+				<Value>100000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>内外合一</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_3</AddModifier>
+
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_6</li>
+						</QuenchingMethods>
+
+						<SuperParts>
+							<li>SuperPart_Gong_1_4</li>
+							<li>SuperPart_Gong_1_5</li>
+							<li>SuperPart_Gong_1_6</li>
+							<li>SuperPart_Gong_1_7</li>
+							<li>SuperPart_Gong_1_8</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>混元期</DisplayName>
+				<Desc></Desc>
+				<Value>500000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>天刑</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>18000</NeckCountdown>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

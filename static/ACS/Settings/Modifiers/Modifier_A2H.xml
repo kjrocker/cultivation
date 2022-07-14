@@ -1,0 +1,226 @@
+<ModifierDefs><List>
+	<Modifier Name="Animal2HumanThinkFull" Type="Normal">
+		<DisplayName>满思绪</DisplayName>
+		<Desc>思绪已满</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_a2h_clearthink</LuaClassName>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="Animal2HumanFeelLing" Type="Normal">
+		<DisplayName>懵懂的灵智</DisplayName>
+		<Desc>对灵智有种懵懂的感觉。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>0</Display>
+	</Modifier>
+	
+	<Modifier Name="AnimalToHuman" Type="Normal">
+		<DisplayName>半化形</DisplayName>
+		<Desc>正在半化形。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Aura/SpinningAura/SpinningWater" />
+		</EffectBind>
+		<Display>1</Display>
+	</Modifier>
+		
+	
+	<Modifier Name="LingShou_fanshi" Type="Normal"><!--龙吸BUFF 挂在对象身上的-->
+		<DisplayName>灵宠反噬</DisplayName>
+		<Desc>一段时间之后将反噬其法宝，法宝灵气削减一半，火属性的法宝效果翻倍，土属性法宝效果减半。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_lingshou_fansi</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Aura/SpinningAura/SpinningWater" />
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="ToHumanThunderComing" Type="Normal">
+		<DisplayName>化形天劫</DisplayName>
+		<Desc>化形天劫正在酝酿</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+	</Modifier>
+	
+	<Modifier Name="Modifier_LingChong_Heal" Type="Normal">
+		<DisplayName>陪伴</DisplayName>
+		<Desc>在灵宠的陪伴下，伤势恢复地更快了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>200</Duration>
+		<Display>1</Display>
+		<Properties>
+		    <li Name="RecoveryPower" AddP="3"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddP="3"/>
+		</Properties>
+		<Moods>
+			<li>PetHeal</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_LingChong_Stay" Type="Normal">
+		<DisplayName>陪伴</DisplayName>
+		<Desc>修炼时有了灵宠的陪伴，心境更加平稳。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>200</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+			<li Name="SpeedOfMindStateCoefficient" AddP="-0.5"/>
+		</Properties>
+		<Moods>
+			<li>PetStay</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_GlitterEyes" Type="Normal">
+		<DisplayName>火眼金睛</DisplayName>
+		<Desc>拥有玄凤的火眼金睛之力，可在拍卖中看破一些物品的真面目。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>200</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_SEE_UNKNOW_AUCTION</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Shelter" Type="Normal">
+		<DisplayName>庇体</DisplayName>
+		<Desc>短时间内大幅提高灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>25</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+		    <li Name="NpcFight_ShieldConversionRateAddP" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="10"/>
+		</Properties>
+		<EffectBind>			
+			<li Path="Effect\A\Prefabs\Shields\Shield Sphere\EarthShield" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_YG_RealPower" Type="Normal">
+		<DisplayName>原身真力（力）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高御器威力，秘体威力。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ModScale>0.35</ModScale>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/YaoAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="1000"/>
+		    <li Name="NpcFight_FabaoPowerAddP" BAddP="0.5"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_YG_RealRecover" Type="Normal">
+		<DisplayName>原身真力（蕴）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高身体恢复力，法宝灵气回复速度，秘体真炁恢复速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ModScale>0.35</ModScale>
+		<ModScale>0.15</ModScale>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/YaoAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="1000"/>
+			<li Name="RecoveryPower" AddP="4"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/>
+			<li Name="BodyPratice_SuperPartRecoverAddP" AddV="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_YG_RealWisdom" Type="Normal">
+		<DisplayName>原身真力（智）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高法术威力，秘体攻击命中率，防御成功率，灵气护盾穿透率，法宝镇压概率。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ModScale>0.35</ModScale>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/YaoAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddV="0.2"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_YG_RealShield" Type="Normal">
+		<DisplayName>原身真力（护）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高御器威力，秘体威力，灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ModScale>0.35</ModScale>
+		<ModScale>0.35</ModScale>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/YaoAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="1000"/>
+		    <li Name="NpcFight_ShieldConversionRate" BAddP="0.5"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	
+	<Modifier Name="Modifier_YG_NormalPower" Type="Normal">
+		<DisplayName>妖身</DisplayName>
+		<Desc>处在妖身状态之下，战斗能力得到增强，淬体也会更快。但在野性本能的驱使下，修行者的悟性，学习速度，心境均大受影响。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<BaseFive>3,3,0,-5,0</BaseFive>
+		<Skills>
+			<li Name="Fight" LevelOver="5"/>
+			<li Name="FightSkill" LevelOver="5"/>
+			<li Name="Barrier" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.05"/>
+			
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.5"/>
+			
+			<li Name="IntelligenceSkillEXPConstant" BAddP="-0.55"/>
+			<li Name="MindStateBaseValue" AddV="-40"/>
+		</Properties>
+	</Modifier> 
+	
+</List></ModifierDefs>

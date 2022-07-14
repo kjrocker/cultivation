@@ -1,0 +1,16 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Forest">
+			<DisplayName>Forest</DisplayName>
+		</Text>
+		<Text Name="Plain">
+			<DisplayName>Plain</DisplayName>
+		</Text>
+		<Text Name="Mountain">
+			<DisplayName>Mountains</DisplayName>
+		</Text>
+		<Text Name="Aqua">
+			<DisplayName>Water</DisplayName>
+		</Text>
+	</List>
+</Texts>

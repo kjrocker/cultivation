@@ -1,0 +1,96 @@
+<JobDefs><List>
+	<JobDef Name="JobLsDecide">
+		<DriverClass>JobLsDecide</DriverClass>
+		<DisplayName>犹豫中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobEatItem2">
+		<DriverClass>JobEatItem2</DriverClass>
+		<DisplayName>吃东西</DisplayName>
+	</JobDef>
+	<JobDef Name="JobAtk4Fun">
+		<DriverClass>JobAtk4Fun</DriverClass>
+		<DisplayName>攻击</DisplayName>
+	</JobDef>
+	<JobDef Name="JobGoShit">
+		<DriverClass>JobGoShit</DriverClass>
+		<DisplayName>前往排泄</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsCarry">
+		<DriverClass>JobLsCarry</DriverClass>
+		<DisplayName>施法搬运中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsCutoff">
+		<DriverClass>JobLsCutoff</DriverClass>
+		<DisplayName>施法砍伐中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsMine">
+		<DriverClass>JobLsMine</DriverClass>
+		<DisplayName>施法采矿中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsCarryToBed">
+		<DriverClass>JobLsCarryToBed</DriverClass>
+		<DisplayName>施法搬运中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsCarryToDest">
+		<DriverClass>JobLsCarryToDest</DriverClass>
+		<DisplayName>施法搬运中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobPlayWithSelf">
+		<DriverClass>JobPlayWithSelf</DriverClass>
+		<DisplayName>自娱自乐中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobPlayWithSth">
+		<DriverClass>JobPlayWithSth</DriverClass>
+		<DisplayName>玩耍中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsFun">
+		<DriverClass>JobLsFun</DriverClass>
+		<DisplayName>玩耍中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsHelpPlay">
+		<DriverClass>JobLsHelpPlay</DriverClass>
+		<DisplayName>玩耍中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsTrain">
+		<DriverClass>JobLsTrain</DriverClass>
+		<DisplayName>锻炼中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsPee">
+		<DriverClass>JobLsPee</DriverClass>
+		<DisplayName>浇灌中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsCure">
+		<DriverClass>JobLsCure</DriverClass>
+		<DisplayName>治疗中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsFollow">
+		<DriverClass>JobLsFollow</DriverClass>
+		<DisplayName>跟随中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsFeedHim">
+		<DriverClass>JobLsFeedHim</DriverClass>
+		<DisplayName>喂食中</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLsSleep">
+		<DriverClass>JobLsSleep</DriverClass>
+		<DisplayName>睡觉</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobLsSleepWithNpc">
+		<DriverClass>JobLsSleepWithNpc</DriverClass>
+		<DisplayName>睡觉</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobLsGotoThing">
+		<DriverClass>JobLsGotoThing</DriverClass>
+		<DisplayName>前往</DisplayName>
+	</JobDef>
+	<JobDef Name="JobConfuse">
+		<DriverClass>JobConfuse</DriverClass>
+		<DisplayName>迷惑</DisplayName>
+	</JobDef>
+	<JobDef Name="JobLcOutpread">
+		<DriverClass>JobLcOutpread</DriverClass>
+		<DisplayName></DisplayName>
+	</JobDef>
+</List></JobDefs>

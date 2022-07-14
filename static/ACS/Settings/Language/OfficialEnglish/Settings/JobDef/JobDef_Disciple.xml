@@ -1,0 +1,79 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobPracticeFeeling">
+			<DisplayName>Epiphany</DisplayName>
+		</Text>
+		<Text Name="JobPractice">
+			<DisplayName>Cultivate</DisplayName>
+		</Text>
+		<Text Name="JobBrokenNeck">
+			<DisplayName>Breakthrough</DisplayName>
+		</Text>
+		<Text Name="JobPracticeSkill">
+			<DisplayName>Practice</DisplayName>
+		</Text>
+		<Text Name="JobReceiveApprentice">
+			<DisplayName>Take as Disciple</DisplayName>
+		</Text>
+		<Text Name="JobBuildBody">
+			<DisplayName>Remold</DisplayName>
+		</Text>
+		<Text Name="JobRobBody">
+			<DisplayName>Possess</DisplayName>
+		</Text>
+		<Text Name="JobAbsorbLing">
+			<DisplayName>Qi Absorb</DisplayName>
+		</Text>
+		<Text Name="JobRefiningFabao">
+			<DisplayName>Artifact Crafting</DisplayName>
+		</Text>
+		<Text Name="JobPaintCharm">
+			<DisplayName>Draw Talisman</DisplayName>
+		</Text>
+		<Text Name="JobTeachHim">
+			<DisplayName>Teach Manual</DisplayName>
+		</Text>
+		<Text Name="JobLeave2Explore">
+			<DisplayName>Adventure</DisplayName>
+		</Text>
+		<Text Name="JobMasterHelp">
+			<DisplayName>Guard</DisplayName>
+		</Text>
+		<Text Name="JobFeelEsoterica">
+			<DisplayName>Study Manual</DisplayName>
+		</Text>
+		<Text Name="JobAbsorbGong">
+			<DisplayName>Obtain Experience</DisplayName>
+		</Text>
+		<Text Name="JobMelting">
+			<DisplayName>Smelt</DisplayName>
+		</Text>
+		<Text Name="JobEatPracticeFood">
+			<DisplayName>Take Elixir</DisplayName>
+		</Text>
+		<Text Name="JobJiangdao">
+			<DisplayName>Give Lecture</DisplayName>
+		</Text>
+		<Text Name="JobMagicNormal">
+			<DisplayName>Perform Miracle</DisplayName>
+		</Text>
+		<Text Name="JobGodPractice">
+			<DisplayName>Balance</DisplayName>
+		</Text>
+		<Text Name="JobCangJingGe">
+			<DisplayName>Manual Pavilion</DisplayName>
+		</Text>
+		<Text Name="JobGodPractice_Renunciation">
+			<DisplayName>Restrained</DisplayName>
+		</Text>
+		<Text Name="JobBodyPractice">
+			<DisplayName>Remold</DisplayName>
+		</Text>
+		<Text Name="JobToHumanThunder">
+			<DisplayName>Shapeshifting Heavenly Tribulation</DisplayName>
+		</Text>
+		<Text Name="JobBodyTuna">
+			<DisplayName>Breathing Spell</DisplayName>
+		</Text>
+	</List>
+</Texts>

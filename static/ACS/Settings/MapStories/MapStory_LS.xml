@@ -1,0 +1,47 @@
+<Stories><List>	
+	
+	<Story Name="Ls_FirstNoLing" Parent="BaseFillingStory"> <!--系统使用，不能修改-->
+		<DisplayName>灵宠灵气耗空</DisplayName>
+		<Desc>灵宠灵气的灵气消耗殆尽，需要建立相应雕像，并且三日之后才能复活。</Desc>
+		<Selections>
+			<li>
+				<Display>好的</Display>
+				<OKResult><![CDATA[	
+					
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Ls_SecLs" Parent="BaseFillingStory"> <!--系统使用，不能修改-->
+		<DisplayName>第二个灵宠</DisplayName>
+		<Desc>你只能拥有一个灵宠。此灵宠暂时会消失。想要召唤出此灵宠，需要建立其雕像并召唤。</Desc>
+	</Story>
+	<Story Name="Ls_Outspread_Stability" Parent="BaseFillingStory"> <!--系统使用，不能修改-->
+		<DisplayName>威震四方</DisplayName>
+		<Desc>浮龙在上空游荡，乌云密布，电闪雷鸣，做了亏心事的人感到十分害怕。</Desc>
+		<Selections>
+			<li>
+				<Display>好的</Display>
+				<OKResult><![CDATA[	
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target;
+					tbTable:HugeIncreaseStab(WorldLua, cRegion);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Ls_Outspread_Attractive" Parent="BaseFillingStory"> <!--系统使用，不能修改-->
+		<DisplayName>祥云瑞兽</DisplayName>
+		<Desc>玄凤在上空徘徊数日，落在了主殿之上，长鸣三声而离去，百姓纷纷认为这是吉祥的预兆。</Desc>
+		<Selections>
+			<li>
+				<Display>好的</Display>
+				<OKResult><![CDATA[	
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target;
+					tbTable:GreatlyIncreaseAttra(WorldLua, cRegion);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

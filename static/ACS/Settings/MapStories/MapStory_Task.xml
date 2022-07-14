@@ -1,0 +1,21 @@
+<Stories><List>	
+	<Story Name="Sup"  Parent="BaseFillingStory">
+		<DisplayName>收编</DisplayName>
+		<Desc>收编</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>无事发生</Display>
+				<OKResult>
+					
+				</OKResult>
+			</li>
+			<li>
+				<Display>+1s</Display>
+				<OKResult>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

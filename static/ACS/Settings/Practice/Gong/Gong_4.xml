@@ -1,0 +1,184 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_4_None">  
+		<DisplayName>玉清仙法</DisplayName>
+		<Desc>元始天尊留在人间的道统，昆仑宫不传之秘，号称玄门正宗，万法源流。此术共分六境十二门，修习者法力极其雄厚，且法术威力惊人。但破关极为艰难，若非悟性超绝，且有大机缘在身，万难修行成功。</Desc>
+		<SelectDesc>此功法擅长各类术法且根基深厚，只是进阶需要各种至宝，突破十分艰难。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>4,-1,-1,7,6</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>jiangdao</li>
+			<li>ciqi</li>
+			<li>guanding</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>练气境</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>意门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Luck_1_1_10</SuccessChange>
+						<FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>精门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Luck_1_1_10</SuccessChange>
+						<FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="4">
+				<DisplayName>合气境</DisplayName>
+				<Desc></Desc>
+				<Value>1800</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>气门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>玄门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Luck_1_1_10</SuccessChange>
+						<FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+					</Neck>
+				</Necks>
+			</Stage>	
+			<Stage Name="Stage3" Level="6">
+				<DisplayName>结丹境</DisplayName>
+				<Desc></Desc>
+				<Value>4000</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>赤门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="5"/>
+						</ResourceCost>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>丹门</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>归一境</DisplayName>
+				<Desc></Desc>
+				<Value>140000</Value>
+				<Necks>
+					<Neck Location="0.1" Kind="Chance">
+						<DisplayName>金门</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_JinEssence"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>水门</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_ShuiEssence"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>木门</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_MuEssence"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>火门</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_HuoEssence"/>
+						</ItemCost>
+						
+					</Neck>
+					<Neck Location="0.9" Kind="Chance">
+						<DisplayName>土门</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_TuEssence"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>牝门</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="11">
+				<DisplayName>化神境</DisplayName>
+				<Desc></Desc>
+				<Value>1490000</Value>
+				<Necks>
+					
+					<Neck Location="0.85" Kind="Explore">
+						<DisplayName>分门</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>3</ExploreValue>
+					</Neck>
+					<Neck Location="1" Kind="Work">
+						<DisplayName>化门</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage6" Level="12">
+				<DisplayName>渡劫境</DisplayName>
+				<Desc></Desc>
+				<Value>6760000</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>死门</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>生门</DisplayName>
+						<Desc></Desc>
+						<NeckCountdown>3000</NeckCountdown>
+						<ThunderValue>700000</ThunderValue>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

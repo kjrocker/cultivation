@@ -1,0 +1,354 @@
+<ModifierDefs><List>
+	
+	
+	<Modifier Name="Modifier_Tower_Enemy_achai" Type="Normal">
+		<DisplayName>阿柴变身</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<NpcModPath>Mod/Npc/Rabbit/Base</NpcModPath>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_Cat" Type="Normal">
+		<DisplayName>猫咪定位</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<EffectBind>
+			<li Path="Effect\gsq\Prefab\2020.4.25\Fx_chongwutixing" />
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_Enemy_Xian" Type="Normal">
+		<DisplayName>沉淀之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1000</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="500000"/>
+			<li Name="NpcLingMaxValue" AddP="50"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="70"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="40"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="40"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="50"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Tower_Enemy_Ti" Type="Normal">
+		<DisplayName>沉淀之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1000</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="2"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddP="2"/>
+			
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="10000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="10000"/>
+			
+			<li Name="PainTolerance" AddV="0.2"/>
+			<li Name="BodyPratice_BodyStrong" AddV="0.2"/>
+			<li Name="BodyPratice_CatchFaboValue" AddV="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Tower_Enemy_Yao" Type="Normal">
+		<DisplayName>沉淀之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1000</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="YaoShou_BaseLing" AddP="117"/>
+			<li Name="YaoShou_BaseAttack" AddP="350"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="36.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="36.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="36.5"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.5"/>
+			
+			<li Name="YaoShou_BaseFabaoNum" AddP="0.5"/>
+			
+			<li Name="LingAbsorbSpeed" AddP="0.2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.2"/>
+			
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_Enemy_Boss_Root" Type="Normal">
+		<DisplayName>沉淀之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1000</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="5000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="30"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="200"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Tower_Enemy_Boss_Part" Type="Normal">
+		<DisplayName>沉淀之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1000</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_ChaoXiQi" Type="Normal">
+		<DisplayName>起潮汐</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.2"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.2"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" BAddP="0.2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="2"/>
+			
+			<!-- 体修 -->
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.2"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.2"/>
+			
+			<!-- 精英怪 -->
+			<li Name="YaoShou_BaseAttack" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_ChaoXi0" Type="Normal">
+		<DisplayName>平潮汐</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_ChaoXiLuo" Type="Normal">
+		<DisplayName>落潮汐</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.05"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.05"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" BAddP="-0.05"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-0.1"/>
+			
+			
+			<!-- 体修 -->
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.05"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.05"/>
+			
+			<!-- 精英怪 -->
+			<li Name="YaoShou_BaseAttack" BAddP="-0.05"/>
+
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_KuRongOur" Type="Normal">
+		<DisplayName>枯</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-0.1"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-0.1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.1"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-0.1"/> 
+			<li Name="NpcFight_ShieldConversionRate" AddV="-0.03"/>
+			
+			<!-- 体修 -->
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="-10"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="-10"/>
+			
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_KuRongEnm" Type="Normal">
+		<DisplayName>荣</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/> 
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			
+			<!-- 体修 -->
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="10"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="10"/>
+			
+			<!-- 精英怪 -->
+			<li Name="YaoShou_BaseLing" AddP="1"/>
+			<li Name="YaoShou_BaseAttack" AddP="3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_WuZhi" Type="Normal">
+		<DisplayName>真理之困</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="-0.01"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.01"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.01"/> 
+			
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="Modifier_Tower_XinNian0" Type="Normal">
+		<DisplayName>信念压制</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="-0.9"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.9"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.9"/> 
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_XinNian1" Type="Normal">
+		<DisplayName>信徒增强</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.002"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.002"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.002"/> 
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown1" Type="Normal">
+		<DisplayName>道境威压</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="-0.9"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.9"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.9"/> 
+			
+			<!-- 体修 -->
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.9"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.9"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown2" Type="Normal">
+		<DisplayName>凶念威压</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="-0.9"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.9"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.9"/> 
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown3" Type="Normal">
+		<DisplayName>温柔乡</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.3"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.3"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" BAddP="-0.3"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown4" Type="Normal">
+		<DisplayName>尊王禁令</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MoveSpeed" BAddP="-0.5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="-0.75"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="-0.75"/> 
+			
+			<li Name="NpcFight_SpellCoolDownAddP" AddP="5"/> 
+			<li Name="NpcFight_BaseDodgeChance" BAddP="-0.75"/> 
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown5" Type="Normal">
+		<DisplayName>精神威慑</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.3"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="-0.3"/> 
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Tower_Powerdown6" Type="Normal">
+		<DisplayName>贪婪之息</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="-5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Tower_Powerdown7" Type="Normal">
+		<DisplayName>瓶之禁</DisplayName>
+		<Desc></Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>99999999</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" BAddP="-0.3"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-5"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

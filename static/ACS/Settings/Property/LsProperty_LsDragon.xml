@@ -1,0 +1,10 @@
+<Properties><List>
+	<Property Name="LsDrgSpellPowerAddP">
+		<MinValue>0.1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>LingShouShuFa*LingShouShuFa/50 * 1.2+LingShouShuFa*LingShouShuFa/50 * 1.2*(0-LsBadGood)/5</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+</List></Properties>

@@ -1,0 +1,57 @@
+<AreaTypeDefs><List>
+	<AreaType Name="Storage" Class="AreaStorage">
+	<IsStorage>1</IsStorage>	
+	<AreaType>Building</AreaType>
+	</AreaType>
+	
+	<AreaType Name="Plant" Class="AreaPlant">	
+	<IsPlant>1</IsPlant>	
+	<AreaType>Building</AreaType>	
+	</AreaType>
+	
+	<AreaType Name="DisciplePlant" Class="AreaDisciplePlant">	
+	<IsPlant>1</IsPlant>	
+	<AreaType>Building</AreaType>	
+	</AreaType>
+	
+	<AreaType Name="Life" Class="AreaLife">		
+	</AreaType>
+	
+	<AreaType Name="Room" Class="AreaRoom">		
+	</AreaType>
+	
+	<AreaType Name="BuildingWorkSpace" Class="AreaBuildingWorkSpace">	
+	<IsSingle>0</IsSingle>
+	</AreaType>
+	
+	<AreaType Name="Tang" Class="AreaTang">			
+	</AreaType>
+	
+	<AreaType Name="Breeding" Class="AreaBreeding">		
+	</AreaType>
+	
+	<AreaType Name="LingPlant" Class="AreaLingPlant">
+		<IsSingle>0</IsSingle>
+	</AreaType>
+	<AreaType Name="Guard" Class="AreaGuard">
+		<IsSingle>0</IsSingle>
+	</AreaType>
+	<AreaType Name="Warning" Class="AreaWarning">
+		<IsSingle>0</IsSingle>
+	</AreaType>
+	<AreaType Name="Lost" Class="AreaRoom">		
+	</AreaType>
+	<AreaType Name="Sheild" Class="AreaSheild">
+	</AreaType>
+	<AreaType Name="Modifier" Class="AreaModifier">
+	</AreaType>
+	<AreaType Name="MapFlagArea" Class="AreaFlag">
+	</AreaType>
+	<AreaType Name="Trade" Class="AreaTrade">
+	<AreaType>Building</AreaType>
+	<IsStorage>1</IsStorage>	
+	</AreaType>
+	<AreaType Name="Trap" Class="AreaTrap">
+		<IsSingle>0</IsSingle>
+	</AreaType>
+</List></AreaTypeDefs>

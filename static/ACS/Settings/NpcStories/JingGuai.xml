@@ -1,0 +1,257 @@
+﻿<NpcStories><List>
+
+    <!--注：[name]精怪自身 [hename]互动npc [obj_tongling]互动的通灵对象-->
+
+	<Story Name="JGTest"><!--精怪测试-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[name]在发呆时，脑海中开始幻想变成人的模样。"/>	
+			 <li Rate="0.2" Story="[name]在发呆时，脑海中突然浮现出和主人在一起的时光。"/>	
+		</Events>
+	</Story>	
+	
+	<Story Name="JGTunShi"><!--精怪吞噬-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="缇娜，这太美味了，我还想再吃一斤。"/>	
+			 <li Rate="0.2" Story="再来一点吧，求求你了，我发誓我这之后会减肥"/>	
+			 <li Rate="0.2" Story="[name]在吞噬物品时，突然想起精怪[obj_tongling],不知道它有没有尝过这些美食"/>	
+			 <li Rate="0.2" Story="安逸！巴适！"/>	
+			 <li Rate="0.2" Story="好味！"/>	
+			 <li Rate="0.2" Story="唉呀妈呀,这噶的玩意真好吃！"/>	
+			 <li Rate="0.2" Story="再来"/>	
+			 <li Rate="0.2" Story="好次得一匹"/>	
+			 <li Rate="0.2" Story="对味！"/>	
+		</Events>
+	</Story>	
+	
+	<Story Name="JGTalkDay"><!--精怪白天说话-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[name]在发呆时，脑海中开始幻想变成人的模样。"/>	
+			 <li Rate="0.2" Story="[name]不知道怎么回事，莫名其妙发了发呆。"/>
+			 <li Rate="0.2" Story="[name]看着那些浑浑噩噩的同类，突然觉得自己很幸运。"/>	
+			 <li Rate="0.5" Story="[name][rand_string=突然发出打喷嚏的声音,突然发出打嗝的声音,突然发出打哈欠的声音,开始自言自语,突然觉得有点痒,觉得有点无聊,叹了口气,突然发出咂嘴的声音,突然发出添东西的声音,抖了抖身上的灰尘,哼起了小曲,想和人说话,想试试写诗]。"/>
+			 <li Rate="0.2" Story="[name]好像听到有谁在喊自己。"/>
+			 <li Rate="0.2" Story="[name]很喜欢[rand_lable=obj_weather]。"/>
+			 <li Rate="0.2" Story="[name]看着旁边的[rand_lable=obj_nearthing][rand_string=发呆,笑起来,若有所思]。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想起天边的晚霞。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得很气闷。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想和什么人打一架。"/>		
+			 <li Rate="0.2" Story="看我看我看我！"/>		
+			 <li Rate="0.2" Story="过来过来过来！"/>				 
+			 <li Rate="0.2" Story="你！过来聊聊"/>		
+			 <li Rate="0.2" Story="你们走来走去好烦啊"/>		
+			 <li Rate="0.2" Story="变成人了就会像你们这么忙么？"/>	
+			 <li Rate="0.2" Story="看老子做啥子嘛"/>	
+			 <li Rate="0.2" Story="做咩？"/>
+			 <li Rate="0.2" Story="你们跑来跑去眼睛不干么？"/>				 
+		</Events>
+	</Story>	
+	
+	<Story Name="JGTalkNight"><!--精怪晚上说话-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[name]在发呆时，脑海中开始幻想变成人的模样。"/>	
+			 <li Rate="0.2" Story="[name]不知道怎么回事，莫名其妙发了发呆。"/>
+			 <li Rate="0.2" Story="[name]看着那些浑浑噩噩的同类，突然觉得自己很幸运。"/>	
+			 <li Rate="0.5" Story="[name][rand_string=突然发出打喷嚏的声音,突然发出打嗝的声音,突然发出打哈欠的声音,开始自言自语,突然觉得有点痒,觉得有点无聊,叹了口气,突然发出咂嘴的声音,突然发出添东西的声音,抖了抖身上的灰尘,哼起了小曲,想和人说话,想试试写诗]。"/>
+			 <li Rate="0.2" Story="[name]好像听到有谁在喊自己。"/>
+			 <li Rate="0.2" Story="[name]很喜欢[rand_lable=obj_weather]。"/>
+			 <li Rate="0.2" Story="[name]看着旁边的[rand_lable=obj_nearthing][rand_string=发呆,笑起来,若有所思]。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想起天边的晚霞。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然觉得很气闷。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]突然想和什么人打一架。"/>		
+			 <li Rate="0.2" Story="怎么都躺下了，起来玩啊！"/>		
+			 <li Rate="0.2" Story="啦啦啦啦啦啦~~"/>				 
+			 <li Rate="0.2" Story="谁~被~吵~醒~了？被~吵~醒~~了？吵~醒~了？醒~了？了？对~不~起~呀~~起~呀~~起~呀~~呀~~"/>		
+			 <li Rate="0.2" Story="呼呼呼呼~我睡着了~~~~~~~假的！"/>		
+			 <li Rate="0.2" Story="滴滴滴滴滴~"/>				 
+			 <li Rate="0.2" Story="哒哒哒哒哒~"/>	
+	         <li Rate="0.2" Story="据说经常有精怪会半夜爬到你床上……"/>	
+			 <li Rate="0.2" Story="啊~~~~~~~~~~我好惨啊~~~~~~~~手~指~甲~里全是泥~~~~~~~~"/>				 
+		</Events>
+	</Story>	
+	
+	<Story Name="JGTalkNoMove"><!--精怪禁止移动时-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="啥时候才能让我动一动啊，憋死了在这儿！"/>	
+			 <li Rate="0.2" Story="喂？喂？有人么！快放开我！"/>	
+			 <li Rate="0.2" Story="我的灵魂已经枯萎，好想出去逛一逛……"/>	
+			 <li Rate="0.2" Story="有~人~么~~我~好~无~聊~~"/>	
+			 <li Rate="0.2" Story="哼，现在就算你把我解开，我也不想动了。"/>	
+			 <li Rate="0.2" Story="太阳对我眨眼睛，鸟儿唱歌给我听，我是一只浑身难受还不能动的小妖精~"/>	
+			 <li Rate="0.2" Story="放开我，我知道你在看！"/>	
+			 <li Rate="0.2" Story="我要把天龙砂泡到你的茶杯里！"/>	
+			 <li Rate="0.2" Story="好想变成人~好想到处跑~"/>	
+			 <li Rate="0.2" Story="你们老在说的火铜房是干什么用的？"/>	
+			 <li Rate="0.2" Story="我会不会就这样烂在这里啊"/>	
+			 <li Rate="0.2" Story="呜呜呜~投降了，认输了，我再也不乱跑了"/>
+			 <li Rate="0.2" Story="放~我~出~去~~~"/>
+			 <li Rate="0.2" Story="我其实不是小精怪，我是个被封印在里面的老爷爷。你放开我，我教你绝世功法。"/>		
+			 <li Rate="0.2" Story="嘟嘟嘟嘟嘟~"/>		
+			 <li Rate="0.2" Story="滴滴滴滴滴~"/>				 
+			 <li Rate="0.2" Story="哒哒哒哒哒~"/>			
+			 <li Rate="0.2" Story="这几天我想明白了一件事，精怪可能不应该到处跑的。"/>	
+			 <li Rate="0.2" Story="阿呜~我是一头大恶狼~~"/>	
+			 <li Rate="0.2" Story="放开我！我要变了，我要变了！"/>	
+			 <li Rate="0.2" Story="求求你，放开我吧！"/>	
+			 <li Rate="0.2" Story="做妖咧最紧要就系开心喇"/>	
+			 <li Rate="0.2" Story="告诉你一个让我闭嘴的方法：没有哦。嘻嘻嘻嘻"/>	
+			 <li Rate="0.2" Story="我现在满跑路都是脑子。"/>	
+			 <li Rate="0.1" Story="你过两天再来看我，我偷偷告诉你一个秘密。"/>	
+			 <li Rate="0.2" Story="我是不是已经疯了？"/>	
+			 <li Rate="0.2" Story="我告诉你一个秘密…………那就是我没有秘密。"/>	
+			 <li Rate="0.2" Story="我以前无得拣,我而家想做好人"/>	
+			 <li Rate="0.2" Story="不能动，脑壳痛"/>	
+			 <li Rate="0.2" Story="你七过火锅没得？那味道不摆了。"/>
+			 <li Rate="0.2" Story="三天之后又三天，三天之后又三天"/>		
+		</Events>
+	</Story>	
+	
+	<Story Name="JGEqupt"><!--装备精怪时-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="别啊……别装备我，我还想自己玩一会……"/>	
+			 <li Rate="0.2" Story="用的到我的时候就想起我了？"/>	
+			 <li Rate="0.2" Story="又来拿我干什么啊！能不能让我一个人待会，求你了！"/>	
+			 <li Rate="0.2" Story="还能想起来我？我都闲出鸟了……！！"/>
+			 <li Rate="0.2" Story="你身上臭么？"/>
+			 <li Rate="0.2" Story="带着我干啥？会出门么？会打架么？会被掉在其他地方么？"/>
+			 <li Rate="0.2" Story="恕我直言，就你这点实力带着我意义也不大。"/>
+			 <li Rate="0.2" Story="哎呀哎呀哎呀，有人要穿我"/>
+		</Events>
+	</Story>	
+	
+	<Story Name="JGEqupted"><!--精怪装备中-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[hename]你怎么出这么多汗，好恶心！"/>		
+			 <li Rate="0.2" Story="[hename]，你快多跟我聊聊啊，别不说话！"/>		
+			 <li Rate="0.2" Story="[hename]你行不行啊，上一个带着我的人比你强多了！"/>		
+			 <li Rate="0.2" Story="[hename]能不能稳重点，颠死我了！"/>		
+			 <li Rate="0.2" Story="[hename]你身上太挤了，快把我旁边这家伙丢掉！"/>		
+			 <li Rate="0.2" Story="[hename]我告诉你个秘密，我其实是被封印在里面的老爷爷。你放我下来，我教你绝世功法。"/>		
+			 <li Rate="0.2" Story="啊啊啊，[hename]你看那个东西是活的！啊啊啊！怎么我也是活的！"/>	
+			 <li Rate="0.2" Story="[hename]快抬头！天上有东西！"/>			
+			 <li Rate="0.2" Story="我听说有种东西叫坐骑，天天驮着别人走，[hename]你是我的坐骑吗？"/>		
+			 <li Rate="0.2" Story="[hename]救命！我不能呼吸了！！哦，原来我不用呼吸。"/>		
+			 <li Rate="0.2" Story="[hename]啊，我指点你一二，你给我塑个形？"/>
+			 <li Rate="0.2" Story="Zzz..."/>		
+			 <li Rate="0.2" Story="[hename]你要加油修炼，我可不想输给隔壁那条裤子"/>	
+			 <li Rate="0.2" Story="[hename]自己想想，别人为什么做得到，你为什么做不到？"/>	
+			 <li Rate="0.2" Story="嘟嘟嘟嘟嘟~"/>		
+			 <li Rate="0.2" Story="滴滴滴滴滴~"/>				 
+			 <li Rate="0.2" Story="哒哒哒哒哒~"/>		
+			 <li Rate="0.2" Story="[hename]你觉得把我放到一个全是宝物的仓库里怎么样？"/>	
+			 <li Rate="0.2" Story="[hename]你是真的菜"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGBreak"><!--精怪破坏-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[name]突然有一种不祥的预感，忍不住挪了挪位置。"/>	
+			 <li Rate="0.2" Story="[name]突然一阵恶寒，很想离开这里……"/>	
+		</Events>
+	</Story>	
+	
+	<Story Name="JGRuin"><!--精怪破坏过程中-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="饶命啊！快住手！我再也不废话了！"/>	
+			 <li Rate="0.2" Story="二十年后又是一条好汉！别想让我求饶！"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGMoveSelf"><!--放置精怪-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="你要把我放到哪里去啊？"/>	
+			 <li Rate="0.2" Story="莫挨我，我不要换地方。"/>	
+			 <li Rate="0.2" Story="又要去新地方了？勉强期待一下……"/>	
+			 <li Rate="0.2" Story="这是又要去哪儿？别老换来换去的行不……"/>	
+			 <li Rate="0.2" Story="我其实无所谓，但是把东西搬来搬去对风水不好……"/>	
+			 <li Rate="0.2" Story="我要大仓库！"/>	
+		</Events>
+	</Story>	
+	
+	
+	<Story Name="JGBuildingUse"><!--建筑精怪使用-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="技术不行呀，小伙子！"/>	
+			 <li Rate="0.2" Story="能不能快点，看你干活我都替你着急！"/>	
+			 <li Rate="0.2" Story="就这水平还好意思来用我！我要是长了手，早就搞完了！"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGPlantHarvest"><!--植物精怪收获-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[hename]，哎哎，给我留几个啊！"/>	
+			 <li Rate="0.2" Story="小心点，别碰坏喽！"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGInteractive"><!--精怪互动过程-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="嗨！[hename]，你在对我做什么！？？"/>	
+			 <li Rate="0.2" Story="能顺手帮我挠挠痒么？"/>	
+			 <li Rate="0.2" Story="你长得可真丑！"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGInjured"><!--精怪被攻击-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="杀人啦，救命啊！"/>	
+			 <li Rate="0.2" Story="饶命啊英雄，我以后再也不多嘴了！"/>	
+			 <li Rate="0.2" Story="饶命啊！快住手！我再也不废话了！"/>	
+			 <li Rate="0.2" Story="二十年后又是一条好汉！别想让我求饶！"/>	
+			 <li Rate="0.2" Story="你没吃饭嘛？这么弱！我要是你就会马上停手，不在这儿丢人现眼了！"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="JGTalkToNpc"><!--精怪和周围的角色互动-->
+		<Rate>1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[hename]，别走啊，陪我聊聊天啊！"/>	
+			 <li Rate="0.2" Story="[hename]，你这么着急是干嘛去啊，放慢脚步，看看你周围的世界。"/>	
+			 <li Rate="0.2" Story="[hename]，别忙活了，你那么菜，门派里少你一个不少。"/>	
+			 <li Rate="0.2" Story="[hename]，来带我出去兜兜风啊！"/>	
+			 <li Rate="0.2" Story="[hename]快看我！"/>		
+			 <li Rate="0.2" Story="[hename]！过来！"/>
+			 <li Rate="0.2" Story="[hename]啊，你天天这么忙，掌门给你发灵石没？"/>		
+			 <li Rate="0.2" Story="[hename]，左脚右脚一二一"/>	
+			 <li Rate="0.2" Story="[hename]快跑，你后面有寂寞！"/>	
+		</Events>
+	</Story>
+	
+</List></NpcStories>

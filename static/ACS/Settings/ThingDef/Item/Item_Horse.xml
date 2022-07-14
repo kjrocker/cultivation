@@ -1,0 +1,360 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_HorseBase" Parent="EquipmentBase">	
+		<ThingName></ThingName>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_LingQi01</TexPath>	
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>9</Beauty>
+		<Rate>1</Rate>
+		<ElementKind>None</ElementKind>	
+		<IllustratedHandLabel>Equip</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Item Lable="Horse">			
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>卷,图,契</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft2</li>
+			</PhysicalLables>
+			<NotRandom>1</NotRandom>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<Equip>
+				
+			<!--<HorseData>
+				<Mod>Mod/Npc/Panda/Base</Mod>
+				<RideBip>Bip001 Spine1</RideBip>
+				<Scale>1</Scale>
+				<OffsetX>0</OffsetX>
+				<OffsetY>-0.32</OffsetY>
+				<OffsetZ>0</OffsetZ>
+				<HRate>3</HRate>
+			</HorseData>-->
+				<HorseData>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Rabbit" Parent="Item_HorseBase">	
+		<ThingName>灵契:兔</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<!-- <li NeedLogicLevel="5" modifier="FeatureModifier_DongShiZhang1" />
+					<li name="NpcFight_BaseHitChance" addv="1" NeedLogicLevel="5" ValueScaleType="1" />
+					<li name="MaxAge" addv="99999" NeedLogicLevel="13" ValueScaleType="0" /> -->
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Rabbit_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYRabbit</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Chicken" Parent="Item_HorseBase">	
+		<ThingName>灵契:雉</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Chicken_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYChicken</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Wolf" Parent="Item_HorseBase">	
+		<ThingName>灵契:狼</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Wolf_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYWolf</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Snake" Parent="Item_HorseBase">	
+		<ThingName>灵契:蛇</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Snake_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYSnake</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Boar" Parent="Item_HorseBase">	
+		<ThingName>灵契:豕</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Boar_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYBoar</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Bear" Parent="Item_HorseBase">	
+		<ThingName>灵契:熊</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Bear_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYBear</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Frog" Parent="Item_HorseBase">	
+		<ThingName>灵契:蛙</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Frog_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYFrog</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Turtle" Parent="Item_HorseBase">	
+		<ThingName>灵契:龟</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Turtle_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYTurtle</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Cat" Parent="Item_HorseBase">	
+		<ThingName>灵契:猫</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Cat_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYCat</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Cattle" Parent="Item_HorseBase">	
+		<ThingName>灵契:牛</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Cattle_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYCattle</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromJY_Tiger" Parent="Item_HorseBase">	
+		<ThingName>灵契:虎</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="Modifier_Horse_All_7" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="Modifier_Horse_Tiger_10" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>JYTiger</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromLuShu" Parent="Item_HorseBase">	
+		<ThingName>灵契:鹿蜀</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li modifier="Modifier_Horse_LuShu_0" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>Lushu</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HorseFromFei" Parent="Item_HorseBase">	
+		<ThingName>灵契:蜚</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<Equip>
+				<EquptData>
+					<li modifier="Modifier_Horse_All_0" ValueScaleType="1"/>
+					<li modifier="Modifier_Horse_Fei_0" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>Fei</FromRace>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+</List></ThingDefs>

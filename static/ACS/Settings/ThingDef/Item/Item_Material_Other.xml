@@ -1,0 +1,263 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Other_BingCanSi">
+	<ThingName>冰蚕丝</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft2</li>
+			<li>Elastic</li>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>冰蚕丝</NamePrefix>
+			<RateWhenBeMain>9</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_BuZhiMing">
+	<ThingName>不知名材料</ThingName>
+	<Rate>5</Rate>
+	<ElementKind>Jin</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix></NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_JinJing">
+	<ThingName>先天庚辛金精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Jin</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_AttackLow</li>
+			<li>GreatThing_Fly</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天金精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Other_MuJing">
+	<ThingName>先天甲乙木精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Mu</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_AttackLow</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天木精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Other_ShuiJing">
+	<ThingName>先天壬癸水精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_Rot</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天水精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Other_HuoJing">
+	<ThingName>先天丙丁火精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_AttackLow</li>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天火精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Other_TuJing">
+	<ThingName>先天戊己土精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_AttackLow</li>
+			<li>GreatThing_Knock</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天土精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_NoneJing">
+	<ThingName>先天元精</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>GreatThing_AttackLow</li>
+			<li>GreatThing_Knock</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>先天元精</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<!--征伐用-->
+	<ThingDef Type="Item" Name="Item_Other_LarkPerk">
+	<ThingName>雀喙</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>LarkPerk</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>雀喙</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_BuffaloHorn">
+	<ThingName>蛮牛角</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>BuffaloHorn</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>蛮牛角</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_LionFang">
+	<ThingName>豹齿</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>LionFang</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>豹齿</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_TortoiseShell">
+	<ThingName>甲壳</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>TortoiseShell</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>甲壳</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_DeerFeet">
+	<ThingName>麋踵</ThingName>
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>DeerFeet</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>麋踵</NamePrefix>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_SPStuffCategories_1">
+	<ThingName>未知</ThingName>
+	<Rate>5</Rate>
+	<ElementKind>None</ElementKind>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Item Lable="SPStuffCategories">
+		<NotRandom>1</NotRandom>
+		<BeMaterial>
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<ClothesColorID>9</ClothesColorID>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix></NamePrefix>
+			
+			<ColorWhenBeMain>FFFFFFFF</ColorWhenBeMain>
+			
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>0</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>0</TemperatureMinAddWhenBeMain>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

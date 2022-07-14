@@ -1,0 +1,152 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="Boss_Xiongfeng" Type="Normal">
+		<DisplayName>凶凤</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_CANTBEMAGIC</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="15000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="600"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="4"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="25"/>
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+			
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.5"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="1.2"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.2"/>		
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="-0.2"/>		
+		</Properties>
+		<MapProperties>
+			<li Name="CloseFireRain" Value="1"/><!--关闭自动灭火的雨-->
+		</MapProperties>
+		<EffectBind>			
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin02 Bone026+Bone026(mirrored)" Bip="Bone026"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin02 Bone026+Bone026(mirrored)" Bip="Bone026(mirrored)"/>		
+		</EffectBind>
+	</Modifier> 
+	
+	
+	<Modifier Name="Boss_XiongfengFight" Type="Normal">
+		<DisplayName>凶凤</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="25000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="800"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="800"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="200"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1000"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Boss_Xiongfeng_Part" Type="Normal">
+		<DisplayName>凶凤部位</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="25"/>
+			
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Xiongfeng_huoling" Type="Normal">
+		<DisplayName>火灵之力</DisplayName>
+		<Desc>凶凤聚集火灵之力，到达100层会释放烈焰之羽，并进入真焱形态。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+
+
+	<Modifier Name="Boss_Xiongfeng_Huofeng" Type="Normal">
+		<DisplayName>真焱形态</DisplayName>
+		<Desc>真焱形态会持续消耗火灵，结束时会回收依然存在的火羽并恢复灵气。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>		
+		<LuaClassName>modifier_fenghuang_huofeng</LuaClassName>
+		<MaterialDatas>
+			<li Name="_RimPower" Value="1.8"/>
+			<li Name="_RimFlash" Value="5"/>
+		</MaterialDatas>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="300"/> 
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="-1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="400"/>
+		</Properties>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018 1" Bip="Bone018"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018(mirrored) 1" Bip="Bone018(mirrored)"/>
+			
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_lyzy02-2  Bip001 Pelvis" Bip="Bip001 Pelvis"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_huofeng02 Bip001 Spine" Bip="Bip001 Spine"/>
+			
+			<li Path="Effect/gsq/Prefab/feng/fx_huofeng01  Bone026" Bip="Bone026"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_huofeng01  Bone026(mirrored)" Bip="Bone026(mirrored)"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_eyes" Bip="bone_eyeR"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_eyes" Bip="bone_eyeL"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Xiongfeng_rongjin" Type="Normal"><!--熔断 挂在对象身上的-->
+		<DisplayName>熔断</DisplayName>
+		<Desc>一段时间之后将造成伤害，非金属性修行者只受到三分之一的伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_fenghuang_rongjin</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Aura/SpinningAura/SpinningFire"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Xiongfeng_yishang" Type="Normal"><!--易伤-->
+		<DisplayName>易伤</DisplayName>
+		<Desc>凶凤正处于易伤状态。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Xiongfeng_taiyangzhiyan" Type="Normal">
+		<DisplayName>太阳之眼</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="1"/>		
+
+			<li Name="NpcFight_ShieldConversionRate" AddV="15"/>			
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

@@ -1,0 +1,112 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="BuildingBase">
+	<TexPath></TexPath>
+	<ThingName></ThingName>
+	<Desc>BuildingBase</Desc>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<BlockMissile>1</BlockMissile>
+	<Beauty>1</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>500</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<VisionRadius>5</VisionRadius>
+	<ColliderKind>NoPass</ColliderKind>
+	
+	<ElementKind>None</ElementKind>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+	<Building>
+		<BuildMode>Single</BuildMode>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		
+		<LeaveResourcesWhenKilled>1</LeaveResourcesWhenKilled>
+		<RemovePriceFactor>0.5</RemovePriceFactor>
+		<BePackage>0</BePackage>
+		
+		<IsVirtualBuilding>0</IsVirtualBuilding>
+		
+		<FloorDefName></FloorDefName>
+		<RestEffectiveness>0</RestEffectiveness>
+		
+		<SelectProduceStuff>1</SelectProduceStuff>
+		
+		<!--
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Plant"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<Duration>0.05</Duration>
+			<DriveJustProdece>0</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>1</RateMax>
+		</Drive>
+		
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Metal"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+		</BeMade>
+		-->
+	</Building>
+	
+	<!--
+	<Heat>
+		<Value>0</Value>
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Heat>
+	-->
+	
+	<!--
+	<Light>
+		<Value>0</Value>
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Light>
+	-->
+<!--	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>-->
+	
+	</ThingDef>	
+</List></ThingDefs>

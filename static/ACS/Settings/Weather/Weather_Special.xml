@@ -1,0 +1,839 @@
+﻿<Weathers><List>
+	<!--系统天气-->
+	<!-- 特殊天气type占位
+	结界类天气type 99
+	 100 凶凰炎热
+	 101 洞穴
+	 -->
+	 
+	<Weather Name="LingUpWave_Sp">
+		<DisplayName>灵气狂潮</DisplayName>
+		<StoryDesc>灵气爆发中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<ClassName></ClassName>
+		<Modifier>Weather_LingUpWave</Modifier>
+		<DurationMin>14</DurationMin>
+		<DurationMax>14</DurationMax>
+		<!--<SunColor>663333FF</SunColor>			-->
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="0"/>	
+			<li Name="LingAddtionAddV" Value="300"/>
+		</MapEffect>
+		<Event>1001</Event>
+	</Weather>
+	
+	<Weather Name="FireRain"><!--灭火用的-->
+		<Icon>res/Sprs/ui/icon_xiaoyu01</Icon>
+		<DisplayName>中雨</DisplayName>
+		<Kind>Type1</Kind>
+		<DurationMin>0.1</DurationMin>
+		<DurationMax>0.2</DurationMax>
+		<SunColor>588BA900</SunColor>		
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.3</ShowWeight>		
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-2"/>
+			<li Name="LightAddP" Value="-0.4"/>
+			<li Name="TempAddV" Value="-5"/>
+			<li Name="ShuiAddP" Value="3"/>	
+		</MapEffect>
+	</Weather>
+
+	<Weather Name="Rainstorm_Teach"><!--教学专用天气-->
+		<DisplayName>暴雨</DisplayName>
+		<StoryDesc>暴雨如瀑中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Rainstorm</Modifier>
+		<DurationMin>10</DurationMin>
+		<DurationMax>10</DurationMax>
+<!--		<SunColor>0F2747FF</SunColor>	-->	
+	
+		<Thunder>0.6</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.6</ShowWeight>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="LightAddP" Value="-0.6"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="Rainstorm_Teach2"><!--教学专用天气-->
+		<DisplayName>暴雨</DisplayName>
+		<StoryDesc>暴雨如瀑中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<DurationMin>10</DurationMin>
+		<DurationMax>10</DurationMax>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="LightAddP" Value="-0.6"/>
+		</MapEffect>
+	</Weather>
+
+	<Weather Name="LightningStorm_Hack"><!--真仙惩戒-->
+		<DisplayName>雷暴</DisplayName>
+		<StoryDesc>逆转因果，有干天和。</StoryDesc>
+		<Icon>res/Sprs/ui/icon_leibao01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_LightningStorm</Modifier>
+		<DurationMin>9999</DurationMin>
+		<DurationMax>9999</DurationMax>
+		<SunColor>2D2A26C6</SunColor>	
+	
+		<Thunder>1</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.8</ShowWeight>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="0"/>
+			<li Name="JinAddP" Value="6"/>
+			
+			<li Name="JinBroken" Value="0.04"/>
+			<li Name="MuBroken" Value="-0.08"/>
+			<li Name="ShuiBroken" Value="0.08"/>
+		</MapEffect>
+	</Weather>
+
+<!-- 灵植天气 -->
+
+<Weather Name="Rainstorm_AllSeason">
+		<DisplayName>暴雨</DisplayName>
+		<StoryDesc>暴雨如瀑中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Rainstorm</Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+		<SunColor>26589EFF</SunColor>		
+	
+		<Thunder>0.6</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.5</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-0.5"/>
+			<li Name="LightAddP" Value="-0.3"/>
+			<li Name="TempAddV" Value="-4"/>
+			<li Name="ShuiAddP" Value="6"/>
+			<li Name="FertilityAddP" Value="-0.5"/>
+			
+			<li Name="MuBroken" Value="0.08"/>
+			<li Name="ShuiBroken" Value="0.04"/>
+			<li Name="HuoBroken" Value="-0.08"/>
+		</MapEffect>
+	</Weather>
+	<Weather Name="Fohn_AllSeason">
+		<DisplayName>焚风</DisplayName>
+		<StoryDesc>焚风炽烈中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_fenfeng01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Fohn</Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+		<SunColor>FFAEAEFF</SunColor>			
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="0.5"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="8"/>
+			<li Name="HuoAddP" Value="6"/>
+			<li Name="FertilityAddP" Value="-0.3"/>
+			
+			<li Name="JinBroken" Value="-0.08"/>
+			<li Name="HuoBroken" Value="0.04"/>
+			<li Name="TuBroken" Value="0.08"/>
+		</MapEffect>
+	</Weather>
+	<Weather Name="DustStorm_AllSeason">
+		<DisplayName>尘暴</DisplayName>
+		<StoryDesc>漫天黄沙中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_chenbao01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_DustStorm</Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+		<SunColor>7E853EFF</SunColor>		
+	
+		<Thunder>0</Thunder>
+		<ShowKind>SandMist</ShowKind>
+		<ShowWeight>0.03</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.5"/>
+			<li Name="TempAddV" Value="0"/>
+			<li Name="TuAddP" Value="6"/>
+			<li Name="FertilityAddP" Value="-0.3"/>	
+			
+			<li Name="JinBroken" Value="0.08"/>
+			<li Name="ShuiBroken" Value="-0.08"/>
+			<li Name="TuBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	<Weather Name="Miasma_AllSeason">
+		<DisplayName>瘴气</DisplayName>
+		<StoryDesc>瘴气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_wenqi01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Miasma</Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+		<SunColor>FF87F2FF</SunColor>		
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.2"/>
+			<li Name="TempAddV" Value="0"/>
+			<li Name="MuAddP" Value="6"/>
+			
+			<li Name="MuBroken" Value="0.04"/>
+			<li Name="HuoBroken" Value="0.08"/>
+			<li Name="TuBroken" Value="-0.08"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="LightningStorm_AllSeason">
+		<DisplayName>雷暴</DisplayName>
+		<StoryDesc>雷暴轰鸣中,电蛇狂舞中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_leibao01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_LightningStorm</Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+		<SunColor>2D2A26C6</SunColor>	
+	
+		<Thunder>1</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="0"/>
+			<li Name="TempAddV" Value="0"/>
+			<li Name="JinAddP" Value="6"/>
+			
+			<li Name="JinBroken" Value="0.04"/>
+			<li Name="MuBroken" Value="-0.08"/>
+			<li Name="ShuiBroken" Value="0.08"/>
+		</MapEffect>
+	</Weather>
+	
+	
+	
+	<Weather Name="JinLingMiMan">
+		<DisplayName>金灵弥漫</DisplayName>
+		<StoryDesc>金属性灵气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="JinAddP" Value="6"/>
+			
+			<li Name="MuBroken" Value="-0.08"/>
+			<li Name="ShuiBroken" Value="0.08"/>
+			<li Name="JinBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="MuLingMiMan">
+		<DisplayName>木灵弥漫</DisplayName>
+		<StoryDesc>木属性灵气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>		
+	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="MuAddP" Value="6"/>
+			
+			<li Name="TuBroken" Value="-0.08"/>
+			<li Name="HuoBroken" Value="0.08"/>
+			<li Name="MuBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="ShuiLingMiMan">
+		<DisplayName>水灵弥漫</DisplayName>
+		<StoryDesc>水属性灵气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>	
+	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="ShuiAddP" Value="6"/>
+			
+			<li Name="HuoBroken" Value="-0.08"/>
+			<li Name="MuBroken" Value="0.08"/>
+			<li Name="ShuiBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="HuoLingMiMan">
+		<DisplayName>火灵弥漫</DisplayName>
+		<StoryDesc>火属性灵气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>
+	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="HuoAddP" Value="6"/>
+			
+			<li Name="JinBroken" Value="-0.08"/>
+			<li Name="TuBroken" Value="0.08"/>
+			<li Name="HuoBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	
+	<Weather Name="TuLingMiMan">
+		<DisplayName>土灵弥漫</DisplayName>
+		<StoryDesc>土属性灵气弥漫中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>0.3</DurationMin>
+		<DurationMax>0.8</DurationMax>	
+	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="TuAddP" Value="6"/>
+			
+			<li Name="ShuiBroken" Value="-0.08"/>
+			<li Name="JinBroken" Value="0.08"/>
+			<li Name="TuBroken" Value="0.04"/>
+		</MapEffect>
+		
+	</Weather>
+	<Weather Name="LingUpWave_Big">
+		<DisplayName>灵气澎湃</DisplayName>
+		<StoryDesc>灵气澎湃中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type4</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_LingUpWave</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>3</DurationMax>
+		<!--<SunColor>663333FF</SunColor>			-->
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="LingAddtionAddV" Value="400"/>
+		</MapEffect>
+		<Event>1001</Event>
+	</Weather>
+	
+	<Weather Name="LingRarefiedWave_Big">
+		<DisplayName>灵气枯竭</DisplayName>
+		<StoryDesc>灵气枯竭中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type4</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_LingRarefiedWave</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>3</DurationMax>
+		<!--<SunColor>663333FF</SunColor>			-->
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="LingAddtionAddV" Value="-800"/>
+		</MapEffect>
+	</Weather>
+	
+	
+	
+	<!-- 凶凰前奏事件相关 天气 -->
+	<Weather Name="Weather_Boss_Drought">
+		<DisplayName>异常的高温</DisplayName>
+		<StoryDesc>在异常的高温中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_ganhan01</Icon>
+		<Kind>Type100</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Drought</Modifier>
+		<DurationMin>9</DurationMin>
+		<DurationMax>12</DurationMax>
+		<SunColor>D8BF6FFF</SunColor>		
+		<CantDispel>1</CantDispel>
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="TempAddV" Value="15"/>
+			<li Name="HuoAddP" Value="4"/>
+			
+			<li Name="JinBroken" Value="-0.08"/>
+			<li Name="HuoBroken" Value="0.04"/>
+			<li Name="TuBroken" Value="0.08"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="Weather_Boss_HighTemp">
+		<DisplayName>加剧的干旱</DisplayName>
+		<StoryDesc>似乎越来越严重的干旱中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_ganhan01</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_Drought</Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+		<SunColor>D8BF6FFF</SunColor>		
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="0.75"/>
+			<li Name="LightAddP" Value="0.3"/>
+			<li Name="FertilityAddP" Value="-1"/>
+			<li Name="HuoAddP" Value="5"/>
+			
+			<li Name="JinBroken" Value="-0.1"/>
+			<li Name="HuoBroken" Value="0.05"/>
+			<li Name="TuBroken" Value="0.1"/>
+			<li Name="TempAddV" SpeedPerDay="0.5"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="DimCave">
+		<DisplayName>洞穴</DisplayName>
+		<StoryDesc>昏暗的洞穴</StoryDesc>
+		<Icon>res/Sprs/ui/w9</Icon>
+		<Kind>Type101</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+		<SunColor>001D29FF</SunColor>			
+	
+		<Thunder>0</Thunder>
+		<ShowKind>None</ShowKind>
+		<ShowWeight>0</ShowWeight>
+		<LockHour>23</LockHour>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.6"/>
+			
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="ForestRain">
+		<DisplayName>下雨</DisplayName>
+		<StoryDesc>雨林中正在下雨</StoryDesc>
+		<Icon>res/Sprs/ui/icon_xiaoyu01</Icon>
+		<Kind>Type101</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+		<SunColor>001D29FF</SunColor>
+		
+		<Thunder>0</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.3</ShowWeight>
+		<LockHour>23</LockHour>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.4"/>
+			
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="LightSnow_Fov">
+		<DisplayName>小雪</DisplayName>
+		<StoryDesc>小雪纷纷,银丝漫天,细雪飘扬</StoryDesc>
+		<Icon>res/Sprs/ui/icon_xiaoxue01</Icon>
+		<TempMax>5</TempMax>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>Weather_LightSnow</Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+<!--		<SunColor>73C9DF00</SunColor>		-->	
+	
+		<Thunder>0</Thunder>
+		<ShowKind>Snow</ShowKind>
+		<ShowWeight>0.3</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>
+		
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-1.5"/>
+			<li Name="LightAddP" Value="-0.3"/>
+			<li Name="TempAddV" Value="-3"/>
+			<li Name="FertilityAddP" Value="0.3"/>
+			<li Name="ShuiAddP" Value="2"/>	
+			
+			<li Name="MuBroken" Value="0.04"/>
+			<li Name="ShuiBroken" Value="0.02"/>
+			<li Name="HuoBroken" Value="-0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="SunSet">
+		<DisplayName>晚霞</DisplayName>
+		<StoryDesc>晚霞</StoryDesc>
+		<Icon>res/Sprs/ui/icon_kujie01</Icon>
+		<Kind>Type101</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+		<SunColor>D8582EFF</SunColor>
+		
+		<ShowWeight>0.3</ShowWeight>		
+		<Thunder>0</Thunder>
+		<LockHour>18</LockHour>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.4"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="DustPlace">
+		<DisplayName>尘暴</DisplayName>
+		<StoryDesc>漫天黄沙中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_chenbao01</Icon>
+		<Kind>Type101</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+		<SunColor>7E853EFF</SunColor>		
+	
+		<Thunder>0</Thunder>
+		<ShowKind>SandMist</ShowKind>
+		<ShowWeight>0.03</ShowWeight>
+		<LockHour>18</LockHour>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="1"/>
+			<li Name="LightAddP" Value="-0.5"/>
+			<li Name="TempAddV" Value="0"/>
+			<li Name="TuAddP" Value="6"/>
+			
+			<li Name="JinBroken" Value="0.08"/>
+			<li Name="ShuiBroken" Value="-0.08"/>
+			<li Name="TuBroken" Value="0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="EverSnow">
+		<DisplayName>小雪</DisplayName>
+		<StoryDesc>小雪纷纷,银丝漫天,细雪飘扬</StoryDesc>
+		<Icon>res/Sprs/ui/icon_xiaoxue01</Icon>
+		<Kind>Type101</Kind>
+		<ClassName></ClassName>
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+<!--		<SunColor>73C9DF00</SunColor>		-->	
+	
+		<Thunder>0</Thunder>
+		<ShowKind>Snow</ShowKind>
+		<ShowWeight>0.3</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-1.5"/>
+			<li Name="LightAddP" Value="-0.3"/>
+			<li Name="TempAddV" Value="-3"/>
+			<li Name="FertilityAddP" Value="0.3"/>
+			<li Name="ShuiAddP" Value="2"/>	
+			
+			<li Name="MuBroken" Value="0.04"/>
+			<li Name="ShuiBroken" Value="0.02"/>
+			<li Name="HuoBroken" Value="-0.04"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="Weather_Magic_ZhenShuiJieJie">
+		<DisplayName>九阴真水界</DisplayName>
+		<StoryDesc>九阴真水界中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type99</Kind>
+		<ClassName></ClassName>
+		<Modifier>Modifier_Weather_Magic_ZhenShuiJieJie</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>1</DurationMax>
+		<SunColor>26589EFF</SunColor>	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="TempAddV" Value="-100"/>
+			<li Name="ShuiAddP" Value="6"/>
+			
+			<li Name="MuBroken" Value="0.08"/>
+			<li Name="ShuiBroken" Value="0.04"/>
+			<li Name="HuoBroken" Value="-0.08"/>
+		</MapEffect>
+	</Weather>
+	
+	
+	<Weather Name="Weather_Magic_BeiDouJianJie">
+		<DisplayName>北斗剑界</DisplayName>
+		<StoryDesc>北斗剑界中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type99</Kind>
+		<ClassName></ClassName>
+		<Modifier>Modifier_Weather_Magic_BeiDouJianJie</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>1</DurationMax>
+		<SunColor>26589EFF</SunColor>	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Weather>
+	
+	<Weather Name="Weather_Magic_ZhenHuoJieJie">
+		<DisplayName>九阳神火界</DisplayName>
+		<StoryDesc>九阳神火界中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type99</Kind>
+		<ClassName></ClassName>
+		<Modifier>Modifier_Weather_Magic_ZhenHuoJieJie</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>1</DurationMax>
+		<SunColor>26589EFF</SunColor>	
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>	
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<MapEffect>
+			<li Name="TempAddV" Value="100"/>
+			<li Name="HuoAddP" Value="6"/>
+			
+			<li Name="TuBroken" Value="0.08"/>
+			<li Name="HuoBroken" Value="0.04"/>
+			<li Name="JinBroken" Value="-0.08"/>
+		</MapEffect>
+	</Weather>
+	
+	<Weather Name="System_Qiankunjie"><!--小乾坤界-->
+		<DisplayName>??</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/w5</Icon>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<SunColor>417FB200</SunColor>	
+		<Modifier></Modifier>
+		<DurationMin>99999</DurationMin>
+		<DurationMax>99999</DurationMax>
+<!--		<SunColor>0F2747FF</SunColor>	-->	
+	
+		<Thunder>0</Thunder>	
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Weather>
+	
+</List></Weathers>

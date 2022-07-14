@@ -1,0 +1,611 @@
+<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="MeatBase" Parent="MaterialBase">
+	
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+		<Tag Name="Tame" Level="25"/>
+		<Tag Name="TameMeat" Level="1"/>
+	</Tags>	
+	
+	<Frags>	
+		<li Frag="Fellows" />
+	</Frags>	
+	
+	<ThingName></ThingName>
+	<TexPath>Item/Meat</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>-2</Beauty>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>1</Rate>	
+	<ElementKind>Tu</ElementKind>
+	<Flammability>
+		<Flammability>0.3</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Meat">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>糜,幕,陀</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.3</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.012</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.3</Absorption>
+		<Accommodate>2.5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BoarMeat" Parent="MeatBase">
+	<ThingName>野猪肉</ThingName>
+	<TexPath>res\Sprs\object\object_wildboar</TexPath>
+	<Desc>野猪肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FrogMeat" Parent="MeatBase">
+	<ThingName>蛙肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw003</TexPath>
+	<Desc>蛙肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TurtleMeat" Parent="MeatBase">
+	<ThingName>龟肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw003</TexPath>
+	<Desc>龟肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BearMeat" Parent="MeatBase">
+	<ThingName>熊肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw001</TexPath>
+	<Desc>熊肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Beef" Parent="MeatBase">
+	<ThingName>牛肉</ThingName>
+	<TexPath>res\Sprs\object\object_beef</TexPath>
+	<Desc>牛肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_RabbitMeat" Parent="MeatBase">
+	<ThingName>兔肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw003</TexPath>
+	<Desc>兔肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ChickenMeat" Parent="MeatBase">
+	<ThingName>鸡肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw003</TexPath>
+	<Desc>鸡肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_WolfMeat" Parent="MeatBase">
+	<ThingName>狼肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw002</TexPath>
+	<Desc>狼肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>70</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_FishMeat" Parent="MeatBase">
+	<ThingName>鱼肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw002</TexPath>
+	<Desc>鱼肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>70</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SnakeMeat" Parent="MeatBase">
+	<ThingName>蛇肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw004</TexPath>
+	<Desc>蛇肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CatMeat" Parent="MeatBase">
+	<ThingName>猫肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw004</TexPath>
+	<Desc>猫肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_TigerMeat" Parent="MeatBase">
+	<ThingName>虎肉</ThingName>
+	<TexPath>res\Sprs\object\object_raw004</TexPath>
+	<Desc>虎肉。</Desc>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>	
+	
+	<Item>
+		 <Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>35</Nutrition>
+		 </Food>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ChickenEgg" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_jidan01</TexPath>
+	<ThingName>鸡蛋</ThingName>
+	<Desc>一颗鸡蛋。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+	</Tags>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	<EggCondition>
+		<TempMin>37</TempMin>
+		<TempMax>38</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>999</LingMax>
+		<LightMin>0</LightMin>
+		<LightMax>999</LightMax>
+		<ElementKind>None</ElementKind>
+	</EggCondition>
+	<Item>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>2</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>35</Nutrition>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SnakeEgg" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_sheluan01</TexPath>
+	<ThingName>蛇蛋</ThingName>
+	<Desc>一颗蛇蛋。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+	</Tags>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<EggCondition>
+		<TempMin>18</TempMin>
+		<TempMax>23</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>999</LingMax>
+		<LightMin>0</LightMin>
+		<LightMax>999</LightMax>
+		<ElementKind>None</ElementKind>
+	</EggCondition>
+	
+	<Item>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>2</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>35</Nutrition>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TurtleEgg" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_guidan01</TexPath>
+	<ThingName>龟蛋</ThingName>
+	<Desc>一颗龟蛋。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+	</Tags>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	<EggCondition>
+		<TempMin>20</TempMin>
+		<TempMax>32</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>999</LingMax>
+		<LightMin>0</LightMin>
+		<LightMax>999</LightMax>
+		<ElementKind>None</ElementKind>
+	</EggCondition>
+	
+	<Item>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>2</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>35</Nutrition>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LongEgg" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_jiaolongdan01</TexPath>
+	<ThingName>蛟龙的卵</ThingName>
+	<Tags>
+		<Tag Name="Food" Level="-20"/>
+		<Tag Name="DiscipleFood" Level="-20"/>
+		<Tag Name="Item_LongEgg" Level="1"/>
+	</Tags>	
+	<Desc>还未孵化的蛟龙卵，其中明显有生命孕育的迹象。要孵化必须在低于-200度，灵气极其浓郁，十分利于水属性之地。</Desc>
+	<Rate>12</Rate>	
+	<MaxStack>1</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<EggCondition>
+		<TempMin>-999</TempMin>
+		<TempMax>-200</TempMax>
+		<LingMin>800</LingMin>
+		<LingMax>99999</LingMax>
+		<LightMin>0</LightMin>
+		<LightMax>999</LightMax>
+		<ElementKind>Shui</ElementKind>
+		<ElementPower>1.5</ElementPower>
+	</EggCondition>
+	<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>150</Nutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FengEgg" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_fenghuangdan01</TexPath>
+	<ThingName>凤凰的卵</ThingName>
+	<Tags>
+		<Tag Name="Food" Level="-20"/>
+		<Tag Name="DiscipleFood" Level="-20"/>
+		<Tag Name="Item_FengEgg" Level="-20"/>
+	</Tags>	
+	<Desc>还未孵化的凤凰卵，其中明显有生命孕育的迹象。要孵化必须在高于300度，灵气极其浓郁，十分利于火属性之地。</Desc>
+	<Rate>12</Rate>	
+	<MaxStack>1</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	<EggCondition>
+		<TempMin>300</TempMin>
+		<TempMax>99999</TempMax>
+		<LingMin>800</LingMin>
+		<LingMax>99999</LingMax>
+		<LightMin>0</LightMin>
+		<LightMax>999</LightMax>
+		<ElementKind>Huo</ElementKind>
+		<ElementPower>1.5</ElementPower>
+	</EggCondition>
+	
+	<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>2</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>150</Nutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FengEggChange" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_fenghuangdan01</TexPath>
+	<Tags>
+		<Tag Name="Food" Level="0"/>
+		<Tag Name="DiscipleFood" Level="0"/>
+	</Tags>	
+	<ThingName>凤凰的卵</ThingName>
+	<ClassName>Fenghuangdan_juexing</ClassName>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Desc>正在觉醒...</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>12</Rate>	
+	<MaxStack>1</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>0</Nutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_JiaolongChange" Parent="MeatBase">
+	<TexPath>res\Sprs\object\object_jiaolongdan01</TexPath>
+	<Tags>
+		<Tag Name="Food" Level="0"/>
+		<Tag Name="DiscipleFood" Level="0"/>
+	</Tags>		
+	<ThingName>蛟龙的卵</ThingName>
+	<ClassName>Jiaolong_juexing</ClassName>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Desc>正在觉醒...</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>12</Rate>	
+	<MaxStack>1</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>蛋,珠,球,卵</FabaoSuffix>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>0</Nutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+	</Element>
+	</ThingDef>
+	
+</List></ThingDefs>

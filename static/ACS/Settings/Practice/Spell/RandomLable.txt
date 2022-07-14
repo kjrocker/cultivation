@@ -1,0 +1,59 @@
+Name	IsAddp	Level1	Level2	Level3	Level4	Desc
+属性名	是否为Addp	数值1	数值2	数值3	数值4	备注 无逻辑意义
+GlobalEfficiency	1	0.1	0.2	0.3	0.4	全局工作速度
+DrugProductSpeed	1	0.1	0.2	0.3	0.4	治疗速度
+TreatmentExpectQuality	1	0.1	0.2	0.3	0.4	治疗效果
+CookingSpeed	1	0.1	0.2	0.3	0.4	烹饪速度
+ButcherSpeed	1	0.1	0.2	0.3	0.4	屠宰速度
+ButcherYieldEfficiency	1	0.05	0.1	0.15	0.2	屠宰产量
+StoneWorkSpeed	1	0.1	0.2	0.3	0.4	石料加工速度
+ConstructionSpeed	1	0.1	0.2	0.3	0.4	建筑速度
+PlantWorkSpeed	1	0.1	0.2	0.3	0.4	种植速度
+PlantHarvestSpeed	1	0.1	0.2	0.3	0.4	收获速度
+PlantHarvestYieldEfficiency	1	0.05	0.1	0.15	0.2	收获产量
+MiningSpeed	1	0.1	0.2	0.3	0.4	采掘速度
+MiningYieldEfficiency	1	0.05	0.1	0.15	0.2	采掘产量
+MadeQualityAddValue	0	0.05	0.1	0.15	0.2	制作品质加值
+SmithingSpeed	1	0.1	0.2	0.3	0.4	锻造速度
+HandworkSpeed	1	0.1	0.2	0.3	0.4	手工速度
+TailoringSpeed	1	0.1	0.2	0.3	0.4	缝纫速度
+CuttingSpeed	1	0.1	0.2	0.3	0.4	割除速度
+DisasterFightingSpeed	1	0.1	0.2	0.3	0.4	救灾速度
+CleanSpeed	1	0.1	0.2	0.3	0.4	清洁速度
+BaseEmotionAddV		2	4	6	8	心情基础值
+MoveSpeed	1	0.1	0.2	0.3	0.4	移动速度
+ToleranceTMin		-5	-10	-15	-20	最低极限温度
+ToleranceTMax		10	20	30	40	最高极限温度
+RecoveryPower	1	0.1	0.2	0.3	0.4	自然恢复力
+PainTolerance	1	0.1	0.2	0.3	0.4	疼痛极限
+IntelligenceSkillEXPConstant	1	0.1	0.2	0.3	0.4	学习速度
+NightmareHappenPercent		0.02	0.04	0.06	0.08	噩梦发生几率
+NiceDreamHappenPercent		0.02	0.04	0.06	0.08	美梦发生几率
+FatigueConsumeConstant	1	-0.1	-0.2	-0.3	-0.4	精力消耗速度加成
+FatigueRecoveryConstant	1	0.1	0.2	0.3	0.4	精力补充加成
+NutritionConsumeConstant	1	-0.1	-0.2	-0.3	-0.4	食物消耗速度加成
+NutritionConsumeConstant	1	0.5	1	1.5	2	食物消耗速度加成
+NutritionRecoveryConstant	1	0.1	0.2	0.3	0.4	食物补充加成
+WaterConsumeConstant	1	-0.1	-0.2	-0.3	-0.4	饮水消耗速度加成
+WaterRecoveryConstant	1	0.1	0.2	0.3	0.4	饮水补充加成
+HappyConsumeConstant	1	-0.1	-0.2	-0.3	-0.4	娱乐消耗速度加成
+HappyRecoveryConstant	1	0.1	0.2	0.3	0.4	娱乐补充加成
+PracticeFoodConsumeConstant	1	0.1	0.2	0.3	0.4	精元炼化速度加成
+PracticeFoodRecoveryConstant	1	0.1	0.2	0.3	0.4	精元补充加成
+PotentialOfBasepracticeAddValue		0.1	0.2	0.3	0.5	潜力加值
+DeepPracticeSpeedSpecialCoefficient	1	0.15	0.3	0.45	0.6	修炼速度加成
+MindStateBaseValue		5	10	15	20	心境加值
+InspirationCoefficient	1	0.25	0.5	0.75	1	领悟发生几率
+FabaoMake_SpeedAddV		0.05	0.1	0.15	0.2	法宝炼制速度加值
+FabaoMake_SuccessRateAddV		0.1	0.15	0.2	0.25	法宝炼制成功率加值
+FabaoMake_LingInheritRateAddV		0.1	0.15	0.2	0.25	法宝炼制品阶加成
+FabaoMake_QualityAddV		0.025	0.05	0.075	0.1	法宝炼制品质加值
+FabaoMake_TwelveRateChance		0.005	0.01	0.015	0.02	神器炼成几率加值
+DanMake_SpeedAddV		0.05	0.1	0.15	0.2	丹药炼制速度加值
+DanMake_SuccessRateAddV		0.05	0.1	0.15	0.2	丹药炼制成功率加值
+DanMake_YieldAddP		0.1	0.15	0.2	0.25	丹药炼制产量加值
+PracticeRateAddPFromDan	1	0.1	0.15	0.2	0.25	瓶颈突破概率加成系数
+WorldMapFlySpeedAddP	0	0.2	0.4	0.6	0.8	历练飞行速度
+AbilityLvAddV		-2	-4	-6	-8	道行加值
+NpcFight_BaseHitChance		0.15	0.3	0.45	0.6	战斗命中
+NpcFight_BaseDodgeChance		0.1	0.15	0.2	0.25	战斗闪避

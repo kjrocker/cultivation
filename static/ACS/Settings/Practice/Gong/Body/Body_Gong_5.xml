@@ -1,0 +1,118 @@
+﻿<Gongs><List>
+	<Gong Name="Body_Gong_5">  
+		
+		<DisplayName>败灭邪体</DisplayName>
+		<Desc>古代有一部分炼体者认为此世为牢笼，而永夜这种天气正是牢笼之外投射进来的光。他们自永夜之中汲取出一种奇特的精华，并以此淬炼身体，认为最终会将肉体修成打破牢笼度过苦海的宝筏。这种炼体流派热衷于对永夜的崇拜，一度为世人所不容，被称为败灭邪教。而其根本大法也被称为《败灭邪体》。</Desc>
+		<SelectDesc>踏上体修之路意味着与精气神三者彻底合一，与灵气绝缘，无法使用任何玄妙之物，从此行走天地只凭肉身，确定要走上这条路么？</SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<ElementKind>None</ElementKind>
+		<GongKind>Body</GongKind>
+		<Hide>1</Hide>
+		<SuperParts>
+			<li>SuperPart_Gong_1_1</li>
+			<li>SuperPart_Gong_1_1_1</li>
+			<li>SuperPart_Gong_2_4</li>
+			<li>SuperPart_Gong_2_4_1</li>
+		</SuperParts>		
+		<QuenchingMethods>
+			<li>BPQuenchingMethods_1</li>
+			<li>BPQuenchingMethods_ReQuenching</li>
+		</QuenchingMethods>
+		<Magic>
+			<li>Magic_Body_Banyunqixue</li>
+		</Magic>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>淬体期</DisplayName>
+				<Desc></Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>血肉新生</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_1</AddModifier>
+						
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_1_1</li>
+						</QuenchingMethods>
+						
+						<SuperParts>
+							<li>SuperPart_Gong_5_1</li>
+							<li>SuperPart_Gong_5_1_1</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>洗髓期</DisplayName>
+				<Desc></Desc>
+				<Value>50000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>洗髓换骨</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_2</AddModifier>
+						
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_5</li>
+						</QuenchingMethods>
+						
+						<SuperParts>
+							<li>SuperPart_Gong_5_4</li>
+							<li>SuperPart_Gong_5_5</li>
+							<li>SuperPart_Gong_5_7</li>
+							<li>SuperPart_Gong_5_11</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>				
+		
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>脱胎期</DisplayName>
+				<Desc></Desc>
+				<Value>100000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>内外合一</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_3</AddModifier>
+						
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_6</li>
+						</QuenchingMethods>
+						
+						<SuperParts>
+							<li>SuperPart_Gong_5_2</li>
+							<li>SuperPart_Gong_5_3</li>
+							<li>SuperPart_Gong_5_6</li>
+							<li>SuperPart_Gong_5_8</li>
+							<li>SuperPart_Gong_5_9</li>
+							<li>SuperPart_Gong_5_10</li>
+						</SuperParts>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>混元期</DisplayName>
+				<Desc></Desc>
+				<Value>500000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>天刑</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>18000</NeckCountdown>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

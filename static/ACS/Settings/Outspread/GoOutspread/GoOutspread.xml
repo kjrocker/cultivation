@@ -1,0 +1,16 @@
+<Defs><List>
+	<Def Name="GoOutspread">	
+		<IntervalSec>300</IntervalSec>
+		<Stories>
+			<li>Outs1</li>
+			<li>Outs2</li>
+			<li>Outs3</li>
+		</Stories>
+	</Def>
+	<Def Name="LeaveOutspread">	
+		<IntervalSec>10</IntervalSec>
+		<Stories>
+			<li></li>
+		</Stories>
+	</Def>
+</List></Defs>

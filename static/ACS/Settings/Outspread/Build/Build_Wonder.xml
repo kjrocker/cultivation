@@ -1,0 +1,563 @@
+<Defs><List>
+	<Def Name="StarDustLake">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<Immortal>1</Immortal>
+		<DisplayName>落星潭</DisplayName>
+		<Desc>“八方水流经过人工挖掘汇聚到这里，又流向远处，可谓贯通了东西南北，晚上连银河都要插一脚。”----《六道杂记》</Desc>
+		<Effect>解锁收集天道政策</Effect>
+		<BuildDay>5</BuildDay>
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<UnlockPolicy>
+			<li>Policy_TianDaoShenDan</li>
+		</UnlockPolicy>
+		
+		<Icon>res/Sprs/outspread/extendmap_luoxingtan01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="XiuXianCollege">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Forest</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>大道院</DisplayName>
+		<Desc>“教育总要选择清净而偏远的地方，这样学生不读书就会极度无聊，想逃也逃不了。”----《六道杂记》</Desc>
+		<Effect>建设消耗-20%</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_dadaoyuan01</Icon>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<BuildCostReduce>20</BuildCostReduce>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="HugeToolCabin">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Mountain</Landform>
+		</BuildCondition>
+		<Immortal>1</Immortal>
+		<BuildDay>5</BuildDay>
+		<DisplayName>千机阁</DisplayName>
+		<Desc>“千机阁非寻常建筑，其各部司职，可为掌中物所不能。以其织衣，如千丝穿云。以其制械，如万刃削山。”----《万象录》</Desc>
+		<Effect>赠送两个傀儡。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_qianjige01</Icon>
+		
+		<FreePuppet>2</FreePuppet>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="CelestialCommercial">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Mountain</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>白云商会</DisplayName>
+		<Desc>“此商会位于群山之中，设有巨大阵法防止破坏，已达世间法极致，是各大仙家行商的根据地。为什么各大门派没有这种阵法就不得而知了。”----《六道杂记》</Desc>
+		<Effect>所有人物资打八折。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_baiyunshanghui01</Icon>
+
+		<BuyPriceReduce>20</BuyPriceReduce>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="GreenBrothel">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>绿楼坊</DisplayName>
+		<Desc>“坐落在湖上的绿楼坊凡人看起来只是高档的客栈，有修行的人则可以获得排除杂念的特殊服务，也许这也是修行吸引人的地方之一吧。”----《六道杂记》</Desc>
+		<Effect>前来历练可获得好心情。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_lvloufang01</Icon>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<Stories>
+			<li>OutSpread_GoodMood</li>
+		</Stories>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="AppTower">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>恩德塔</DisplayName>
+		<Desc>“为神建引渡之所，此大恩大德无以为报。”----《万象录》</Desc>
+		<Effect>所有神修的人+1神国区域。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_endeta01</Icon>
+		
+		<GodCityArea>1</GodCityArea>
+
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="RiverDam">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>江堰</DisplayName>
+		<Desc>想想任何一个巨大的建筑背后到底要多少个厚脸皮的暴君？神仙就不能帮帮忙？”----《六道杂记》</Desc>
+		<Effect>所有神修的人+1神国区域。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_jiangyan01</Icon>
+		
+		<GodCityArea>1</GodCityArea>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="MountTemple">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Mountain</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>镇山楼</DisplayName>
+		<Desc>“千里之堤，溃于蚁穴。万丈峰峦，合其细微可治其松软，虽志高眼明手巧不能至也。”----《万象录》</Desc>
+		<Effect>所有神修的人+1神国区域。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_zhenshanmiao01</Icon>
+		
+		<GodCityArea>1</GodCityArea>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="SanQingTemple">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+			<Landform>Mountain</Landform>
+			<Landform>Forest</Landform>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>三清殿</DisplayName>
+		<Desc>“所有人都想要一个供奉三清的地方。但在凡间修这东西可真是吃力不讨好。”----《六道杂记》</Desc>
+		<Effect>所有门派加一个人情。</Effect>
+		
+		<Icon>res/Sprs/outspread/extendmap_sanqingdian01</Icon>
+		
+		<FriendPoint>1</FriendPoint>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="TreeGrave">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Forest</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>葬木海</DisplayName>
+		<Desc>“在南疆，人们相信树木像动物一样，不处理尸体就容易招来怨恨。死去的古树被收集起来做成树的样子，好像可以收集万物的灵。”----《万象录》</Desc>
+		<Effect>解锁收集天道政策。</Effect>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<UnlockPolicy>
+			<li>Policy_TianDaoShenDan</li>
+		</UnlockPolicy>
+		
+		<Icon>res/Sprs/outspread/extendmap_zangmuhai01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="GroundAlter">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Mountain</Landform>
+		</BuildCondition>
+		<Immortal>1</Immortal>
+		<BuildDay>5</BuildDay>
+		<DisplayName>地坛</DisplayName>
+		<Desc>“凡人很难找到的深山中，有个巨大的八边形大坑，坑中填满了山上流下来的泉水，中间有个大鼎。”----《六道杂记》</Desc>
+		<Effect>解锁收集天道政策。</Effect>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<UnlockPolicy>
+			<li>Policy_TianDaoShenDan</li>
+		</UnlockPolicy>
+		
+		<Icon>res/Sprs/outspread/extendmap_ditan01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="WaterTemple">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>须弥院</DisplayName>
+		<Desc>“这座寺庙像船一样，站在上面还能感受到沉重的摇晃，同时也能感受到安全和稳定。我不禁想到，浮屠是不是指漂在水上的寺庙？”----《六道杂记》</Desc>
+		<Effect>阵法稳定度提升20%。</Effect>
+		
+		<ZhenStability>20</ZhenStability>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+
+		<Icon>res/Sprs/outspread/extendmap_xumisi01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="CelestialPalace">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+			<Landform>Mountain</Landform>
+			<Landform>Forest</Landform>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>紫霄宫</DisplayName>
+		<Desc>“紫霄宫似天庭圣地，人尽皆知，无远弗届。”----《万象录》</Desc>
+		<Effect>所有门派加一个人情。</Effect>
+		
+		<FriendPoint>1</FriendPoint>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<Icon>res/Sprs/outspread/extendmap_zixiaogong01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="CircleTemple">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>圆玄观</DisplayName>
+		<Desc>“正所谓地方越大人越多，圆玄观的广场面积举世无双，前来拜访的来客也是摩肩接踵。”----《六道杂记》</Desc>
+		<Effect>此地信仰/怨恨收集速度加倍。</Effect>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<FaithSpeed>100</FaithSpeed>
+		
+		<Icon>res/Sprs/outspread/extendmap_yuanxuanguan01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="CityMansion">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+			<Landform>Mountain</Landform>
+			<Landform>Forest</Landform>
+			<Landform>Aqua</Landform>
+		</BuildCondition>
+		<BuildDay>5</BuildDay>
+		<Immortal>1</Immortal>
+		<DisplayName>城寨</DisplayName>
+		<Desc>
+城寨：所有地点人口提高速度增加100%。“城寨是一种全新的民房建设形式，它几乎可以建在任何地方，只需要很少的资源。只可惜人再多也无法解决吃饭问题。”</Desc>
+		<Effect>此地提高速度增加100%。</Effect>
+		
+		<HumanAdd>100</HumanAdd>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<Icon>res/Sprs/outspread/extendmap_chengzhai01</Icon>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="RedTombstone">
+		<Base>1</Base>
+		<BuildType>Wonder</BuildType>
+		<BuildCondition>
+			<Landform>Plain</Landform>
+		</BuildCondition>
+		<Immortal>1</Immortal>
+		<BuildDay>5</BuildDay>
+		<DisplayName>红碑林</DisplayName>
+		<Desc>
+“碑林中记载了数人的生平。其中有皇帝也有凡人，唯一的共同点就是他们都死了。”----《六道杂记》“碑中所记乃变幻之根源，世间七情六欲皆在其内，观止不禁仰叹，不胜惶恐。恐为人难越碑而行，恐为人只步向其中之一。”----《万象录》</Desc>
+		<Effect>可以直接洞察所有人的一个喜好。</Effect>
+		
+		<Curb>
+			<IntervalSec>600</IntervalSec>
+			<Stories>
+				<li>BuildCurb1</li>
+				<li>BuildCurb2</li>
+				<li>BuildCurb3</li>
+			</Stories>
+		</Curb>
+		
+		<Icon>res/Sprs/outspread/extendmap_hongbeilin01</Icon>
+		
+		<KnowLike>1</KnowLike>
+		
+		<Cost>
+			<Influence>1500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1500"/>
+				<li ItemName="Item_BrownRock" Count="1500"/>
+			</Mats>
+		</Cost>
+	</Def>
+</List></Defs>

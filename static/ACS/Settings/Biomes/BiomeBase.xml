@@ -1,0 +1,133 @@
+﻿<BiomeDefs><List>
+	<Biome Name="BiomeBase">
+		<NoonColor>#C5C5A4FF</NoonColor>
+		<NightColor>#A56617FF</NightColor>
+		<BeginItem>
+			<li Name= "Item_Water" Count="60"/>
+			<li Name= "Item_Cake" Count="45"/>
+			<li Name= "Item_RabbitMeat" Count="33"/>
+			<li Name= "Item_Healroot" Count="15"/>
+			<li Name= "Item_LingStone" Count="25"/>
+			<li Name= "Item_RoughWoodBlock" Count="10"/>
+			<li Name= "Item_BasePracticeDrug" Count="1"/>
+			<li Name= "Item_SpellPaper" Count="12"/>
+			<li Name= "Item_SysAxe" Stuff="Item_RoughWoodBlock" Count="1"/>
+		</BeginItem>
+		
+		<BeginItem2>
+			<li Name= "Item_Water" Count="40"/>
+			<li Name= "Item_Cake" Count="30"/>
+			<li Name= "Item_Healroot" Count="10"/>
+		</BeginItem2>
+		<Weather>
+			<TempTopMin>-20</TempTopMin>
+			<TempTopMax>32</TempTopMax>
+			<SunMin>10</SunMin>
+			<SunMax>100</SunMax>
+			<TempOffset>10</TempOffset>			
+<!--			<ProtectYear>1</ProtectYear>
+			<ProtectTempMinAdd>10</ProtectTempMinAdd>
+			<ProtectTempMaxAdd>-4</ProtectTempMaxAdd>-->
+		</Weather>
+
+		<EnvironmentDisease>
+			<HighTemp>
+				<li Name="FirebiteInside" Rate="0.5" PartName = "TheWholeBody"/>
+				<li Rate="0.5"/>
+			</HighTemp>
+			<LowTemp>	
+				<li Name="FrostbiteInside" Rate="0.5" PartName = "TheWholeBody"/>
+				<li Rate="0.5"/>
+			</LowTemp>
+			<!--<Base><!{1}**地域伤病，到下级里去配，不配在base里**{1}>
+			</Base>-->
+		</EnvironmentDisease>
+		
+		<Seasons>
+			<Spring Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.3" Duration="0.3"  Thunder = "15"/>
+					<li Kind="Rain" Rate="0.00001" Weight="0.1" Duration="0.3"/>
+				</Weathers>
+				<DaySound>Spring_Day</DaySound>
+				<NightSound>Spring_Night</NightSound>
+			</Spring>
+			<Summer Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.3" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.4" Duration="0.2"  Thunder = "10"/>
+					<li Kind="Hail" Rate="0.00002" Weight="0.4" Duration="0.1" />
+				</Weathers>
+				<DaySound>Summer_Day</DaySound>
+				<NightSound>Summer_Night</NightSound>
+			</Summer>
+			<Autumn Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00001" Weight="0.2" Duration="0.4" />
+				</Weathers>
+				<DaySound>Autumn_Day</DaySound>
+				<NightSound>Autumn_Night</NightSound>
+			</Autumn>
+			<Winter Length="28">
+				<Weathers>
+					<li Kind="Rain" Rate="0.00002" Weight="0.3" Duration="0.2" />
+					<li Kind="Rain" Rate="0.00001" Weight="0.6" Duration="1" />
+				</Weathers>
+			</Winter>
+		</Seasons>
+		<PlantReproduce>0.5</PlantReproduce>
+		<Needs>
+			<Food>
+				<Damage>FoodDamage</Damage>
+				<SubSpeed>
+					<li>0.383</li>
+					<li>0.133</li>
+					<li>0.066</li>
+					<li>0.04</li>
+				</SubSpeed>
+			</Food>
+			<Water>
+				<Damage>WaterDamage</Damage>
+				<SubSpeed>
+					<li>0.367</li>
+					<li>0.233</li>
+					<li>0.166</li>
+					<li>0.08</li>
+				</SubSpeed>
+			</Water>
+			<Rest>
+				<SubSpeed>
+					<li>0.146</li>
+					<li>0.073</li>
+					<li>0.037</li>
+					<li>0.013</li>
+				</SubSpeed>
+			</Rest>
+			<Fun>
+				<SubSpeed>
+					<li>0.06</li>
+					<li>0.06</li>
+					<li>0.06</li>
+					<li>0.06</li>
+				</SubSpeed>
+			</Fun>
+		</Needs>
+		
+		<!-- 判断顺序从上往下 -->
+		<JYLocate Terrain="Water">
+			<JY Race="JYFrog" Rate="1" />
+			<JY Race="JYTurtle" Rate="1" />
+		</JYLocate>
+		<JYLocate Terrain="Ground">
+			<JY Race="JYRabbit" Rate="1" />
+			<JY Race="JYBear" Rate="1" />
+			<JY Race="JYBoar" Rate="1" />
+			<JY Race="JYSnake" Rate="1" />
+			<JY Race="JYWolf" Rate="1" />
+			<JY Race="JYChicken" Rate="1" />
+			<JY Race="JYCat" Rate="1" />
+			<JY Race="JYCattle" Rate="1" />
+			<JY Race="JYTiger" Rate="1" />
+		</JYLocate>
+	</Biome>
+</List></BiomeDefs>

@@ -1,0 +1,23 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="LostPart">
+			<DisplayName>Lost Item</DisplayName>
+		</Text>
+		<Text Name="SYS_ATK">
+			<DisplayName>Attack Stance</DisplayName>
+			<Desc>The physical cultivator will attack the enemy's physical body with full force, but the secret body's defense ability will be reduced.</Desc>
+		</Text>
+		<Text Name="SYS_NORMAL">
+			<DisplayName>Common Stance</DisplayName>
+			<Desc>The standard battle stance for physical cultivators. It first deals with the enemy's artifact and then attack their physical body. This stance is equally good at attack and defense and well-balanced in different abilities.</Desc>
+		</Text>
+		<Text Name="BPAttitudes_ManJi">
+			<DisplayName>Barbarian Will</DisplayName>
+			<Desc>Uses the strong battle will to command the whole body to move and directly attack the enemy's physical body, drastically increasing the attack ability while maintaining instinctual defense.</Desc>
+		</Text>
+		<Text Name="BPAttitudes_WangZhe">
+			<DisplayName>Will of the King</DisplayName>
+			<Desc>Stays calm and composed while facing the battle with the heart of a king. Reduces the secret body consumption.</Desc>
+		</Text>
+	</List>
+</Texts>

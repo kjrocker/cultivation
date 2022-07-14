@@ -1,0 +1,258 @@
+<MoodDefs><List>
+	
+	<Mood Name="Happy1" Group="Happy">
+		<DisplayName>突然小高兴</DisplayName>
+		<Desc>不知道为什么，突然有点小高兴。</Desc>
+		<StoryDesc>正高兴的哼着曲儿</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	
+	<Mood Name="Happy2" Group="Happy">
+		<DisplayName>突然很开心</DisplayName>
+		<Desc>莫名很开心，心情好。</Desc>
+		<StoryDesc>正开心的大笑</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Happy3" Group="Happy">
+		<DisplayName>突然小难过</DisplayName>
+		<Desc>不知道为什么，突然有点小难过。</Desc>
+		<StoryDesc>不知道为什么，脸色有点难过</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	
+	<Mood Name="Happy4" Group="Happy">
+		<DisplayName>突然很沮丧</DisplayName>
+		<Desc>突然觉得很沮丧，一切似乎都在变坏。</Desc>
+		<StoryDesc>不知道为什么，看上去十分沮丧</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	
+	<Mood Name="Happy5" Group="Happy">
+		<DisplayName>突然的消沉</DisplayName>
+		<Desc>突然觉得自己一无是处……</Desc>
+		<StoryDesc>不知道为什么，看上去死气沉沉</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	
+	<Mood Name="Happy6" Group="Happy">
+		<DisplayName>突然的鼓舞</DisplayName>
+		<Desc>突然充满斗志，觉得心情很棒。</Desc>
+		<StoryDesc>不知道为什么，看上去充满斗志</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Happen1" Group="Happen">
+		<DisplayName>莫名的情绪</DisplayName>
+		<Desc>突然被一点不知所谓的情绪环绕……</Desc>
+		<StoryDesc>脸色很复杂，不知道在想什么</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Happen2" Group="Happen">
+		<DisplayName>莫名的情绪</DisplayName>
+		<Desc>突然觉得好像从世界孤立出来了……好孤独。</Desc>
+		<StoryDesc>满脸落寞，好像很孤独</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>4</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Happen3" Group="Happen">
+		<DisplayName>奇怪的感觉</DisplayName>
+		<Desc>我总觉得有人在暗中注意我……</Desc>
+		<StoryDesc>总觉得有人暗中观察，脸色惊疑不定</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>1</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Happen4" Group="Happen">
+		<DisplayName>幻听</DisplayName>
+		<Desc>有谁在对我说话么？ 总觉得有人在耳边说什么，听不清…… 好烦</Desc>
+		<StoryDesc>总觉得有人在对自己说话，脸色很差</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0.001</HappenChance>
+	</Mood>
+	<Mood Name="Magic1">
+		<DisplayName>莫名心情好</DisplayName>
+		<Desc>毫无来由的心情好。</Desc>
+		<StoryDesc>不知道想到什么，一脸开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>40</Value>
+		<Duration>0.4</Duration>
+	</Mood>
+	<Mood Name="Magic2">
+		<DisplayName>巨大悲痛</DisplayName>
+		<Desc>毫无来由的极度的悲痛。</Desc>
+		<StoryDesc>不知道怎么回事，十分悲痛</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-40</Value>
+		<Duration>0.4</Duration>
+	</Mood>
+	
+	<Mood Name="ZhenkongJie">
+		<DisplayName>真空劫</DisplayName>
+		<Desc>感觉被心情掏空</Desc>
+		<StoryDesc>正因身处真空劫中而觉得不安</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-40</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="FengShui1" Group="FengShui">
+		<DisplayName>风水很好</DisplayName>
+		<Desc>我的房间风水很好，最近好像上天庇佑，睡得好，跟周围的人相处也很愉悦。</Desc>
+		<StoryDesc>正因房间风水好而容光焕发</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="FengShui2" Group="FengShui">
+		<DisplayName>风水良好</DisplayName>
+		<Desc>我的房间风水不错，最近感觉挺顺心，同门也都很友善。</Desc>
+		<StoryDesc>正因房间风水不错而红光满面</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="FengShui3" Group="FengShui">
+		<DisplayName>风水不佳</DisplayName>
+		<Desc>我的房间风水不佳，最近似乎是命犯太岁，睡也睡不好，感觉大家都在针对我。</Desc>
+		<StoryDesc>正因房间风水差而面色暗淡</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-8</Value>
+		<Duration>-1</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="FengShui4" Group="FengShui">
+		<DisplayName>风水很差</DisplayName>
+		<Desc>我的房间风水很糟糕，最近感觉老天爷都在跟我作对，睡不踏实做噩梦，干什么都不顺，看谁都不顺眼。</Desc>
+		<StoryDesc>正因房间风水太差而神色晦暗</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>-1</Duration>
+		<Deepen>2400</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="FengShui5" Group="FengShui">
+		<DisplayName>风水略差</DisplayName>
+		<Desc>我的房间风水不怎么样，我觉得有点不对劲，做事也总觉得别扭。</Desc>
+		<StoryDesc>正因房间风水不太好而皱眉</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-4</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Tool_PerfectWorld">
+		<DisplayName>美好世界</DisplayName>
+		<Desc>沉浸在美好世界的故事里，觉得十分有趣。</Desc>
+		<StoryDesc>正因游玩美好世界而感到十分满足</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>60</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Tool_LunHui_QiYuan">
+		<DisplayName>祈愿之力</DisplayName>
+		<Desc>感受到祈愿之心的力量，心情舒畅。</Desc>
+		<StoryDesc>正因祈愿之心的力量而感到快乐</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>25</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Dan_LunHui1">
+		<DisplayName>被感动</DisplayName>
+		<Desc>被这段记忆感动，有点满足，又有点怅然若失。</Desc>
+		<StoryDesc>正因沉浸在星途闪耀的故事中而有点怅然若失</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>30</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Item_Laxative">
+		<DisplayName>浑身虚脱</DisplayName>
+		<Desc>觉得浑身虚脱,有点难受</Desc>
+		<StoryDesc>正因拉肚子而觉的十分痛苦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-20</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	
+	<Mood Name="Mood_LunHui_ShiYi">
+		<DisplayName>享受现在</DisplayName>
+		<Desc>忘记过去的事，只享受现在。</Desc>
+		<StoryDesc>正兴致勃勃的准备着什么</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>30</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	
+	<Mood Name="Mood_LunHui_XinNian">
+		<DisplayName>信念</DisplayName>
+		<Desc>我自有我坚信之道，不为外物所扰。</Desc>
+		<StoryDesc>正被信念鼓舞</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>20</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_GreenBrothel">
+		<DisplayName>好心情</DisplayName>
+		<Desc>刚刚释放过自我，心情舒畅。</Desc>
+		<StoryDesc>去过绿楼坊，感觉心情好极了。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>30</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+</List></MoodDefs>

@@ -1,0 +1,153 @@
+<Defs><List>
+	<Def Name="Camp" Type="All">
+		<DisplayName>阵营所属</DisplayName>
+		<Values>
+			<li>Kind</li>
+			<li>Neutral</li>
+			<li>Enemy</li>
+		</Values>
+		<ValuesDesc>
+			<li>友善</li>
+			<li>中立</li>
+			<li>敌对</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="MoveAI" Type="Npc">
+		<DisplayName>移动模式</DisplayName>
+		<Values>
+			<li>Stay</li>
+			<li>Free</li>
+			<li>Patrol</li>
+			<li>Route</li>
+		</Values>
+		<ValuesDesc>
+			<li>站立</li>
+			<li>自由</li>
+			<li>附近游荡</li>
+			<li>固定路线</li>
+		</ValuesDesc>
+		<DefaultValue>function(npc) return "Stay" end</DefaultValue>
+	</Def>
+	<Def Name="MoveRoute" Type="Npc">
+		<Condition>
+			<V>
+				<k>MoveAI</k>
+				<v>Route</v>
+			</V>
+		</Condition>
+		<DisplayName>固定路线的key</DisplayName>
+		<ValueType>String</ValueType>
+	</Def>
+	<Def Name="GuradRange" Type="Npc">
+		<DisplayName>警戒范围</DisplayName>
+		<ValueType>Int</ValueType>
+		<ValueRange Min="0" Max="999"/>
+	</Def>
+	<Def Name="IsStepRuning" Type="All">
+		<DisplayName>帧回调事件</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="IsFrameStep" Type="All">
+		<DisplayName>每帧回调</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="IsRenderRuning" Type="All">
+		<DisplayName>渲染回调事件</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="IsGod" Type="Plant|Mine|Building|Npc">
+		<DisplayName>是否无敌</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="ChouHenLianDong" Type="Npc">
+		<DisplayName>同组仇恨联动</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="AutoNext" Type="Npc">
+		<DisplayName>击败所有敌人</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="PickAndRemove" Type="Item">
+		<DisplayName>不可再生资源</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="LightFog" Type="Building">
+		<DisplayName>点亮迷雾</DisplayName>
+		<Values>
+			<li>0</li>
+			<li>1</li>
+		</Values>
+		<ValuesDesc>
+			<li>否</li>
+			<li>是</li>
+		</ValuesDesc>
+	</Def>
+	<Def Name="LightFogDis" Type="Building">
+		<Condition>
+			<V>
+				<k>LightFog</k>
+				<v>1</v>
+			</V>
+		</Condition>
+		<DisplayName>点亮迷雾范围</DisplayName>
+		<ValueType>Int</ValueType>
+		<ValueRange Min="0" Max="999"/>
+	</Def>
+	<Def Name="Param1" Type="All">		
+		<DisplayName>参数1(RpgParam1)</DisplayName>
+		<ValueType>String</ValueType>
+	</Def>
+	<Def Name="Param2" Type="All">		
+		<DisplayName>参数2(RpgParam2)</DisplayName>
+		<ValueType>String</ValueType>
+	</Def>
+</List></Defs>

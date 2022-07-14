@@ -1,0 +1,278 @@
+<MoodDefs><List>
+
+	<Mood Name="Temperature1" Group="Temperature">
+		<DisplayName>极寒</DisplayName>
+		<Desc>超出极限的冷，要被冻死了。</Desc>
+		<StoryDesc>正被冻到神志不清</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-40</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Temperature2" Group="Temperature">
+		<DisplayName>寒冷</DisplayName>
+		<Desc>真的很冷，冷到受不了。</Desc>
+		<StoryDesc>正暗自咒骂这严寒,正拼命的抖动身体以抵御严寒</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature3" Group="Temperature">
+		<DisplayName>冷</DisplayName>
+		<Desc>好冷，忍不住瑟瑟发抖。</Desc>
+		<StoryDesc>冷得要命，正搓着双手,正抖动身体以抵御寒冷</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature4" Group="Temperature">
+		<DisplayName>有点冷</DisplayName>
+		<Desc>稍微有点冷。</Desc>
+		<StoryDesc>正嘀咕着是不是该加衣服,正因为觉得有点冷而打了个哆嗦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature5" Group="Temperature">
+		<DisplayName>温度舒适</DisplayName>
+		<Desc>气温刚刚好，让人舒畅。</Desc>
+		<StoryDesc>刚因舒适的温度而感叹一声,刚在心里赞了一下这舒服的天气</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Temperature6" Group="Temperature">
+		<DisplayName>有点热</DisplayName>
+		<Desc>觉得有点热</Desc>
+		<StoryDesc>刚擦了擦额头的细汗,正用手在耳边扇风</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature7" Group="Temperature">
+		<DisplayName>热</DisplayName>
+		<Desc>好热，汗流浃背，真不舒服。</Desc>
+		<StoryDesc>刚用衣袖擦了擦汗水,刚掀了掀被汗水打湿的衣服</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature8" Group="Temperature">
+		<DisplayName>炎热</DisplayName>
+		<Desc>太热了，热的受不了。</Desc>
+		<StoryDesc>正大声咒骂这炎热的温度,刚拧了拧被汗水浸湿的衣服</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Temperature9" Group="Temperature">
+		<DisplayName>炙热</DisplayName>
+		<Desc>让人崩溃的高温，要被热死了。</Desc>
+		<StoryDesc>正被热到意识模糊</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-40</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Light1" Group="Light">
+		<DisplayName>刺眼</DisplayName>
+		<Desc>太亮了，亮到眼睛睁不开。</Desc>
+		<StoryDesc>正在用手遮住这强烈的光线,正因为刺眼的光线而眼泪直流</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Light2" Group="Light">
+		<DisplayName>晃眼</DisplayName>
+		<Desc>好强的光，眼睛难受，看不清。</Desc>
+		<StoryDesc>正因为明亮的光线而眯着眼睛,刚刚揉了揉被晃晕的眼睛</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Light3" Group="Light">
+		<DisplayName>昏暗</DisplayName>
+		<Desc>光线不是很充足，看不清楚。</Desc>
+		<StoryDesc>正因昏暗的光线而睁大眼睛,正在嘀咕要是亮一点就好了</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-10</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Light4" Group="Light">
+		<DisplayName>漆黑</DisplayName>
+		<Desc>伸手不见五指，很不方便。</Desc>
+		<StoryDesc>正因为一片漆黑而小心的摸索,正在心里咒骂怎么连个灯都没有</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="Light5" Group="Light">
+		<DisplayName>昏暗</DisplayName>
+		<Desc>昏暗的环境，让我觉得心安。</Desc>
+		<StoryDesc>正因为昏暗的环境而感觉心安,正在享受着这幽暗的时光</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>8</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Light6" Group="Light">
+		<DisplayName>漆黑</DisplayName>
+		<Desc>伸手不见五指，感到好安全。</Desc>
+		<StoryDesc>刚在一片漆黑中发出满足的叹息,正在享受着难得的黑暗时光</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>15</Value>
+		<Duration>0</Duration>
+	</Mood>
+	
+	<Mood Name="Pain1" Group="Pain">
+		<DisplayName>痛不欲生</DisplayName>
+		<Desc>怎么会这么痛苦，我不如昏过去算了……</Desc>
+		<StoryDesc>正因为剧痛而哀嚎,正被痛的死去活来,正被痛的翻来覆去</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-40</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Pain2" Group="Pain">
+		<DisplayName>剧痛</DisplayName>
+		<Desc>受不了了，太痛了，撑不住了……</Desc>
+		<StoryDesc>正紧咬牙关忍受着疼痛,正因疼痛而低声呻吟</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-25</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Pain3" Group="Pain">
+		<DisplayName>疼痛非常</DisplayName>
+		<Desc>真的好疼，什么时候能忍过去啊……</Desc>
+		<StoryDesc>刚因疼痛而吸一口冷气,正在暗自忍受痛苦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Pain4" Group="Pain">
+		<DisplayName>疼痛</DisplayName>
+		<Desc>挺疼的，咬咬牙挺过去。</Desc>
+		<StoryDesc>刚因疼痛而咧了咧嘴,正嘀咕着好痛</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Pain5" Group="Pain">
+		<DisplayName>微痛</DisplayName>
+		<Desc>有点疼，不太高兴……</Desc>
+		<StoryDesc>刚因疼痛皱了皱眉,刚因疼痛而深呼吸了几次</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-10</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Consciousness1" Group="Consciousness">
+		<DisplayName>神志不清</DisplayName>
+		<Desc>我是谁，我在哪……到底发生了什么事，我的脑袋……</Desc>
+		<StoryDesc>脑子里一团乱麻</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-40</Value>
+		<Duration>0</Duration>
+	</Mood>
+	<Mood Name="Consciousness2" Group="Consciousness">
+		<DisplayName>头昏脑涨</DisplayName>
+		<Desc>感觉脑海里仿佛一团浆糊，真的是让人难受的体验。</Desc>
+		<StoryDesc>正因为头昏脑涨而叹气</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-20</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Consciousness3" Group="Consciousness">
+		<DisplayName>昏昏沉沉</DisplayName>
+		<Desc>感觉脑子里像是灌了铅，昏昏沉沉的，没法思考。</Desc>
+		<StoryDesc>正觉得脑袋昏沉，十分不适</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	<Mood Name="Consciousness4" Group="Consciousness">
+		<DisplayName>无精打采</DisplayName>
+		<Desc>不想动，提不起劲……</Desc>
+		<StoryDesc>正因为没精神而打了个哈欠</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-10</Value>
+		<Duration>0</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="GetWet">
+		<DisplayName>衣服湿了</DisplayName>
+		<Desc>有把伞就好了。</Desc>
+		<StoryDesc>刚扯了扯被湿透的衣服,正嘀咕怎么连个伞都没有</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>0.1</Duration>
+		<Deepen>1200</Deepen>
+		<DeeponMax>4</DeeponMax>
+	</Mood>
+	
+	<Mood Name="DevilBlood">
+		<DisplayName>魔念</DisplayName>
+		<Desc>我心中有无数的魔头呼喊，他们好像饿狼，在疯狂撕咬我的内心。</Desc>
+		<StoryDesc>正因为心中无穷的魔念呼喊而苦苦忍耐</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-60</Value>
+		<Deepen>3600</Deepen>
+		<DeeponMax>10</DeeponMax>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="DevilBlood_Satisfy">
+		<DisplayName>暂时的满足</DisplayName>
+		<Desc>愉悦，这就是愉悦，我感到了心中的魔头发出满足的呼喊。</Desc>
+		<StoryDesc>刚因为心中的魔欲满足而发出一声长叹</StoryDesc>
+		<MaxStack>30</MaxStack>
+		<Value>24</Value>
+		<Duration>2</Duration>
+	</Mood>
+	<Mood Name="DevilBlood_LianHun">
+		<DisplayName>炼魂</DisplayName>
+		<Desc>我的灵魂似乎再被撕裂……这世界上怎么会有这样的痛苦。</Desc>
+		<StoryDesc>正因为灵魂被撕裂而痛苦的咬紧牙关</StoryDesc>
+		<MaxStack>10</MaxStack>
+		<Value>-20</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="AfterAbsorbGong_6">
+		<DisplayName>被掏空</DisplayName>
+		<Desc>感觉自己的修炼有点不对劲，像被掏空了一般。</Desc>
+		<StoryDesc>正因为身体莫名虚弱而觉得纳闷</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>-15</Value>
+		<Duration>1</Duration>
+	</Mood>
+</List></MoodDefs>

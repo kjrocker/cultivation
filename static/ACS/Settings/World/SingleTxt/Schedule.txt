@@ -1,0 +1,3 @@
+Id	Day	Sec	Secret	Lua
+1	15	300		CS.XiaWorld.TradeMgr.Instance.SchoolTask.TASK_OPEN = true
+2	15	300	9000

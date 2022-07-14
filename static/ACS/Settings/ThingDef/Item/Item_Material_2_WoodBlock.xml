@@ -1,0 +1,324 @@
+﻿<ThingDefs><List>
+
+<ThingDef Type="Item" Name="WoodBlockBase" Parent="WoodBase">
+	
+	
+	
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>-2</Beauty>
+	<Rate>1</Rate>
+	<MaxHitPoints>300</MaxHitPoints>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>140</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="WoodBlock">
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>木,柱,桩</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			<BuildingTileIDWhenBeMain>-10</BuildingTileIDWhenBeMain>
+			
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>0.8</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.45</AttackSpeedWhenBeMain>
+			<StuffTexPath>res/mattex/mtl_wood</StuffTexPath>
+			<ColorWhenBeMain>B27534FF</ColorWhenBeMain>
+			<ColorWhenBeFloor>6B5234FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>9E7149FF</ColorWhenBeRoof>
+			
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>5</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>140</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.8</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.2</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<!--<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+	</Item>
+	</ThingDef>
+
+
+	
+<ThingDef Type="Item" Name="Item_RoughWoodBlock" Parent="WoodBlockBase">
+	<ThingName>木料</ThingName>
+	<TexPath>res\Sprs\object\object_WoodBlock</TexPath>
+	<Desc>原木制成的木料，可以更有效地用于制作。</Desc>
+	<Item>
+		<PhysicalLables>
+			<li>Rough2</li>
+		</PhysicalLables>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Wood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>木</NamePrefix>
+			<ColorWhenBeMain>875520FF</ColorWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_HardWoodBlock" Parent="WoodBlockBase">
+	<ThingName>金丝木料</ThingName>
+	<TexPath>res\Sprs\object\object_WoodBlock01</TexPath>
+	<Desc>金丝灵木制成的木料，可以更有效地用于制作。</Desc>
+	<Beauty>6</Beauty>
+	<Rate>4</Rate>
+	<Item>
+		<PhysicalLables>
+			<li>Rough1</li>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_HardWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>金丝木</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_wood1</StuffTexPath>
+			<CostMultiplier>1</CostMultiplier>
+			<RateWhenBeMain>4</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<BurningPointWhenBeMain>240</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.5</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.2</WorktoMakeRate>
+			<WorktoBuildRate>1.2</WorktoBuildRate>
+			
+			<ColorWhenBeMain>A77C2FFF</ColorWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>14</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_ParasolWoodBlock" Parent="WoodBlockBase">
+	<ThingName>梧桐木料</ThingName>
+	<TexPath>res\Sprs\object\object_WoodBlock02</TexPath>
+	<Desc>梧桐木制成的木料，可以更有效地用于制作。</Desc>
+	<Beauty>16</Beauty>
+	<Rate>7</Rate>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="150"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="200" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<FuelMultiplier>3</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_ParasolWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>梧桐木</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<RateWhenBeMain>7</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+			
+			<MaxHitPointsPerNum>80</MaxHitPointsPerNum>
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>16</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.8</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.4</WorktoMakeRate>
+			<WorktoBuildRate>1.4</WorktoBuildRate>
+			
+			<ColorWhenBeMain>AE693CFF</ColorWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_LingWoodBlock" Parent="WoodBlockBase">
+	<ThingName>灵木料</ThingName>
+	<TexPath>res\Sprs\object\object_lingWoodBlock</TexPath>
+	<Desc>灵木制成的木料，可以更有效地用于制作。</Desc>
+	<Beauty>12</Beauty>
+	<Rate>5</Rate>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>15</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="75" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<FuelMultiplier>2</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>灵木</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<RateWhenBeMain>5</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+		
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>16</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.4</WorktoMakeRate>
+			<WorktoBuildRate>1.4</WorktoBuildRate>
+			
+			<ColorWhenBeMain>6FE1D8FF</ColorWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>15</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>5</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+</ThingDef>
+</List></ThingDefs>

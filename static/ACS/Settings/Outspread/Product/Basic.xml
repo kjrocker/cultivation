@@ -1,0 +1,17 @@
+<Defs><List>
+	<Def Name="Farm">
+		<li>Item_Wheat</li>
+	</Def>
+	<Def Name="Lumber">
+		<li>Item_Wood</li>
+	</Def>
+	<Def Name="Stone">
+		<li>Item_BrownRock</li>
+	</Def>
+	<Def Name="LingStone">
+		<li>Item_LingStone</li>
+	</Def>
+	<Def Name="Hall">
+		<Influence>1</Influence>
+	</Def>
+</List></Defs>

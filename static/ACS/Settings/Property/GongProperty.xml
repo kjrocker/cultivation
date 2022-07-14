@@ -1,0 +1,341 @@
+﻿<Properties><List>
+
+<!--	<Property Name="TestGongProperty1">
+		<BaseValueS>MoveSpeed</BaseValueS>
+		<LuckWeight>0</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Qi" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.9,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Physique" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.8,0.9,1</li>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="TestProperty1" Weight="1"/>
+		</Properties>
+		
+	</Property>-->
+	<!--功法瓶颈基础概率-->
+	
+	
+	<!--五维概率-->
+	<!--神识正比-->
+	<Property Name="Perception_1_1_3">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>	
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.1" Addion="0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Perception_1_1_10">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.1" Addion="0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Perception_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.5" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Perception_1_5_75">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.5" Addion="0.7"/>
+		</FiveBase>
+	</Property>
+	<!--神识反比-->
+	<Property Name="Perception_2_3_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.3" Addion="-0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Perception_2_10_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+			
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="1.1" Addion="-0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Perception_2_25_5">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="2.5" Addion="-0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--根骨正比-->
+	<Property Name="Physique_1_1_3">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.1" Addion="0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Physique_1_1_10">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.1" Addion="0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Physique_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+			
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.5" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	<!--根骨反比-->
+	<Property Name="Physique_2_3_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+			
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.3" Addion="-0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Physique_2_10_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+			
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="1.1" Addion="-0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Physique_2_25_5">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="2.5" Addion="-0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--魅力正比-->
+	<Property Name="Charisma_1_1_3">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="0.1" Addion="0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Charisma_1_1_10">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="0.1" Addion="0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Charisma_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="0.5" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	<!--魅力反比-->
+	<Property Name="Charisma_2_3_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="0.3" Addion="-0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Charisma_2_10_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="1.1" Addion="-0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Charisma_2_25_5">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="2.5" Addion="-0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--悟性正比-->
+	<Property Name="Intelligence_1_1_3">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>		
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.1" Addion="0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Intelligence_1_1_10">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.1" Addion="0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Intelligence_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.5" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--悟性反比-->
+	<Property Name="Intelligence_2_3_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.3" Addion="-0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Intelligence_2_10_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>		
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="1.1" Addion="-0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Intelligence_2_25_5">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="2.5" Addion="-0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--气运正比-->
+	<Property Name="Luck_1_1_3">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="0.1" Addion="0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Luck_1_1_10">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+			
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="0.1" Addion="0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Luck_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="0.5" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	<!--气运反比-->
+	<Property Name="Luck_2_3_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="0.3" Addion="-0.02"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Luck_2_10_1">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="1.1" Addion="-0.1"/>
+		</FiveBase>
+	</Property>
+	<Property Name="Luck_2_25_5">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<FiveBase>
+			<li Name="Luck" Weight="1" Base="2.5" Addion="-0.2"/>
+		</FiveBase>
+	</Property>
+	
+
+	
+	
+	
+	<!--气动瓶颈概率-->
+	<Property Name="Qi_1_5_25">
+		<BaseValue>0.1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<Skills>
+			<li Name="Qi" Weight="1" Base="0.5" Addion="0.1"/>
+		</Skills>
+	</Property>
+</List></Properties>

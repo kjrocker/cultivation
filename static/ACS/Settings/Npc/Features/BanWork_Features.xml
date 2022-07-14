@@ -1,0 +1,86 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature> 
+	-->
+	<Feature Name="NoHeavyWork" Type="Backstory">
+		<DisplayName>娇生惯养</DisplayName>
+		<Desc>优越的生活让[IT]无法从事繁重的体力工作</Desc>
+		<Close>
+			<li>NoHeavyWork</li>
+		</Close>
+		<ModifierDef>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Smithing</li>
+				<li>Mine</li>
+				<li>Build</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="NoMeticulousWork" Type="Backstory">
+		<DisplayName>笨手笨脚</DisplayName>
+		<Desc>这个人笨手笨脚，没法做细致的工作。</Desc>
+		<ModifierDef>
+			<BanJobs>
+				<li>Build</li>
+				<li>Cooking</li>
+				<li>Treat</li>
+				<li>Sew</li>
+				<li>Smithing</li>
+				<li>Handwork</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature> 
+	
+</List></FeatureDefs>

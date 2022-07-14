@@ -1,0 +1,76 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="Plant_Bamboo" Parent="TreeBase">
+		<ThingName>竹子</ThingName>
+		<TexPath>
+		res\Sprs\scene_xiongmaoDLC\scene_zhuzi02;
+		res\Sprs\scene_xiongmaoDLC\scene_zhuzi03;
+		res\Sprs\scene_xiongmaoDLC\scene_zhuzi04
+		</TexPath>
+		<Desc>一种常见植物，生长较快，可用来制作特别的建筑和物品，成熟后根部会长出可食用的竹笋。</Desc>
+		<Frags>	
+			<li Frag="Farm" />
+		</Frags>	
+		
+		<Plant Kind="HighPlant">
+			<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+			<WildClusterSizeRangemin>30</WildClusterSizeRangemin>
+			<WildClusterSizeRangemax>60</WildClusterSizeRangemax>
+			<WildClusterRadius>14</WildClusterRadius>
+			<RipedTexPath>
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi02a;
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi03a;
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi04a
+			</RipedTexPath>
+			<HarvestedTexPath>
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi02b;
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi03b;
+			res\Sprs\scene_xiongmaoDLC\scene_zhuzi04b
+			</HarvestedTexPath>
+			<LeaflessTexPath></LeaflessTexPath>   
+			<SnowedTexPath></SnowedTexPath>
+			
+			<GrowDays>25</GrowDays>
+			<HarvestDays>10</HarvestDays>
+			<VisualSizeMin>0.2</VisualSizeMin>
+			<VisualSizeMax>1</VisualSizeMax>	
+			
+			<TempMin>0</TempMin>
+			<TempMax>40</TempMax>
+			<LingMin>0</LingMin>
+			<LingMax>500</LingMax>
+			<FertilityMin>0.6</FertilityMin>
+			<FertilityMax>2</FertilityMax>
+			<GrowGlowMin>40</GrowGlowMin>
+			<GrowGlowMax>140</GrowGlowMax>
+			<SnowRenderData>
+				<x>3</x>
+				<y>3.9</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Plant>
+		<Harvest>
+			<HarvestWork>25</HarvestWork> 
+			<DropWork>25</DropWork> 			
+			<HarvestValueMin>0.8</HarvestValueMin>  
+			<HarvestFailable>0</HarvestFailable>  
+			<HarvestTag>
+				<li>Cut</li>
+				<li>StandCollection</li>
+			</HarvestTag>
+			
+			<HarvestItems>
+				<li>
+					<ThingDef>Item_BambooShoot</ThingDef>
+					<Count>3</Count>
+				</li>
+			</HarvestItems>
+			
+			<DropItems>
+				<li>
+					<ThingDef>Item_Bamboo</ThingDef>
+					<Count>2</Count>
+				</li>
+			</DropItems>
+		</Harvest>
+	</ThingDef>
+</List></ThingDefs>

@@ -1,0 +1,72 @@
+<FightSkills><List>	
+	<Skill Name="Jiaolong_shuilei_1">
+		<DisplayName>水雷单体</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>100</Value>
+		<SelectType>Random</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+	<Skill Name="Jiaolong_shuilei_2" Parent="Jiaolong_shuilei_1">
+		<DisplayName>水雷多个</DisplayName>		
+		<SelectCount>5</SelectCount>		
+	</Skill>
+	
+	<Skill Name="Jiaolong_shuibao">
+		<DisplayName>水爆</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ClassName>jiaolong_shuibao</ClassName>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>100</Value>
+		<SelectFight>1</SelectFight>
+		<!--<TargetCamp>Enemy</TargetCamp>		-->
+		<SelectType>Random</SelectType>
+		<Shape>Missile</Shape>
+		<MissileEffect>26</MissileEffect>
+		<BombEffect>200000</BombEffect>
+		<HitEffect>56</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>100</Speed>
+			<Shake>2</Shake>			
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Jiaolong_longnu_hit"><!--龙怒结束后对驱散天气者的伤害-->
+		<DisplayName>龙怒</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>200</Value>
+		<SelectType>SelectThing</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>200000</HitEffect>		
+	</Skill>
+	
+</List></FightSkills>

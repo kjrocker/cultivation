@@ -1,0 +1,11 @@
+<SchoolRuleDefs><List>
+	<Def Name="School_13">
+		<DisplayName>门派外交-武当派</DisplayName>
+		<Desc>在与武当派打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+</List></SchoolRuleDefs>

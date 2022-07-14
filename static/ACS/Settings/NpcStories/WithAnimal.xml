@@ -1,0 +1,117 @@
+<NpcStories><List>
+	<Story Name="Animal_EatLikeFood"><!--人宠交互—通用-->
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="1" Story="[name]发现[hename]吃得很开心。"/>
+		</Events>
+	</Story>
+
+	<Story Name="Animal_EatDisLikeFood"><!--人宠交互—通用-->
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="1" Story="[name]发现[hename]似乎并不太喜欢这个。"/>
+		</Events>
+	</Story>
+
+
+	<Story Name="WisdomWithAnimal_Story"><!--人宠交互—通用-->
+		<Rate>3</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]舒服的眯起了眼。"/>
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]紧张的逃开了。"/>
+			<li Rate="0.1" Story="[name]看到[hename]悠哉的趴在地上，一动不动。于是过去戳了一下它。"/>
+			<li Rate="0.1" Story="[name]来逗弄[hename]，[hename]看了[name]一眼，兴致缺缺的走开了。"/>
+			<li Rate="0.1" Story="[name]看到[hename]突然对旁边的[obj_nearthing]很感兴趣，它忍不住闻了闻，舔了两下。"/>
+			<li Rate="0.1" Story="[hename]闻了闻[name]，嫌弃的离开了。"/>
+			<li Rate="0.1" Story="[hename]绕着[name]兴奋的转圈。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Rabbit">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]将[hename]抱在怀里，逗弄了一番。"/>
+			<li Rate="0.1" Story="[name]撸了撸[hename]的大耳朵。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Chicken">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]把[hename]抱起来扔向天空，[hename]惊慌的扇着翅膀，掉落一地鸡毛。"/>
+			<li Rate="0.1" Story="看到[name]，[hename]似乎有什么想法，咯咯咯的叫了起来。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Wolf">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]舒服的发出呜呜声。"/>
+			<li Rate="0.1" Story="[hename]又跳又叫的绕着[name]转圈。"/>
+			<li Rate="0.1" Story="[hename]趴在地上，眯着眼睛看着[name]，眼中透露出危险的光。"/>
+			<li Rate="0.1" Story="[hename]对着[name]摇了摇尾巴。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Snake">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="看到[name]过来，[hename]把自己盘的很高，对着天空吐了吐信子。"/>
+			<li Rate="0.1" Story="[name]将[hename]抱在怀里，逗弄了一番。"/>
+			<li Rate="0.1" Story="[name]观看了[hename]吞掉一只大老鼠的全过程，觉得十分有趣。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Boar">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[hename]突然很生气的拱了[name]一下。"/>
+			<li Rate="0.1" Story="[name]看到[hename]趴在地上，不停地哼哼。于是拿石头丢了它一下。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Bear">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[hename]看到[name]就张开双臂兴奋的跑来。[name]吓了一跳，连忙逃开。"/>
+			<li Rate="0.1" Story="[name]瞅了[hename]一眼，[hename]好像有点生气，锤了一下地面。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Turtle">
+		<Rate>1000</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]连忙缩到了壳里。"/>
+			<li Rate="0.1" Story="[name]发现[hename]悠哉的趴在地上，一动不动，于是就去戳了一下。[hename]整个都缩到了壳里。"/>
+			<li Rate="0.1" Story="[name]来逗弄[hename]，[hename]看了[name]一眼，慢慢的缩到了壳里。"/>
+			<li Rate="0.1" Story="[hename]突然对旁边的[obj_nearthing]很感兴趣，它忍不住闻了闻。"/>
+			<li Rate="0.1" Story="[name]过去逗[hename]玩，[hename]伸出头来，吐了两个泡泡。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Frog">
+		<Rate>1</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]觉得[hename]似乎很有智慧的思考，不知道是不是自己的错觉。"/>
+			<li Rate="0.1" Story="[name]把[hename]放到自己掌心。[hename]呱的一声喷了[name]一脸水，随后高兴的跳开了。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Fei">
+		<Rate>1</Rate>
+		<Events>	
+		    <!-- <li Rate="0.02" MapStory="HotStory_Fei_LingWu" JustHot="1"/> -->
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]发出悦耳的叫声。"/>
+			<li Rate="0.1" Story="[hename]饱含感情的看了远处的[name]一眼。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="WisdomWithAnimal_Story_Lushu">
+		<Rate>1</Rate>
+		<Events>	
+		    <!-- <li Rate="0.02" MapStory="HotStory_LuShu_LingWu" JustHot="1"/> -->
+			<li Rate="0.1" Story="[name]摸了摸[hename]，[hename]非常暴躁的甩了甩头。"/>
+			<li Rate="0.1" Story="[hename]觉得[name]似乎想过来摸自己，它连忙趴在地上装睡起来。"/>
+		</Events>
+	</Story>
+</List></NpcStories>

@@ -1,0 +1,79 @@
+<Defs><List>
+	<Def Name="Sys_Lost" DisplayName="模组丢失">
+	</Def>
+	<!-- lv0 -->
+	<Def Name="None" DisplayName="无">
+	</Def>
+	<!-- lv1 -->
+	<Def Name="Lv1_Jian" DisplayName="剑">
+	</Def>
+	<Def Name="Lv1_Fa" DisplayName="法">
+	</Def>
+	
+	<Def Name="Lv1_Gang" DisplayName="罡">
+	</Def>
+	
+	<Def Name="Lv1_Ren" DisplayName="韧">
+	</Def>
+	
+	<!-- lv2 -->
+	<Def Name="Lv2_Qian" DisplayName="乾">
+	</Def>
+	
+	<Def Name="Lv2_Kun" DisplayName="坤">
+	</Def>
+	
+	<Def Name="Lv2_Zhen" DisplayName="震">
+	</Def>
+	
+	<Def Name="Lv2_Xun" DisplayName="巽">
+	</Def>
+	
+	<Def Name="Lv2_Kan" DisplayName="坎">
+	</Def>
+	<Def Name="Lv2_Li" DisplayName="离">
+	</Def>
+	
+	<Def Name="Lv2_Gen" DisplayName="艮">
+	</Def>
+	
+	<Def Name="Lv2_Dui" DisplayName="兑">
+	</Def>
+	
+	<!-- Lv3 -->
+	
+	<Def Name="Lv3_Ri" DisplayName="日">
+	</Def>
+	<Def Name="Lv3_Yue" DisplayName="月">
+	</Def>
+	<Def Name="Lv3_Yin" DisplayName="阴">
+	</Def>
+	<Def Name="Lv3_Yang" DisplayName="阳">
+	</Def>
+	
+	
+	<Def Name="Lv3_Yu" DisplayName="宇">
+	</Def>
+	<Def Name="Lv3_Zhou" DisplayName="宙">
+	</Def>
+	<Def Name="Lv3_Shi" DisplayName="始">
+	</Def>
+	<Def Name="Lv3_Zhong" DisplayName="终">
+	</Def>
+	
+	<Def Name="Lv3_Sheng" DisplayName="生">
+	</Def>
+	<Def Name="Lv3_Mie" DisplayName="灭">
+	</Def>
+	<Def Name="Lv3_Zao" DisplayName="造">
+	</Def>
+	<Def Name="Lv3_Hua" DisplayName="化">
+	</Def>
+	
+	<!-- Lv4 -->
+	
+	<Def Name="Lv4_Hong" DisplayName="鸿">
+	</Def>
+	<Def Name="Lv4_Meng" DisplayName="蒙">
+	</Def>
+</List></Defs>

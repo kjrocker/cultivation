@@ -1,0 +1,403 @@
+<SpecialNames><List>
+	<SpecialItem Name="Item_HomeFood">
+		<Item_TurtleEgg>
+			<li Name="龟蛋布丁" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="龟蛋羹" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="酸辣龟蛋汤" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="韭菜煎龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="生龟蛋拌饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="龟蛋炒饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="水煮龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="毛龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_TurtleEgg>
+		<Item_SnakeEgg>
+			<li Name="蛇蛋布丁" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="蛇蛋羹" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="酸辣蛇蛋汤" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="韭菜煎蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="生蛇蛋拌饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="蛇蛋炒饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="水煮蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="毛蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_SnakeEgg>
+		<Item_ChickenEgg>
+			<li Name="鸡蛋布丁" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="鸡蛋羹" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="酸辣鸡蛋汤" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="韭菜煎鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="生鸡蛋拌饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="鸡蛋炒饭" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="水煮鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="毛鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_ChickenEgg>
+		<Item_BoarMeat>
+			<li Name="猪骨汤饭" Desc=""/>
+			<li Name="猪肉饼" Desc=""/>
+			<li Name="野猪肉炒饭" Desc=""/>
+			<li Name="猪肉卷" Desc=""/>
+			<li Name="猪肉炖萝卜" Desc=""/>
+			<li Name="猪肉炖粉条" Desc=""/>
+			<li Name="尖椒肉丝" Desc=""/>
+			<li Name="炸猪肉排" Desc=""/>
+			<li Name="碳烤野猪腿" Desc=""/>
+		</Item_BoarMeat>
+		<Item_ChickenMeat>
+			<li Name="炖鸡肉" Desc=""/>
+			<li Name="鸡肉饼" Desc=""/>
+			<li Name="鸡肉炒饭" Desc=""/>
+			<li Name="烤鸡翅" Desc=""/>
+			<li Name="鸡翅饭" Desc=""/>
+			<li Name="鸡丝面" Desc=""/>
+		</Item_ChickenMeat>
+		<Item_Beef>
+			<li Name="牛肉饭" Desc=""/>
+			<li Name="卤牛肉" Desc=""/>
+			<li Name="牛肉羹" Desc=""/>
+			<li Name="土豆炖牛肉" Desc=""/>
+			<li Name="小炒牛肉" Desc=""/>
+			<li Name="碳烤牛腿" Desc=""/>
+			<li Name="辣炒牛肉" Desc=""/>
+			<li Name="牛肉炒饭" Desc=""/>
+			<li Name="牛骨浓汤" Desc=""/>
+		</Item_Beef>
+		<Item_RabbitMeat>
+			<li Name="烤兔肉" Desc=""/>
+			<li Name="兔肉卷" Desc=""/>
+			<li Name="兔肉丁炒饭" Desc=""/>
+			<li Name="卤水兔肉" Desc=""/>
+			<li Name="兔肉炖萝卜" Desc=""/>
+			<li Name="焖兔肉" Desc=""/>
+			<li Name="麻辣兔肉" Desc=""/>
+			<li Name="蜜汁兔" Desc=""/>
+			<li Name="碳烤兔肉" Desc=""/>
+		</Item_RabbitMeat>
+		<Item_WolfMeat>
+			<li Name="烤狼肉" Desc=""/>
+			<li Name="粗盐狼肉" Desc=""/>
+			<li Name="烤狼肋排" Desc=""/>
+			<li Name="手抓狼肉" Desc=""/>
+			<li Name="红焖狼肉" Desc=""/>
+			<li Name="红烧狼肉" Desc=""/>
+			<li Name="碳烤狼腿肉" Desc=""/>
+		</Item_WolfMeat>
+		<Item_FishMeat>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Item_FishMeat>
+		<Item_SnakeMeat>
+			<li Name="蛇肉羹" Desc=""/>
+			<li Name="干炸蛇段" Desc=""/>
+			<li Name="口味蛇" Desc=""/>
+			<li Name="红烧蛇肉" Desc=""/>
+			<li Name="干煸蛇肉" Desc=""/>
+			<li Name="香辣蛇肉" Desc=""/>
+			<li Name="凉拌蛇皮" Desc=""/>
+		</Item_SnakeMeat>
+		<Item_Wheat>
+			<li Name="馒头" Desc=""/>
+			<li Name="花卷" Desc=""/>
+			<li Name="担担面" Desc=""/>
+			<li Name="拉面" Desc=""/>
+			<li Name="打卤面" Desc=""/>
+			<li Name="煎饼" Desc=""/>
+			<li Name="麻油面" Desc=""/>
+			<li Name="清汤面" Desc=""/>
+			<li Name="鸡丝面" Desc=""/>
+		</Item_Wheat>
+		<Item_Flour>
+			<li Name="馒头" Desc=""/>
+			<li Name="花卷" Desc=""/>
+			<li Name="担担面" Desc=""/>
+			<li Name="拉面" Desc=""/>
+			<li Name="打卤面" Desc=""/>
+			<li Name="煎饼" Desc=""/>
+			<li Name="麻油面" Desc=""/>
+			<li Name="清汤面" Desc=""/>
+			<li Name="鸡丝面" Desc=""/>
+		</Item_Flour>
+		<Item_Mushroom>
+			<li Name="蘑菇汤" Desc=""/>
+			<li Name="清炒蘑菇" Desc=""/>
+			<li Name="干炸蘑菇" Desc=""/>
+			<li Name="蘑菇炒饭" Desc=""/>
+			<li Name="蘑菇炒肉丁" Desc=""/>
+		</Item_Mushroom>
+		<Item_Lotusroot>
+			<li Name="清炒莲藕" Desc=""/>
+			<li Name="脆炒藕丁" Desc=""/>
+			<li Name="卤藕片" Desc=""/>
+			<li Name="莲藕猪骨汤" Desc=""/>
+			<li Name="莲藕炖排骨" Desc=""/>
+			<li Name="藕粉" Desc=""/>
+		</Item_Lotusroot>
+		<Item_Pear>
+			<li Name="雪梨炖鸡汤" Desc=""/>
+			<li Name="梨盅饭" Desc=""/>
+			<li Name="秋梨汤" Desc=""/>
+			<li Name="山楂红枣煲雪梨" Desc=""/>
+			<li Name="昙花水梨汤" Desc=""/>
+		</Item_Pear>
+		<Item_Fruit>
+			<li Name="沙棘炖豆腐" Desc=""/>
+			<li Name="沙棘山药羹" Desc=""/>
+			<li Name="沙棘饭" Desc=""/>
+			<li Name="沙棘汁" Desc=""/>
+			<li Name="酸果汁" Desc=""/>
+			<li Name="酸果炒饭" Desc=""/>
+			<li Name="酸果鱼汤" Desc=""/>
+		</Item_Fruit>
+		<Item_FrogMeat>
+			<li Name="干锅田鸡" Desc=""/>
+			<li Name="香酥田鸡腿" Desc=""/>
+		</Item_FrogMeat>
+		<Item_TurtleMeat>
+			<li Name="红焖龟肉" Desc=""/>
+			<li Name="甲鱼汤" Desc=""/>
+		</Item_TurtleMeat>
+		<Item_BearMeat>
+			<li Name="红烧熊肉" Desc=""/>
+			<li Name="大刀红油熊肉片" Desc=""/>
+		</Item_BearMeat>
+	</SpecialItem>
+	<SpecialItem Name="Item_DeliciousFood">
+		<Item_TurtleEgg>
+			<li Name="五香卤龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="秘制咸龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="果木烤龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="香煎龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="炙烤龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="虎皮龟蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_TurtleEgg>
+		<Item_SnakeEgg>
+			<li Name="五香卤蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="秘制咸蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="果木烤蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="香煎蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="炙烤蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="虎皮蛇蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_SnakeEgg>
+		<Item_ChickenEgg>
+			<li Name="五香卤鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="秘制咸鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="果木烤鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="香煎鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="炙烤鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="虎皮鸡蛋" Desc="【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_ChickenEgg>
+		<Item_BoarMeat>
+			<li Name="卤猪耳" Desc=""/>
+			<li Name="猪肉丸子" Desc=""/>
+			<li Name="红烧猪蹄" Desc=""/>
+			<li Name="红椒爆炒野猪肉" Desc=""/>
+			<li Name="猪肉饺子" Desc=""/>
+			<li Name="蜜汁猪肉脯" Desc=""/>
+			<li Name="葱香烤猪肉条" Desc=""/>
+			<li Name="酱香里脊丝" Desc=""/>
+			<li Name="蜜汁猪肉脯" Desc=""/>
+		</Item_BoarMeat>
+		<Item_ChickenMeat>
+			<li Name="宫保鸡丁" Desc=""/>
+			<li Name="大鸡排" Desc=""/>
+			<li Name="炸鸡腿" Desc=""/>
+		</Item_ChickenMeat>
+		<Item_Beef>
+			<li Name="水煮牛肉" Desc=""/>
+			<li Name="上汤肥牛" Desc=""/>
+			<li Name="炖煮牛蹄筋" Desc=""/>
+			<li Name="牛肉丸" Desc=""/>
+			<li Name="牛肉饺子" Desc=""/>
+			<li Name="爆炒牛肉丝" Desc=""/>
+			<li Name="砂锅牛肉" Desc=""/>
+			<li Name="牛肉乱炖" Desc=""/>
+			<li Name="黄金牛肉" Desc=""/>
+		</Item_Beef>
+		<Item_RabbitMeat>
+			<li Name="香辣兔头" Desc=""/>
+			<li Name="烤全兔" Desc=""/>
+			<li Name="香辣爆炒兔丁" Desc=""/>
+			<li Name="脆皮兔" Desc=""/>
+			<li Name="椒盐兔" Desc=""/>
+			<li Name="姜葱焖兔肉" Desc=""/>
+			<li Name="璧山兔" Desc=""/>
+			<li Name="跳水兔" Desc=""/>
+			<li Name="蘸水兔肉" Desc=""/>
+		</Item_RabbitMeat>
+		<Item_WolfMeat>
+			<li Name="炖狼肉" Desc=""/>
+			<li Name="山椒狼肉" Desc=""/>
+			<li Name="孜然狼肉" Desc=""/>
+			<li Name="姜爆狼肉" Desc=""/>
+		</Item_WolfMeat>
+		<Item_FishMeat>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Item_FishMeat>
+		<Item_SnakeMeat>
+			<li Name="口水蛇" Desc=""/>
+			<li Name="水蛇粥" Desc=""/>
+			<li Name="清炖蛇肉" Desc=""/>
+			<li Name="黄焖蛇" Desc=""/>
+			<li Name="葱爆蛇段" Desc=""/>
+			<li Name="金针蛇丝" Desc=""/>
+			<li Name="金龙汤" Desc=""/>
+			<li Name="五彩炒蛇丝" Desc=""/>
+			<li Name="三菌蛇肉" Desc=""/>
+		</Item_SnakeMeat>
+		<Item_Wheat>
+			<li Name="龙须面" Desc=""/>
+			<li Name="锤面" Desc=""/>
+			<li Name="摔面" Desc=""/>
+			<li Name="焖面" Desc=""/>
+			<li Name="铺盖面" Desc=""/>
+			<li Name="揪片" Desc=""/>
+			<li Name="豆沙包" Desc=""/>
+			<li Name="奶黄包" Desc=""/>
+			<li Name="糖包" Desc=""/>
+			<li Name="烙饼" Desc=""/>
+		</Item_Wheat>
+		<Item_Flour>
+			<li Name="龙须面" Desc=""/>
+			<li Name="锤面" Desc=""/>
+			<li Name="摔面" Desc=""/>
+			<li Name="焖面" Desc=""/>
+			<li Name="铺盖面" Desc=""/>
+			<li Name="揪片" Desc=""/>
+			<li Name="豆沙包" Desc=""/>
+			<li Name="奶黄包" Desc=""/>
+			<li Name="糖包" Desc=""/>
+			<li Name="烙饼" Desc=""/>
+		</Item_Flour>
+		<Item_Mushroom>
+			<li Name="鲜蘑八宝烩" Desc=""/>
+			<li Name="蘑菇高汤浇饭" Desc=""/>
+			<li Name="烤蘑菇" Desc=""/>
+			<li Name="蘑菇炖土豆" Desc=""/>
+			<li Name="蘑菇卷" Desc=""/>
+			<li Name="五彩蘑菇拼" Desc=""/>
+			<li Name="蒜烤金针菇" Desc=""/>
+		</Item_Mushroom>
+		<Item_Lotusroot>
+			<li Name="藕盒" Desc=""/>
+			<li Name="酸梅莲藕汤" Desc=""/>
+			<li Name="糖醋藕片" Desc=""/>
+			<li Name="藕心蒸饭" Desc=""/>
+			<li Name="五香莲藕" Desc=""/>
+		</Item_Lotusroot>
+		<Item_Pear>
+			<li Name="百合冰梨片" Desc=""/>
+			<li Name="蜜梨双冲饮" Desc=""/>
+			<li Name="银耳酿小梨" Desc=""/>
+			<li Name="秋梨膏" Desc=""/>
+		</Item_Pear>
+		<Item_Fruit>
+			<li Name="沙棘糕" Desc=""/>
+			<li Name="沙棘绿豆浆" Desc=""/>
+			<li Name="水晶沙棘" Desc=""/>
+			<li Name="酸果酱烤肉" Desc=""/>
+			<li Name="酸果烤饼" Desc=""/>
+			<li Name="酸果焖鱼" Desc=""/>
+		</Item_Fruit>
+		<Item_FrogMeat>
+			<li Name="干锅田鸡" Desc=""/>
+			<li Name="香酥田鸡腿" Desc=""/>
+		</Item_FrogMeat>
+		
+		<Item_TurtleMeat>
+			<li Name="红焖龟肉" Desc=""/>
+			<li Name="甲鱼汤" Desc=""/>
+		</Item_TurtleMeat>
+		
+		<Item_BearMeat>
+			<li Name="蒸熊掌" Desc=""/>
+			<li Name="红烧熊掌" Desc=""/>
+		</Item_BearMeat>
+	</SpecialItem>
+	<SpecialItem Name="Item_DelicacyFood">
+		<Item_TurtleEgg>
+			<li Name="五色烩蛋" Desc="将食材多次加水水煮后成型切片，撒上五色灵果研磨的粉末，以特殊手法翻炒。味道甘甜，适口不腻。【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="龙息蛋" Desc=" 以温度极高的梧桐木灰焖制食材七个时辰，不加外物，让蛋本身的口感发挥到极致，并且有了些许果木清香和火灵力的爆炸感令人回味无穷。【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_TurtleEgg>
+		<Item_SnakeEgg>
+			<li Name="五色烩蛋" Desc="将食材多次加水水煮后成型切片，撒上五色灵果研磨的粉末，以特殊手法翻炒。味道甘甜，适口不腻。【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="龙息蛋" Desc=" 以温度极高的梧桐木灰焖制食材七个时辰，不加外物，让蛋本身的口感发挥到极致，并且有了些许果木清香和火灵力的爆炸感令人回味无穷。【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_SnakeEgg>
+		<Item_ChickenEgg>
+			<li Name="五色烩蛋" Desc="将食材多次加水水煮后成型切片，撒上五色灵果研磨的粉末，以特殊手法翻炒。味道甘甜，适口不腻。【感谢测试玩家：人境庐提供食谱。】"/>
+			<li Name="龙息蛋" Desc=" 以温度极高的梧桐木灰焖制食材七个时辰，不加外物，让蛋本身的口感发挥到极致，并且有了些许果木清香和火灵力的爆炸感令人回味无穷。【感谢测试玩家：人境庐提供食谱。】"/>
+		</Item_ChickenEgg>
+		<Item_BoarMeat>
+			<li Name="旷野之风" Desc="以猛火对猪后腿肉进行高难度的烤制，形成风格迥异的三层口感：外层焦脆火辣，中层嚼劲十足，内层多汁鲜嫩，吃过之后仿佛置身旷野，是极具草原风格的菜品。"/>
+			<li Name="二十四桥明月夜" Desc="将野猪里脊肉顺成丝，腌制入味，再团入豆腐削成的球中，做二十四粒，放入高汤小火慢炖收汁而成的豪华菜品。"/>
+		</Item_BoarMeat>
+		<Item_Beef>
+			<li Name="绿柳扶风" Desc="将牛肉切成细丝，以高水准翻炒后拼盘，其口感清淡，但回味无穷。因肉丝细腻，所以非常入味，但是一不小心就会失去火候，使肉质变老。"/>
+			<li Name="三丝牛舌" Desc="牛舌味道甘甜鲜美，肉质极嫩，三丝牛舌更是将这一特质发挥到了极致，以很少的香料将牛舌本来的口感和味道发挥到极致。"/>
+		</Item_Beef>
+		<Item_RabbitMeat>
+			<li Name="水晶兔" Desc="以特殊手法烹制兔肉，使之半透恍如水晶。其口感弹牙鲜香，是色香味俱全的美食。"/>
+			<li Name="五仙兔" Desc="以五种香料与兔丁炒制，五种味道层叠衬托，使兔肉层次鲜明。其难点在于火候把控，一旦失衡会使香料交杂，破坏口感层次。"/>
+		</Item_RabbitMeat>
+		<Item_WolfMeat>
+			<li Name="天狗吞日" Desc="以大酱及数十种食材烹制成的狼肉炖汤，初看不见奥妙，随着汤汁一点点喝掉，其中的食材依次露出，各有风味。"/>
+			<li Name="烈火灼心" Desc="狼脊背最优质的肉以辣椒反复烹炒，哪怕寒冬之时，入口亦觉得全身燥热生暖，其口感鲜辣，欲罢不能。"/>
+		</Item_WolfMeat>
+		<Item_FishMeat>
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Item_FishMeat>
+		<Item_SnakeMeat>
+			<li Name="龙凤呈祥" Desc="将蛇肉与鸡肉先进行腌制，而后合入汤锅小火炖煮，直到汤汁收干，两种肉的鲜香互相衬托，味道绝佳。"/>
+			<li Name="龟蛇盘" Desc="将龟肉蛇肉一起烹饪熬煮，龟肉与蛇肉口感劲道入味，是一道大补佳肴。"/>
+		</Item_SnakeMeat>
+		<Item_Flour>
+			<li Name="三千烦恼" Desc="细如发丝的面食，配以四种特制卤汤，极其入味而且入口即化，是面食极艺。"/>
+			<li Name="灌汤五德大包" Desc="传自宫廷的烹饪，将大包内分五阁，填入五种特质馅料，象征仁义礼智信五德。若以小火蒸，则五味俱全；若以大火蒸，包内薄皮因压力而破裂，酱料随机混合，又滋生出千变万化的口味。"/>
+			<li Name="手撕包" Desc="来自一座南方海边城市的特制面食，蓬松甜软，入口香糯，口感十分美妙。它寄托了那座城市的回忆。"/>
+		</Item_Flour>
+		<Item_Wheat>
+			<li Name="三千烦恼" Desc="细如发丝的面食，配以四种特制卤汤，极其入味而且入口即化，是面食极艺。"/>
+			<li Name="灌汤五德大包" Desc="传自宫廷的烹饪，将大包内分五阁，填入五种特质馅料，象征仁义礼智信五德。若以小火蒸，则五味俱全；若以大火蒸，包内薄皮因压力而破裂，酱料随机混合，又滋生出千变万化的口味。"/>
+		</Item_Wheat>
+		<Item_Mushroom>
+			<li Name="天街小雨润如酥" Desc="将形状完好规整的蘑菇立于白豆腐上，并在蒸制的过程中持续的淋入特制汤汁。出锅时菌伞上犹带液滴，因而得名。"/>
+		</Item_Mushroom>
+		<Item_Lotusroot>
+			<li Name="七巧蒸洪藕" Desc="本是祭天所用的菜品，后流入民间成为名菜。取七窍的大莲藕为主料，分别填入三牲四畜的特制肉糜，蒸熟后切片盛盘。虽然步骤简单，但是对食材和厨艺要求极高。"/>
+			<li Name="跃龙门" Desc="将整只大藕两端切掉，中间孔洞打通。而后置于特制的鸳鸯大锅之中，一端高汤加冰，一端清汤并放入云梦泽特产的小银鱼并以猛火加热，而后上桌。"/>
+		</Item_Lotusroot>
+		<Item_Pear>
+			<li Name="水晶梨雕" Desc="将优质梨子急冻，然后去皮，梨子果肉会变成半透明的材质。在极短的时间内将其雕刻成种种形状呈桌，白雾蒸腾中半透明的精致雕塑若隐若现，入口冰爽香甜。是一道色香味俱全的美食。"/>
+			<li Name="冰罄蝉翼" Desc="将上等雪梨去皮，再切成蝉翼般的薄片，层层贴于姜糖水制成的冰罄内壁。食用过程中，薄如蝉翼的梨片甜脆可口，吃完梨片更可畅饮冰罄融化后的汤汁。虽是冷饮，但却是不分季节的美味。"/>
+		</Item_Pear>
+		<Item_Fruit>
+			<li Name="百果汇" Desc="以最普通的野生酸浆果为原料，以高超的手法和用料将其调制成各种水果的味道，而后汇于一盆，没有化腐朽为神奇的高超厨艺无法完成这道菜品。"/>
+		</Item_Fruit>
+		<Item_FrogMeat>
+			<li Name="干锅田鸡" Desc=""/>
+			<li Name="香酥田鸡腿" Desc=""/>
+		</Item_FrogMeat>
+		<Item_TurtleMeat>
+			<li Name="龟蛇盘" Desc="将龟肉蛇肉一起烹饪熬煮，龟肉与蛇肉口感劲道入味，是一道大补佳肴。"/>
+		</Item_TurtleMeat>
+		<Item_BearMeat>
+			<li Name="水晶熊掌" Desc=""/>
+		</Item_BearMeat>
+		
+		<Item_ChickenMeat>
+			<li Name="金啼报晓" Desc=""/>
+		</Item_ChickenMeat>
+	</SpecialItem>
+</List></SpecialNames>

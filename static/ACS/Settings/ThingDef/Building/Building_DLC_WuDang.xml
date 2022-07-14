@@ -1,0 +1,1522 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="LsXuanWu_Carve" Parent="LsDog_Carve">
+		<TexPath>res\Sprs\building_WuDangDLC\building_xuanwudiaoxiang01</TexPath>
+		<TexScale>0.95</TexScale>
+		<ThingName>玄武雕像</ThingName>	
+		<Desc>玄武的雕像。可用来复活或召唤玄武。</Desc>
+		<Tags>
+			<Tag Name="_LSSTONE" Level="1"/>
+			<Tag Name="XuanWuStone" Level="1"/>
+		</Tags>
+		<Collider>
+			<Data>
+			[1,1],
+			[1,3],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>0.55</y></li>
+				<li><x>0</x><y>-0.1</y></li>
+				<li><x>-0.5</x><y>0.35</y></li>
+				<li><x>0</x><y>0.9</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F,B,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStoneBlock" count = "180"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="ZhenWuCarve" Parent="Building_StoneMan">
+		<TexPath>res\Sprs\building_WuDangDLC\building_zhenwudadi01</TexPath>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1</TexScale>
+		<ThingName>真武大帝雕像</ThingName>	
+		<Desc>祭拜真武大帝神像，其上神威如狱，神恩如海，不可侵犯。</Desc>
+		<Collider>
+			<Data>
+			[1,1,1,1,1],
+			[1,1,1,1,1],
+			[1,1,3,1,1],
+			[1,1,1,1,1],
+			[1,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1.2</y></li>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.2</y></li>
+				<li><x>0</x><y>1.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NoFight>1</NoFight>
+			<Orientation>F,B,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.42</x>
+				<y>4.15</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>20</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="TurTleMonu" Parent="Building_StoneMan">
+		<TexPath>res\Sprs\building_WuDangDLC\building_bixituobei01</TexPath>
+		<TexScale>1</TexScale>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<ThingName>赑屃托碑</ThingName>	
+		<Desc>相传在远古时代，大禹收服了赑屃，将其用于疏通河道，引流湖泊，平定水患，其贡献都在此碑上记载</Desc>
+		<ShadowSize>
+			<x>1</x>
+			<y>3</y>
+		</ShadowSize>
+		<Collider>
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			[0,1,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1</y></li>
+				<li><x>0.75</x><y>1.5</y></li>
+				<li><x>0</x><y>1</y></li>
+				<li><x>-1</x><y>1.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F,B,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>4.2</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>125</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>24</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="IncenseTripod" Parent="Building_StoneMan">
+		<TexPath>res\Sprs\building_WuDangDLC\building_fenxiangding01</TexPath>
+		<TexScale>1</TexScale>
+		<ThingName>焚香鼎</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>		
+		<Desc>道门用来燃香宁神的炉鼎。</Desc>
+		<Collider>
+			<Data>
+			[1,1,1,1],
+			[1,1,3,1],
+			[1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>0.75</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>-0.5</x><y>0.75</y></li>
+				<li><x>0</x><y>1.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.9</x>
+				<y>4.37</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>16</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="DragonIncense" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\building_longtouxiang01</TexPath>
+		<TexScale>1</TexScale>
+		<ThingName>龙头香</ThingName>
+		<CastShadow>0</CastShadow>
+		<StoryBnts>
+			<li Name="祭拜" Desc="尝试祭拜龙头香" Icon="res/Sprs/ui/icon_baishi01" Cost="10" Appoint="2" Scope="1" Ani="ketou" Story="System_FightMap_DragonIncense"/>
+		</StoryBnts>
+		<Desc>立于武当山南岩宫之奇迹，位于悬崖之侧，若是想上香，需手足并用，稍有不慎便会失足落入深渊。</Desc>
+		<Tags>
+		</Tags>
+		<Collider>
+			<Data>
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,1],
+			[1,1,1,1,1,1,1,1,1,3],
+			[0,0,0,0,0,0,0,0,0,1],
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<AutoOrientation>3</AutoOrientation>
+			<Orientation>R</Orientation>
+			<TerrainAffordanceNeeded>All</TerrainAffordanceNeeded>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+		</Building>
+		<NotDoTongLing>1</NotDoTongLing>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallDownLeft" Parent="BuildingBase">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_001a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<Desc>武当派特有的墙壁，虽然很有气势，但不能围成房间。出于美观考虑，墙体之间最好与同尺寸的红墙进行拼接。</Desc>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_RedWall"/>
+		</StoryBnts>
+		<TexScale>2</TexScale>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>1</BlockLight>
+		<Beauty>1</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>30</MaxHitPoints>
+		<VisionRadius>10</VisionRadius>
+		<HideRoof>1</HideRoof>
+		<Flammability>
+			<Flammability>0.2</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<ElementKind>None</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[0,1,0,0,0,0,0,0],
+			[0,1,1,0,0,0,0,0],
+			[0,0,1,3,0,0,0,0],
+			[0,0,0,1,1,1,1,1],
+			[0,0,0,0,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>2</y></li>
+				<li><x>-0.5</x><y>2</y></li>
+				<li><x>0.5</x><y>2</y></li>
+				<li><x>0.5</x><y>2</y></li>
+			</OffsetGroup>
+			<OffsetZ>-0.1</OffsetZ>
+		</Collider>
+		
+		<Building>
+			<AutoOrientation>3</AutoOrientation>
+			<Orientation>R</Orientation>
+			<NoFengshui>1</NoFengshui>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>	
+			<CanMakeRoom>0</CanMakeRoom>
+			<BeMade>
+				<WorkToMake>30</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>3.65</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="RedWallDownLeft2" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_001a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[0,1,0,0,0,0,0,0],
+			[0,1,1,0,0,0,0,0],
+			[0,0,1,3,0,0,0,0],
+			[0,0,0,1,1,1,1,1],
+			[0,0,0,0,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>2</y></li>
+				<li><x>-0.5</x><y>2</y></li>
+				<li><x>0.5</x><y>2</y></li>
+				<li><x>0.5</x><y>2</y></li>
+			</OffsetGroup>
+			<OffsetZ>-1.01</OffsetZ>
+		</Collider>
+		<Building>
+			<Orientation>R</Orientation>
+			<SnowRenderData>
+				<x>3.65</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallUpLeft" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_003a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,1,1,1,1,1],
+			[0,0,3,1,1,1,0,0],
+			[0,1,1,1,0,0,0,0],
+			[0,1,1,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>1.5</x><y>-1</y></li>
+				<li><x>-1.5</x><y>-1</y></li>
+				<li><x>1.5</x><y>-1</y></li>
+				<li><x>1.5</x><y>-1</y></li>
+			</OffsetGroup>
+			<OffsetZ>1.82</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.65</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="RedWallUpLeft2" Parent="RedWallDownLeft2">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_003a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,1,1,1,1,1],
+			[0,0,3,1,1,1,0,0],
+			[0,1,1,1,0,0,0,0],
+			[0,1,1,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>1.5</x><y>-1</y></li>
+				<li><x>-1.5</x><y>-1</y></li>
+				<li><x>1.5</x><y>-1</y></li>
+				<li><x>1.5</x><y>-1</y></li>
+			</OffsetGroup>
+			<OffsetZ>1.82</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.65</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallMidUp" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_002a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,0,1,1,1,1],
+			[0,0,0,0,1,1,1,0],
+			[0,0,0,1,1,0,0,0],
+			[0,0,0,1,3,0,0,0],
+			[0,0,1,1,1,0,0,0],
+			[1,1,1,1,0,0,0,0],
+			[1,1,1,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+			<OffsetZ>2.3</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="RedWallMidUp2" Parent="RedWallDownLeft2">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_002a</TexPath>
+		<ThingName>大弯曲红墙</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,0,1,1,1,1],
+			[0,0,0,0,1,1,1,0],
+			[0,0,0,1,1,0,0,0],
+			[0,0,0,1,3,0,0,0],
+			[0,0,1,1,1,0,0,0],
+			[1,1,1,1,0,0,0,0],
+			[1,1,1,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+			<OffsetZ>2.3</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallMidRight" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_004a</TexPath>
+		<TexScale>2</TexScale>
+		<ThingName>大弯曲红墙</ThingName>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,0,1,1],
+			[0,0,0,0,0,0,1,1],
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,1,1,1,1,0],
+			[0,1,1,1,3,1,1,0],
+			[0,1,1,1,1,0,0,0],
+			[1,1,1,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+			<OffsetZ>4.26</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="RedWallMidRight2" Parent="RedWallDownLeft2">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall02_004a</TexPath>
+		<TexScale>2</TexScale>
+		<ThingName>大弯曲红墙</ThingName>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,0,0,1,1],
+			[0,0,0,0,0,0,1,1],
+			[0,0,0,0,0,1,1,1],
+			[0,0,0,1,1,1,1,0],
+			[0,1,1,1,3,1,1,0],
+			[0,1,1,1,1,0,0,0],
+			[1,1,1,0,0,0,0,0],
+			[1,1,0,0,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+			<OffsetZ>4.26</OffsetZ>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallVertical" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_001a</TexPath>
+		<TexScale>2</TexScale>
+		<ThingName>大红墙中段（纵）</ThingName>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>-0.5</x><y>1.5</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F</Orientation>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallVerticalHalf" Parent="RedWallVertical">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_003a</TexPath>
+		<ThingName>大红墙末端（纵）</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.4</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallHorizontalHalf" Parent="RedWallVertical">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_004a</TexPath>
+		<ThingName>大红墙末端（纵）</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0.5</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.5</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallHorizontal" Parent="RedWallVertical">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_006a</TexPath>
+		<ThingName>大红墙中段（横）</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>3.5</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallDownLeftTiny" Parent="RedWallHorizontal">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_002a</TexPath>
+		<ThingName>大红墙转角</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>R</Orientation>
+			<SnowRenderData>
+				<x>3.5</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallUpLeftTiny" Parent="RedWallHorizontal">
+		<TexPath>res\Sprs\building_WuDangDLC\WuDangWall01_005a</TexPath>
+		<ThingName>大红墙转角</ThingName>
+		<TexScale>2</TexScale>
+		<HideRoof>1</HideRoof>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+				<li><x>-0.5</x><y>1</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>R</Orientation>
+			<SnowRenderData>
+				<x>3.5</x>
+				<y>4.25</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<!--系统用，下面那个的部件-->
+	<ThingDef Type="Building" Name="RedWallGate_Part">	
+		<TexPath>res\Sprs\building_WuDangDLC\building_shanmen02_F</TexPath>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<Perfab>Building/Prefabs/RedWallGate_Part</Perfab>
+			<SnowRenderData>
+				<x>3.2</x>
+				<y>4.12</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallGate" Parent="RedWallUpLeftTiny">
+		<TexPath>res\Sprs\building_WuDangDLC\building_shanmen01_F</TexPath>
+		<ThingName>道门楼坊</ThingName>
+		<Desc>道门风格的气派的楼坊。</Desc>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1</TexScale>
+		<ColliderKind>NoPass</ColliderKind>
+		<Tags>
+			<Tag Name="TheGate" Level="1"/>
+		</Tags>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,0,0,0,1,1,0,1,1,0,0,0,0],
+			[0,0,0,1,1,1,0,1,1,1,0,0,0],
+			[0,0,1,1,1,3,0,1,1,1,1,0,0],
+			[0,1,1,1,1,1,0,1,1,1,1,1,0],
+			[0,1,0,0,0,0,0,0,0,0,0,1,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>1</x><y>0.37</y></li>
+				<li><x>1</x><y>0.37</y></li>
+				<li><x>1</x><y>0.37</y></li>
+				<li><x>1</x><y>0.37</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Building>
+			<Perfab>Building/Prefabs/Wudanglou</Perfab>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>3.2</x>
+				<y>4.12</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="RedWallDrum" Parent="Building_Tower2">
+		<TexPath>res\Sprs\building_WuDangDLC\building_wudanggu01_F</TexPath>
+		<ThingName>太极道鼓</ThingName>
+		<TexScale>1</TexScale>
+		<CastShadow>0</CastShadow>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<Desc>装饰用的建筑，根据制作材料可以影响周围地块的五行属性。</Desc>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,1,1,1,1,1,0],
+			[1,1,1,1,1,1,1],
+			[0,1,1,3,1,1,0],
+			[1,1,1,1,1,1,1],
+			[0,0,0,1,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>3.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>40</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangBigGate" Parent="Build_TheBigGate">
+		<TexPath>res\Sprs\building_WuDangDLC\building_wudangpailou01</TexPath>
+		<ThingName>武当山门</ThingName>
+		<Desc>武当派的标志大门，气派而庄严。</Desc>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1</TexScale>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,0,1,0,1,0,1],
+			[1,0,3,0,1,0,1],
+			[4,4,4,0,4,4,4],
+			[4,4,4,0,4,4,4],
+			[4,4,4,0,4,4,4],
+			[4,4,4,0,4,4,4],
+			[4,4,4,0,4,4,4],
+			[4,4,4,0,4,4,4],
+			</Data>
+			<OffsetGroup>
+				<li><x>-1</x><y>2</y></li>
+				<li><x>0</x><y>2</y></li>
+				<li><x>1</x><y>3</y></li>
+				<li><x>0.2</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>3.95</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangScreen" Parent="Building_Screen1">
+		<TexPath>res\Sprs\building_WuDangDLC\building_wudangpingfeng01</TexPath>
+		<ThingName>玄鸾屏风</ThingName>
+		<TexScale>1</TexScale>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,3,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>0.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.55</x>
+				<y>3.88</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>75</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>6</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangFlag" Parent="Building_Flag2">
+		<TexPath>res\Sprs\building_WuDangDLC\building_wudangqizhi01</TexPath>
+		<ThingName>武当旗帜</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1</TexScale>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<Orientation>F,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.6</x>
+				<y>3.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>2</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangXiangLu" Parent="Building_JuXingXiangLu">
+		<TexPath>res\Sprs\building_WuDangDLC\building_wudangxianglu01_F</TexPath>
+		<ThingName>龙雕香炉</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1.32</TexScale>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>0.5</y></li>
+				<li><x>0.5</x><y>0.5</y></li>
+				<li><x>0.5</x><y>0.5</y></li>
+				<li><x>0.5</x><y>0.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>3</x>
+				<y>4.13</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>12</CostStuffCount>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangPuTuan" Parent="Building_MagicCushion">
+		<TexPath>res\Sprs\building_WuDangDLC\building_xbaguaputuan01_F</TexPath>
+		<ThingName>八卦蒲团</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1.15</TexScale>
+		<ColliderKind>ThrowOver</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,1],
+			[1,7,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>0</x><y>0.5</y></li>
+			</OffsetGroup>
+			<WorkOffset>
+				<li Index="0"  X="0.01" Y="0.38" Z="0.01" Ang="181"/>
+			</WorkOffset>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.6</x>
+				<y>3.8</y>
+				<z>1</z>
+			</SnowRenderData>
+			<WorkTexPath>res\Sprs\building_WuDangDLC\building_xbaguaputuan01_F</WorkTexPath>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangXianHeDeng" Parent="StreetLight1">
+		<TexPath>res\Sprs\building_WuDangDLC\building_xianhedeng02</TexPath>
+		<ThingName>灵鹤仙灯</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1.3</TexScale>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1.4</y></li>
+				<li><x>-0.4</x><y>1.7</y></li>
+				<li><x>0</x><y>1.6</y></li>
+				<li><x>0.4</x><y>1.7</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Light>
+			<Value>75</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>3</FailRadius>
+			<Radius>8</Radius>
+			<Color>FFC90EFF</Color>
+		</Light>
+		
+		<Building>
+			<WorkTexPath>res\Sprs\building_WuDangDLC\building_xianhedeng02</WorkTexPath>
+			<Orientation>F,B,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>3.1</x>
+				<y>3.8</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>25</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>6</CostStuffCount>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangDivine" Parent="OrnamentBase">
+		<TexPath>res\Sprs\building_WuDangDLC\building_xuantianshangdishengpai01</TexPath>
+		<ThingName>玄天上帝圣牌</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<Desc>武当山特有的建筑，其上铭刻有玄天上帝圣号。</Desc>
+		<TexScale>1</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>4</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.8</y></li>
+				<li><x>0</x><y>1.5</y></li>
+				<li><x>0</x><y>1.8</y></li>
+			</OffsetGroup>
+		</Collider>
+
+		<Building>
+			<Orientation>F,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.9</x>
+				<y>4.18</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>10</CostStuffCount>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangJinDian" Parent="RedWallDownLeft">
+		<TexPath>res\Sprs\building_WuDangDLC\building_jindian01_F</TexPath>
+		<ThingName>金殿</ThingName>
+		<Desc>立于武当派金顶之上的奇观，得玄天上帝神威护佑，其中更蕴含有武当至高之传承奥秘，有缘人皆可领悟修行。</Desc>
+		<TexScale>1</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>4</y>
+		</ShadowSize>
+		<StoryBnts>
+			<li Name="参悟" Desc="参悟其中蕴含的天道法则" Cost="10" Appoint="2" Scope="1"  Story="System_LearnGreateBuilding_WuDang"/>
+		</StoryBnts>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,6,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,0,0,0,1,1,1,0,0,0,0],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>3</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>3</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+
+		<Building>
+			<NoFight>1</NoFight>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WuDangXuanWuDeng" Parent="StreetLight1">
+		<TexPath>res\Sprs\building_WuDangDLC\building_xuanwudeng01</TexPath>
+		<ThingName>玄武灵灯</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<TexScale>1.0</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>1</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.8</y></li>
+				<li><x>0.45</x><y>0.75</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>-0.45</x><y>0.75</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Light>
+			<Value>75</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>3</FailRadius>
+			<Radius>8</Radius>
+			<Color>B5E61DFF</Color>
+		</Light>
+		
+		<Building>
+			<WorkTexPath>res\Sprs\building_WuDangDLC\building_xuanwudeng01</WorkTexPath>
+			<Orientation>F,B,R</Orientation>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.6</x>
+				<y>4.15</y>
+				<z>1</z>
+			</SnowRenderData>		
+			<BeMade>
+				<WorkToMake>75</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>10</CostStuffCount>
+			</BeMade>
+		</Building>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_ChaShu1" Parent="Building_LingShu1">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_chashu01</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>云顶茶树</ThingName>
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.55</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.55</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Building>
+			<SnowRenderData>
+				<x>3.25</x>
+				<y>4.15</y>
+				<z>1</z>
+			</SnowRenderData>	
+			<BeMade>
+				<WorkToMake>125</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+
+	<ThingDef Type="Building" Name="Building_ChaShu2" Parent="Building_ChaShu1">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_chashu02</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>云顶茶树</ThingName>
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.55</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.55</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+	</ThingDef>	
+
+	<ThingDef Type="Building" Name="Building_WuDangSong1" Parent="Building_ShaShenMu4">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_wudangsong01</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>武当仙松</ThingName>	
+		<StoryBnts>
+			<li Name="观摩" Desc="尝试了解该建筑的建造方法" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockBuilding"/>
+		</StoryBnts>
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>1.5</y></li>
+				<li><x>2</x><y>0</y></li>
+				<li><x>-0.5</x><y>1.5</y></li>
+				<li><x>2</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Building>
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "9"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>3.3</x>
+				<y>4.12</y>
+				<z>1</z>
+			</SnowRenderData>	
+		</Building>
+	</ThingDef>	
+
+	<ThingDef Type="Building" Name="Building_WuDangSong2" Parent="Building_WuDangSong1">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_wudangsong02</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>武当仙松</ThingName>	
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>-1.5</x><y>1</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>1.5</x><y>1</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_WuDangSong3" Parent="Building_WuDangSong1">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_wudangsong03</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>武当仙松</ThingName>	
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>1.7</x><y>1.5</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>-1.7</x><y>1.5</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_WuDangSong4" Parent="Building_WuDangSong1">
+		<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_wudangsong04</TexPath>
+		<TexScale>1</TexScale>
+		<Frags>			
+			<li Frag="SeeScene" />
+		</Frags>
+		<ThingName>武当仙松</ThingName>	
+		<Tags>
+			<Tag Name="PenZai_FSZW" Level="1"/>
+		</Tags>
+		<ElementKind>Mu</ElementKind>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>1.5</x><y>0.7</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>-1.5</x><y>0.7</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Table_TaiZi" Parent="Table">
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识接触此物" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="Story_Building_TaiZiDian"/>
+		</StoryBnts>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Building_BigSwordPillar_ZiXiao" Parent="Building_BigSwordPillar">
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识接触此物" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="Story_Building_ZiXiaoJianZhen"/>
+		</StoryBnts>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Building_XiaoDanLu1_ZiXiao" Parent="Building_XiaoDanLu1">
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识接触此物" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="Story_Building_ZiXiaoDanLu"/>
+		</StoryBnts>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="Building_ShiBei_ZiXiao" Parent="Building_ShiBei">
+		<StoryBnts>
+			<li Name="接触" Desc="尝试用神识接触此物" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Scope="1"  Story="Story_Building_ZiXiaoShiBei"/>
+		</StoryBnts>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<NotRandom>1</NotRandom>
+		</Building>
+		<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>
+</List></ThingDefs>

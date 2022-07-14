@@ -1,0 +1,98 @@
+<Defs><List>
+	<Def Name="HeYin" Parent="Region_Base">
+		<DisplayName>河阴城</DisplayName>
+		<Desc>此地为城市，可建设各类政策型建筑，并可招揽弟子。</Desc>
+		<Landform>
+			<li>Aqua</li>
+		</Landform>
+		<FirstHall>MainHall1</FirstHall>
+		<Point>
+			<li Point="Point_Discipline"/>
+			<li Point="Point_Secret"/>
+			<li Point="Point_Sermon"/>
+			<li Point="Point_Recuit"/>
+		</Point>
+		<Type>City</Type>
+		<ClickPlace>Place_HeYinCity</ClickPlace>
+		<BasicProduct>
+			<li Type="Hall1" Product="Hall" Count="10" />
+			<li Type="Hall2" Product="Hall" Count="15" />
+			<li Type="Hall3" Product="Hall" Count="20" />
+		</BasicProduct>
+		
+		<Population>350000</Population>
+		<Stability>25</Stability>
+		<Religions>
+			<li School="4" Attractive="75" Population="140000" />
+			<li School="11" Attractive="50" Population="87500" />
+		</Religions>
+		
+	</Def>
+	<Def Name="GuanHai" Parent="HeYin">
+		<DisplayName>观海城</DisplayName>
+		<Landform>
+			<li>Aqua</li>
+		</Landform>
+
+		<ClickPlace>Place_HuCity</ClickPlace>
+		
+		<Population>350000</Population>
+		<Stability>25</Stability>
+		<Religions>
+			<li School="6" Attractive="75" Population="140000" />
+			<li School="4" Attractive="50" Population="70000" />
+			<li School="11" Attractive="20" Population="35000" />
+			<li School="1" Attractive="20" Population="35000" />
+		</Religions>
+	</Def>
+	<Def Name="PanShe" Parent="HeYin">
+		<DisplayName>盘蛇寨</DisplayName>
+		<Landform>
+			<li>Forest</li>
+		</Landform>
+
+		<ClickPlace>Place_PanSheCity</ClickPlace>
+		
+		<Population>100000</Population>
+		<Stability>-75</Stability>
+		<Religions>
+			<li School="9" Attractive="75" Population="40000" />
+			<li School="8" Attractive="50" Population="40000" />
+		</Religions>
+		
+		
+	</Def>
+	<Def Name="Feng" Parent="HeYin">
+		<DisplayName>丰城</DisplayName>
+		<Landform>
+			<li>Mountain</li>
+		</Landform>
+		
+		<ClickPlace>Place_ShanCity</ClickPlace>
+		
+		<Population>350000</Population>
+		<Stability>75</Stability>
+		<Religions>
+			<li School="6" Attractive="50" Population="140000" />
+			<li School="7" Attractive="20" Population="105000" />
+			<li School="4" Attractive="20" Population="70000" />
+		</Religions>
+	</Def>
+	<Def Name="DaLiang" Parent="HeYin">
+		<DisplayName>大凉城</DisplayName>
+		<Landform>
+			<li>Mountain</li>
+		</Landform>
+		
+		<ClickPlace>Place_DaLiangCity</ClickPlace>
+		
+		<Population>100000</Population>
+		<Stability>75</Stability>
+		<Religions>
+			<li School="5" Attractive="75" Population="40000" />
+			<li School="3" Attractive="50" Population="25000" />
+			<li School="2" Attractive="20" Population="10000" />
+			<li School="9" Attractive="20" Population="10000" />
+		</Religions>
+	</Def>
+</List></Defs>

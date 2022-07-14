@@ -1,0 +1,19 @@
+<FabaoFormulas><List>
+	<!-- 真武荡魔剑 -->
+	<Fabao Name="MiBaoFormula_ZhenWuDangMoShenJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ZhenWuDangMoShenJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 紫霄尺 -->
+	<Fabao Name="MiBaoFormula_ZiXiaoChi">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ZiXiaoChi</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+</List></FabaoFormulas>

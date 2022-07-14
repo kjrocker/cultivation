@@ -1,0 +1,388 @@
+<Defs><List>
+	<Def Name="GoodsAnimal">
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Rabbit</Race>
+				<DisplayName>精美的兔笼</DisplayName>
+				<Tip>里面装了一只开智期的兔子，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Chicken</Race>
+				<DisplayName>精美的鸡笼</DisplayName>
+				<Tip>里面装了一只开智期的鸡，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Wolf</Race>
+				<DisplayName>精美的狼笼</DisplayName>
+				<Tip>里面装了一只开智期的狼，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>精美的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Boar</Race>
+				<DisplayName>精美的野猪笼</DisplayName>
+				<Tip>里面装了一只开智期的野猪，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Bear</Race>
+				<DisplayName>精美的熊笼</DisplayName>
+				<Tip>里面装了一只开智期的熊，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Turtle</Race>
+				<DisplayName>精美的龟笼</DisplayName>
+				<Tip>里面装了一只开智期的龟，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Frog</Race>
+				<DisplayName>精美的蛙笼</DisplayName>
+				<Tip>里面装了一只开智期的蛙，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Cat</Race>
+				<DisplayName>精美的猫笼</DisplayName>
+				<Tip>里面装了一只开智期的猫，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Cattle</Race>
+				<DisplayName>精美的牛笼</DisplayName>
+				<Tip>里面装了一只开智期的牛，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+		
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<AnimalFlag>ExoticAnimal</AnimalFlag>
+				<Race>Tiger</Race>
+				<DisplayName>精美的虎笼</DisplayName>
+				<Tip>里面装了一只开智期的虎，已获得三点灵智碎片。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>100</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Type="Emotion" Level="3" />
+							<li Type="Scene" Level="3" Levelp="0" />
+							<li Type="Target" Level="3" Levelp="0" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+	</Def>
+</List></Defs>

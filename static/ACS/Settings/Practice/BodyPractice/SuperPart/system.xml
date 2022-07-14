@@ -1,0 +1,37 @@
+<BPSuperPartDefs><List>
+	<Def Name="LostPart"><!--失落之物-->
+		<Prefix>失落之物</Prefix>
+		<Suffix></Suffix>
+		<Desc>失落之物</Desc>
+		<Levels>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</Levels>
+	</Def>
+	<Def Name="_SYS_CORE_"><!--核心秘体 包含所有部件 这个由程序处理-->
+		<Prefix>身躯</Prefix>
+		<Suffix></Suffix>
+		<Desc>身躯</Desc>	
+	</Def>
+	
+</List></BPSuperPartDefs>

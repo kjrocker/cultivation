@@ -1,0 +1,13 @@
+<ModifierDefs><List>
+	<Modifier Name="Trade_Invincible" Type="Normal">
+		<DisplayName>避身丹</DisplayName>
+		<Desc>服用后大部分人都无法察觉到你的存在，可从拍卖中离开。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+		</SpecialFlags>
+	</Modifier>
+</List></ModifierDefs>

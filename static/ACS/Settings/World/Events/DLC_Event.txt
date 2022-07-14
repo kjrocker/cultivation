@@ -1,0 +1,7 @@
+ID	Kind	Name	WorldFlag	Weight	UnLockLevel	PopTip	Desc	ClassName	sParam1	fParam1	sParam2	fParam2	sParam3	fParam3	sParam4	fParam4	FromFightMap	MsgShowType	RuntimeFlag
+ID	类型 空：被动触发	名字	对WorldFlag的要求		解锁等级	事件发生时弹出默认提示 0不开 1开启 	介绍	类名	(天气:s天气类型)  (进攻:进攻富有等级) (妖兽:妖兽种族) (宝物:物品类型lable 权重:ID|ID.)  (角色:数据名字) (秘闻:随机秘闻ID|ID) (路人：行为描述)(动物进攻：种族)（精怪来临：精怪类型）	（天气：1为100%，通灵概率）（进攻:强度等级加成(默认等级+系数)）（ 妖兽:持续时间） （宝物:最小品阶 权重:值）(角色:0心情 1modifier) (拜师：数量)(路人：数量)(动物进攻：最少个数)	(路人：附加标记)（精怪来临：具体名称  用|隔开。必须要有种族）	（宝物:最大品阶）  （进攻:持续时间秒） （权重:持续时间(天)） （角色：0玩家角色 1所有角色）(路人：类型 1普通2拜师3暂住 10内门强住)(动物进攻：最大个数)					会从战斗地图带回来	消息类型，用于消息管理	
+40001	Lv2	启智的貊		1		0		EventA2HAnimal	Panda,10,10,10,10,10,3,Target,,3		在[TXT]，一只貊机缘巧合，自行认知了[FRAG]，产生了灵智。		Place_BigBamboo						
+40002	Lv2	启智的貊		1		0		EventA2HAnimal	Panda,10,10,10,10,10,3,Emotion,,3		在[TXT]，一只貊不知何故，意外感受到多次[FRAG]，产生了灵智。		Place_BigBamboo						
+40003	Lv2	启智的貊		1		0		EventA2HAnimal	Panda,10,10,10,10,10,3,Scene,,3		在[TXT]，一只貊多次[FRAG]之后，突发奇想，产生了灵智。		Place_BigBamboo						
+40004	Join	动物加入		1	0	0	    一只貊来到你的门派，它似乎很喜欢这里。	EventAnimalJoin	Panda										
+40005	EnemyLv2	妖兽入侵		2	5	1	    一些貊妖出现在附近，它们充满敌意。	EventYaoShouAttack	JYPanda		TongYong_DropList							t7	

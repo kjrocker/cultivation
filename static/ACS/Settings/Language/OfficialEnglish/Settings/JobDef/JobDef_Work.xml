@@ -1,0 +1,91 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobMine">
+			<DisplayName>Mine</DisplayName>
+		</Text>
+		<Text Name="JobCarry">
+			<DisplayName>Haul</DisplayName>
+		</Text>
+		<Text Name="JobBuild">
+			<DisplayName>Build</DisplayName>
+		</Text>
+		<Text Name="JobFixBuilding">
+			<DisplayName>Repair</DisplayName>
+		</Text>
+		<Text Name="JobMoveBuilding">
+			<DisplayName>Move Building</DisplayName>
+		</Text>
+		<Text Name="JobSetupBuilding">
+			<DisplayName>Erect Building</DisplayName>
+		</Text>
+		<Text Name="JobPlant">
+			<DisplayName>Planting</DisplayName>
+		</Text>
+		<Text Name="JobOutFire">
+			<DisplayName>Extinguish Fire</DisplayName>
+		</Text>
+		<Text Name="JobHarvest">
+			<DisplayName>Harvest</DisplayName>
+		</Text>
+		<Text Name="JobCutoff">
+			<DisplayName>Remove</DisplayName>
+		</Text>
+		<Text Name="JobCutoffTree">
+			<DisplayName>Chop</DisplayName>
+		</Text>
+		<Text Name="JobSeachItem">
+			<DisplayName>Search</DisplayName>
+		</Text>
+		<Text Name="JobSeachNpc">
+			<DisplayName>Search</DisplayName>
+		</Text>
+		<Text Name="JobCarryOut">
+			<DisplayName>Move Away</DisplayName>
+		</Text>
+		<Text Name="JobDismantle">
+			<DisplayName>Demolish</DisplayName>
+		</Text>
+		<Text Name="JobMakeItem">
+			<DisplayName>Create</DisplayName>
+		</Text>
+		<Text Name="JobRemoveFloor">
+			<DisplayName>Remove Floorboards</DisplayName>
+		</Text>
+		<Text Name="JobTreatHim">
+			<DisplayName>Heal</DisplayName>
+		</Text>
+		<Text Name="JobCarryToBed">
+			<DisplayName>Carry to Bed</DisplayName>
+		</Text>
+		<Text Name="JobFeedHim">
+			<DisplayName>Take Care</DisplayName>
+		</Text>
+		<Text Name="JobCarryWater">
+			<DisplayName>Fetch Water</DisplayName>
+		</Text>
+		<Text Name="JobExplore">
+			<DisplayName>Explore</DisplayName>
+		</Text>
+		<Text Name="JobBuryHim">
+			<DisplayName>Bury</DisplayName>
+		</Text>
+		<Text Name="JobHunting">
+			<DisplayName>Hunt</DisplayName>
+		</Text>
+		<Text Name="JobSlaughter">
+			<DisplayName>Butcher</DisplayName>
+		</Text>
+		<Text Name="JobKill">
+			<DisplayName>Kill</DisplayName>
+		</Text>
+		<Text Name="JobMoveNpc">
+			<DisplayName>Haul</DisplayName>
+		</Text>
+		<Text Name="JobCleanFloor">
+			<DisplayName>Clean</DisplayName>
+		</Text>
+		<Text Name="JobSacrifice">
+			<DisplayName>Sacrifice Offering</DisplayName>
+		</Text>
+	</List>
+</Texts>

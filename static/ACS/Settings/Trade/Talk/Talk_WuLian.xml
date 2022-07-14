@@ -1,0 +1,13 @@
+<Defs><List>
+	<Def Name="Talk_WuLian" Parent="Talk_DanXia">
+		<Submiss>
+			<li>你的到来真是让此地蓬荜生辉啊。</li>
+		</Submiss>
+		<GiftLike>
+			<li>红颜易老，知己难寻啊。多谢多谢。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>此物还不如沧海之一粟。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

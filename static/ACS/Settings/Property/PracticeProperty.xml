@@ -1,0 +1,631 @@
+﻿<Properties><List>
+	<!--修炼-->
+	
+	<Property Name="NpcFight_SneakValue">
+		<DisplayName>潜行值</DisplayName>
+		<DisplayValue>{0:N}</DisplayValue>
+		<Desc>潜行状态下隐匿程度，潜行值越高，越不容易被发现。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.5" Base="1" Addion="2"/>
+			<li Name="Physique" Weight="0.5" Base="1" Addion="2"/>
+		</FiveBase>
+	</Property>	
+	
+	<Property Name="PotentialOfBasepracticeAddValue">
+		<DisplayName>潜力加值</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>人物的潜力值，影响筑基速度，影响炼精化气的效率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	<Property Name="GodPenaltyAddV">
+		<DisplayName>天谴加值</DisplayName>
+		<Desc>人物的天谴加值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	<Property Name="MaxAccumulativeLingAddV">
+		<DisplayName>鼎炉之限加值</DisplayName>
+		<Desc>鼎炉之限的加值</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<BaseValue>0</BaseValue>
+	</Property>
+	<Property Name="BasepracticeSpeedCoefficient">
+		<DisplayName>筑基速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>外门弟子筑基的速度。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+		</Functions>
+	</Property>
+	
+	<Property Name="DeepPracticeSpeedSpecialCoefficient">
+		<DisplayName>修炼速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>金丹法修行者获得修为的速度。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>0.5</MinValue> 
+		<Skills>
+			<li Name="Qi" Weight="1" Base="0.6" Addion="0.04"/>
+		</Skills>
+		<ParallelProperties>
+			<li Name="ConsciousnessEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+	</Property>
+	
+	<!--心境基础值-->
+	<Property Name="MindStateBaseValue">
+		<DisplayName>心境的基础值</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>内门弟子心境的基础值。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<!--心境改变速度-->
+	<Property Name="SpeedOfMindStateCoefficient">
+		<DisplayName>心境稳定程度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>内门弟子心境的变化速度。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<!--心情影响的心境改变速度-->
+	<Property Name="SpeedOfMindStateCoefficientByMoods">
+		<DisplayName>心情影响心境改变速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc></Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+		<MoodWeight Base="-0.4" Addion="0.006"/>
+	</Property>
+	
+	<!--心情影响的心境改变速度-简单模式-->
+	<Property Name="SpeedOfMindStateCoefficientByMoods_Easy">
+		<DisplayName>心情影响心境改变速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc></Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+		<MoodWeight Base="0" Addion="0.004"/>
+	</Property>
+	<!--领悟悟性倍率-->
+	<Property Name="InspirationCoefficient">
+		<DisplayName>领悟悟性倍率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>悟性越高的人越容易在生活中发生领悟。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="1" Addion="0.3"/>
+		</FiveBase>
+	</Property>
+	
+		<!--灵气吸收速度加成-->
+	<Property Name="LingAbsorbSpeed">
+		<DisplayName>灵气吸收速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc></Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>0.1</MinValue> 
+		
+		<Skills>
+			<li Name="Qi" Weight="1" Base="0.5" Addion="0.05"/>
+		</Skills>
+	</Property>
+	
+	<!--根本灵气属性壳 以_SPECIAL_NOADD_开头会显示对应属性的无add值-->
+	<Property Name="_SPECIAL_NOADD_NpcLingMaxValue">
+		<DisplayName>根本灵气</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>修行者的根本灵气值。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<!--NPC灵气最大值-->
+	<Property Name="NpcLingMaxValue">
+		<DisplayName>灵气最大值</DisplayName>
+		<DisplayValue>{0:N2}</DisplayValue>
+		<Desc>角色的灵气最大值。</Desc>
+		<PropertyType>Dan|God</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>	
+		
+		<BaseValue>500</BaseValue>
+		<MinValue>99</MinValue> 
+		<MaxValue>99999999</MaxValue> 
+		<PracticeStage Base="1" Addion="0"/>
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+		</Functions>
+		<FiveBase>
+			<li Name="Perception" Weight="0.1" Base="0.6" Addion="0.08"/>
+			<li Name="Physique" Weight="0.25" Base="0.4" Addion="0.12"/>
+			<li Name="Intelligence" Weight="0.25" Base="0.4" Addion="0.12"/>
+		</FiveBase>
+		<Skills>
+			<li Name="Qi" Weight="0.4" Base="0.4" Addion="0.06"/>
+		</Skills>
+	</Property>
+	
+	<Property Name="FabaoMake_SpeedAddV">
+		<DisplayName>法宝炼制速度加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制法宝时，炼制速度加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-0.5</MinValue> 
+		<MaxValue>999999</MaxValue> 
+		<BaseValue>0</BaseValue>
+		
+	</Property>
+	
+	<Property Name="FabaoMake_SuccessRateAddV">
+		<DisplayName>法宝炼制成功率加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制法宝时，成功率加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+		
+	</Property>
+	
+	<Property Name="FabaoMake_LingInheritRateAddV">
+		<DisplayName>法宝炼制品阶加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制法宝时，原材料灵气对法宝品阶加成的幅度。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Manual" Weight="1" Base="0.5" Addion="0.05"/>
+		</Skills>
+	</Property>
+	<Property Name="FabaoMake_QualityAddV">
+		<DisplayName>法宝炼制品质加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制法宝时，成品品质的加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	
+	<Property Name="FabaoMake_TwelveRateChance">
+		<DisplayName>神器炼成基础几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>神器炼成基础几率</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0.025</BaseValue>
+		
+		<ParallelProperties>
+			<li Name="ConsciousnessEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="DanMake_Speed">
+		<DisplayName>丹药炼制速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，炼丹技能带来的炼制速度。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="0.8" Addion="0.04"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Meridian" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+		
+	</Property>
+	
+	<Property Name="DanMake_SpeedAddV">
+		<DisplayName>丹药炼制速度加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，额外的炼制速度加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+		
+	</Property>
+	
+	<Property Name="DanMake_SuccessRate">
+		<DisplayName>炼丹技能炼制成功率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，炼丹技能带来的成功率。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="0" Addion="0.04"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Meridian" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<Property Name="DanMake_SuccessRateAddV">
+		<DisplayName>丹药炼制成功率加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，额外的成功率加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+		
+	</Property>
+	<Property Name="DanMake_Yield">
+		<DisplayName>炼丹技能炼制产量加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，炼丹技能带来的产量加成。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="1" Addion="0.05"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Meridian" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+		
+	</Property>
+	<Property Name="DanMake_YieldAddP">
+		<DisplayName>丹药炼制产量加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>炼制丹药时，额外的产量加值。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<Property Name="PracticeRateAddPFromDan">
+		<DisplayName>瓶颈突破概率加成系数</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>瓶颈突破概率加成系数。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorldMapFlySpeed">
+		<DisplayName>历练飞行速度</DisplayName>
+		<DisplayValue>{0:N1}百里/息</DisplayValue>
+		<Desc>下山历练赶路时，御剑飞行的最大速度。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="1" Addion="0.1"/>
+		</Skills>
+	</Property>
+	
+	<Property Name="WorldMapFlySpeedAddP">
+		<DisplayName>历练飞行速度加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>下山历练赶路时，御剑飞行的速度加成。</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+		<MinValue>0</MinValue> 
+	</Property>
+	
+	<Property Name="ExperienceNeckTimeCostCoefficient">
+		<DisplayName>历练型瓶颈时间放大系数</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>突破瓶颈下山历练时，所花的时间的放大系数。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Charisma" Weight="0.25" Base="3" Addion="-0.25"/>
+			<li Name="Luck" Weight="0.25" Base="3" Addion="-0.25"/>
+		</FiveBase>
+		<Skills>
+			<li Name="SocialContact" Weight="0.5" Base="3" Addion="-0.125"/>
+		</Skills>
+	</Property>
+	
+	<Property Name="NeckCountdownAddV">
+		<DisplayName>瓶颈倒计时推迟时间</DisplayName>
+		<DisplayValue>{0:N0}秒</DisplayValue>
+		<Desc>瓶颈倒计时推迟时间。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>	
+		<MaxValue>99999999</MaxValue> 
+	</Property>
+	
+	<Property Name="EsotericaNum">
+		<DisplayName>秘籍数量限制</DisplayName>
+		<DisplayValue>{0:N0}</DisplayValue>
+		<Desc>秘籍的最大数量</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>			
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="5" Addion="2"/>
+		</FiveBase>	
+	</Property>
+	
+	<Property Name="AbilityLvAddV">
+		<DisplayName>道行加值</DisplayName>
+		<DisplayValue>{0:N0}</DisplayValue>
+		<Desc>真实道行的附加值</Desc>
+		<PropertyType>Dan</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>		
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<Property Name="ExperiencePrestigeAddP">
+		<DisplayName>历练声望放大系数</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>历练时，门派声望获取时加成倍率</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-0.95</MinValue> 
+		<MaxValue>1.5</MaxValue> 
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	
+	<Property Name="ExperienceFindSpeedAddV">
+		<DisplayName>历练探索速度</DisplayName>
+		<DisplayValue>{0:N0}</DisplayValue>
+		<Desc>历练时探索新地点的速度加成。</Desc>
+		<PropertyType>Dan|God|Body</PropertyType>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	
+	<Property Name="NutritionToJingYuanK">
+		<DisplayName>精元获得率</DisplayName>
+		<DisplayValue>{0:N4}</DisplayValue>
+		<Desc>每点饱食度转化的精元值。</Desc>
+		<PropertyType>Dan|Body</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0.02</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.25" Addion="0.05"/>
+		</FiveBase>
+	</Property>
+	
+	
+	<Property Name="NutritionWaterAutoRecover">
+		<DisplayName>饮气效率</DisplayName>
+		<DisplayValue>{0:N2}点/秒</DisplayValue>
+		<Desc>从天地间直接获取能量维持饥饿和饮水度的能力。</Desc>
+		<PropertyType>Dan|Body</PropertyType>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<Property Name="YaoShou_BaseLing">
+		<DisplayName>妖兽灵气值壳属性</DisplayName>
+		<Desc>妖兽灵气值壳属性</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+		<MaxValue>9999999</MaxValue> 
+	</Property>
+	
+	<Property Name="YaoShou_BaseAttack">
+		<DisplayName>妖兽攻击力壳属性</DisplayName>
+		<Desc>妖兽攻击力壳属性</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="YaoShou_BaseFabaoNum">
+		<DisplayName>妖兽法宝数量壳属性</DisplayName>
+		<Desc>妖兽法宝数量壳属性</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>1</BaseValue>
+		<MaxValue>9</MaxValue> 
+		<MinValue>1</MinValue> 
+	</Property>
+	
+	
+	<Property Name="GongMatch_JinAddV">
+		<DisplayName>金属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+	<Property Name="GongMatch_MuAddV">
+		<DisplayName>木属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+	<Property Name="GongMatch_ShuiAddV">
+		<DisplayName>水属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+	<Property Name="GongMatch_HuoAddV">
+		<DisplayName>火属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+	<Property Name="GongMatch_TuAddV">
+		<DisplayName>土属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+	<Property Name="GongMatch_NoneAddV">
+		<DisplayName>无属性功法匹配度加成</DisplayName>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<BaseValue>0</BaseValue>
+		<MaxValue>1</MaxValue> 
+		<MinValue>-1</MinValue> 
+	</Property>
+</List></Properties>

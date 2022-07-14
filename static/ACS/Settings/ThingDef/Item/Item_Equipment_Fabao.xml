@@ -1,0 +1,97 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="FaBaoBase" >
+	<ThingName>法宝</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>0</Rate>
+	<Tags>
+		<Tag Name="_FaBao" Level="1"/>
+	</Tags>
+	<Item Kind = "Equipment" Lable="FightFabao">		
+		<Equip>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FaBaoTest" Parent="FaBaoBase">
+	<TexPath></TexPath>
+	<ThingName>测试法宝</ThingName>
+	<Item>		
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<Damage>10</Damage>
+			<AtkDamage>
+				<li PartKind="Bone" Name="TEST_FULL" Rate="1" DescTags="震伤"/>
+				<!--<li PartKind="Bone" Name="Bruise2" Rate="0.45" DescTags="切割"/>-->
+			</AtkDamage>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="FightFaBao" Parent="FaBaoBase">
+	<TexPath>res\Sprs\object\object_weaponjian01</TexPath>
+	<Desc>一个法宝。</Desc>
+	<ThingName>战斗法宝</ThingName>
+	<Beauty>15</Beauty>
+	<Rate>1</Rate>
+	<Item  Lable="FightFabao">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="100"/>
+				<SalePrice Value="20" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="100" />
+				<SalePrice Value="20" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>	
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<AttackRange>20</AttackRange>
+			<Damage>10</Damage>
+			<AtkDamage>
+				<li PartKind="Bone" Name="TEST_FULL" Rate="1" DescTags="震伤"/>
+				<!--<li PartKind="Bone" Name="Bruise2" Rate="0.45" DescTags="切割"/>-->
+			</AtkDamage>
+		</Equip>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+		</DevourDatas> 
+	</Item>
+	</ThingDef>
+	
+<!--	<ThingDef Type="Item" Name="FlyFaBao" Parent="FaBaoBase">
+	<TexPath>Item/TestWeapon</TexPath>
+	<ThingName>飞行法宝模板</ThingName>
+	<Item  Lable="FlyFabao">		
+		<Equip>
+		</Equip>
+	</Item>
+	</ThingDef>-->
+	
+	<ThingDef Type="Item" Name="TreasureFabao" Parent="FaBaoBase">
+	<TexPath>Item/TestWeapon</TexPath>
+	<ThingName>宝物法宝模板</ThingName>
+	<Item  Lable="TreasureFabao">		
+		<NotRandom>1</NotRandom>
+		<Equip>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JieCloud">
+	<TexPath>Item/TestWeapon</TexPath>
+	<ThingName>劫云</ThingName>
+	<LingMax>999999999</LingMax>
+	<Item  Lable="FightFabao">	
+		<NotRandom>1</NotRandom>
+	</Item>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

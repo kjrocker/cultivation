@@ -1,0 +1,72 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="PenetrateGong_1_Shui">
+			<Title>Comprehend - Sixteen Supreme Steps Law</Title>
+			<Desc>The secret techniques contained in Sixteen Supreme Steps Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_2_Mu">
+			<Title>Comprehend - Myriad Artifact Law</Title>
+			<Desc>The secret techniques contained in Myriad Artifact Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_3_Jin">
+			<Title>Comprehend - Seven-Slaughtering Sword</Title>
+			<Desc>The secret techniques contained in Seven-Slaughtering Sword are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_4_None">
+			<Title>Comprehend - Jade Purity Immortal Law</Title>
+			<Desc>The secret techniques contained in Jade Purity Immortal Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_5_Tu">
+			<Title>Comprehend - Heaven Stealing Law</Title>
+			<Desc>The secret techniques contained in Heaven Stealing Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_6_Huo">
+			<Title>Comprehend - Primordial Alchemy Law</Title>
+			<Desc>The secret techniques contained in Primordial Alchemy Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_7_Huo">
+			<Title>Comprehend - Emotion Severing Law</Title>
+			<Desc>The secret techniques contained in Emotion Severing Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_8_Jin">
+			<Title>Comprehend - Law of Strife</Title>
+			<Desc>The secret techniques contained in Law of Strife are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_9_Mu">
+			<Title>Comprehend - Six Paths Reincarnation Law</Title>
+			<Desc>The secret techniques contained in Six Paths Reincarnation Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_10_Huo">
+			<Title>Comprehend - True Sun Refining Law</Title>
+			<Desc>The secret techniques contained in True Sun Refining Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_11_Tu">
+			<Title>Comprehend - Sunflower Refining Law</Title>
+			<Desc>The secret techniques contained in Sunflower Refining Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_12_None">
+			<Title>Comprehend - Primordial Symbols Law</Title>
+			<Desc>The secret techniques contained in Primordial Symbols Law are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateGong_13_None">
+			<Title>Comprehend - Law of Nimbus Conquest</Title>
+			<Desc>The secret techniques contained in the Law of Nimbus Conquest are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateDengXian">
+			<Title>Comprehend - Ascension Law</Title>
+			<Desc>The secret techniques contained in some version of Ascension Law circulated in the world of the travelling warriors are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateYuanShen">
+			<Title>Comprehend - Primordial Spirit Law</Title>
+			<Desc>The secret techniques contained in some version of Primordial Spirit Law circulated in the world of the travelling warriors are shown on this page.</Desc>
+		</Text>
+		<Text Name="PenetrateJinDan">
+			<Title>Comprehend - Golden Core Law</Title>
+			<Desc>The secret techniques contained in some version of Golden Core Law circulated in the world of the travelling warriors have are shown this page.</Desc>
+		</Text>
+		<Text Name="PenetrateFanSu">
+			<Title>Comprehend - Worldly Law</Title>
+			<Desc>The secret techniques contained in some version of Worldly Law circulated in the world of the travelling warriors have are shown this page.</Desc>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,263 @@
+<RelationDefs><List>
+	<Relation Name="Spouse">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>妻子</DisplayNameF>
+		<DisplayNameM>丈夫</DisplayNameM>
+		<Links>
+			<li From="SELF"		To="Spouse"/>
+			<li From="Child"	To="Child"/>
+		</Links>
+		<InCache>0.1</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+			
+		<BanRelation>	
+			<li>Lover</li>		
+		</BanRelation>
+		
+		<Favour>Family</Favour>
+		<SingleType>Only</SingleType>
+		<OppositeSex>1</OppositeSex>
+		<AgeMin>14</AgeMin>
+		<AgeOffsetMin>-5</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="Child" Opposite="Parent">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>女儿</DisplayNameF>
+		<DisplayNameM>儿子</DisplayNameM>
+		<ChangeName>1</ChangeName>
+		<InCache>2</InCache>
+		<Favour>Family</Favour>
+		<Links>
+			<li From="SELF"		To="Parent"/>
+			<li From="Spouse"	To="Parent" RemoveWay="1"/>
+			<li From="Child"	To="Brother" RemoveWay="1"/>
+		</Links>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-30</AgeOffsetMin>
+		<AgeOffsetMax>-14</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="Brother">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>姐姐,妹妹</DisplayNameF>
+		<DisplayNameM>哥哥,弟弟</DisplayNameM>
+		<ChangeName>0.5</ChangeName>
+		<Favour>Family</Favour>
+		<InCache>0.1</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<Links>
+			<li From="SELF"		To="Brother"/>
+			<li From="Brother"	To="Brother"  RemoveWay="1"/>
+			<li From="Parent"	To="Parent"/>
+		</Links>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-10</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="Parent" Opposite="Child">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>母亲</DisplayNameF>
+		<DisplayNameM>父亲</DisplayNameM>
+		<Favour>Family</Favour>
+		<InCache>0.2</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<Links>
+			<li From="SELF"		To="Child"/>
+			<li From="Brother"	To="Child"/>
+			<li From="Parent"	To="Spouse"  RemoveWay="0"/>
+		</Links>
+
+		<SingleType>SexOnly</SingleType>
+		<OppositeSex>0</OppositeSex>
+		<AgeMin>20</AgeMin>
+		<AgeOffsetMin>14</AgeOffsetMin>
+		<AgeOffsetMax>30</AgeOffsetMax>
+	</Relation>
+
+	<Relation Name="GodChild" Opposite="GodParent">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>义女</DisplayNameF>
+		<DisplayNameM>义子</DisplayNameM>
+		<SameRace>0</SameRace>
+		<InCache>0.05</InCache>
+		<Favour>Family</Favour>
+		<Links>
+			<li From="SELF"		To="GodParent"/>
+		</Links>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<AgeOffsetMin>-30</AgeOffsetMin>
+		<AgeOffsetMax>-20</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="GodParent" Opposite="GodChild">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>义母</DisplayNameF>
+		<DisplayNameM>义父</DisplayNameM>
+		<SameRace>0</SameRace>
+		<InCache>0.05</InCache>
+		<Favour>Family</Favour>
+		<Links>
+			<li From="SELF"		To="GodChild"/>
+		</Links>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<AgeMin>30</AgeMin>
+		<AgeOffsetMin>20</AgeOffsetMin>
+		<AgeOffsetMax>30</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="BiaoBrother">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>表姐,表妹</DisplayNameF>
+		<DisplayNameM>表哥,表弟</DisplayNameM>
+		<InCache>0.1</InCache>
+		<Favour>Relative</Favour>
+		<FailInLove>1</FailInLove>
+		<Links>
+			<li From="SELF"		To="BiaoBrother"/>
+		</Links>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-10</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="Friend">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>朋友</DisplayNameF>
+		<DisplayNameM>朋友</DisplayNameM>
+		<SameRace>0</SameRace>
+		<FailInLove>1</FailInLove>
+		<InCache>0.3</InCache>
+		<Links>
+			<li From="SELF"		To="Friend"/>
+		</Links>
+		<FitRelation>
+			<li>Lover</li>
+			<li>RivalInlove</li>
+			<li>Fancy</li>
+		</FitRelation>
+		<Favour>Friend</Favour>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-15</AgeOffsetMin>
+		<AgeOffsetMax>15</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="Fancy" Opposite="FancyFlag">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>爱慕对象</DisplayNameF>
+		<DisplayNameM>爱慕对象</DisplayNameM>	
+		<!--<Hide>1</Hide>-->
+		<Links>
+			<li From="SELF"		To="FancyFlag"/>
+		</Links>
+		<FitRelation>
+			<li>BiaoBrother</li>
+			<li>Friend</li>
+		</FitRelation>
+		<AgeMin>16</AgeMin>
+		<Favour>Fancy</Favour>
+		<OppositeSex>3</OppositeSex>
+		<AgeOffsetMin>-15</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="FancyFlag"  Opposite="Fancy"><!--被爱慕对象 flag-->
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>爱慕者</DisplayNameF>
+		<DisplayNameM>爱慕者</DisplayNameM>
+		<!--<Hide>1</Hide>-->
+	</Relation>
+	
+	<Relation Name="Lover">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>恋人</DisplayNameF>
+		<DisplayNameM>恋人</DisplayNameM>
+		<Links>
+			<li From="SELF"		To="Lover"/>
+		</Links>
+		<FitRelation>
+			<li>BiaoBrother</li>
+			<li>Friend</li>
+		</FitRelation>
+		<AgeMin>16</AgeMin>
+		<Favour>Lover</Favour>
+		<OppositeSex>1</OppositeSex>
+		<SingleType>Only</SingleType>
+		<AgeOffsetMin>-15</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="RivalInlove">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>情敌</DisplayNameF>
+		<DisplayNameM>情敌</DisplayNameM>
+		<Links>
+			<li From="SELF"		To="RivalInlove"/>
+		</Links>
+		<FitRelation>
+			<li>Brother</li>
+			<li>BiaoBrother</li>
+			<li>Friend</li>
+		</FitRelation>
+		<OppositeSex>1</OppositeSex>
+		<AgeMin>16</AgeMin>
+		<Favour>RivalInlove</Favour>
+	</Relation>
+	
+	<Relation Name="PersonalEnemy">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>仇家</DisplayNameF>
+		<DisplayNameM>仇家</DisplayNameM>
+		<SameRace>0</SameRace>
+		<InCache>0.1</InCache>
+		<BanRelation>
+			<li>Child</li>
+			<li>Lover</li>
+			<li>Fancy</li>
+		</BanRelation>
+		<Links>
+			<li From="SELF"		To="PersonalEnemyFlag"/>
+		</Links>
+		<Favour>PersonalEnemyBegin</Favour>
+	</Relation>
+	
+	<Relation Name="PersonalEnemyFlag"><!--<!{2}**被仇敌对象 flag**{2}>-->
+		<AutoGentrate>0</AutoGentrate>
+		<!--<DisplayNameF>仇家</DisplayNameF>
+		<DisplayNameM>仇家</DisplayNameM>-->
+		<Hide>1</Hide>
+	</Relation>
+	
+	<Relation Name="Reincarnation">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>前世</DisplayNameF>
+		<DisplayNameM>前世</DisplayNameM>
+		<InCache>0</InCache>
+	</Relation>
+	
+	<Relation Name="SYS_LOST">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>未知(模组丢失)</DisplayNameF>
+		<DisplayNameM>未知(模组丢失)</DisplayNameM>
+		<InCache>0</InCache>
+	</Relation>
+	
+</List></RelationDefs>

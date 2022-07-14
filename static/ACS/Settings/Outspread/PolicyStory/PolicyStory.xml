@@ -1,0 +1,217 @@
+<Defs><List>
+	<Def Name="PolicyStory_TreeEXP">
+		<DisplayName>收集天道</DisplayName>
+		<Desc>天道收集已满，可凝结成丹。</Desc>
+		<Story>OutSpread_TreeEXP</Story>
+	</Def>
+	<Def Name="PolicyStory_Give1">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，将食物分给路人。</Desc>
+		<Story>OutSpread_Give1</Story>
+	</Def>
+	<Def Name="PolicyStory_Give2">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。见路边有很多乞丐在乞讨。</Desc>
+		<Story>OutSpread_Give2</Story>
+	</Def>
+	<Def Name="PolicyStory_Give3">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见一座石桥已经倒塌，人们不再路过这里。</Desc>
+		<Story>OutSpread_Give3</Story>
+	</Def>
+	<Def Name="PolicyStory_Give4">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见两个村民正在为一条狗而争执不休。</Desc>
+		<Story>OutSpread_Give4</Story>
+	</Def>
+	<Def Name="PolicyStory_Give5">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见两位公子哥居然为了争夺一个女人而大打出手。</Desc>
+		<Story>OutSpread_Give5</Story>
+	</Def>
+	<Def Name="PolicyStory_Give6">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见两名大汉正在大打出手，问旁人说是一方种树，被另一方摘了吃了。</Desc>
+		<Story>OutSpread_Give6</Story>
+	</Def>
+	<Def Name="PolicyStory_Give7">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]正准备去布施，突然有一名身着华丽的女子哭着走到了代理人的住处，说她孩子丢了。</Desc>
+		<Story>OutSpread_Give7</Story>
+	</Def>
+	<Def Name="PolicyStory_Give8">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]正准备去布施，突然有一名男子冲到了殿内，求代理人救救她快要病死的妻子。</Desc>
+		<Story>OutSpread_Give8</Story>
+	</Def>
+	<Def Name="PolicyStory_Give9">
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]走到了稍微偏僻的地方，开始布施。此时有一群匪徒路过。</Desc>
+		<Story>OutSpread_Give9</Story>
+	</Def>
+	<Def Name="PolicyStory_Give10">
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]办事的时候路过{0}的势力，发现他们在进行布施。</Desc>
+		<Story>OutSpread_Give10</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Give11">
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]办事的时候路过{0}的势力，发现他们在进行传道。</Desc>
+		<Story>OutSpread_Give11</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Give12">
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]办事的时候路过{0}的势力，发现他们在进行食戒。</Desc>
+		<Story>OutSpread_Give12</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Give13">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。路过一座破损的木房子，其主人身有残疾，无法修补。</Desc>
+		<Story>OutSpread_Give13</Story>
+	</Def>
+	<Def Name="PolicyStory_Give14">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见一名身着异族服饰的人在装神弄鬼。</Desc>
+		<Story>OutSpread_Give14</Story>
+	</Def>
+	<Def Name="PolicyStory_Give15">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。路过了两家对门的酒馆，两家伙计正在因为生意而争执。</Desc>
+		<Story>OutSpread_Give15</Story>
+	</Def>
+	<Def Name="PolicyStory_Give16">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。遇到了一群逃难前来的难民。</Desc>
+		<Story>OutSpread_Give16</Story>
+	</Def>
+	<Def Name="PolicyStory_Give17">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。在路边看见了一位身患重病的将死之人，他渴求代理人让他解脱。</Desc>
+		<Story>OutSpread_Give17</Story>
+	</Def>
+	<Def Name="PolicyStory_Give18">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。人群中不小心碰到了一位老大爷，他居然当场就瘫倒在地上，大喊：“哎哟！我的腿断了！就是这个人！”。</Desc>
+		<Story>OutSpread_Give18</Story>
+	</Def>
+	
+	<Def Name="PolicyStory_Product1">
+		<DisplayName>劳作事件</DisplayName>
+		<Desc>这天天气不错，代理人[NAME]决定去监督劳作。</Desc>
+		<Story>OutSpread_Accelerate</Story>
+	</Def>
+	<Def Name="PolicyStory_TreasureHunt">
+		<DisplayName>寻珍事件</DisplayName>
+		<Desc>代理人[NAME]掐指一算，他决定带弟子去寻觅珍宝。</Desc>
+		<Story>OutSpread_TreasureHunt</Story>
+	</Def>
+	
+	<Def Name="PolicyStory_Sermon1">
+		<DisplayName>传道</DisplayName>
+		<Desc>这天，代理人[NAME]站在门口的大街上，准备进行一次传道。</Desc>
+		<Story>OutSpread_Sermon1</Story>
+	</Def>
+	<Def Name="PolicyStory_Sermon2">
+		<DisplayName>传道</DisplayName>
+		<Desc>这天，代理人[NAME]正在讲经传道。突然有个人走上前来，大声说：“一派胡言！”</Desc>
+		<Story>OutSpread_Sermon2</Story>
+	</Def>
+	<Def Name="PolicyStory_Sermon3">
+		<DisplayName>传道</DisplayName>
+		<Desc>这天，代理人[NAME]正在讲经传道。突然有个人书生走上前来，说代理人讲的不对，总之就是有问题。</Desc>
+		<Story>OutSpread_Sermon3</Story>
+	</Def>
+	<Def Name="PolicyStory_Sermon4">
+		<DisplayName>传道</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]正在讲经传道。人群中有个大妈一直在拍手叫好，令人厌烦，但是她并不是信徒。</Desc>
+		<Story>OutSpread_Sermon4</Story>
+	</Def>
+	
+	<Def Name="PolicyStory_Secret1">
+		<DisplayName>密谋</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]走上密阁，准备进行一次密谋。</Desc>
+		<Story>OutSpread_Secret1</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Secret2">
+		<DisplayName>密谋</DisplayName>
+		<Desc>代理人[NAME]发现{0}在进行布施，决定进行干扰。</Desc>
+		<Story>OutSpread_Secret2</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Secret3">
+		<DisplayName>密谋</DisplayName>
+		<Desc>代理人[NAME]发现{0}在进行传道，眉头一皱，计上心来。</Desc>
+		<Story>OutSpread_Secret3</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	<Def Name="PolicyStory_Secret4">
+		<DisplayName>密谋</DisplayName>
+		<Desc>代理人[NAME]发现{0}在进行食戒。代理人决定去干扰他们。</Desc>
+		<Story>OutSpread_Secret4</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	
+	<Def Name="PolicyStory_Disp1">
+		<DisplayName>受戒</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]在戒律院，准备进行一次受戒。</Desc>
+		<Story>OutSpread_Disp1</Story>
+	</Def>
+	<Def Name="PolicyStory_Disp2">
+		<DisplayName>受戒</DisplayName>
+		<Desc>代理人[NAME]见世人夜夜笙歌，乐此不疲，决定举行受戒仪式。</Desc>
+		<Story>OutSpread_Disp2</Story>
+	</Def>
+	<Def Name="PolicyStory_Disp3">
+		<DisplayName>受戒</DisplayName>
+		<Desc>代理人[NAME]见世间朱门酒肉臭，路有冻死骨，决定举行受戒仪式。</Desc>
+		<Story>OutSpread_Disp3</Story>
+	</Def>
+	<Def Name="PolicyStory_Disp4">
+		<DisplayName>受戒</DisplayName>
+		<Desc>代理人[NAME]见世间绿林横行，满城戾气，决定举行受戒仪式。</Desc>
+		<Story>OutSpread_Disp4</Story>
+	</Def>
+	<Def Name="PolicyStory_Disp5">
+		<DisplayName>受戒</DisplayName>
+		<Desc>代理人[NAME]见世间奸盗横行，暗生乱象，决定举行受戒仪式。</Desc>
+		<Story>OutSpread_Disp5</Story>
+	</Def>
+	
+	<Def Name="PolicyStory_OtherDisp1">
+		<DisplayName>受戒</DisplayName>
+		<Desc>这天，代理人[NAME]看见[SCHOOL{0}]正在受戒。</Desc>
+		<Story>OutSpread_OtherDisp1</Story>
+		<ReligionNeed>1</ReligionNeed>
+	</Def>
+	
+	<Def Name="PolicyStory_Drought">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下旱灾。</Desc>
+		<Story>Place_Drought</Story>
+	</Def>
+	<Def Name="PolicyStory_Flood">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下洪灾。</Desc>
+		<Story>Place_Flood</Story>
+	</Def>
+	<Def Name="PolicyStory_Siberia">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下寒潮。</Desc>
+		<Story>Place_Siberia</Story>
+	</Def>
+	<Def Name="PolicyStory_EarthQuake">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下地震。</Desc>
+		<Story>Place_EarthQuake</Story>
+	</Def>
+	
+	<Def Name="PolicyStory_God1">
+		<DisplayName>展现神迹</DisplayName>
+		<Desc>代理人[NAME]决定让神修弟子展现一下神迹。</Desc>
+		<Story>OutSpread_God1</Story>
+	</Def>
+</List></Defs>

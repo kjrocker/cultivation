@@ -1,0 +1,1279 @@
+<GodCityBuildingDefs><List>
+	<!-- <li>
+				<Population>0</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv1"/>
+				</Effects>
+				<Condition>
+					<GodPenalty>0</GodPenalty>
+					<FiveBase>0,1,0,0,0</FiveBase>
+					<Properties>
+						<li Name="MaxAge" Type="1" Value="30" />    Type 0等于 1大于 2小于
+					</Properties>
+				</Condition>
+				<Cost>
+					<Faith>0</Faith>		
+				</Cost>				
+	</li>			 -->
+	
+	<Def Name="GodCity_Housing">
+		<DisplayName>神民居所</DisplayName>
+		<Desc>为神国的神民提供居所，可以提高神民上限。</Desc>
+		<MaxCount>0</MaxCount>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0017_icon_shenguo_zhufang03</Icon>
+		<Mod>Mod/GodPractice/Buildings/Empty</Mod>
+		<Modifier></Modifier>
+		<RingMin>1</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv1"/>
+				</Effects>
+				<Cost>
+					<Faith>1000</Faith>		
+				</Cost>				
+			</li>			
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv2"/>
+				</Effects>
+				<Cost>
+					<Faith>4000</Faith>		
+				</Cost>
+			</li>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv3"/>
+				</Effects>
+				<Cost>
+					<Faith>9000</Faith>		
+				</Cost>				
+			</li>			
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv4"/>
+				</Effects>
+				<Cost>
+					<Faith>20000</Faith>		
+				</Cost>
+			</li>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv5"/>
+				</Effects>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>				
+			</li>			
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv6"/>
+				</Effects>
+				<Cost>
+					<Faith>200000</Faith>		
+				</Cost>
+			</li>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv7"/>
+				</Effects>
+				<Cost>
+					<Faith>600000</Faith>		
+				</Cost>				
+			</li>			
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv8"/>
+				</Effects>
+				<Cost>
+					<Faith>2000000</Faith>		
+				</Cost>
+			</li>		
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv9"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>
+			</li>
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_Guard">
+		<DisplayName>护法殿</DisplayName>
+		<Desc>供奉护法的设施，可以借此获得护法的庇佑提高神道修行者自身的能力。</Desc>
+		<Kind>Guard</Kind>
+		<Mod>Mod/GodPractice/Buildings/hufa</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0012_icon_shenguo_hufa03</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>1500</Population>
+				<Cost>
+					<Faith>2000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="1"/>
+				</Effects>	
+			</li>	
+			<li>
+				<Population>3000</Population>
+				<Cost>
+					<Faith>8000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="1.5"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>4500</Population>
+				<Cost>
+					<Faith>18000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="2"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>7500</Population>
+				<Cost>
+					<Faith>40000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="2.5"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>15000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="3"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>30000</Population>
+				<Cost>
+					<Faith>400000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="4"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>45000</Population>
+				<Cost>
+					<Faith>1200000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="5"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>60000</Population>
+				<Cost>
+					<Faith>4000000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="GodGuardScale" fParam1="7"/>
+				</Effects>
+			</li>	
+			<li>
+				<Population>75000</Population>
+				<Cost>
+					<Faith>10000000</Faith>		
+				</Cost>
+				<Effects>
+					<li Type="GodGuardScale" fParam1="10"/>
+				</Effects>
+			</li>	
+		</Levels>
+	</Def>
+	<Def Name="GodCity_FaithWay">
+		<DisplayName>演妙堂</DisplayName>
+		<Desc>每一座演妙堂都可以沟通一个凡间城市代理点的供奉雕像，这样一来，神道修行者就可以随时随地获取雕像上积累的凡人信仰，并借此发挥一些神异。</Desc>
+		<MaxCount>9</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/yanmiaotang</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0008_icon_shenguo_xinyang03</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>1000</Population>
+				<Cost>
+					<Faith>10000</Faith>		
+				</Cost>	
+				<Effects>
+					<li Type="AddStatueCount" fParam1="1"/>
+				</Effects>	
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoRateUp">
+		<Tag>Fabao</Tag>
+		<DisplayName>圣宝阁</DisplayName>
+		<Desc>以信仰之力构筑的殿堂，自身的信仰神器在神国之中的映射。提高圣宝阁的等级就可以增强自身的信仰神器。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/sengbaoge</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0004_icon_shenguo_shengwu03</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>2000</Population>
+				<Cost>
+					<Faith>4000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="1"/>
+				</Effects>				
+			</li>			
+			<li>
+				<Population>4000</Population>
+				<Cost>
+					<Faith>8000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="2"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>6000</Population>
+				<Cost>
+					<Faith>16000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="3"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>32000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="4"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>20000</Population>
+				<Cost>
+					<Faith>64000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="5"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>40000</Population>
+				<Cost>
+					<Faith>128000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="6"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>60000</Population>
+				<Cost>
+					<Faith>256000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="7"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>80000</Population>
+				<Cost>
+					<Faith>512000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="8"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>100000</Population>
+				<Cost>
+					<Faith>1024000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="9"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>120000</Population>
+				<Cost>
+					<Faith>2048000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="10"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>140000</Population>
+				<Cost>
+					<Faith>4096000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="11"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>160000</Population>
+				<Cost>
+					<Faith>8192000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="12"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>180000</Population>
+				<Cost>
+					<Faith>16384000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="13"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>200000</Population>
+				<Cost>
+					<Faith>32768000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoRate" fParam1="14"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	
+	<Def Name="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-风云殿</DisplayName>
+		<Tag>Fabao</Tag>
+		<Desc>可以让圣物附加风云之气，更加灵动飘逸。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/sengwugeA</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0025_icon_shenguo_xinzeng01</Icon>
+		<Modifier></Modifier>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Light1"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Light2"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	<Def Name="GodCity_GodFabaoLabelAdd2" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-钧天殿</DisplayName>
+		<Desc>可以让圣物附加千钧之力，更具威力。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Heavy1"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Heavy2"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoLabelAdd3" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-真刚殿</DisplayName>
+		<Desc>可以让圣物附加真刚之力，更加坚硬。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Hard1"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Hard2"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoLabelAdd4" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-千柔殿</DisplayName>
+		<Desc>可以让圣物附加千柔之力，更具柔韧。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Soft1"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Soft2"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoLabelAdd5" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-玄刃殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加玄刃之力，锋锐无匹。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Sharp"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoLabelAdd6" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-浑沉殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加浑沉之力，无物不摧。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="Blunt"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoLabelAdd7" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-芥子殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加芥子之力，缩小形体，令人难察。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="SmallThing"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoLabelAdd8" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-天雷殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加天雷之力，威能无方。</Desc>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Cost>
+					<Faith>50000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="GreatThing_AttackLow"/>
+				</Effects>				
+			</li>	
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>150000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="GreatThing_Attack"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoLabelAdd9" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-万灵殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加万灵之力，底蕴浑厚。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>150000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="GreatThing_Ling"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoLabelAdd10" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-啸风殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加啸风之力，瞬息千里。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>150000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="GreatThing_Fly"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoLabelAdd11" Parent="GodCity_GodFabaoLabelAdd1">
+		<DisplayName>圣宝阁-玄冲殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物附加玄冲之力，无人可挡。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>150000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoLabel" sParam1="GreatThing_Knock"/>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd1">
+		<Tag>Fabao</Tag>
+		<DisplayName>圣宝阁-五毒殿</DisplayName>
+		<Locked>1</Locked>
+		<Desc>可以让圣物拥有五毒之力。每36次攻击修行者本体，会穿透护盾造成额外伤害。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/sengwugeB</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0024_icon_shenguo_xinzeng02</Icon>
+		<Size>1</Size>
+		<RingMin>4</RingMin>
+		<RingMax>4</RingMax>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						 <Ability Kind="HitCountAddDamage" nParam1="36" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每36次攻击修行者本体，会穿透护盾造成额外伤害。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd2" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-灵冲殿</DisplayName>
+		<Desc>可以让圣物拥有灵冲之力。每18次攻击会对目标敌人发动一次法术。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd3" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-圣护殿</DisplayName>
+		<Desc>可以让圣物拥有圣护之力。护体技能提高5。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_GodFabaoHuTi" Desc="护体技能提高3。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd4" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-圣法殿</DisplayName>
+		<Desc>可以让圣物拥有圣法之力。术法技能提高5。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_GodFabaoShuFa" Desc="术法技能提高3。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd5" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-圣御殿</DisplayName>
+		<Desc>可以让圣物拥有圣御之力。御器技能提高5。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_GodFabaoYuQi" Desc="御器技能提高3。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd6" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-灵归殿</DisplayName>
+		<Desc>可以让圣物拥有灵归之力。造成伤害的3%会补充为法宝自身的灵气。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="HitAddRecovery" fParam1="0.03"  Desc="造成伤害的3%会补充为法宝自身的灵气。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd7" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-分光殿</DisplayName>
+		<Desc>可以让圣物拥有分光之力。每攻击15次，产生1道剑光分化，持续15秒。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="HitCountAddMirror" nParam1="15" nParam2="1" fParam1="15" Desc="每攻击15次，产生1道剑光分化，持续15秒。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd8" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-回息殿</DisplayName>
+		<Desc>可以让圣物拥有回息之力。每7次攻击会减少1秒技能CD。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						 <Ability Kind="HitCountAddSubColdDown" nParam1="7" fParam1="1" Desc="每7次攻击会减少1秒技能CD。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd9" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-九极殿</DisplayName>
+		<Desc>可以让圣物拥有九极之力。造成伤害时，有4%的几率造成9倍伤害。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="AtkRateDamageAddp" fParam1="0.04" fParam2="9" nParam1="0" Desc="造成伤害时，有4%的几率造成9倍伤害。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd10" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-无极殿</DisplayName>
+		<Desc>可以让圣物拥有无极之力。第一剑威力增加3倍，法宝补充灵气重置。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="FristHitPowerUp" fParam1="3" Desc="第一剑威力增加3倍，法宝补充灵气重置。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_GodFabaoAbilityAdd11" Parent="GodCity_GodFabaoAbilityAdd1">
+		<DisplayName>圣宝阁-破罡殿</DisplayName>
+		<Desc>可以让圣物拥有破罡之力。攻击敌方本体时，造成1.25倍伤害。</Desc>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>		
+				<Effects>
+					<li Type="GodFabaoAbilityData">
+						<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.25" nParam1="1" Desc="攻击敌方本体时，造成1.25倍伤害。"/>
+					</li>
+				</Effects>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_WishTree">
+		<DisplayName>祈愿之树</DisplayName>
+		<Desc>由凡人愿望凝聚的树木，可借助这些红尘之气略微降低神性。</Desc>
+		<MaxCount>9</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/qiyuan</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0016_icon_shenguo_qiyuan01</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>10000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_WishTree"/>
+				</Effects>
+				<Cost>
+					<Faith>150000</Faith>		
+				</Cost>				
+			</li>	
+		</Levels>
+	</Def>
+
+	
+	<Def Name="GodCity_XinyangShendian">
+		<DisplayName>信仰神殿</DisplayName>
+		<Desc>凝聚信仰之力的神殿，可以提高由神国产生信仰的效率。</Desc>
+		<Locked>1</Locked>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/xinyang</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0015_icon_shenguo_xinyang02</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Population>50000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_XinYangShenDian_Lv1"/>
+				</Effects>
+				<Cost>
+					<Faith>1000000</Faith>		
+				</Cost>			
+			</li>	
+			<li>	
+				<Population>100000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_XinYangShenDian_Lv2"/>
+				</Effects>
+				<Cost>
+					<Faith>3000000</Faith>		
+				</Cost>				
+			</li>
+			<li>			
+				<Population>150000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_XinYangShenDian_Lv3"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>		
+			</li>
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_LiuLiShenDian">
+		<DisplayName>琉璃神殿</DisplayName>
+		<Desc>放大护法之力的神殿，可以提高由护法所带来能力的强度。</Desc>
+		<Locked>1</Locked>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/hufapower</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0023_icon_shenguo_hufa02</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Population>50000</Population>
+				<Effects>
+					<li Type="GuardEffectAddV" fParam1="1"/>
+				</Effects>
+				<Cost>
+					<Faith>1000000</Faith>		
+				</Cost>			
+			</li>	
+			<li>	
+				<Population>100000</Population>
+				<Effects>
+					<li Type="GuardEffectAddV" fParam1="1.2"/>
+				</Effects>
+				<Cost>
+					<Faith>3000000</Faith>		
+				</Cost>				
+			</li>
+			<li>			
+				<Population>150000</Population>
+				<Effects>
+					<li Type="GuardEffectAddV" fParam1="1.5"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>		
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_ThunderDefend">
+		<DisplayName>御天殿</DisplayName>
+		<Desc>凝聚信仰之力，以摒天威，可以降低天劫威力。</Desc>
+		<MaxCount>5</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/tianjie</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0022_icon_shenguo_tianjie01</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>	
+				<Population>150000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_ThunderDefend"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_FengShenTai">
+		<DisplayName>封神台</DisplayName>
+		<Desc>神灵敕封从神之所，将完全信仰的核心信徒敕封为护法。</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/fengshentai</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0007_icon_shenguo_shengshentai01</Icon>
+		<Kind>MakeGuard</Kind>
+		<Size>1</Size>
+		<Levels>
+			<li>	
+				<Population>50000</Population>
+				<Effects>
+					<li Type="MakeGuardCost" fParam1="10000000"/><!--封神的消耗-->
+				</Effects>
+				<Cost>
+					<Faith>1000000</Faith>		
+				</Cost>							
+			</li>	
+			
+			<li>	
+				<Population>100000</Population>
+				<Effects>
+					<li Type="MakeGuardCost" fParam1="8000000"/>
+				</Effects>		
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>					
+			</li>
+			
+			<li>	
+				<Population>150000</Population>
+				<Effects>
+					<li Type="MakeGuardCost" fParam1="5000000"/>
+				</Effects>		
+				<Cost>
+					<Faith>10000000</Faith>		
+				</Cost>			
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_CoreHousing_A">
+		<DisplayName>天金居</DisplayName>
+		<Desc>提高核心信徒上限</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/tianjinju</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0031_icon_shenguo_hexinxintus01</Icon>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_CoreHousing"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>			
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_CoreHousing_B">
+		<DisplayName>幽木居</DisplayName>
+		<Desc>提高核心信徒上限</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/youmuju</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0029_icon_shenguo_hexinB01</Icon>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_CoreHousing"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>			
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_CoreHousing_C">
+		<DisplayName>玄水居</DisplayName>
+		<Desc>提高核心信徒上限</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/xuanshuiju</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0026_icon_shenguo_hexinC-_shui</Icon>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_CoreHousing"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>			
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_CoreHousing_D">
+		<DisplayName>炽火居</DisplayName>
+		<Desc>提高核心信徒上限</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/cihuoju</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0027_icon_shenguo_hexinC-_huo</Icon>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_CoreHousing"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>			
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_CoreHousing_E">
+		<DisplayName>厚土居</DisplayName>
+		<Desc>提高核心信徒上限</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/houmuju</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0028_icon_shenguo_hexinC_tu</Icon>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>		
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_CoreHousing"/>
+				</Effects>
+				<Cost>
+					<Faith>5000000</Faith>		
+				</Cost>			
+			</li>	
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_Housing_Lv2">
+		<DisplayName>普化居</DisplayName>
+		<Desc>高级的神民居所，能容纳大量神民。</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0021_icon_shenguo_GJjusuoA</Icon>
+		<Mod>Mod/GodPractice/Buildings/GJjusuoA</Mod>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv10"/>
+				</Effects>
+				<Cost>
+					<Faith>30000000</Faith>		
+				</Cost>				
+			</li>			
+		</Levels>
+	</Def>
+	
+	<Def Name="GodCity_Housing_Lv2_2">
+		<DisplayName>通化居</DisplayName>
+		<Desc>高级的神民居所，能容纳大量神民。</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0020_icon_shenguo_GJjusuoB</Icon>
+		<Mod>Mod/GodPractice/Buildings/GJjusuoB</Mod>
+		<RingMin>3</RingMin>
+		<RingMax>4</RingMax>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_Housing_lv10"/>
+				</Effects>
+				<Cost>
+					<Faith>30000000</Faith>		
+				</Cost>				
+			</li>			
+		</Levels>
+	</Def>
+	
+	
+	<Def Name="GodCity_HongChenKuHai">
+		<DisplayName>红尘苦海</DisplayName>
+		<Desc>引红尘众生之苦如神国，能大幅降低神性。</Desc>
+		<MaxCount>1</MaxCount>
+		<Locked>1</Locked>
+		<Mod>Mod/GodPractice/Buildings/hongchengkuhai</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0003_icon_shenguo_hongchen01</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>250000</Population>
+				<Effects>
+					<li Type="Modifier" sParam1="GodCityBuiling_HongChenKuHai"/>
+				</Effects>
+				<Cost>
+					<Faith>50000000</Faith>			
+				</Cost>				
+			</li>	
+		</Levels>
+	</Def>
+	
+	
+	
+	<Def Name="GodCity_Magic_1">
+		<DisplayName>感召堂</DisplayName>
+		<Desc>在1级2级3级时分别提供神通：《感召术》《应愿术》《唯尊法》。可以在一段时间内提高自己神灵附身所在区域的基础物资产出。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/shentongD</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0000_icon_shenguo_xinzeng07</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_ProductUp1"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>	
+			<li>
+				<Population>15000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_ProductUp1"/>
+					<li Type="AddMagic" sParam1="God_ProductUp2"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>
+			<li>
+				<Population>45000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_ProductUp1"/>
+					<li Type="AddMagic" sParam1="God_ProductUp2"/>
+					<li Type="AddMagic" sParam1="God_ProductUp3"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>
+		</Levels>
+	</Def>
+	<Def Name="GodCity_Magic_2">
+		<DisplayName>通心阁</DisplayName>
+		<Desc>1级提供神通《静心》：对一个非神修角色释放，使其情绪放大系数降低25%，持续7天。\n2级提供神通《涤心》：为角色化解一个执念。并获得一个执念结晶。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/shentongA</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0001_icon_shenguo_xinzeng05</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_Jingxin"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_Jingxin"/>
+					<li Type="AddMagic" sParam1="God_DefuseZhinian"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>
+		</Levels>
+	</Def>
+	<Def Name="GodCity_Magic_3">
+		<DisplayName>神威阁</DisplayName>
+		<Desc>1级提供神通《神化》：施法使自身神性临时提高到极致，大幅提高战斗力。\n2级提供神通《神恩赐命》：消耗自身人性，尝试为植物通灵，通灵结果需要一段时间才能出现。植物在通灵中时不可被再次通灵。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/shentongB</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0000_icon_shenguo_xinzeng06</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_GodLike"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_TongLing_Plant"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>	
+		</Levels>
+	</Def>
+	<Def Name="GodCity_Magic_4">
+		<DisplayName>虔心堂</DisplayName>
+		<Desc>1级提供神通《劝化》：劝化友方或者中立内门角色，尝试将其转化为核心信徒。\n2级提供神通《神灵问踪法》：选择一个角色，尝试获取其行踪。神民数量越多，了解的信息越多，获取行踪的成功率越高。</Desc>
+		<MaxCount>1</MaxCount>
+		<Mod>Mod/GodPractice/Buildings/shentongC</Mod>
+		<Icon>res/Sprs/building_hongchenzhongsheng/_0001_icon_shenguo_xinzeng05</Icon>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_BeliveMe"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>	
+			<li>
+				<Population>5000</Population>
+				<Effects>
+					<li Type="AddMagic" sParam1="God_BeliveMe"/>
+					<li Type="AddMagic" sParam1="Linghunwenzhong"/>
+				</Effects>
+				<Cost>
+					<Faith>100000</Faith>		
+				</Cost>				
+			</li>
+		</Levels>
+	</Def>
+	
+</List></GodCityBuildingDefs>

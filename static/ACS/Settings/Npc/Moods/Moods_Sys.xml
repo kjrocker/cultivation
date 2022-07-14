@@ -1,0 +1,135 @@
+<MoodDefs><List>
+	<Mood Name="Mood_Sys_Lost">
+		<DisplayName>[遗失]</DisplayName>
+		<Desc>模组遗失</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>1</Value>
+		<Duration>30</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_Disappointment">
+		<DisplayName>差劲的堂主</DisplayName>
+		<Desc>就这人的水平，也能当堂主？我上我也行……</Desc>
+		<StoryDesc>正因自己堂主差劲的能力而不满</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_ZhangMen1">
+		<DisplayName>掌门上任</DisplayName>
+		<Desc>[TXT]成为了掌门，真为此高兴！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_ZhangMen2">
+		<DisplayName>掌门上任</DisplayName>
+		<Desc>[TXT]成为了掌门，真的太糟糕了！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-25</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_ZhangMen3" Group="School_ZhangMen">
+		<DisplayName>被罢免</DisplayName>
+		<Desc>我觉得我还能继续当这个掌门……</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-10</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_ZhangMen4">
+		<DisplayName>掌门离任</DisplayName>
+		<Desc>[TXT]不再是我们的掌门了，真遗憾！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_ZhangMen5">
+		<DisplayName>掌门离任</DisplayName>
+		<Desc>[TXT]不再是我们的掌门了，太好了！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	
+	<Mood Name="Mood_Sys_School_TangZhu0" Group="School_TangZhu">
+		<DisplayName>成为堂主</DisplayName>
+		<Desc>我既成为一堂之主，定然尽心尽责！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_TangZhu1">
+		<DisplayName>堂主上任</DisplayName>
+		<Desc>[TXT]成为了堂主，真为此高兴！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>10</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_TangZhu2">
+		<DisplayName>堂主上任</DisplayName>
+		<Desc>[TXT]都能成为堂主？这可真让人不爽！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-20</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_TangZhu3" Group="School_TangZhu">
+		<DisplayName>被罢免</DisplayName>
+		<Desc>我觉得我还能继续当这个堂主……为门派发光发热</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-10</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_TangZhu4">
+		<DisplayName>堂主离任</DisplayName>
+		<Desc>[TXT]不再是我们的堂主了，真的很难过！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-10</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_Sys_School_TangZhu5">
+		<DisplayName>堂主离任</DisplayName>
+		<Desc>[TXT]不再是我们的堂主了，真是大快人心！</Desc>
+		<StoryDesc></StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>20</Value>
+		<Duration>28</Duration>
+	</Mood>
+	
+	
+
+</List></MoodDefs>

@@ -1,0 +1,38 @@
+<Defs><List>
+	<Def Name="Rest">
+		<Desc>休息</Desc>
+		<Tip>睡觉，可以恢复精力。</Tip>
+	</Def>
+	<Def Name="Eat">
+		<Desc>吃</Desc>
+		<Tip>吃各种食物，到达成长期之后将按照面板选择进食。</Tip>
+	</Def>
+	<Def Name="Fun">
+		<Desc>娱乐</Desc>
+		<Tip>提高娱乐度，不同行为速度不同。</Tip>
+	</Def>
+	<Def Name="Shit">
+		<Desc>排泄</Desc>
+		<Tip>可在不同地点排泄。</Tip>
+	</Def>
+	<Def Name="Attack">
+		<Desc>攻击</Desc>
+		<Tip>攻击各种人物。</Tip>
+	</Def>
+	<Def Name="Help">
+		<Desc>帮助</Desc>
+		<Tip>帮助内门或外门弟子。</Tip>
+	</Def>
+	<Def Name="HighHelp">
+		<Desc>高级帮助</Desc>
+		<Tip>做一些能帮助修行的事情。需要灵智到达80解锁。</Tip>
+	</Def>
+	<Def Name="Carry">
+		<Desc>搬运人物</Desc>
+		<Tip>搬运各种昏迷或者已死亡的人物。需要灵智到达50解锁。</Tip>
+	</Def>
+	<Def Name="Train">
+		<Desc>锻炼</Desc>
+		<Tip>锻炼以提高各种属性，通过饮食可以提高效果，效果越高，训练效果越好。需要到达成长期解锁。</Tip>
+	</Def>
+</List></Defs>

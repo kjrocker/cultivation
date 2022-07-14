@@ -1,0 +1,173 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>[size=10][color=#D06508]各种强大的功能[/color][/size]</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="FightSkillEsoterica_1">
+		<DisplayName>先天罡气</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>修行者的入门法术，将真气凝聚于掌心向目标发出即可。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：先天罡气[/color][/size]</EffectDesc>
+		<Skills>
+			<li>DamageSkill_1</li>
+		</Skills>
+	</Esoterica> 
+	<Esoterica Name="FightSkillEsoterica_2">
+		<DisplayName>烈焰决</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>调动天地间的火系灵能，猛烈焚烧目标。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：烈焰决[/color][/size]</EffectDesc>
+		<Skills>
+			<li>DamageSkill_2</li>
+		</Skills>
+	</Esoterica> 
+	<Esoterica Name="FightSkillEsoterica_3">
+		<DisplayName>庚金神雷</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>调动天地间的金系灵能，化为庚金神雷攻击目标。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：庚金神雷[/color][/size]</EffectDesc>
+		<Skills>
+			<li>DamageSkill_3</li>
+		</Skills>
+	</Esoterica> 
+	<Esoterica Name="FightSkillEsoterica_4">
+		<DisplayName>元磁灭绝神光</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>发出一道迅捷无比的神光毁灭目标元神。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：灭绝神光[/color][/size]</EffectDesc>
+		<Skills>
+			<li>DamageSkill_4</li>
+		</Skills>
+	</Esoterica> 
+	
+	<Esoterica Name="FightSkillEsoterica_Gong1_1">
+		<DisplayName>天水化伤术</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>引动天地间的癸水之力，给所有友方恢复灵气。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：天水化伤术[/color][/size]</EffectDesc>
+		<Skills>
+			<li>HealthSkill_Gong1_1</li>
+		</Skills>
+	</Esoterica> 
+	
+	<Esoterica Name="FightSkillEsoterica_Gong3_1">
+		<DisplayName>神剑共鸣</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>将自身元神与法宝共鸣，极大的提高法宝威力。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：神剑共鸣[/color][/size]</EffectDesc>
+		<Skills>
+			<li>FabaoSkill_Gong3_1</li>
+		</Skills>
+	</Esoterica> 
+	<Esoterica Name="FightSkillEsoterica_Gong4_1">
+		<DisplayName>玉清太虚神雷</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>引动混元玉清太虚神雷，对所有敌对目标造成大量伤害。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：玉清太虚神雷[/color][/size]</EffectDesc>
+		<Skills>
+			<li>DamageSkill_Gong4_1</li>
+		</Skills>
+	</Esoterica> 
+	<Esoterica Name="FightSkillEsoterica_Gong4_2">
+		<DisplayName>厚土之盾</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>增强所有己方的灵气护盾效果。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：厚土之盾[/color][/size]</EffectDesc>
+		<Skills>
+			<li>SheildSkill_Gong4_1</li>
+		</Skills>
+	</Esoterica> 
+	
+	<Esoterica Name="FightSkillEsoterica_Gong4_3">
+		<DisplayName>回春诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>呼唤木之气息，恢复自身灵气。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：回春诀[/color][/size]</EffectDesc>
+		<Skills>
+			<li>HealthSkill_Gong4_1</li>
+		</Skills>
+	</Esoterica> 
+	
+	<Esoterica Name="FightSkillEsoterica_Gong9_1">
+		<DisplayName>逆转轮回</DisplayName>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>运用轮回之力，极大的恢复自身的灵气。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘术：轮回逆转[/color][/size]</EffectDesc>
+		<Skills>
+			<li>HealthSkill_Gong9_1</li>
+		</Skills>
+	</Esoterica> 
+	
+</List></Esotericas>

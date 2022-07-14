@@ -1,0 +1,408 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="LingShouShitPlace" Parent="FurnitureBase">
+		<ThingName>灵宠排泄点</ThingName>	
+		<Desc>指定一个地点，供灵宠排泄用。</Desc>
+		
+		<Tags>
+			<Tag Name="_LSSHITPLACE" Level="1"/>
+		</Tags>
+		<TexPath>res/Sprs/building_yaozujueqi/point</TexPath>
+		<!--<TileID>271</TileID>-->
+		<Color>655E00FF</Color>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>	
+		<MaxHitPoints>1</MaxHitPoints>
+		<VisionRadius>0</VisionRadius>
+		<BlockMissile>0</BlockMissile>
+		
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>500</BurningPoint>
+		</Flammability>
+		<ColliderKind>Across</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[6],
+			</Data>
+			<WorkOffset>
+				<li Index="0" Ang="180"/>
+			</WorkOffset>	
+		</Collider>
+		
+	
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<NoFight>1</NoFight>
+			<AutoUnLock>0</AutoUnLock>
+			<NoFengshui>1</NoFengshui>
+			<NoFight>1</NoFight>
+			<HelperClass>BuildingHelperBasePractice</HelperClass>`
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<BePackage>0</BePackage>	
+			<BasePracticeEffectiveness>1.2</BasePracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+				<CostStuffCount>0</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LSEnemyCarryPlace" Parent="LingShouShitPlace">
+		<ThingName>敌人搬运点</ThingName>	
+		<Desc>灵宠通过搬运行为可以将昏迷的敌人搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Color>EE0000FF</Color>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_ENEMY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+		<Building>
+			<NoFight>1</NoFight>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSWaiCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>外门搬运点</ThingName>
+		<Color>CDC1C5FF</Color>		
+		<Desc>灵宠通过搬运行为可以将昏迷的外门搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_WAI" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+		
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSNeiCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>内门搬运点</ThingName>
+		<Color>EE9A00FF</Color>	
+		<Desc>灵宠通过搬运行为可以将昏迷的内门搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_NEI" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSVistorCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>访客搬运点</ThingName>
+		<Color>00BFFFFF</Color>	
+		<Desc>灵宠通过搬运行为可以将昏迷的访客搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_VISTOR" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSIncomingCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>来者搬运点</ThingName>
+		<Color>00BFFFFF</Color>
+		<Desc>灵宠通过搬运行为可以将昏迷的来客搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_INCOMING" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSEnemyBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>敌人尸体搬运点</ThingName>
+		<Color>EE0000FF</Color>		
+		<Desc>灵宠通过搬运行为可以将敌人的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_ENEMY_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSWaiBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>外门尸体搬运点</ThingName>	
+		<Color>CDC1C5FF</Color>		
+		<Desc>灵宠通过搬运行为可以将外门的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_WAI_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSNeiBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>内门尸体搬运点</ThingName>
+		<Color>EE9A00FF</Color>
+		<Desc>灵宠通过搬运行为可以将内门的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_NEI_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSVistorBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>访客尸体搬运点</ThingName>
+		<Color>00BFFFFF</Color>
+		<Desc>灵宠通过搬运行为可以将访客的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_VISTOR_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSIncomingBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>来客尸体搬运点</ThingName>
+		<Color>00BFFFFF</Color>
+		<Desc>灵宠通过搬运行为可以将来客的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_INCOMING_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSMortalBodyCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>陌生凡人尸体搬运点</ThingName>
+		<Color>32CD32FF</Color>	
+		<Desc>灵宠通过搬运行为可以将凡人的尸体搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_MORTAL_BODY" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LSMortalCarryPlace" Parent="LSEnemyCarryPlace">
+		<ThingName>陌生凡人搬运点</ThingName>
+		<Color>32CD32FF</Color>
+		<Desc>灵宠通过搬运行为可以将昏迷的凡人搬运至此。不会把人堆叠起来，并且会优先挑选距离灵宠最近的点。</Desc>
+		<Tags>
+			<Tag Name="_LSCARRYBODY_MORTAL" Level="1"/>
+			<Tag Name="LSCARRYPOINT" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Building" Name="LsDogHouse">
+		<TexPath>res/Sprs/building_yaozujueqi/building_chongwuwo01</TexPath>
+		<TexScale>1</TexScale>
+		<ThingName>灵宠的巢</ThingName>	
+		<Desc>灵宠的巢，灵宠会在此睡觉。</Desc>
+		
+		<Tags>
+			<Tag Name="_LsDogHouse" Level="1"/>
+		</Tags>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,1,1],
+			[1,7,1,1],
+			[1,1,1,1],
+			</Data>
+			<WorkOffset>
+				<li Index="0" X="0" Y="0" Ang="0" Dir="Down"/>
+				<li Index="0" X="0" Y="0" Z="0" Ang="0" Dir="Left"/>
+				<li Index="0" X="0.5" Y="0" Z="0" Ang="0" Dir="Up"/>
+				<li Index="0" X="0" Y="0" Z="0" Ang="0" Dir="Right"/>
+			</WorkOffset>
+			<OffsetGroup>
+				<li><x>-0.5</x><y>0.3</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0.5</x><y>0.3</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<IsBed>1</IsBed>
+			<BePackage>1</BePackage>
+			<RestEffectiveness>1</RestEffectiveness>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>2.2</x>
+				<y>3.75</y>
+				<z>1</z>
+			</SnowRenderData>
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>24</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingStoneBlock" count = "180"/>
+				</CostItems>
+			</BeMade>			
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LsDog_Carve">
+		<AutoUnLock>0</AutoUnLock>
+		<TexPath>res\Sprs\building_yaozujueqi\building_chongwuwangdiaoxiang01</TexPath>
+		<TexScale>0.95</TexScale>
+		<ThingName>神犬雕像</ThingName>	
+		<Desc>神犬的雕像。可用来复活或召唤神犬。</Desc>
+		<Frags>		
+			<li Frag="Sculpture" />
+		</Frags>	
+
+		<BlockLight>1</BlockLight>
+		<Tags>
+			<Tag Name="_LSSTONE" Level="1"/>
+			<Tag Name="DogStone" Level="1"/>
+		</Tags>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>0.55</y></li>
+				<li><x>0</x><y>-0.1</y></li>
+				<li><x>-0.5</x><y>0.35</y></li>
+				<li><x>0</x><y>0.9</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<NotDoTongLing>1</NotDoTongLing>
+		<Building>
+			<BePackage>1</BePackage>
+			<NotRandom>1</NotRandom>
+			<AutoUnLock>0</AutoUnLock>
+			<Orientation>F,B,R</Orientation>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>				
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>24</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingStoneBlock" count = "180"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LsFox_Carve" Parent="LsDog_Carve">
+		<TexPath>res\Sprs\building_yaozujueqi\building_chongwuhulidiaoxiang01</TexPath>
+		<TexScale>0.95</TexScale>
+		<ThingName>灵狐雕像</ThingName>	
+		<Desc>灵狐的雕像。可用来复活或召唤灵狐。</Desc>
+		<Tags>
+			<Tag Name="_LSSTONE" Level="1"/>
+			<Tag Name="FoxStone" Level="1"/>
+		</Tags>
+		<Collider>
+			<Data>
+			[1,1],
+			[1,3],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>0.3</y></li>
+				<li><x>1.1</x><y>0.65</y></li>
+				<li><x>-0.5</x><y>1.7</y></li>
+				<li><x>-1.1</x><y>1.65</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>			
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStoneBlock" count = "180"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LsDragon_Carve" Parent="LsDog_Carve">
+		<TexPath>res\Sprs\building_yaozujueqi\building_chongwulongdiaoxiang01</TexPath>
+		<TexScale>0.95</TexScale>
+		<ThingName>浮龙雕像</ThingName>	
+		<Desc>浮龙雕像。可用来复活或召唤浮龙。</Desc>
+		<Tags>
+			<Tag Name="_LSSTONE" Level="1"/>
+			<Tag Name="DragonStone" Level="1"/>
+		</Tags>
+		<Collider>
+			<Data>
+			[1,1],
+			[1,3],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.67</x><y>1.05</y></li>
+				<li><x>0.4</x><y>0.67</y></li>
+				<li><x>-0.67</x><y>1.2</y></li>
+				<li><x>-0.4</x><y>1.65</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>			
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ShuiEssence" count = "3"/>
+					<Item name = "Item_SilverBlock" count = "180"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LsPhoenix_Carve" Parent="LsDog_Carve">
+		<TexPath>res\Sprs\building_yaozujueqi\building_chongwufengdiaoxiang01</TexPath>
+		<TexScale>0.95</TexScale>
+		<ThingName>玄凤雕像</ThingName>	
+		<Desc>玄凤雕像，可用来复活或召唤玄凤。</Desc>
+		<Tags>
+			<Tag Name="_LSSTONE" Level="1"/>
+			<Tag Name="PhoenixStone" Level="1"/>
+		</Tags>
+		<Collider>
+			<Data>
+			[1,1],
+			[1,3],
+			[1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.45</x><y>0.6</y></li>
+				<li><x>0</x><y>0.5</y></li>
+				<li><x>-0.5</x><y>0.9</y></li>
+				<li><x>0</x><y>1.5</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<NotRandom>1</NotRandom>
+			<BePackage>1</BePackage>
+			<AutoUnLock>0</AutoUnLock>
+			<SnowRenderData>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</SnowRenderData>	
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<CostItems>
+					<Item name = "Item_HuoEssence" count = "3"/>
+					<Item name = "Item_CopperBlock" count = "180"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+</List></ThingDefs>

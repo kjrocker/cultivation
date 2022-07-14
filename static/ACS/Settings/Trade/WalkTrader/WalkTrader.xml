@@ -1,0 +1,139 @@
+<Defs><List>
+	<Def Name="wt" Price="Price_Walk" Talk="Talk_WalkTrader">
+		<AllRandomCount>6</AllRandomCount>
+		<HighPriceItem>
+			<Min>3</Min>
+			<Max>6</Max>
+		</HighPriceItem>
+		<PriceScale>
+			<li Rate="1">
+				<Price>
+					<li Kind="Dan" Min="1" Max="1" W="1"/>
+					<li Kind="Baowu" Min="1" Max="1" W="1"/>
+					<li Kind="Curiosity" Min="1" Max="1" W="1"/>
+					<li Kind="DOther" Min="1" Max="1" W="1"/>
+					<li Kind="Equip" Min="1" Max="1" W="1"/>
+					<li Kind="WOther" Min="1" Max="1" W="1"/>
+					<li Kind="Material" Min="1" Max="1" W="1"/>
+				</Price>
+			</li>
+			<li Rate="1">
+				<Price>
+					<li Kind="Dan" Min="0" Max="0" W="1"/>
+					<li Kind="Baowu" Min="0" Max="0" W="1"/>
+					<li Kind="Curiosity" Min="0" Max="0" W="1"/>
+					<li Kind="DOther" Min="0" Max="0" W="1"/>
+					<li Kind="Equip" Min="0" Max="0" W="1"/>
+					<li Kind="WOther" Min="0" Max="0" W="1"/>
+					<li Kind="Material" Min="0" Max="0" W="1"/>
+				</Price>
+			</li>
+		</PriceScale>
+		<Good>
+			<li Rate="0.5" MinCount="1" MaxCount="1">
+				<Pool>
+					<li>Basic</li>
+				</Pool>
+			</li><!-- 基础物品 -->
+			<li Rate="1" MinCount="3" MaxCount="3">
+				<Pool>
+					<li>BaiManR</li>
+					<li>TianJiR</li>
+					<li>HeiShanR</li>
+					<li>ZhengYiR</li>
+					<li>JiuHuaR</li>
+					<li>WuLianR</li>
+					<li>ShuShanR</li>
+					<li>KunLunR</li>
+					<li>XianKongR</li>
+					<li>DanXiaR</li>
+					<li>HeHuanR</li>
+					<li>WuDangR</li>
+				</Pool>
+			</li> <!-- 低级池子 -->
+			
+			<li Rate="1" MinCount="1" MaxCount="3">
+				<Pool>
+					<li>GoodsAnimal</li>
+					<li>BaiManA</li>
+					<li>TianJiA</li>
+					<li>HeiShanA</li>
+					<li>ZhengYiA</li>
+					<li>JiuHuaA</li>
+					<li>WuLianA</li>
+					<li>ShuShanA</li>
+					<li>KunLunA</li>
+					<li>XianKongA</li>
+					<li>DanXiaA</li>
+					<li>HeHuanA</li>
+					<li>BodyAnimal</li>
+					<li>BaiManAL</li>
+					<li>TianJiAL</li>
+					<li>HeiShanAL</li>
+					<li>ZhengYiAL</li>
+					<li>JiuHuaAL</li>
+					<li>WuLianAL</li>
+					<li>ShuShanAL</li>
+					<li>KunLunAL</li>
+					<li>XianKongAL</li>
+					<li>DanXiaAL</li>
+					<li>HeHuanAL</li>
+				</Pool>
+			</li>
+			
+			<li Rate="1" MinCount="1" MaxCount="2">
+				<Pool>
+					<li>BaiManSR</li>
+					<li>TianJiSR</li>
+					<li>HeiShanSR</li>
+					<li>ZhengYiSR</li>
+					<li>JiuHuaSR</li>
+					<li>WuLianSR</li>
+					<li>ShuShanSR</li>
+					<li>KunLunSR</li>
+					<li>XianKongSR</li>
+					<li>DanXiaSR</li>
+					<li>HeHuanSR</li>
+					<li>WuDangSR</li>
+				</Pool>
+			</li> <!-- 高级丹药/秘籍 -->
+			
+			<li Rate="0.3" MinCount="1" MaxCount="2">
+				<Pool>
+					<li>BaiManSSR</li>
+					<li>TianJiSSR</li>
+					<li>HeiShanSSR</li>
+					<li>ZhengYiSSR</li>
+					<li>JiuHuaSSR</li>
+					<li>WuLianSSR</li>
+					<li>ShuShanSSR</li>
+					<li>KunLunSSR</li>
+					<li>XianKongSSR</li>
+					<li>DanXiaSSR</li>
+					<li>HeHuanSSR</li>
+					<li>WuDangSSR</li>
+				</Pool>
+			</li> <!-- 高级丹药/秘籍 -->
+			
+			<li Rate="0.1" MinCount="1" MaxCount="1">
+				<Pool>
+					<li>Special</li>
+				</Pool>
+			</li>
+			
+			<li Rate="1" MinCount="10000" MaxCount="20000">
+				<Item>Item_LingStone</Item>
+			</li>
+			<li Rate="1" MinCount="1" MaxCount="1">
+				<Item>Item_AuctionPaper</Item>
+			</li>
+			
+			<li Rate="1" MinCount="1" MaxCount="3">
+				<Item>Item_Firecracker</Item>
+			</li>
+			<li Rate="0.3" MinCount="1" MaxCount="1">
+				<Item>Item_WhiteHair</Item>
+			</li>
+		</Good>
+	</Def>
+</List></Defs>

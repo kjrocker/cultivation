@@ -1,0 +1,207 @@
+<FightSkills><List>
+	<Skill Name="TestSkillTemp">
+	
+	</Skill>
+	
+	<Skill Name="NormalAttack"><!--通用普通攻击 --> 
+		<CanInterrupt>1</CanInterrupt>
+		<Kind>Damage</Kind>
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Single</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+	</Skill>
+	
+	<Skill Name="NormalAttackMissile"><!--通用普通攻击远距离 --> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>10003</MissileEffect>
+		<HitEffect>10001</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="JYTurtleAttackMissile"><!--癸水妖雷--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>29</MissileEffect>
+		<HitEffect>68</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>10</Speed>
+		</Missile>
+	</Skill>
+	
+	
+	<Skill Name="JYSnakeAttackMissile"><!--烈毒飞鳞--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>22</MissileEffect>
+		<HitEffect>58</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="JYBoarAttackMissile"><!--戊土妖雷--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>4</MissileEffect>
+		<HitEffect>35</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+
+	<Skill Name="JYBearAttackMissile"><!--丙火妖雷--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>7</MissileEffect>
+		<HitEffect>38</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0.5</p2>
+			<p3>0.5</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="JYLongpuNightAttackMissile"><!--龙仆夜--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>22</MissileEffect>
+		<HitEffect>58</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+		</Missile>
+	</Skill>	
+	
+	<Skill Name="JYLongpuDayAttackMissile"><!--龙仆昼--> 
+		<NormalAtk>1</NormalAtk>
+		<ShowInUI>0</ShowInUI>
+		<Kind>Damage</Kind>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Missile</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<MissileEffect>16</MissileEffect>
+		<HitEffect>50</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+		</Missile>
+	</Skill>	
+	
+	
+	<Skill Name="NormalFabao"><!--内门法宝读条 --> 
+		<CanInterrupt>1</CanInterrupt>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>5</SingTime>
+		<CD>0</CD>
+		<Shape>None</Shape>
+		<SingAni>Fabao</SingAni>
+		<Kind>None</Kind>
+		<Value>50</Value>
+		<Radius>0</Radius>
+	</Skill>
+	
+	<Skill Name="NormalShield"><!--内门护体 --> 
+		<CanInterrupt>1</CanInterrupt>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>0</CD>
+		<Shape>None</Shape>
+		<SingAni>chuangong1</SingAni>
+		<Kind>None</Kind>
+		<Value>50</Value>
+		<Radius>0</Radius>
+	</Skill>
+	
+	<Skill Name="BodyAttack"><!--体修攻击待机 --> 
+		<CanInterrupt>1</CanInterrupt>
+		<Kind>Damage</Kind>
+		<NormalAtk>1</NormalAtk>
+		<AttackRange>10</AttackRange>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>0</CD>
+		<Shape>Single</Shape>
+		<Radius>0</Radius>
+		<SelectType>Target</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+	</Skill>
+	
+	
+</List></FightSkills>

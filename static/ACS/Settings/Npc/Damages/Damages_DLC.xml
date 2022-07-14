@@ -1,0 +1,12 @@
+<DamageDefs><List>
+	<Damage Name="BeFished">
+		<DisplayName>钩伤</DisplayName>
+		<TreatConstant>0</TreatConstant>
+		<ValueMin>0.01</ValueMin>
+		<ValueMax>0.01</ValueMax>
+		<Pain>0</Pain>
+		<Trend>-0.2</Trend>
+		<Previous></Previous>
+		<Next></Next>
+	</Damage>
+</List></DamageDefs>

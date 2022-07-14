@@ -1,0 +1,14 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="FishTimes">
+			<DisplayName>Caught Fish</DisplayName>
+			<DisplayValue>{0}</DisplayValue>
+			<Desc>The number of fish that this cultivator has caught.</Desc>
+		</Text>
+		<Text Name="HeaviestFish">
+			<DisplayName>Heaviest Fish</DisplayName>
+			<DisplayValue>{0:f1} Catties</DisplayValue>
+			<Desc>The weight of the heaviest fish that this cultivator has caught.</Desc>
+		</Text>
+	</List>
+</Texts>

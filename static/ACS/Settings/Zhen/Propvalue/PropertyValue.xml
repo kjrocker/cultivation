@@ -1,0 +1,126 @@
+<Defs><List>
+	<Def Name="Stability">
+		<Descript>稳定度{1}{0:N1}%</Descript>
+		<ToolTips>稳定度会随着阵法被攻击而降低，如果稳定度降低到0。那么阵法就宣告被破。</ToolTips>
+		<HideInUi>1</HideInUi>
+		<BaseV>100</BaseV>
+		<Type>1</Type>
+		<p1>StabilityBasev</p1>
+		<p2>StabilityBasep</p2>
+		<p3>StabilityAddv</p3>
+		<p4>StabilityAddp</p4>
+	</Def>
+	<Def Name="FabaoAtkPower">
+		<Descript>御器能力{1}{0:N1}</Descript>
+		<ToolTips>布成阵法后，阵枢驾驭法宝时会得到增强。\n御器能力影响布阵后阵枢驾驭法宝时的加强程度。</ToolTips>
+		<LuaToolTips>string.format("布成阵法后，阵枢驾驭法宝时会得到增强。\
+御器能力影响布阵后阵枢驾驭法宝时的加强程度。\
+当前可提高御器能力：%.0f%%", (z.FabaoPowerK_Normal-1)*100)</LuaToolTips>
+		<BaseV>1</BaseV>
+		<Type>1</Type>
+		<p1>FabaoAtkPowerBasev</p1>
+		<p2>FabaoAtkPowerBasep</p2>
+		<p3>FabaoAtkPowerAddv</p3>
+		<p4>FabaoAtkPowerAddp</p4>
+		<Min>0</Min>
+		<Max>250</Max>
+	</Def>
+	<Def Name="MagicPower">
+		<Descript>术法能力{1}{0:N1}</Descript>
+		<ToolTips>布成阵法后，阵枢施展术法时会得到增强。\n术法能力影响布阵后阵枢施展术法时的加强程度。</ToolTips>
+		<LuaToolTips>string.format("布成阵法后，阵枢施展术法时会得到增强。\
+术法能力影响布阵后阵枢施展术法时的加强程度。\
+当前可提高术法能力：%.0f%%", (z.MagicPowerK_Normal-1)*100)</LuaToolTips>
+		<BaseV>1</BaseV>
+		<Type>1</Type>
+		<p1>MagicPowerBasev</p1>
+		<p2>MagicPowerBasep</p2>
+		<p3>MagicPowerAddv</p3>
+		<p4>MagicPowerAddp</p4>
+		<Min>0</Min>
+		<Max>250</Max>
+	</Def>
+	<Def Name="Sheild">
+		<Descript>护御能力{1}{0:N1}</Descript>
+		<ToolTips>阵法遭受攻击后，攻击的伤害会被阵法减免一部分，然后由阵法中所有成员均摊。\n护御能力影响阵法遭受攻击时的减免比率。</ToolTips>
+		<LuaToolTips>string.format("阵法遭受攻击后，攻击的伤害会被阵法减免一部分，然后由阵法中所有成员均摊。\
+护御能力影响阵法遭受攻击时的减免比率。\
+当前可提供减伤比率：%.0f%%", (1-z.EffectDamageP) * 100)</LuaToolTips>
+		<BaseV>0</BaseV>
+		<Type>1</Type>
+		<p1>SheildBasev</p1>
+		<p2>SheildBasep</p2>
+		<p3>SheildAddv</p3>
+		<p4>SheildAddp</p4>
+		<Min>0</Min>
+		<Max>250</Max>
+	</Def>
+	<Def Name="SkillCooldown">
+		<Descript>运转能力{1}{0:N1}</Descript>
+		<ToolTips>随着阵法运转，阵法会逐渐积累灵机，阵法灵机可以用来释放一些特殊的阵法能力。除此之外，阵法角色的灵气也会随着阵法运转而等比例均衡。\n运转能力影响阵法积累灵机的速度和灵气均衡的周期。</ToolTips>
+		<LuaToolTips>string.format("随着阵法运转，阵法会逐渐积累灵机，阵法灵机可以用来释放一些特殊的阵法能力。除此之外，阵法角色的灵气也会随着阵法运转而等比例均衡。\
+运转能力影响阵法积累灵机的速度和灵气均衡的周期。\
+当前减少运转周期比率：%.0f%%\
+当前灵机积累周期为：%.0f秒\
+当前灵气均衡周期为：%.0f秒", (1-z.EffectZrPointCDP)*100, ZhenMgr:GetZRAddDuration(z), 15 * z.EffectZrPointCDP)</LuaToolTips>
+		<BaseV>0</BaseV>
+		<Type>1</Type>
+		<p1>SkillCooldownBasev</p1>
+		<p2>SkillCooldownBasep</p2>
+		<p3>SkillCooldownAddv</p3>
+		<p4>SkillCooldownAddp</p4>
+		<Min>0</Min>
+		<Max>250</Max>
+	</Def>
+	<Def Name="ReduceCost">
+		<Descript>阵法效率{1}{0:N1}</Descript>
+		<ToolTips>结成阵法后，维持阵法，施展阵法技能都会消耗阵法中每个角色的灵气。维持阵法消耗的灵气与阵枢角色灵气上限有关。阵法技能消耗的灵气与技能强弱有关。\n阵法效率影响阵法行为消耗灵气的多少。</ToolTips>
+		<LuaToolTips>string.format("结成阵法后，维持阵法，施展阵法技能都会消耗阵法中每个角色的灵气。维持阵法消耗的灵气与阵枢角色灵气上限有关。阵法技能消耗的灵气与技能强弱有关。\n阵法效率影响阵法行为消耗灵气的多少。\n当前可减少消耗：%.0f%%", (1 - z.EffectCostP)*100)</LuaToolTips>
+		<BaseV>0</BaseV>
+		<Type>1</Type>
+		<p1>ReduceCostBasev</p1>
+		<p2>ReduceCostBasep</p2>
+		<p3>ReduceCostAddv</p3>
+		<p4>ReduceCostAddp</p4>
+		<Min>0</Min>
+		<Max>250</Max>
+	</Def>
+	<Def Name="NpcNodeCountNumPowerup">
+		<HideInUi>1</HideInUi>
+		<Descript>阵法规模{1}{0:N1}</Descript>
+		<ToolTips>阵法规模指的是阵法中节点的数量，阵法中节点数量越多，阵法规模就越大。
+阵枢角色在阵法上的造诣高低，决定了阵法规模的上限。如果其主持的阵法规模超过其能力，阵法稳定性会大幅度降低。反之则会提高。</ToolTips>
+		<LuaToolTips>string.format("阵法规模指的是阵法中节点的数量，阵法中节点数量越多，阵法规模就越大。\n阵枢角色在阵法上的造诣高低，决定了阵法规模的上限。如果其主持的阵法规模超过其能力，阵法稳定性会大幅度降低。反之则会提高。\n当前阵法稳定度调整值：%.0f", z.fStabilityCoreNpcAddv)</LuaToolTips>
+		<BaseV>0</BaseV>
+		<Type>2</Type>
+		<p1>NpcNodeCountNumPowerupBasev</p1>
+		<p2>NpcNodeCountNumPowerupBasep</p2>
+		<p3>NpcNodeCountNumPowerupAddv</p3>
+		<p4>NpcNodeCountNumPowerupAddp</p4>
+	</Def>
+	<Def Name="NpcZhenPressurePowerup">
+		<HideInUi>1</HideInUi>
+		<Descript>阵法负荷{1}{0:N1}</Descript>
+		<ToolTips>阵法负荷指的是阵法结构的复杂程度，阵眼的复杂程度越高，阵眼与阵枢的距离越远，阵法负荷越大。
+阵枢角色在阵法上的造诣高低，决定了阵法负荷的上限。如果其主持的阵法负荷超过其能力，阵法消耗会大幅度提高。反之则会降低。</ToolTips>
+		<LuaToolTips>string.format("阵法负荷指的是阵法结构的复杂程度，阵眼的复杂程度越高，阵眼与阵枢的距离越远，阵法负荷越大。\n阵枢角色在阵法上的造诣高低，决定了阵法负荷的上限。如果其主持的阵法负荷超过其能力，阵法消耗会大幅度提高。反之则会降低。\n当前每秒消耗灵气：%.0f", z.CostLingPerSec)</LuaToolTips>
+		<BaseV>0</BaseV>
+		<Type>3</Type>
+		<p1>NpcZhenPressurePowerupBasev</p1>
+		<p2>NpcZhenPressurePowerupBasep</p2>
+		<p3>NpcZhenPressurePowerupAddv</p3>
+		<p4>NpcZhenPressurePowerupAddp</p4>
+	</Def>
+	<Def Name="NpcZhenPoint">
+		<Descript>阵法灵机{1}{0:N0}</Descript>
+		<ToolTips>随着阵法运转，阵法会逐渐积累灵机。阵法灵机可以用来释放一些特殊的阵法能力。然而阵法储存灵机的数量是有上限的。灵机存满就不会继续增加。</ToolTips>
+		<BaseV>2</BaseV>
+		<Type>1</Type>
+		<p1>NpcZhenPointBasev</p1>
+		<p2>NpcZhenPointBasep</p2>
+		<p3>NpcZhenPointAddv</p3>
+		<p4>NpcZhenPointAddp</p4>
+		<Min>0</Min>
+		<Max>8</Max>
+	</Def>
+</List></Defs>

@@ -1,0 +1,353 @@
+<ModifierDefs><List>
+	<Modifier Name="Weather_SunnyDay" Type="Normal">
+		<DisplayName>晴天</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Sunny</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Weather_Overcast" Type="Normal">
+		<DisplayName>阴天</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Overcast</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Weather_LightRain" Type="Normal">
+		<DisplayName>小雨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LightRain</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Weather_HeavyRain" Type="Normal">
+		<DisplayName>大雨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HeavyRain</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_LightSnow" Type="Normal">
+		<DisplayName>小雪</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LightSnow</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Weather_HeavySnow" Type="Normal">
+		<DisplayName>大雪</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HeavySnow</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Weather_DenseFog" Type="Normal">
+		<DisplayName>大雾</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_DenseFog</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Weather_SpringAir" Type="Normal">
+		<DisplayName>春天气息</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_SpringAir</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Weather_Melancholy" Type="Normal">
+		<DisplayName>愁绪弥漫</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Melancholy</li>
+		</Moods>
+	</Modifier> 
+	
+	
+	<Modifier Name="Weather_HarvestAir" Type="Normal">
+		<DisplayName>丰收气息</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HarvestAir</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Weather_Impetuous" Type="Normal">
+		<DisplayName>浮躁之风</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Impetuous</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_Hail" Type="Normal">
+		<DisplayName>冰雹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Hail</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_MouldRains" Type="Normal">
+		<DisplayName>梅雨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_MouldRains</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_Drought" Type="Normal">
+		<DisplayName>干旱</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Drought</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_Rainstorm" Type="Normal">
+		<DisplayName>暴雨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Rainstorm</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_Fohn" Type="Normal">
+		<DisplayName>焚风</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Fohn</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_DustStorm" Type="Normal">
+		<DisplayName>尘暴</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_DustStorm</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_LingRarefiedWave" Type="Normal">
+		<DisplayName>灵气枯潮</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LingRarefiedWave</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Weather_LingUpWave" Type="Normal">
+		<DisplayName>灵气爆发</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LingUpWave</li>
+		</Moods>
+	</Modifier>
+	
+	
+	<Modifier Name="Weather_HeatWave" Type="Normal">
+		<DisplayName>热浪</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HeatWave</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_ColdWave" Type="Normal">
+		<DisplayName>寒流</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_ColdWave</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_HeatWaveInWinter" Type="Normal">
+		<DisplayName>热浪</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HeatWaveInWinter</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_ColdWaveInSummer" Type="Normal">
+		<DisplayName>寒流</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_ColdWaveInSummer</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_PermanentNight" Type="Normal">
+		<DisplayName>永夜</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_PermanentNight</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_Miasma" Type="Normal">
+		<DisplayName>瘴气</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_Miasma</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="Weather_LightningStorm" Type="Normal">
+		<DisplayName>雷暴</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LightningStorm</li>
+		</Moods>
+	</Modifier>
+	
+	
+	<Modifier Name="Weather_LuShu_SunnyDay" Type="Normal">
+		<DisplayName>晴天</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_LuShu_SunnyDay</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Weather_Fei_HeavyRain" Type="Normal">
+		<DisplayName>大雨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_HeavyRain</li>
+		</Moods>
+		<Properties>
+			<li Name="EnvironmentDiseaseAddP" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Weather_SpringFestival" Type="Normal">
+		<DisplayName>春节</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_SpringFestival</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Weather_ZuShiBiHu" Type="Normal">
+		<DisplayName>祖师庇护</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Weather_ZuShiBiHu</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Weather_Magic_ZhenShuiJieJie" Type="Normal">
+		<DisplayName>九阴真水界</DisplayName>
+		<Desc>在九阴真水界中，自然恢复力，灵气恢复速度大幅提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="15"/>
+			<li Name="RecoveryPower" AddP="3"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Weather_Magic_BeiDouJianJie" Type="Normal">
+		<DisplayName>北斗剑界</DisplayName>
+		<Desc>在北斗剑界中，法宝威力大幅提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="15"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Weather_Magic_ZhenHuoJieJie" Type="Normal">
+		<DisplayName>九阳神火界</DisplayName>
+		<Desc>在九阳神火界中，术法威力大幅提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.3"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

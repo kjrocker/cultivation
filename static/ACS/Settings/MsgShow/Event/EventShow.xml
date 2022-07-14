@@ -1,0 +1,60 @@
+<EventShowDefs><List>
+	<Def Name="t1">
+		<DisplayName>普通天气</DisplayName>
+		<Desc>普通天气</Desc>
+	</Def>
+	<Def Name="t2">
+		<DisplayName>罕见天气</DisplayName>
+		<Desc>罕见天气</Desc>
+		<RemoveType>Lookover</RemoveType>
+	</Def>
+	<Def Name="t3">
+		<DisplayName>宝物坠落</DisplayName>
+		<Desc>宝物坠落</Desc>
+		<RemoveType>Remove</RemoveType>
+	</Def>
+	<Def Name="t8">
+		<DisplayName>弟子引荐</DisplayName>
+		<Desc>弟子引荐</Desc>
+	</Def>
+	<Def Name="t_vistor"><!--这个名字被系统用了，不能改-->
+		<DisplayName>访客事件</DisplayName>
+		<Desc>访客事件</Desc>
+	</Def>
+	<Def Name="t5">
+		<DisplayName>野兽进攻</DisplayName>
+		<Desc>野兽进攻</Desc>
+		<RemoveType>Remove</RemoveType>
+	</Def>
+	<Def Name="t6">
+		<DisplayName>敌人来袭</DisplayName>
+		<Desc>敌人来袭</Desc>
+		<RemoveType>Remove</RemoveType>
+	</Def>
+	<Def Name="t7">
+		<DisplayName>妖兽袭击</DisplayName>
+		<Desc>妖兽袭击</Desc>
+		<RemoveType>Remove</RemoveType>
+	</Def>
+
+	<Def Name="s_fabao">
+		<DisplayName>秘闻-法宝出土</DisplayName>
+		<Desc>秘闻-法宝出土</Desc>
+	</Def>
+	<Def Name="s_miji">
+		<DisplayName>秘闻-秘籍出土</DisplayName>
+		<Desc>秘闻-秘籍出土</Desc>
+	</Def>
+	<Def Name="s_daotong">
+		<DisplayName>秘闻-道统现世</DisplayName>
+		<Desc>秘闻-道统现世</Desc>
+	</Def>
+		<Def Name="s_dongfu">
+		<DisplayName>秘闻-洞府现世</DisplayName>
+		<Desc>秘闻-洞府现世</Desc>
+	</Def>
+	<Def Name="s_zhengxie">
+		<DisplayName>秘闻-正邪行踪</DisplayName>
+		<Desc>秘闻-正邪行踪</Desc>
+	</Def>
+</List></EventShowDefs>

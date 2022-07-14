@@ -1,0 +1,69 @@
+<BPSuperPartDefs><List>
+	
+	<Def Name="SuperPart_Turtle_1"><!--测试秘体-->
+		<Prefix>道化神归</Prefix>
+		<Suffix>甲</Suffix>
+		<Desc>上古龟族妖圣所传之秘体，以道化之力淬炼甲壳，一旦练成，几乎是万法难侵。</Desc>
+		<DefaultBody>YGAnimal_TurtleBody</DefaultBody>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_guike01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYguike01</DefEffect>
+		
+		<Parts>
+			<li Name="BackShell">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXTu" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="0,1"/>
+				</Labels>
+			</li>	
+			<li Name="AbdominalShell">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXTu" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="0,1"/>
+				</Labels>
+			</li>	
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXTu" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="RightRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXTu" Levels="1,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上中量提升秘体坚韧\n大量提升秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1500"/>
+					<li Name="DefRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>从根本上大量提升秘体坚韧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="2500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+</List></BPSuperPartDefs>

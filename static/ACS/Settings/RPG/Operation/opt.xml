@@ -1,0 +1,77 @@
+<Defs><List>
+	<Def Name="Mine" Type="Mine">
+		<DisplayName>挖矿</DisplayName>
+		<Lua>function(worker, target) print("worker", worker, "kill", target); ThingMgr:RemoveThing(target) end</Lua>
+		<Ani>Bat</Ani>
+		<Needt>3</Needt>
+	</Def>
+	<Def Name="Pickup" Type="Item">
+		<DisplayName>拾取</DisplayName>
+		<BindSystemOpt>JobRPGPickup</BindSystemOpt>
+		<Lua></Lua>
+		<Ani>Bat</Ani>
+		<Needt>3</Needt>
+		<DefaultActive>function(thing, bagorequip) return bagorequip end</DefaultActive>
+	</Def>
+	<Def Name="Cutoff" Type="Plant">
+		<DisplayName>砍树</DisplayName>
+		<BindSystemOpt>JobRPGCutoff</BindSystemOpt>
+		<Lua></Lua>
+		<Ani>Bat</Ani>
+		<Needt>3</Needt>
+	</Def>
+	<Def Name="Eat" Type="Drug|Food">
+		<DisplayName>食用</DisplayName>
+		<BindSystemOpt>JobRPGEat</BindSystemOpt>
+		<Lua></Lua>
+		<Ani>Bat</Ani>
+		<Needt>3</Needt>
+	</Def>
+	<Def Name="Dialog" Type="All">
+		<DisplayName>对话</DisplayName>
+		<BindSystemOpt>JobRPGDialog</BindSystemOpt>
+		<HideInUi>1</HideInUi>
+		<Lua></Lua>
+		<Ani></Ani>
+		<Needt>0</Needt>
+		<Icon>ui://0xrxw6g751s352ow3w</Icon>
+	</Def>
+	<Def Name="Interact" Type="Item">
+		<DisplayName>交互</DisplayName>
+		<BindSystemOpt>JobRPGDialog</BindSystemOpt>
+		<HideInUi>1</HideInUi>
+		<Lua></Lua>
+		<Ani></Ani>
+		<Needt>0</Needt>
+		<Icon></Icon>
+	</Def>
+	<Def Name="Equip" Type="Equip">
+		<DisplayName>装备</DisplayName>
+		<BindSystemOpt>JobRPGEquip</BindSystemOpt>
+		<Lua></Lua>
+		<Ani>Bat</Ani>
+		<Needt>3</Needt>
+		<DefaultActive>function(thing, bagorequip) return bagorequip end</DefaultActive>
+	</Def>
+	<Def Name="Attack" Type="Npc">
+		<DisplayName>攻击</DisplayName>
+		<Lua>function(worker, target) worker:FightWith(target) end</Lua>
+		<Ani>Idle</Ani>
+		<Needt>0</Needt>
+		<CheckLua>function(worker, target) return (nil ~= target and (not target.IsDeath)) end</CheckLua>
+	</Def>
+	<Def Name="Slaughter" Type="Npc">
+		<DisplayName>屠宰</DisplayName>
+		<BindSystemOpt>JobRPGSlaughter</BindSystemOpt>
+		<HideInUi>1</HideInUi>
+		<Needt>0</Needt>
+		<Icon></Icon>
+	</Def>
+	<Def Name="SlaughterBoss" Type="Building">
+		<DisplayName>采掘</DisplayName>
+		<BindSystemOpt>JobRPGSlaughter</BindSystemOpt>
+		<HideInUi>1</HideInUi>
+		<Needt>0</Needt>
+		<Icon></Icon>
+	</Def>
+</List></Defs>

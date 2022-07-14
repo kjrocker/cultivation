@@ -1,0 +1,22 @@
+<Defs><List>
+	<Def Name="t1">
+		<Max>2</Max>
+		<Events>
+			<li Region="zhongyuan" Disaster="Drought" Rate="0.01" />
+			<li Region="OurPlace" Disaster="EarthQuake" Rate="0.007" />
+			<li Region="OurPlace" Disaster="Flood" Rate="0.007" />
+			<li Region="JiangAnWoYe" Disaster="Flood" Rate="0.007" />
+			<li Region="JiangAnWoYe" Disaster="Siberia" Rate="0.007" />
+			<li Region="DaXueYuan" Disaster="Siberia" Rate="0.01" />
+			<li Region="Feng" Disaster="EarthQuake" Rate="0.01" />
+			<li Region="DaLiang" Disaster="EarthQuake" Rate="0.007" />
+			<li Region="DaLiang" Disaster="Drought" Rate="0.007" />
+			<li Region="DaMo" Disaster="Drought" Rate="0.01" />
+			<li Region="NanHuang" Disaster="EarthQuake" Rate="0.01" />
+			<li Region="HeYin" Disaster="Flood" Rate="0.007" />
+			<li Region="HeYin" Disaster="Siberia" Rate="0.007" />
+			<li Region="GuanHai" Disaster="Flood" Rate="0.01" />
+			<li Region="PanShe" Disaster="Flood" Rate="0.01" />
+		</Events>
+	</Def>
+</List></Defs>

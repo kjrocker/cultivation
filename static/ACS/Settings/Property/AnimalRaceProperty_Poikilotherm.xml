@@ -1,0 +1,65 @@
+<Properties><List>
+
+	<Property Name="PoikilothermMaxAge_50">
+		<BaseValue>50</BaseValue>
+	</Property>
+
+	<Property Name="PoikilothermMoveSpeed">
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>2.5</AddValue>
+	</Property>
+
+	<Property Name="PoikilothermMoveSpeed_Snake">
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>5.5</AddValue>
+	</Property>
+
+	<Property Name="PoikilothermMaxHp">
+		<BaseValue>200</BaseValue>
+	</Property>
+
+	<Property Name="PoikilothermComfyTMin">
+		<BaseValue>10</BaseValue>
+
+	</Property>
+
+	<Property Name="PoikilothermComfyTMax">
+		<BaseValue>30</BaseValue>
+
+	</Property>
+
+	<Property Name="PoikilothermToleranceTMin">
+		<BaseValue>-50</BaseValue>
+	</Property>
+
+	<Property Name="PoikilothermToleranceTMax">
+		<BaseValue>35</BaseValue>
+	</Property>
+
+	<Property Name="PoikilothermVisionRadius">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Perception" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>4</AddValue>
+	</Property>
+
+	<Property Name="PoikilothermBaseWorkSpeed">
+		<BaseValue>4</BaseValue>
+	</Property>
+
+	<Property Name="PoikilothermRecoveryPower">
+		<BaseValue>0.05</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>0.01</AddValue>
+	</Property>
+
+</List></Properties>

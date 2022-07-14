@@ -1,0 +1,20 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>MainMenuEnv</Name>
+            <Notes>关于主菜单UI中地图环境编辑的评论面板</Notes>
+            <Title>地图环境编辑</Title>
+            <Desc>通过选择奇异灵兽，洞天环境，古代遗物来改变地图的环境，使得游戏从一开始就有不一样的体验。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>MainMenuImmortal</Name>
+            <Notes>关于主菜单UI中真仙模式的评论面板</Notes>
+            <Title>真仙模式</Title>
+            <Desc>通过一些选项来提高游戏难度，可完成类型丰富的挑战与成就。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

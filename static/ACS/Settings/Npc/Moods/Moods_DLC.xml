@@ -1,0 +1,51 @@
+<MoodDefs><List>
+	<Mood Name="Mood_BigFish">
+		<DisplayName>钓到了大鱼</DisplayName>
+		<Desc>刚刚调到了大鱼，心情舒畅。</Desc>
+		<StoryDesc>钓到了大鱼，感觉心情很好。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>15</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_BigBigFish">
+		<DisplayName>钓到了巨型鱼</DisplayName>
+		<Desc>刚刚调到了巨型鱼，心情舒畅。</Desc>
+		<StoryDesc>钓到了巨型鱼，感觉心情好极了。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>30</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_BeFished">
+		<DisplayName>被钓上来了</DisplayName>
+		<Desc>中了圈套，被钓了上来</Desc>
+		<StoryDesc>被钓上了岸，有点生气。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-30</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_FishSmell">
+		<DisplayName>恶臭</DisplayName>
+		<Desc>吃了恶纹鲽，浑身恶臭</Desc>
+		<StoryDesc>吃了恶纹鲽，浑身恶臭。</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>-30</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="Mood_FishGood">
+		<DisplayName>回味</DisplayName>
+		<Desc>吃了鲜美的月光鱼，心情舒畅</Desc>
+		<StoryDesc>吃了鲜美的月光鱼，心情舒畅。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>30</Value>
+		<Duration>3</Duration>
+	</Mood>
+</List></MoodDefs>

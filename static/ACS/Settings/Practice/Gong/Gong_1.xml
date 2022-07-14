@@ -1,0 +1,186 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_1_Shui">   <!--基础模板 -->
+		<DisplayName>太和十六洞天</DisplayName>
+		<Desc>太一门镇派五行真诀之一，共分四大境界，十六重关隘，讲究循序渐进。修炼此功法虽然进境不快，但胜在入门容易，稳扎稳打下修为逐渐提升，长此以往，成仙在望。</Desc>
+		<SelectDesc>此功法讲究循序渐进，以根基深厚著称，然而结丹时要承受初劫洗礼。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>-1, 7, 5, 6, -1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Shui</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>jiangdao</li>
+			<li>ciqi</li>
+			<li>guanding</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>凝气期</DisplayName>
+				<Desc>修行入门之境界，需下苦功宁神静坐，因此越是聪慧之人，脑海里念头越多，越难过这关。</Desc>
+				<Value>1800</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>摄思</DisplayName>
+						<Desc>在静坐中尝试收摄心猿意马，使念头不再发散。[color=#D06508]\n此瓶颈悟性越高，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Intelligence_2_25_5</SuccessChange>
+						<FailedChangeAdd>0.1</FailedChangeAdd>
+						<!-- <AddPracticeNeed>100</AddPracticeNeed> -->
+						<!--
+						<ResourceCost></ResourceCost>
+						<ItemCost>
+							<Item name="Item_Wood"/>
+							<Item tag="_LableRockBlock"/>
+						</ItemCost>
+						<AddModifier></AddModifier>
+						<FailModifier></FailModifier>
+						<Damages></Damages>
+						-->
+					</Neck>
+		
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>内照</DisplayName>
+						<Desc>在摄思的基础上进一步感知体内的变化，如盲人摸物，感受到体内脏器的状态。[color=#D06508]\n此瓶颈悟性越高，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Intelligence_2_25_5</SuccessChange>
+						<FailedChangeAdd>0.5</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.85" Kind="Chance">
+						<DisplayName>气动</DisplayName>
+						<Desc>内视功夫渐深，于静坐中找寻第一缕气感，此乃炼精化气之始，谓之初念。[color=#D06508]\n此瓶颈气感越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Qi_1_5_25</SuccessChange>
+						<FailedChangeAdd>0.05</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>周天</DisplayName>
+						<Desc>修行进入此境界，需逐步壮大真气，并驱使其打通三关三田，打通任督二脉，形成循环。此为周天。</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>结丹期</DisplayName>
+				<Desc>此乃修行第二重境界，需性命交修，水火相济，只为结成金丹一粒。</Desc>
+				<Value>4000</Value>
+				<Necks>
+					<Neck Location="0.1" Kind="Explore">
+						<DisplayName>玄关</DisplayName>
+						<Desc>打开玄关，沟通天地。仙凡自此两别。</Desc>
+						<ExploreValue>1.2</ExploreValue>
+					</Neck>
+				
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>归壶</DisplayName>
+						<Desc>真气充盈全身，达到圆满之境。</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+					
+					<Neck Location="0.9" Kind="Chance">
+						<DisplayName>炉鼎</DisplayName>
+						<Desc>倒转五内，燃烧寿元，以胸腹为鼎，心为火，肾为水，铸就结丹鼎炉。[color=#D06508]\n此瓶颈根骨越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>175</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>0.15</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="10"/>
+						</ResourceCost>
+						<ItemCost>
+							<Item name="Item_Dan_JingYuan2"/>
+						</ItemCost>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+							<li PartKind="Organ" Name="VisceralRupture" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>凝丹</DisplayName>
+						<Desc>精气神合一，结成金丹，奠定道基。</Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>真丹期</DisplayName>
+				<Desc>修行的第三重境界，抟气致柔，能如婴儿乎？此境界了悟真我，方得逍遥。</Desc>
+				<Value>300000</Value>
+				<Necks>
+					
+					<Neck Location="0.2" Kind="Thunder">
+						<DisplayName>初劫</DisplayName>
+						<Desc>金丹初成，天降雷劫阻成道。</Desc>
+						<ThunderValue>10000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>结胎</DisplayName>
+						<Desc>返照金丹，真我自金丹中出现，仿佛人体初始，从无到有缓慢凝结。[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+					</Neck>
+					<Neck Location="0.95" Kind="Chance">
+						<DisplayName>胎动</DisplayName>
+						<Desc>滋养真我，逐渐壮大，蠢蠢欲动。[color=#D06508]此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Work">
+						<DisplayName>婴儿</DisplayName>
+						<Desc>自封神通，返璞归真之中，元婴出现，打破肉身之牢笼，此谓之地仙境界。</Desc>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>大乘期</DisplayName>
+				<Desc>修行的第四重境界，元婴于此境界历经雷劫洗礼化为纯阳，可以解脱肉身，飞升成仙。</Desc>
+				<Value>6560000</Value>
+				<Necks>
+					<Neck Location="0.15" Kind="Chance">
+						<DisplayName>炼神</DisplayName>
+						<Desc>以地母太阴之息凝练元神，使之成长。</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>0.4</SuccessChange>
+						<ItemCost>
+							<Item name="Item_EarthEssence"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>出窍</DisplayName>
+						<Desc>自开天门，脱壳而出，逍遥天地。[color=#D06508]\n突破此瓶颈会大损寿元，需要注意。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ResourceCost>
+							<Resource kind="Age" value="120"/>
+						</ResourceCost>
+					</Neck>
+					
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>得天</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					
+					<Neck Location="1" Kind="God">
+						<DisplayName>飞升</DisplayName>
+						<Desc>天地间反噬到来，度过劫难仙途在望，反之灰飞烟灭。</Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

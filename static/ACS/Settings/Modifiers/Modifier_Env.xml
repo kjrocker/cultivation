@@ -1,0 +1,199 @@
+<ModifierDefs><List>
+	<Modifier Name="BornComa" Type="Normal">
+		<DisplayName>昏迷</DisplayName>
+		<Desc>陷入昏迷。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="FightPowerUp" Type="Normal">
+		<DisplayName>实力增长</DisplayName>
+		<Desc>攻击和防御从根本上得到提升</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>  
+			<li Name="NpcFight_FabaoPowerAddP" BAddV="0.1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddV="0.1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="FightPowerUp_DiMu" Type="Normal">
+		<DisplayName>地母煞气</DisplayName>
+		<Desc>在地母煞气的作用下，实力得到大幅提升。</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<Properties>  
+			<li Name="NpcFight_FabaoPowerAddP" BAddV="0.3"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddV="0.3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddV="0.3"/>
+			<li Name="NpcLingMaxValue" BAddP="0.3"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="50"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="JiaoLongFightPowerUp" Type="Normal">
+		<DisplayName>玄水之力</DisplayName>
+		<Desc>蛟龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="XiongFengFightPowerUp" Type="Normal">
+		<DisplayName>炽火之力</DisplayName>
+		<Desc>凶凤的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="ZhulongFightPowerUp" Type="Normal">
+		<DisplayName>阴阳之力</DisplayName>
+		<Desc>烛龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	
+	<Modifier Name="JiaoLongFightPowerUp2" Type="Normal">
+		<DisplayName>玄水之力</DisplayName>
+		<Desc>蛟龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="5000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="JiaoLongFightPowerUp3" Type="Normal">
+		<DisplayName>玄水之力</DisplayName>
+		<Desc>蛟龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="10000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="JiaoLongFightPowerUp4" Type="Normal">
+		<DisplayName>玄水之力</DisplayName>
+		<Desc>蛟龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="15000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="XiongFengFightPowerUp2" Type="Normal">
+		<DisplayName>炽火之力</DisplayName>
+		<Desc>凶凤的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="40000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="XiongFengFightPowerUp3" Type="Normal">
+		<DisplayName>炽火之力</DisplayName>
+		<Desc>凶凤的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="25000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="ZhulongFightPowerUp2" Type="Normal">
+		<DisplayName>阴阳之力</DisplayName>
+		<Desc>烛龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="20000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="ZhulongFightPowerUp3" Type="Normal">
+		<DisplayName>阴阳之力</DisplayName>
+		<Desc>烛龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="90000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="ZhulongFightPowerUp4" Type="Normal">
+		<DisplayName>阴阳之力</DisplayName>
+		<Desc>烛龙的灵气和攻击提高了</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="1" BAddV="60000"/>
+		</Properties>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="Dan_LingTree" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>与蕴灵树中的灵气产生共鸣，能提高灵气恢复速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.1"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

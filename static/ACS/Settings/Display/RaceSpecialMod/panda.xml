@@ -1,0 +1,17 @@
+<RaceSpecialModDefs><List>
+<!--这里的命名必须是种族_性别   None所有Male男Female女-->
+	<Def Name="YGPanda_None"  Parent="YGTiger_None">
+		<Original>Mod/YaoGuaiPart/monster_xiongmao01</Original>
+		<FeatureMod>Mod/YaoGuaiPart/tezheng/monster01_xiongmaoi01_tezheng</FeatureMod>		
+		<ModelName>monster01_xiongmao01</ModelName>		
+		<MainTex>Mod/YaoGuaiPart/tex/mod_JYxiongmao01</MainTex>
+		<SkinColor>
+			<li>#4D4D4DFF</li>
+			<li>#4D4D4DFF</li>
+			<li>#4D4D4DFF</li>
+			<li>#4D4D4DFF</li>
+			<li>#4D4D4DFF</li>
+		</SkinColor>
+	</Def>
+	
+</List></RaceSpecialModDefs>

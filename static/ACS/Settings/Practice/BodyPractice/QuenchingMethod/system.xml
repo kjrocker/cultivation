@@ -1,0 +1,47 @@
+<BPQuenchingMethods><List>
+	<Def Name="LostPart"><!--失落之物-->
+		<DisplayName>失落之物</DisplayName>
+	</Def>
+	
+	<Def Name="SYS_DamageMethod"><!--受伤淬炼-->
+		<DisplayName>受伤淬炼之法</DisplayName>
+		<Desc></Desc>
+		<RollCount>1</RollCount>
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>4</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="999999"/>
+			<li Name="Cache2" Value="99999"/>
+			<li Name="Cache3" Value="9999"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	<Def Name="SYS_RebuildMethod"><!--受伤淬炼-->
+		<DisplayName>重塑之法</DisplayName>
+		<Desc>重塑失去的部位</Desc>
+		<RollCount>1</RollCount>
+		<ItemNeed>Item_BodyPractice_ShengMingLv2</ItemNeed>
+		<CantLoop>1</CantLoop>
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>0</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<SpecialFlag>REBUILD</SpecialFlag>
+	</Def>
+	
+	<Def Name="SYS_yishan"><!--灵光一闪-->
+		<DisplayName>灵光一闪</DisplayName>
+		<Desc>灵光一闪</Desc>
+		<RollCount>1</RollCount>
+		<CantLoop>1</CantLoop>
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>8</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<SpecialFlag>YISHAN</SpecialFlag>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache3" Value="99999"/>
+			<li Name="Cache4" Value="9999"/>
+		</LabelCacheWeightAddtion>
+	</Def>
+</List></BPQuenchingMethods>

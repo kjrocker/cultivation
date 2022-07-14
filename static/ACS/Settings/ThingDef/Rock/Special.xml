@@ -1,0 +1,69 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="Darksteel" Parent="MetalBase">
+	<Desc>天地奇珍，地脉中庚金之气凝结的精华。</Desc>
+	<Beauty>-1</Beauty>
+	<TileID>-6</TileID>	
+	<ThingName>玄铁矿脉</ThingName>
+	<Harvest>
+		<DropWork>280</DropWork>      
+		<DropItems>
+			<li>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneBox2</ThingDef>
+				<Count>1</Count>
+				<Rate>0.003</Rate>
+			</li>
+		</DropItems>				
+	</Harvest>
+	
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>12</Value>         
+		<Radius>4</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.3</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>38</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="LingStone" Parent="MetalBase">
+	<Desc>灵气根本，动则俱损</Desc>
+	<Beauty>10</Beauty>
+	<TileID>-1</TileID>	
+<!--	<Color>00DEFFFF</Color>-->
+	<ThingName>灵脉</ThingName>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Harvest>
+		<DropWork>1000</DropWork>      
+		<DropItems>
+		</DropItems>				
+	</Harvest>
+	
+	<Element>
+		<Kind>Chaos</Kind>
+		<Value>20</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Ling>
+		<LingSource>197</LingSource>
+	</Ling>
+	
+</ThingDef>
+
+
+</List></ThingDefs>

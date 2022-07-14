@@ -1,0 +1,48 @@
+<FightSkills><List>
+	<Skill Name="Ls_OC"><!--貊-->
+		<DisplayName>异界磁光</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>100</CD>
+		<LingCost>400</LingCost>
+		<SingAni>Atk</SingAni>
+		<CastAni>Atk</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>61</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Ls_Erosion"><!--貊 --> 		
+		<DisplayName>阴阳侵蚀</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>使用阴阳之力大幅降低敌人的防御。</Desc>
+		<Icon>res\Sprs\ui\icon_zhandoufashu</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>1500</CD>
+		<LingCost>240</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_addmodifer</ClassName>
+		<SValue>YinYangErosion</SValue>
+		
+		<Value>90</Value>
+	</Skill>
+</List></FightSkills>

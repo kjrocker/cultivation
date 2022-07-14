@@ -1,0 +1,1401 @@
+[MainTree]
+Sequence
+	StopFun
+	Selector
+		T, Operate
+		T, Sleep
+		T, Drink
+		T, Shit
+		T, Eat
+		T, EatHigh
+		T, Atk
+		T, Learn
+		T, Help
+		T, HelpInner
+		T, Carry
+		T, Train
+		T, Free
+
+[PandaBreakNoParam,BreakJob]
+Sequence
+	StopFun
+	IfElseNode
+		Return,1:C,CheckRace,LsPandaXian
+		AddEventNode,BreakJob,LsPandaXiu
+		Return,1
+
+[PandaBreak,BreakJob,ToParam,Param]
+Sequence
+	StopFun
+	SaveLastAction,ToParam,Param
+	IfElseNode
+		Return,1:C,CheckRace,LsPandaXian
+		AddEventNode,BreakJob,LsPandaXiu
+		Return,1
+
+[PandaRandomBreak,BreakJob,ToParam,Param]
+Sequence
+	StopFun
+	SaveLastAction,ToParam,Param
+	IfElseNode
+		Return,1:C,CheckRace,LsPandaXian
+		WeightRandom
+			AddEventNode,BreakJob,LsPandaXiu
+			Return,1
+		Return,1
+
+[PandaRandomBreakNoParam,BreakJob]
+Sequence
+	StopFun
+	IfElseNode
+		Return,1:C,CheckRace,LsPandaXian
+		WeightRandom
+			AddEventNode,BreakJob,LsPandaXiu
+			Return,1
+		Return,1
+
+[WeightNodeExp_FirstDecisionNoObjNoCheck]
+Sequence
+	WeightRandom
+		T,StandardJobExp:LsW,StandardJobExpWeight:C,HasExpFunc,ExpStoreName1,ExpStoreName2:CNOT,HasDecision,Exp_bFirstTimeFlag
+		T,StandardJobExp:LsW,StandardJobExpWeight:C,NoFlag,Exp_bFirstTimeFlag
+
+[WeightNodeExp_EveryTimeNoObjNoCheck]
+Sequence
+	WeightRandom
+		T,StandardJobExp:LsW,StandardJobExpWeight:C,HasExpFunc,ExpStoreName1,ExpStoreName2
+
+[StandardJobExp_2Param,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,ExpStoreName2,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1,ExpStoreName2
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1,ExpStoreName2
+		Return,1
+	IfElseNode
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1,ExpStoreName2
+			Sequence
+				Talk,Exp_DoJobTalk:Load,ExpStoreName1
+				T,PandaRandomBreakNoParam,FollowBreak
+				Job,Exp_JobFunc:Load,ExpStoreName1,ExpStoreName2
+				AddTime,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_2ParamCheckTheFirstParam,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc1,HasExpFunc2,ExpStoreName1,ExpStoreName2,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk,Exp_CantDoExpJobTalkWithoutParam2]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc1,ExpStoreName1:C,HasExpFunc2,ExpStoreName2
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc1,ExpStoreName1
+			IfElseNode
+				Return,1:C,HasExpFunc2,ExpStoreName2
+				Sequence
+					Talk,Exp_DoJobTalk:Load,ExpStoreName1
+					T,PandaRandomBreakNoParam,FollowBreak
+					Job,Exp_JobFunc:Load,ExpStoreName1,ExpStoreName2
+					AddTime,ExpActionName
+				Sequence
+					Talk,Exp_CantDoExpJobTalkWithoutParam2
+					ActionHappen,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_1Param,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode 
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1
+			Sequence
+				Talk,Exp_DoJobTalk:Load,ExpStoreName1
+				T,PandaRandomBreakNoParam,FollowBreak
+				Job,Exp_JobFunc:Load,ExpStoreName1
+				AddTime,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_1ParamDoTheSame,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk,BreakJob,ToParam]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode 
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1
+			Sequence
+				Talk,Exp_DoJobTalk:Load,ExpStoreName1
+				T,PandaRandomBreak,BreakJob,ToParam,ExpStoreName1
+				Job,Exp_JobFunc:Load,ExpStoreName1
+				AddTime,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+
+[StandardJobExp_1Fun,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk]
+Sequence:Reset,ExpActionName:State,AtkEnemy:Event,ExploreLeave,ExploreBack
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode 
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1
+			Sequence
+				Talk,Exp_DoJobTalk:Load,ExpStoreName1
+				StartFun,1
+				T,PandaRandomBreakNoParam,FollowBreak
+				Job,Exp_JobFunc:Load,ExpStoreName1
+				AddTime,ExpActionName
+				StopFun
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_Attack,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode 
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1
+			Sequence
+				Talk,Exp_DoJobTalk:Load,ExpStoreName1
+				Attack:Load,ExpStoreName1
+				ActionHappen,ExpActionName
+				AddTime,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_Train,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_DoJobTalk,Exp_JobFunc,No_NutritionTalk,Exp_bFirstTimeFlag,Exp_FirstTimeTalk,Train_Low,Train_Mid,Train_High,Property,FullTalk,BreakJob]
+Sequence:Reset,Exp_JobFunc:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			ActionHappen,Exp_JobFunc
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk
+		Return,1
+	IfElseNode
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			Wait,16
+			ActionHappen,Exp_JobFunc
+		Sequence
+			Talk,Exp_DoJobTalk
+			T,PandaBreakNoParam,BreakJob
+			Job,Exp_JobFunc:Save,_,add
+			IfElseNode
+				LsPropertyCheck,Property,100
+				IfElseNode
+					Compare,1,1,0
+						GetSave,add
+						FixValue,1,0
+					Sequence
+						Talk,No_NutritionTalk
+						Wait,5
+						Return,0
+					IfElseNode
+						Compare,1,1,0
+							GetSave,add
+							FixValue,1,0.5
+						Sequence
+							Talk,Train_Low
+							Wait,5
+							AddTime,Exp_JobFunc
+							Return,0
+						IfElseNode
+							Compare,1,1,0
+								GetSave,add
+								FixValue,1,1
+							Sequence
+								Talk,Train_Mid
+								Wait,5
+								AddTime,Exp_JobFunc
+								Return,0
+							Sequence
+								Talk,Train_High
+								Wait,5
+								AddTime,Exp_JobFunc
+								Return,0
+				Sequence
+					Talk,FullTalk
+					Wait,5
+					Return,0
+
+[StandardJobExp_Eat,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode
+		Return,1:C,HasExpFunc,ExpStoreName1
+		Sequence
+			Talk,Exp_DoJobTalk:Load,ExpStoreName1
+			T,PandaBreak,EatBreak,EatThing,ExpStoreName1
+			Job,Exp_JobFunc:Load,ExpStoreName1
+			AddTime,ExpActionName
+		Sequence
+			Talk,Exp_CantDoExpJobTalk
+			Wait,16
+			ActionHappen,ExpActionName
+			Return,0
+
+[StandardJobExp_Bite,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,HasExpFunc,ExpStoreName1,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk,Exp_JobFunc2,Exp_DoJobTalkEx]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+		Sequence
+			Return,1:C,HasExpFunc,ExpStoreName1
+			ActionHappen,ExpActionName
+			FirstDecision,Exp_bFirstTimeFlag,Exp_FirstTimeTalk:Load,ExpStoreName1
+		Return,1
+	IfElseNode 
+		LsPropertyCheck,Exp_WeightLevelName,2
+		Sequence
+			Talk,Exp_LowestLevelTalk
+			ActionHappen,ExpActionName
+			Wait,16
+			Return,0
+		IfElseNode
+			Return,1:C,HasExpFunc,ExpStoreName1
+			IfElseNode
+				LsPropertyCheck,Exp_WeightLevelName,5
+				Sequence
+					Talk,Exp_DoJobTalk:Load,ExpStoreName1
+					StartFun,1
+					T,PandaRandomBreakNoParam,FollowBreak
+					Job,Exp_JobFunc:Load,ExpStoreName1
+					StopFun
+					AddTime,ExpActionName
+				Sequence
+					Talk,Exp_DoJobTalkEx:Load,ExpStoreName1
+					StartFun,1
+					T,PandaRandomBreakNoParam,FollowBreak
+					Job,Exp_JobFunc2:Load,ExpStoreName1
+					StopFun
+					AddTime,ExpActionName
+			Sequence
+				Talk,Exp_CantDoExpJobTalk
+				Wait,16
+				ActionHappen,ExpActionName
+				Return,0
+
+[StandardJobExp_Feed,ExpActionName,Exp_WeightLevelName,Exp_LowestLevelTalk,Exp_bFirstTimeFlag,TargetNpc,Modifier_Name,Target_Item,ItemTag,Exp_FirstTimeTalk,Exp_DoJobTalk,Exp_JobFunc,Exp_CantDoExpJobTalk,Exp_CantDoExpJobTalkWithoutParam2]
+Sequence:Reset,ExpActionName:State,AtkEnemy
+	Sequence
+		IfElseNode
+			Return,1:CNOT,HasDecision,Exp_bFirstTimeFlag
+			Sequence
+				Return,1:C,FindNoModifierPracticeDisciple,TargetNpc,Modifier_Name:C,FindTagItem,Target_Item,ItemTag
+				Talk,Exp_FirstTimeTalk
+				ActionHappen,ExpActionName
+				FirstDecision,Exp_bFirstTimeFlag:Load,TargetNpc,Target_Item
+			Return,1
+		IfElseNode
+			LsPropertyCheck,Exp_WeightLevelName,2
+			Sequence
+				Wait,16
+				Talk,Exp_LowestLevelTalk
+				ActionHappen,ExpActionName
+				Return,0
+			IfElseNode
+				Return,1:C,FindNoModifierPracticeDisciple,TargetNpc,Modifier_Name
+				IfElseNode
+					Return,1:C,FindTagItem,Target_Item,ItemTag
+					Sequence
+						Talk,Exp_DoJobTalk:Load,TargetNpc,Target_Item
+						T,PandaRandomBreakNoParam,FollowBreak
+						Job,Exp_JobFunc:Load,TargetNpc,Target_Item
+						AddTime,ExpActionName
+					Sequence
+						Talk,Exp_CantDoExpJobTalkWithoutParam2
+						Wait,16
+						ActionHappen,ExpActionName
+						Return,0
+				Sequence
+					Talk,Exp_CantDoExpJobTalk
+					Wait,16
+					ActionHappen,ExpActionName
+					Return,0
+
+[BreakExp,ExpWeightLevel,ExpTreeName]
+Sequence
+	StopFun
+	IfElseNode
+		LsPropertyCheck,ExpWeightLevel,30
+		T,ExpTreeName
+		Return,0
+
+[ExploreBackComaNode]
+Sequence
+	WeightRandom
+		Talk,BackComa1:W,1:Load,EComaBack
+		Talk,BackComa2:W,1:Load,EComaBack
+		Talk,BackComa3:W,1:Load,EComaBack
+	Job,CarryToBed:Load,EComaBack
+
+[ExploreLeaveNode]
+Sequence
+	WeightRandom
+		Talk,Leave1:W,1:Load,ELeave
+		Talk,Leave2:W,1:Load,ELeave
+		Talk,Leave3:W,1:Load,ELeave
+	Job,Follow:Load,ELeave
+	WeightRandom
+		Talk,Leave1:W,1:Load,ELeave
+		Talk,Leave2:W,1:Load,ELeave
+		Talk,Leave3:W,1:Load,ELeave
+	Wait,16
+	
+[ExploreBackNode]
+Sequence:Event,ExploreBackComa
+	WeightRandom
+		Talk,Back1:W,1:Load,EBack
+		Talk,Back2:W,1:Load,EBack
+		Talk,Back3:W,1:Load,EBack
+	Job,HelpPlay:Load,EBack
+
+[Operate]
+Return,0
+
+[Learn]
+Sequence
+	WeightRandom:C,CheckLastDecision
+		T,PlayToy:LsW,PlayToy:C,HasToy,Toy:CNOT,HasDecision,bFirstPlayToy
+		T,EatShit:LsW,EatShit:C,HasShit,Food:CNOT,HasDecision,bFirstEatShit
+		T,BiteBuilding:LsW,BiteBuilding:C,HasBuildingToAtk,Building:CNOT,HasDecision,bFirstBiteBuilding
+		T,BiteClothes:LsW,BiteClothes:C,HasClothToAtk,Clothes:CNOT,HasDecision,bFirstBiteClothes
+		T,BiteOuter:LsW,BiteOuter:C,HasOuterDisipleToAtk,Outer:CNOT,HasDecision,bFirstBiteOuter
+		T,BiteInner:LsW,BiteInner:C,HasInnerDisipleToAtk,Inner:CNOT,HasDecision,bFirstBiteInner
+		T,BiteVisitor:LsW,BiteVisitor:C,HasVisitorToAtk,Visitor:CNOT,HasDecision,bFirstBiteVisitor:C,HasIncomingToAtk,Visitor
+		T,BiteExpelShell:LsW,BiteExpel:C,CanExpelNpc,Expel:CNOT,HasDecision,bFirstBiteExpel
+		T,CureFreeze:LsW,CureFreeze:C,HasFreezeMan,FreezeMan:CNOT,HasDecision,bFirstCureFreeze:C,CheckCD,CureFreeze:C,CheckRace,LsPhoenix
+		T,CureHot:LsW,CureHot:C,HasHeatMan,HeatMan:CNOT,HasDecision,bFirstCureHot:C,CheckCD,CureHot:C,CheckRace,LsDragon
+		T,FeedTongXie:LsW,FeedTongXie:C,FindNoModifier,OuterTongXie,Modifier_Item_Laxative:C,Laxative,TongXie:CNOT,HasDecision,bFirstFeedTongXie
+		T,CureInner:LsW,CureInner:C,HasHurtInner,InnerToCure:CNOT,HasDecision,bFirstCureInner:C,CheckCD,CureInner:C,CheckRace,LsFox
+		T,HelpCarry:LsW,HelpCarry:C,HasThingToCarry,Thing:CNOT,HasDecision,bFirstHelpCarry:C,CheckCD,Carry
+		T,HelpTimber:LsW,HelpTimber:C,HasTreeToCut,Tree:CNOT,HasDecision,bFirstHelpTimber:C,CheckCD,CutTree
+		T,HelpMine:LsW,HelpMine:C,HasMineJob,Mine:CNOT,HasDecision,bFirstHelpMine:C,CheckCD,Mine
+		T,HelpFind:LsW,HelpFind:C,HasPick,Man:CNOT,HasDecision,bFirstHelpFind
+		T,HelpKill:LsW,HelpKill:C,HasBodyToKill,DizzyAnimal:CNOT,HasDecision,bFirstHelpKill
+		T,HelpPlay:LsW,HelpPlay:C,CheckBadMood,MoodMan:CNOT,HasDecision,bFirstHelpPlay
+		T,HelpPlant:LsW,HelpPlant:C,HasFarm,Plant:CNOT,HasDecision,bFirstHelpPlant:C,CheckCD,Pee:C,CheckRace,LsDog
+		T,HelpPlantD:LsW,HelpPlantD:C,HasDFarm,Plant:CNOT,HasDecision,bFirstHelpPlantD:C,CheckCD,Pee:C,CheckRace,LsDog
+		IfElseNode:CNOT,HasModifier,Modifier_Dan_ColdDown:W,50
+			LsPropertyCheck,GrowPercent,30
+			Return,0
+			WeightRandom
+				T,Eat_Item_SnakeGallbladder:LsW,Eat_Item_SnakeGallbladder:C,FindTagItem,Item_SnakeGallbladder,Item_SnakeGallbladder:CNOT,HasDecision,bFirstEat_Item_SnakeGallbladder
+				T,Eat_Item_BearGallbladder:LsW,Eat_Item_BearGallbladder:C,FindTagItem,Item_BearGallbladder,Item_BearGallbladder:CNOT,HasDecision,bFirstEat_Item_BearGallbladder
+				T,Eat_Item_RedGinseng:LsW,Eat_Item_RedGinseng:C,FindTagItem,Item_RedGinseng,Item_RedGinseng:CNOT,HasDecision,bFirstEat_Item_RedGinseng
+				T,Eat_Item_PurpleGanodermaLucidum:LsW,Eat_Item_PurpleGanodermaLucidum:C,FindTagItem,Item_PurpleGanodermaLucidum,Item_PurpleGanodermaLucidum:CNOT,HasDecision,bFirstEat_Item_PurpleGanodermaLucidum
+				T,Eat_Item_TuEssence:LsW,Eat_Item_TuEssence:C,FindTagItem,Item_TuEssence,Item_TuEssence:CNOT,HasDecision,bFirstEat_Item_TuEssence
+				T,Eat_Item_HuoEssence:LsW,Eat_Item_HuoEssence:C,FindTagItem,Item_HuoEssence,Item_HuoEssence:CNOT,HasDecision,bFirstEat_Item_HuoEssence
+				T,Eat_Item_ShuiEssence:LsW,Eat_Item_ShuiEssence:C,FindTagItem,Item_ShuiEssence,Item_ShuiEssence:CNOT,HasDecision,bFirstEat_Item_ShuiEssence
+				T,Eat_Item_JinEssence:LsW,Eat_Item_JinEssence:C,FindTagItem,Item_JinEssence,Item_JinEssence:CNOT,HasDecision,bFirstEat_Item_JinEssence
+				T,Eat_Item_MuEssence:LsW,Eat_Item_MuEssence:C,FindTagItem,Item_MuEssence,Item_MuEssence:CNOT,HasDecision,bFirstEat_Item_MuEssence
+				T,Eat_Item_LifeStream:LsW,Eat_Item_LifeStream:C,FindTagItem,Item_LifeStream,Item_LifeStream:CNOT,HasDecision,bFirstEat_Item_LifeStream
+				T,Eat_Item_MonsterBlood:LsW,Eat_Item_MonsterBlood:C,FindTagItem,Item_MonsterBlood,Item_MonsterBlood:CNOT,HasDecision,bFirstEat_Item_MonsterBlood
+				T,Eat_Item_EarthEssence:LsW,Eat_Item_EarthEssence:C,FindTagItem,Item_EarthEssence,Item_EarthEssence:CNOT,HasDecision,bFirstEat_Item_EarthEssence
+				T,Eat_Item_SilverGrit:LsW,Eat_Item_SilverGrit:C,FindTagItem,Item_SilverGrit,Item_SilverGrit:CNOT,HasDecision,bFirstEat_Item_SilverGrit
+				T,Eat_Item_CopperGrit:LsW,Eat_Item_CopperGrit:C,FindTagItem,Item_CopperGrit,Item_CopperGrit:CNOT,HasDecision,bFirstEat_Item_CopperGrit
+				T,Eat_Item_Cinnabar:LsW,Eat_Item_Cinnabar:C,FindTagItem,Item_Cinnabar,Item_Cinnabar:CNOT,HasDecision,bFirstEat_Item_Cinnabar
+				T,Eat_Item_LingMuXueJie:LsW,Eat_Item_LingMuXueJie:C,FindTagItem,Item_LingMuXueJie,Item_LingMuXueJie:CNOT,HasDecision,bFirstEat_Item_LingMuXueJie
+				T,Eat_Item_EarthEssence_1:LsW,Eat_Item_EarthEssence_1:C,FindTagItem,Item_EarthEssence_1,Item_EarthEssence_1:CNOT,HasDecision,bFirstEat_Item_EarthEssence_1
+				T,Eat_Item_EarthEssence1_1:LsW,Eat_Item_EarthEssence1_1:C,FindTagItem,Item_EarthEssence1_1,Item_EarthEssence1_1:CNOT,HasDecision,bFirstEat_Item_EarthEssence1_1
+				T,Eat_Item_Healroot:LsW,Eat_Item_Healroot:C,FindTagItem,Item_Healroot,Item_Healroot:CNOT,HasDecision,bFirstEat_Item_Healroot
+				T,Eat_Item_Mint:LsW,Eat_Item_Mint:C,FindTagItem,Item_Mint,Item_Mint:CNOT,HasDecision,bFirstEat_Item_Mint
+				T,Eat_Item_MagicHerb:LsW,Eat_Item_MagicHerb:C,FindTagItem,Item_MagicHerb,Item_MagicHerb:CNOT,HasDecision,bFirstEat_Item_MagicHerb
+		
+[Sleep]
+Sequence
+	NeedCheck,Rest,2
+	WeightRandom
+		Sequence:W,25
+			WeightRandom
+				Talk,Sleep1:W,1
+				Talk,Sleep2:W,1
+				Talk,Sleep3:W,1
+			T,PandaBreakNoParam,SleepBreak
+			Job,Sleep
+		T,SleepWithInner:C,HasDizzyInner,DizzyInner:W,25
+		T,SleepWithOuter:C,HasDizzyOuter,DizzyOuter:W,25
+		Sequence:W,25:C,PracticeNpc,PNpc
+			WeightRandom
+				Talk,SleepWith1:W,1:Load,PNpc
+				Talk,SleepWith2:W,1:Load,PNpc
+				Talk,SleepWith3:W,1:Load,PNpc
+			T,PandaBreakNoParam,SleepBreak
+			Job,SleepWithNpc_Stay:Load,PNpc
+
+[SleepWithInner]
+Sequence
+	WeightRandom
+		Talk,SleepHelp1:W,1:Load,DizzyInner
+		Talk,SleepHelp2:W,1:Load,DizzyInner
+		Talk,SleepHelp3:W,1:Load,DizzyInner
+	T,PandaBreakNoParam,SleepBreak
+	Job,SleepWithNpc_Heal:Load,DizzyInner
+
+[SleepWithOuter]
+Sequence
+	WeightRandom
+		Talk,SleepHelp1:W,1:Load,DizzyOuter
+		Talk,SleepHelp2:W,1:Load,DizzyOuter
+		Talk,SleepHelp3:W,1:Load,DizzyOuter
+	T,PandaBreakNoParam,SleepBreak
+	Job,SleepWithNpc_Heal:Load,DizzyOuter
+
+[Drink]
+Sequence
+	NeedCheck,Water,2
+	WeightRandom
+		Talk,DrinkTalk1:W,1
+		Talk,DrinkTalk2:W,1
+		Talk,DrinkTalk3:W,1 
+	Job,Drink
+
+[Eat]
+IfElseNode
+	LsPropertyCheck,GrowPercent,30
+	Sequence
+		NeedCheck,Food,2
+		T,Eat_Others
+		Return,0
+	Sequence
+		IfElseNode
+			Compare,1,1,0
+				NeedValue,Food
+				LsProperty,EatWeight
+			Selector 
+				T,EatAsPlan
+				T,Eat_Others
+			Return,0
+
+[EatAsPlan]
+Sequence:State,AtkEnemy
+	IfElseNode
+		Return,1:CNOT,HasDecision,bFirstEatWeight
+		Sequence
+			Return,1:C,FindFood,Food
+			ActionHappen,EatWeight
+			FirstDecision,bFirstEatWeight,WannaEat:Load,Food
+		Return,1
+	IfElseNode
+		Return,1:C,FindFood,Food
+		Sequence
+			WeightRandom
+				Talk,Eat1:W,1
+				Talk,Eat2:W,1
+				Talk,Eat3:W,1
+			T,PandaBreak,EatBreak,EatThing,Food
+			Job,Eat:C,FindFood,Food:Load,Food
+			ActionHappen,EatWeight
+		Sequence
+			ActionHappen,EatWeight
+			Return,0
+
+[Eat_Others]
+WeightRandom
+	T,Eat_Item_Bamboo:LsW,Eat_Item_Bamboo:C,FindTagItem,Item_Bamboo,Item_Bamboo:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_Bamboo:C,CheckRace,LsPandaXian
+	T,Eat_Item_Bamboo:LsW,Eat_Item_Bamboo:C,FindTagItem,Item_Bamboo,Item_Bamboo:C,HasDecision,bFirstEat_Item_Bamboo:C,CheckRace,LsPandaXian
+	T,Eat_Item_BambooShoot:LsW,Eat_Item_BambooShoot:C,FindTagItem,Item_BambooShoot,Item_BambooShoot:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_BambooShoot
+	T,Eat_Item_BambooShoot:LsW,Eat_Item_BambooShoot:C,FindTagItem,Item_BambooShoot,Item_BambooShoot:C,HasDecision,bFirstEat_Item_BambooShoot
+	T,EatWheat:LsW,EatWheat:C,HasWheat,Food:CNOT,HasDecision,bFirstEatWheat
+	T,EatDryMeat:LsW,EatDryMeat:C,HasDryMeat,Food:CNOT,HasDecision,bFirstEatDryMeat
+	T,EatPear:LsW,EatPear:C,HasPear,Food:CNOT,HasDecision,bFirstEatPear
+	T,EatMeat:LsW,EatMeat:C,HasMeat,Food:CNOT,HasDecision,bFirstEatMeat
+	T,EatCook:LsW,EatCook:C,HasCook,Food:CNOT,HasDecision,bFirstEatCook 
+	T,EatWheat:LsW,EatWheat:C,HasWheat,Food:C,HasDecision,bFirstEatWheat
+	T,EatDryMeat:LsW,EatDryMeat:C,HasDryMeat,Food:C,HasDecision,bFirstEatDryMeat
+	T,EatPear:LsW,EatPear:C,HasPear,Food:C,HasDecision,bFirstEatPear
+	T,EatMeat:LsW,EatMeat:C,HasMeat,Food:C,HasDecision,bFirstEatMeat
+	T,EatCook:LsW,EatCook:C,HasCook,Food:C,HasDecision,bFirstEatCook
+	T,EatWheat:W,5:CNOT,HasWheat,Food:C,HasDecision,bFirstEatWheat
+	T,EatDryMeat:W,5:CNOT,HasDryMeat,Food:C,HasDecision,bFirstEatDryMeat
+	T,EatPear:W,5:CNOT,HasPear,Food:C,HasDecision,bFirstEatPear
+	T,EatMeat:W,5:CNOT,HasMeat,Food:C,HasDecision,bFirstEatMeat
+	T,EatCook:W,5:CNOT,HasCook,Food:C,HasDecision,bFirstEatCook
+	T,Eat_Item_LongEgg:LsW,Eat_Item_LongEgg:C,FindTagItem,Item_LongEgg,Item_LongEgg:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_LongEgg
+	T,Eat_Item_FengEgg:LsW,Eat_Item_FengEgg:C,FindTagItem,Item_FengEgg,Item_FengEgg:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_FengEgg
+	T,Eat_Item_DragonShit:LsW,Eat_Item_DragonShit:C,FindTagItem,Item_DragonShit,Item_DragonShit:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_DragonShit
+	T,Eat_Item_Jiaozi:LsW,Eat_Item_Jiaozi:C,FindTagItem,Item_Jiaozi,Item_Jiaozi:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_Jiaozi
+	T,Eat_Item_BossFeng_Meat:LsW,Eat_Item_BossFeng_Meat:C,FindTagItem,Item_BossFeng_Meat,Item_BossFeng_Meat:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_BossFeng_Meat
+	T,Eat_Item_BossLong_Meat:LsW,Eat_Item_BossLong_Meat:C,FindTagItem,Item_BossLong_Meat,Item_BossLong_Meat:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_BossLong_Meat
+	T,Eat_Item_BossZhuLong_Meat:LsW,Eat_Item_BossZhuLong_Meat:C,FindTagItem,Item_BossZhuLong_Meat,Item_BossZhuLong_Meat:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_BossZhuLong_Meat
+	T,Eat_Item_Cake:LsW,Eat_Item_Cake:C,FindTagItem,Item_Cake,Item_Cake:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_Cake
+	T,Eat_Item_LongEgg:LsW,Eat_Item_LongEgg:C,FindTagItem,Item_LongEgg,Item_LongEgg:C,HasDecision,bFirstEat_Item_LongEgg
+	T,Eat_Item_FengEgg:LsW,Eat_Item_FengEgg:C,FindTagItem,Item_FengEgg,Item_FengEgg:C,HasDecision,bFirstEat_Item_FengEgg
+	T,Eat_Item_DragonShit:LsW,Eat_Item_DragonShit:C,FindTagItem,Item_DragonShit,Item_DragonShit:C,HasDecision,bFirstEat_Item_DragonShit
+	T,Eat_Item_Jiaozi:LsW,Eat_Item_Jiaozi:C,FindTagItem,Item_Jiaozi,Item_Jiaozi:C,HasDecision,bFirstEat_Item_Jiaozi
+	T,Eat_Item_BossFeng_Meat:LsW,Eat_Item_BossFeng_Meat:C,FindTagItem,Item_BossFeng_Meat,Item_BossFeng_Meat:C,HasDecision,bFirstEat_Item_BossFeng_Meat
+	T,Eat_Item_BossLong_Meat:LsW,Eat_Item_BossLong_Meat:C,FindTagItem,Item_BossLong_Meat,Item_BossLong_Meat:C,HasDecision,bFirstEat_Item_BossLong_Meat
+	T,Eat_Item_BossZhuLong_Meat:LsW,Eat_Item_BossZhuLong_Meat:C,FindTagItem,Item_BossZhuLong_Meat,Item_BossZhuLong_Meat:C,HasDecision,bFirstEat_Item_BossZhuLong_Meat
+	T,Eat_Item_Cake:LsW,Eat_Item_Cake:C,FindTagItem,Item_Cake,Item_Cake:C,HasDecision,bFirstEat_Item_Cake
+	T,Eat_Item_LongEgg:W,5:CNOT,FindTagItem,Item_LongEgg,Item_LongEgg:C,HasDecision,bFirstEat_Item_LongEgg
+	T,Eat_Item_FengEgg:W,5:CNOT,FindTagItem,Item_FengEgg,Item_FengEgg:C,HasDecision,bFirstEat_Item_FengEgg
+	T,Eat_Item_DragonShit:W,5:CNOT,FindTagItem,Item_DragonShit,Item_DragonShit:C,HasDecision,bFirstEat_Item_DragonShit
+	T,Eat_Item_Jiaozi:W,5:CNOT,FindTagItem,Item_Jiaozi,Item_Jiaozi:C,HasDecision,bFirstEat_Item_Jiaozi
+	T,Eat_Item_BossFeng_Meat:W,5:CNOT,FindTagItem,Item_BossFeng_Meat,Item_BossFeng_Meat:C,HasDecision,bFirstEat_Item_BossFeng_Meat
+	T,Eat_Item_BossLong_Meat:W,5:CNOT,FindTagItem,Item_BossLong_Meat,Item_BossLong_Meat:C,HasDecision,bFirstEat_Item_BossLong_Meat
+	T,Eat_Item_BossZhuLong_Meat:W,5:CNOT,FindTagItem,Item_BossZhuLong_Meat,Item_BossZhuLong_Meat:C,HasDecision,bFirstEat_Item_BossZhuLong_Meat
+	T,Eat_Item_Cake:W,5:CNOT,FindTagItem,Item_Cake,Item_Cake:C,HasDecision,bFirstEat_Item_Cake
+	T,Eat_Item_WuDang_HuangJingFen:LsW,Eat_Item_WuDang_HuangJingFen:C,FindTagItem,Item_WuDang_HuangJingFen,Item_WuDang_HuangJingFen:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_WuDang_HuangJingFen
+	T,Eat_Item_Dan_WuQiNoHunger2:LsW,Eat_Item_Dan_WuQiNoHunger2:C,FindTagItem,Item_Dan_WuQiNoHunger2,Item_Dan_WuQiNoHunger2:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_Dan_WuQiNoHunger2
+	T,Eat_Item_Dan_SanHuaHuangJing:LsW,Eat_Item_Dan_SanHuaHuangJing:C,FindTagItem,Item_Dan_SanHuaHuangJing,Item_Dan_SanHuaHuangJing:C,CheckLastDecision:CNOT,HasDecision,bFirstEat_Item_Dan_SanHuaHuangJing
+	
+[EatHigh]
+IfElseNode
+	LsPropertyCheck,GrowPercent,30
+	Return,0
+	Sequence
+		Return,1:CNOT,HasModifier,Modifier_Dan_ColdDown
+		WeightRandom
+			Return,0:W,100
+			T,Eat_Item_SnakeGallbladder:LsW,Eat_Item_SnakeGallbladder:C,FindTagItem,Item_SnakeGallbladder,Item_SnakeGallbladder:C,HasDecision,bFirstEat_Item_SnakeGallbladder
+			T,Eat_Item_BearGallbladder:LsW,Eat_Item_BearGallbladder:C,FindTagItem,Item_BearGallbladder,Item_BearGallbladder:C,HasDecision,bFirstEat_Item_BearGallbladder
+			T,Eat_Item_RedGinseng:LsW,Eat_Item_RedGinseng:C,FindTagItem,Item_RedGinseng,Item_RedGinseng:C,HasDecision,bFirstEat_Item_RedGinseng
+			T,Eat_Item_PurpleGanodermaLucidum:LsW,Eat_Item_PurpleGanodermaLucidum:C,FindTagItem,Item_PurpleGanodermaLucidum,Item_PurpleGanodermaLucidum:C,HasDecision,bFirstEat_Item_PurpleGanodermaLucidum
+			T,Eat_Item_TuEssence:LsW,Eat_Item_TuEssence:C,FindTagItem,Item_TuEssence,Item_TuEssence:C,HasDecision,bFirstEat_Item_TuEssence
+			T,Eat_Item_HuoEssence:LsW,Eat_Item_HuoEssence:C,FindTagItem,Item_HuoEssence,Item_HuoEssence:C,HasDecision,bFirstEat_Item_HuoEssence
+			T,Eat_Item_ShuiEssence:LsW,Eat_Item_ShuiEssence:C,FindTagItem,Item_ShuiEssence,Item_ShuiEssence:C,HasDecision,bFirstEat_Item_ShuiEssence
+			T,Eat_Item_JinEssence:LsW,Eat_Item_JinEssence:C,FindTagItem,Item_JinEssence,Item_JinEssence:C,HasDecision,bFirstEat_Item_JinEssence
+			T,Eat_Item_MuEssence:LsW,Eat_Item_MuEssence:C,FindTagItem,Item_MuEssence,Item_MuEssence:C,HasDecision,bFirstEat_Item_MuEssence
+			T,Eat_Item_LifeStream:LsW,Eat_Item_LifeStream:C,FindTagItem,Item_LifeStream,Item_LifeStream:C,HasDecision,bFirstEat_Item_LifeStream
+			T,Eat_Item_MonsterBlood:LsW,Eat_Item_MonsterBlood:C,FindTagItem,Item_MonsterBlood,Item_MonsterBlood:C,HasDecision,bFirstEat_Item_MonsterBlood
+			T,Eat_Item_EarthEssence:LsW,Eat_Item_EarthEssence:C,FindTagItem,Item_EarthEssence,Item_EarthEssence:C,HasDecision,bFirstEat_Item_EarthEssence
+			T,Eat_Item_SilverGrit:LsW,Eat_Item_SilverGrit:C,FindTagItem,Item_SilverGrit,Item_SilverGrit:C,HasDecision,bFirstEat_Item_SilverGrit
+			T,Eat_Item_CopperGrit:LsW,Eat_Item_CopperGrit:C,FindTagItem,Item_CopperGrit,Item_CopperGrit:C,HasDecision,bFirstEat_Item_CopperGrit
+			T,Eat_Item_Cinnabar:LsW,Eat_Item_Cinnabar:C,FindTagItem,Item_Cinnabar,Item_Cinnabar:C,HasDecision,bFirstEat_Item_Cinnabar
+			T,Eat_Item_LingMuXueJie:LsW,Eat_Item_LingMuXueJie:C,FindTagItem,Item_LingMuXueJie,Item_LingMuXueJie:C,HasDecision,bFirstEat_Item_LingMuXueJie
+			T,Eat_Item_EarthEssence_1:LsW,Eat_Item_EarthEssence_1:C,FindTagItem,Item_EarthEssence_1,Item_EarthEssence_1:C,HasDecision,bFirstEat_Item_EarthEssence_1
+			T,Eat_Item_EarthEssence1_1:LsW,Eat_Item_EarthEssence1_1:C,FindTagItem,Item_EarthEssence1_1,Item_EarthEssence1_1:C,HasDecision,bFirstEat_Item_EarthEssence1_1
+			T,Eat_Item_Healroot:LsW,Eat_Item_Healroot:C,FindTagItem,Item_Healroot,Item_Healroot:C,HasDecision,bFirstEat_Item_Healroot
+			T,Eat_Item_Mint:LsW,Eat_Item_Mint:C,FindTagItem,Item_Mint,Item_Mint:C,HasDecision,bFirstEat_Item_Mint
+			T,Eat_Item_MagicHerb:LsW,Eat_Item_MagicHerb:C,FindTagItem,Item_MagicHerb,Item_MagicHerb:C,HasDecision,bFirstEat_Item_MagicHerb
+			T,Eat_Item_SnakeGallbladder:W,5:CNOT,FindTagItem,Item_SnakeGallbladder,Item_SnakeGallbladder:C,HasDecision,bFirstEat_Item_SnakeGallbladder
+			T,Eat_Item_BearGallbladder:W,5:CNOT,FindTagItem,Item_BearGallbladder,Item_BearGallbladder:C,HasDecision,bFirstEat_Item_BearGallbladder
+			T,Eat_Item_RedGinseng:W,5:CNOT,FindTagItem,Item_RedGinseng,Item_RedGinseng:C,HasDecision,bFirstEat_Item_RedGinseng
+			T,Eat_Item_PurpleGanodermaLucidum:W,5:CNOT,FindTagItem,Item_PurpleGanodermaLucidum,Item_PurpleGanodermaLucidum:C,HasDecision,bFirstEat_Item_PurpleGanodermaLucidum
+			T,Eat_Item_TuEssence:W,5:CNOT,FindTagItem,Item_TuEssence,Item_TuEssence:C,HasDecision,bFirstEat_Item_TuEssence
+			T,Eat_Item_HuoEssence:W,5:CNOT,FindTagItem,Item_HuoEssence,Item_HuoEssence:C,HasDecision,bFirstEat_Item_HuoEssence
+			T,Eat_Item_ShuiEssence:W,5:CNOT,FindTagItem,Item_ShuiEssence,Item_ShuiEssence:C,HasDecision,bFirstEat_Item_ShuiEssence
+			T,Eat_Item_JinEssence:W,5:CNOT,FindTagItem,Item_JinEssence,Item_JinEssence:C,HasDecision,bFirstEat_Item_JinEssence
+			T,Eat_Item_MuEssence:W,5:CNOT,FindTagItem,Item_MuEssence,Item_MuEssence:C,HasDecision,bFirstEat_Item_MuEssence
+			T,Eat_Item_LifeStream:W,5:CNOT,FindTagItem,Item_LifeStream,Item_LifeStream:C,HasDecision,bFirstEat_Item_LifeStream
+			T,Eat_Item_MonsterBlood:W,5:CNOT,FindTagItem,Item_MonsterBlood,Item_MonsterBlood:C,HasDecision,bFirstEat_Item_MonsterBlood
+			T,Eat_Item_EarthEssence:W,5:CNOT,FindTagItem,Item_EarthEssence,I  tem_EarthEssence:C,HasDecision,bFirstEat_Item_EarthEssence
+			T,Eat_Item_SilverGrit:W,5:CNOT,FindTagItem,Item_SilverGrit,Item_SilverGrit:C,HasDecision,bFirstEat_Item_SilverGrit
+			T,Eat_Item_CopperGrit:W,5:CNOT,FindTagItem,Item_CopperGrit,Item_CopperGrit:C,HasDecision,bFirstEat_Item_CopperGrit
+			T,Eat_Item_Cinnabar:W,5:CNOT,FindTagItem,Item_Cinnabar,Item_Cinnabar:C,HasDecision,bFirstEat_Item_Cinnabar
+			T,Eat_Item_LingMuXueJie:W,5:CNOT,FindTagItem,Item_LingMuXueJie,Item_LingMuXueJie:C,HasDecision,bFirstEat_Item_LingMuXueJie
+			T,Eat_Item_EarthEssence_1:W,5:CNOT,FindTagItem,Item_EarthEssence_1,Item_EarthEssence_1:C,HasDecision,bFirstEat_Item_EarthEssence_1
+			T,Eat_Item_EarthEssence1_1:W,5:CNOT,FindTagItem,Item_EarthEssence1_1,Item_EarthEssence1_1:C,HasDecision,bFirstEat_Item_EarthEssence1_1
+			T,Eat_Item_Healroot:W,5:CNOT,FindTagItem,Item_Healroot,Item_Healroot:C,HasDecision,bFirstEat_Item_Healroot
+			T,Eat_Item_Mint:W,5:CNOT,FindTagItem,Item_Mint,Item_Mint:C,HasDecision,bFirstEat_Item_Mint
+			T,Eat_Item_MagicHerb:W,5:CNOT,FindTagItem,Item_MagicHerb,Item_MagicHerb:C,HasDecision,bFirstEat_Item_MagicHerb
+			T,Eat_Item_Laxative:LsW,Eat_Item_Laxative:C,FindTagItem,Item_Laxative,Item_Laxative:CNOT,HasDecision,bFirstEat_Item_Laxative
+			T,Eat_Item_Laxative:LsW,Eat_Item_Laxative:C,FindTagItem,Item_Laxative,Item_Laxative:C,HasDecision,bFirstEat_Item_Laxative
+			T,Eat_Item_Laxative:W,5:CNOT,FindTagItem,Item_Laxative,Item_Laxative:C,HasDecision,bFirstEat_Item_Laxative
+			T,Eat_Item_WuDang_HuangJingFen:LsW,Eat_Item_WuDang_HuangJingFen:C,FindTagItem,Item_WuDang_HuangJingFen,Item_WuDang_HuangJingFen:C,HasDecision,bFirstEat_Item_WuDang_HuangJingFen
+			T,Eat_Item_Dan_WuQiNoHunger2:LsW,Eat_Item_Dan_WuQiNoHunger2:C,FindTagItem,Item_Dan_WuQiNoHunger2,Item_Dan_WuQiNoHunger2:C,HasDecision,bFirstEat_Item_Dan_WuQiNoHunger2
+			T,Eat_Item_Dan_SanHuaHuangJing:LsW,Eat_Item_Dan_SanHuaHuangJing:C,FindTagItem,Item_Dan_SanHuaHuangJing,Item_Dan_SanHuaHuangJing:C,HasDecision,bFirstEat_Item_Dan_SanHuaHuangJing
+			T,Eat_Item_WuDang_HuangJingFen:W,5:CNOT,FindTagItem,Item_WuDang_HuangJingFen,Item_WuDang_HuangJingFen:C,HasDecision,bFirstEat_Item_WuDang_HuangJingFen
+			T,Eat_Item_Dan_WuQiNoHunger2:W,5:CNOT,FindTagItem,Item_Dan_WuQiNoHunger2,Item_Dan_WuQiNoHunger2:C,HasDecision,bFirstEat_Item_Dan_WuQiNoHunger2
+			T,Eat_Item_Dan_SanHuaHuangJing:W,5:CNOT,FindTagItem,Item_Dan_SanHuaHuangJing,Item_Dan_SanHuaHuangJing:C,HasDecision,bFirstEat_Item_Dan_SanHuaHuangJing
+
+
+		
+[Eat_Item_SnakeGallbladder]
+T,StandardJobExp_2Param,Eat_Item_SnakeGallbladder,Eat_Item_SnakeGallbladderLevel,NotEat_Item_SnakeGallbladder,bFirstEat_Item_SnakeGallbladder,FindTagItem,Item_SnakeGallbladder,Item_SnakeGallbladder,WannaEat_Item_SnakeGallbladder,DoTalkEat_Item_SnakeGallbladder,Eat_Item_SnakeGallbladder,CantEat_Item_SnakeGallbladder
+
+[Eat_Item_BearGallbladder]
+T,StandardJobExp_2Param,Eat_Item_BearGallbladder,Eat_Item_BearGallbladderLevel,NotEat_Item_BearGallbladder,bFirstEat_Item_BearGallbladder,FindTagItem,Item_BearGallbladder,Item_BearGallbladder,WannaEat_Item_BearGallbladder,DoTalkEat_Item_BearGallbladder,Eat_Item_BearGallbladder,CantEat_Item_BearGallbladder
+
+[Eat_Item_RedGinseng]
+T,StandardJobExp_2Param,Eat_Item_RedGinseng,Eat_Item_RedGinsengLevel,NotEat_Item_RedGinseng,bFirstEat_Item_RedGinseng,FindTagItem,Item_RedGinseng,Item_RedGinseng,WannaEat_Item_RedGinseng,DoTalkEat_Item_RedGinseng,Eat_Item_RedGinseng,CantEat_Item_RedGinseng
+
+[Eat_Item_PurpleGanodermaLucidum]
+T,StandardJobExp_2Param,Eat_Item_PurpleGanodermaLucidum,Eat_Item_PurpleGanodermaLucidumLevel,NotEat_Item_PurpleGanodermaLucidum,bFirstEat_Item_PurpleGanodermaLucidum,FindTagItem,Item_PurpleGanodermaLucidum,Item_PurpleGanodermaLucidum,WannaEat_Item_PurpleGanodermaLucidum,DoTalkEat_Item_PurpleGanodermaLucidum,Eat_Item_PurpleGanodermaLucidum,CantEat_Item_PurpleGanodermaLucidum
+
+[Eat_Item_TuEssence]
+T,StandardJobExp_2Param,Eat_Item_TuEssence,Eat_Item_TuEssenceLevel,NotEat_Item_TuEssence,bFirstEat_Item_TuEssence,FindTagItem,Item_TuEssence,Item_TuEssence,WannaEat_Item_TuEssence,DoTalkEat_Item_TuEssence,Eat_Item_TuEssence,CantEat_Item_TuEssence
+
+[Eat_Item_HuoEssence]
+T,StandardJobExp_2Param,Eat_Item_HuoEssence,Eat_Item_HuoEssenceLevel,NotEat_Item_HuoEssence,bFirstEat_Item_HuoEssence,FindTagItem,Item_HuoEssence,Item_HuoEssence,WannaEat_Item_HuoEssence,DoTalkEat_Item_HuoEssence,Eat_Item_HuoEssence,CantEat_Item_HuoEssence
+
+[Eat_Item_ShuiEssence]
+T,StandardJobExp_2Param,Eat_Item_ShuiEssence,Eat_Item_ShuiEssenceLevel,NotEat_Item_ShuiEssence,bFirstEat_Item_ShuiEssence,FindTagItem,Item_ShuiEssence,Item_ShuiEssence,WannaEat_Item_ShuiEssence,DoTalkEat_Item_ShuiEssence,Eat_Item_ShuiEssence,CantEat_Item_ShuiEssence
+
+[Eat_Item_JinEssence]
+T,StandardJobExp_2Param,Eat_Item_JinEssence,Eat_Item_JinEssenceLevel,NotEat_Item_JinEssence,bFirstEat_Item_JinEssence,FindTagItem,Item_JinEssence,Item_JinEssence,WannaEat_Item_JinEssence,DoTalkEat_Item_JinEssence,Eat_Item_JinEssence,CantEat_Item_JinEssence
+
+[Eat_Item_MuEssence]
+T,StandardJobExp_2Param,Eat_Item_MuEssence,Eat_Item_MuEssenceLevel,NotEat_Item_MuEssence,bFirstEat_Item_MuEssence,FindTagItem,Item_MuEssence,Item_MuEssence,WannaEat_Item_MuEssence,DoTalkEat_Item_MuEssence,Eat_Item_MuEssence,CantEat_Item_MuEssence
+
+[Eat_Item_LifeStream]
+T,StandardJobExp_2Param,Eat_Item_LifeStream,Eat_Item_LifeStreamLevel,NotEat_Item_LifeStream,bFirstEat_Item_LifeStream,FindTagItem,Item_LifeStream,Item_LifeStream,WannaEat_Item_LifeStream,DoTalkEat_Item_LifeStream,Eat_Item_LifeStream,CantEat_Item_LifeStream
+
+[Eat_Item_LongEgg]
+T,StandardJobExp_2Param,Eat_Item_LongEgg,Eat_Item_LongEggLevel,NotEat_Item_LongEgg,bFirstEat_Item_LongEgg,FindTagItem,Item_LongEgg,Item_LongEgg,WannaEat_Item_LongEgg,DoTalkEat_Item_LongEgg,Eat_Item_LongEgg,CantEat_Item_LongEgg
+
+[Eat_Item_FengEgg]
+T,StandardJobExp_2Param,Eat_Item_FengEgg,Eat_Item_FengEggLevel,NotEat_Item_FengEgg,bFirstEat_Item_FengEgg,FindTagItem,Item_FengEgg,Item_FengEgg,WannaEat_Item_FengEgg,DoTalkEat_Item_FengEgg,Eat_Item_FengEgg,CantEat_Item_FengEgg
+
+[Eat_Item_DragonShit]
+T,StandardJobExp_2Param,Eat_Item_DragonShit,Eat_Item_DragonShitLevel,NotEat_Item_DragonShit,bFirstEat_Item_DragonShit,FindTagItem,Item_DragonShit,Item_DragonShit,WannaEat_Item_DragonShit,DoTalkEat_Item_DragonShit,Eat_Item_DragonShit,CantEat_Item_DragonShit
+
+[Eat_Item_Jiaozi]
+T,StandardJobExp_2Param,Eat_Item_Jiaozi,Eat_Item_JiaoziLevel,NotEat_Item_Jiaozi,bFirstEat_Item_Jiaozi,FindTagItem,Item_Jiaozi,Item_Jiaozi,WannaEat_Item_Jiaozi,DoTalkEat_Item_Jiaozi,Eat_Item_Jiaozi,CantEat_Item_Jiaozi
+
+[Eat_Item_BossFeng_Meat]
+T,StandardJobExp_2Param,Eat_Item_BossFeng_Meat,Eat_Item_BossFeng_MeatLevel,NotEat_Item_BossFeng_Meat,bFirstEat_Item_BossFeng_Meat,FindTagItem,Item_BossFeng_Meat,Item_BossFeng_Meat,WannaEat_Item_BossFeng_Meat,DoTalkEat_Item_BossFeng_Meat,Eat_Item_BossFeng_Meat,CantEat_Item_BossFeng_Meat
+
+[Eat_Item_BossLong_Meat]
+T,StandardJobExp_2Param,Eat_Item_BossLong_Meat,Eat_Item_BossLong_MeatLevel,NotEat_Item_BossLong_Meat,bFirstEat_Item_BossLong_Meat,FindTagItem,Item_BossLong_Meat,Item_BossLong_Meat,WannaEat_Item_BossLong_Meat,DoTalkEat_Item_BossLong_Meat,Eat_Item_BossLong_Meat,CantEat_Item_BossLong_Meat
+
+[Eat_Item_BossZhuLong_Meat]
+T,StandardJobExp_2Param,Eat_Item_BossZhuLong_Meat,Eat_Item_BossZhuLong_MeatLevel,NotEat_Item_BossZhuLong_Meat,bFirstEat_Item_BossZhuLong_Meat,FindTagItem,Item_BossZhuLong_Meat,Item_BossZhuLong_Meat,WannaEat_Item_BossZhuLong_Meat,DoTalkEat_Item_BossZhuLong_Meat,Eat_Item_BossZhuLong_Meat,CantEat_Item_BossZhuLong_Meat
+
+[Eat_Item_Cake]
+T,StandardJobExp_2Param,Eat_Item_Cake,Eat_Item_CakeLevel,NotEat_Item_Cake,bFirstEat_Item_Cake,FindTagItem,Item_Cake,Item_Cake,WannaEat_Item_Cake,DoTalkEat_Item_Cake,Eat_Item_Cake,CantEat_Item_Cake
+
+[Eat_Item_MonsterBlood]
+T,StandardJobExp_2Param,Eat_Item_MonsterBlood,Eat_Item_MonsterBloodLevel,NotEat_Item_MonsterBlood,bFirstEat_Item_MonsterBlood,FindTagItem,Item_MonsterBlood,Item_MonsterBlood,WannaEat_Item_MonsterBlood,DoTalkEat_Item_MonsterBlood,Eat_Item_MonsterBlood,CantEat_Item_MonsterBlood
+
+[Eat_Item_EarthEssence]
+T,StandardJobExp_2Param,Eat_Item_EarthEssence,Eat_Item_EarthEssenceLevel,NotEat_Item_EarthEssence,bFirstEat_Item_EarthEssence,FindTagItem,Item_EarthEssence,Item_EarthEssence,WannaEat_Item_EarthEssence,DoTalkEat_Item_EarthEssence,Eat_Item_EarthEssence,CantEat_Item_EarthEssence
+
+[Eat_Item_SilverGrit]
+T,StandardJobExp_2Param,Eat_Item_SilverGrit,Eat_Item_SilverGritLevel,NotEat_Item_SilverGrit,bFirstEat_Item_SilverGrit,FindTagItem,Item_SilverGrit,Item_SilverGrit,WannaEat_Item_SilverGrit,DoTalkEat_Item_SilverGrit,Eat_Item_SilverGrit,CantEat_Item_SilverGrit
+
+[Eat_Item_CopperGrit]
+T,StandardJobExp_2Param,Eat_Item_CopperGrit,Eat_Item_CopperGritLevel,NotEat_Item_CopperGrit,bFirstEat_Item_CopperGrit,FindTagItem,Item_CopperGrit,Item_CopperGrit,WannaEat_Item_CopperGrit,DoTalkEat_Item_CopperGrit,Eat_Item_CopperGrit,CantEat_Item_CopperGrit
+
+[Eat_Item_Cinnabar]
+T,StandardJobExp_2Param,Eat_Item_Cinnabar,Eat_Item_CinnabarLevel,NotEat_Item_Cinnabar,bFirstEat_Item_Cinnabar,FindTagItem,Item_Cinnabar,Item_Cinnabar,WannaEat_Item_Cinnabar,DoTalkEat_Item_Cinnabar,Eat_Item_Cinnabar,CantEat_Item_Cinnabar
+
+[Eat_Item_LingMuXueJie]
+T,StandardJobExp_2Param,Eat_Item_LingMuXueJie,Eat_Item_LingMuXueJieLevel,NotEat_Item_LingMuXueJie,bFirstEat_Item_LingMuXueJie,FindTagItem,Item_LingMuXueJie,Item_LingMuXueJie,WannaEat_Item_LingMuXueJie,DoTalkEat_Item_LingMuXueJie,Eat_Item_LingMuXueJie,CantEat_Item_LingMuXueJie
+
+[Eat_Item_EarthEssence_1]
+T,StandardJobExp_2Param,Eat_Item_EarthEssence_1,Eat_Item_EarthEssence_1Level,NotEat_Item_EarthEssence_1,bFirstEat_Item_EarthEssence_1,FindTagItem,Item_EarthEssence_1,Item_EarthEssence_1,WannaEat_Item_EarthEssence_1,DoTalkEat_Item_EarthEssence_1,Eat_Item_EarthEssence_1,CantEat_Item_EarthEssence_1
+
+[Eat_Item_EarthEssence1_1]
+T,StandardJobExp_2Param,Eat_Item_EarthEssence1_1,Eat_Item_EarthEssence1_1Level,NotEat_Item_EarthEssence1_1,bFirstEat_Item_EarthEssence1_1,FindTagItem,Item_EarthEssence1_1,Item_EarthEssence1_1,WannaEat_Item_EarthEssence1_1,DoTalkEat_Item_EarthEssence1_1,Eat_Item_EarthEssence1_1,CantEat_Item_EarthEssence1_1
+
+[Eat_Item_Healroot]
+T,StandardJobExp_2Param,Eat_Item_Healroot,Eat_Item_HealrootLevel,NotEat_Item_Healroot,bFirstEat_Item_Healroot,FindTagItem,Item_Healroot,Item_Healroot,WannaEat_Item_Healroot,DoTalkEat_Item_Healroot,Eat_Item_Healroot,CantEat_Item_Healroot
+
+[Eat_Item_Mint]
+T,StandardJobExp_2Param,Eat_Item_Mint,Eat_Item_MintLevel,NotEat_Item_Mint,bFirstEat_Item_Mint,FindTagItem,Item_Mint,Item_Mint,WannaEat_Item_Mint,DoTalkEat_Item_Mint,Eat_Item_Mint,CantEat_Item_Mint
+
+[Eat_Item_MagicHerb]
+T,StandardJobExp_2Param,Eat_Item_MagicHerb,Eat_Item_MagicHerbLevel,NotEat_Item_MagicHerb,bFirstEat_Item_MagicHerb,FindTagItem,Item_MagicHerb,Item_MagicHerb,WannaEat_Item_MagicHerb,DoTalkEat_Item_MagicHerb,Eat_Item_MagicHerb,CantEat_Item_MagicHerb
+
+[Eat_Item_Laxative]
+T,StandardJobExp_2Param,Eat_Item_Laxative,Eat_Item_LaxativeLevel,NotEat_Item_Laxative,bFirstEat_Item_Laxative,FindTagItem,Item_Laxative,Item_Laxative,WannaEat_Item_Laxative,DoTalkEat_Item_Laxative,Eat_Item_Laxative,CantEat_Item_Laxative
+
+[Eat_Item_EarthEssence1_1]
+T,StandardJobExp_2Param,Eat_Item_EarthEssence1_1,Eat_Item_EarthEssence1_1Level,NotEat_Item_EarthEssence1_1,bFirstEat_Item_EarthEssence1_1,FindTagItem,Item_EarthEssence1_1,Item_EarthEssence1_1,WannaEat_Item_EarthEssence1_1,DoTalkEat_Item_EarthEssence1_1,Eat_Item_EarthEssence1_1,CantEat_Item_EarthEssence1_1
+
+[Eat_Item_Bamboo]
+T,StandardJobExp_2Param,Eat_Item_Bamboo,Eat_Item_BambooLevel,NotEat_Item_Bamboo,bFirstEat_Item_Bamboo,FindTagItem,Item_Bamboo,Item_Bamboo,WannaEat_Item_Bamboo,DoTalkEat_Item_Bamboo,Eat_Item_Bamboo,CantEat_Item_Bamboo
+
+[Eat_Item_BambooShoot]
+T,StandardJobExp_2Param,Eat_Item_BambooShoot,Eat_Item_BambooShootLevel,NotEat_Item_BambooShoot,bFirstEat_Item_BambooShoot,FindTagItem,Item_BambooShoot,Item_BambooShoot,WannaEat_Item_BambooShoot,DoTalkEat_Item_BambooShoot,Eat_Item_BambooShoot,CantEat_Item_BambooShoot
+
+[Eat_Item_WuDang_HuangJingFen]
+T,StandardJobExp_2Param,Eat_Item_WuDang_HuangJingFen,Eat_Item_WuDang_HuangJingFenLevel,NotEat_Item_WuDang_HuangJingFen,bFirstEat_Item_WuDang_HuangJingFen,FindTagItem,Item_WuDang_HuangJingFen,Item_WuDang_HuangJingFen,WannaEat_Item_WuDang_HuangJingFen,DoTalkEat_Item_WuDang_HuangJingFen,Eat_Item_WuDang_HuangJingFen,CantEat_Item_WuDang_HuangJingFen
+
+[Eat_Item_Dan_WuQiNoHunger2]
+T,StandardJobExp_2Param,Eat_Item_Dan_WuQiNoHunger2,Eat_Item_Dan_WuQiNoHunger2Level,NotEat_Item_Dan_WuQiNoHunger2,bFirstEat_Item_Dan_WuQiNoHunger2,FindTagItem,Item_Dan_WuQiNoHunger2,Item_Dan_WuQiNoHunger2,WannaEat_Item_Dan_WuQiNoHunger2,DoTalkEat_Item_Dan_WuQiNoHunger2,Eat_Item_Dan_WuQiNoHunger2,CantEat_Item_Dan_WuQiNoHunger2
+
+[Eat_Item_Dan_SanHuaHuangJing]
+T,StandardJobExp_2Param,Eat_Item_Dan_SanHuaHuangJing,Eat_Item_Dan_SanHuaHuangJingLevel,NotEat_Item_Dan_SanHuaHuangJing,bFirstEat_Item_Dan_SanHuaHuangJing,FindTagItem,Item_Dan_SanHuaHuangJing,Item_Dan_SanHuaHuangJing,WannaEat_Item_Dan_SanHuaHuangJing,DoTalkEat_Item_Dan_SanHuaHuangJing,Eat_Item_Dan_SanHuaHuangJing,CantEat_Item_Dan_SanHuaHuangJing
+
+[Atk]
+Selector
+	T,AtkEnemy
+	WeightRandom
+		T,AtkDizzyComing:LsW,AtkDizzyComing:C,HasDizzyIncoming,Coming:C,HasDecision,bFirstAtkDizzyComing:C,HasDizzyVisitor,Coming
+
+[Shit]
+Sequence
+	ShitCheck
+	WeightRandom
+		T,ShitAtShitPlace:LsW,ShitAtShitPlace:C,HasShitPlace,ShitPlace:CNOT,HasDecision,bFirstShitAtShitPlace
+		T,ShitAtPlants:LsW,ShitAtPlants:C,HasTree,ShitPlace:CNOT,HasDecision,bFirstShitAtPlants
+		T,ShitAtDogHouse:LsW,ShitAtDogHouse:C,HasDogHouse,ShitPlace:CNOT,HasDecision,bFirstShitAtDogHouse
+		T,ShitAtStorage:LsW,ShitAtStorage:C,HasStorage,ShitPlace:CNOT,HasDecision,bFirstShitAtStorage
+		T,ShitOnBed:LsW,ShitOnBed:C,HasBed,ShitPlace:CNOT,HasDecision,bFirstShitOnBed
+		T,ShitInFarm:LsW,ShitInFarm:C,HasFarm,ShitPlace:CNOT,HasDecision,bFirstShitInFarm
+		T,ShitAtShitPlace:LsW,ShitAtShitPlace:C,HasShitPlace,ShitPlace:C,HasDecision,bFirstShitAtShitPlace
+		T,ShitAtPlants:LsW,ShitAtPlants:C,HasTree,ShitPlace:C,HasDecision,bFirstShitAtPlants
+		T,ShitAtDogHouse:LsW,ShitAtDogHouse:C,HasDogHouse,ShitPlace:C,HasDecision,bFirstShitAtDogHouse
+		T,ShitAtStorage:LsW,ShitAtStorage:C,HasStorage,ShitPlace:C,HasDecision,bFirstShitAtStorage
+		T,ShitOnBed:LsW,ShitOnBed:C,HasBed,ShitPlace:C,HasDecision,bFirstShitOnBed
+		T,ShitInFarm:LsW,ShitInFarm:C,HasFarm,ShitPlace:C,HasDecision,bFirstShitInFarm
+		T,ShitAtShitPlace:W,5:CNOT,HasShitPlace,ShitPlace:C,HasDecision,bFirstShitAtShitPlace
+		T,ShitAtPlants:W,5:CNOT,HasTree,ShitPlace:C,HasDecision,bFirstShitAtPlants
+		T,ShitAtDogHouse:W,5:CNOT,HasDogHouse,ShitPlace:C,HasDecision,bFirstShitAtDogHouse
+		T,ShitAtStorage:W,5:CNOT,HasStorage,ShitPlace:C,HasDecision,bFirstShitAtStorage
+		T,ShitOnBed:W,5:CNOT,HasBed,ShitPlace:C,HasDecision,bFirstShitOnBed
+		T,ShitInFarm:W,5:CNOT,HasFarm,ShitPlace:C,HasDecision,bFirstShitInFarm
+
+[Carry]
+IfElseNode
+	LsPropertyCheck,GrowPercent,30
+	Return,0
+	WeightRandom
+		T,CarryOuterToBed:LsW,CarryOuterToBed:C,CarryToBed,CarryPerson:CNOT,HasDecision,bFirstCarryOuterToBed
+		T,CarryVisitorToDest:LsW,CarryVisitorToDest:C,HasCarryableDestEnemy,CarryPerson,Dest:CNOT,HasDecision,bFirstCarryVisitorToDest
+		T,CarryEnemyToDest:LsW,CarryEnemyToDest:C,HasCarryableDestIncoming,CarryPerson,Dest:CNOT,HasDecision,bFirstCarryEnemyToDest
+		T,CarryIncomingToDest:LsW,CarryIncomingToDest:C,HasCarryableDestIncoming,CarryPerson,Dest:CNOT,HasDecision,bFirstCarryIncomingToDest
+		T,CarryEnemyBodyToDest:LsW,CarryEnemyBodyToDest:C,HasCarryableDestEnemyBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryEnemyBodyToDest
+		T,CarryVisitorBodyToDest:LsW,CarryVisitorBodyToDest:C,HasCarryableDestVisitorBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryVisitorBodyToDest
+		T,CarryIncomingBodyToDest:LsW,CarryIncomingBodyToDest:C,HasCarryableDestIncomingBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryIncomingBodyToDest
+		T,CarryOuterBodyToDest:LsW,CarryOuterBodyToDest:C,HasCarryableDestNotDiscipleBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryOuterBodyToDest
+		T,CarryInnerBodyToDest:LsW,CarryInnerBodyToDest:C,HasCarryableDestDiscipleBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryInnerBodyToDest
+		T,CarryMortalToDest:LsW,CarryMortalToDest:C,HasCarryableDestMortal,CarryPerson,Dest:CNOT,HasDecision,bFirstCarryMortalToDest
+		T,CarryMortalBodyToDest:LsW,CarryMortalBodyToDest:C,HasCarryableDestMortalBody,CarryBody,Dest:CNOT,HasDecision,bFirstCarryMortalBodyToDest
+
+[Help]
+WeightRandom
+	T,HelpCarry:LsW,HelpCarry:C,HasThingToCarry,Thing:C,HasDecision,bFirstHelpCarry:C,CheckCD,Carry
+	T,HelpTimber:LsW,HelpTimber:C,HasTreeToCut,Tree:C,HasDecision,bFirstHelpTimber:C,CheckCD,CutTree
+	T,HelpMine:LsW,HelpMine:C,HasMineJob,Mine:C,HasDecision,bFirstHelpMine:C,CheckCD,Carry
+	T,HelpFind:LsW,HelpFind:C,HasPick,Man:C,HasDecision,bFirstHelpFind
+	T,HelpKill:LsW,HelpKill:C,HasBodyToKill,DizzyAnimal:C,HasDecision,bFirstHelpKill
+	T,HelpPlay:LsW,HelpPlay:C,CheckBadMood,MoodMan:C,HasDecision,bFirstHelpPlay
+	T,HelpPlant:LsW,HelpPlant:C,HasFarm,Plant:C,HasDecision,bFirstHelpPlant:C,CheckCD,Pee:C,CheckRace,LsDog
+	T,HelpPlantD:LsW,HelpPlantD:C,HasDFarm,Plant:C,HasDecision,bFirstHelpPlantD:C,CheckCD,Pee:C,CheckRace,LsDog
+	T,CureFreeze:LsW,CureFreeze:C,HasFreezeMan,FreezeMan:C,HasDecision,bFirstCureFreeze:C,CheckCD,CureFreeze:C,CheckRace,LsPhoenix
+	T,CureHot:LsW,CureHot:C,HasHeatMan,HeatMan:C,HasDecision,bFirstCureHot:C,CheckCD,CureHot:C,CheckRace,LsDragon
+	T,FeedTongXie:LsW,FeedTongXie:C,FindNoModifier,OuterTongXie,Modifier_Item_Laxative:C,Laxative,TongXie:C,HasDecision,bFirstFeedTongXie
+	T,CureInner:LsW,CureInner:C,HasHurtInner,InnerToCure:C,HasDecision,bFirstCureInner:C,CheckCD,CureInner:C,CheckRace,LsFox
+	T,HelpCarry:W,5:CNOT,HasThingToCarry,Thing:C,HasDecision,bFirstHelpCarry
+	T,HelpTimber:W,5:CNOT,HasTreeToCut,Tree:C,HasDecision,bFirstHelpTimber
+	T,HelpMine:W,5:CNOT,HasMineJob,Mine:C,HasDecision,bFirstHelpMine
+	T,HelpFind:W,5:CNOT,HasPick,Man:C,HasDecision,bFirstHelpFind
+	T,HelpKill:W,5:CNOT,HasBodyToKill,DizzyAnimal:C,HasDecision,bFirstHelpKill
+	T,HelpPlay:W,5:CNOT,CheckBadMood,MoodMan:C,HasDecision,bFirstHelpPlay
+	T,HelpPlant:W,5:CNOT,HasFarm,Plant:C,HasDecision,bFirstHelpPlant:C,CheckCD,Pee:C,CheckRace,LsDog
+	T,HelpPlantD:W,5:CNOT,HasDFarm,Plant:C,HasDecision,bFirstHelpPlantD:C,CheckCD,Pee:C,CheckRace,LsDog
+	T,CureFreeze:W,5:CNOT,HasFreezeMan,FreezeMan:C,HasDecision,bFirstCureFreeze:C,CheckRace,LsPhoenix
+	T,CureHot:W,5:CNOT,HasHeatMan,HeatMan:C,HasDecision,bFirstCureHot:C,CheckRace,LsDragon
+	T,FeedTongXie:W,5:CNOT,FindNoModifier,OuterTongXie,Modifier_Item_Laxative:CNOT,Laxative,TongXie:C,HasDecision,bFirstFeedTongXie
+	T,CureInner:W,5:CNOT,HasHurtInner,InnerToCure:C,HasDecision,bFirstCureInner:C,CheckRace,LsFox
+	T,Feed_Item_Dan_Happiness:W,5,CNOT:FindNoModifierPracticeDisciple,Dan_Happiness,Dan_Happiness:C,HasDecision,bFirstFeed_Item_Dan_Happiness
+	T,Feed_Item_Dan_PracticeSpeed:W,5,CNOT:FindNoModifierPracticeDisciple,Dan_PracticeSpeed,Dan_PracticeSpeed:C,HasDecision,bFirstFeed_Item_Dan_PracticeSpeed
+	T,Feed_Item_Dan_CalmDown:W,5,CNOT:FindNoModifierPracticeDisciple,Dan_CalmDown,Dan_CalmDown:C,HasDecision,bFirstFeed_Item_Dan_CalmDown
+	T,Feed_Item_LingStone:W,5,CNOT:FindNoModifierPracticeDisciple,Dan_LingStone,Dan_LingStone:C,HasDecision,bFirstFeed_Item_LingStone
+	T,Feed_Item_Dan_Happiness:LsW,Feed_Item_Dan_Happiness:C,FindNoModifierPracticeDisciple,Inner,Dan_Happiness,C:FindTagItem,Dan_Happiness,Dan_Happiness:C,HasDecision,bFirstFeed_Item_Dan_Happiness
+	T,Feed_Item_Dan_PracticeSpeed:LsW,Feed_Item_Dan_PracticeSpeed:C,FindNoModifierPracticeDisciple,Inner,Dan_PracticeSpeed,C:FindTagItem,Dan_PracticeSpeed,Dan_PracticeSpeed:C,HasDecision,bFirstFeed_Item_Dan_PracticeSpeed
+	T,Feed_Item_Dan_CalmDown:LsW,Feed_Item_Dan_CalmDown:C,FindNoModifierPracticeDisciple,Inner,Dan_CalmDown,C:FindTagItem,Dan_CalmDown,Dan_CalmDown:C,HasDecision,bFirstFeed_Item_Dan_CalmDown
+	T,Feed_Item_LingStone:LsW,Feed_Item_LingStone:C,FindNoModifierPracticeDisciple,Inner,Dan_LingStone,C:FindTagItem,Dan_LingStone,Dan_LingStone:C,HasDecision,bFirstFeed_Item_LingStone
+	T,CarryOuterToBed:LsW,CarryOuterToBed:C,CarryToBed,CarryPerson,Dest:C,HasDecision,bFirstCarryOuterToBed
+	T,CarryVisitorToDest:LsW,CarryVisitorToDest:C,HasCarryableDestEnemy,CarryPerson,Dest:C,HasDecision,bFirstCarryVisitorToDest
+	T,CarryEnemyToDest:LsW,CarryEnemyToDest:C,HasCarryableDestIncoming,CarryPerson,Dest:C,HasDecision,bFirstCarryEnemyToDest
+	T,CarryIncomingToDest:LsW,CarryIncomingToDest:C,HasCarryableDestIncoming,CarryPerson,Dest:C,HasDecision,bFirstCarryIncomingToDest
+	T,CarryEnemyBodyToDest:LsW,CarryEnemyBodyToDest:C,HasCarryableDestEnemyBody,CarryBody,Dest:C,HasDecision,bFirstCarryEnemyBodyToDest
+	T,CarryVisitorBodyToDest:LsW,CarryVisitorBodyToDest:C,HasCarryableDestVisitorBody,CarryBody,Dest:C,HasDecision,bFirstCarryVisitorBodyToDest
+	T,CarryIncomingBodyToDest:LsW,CarryIncomingBodyToDest:C,HasCarryableDestIncomingBody,CarryBody,Dest:C,HasDecision,bFirstCarryIncomingBodyToDest
+	T,CarryOuterBodyToDest:LsW,CarryOuterBodyToDest:C,HasCarryableDestNotDiscipleBody,CarryBody,Dest:C,HasDecision,bFirstCarryOuterBodyToDest
+	T,CarryInnerBodyToDest:LsW,CarryInnerBodyToDest:C,HasCarryableDestDiscipleBody,CarryBody,Dest:C,HasDecision,bFirstCarryInnerBodyToDest
+	T,CarryMortalBodyToDest:LsW,CarryMortalBodyToDest:C,HasCarryableDestMortalBody,CarryBody,Dest:C,HasDecision,bFirstCarryMortalBodyToDest
+	T,CarryMortalToDest:LsW,CarryMortalToDest:C,HasCarryableDestMortal,CarryPerson,Dest:C,HasDecision,bFirstCarryMortalToDest
+	T,CarryOuterToBed:W,5:CNOT,CarryToBed,CarryPerson:C,HasDecision,bFirstCarryOuterToBed
+	T,CarryVisitorToDest:W,5:CNOT,HasCarryableDestEnemy,CarryPerson,Dest:C,HasDecision,bFirstCarryVisitorToDest
+	T,CarryEnemyToDest:W,5:CNOT,HasCarryableDestIncoming,CarryPerson,Dest:C,HasDecision,bFirstCarryEnemyToDest
+	T,CarryIncomingToDest:W,5:CNOT,HasCarryableDestIncoming,CarryPerson,Dest:C,HasDecision,bFirstCarryIncomingToDest
+	T,CarryEnemyBodyToDest:W,5:CNOT,HasCarryableDestEnemyBody,CarryBody,Dest:C,HasDecision,bFirstCarryEnemyBodyToDest
+	T,CarryVisitorBodyToDest:W,5:CNOT,HasCarryableDestVisitorBody,CarryBody,Dest:C,HasDecision,bFirstCarryVisitorBodyToDest
+	T,CarryIncomingBodyToDest:W,5:CNOT,HasCarryableDestIncomingBody,CarryBody,Dest:C,HasDecision,bFirstCarryIncomingBodyToDest
+	T,CarryOuterBodyToDest:W,5:CNOT,HasCarryableDestNotDiscipleBody,CarryBody,Dest:C,HasDecision,bFirstCarryOuterBodyToDest
+	T,CarryInnerBodyToDest:W,5:CNOT,HasCarryableDestDiscipleBody,CarryBody,Dest:C,HasDecision,bFirstCarryInnerBodyToDest
+	T,CarryMortalToDest:W,5:CNOT,HasCarryableDestMortal,CarryPerson,Dest:C,HasDecision,bFirstCarryMortalToDest
+	T,CarryMortalBodyToDest:W,5:CNOT,HasCarryableDestMortalBody,CarryBody,Dest:C,HasDecision,bFirstCarryMortalBodyToDest
+	
+[Train]
+Sequence
+	IfElseNode
+		LsPropertyCheck,QiGan,100
+		Return,1
+		IfElseNode
+			LsPropertyCheck,NeiDan,100
+			Return,1
+			IfElseNode
+				LsPropertyCheck,HuTi,100
+				Return,1
+				IfElseNode
+					LsPropertyCheck,LingZhi,100
+					Return,1
+					IfElseNode
+						LsPropertyCheck,ShuFa,100
+						Return,1
+						Return,0
+	IfElseNode
+		LsPropertyCheck,GrowPercent,30
+		Sequence
+			NeedCheck,Fun,49:NOT
+			WeightRandom
+				T,TrainQiGan:LsW,TrainQiGan
+				T,TrainNeiDan:LsW,TrainNeiDan
+				T,TrainHuTi:LsW,TrainHuTi
+				T,TrainLingZhi:LsW,TrainLingZhi
+				T,TrainShuFa:LsW,TrainShuFa
+		IfElseNode
+			LsPropertyCheck,GrowPercent,100
+			Sequence
+				NeedCheck,Fun,74:NOT
+				WeightRandom
+					T,TrainQiGan:LsW,TrainQiGan
+					T,TrainNeiDan:LsW,TrainNeiDan
+					T,TrainHuTi:LsW,TrainHuTi
+					T,TrainLingZhi:LsW,TrainLingZhi
+					T,TrainShuFa:LsW,TrainShuFa
+			Sequence
+				NeedCheck,Fun,99:NOT
+				WeightRandom
+					T,TrainQiGan:LsW,TrainQiGan
+					T,TrainNeiDan:LsW,TrainNeiDan
+					T,TrainHuTi:LsW,TrainHuTi
+					T,TrainLingZhi:LsW,TrainLingZhi
+					T,TrainShuFa:LsW,TrainShuFa
+	
+[Free]
+Sequence
+	IfElseNode
+		LsPropertyCheck,QiGan,100
+		Return,1
+		IfElseNode
+			LsPropertyCheck,NeiDan,100
+			Return,1
+			IfElseNode
+				LsPropertyCheck,HuTi,100
+				Return,1
+				IfElseNode
+					LsPropertyCheck,LingZhi,100
+					Return,1
+					IfElseNode
+						LsPropertyCheck,ShuFa,100
+						Return,1
+						T,Play
+	IfElseNode
+		LsPropertyCheck,GrowPercent,30
+		Sequence
+			NeedCheck,Fun,49
+			T,Play
+		IfElseNode
+			LsPropertyCheck,GrowPercent,100
+			Sequence
+				NeedCheck,Fun,74
+				T,Play
+			Sequence
+				NeedCheck,Fun,99
+				T,Play
+			
+[Play]
+WeightRandom
+	T,EatShit:LsW,EatShit:C,HasShit,Food:C,HasDecision,bFirstEatShit
+	T,EatShit:W,5:CNOT,HasShit,Food:C,HasDecision,bFirstEatShit
+	T,PlayToy:LsW,PlayToy:C,HasToy,Toy:C,HasDecision,bFirstPlayToy
+	T,PlayToy:W,5:CNOT,HasToy,Toy:C,HasDecision,bFirstPlayToy
+	T,BiteOthers:W,100
+	T,BiteExpelShell:LsW,BiteExpel:C,CanExpelNpc,Expel:C,HasDecision,bFirstBiteExpel
+	Sequence:W,50:Event,ExploreLeave,ExploreBack
+		WeightRandom
+			Talk,Lay1:W,1
+			Talk,Lay2:W,1
+			Talk,Lay3:W,1
+		StartFun,1
+		Job,Lay
+		T,PandaRandomBreakNoParam,FreeBreak
+		StopFun
+	Sequence:W,25:C,HasOuterDisipleToAtk,Person:Event,ExploreLeave,ExploreBack
+		StartFun,1
+		T,Follow
+		StopFun
+	Sequence:W,25:C,HasInnerDisipleToAtk,Person:Event,ExploreLeave,ExploreBack
+		StartFun,1
+		T,Follow
+		StopFun
+	Sequence:W,50:Event,ExploreLeave,ExploreBack
+		WeightRandom
+			Talk,Wonder1:W,1
+			Talk,Wonder2:W,1
+			Talk,Wonder3:W,1
+		StartFun,1
+		T,PandaRandomBreakNoParam,FreeBreak
+		Job,Wonder
+		StopFun
+	Sequence:W,10:Event,ExploreLeave,ExploreBack:C,HasUsedTomb,Tomb
+		Job,GotoThing:Load,Tomb:Save,GotoResult
+		IfElse
+			Compare,0,1,0
+				GetSave,GotoResult
+				FixValue,1,1
+			Sequence
+				StartFun,1
+				WeightRandom
+					Talk,Lacrimosa1:W,1
+					Talk,Lacrimosa2:W,1
+					Talk,Lacrimosa3:W,1
+				T,PandaBreak,AiDaoBreak,SaveTomb,Tomb
+				Wait,60,AiDao
+			Return,1
+			StopFun
+	Sequence:W,10:Event,ExploreLeave,ExploreBack:C,ExploreNpc,ExploreNpc
+		StartFun,1
+		WeightRandom
+			Talk,NotBack1,60:W,1:Load,ExploreNpc
+			Talk,NotBack2,60:W,1:Load,ExploreNpc
+			Talk,NotBack3,60:W,1:Load,ExploreNpc
+		Wait,60,Miss
+		StopFun
+	Sequence:W,10:C,CheckRace,LsPandaXian
+		Talk,Roll
+		StartFun,1
+		AddEventNode,RollBreak,LsPandaXiu
+		Job,Roll
+		StopFun
+	Sequence:W,10:C,CheckRace,LsPandaXian
+		Talk,Chop
+		StartFun,1
+		AddEventNode,ChopBreak,LsPandaXiu
+		Job,Chop
+		StopFun
+	Sequence:W,10:C,CheckRace,LsPandaXian
+		Talk,PlayBB
+		StartFun,1
+		AddEventNode,PlayBBBreak,LsPandaXiu
+		Job,PlayBB
+		StopFun
+	Sequence:W,10:C,CheckRace,LsPandaXian
+		Talk,Happy
+		StartFun,1
+		AddEventNode,HappyBreak,LsPandaXiu
+		Job,Happy
+		StopFun
+	Sequence:W,40:C,CheckRace,LsXuanWu
+		Talk,Happy
+		StartFun,1
+		Job,Stretch
+		StopFun
+	Sequence:W,40:C,CheckRace,LsXuanWu
+		Talk,Happy
+		StartFun,1
+		Job,Spin
+		StopFun
+		
+[BiteOthers]
+WeightRandom
+	T,BiteBuilding:LsW,BiteBuilding:C,HasBuildingToAtk,Building:C,HasDecision,bFirstBiteBuilding
+	T,BiteClothes:LsW,BiteClothes:C,HasClothToAtk,Clothes:C,HasDecision,bFirstBiteClothes
+	T,BiteOuter:LsW,BiteOuter:C,HasOuterDisipleToAtk,Outer:C,HasDecision,bFirstBiteOuter
+	T,BiteInner:LsW,BiteInner:C,HasInnerDisipleToAtk,Inner:C,HasDecision,bFirstBiteInner
+	T,BiteVisitor:LsW,BiteVisitor:C,HasVisitorToAtk,Visitor:C,HasDecision,bFirstBiteVisitor:C,HasIncomingToAtk,Visitor
+	T,BiteBuilding:W,5:CNOT,HasBuildingToAtk,Building:C,HasDecision,bFirstBiteBuilding
+	T,BiteClothes:W,5:CNOT,HasClothToAtk,Clothes:C,HasDecision,bFirstBiteClothes
+	T,BiteOuter:W,5:CNOT,HasOuterDisipleToAtk,Outer:C,HasDecision,bFirstBiteOuter
+	T,BiteInner:W,5:CNOT,HasInnerDisipleToAtk,Inner:C,HasDecision,bFirstBiteInner
+	T,BiteVisitor:W,5:CNOT,HasVisitorToAtk,Visitor:C,HasDecision,bFirstBiteVisitor
+	T,BiteExpelShell:W,5:CNOT,CanExpelNpc,Expel:C,HasDecision,bFirstBiteExpel
+
+[HelpInner]
+IfElseNode
+	LsPropertyCheck,LingZhi,50
+	Return,0
+	WeightRandom
+		T,Feed_Item_Dan_Happiness:LsW,Feed_Item_Dan_Happiness:C,FindNoModifierPracticeDisciple,Inner,Dan_Happiness,C:FindTagItem,Dan_Happiness,Dan_Happiness:CNOT,HasDecision,bFirstFeed_Item_Dan_Happiness
+		T,Feed_Item_Dan_PracticeSpeed:LsW,Feed_Item_Dan_PracticeSpeed:C,FindNoModifierPracticeDisciple,Inner,Dan_PracticeSpeed,C:FindTagItem,Dan_PracticeSpeed,Dan_PracticeSpeed:CNOT,HasDecision,bFirstFeed_Item_Dan_PracticeSpeed
+		T,Feed_Item_Dan_CalmDown:LsW,Feed_Item_Dan_CalmDown:C,FindNoModifierPracticeDisciple,Inner,Dan_CalmDown,C:FindTagItem,Dan_CalmDown,Dan_CalmDown:CNOT,HasDecision,bFirstFeed_Item_Dan_CalmDown
+		T,Feed_Item_LingStone:LsW,Feed_Item_LingStone:C,FindNoModifierPracticeDisciple,Inner,Dan_LingStone,C:FindTagItem,Dan_LingStone,Dan_LingStone:CNOT,HasDecision,bFirstFeed_Item_LingStone
+
+[ShitAtShitPlace]
+T,StandardJobExp_1ParamDoTheSame,ShitAtShitPlace,ShitAtShitPlaceLevel,NotShitAtShitPlace,bFirstShitAtShitPlace,HasShitPlace,ShitPlace,WannaShitAtShitPlace,DoTalkShitAtShitPlace,ShitAtShitPlace,CantShitAtShitPlace,ShitBreak,ShitPlace
+
+[ShitAtPlants]
+T,StandardJobExp_1ParamDoTheSame,ShitAtPlants,ShitAtPlantsLevel,NotShitAtPlants,bFirstShitAtPlants,HasTree,ShitPlace,WannaShitAtPlants,DoTalkShitAtPlants,ShitAtPlants,CantShitAtPlants,ShitBreak,ShitPlace
+
+[ShitAtDogHouse]
+T,StandardJobExp_1ParamDoTheSame,ShitAtDogHouse,ShitAtDogHouseLevel,NotShitAtDogHouse,bFirstShitAtDogHouse,HasDogHouse,ShitPlace,WannaShitAtDogHouse,DoTalkShitAtDogHouse,ShitAtDogHouse,CantShitAtDogHouse,ShitBreak,ShitPlace
+
+[ShitAtStorage]
+T,StandardJobExp_1ParamDoTheSame,ShitAtStorage,ShitAtStorageLevel,NotShitAtStorage,bFirstShitAtStorage,HasStorage,ShitPlace,WannaShitAtStorage,DoTalkShitAtStorage,ShitAtStorage,CantShitAtStorage,ShitBreak,ShitPlace
+
+[ShitOnBed]
+T,StandardJobExp_1ParamDoTheSame,ShitOnBed,ShitOnBedLevel,NotShitOnBed,bFirstShitOnBed,HasBed,ShitPlace,WannaShitOnBed,DoTalkShitOnBed,ShitOnBed,CantShitOnBed,ShitBreak,ShitPlace
+
+[ShitInFarm]
+T,StandardJobExp_1ParamDoTheSame,ShitInFarm,ShitInFarmLevel,NotShitInFarm,bFirstShitInFarm,HasFarm,ShitPlace,WannaShitInFarm,DoTalkShitInFarm,ShitInFarm,CantShitInFarm,ShitBreak,ShitPlace
+
+[EatWheat]
+T,StandardJobExp_Eat,EatWheat,EatWheatLevel,NotEatWheat,bFirstEatWheat,HasWheat,Food,WannaEatWheat,DoTalkEatWheat,EatWheat,CantEatWheat
+
+[EatDryMeat]
+T,StandardJobExp_Eat,EatDryMeat,EatDryMeatLevel,NotEatDryMeat,bFirstEatDryMeat,HasDryMeat,Food,WannaEatDryMeat,DoTalkEatDryMeat,EatDryMeat,CantEatDryMeat
+
+[EatPear]
+T,StandardJobExp_Eat,EatPear,EatPearLevel,NotEatPear,bFirstEatPear,HasPear,Food,WannaEatPear,DoTalkEatPear,EatPear,CantEatPear
+
+[EatMeat]
+T,StandardJobExp_Eat,EatMeat,EatMeatLevel,NotEatMeat,bFirstEatMeat,HasMeat,Food,WannaEatMeat,DoTalkEatMeat,EatMeat,CantEatMeat
+
+[EatCook]
+T,StandardJobExp_Eat,EatCook,EatCookLevel,NotEatCook,bFirstEatCook,HasCook,Food,WannaEatCook,DoTalkEatCook,EatCook,CantEatCook
+
+[PlayToy]
+T,StandardJobExp_1Param,PlayToy,PlayToyLevel,NotPlayToy,bFirstPlayToy,HasToy,Toy,WannaPlayToy,DoTalkPlayToy,PlayToy,CantPlayToy
+
+[Follow]
+Sequence
+	WeightRandom
+		Talk,Follow1:W,1
+		Talk,Follow2:W,1
+		Talk,Follow3:W,1
+	T,PandaRandomBreakNoParam,FollowBreak
+	Job,Follow:Load,Person
+
+[AtkEnemyBreak]
+T,BreakExp,AtkEnemyLevel,AtkEnemy
+
+[AtkEnemy]
+Sequence
+	IfElseNode
+		LsPropertyCheck,AtkEnemyLevel,2
+		Sequence
+			ActionHappen,AtkEnemy
+			Return,0
+		Sequence
+			IfElseNode
+				Return,1:C,HasFlag,bFirstAtkEnemy
+				Sequence
+					Return,1:C,HasEnemyToAtk,Enemy
+					ActionHappen,AtkEnemy
+					FirstDecision,bFirstAtkEnemy,WannaAtkEnemy:Load,Enemy
+				Return,1
+			IfElseNode
+				Return,1:C,HasEnemyToAtk,Enemy
+				Sequence
+					Talk,DoTalkAtkEnemy:Load,Enemy
+					T,PandaBreak,AtkBreak,SaveEnemy,Enemy
+					Attack:Load,Enemy
+					ActionHappen,AtkEnemy
+					AddTime,AtkEnemy
+				Sequence
+					Talk,CantAtkEnemy
+					Wait,16
+					ActionHappen,AtkEnemy
+					Return,0
+
+[AtkDizzyOuter]
+T,StandardJobExp_Attack,AtkDizzyOuter,AtkDizzyOuterLevel,NotAtkDizzyOuter,bFirstAtkDizzyOuter,HasDizzyOuterToAtk,Outer,WannaAtkDizzyOuter,DoTalkAtkDizzyOuter,AtkDizzyOuter,CantAtkDizzyOuter
+
+[AtkDizzyInner]
+T,StandardJobExp_Attack,AtkDizzyInner,AtkDizzyInnerLevel,NotAtkDizzyInner,bFirstAtkDizzyInner,HasDizzyInnerToAtk,Inner,WannaAtkDizzyInner,DoTalkAtkDizzyInner,AtkDizzyInner,CantAtkDizzyInner
+
+[AtkDizzyComing]
+T,StandardJobExp_Attack,AtkDizzyComing,AtkDizzyComingLevel,NotAtkDizzyComing,bFirstAtkDizzyComing,HasDizzyComingToAtk,Coming,WannaAtkDizzyComing,DoTalkAtkDizzyComing,AtkDizzyComing,CantAtkDizzyComing
+
+[AtkDizzyVisitor]
+T,StandardJobExp_Attack,AtkDizzyVisitor,AtkDizzyVisitorLevel,NotAtkDizzyVisitor,bFirstAtkDizzyVisitor,HasDizzyVisitorToAtk,Visitor,WannaAtkDizzyVisitor,DoTalkAtkDizzyVisitor,AtkDizzyVisitor,CantAtkDizzyVisitor
+
+[CarryOuterToBed]
+T,StandardJobExp_1Param,CarryOuterToBed,CarryOuterToBedLevel,NotCarryOuterToBed,bFirstCarryOuterToBed,CarryToBed,CarryPerson,WannaCarryOuterToBed,DoTalkCarryOuterToBed,CarryOuterToBed,CantCarryOuterToBed
+
+[CarryVisitorToDest]
+T,StandardJobExp_2Param,CarryVisitorToDest,CarryVisitorToDestLevel,NotCarryVisitorToDest,bFirstCarryVisitorToDest,HasCarryableDestEnemy,CarryPerson,Dest,WannaCarryVisitorToDest,DoTalkCarryVisitorToDest,CarryVisitorToDest,CantCarryVisitorToDest
+
+[CarryEnemyToDest]
+T,StandardJobExp_2Param,CarryEnemyToDest,CarryEnemyToDestLevel,NotCarryEnemyToDest,bFirstCarryEnemyToDest,HasCarryableDestIncoming,CarryPerson,Dest,WannaCarryEnemyToDest,DoTalkCarryEnemyToDest,CarryEnemyToDest,CantCarryEnemyToDest
+
+[CarryIncomingToDest]
+T,StandardJobExp_2Param,CarryIncomingToDest,CarryIncomingToDestLevel,NotCarryIncomingToDest,bFirstCarryIncomingToDest,HasCarryableDestIncoming,CarryPerson,Dest,WannaCarryIncomingToDest,DoTalkCarryIncomingToDest,CarryIncomingToDest,CantCarryIncomingToDest
+
+[CarryEnemyBodyToDest]
+T,StandardJobExp_2Param,CarryEnemyBodyToDest,CarryEnemyBodyToDestLevel,NotCarryEnemyBodyToDest,bFirstCarryEnemyBodyToDest,HasCarryableDestEnemyBody,CarryBody,Dest,WannaCarryEnemyBodyToDest,DoTalkCarryEnemyBodyToDest,CarryEnemyBodyToDest,CantCarryEnemyBodyToDest
+
+[CarryVisitorBodyToDest]
+T,StandardJobExp_2Param,CarryVisitorBodyToDest,CarryVisitorBodyToDestLevel,NotCarryVisitorBodyToDest,bFirstCarryVisitorBodyToDest,HasCarryableDestVisitorBody,CarryBody,Dest,WannaCarryVisitorBodyToDest,DoTalkCarryVisitorBodyToDest,CarryVisitorBodyToDest,CantCarryVisitorBodyToDest
+
+[CarryIncomingBodyToDest]
+T,StandardJobExp_2Param,CarryIncomingBodyToDest,CarryIncomingBodyToDestLevel,NotCarryIncomingBodyToDest,bFirstCarryIncomingBodyToDest,HasCarryableDestIncomingBody,CarryBody,Dest,WannaCarryIncomingBodyToDest,DoTalkCarryIncomingBodyToDest,CarryIncomingBodyToDest,CantCarryIncomingBodyToDest
+
+[CarryOuterBodyToDest]
+T,StandardJobExp_2Param,CarryOuterBodyToDest,CarryOuterBodyToDestLevel,NotCarryOuterBodyToDest,bFirstCarryOuterBodyToDest,HasCarryableDestNotDiscipleBody,CarryBody,Dest,WannaCarryOuterBodyToDest,DoTalkCarryOuterBodyToDest,CarryOuterBodyToDest,CantCarryOuterBodyToDest
+
+[CarryInnerBodyToDest]
+T,StandardJobExp_2Param,CarryInnerBodyToDest,CarryInnerBodyToDestLevel,NotCarryInnerBodyToDest,bFirstCarryInnerBodyToDest,HasCarryableDestDiscipleBody,CarryBody,Dest,WannaCarryInnerBodyToDest,DoTalkCarryInnerBodyToDest,CarryInnerBodyToDest,CantCarryInnerBodyToDest
+
+[CarryMortalToDest]
+T,StandardJobExp_2Param,CarryMortalToDest,CarryMortalToDestLevel,NotCarryMortalToDest,bFirstCarryMortalToDest,HasCarryableDestMortal,CarryPerson,Dest,WannaCarryMortalToDest,DoTalkCarryMortalToDest,CarryMortalToDest,CantCarryMortalToDest
+
+[CarryMortalBodyToDest]
+T,StandardJobExp_2Param,CarryMortalBodyToDest,CarryMortalBodyToDestLevel,NotCarryMortalBodyToDest,bFirstCarryMortalBodyToDest,HasCarryableDestMortalBody,CarryBody,Dest,WannaCarryMortalBodyToDest,DoTalkCarryMortalBodyToDest,CarryMortalBodyToDest,CantCarryMortalBodyToDest
+
+[TrainQiGan]
+T,StandardJobExp_Train,TrainQiGanLevel,NotTrainQiGan,DoTalkTrainQiGan,TrainQiGan,No_NutritionQiGan,bFirstTrainQiGan,WannaTrainQiGan,QiGanResult_Low,QiGanResult_Mid,QiGanResult_High,QiGan,QiGan_FullTalk,QiGanBreak
+
+[TrainNeiDan]
+T,StandardJobExp_Train,TrainNeiDanLevel,NotTrainNeiDan,DoTalkTrainNeiDan,TrainNeiDan,No_NutritionNeiDan,bFirstTrainNeiDan,WannaTrainNeiDan,NeiDanResult_Low,NeiDanResult_Mid,NeiDanResult_High,NeiDan,NeiDan_FullTalk,NeiDanBreak
+
+[TrainHuTi]
+T,StandardJobExp_Train,TrainHuTiLevel,NotTrainHuTi,DoTalkTrainHuTi,TrainHuTi,No_NutritionHuTi,bFirstTrainHuTi,WannaTrainHuTi,HuTiResult_Low,HuTiResult_Mid,HuTiResult_High,HuTi,HuTi_FullTalk,HuTiBreak
+
+[TrainLingZhi]
+T,StandardJobExp_Train,TrainLingZhiLevel,NotTrainLingZhi,DoTalkTrainLingZhi,TrainLingZhi,No_NutritionLingZhi,bFirstTrainLingZhi,WannaTrainLingZhi,LingZhiResult_Low,LingZhiResult_Mid,LingZhiResult_High,LingZhi,LingZhi_FullTalk,LingZhiBreak
+
+[TrainShuFa]
+T,StandardJobExp_Train,TrainShuFaLevel,NotTrainShuFa,DoTalkTrainShuFa,TrainShuFa,No_NutritionShufa,bFirstTrainShuFa,WannaTrainShuFa,ShuFaResult_Low,ShuFaResult_Mid,ShuFaResult_High,ShuFa,ShuFa_FullTalk,ShuFaBreak
+
+[EatShit]
+T,StandardJobExp_1Fun,EatShit,EatShitLevel,NotEatShit,bFirstEatShit,HasShit,Food,WannaEatShit,DoTalkEatShit,EatShit,CantEatShit
+
+[EatEssence]
+T,StandardJobExp_1Fun,EatEssence,EatEssenceLevel,NotEatEssence,bFirstEatEssence,HasEssence,Food,WannaEatEssence,DoTalkEatEssence,EatEssence,CantEatEssence
+
+[EatDrug]
+T,StandardJobExp_1Fun,EatDrug,EatDrugLevel,NotEatDrug,bFirstEatDrug,HasDrug,Food,WannaEatDrug,DoTalkEatDrug,EatDrug,CantEatDrug
+
+[BiteBuilding]
+T,StandardJobExp_Bite,BiteBuilding,BiteBuildingLevel,NotBiteBuilding,bFirstBiteBuilding,HasBuildingToAtk,Building,WannaBiteBuilding,DoTalkBiteBuilding,BiteBuilding,CantBiteBuilding,BiteBuildingEX,DoTalkBiteBuildingEx
+
+[BiteClothes]
+T,StandardJobExp_Bite,BiteClothes,BiteClothesLevel,NotBiteClothes,bFirstBiteClothes,HasClothToAtk,Clothes,WannaBiteClothes,DoTalkBiteClothes,BiteClothes,CantBiteClothes,BiteClothesEX,DoTalkBiteClothesEx
+
+[BiteOuter]
+T,StandardJobExp_Bite,BiteOuter,BiteOuterLevel,NotBiteOuter,bFirstBiteOuter,HasOuterDisipleToAtk,Outer,WannaBiteOuter,DoTalkBiteOuter,BiteOuter,CantBiteOuter,BiteOuterEX,DoTalkBiteOuterEx
+
+[BiteInner]
+T,StandardJobExp_Bite,BiteInner,BiteInnerLevel,NotBiteInner,bFirstBiteInner,HasInnerDisipleToAtk,Inner,WannaBiteInner,DoTalkBiteInner,BiteInner,CantBiteInner,BiteInnerEX,DoTalkBiteInnerEx
+
+[BiteVisitor]
+T,StandardJobExp_Bite,BiteVisitor,BiteVisitorLevel,NotBiteVisitor,bFirstBiteVisitor,HasVisitorToAtk,Visitor,WannaBiteVisitor,DoTalkBiteVisitor,BiteVisitor,CantBiteVisitor,BiteVisitorEX,DoTalkBiteVisitorEx
+
+[BiteExpelShell]
+IfElseNode
+	LsPropertyCheck,BiteExpelLevel,5
+	T,BiteExpel
+	Sequence
+		Attack:C,CanExpelNpc,Expel:Load,Expel
+		ActionHappen,BiteExpel
+		AddTime,BiteExpel
+	
+[BiteIncoming]
+T,StandardJobExp_Bite,BiteIncoming,BiteIncomingLevel,NotBiteIncoming,bFirstBiteIncoming,HasIncomingToAtk,Incoming,WannaBiteIncoming,DoTalkBiteIncoming,BiteIncoming,CantBiteIncoming,BiteIncomingEx,DoTalkBiteIncomingEx
+
+[BiteExpel]
+T,StandardJobExp_1Param,BiteExpel,BiteExpelLevel,NotBiteExpel,bFirstBiteExpel,CanExpelNpc,Expel,WannaBiteExpel,DoTalkBiteExpel,BiteExpel,CantBiteExpel
+
+[HelpCarry]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpCarry,HelpCarryLevel,NotHelpCarry,bFirstHelpCarry,HasThingToCarry,CheckCD,Thing,Carry,WannaHelpCarry,DoTalkHelpCarry,HelpCarry,CantHelpCarry,NoParam2HelpCarry
+	SetCD,Carry
+	Return,0
+
+[HelpTimber]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpTimber,HelpTimberLevel,NotHelpTimber,bFirstHelpTimber,HasTreeToCut,CheckCD,Tree,CutTree,WannaHelpTimber,DoTalkHelpTimber,HelpTimber,CantHelpTimber,NoParam2HelpTimber
+	SetCD,CutTree
+	Return,0
+
+[HelpMine]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpMine,HelpMineLevel,NotHelpMine,bFirstHelpMine,HasMineJob,CheckCD,Mine,Mine,WannaHelpMine,DoTalkHelpMine,HelpMine,CantHelpMine,NoParam2HelpMine
+	SetCD,Mine
+	Return,0
+	
+[HelpFind]
+T,StandardJobExp_1Param,HelpFind,HelpFindLevel,NotHelpFind,bFirstHelpFind,HasPick,Man,WannaHelpFind,DoTalkHelpFind,HelpFind,CantHelpFind
+
+[HelpKill]
+T,StandardJobExp_1Param,HelpKill,HelpKillLevel,NotHelpKill,bFirstHelpKill,HasBodyToKill,DizzyAnimal,WannaHelpKill,DoTalkHelpKill,HelpKill,CantHelpKill
+
+[HelpPlay]
+T,StandardJobExp_1Param,HelpPlay,HelpPlayLevel,NotHelpPlay,bFirstHelpPlay,CheckBadMood,MoodMan,WannaHelpPlay,DoTalkHelpPlay,HelpPlay,CantHelpPlay
+
+[HelpPlant]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpPlant,HelpPlantLevel,NotHelpPlant,bFirstHelpPlant,HasFarm,CheckCD,Plant,Pee,WannaHelpPlant,DoTalkHelpPlant,Pee,CantHelpPlant,NoParam2HelpPlant
+	SetCD,Pee
+	Return,0
+	
+[HelpPlantD]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpPlantD,HelpPlantDLevel,NotHelpPlantD,bFirstHelpPlantD,HasDFarm,CheckCD,Plant,Pee,WannaHelpPlantD,DoTalkHelpPlantD,PeeOnDPlant,CantHelpPlantD,NoParam2HelpPlantD
+	SetCD,Pee
+	Return,0
+
+[CureFreeze]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,CureFreeze,CureFreezeLevel,NotCureFreeze,bFirstCureFreeze,HasFreezeMan,CheckCD,FreezeMan,CureFreeze,WannaCureFreeze,DoTalkCureFreeze,CureFreeze,CantCureFreeze,NoParam2CureFreeze 
+	SetCD,CureFreeze
+	Return,0
+
+[CureHot]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,CureHot,CureHotLevel,NotCureHot,bFirstCureHot,HasHeatMan,CheckCD,HeatMan,CureHeat,WannaCureHot,DoTalkCureHot,CureHot,CantCureHot,NoParam2CureHot
+	SetCD,CureHot
+	Return,0
+
+[HelpCook]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,HelpCook,HelpCookLevel,NotHelpCook,bFirstHelpCook,HasCook,CheckCD,Cook,Cook,WannaHelpCook,DoTalkHelpCook,FastCook,CantHelpCook,NoParam2HelpCook
+	SetCD,Cook
+	Return,0
+
+[HeatEndure]
+IfElseNode
+	T,StandardJobExp_1Param,HeatEndure,HeatEndureLevel,NotHeatEndure,bFirstHeatEndure,CheckCD,HeatEndure,WannaHeatEndure,DoTalkHeatEndure,IncreaseHotEdure,CantHeatEndure
+	SetCD,ColdEndure
+	Return,0
+
+[ColdEndure]
+IfElseNode
+	T,StandardJobExp_1Param,ColdEndure,ColdEndureLevel,NotColdEndure,bFirstColdEndure,CheckCD,ColdEndure,WannaColdEndure,DoTalkColdEndure,IncreaseColdEdure,CantColdEndure
+	SetCD,ColdEndure
+	Return,0
+
+[FeedTongXie]
+Sequence:Reset,FeedTongXie:State,AtkEnemy
+	Sequence
+		IfElseNode
+			Return,1:CNOT,HasFlag,bFirstFeedTongXie
+			Sequence
+				Return,1:C,FindNoModifier,OuterTongXie,Modifier_Item_Laxative:C,Laxative,TongXie
+				Talk,WannaFeedTongXie
+				ActionHappen,FeedTongXie
+				FirstDecision,bFirstFeedTongXie:Load,OuterTongXie,TongXie
+			Return,1
+		IfElseNode
+			LsPropertyCheck,FeedTongXieLevel,2
+			Sequence
+				Wait,16
+				Talk,NotFeedTongXie
+				Return,0
+			IfElseNode	
+				Return,1:C,FindNoModifier,OuterTongXie,Modifier_Item_Laxative
+				IfElseNode
+					Return,1:C,Laxative,TongXie
+					Sequence
+						Talk,DoTalkFeedTongXie:Load,OuterTongXie,TongXie
+						Job,FeedTongXie:Load,OuterTongXie,TongXie
+						AddTime,FeedTongXie
+					Sequence
+						Talk,NoTongXie
+						Wait,16
+						ActionHappen,FeedTongXie
+						Return,0
+				Sequence
+					Talk,CantFeedTongXie
+					Wait,16
+					ActionHappen,FeedTongXie
+					Return,0
+
+[Feed_Item_Dan_Happiness]
+T,StandardJobExp_Feed,Feed_Item_Dan_Happiness,Feed_Item_Dan_HappinessLevel,NotFeed_Item_Dan_Happiness,bFirstFeed_Item_Dan_Happiness,Inner,Dan_Happiness,Dan_Happiness,Dan_Happiness,WannaFeed_Item_Dan_Happiness,DoTalkFeed_Item_Dan_Happiness,Feed_Item_Dan_Happiness,CantFeed_Item_Dan_Happiness,NoParam2Feed_Item_Dan_Happiness
+
+[Feed_Item_Dan_PracticeSpeed]
+T,StandardJobExp_Feed,Feed_Item_Dan_PracticeSpeed,Feed_Item_Dan_PracticeSpeedLevel,NotFeed_Item_Dan_PracticeSpeed,bFirstFeed_Item_Dan_PracticeSpeed,Inner,Dan_PracticeSpeed,Dan_PracticeSpeed,Dan_PracticeSpeed,WannaFeed_Item_Dan_PracticeSpeed,DoTalkFeed_Item_Dan_PracticeSpeed,Feed_Item_Dan_PracticeSpeed,CantFeed_Item_Dan_PracticeSpeed,NoParam2Feed_Item_Dan_PracticeSpeed
+
+[Feed_Item_Dan_CalmDown]
+T,StandardJobExp_Feed,Feed_Item_Dan_CalmDown,Feed_Item_Dan_CalmDownLevel,NotFeed_Item_Dan_CalmDown,bFirstFeed_Item_Dan_CalmDown,Inner,Dan_CalmDown,Dan_CalmDown,Dan_CalmDown,WannaFeed_Item_Dan_CalmDown,DoTalkFeed_Item_Dan_CalmDown,Feed_Item_Dan_CalmDown,CantFeed_Item_Dan_CalmDown,NoParam2Feed_Item_Dan_CalmDown
+
+[Feed_Item_LingStone]
+T,StandardJobExp_Feed,Feed_Item_LingStone,Feed_Item_LingStoneLevel,NotFeed_Item_LingStone,bFirstFeed_Item_LingStone,Inner,Dan_LingStone,Dan_LingStone,Dan_LingStone,WannaFeed_Item_LingStone,DoTalkFeed_Item_LingStone,Feed_Item_LingStone,CantFeed_Item_LingStone,NoParam2Feed_Item_LingStone
+
+[Feed_Item_LingCrystal]
+T,StandardJobExp_Feed,Feed_Item_LingCrystal,Feed_Item_LingCrystalLevel,NotFeed_Item_LingCrystal,bFirstFeed_Item_LingCrystal,Inner,Dan_LingCrystal,Dan_LingCrystal,Dan_LingCrystal,WannaFeed_Item_LingCrystal,DoTalkFeed_Item_LingCrystal,Feed_Item_LingCrystal,CantFeed_Item_LingCrystal,NoParam2Feed_Item_LingCrystal
+
+[CureInner]
+IfElseNode
+	T,StandardJobExp_2ParamCheckTheFirstParam,CureInner,CureInnerLevel,NotCureInner,bFirstCureInner,HasHurtInner,CheckCD,InnerToCure,CureInner,WannaCureInner,DoTalkCureInner,HealInner,CantCureInner,NoParam2CureInner
+	SetCD,CureInner
+	Return,0

@@ -1,0 +1,654 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="LeatherBase" Parent="MaterialBase">
+	
+	
+	<ThingName></ThingName>
+	<TexPath>Item/Cloth</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>-2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>2</Rate>	
+	<ElementKind>Tu</ElementKind>
+	<Color>63431AFF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>160</BurningPoint>
+	</Flammability>
+	<Frags>			
+		<li Frag="SmellSelf" />
+	</Frags>		
+
+	<Item Lable="Leather">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>革,罩,障</FabaoSuffix>
+		<PhysicalLables>
+			<li>Rough1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		 
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			
+			<WorkSpeedCoefficientWhenBeMain>1</WorkSpeedCoefficientWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>1</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>1</TemperatureMinAddWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>160</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>1.4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BoarLeather" Parent="LeatherBase">
+	
+	
+	<ThingName>野猪皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>野猪的皮，质地粗糙，但是比较结实。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>-2</Beauty>
+	<Rate>2</Rate>	
+	<Color>9C7511FF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		 
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>野猪皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>1</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>1</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>9C7511FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_RabbitLeather" Parent="LeatherBase">
+	
+	
+	<ThingName>兔皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>兔子的毛皮，毛质柔软，十分温暖。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>1</Beauty>
+	<Rate>2</Rate>	
+	<Color>FFFFFFFF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<ClothesColorID>7</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>兔皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-10</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-8</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>FFFFFFFF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BearLeather" Parent="LeatherBase">
+	
+	
+	<ThingName>熊皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>熊的毛皮，毛质柔软，十分温暖。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>1</Beauty>
+	<Rate>2</Rate>	
+	<Color>63431AFF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<ClothesColorID>7</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>熊皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-12</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-12</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_WolfLeather" Parent="LeatherBase">
+	
+	
+	<ThingName>狼皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>一块狼皮，结实耐用。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>-2</Beauty>
+	<Rate>3</Rate>	
+	<Color>8D8570FF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		 
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<ClothesColorID>8</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>狼皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-4</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-6</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_FeiLeather" Parent="LeatherBase">
+	
+	<ThingName>蜚之皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>妖兽蜚的毛皮，含有神奇的力量，冬暖夏凉，甚至可以隔绝灵气造成的伤害。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>8</Beauty>
+	<Rate>6</Rate>	
+	<Color>6A4272FF</Color>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="20"/>
+				<SalePrice Value="4" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="6" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<ClothesColorID>8</ClothesColorID>
+			
+			<CostMultiplier>0.3</CostMultiplier>
+			<NamePrefix>蜚皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0.03</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>10</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-14</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>0.7</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_LuShuLeather" Parent="LeatherBase">
+	
+	<ThingName>鹿蜀之皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>灵兽鹿蜀的毛皮，含有神奇的力量，冬暖夏凉，甚至可以隔绝灵气造成的伤害。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>8</Beauty>
+	<Rate>6</Rate>	
+	<Color>FF8D44FF</Color>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="20"/>
+				<SalePrice Value="4" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="6" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<ClothesColorID>7</ClothesColorID>
+			
+			<CostMultiplier>0.3</CostMultiplier>
+			<NamePrefix>鹿蜀皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0.03</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>10</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-14</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>0.7</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_CattleLeather" Parent="LeatherBase">
+	
+	<ThingName>牛皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>一块牛皮，结实耐用。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>-2</Beauty>
+	<Rate>3</Rate>	
+	<Color>8D8570FF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<ClothesColorID>8</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>牛皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-4</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-6</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TigerLeather" Parent="LeatherBase">
+	
+	<ThingName>虎皮</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfFur</TexPath>
+	<Desc>一块虎皮，结实耐用。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>-2</Beauty>
+	<Rate>3</Rate>	
+	<Color>8D8570FF</Color>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<ClothesColorID>8</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>虎皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>-4</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-6</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>8D8570FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YaoLeather" Parent="LeatherBase">
+	
+	<ThingName>妖化的兽皮</ThingName>
+	<TexPath>res\Sprs\object\object_yaohuashoupi01</TexPath>
+	<Desc>妖兽的毛皮，蕴含妖力，冬暖夏凉，甚至可以隔绝灵气造成的伤害。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>8</Beauty>
+	<Rate>6</Rate>	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="20"/>
+				<SalePrice Value="4" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="6" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<ClothesColorID>7</ClothesColorID>
+			
+			<CostMultiplier>0.3</CostMultiplier>
+			<NamePrefix>妖皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0.02</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>14</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-18</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>CD00CDFF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>0.7</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YaoLeather1" Parent="LeatherBase">
+	
+	<ThingName>妖兽的韧皮</ThingName>
+	<TexPath>res\Sprs\object\object_yaoshourenpi01</TexPath>
+	<Desc>大妖的坚韧皮，蕴含庞大的妖力，冬暖夏凉，甚至可以有效隔绝灵气造成的伤害。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>8</Beauty>
+	<Rate>9</Rate>	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Leather">
+		 
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>10</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="10" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="75" />
+				<SalePrice Value="15" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<ClothesColorID>7</ClothesColorID>
+			
+			<CostMultiplier>0.3</CostMultiplier>
+			<NamePrefix>妖韧皮</NamePrefix>
+			
+			<LingShieldWhenBeMain>0.05</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>34</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-22</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>CD00CDFF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>0.7</LingNumberRate>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

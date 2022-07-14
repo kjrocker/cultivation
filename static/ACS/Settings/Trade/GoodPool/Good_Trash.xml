@@ -1,0 +1,86 @@
+<Defs><List>	
+	<Def Name="Trash">
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_BoarMeat</ItemName>
+			<ItemExtraInfo>
+				<YouPower>10</YouPower>
+				<Desc>此猪肉幽萃+10，飞一般的猪肉。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_StrangeMush</ItemName>
+			<ItemExtraInfo>
+				<YouPower>10</YouPower>
+				<Desc>此蘑菇幽萃+10，吃了不仅感觉像升天，而且真的会升天。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_MillVell</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_YaoLeather</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此手帕为妖兽皮所制，绝对看不见里面藏了什么。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_SewingDefender</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_SkyStone</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此手镯为天柱石所制，非常坚固耐用。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_StoneCutter</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_SilverBlock1</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此刀为寒精所制，寒光料峭，刺瞎敌人的双眼。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_SysAxe</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_SilverBlock1</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此斧子为火精所制，刀刀烈火，灰飞烟灭。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_SysPickaxe</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_StarEssenceBlock</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此镐为星髓所制，宇宙之浓缩，散发星辰之力。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_SysSickle</ItemName>
+			<ItemExtraInfo>
+				<Stuffs>
+					<li>Item_DarksteelBlock</li>
+				</Stuffs>
+				<YouPower>10</YouPower>
+				<Desc>此农具为玄铁所制，它好，贵，贵，贵！</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+	</Def>
+</List></Defs>

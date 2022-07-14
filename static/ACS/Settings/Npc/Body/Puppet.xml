@@ -1,0 +1,29 @@
+﻿<BodyDefs><List>
+
+<BodyDef Name="PuppetBody">	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="TheWholeBody" DisplayName="核心" Kind="Organ" Rate="0" Deadly="1">
+				<Function>
+					<li Kind="Movement" Value="1"/>
+					<li Kind="Operation" Value="0.5"/>
+				</Function>
+			</li> 
+		</Parts>
+	</Part>
+</BodyDef>
+
+<BodyDef Name="SYS_LOST">	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="TheWholeBody" DisplayName="核心" Kind="Organ" Rate="0" Deadly="1">
+				<Function>
+					<li Kind="Movement" Value="1"/>
+					<li Kind="Operation" Value="0.5"/>
+				</Function>
+			</li> 
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>

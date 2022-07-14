@@ -1,0 +1,1374 @@
+<Properties><List>
+	<Property Name="TestProperty1">
+		<BaseValue>0.7</BaseValue>
+		<DisplayName>测试数据</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc></Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>		
+	</Property>
+	
+<!--	<Property Name="TestProperty2">
+		<BaseValueS>MoveSpeed</BaseValueS>
+		<LuckWeight>0</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Qi" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.9,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Physique" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.8,0.9,1</li>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="TestProperty1" Weight="1"/>
+		</Properties>
+		
+	</Property>-->
+	
+	<!--基础属性-->
+	<!--全局工作速度，可被特性改变，影响全局速度-->
+	<Property Name="GlobalEfficiency">
+		<DisplayName>全局工作速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>修行者的基本工作速度，影响所有的工作。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>	
+	</Property>
+	<!--心情工作速度，根据心情不同而改变，影响全局速度-->
+	<Property Name="EmotionEfficiency">
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>3</MaxValue>
+		<MoodWeight Base="0.4" Addion="0.005"/>
+	</Property>
+	
+	<!--意识清醒程度，影响全局速度和成功率-->
+	<Property Name="ConsciousnessEfficiency">
+		<BaseValue>1</BaseValue>
+		<Functions>
+			<li Name="Consciousness" Weight="1"/>
+		</Functions>
+	</Property>
+	
+	<!--机能评价，反应人物身体机能的值，被健康值引用-->
+	<Property Name="FunctionsScore">
+		<BaseValue>1</BaseValue>
+		<Functions>
+			<li Name="Operation" Weight="0.4"/>
+			<li Name="Feeling" Weight="0.3"/>
+			<li Name="Movement" Weight="0.3"/>
+		</Functions>
+	</Property>
+	<!--体力活受伤几率-->
+	<Property Name="SmithingInjuredChance">
+		<DisplayName>锻造受伤几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行锻造工作时受伤的几率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.01</BaseValue>
+		<LuckWeight>-0.7</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		<Skills>
+			<li Name="Manual" Weight="1">15,10,9,8,5,5,5,3,3,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+			<li Name="Physique" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MiningInjuredChance">
+		<DisplayName>采掘受伤几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行采掘工作时受伤的几率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.01</BaseValue>
+		<LuckWeight>-0.7</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		<Skills>
+			<li Name="Mining" Weight="1">15,10,9,8,5,5,5,3,3,2,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+			<li Name="Physique" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="ConstructInjuredChance">
+		<DisplayName>建造受伤几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行建筑工作时受伤的几率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.01</BaseValue>
+		<LuckWeight>-0.7</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		<Skills>
+			<li Name="Building" Weight="1">15,10,9,8,5,5,5,3,3,2,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+			<li Name="Physique" Weight="0.5">5,2,1,0.9,0.8,0.7,0.6,0.6,0.6,0.55,0.5</li>
+		</FiveBase>
+	</Property>
+	
+	<!--医疗相关-->
+	<!--制药速度-->
+	<Property Name="DrugProductSpeed">
+		<DisplayName>制药速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行药物制作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Medicine" Weight="0.6">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+			<li Name="Manual" Weight="0.3">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+			<li Name="Farming" Weight="0.1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.6"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.2" Base="0.1" Addion="0.25"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+		
+	</Property>
+	<!--治疗速度-->
+	<Property Name="TreatSpeed">
+		<DisplayName>治疗速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行治疗工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Medicine" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.6"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.3" Base="0.1" Addion="0.15"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--治疗成功几率，如果成功那么判断治疗效果，如果失败则有40%几率导致疾病状态不变，60%几率发生0%-40%之间的随机恶化。-->
+	<Property Name="TreatSuccessChance">
+		<DisplayName>治疗成功率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>治疗成功的概率，如果失败会有可能导致伤势恶化。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		
+		<Skills>
+			<li Name="Medicine" Weight="1">0.5,0.7,0.9,1.1,1.3,1.5,1.7,1.9,2,2.1,2.2,2.3,2.4,2.5,2.5,2.5,3,3,3,3,3,3,3,3,3,3</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--治疗效果的预期值-->
+	<Property Name="TreatmentExpectQuality">
+		<DisplayName>治疗预期效果</DisplayName>
+		<DisplayValue>{0}％/秒</DisplayValue>
+		<Desc>预期治疗后伤势的恢复速度，会根据医生的状态在一定范围内随机。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0.3</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue> 
+		<Skills>
+			<li Name="Medicine" Weight="1">0.2,0.3,0.4,0.5,0.55,0.6,0.65,0.7,0.75,0.8,1,1.2,1.4,1.5,1.6,1.7,1.8,1.9,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="0.6" Base="0.6" Addion="0.1"/>
+			<li Name="Perception" Weight="0.4" Base="0.6" Addion="0.1"/>
+		</FiveBase>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--治疗效果随机范围的最小值（百分比）-->
+	<Property Name="TreatmentRealQualityPercentMin">
+		<DisplayName>治疗效果MIN</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行治疗时，治疗效果的随机最小值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>0.5</BaseValue>
+		<MinValue>0.01</MinValue> 
+		<MaxValue>1</MaxValue> 
+		
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="0.2" Addion="0.03"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<!--待定
+		<FiveBase>
+			<li Name="Intelligence" Weight="0.4" Base="0.4" Addion="0.1"/>
+			<li Name="Perception" Weight="0.4" Base="0.4" Addion="0.1"/>
+		</FiveBase>
+		-->  
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--治疗效果随机范围的最大值（百分比）-->
+	<Property Name="TreatmentRealQualityPercentMax">
+		<DisplayName>治疗效果MAX</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行治疗时，治疗效果的随机最大值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>0.5</BaseValue>
+		<MinValue>0.01</MinValue> 
+		<MaxValue>1.4</MaxValue> 
+		
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="0.6" Addion="0.04"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--烹饪-->
+	<!--做饭速度-->
+	<Property Name="CookingSpeed">
+		<DisplayName>烹饪速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行烹饪工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Cooking" Weight="0.7">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+			<li Name="Farming" Weight="0.3">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.6"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.6" Base="0.4" Addion="0.1"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--屠宰速度-->
+	<Property Name="ButcherSpeed">
+		<DisplayName>屠宰速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行屠宰工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Cooking" Weight="0.5">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+			<li Name="Fight" Weight="0.3">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+			<li Name="Medicine" Weight="0.2">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.8"/>
+			<li Name="Feeling" Weight="0.2"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.7" Base="0.2" Addion="0.25"/>
+			<li Name="Perception" Weight="0.3" Base="0.4" Addion="0.1"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--屠宰产肉量的修正系数-->
+	<Property Name="ButcherYieldEfficiency">
+		<DisplayName>屠宰产量</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行屠宰时，皮毛肉类的产量比率。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.2</MinValue> 
+		<MaxValue>1.2</MaxValue> 
+		<Skills>
+			<li Name="Cooking" Weight="1">0.4,0.5,0.6,0.7,0.8,0.9,1,1,1,1,1,1,1,1,1,1,1.2,1.2,1.2,1.2,1.2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.7" Base="0.6" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--做饭成功率，成功则做出对应饭菜，失败则产出搞砸的食物 name = Item_HorribleMeal-->
+	<Property Name="CookingSuccessChance">
+		<DisplayName>烹饪成功率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>做饭时的成功率，失败会产出搞砸的饭菜。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0.2</LuckWeight>
+		<MinValue>0.4</MinValue> 
+		<MaxValue>0.999</MaxValue> 
+		<Skills>
+			<li Name="Cooking" Weight="1">0.4,0.5,0.6,0.7,0.8,0.9,1,1,1,1,1,1,1,1,1,1,1.2,1.2,1.2,1.2,1.2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--建筑-->
+	<!--切石速度-->
+	<Property Name="StoneWorkSpeed">
+		<DisplayName>石料加工速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>打磨切割石料时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Building" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--建筑速度-->
+	<Property Name="ConstructionSpeed">
+		<DisplayName>建筑速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行建筑工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Building" Weight="1">0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,1.55,1.6,2.5,2.5,2.5,2.5,2.5</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+	</Property>
+	<!--拆除速度-->
+	<Property Name="BuildingRemoveSpeed">
+	
+		<BaseValue>4</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Building" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--建筑成功率，建筑失败则材料被浪费，并且执行一次2倍几率的建筑受伤判定-->
+	<Property Name="ConstructSuccessChance">
+		<DisplayName>建筑成功率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>建筑时的成功几率，如果失败则会导致受伤。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		<MaxValue>1</MaxValue> 
+		<Skills>
+			<li Name="Building" Weight="1">0.7,0.75,0.8,0.85,0.9,1,1,1,1,1,1,1,1,1,1,1,1.2,1.2,1.2,1.2,1.2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--种植-->
+	<!--种植速度-->
+	<Property Name="PlantWorkSpeed">
+		<DisplayName>种植速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行种植工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.33</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Farming" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.7" Base="0.2" Addion="0.2"/>
+			<li Name="Perception" Weight="0.3" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--收获速度-->
+	<Property Name="PlantHarvestSpeed">
+		<DisplayName>收获速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行收获工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Farming" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.7" Base="0.2" Addion="0.2"/>
+			<li Name="Perception" Weight="0.3" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--收获产量调整系数-->
+	<Property Name="PlantHarvestYieldEfficiency">
+		<DisplayName>收获产量</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>收获农作物时，农作物的产量比率。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.8</BaseValue>
+		<MinValue>0.2</MinValue> 
+		<MaxValue>1.2</MaxValue> 
+		<Skills>
+			<li Name="Farming" Weight="1">0.4,0.5,0.6,0.7,0.8,0.9,1,1,1,1,1,1,1,1,1,1,1.2,1.2,1.2,1.2,1.2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.7" Base="0.6" Addion="0.1"/>
+			<li Name="Physique" Weight="0.3" Base="0.6" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--采矿-->
+	<!--挖矿速度-->
+	<Property Name="MiningSpeed">
+		<DisplayName>采掘速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行采掘工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>0.33</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Mining" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.8"/>
+			<li Name="Feeling" Weight="0.2"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.8" Base="0.2" Addion="0.2"/>
+			<li Name="Perception" Weight="0.2" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--挖矿金属产量调整系数，注意只有在挖矿时才有，挖岩石时不生效-->
+	<Property Name="MiningYieldEfficiency">
+		<DisplayName>采掘产量</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>采掘矿物时的产量比率。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0.8</BaseValue>
+		<MinValue>0.2</MinValue> 
+		<MaxValue>1.2</MaxValue> 
+		<Skills>
+			<li Name="Mining" Weight="1">0.4,0.5,0.6,0.7,0.8,0.9,1,1,1,1,1,1,1,1,1,1,1.2,1.2,1.2,1.2,1.2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.7" Base="0.6" Addion="0.1"/>
+			<li Name="Physique" Weight="0.3" Base="0.6" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--艺术-->
+	<!--艺术创作速度-->
+<!--	<Property Name="ArtWorkSpeed">
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Art" Weight="0.5">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+			<li Name="Manual" Weight="0.5">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.3" Base="0.4" Addion="0.2"/>
+			<li Name="Intelligence" Weight="0.7" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>-->
+	<!--制作品质加值，这个加值在执行任何产物有品质值的制作任务时都会生效，例如打铁，做衣服，当然也包括做艺术品本身。-->
+	<Property Name="MadeQualityAddValue">
+		<DisplayName>制作品质加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行制作任务时，成品完成时的品质加值。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.4</MaxValue> 
+		<Skills>
+			<li Name="Art" Weight="1" Base="0" Addion="0.01"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.4" Base="0.4" Addion="0.1"/>
+			<li Name="Intelligence" Weight="0.6" Base="0.4" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<Property Name="ArtRateValue">
+		<DisplayName>艺术产物品阶预期值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行制作任务时，成品完成时的品质加值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>1</MinValue> 
+		<MaxValue>6</MaxValue> 
+		<Skills>
+			<li Name="Art" Weight="1" Base="1" Addion="0.15"/>
+		</Skills>
+	</Property>
+	<!--制造-->
+	<!--锻造速度-->
+	<Property Name="SmithingSpeed">
+		<DisplayName>锻造速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行锻造工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Manual" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.7" Base="0.4" Addion="0.2"/>
+			<li Name="Perception" Weight="0.3" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--手工速度-->
+	<Property Name="HandworkSpeed">
+		<DisplayName>手工速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行手工制作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Manual" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.8" Base="0.4" Addion="0.2"/>
+			<li Name="Physique" Weight="0.2" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--缝纫速度-->
+	<Property Name="TailoringSpeed">
+		<DisplayName>缝纫速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行缝制工作时的工作速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Manual" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--制作产物预期品质-->
+	<Property Name="ManufactureExpectQuality">
+		<DisplayName>产物预期品质</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行制作时，产物品质的预期值，成品数值会在预期值上下范围内浮动。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue> 
+		<Skills>
+			<li Name="Manual" Weight="1" Base="0.05" Addion="0.01"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.5"/>
+			<li Name="Feeling" Weight="0.5"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="0.4" Base="0.4" Addion="0.2"/>
+			<li Name="Perception" Weight="0.3" Base="0.4" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--制作产物随机范围最小值（百分比）-->
+	<Property Name="ManufactureRealQualityPercentMin">
+		<DisplayName>制作品质MIN</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行制作时，品质随机范围的最小值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	
+		<BaseValue>1</BaseValue>
+		<MinValue>0.01</MinValue> 
+		<MaxValue>10</MaxValue> 
+		
+		<Skills>
+			<li Name="Manual" Weight="1" Base="0.3" Addion="0.05"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--制作产物随机范围最大值（百分比）-->
+	<Property Name="ManufactureRealQualityPercentMax">
+		<DisplayName>制作品质MAX</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行制作时，品质随机范围的最大值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>0.01</MinValue> 
+		<MaxValue>10</MaxValue> 
+		
+		<Skills>
+			<li Name="Manual" Weight="1" Base="2" Addion="0.075"/>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.6"/>
+			<li Name="Feeling" Weight="0.4"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--锻造品质加值-->
+	<Property Name="SmithingQualityAddValue">
+		<DisplayName>锻造品质加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行锻造时，成品品质的加值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>0</BaseValue>
+
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--手工品质加值-->
+	<Property Name="HandworkQualityAddValue">
+		<DisplayName>手工品质加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行手工制造时，成品品质的加值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>0</BaseValue>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--裁缝品质加值-->
+	<Property Name="TailoringQualityAddValue">
+		<DisplayName>缝制品质加值</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行衣物制作时，成品品质的加值。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+		
+		<BaseValue>0</BaseValue>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--研究-->
+	<!--玄学研究速度-->
+	<!--<Property Name="ResearchSpeed">
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Skills>
+			<li Name="Theory" Weight="1">0.5,0.6,0.7,0.8,0.9,1,1.05,1.1,1.15,1.2,1.25,1.3,1.35,1.4,1.45,1.5,2,2,2,2,2</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.2"/>
+			<li Name="Feeling" Weight="0.8"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>-->
+	<!--发生研究突破的概率，如果突破则当前项目进度跃进一个大额百分比，并且有几率发现新科技项（待设计）-->
+<!--	<Property Name="BreakThroughChance">
+		<BaseValue>0.02</BaseValue>
+		<LuckWeight>0.6</LuckWeight>
+	
+		<Skills>
+			<li Name="Theory" Weight="1">0.4,0.5,0.6,0.7,0.8,0.9,1,1,1,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,2,2.5,3</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Feeling" Weight="0.8"/>
+		</Functions>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>-->
+	
+	<!--割除-->
+	<!--割除（伐木，移除场景中的灌木，小石块等的速度）-->
+	<Property Name="CuttingSpeed">
+		<DisplayName>割除速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行伐木，除草等行为时的速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Movement" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.7" Base="0.4" Addion="0.2"/>
+			<li Name="Perception" Weight="0.3" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<!--狩猎-->
+	<!--动物产物收集速度（挤奶，剪毛）-->
+	<Property Name="AnimalGatherSpeed">
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		
+		<Functions>
+			<li Name="Operation" Weight="0.5"/>
+			<li Name="Movement" Weight="0.5"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.5" Base="0.4" Addion="0.2"/>
+			<li Name="Perception" Weight="0.5" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--动物产物产量调整系数-->
+	<Property Name="AnimalGatherYieldEfficiency">
+		<BaseValue>1</BaseValue>
+		<MinValue>0.2</MinValue> 
+		<MaxValue>1.2</MaxValue> 
+		
+		<Functions>
+			<li Name="Operation" Weight="0.7"/>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.6" Base="0.6" Addion="0.1"/>
+			<li Name="Physique" Weight="0.4" Base="0.6" Addion="0.1"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	<!--狩猎工具生效成功率（例如套索，弓箭，陷阱等，该内容尚待设计）
+	<Property Name="HuntingToolEffectiveChance">
+		<BaseValue>0.4</BaseValue>
+		<LuckWeight>0.2</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.65"/>
+			<li Name="Feeling" Weight="0.35"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.8" Base="0.6" Addion="0.3"/>
+			<li Name="Physique" Weight="0.2" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>-->
+	<!--驯服野兽成功率，失败则有5%几率引发动物攻击-->
+	<Property Name="TameSuccessChance">
+		<BaseValue>0.03</BaseValue>
+		<LuckWeight>0.35</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.2</MaxValue>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.65"/>
+			<li Name="Feeling" Weight="0.35"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Charisma" Weight="0.6" Base="0.6" Addion="0.3"/>
+			<li Name="Perception" Weight="0.4" Base="0.2" Addion="0.2"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+
+	<!--救灾-->
+	<!--救灾速度-->
+	<Property Name="DisasterFightingSpeed">
+		<DisplayName>救灾速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行救灾行为时的速度。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		
+		<Functions>
+			<li Name="Operation" Weight="0.4"/>
+			<li Name="Feeling" Weight="0.4"/>
+			<li Name="Movement" Weight="0.6"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.5" Base="0.4" Addion="0.2"/>
+			<li Name="Perception" Weight="0.5" Base="0.4" Addion="0.2"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			
+		</ParallelProperties>
+	</Property>
+	<!--救灾成功率，如果失败则根据灾害种类，有20%几率受到伤害。-->
+	<Property Name="DisasterFightingSuccessChance">
+		<DisplayName>救灾成功率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行救灾时的成功率，如果失败则有可能受对应的伤。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>0.8</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		
+		<Functions>
+			<li Name="Operation" Weight="0.65"/>
+			<li Name="Feeling" Weight="0.35"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.5" Base="0.2" Addion="0.25"/>
+			<li Name="Physique" Weight="0.5" Base="0.2" Addion="0.25"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--搬运-->
+	<!--携带重物时移动速度的减少百分比,根据携带物品的个数等比例乘算。-->
+	<Property Name="WeightCarryLossSpeedRate">
+		
+		<BaseValue>0.005</BaseValue>
+		<MinValue>0</MinValue> 
+		<MaxValue>1</MaxValue>
+		<FiveBase>
+			<li Name="Perception" Weight="0.5" Base="1" Addion="-0.08"/>
+			<li Name="Physique" Weight="0.5" Base="1" Addion="-0.08"/>
+		</FiveBase>
+		
+	</Property>
+	
+	<!--清洁-->
+	<!--清洁速度-->
+	<Property Name="CleanSpeed">
+		<DisplayName>清洁速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行清洁行为时的速度，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>	
+		<SupportCustom>1</SupportCustom>
+		
+		<BaseValue>1</BaseValue>
+		<MaxValue>10</MaxValue>
+		<MinValue>0</MinValue> 
+		
+		<Functions>
+			<li Name="Operation" Weight="0.5"/>
+			<li Name="Movement" Weight="0.5"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Physique" Weight="0.3" Base="0.7" Addion="0.1"/>
+			<li Name="Perception" Weight="0.7" Base="0.7" Addion="0.1"/>
+		</FiveBase>
+		
+		<ParallelProperties>
+			<li Name="GlobalEfficiency"/>
+			<li Name="EmotionEfficiency"/>
+		</ParallelProperties>
+	</Property>
+	<!--。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。第二批属性-->
+	<!--社交-->
+	<!--社交档位加值-->
+	<Property Name="SocialContactLevelAddValue">
+		<BaseValue>1</BaseValue>
+		<MaxValue>2</MaxValue>
+		<MinValue>-1</MinValue> 
+		
+		<Skills>
+			<li Name="SocialContact" Weight="1">-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2</li>
+		</Skills>
+	</Property>
+	<!--打架概率调整值-->
+	<Property Name="FightingProbabilityAddValue">
+		<BaseValue>1</BaseValue>
+		<MaxValue>10</MaxValue>
+		<MinValue>-10</MinValue> 
+		
+		<Skills>
+			<li Name="SocialContact" Weight="1">0.01,0.008,0.006,0.004,0.002,0,-0.001,-0.002,-0.003,-0.004,-0.005,-0.006,-0.007,-0.008,-0.009,-0.01,-0.02,-0.04,-0.06,-0.08,-0.1</li>
+		</Skills>
+	</Property>
+	<!--社交倾向-->
+	<Property Name="SocialInclination">
+		<DisplayName>社交倾向</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>进行社交行为的倾向，受心情影响。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<BaseValue>1</BaseValue>
+		<MaxValue>10</MaxValue>
+		<MinValue>-10</MinValue> 
+		
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="0.3" Addion="0.05"/>
+		</FiveBase>
+	</Property>
+	<!--访客劝说基础成功率-->
+	<Property Name="SocialContactBaseSuccess">
+		<BaseValue>0.4</BaseValue>
+		<MaxValue>10</MaxValue>
+		<MinValue>0</MinValue> 
+		<FiveBase>
+			<li Name="Charisma" Weight="1">0.5,0.55,0.6,0.65,0.7,0.75,0.85,0.95,1.1,1.25,1.5</li>
+		</FiveBase>
+		<Skills>
+			<li Name="SocialContact" Weight="1" Base="0.8" Addion="0.02"/>
+		</Skills>
+	</Property>
+	
+	
+	<!--环境生病概率倍率-->
+	<Property Name="EnvironmentDiseaseAddP">
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>		
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+	</Property>
+</List></Properties>

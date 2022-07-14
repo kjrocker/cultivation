@@ -1,0 +1,1571 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+
+	<Story Name="Story_BoxFind1">
+		<DisplayName>搜索箱子</DisplayName>
+		<Desc>[NAME]发现了一个陈旧的货箱，他仔细搜索了箱子，发现不少有用的东西。</Desc>
+		<Kind>None</Kind>
+		<ItemCache2>  <!--石材池子-->
+			<li>
+				<ThingDef>Item_BrownRock</ThingDef>
+				<Count>20</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Marble</ThingDef>
+				<Count>20</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_GrayRock</ThingDef>
+				<Count>20</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</ItemCache2>
+		<ItemCache3>  <!--木料池子-->
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>30</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</ItemCache3>
+		<ItemCache4>  <!--金属池子-->
+			<li>
+				<ThingDef>Item_IronRock</ThingDef>
+				<Count>15</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</ItemCache4>
+		<ItemCache5>  <!--布料皮革池子-->
+			<li>
+				<ThingDef>Item_CottonCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_DeepBlueCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PurpleCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_YellowCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_BlueCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_WhiteCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_BlackCloth</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_BoarLeather</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RabbitLeather</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_WolfLeather</ThingDef>
+				<Count>60</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</ItemCache5>
+		<GlobleOKResult>
+		<![CDATA[	
+			local nR = me:RandomInt(1, 5)
+			if nR == 1 then
+				me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+			elseif nR == 2 then
+				me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+			elseif nR == 3 then
+				me:DropAwardItemFromCache(story.ItemCache4, 1, 1);
+			else
+				me:DropAwardItemFromCache(story.ItemCache5, 1, 1);
+			end
+			story:RemoveBindItem();
+		]]>
+		</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="Story_BoxFind2">
+		<DisplayName>搜索尸体</DisplayName>
+		<Desc>[NAME]仔细搜索了尸体，发现大部分物件都已腐朽，只有随身的兵器还能使用。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:DropRandomItem("Weapon", 2, 4);story:RemoveBindItem();</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	
+	<Story Name="Story_BoxFind3">
+		<DisplayName>搜索尸体</DisplayName>
+		<Desc>    [NAME]仔细搜索了尸体，尸体上竟然射出一道光华钻入[NAME]脑海之中。[NAME]惊讶的发现，自己记忆中多了许多修行之法。\n\n   [color=#000000]“这里到底发生了什么事？这些功法从何而来？尸体生前有怎样的经历？”[/color]\n    [NAME]惊喜之余不由得疑问丛生。\n\n    可惜的是，这些前尘往事，无人可以应答了……</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:UnLockOldGong();story:RemoveBindItem();</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	
+	<Story Name="Story_BoxFind4">
+		<DisplayName>搜索尸体</DisplayName>
+		<Desc>[NAME]仔细搜索了尸体，发现大部分物件都已腐朽，只有随身的兵器还能使用。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult>me:DropRandomItem("Weapon", 2, 4);story:RemoveBindItem();</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+	
+	<Story Name="Story_Item_StoneBox">
+		<DisplayName>石匣</DisplayName>
+		<Desc>神秘道士赐予你们的石匣，大约一尺见方，水火不侵，十分灵异。其外壳上时不时闪烁光彩，不似凡物。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>徒手打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("顺着石匣的裂缝，[NAME]轻松的打开了匣子"));me:AddMsg(XT("打开的石匣中发现一本小册子和一枚丹药，翻开一看竟然是一本可以修行的功法。"));me:DropAwardItem("Item_BasePracticeDrug",1);me:DropAwardItem("Item_SpellPaper", 10);story:RemoveBindItem();
+				
+				local nR = me:RandomInt(1, 6);
+				if nR == 1 then
+					me:UnLockGong("Gong_1_Shui");
+				elseif nR == 2 then
+					me:UnLockGong("Gong_8_Jin");
+				elseif nR == 3 then
+					me:UnLockGong("Gong_9_Mu");
+				elseif nR == 4 then
+					me:UnLockGong("Gong_10_Huo");
+				else
+					me:UnLockGong("Gong_11_Tu");
+				end
+				]]>	
+				</OKResult>
+				<NOResult>me:AddMsg(XT("石匣非常坚固，不借助工具的话几乎不可能打开。"));</NOResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_StoneBox1">
+		<DisplayName>石匣</DisplayName>
+		<Desc>南屏村猎户张二娃从月轮山麓一具尸体上取得的匣子，正是太一门制式的宝匣。其外壳上印有一柄长剑与酒葫芦交叉的标记，竟然是二师兄的独门印记。[NAME]脑海中想起二师兄音容笑貌，心下恻然。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]小心翼翼的打开了石匣，其中整整齐齐摆放着几本小册子，几瓶丹药，还有一块星髓。"));me:DropEsoteric("NanGongYiCe");me:DropEsoteric("DanFang_2");me:DropEsoteric("SpellEsoterica_3");me:DropAwardItem("Item_Dan_WuLingSan",11);me:DropAwardItem("Item_Dan_DredgeQi1",12);me:DropAwardItem("Item_Dan_ReBorn",1);me:DropAwardItem("Item_StarEssence",1);story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_StoneBox2" Parent="BaseFillingStory">
+		<DisplayName>古旧石匣</DisplayName>
+		<Desc>从山岩之中挖掘出来的石匣，看上去有些年代了，不知道里面有什么东西。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				story:RemoveBindItem();
+				local nR = me:RandomInt(1, 24); 
+				local tIL = {"Wood","Rock","Metal","Weapon"};
+				if nR <= 4 then
+					me:AddMsg(XT("[NAME]打开石匣，发现其中装有一瓶丹药。"));me:DropAwardItemFromCache(story.ItemCache4, 1);
+				elseif nR <= 8 then
+					me:AddMsg(XT("[NAME]打开石匣，发现其中藏有一些珍贵的材料。"));me:DropAwardItemFromCache(story.ItemCache3, 1);
+				elseif nR <= 12 then
+					me:AddMsg(XT("[NAME]打开石匣，发现其中藏有一件古代奇珍，竟然可以镇压风水。"));me:DropRandomItem(tIL[world:RandomInt(1,#tIL+1)], 7, 11, true);
+				elseif nR <= 15 then
+					me:AddMsg(XT("[NAME]打开石匣，竟然在其中发现一本书册。"));me:DropEsotericFromCache(story.ItemCache, 1);
+				elseif nR <= 18 then
+					me:AddMsg(XT("[NAME]打开石匣，竟然在其中发现一门神通。"));me:DropEsotericFromCache(story.ItemCache2, 1);
+				elseif nR <= 21 then
+					me:AddMsg(XT("[NAME]打开石匣，竟然在其中发现一本秘籍。"));me:DropRandomItem("Esoterica");
+				elseif nR <= 22 then
+					if world:IsGongUnLocked("Gong_5_Tu") == false then
+						me:AddMsg(XT("[NAME]打开石匣，瞬间一道七彩光华直冲云霄，这平凡无奇的石匣中竟然藏有一本上古失传的功法传承。"));me:UnLockGong("Gong_5_Tu");   
+					else
+						me:AddMsg(XT("[NAME]打开石匣，竟然在其中发现一门神通。"));me:DropEsotericFromCache(story.ItemCache2, 1);
+					end
+				else
+					if world:IsGongUnLocked("God_Gong_3") == false then
+						me:AddMsg(XT("[NAME]打开石匣，瞬间一道七彩光华直冲云霄，这平凡无奇的石匣中竟然藏有一本上古失传的功法传承。"));me:UnLockGong("God_Gong_3");   
+					else
+						me:AddMsg(XT("[NAME]打开石匣，竟然在其中发现一门神通。"));me:DropEsotericFromCache(story.ItemCache2, 1);
+					end
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_E_FaBaoBox" Parent="BaseFillingStory">
+		<DisplayName>太一宝匣</DisplayName>
+		<Desc>在灭门之夜，你发现器庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几件珍贵的法宝装入匣中带走。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了太一宝匣，取出其中的物件。"));me:DropFabao(0,"Item_WeaponSword",nil,nil,nil,0.95,me:RandomInt(1, 5));me:DropFabao(0,"Item_WeaponSword",nil,nil,nil,0.95,me:RandomInt(1, 5));me:DropFabao(0,"Item_WeaponSword",nil,nil,nil,0.95,me:RandomInt(6, 8));story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_E_DanBox" Parent="BaseFillingStory">
+		<DisplayName>太一宝匣</DisplayName>
+		<Desc>在灭门之夜，你发现药庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几瓶珍贵的丹药装入匣中带走。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了太一宝匣，取出其中的物件。"));me:DropAwardItemFromCache(story.ItemCache4, 1);me:DropAwardItemFromCache(story.ItemCache4, 1);me:DropAwardItemFromCache(story.ItemCache4, 1);me:DropAwardItem("Item_Dan_ExtremeLofty", 1);story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_E_MiJiBox" Parent="BaseFillingStory">
+		<DisplayName>太一宝匣</DisplayName>
+		<Desc>在灭门之夜，你发现藏经楼禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几册珍贵的秘籍装入匣中带走。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了太一宝匣，取出其中的物件。"));me:DropEsotericFromCache(story.ItemCache, 1);me:DropEsotericFromCache(story.ItemCache, 1);me:DropRandomItem("Esoterica");me:DropEsoteric("SeachSoul");story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_E_FuBox" Parent="BaseFillingStory">
+		<DisplayName>太一宝匣</DisplayName>
+		<Desc>在灭门之夜，你发现云箓房禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几张珍贵的符箓装入匣中带走。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了太一宝匣，取出其中的物件。"));me:DropSpell(1, "Spell_RecoveryPower", 0.95);me:DropSpell(1, "Spell_GlobalEfficiency", 0.95);me:DropSpell(1, "Spell_VisionRadius", 0.95);me:DropSpell(1, "Spell_MoveSpeed2", 0.95);story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_LunHui_Box1" Parent="BaseFillingStory">
+		<DisplayName>神奇符咒匣</DisplayName>
+		<Desc>陆夫人随身携带的神奇符咒匣，其中装有三张神奇的符咒。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了神奇符咒匣，取出其中的物件。"));me:DropSpell(1, "", 0.95);me:DropSpell(1, "", 0.95);me:DropSpell(1, "", 0.95);story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_LunHui_Box2" Parent="BaseFillingStory">
+		<DisplayName>神符匣</DisplayName>
+		<Desc>杨树随身携带的神符匣，其中藏有一张绝品符咒。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]开了神符匣，取出其中的物件。"));me:DropSpell(2, "", 1);story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_ZuShiZhiCi" Parent="BaseFillingStory">
+		<DisplayName>祖师之赐</DisplayName>
+		<Desc>祖师之赐，其中藏有珍惜之宝物。</Desc>
+		<Kind>None</Kind>
+		<ItemCache> 
+			
+			<li>
+				<ThingDef>Item_SoulCrystalYou</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SoulCrystalLing</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SoulCrystalNing</ThingDef>
+				<Count>9</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_EarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LifeStream</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Soul1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Soul2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Soul3</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Soul4</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			
+			<li>
+				<ThingDef>Item_Dan_Ling2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Ling3</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_Defense</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_FiveBase1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_FiveBase2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_FiveBase3</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_FiveBase4</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_FiveBase5</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			
+			<li>
+				<ThingDef>Item_Dan_FiveBaseFromLife</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseLife3</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseLife2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseLife4</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseLife5</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseLife1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_HundredRefine</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseNeckCountdown1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_IncreaseNeckCountdown2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Dan_ExtremeLofty</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</ItemCache>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+					local nR = me:RandomInt(0,5)
+					if nR == 0 then
+						local tItem = {"Item_SpellPaper","Item_Dice","Item_SmallBell","Item_Bracelet","Item_Handkerchief","Item_PerfumeBag","Item_Other_PuppetTest","Item_WeaponBow","Item_WeaponKnife","Item_WeaponLance","Item_WeaponSword","Item_WeaponHalbert","Item_WeaponAxeRing","Item_Umbrella","Item_SysAcupuncture","Item_FunChess","Item_FunMusic","Item_FunPoem","Item_FunPainting","Item_Shit"}
+						local nT = me:RandomInt(1, #tItem + 1)
+						me:DropFabao(0,tItem[nT],"Item_Other_BuZhiMing","",XT("祖师自天界赐下的神物。"),1,12);
+					elseif nR == 1 then
+						me:DropAwardItem("Item_Dan_TreeEXP", 1);
+					elseif nR >= 2 then
+						me:DropAwardItemFromCache(story.ItemCache, 1, 9);
+					end
+					story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_BenYuan">
+		<DisplayName>炼化天道本源</DisplayName>
+		<Desc>炼化天道本源必须修习同系功法到最高境界才有可能成功。道行越高，炼化成功的可能性越高。然而此举有干天和，一旦失败将身受重创，增加天谴。是否要炼化天道本源？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>炼化</Display>
+				<OKResult>
+				<![CDATA[	
+				local itemobj = story:GetBindThing()
+				local nE = 0
+				if itemobj.ElementKind == g_emElementKind.None then
+					nE = 0
+				elseif itemobj.ElementKind == g_emElementKind.Jin then
+					nE = 1
+				elseif itemobj.ElementKind == g_emElementKind.Mu then
+					nE = 2
+				elseif itemobj.ElementKind == g_emElementKind.Shui then
+					nE = 3
+				elseif itemobj.ElementKind == g_emElementKind.Huo then
+					nE = 4
+				elseif itemobj.ElementKind == g_emElementKind.Tu then
+					nE = 5
+				else
+					nE = 6
+				end
+				if nE == me:GetGElementKind() then
+					if me:GetGLevel() >= 12 then
+						local nR = world:RandomInt(150,300)
+						if nR <=  me:GetDaoHang() then
+							me:AddMsg(XT("[NAME]尝试炼化天道本源，也许是机缘所致，竟然有惊无险的完成了炼化。"));
+							local nC = me:GetFlag(84);
+							me:SetFlag(84,nC + 1);
+							local nV = math.floor(math.max(0,(1-nC * 0.15)) * me:RandomInt(10,30))
+							me:ModifierProperty("AbilityLvAddV",-nV);
+							if nC <= 2 then
+								me:AddMsg(XT("[NAME]因此得以窥视部分天道，大有所获。"));me:AddMsg(string.format(XT("[NAME]的道行降低了%s点。"), tostring(nV)));
+							elseif nC <= 4 then
+								me:AddMsg(XT("[NAME]因此得以窥视部分天道，不过因数次参悟，收效已微。"));me:AddMsg(string.format(XT("[NAME]的道行降低了。%s点。"), tostring(nV)));
+							elseif nC <= 6 then
+								me:AddMsg(XT("[NAME]因此得以窥视部分天道，不过因多次参悟，收效已微忽其微。"));me:AddMsg(string.format(XT("[NAME]的道行降低了。%s点。"), tostring(nV)));
+							elseif nC <= 7 then
+								me:AddMsg(XT("[NAME]多次窥视天道，渐渐有所心得，终于借此机缘，分化了一条元神分神。"));me:DivideGodSoul(true,1);
+							else
+								me:AddMsg(XT("[NAME]因此得以窥视部分天道，不过因太多次参悟，已完全没有感悟了。"));
+							end
+						else
+							me:AddMsg(XT("[NAME]尝试炼化天道本源，然而最终还是因道行不够，而没能驾驭其中蕴含的天道气息。"));me:AddMsg(XT("虽然只是一丝气息的泄露，但天道瞬间反噬，[NAME]亦身受重伤……"));me:AddDamage("Damage_TianDaoBenYuan1", "Brain", me:RandomFloat(0, 0.75), XT("天道爆发"));me:ModifierProperty("GodPenaltyAddV",me:RandomInt(10,30));
+						end
+					else
+						me:AddMsg(XT("以[NAME]的境界远远不能驾驭此等蕴含天道之息的神物，[NAME]刚刚开始炼化，天道本源便剧烈的爆发开，将[NAME]灵识撕的粉碎。[NAME]瞬间殒命。"));me:AddDamage("Damage_TianDaoBenYuan2", "Brain", 1, XT("天道爆发"));
+					end
+				else
+					me:AddMsg(XT("[NAME]所修功法与这块天道本源完全不匹配，[NAME]刚刚开始炼化，天道本源便剧烈的爆发开，将[NAME]灵识撕的粉碎。[NAME]瞬间殒命。"));me:AddDamage("Damage_TianDaoBenYuan2", "Brain", 1, XT("天道爆发"));
+				end
+				story:RemoveBindItem();
+				]]>	
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>	
+				me:AddMsg(XT("[NAME]还是决定放弃吸收本源结晶。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_SuoYingZhiJuan" Parent="BaseFillingStory">
+		<DisplayName>缩影之卷</DisplayName>
+		<Desc>记录有天地诞生至今所有的生灵历世之缩影。如能知晓对应生灵之真名，可以将其自图卷中召唤具现而出。乃是开天辟地时诞生的十二件混沌灵宝之一。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>	
+				me:AddMsg(XT("[NAME]觉得还是不要使用修改器为好。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_BossSoulItem" Parent="BaseFillingStory">
+		<DisplayName>参悟</DisplayName>
+		<Desc>[NAME]试图从中获取一些有用的信息。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>运转元神</Display>
+				<OKResult>
+				<![CDATA[	
+					local nR = world:RandomInt(1, 21);
+					local nY = world:RandomInt(5, 60);
+					if me:GetGLevel() >= 10 then
+						if story:GetBindThing().def.Name == "Item_BossLong_NiLin" then
+							if me:GetFlag(76) == 0 then
+								me:AddMsg(XT("[NAME]运转元神，小心的投入蛟龙的逆鳞中。在接触的瞬间，无数破碎的记忆旋涡便将[NAME]吞没。"));me:AddMsg(string.format(XT("虽然外界只有一瞬，但识海之中不辩春秋，[NAME]在记忆旋涡中沉浮，瞬间已过%s年，等到[NAME]清醒，记忆里已经多了一些陌生的信息。"), tostring(nY)));
+								if me:GetLuck() > nR then
+									me:LearnEsoteric("Other_Esoterica_LongDan", true);me:SetFlag(76, 1);
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							else
+								if me:GetLuck() > nR then
+									local nRk = world:RandomInt(1, 11)
+									local sEdesc = nil
+									if nRk <= 5 then
+										sEdesc = XT("大量的")
+									else
+										sEdesc = XT("巨量的")
+									end
+									me:LearnEsotericCustomize(XT("真龙秘法-"), 3, 1, true, (0.5 + 0.1 * nRk), math.floor(4 + 0.5 * nRk), 4, sEdesc)
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							end
+							me.npcObj.PropertyMgr:AddAge(nY);me:AddMsg(string.format(XT("[NAME]苍老了%s年。"), tostring(nY)));
+						elseif story:GetBindThing().def.Name == "Item_BossFeng_HongYu" then
+							if me:GetFlag(77) == 0 then
+								me:AddMsg(XT("[NAME]运转元神，小心的投入凶凤的真焱玉中。在接触的瞬间，无数破碎的记忆旋涡便将[NAME]吞没。"));me:AddMsg(string.format(XT("虽然外界只有一瞬，但识海之中不辩春秋，[NAME]在记忆旋涡中沉浮，瞬间已过%s年，等到[NAME]清醒，记忆里已经多了一些陌生的信息。"), tostring(nY)));
+								if me:GetLuck() > nR then
+									me:LearnEsoteric("Other_Esoterica_FengDan", true);me:SetFlag(77, 1);
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							else
+								if me:GetLuck() > nR then
+									local nRk = world:RandomInt(1, 11)
+									local sEdesc = nil
+									if nRk <= 5 then
+										sEdesc = XT("大量的")
+									else
+										sEdesc = XT("巨量的")
+									end
+									me:LearnEsotericCustomize(XT("飞凰秘法-"), 4, 2, true, (0.5 + 0.1 * nRk), math.floor(4 + 0.5 * nRk), 4, sEdesc)
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							end
+							me.npcObj.PropertyMgr:AddAge(nY);me:AddMsg(string.format(XT("[NAME]苍老了%s年。"), tostring(nY)));
+						elseif story:GetBindThing().def.Name == "Item_BossZhuLong_LongYu" then
+							if me:GetFlag(78) == 0 then
+								me:AddMsg(XT("[NAME]运转元神，小心的投入混沌的龙玉中。在接触的瞬间，无数破碎的记忆旋涡便将[NAME]吞没。"));me:AddMsg(string.format(XT("虽然外界只有一瞬，但识海之中不辩春秋，[NAME]在记忆旋涡中沉浮，瞬间已过%s年，等到[NAME]清醒，记忆里已经多了一些陌生的信息。"), tostring(nY)));
+								if me:GetLuck() > nR then
+									me:LearnEsoteric("Other_Esoterica_ZhuLongDan", true);me:SetFlag(78, 1);
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							else
+								if me:GetLuck() > nR then
+									local nRk = world:RandomInt(1, 11)
+									local sEdesc = nil
+									if nRk <= 5 then
+										sEdesc = XT("大量的")
+									else
+										sEdesc = XT("巨量的")
+									end
+									me:LearnEsotericCustomize(XT("阴阳秘法-"), 0, 0, true, (0.5 + 0.1 * nRk), math.floor(4 + 0.5 * nRk), 4, sEdesc)
+								else
+									me:AddTreeExp(nY * 15000);
+								end
+							end
+							me.npcObj.PropertyMgr:AddAge(nY);me:AddMsg(string.format(XT("[NAME]苍老了%s年。"), tostring(nY)));
+						end
+						world:SetFlag(story:GetBindThing(), 79, world:GetFlag(story:GetBindThing(),79) + 1)
+						local nUseCount = world:GetFlag(story:GetBindThing(),79)
+						local bindingName = story:GetBindThing():GetName()
+						if nUseCount < 3 then
+							me:AddMsg(string.format(XT("因使用元神强行读取信息，%s上似乎多了一些裂纹……"), tostring(bindingName)));
+						elseif nUseCount == 3 then
+							me:AddMsg(string.format(XT("%s上裂纹密布，似乎随时可能损坏了……"), tostring(bindingName)));
+						elseif nUseCount >= world:RandomInt(4, 9) then
+							me:AddMsg(string.format(XT("随着[NAME]的元神回归本体，%s发出一声清脆的声音，碎裂为粉末。"), tostring(bindingName)));story:RemoveBindItem()
+						else
+							me:AddMsg(string.format(XT("%s上裂纹密布，似乎随时可能损坏了……"), tostring(bindingName)));
+						end
+					else
+						me:AddMsg(XT("[NAME]并没有练就元神，根本无法读取其中的信息。"));
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_OldSchool_Letter" Parent="BaseFillingStory">
+		<DisplayName>神秘信笺</DisplayName>
+		<Desc>在灭门逃亡途中，将你们救出险境的神秘修士留下的书信。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]打开了信笺，发现信上只写了“仙途之约，轮回再续”这八个让人一头雾水的字。信笺最后并附了一张地图，似乎是去某个地点的路。")); if me:HasOldSchoolFabao() then me:UnLockPlace("Place_OldSchool"); end;
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_Boss_FengYin" Parent="BaseFillingStory">
+		<DisplayName>查看</DisplayName>
+		<Desc>此物看上去没有什么奇异之处，不知道有什么玄机在其中。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult>
+				<![CDATA[	
+					if story:GetBindThing().def.Name == "Item_BossFeng_FengYin" then
+						
+						if world:GetWorldFlag(82) == 0 then
+							me:AddMsg(XT("[NAME]以神念仔细查看,发现凤纹玉佩之上的纹理似乎隐藏着一些几乎湮没的残余信息，其中似乎提到了此物是某种封印的一部分……凶险异常之类的信息。"));me:TriggerStory("Story_Item_Boss_FengYin");
+						else
+							me:AddMsg(XT("[NAME]以神念仔细查看,发现凤纹玉佩上隐隐的灵气波动已经消失，毫无奇特之处了。"));
+						end
+					elseif story:GetBindThing().def.Name == "Item_BossZhuLong_FengYin" then
+						if world:GetWorldFlag(83) == 0 then
+							me:AddMsg(XT("[NAME]以神念仔细查看,从这块黑白色的古玉中读取到一些残留的画面，似乎是当年发生事件残留的缩影。[NAME]仔细分辨，竟然从无数破裂的画面中拼凑出一个黑白难明的恐怖阴影。"));me:TriggerStory("Story_Item_Boss_FengYin");
+						else
+							me:AddMsg(XT("[NAME]以神念仔细查看,发现黑白色的古玉上隐隐的灵气波动已经消失，毫无奇特之处了。"));
+						end
+					end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>破坏</Display>
+				<OKResult>
+				<![CDATA[	
+					if story:GetBindThing().def.Name == "Item_BossFeng_FengYin" then
+						
+						if world:GetWorldFlag(82) == 0 then
+							me:TriggerStory("Story_Item_Boss_FengYin1");
+						else
+							me:TriggerStory("Story_Item_Boss_FengYin2");
+						end
+					elseif story:GetBindThing().def.Name == "Item_BossZhuLong_FengYin" then
+						if world:GetWorldFlag(83) == 0 then
+							me:TriggerStory("Story_Item_Boss_FengYin1");
+						else
+							me:TriggerStory("Story_Item_Boss_FengYin2");
+						end
+					end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是放下了此物。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_Boss_FengYin1" Parent="BaseFillingStory">
+		<DisplayName>破坏</DisplayName>
+		<Desc>[NAME]虽然无法察觉此物有什么凶险之处，但当试图破坏此物时，却本能的察觉的难以言明的大恐怖…似乎将会带来什么可怕的后果。真的要破坏它么？（破坏此物会召唤出上古之兽，如果没有做好准备，将有可能导致灭门，请务必三思。）</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>破坏</Display>
+				<OKResult>
+				<![CDATA[	
+					if story:GetBindThing().def.Name == "Item_BossFeng_FengYin" then
+						me:AddMsg(XT("[NAME]破坏了凤纹古玉，似乎有什么事情发生了。"));GameUlt.CreatePhoenixPrelude();story:RemoveBindItem();world:SetWorldFlag(82,1);
+					elseif story:GetBindThing().def.Name == "Item_BossZhuLong_FengYin" then
+						me:AddMsg(XT("[NAME]破坏了黑白色的古玉，似乎有什么事情发生了。"));GameUlt.CreateZhulongPrelude();story:RemoveBindItem();world:SetWorldFlag(83,1);
+					end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是放下了此物。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_Boss_FengYin2" Parent="BaseFillingStory">
+		<DisplayName>破坏</DisplayName>
+		<Desc>[NAME]破坏了此物，什么都没有发生。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>知道了</Display>
+				<OKResult>
+				<![CDATA[	
+					story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_Eat_StrangeMush" Parent="BaseFillingStory">
+		<DisplayName>尝一尝</DisplayName>
+		<Desc>[NAME]充满好奇地尝了尝这奇怪的蘑菇。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>冒险食用</Display>
+				<OKResult>
+				<![CDATA[
+					WorldLua:SetRandomSeed();
+					local a = me:RandomInt(1, 4);
+					local txt = "";
+					if me:IsDisciple() then
+						me:AddMsg(XT("[NAME]有一丝眩晕，却又被灵气所护体，元神定而不散，只是眼前事物略有不同，好像幻境一般。"));
+						me.npcObj:RemoveModifier("Illusion1");
+						me.npcObj:RemoveModifier("Illusion2");
+						me.npcObj:RemoveModifier("Illusion3");
+						me.npcObj:RemoveModifier("Illusion4");
+						me:AddModifier("Illusion4", false);
+					else
+						if a == 1 then
+							txt = XT("[NAME]忽觉飘飘然，发觉工作竟是如此快乐之事！");
+						elseif a == 2 then
+							txt = XT("[NAME]忽觉飘飘然，脚下如有风，爱上了这种感觉！");
+						elseif a == 3 then
+							txt = XT("[NAME]忽觉飘飘然，眼皮再也睁不开，只想梦中相会！");
+						end
+						me:AddMsg(XT(txt));		
+						me.npcObj:RemoveModifier("Illusion1");
+						me.npcObj:RemoveModifier("Illusion2");
+						me.npcObj:RemoveModifier("Illusion3");
+						me.npcObj:RemoveModifier("Illusion4");
+						me:AddModifier("Illusion" .. a, false);
+					end
+					story:GetBindThing():SubCount(1);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是放下了此物。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	
+	<Story Name="Story_Item_ZhenTu" Parent="BaseFillingStory">
+		<DisplayName>参悟</DisplayName>
+		<Desc>[NAME]试图参悟这张玄奥的阵图。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>参悟阵图</Display>
+				<OKResult>
+				<![CDATA[	
+					local tItemName = {
+					Item_MiBao_ZhuXianZhenTu = 1,
+					Item_MiBao_QiXingZhenTu = 2,
+					Item_MiBao_TianDiWuFangZhenTu = 3,
+					Item_MiBao_LiuYuZhenTu = 4,
+					Item_MiBao_LongXingZhenTu = 5,
+					Item_MiBao_FengHunZhenTu = 6,
+					Item_MiBao_YinYangZhenTu = 7,
+					Item_MiBao_SanYinZhenTu = 8,
+					Item_MiBao_BaMenZhenTu = 9,
+					Item_MiBao_ShenMuZhenTu = 10,
+					Item_MiBao_WuYueZhenTu = 11
+					}
+					if me:GetSkillLevel("Zhen") >= 20 then
+						me:AddMsg(XT("[NAME]一番参悟下，从阵图中悟出了什么！"));
+						me:LearnEsoteric("Esoterica_ZhenFa_Suit" .. tItemName[story:GetBindThing().def.Name], true);
+					else
+						me:AddMsg(XT("以[NAME]的阵法造诣，完全不能解读这张阵图。"));
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_Portia_YijieZhiWu" Parent="BaseFillingStory">
+		<DisplayName>查看此物</DisplayName>
+		<Desc>[NAME]尝试查看此物。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看此物</Display>
+				<DisplayCondition>
+				<![CDATA[	
+					world:GetWorldFlag(88) == 0
+				]]>
+				</DisplayCondition>
+				<OKResult><![CDATA[	
+				
+				me:AddMsg(XT("[NAME]仔细的研究了这个奇怪的物件，只觉得构成封印的能量似乎与这个世界格格不入，竟然无比排斥灵气的渗透。如果用强，甚至会导致此物彻底湮灭。正当[NAME]束手无策之际，竟然从封印的手法上发现了一丝熟悉的味道。"));me:TriggerStory("Story_Item_Portia_YijieZhiWu1");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>解开封印</Display>
+				<DisplayCondition>
+				<![CDATA[	
+					world:GetWorldFlag(88) == 1
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					local nNo = tonumber(string.sub(story:GetBindThing().def.Name, 19, -1))
+					local tItemName = {
+					Item_Other_Portia_1 = XT("[size=12][color=#000000]口…口口口…口……此物名为“沙发”，凡人以此为休憩之所，其柔软舒适，可坐可卧，确有妙用……口口口……口……[/color][/size]"),
+					Item_Other_Portia_2 = XT("[size=12][color=#000000]口…口口口…口……此界有些凡人颇有闲趣，竟会为宠物打造床铺，吾寻思若能送二师兄养的那只火灵猫一个猫床，想必有趣……口口口……口……[/color][/size]"),
+					Item_Other_Portia_3 = XT("[size=12][color=#000000]口…口口口…口……此物叫做“电灯”，以“雷霆之力”灌注可以发光照明，比烛火之流明亮不知多少，有趣有趣………口口口……口……[/color][/size]"),
+					Item_Other_Portia_4 = XT("[size=12][color=#000000]口…口口口…口……这里的凡人似乎特别喜欢猫这种动物，就连地毯都画有猫爪印记，在我们世界，只有神力超群的凶兽神兽才会得人喜爱，真的不能理解……口口口……口……[/color][/size]"),
+					Item_Other_Portia_5 = XT("[size=12][color=#000000]口…口口口…口……此物名为“电风扇”，注入“雷霆之力”便会飞速旋转，产生凉风，虽不如灵符有效，但也让人聊以自慰……口口口……口……[/color][/size]"),
+					Item_Other_Portia_6 = XT("[size=12][color=#000000]口…口口口…口……此界凡人颇爱许愿祈祷之行为，此物名唤“祈愿灯”，便是祈祷的器具之一…有点像我们的孔明灯不是嘛？……口口口……口……[/color][/size]"),
+					Item_Other_Portia_7 = XT("[size=12][color=#000000]口…口口口…口……此界凡人使用“汽车”来长途奔波，此物就是所谓的“车站”，好似我们世界的驿站一般，吾见之有趣，便使了个法术偷偷摄走一座车站，给你们见识见识……口口口……口……[/color][/size]"),
+					Item_Other_Portia_8 = XT("[size=12][color=#000000]口…口口口…口……此物名为“保险箱”，凡人用来保管私密之物。说实话，真觉得没什么用……随随便便就能被打开……口口口……口……[/color][/size]"),
+					Item_Other_Portia_9 = XT("[size=12][color=#000000]口…口口口…口……自从修行有成，便再也没有尝试过堆雪人这种凡人的游戏了，反而被困在此界动了尘思，罢了，便将此物封印，也算留个念想……口口口……口……[/color][/size]"),
+					Item_Other_Portia_10 = XT("[size=12][color=#000000]口…口口口…口……这个铁镐倒是让我想起外门弟子的那些日子，姑且留个纪念吧……口口口……口……[/color][/size]"),
+					Item_Other_Portia_11 = XT("[size=12][color=#000000]口…口口口…口……这里的凡人确实有趣，总是能在各种地方找到乐趣，比如这把叫“自宫匕首”玩具剑，哈哈……口口口……口……[/color][/size]"),
+					Item_Other_Portia_12 = XT("[size=12][color=#000000]口…口口口…口……木头做的剑啊，倒是让我回忆起刚学剑术时候的日子……口口口……口……[/color][/size]"),
+					Item_Other_Portia_13 = XT("[size=12][color=#000000]口…口口口…口……此界的兵器冶炼之术倒是也别出机杼，至少我们世界若不用法力淬炼，很难将青铜剑打造到这个地步……口口口……口……[/color][/size]"),
+					Item_Other_Portia_14 = XT("[size=12][color=#000000]口…口口口…口……此物倒是让我想起外门弟子的那些日子，姑且留个纪念吧……口口口……口……[/color][/size]"),
+					Item_Other_Portia_15 = XT("[size=12][color=#000000]口…口口口…口……此物倒是让我想起外门弟子的那些日子，姑且留个纪念吧……口口口……口……[/color][/size]"),
+					Item_Other_Portia_16 = XT("[size=12][color=#000000]口…口口口…口……这是我在这个世界上第一个朋友阿迪特送的礼物，和凡人交朋友，真的是很久之前的记忆了……口口口……口……[/color][/size]"),
+					Item_Other_Portia_17 = XT("[size=12][color=#000000]口…口口口…口……此物名为“光盘”，据说在此界也算是上古遗物，这东西小小一片就能记录无穷的消息，比元神高人的神念留影都不遑多让，而且代价极其低廉，不需要任何法力就能批量生产，真的是神妙无比，没想到凡人居然能做到仙人都做不到的事，有趣有趣…口口口……口……[/color][/size]"),
+					Item_Other_Portia_18 = XT("[size=12][color=#000000]口…口口口…口……此界凡人多以此物长途跋涉，省却了饲养骡马的繁琐，构思确实巧妙……口口口……口……[/color][/size]"),
+					Item_Other_Portia_19 = XT("[size=12][color=#000000]口…口口口…口……此玩偶是名唤“羊驼”的奇特动物，确实闻所未闻的物种……口口口……口……[/color][/size]"),
+					Item_Other_Portia_20 = XT("[size=12][color=#000000]口…口口口…口……此物名为“海苔卷饼”，乃是用海洋中一种奇怪的食材制作，颇具风味，不知道我们世界的海洋中有没有此物……口口口……口……[/color][/size]"),
+					Item_Other_Portia_21 = XT("[size=12][color=#000000]口…口口口…口……此物名为“汽水”，味道倒是一般，不过内中富含的气泡给人会带来一些奇妙的口感，颇为新奇……口口口……口……[/color][/size]"),
+					Item_Other_Portia_22 = XT("[size=12][color=#000000]口…口口口…口……此物名为“奶油鱼汤”，据说奶油是从动物乳汁中提取的精华，我们世界可没有这样的烹饪方法，吃起来有点奇怪……口口口……口……[/color][/size]"),
+					Item_Other_Portia_23 = XT("[size=12][color=#000000]口…口口口…口……此物名为“蔬菜丸子汤”，我们也有这道菜，虽然做法类似，但是口味却很不一样，有点想念家乡的味道了……口口口……口……[/color][/size]"),
+					Item_Other_Portia_24 = XT("[size=12][color=#000000]口…口口口…口……此物名为“肉酱面”，我们也有这道菜，虽然做法类似，但是口味却很不一样，有点想念家乡的味道了……口口口……口……[/color][/size]"),
+					Item_Other_Portia_25 = XT("[size=12][color=#000000]口…口口口…口……此物名为“海鲜大杂烩”，其实就是海中食材一锅乱炖，这厨艺简直让我想起太一门的小师弟，哎，不知道他活下来没有……口口口……口……[/color][/size]"),
+					Item_Other_Portia_26 = XT("[size=12][color=#000000]口…口口口…口……此物名为“芝士虾焗饭”，“焗”这种做法似乎在我们的世界没有听说过，感觉有点意思……口口口……口……[/color][/size]"),
+					Item_Other_Portia_27 = XT("[size=12][color=#000000]口…口口口…口……此物名为“莹月草汁”，据说可以治疗眩晕，我喝了喝，有点像清心草的味道，真的不怎么样………口口口……口……[/color][/size]"),
+					Item_Other_Portia_28 = XT("[size=12][color=#000000]口…口口口…口……此鱼名为“猫儿跳”，味道一般，但是猫似乎很喜欢吃，真想搞一条给二师兄养的那只火灵猫尝尝……口口口……口……[/color][/size]"),
+					Item_Other_Portia_29 = XT("[size=12][color=#000000]口…口口口…口……哈哈，这个世界也有小麦，不知道和我们的小麦有什么区别？送一些回去，不知道能不能成功呢……口口口……口……[/color][/size]"),
+					Item_Other_Portia_30 = XT("[size=12][color=#000000]口…口口口…口……此物名为“通天羊奶”，产自这里一个叫通天镇的地方…十分有名……说起来这镇的名字也太威风了，纵观我们世界千年以降，也只有魔帝付辟空当的起通天二字………口口口……口……[/color][/size]"),
+					Item_Other_Portia_31 = XT("[size=12][color=#000000]口…口口口…口……此物名为“南瓜派”，是一名叫索菲的老人家的独门配方，说起来这里的凡人喜欢将各种各样的食物做成“派”，真是一种奇怪的烹饪方法………口口口……口……[/color][/size]"),
+					Item_Other_Portia_32 = XT("[size=12][color=#000000]口…口口口…口……此物叫做“飞机”，竟然可以搭载凡人于天空翱翔，本来想摄走一架，但是此物太过庞大，在这个世界补充灵气过于艰难，还是只送一个模型试试看好了……口口口……口……[/color][/size]"),
+					Item_Other_Portia_33 = XT("[size=12][color=#000000]口…口口口…口……此物叫做“火箭”，甚至可以带人突破九天罡风进入天外之境，想不到以凡人之躯竟然可摘日月星辰，真乃奇迹！本来想摄走一架，但是此物太过庞大，在这个世界补充灵气过于艰难，还是只送一个模型试试看好了……口口口……口……[/color][/size]"),
+					Item_Other_Portia_34 = XT("[size=12][color=#000000]口…口口口…口……此物叫做“帆船”，造型和我们世界的船只有颇多不同，倒是见识了些有趣的风土人情…口口口……口……[/color][/size]"),
+					Item_Other_Portia_35 = XT("[size=12][color=#000000]口…口口口…口……这个折扇摆饰真的很像太一门静修堂的那个，哎，姑且收一个留念吧…口口口……口……[/color][/size]"),
+					Item_Other_Portia_36 = XT("[size=12][color=#000000]口…口口口…口……此物叫做“潜艇”，可载人遨游深海，还好此界海中没有妖魔盘踞，真替这些凡人捏一把冷汗！本来想摄走一台，但是此物太过庞大，在这个世界补充灵气过于艰难，还是只送一个模型试试看好了……口口口……口……[/color][/size]"),
+					}
+					local tImgPath = {
+					Item_Other_Portia_1 = "res/Sprs/object_portia/Item_other05",
+					Item_Other_Portia_2 = "res/Sprs/object_portia/Item_QQBed",
+					Item_Other_Portia_3 = "res/Sprs/object_portia/Item_functionalFurnishing_DreamLamp",
+					Item_Other_Portia_4 = "res/Sprs/object_portia/Item_objects_carpet_003_2",
+					Item_Other_Portia_5 = "res/Sprs/object_portia/Item_Fan",
+					Item_Other_Portia_6 = "res/Sprs/object_portia/Item_gift_KMLamp_2",
+					Item_Other_Portia_7 = "res/Sprs/object_portia/Item_Station02",
+					Item_Other_Portia_8 = "res/Sprs/object_portia/Item_safe",
+					Item_Other_Portia_9 = "res/Sprs/object_portia/Item_WinterSolstice_xueren03",
+					Item_Other_Portia_10 = "res/Sprs/object_portia/Item_hoe_steel",
+					Item_Other_Portia_11 = "res/Sprs/object_portia/Item_Marco_Weapon_001",
+					Item_Other_Portia_12 = "res/Sprs/object_portia/Item_weapon_001",
+					Item_Other_Portia_13 = "res/Sprs/object_portia/Item_weapon_003",
+					Item_Other_Portia_14 = "res/Sprs/object_portia/Item_weapon_ironAxe",
+					Item_Other_Portia_15 = "res/Sprs/object_portia/Item_weapon_ironPickaxe",
+					Item_Other_Portia_16 = "res/Sprs/object_portia/Item_gift_Aadit",
+					Item_Other_Portia_17 = "res/Sprs/object_portia/Item_researchcd",
+					Item_Other_Portia_18 = "res/Sprs/object_portia/Item_bus002",
+					Item_Other_Portia_19 = "res/Sprs/object_portia/Item_AlpacaSmall",
+					Item_Other_Portia_20 = "res/Sprs/object_portia/Item_food_HaiTaiFengWeiJuanBing",
+					Item_Other_Portia_21 = "res/Sprs/object_portia/Item_food_04",
+					Item_Other_Portia_22 = "res/Sprs/object_portia/Item_small_NaiYouGuiYuTang",
+					Item_Other_Portia_23 = "res/Sprs/object_portia/Item_food_ShuCaiWanZiTang",
+					Item_Other_Portia_24 = "res/Sprs/object_portia/Item_small_JingDianRouJiangMian",
+					Item_Other_Portia_25 = "res/Sprs/object_portia/Item_yamtato_puree",
+					Item_Other_Portia_26 = "res/Sprs/object_portia/Item_food_ZhiShiXiaJuFan",
+					Item_Other_Portia_27 = "res/Sprs/object_portia/Item_yingyuecaozhi",
+					Item_Other_Portia_28 = "res/Sprs/object_portia/Item_fish",
+					Item_Other_Portia_29 = "res/Sprs/object_portia/Item_wheat_seeds",
+					Item_Other_Portia_30 = "res/Sprs/object_portia/Item_small_TongTianYangNai",
+					Item_Other_Portia_31 = "res/Sprs/object_portia/Item_food_03",
+					Item_Other_Portia_32 = "res/Sprs/object_portia/Item_treasure_AircraftModel",
+					Item_Other_Portia_33 = "res/Sprs/object_portia/Item_treasure_RocketModel",
+					Item_Other_Portia_34 = "res/Sprs/object_portia/Item_treasure_SailboatModel",
+					Item_Other_Portia_35 = "res/Sprs/object_portia/Item_treasure_FoldingFanOrnaments",
+					Item_Other_Portia_36 = "res/Sprs/object_portia/Item_treasure_Objects11",
+					}
+					local x = tImgPath[story:GetBindThing().def.Name]
+					local y = tItemName[story:GetBindThing().def.Name]
+					me:AddMsg(XT("[NAME]遵循记忆中的手法，轻而易举的解开了封印。异界气息散去的同时，其中的物件也暴露了出来。而物件之上还附着有一段神念信息，果然是四师兄所留。[NAME]欣喜万分，激活了四师兄留下的神念。"));me:AddMsg(string.format(XT("[NAME]查阅之下，发现这段神念仅仅有一部分与此物有关的信息可辨认，其余的信息皆尽残缺，无法辨识。似乎需要从其他异界之物中寻找对应的神念碎片才能拼合成完整的信息。\n        [img]%s[/img]"), tostring(x)));
+					me:AddMsg(tItemName[story:GetBindThing().def.Name]);
+					if nNo <= 8 then
+						world:SetWorldFlag(89,world:GetWorldFlag(89) + 1);
+					elseif nNo <= 19 then
+						world:SetWorldFlag(90,world:GetWorldFlag(90) + 1);
+					elseif nNo <= 31 then
+						world:SetWorldFlag(91,world:GetWorldFlag(91) + 1);
+					elseif nNo <= 36 then
+						world:SetWorldFlag(92,world:GetWorldFlag(92) + 1);
+					end
+					local storybindthingname = story:GetBindThing().def.ThingName
+					local msg1 = string.format(XT("[size=12][color=#D06508]已经从[/color][/size]%s[size=12][color=#D06508]中记录了残留的信息。[/color][/size]\n        [img]%s[/img]\n%s"), tostring(storybindthingname), tostring(x), tostring(y))
+					local msg2 = XT("来自异界的信息")
+					MessageMgr:AddChainEventMessage(7, -1, msg1, 0, 0, null, msg2);
+					me:TriggerStory("Story_Item_Portia_YijieZhiWu2");
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是放下了此物。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_Portia_YijieZhiWu1" Parent="BaseFillingStory">
+		<DisplayName>查看此物</DisplayName>
+		<Desc>[NAME]感受到此物的封印似乎十分熟悉，自己之前似乎接触过这种手法。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>仔细查看</Display>
+				<OKResult><![CDATA[	
+				me:AddMsg(XT("[NAME]仔细思索，终于想起这封印手法竟然是太一门中独传的一种偏门封印术，据说当年也只有四师兄李太一擅长此法。"));me:AddMsg(XT("“难道当年灭门夜，四师兄并没有陨落？此物竟然和四师兄有关联？”[NAME]心神激荡，振奋非常，连忙从记忆中回忆此术的解印之法。"));world:SetWorldFlag(88,1);me:TriggerStory("Story_Item_Portia_YijieZhiWu");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_Portia_YijieZhiWu2" Parent="BaseFillingStory">
+		<DisplayName>消散殆尽</DisplayName>
+		<Desc>在神念信息播放完毕后，其中来自异界的物件开始受此界天道排斥而逐渐化为飞灰消散。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>仔细查看</Display>
+				<OKResult><![CDATA[	
+				local tStory = {
+					XT("[size=12][color=#000000]      我乃太一门四弟子李太一，当年太一门大祸，我于危难之中寻得一线生机，流落异界数十年，归家无门。数十年求索，只寻得一些奇门异法，将神念寄托于物件之上，送入虚空，不知这些杂物能否度过虚空中的重重危机，抵达家乡世界？此物以太一门独门封印封锁，如有人可见此信息，必是万幸天不绝我太一！就是不知是哪位师兄，师弟当面？现如今我太一度过危难与否？当年仇人是谁？不管如何，只要有人看到这段信息，打开封印，我就会产生感应，便能证明横渡虚空是可能的，真想马上回归家乡，与你一同手刃仇人，复兴太一。\n      也许太久无人可以说心里话，忍不住想说说这些年的经历，我流落的这方世界也是一个有人类的世界，似乎刚刚从一次灭世战争中恢复过来。只是此地灵气匮乏，并没有修行之道，这些人类以凡人手段竟然能打到世界毁灭，还真得是不可思议。\n      这些年，我暂住在一个叫“波西亚”的城镇里，这里的生活还不错，除了总是被催促做“箱子如何了？”。此地灵气匮乏，但是这里的凡人居然能以特殊手段驾驭“雷霆之力”。逐渐熟悉之下，我也找到了一些利用雷霆之力增幅修为，尝试破碎虚空的方法，似乎看到了回家的希望，这是第四次尝试，希望一切顺利吧……这次寄托神念的物品，都是我这些年收集的一些此地有趣的设施建筑，想必能看到这些信息的你也都得到了，虽然不一定有用，但也收下留个纪念吧！\n      祝愿陌生的同门一切安好，祝太一长存！[/color][/size]"),
+					XT("[size=12][color=#000000][/color]      陌生的太一同门，不知这条消息你能否看到？如若可见到，那真是万幸，天不绝我太一。\n      我乃太一门四弟子李太一，当年太一门大祸，我于危难之中寻得一线生机，流落异界数十年，归家无门。数十年求索，只寻得一些奇门异法，将神念寄托于物件之上，送入虚空，以求万一之希望能送归家乡世界？不管如何，只要有人看到这段信息，打开封印，我就会产生感应，能确定虚空中的方位。届时自然可以龟息肉身，横渡虚空，纵然希望渺茫，也好过于陨落于此异界他乡的地步。真想马上回归故乡，与你一起手刃仇敌，复兴太一！\n      也许太久无人可以说心里话，忍不住想说说这些年的经历，我流落的这方世界也是一个有人类的世界，似乎刚刚从一次灭世战争中恢复过来。只是此地灵气匮乏，并没有修行之道，这些人类以凡人手段竟然能打到世界毁灭，还真得是不可思议。\n      这些年，我暂住在一个叫“波西亚”的城镇里。虽然此地灵气匮乏，但是这里的凡人居然能以特殊手段驾驭“雷霆之力”。逐渐熟悉之下，我也找到了一些利用雷霆之力增幅修为，尝试破碎虚空的方法，这是第七次尝试，希望一切顺利吧……这次寄托神念的物品，都是这些年收集的一些小物件，不得不说，此地虽然刚刚经历灭世之灾，但这里的凡人居然都十分乐观，这些物品想必能看到这些信息的你也都得到了，也许能让你一笑，不管怎样，收下留个纪念吧！\n      祝愿陌生的同门一切安好，祝太一长存！[/size]"),
+					XT("[size=12][color=#000000][/color]      看到这条消息的人，可是我太一弟子？这么多年过去，如太一弟子能看到此物，我太一必然已逃过大难。不知我太一近况如何？是否已然复兴？\n      我乃太一门四弟子李太一，当年太一门大祸，我于危难之中寻得一线生机，流落异界已三十余年。这些年，我暂住在一个叫“波西亚”的城镇中。虽然此地灵气匮乏，但是这里的凡人居然能以特殊手段驾驭“雷霆之力”。这几十年摸索，我也能驾驭这种特殊的雷霆之力增幅修为，并破碎虚空，只是以我的修为，只有一次机会横渡虚空，如果不能定位到家乡世界的方向，实在十死无生。这些投递的物品便是引信，一旦有人开启，我便可获得方向定位。这是第四十三次尝试，希望天见可怜能顺利抵达……此地灵气匮乏，我已许久不动修为，一直过着凡人的生活。这次寄托神念的物品，都是这些年喜欢的一些食物，看来凡人的日子过得久了，也开始贪图口腹之欲了，如果你能收到，不知道还能不能吃，不管怎样也算留个纪念吧！\n      祝愿陌生的同门一切安好，祝太一长存！[/size]"),
+					XT("[size=12][color=#000000][/color]      看到这条消息的人，应是我太一传人罢？百年过去，不知道太一门如今是何等气象？\n      我乃太一门四弟子李太一，当年太一门大祸，我于危难之中寻得一线生机，流落异界已百年。早些年，我暂住在一个叫“波西亚”的城镇中。后来便开始浪迹天涯，周游此界。虽然此地灵气匮乏，但是这里的凡人居然能以特殊手段驾驭“雷霆之力”。这百年摸索，我也能驾驭这种特殊的雷霆之力，并借此破碎虚空，只是我在此地无法修行，是以百年难有进境，以我的修为，只有一次机会横渡虚空，如果不能定位到家乡世界的方向，实乃十死无生的结局。是以百年来我不断的投递一些附着神念的物品，希望借助这些物品的开启以获得方向定位。然而，百余年竟然毫无回音。这是第一百二十二次尝试，也会是最后一次尝试。我寿元无多，一年之后如无回音，便会孤注一掷，总好过在这异界老死。这次寄托神念的物品是我最后的收藏，这个世界以凡人之躯经天纬地，实乃奇迹。无量天尊，太一列祖列宗在上，也望奇迹诞生，保佑弟子能回归家乡。\n          万般法术，千种大道，可长生否？\n              诸界穿行，遍览风物，何处为家？\n                  —— 迷途之人李太一  问天于此\n      祝愿陌生的同门一切安好，祝太一长存！[/size]"),
+					XT("[size=12][color=#000000]随着这段神念信息的获得，[NAME]发现似乎集齐了一组完整的信息，连忙解读了这段神念。[/color][/size]"),
+					XT("[size=12][color=#D06508]随着异界之物的搜寻和破解，我们终于集齐了一组完整的信息，是四师兄李太一从遥远的异界留下的一段话语。\n[/color][/size]"),
+					}
+				me:AddMsg(XT("在神念信息播放完毕后，其中来自异界的物件开始受此界天道排斥而逐渐化为飞灰消散。灰烬散去后，残留的天道气息竟然凝练为一枚天道神丹。[NAME]虽然可惜那件来自异界的新奇玩意无法保存，但这也可谓意外之收获了。"));me:DropAwardItem("Item_Dan_TreeEXP", 1);story:RemoveBindItem();
+				if world:GetWorldFlag(89) == 8 then
+					me:AddMsg(tStory[5]);
+					me:AddMsg(tStory[1]);
+					MessageMgr:AddChainEventMessage(7, -1, tStory[6].. tStory[1], 0, 0, null, XT("来自异界的信息"));
+					world:SetWorldFlag(89,world:GetWorldFlag(89) + 1);
+				elseif world:GetWorldFlag(90) == 11 then
+					me:AddMsg(tStory[5]);
+					me:AddMsg(tStory[2]);
+					MessageMgr:AddChainEventMessage(7, -1, tStory[6].. tStory[2], 0, 0, null, XT("来自异界的信息"));
+					world:SetWorldFlag(90,world:GetWorldFlag(90) + 1);
+				elseif world:GetWorldFlag(91) == 12 then
+					me:AddMsg(tStory[5]);
+					me:AddMsg(tStory[3]);
+					MessageMgr:AddChainEventMessage(7, -1, tStory[6].. tStory[3], 0, 0, null, XT("来自异界的信息"));
+					world:SetWorldFlag(91,world:GetWorldFlag(91) + 1);
+				elseif world:GetWorldFlag(92) == 5 then
+					me:AddMsg(tStory[5]);
+					me:AddMsg(tStory[4]);
+					MessageMgr:AddChainEventMessage(7, -1, tStory[6].. tStory[4], 0, 0, null, XT("来自异界的信息"));
+					world:SetWorldFlag(92,world:GetWorldFlag(92) + 1);
+				elseif world:GetWorldFlag(89) == 9 and world:GetWorldFlag(90) == 12 and world:GetWorldFlag(91) == 13 and world:GetWorldFlag(92) == 6 then
+					MessageMgr:RemoveChainEventMessage(4);
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_GodPractice_MiJuan" Parent="BaseFillingStory">
+		<DisplayName>古代密卷</DisplayName>
+		<Desc>这是一本流传自上古的密卷，不知其中记载着什么内容。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					local nR = me:RandomInt(1,21);
+					if me:IsGodPractice() == true then
+						if nR == 1 and me:IsUnLockGodCityBuilding("GodCity_FengShenTai") == false then
+							me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出一种叫“封神台”的神迹。"));me:UnLockGodCityBuilding("GodCity_FengShenTai");story:RemoveBindItem();
+						elseif nR == 2 and me:IsUnLockGodCityBuilding("GodCity_HongChenKuHai") == false then
+							me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出一种叫“红尘苦海”的神迹。"));me:UnLockGodCityBuilding("GodCity_HongChenKuHai");story:RemoveBindItem();
+						elseif nR == 3 and me:IsUnLockGodCityBuilding("GodCity_Housing_Lv2") == false and me:IsUnLockGodCityBuilding("GodCity_Housing_Lv2_2") == false then
+							me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出两种分别叫“普化居”和“通化居”的神迹。"));me:UnLockGodCityBuilding("GodCity_Housing_Lv2");me:UnLockGodCityBuilding("GodCity_Housing_Lv2_2");story:RemoveBindItem();
+						elseif nR == 4 and me:IsUnLockGodCityBuilding("GodCity_ThunderDefend") == false then
+							me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出一种叫“御天殿”的神迹。"));me:UnLockGodCityBuilding("GodCity_ThunderDefend");story:RemoveBindItem();
+						elseif nR == 5 and world:IsGongUnLocked("God_Gong_2") == false then
+							me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载有一门叫做《诸天八部成就法》的神道修行功法。"));me:UnLockGong("God_Gong_2");story:RemoveBindItem();
+						else
+							local nO = me:RandomInt(1,19)
+							local tShengBaoBuild = {
+							"GodCity_GodFabaoLabelAdd5",
+							"GodCity_GodFabaoLabelAdd6",
+							"GodCity_GodFabaoLabelAdd7",
+							"GodCity_GodFabaoLabelAdd8",
+							"GodCity_GodFabaoLabelAdd9",
+							"GodCity_GodFabaoLabelAdd10",
+							"GodCity_GodFabaoLabelAdd11",
+							"GodCity_GodFabaoAbilityAdd1",
+							"GodCity_GodFabaoAbilityAdd2",
+							"GodCity_GodFabaoAbilityAdd3",
+							"GodCity_GodFabaoAbilityAdd4",
+							"GodCity_GodFabaoAbilityAdd5",
+							"GodCity_GodFabaoAbilityAdd6",
+							"GodCity_GodFabaoAbilityAdd7",
+							"GodCity_GodFabaoAbilityAdd8",
+							"GodCity_GodFabaoAbilityAdd9",
+							"GodCity_GodFabaoAbilityAdd10",
+							"GodCity_GodFabaoAbilityAdd11"
+							};
+							for i = 1, 50 do
+								if me:IsUnLockGodCityBuilding(tShengBaoBuild[nO]) == true then
+									nO = me:RandomInt(1,19)
+								else
+									break
+								end
+							end;
+							if me:IsUnLockGodCityBuilding(tShengBaoBuild[nO]) == false then
+								me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出一种叫“圣宝阁”的神迹残卷。"));me:UnLockGodCityBuilding(tShengBaoBuild[nO]);
+							else
+								me:AddMsg(XT("[NAME]仔细解读了古卷，发现残卷上记载了圣宝阁的某种特别的建法，但可惜自己已经知晓了。"));
+							end
+							story:RemoveBindItem();
+						end
+					else
+						me:AddMsg(XT("[NAME]无法看懂这上面写的东西"))
+					end	
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_Item_GodPractice_MiJuan_1" Parent="BaseFillingStory">
+		<DisplayName>学习</DisplayName>
+		<Desc>记载有古代神修凝练某种特殊神迹的书页。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					if me:IsGodPractice() == true then
+						if story:GetBindThing().def.Name == "Item_GodPractice_MiJuan_1" then
+							me:AddMsg(XT("[NAME]学会了这一神迹的凝练之法。"));me:UnLockGodCityBuilding("GodCity_ThunderDefend");story:RemoveBindItem();
+						elseif story:GetBindThing().def.Name == "Item_GodPractice_MiJuan_2" then
+							me:AddMsg(XT("[NAME]学会了这一神迹的凝练之法。"));me:UnLockGodCityBuilding("GodCity_FengShenTai");story:RemoveBindItem();
+						elseif story:GetBindThing().def.Name == "Item_GodPractice_MiJuan_3" then
+							me:AddMsg(XT("[NAME]学会了这一神迹的凝练之法。"));me:UnLockGodCityBuilding("GodCity_HongChenKuHai");story:RemoveBindItem();
+						elseif story:GetBindThing().def.Name == "Item_GodPractice_MiJuan_4" then
+							me:AddMsg(XT("[NAME]学会了这两种神迹的凝练之法。"));me:UnLockGodCityBuilding("GodCity_Housing_Lv2");me:UnLockGodCityBuilding("GodCity_Housing_Lv2_2");story:RemoveBindItem();
+						elseif story:GetBindThing().def.Name == "Item_GodPractice_MiJuan_6" then
+							local nO = me:RandomInt(1,19)
+							local tShengBaoBuild = {
+							"GodCity_GodFabaoLabelAdd5",
+							"GodCity_GodFabaoLabelAdd6",
+							"GodCity_GodFabaoLabelAdd7",
+							"GodCity_GodFabaoLabelAdd8",
+							"GodCity_GodFabaoLabelAdd9",
+							"GodCity_GodFabaoLabelAdd10",
+							"GodCity_GodFabaoLabelAdd11",
+							"GodCity_GodFabaoAbilityAdd1",
+							"GodCity_GodFabaoAbilityAdd2",
+							"GodCity_GodFabaoAbilityAdd3",
+							"GodCity_GodFabaoAbilityAdd4",
+							"GodCity_GodFabaoAbilityAdd5",
+							"GodCity_GodFabaoAbilityAdd6",
+							"GodCity_GodFabaoAbilityAdd7",
+							"GodCity_GodFabaoAbilityAdd8",
+							"GodCity_GodFabaoAbilityAdd9",
+							"GodCity_GodFabaoAbilityAdd10",
+							"GodCity_GodFabaoAbilityAdd11"
+							};
+							for i = 1, 50 do
+								if me:IsUnLockGodCityBuilding(tShengBaoBuild[nO]) == true then
+									nO = me:RandomInt(1,19)
+								else
+									break
+								end
+							end;
+							if me:IsUnLockGodCityBuilding(tShengBaoBuild[nO]) == false then
+								me:AddMsg(XT("[NAME]仔细解读了古卷，发现上面记载一种神奇的法门，似乎可以凝练出一种叫“圣宝阁”的神迹残卷。"));me:UnLockGodCityBuilding(tShengBaoBuild[nO]);
+							else
+								me:AddMsg(XT("[NAME]仔细解读了古卷，发现残卷上记载了圣宝阁的某种特别的建法，但可惜自己已经知晓了。"));
+							end
+							story:RemoveBindItem();
+						end
+					else
+						me:AddMsg(XT("[NAME]无法看懂这上面写的东西"))
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_God_Guard" Parent="BaseFillingStory">
+		<DisplayName>炼化</DisplayName>
+		<Desc>[NAME]尝试炼化此物。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					if me:IsGodPractice() == true then
+						if me:GetGLevel() > 6 then
+							if story:GetBindThing().def.Name == "Item_God_Guard1" then
+								me:AddMsg(XT("[NAME]成功引动了七杀星之力，化为神国护法。"));me:UnlockGodGuard("Guard_Other_2");story:RemoveBindItem();
+							elseif story:GetBindThing().def.Name == "Item_God_Guard2" then
+								me:AddMsg(XT("[NAME]成功引动了破军星之力，化为神国护法。"));me:UnlockGodGuard("Guard_Other_3");story:RemoveBindItem();
+							elseif story:GetBindThing().def.Name == "Item_God_Guard3" then
+								me:AddMsg(XT("[NAME]成功引动了贪狼星之力，化为神国护法。"));me:UnlockGodGuard("Guard_Other_1");story:RemoveBindItem();
+							end
+						else
+							me:AddMsg(XT("以[NAME]的神道修为完全无法引动此物之中的气息。"));
+						end
+					else
+						me:AddMsg(XT("[NAME]无法炼化此物。"))
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_GodPractice_MiJuan_2" Parent="BaseFillingStory">
+		<DisplayName>解开封印</DisplayName>
+		<Desc>[NAME]尝试解开此物的封印。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>解开封印</Display>
+				<OKResult>
+				<![CDATA[	
+					if me:GetGLevel() > 6 then
+						me:AddMsg(XT("[NAME]以太一门解印之法打开此物的封印，发现其中封印有一块奇特的晶体和一本名为《太一秘典》的书册。）"));story:RemoveBindItem();me:DropAwardItem("Item_Wonder_QianKunLingJing", 1);me:DropAwardItem("Item_TaiYiMiDian", 1);
+					else 
+						me:AddMsg(XT("[NAME]修为不足，不能打开此物。"));
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_Gong12" Parent="BaseFillingStory">
+		<DisplayName>查阅密卷</DisplayName>
+		<Desc>[NAME]仔细研读密卷。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>获得功法</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]解读密卷，获得了一门新的功法。"));me:UnLockGong("Gong_12_None");story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_Body_Gong_2" Parent="BaseFillingStory">
+		<DisplayName>查阅密卷</DisplayName>
+		<Desc>[NAME]仔细研读密卷。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>获得功法</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]解读密卷，获得了一门新的功法。"));me:UnLockGong("Body_Gong_2");story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_Body_Gong_5" Parent="BaseFillingStory">
+		<DisplayName>查阅密卷</DisplayName>
+		<Desc>[NAME]仔细研读密卷。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>获得功法</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]解读密卷，获得了一门新的功法。"));me:UnLockGong("Body_Gong_5");story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_God_GongAll" Parent="BaseFillingStory">
+		<DisplayName>查阅宝录</DisplayName>
+		<Desc>[NAME]查阅宝录。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>获得功法</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]解读宝录，获得了其中记载的三套神道修行功法。"));me:UnLockGong("God_Gong_1");me:UnLockGong("God_Gong_2");me:UnLockGong("God_Gong_3");story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_SpringBox" Parent="BaseFillingStory">
+		<DisplayName>年货</DisplayName>
+		<Desc>尝试打开此物。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>打开</Display>
+				<OKResult>
+				<![CDATA[	
+				me:AddMsg(XT("[NAME]打开年货，发现其中除了有许多饺子和炮仗，还有很多异界小妖沿路收集的天材地宝，真是大有收获！"));me:DropAwardItem("Item_Jiaozi",me:RandomInt(10,61));me:DropAwardItem("Item_Firecracker",me:RandomInt(1,6));me:DropAwardItemFromCache(story.ItemCache3, 1, me:RandomInt(1,6));;me:DropAwardItemFromCache(story.ItemCache4, 1, me:RandomInt(1,6))story:RemoveBindItem();
+				if me:RandomInt(1,101) > 95 then
+					me:DropAwardItem("Item_Cape_Sp7",1);
+				end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+<!-- 	<Story Name="Story_ZhuLongXuYuan_0">
+		<DisplayName>许愿</DisplayName>
+		<Desc>受异界天道的影响，本方世界天道也发生了一些临时性的改变。甚至阴阳之道的化身烛龙都变得不再狂躁，且对来自异界的一种叫硬币的金属圆片十分感兴趣。你为烛龙带来了此物，获得了一次许愿机会。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>希望得到一场富贵</Display>
+				<OKResult>me:TriggerStory("Story_ZhuLongXuYuan_1");</OKResult>
+			</li>
+			<li>
+				<Display>希望得到灵丹妙药</Display>
+				<OKResult>me:TriggerStory("Story_ZhuLongXuYuan_2");</OKResult>
+			</li>
+			<li>
+				<Display>希望得到仙甲灵裳</Display>
+				<OKResult>me:TriggerStory("Story_ZhuLongXuYuan_3");</OKResult>
+			</li>
+			<li>
+				<Display>不要了，我孝敬天道不求回报！</Display>
+				<OKResult>me:AddMsg(XT("[NAME]表示自己孝敬天道，不求回报，不需要许什么愿望！然后洒然离去！"));</OKResult>
+			</li>
+		</Selections>
+	</Story> -->
+	
+	<Story Name="Story_ZhuLongXuYuan_1">
+		<DisplayName>许愿一场富贵</DisplayName>
+		<Desc>受异界天道的影响，本方世界天道也发生了一些临时性的改变。甚至阴阳之道的化身烛龙都变得不再狂躁，且对来自异界的一种叫硬币的金属圆片十分感兴趣。这枚硬币凝聚了许多对富贵的渴望，烛龙可借此物上的心愿之力为你具现出一场富贵。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>大量的灵石</Display>
+				<OKResult>me:DropAwardItem("Item_LingStone",8888);</OKResult>
+			</li>
+			<li>
+				<Display>大量的食材</Display>
+				<OKResult>me:DropAwardItem("Item_Wheat",888);</OKResult>
+			</li>
+			<li>
+				<Display>大量的木材</Display>
+				<OKResult>me:DropAwardItem("Item_Wood",888);</OKResult>
+			</li>
+			<li>
+				<Display>大量的石矿</Display>
+				<OKResult>me:DropAwardItem("Item_Marble",888);</OKResult>
+			</li>
+			<li>
+				<Display>大量的铁矿</Display>
+				<OKResult>me:DropAwardItem("Item_IronRock",888);</OKResult>
+			</li>
+			<li>
+				<Display>不要了，我孝敬天道不求回报！</Display>
+				<OKResult>me:AddMsg(XT("[NAME]表示自己孝敬天道，不求回报，不需要许什么愿望！然后洒然离去！"));me:SetWorldFlag(999,me:GetWorldFlag(999)+1);</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_ZhuLongXuYuan_2">
+		<DisplayName>许愿灵丹妙药</DisplayName>
+		<Desc>受异界天道的影响，本方世界天道也发生了一些临时性的改变。甚至阴阳之道的化身烛龙都变得不再狂躁，且对来自异界的一种叫硬币的金属圆片十分感兴趣。这枚硬币凝聚了许多对健康的渴望，烛龙可借此物上的心愿之力为你具现一些灵丹妙药。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>金灵神药一枚</Display>
+				<OKResult>me:DropAwardItem("Item_JinEssence",1);</OKResult>
+			</li>
+			<li>
+				<Display>木灵神药一枚</Display>
+				<OKResult>me:DropAwardItem("Item_MuEssence",1);</OKResult>
+			</li>
+			<li>
+				<Display>水灵神药一枚</Display>
+				<OKResult>me:DropAwardItem("Item_ShuiEssence",1);</OKResult>
+			</li>
+			<li>
+				<Display>火灵神药一枚</Display>
+				<OKResult>me:DropAwardItem("Item_HuoEssence",1);</OKResult>
+			</li>
+			<li>
+				<Display>土灵神药一枚</Display>
+				<OKResult>me:DropAwardItem("Item_TuEssence",1);</OKResult>
+			</li>
+			<li>
+				<Display>灵木血竭十五份</Display>
+				<OKResult>me:DropAwardItem("Item_LingMuXueJie",15);</OKResult>
+			</li>
+			<li>
+				<Display>地母灵液三份</Display>
+				<OKResult>me:DropAwardItem("Item_EarthEssence",3);</OKResult>
+			</li>
+			<li>
+				<Display>造化神丹一枚</Display>
+				<OKResult>me:DropAwardItem("Item_Dan_ExtremeLofty",1);</OKResult>
+			</li>
+			<li>
+				<Display>延寿神丹一套</Display>
+				<OKResult>me:DropAwardItem("Item_Dan_IncreaseLife1",1);me:DropAwardItem("Item_Dan_IncreaseLife2",1);me:DropAwardItem("Item_Dan_IncreaseLife3",1);me:DropAwardItem("Item_Dan_IncreaseLife4",1);me:DropAwardItem("Item_Dan_IncreaseLife5",1);</OKResult>
+			</li>
+			<li>
+				<Display>天道神丹一枚</Display>
+				<OKResult>me:DropAwardItem("Item_Dan_TreeEXP",1);</OKResult>
+			</li>
+			<li>
+				<Display>不要了，我孝敬天道不求回报！</Display>
+				<OKResult>me:AddMsg(XT("[NAME]表示自己孝敬天道，不求回报，不需要许什么愿望！然后洒然离去！"));me:SetWorldFlag(999,me:GetWorldFlag(999)+1);</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_ZhuLongXuYuan_3">
+		<DisplayName>许愿仙甲灵裳</DisplayName>
+		<Desc>受异界天道的影响，本方世界天道也发生了一些临时性的改变。甚至阴阳之道的化身烛龙都变得不再狂躁，且对来自异界的一种叫硬币的金属圆片十分感兴趣。这枚硬币凝聚了许多对鲜衣新服的渴望，烛龙可借此物上的心愿之力为你具现一套仙甲灵裳。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>可助护御周身之衣甲</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes1",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers1",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助凝法施术之衣甲</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes2",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers2",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助御物合器之衣甲</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes3",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers3",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助遮掩天道之衣甲</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes4",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers4",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助除魔清心之衣甲</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes5",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers5",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助护御周身之裙裳</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes7",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers7",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助凝法施术之裙裳</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes9",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers9",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助御物合器之裙裳</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes6",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers6",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助遮掩天道之裙裳</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes8",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers8",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>可助除魔清心之裙裳</Display>
+				<OKResult>me:DropAwardItem("Item_SP_Clothes10",1,"Item_SPStuffCategories_1",-1,1);me:DropAwardItem("Item_SP_Trousers10",1,"Item_SPStuffCategories_1",-1,1);</OKResult>
+			</li>
+			<li>
+				<Display>不要了，我孝敬天道不求回报！</Display>
+				<OKResult>me:AddMsg(XT("[NAME]表示自己孝敬天道，不求回报，不需要许什么愿望！然后洒然离去！"));me:SetWorldFlag(999,me:GetWorldFlag(999)+1);</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Story_Item_ChunYangWuJiGong">
+		<DisplayName>参悟秘籍</DisplayName>
+		<Desc>尝试参悟这本秘籍。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>正练</Display>
+				<OKResult><![CDATA[	
+				if me:IsLearnedEsoteric("Gong13_Esoterica_30") == false and me:IsLearnedEsoteric("Gong13_Esoterica_31") == false then
+					me:AddMsg(XT("[NAME]尝试正练这本秘籍。"));me:LearnEsoteric("Gong13_Esoterica_30")
+				elseif me:IsLearnedEsoteric("Gong13_Esoterica_31") == true then
+					me:AddMsg(XT("[NAME]已经逆练了秘籍，无法正练了。"));
+				elseif me:IsLearnedEsoteric("Gong13_Esoterica_30") == true then
+					me:AddMsg(XT("[NAME]已经学会了正练之法。"));
+				end
+				]]>		
+				</OKResult>
+				
+			</li>
+			<li>
+				<Display>逆练</Display>
+				<OKResult><![CDATA[	
+				if me:IsLearnedEsoteric("Gong13_Esoterica_30") == false and me:IsLearnedEsoteric("Gong13_Esoterica_31") == false then
+					me:AddMsg(XT("[NAME]尝试逆练这本秘籍。"));me:LearnEsoteric("Gong13_Esoterica_31")
+				elseif me:IsLearnedEsoteric("Gong13_Esoterica_30") == true then
+					me:AddMsg(XT("[NAME]已经正练了秘籍，无法逆练了。"));
+				elseif me:IsLearnedEsoteric("Gong13_Esoterica_31") == true then
+					me:AddMsg(XT("[NAME]已经学会了逆练之法。"));
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+				<OKResult>me:AddMsg(XT("[NAME]想了想，还是决定不参悟这本秘籍了。"));</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

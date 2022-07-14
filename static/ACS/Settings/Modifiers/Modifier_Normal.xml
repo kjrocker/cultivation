@@ -1,0 +1,21 @@
+<ModifierDefs><List>
+	<Modifier Name="Modifier_WaitLeave" Type="Normal">
+		<DisplayName>离开倒计时</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_leave_clearjob</LuaClassName>
+		<SpecialFlags>
+			<li>NoLeaveMap</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="Modifier_SpringBox" Type="Normal">
+		<DisplayName>新春宝箱</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/Spring_baoxiang" Bip="Bip001 Spine1"/>
+		</EffectBind>
+	</Modifier>
+</List></ModifierDefs>

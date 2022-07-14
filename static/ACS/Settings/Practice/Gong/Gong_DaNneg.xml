@@ -1,0 +1,135 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_DaNeng">   <!-- 妖兽壳功法-->  
+		<DisplayName>未知功法</DisplayName>
+		<Desc>传自上古的独家功法，不为外人所知。</Desc>
+		<SelectDesc></SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Hide>3</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage2" Level="2">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="3">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage4" Level="4">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="5">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage6" Level="6">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage7" Level="7">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage8" Level="8">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage9" Level="9">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage10" Level="10">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage11" Level="11">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>未知</DisplayName>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage12" Level="12">
+				<DisplayName>未知</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Die">
+						<DisplayName>未知</DisplayName>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+		</Stages>
+	</Gong>
+</List></Gongs>

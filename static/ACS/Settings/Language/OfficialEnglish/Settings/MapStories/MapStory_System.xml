@@ -1,0 +1,136 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="sys_getnothing">
+			<DisplayName>Fruitless</DisplayName>
+			<Desc>We failed to obtain anything useful.</Desc>
+		</Text>
+		<Text Name="sys_noreaction">
+			<DisplayName>No Response</DisplayName>
+			<Desc>There seems to be no response whatsoever.</Desc>
+		</Text>
+		<Text Name="sys_brokenneck">
+			<DisplayName>Eureka</DisplayName>
+			<Desc>[NAME] had a sudden epiphany, and seemed to have found a way to make that prolonged breakthrough on [ITS] cultivation Law. [IT] sat down in a hurry and quickly entered a state of meditation.</Desc>
+		</Text>
+		<Text Name="sys_openplacelink">
+			<DisplayName>First Arrival</DisplayName>
+			<Desc>Having arrived [PLACE] for the first time, [NAME] asked the locals about the place.</Desc>
+		</Text>
+		<Text Name="sys_openplace">
+			<DisplayName>New Location Unlocked</DisplayName>
+			<Desc>Having been to [PLACE] several times, [NAME] became familiar with this place and found a new interesting destination nearby.</Desc>
+		</Text>
+		<Text Name="sys_test">
+			<DisplayName>Eureka</DisplayName>
+			<Desc>[NAME] had a sudden epiphany, and seemed to have found a way to make that prolonged breakthrough on [ITS] cultivation Law. [IT] sat down in a hurry and quickly entered a state of meditation.</Desc>
+		</Text>
+		<Text Name="Story_SoulSeach">
+			<DisplayName>Soul Inquiry</DisplayName>
+			<Desc>[NAME] performed Soul Inquiry on the dying cultivator, trying to salvage some useful information.</Desc>
+		</Text>
+		<Text Name="Story_JiangDao">
+			<DisplayName>Sudden Epiphany</DisplayName>
+			<Desc>[NAME] was immersed in the profundity of Tao.</Desc>
+		</Text>
+		<Text Name="Story_TitleGold">
+			<DisplayName>Golden Core</DisplayName>
+			<Desc>Having achieved the cultivational state of golden core, [NAME] was given a title by fellow cultivators.</Desc>
+		</Text>
+		<Text Name="Story_TitleRandom">
+			<DisplayName>Growing Reputation</DisplayName>
+			<Desc>Having been going outside of [ITS] sect for adventure, [NAME] enjoys a growing reputation among fellow cultivators.</Desc>
+		</Text>
+		<Text Name="Story_sys_BossLong_Wish">
+			<DisplayName>Make a Wish</DisplayName>
+			<Desc>The mysterious being within the cavern seems to possess some miraculous powers, and one can ask a special favour of it in exchange of some offerings. However, rage will ensue if one fails to present the offerings it demands.</Desc>
+			<Selections.0.Display>Wish for a Secret</Selections.0.Display>
+			<Selections.1.Display>Wish for a Qi Swell</Selections.1.Display>
+			<Selections.2.Display>Wish for self-improvement</Selections.2.Display>
+			<Selections.3.Display>Leave</Selections.3.Display>
+		</Text>
+		<Text Name="Story_sys_BossLong_WishSuccess">
+			<DisplayName>Wish Granted</DisplayName>
+			<Desc>The mysterious cavern was pleased with the offerings and thus fulfilled [NAME]'s wish.</Desc>
+		</Text>
+		<Text Name="System_RobGreateBuilding">
+			<DisplayName>Capture Wonder</DisplayName>
+			<Desc>[NAME] tried to capture the wonder's essence.</Desc>
+			<Selections.0.Display>Capture Essence</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="System_LearnGreateBuilding">
+			<DisplayName>Meditate</DisplayName>
+			<Desc>It is said that there is a secret to a mysterious formation within this wonder, and [NAME] tries to meditate on it.</Desc>
+			<Selections.0.Display>Meditate</Selections.0.Display>
+			<Selections.0.Tip>State/Intelligence/Luck/Formation Skill</Selections.0.Tip>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_LearnGreateBuilding_WuDang">
+			<DisplayName>Meditate</DisplayName>
+			<Desc>The Golden Hall of Wudang exudes a serene and arcane air of divinity, seemingly conveying a message to its followers.</Desc>
+			<Selections.0.Display>Meditate</Selections.0.Display>
+			<Selections.0.Tip>State / Intelligence / Luck</Selections.0.Tip>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_FightMap_ZhenWuShenXiang">
+			<DisplayName>Worship</DisplayName>
+			<Desc>Worship the Perfected Warrior Statue for a little Divinity guidance.</Desc>
+			<Selections.0.Display>Worship</Selections.0.Display>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_EnterQianKunJie">
+			<DisplayName>Mini Universe</DisplayName>
+			<Desc>A magical building with the Taiyi Sect's secret treasure, Universe Spirit Crystal, as its core. The inside has its own rule for physical space and can be used to store all kinds of items. But there is a strange seal that keeps away people's mind. No matter how strong you are, no one can forcibly see its inside. Seems like there is a hidden secret.</Desc>
+			<Selections.0.Display>Divine Mind Inspect</Selections.0.Display>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_EnterQianKunJie1">
+			<DisplayName>Mini Universe</DisplayName>
+			<Desc>[NAME] simply checked the entrance. The other side of the seal seems to be a space without any moving creatures or signs of danger.</Desc>
+			<Selections.0.Display>Enter</Selections.0.Display>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_FightMap_NormalTalk">
+			<DisplayName>Talk</DisplayName>
+			<Desc>The life of a commoner is dull but fun.</Desc>
+			<Selections.0.Display>Chat</Selections.0.Display>
+			<Selections.0.Say>What's new?</Selections.0.Say>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_FightMap_DiscipleTalk">
+			<DisplayName>Talk</DisplayName>
+			<Desc>On the Law toward immortality, one must move ever forward...</Desc>
+			<Selections.0.Display>Inquire</Selections.0.Display>
+			<Selections.0.Say>Anything new as of late?</Selections.0.Say>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_Tribute">
+			<DisplayName>Tribute</DisplayName>
+			<Desc>[NAME] arrived at [PLACE], and prepared to receive the annual tribute.</Desc>
+			<Selections.0.Display>Collect tribute</Selections.0.Display>
+			<Selections.1.Display>Leave</Selections.1.Display>
+		</Text>
+		<Text Name="System_FightMap_UnlockPlant">
+			<DisplayName>Collect sample</DisplayName>
+			<Desc>[NAME] attempted to collect a sample from the object.</Desc>
+			<Selections.0.Display>Collect</Selections.0.Display>
+		</Text>
+		<Text Name="System_FightMap_UnlockBuilding">
+			<DisplayName>Observe</DisplayName>
+			<Desc>[NAME] tried to learn how this building was constructed.</Desc>
+			<Selections.0.Display>Observe</Selections.0.Display>
+		</Text>
+		<Text Name="Story_SuperPartItem">
+			<DisplayName>Learn Profundity</DisplayName>
+			<Desc>Try to comprehend the profound knowledge of Body Remolding embodied in this body part.</Desc>
+			<Selections.0.Display>Inspiration</Selections.0.Display>
+			<Selections.1.Display>Give up</Selections.1.Display>
+		</Text>
+		<Text Name="Story_Fight">
+			<DisplayName>Friendly Competition</DisplayName>
+			<Desc>Ask disciples to have a friendly competition here.</Desc>
+			<Selections.0.Display>Fight</Selections.0.Display>
+			<Selections.1.Display>Never mind</Selections.1.Display>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,77 @@
+ID	Type	Kind	Name	fParam	fParam2	Lv	Des	Disname
+	分类	词条类型	词条名称	数值1:秘籍：道行最小值；属性：addv	数值2:秘籍：道行最大值；属性：addp	等级		
+-1	None	None	None	0		1	模组丢失	模组丢失
+1	Fabao	SkillLevel	Fabao	1		5	将一些御器之道上的感悟寄托于此物之上。	大道之悟:粗浅
+2	Fabao	SkillLevel	Fabao	2		6	将较多御器之道上的感悟寄托于此物之上。	大道之悟:精深
+3	Magic	SkillLevel	FightSkill	1		5	将一些术法之道上的感悟寄托于此物之上。	大道之悟:粗浅
+4	Magic	SkillLevel	FightSkill	2		6	将较多术法之道上的感悟寄托于此物之上。	大道之悟:精深
+5	FightHU	SkillLevel	Barrier	1		5	将一些护体之道上的感悟寄托于此物之上。	大道之悟:粗浅
+6	FightHU	SkillLevel	Barrier	2		6	将较多护体之道上的感悟寄托于此物之上。	大道之悟:精深
+7	RefiningDan	SkillLevel	Medicine	1		5	将一些炼丹之道上的感悟寄托于此物之上。	大道之悟:粗浅
+8	RefiningDan	SkillLevel	Medicine	2		6	将较多炼丹之道上的感悟寄托于此物之上。	大道之悟:精深
+9	Refining	SkillLevel	Manual	1		5	将一些炼器之道上的感悟寄托于此物之上。	大道之悟:粗浅
+10	Refining	SkillLevel	Manual	2		6	将较多炼器之道上的感悟寄托于此物之上。	大道之悟:精深
+11	Fabao	Esoterica	Fabao	1	3	3	将一本入门级的御器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+12	Fabao	Esoterica	Fabao	4	6	4	将一本进阶级的御器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+13	Fabao	Esoterica	Fabao	7	9	5	将一本精妙级的御器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+14	Fabao	Esoterica	Fabao	10	12	6	将一本玄妙级的御器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+15	Magic	Esoterica	Skill	1	3	3	将一本入门级的术法之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+16	Magic	Esoterica	Skill	4	6	4	将一本进阶级的术法之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+17	Magic	Esoterica	Skill	7	9	5	将一本精妙级的术法之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+18	Magic	Esoterica	Skill	10	12	6	将一本玄妙级的术法之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+19	FightHU	Esoterica	Barrier	1	3	3	将一本入门级的护体之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+20	FightHU	Esoterica	Barrier	4	6	4	将一本进阶级的护体之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+21	FightHU	Esoterica	Barrier	7	9	5	将一本精妙级的护体之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+22	FightHU	Esoterica	Barrier	10	12	6	将一本玄妙级的护体之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+23	RefiningDan	Esoterica	Dan	1	3	3	将一本入门级的炼丹之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+24	RefiningDan	Esoterica	Dan	4	6	4	将一本进阶级的炼丹之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+25	RefiningDan	Esoterica	Dan	7	9	5	将一本精妙级的炼丹之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+26	RefiningDan	Esoterica	Dan	10	12	6	将一本玄妙级的炼丹之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+27	Refining	Esoterica	Refining	1	3	3	将一本入门级的炼器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+28	Refining	Esoterica	Refining	4	6	4	将一本进阶级的炼器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+29	Refining	Esoterica	Refining	7	9	5	将一本精妙级的炼器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+30	Refining	Esoterica	Refining	10	12	6	将一本玄妙级的炼器之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+31	Practice	Esoterica	Gong	1	3	3	将一本入门级的修炼之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+32	Practice	Esoterica	Gong	4	6	4	将一本进阶级的修炼之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+33	Practice	Esoterica	Gong	7	9	5	将一本精妙级的修炼之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+34	Practice	Esoterica	Gong	10	12	6	将一本玄妙级的修炼之道的秘籍寄托于此物之上。	秘籍之悟:[TXT]
+35	Fabao	Property	NpcFight_FabaoPowerAddP		1	1	将一些能够微量增强法宝威力的技巧寄托于此物之上。	技巧之悟:微量
+36	Fabao	Property	NpcFight_FabaoPowerAddP		2	2	将一些能够少许增强法宝威力的技巧寄托于此物之上。	技巧之悟:少量
+37	Fabao	Property	NpcFight_FabaoPowerAddP		3	3	将一些能够增强法宝威力的技巧寄托于此物之上。	技巧之悟:中等
+38	Fabao	Property	NpcFight_FabaoPowerAddP		4	4	将一些能够较多增强法宝威力的技巧寄托于此物之上。	技巧之悟:较多
+39	Fabao	Property	NpcFight_FabaoPowerAddP		5	5	将一些能够大量增强法宝威力的技巧寄托于此物之上。	技巧之悟:大量
+40	Fabao	Property	NpcFight_FabaoPowerAddP		6	6	将一些能够巨量增强法宝威力的技巧寄托于此物之上。	技巧之悟:巨量
+41	Magic	Property	NpcFight_SpellPowerAddP		1	1	将一些能够微量增强法术威力的技巧寄托于此物之上。	技巧之悟:微量
+42	Magic	Property	NpcFight_SpellPowerAddP		2	2	将一些能够少许增强法术威力的技巧寄托于此物之上。	技巧之悟:少量
+43	Magic	Property	NpcFight_SpellPowerAddP		3	3	将一些能够增强法术威力的技巧寄托于此物之上。	技巧之悟:中等
+44	Magic	Property	NpcFight_SpellPowerAddP		4	4	将一些能够较多增强法术威力的技巧寄托于此物之上。	技巧之悟:较多
+45	Magic	Property	NpcFight_SpellPowerAddP		5	5	将一些能够大量增强法术威力的技巧寄托于此物之上。	技巧之悟:大量
+46	Magic	Property	NpcFight_SpellPowerAddP		6	6	将一些能够巨量增强法术威力的技巧寄托于此物之上。	技巧之悟:巨量
+47	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.05		1	将一些能够微量增强护盾强度的技巧寄托于此物之上。	技巧之悟:微量
+48	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.1		2	将一些能够少许增强护盾强度的技巧寄托于此物之上。	技巧之悟:少量
+49	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.15		3	将一些能够增强护盾强度的技巧寄托于此物之上。	技巧之悟:中等
+50	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.2		4	将一些能够较多增强护盾强度的技巧寄托于此物之上。	技巧之悟:较多
+51	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.25		5	将一些能够大量增强护盾强度的技巧寄托于此物之上。	技巧之悟:大量
+52	FightHU	Property	NpcFight_ShieldConversionRateAddP	0.3		6	将一些能够巨量增强护盾强度的技巧寄托于此物之上。	技巧之悟:巨量
+53	Refining	Property	FabaoMake_TwelveRateChance	0.001		1	将一些能够微量增强神器练成几率的技巧寄托于此物之上。	技巧之悟:微量
+54	Refining	Property	FabaoMake_TwelveRateChance	0.002		2	将一些能够少许增强神器练成几率的技巧寄托于此物之上。	技巧之悟:少量
+55	Refining	Property	FabaoMake_TwelveRateChance	0.003		3	将一些能够增强神器练成几率的技巧寄托于此物之上。	技巧之悟:中等
+56	Refining	Property	FabaoMake_TwelveRateChance	0.004		4	将一些能够较多增强神器练成几率的技巧寄托于此物之上。	技巧之悟:较多
+57	Refining	Property	FabaoMake_TwelveRateChance	0.005		5	将一些能够大量增强神器练成几率的技巧寄托于此物之上。	技巧之悟:大量
+58	Refining	Property	FabaoMake_TwelveRateChance	0.006		6	将一些能够巨量增强神器练成几率的技巧寄托于此物之上。	技巧之悟:巨量
+59	RefiningDan	Property	DanMake_YieldAddP	0.05		1	将一些能够微量增强炼丹产量的技巧寄托于此物之上。	技巧之悟:微量
+60	RefiningDan	Property	DanMake_YieldAddP	0.1		2	将一些能够少许增强炼丹产量的技巧寄托于此物之上。	技巧之悟:少量
+61	RefiningDan	Property	DanMake_YieldAddP	0.15		3	将一些能够增强炼丹产量的技巧寄托于此物之上。	技巧之悟:中等
+62	RefiningDan	Property	DanMake_YieldAddP	0.2		4	将一些能够较多增强炼丹产量的技巧寄托于此物之上。	技巧之悟:较多
+63	RefiningDan	Property	DanMake_YieldAddP	0.25		5	将一些能够大量增强炼丹产量的技巧寄托于此物之上。	技巧之悟:大量
+64	RefiningDan	Property	DanMake_YieldAddP	0.3		6	将一些能够巨量增强炼丹产量的技巧寄托于此物之上。	技巧之悟:巨量
+65	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.05	1	将一些能够微量增强修炼速度的技巧寄托于此物之上。	技巧之悟:微量
+66	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.1	2	将一些能够少许增强修炼速度的技巧寄托于此物之上。	技巧之悟:少量
+67	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.15	3	将一些能够增强修炼速度的技巧寄托于此物之上。	技巧之悟:中等
+68	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.2	4	将一些能够较多增强修炼速度的技巧寄托于此物之上。	技巧之悟:较多
+69	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.25	5	将一些能够大量增强修炼速度的技巧寄托于此物之上。	技巧之悟:大量
+70	Practice	Property	DeepPracticeSpeedSpecialCoefficient		0.3	6	将一些能够巨量增强修炼速度的技巧寄托于此物之上。	技巧之悟:巨量
+71	Disciple	Special	Fly			1	将御空飞行的能力额外附加在此物之上。(本体不会失去此能力）	御空飞行
+72	Disciple	Special	LingDun		500	1	将开启一个少量灵气护盾的能力额外附加在此物之上。(本体不会失去此能力）	灵气护体:少
+73	Disciple	Special	LingDun		1000	2	将开启一个中量灵气护盾的能力额外附加在此物之上。(本体不会失去此能力）	灵气护体:中
+74	Disciple	Special	LingDun		1500	3	将开启一个大量灵气护盾的能力额外附加在此物之上。(本体不会失去此能力）	灵气护体:大

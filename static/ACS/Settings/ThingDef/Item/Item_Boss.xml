@@ -1,0 +1,1261 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Boss_Jiaowangci">
+	<ThingName>蛟王刺</ThingName>
+	<TexPath>res\Sprs\object\object_linpian01</TexPath>	
+	<ModPath>Mod/Prop/Other/mod_longwangci</ModPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>12</Rate>
+	<ModScale>11</ModScale>
+	<ElementKind>Shui</ElementKind>
+	<Item>
+		<NotRandom>1</NotRandom>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Boss_Fenghuangneidan">
+	<ThingName>凤凰内丹</ThingName> 
+	<TexPath>res\Sprs\object\object_yaodan01</TexPath>	
+	<ModPath>Mod/Prop/Other/mod_fengneidan</ModPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>12</Rate>
+	<ModScale>3</ModScale>
+	<ElementKind>Huo</ElementKind>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+		</PhysicalLables>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Boss_Fenghuanghuoyu">
+	<ThingName>凤凰火羽</ThingName>
+	<ModPath>Mod/Prop/Other/mod_fengyu01</ModPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>12</Rate>
+	<ModScale>1</ModScale>
+	<ElementKind>Huo</ElementKind>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>PhysicalLables_XiongFeng_HuoYu</li>
+		</PhysicalLables>
+	</Item>
+	</ThingDef>
+	
+	<!-- boss材料 -->
+	
+	
+	<ThingDef Type="Item" Name="BossDropItemBase" Parent="MaterialBase">
+	
+	<MaxStack>100</MaxStack>
+	<TexPath></TexPath>
+
+	<Desc>Desc.</Desc>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>1</Rate>
+	<Beauty>1</Beauty>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef>0</FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="750" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_HuoYu" Parent="BossDropItemBase">
+	
+	<ThingName>炽烈的火羽</ThingName>
+	<TexPath>res\Sprs\object\object_zhiliehuoyu01</TexPath>	
+	<Desc>一支奇特的羽毛，虽然触手温度不高，但持续的散发着温度，可以大幅度提高房间等密闭空间内的温度。除了有较强的聚灵效果，似乎没什么其他用处。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>羽</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.7"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>50</Value>
+		<Radius>5</Radius>
+		<RoomValue>900</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_GangYu" Parent="BossDropItemBase">
+	
+	<ThingName>凶凤的刚羽</ThingName>
+	<TexPath>res\Sprs\object\object_gangyu01</TexPath>	
+	<Desc>凶凤身上完整的羽毛，热力完全内敛，锋锐而坚硬。佩戴可以使人不畏严寒，气血流转加快，加速食物消耗。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>羽</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossFeng_HuoYu</ToolModifier>
+		</Equip> 	
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.7"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_TouYu" Parent="BossDropItemBase">
+	<ThingName>凶凤的烬灭羽</ThingName>
+	<TexPath>res\Sprs\object\object_jinmieyu01</TexPath>	
+	<Desc>凶凤头顶燃烧着不灭火焰的华丽羽毛，是凶凤精华凝聚。凶凰擅长御法之道，佩戴此物可借凶凰之力，突破术法技能极限3级。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>羽</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossFeng_TouYu</ToolModifier>
+		</Equip>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>150</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>500</Value>
+		<Radius>5</Radius>
+		<RoomValue>1500</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_WeiYu" Parent="BossDropItemBase">
+	
+	<ThingName>凶凤的蔽天羽</ThingName>
+	<TexPath>res\Sprs\object\object_bitianyu01</TexPath>	
+	<Desc>凶凤巨大的尾羽，其上光焰流转，但却触手温润，不觉炎热，十分神奇。以特殊手法处理后，应该会有特别的妙用。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>羽</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_Gu" Parent="BossDropItemBase">
+	
+	<ThingName>凶凤的坚空骨</ThingName>
+	<TexPath>res\Sprs\object\object_jiankonggu01</TexPath>	
+	<Desc>凶凤双翅上的空心骨骼，异常坚硬，且丝毫感受不到重量。以特殊手法处理后，应该会有特别的妙用。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>羽</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>50</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_HongYu" Parent="BossDropItemBase">
+	<ThingName>凶凤的真焱玉</ThingName>
+	<TexPath>res\Sprs\object\object_zhenyanyu01</TexPath>	
+	<Desc>凶凤的力量源泉，其中寄宿着凶凤的元神。若以元神沟通，或许可以领悟到一些有用的信息。佩戴此物可以借助凶凤的元神之力，减少10%的火行伤害。</Desc>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>玉</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossFeng_HongYu</ToolModifier>
+		</Equip> 	
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="35" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_XiongFengYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="参悟" Desc="试图从中获取一些有效的信息。" Appoint="2" Story="Story_Item_BossSoulItem" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>200</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>500</Value>
+		<Radius>5</Radius>
+		<RoomValue>1500</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_Meat" Parent="BossDropItemBase">
+	<Tags>		
+		<Tag Name="Item_BossFeng_Meat" Level="1"/>
+	</Tags>	
+
+	<ThingName>凶凤的血肉</ThingName>
+	<TexPath>res\Sprs\object\object_xionghuangxuerou01</TexPath>	
+	<Desc>凶凤最精华的血肉，服用可以从根本上补充灵气最大值25点，并延长寿命10年。随着服用次数提高，效果会逐渐降低。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="100" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="150" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>肉</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_Boss_Meat</Modifier>
+			<Fesistance>0.9</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>70</Nutrition>
+		</Food>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="4" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="3" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_DragonScale" Parent="BossDropItemBase">
+	<ThingName>脱落的龙鳞</ThingName>
+	<TexScale>1.4</TexScale>
+	<TexPath>res\Sprs\object\object_linpian01</TexPath>
+	<Desc>龙身上脱落的鳞片，除了有较强的聚灵效果，已经失去了大部分神效。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.7"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossLong_Jiao" Parent="BossDropItemBase">
+	<ThingName>蛟龙的天角</ThingName>
+	<TexPath>res\Sprs\object\object_tianjiao01</TexPath>	
+	<Desc>蛟龙头顶的角，乃是蛟龙精华之凝聚。蛟龙擅长御器之道，佩戴此物可借蛟龙之力，突破御剑技能极限3级。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>刺</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossLong_Jiao</ToolModifier>
+		</Equip> 
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>150</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossLong_Zhua" Parent="BossDropItemBase">
+	<ThingName>蛟龙的罗刹爪</ThingName>
+	<TexPath>res\Sprs\object\object_luoshazhua01</TexPath>	
+	<Desc>蛟龙的尖爪，富含锋锐之气，无坚不摧。以特殊手法处理后，应该会有特别的妙用。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>刺</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>50</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>       
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossLong_Lin" Parent="BossDropItemBase">
+	<ThingName>蛟龙的玄鳞</ThingName>
+	<TexPath>res\Sprs\object\object_xuanlin01</TexPath>	
+	<Desc>蛟龙身上完整的鳞片，坚不可摧。佩戴可抵御灵气伤害。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_DragonScale</ToolModifier>
+		</Equip> 	
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.7"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossLong_NiLin" Parent="BossDropItemBase">
+	<ThingName>蛟龙的逆鳞</ThingName>
+	<TexPath>res\Sprs\object\object_nilin01</TexPath>	
+	<Desc>蛟龙的力量源泉，其中寄宿着蛟龙的元神。若以元神沟通，或许可以领悟到一些有用的信息。佩戴此物可以借助蛟龙元神之力，减少10%的水行伤害。</Desc>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossLong_NiLin</ToolModifier>
+		</Equip> 	
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="10" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="参悟" Desc="试图从中获取一些有效的信息。" Appoint="2" Story="Story_Item_BossSoulItem" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>200</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossLong_Jing" Parent="BossDropItemBase">
+	<ThingName>蛟龙的崩天筋</ThingName>
+	<TexPath>res\Sprs\object\object_bengtianjin01</TexPath>	
+	<Desc>蛟龙尾部最坚韧的筋络，具有绝佳的灵气导性。以特殊手法处理后，应该会有特别的妙用。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>筋</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossLong_Meat" Parent="BossDropItemBase">
+	<Tags>		
+		<Tag Name="Item_BossLong_Meat" Level="1"/>
+	</Tags>
+	<ThingName>蛟龙的血肉</ThingName>
+	<TexPath>res\Sprs\object\object_jiaolongxuerou01</TexPath>	
+	<Desc>蛟龙最精华的血肉，服用可以从根本上补充灵气最大值25点，并延长寿命10年。随着服用次数提高，效果会逐渐降低。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="100" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="150" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>肉</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_Boss_Meat</Modifier>
+			<Fesistance>0.9</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>70</Nutrition>
+		</Food>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="4" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="3" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_BaiLin" Parent="BossDropItemBase">
+	<ThingName>洁白的大鳞</ThingName>
+	<TexPath>res\Sprs\object\object_jiebaidalin01</TexPath>	
+	<Desc>烛龙身上的洁白龙鳞。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Huo" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Mu" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Tu" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_HeiLin" Parent="BossDropItemBase">
+	<ThingName>漆黑的大鳞</ThingName>
+	<TexPath>res\Sprs\object\object_qiheidalin01</TexPath>	
+	<Desc>烛龙身上的漆黑龙鳞。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Jin" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Shui" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Tu" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="4" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_Eye" Parent="BossDropItemBase">
+	<ThingName>阴阳之结晶</ThingName>
+	<TexPath>res\Sprs\object\object_yinyangjiejing01</TexPath>	
+	<Desc>烛龙双眼中凝聚的黑白二色混杂的透明结晶，透过结晶仿佛能看到阴阳之道变幻的奥秘。以特殊手法处理后，应该会有特别的妙用。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>晶</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Jin" Count="15" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Mu" Count="15" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Shui" Count="15" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Huo" Count="15" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Tu" Count="15" Rate="0.3"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXJin" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXTu" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_TianLin" Parent="BossDropItemBase">
+	<ThingName>烛龙的天鳞</ThingName>
+	<TexPath>res\Sprs\object\object_tianlin01</TexPath>	
+	<Desc>烛龙眉心的奇型鳞片，是烛龙精华的凝聚。烛龙化阴阳而御五行，佩戴此物可借烛龙之力，突破护盾技能极限3级。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000" FriendPoint="2"/>
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>鳞</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossZhuLong_TianLin</ToolModifier>
+		</Equip> 	
+
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Jin" Count="5" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Mu" Count="5" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Shui" Count="5" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Huo" Count="5" Rate="0.3"/>
+			<li Name="Item_BodyPractice_Tu" Count="5" Rate="0.3"/>
+			<li Name="Item_BodyPractice_GuShouGuFen" Count="25" Rate="1"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXJin" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.1"/>
+			<li Name="Item_BodyPractice_EXTu" Count="1" Rate="0.1"/>
+		</DevourDatas> 	
+	</Item>
+	<Ling>
+		<AddionLing>150</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_LongYu" Parent="BossDropItemBase">
+	<ThingName>混沌的龙玉</ThingName>
+	<TexPath>res\Sprs\object\object_hundunlongyu01</TexPath>	
+	<Desc>烛龙的力量源泉，其中寄宿着一缕残留的烛龙元神。若以元神沟通，或许可以领悟到一些有用的信息。佩戴此物可以借助烛龙的元神之力，减少5%的五行伤害。</Desc>
+	<MaxStack>1</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10000" />
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>玉</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>Modifier_Item_BossZhuLong_LongYu</ToolModifier>
+		</Equip> 	
+
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Jin" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_Mu" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_Shui" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_Huo" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_Tu" Count="15" Rate="1"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXJin" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXShui" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXHuo" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_EXTu" Count="1" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	<StoryBnts>
+			<li Name="参悟" Desc="试图从中获取一些有效的信息。" Appoint="2" Story="Story_Item_BossSoulItem" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>200</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_Meat" Parent="BossDropItemBase">
+	<Tags>		
+		<Tag Name="Item_BossZhuLong_Meat" Level="1"/>
+	</Tags>	
+
+	<ThingName>原初血肉</ThingName>
+	<TexPath>res\Sprs\object\object_yuanchuxuerou01</TexPath>	
+	<Desc>烛龙身上的血肉，被阴阳侵染而别具妙用。服用可降低道行2点，并延长寿命10年。随着服用次数提高，效果会逐渐降低。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Bone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="100" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="150" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>肉</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<Elixir>
+			<Modifier>Modifier_Item_BossZhuLong_Meat</Modifier>
+			<Fesistance>0.9</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>70</Nutrition>
+		</Food>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_Jin" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_Mu" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_Shui" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_Huo" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_Tu" Count="2" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="4" Rate="1"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="2" Rate="0.5"/>
+			<li Name="Item_BodyPractice_GuShouJingXue" Count="3" Rate="0.25"/>
+		</DevourDatas> 	
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossFeng_FengYin" Parent="BossDropItemBase">
+	<ThingName>凤纹古玉</ThingName>
+	<TexPath>res\Sprs\object\object_zhenyanyu01</TexPath>	
+	<Desc>从龙台宝藏中找到的一枚古玉，似乎是一套物品中的一件。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>玉</FabaoSuffix>	
+	</Item>
+	<StoryBnts>
+			<li Name="查看" Desc="查看凤纹古玉。" Appoint="2" Story="Story_Item_Boss_FengYin" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BossZhuLong_FengYin" Parent="BossDropItemBase">
+	<ThingName>黑白色的古玉</ThingName>
+	<TexPath>res\Sprs\object\object_hundunlongyu01</TexPath>	
+	<Desc>从仙魔战场中寻获的奇特玉块，其中阴阳忽隐忽现，似乎孕育着什么。</Desc>
+	<MaxStack>99</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ElementKind>Huo</ElementKind>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Lable="Bone">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>玉</FabaoSuffix>	
+	</Item>
+	<StoryBnts>
+			<li Name="查看" Desc="查看黑白色的古玉。" Appoint="2" Story="Story_Item_Boss_FengYin" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

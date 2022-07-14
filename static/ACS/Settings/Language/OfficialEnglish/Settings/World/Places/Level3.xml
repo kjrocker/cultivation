@@ -1,0 +1,31 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Place_Level3Base">
+			<Desc>Lv.3 Location Templates</Desc>
+		</Text>
+		<Text Name="Place_QingLianShan">
+			<DisplayName>Mt. Caerulea</DisplayName>
+			<Desc>This mountain used to be the hermitage for the Immortal Caerulea before his ascension, the entirety of which is hidden inside one drop of True Water in the South Sea. Without the guidance of a secret Law, nobody will be able to find this mythical mountain.</Desc>
+		</Text>
+		<Text Name="Place_ChiLianYuan">
+			<DisplayName>Emerald Palace</DisplayName>
+			<Desc>A private residence left by this realm's first-ever ascended immortal named Nangong, hidden inside the blessed abode between heaven and sea. Without the guidance of a secret Law, nobody will be able to find this place.</Desc>
+		</Text>
+		<Text Name="Place_LongTai">
+			<DisplayName>Dragon's Platform</DisplayName>
+			<Desc>The legend states that the dragons had amassed thousands of treasures upon Dragon's Platform, and with their magic, they sealed and buried them to conceal them from society. This was long ago, however, and with the flowing of time, most of these seals began to fail. There is no shortage of hopefuls who dare venture into Dragon's Platform to test their luck.</Desc>
+		</Text>
+		<Text Name="Place_XuanKongDong">
+			<DisplayName>Ethereal Cave</DisplayName>
+			<Desc>The place where the ancient immortal Yuan retreated into seclusion. Legend has it that Yuan left all the fortunes she had amassed in this palace for the future generations to find. Young and inexperienced cultivators from just sects will come here to try out their luck.</Desc>
+		</Text>
+		<Text Name="Place_GuZhanChang">
+			<DisplayName>Heavenly Battlefield</DisplayName>
+			<Desc>The battlefield ruins of the first Clash between Immortals and Demons at the end of the ancient age. It is abundant in treasures, but also full of fractured spacetime and extremely dangerous. Back then, there had begun to appear a clearer divide between the good and evil cultivators. The divide between the ancient cultivators grew, becoming irreparable; and a final showdown took place in the southern borderlands. The battle stretched on for months, threatening all life in the world. The ways of Yin and Yang were so severely affected that they took the physical form of Torch Dragon in the mortal world. Torch Dragon was enraged, and caused the land to sink and sea to rise. The southern borderlands collapsed, thus bringing an end to the first great war between immortals and demons. This is also how the wild southern lands of today came to be.</Desc>
+		</Text>
+		<Text Name="Place_YiJieLieFeng">
+			<DisplayName>Otherworld Rift</DisplayName>
+			<Desc>Legend has it that this fractured spacetime leads to all kinds of abnormal time and space, and it is the result of the second clash of immortals and demons in the ancient age. It has been gone for thousands of years, but unexpectedly, it has reappeared in this realm now. The rift is extremely dangerous, and without a special kind of Luck, even the most experienced immortals can become lost in there.</Desc>
+		</Text>
+	</List>
+</Texts>

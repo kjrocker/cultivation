@@ -1,0 +1,200 @@
+<Defs><List>
+	<Def Name="Price_Base">
+		<Tag>School</Tag>
+		
+		<AnimalPrice>
+			<li AnimalFlag="ExoticAnimal">
+				<BuyPrice Value="4000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li AnimalFlag="NormalAnimal">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="BodyAnimal">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="SpecialAnimal">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="RandomAnimal">
+				<BuyPrice Value="150" />
+				<SalePrice Value="50" />
+			</li>
+		</AnimalPrice>
+		
+		<ItemSpecial>
+			<li ItemName="Item_AuctionPaper">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+			<li ItemName="Item_GodPractice_MiJuan">
+				<BuyPrice Value="1000" FriendPoint="1" />
+				<SalePrice Value="500" />
+			</li>
+			<li ItemName="Item_Esoterica">
+				<SalePrice Value="0" />
+			</li>
+			<li ItemName="Item_LingStone">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+				<Fix>1</Fix>
+			</li>
+			<li ItemName="Item_EarthEssence">
+				<BuyPrice Value="100" />
+				<SalePrice Value="10" />
+			</li>
+			<li ItemName="Item_GodPractice_MiJuan" >
+				<BuyPrice Value="500" FriendPoint="1" />
+				<SalePrice Value="200" />
+			</li>
+			<li ItemName="Item_ExtremeJade" >
+				<BuyPrice Value="1000" FriendPoint="1" />
+				<SalePrice Value="200" />
+			</li>
+			<li ItemName="Item_Dan_TreeEXP" >
+				<BuyPrice Value="1000" FriendPoint="1" />
+				<SalePrice Value="200" />
+			</li>
+			<li ItemName="Item_Sys_Gong" >
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+			<li ItemName="Item_Dan_TiShen" >
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</ItemSpecial>
+		
+		<ItemCommon>
+			<li Rate="1">
+				<BuyPrice Value="1" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="2">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="3">
+				<BuyPrice Value="3" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="4">
+				<BuyPrice Value="4" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="5">
+				<BuyPrice Value="5" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="6">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="7">
+				<BuyPrice Value="50" />
+				<SalePrice Value="5" />
+			</li>
+			<li Rate="8">
+				<BuyPrice Value="100" />
+				<SalePrice Value="10" />
+			</li>
+			<li Rate="9">
+				<BuyPrice Value="500"/>
+				<SalePrice Value="50" />
+			</li>
+			<li Rate="10">
+				<BuyPrice Value="1000" FriendPoint="1"/>
+				<SalePrice Value="200" />
+			</li>
+			<li Rate="11">
+				<BuyPrice Value="2000" FriendPoint="2"/>
+				<SalePrice Value="500" />
+			</li>
+			<li Rate="12">
+				<BuyPrice Value="5000" FriendPoint="5"/>
+				<SalePrice Value="2000" />
+			</li>
+		</ItemCommon>
+
+		<EsotericaCommon>
+			<li GLevel="None">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+			<li GLevel="Qi">
+				<BuyPrice Value="250" />
+				<SalePrice Value="0" />
+			</li>
+			<li GLevel="Dan1">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+			<li GLevel="Dan2">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+			<li GLevel="God">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+			<li GLevel="God2">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+		</EsotericaCommon>
+	
+		<FabaoCommon>
+			<li Rate="1">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="2">
+				<BuyPrice Value="5" />
+				<SalePrice Value="5" />
+			</li>
+			<li Rate="3">
+				<BuyPrice Value="10" />
+				<SalePrice Value="10" />
+			</li>
+			<li Rate="4">
+				<BuyPrice Value="20" />
+				<SalePrice Value="20" />
+			</li>
+			<li Rate="5">
+				<BuyPrice Value="30" />
+				<SalePrice Value="30" />
+			</li>
+			<li Rate="6">
+				<BuyPrice Value="40" />
+				<SalePrice Value="40" />
+			</li>
+			<li Rate="7">
+				<BuyPrice Value="50" />
+				<SalePrice Value="50" />
+			</li>
+			<li Rate="8">
+				<BuyPrice Value="70" />
+				<SalePrice Value="70" />
+			</li>
+			<li Rate="9">
+				<BuyPrice Value="90" />
+				<SalePrice Value="90" />
+			</li>
+			<li Rate="10">
+				<BuyPrice Value="100" />
+				<SalePrice Value="100" />
+			</li>
+			<li Rate="11">
+				<BuyPrice Value="150" />
+				<SalePrice Value="150" />
+			</li>
+			<li Rate="12">
+				<BuyPrice Value="200" />
+				<SalePrice Value="200" />
+			</li>
+		</FabaoCommon>
+	</Def>
+</List></Defs>

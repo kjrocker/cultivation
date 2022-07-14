@@ -1,0 +1,11 @@
+Name	Sec
+Carry	30
+CutTree	600
+Mine	600
+Pee	1800
+CureFreeze	1
+CureHot	1
+Cook	600
+HeatEndure	600
+ColdEndure	600
+CureInner	600

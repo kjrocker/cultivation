@@ -1,0 +1,525 @@
+<Properties><List>
+	<Property Name="WorkKindEXPContent_FightSkillPractice">
+		<BaseValue>1</BaseValue>	
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_ActualCombatPractice">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_LargeCircle">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_SmallCircle">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Treat">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Pharmacy">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Slaughter">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Cook">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_StoneProcessing">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Build">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Sow">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Harvest">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Mining">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Art">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Make">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPContent_Research">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<!--个例直接获得经验-->
+	<Property Name="WorkKindEXPValue_Hit">
+		<BaseValue>20</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Kill">
+		<BaseValue>200</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_SayHi">
+		<BaseValue>20</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Talk">
+		<BaseValue>40</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_DeepTalk">
+		<BaseValue>300</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Love">
+		<BaseValue>500</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Encourage">
+		<BaseValue>75</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_NewFood">
+		<BaseValue>100</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Art_MakeArt">
+		<BaseValue>1000</BaseValue>
+	</Property>
+	
+	<Property Name="WorkKindEXPValue_Manual_MakeArt">
+		<BaseValue>1000</BaseValue>
+	</Property>
+	
+	<!--技能评价-->
+	<Property Name="MaxSkillAbility_Fight">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.4" Base="1" Addion="1"/>
+			<li Name="Intelligence" Weight="0.2" Base="1" Addion="1"/>
+			<li Name="Luck" Weight="0.4" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Qi">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Qi" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Physique" Weight="0.6" Base="1" Addion="1"/>
+			<li Name="Intelligence" Weight="0.4" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_SocialContact">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="SocialContact" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Charisma" Weight="1" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Medicine">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Medicine" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.6" Base="1" Addion="1"/>
+			<li Name="Intelligence" Weight="0.4" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Cooking">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Cooking" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.6" Base="1" Addion="1"/>
+			<li Name="Physique" Weight="0.4" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Building">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Building" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Farming">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Farming" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.7" Base="1" Addion="1"/>
+			<li Name="Physique" Weight="0.3" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Mining">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Mining" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		
+		<FiveBase>
+			<li Name="Perception" Weight="0.5" Base="1" Addion="1"/>
+			<li Name="Physique" Weight="0.5" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Art">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Art" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.4" Base="1" Addion="1"/>
+			<li Name="Intelligence" Weight="0.6" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Manual">
+		<BaseValue>0.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Manual" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+		<FiveBase>
+			<li Name="Perception" Weight="0.5" Base="1" Addion="1"/>
+			<li Name="Intelligence" Weight="0.2" Base="1" Addion="1"/>
+			<li Name="Luck" Weight="0.3" Base="1" Addion="1"/>
+		</FiveBase>
+	</Property>	
+	
+	<Property Name="MaxSkillAbility_Fabao">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Fabao" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+	</Property>
+	
+	<Property Name="MaxSkillAbility_FightSkill">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="FightSkill" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+		
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Barrier">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Barrier" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+	</Property>
+	
+	<Property Name="MaxSkillAbility_DouFa">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="DouFa" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+	</Property>
+	
+	<Property Name="MaxSkillAbility_DanQi">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="DanQi" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+	</Property>
+	
+	<Property Name="MaxSkillAbility_Zhen">
+		<BaseValue>2.5</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Skills>
+			<li Name="Zhen" Weight="1" Base="0" Addion="1"/>
+		</Skills>
+
+	</Property>
+  <!--..............................................................................................................-->
+	<Property Name="SkillAbility_Fight">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.4"/>
+			<li Name="Movement" Weight="0.4"/>
+			<li Name="Operation" Weight="0.2"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Fight"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Qi">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Qi"/>
+			
+		</ParallelProperties>	
+	</Property>
+	
+	<Property Name="SkillAbility_SocialContact">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="1"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_SocialContact"/>
+			
+		</ParallelProperties>	
+	</Property>
+	
+	<Property Name="SkillAbility_Medicine">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.4"/>
+			<li Name="Operation" Weight="0.6"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Medicine"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Cooking">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+			<li Name="Operation" Weight="0.7"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Cooking"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Building">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.4"/>
+			<li Name="Operation" Weight="0.4"/>
+			<li Name="Movement" Weight="0.2"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Building"/>
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Farming">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.4"/>
+			<li Name="Operation" Weight="0.6"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Farming"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Mining">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+			<li Name="Operation" Weight="0.5"/>
+			<li Name="Movement" Weight="0.2"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Mining"/>
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Art">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+			<li Name="Operation" Weight="0.3"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Art"/>
+			
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Manual">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+			<li Name="Operation" Weight="0.7"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Manual"/>
+		</ParallelProperties>
+	</Property>	
+	
+	<Property Name="SkillAbility_Fabao">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+			<li Name="Consciousness" Weight="1"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Fabao"/>	
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_FightSkill">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+			<li Name="Consciousness" Weight="1"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_FightSkill"/>	
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Barrier">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<Functions>
+			<li Name="Meridian" Weight="1"/>
+			<li Name="Consciousness" Weight="1"/>
+		</Functions>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Barrier"/>	
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_DanQi">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_DanQi"/>	
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_DouFa">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_DouFa"/>	
+		</ParallelProperties>
+	</Property>
+	
+	<Property Name="SkillAbility_Zhen">
+		<BaseValue>1</BaseValue>
+		<LuckWeight>0</LuckWeight>
+		
+		<ParallelProperties>
+			<li Name="MaxSkillAbility_Zhen"/>	
+		</ParallelProperties>
+	</Property>
+</List></Properties>

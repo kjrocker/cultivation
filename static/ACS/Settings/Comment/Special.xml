@@ -1,0 +1,12 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>SpecialZhen</Name>
+            <Notes>关于阵法的评论面板</Notes>
+            <Title>阵法</Title>
+            <Desc>汇集众人之力为一体，此乃阵法之道的奥义。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

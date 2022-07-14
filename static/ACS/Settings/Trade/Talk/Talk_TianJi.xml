@@ -1,0 +1,28 @@
+<Defs><List>
+	<Def Name="Talk_TianJi" Parent="Talk_BaiMan">
+		<Hate>
+			<li>好像有什么东西在说话？我怎么看不见？</li>
+			<li>哦？是你？给本尊讲个笑话，讲不出来打死你。</li>
+		</Hate>
+		<Normal>
+			<li>赶紧，我马上要上桌了。</li>
+			<li>（哈欠）你挑好了说一声。</li>
+		</Normal>
+		<Like>
+			<li>（放下手中的骰子）你好啊，来不来搞两把？</li>
+			<li>嗯，你随便逛就行。</li>
+		</Like>
+		<Submiss>
+			<li>好久不见啊，您有何贵干啊？</li>
+			<li>又是您啊，最近在耍啥啊？</li>
+		</Submiss>
+		<GiftLike>
+			<li>今天真是个好日子啊，感觉比双修还快乐。</li>
+			<li>好人啊，这个我想要了好久了！</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>这东西，我拿去骗凡人都不行。</li>
+			<li>这让我想起了很久以前吃土的日子。你滚。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>
