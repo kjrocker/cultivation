@@ -1,4 +1,5 @@
-/** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ event, resolve }) {
+import type { Handle } from '@sveltejs/kit';
+
+export const handle: Handle = async ({ event, resolve }) => {
 	return await resolve(event, { ssr: false });
-}
+};
