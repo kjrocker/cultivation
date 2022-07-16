@@ -1,16 +1,11 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
-import { A_PREFIX } from '$lib/api/parser';
-import { mapKeys } from '$lib/util/mapKeys';
+import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { init, lensPath, omit, view } from 'ramda';
 import { SPECIES_CONFIG, type SpeciesKeys } from './species';
 
 const excludeKinds = ['Virtual', 'Meridian'];
 
-type BodyPart = { Name: string; DisplayName: string; Kind: 'Bone' | 'Flesh' | 'Organ' };
-
-const stripAttributePrefix = mapKeys((key: string) =>
-	key.startsWith(A_PREFIX) ? key.substring(A_PREFIX.length) : key
-);
+export type BodyPart = { Name: string; DisplayName: string; Kind: 'Bone' | 'Flesh' | 'Organ' };
 
 export const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
 	const config = SPECIES_CONFIG[species];
