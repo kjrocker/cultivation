@@ -1,6 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 
-const ARRAY_TAGS = ['li'];
+const ARRAY_TAGS = ['li', 'Necks'];
 const ARRAY_ATTRIBUTES: string[] = [];
 
 export const A_PREFIX = '@_';

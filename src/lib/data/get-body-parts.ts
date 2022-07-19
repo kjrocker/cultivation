@@ -1,6 +1,6 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { init, lensPath, omit, view } from 'ramda';
+import { init, lensPath, omit, set, view } from 'ramda';
 import { SPECIES_CONFIG, type SpeciesKeys } from './species';
 
 const excludeKinds = ['Virtual', 'Meridian'];
@@ -13,7 +13,6 @@ export const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
 		([data, english]) => {
 			const partNames: Record<string, string> = english.Texts.List.Text;
 			let bodyParts: unknown = data.BodyDefs.List.BodyDef;
-			console.log(bodyParts, partNames);
 			const parts = Object.keys(partNames)
 				.map((key) => {
 					const name = partNames[key];
