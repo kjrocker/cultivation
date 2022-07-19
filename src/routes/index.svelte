@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BodyPartList from '$lib/components/body-part-list.svelte';
+	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
 	import RemoldOptions from '$lib/components/forms/remold-options/remold-options.svelte';
 	import SpeciesAndLaw from '$lib/components/forms/species-and-law/species-and-law.svelte';
 	import { speciesLawStore } from '$lib/components/forms/species-and-law/species-law-store';
@@ -30,7 +31,7 @@
 </div>
 <SecretBodies />
 <div class="flex">
-	<div class="w-1/4">Current Secret Body Goes Here</div>
+	<div class="w-1/4"><CurrentSecretBody /></div>
 	<div class="w-1/4">
 		<BodyPartList
 			species={$speciesLawStore.species.key}

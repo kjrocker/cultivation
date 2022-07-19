@@ -30,6 +30,6 @@
 				<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
 			{/if}
 		</div>
-		<p class="text-sm text-gray-500">{label.Name}</p>
+		<!-- <p class="text-sm text-gray-500">{label.Name}</p> -->
 	</div>
 </li>

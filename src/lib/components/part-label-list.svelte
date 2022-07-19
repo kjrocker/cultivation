@@ -3,7 +3,7 @@
 	import type { BodyPart } from '$lib/data/get-body-parts';
 	import { getLabelsView, type LabelView } from '$lib/data/get-labels';
 	import type { DataView } from '$lib/util/create-data-table';
-	import { sortBy } from 'ramda';
+	import { sortBy, uniq, uniqBy } from 'ramda';
 	import { onMount } from 'svelte';
 	import PartLabelItem from './part-label-item.svelte';
 	import { partLabelStore } from './part-label-store';
@@ -31,15 +31,15 @@
 
 	const ensureTempered = (newSelected: LabelView[]): LabelView[] => {
 		if (newSelected.length === 0) return newSelected;
-		if (newSelected[0].Name !== filteredLabels[0].Name) {
-			return [filteredLabels[0], ...newSelected];
+		if (newSelected[0].Name !== temperedLabel?.Name) {
+			return [temperedLabel as LabelView, ...newSelected];
 		} else {
 			return newSelected;
 		}
 	};
 
 	$: selected = $partLabelStore[bodyPart.Name];
-
+	$: temperedLabel = filteredLabels?.find((label) => label.MaxLevel >= 100);
 	$: filteredLabels = sortBy(
 		(view) =>
 			selected.find((l) => l.Name === view.Name) ? view.MaxLevel * -1000 : view.MaxLevel * -1,

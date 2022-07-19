@@ -10,7 +10,7 @@ export type SecretBody = {
 	DisplayName: string;
 	Desc: string;
 	EqupAdvise: string;
-	Parts: { Name: string; Labels: { Name: string; Levels: number[] } }[];
+	Parts: { Name: string; Labels: { Name: string; Levels: number[] }[] }[];
 	Levels: { Title: string; Desc: string; Modifier: string; SuperPartProperties: PartProperty[] }[];
 };
 
