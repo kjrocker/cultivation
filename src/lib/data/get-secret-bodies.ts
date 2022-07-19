@@ -1,4 +1,5 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
+import { createDataView } from '$lib/util/create-data-table';
 import { joinEnglishPaths } from '$lib/util/join-english-paths';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { indexBy, omit } from 'ramda';
@@ -13,7 +14,9 @@ export type SecretBody = {
 	Levels: { Title: string; Desc: string; Modifier: string; SuperPartProperties: PartProperty[] }[];
 };
 
-export const getSecretBodies = async (): Promise<Record<string, SecretBody>> => {
+export const getSecretBodyView = async () => createDataView(await getSecretBodies(), 'Name');
+
+export const getSecretBodies = async (): Promise<SecretBody[]> => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong1'),
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong2'),
@@ -73,5 +76,5 @@ export const getSecretBodies = async (): Promise<Record<string, SecretBody>> => 
 			});
 		})
 		.flat();
-	return indexBy((body) => body.Name, bodies);
+	return bodies;
 };

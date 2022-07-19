@@ -1,5 +1,6 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
 import { A_PREFIX } from '$lib/api/parser';
+import { createDataView } from '$lib/util/create-data-table';
 import { renameKey } from '$lib/util/rename-key';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { groupBy, indexBy, map, prop } from 'ramda';
@@ -21,6 +22,10 @@ export type LabelView = {
 	Modifier: string;
 	BodyPart: string;
 };
+
+let cache: LabelView[];
+
+export const getLabelsView = async () => createDataView(await getLabels(), 'Name');
 
 export const getLabels = async (): Promise<LabelView[]> => {
 	const [$labels, $data, $english] = await Promise.all([
@@ -80,5 +85,7 @@ export const getLabels = async (): Promise<LabelView[]> => {
 		$english.Texts.List.Text.map((text: any) => renameKey(`${A_PREFIX}Name`, 'Name', text))
 	);
 
-	return data.map((d) => ({ ...d, ...english[d.Name], ...labelView[d.Name] }));
+	cache = data.map((d) => ({ ...d, ...english[d.Name], ...labelView[d.Name] }));
+
+	return cache;
 };

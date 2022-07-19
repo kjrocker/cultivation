@@ -1,5 +1,6 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
 import { A_PREFIX } from '$lib/api/parser';
+import { createDataView } from '$lib/util/create-data-table';
 import { joinEnglishPaths } from '$lib/util/join-english-paths';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { omit } from 'ramda';
@@ -46,6 +47,8 @@ export type BodyLaw = {
 	SuperParts: string[];
 	QuenchingMethods: string[];
 };
+
+export const getBodyLawViews = async () => createDataView(await getBodyLaws(), 'Name');
 
 export const getBodyLaws = async (): Promise<BodyLaw[]> => {
 	const $bodies = await Promise.all([

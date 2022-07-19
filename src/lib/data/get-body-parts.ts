@@ -1,11 +1,28 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
+import { A_PREFIX } from '$lib/api/parser';
+import { createDataView } from '$lib/util/create-data-table';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { init, lensPath, omit, set, view } from 'ramda';
-import { SPECIES_CONFIG, type SpeciesKeys } from './species';
+import { indexBy, init, lensPath, omit, set, view, mapObjIndexed } from 'ramda';
+import { SPECIES_CONFIG, SPECIES_OPTIONS, type SpeciesKeys } from './species';
 
 const excludeKinds = ['Virtual', 'Meridian'];
 
-export type BodyPart = { Name: string; DisplayName: string; Kind: 'Bone' | 'Flesh' | 'Organ' };
+export type BodyPart = {
+	Name: string;
+	DisplayName: string;
+	Species: SpeciesKeys;
+	Kind: 'Bone' | 'Flesh' | 'Organ';
+};
+
+export const getAllBodyParts = async () => {
+	const bodyPartLists = await Promise.all(
+		SPECIES_OPTIONS.map(async (opt) => await getBodyParts(opt.key))
+	);
+	return mapObjIndexed(
+		(list: BodyPart[]) => createDataView(list, 'Name'),
+		indexBy((a) => a[0].Species, bodyPartLists)
+	);
+};
 
 export const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
 	const config = SPECIES_CONFIG[species];
@@ -26,7 +43,8 @@ export const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
 					);
 					return stripAttributePrefix({
 						...view(path, bodyParts),
-						'@_DisplayName': name
+						Species: species,
+						[`${A_PREFIX}DisplayName`]: name
 					}) as BodyPart;
 				})
 				.filter((part) => !excludeKinds.includes(part.Kind))
