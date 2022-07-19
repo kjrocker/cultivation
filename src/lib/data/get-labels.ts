@@ -4,7 +4,7 @@ import { renameKey } from '$lib/util/rename-key';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { groupBy, indexBy, map, prop } from 'ramda';
 
-type PartProperty =
+export type PartProperty =
 	| { Name: string; AddP: string }
 	| { Name: string; AddV: string }
 	| { Name: string; BAddV: string };

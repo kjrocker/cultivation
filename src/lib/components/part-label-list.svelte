@@ -1,42 +1,45 @@
 <script lang="ts">
 	import { filterLabelByPart } from '$lib/data/filter-labels-by-part';
-	import { Icon } from '@steeze-ui/svelte-icon';
-	import { MinusCircle } from '@steeze-ui/iconic-free';
 	import type { BodyPart } from '$lib/data/get-body-parts';
 	import { getLabels, type LabelView } from '$lib/data/get-labels';
 	import { sortBy } from 'ramda';
 	import { onMount } from 'svelte';
+	import { SvelteComponentDev } from 'svelte/internal';
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
+	import PartLabelItem from './part-label-item.svelte';
+	import { partLabelStore } from './part-label-store';
 
 	let labels: LabelView[] = [];
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
-	export let selected: LabelView[] = [];
 	export let bodyPart: BodyPart;
 
 	onMount(async () => {
 		labels = await getLabels();
 	});
 
-	const handleAdd = (e: MouseEvent, label: LabelView, add = true) => {
-		selected = [...selected, label];
-		onChange(e, selected);
+	const handleAdd = (e: MouseEvent, label: LabelView) => {
+		const newValue = ensureTempered([...selected, label]);
+		partLabelStore.update(bodyPart.Name, newValue);
+		onChange(e, newValue);
 	};
 
-	const handleRemove = (e: MouseEvent, label: LabelView, add = true) => {
-		selected = selected.filter((l) => l.Name !== label.Name);
-		onChange(e, selected);
+	const handleRemove = (e: MouseEvent, label: LabelView) => {
+		const newValue = ensureTempered(selected.filter((l) => l.Name !== label.Name));
+		partLabelStore.update(bodyPart.Name, newValue);
+		onChange(e, newValue);
 	};
 
-	const levelColors = {
-		1: 'text-orange-600',
-		4: 'text-pink-500',
-		9: 'text-blue-600',
-		16: 'text-green-600'
+	const ensureTempered = (newSelected: LabelView[]): LabelView[] => {
+		if (newSelected.length === 0) return newSelected;
+		if (newSelected[0].Name !== filteredLabels[0].Name) {
+			return [filteredLabels[0], ...newSelected];
+		} else {
+			return newSelected;
+		}
 	};
-	const getColor = (level: number): string => {
-		return levelColors[level] ?? 'text-gray-900';
-	};
+
+	$: selected = $partLabelStore[bodyPart.Name];
 
 	$: filteredLabels = sortBy(
 		(view) =>
@@ -45,26 +48,17 @@
 	);
 </script>
 
-<ul class="divide-y divide-gray-200 w-1/3 max-h-[90vh] overflow-y-auto overflow-x-hidden">
-	{#each filteredLabels as part, i}
-		{#if selected.find((l) => l.Name === part.Name)}
-			<li class="py-2 flex bg-gray-50" on:click={(e) => handleRemove(e, part)}>
-				<BodyTypeIcon className="h-10 w-10" type={part.BodyPart} />
-				<div class="ml-3">
-					<p class={`text-sm font-bold ${getColor(part.MaxLevel)}`}>
-						{part.DisplayName}
-					</p>
-					<p class="text-sm text-gray-500">{part.Name}</p>
-				</div>
-			</li>
-		{:else}
-			<li class="py-2 flex" on:click={(e) => handleAdd(e, part)}>
-				<BodyTypeIcon className="h-10 w-10" type={part.BodyPart} />
-				<div class="ml-3">
-					<p class={`text-sm font-medium ${getColor(part.MaxLevel)}`}>{part.DisplayName}</p>
-					<p class="text-sm text-gray-500">{part.Name}</p>
-				</div>
-			</li>
-		{/if}
+<ul class="divide-y divide-gray-200 w-1/4 max-h-[90vh] overflow-y-auto overflow-x-hidden">
+	Current: {bodyPart.DisplayName}
+	{#each filteredLabels as label, i}
+		<PartLabelItem
+			selected={!!selected.find((l) => l.Name === label.Name)}
+			{label}
+			onClick={(e, label) => {
+				return !!selected.find((l) => l.Name === label.Name)
+					? handleRemove(e, label)
+					: handleAdd(e, label);
+			}}
+		/>
 	{/each}
 </ul>

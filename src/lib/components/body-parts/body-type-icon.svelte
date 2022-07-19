@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let type: 'Flesh' | 'Organ' | 'Bone';
+	export let type: 'Flesh' | 'Organ' | 'Bone' | string;
 	export let className: string;
 	import bone from './bone.png';
 	import organ from './organ.png';

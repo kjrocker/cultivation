@@ -1,12 +1,15 @@
+import { values, mapObjIndexed } from 'ramda';
 import type { LanguageEnum } from 'src/types/language';
 import type { SettingsEnum } from 'src/types/settings';
 
-type SpeciesConfig = {
+export type SpeciesConfig = {
 	name: string;
 	setting: SettingsEnum;
 	language: LanguageEnum;
 	excludeNames?: string[];
 };
+
+export type SpeciesOption = SpeciesConfig & { key: SpeciesKeys };
 
 export type SpeciesKeys =
 	| 'human'
@@ -23,7 +26,7 @@ export type SpeciesKeys =
 	| 'rabbit'
 	| 'turtle';
 
-const DEFAULT_EXCLUDE_NAMES = ['Head', 'Body'];
+const DEFAULT_EXCLUDE_NAMES = ['Head', 'Body', 'Face'];
 
 export const SPECIES_CONFIG: Record<SpeciesKeys, SpeciesConfig> = {
 	human: {
@@ -105,3 +108,7 @@ export const SPECIES_CONFIG: Record<SpeciesKeys, SpeciesConfig> = {
 		excludeNames: ['YGAnimal_TurtleBody', ...DEFAULT_EXCLUDE_NAMES]
 	}
 };
+
+export const SPECIES_OPTIONS: SpeciesOption[] = values(
+	mapObjIndexed((val, key) => ({ key, ...val }), SPECIES_CONFIG)
+);

@@ -1,4 +1,4 @@
-import { init, set, lensPath, identity } from 'ramda';
+import { set, lensPath, identity } from 'ramda';
 
 type ExtendPaths = (v: string | number) => string | number | (string | number)[];
 
@@ -19,7 +19,8 @@ const createEnglishLensFromPaths = (
 ) => {
 	return Object.keys(paths).map((key) => {
 		const name = paths[key];
-		const lens = lensPath(transformRawPath(key, extendPaths));
+		const newPath = transformRawPath(key, extendPaths);
+		const lens = lensPath(newPath);
 		return set(lens, name);
 	});
 };
