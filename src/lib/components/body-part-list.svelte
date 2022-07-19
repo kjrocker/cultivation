@@ -15,23 +15,36 @@
 	};
 
 	$: parts = getBodyParts(species);
+	$: currentBodyNames = $secretBodyStore?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
-		$secretBodyStore === undefined
+		currentBodyNames === undefined
 			? parts
-			: parts.then((partList) =>
-					partList.filter((part) => $secretBodyStore?.Parts.map((p) => p.Name).includes(part.Name))
+			: parts.then((partList) => partList.filter((part) => currentBodyNames?.includes(part.Name)));
+	$: isMissingParts =
+		currentBodyNames === undefined
+			? Promise.resolve(false)
+			: parts.then(
+					(partList) =>
+						currentBodyNames?.filter((name) => !partList.map((v) => v.Name).includes(name)).length
 			  );
 </script>
 
 {#await currentBodyParts then bodyParts}
 	<ul class="divide-y divide-gray-200 max-h-[90vh] overflow-y-auto">
-		{#each bodyParts as part, i}
-			<BodyPartItem
-				selected={!!selected && part.Name === selected.Name}
-				labelCount={$partLabelStore[part.Name]?.length ?? 0}
-				onClick={handleClick}
-				{part}
-			/>
-		{/each}
+		{#await isMissingParts then missing}
+			{#if missing && bodyParts.length}
+				<li>There are {missing} body part(s) missing!</li>
+			{:else if missing}
+				<li>Every single part is missing! Don't use snakes.</li>
+			{/if}
+			{#each bodyParts as part, i}
+				<BodyPartItem
+					selected={!!selected && part.Name === selected.Name}
+					labelCount={$partLabelStore[part.Name]?.length ?? 0}
+					onClick={handleClick}
+					{part}
+				/>
+			{/each}
+		{/await}
 	</ul>
 {/await}
