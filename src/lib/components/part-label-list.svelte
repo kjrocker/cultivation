@@ -1,21 +1,20 @@
 <script lang="ts">
 	import { filterLabelByPart } from '$lib/data/filter-labels-by-part';
 	import type { BodyPart } from '$lib/data/get-body-parts';
-	import { getLabels, type LabelView } from '$lib/data/get-labels';
+	import { getLabelsView, type LabelView } from '$lib/data/get-labels';
+	import type { DataView } from '$lib/util/create-data-table';
 	import { sortBy } from 'ramda';
 	import { onMount } from 'svelte';
-	import { SvelteComponentDev } from 'svelte/internal';
-	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import PartLabelItem from './part-label-item.svelte';
 	import { partLabelStore } from './part-label-store';
 
-	let labels: LabelView[] = [];
+	let labels: DataView<LabelView> | undefined;
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
 	export let bodyPart: BodyPart;
 
 	onMount(async () => {
-		labels = await getLabels();
+		labels = await getLabelsView();
 	});
 
 	const handleAdd = (e: MouseEvent, label: LabelView) => {
@@ -44,7 +43,7 @@
 	$: filteredLabels = sortBy(
 		(view) =>
 			selected.find((l) => l.Name === view.Name) ? view.MaxLevel * -1000 : view.MaxLevel * -1,
-		labels.filter((label) => filterLabelByPart(bodyPart, label))
+		labels?.list?.filter((label) => filterLabelByPart(bodyPart, label)) ?? []
 	);
 </script>
 

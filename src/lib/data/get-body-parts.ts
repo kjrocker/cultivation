@@ -24,7 +24,7 @@ export const getAllBodyParts = async () => {
 	);
 };
 
-export const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
+const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
 	const config = SPECIES_CONFIG[species];
 	return Promise.all([getSettings(config.setting), getLanguage(config.language)]).then(
 		([data, english]) => {

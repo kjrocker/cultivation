@@ -27,7 +27,7 @@ let cache: LabelView[];
 
 export const getLabelsView = async () => createDataView(await getLabels(), 'Name');
 
-export const getLabels = async (): Promise<LabelView[]> => {
+const getLabels = async (): Promise<LabelView[]> => {
 	const [$labels, $data, $english] = await Promise.all([
 		getSettings('Practice/BodyPractice/LabelCache/LabelCache'),
 		getSettings('Practice/BodyPractice/QuenchingLabel/QuenchingLabel'),

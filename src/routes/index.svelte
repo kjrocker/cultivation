@@ -7,8 +7,6 @@
 	import { partLabelStore } from '$lib/components/part-label-store';
 	import SecretBodies from '$lib/components/secret-bodies.svelte';
 	import type { BodyPart } from '$lib/data/get-body-parts';
-	import type { LabelView } from '$lib/data/get-labels';
-	import { getSecretBodies } from '$lib/data/get-secret-bodies';
 
 	let selectedPart: BodyPart | undefined;
 
@@ -32,6 +30,7 @@
 </div>
 <SecretBodies />
 <div class="flex">
+	<div class="w-1/4">Current Secret Body Goes Here</div>
 	<div class="w-1/4">
 		<BodyPartList
 			species={$speciesLawStore.species.key}

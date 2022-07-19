@@ -1,9 +1,18 @@
 <script lang="ts">
-	import { getBodyParts, type BodyPart } from '$lib/data/get-body-parts';
+	import { getBodyLawViews } from '$lib/data/get-body-laws';
+
+	import { getAllBodyParts, type BodyPart } from '$lib/data/get-body-parts';
 	import type { SpeciesKeys } from '$lib/data/species';
+	import type { DataView } from '$lib/util/create-data-table';
+	import { onMount } from 'svelte';
 	import BodyPartItem from './body-part-item.svelte';
 	import { partLabelStore } from './part-label-store';
 	import { secretBodyStore } from './secret-bodies-store';
+
+	let allParts: Record<SpeciesKeys, DataView<BodyPart>> | undefined;
+	onMount(async () => {
+		allParts = await getAllBodyParts();
+	});
 
 	export let species: SpeciesKeys;
 	export let onChange: (e: MouseEvent, part: BodyPart) => void = () => undefined;
@@ -14,7 +23,7 @@
 		onChange(e, part);
 	};
 
-	$: parts = getBodyParts(species);
+	$: parts = allParts && species ? Promise.resolve(allParts[species].list) : Promise.resolve([]);
 	$: currentBodyNames = $secretBodyStore?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined

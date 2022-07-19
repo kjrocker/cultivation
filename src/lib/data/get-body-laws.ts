@@ -50,7 +50,7 @@ export type BodyLaw = {
 
 export const getBodyLawViews = async () => createDataView(await getBodyLaws(), 'Name');
 
-export const getBodyLaws = async (): Promise<BodyLaw[]> => {
+const getBodyLaws = async (): Promise<BodyLaw[]> => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/Gong/Body/Body_Gong_1'),
 		getSettings('Practice/Gong/Body/Body_Gong_2'),

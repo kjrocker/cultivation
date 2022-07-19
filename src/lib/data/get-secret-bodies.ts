@@ -16,7 +16,7 @@ export type SecretBody = {
 
 export const getSecretBodyView = async () => createDataView(await getSecretBodies(), 'Name');
 
-export const getSecretBodies = async (): Promise<SecretBody[]> => {
+const getSecretBodies = async (): Promise<SecretBody[]> => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong1'),
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong2'),
