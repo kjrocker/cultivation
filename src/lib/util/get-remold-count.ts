@@ -1,4 +1,4 @@
-import type { RemoldOptions } from './remold-options-store';
+import type { RemoldOptions } from '../components/forms/remold-options/remold-options-store';
 
 export const getRemoldCount = (kind: 'Flesh' | 'Bone' | 'Organ', options: RemoldOptions) => {
 	switch (kind) {

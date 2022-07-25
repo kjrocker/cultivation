@@ -2,7 +2,7 @@
 	import type { BodyPart } from '$lib/data/get-body-parts';
 	import { labelStore, type LabelView } from '$lib/data/get-labels';
 	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
-	import { sortBy } from 'ramda';
+	import { sortBy, uniqBy } from 'ramda';
 	import PartLabelItem from './part-label-item.svelte';
 	import { partLabelStore } from './part-label-store';
 
@@ -10,6 +10,8 @@
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
 	export let bodyPart: BodyPart;
+
+	const uniqByName = uniqBy<LabelView, string>((v) => v.Name);
 
 	const handleAdd = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered([...selected, label]);
@@ -26,9 +28,9 @@
 	const ensureTempered = (newSelected: LabelView[]): LabelView[] => {
 		if (newSelected.length === 0) return newSelected;
 		if (newSelected[0].Name !== temperedLabel?.Name) {
-			return [temperedLabel as LabelView, ...newSelected];
+			return uniqByName([temperedLabel as LabelView, ...newSelected]);
 		} else {
-			return newSelected;
+			return uniqByName(newSelected);
 		}
 	};
 

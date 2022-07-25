@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BodyPartList from '$lib/components/body-part-list.svelte';
+	import BonusList from '$lib/components/bonus-list.svelte';
 	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
 	import RemoldOptions from '$lib/components/forms/remold-options/remold-options.svelte';
 	import SpeciesAndLaw from '$lib/components/forms/species-and-law/species-and-law.svelte';
@@ -11,7 +12,7 @@
 
 	let selectedPart: BodyPart | undefined;
 
-	const onPartChange = (e, part: BodyPart) => {
+	const onPartChange = (e: any, part: BodyPart) => {
 		if (!$partLabelStore[part.Name]) {
 			$partLabelStore[part.Name] = [];
 		}
@@ -22,9 +23,6 @@
 	<RemoldOptions />
 	<SpeciesAndLaw
 		onSpeciesChange={() => {
-			partLabelStore.reset();
-		}}
-		onLawChange={() => {
 			partLabelStore.reset();
 		}}
 	/>
@@ -42,4 +40,5 @@
 	{#if selectedPart && Array.isArray($partLabelStore[selectedPart.Name])}
 		<PartLabelList bodyPart={selectedPart} />
 	{/if}
+	<BonusList />
 </div>
