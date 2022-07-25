@@ -17,4 +17,4 @@ const createSecretBodyStore = () => {
 	};
 };
 
-export const secretBodyStore = createSecretBodyStore();
+export const currentSecretBodyStore = createSecretBodyStore();

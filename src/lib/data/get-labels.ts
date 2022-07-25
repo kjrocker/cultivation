@@ -1,9 +1,10 @@
-import { getLanguage, getSettings } from '$lib/api/get-data';
+import { getSettings, getLanguage } from '$lib/api/get-data';
 import { A_PREFIX } from '$lib/api/parser';
 import { createDataView } from '$lib/util/create-data-table';
 import { renameKey } from '$lib/util/rename-key';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { groupBy, indexBy, map, prop } from 'ramda';
+import { indexBy, prop } from 'ramda';
+import { createStaticAsyncStore } from './async-readable-store';
 
 export type PartProperty =
 	| { Name: string; AddP: string }
@@ -11,57 +12,58 @@ export type PartProperty =
 	| { Name: string; BAddV: string };
 
 export type LabelView = {
+	Label: string;
+	BodyPart: string;
+	CacheName: string;
+	Lv: string;
+	Weight?: string | undefined;
+	LinkItem?: string | undefined;
 	Name: string;
 	DisplayName: string;
 	Desc: string;
 	Group: string;
 	MaxLevel: number;
-	LinkItem: string[];
-	SuperPartProperties?: PartProperty[];
 	Rate: number;
 	Modifier: string;
-	BodyPart: string;
+	SuperPartProperties?: PartProperty[] | undefined;
+	LabelNumAddBone?: number | undefined;
+	LabelNumAddOrgan?: number | undefined;
+	LabelNumAddFlesh?: number | undefined;
 };
 
-let cache: LabelView[];
+const LabelNameBlockList = ['BQLabel_LOST'];
 
-export const getLabelsView = async () => createDataView(await getLabels(), 'Name');
-
-const getLabels = async (): Promise<LabelView[]> => {
+export const getLabels = async () => {
 	const [$labels, $data, $english] = await Promise.all([
 		getSettings('Practice/BodyPractice/LabelCache/LabelCache'),
 		getSettings('Practice/BodyPractice/QuenchingLabel/QuenchingLabel'),
 		getLanguage('Practice/BodyPractice/QuenchingLabel/QuenchingLabel')
 	]);
 
-	const labels: { Name: string; Label: string; BodyPart: string; LinkItem: string }[] =
-		$labels.BPLabelCacheDefs.List.Def.map((cache: any) => {
-			if (cache[`${A_PREFIX}Name`] === 'LostCache') return undefined;
-			const { Labels, ...rest } = cache;
-			const parent = stripAttributePrefix(rest);
-			return Labels.li.map((label: unknown) => ({ ...parent, ...stripAttributePrefix(label) }));
-		})
-			.flat()
-			.filter((label: any) => !!label);
-
-	const labelView = labels
-		.map((label) => ({
-			BodyPart: label.BodyPart,
-			LinkItem: label.LinkItem,
-			Label: label.Label
-		}))
-		.reduce((acc, val) => {
-			const current = acc[val.Label];
-			if (current && val.LinkItem) {
-				acc[val.Label] = {
-					BodyPart: current.BodyPart,
-					LinkItem: [...current.LinkItem, val.LinkItem]
-				};
-			} else {
-				acc[val.Label] = { BodyPart: val.BodyPart, LinkItem: val.LinkItem ? [val.LinkItem] : [] };
-			}
+	const labels: Record<
+		string,
+		{
+			Label: string;
+			BodyPart: string;
+			CacheName: string;
+			Lv: string;
+			Weight?: string;
+			LinkItem?: string;
+		}
+	> = $labels.BPLabelCacheDefs.List.Def.reduce((acc: any, cache: any) => {
+		if (cache && cache.Labels) {
+			const CacheName = cache[`${A_PREFIX}Name`];
+			const transformLabel = (v: any) => ({ ...stripAttributePrefix(v), CacheName });
+			cache.Labels.li.forEach((v: any) => {
+				const newLabel = transformLabel(v);
+				// @ts-expect-error
+				acc[newLabel.Label] = newLabel;
+			});
 			return acc;
-		}, {} as Record<string, { LinkItem: string[]; BodyPart: string }>);
+		} else {
+			return acc;
+		}
+	}, {});
 
 	const data: {
 		DisplayName: string;
@@ -71,13 +73,17 @@ const getLabels = async (): Promise<LabelView[]> => {
 		Rate: number;
 		Modifier: string;
 		SuperPartProperties?: PartProperty[];
+		LabelNumAddBone?: number;
+		LabelNumAddOrgan?: number;
+		LabelNumAddFlesh?: number;
 	}[] = $data.BodyQuenchingLabelDefs.List.Def.map((def: any) => {
-		return {
+		const newLabelDef = {
 			...stripAttributePrefix(def),
 			SuperPartProperties: def.SuperPartProperties?.li.map((prop: any) =>
 				stripAttributePrefix(prop)
 			)
 		};
+		return newLabelDef;
 	});
 
 	const english: Record<string, { Name: string; DisplayName: string; Desc: string }> = indexBy(
@@ -85,7 +91,11 @@ const getLabels = async (): Promise<LabelView[]> => {
 		$english.Texts.List.Text.map((text: any) => renameKey(`${A_PREFIX}Name`, 'Name', text))
 	);
 
-	cache = data.map((d) => ({ ...d, ...english[d.Name], ...labelView[d.Name] }));
+	const views = data
+		.filter((d) => !!d && !LabelNameBlockList.includes(d.Name))
+		.map((d) => ({ ...d, ...english[d.Name], ...labels[d.Name] } as LabelView));
 
-	return cache;
+	return createDataView(views, 'Name');
 };
+
+export const labelStore = createStaticAsyncStore(getLabels);

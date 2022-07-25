@@ -1,18 +1,11 @@
 <script lang="ts">
-	import { getBodyLawViews } from '$lib/data/get-body-laws';
-
-	import { getAllBodyParts, type BodyPart } from '$lib/data/get-body-parts';
+	import { bodyPartsStore, type BodyPart } from '$lib/data/get-body-parts';
 	import type { SpeciesKeys } from '$lib/data/species';
-	import type { DataView } from '$lib/util/create-data-table';
-	import { onMount } from 'svelte';
 	import BodyPartItem from './body-part-item.svelte';
 	import { partLabelStore } from './part-label-store';
-	import { secretBodyStore } from './secret-bodies-store';
+	import { currentSecretBodyStore } from './secret-bodies-store';
 
-	let allParts: Record<SpeciesKeys, DataView<BodyPart>> | undefined;
-	onMount(async () => {
-		allParts = await getAllBodyParts();
-	});
+	let allParts = $bodyPartsStore!;
 
 	export let species: SpeciesKeys;
 	export let onChange: (e: MouseEvent, part: BodyPart) => void = () => undefined;
@@ -23,19 +16,16 @@
 		onChange(e, part);
 	};
 
-	$: parts = allParts && species ? Promise.resolve(allParts[species].list) : Promise.resolve([]);
-	$: currentBodyNames = $secretBodyStore?.Parts.map((p) => p.Name);
+	$: parts = allParts && species ? allParts.species[species].map((name) => allParts.map[name]) : [];
+	$: currentBodyNames = $currentSecretBodyStore?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined
 			? parts
-			: parts.then((partList) => partList.filter((part) => currentBodyNames?.includes(part.Name)));
+			: parts.filter((part) => currentBodyNames?.includes(part.Name));
 	$: isMissingParts =
 		currentBodyNames === undefined
-			? Promise.resolve(false)
-			: parts.then(
-					(partList) =>
-						currentBodyNames?.filter((name) => !partList.map((v) => v.Name).includes(name)).length
-			  );
+			? false
+			: currentBodyNames?.filter((name) => !parts.map((v) => v.Name).includes(name)).length;
 </script>
 
 {#await currentBodyParts then bodyParts}

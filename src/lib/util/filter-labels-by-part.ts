@@ -1,5 +1,5 @@
-import type { BodyPart } from './get-body-parts';
-import type { LabelView } from './get-labels';
+import type { BodyPart } from '../data/get-body-parts';
+import type { LabelView } from '../data/get-labels';
 
 const labelBlacklist = ['QuenchingLabel_Lv0_Base'];
 

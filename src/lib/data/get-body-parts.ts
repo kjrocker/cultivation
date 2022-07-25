@@ -1,60 +1,94 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
 import { A_PREFIX } from '$lib/api/parser';
 import { createDataView } from '$lib/util/create-data-table';
+import { joinEnglishPaths } from '$lib/util/join-english-paths';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { indexBy, init, lensPath, omit, set, view, mapObjIndexed } from 'ramda';
-import { SPECIES_CONFIG, SPECIES_OPTIONS, type SpeciesKeys } from './species';
+import { isEmpty, omit, uniqBy } from 'ramda';
+import { createStaticAsyncStore } from './async-readable-store';
+import { SPECIES_OPTIONS, type SpeciesKeys } from './species';
 
-const excludeKinds = ['Virtual', 'Meridian'];
+const modifyTranslationPaths = (val: string | number) => {
+	if (typeof val === 'number') {
+		return ['li', val];
+	} else if (val === 'DisplayName') {
+		return `${A_PREFIX}DisplayName`;
+	} else {
+		return val;
+	}
+};
 
 export type BodyPart = {
 	Name: string;
 	DisplayName: string;
-	Species: SpeciesKeys;
-	Kind: 'Bone' | 'Flesh' | 'Organ';
+	Kind: string;
+	PartGroup: string;
+	ParentName: string;
+	ParentDisplayName: string;
+	BPQLabelBaseCache?: string;
 };
 
-export const getAllBodyParts = async () => {
-	const bodyPartLists = await Promise.all(
-		SPECIES_OPTIONS.map(async (opt) => await getBodyParts(opt.key))
-	);
-	return mapObjIndexed(
-		(list: BodyPart[]) => createDataView(list, 'Name'),
-		indexBy((a) => a[0].Species, bodyPartLists)
-	);
+type PartsList = BodyPart & {
+	Parts?: { li: PartsList[] };
 };
 
-const getBodyParts = (species: SpeciesKeys): Promise<BodyPart[]> => {
-	const config = SPECIES_CONFIG[species];
-	return Promise.all([getSettings(config.setting), getLanguage(config.language)]).then(
-		([data, english]) => {
-			const partNames: Record<string, string> = english.Texts.List.Text;
-			let bodyParts: unknown = data.BodyDefs.List.BodyDef;
-			const parts = Object.keys(partNames)
-				.map((key) => {
-					const name = partNames[key];
-					const originalPath = init(key.split('.'));
-					const path = lensPath(
-						originalPath
-							.map((str) =>
-								Number.isInteger(Number.parseInt(str)) ? ['li', Number.parseInt(str)] : str
-							)
-							.flat()
-					);
-					return stripAttributePrefix({
-						...view(path, bodyParts),
-						Species: species,
-						[`${A_PREFIX}DisplayName`]: name
-					}) as BodyPart;
-				})
-				.filter((part) => !excludeKinds.includes(part.Kind))
-				.filter((part) =>
-					Array.isArray(config.excludeNames) ? !config.excludeNames.includes(part.Name) : true
-				)
-				.map((val) => {
-					return omit(['Part', 'Group', 'Groups', 'Parts', 'Function', 'Links'], val);
-				});
-			return parts;
+const recursePartsList = (list: PartsList[]): BodyPart[] => {
+	return list.reduce((acc, parts) => {
+		if (!parts.Parts) {
+			return [...acc, parts];
+		} else {
+			const extendedChildParts = parts.Parts.li.map((p) => ({
+				...(stripAttributePrefix(p) as PartsList),
+				PartGroup: parts.PartGroup + '.' + parts.Name,
+				ParentName: parts.ParentName,
+				ParentDisplayName: parts.ParentDisplayName
+			}));
+			return [...acc, omit(['Parts'], parts), ...recursePartsList(extendedChildParts)];
 		}
-	);
+	}, [] as BodyPart[]);
 };
+
+export const getBodyParts = async () => {
+	const settingFiles = SPECIES_OPTIONS.map((o) => o.setting);
+	const languageFiles = SPECIES_OPTIONS.map((o) => o.language);
+	const $settings = await Promise.all([...settingFiles.map((file) => getSettings(file))]);
+	const $language = await Promise.all([...languageFiles.map((file) => getLanguage(file))]);
+
+	const settings = $settings.map(($parts, i) => {
+		const translated = joinEnglishPaths(
+			$language[i].Texts.List.Text,
+			$parts.BodyDefs.List.BodyDef,
+			modifyTranslationPaths
+		);
+		const parts = translated.Part.Parts.li
+			.map((partList: any) => {
+				if (partList.Parts?.li) {
+					return partList.Parts.li.map((p: any) =>
+						stripAttributePrefix({
+							...p,
+							PartGroup: partList[`${A_PREFIX}Name`],
+							ParentName: partList[`${A_PREFIX}Name`],
+							ParentDisplayName: partList[`${A_PREFIX}DisplayName`]
+						})
+					);
+				}
+			})
+			.flat()
+			.filter((v: any) => !isEmpty(v) && v !== undefined && v[`Kind`] !== 'Meridian');
+		return recursePartsList(parts).map((partList) =>
+			omit(['Function', 'Rate', 'Deadly', 'CantPractice'], partList)
+		) as BodyPart[];
+	});
+
+	const speciesNameList: Record<SpeciesKeys, string[]> = SPECIES_OPTIONS.reduce((acc, opt, i) => {
+		return {
+			...acc,
+			[opt.key]: settings[i].map((v) => v.Name).filter((name) => !opt.excludeNames?.includes(name))
+		};
+	}, {} as Record<SpeciesKeys, string[]>);
+
+	const allParts = uniqBy((v) => v.Name, settings.flat());
+
+	return { species: speciesNameList, ...createDataView(allParts, 'Name') };
+};
+
+export const bodyPartsStore = createStaticAsyncStore(getBodyParts);

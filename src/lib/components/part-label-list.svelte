@@ -1,21 +1,15 @@
 <script lang="ts">
-	import { filterLabelByPart } from '$lib/data/filter-labels-by-part';
 	import type { BodyPart } from '$lib/data/get-body-parts';
-	import { getLabelsView, type LabelView } from '$lib/data/get-labels';
-	import type { DataView } from '$lib/util/create-data-table';
-	import { sortBy, uniq, uniqBy } from 'ramda';
-	import { onMount } from 'svelte';
+	import { labelStore, type LabelView } from '$lib/data/get-labels';
+	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
+	import { sortBy } from 'ramda';
 	import PartLabelItem from './part-label-item.svelte';
 	import { partLabelStore } from './part-label-store';
 
-	let labels: DataView<LabelView> | undefined;
+	let labels = $labelStore!;
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
 	export let bodyPart: BodyPart;
-
-	onMount(async () => {
-		labels = await getLabelsView();
-	});
 
 	const handleAdd = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered([...selected, label]);

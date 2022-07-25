@@ -1,27 +1,23 @@
 <script lang="ts">
-	import { getAllBodyParts } from '$lib/data/get-body-parts';
-
-	import { getLabelsView } from '$lib/data/get-labels';
-	import { CheckCircle, MinusCircle } from '@steeze-ui/iconic-free';
-	import { Icon } from '@steeze-ui/svelte-icon';
+	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { labelStore } from '$lib/data/get-labels';
 	import { difference, indexBy } from 'ramda';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
-	import { speciesLawStore } from './forms/species-and-law/species-law-store';
 	import { partLabelStore } from './part-label-store';
 
-	import { secretBodyStore } from './secret-bodies-store';
+	import { currentSecretBodyStore } from './secret-bodies-store';
 
-	const values = getAllBodyParts();
+	$: allParts = $bodyPartsStore!;
 
 	const completeBody = async () => {
-		const labels = await getLabelsView();
+		const labels = $labelStore!;
 		secretBodyParts?.forEach(({ Name, Labels }) => {
 			const myLabels = Labels.map(({ Name }) => labels.map[Name]);
 			partLabelStore.append(Name, myLabels);
 		});
 	};
 
-	$: secretBodyParts = $secretBodyStore?.Parts;
+	$: secretBodyParts = $currentSecretBodyStore?.Parts;
 	$: myLabels = indexBy(
 		(p) => p.Name,
 		secretBodyParts?.map((part) => {
@@ -33,23 +29,26 @@
 			};
 		}) ?? []
 	);
+	$: {
+		secretBodyParts?.forEach(({ Name, Labels }) => {
+			console.log({ Name, Part: allParts.map[Name] });
+		});
+	}
 </script>
 
-{#await values then allParts}
-	{#if secretBodyParts}
-		<ul class="divide-y divide-gray-200 max-h-[90vh] overflow-y-auto overflow-x-hidden">
-			{#each secretBodyParts as { Name, Labels }}
-				<CurrentSecretBodyPart
-					partDisplayName={allParts[$speciesLawStore.species.key].map[Name].DisplayName}
-					isComplete={myLabels[Name]?.Complete}
-					secretLabels={Labels}
-				/>
-			{/each}
-		</ul>
-		<button
-			on:click={() => {
-				completeBody();
-			}}>Finish Body</button
-		>
-	{/if}
-{/await}
+{#if secretBodyParts}
+	<ul class="divide-y divide-gray-200 max-h-[90vh] overflow-y-auto overflow-x-hidden">
+		{#each secretBodyParts as { Name, Labels }}
+			<CurrentSecretBodyPart
+				partDisplayName={allParts.map[Name]?.DisplayName}
+				isComplete={myLabels[Name]?.Complete}
+				secretLabels={Labels}
+			/>
+		{/each}
+	</ul>
+	<button
+		on:click={() => {
+			completeBody();
+		}}>Finish Body</button
+	>
+{/if}

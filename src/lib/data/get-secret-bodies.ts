@@ -2,7 +2,8 @@ import { getLanguage, getSettings } from '$lib/api/get-data';
 import { createDataView } from '$lib/util/create-data-table';
 import { joinEnglishPaths } from '$lib/util/join-english-paths';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { indexBy, omit } from 'ramda';
+import { omit } from 'ramda';
+import { createStaticAsyncStore } from './async-readable-store';
 import type { PartProperty } from './get-labels';
 
 export type SecretBody = {
@@ -14,9 +15,7 @@ export type SecretBody = {
 	Levels: { Title: string; Desc: string; Modifier: string; SuperPartProperties: PartProperty[] }[];
 };
 
-export const getSecretBodyView = async () => createDataView(await getSecretBodies(), 'Name');
-
-const getSecretBodies = async (): Promise<SecretBody[]> => {
+export const getSecretBodies = async () => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong1'),
 		getSettings('Practice/BodyPractice/SuperPart/SuperPart_All_Gong2'),
@@ -34,7 +33,7 @@ const getSecretBodies = async (): Promise<SecretBody[]> => {
 	const english = $english.map((eng) => {
 		return eng.Texts.List.Text;
 	});
-	const bodies = $bodies
+	const bodies: SecretBody[] = $bodies
 		.map((value, i) => {
 			const bodyList = value.BPSuperPartDefs.List.Def;
 			return bodyList.map((body: any, j: number) => {
@@ -76,5 +75,7 @@ const getSecretBodies = async (): Promise<SecretBody[]> => {
 			});
 		})
 		.flat();
-	return bodies;
+	return createDataView(bodies, 'Name');
 };
+
+export const secretBodyStore = createStaticAsyncStore(getSecretBodies);

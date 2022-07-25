@@ -25,7 +25,7 @@
 			</span>
 		</div>
 		<p class="text-sm text-gray-500">
-			{part.Kind}
+			{part.Name}
 		</p>
 	</div>
 </li>

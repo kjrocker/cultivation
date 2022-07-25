@@ -4,6 +4,7 @@ import { createDataView } from '$lib/util/create-data-table';
 import { joinEnglishPaths } from '$lib/util/join-english-paths';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { omit } from 'ramda';
+import { createStaticAsyncStore } from './async-readable-store';
 
 const transformBody = (body: any, english: any) => {
 	const value = joinEnglishPaths(english, body.Gongs.List.Gong, (str) =>
@@ -48,9 +49,7 @@ export type BodyLaw = {
 	QuenchingMethods: string[];
 };
 
-export const getBodyLawViews = async () => createDataView(await getBodyLaws(), 'Name');
-
-const getBodyLaws = async (): Promise<BodyLaw[]> => {
+export const getBodyLaws = async () => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/Gong/Body/Body_Gong_1'),
 		getSettings('Practice/Gong/Body/Body_Gong_2'),
@@ -79,5 +78,7 @@ const getBodyLaws = async (): Promise<BodyLaw[]> => {
 			)
 		}));
 
-	return bodies as BodyLaw[];
+	return createDataView(bodies as BodyLaw[], 'Name');
 };
+
+export const bodyLawStore = createStaticAsyncStore(getBodyLaws);
