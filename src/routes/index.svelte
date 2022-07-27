@@ -24,7 +24,7 @@
 </div>
 <SecretBodies />
 <div class="flex">
-	<div class="w-1/4"><PropertyBonusList /><CurrentSecretBody /></div>
+	<div class="w-1/6"><PropertyBonusList /><CurrentSecretBody /></div>
 	<div class="w-1/4">
 		<BodyPartList species={$speciesLawStore.species.key} />
 	</div>

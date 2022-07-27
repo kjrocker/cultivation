@@ -35,7 +35,7 @@
 		: {};
 </script>
 
-<div>
+<div class="border my-2">
 	<BonusListItem name="AtkPower" displayName="Attack" bonuses={propertyGroups['AtkPower']} />
 	<BonusListItem name="DefPower" displayName="Defense" bonuses={propertyGroups['DefPower']} />
 	<BonusListItem

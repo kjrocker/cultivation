@@ -20,5 +20,14 @@
 {#await preload}
 	Loading...
 {:then}
-	<slot />
+	<div class="mx-8 my-2">
+		<slot />
+	</div>
 {/await}
+
+<style>
+	.body {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+</style>
