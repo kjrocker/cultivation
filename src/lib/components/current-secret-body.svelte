@@ -27,7 +27,7 @@
 </script>
 
 {#if secretBodyParts}
-	<ul class="divide-y divide-gray-200 overflow-x-hidden my-2 border">
+	<ul class="divide-y divide-gray-200 overflow-x-hidden my-2 border rounded-md">
 		{#each secretBodyParts as { Name, Labels }}
 			<CurrentSecretBodyPart
 				on:click={() => {

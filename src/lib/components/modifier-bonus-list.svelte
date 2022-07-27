@@ -49,12 +49,14 @@
 		: {};
 </script>
 
-{#each Object.keys(groups) as name}
-	<PropertyBonusListItem
-		{name}
-		displayName={`${groups[name].DisplayName ?? MODIFIER_CONFIG[name]?.DisplayName ?? name}`}
-		bonuses={groups[name]}
-		percentage={!!MODIFIER_CONFIG[name]?.percentage}
-		rate={!!MODIFIER_CONFIG[name]?.rate}
-	/>
-{/each}
+<div class="border rounded-md my-2">
+	{#each Object.keys(groups) as name}
+		<PropertyBonusListItem
+			{name}
+			displayName={`${groups[name].DisplayName ?? MODIFIER_CONFIG[name]?.DisplayName ?? name}`}
+			bonuses={groups[name]}
+			percentage={!!MODIFIER_CONFIG[name]?.percentage}
+			rate={!!MODIFIER_CONFIG[name]?.rate}
+		/>
+	{/each}
+</div>

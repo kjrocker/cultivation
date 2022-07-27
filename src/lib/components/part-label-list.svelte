@@ -44,17 +44,18 @@
 	);
 </script>
 
-<ul class="divide-y divide-gray-200 max-h-[90vh] overflow-y-auto overflow-x-hidden">
-	Current: {bodyPart.DisplayName}
-	{#each filteredLabels as label, i}
-		<PartLabelItem
-			selected={!!selected.find((l) => l.Name === label.Name)}
-			{label}
-			onClick={(e, label) => {
-				return !!selected.find((l) => l.Name === label.Name)
-					? handleRemove(e, label)
-					: handleAdd(e, label);
-			}}
-		/>
-	{/each}
-</ul>
+<div class="my-2">
+	<ul class="divide-y divide-gray-200 overflow-x-hidden border rounded-md">
+		{#each filteredLabels as label, i}
+			<PartLabelItem
+				selected={!!selected.find((l) => l.Name === label.Name)}
+				{label}
+				onClick={(e, label) => {
+					return !!selected.find((l) => l.Name === label.Name)
+						? handleRemove(e, label)
+						: handleAdd(e, label);
+				}}
+			/>
+		{/each}
+	</ul>
+</div>

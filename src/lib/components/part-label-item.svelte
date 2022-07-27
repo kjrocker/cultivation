@@ -19,7 +19,7 @@
 	$: color = levelColors[label.MaxLevel] ?? 'text-gray-900';
 </script>
 
-<li class="py-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
+<li class="p-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
 	<BodyTypeIcon className="h-10 w-10" type={label.BodyPart} />
 	<div class="ml-3 mr-5 w-full">
 		<div class="flex justify-between">
@@ -30,6 +30,6 @@
 				<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
 			{/if}
 		</div>
-		<p class="text-sm text-gray-500">{label.LinkItem}</p>
+		<!-- <p class="text-sm text-gray-500">{label.LinkItem}</p> -->
 	</div>
 </li>

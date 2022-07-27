@@ -1,6 +1,6 @@
-import type { RemoldOptions } from '../components/forms/remold-options/remold-options-store';
+import type { BodyOptions } from '$lib/components/forms/options-store';
 
-export const getRemoldCount = (kind: 'Flesh' | 'Bone' | 'Organ', options: RemoldOptions) => {
+export const getRemoldCount = (kind: 'Flesh' | 'Bone' | 'Organ', options: BodyOptions) => {
 	switch (kind) {
 		case 'Flesh':
 			return 6 + (options.temperedHeart ? 2 : 0) + (options.transcendantHeart ? 1 : 0);
