@@ -1,4 +1,4 @@
-import type { PartLabelStore } from '$lib/components/part-label-store';
+import type { PartLabelStore } from '$lib/components/stores/part-label-store';
 import type { SecretBody } from '$lib/data/get-secret-bodies';
 import { difference, values } from 'ramda';
 

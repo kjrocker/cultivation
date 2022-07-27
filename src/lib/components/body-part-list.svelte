@@ -2,17 +2,17 @@
 	import { bodyPartsStore, type BodyPart } from '$lib/data/get-body-parts';
 	import type { SpeciesKeys } from '$lib/data/species';
 	import BodyPartItem from './body-part-item.svelte';
-	import { partLabelStore } from './part-label-store';
-	import { currentSecretBodyStore } from './secret-bodies-store';
+	import { selectedStore } from './stores/selected-store';
+	import { partLabelStore } from './stores/part-label-store';
+	import { currentSecretBodyStore } from './stores/secret-bodies-store';
 
 	let allParts = $bodyPartsStore!;
 
 	export let species: SpeciesKeys;
 	export let onChange: (e: MouseEvent, part: BodyPart) => void = () => undefined;
-	export let selected: BodyPart | undefined = undefined;
 
 	let handleClick = (e: MouseEvent, part: BodyPart): void => {
-		selected = part;
+		$selectedStore.bodyPart = part.Name;
 		onChange(e, part);
 	};
 
@@ -38,7 +38,7 @@
 			{/if}
 			{#each bodyParts as part, i}
 				<BodyPartItem
-					selected={!!selected && part.Name === selected.Name}
+					selected={!!$selectedStore.bodyPart && part.Name === $selectedStore.bodyPart}
 					labelCount={$partLabelStore[part.Name]?.length ?? 0}
 					onClick={handleClick}
 					{part}

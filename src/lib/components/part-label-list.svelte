@@ -4,7 +4,8 @@
 	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
 	import { sortBy, uniqBy } from 'ramda';
 	import PartLabelItem from './part-label-item.svelte';
-	import { partLabelStore } from './part-label-store';
+	import { partLabelCountStore } from './stores/part-label-count-store';
+	import { partLabelStore } from './stores/part-label-store';
 
 	let labels = $labelStore!;
 
@@ -15,13 +16,13 @@
 
 	const handleAdd = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered([...selected, label]);
-		partLabelStore.update(bodyPart.Name, newValue);
+		partLabelCountStore.update(bodyPart.Name, newValue);
 		onChange(e, newValue);
 	};
 
 	const handleRemove = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered(selected.filter((l) => l.Name !== label.Name));
-		partLabelStore.update(bodyPart.Name, newValue);
+		partLabelCountStore.update(bodyPart.Name, newValue);
 		onChange(e, newValue);
 	};
 
@@ -43,7 +44,7 @@
 	);
 </script>
 
-<ul class="divide-y divide-gray-200 w-1/4 max-h-[90vh] overflow-y-auto overflow-x-hidden">
+<ul class="divide-y divide-gray-200 max-h-[90vh] overflow-y-auto overflow-x-hidden">
 	Current: {bodyPart.DisplayName}
 	{#each filteredLabels as label, i}
 		<PartLabelItem

@@ -2,7 +2,7 @@
 	import type { LabelView } from '$lib/data/get-labels';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
-	import { CheckCircle, MinusCircle } from '@steeze-ui/iconic-free';
+	import { CheckCircle } from '@steeze-ui/iconic-free';
 
 	export let onClick: (e: MouseEvent, label: LabelView) => void;
 	export let label: LabelView;

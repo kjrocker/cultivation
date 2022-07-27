@@ -4,7 +4,7 @@
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import { getRemoldCount } from '../util/get-remold-count';
 	import { remoldOptions } from './forms/remold-options/remold-options-store';
-	import { partLabelStore } from './part-label-store';
+	import { partLabelStore } from './stores/part-label-store';
 
 	export let selected: boolean;
 	export let labelCount: number;
@@ -12,7 +12,6 @@
 	export let onClick: (e: MouseEvent, p: BodyPart) => void = () => undefined;
 
 	$: remoldCount = getRemoldCount(part.Kind, $remoldOptions);
-	$: countValid = labelCount <= remoldCount;
 	$: error = validateBodyPart(part.Name, $partLabelStore, remoldCount);
 </script>
 

@@ -1,15 +1,11 @@
 import { getSettings, getLanguage } from '$lib/api/get-data';
 import { A_PREFIX } from '$lib/api/parser';
 import { createDataView } from '$lib/util/create-data-table';
+import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
 import { renameKey } from '$lib/util/rename-key';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { indexBy, prop } from 'ramda';
 import { createStaticAsyncStore } from './async-readable-store';
-
-export type PartProperty =
-	| { Name: string; AddP: string }
-	| { Name: string; AddV: string }
-	| { Name: string; BAddV: string };
 
 export type LabelView = {
 	Label: string;
@@ -80,7 +76,7 @@ export const getLabels = async () => {
 		const newLabelDef = {
 			...stripAttributePrefix(def),
 			SuperPartProperties: def.SuperPartProperties?.li.map((prop: any) =>
-				stripAttributePrefix(prop)
+				parsePartProperties(stripAttributePrefix(prop))
 			)
 		};
 		return newLabelDef;

@@ -1,44 +1,39 @@
 <script lang="ts">
 	import BodyPartList from '$lib/components/body-part-list.svelte';
-	import BonusList from '$lib/components/bonus-list.svelte';
 	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
 	import RemoldOptions from '$lib/components/forms/remold-options/remold-options.svelte';
+	import { selectedBodyPart } from '$lib/components/stores/selected-store';
 	import SpeciesAndLaw from '$lib/components/forms/species-and-law/species-and-law.svelte';
 	import { speciesLawStore } from '$lib/components/forms/species-and-law/species-law-store';
 	import PartLabelList from '$lib/components/part-label-list.svelte';
-	import { partLabelStore } from '$lib/components/part-label-store';
+	import { partLabelStore } from '$lib/components/stores/part-label-store';
 	import SecretBodies from '$lib/components/secret-bodies.svelte';
-	import type { BodyPart } from '$lib/data/get-body-parts';
+	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { partLabelCountStore } from '$lib/components/stores/part-label-count-store';
+	import PropertyBonusList from '$lib/components/property-bonus-list.svelte';
+	import ModifierBonusList from '$lib/components/modifier-bonus-list.svelte';
 
-	let selectedPart: BodyPart | undefined;
-
-	const onPartChange = (e: any, part: BodyPart) => {
-		if (!$partLabelStore[part.Name]) {
-			$partLabelStore[part.Name] = [];
-		}
-	};
+	$: {
+		partLabelCountStore.init($bodyPartsStore.species[$speciesLawStore.species.key]);
+	}
 </script>
 
 <div class="flex">
 	<RemoldOptions />
-	<SpeciesAndLaw
-		onSpeciesChange={() => {
-			partLabelStore.reset();
-		}}
-	/>
+	<SpeciesAndLaw />
 </div>
 <SecretBodies />
 <div class="flex">
-	<div class="w-1/4"><CurrentSecretBody /></div>
+	<div class="w-1/4"><PropertyBonusList /><CurrentSecretBody /></div>
 	<div class="w-1/4">
-		<BodyPartList
-			species={$speciesLawStore.species.key}
-			bind:selected={selectedPart}
-			onChange={onPartChange}
-		/>
+		<BodyPartList species={$speciesLawStore.species.key} />
 	</div>
-	{#if selectedPart && Array.isArray($partLabelStore[selectedPart.Name])}
-		<PartLabelList bodyPart={selectedPart} />
-	{/if}
-	<BonusList />
+	<div class="w-1/4">
+		{#if $selectedBodyPart && Array.isArray($partLabelStore[$selectedBodyPart.Name])}
+			<PartLabelList bodyPart={$selectedBodyPart} />
+		{/if}
+	</div>
+	<div class="w-1/4">
+		<ModifierBonusList />
+	</div>
 </div>

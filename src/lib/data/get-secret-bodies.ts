@@ -1,10 +1,10 @@
 import { getLanguage, getSettings } from '$lib/api/get-data';
 import { createDataView } from '$lib/util/create-data-table';
 import { joinEnglishPaths } from '$lib/util/join-english-paths';
+import type { PartProperty } from '$lib/util/part-properties';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
 import { omit } from 'ramda';
 import { createStaticAsyncStore } from './async-readable-store';
-import type { PartProperty } from './get-labels';
 
 export type SecretBody = {
 	Name: string;

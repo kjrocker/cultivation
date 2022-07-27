@@ -1,4 +1,4 @@
-import type { PartLabelStore } from '$lib/components/part-label-store';
+import type { PartLabelStore } from '$lib/components/stores/part-label-store';
 import type { LabelView } from '$lib/data/get-labels';
 import { countBy, isEmpty, maxBy, omit, pipe, reduce, toPairs, uniq } from 'ramda';
 

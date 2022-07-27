@@ -20,7 +20,7 @@ const modifyTranslationPaths = (val: string | number) => {
 export type BodyPart = {
 	Name: string;
 	DisplayName: string;
-	Kind: string;
+	Kind: 'Flesh' | 'Bone' | 'Organ';
 	PartGroup: string;
 	ParentName: string;
 	ParentDisplayName: string;
