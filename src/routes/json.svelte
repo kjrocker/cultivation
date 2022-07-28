@@ -7,7 +7,7 @@
 
 	import JSONTree from 'svelte-json-tree';
 
-	$: value = $modifierStore;
+	$: value = $bodyPartsStore;
 </script>
 
 <JSONTree {value} defaultExpandedLevel={2} />

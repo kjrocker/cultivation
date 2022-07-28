@@ -4,6 +4,7 @@
 	import { undefinedSum } from '$lib/util/undefined-sum';
 	import { groupBy, mapObjIndexed, pipe } from 'ramda';
 	import BonusListItem from './property-bonus-list-item.svelte';
+	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
 	import { partPropertyStore, secretBodyPropertyStore } from './stores/current-properties-store';
 	import { currentSecretBodyStore } from './stores/secret-bodies-store';
 
@@ -30,9 +31,10 @@
 		)(allProperties);
 	};
 
-	$: propertyGroups = $currentSecretBodyStore
-		? getPropertyGroups($currentSecretBodyStore, $secretBodyPropertyStore, $partPropertyStore)
-		: {};
+	$: propertyGroups =
+		$currentSecretBodyStore && $completeSecretBodiesStore[$currentSecretBodyStore.Name]
+			? getPropertyGroups($currentSecretBodyStore, $secretBodyPropertyStore, $partPropertyStore)
+			: {};
 </script>
 
 <div class="border rounded-md my-2">

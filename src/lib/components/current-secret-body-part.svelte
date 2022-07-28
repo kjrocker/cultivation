@@ -6,13 +6,14 @@
 
 	export let isComplete: boolean;
 	export let partDisplayName: string;
+	export let disabled: boolean = false;
 	export let secretLabels: SecretBody['Parts'][number]['Labels'];
 
 	const allLabels = $labelStore!;
 </script>
 
 <li class="py-2 px-2 hover:bg-gray-50 cursor-pointer" on:click>
-	<div class="flex justify-between">
+	<div class={`flex justify-between ${disabled ? 'line-through' : ''}`}>
 		<span>{partDisplayName}</span>
 		<span class="mr-2">
 			{#if isComplete}

@@ -4,8 +4,9 @@ import { createDataView } from '$lib/util/create-data-table';
 import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
 import { renameKey } from '$lib/util/rename-key';
 import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
-import { indexBy, prop } from 'ramda';
+import { indexBy, isEmpty, prop } from 'ramda';
 import { createStaticAsyncStore } from './async-readable-store';
+import { TemperedLabelConfig } from './tempering-config';
 
 export type LabelView = {
 	Label: string;
@@ -20,7 +21,7 @@ export type LabelView = {
 	Group: string;
 	MaxLevel: number;
 	Rate: number;
-	Modifier: string;
+	Modifier: string[];
 	SuperPartProperties?: PartProperty[] | undefined;
 	LabelNumAddBone?: number | undefined;
 	LabelNumAddOrgan?: number | undefined;
@@ -67,7 +68,7 @@ export const getLabels = async () => {
 		MaxLevel: number;
 		Name: string;
 		Rate: number;
-		Modifier: string;
+		Modifier: string[];
 		SuperPartProperties?: PartProperty[];
 		LabelNumAddBone?: number;
 		LabelNumAddOrgan?: number;
@@ -75,6 +76,7 @@ export const getLabels = async () => {
 	}[] = $data.BodyQuenchingLabelDefs.List.Def.map((def: any) => {
 		const newLabelDef = {
 			...stripAttributePrefix(def),
+			Modifier: [def.Modifier],
 			SuperPartProperties: def.SuperPartProperties?.li.map((prop: any) =>
 				parsePartProperties(stripAttributePrefix(prop))
 			)
@@ -91,7 +93,23 @@ export const getLabels = async () => {
 		.filter((d) => !!d && !LabelNameBlockList.includes(d.Name))
 		.map((d) => ({ ...d, ...english[d.Name], ...labels[d.Name] } as LabelView));
 
-	return createDataView(views, 'Name');
+	const extendedViews = views.map((view, idx, list) => {
+		if (!TemperedLabelConfig[view.Name]) return view;
+		const config = TemperedLabelConfig[view.Name];
+		const inherited = config.inherits
+			.map((name) => list.find((l) => l.Name === name))
+			.filter((v) => v) as LabelView[];
+		return inherited.reduce((newView, next) => {
+			const modifiers = [...newView.Modifier, ...next.Modifier].filter((v) => v && !isEmpty(v));
+			const properties = [
+				...(newView?.SuperPartProperties ?? []),
+				...(next?.SuperPartProperties ?? [])
+			].filter((v) => v);
+			return { ...newView, Modifier: modifiers, SuperPartProperties: properties };
+		}, view);
+	});
+
+	return createDataView(extendedViews, 'Name');
 };
 
 export const labelStore = createStaticAsyncStore(getLabels);

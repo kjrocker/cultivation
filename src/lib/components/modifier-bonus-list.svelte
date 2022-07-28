@@ -4,7 +4,6 @@
 	import { concat, groupBy, mapObjIndexed, pipe } from 'ramda';
 	import PropertyBonusListItem from './property-bonus-list-item.svelte';
 	import { partModifierStore, secretBodyModifierStore } from './stores/current-modifiers-store';
-	import { currentSecretBodyStore } from './stores/secret-bodies-store';
 
 	const getAllModifierGroups = (
 		bodyProps: Modifier[],
@@ -38,15 +37,11 @@
 		BodyPractice_SuperPartAddp_AtkRate: { percentage: true },
 		BodyPractice_SuperPartAddp_DefRate: { percentage: true },
 		BodyPractice_SuperPartAddp_ArmorPenetration: { percentage: true },
-		NpcFight_BaseDodgeChance: { DisplayName: 'Dodge Chance', percentage: true },
-		MaxAge: { DisplayName: 'Lifespan' },
-		NeckCountdownAddV: { DisplayName: 'Cultivation Progress' },
+		NpcFight_BaseDodgeChance: { percentage: true },
 		BodyPratice_QuenchingSpeed: { percentage: true }
 	} as Record<string, Partial<{ DisplayName: string; percentage: boolean; rate: boolean }>>;
 
-	$: groups = $currentSecretBodyStore
-		? getAllModifierGroups($secretBodyModifierStore, $partModifierStore)
-		: {};
+	$: groups = getAllModifierGroups($secretBodyModifierStore, $partModifierStore);
 </script>
 
 <div class="border rounded-md my-2">

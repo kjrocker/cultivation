@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { bodyPartsStore, type BodyPart } from '$lib/data/get-body-parts';
-	import type { SpeciesKeys } from '$lib/data/species';
+	import Error from './base/error.svelte';
 	import BodyPartItem from './body-part-item.svelte';
-	import { selectedStore } from './stores/selected-store';
+	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelStore } from './stores/part-label-store';
 	import { currentSecretBodyStore } from './stores/secret-bodies-store';
-	import Error from './base/error.svelte';
-	import { bodyOptionsStore } from './forms/options-store';
+	import { selectedStore } from './stores/selected-store';
 
 	let allParts = $bodyPartsStore!;
 
@@ -17,8 +16,7 @@
 		onChange(e, part);
 	};
 
-	$: species = $bodyOptionsStore.species.key;
-	$: parts = allParts && species ? allParts.species[species].map((name) => allParts.map[name]) : [];
+	$: parts = $currentSpeciesPartsStore.map((name) => allParts.map[name]);
 	$: currentBodyNames = $currentSecretBodyStore?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined

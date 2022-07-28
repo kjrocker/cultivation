@@ -24,8 +24,13 @@ export const getModifiers = async () => {
 		getSettings('Modifiers/BodyPractice/Modifier_BodyPractice_QuenchingLabel'),
 		getSettings('Modifiers/BodyPractice/Modifier_BodyPractice_SuperPart')
 	]);
-	const [$englishProperties, ...$english] = await Promise.all([
+	const $englishProperties = await Promise.all([
 		getLanguage('Property/BodyPraticeProperty'),
+		getLanguage('Property/FightProperty'),
+		getLanguage('Property/PracticeProperty'),
+		getLanguage('Property/RoleProperty')
+	]);
+	const $english = await Promise.all([
 		getLanguage('Modifiers/BodyPractice/Modifier_BodyPractice_QuenchingLabel'),
 		getLanguage('Modifiers/BodyPractice/Modifier_BodyPractice_SuperPart')
 	]);
@@ -37,7 +42,9 @@ export const getModifiers = async () => {
 
 	const properties = indexBy(
 		(v: any) => v.Name,
-		$englishProperties.Texts.List.Text.map((t: any) => stripAttributePrefix(t))
+		$englishProperties.flatMap((props) =>
+			props.Texts.List.Text.map((t: any) => stripAttributePrefix(t))
+		)
 	);
 
 	const settings = $settings

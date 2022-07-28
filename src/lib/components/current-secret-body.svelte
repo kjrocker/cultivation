@@ -2,8 +2,10 @@
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { labelStore } from '$lib/data/get-labels';
 	import { isBodyComplete } from '$lib/util/is-body-complete';
+	import { includes } from 'ramda';
 	import Button from './base/button.svelte';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
+	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelCountStore } from './stores/part-label-count-store';
 	import { partLabelStore } from './stores/part-label-store';
 
@@ -15,8 +17,10 @@
 	const completeBody = async () => {
 		const labels = $labelStore!;
 		secretBodyParts?.forEach(({ Name, Labels }) => {
-			const myLabels = Labels.map(({ Name }) => labels.map[Name]);
-			partLabelCountStore.append(Name, myLabels);
+			if ($currentSpeciesPartsStore.includes(Name)) {
+				const myLabels = Labels.map(({ Name }) => labels.map[Name]);
+				partLabelCountStore.append(Name, myLabels);
+			}
 		});
 	};
 
@@ -31,9 +35,12 @@
 		{#each secretBodyParts as { Name, Labels }}
 			<CurrentSecretBodyPart
 				on:click={() => {
-					$selectedStore.bodyPart = Name;
+					if ($currentSpeciesPartsStore.includes(Name)) {
+						$selectedStore.bodyPart = Name;
+					}
 				}}
 				partDisplayName={allParts.map[Name]?.DisplayName}
+				disabled={!$currentSpeciesPartsStore.includes(Name)}
 				isComplete={completion[Name]}
 				secretLabels={Labels}
 			/>

@@ -1,5 +1,5 @@
 import { labelStore } from '$lib/data/get-labels';
-import { modifierStore, type Modifier } from '$lib/data/get-modifiers';
+import { modifierStore, type Modifier, type ModifierProperty } from '$lib/data/get-modifiers';
 import { secretBodyStore, type SecretBody } from '$lib/data/get-secret-bodies';
 import { filter, isEmpty, last, map, mapObjIndexed } from 'ramda';
 import { derived, type Readable } from 'svelte/store';
@@ -14,23 +14,39 @@ const getBodyModifiers = (body: SecretBody): string[] => {
 	return [bodyModifier].filter((v) => v) as string[];
 };
 
+const getPropertiesFromModifer = (
+	modifier: Modifier | undefined,
+	level: number
+): ModifierProperty[] => {
+	return (
+		modifier?.Properties.flatMap((prop) => ({
+			...prop,
+			AddV: (prop.AddV ?? 0) * level,
+			AddP: (prop.AddP ?? 0) * level,
+			BAddV: (prop.BAddV ?? 0) * level
+		})) ?? []
+	);
+};
+
 export const partModifierStore: PartModifierStore = derived(
 	[modifierStore, labelStore, partLabelCountStore],
-	([modifiers, labels, partLabels]) => {
-		const mapLabels = map((labelCount: PartLabelCount): Modifier | undefined => {
+	([modifiers, labels, partLabels]): Record<string, Modifier[]> => {
+		const mapLabels = map((labelCount: PartLabelCount): Modifier[] | undefined => {
 			const level = labelCount.Level;
-			const modifierName = labels.map[labelCount.Name].Modifier;
-			if (!modifierName || isEmpty(modifierName)) return undefined;
-			const modifier = modifiers.map[modifierName];
-			const properties = modifier.Properties.flatMap((prop) => ({
-				...prop,
-				AddV: (prop.AddV ?? 0) * level,
-				AddP: (prop.AddP ?? 0) * level,
-				BAddV: (prop.BAddV ?? 0) * level
-			}));
-			return { ...modifier, Properties: properties };
+			const modifierList = labels.map[labelCount.Name].Modifier;
+			if (!modifierList || isEmpty(modifierList)) return undefined;
+			return modifierList.flatMap((modifierName) => {
+				const modifier = modifiers.map[modifierName];
+				return { ...modifier, Properties: getPropertiesFromModifer(modifier, level) };
+			});
 		});
-		return mapObjIndexed((list) => mapLabels(list).filter((v) => v) as Modifier[], partLabels);
+		return mapObjIndexed(
+			(list) =>
+				mapLabels(list)
+					.filter((v) => v)
+					.flat() as Modifier[],
+			partLabels
+		);
 	}
 );
 
