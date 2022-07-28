@@ -1,13 +1,25 @@
 <script lang="ts">
 	import { bodyLawStore } from '$lib/data/get-body-laws';
+	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { SPECIES_OPTIONS } from '$lib/data/species';
-	import { bodyOptionsStore as options } from './options-store';
+	import { partLabelCountStore } from '../stores/part-label-count-store';
+	import { bodyOptionsStore, bodyOptionsStore as options } from './options-store';
+
+	const resetPartLabels = () => {
+		partLabelCountStore.setParts($bodyPartsStore.species[$bodyOptionsStore.species.key]);
+	};
 </script>
 
 <div class="flex w-full justify-center mb-4">
 	<div class="mx-4">
 		<h2 class="text-lg underline">Cultivator</h2>
-		<select class="w-full" bind:value={$options.species}>
+		<select
+			class="w-full"
+			bind:value={$options.species}
+			on:change={() => {
+				resetPartLabels();
+			}}
+		>
 			{#each SPECIES_OPTIONS as spec}
 				<option value={spec}>{spec.name}</option>
 			{/each}

@@ -9,7 +9,7 @@
 		bodyProps: Modifier[],
 		partProps: Record<string, Modifier[]>
 	): Record<string, ModifierProperty> => {
-		const partProperties = Object.values(partProps).reduce(concat);
+		const partProperties = Object.values(partProps).reduce(concat, []);
 		const allProperties = [...partProperties, ...bodyProps]
 			.filter((v) => v && v.Properties && Array.isArray(v.Properties))
 			.flatMap((v) => v.Properties);

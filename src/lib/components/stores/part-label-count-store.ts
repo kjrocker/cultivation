@@ -1,5 +1,5 @@
 import type { LabelView } from '$lib/data/get-labels';
-import { uniqBy } from 'ramda';
+import { pickBy, uniqBy } from 'ramda';
 import { writable } from 'svelte/store';
 
 export type PartLabelCount = { Name: string; Level: number; MaxLevel: number };
@@ -18,6 +18,19 @@ const createPartLabelCountStore = () => {
 	return {
 		subscribe,
 		reset: () => set({}),
+		setParts: (names: string[]) => {
+			return update((old) => {
+				const trimmed: PartLabelCountStore = pickBy((val, key) => names.includes(key), old);
+				return names.reduce((acc, name) => {
+					if (Array.isArray(acc[name])) {
+						return acc;
+					} else {
+						acc[name] = [];
+						return acc;
+					}
+				}, trimmed as Record<string, []>);
+			});
+		},
 		init: (names: string[]) => {
 			return set(
 				names.reduce((acc, name) => {
@@ -39,6 +52,9 @@ const createPartLabelCountStore = () => {
 				old[name] = uniqBy((l) => l.Name, [...(old[name] ?? []), ...labelCounts]);
 				return old;
 			});
+		},
+		merge: (counts: Record<string, PartLabelCount[]>) => {
+			return update((old) => ({ ...old, ...counts }));
 		},
 		set
 	};
