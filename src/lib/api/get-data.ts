@@ -8,13 +8,15 @@ const getXml = (fileName: string): Promise<string> => {
 		.then((blob) => blob.text());
 };
 
+const prefix = './cultivation/ACS/Settings';
+
 const getSettingsFile = async (file: SettingsEnum) => {
-	const fileName = `/ACS/Settings/${file}.xml`;
+	const fileName = `${prefix}/${file}.xml`;
 	return await getXml(fileName);
 };
 
 const getLanguageFile = async (file: LanguageEnum) => {
-	const fileName = `/ACS/Settings/Language/OfficialEnglish/Settings/${file}.xml`;
+	const fileName = `${prefix}/Language/OfficialEnglish/Settings/${file}.xml`;
 	return await getXml(fileName);
 };
 

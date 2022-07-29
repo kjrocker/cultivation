@@ -8,7 +8,13 @@ const config = {
 	preprocess: preprocess({ postcss: true }),
 
 	kit: {
-		adapter: adapter({ fallback: '200.html' })
+		adapter: adapter({
+			fallback: 'index.html'
+		}),
+		paths: {
+			// change below to your repo name
+			base: '/cultivation'
+		}
 	}
 };
 
