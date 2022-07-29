@@ -1,0 +1,187 @@
+<SchoolRuleDefs><List>
+	<Def Name="FanRenEvent">
+		<DisplayName>凡间游历</DisplayName>
+		<Desc>游历天下时，在遇到需要与凡人打交道的情况时采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="温和对待" Desc="在他们遇到困难时施以援手，在做事时尽量不要对其造成负面影响。"/>
+			<li Type="Bad" DisplayName="我行我素" Desc="随意而为之，并不在意到底会对凡人产生怎么样的影响。"/>
+			<li Type="Bye" Default="1" DisplayName="无视" Desc="这些凡间的琐事并不值得花费时间。"/>
+		</Selection>
+	</Def>
+	
+	<Def Name="JiangHuFenZheng">
+		<DisplayName>江湖纷争</DisplayName>
+		<Desc>游历天下时，在遇到需要与修行者打交道的情况时采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="正派中人" Desc="在遇到此类事件时，优先尝试以正派的身份去处理。"/>
+			<li Type="Bad" DisplayName="邪派中人" Desc="在遇到此类事件时，优先尝试以邪派的身份去处理。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到这种事主动躲开，不要惹事。"/>
+		</Selection>
+	</Def>
+	
+	<Def Name="FindTreasure">
+		<DisplayName>仙家机缘</DisplayName>
+		<Desc>游历天下时，遇到仙家机缘时所采取的行为。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="探寻机缘" Desc="在遇到此类事件时，优先主动探索机缘。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到这种事主动躲开，不要惹事。"/>
+		</Selection>
+	</Def>
+	
+	
+	<Def Name="FindProduce">
+		<DisplayName>收集物资</DisplayName>
+		<Desc>游历天下时，遇到当地特产物资时采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="收集物资" Desc="在遇到此类事件时，主动收集这些物资。"/>
+			<li Type="Bye" Default="1" DisplayName="无视" Desc="遇到这种事不必浪费时间。"/>
+		</Selection>
+	</Def>
+	
+	
+	<Def Name="FindHighProduce">
+		<DisplayName>收集宝物</DisplayName>
+		<Desc>游历天下时，遇到当地特产稀有宝物时采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="尝试搜寻" Desc="在遇到此类事件时，尝试去搜寻宝物。"/>
+			<li Type="Bye" Default="1" DisplayName="无视" Desc="遇到这种事不必浪费时间。"/>
+		</Selection>
+	</Def>
+	
+	<Def Name="FindSecret">
+		<DisplayName>奇闻轶事</DisplayName>
+		<Desc>游历天下时，遇到一些道听途说的奇闻异事时的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="打听探索" Desc="在遇到此类事件时，尝试去探索打听一下详细情况。"/>
+			<li Type="Bye" Default="1" DisplayName="无视" Desc="遇到这种事不必浪费时间。"/>
+		</Selection>
+	</Def>
+	
+	<Def Name="School_All">
+		<DisplayName>门派外交</DisplayName>
+		<Desc>逻辑本体</Desc>
+		<Type>School_All</Type>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_1">
+		<DisplayName>门派外交-丹霞洞天</DisplayName>
+		<Desc>在与丹霞洞天打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_2">
+		<DisplayName>门派外交-昆仑宫</DisplayName>
+		<Desc>在与昆仑宫打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	
+	<Def Name="School_3">
+		<DisplayName>门派外交-极天宫</DisplayName>
+		<Desc>在与极天宫打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_4">
+		<DisplayName>门派外交-紫霄宗</DisplayName>
+		<Desc>在与紫霄宗打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_5">
+		<DisplayName>门派外交-玄一道</DisplayName>
+		<Desc>在与玄一道打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_6">
+		<DisplayName>门派外交-青莲剑宗</DisplayName>
+		<Desc>在与青莲剑宗打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_7">
+		<DisplayName>门派外交-栖霞洞天</DisplayName>
+		<Desc>在与栖霞洞天打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_8">
+		<DisplayName>门派外交-百蛮山</DisplayName>
+		<Desc>在与百蛮山打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_9">
+		<DisplayName>门派外交-七仟坞</DisplayName>
+		<Desc>在与七仟坞打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_10">
+		<DisplayName>门派外交-七杀魔宫</DisplayName>
+		<Desc>在与七杀魔宫打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_11">
+		<DisplayName>门派外交-合欢宗</DisplayName>
+		<Desc>在与合欢宗打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<Def Name="School_12">
+		<DisplayName>门派外交-万妖殿</DisplayName>
+		<Desc>在与万妖殿打交道时，我派弟子采取的态度。</Desc>
+		<Selection>
+			<li Type="Good" DisplayName="善意" Desc="用友善的态度与他们打交道。"/>
+			<li Type="Bad" DisplayName="恶意" Desc="用仇视的态度与他们打交道。"/>
+			<li Type="Bye" Default="1" DisplayName="勿生事端" Desc="遇到他们的人主动退避，尽量躲开。"/>
+		</Selection>
+	</Def>
+	<!--系统用-->
+	<Def Name="lingguangyishan">
+		<DisplayName>灵光一闪</DisplayName>
+		<Type>NpcMsg</Type>
+		<Selection>
+			<li Type="Any" Default="1"/>
+		</Selection>
+	</Def>
+</List></SchoolRuleDefs>

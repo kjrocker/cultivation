@@ -1,0 +1,131 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Chicken_1"><!--测试秘体-->
+		<Prefix>大日</Prefix>
+		<Suffix>神针</Suffix>
+		<Desc>鸡妖血脉传承中的秘体，凝聚九阳之力汇聚于喙，再赋予破灭之力。以此发动啄击，十分擅长击破灵气护盾。</Desc>
+		<DefaultBody>YGAnimal_ChickenBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_niaozui01</AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Beak">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_JieMieJingHua" Levels="1"/>
+					<li Name="QuenchingLabel_Lv4_B01_JiuYangZhenHua" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="4"/>
+				</Labels>
+			</li>		
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="4"/>
+				</Labels>
+			</li>					
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上大量提高秘体威力\n大量提高秘体灵气护盾穿透率</Desc>
+				<Modifier>BasePracticeAchievements1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1000"/>
+					<li Name="ArmorPenetration" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+			
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Chicken_2"><!--测试秘体-->
+		<Prefix>天阳真形</Prefix>
+		<Suffix>冠</Suffix>
+		<Desc>鸡妖血脉传承中的秘体，以太阳之力淬炼头顶宝冠，练成此术，则淬体之时事半功倍。</Desc>
+		<DefaultBody>YGAnimal_ChickenBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Cockscomb">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_F01_JiuYangZhenHua" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>巨量提高炼体者的淬体速度</Desc>
+				<Modifier>Modifier_SuperPart_Chicken_2</Modifier>
+			</li>
+			
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Chicken_3"><!--测试秘体-->
+		<Prefix>五色</Prefix>
+		<Suffix>神光</Suffix>
+		<Desc>鸡妖血脉传承中的秘体，原型乃孔雀妖圣领悟先天五行之道所炼的无根尾羽，一旦练成，无物不刷。</Desc>
+		<DefaultBody>YGAnimal_ChickenBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXlianhuanzhang</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_chibang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYchibang01</DefEffect>
+		<Parts>
+			<li Name="TailFeather1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXJin" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="TailFeather2">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXMu" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="TailFeather3">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXShui" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="TailFeather4">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="TailFeather5">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXTu" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A02_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>巨量提高秘体法宝镇压几率</Desc>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.75"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

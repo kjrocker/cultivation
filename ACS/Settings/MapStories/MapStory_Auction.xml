@@ -1,0 +1,31 @@
+<Stories><List>	
+	<Story Name="TradeAuction"  Parent="BaseFillingStory">
+		<DisplayName>拍卖会</DisplayName>
+		<Desc>[NAME]来到了[PLACE]，发现此地有个拍卖行。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>参与拍卖</Display>
+				<OKResult>
+					if (not GameUlt.CanUseAuction()) then
+						me:AddMsg(XT("拍卖功能还未激活"));
+					elseif (not GameUlt.IsAuctionOpen()) then
+						me:AddMsg(XT("这一次拍卖还没开启"));
+					elseif (GameUlt.HasRansomInAuction()) then
+						me:AddMsg(XT("还有赎金没交,拍卖行拒绝了你"));
+					else
+						story:FinishSecret();
+						CS.Wnd_TradeAuction.Instance:ShowAuction(me.npcObj);
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>离去</Display>
+				<OKResult><![CDATA[	
+				me:AddMsg(XT("[NAME]什么都不想做，还是离开这里吧。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

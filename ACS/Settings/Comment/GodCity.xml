@@ -1,0 +1,28 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>GodCityGod_Gong_1</Name>
+            <Notes></Notes>
+            <Title>神国 - 《九天应元雷声普化玉书》</Title>
+            <Desc>以《九天应元雷声普化玉书》开辟出的神国。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>GodCityGod_Gong_2</Name>
+            <Notes></Notes>
+            <Title>神国 - 《诸天八部成就法》</Title>
+            <Desc>以《诸天八部成就法》开辟出的神国。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>GodCityGod_Gong_3</Name>
+            <Notes></Notes>
+            <Title>神国 - 幽冥十方太乙救苦经</Title>
+            <Desc>以《幽冥十方太乙救苦经》开辟出的神国。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

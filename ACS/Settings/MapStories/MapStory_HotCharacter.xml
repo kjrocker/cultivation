@@ -1,0 +1,602 @@
+<Stories><List>
+	<Story Name="HotStory_Fun_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<DisplayCondition>
+				<![CDATA[	
+				me:GetGLevel() == 0
+				]]>
+				</DisplayCondition>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local tS = {XT("岐黄"),XT("烹饪"),XT("版筑"),XT("耕作"),XT("采掘"),XT("雅艺"),XT("巧匠"),XT("处世")};
+				local tM = {"HotStory_MedicineLv","HotStory_CookingLv","HotStory_BuildingLv","HotStory_FarmingLv","HotStory_MiningLv","HotStory_ArtLv","HotStory_ManualLv","HotStory_SocialContactLv"};
+				local szS_R = tS[nR]
+				local sN  = me:ParseNpcStory(string.format(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然心中一动，对%s一道又有感悟。"), tostring(szS_R)));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier(tM[nR]);
+				]]>
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<DisplayCondition>
+				<![CDATA[	
+				me:GetGLevel() > 0
+				]]>
+				</DisplayCondition>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,15);
+				if me.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body then
+					if 1 <= nR and nR <= 6 then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然心中一动，对天道又多了许多感悟。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+					elseif 6 <  nR and nR <= 7 then	
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然于修行之上有所领悟。[name]赶忙将这一丝灵光记录下来。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:DropRandomItem("Esoterica")
+					elseif 7 <  nR and nR <= 10 then	
+						if me:IsTouchNeck() == false then
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+							me:AddMsg(sN);me:AddMemery(sN);
+							if me:GetGLevel() > 6 then
+								me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+							else
+								me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+							end
+						else
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。可惜的是[name]的修行遇到了瓶颈，并没能抓住这一丝灵感。"));
+							me:AddMsg(sN);me:AddMemery(sN);
+						end
+					elseif 10 <  nR and nR <= 14 then	
+						if world.DayCount < 100 then
+							if me:IsTouchNeck() == false then
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+								me:AddMsg(sN);me:AddMemery(sN);
+								if me:GetGLevel() > 6 then
+									me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+								else
+									me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+								end
+							else
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。可惜的是[name]的修行遇到了瓶颈，并没能抓住这一丝灵感。"));
+								me:AddMsg(sN);me:AddMemery(sN);
+							end
+						else
+							if me:GetGLevel() > 9 and me:GetFlag(86) < 5 and me:RandomInt(1,2) == 1 then
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感到元神中一股暖流涌出。[name]连忙运转功法，元神竟然自然而然的分化出一道分神！可谓功到自然成。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:SetFlag(86,me:GetFlag(86) + 1);me:DivideGodSoul(true,1);
+							else
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感觉内息一阵紊乱，全身灵气竟然失守。[name]连忙运功镇压，但也已经受了不轻的内伤。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));
+							end
+						end
+					end
+				else
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破成功后，突然从天地交感的契机中捕获了大量的精华。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddQuenchingItem("Item_BodyPractice_TaiXu",3);me:AddQuenchingItem("Item_BodyPractice_XuanTian",3)
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Fun_LingWu_DuShu"  Parent="BaseFillingStory">
+		<DisplayName>发现</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在翻阅古书时，突然发现了一丝异常。</Desc>
+		<Selections>
+			<li>
+				<Display>有所发现</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在翻阅古书时，突然发现封页厚度有些不正常。[name]挑开封页，竟然从中找到一张古朴的符咒。"));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:DropSpell(1, "", me:RandomFloat(0.6,1))
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Make_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local tS = {XT("岐黄"),XT("烹饪"),XT("版筑"),XT("耕作"),XT("采掘"),XT("雅艺"),XT("巧匠"),XT("处世")};
+				local tM = {"HotStory_MedicineLv","HotStory_CookingLv","HotStory_BuildingLv","HotStory_FarmingLv","HotStory_MiningLv","HotStory_ArtLv","HotStory_ManualLv","HotStory_SocialContactLv"};
+				local szS_R = tS[nR]
+				local sN  = me:ParseNpcStory(string.format(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action][obj]时，突然心中一动，对%s一道又有感悟。"), tostring(szS_R)));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier(tM[nR]);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Make_LingGan"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action][obj]时，突然心中一动，捕捉到一丝灵感，居然成功创造出一件艺术品。"));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_MakeBigSuccess", true);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Work_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local tS = {XT("岐黄"),XT("烹饪"),XT("版筑"),XT("耕作"),XT("采掘"),XT("雅艺"),XT("巧匠"),XT("处世")};
+				local tM = {"HotStory_MedicineLv","HotStory_CookingLv","HotStory_BuildingLv","HotStory_FarmingLv","HotStory_MiningLv","HotStory_ArtLv","HotStory_ManualLv","HotStory_SocialContactLv"};
+				local szS_R = tS[nR]
+				local sN  = me:ParseNpcStory(string.format(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然心中一动，对%s一道又有感悟。"), tostring(szS_R)));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier(tM[nR]);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="HotStory_Work_LingWu_Feed"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local tS = {XT("岐黄"),XT("烹饪"),XT("版筑"),XT("耕作"),XT("采掘"),XT("雅艺"),XT("巧匠"),XT("处世")};
+				local tM = {"HotStory_MedicineLv","HotStory_CookingLv","HotStory_BuildingLv","HotStory_FarmingLv","HotStory_MiningLv","HotStory_ArtLv","HotStory_ManualLv","HotStory_SocialContactLv"};
+				local szS_R = tS[nR]
+				local sN  = me:ParseNpcStory(string.format(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在给[hename][obj_action][obj]时，突然心中一动，对%s一道又有感悟。"), tostring(szS_R)));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier(tM[nR]);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Make_LingWu_CookingFailed"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]这次做饭搞的一团糟，但[name]却从中获益匪浅，对烹饪一道又有感悟。"));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_CookingLv");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Make_LingWu_CookingSucceed"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,9);
+				local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]这次烹饪大有收获，感觉自己的烹饪技艺更进一层。"));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_CookingLv");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>领悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,15);
+				if me.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body then
+					if 1 <= nR and nR <= 6 then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然心中一动，对天道又多了许多感悟。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+					elseif 6 <  nR and nR <= 7 then	
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然于修行之上有所领悟。[name]赶忙将这一丝灵光记录下来。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:DropRandomItem("Esoterica")
+					elseif 7 <  nR and nR <= 10 then	
+						if me:IsTouchNeck() == false then
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+							me:AddMsg(sN);me:AddMemery(sN);
+							if me:GetGLevel() > 6 then
+								me:AddPracticeResource("Stage",me:GetGLevel() * 2000);
+							else
+								me:AddPracticeResource("Stage",me:GetGLevel() * 100);
+							end
+						else
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。可惜的是[name]的修行遇到了瓶颈，并没能抓住这一丝灵感。"));
+							me:AddMsg(sN);me:AddMemery(sN);
+						end
+					elseif 10 <  nR and nR <= 14  then	
+						if world.DayCount < 100 then
+							if me:IsTouchNeck() == false then
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+								me:AddMsg(sN);me:AddMemery(sN);
+								if me:GetGLevel() > 6 then
+									me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+								else
+									me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+								end
+							else
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然领会到[obj_gong]的一丝真意。可惜的是[name]的修行遇到了瓶颈，并没能抓住这一丝灵感。"));
+								me:AddMsg(sN);me:AddMemery(sN);
+							end
+						else
+							if me:GetGLevel() > 9 and me:GetFlag(86) < 5 and me:RandomInt(1,2) == 1 then
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感到元神中一股暖流涌出。[name]连忙运转功法，元神竟然自然而然的分化出一道分神！可谓功到自然成。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:SetFlag(86,me:GetFlag(86) + 1);me:DivideGodSoul(true,1);
+							else
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感觉内息一阵紊乱，全身灵气竟然失守。[name]连忙运功镇压，但也已经受了不轻的内伤。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));
+							end
+						end
+					end
+				else
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破成功后，突然从天地交感的契机中捕获了大量的精华。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddQuenchingItem("Item_BodyPractice_TaiXu",3);me:AddQuenchingItem("Item_BodyPractice_XuanTian",3)
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="HotStory_Practice_Brokening"  Parent="BaseFillingStory">
+		<DisplayName>突破感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在突破时感悟到天地间某种大道。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈时，感悟到某种天地间的大道，这让[it]感到此次突破的把握大了许多。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_BrokeningChance", true);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_BrokenSucceed"  Parent="BaseFillingStory">
+		<DisplayName>感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在突破成功时感悟到天地间某种大道。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,15);
+				if me.npcObj.GongKind ~= CS.XiaWorld.g_emGongKind.Body then
+					if 1 <= nR and nR <= 6 then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破成功后，成功借助突破时天地交感的契机，感悟到一丝大道。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*1000);
+					elseif 6 <  nR and nR <= 7 then	
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破成功后，突然从天地交感的契机中悟出一套秘法。[name]赶忙将这一丝灵光记录下来。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:DropRandomItem("Esoterica")
+					elseif 7 <  nR and nR <= 10 then	
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破后，竟无意之间触碰到天人合一的境界，等[it]回过神来，全身的灵气已经比之前充盈了许多。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_Ling");
+					elseif 10 <  nR and nR <= 14  then	
+						if world.DayCount < 100 then
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破后，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+							me:AddMsg(sN);me:AddMemery(sN);
+							if me:GetGLevel() > 6 then
+								me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+							else
+								me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+							end
+						else
+							if me:GetGLevel() > 9 and me:GetFlag(86) < 5 and me:RandomInt(1,2) == 1 then
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感到元神中一股暖流涌出。[name]连忙运转功法，元神竟然自然而然的分化出一道分神！可谓功到自然成。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:SetFlag(86,me:GetFlag(86) + 1);me:DivideGodSoul(true,1);
+							else
+								local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感觉内息一阵紊乱，全身灵气竟然失守。[name]连忙运功镇压，但也已经受了不轻的内伤。"));
+								me:AddMsg(sN);me:AddMemery(sN);me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));
+							end
+						end
+					end
+				else
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破成功后，突然从天地交感的契机中捕获了大量的精华。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddQuenchingItem("Item_BodyPractice_TaiXu",3);me:AddQuenchingItem("Item_BodyPractice_XuanTian",3)
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_BrokenFailed"  Parent="BaseFillingStory">
+		<DisplayName>感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在突破失败后感悟到天地间某种大道。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,11);
+				if 1 <= nR and nR <= 6 then
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破失败后，竟敏锐的发现了自己修行走到了一个歧路。一番总结之下，竟然让他[it]获益匪浅。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*1000);
+				elseif 6 <  nR and nR <= 7 then	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破失败后，沮丧的心境下竟然对天道别有一番领悟。[name]赶忙将这一丝灵光记录下来。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:DropRandomItem("Esoterica")
+				elseif 7 <  nR and nR <= 10  then	
+					if world.DayCount < 100 then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破失败后，竟敏锐的发现了自己修行走到了一个歧路。一番总结之下，竟然让他[it]获益匪浅。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*1000);
+					else
+					
+						if me:GetGLevel() > 9 and me:GetFlag(86) < 5 and me:RandomInt(1,2) == 1 then
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破失败后，敏锐的发现自己修行之路的隐患，顿悟之下突然感到元神中一股暖流涌出。[name]连忙运转功法，元神竟然自然而然的分化出一道分神！可谓塞翁失马焉知非福。"));
+							me:AddMsg(sN);me:AddMemery(sN);me:SetFlag(86,me:GetFlag(86) + 1);me:DivideGodSoul(true,1);
+						else
+							local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然感觉内息一阵紊乱，全身灵气竟然失守。[name]连忙运功镇压，但也已经受了不轻的内伤。"));
+							me:AddMsg(sN);me:AddMemery(sN);me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));
+						end
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_Golding"  Parent="BaseFillingStory">
+		<DisplayName>结丹感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在结丹时进入天人合一的境界。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹时，突然身心俱空，进入天人合一之境，已经消耗的灵气竟然被瞬间补充。[name]于无悲无喜的空灵中，金丹更加凝练了。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddPracticeResource("Ling",50000)
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_GoldSucceed"  Parent="BaseFillingStory">
+		<DisplayName>感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在结丹成功时捕捉到了一丝灵光。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local nR = me:RandomInt(1,15);
+				if 1 <= nR and nR <= 6 then
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在结丹成功后，成功借助突破时天地交感的契机，感悟到一丝大道。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*3000);
+				elseif 6 <  nR and nR <= 7 then	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在结丹成功后，突然从天地交感的契机中悟出一套秘法。[name]赶忙将这一丝灵光记录下来。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:DropRandomItem("Esoterica")
+				elseif 7 <  nR and nR <= 10 then	
+					if me:IsTouchNeck() == false then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹后，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+						me:AddMsg(sN);me:AddMemery(sN);
+						if me:GetGLevel() > 6 then
+							me:AddPracticeResource("Stage",me:GetGLevel() * 5000)
+						else
+							me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+						end
+					else
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹后，突然领会到[obj_gong]的一丝真意。可惜的是[name]的修行遇到了瓶颈，并没能抓住这一丝灵感。"));
+						me:AddMsg(sN);me:AddMemery(sN);
+					end
+				elseif 10 <  nR and nR <= 14  then	
+					if world.DayCount > 100 then
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在结丹成功后，突然领会到[obj_gong]的一丝真意。[name]当场沉浸在这一化境中，等回过神来，发现修为已然大进。"));
+						me:AddMsg(sN);me:AddMemery(sN);
+						if me:GetGLevel() > 6 then
+							me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+						else
+							me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+						end
+					else
+						local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在结丹成功后，突然感觉内息一阵紊乱，全身灵气竟然失守。[name]连忙运功镇压，但也已经受了不轻的内伤。"));
+						me:AddMsg(sN);me:AddMemery(sN);me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));me:AddDamageRandomPart(5,"LingSpillsInjury",me:RandomFloat(0,1),XT("走火入魔"));
+						
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_ThunderSucceed"  Parent="BaseFillingStory">
+		<DisplayName>渡劫感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在渡劫成功时偷得一丝天机。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫最后关头，突然福至心灵，将一丝天劫之息以偷天之法盗了出来。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:DropAwardItem("Item_ThunderAir",1)
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_RefiningDan"  Parent="BaseFillingStory">
+		<DisplayName>炼丹感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在炼丹时突然福至心灵，有所感悟。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，神识突然与炉中的材料合为一体，甚至能清晰的感受到其中药性最细微的变化。[name]以神念御丹，最终竟然一炉成丹数倍！"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_DanNum", true);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="HotStory_Practice_RefiningDanFailed"  Parent="BaseFillingStory">
+		<DisplayName>炼丹感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在炼丹失败后却若有所悟。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]失败后，却若有所思，仔细体悟之下竟然另有收获。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_Refining"  Parent="BaseFillingStory">
+		<DisplayName>炼器感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在炼器时突然福至心灵，有所感悟。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然体会到天地如烘炉，熔炼万物的至理。一瞬间，炉中材料被淬炼至精纯之境！"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_FabaoQ", true);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_RefiningGod"  Parent="BaseFillingStory">
+		<DisplayName>炼器感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+				local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然心中一动，捕捉到一丝天道运转的浩瀚之气息，并成功将之化入作品中。"));
+				
+				me:AddMsg(sN);me:AddMemery(sN);me:AddModifier("HotStory_FabaoR", true);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_RefiningFailed"  Parent="BaseFillingStory">
+		<DisplayName>炼器感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在炼器失败后却若有所悟。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]失败后，却若有所思，仔细体悟之下竟然另有收获。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Fei_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>突然灵感</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在与蜚玩耍时，突然有所感悟，竟然从蜚身上领悟到什么。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在与蜚嬉戏时，突然灵感触动，竟然若有所悟。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_LuShu_LingWu"  Parent="BaseFillingStory">
+		<DisplayName>突然灵感</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]在与鹿蜀玩耍时，突然有所感悟，竟然从鹿蜀身上领悟到什么。</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[	
+					local sN  = me:ParseNpcStory(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在与鹿蜀嬉戏时，突然灵感触动，竟然若有所悟。"));
+					me:AddMsg(sN);me:AddMemery(sN);me:AddTreeExp(me:GetDaoHang()*400);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

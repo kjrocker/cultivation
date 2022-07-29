@@ -1,0 +1,203 @@
+<Defs><List>	
+	<Def Name="BaiManSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_SoulPearl</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence1</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="TianJiSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_JinEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeiShanSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_SkyStone</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ZhengYiSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_MuEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="JiuHuaSR">
+		<Item CountName="Rare">
+			<ItemName>Item_ParasolWood</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuLianSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_LifeStream</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ShuShanSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_HuoEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="KunLunSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_TuEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="XianKongSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_StarEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="DanXiaSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_ShuiEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeHuanSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WanYaoSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence1</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence_1</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_EarthEssence1_1</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="NeutralSR">
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Yao_TurtleKe</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Yao_BearPiMao</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Yao_WolfAtk</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Yao_SnakeHanLin</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item CountName="ReallyRare">
+			<ItemName>Item_Yao_RabbitLuck</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<BuyPrice Value="5000" FriendPoint="1"/>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+</List></Defs>

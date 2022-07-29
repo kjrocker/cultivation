@@ -1,0 +1,201 @@
+﻿ID	Name	Desc	Sound	HasF	Loop	CloseEye	Umbrella	Length	HitFrame	Attchment1	AttchmentBone1	Attchment2	AttchmentBone2	Attchment3	AttchmentBone3	AnimalAni
+	导出名称	动作名称	音效	有单独的女性动作	循环	闭眼	可以打伞	时长	打击点	外挂模型1	挂点1 默认为Bip001 Spine	外挂模型2	挂点2			
+ksxxIdle	ksxxIdle	男_空手休闲待机		1	1		1	1.333333								Idle
+kswalk	kswalk	男_空手走路1		1	1		1	1								
+ksrun	ksrun	男_空手跑		1	1		1	0.6								
+jswalk	jswalk	男_僵尸行走			1	1	1	1.8								
+LJXLwalk	LJXLwalk	男_巡逻走路			1		1	1.166667								
+carefulWalk	carefulWalk	男_小心翼翼走鬼祟走			1		1	1.666667								
+ksQwalk	ksQwalk	男_空手瘸腿走路			1		1	1.4								
+ksjujue	ksjujue	男_拒绝		1			1	1.166667								
+ksYH	ksYH	男_疑惑		1			1	1.333333								
+kskd	kskd	男_肯定		1			1	2.833333								
+ksLRDL	ksLRDL	男_左右打量		1			1	2.5								
+ksXL	ksXL	男_抱拳行礼		1			1	1.333333								
+ksPLSZ	ksPLSZ	男_疲劳舒展		1			1	4.833333								
+sleep001	sleep001	男_平躺			1	1		0.03333334								Sleep
+sleep002	sleep002	男_侧躺			1	1		0.03333334								Sleep
+guzheng1	guzheng1	男_弹古筝	Sound/Work/guzheng		1			2.666667								Atk
+xiaqi1	xiaqi1	男_下棋1			1		1	2.666667								Atk
+xiaqi2	xiaqi2	男_下棋2			1		1	1.333333								Atk
+shuhua1	shuhua1	男_书画		1	1			2.333333		Mod/Prop/Other/mod_maobi	Bip001 R Hand					Atk
+shaokao1	shaokao1	男_烧烤_火腿	Sound/Work/shaokao	1	1			1.333333		Mod/Prop/Other/mod_huotui	Bip001 R Hand					Atk
+douniao1	douniao1	男_逗鸟	Sound/Work/douniao	1	1		1	2.833333		Mod/Prop/Other/mod_xiaoshuzhi1	Bip001 R Hand					Atk
+banxiangzi1	banxiangzi1	男_搬箱子		1	1			1.333333		Mod/Prop/Other/mod_xiangzi_icon	Bip001 R Hand					
+TSidle	TSidle	男_挑水待机			1			1.166667		Mod/Prop/Other/mod_shuitong001	Bip001 R Hand					Idle
+TSwalk	TSwalk	男_挑水走路			1			1		Mod/Prop/Other/mod_shuitong001	Bip001 R Hand					Run
+standeat	standeat	男_站姿吃饭	Sound/Work/eat		1			1		Mod/Prop/Other/mod_kuaizi001	Bip001 R Hand	Mod/Prop/Other/mod_wan001	Bip001 L Hand			Idle
+siteat	siteat	男_坐姿吃饭	Sound/Work/eat		1			1		Mod/Prop/Other/mod_kuaizi001	Bip001 R Hand	Mod/Prop/Other/mod_wan001	Bip001 L Hand			Idle
+standReat	standReat	男_单手站姿吃饭	Sound/Work/eat		1			1		Mod/Prop/Other/mod_wan001	Bip001 R Hand					
+sitReat	siteat	男_单手坐姿吃饭	Sound/Work/eat		1			1		Mod/Prop/Other/mod_wan001	Bip001 Prop2	Mod/Prop/Other/mod_kuaizi001	Bip001 R Hand			
+sitNohandeat	sitNohandeat	男_无手坐姿吃饭	Sound/Work/eat		1			1		Mod/Prop/Other/mod_wan001	Bip001 Prop2					
+standDrink	standDrink	男_站姿喝水	Sound/Work/eat		1		1	1.5		Mod/Prop/Other/mod_cup001	Bip001 R Hand					
+sitDrink	sitDrink	男_坐姿喝水	Sound/Work/eat		1			1.5		Mod/Prop/Other/mod_cup001	Bip001 R Hand					
+Sneeze	Sneeze	男_打喷嚏		1		1	1	2								
+CutStone	CutStone	男_切石	Sound/Work/CutStone		1			0.7333333		Mod/Prop/Other/mod_chuizi001	Bip001 R Hand	Mod/Prop/Other/mod_zaozi001	Bip001 L Hand			
+CutTree	CutTree	男_砍树	Sound/Work/cuttree		1			1.333333								
+Bodybuilding	Bodybuilding	男_健美表演		1	1			7								Idle
+gain	gain	男_收获	Sound/Work/gain		1		1	1.666667								
+iron	iron	男_打铁	Sound/Work/iron	1	1			0.7333333		Mod/Prop/Other/mod_chuizi001	Bip001 R Hand	Mod/Prop/Other/mod_tiepi001	Bip001 L Hand			
+wakeng	wakeng	男_挖坑	Sound/Work/wakeng		1			1.666667		Mod/Prop/Other/mod_tieqiao001	Bip001 R Hand					
+cutoff	firewood	男_割除	Sound/Work/cutoff		1			1.666667		Mod/Prop/Other/mod_chutou002	Bip001 R Hand					
+weave	weave	男_织布	Sound/Work/weave	1	1			2								
+firewood	firewood	男_挖矿	Sound/Work/firewood	1	1			2								
+dazuo	dazuo	男_打坐	Sound/Work/dazuo		1	1		1.333333		Effect/gsq/Prefab/DaZuo	RotHandle					Sleep
+produce	produce	男_制作	Sound/Work/assemble	1	1			2.9								
+assemble	assemble	男_摆弄组装拆卸修理物品	Sound/Work/assemble	1	1			1.5								Atk
+cook	cook	男_烹饪	Sound/Work/cook	1	1			0.6		Mod/Prop/Other/mod_caidao	Bip001 R Hand					
+lianquan1	lianquan1	男_拳法练习1			1			3.4								Atk
+lianquan2	lianquan2	男_拳法练习2			1			1								Atk
+lianquan3	lianquan3	男_拳法练习3			1			6.833333								Atk
+lianquan4	lianquan4	男_拳法练习4			1			6.5								Atk
+ketou	ketou	男_磕头	Sound/Work/ketou		1			1.166667								Atk
+fadai1	fadai1	男_下蹲发愣1					1	1.333333								Idle
+fadai2	fadai2	男_下蹲发愣2			1		1	1								Idle
+fadai3	fadai3	男_下蹲发愣3			1		1	2								Idle
+fadai4	fadai4	男_下蹲发愣4					1	1.333333								Idle
+kszdidle	kszdidle	男_空手战斗待机			1			1								Idle
+kszdpaqi1	kszdpaqi1	男_空手爬起			1			0.8000001								Idle
+kszdjidao1	kszdjidao1	男_空手击倒			1			1								Idle
+kszddead1	kszddead1	男_空手战斗死亡1						1.5								
+kszddead2	kszddead2	男_空手战斗死亡2						1.5								
+kszdbeiji	kszdbeiji	男_空手战斗被击			1			0.5								
+kswork	kszdpugong1	空手砍树/挖矿	Sound/Work/kswork		1			1.166667								Atk
+kszdpugong1	kszdpugong1	男_空手战斗普攻1			1			1.166667								Atk
+kszdpugong2	kszdpugong2	男_空手战斗普攻2			1			1								Atk
+kszdpugong3	kszdpugong3	男_空手战斗普攻3			1			1.333333								Atk
+kszdpugong4	kszdpugong4	男_空手战斗普攻4			1			1.166667								Atk
+LJIdle	LJIdle	男_右手持剑战斗待机			1			1								Atk
+LJpaqi1	LJpaqi1	男_右手剑爬起			1			1.333333								
+LJjidao1	LJjidao1	男_右手剑击倒			1			1								
+LJdead1	LJdead1	男_右手剑死亡1				1		1.566667								
+LJdead2	LJdead2	男_右手剑死亡2				1		1.566667								
+LJjineng1	LJjineng1	男_右手剑技能1			1			1.166667								Atk2
+LJjineng2	LJjineng2	男_右手剑技能2			1			1.333333								Atk2
+LJjineng3	LJjineng3	男_右手剑技能3			1			2.666667								Atk2
+LJjineng4	LJjineng4	男_右手剑技能4			1			1.333333								Atk2
+LJjineng5	LJjineng5	男_右手剑技能5			1			1.333333								Atk2
+LJjineng6	LJjineng6	男_右手剑技能6			1			1.333333								Atk2
+LJjineng7	LJjineng7	男_右手剑技能7			1			1								Atk2
+LJjineng8	LJjineng8	男_右手剑技能8			1			1.666667								Atk2
+LJjineng9	LJjineng9	男_右手剑技能9			1			1.733333								Atk
+LJjineng10	LJjineng10	男_右手剑技能10			1			2								Atk
+LJjineng11	LJjineng11	男_右手剑技能11			1			1.5								Atk
+LJpugong1	LJpugong1	男_右手剑普攻1			1			0.9333334								Atk
+LJpugong2	LJpugong2	男_右手剑普攻2			1			1.166667								Atk
+LJpugong3	LJpugong3	男_右手剑普攻3			1			1.166667								Atk
+LJpugong4	LJpugong4	男_右手剑普攻4			1			1								Atk
+LJrun	LJrun	男_右手持剑跑			1			0.6								Run
+LJbeiji	LJbeiji	男_右手剑被击			1			0.5333334								
+LJlose	LJlose	男_右手剑战斗失败						1.333333								
+LJwujian	LJwujian	男_右手剑舞剑		1	1			11.73333								Free
+SSidle	SSidle	男_双持武器待机			1			1								Idle
+SSpaqi1	SSpaqi1	男_双持武器爬起			1			0.8000001								
+SSjidao1	SSjidao1	男_双持武器击倒			1			1								
+SSdead1	SSdead1	男_双持武器战斗死亡1				1		1.5								
+SSdead2	SSdead2	男_双持武器战斗死亡2				1		1.566667								
+SSbeiji	SSbeiji	男_双持武器被击			1			0.5								
+SSrun	SSrun	男_双持武器奔跑			1			0.6								
+SSpgong1	SSpgong1	男_双持武器普攻1			1			0.9333334								Atk
+SSpgong2	SSpgong2	男_双持武器普攻2			1			1.166667								Atk
+SSpgong3	SSpgong3	男_双持武器普攻3			1			1								Atk
+SSpgong4	SSpgong4	男_双持武器普攻4			1			1.166667								Atk
+GGpaqi1	GGpaqi1	男_弓箭爬起			1			0.8000001								
+GGjidao1	GGjidao1	男_弓箭击倒			1			1								
+GGdead1	GGdead1	男_弓箭战斗死亡1				1		1.566667								
+GGdead2	GGdead2	男_弓箭战斗死亡2				1		1.566667								
+GGpgong1	GGpgong1	男_弓箭普攻1	Sound/Fight/gong		1			0.7333333								Atk
+GGrun	GGrun	男_弓箭跑			1			0.6666667								Run
+GGidle	GGidle	男_弓箭待机			1			1								Idle
+SDwalk	SDwalk	男_双手短兵器行走			1			1								Run
+SDrun	SDrun	男_双手短兵器跑						0.6								Run
+SDdead1	SDdead1	男_双手短兵器死亡1				1		1.566667								
+SDdead2	SDdead2	男_双手短兵器死亡2			1	1		1.566667								
+SDidle	SDidle	男_双手短兵器待机			1			1								
+SDpugong1	SDpugong1	男_双手短兵器普攻1			1			1.166667								Atk
+SDpugong2	SDpugong2	男_双手短兵器普攻2			1			1								Atk
+SDpugong3	SDpugong3	男_双手短兵器普攻3			1			1								Atk
+SDpugong4	SDpugong4	男_双手短兵器普攻4			1			1								Atk
+SDpaqi1	SDpaqi1	男_双手短兵器爬起						0.8000001								
+SDjidao1	SDjidao1	男_双手短兵器击倒			1			1								
+SDbeiji1	SDbeiji1	男_双手短兵器被击			1			0.5								
+sdbook	sdbook	男_趴着读书			1		1	0.6666667		Mod/Prop/Other/mod_book1	Bip001 Prop1					Free
+LSXX	LSXX	男_侧躺休闲			1		1	0.8333334		Mod/Prop/Other/mod_xiaoshuzhi1	Bip001 Prop1					Free
+LFbook	LFbook	男_平躺读书			1		1	0.5		Mod/Prop/Other/mod_book1	Bip001 Prop1					Free
+Setbook	Setbook	男_坐姿读书			1		1	1.333333		Mod/Prop/Other/mod_book1	Bip001 Prop1					Free
+Standbook	Standbook	男_站姿读书			1		1	1.333333		Mod/Prop/Other/mod_book1	Bip001 Prop1					Free
+LFXX	LFXX	男_平躺休闲			1		1	0.5								Free
+chuangong1	chuangong1	男_传功	Sound/Work/dazuo		1	1		1.333333		Effect/gsq/Prefab/ChuanGong_ing	RotHandle					Idle
+skyjian1	skyjian1	all mod_男_空中御剑1			1			1								Run
+skyjian2	skyjian2	all mod_男_空中御剑2			1			0.6666667								Run
+Jumpoffjian	Jumpoffjian	all mod_男_御剑跳下						0.8333334								Run
+Jumpjian1	Jumpjian1	all mod_男_御剑起跳1						0.9333334								Run
+Jumpjian2	Jumpjian2	all mod_男_御剑起跳2						0.9333334								Run
+Jumpjian3	Jumpjian3	all mod_男_御剑起跳3						0.9333334								Run
+GGbeiji1	GGbeiji1	男_弓箭被击			1			0.5333334								
+GGwallk	GGwallk	男_弓箭走			1			1								Run
+SSwalk	SSwalk	男_双持武器走			1			1								Run
+LJwalk	LJwalk	all mod_男_右手剑走			1			1								Idle
+Saodi	saodi	扫地	Sound/Work/saodi	1	1			1		Mod/Prop/Other/mod_saozhou01	Bip001 R Hand					Atk
+shentong1	shentong1	神通1						2.667								Atk
+shentong2	shentong2	神通2						4.2								Atk2
+shentong3	shentong3	神通3						1.5								Atk3
+shentong4	shentong4	神通4						0.667								Atk
+shentong5	shentong5	神通5						3.833								Atk2
+shentong6	shentong6	神通6						2.333								Atk3
+kshuadao	kshuadao	滑到+爬起						1.1								Idle
+Bodydazuo	dazuo	男_打坐	Sound/Work/dazuo		1	1		1.333333								Sleep
+ridehorse	dazuo	骑			1	1		1.333333								Sleep
+																
+slaughter	gain	屠宰	Sound/Work/assemble		1			1.666667		Mod/Prop/Other/mod_caidao	Bip001 R Hand					Atk
+banxiangzi2	Run	男_搬箱子小			1		1			Mod/Prop/Other/mod_xiangzi2	Bip001 R Hand					Atk
+bannpc	banxiangzi1	男_搬人			1			1.333333								Atk
+firewood2	firewood	男_劈柴	Sound/Work/firewood2		1			2		Mod/Prop/Other/mod_fuzi001	Bip001 R Hand					Atk
+shaokao2	shaokao1	男_烧烤_肉串	Sound/Work/shaokao	1	1		1	1.333333		Mod/Prop/Other/mod_rouchuan	Bip001 R Hand					Atk
+shaokao3	shaokao1	男_烧烤_烤鱼	Sound/Work/shaokao	1	1		1	1.333333		Mod/Prop/Other/mod_kaoyu	Bip001 R Hand					Atk
+FlyEnter1	FlyEnter1	起飞	Sound/Work/jump					0.627								Run
+FlyEnter2	FlyEnter2	起飞	Sound/Work/jump					0.703								Run
+FlyEnter3	FlyEnter3	起飞	Sound/Work/jump					0.51								Run
+FlyEnter4	FlyEnter4	起飞	Sound/Work/jump					0.627								Run
+FlyEnter5	FlyEnter5	起飞	Sound/Work/jump					0.703								Run
+FlyEnter6	FlyEnter6	起飞	Sound/Work/jump					0.51								Run
+kssq@F	kssq@F	生气 女					1	2.667								Idle
+wudao1@F	wudao1@F	舞蹈 女			1		1	9.5								Idle
+kscry1@F	kscry1@F	哭 女					1	3.267								Idle
+kscry2@F	kscry2@F	哭 女 循环		 	1			0.933								Idle
+kshx1@F	kshx1@F	害羞 女					1	4.167								Idle
+eatsmallstand	zhanxiaochi01	站着吃小东西	Sound/Work/eat	1	1		1	1.333		Mod/Prop/Other/mod_item_icon	Bip001 L Hand					Atk
+eatsmallsit	zuoxiaochi01	坐着吃小东西	Sound/Work/eat		1			1.333		Mod/Prop/Other/mod_item_icon	Bip001 L Hand					Atk
+koudo	koudo	叩地			1			0.056								Atk
+Fabao	Fabao	法宝控制														Atk
+zzsf02	zzsf02	坐着施法			1			2.667								Atk
+zzsf03	zzsf02	坐着施法			1			1.667								Atk
+OutFireD	kszdpugong2	内门灭火			1			1.667		Effect/A/Prefabs/Projectiles/Water/WaterImpactNormal	RotHandle					Atk
+xinzhai	xinzhai	心斋		1	1			1.667								Idle
+keji	keji	克己		1	1			1.667								Idle
+jumpfly	jumpfly_begin	飞跳						1.566667								Atk
+TXhuixuanti	TXhuixuanti	回旋踢						0.9	11							Atk
+TXlianhuantui	TXlianhuantui	连环踢						0.7165	15							Atk
+TXlianhuanzhang	TXlianhuanzhang	连环掌						0.567	15							Atk
+TXsaotangtui	TXsaotangtui	扫堂腿						0.667	8							Atk
+TXshangjiquan	TXshangjiquan	上击拳						0.7	7							Atk
+TXshenqufangyu	TXshenqufangyu	身躯防御						0.533								Atk
+TXshoubufangyu	TXshoubufangyu	手部防御						0.533								Atk
+TXtieshankao	TXtieshankao	铁山靠						0.667	11							Atk
+TXtoubufangyu	TXtoubufangyu	头部防御						0.533								Atk
+TXtouchui	TXtouchui	头槌						0.667	9							Atk
+TXtuibufangyu	TXtuibufangyu	腿部防御						0.533								Atk
+TXtuizhangfa	TXtuizhangfa	推掌法						0.667	8							Atk
+TXwuyingjiao	TXwuyingjiao	无影脚						1.2	18							Atk
+TXxiajiquan	TXxiajiquan	下击拳						0.667	4							Atk
+TXxiji	TXxiji	膝击						0.667	8							Atk
+TXyouchongquan	TXyouchongquan	右冲拳						0.667	5							Atk
+TXzhouji	TXzhouji	肘击						0.6	4							Atk
+TXzuanxintui	TXzuanxintui	钻心腿						1.667	30							Atk
+TXzuochongquan	TXzuochongquan	左冲拳						0.767	9							Atk
+diaoyu1	diaoyu1	抛竿			1			1		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Atk
+diaoyu2	diaoyu2	垂钓			1			1.333		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Idle
+diaoyu3	diaoyu3	起身			1			0.667		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Atk
+diaoyunayu	diaoyunayu	拿鱼			1			0.667		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Atk
+diaoyupaogan	diaoyupaogan	坐着抛竿			1			1		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Atk
+diaoyushougan	diaoyushougan	收杆			1			1		Mod/Prop/Other/mod_yugan001	Bip001 Prop2					Atk

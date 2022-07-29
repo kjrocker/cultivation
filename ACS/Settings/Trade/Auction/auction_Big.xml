@@ -1,0 +1,273 @@
+<Defs><List>
+	<Def Name="Exotic" Price="Price_Auction">
+		<DisplayName>珍宝拍卖</DisplayName>
+		<MinHide>1</MinHide>
+		<MaxHide>2</MaxHide> 
+		<NaughtMax>100000</NaughtMax>
+		<Pool Count="9">
+			<li>BaiManSSR</li>
+			<li>TianJiSSR</li>
+			<li>HeiShanSSR</li>
+			<li>ZhengYiSSR</li>
+			<li>JiuHuaSSR</li>
+			<li>WuLianSSR</li>
+			<li>ShuShanSSR</li>
+			<li>KunLunSSR</li>
+			<li>XianKongSSR</li>
+			<li>DanXiaSSR</li>
+			<li>HeHuanSSR</li>
+			<li>WuDangSSR</li>
+			<li>AuctionItem</li>
+			<li>GoodsAnimal</li>
+			<li>AuctionFinalItem</li>
+			<li>AuctionHorse</li>
+			<li>AuctionHorse</li>
+			<li>AuctionHorse</li>
+			<li>AuctionHorse</li>
+			<li>AuctionHorse</li>
+			<li>AuctionHorse</li>
+		</Pool>
+		
+		<LastPool Count="1">
+			<li>BaiManSSR</li>
+			<li>TianJiSSR</li>
+			<li>HeiShanSSR</li>
+			<li>ZhengYiSSR</li>
+			<li>JiuHuaSSR</li>
+			<li>WuLianSSR</li>
+			<li>ShuShanSSR</li>
+			<li>KunLunSSR</li>
+			<li>XianKongSSR</li>
+			<li>DanXiaSSR</li>
+			<li>HeHuanSSR</li>
+			<li>WuDangSSR</li>
+			<li>AuctionItem</li>
+			<li>GoodsAnimal</li>
+			<li>AuctionFinalItem</li>
+		</LastPool>
+		
+		<NpcCount>
+			<li T="gzg" C="3"/>
+			<li T="taskschool" C="1"/>
+			<li T="notaskschool" C="2"/>
+			<li T="naughty" C="1"/>
+		</NpcCount>
+		<Npc>
+			<li Name="gzg">
+				<Like>
+					<Base>1</Base>
+					<Self>2</Self>
+					<Last>50</Last>
+					<Type>
+						<li T="Trash">50</li>
+						<li T="Exotic">2</li>
+					</Type>
+				</Like>
+				<Money Min="0.7" Max="1.3">25000</Money>
+				<ToleranceOfRemainPercent>0.6</ToleranceOfRemainPercent>
+				<NamePrefix>NormalPrefix.txt</NamePrefix>
+				<NameSuffix>NormalSuffix.txt</NameSuffix>
+				<Talk>
+					<Bid Rate="0.3">
+						<li>我加！</li>
+						<li>跟！</li>
+						<li>这么便宜，再来！</li>
+					</Bid>
+					<Exceed Rate="0.3">
+						<li>遇到了对手啊。</li>
+						<li>比我还有钱？</li>
+					</Exceed>
+					<Buy>
+						<li>哈哈！好东西到手！</li>
+						<li>哈哈哈，就你们这帮穷鬼，想跟我比有钱？</li>
+					</Buy>
+					<Like>
+						<li>哇，这个好东西我要了！</li>
+						<li>决定就是它了！</li>
+						<li>看见了吗？这东西明天就会写上我的名字。</li>
+					</Like>
+					<Last>
+						<li>来了来了，最大的宝贝！</li>
+						<li>世间的珍品啊！</li>
+					</Last>
+					<DontKnow>
+						<li>这东西好生奇怪，真是妙啊？</li>
+					</DontKnow>
+					<Chat>
+						<li>我曾去过天池，还看见过仙女洗澡，哈哈哈！</li>
+						<li>今年收租子只赚了八十万，零用钱要不够了啊！</li>
+						<li>早知道就找女仆人来了，让她全都买就行了。</li>
+					</Chat>
+				</Talk>
+			</li>
+			<li Name="sanxiu">
+				<Like>
+					<Base>1</Base>
+					<Last>50</Last>
+					<Type>
+						<li T="XiaoDan">2</li>
+						<li T="DaDan">2</li>
+						<li T="Nature">1</li>
+						<li T="Exotic">1</li>
+					</Type>
+				</Like>
+				<Money Min="0.5" Max="1.3">12000</Money>
+				<ToleranceOfRemainPercent>0.6</ToleranceOfRemainPercent>
+				<NamePrefix>SanXiuPrefix.txt</NamePrefix>
+				<NameSuffix>SanXiuSuffix.txt</NameSuffix>
+				<Talk>
+					<Bid Rate="0.3">
+						<li>心疼，不过加！</li>
+						<li>这个月再吃两天土忍一忍...</li>
+						<li>（一跺脚）跟！</li>
+					</Bid>
+					<Exceed Rate="0.3">
+						<li>买不到吗？</li>
+						<li>果然是好东西，大家都想要啊</li>
+						<li>嗯，有点诱人，要不要再加呢...</li>
+					</Exceed>
+					<Buy>
+						<li>不错不错，修炼有望了！</li>
+						<li>买到好东西了，舒服！</li>
+					</Buy>
+					<Like>
+						<li>师傅说过，丹药都是好东西，我要！</li>
+						<li>打架靠武器，修仙靠丹药！这个看着很不错！</li>
+					</Like>
+					<Last>
+						<li>世上真正的宝贝来了！</li>
+						<li>啊，这是什么宝物？我的眼睛！</li>
+					</Last>
+					<DontKnow>
+						<li>这到底是什么啊...</li>
+					</DontKnow>
+					<Chat Rate="0.3">
+						<li>来的人真是五花八门啊，他们真的有钱吗？</li>
+					</Chat>
+				</Talk>
+			</li>
+			<li Name="naughty">
+				<Spec>Naught</Spec>
+				<Like>
+					<Base>1</Base>
+					<Self>1</Self>
+				</Like>
+				<Money Min="1" Max="1.3">200</Money>
+				<ToleranceOfRemainPercent>0.05</ToleranceOfRemainPercent>
+				<NamePrefix>NaughtPrefix.txt</NamePrefix>
+				<NameSuffix>NaughtSuffix.txt</NameSuffix>
+				<Talk>
+					<Bid Rate="0.3">
+						<li>哈哈，出高价</li>
+						<li>再贵点，再贵点</li>
+						<li>我再加，我再加</li>
+					</Bid>
+					<Exceed Rate="0.3">
+						<li>有人很想要，嘿嘿</li>
+						<li>再高点，再高点</li>
+						<li>抬啊抬啊</li>
+					</Exceed>
+					<Buy>
+						<li>完...完了!我真的没钱...</li>
+					</Buy>
+					<Last>
+						<li>这种东西会有谁喜欢呢...</li>
+					</Last>
+					<DontKnow>
+						<li>这种东西会有谁喜欢呢...</li>
+					</DontKnow>
+					<Chat>
+						<li>这次要搞谁呢？嘿嘿嘿</li>
+						<li>卖的价格越高，赏钱就越多</li>
+					</Chat>
+				</Talk>
+			</li>
+			<li Name="taskschool">
+				<Spec>TaskSchool</Spec>
+				<Like>
+					<Base>1</Base>
+					<Self>2</Self>
+					<Last>50</Last>
+					<Type>
+						<li T="XiaoDan">1</li>
+						<li T="DaDan">1</li>
+						<li T="Nature">2</li>
+						<li T="Exotic">2</li>
+					</Type>
+				</Like>
+				<Money Min="0.7" Max="1.3">16000</Money>
+				<ToleranceOfRemainPercent>0.6</ToleranceOfRemainPercent>
+				<SchoolPrefix>SchoolPrefix.txt</SchoolPrefix>
+				<SchoolSuffix>SchoolSuffix.txt</SchoolSuffix>
+				<Talk>
+					<Bid Rate="0.3">
+						<li>修行怎能用钱来衡量？跟！</li>
+						<li>等我拿到了这个，就能更上一层楼！</li>
+						<li>师傅一定会喜欢的！</li>
+					</Bid>
+					<Exceed Rate="0.3">
+						<li>怎么会...</li>
+					</Exceed>
+					<Buy>
+						<li>妙哉妙哉，精进指日可待！</li>
+					</Buy>
+					<Like>
+						<li>此物乃绝世珍宝，只有我才配做它的主人！</li>
+					</Like>
+					<Last>
+						<li>这次是哪个门派的秘藏呢？</li>
+					</Last>
+					<DontKnow>
+						<li>其中玄妙无法参透啊...</li>
+					</DontKnow>
+					<Chat>
+						<li>我是奉师命而来的。</li>
+						<li>我马上就要飞升了！</li>
+					</Chat>
+				</Talk>
+			</li>
+			<li Name="notaskschool">
+				<Spec>NoTaskSchool</Spec>
+				<Like>
+					<Base>1</Base>
+					<Self>2</Self>
+					<Last>50</Last>
+					<Type>
+						<li T="XiaoDan">1</li>
+						<li T="DaDan">1</li>
+						<li T="Nature">2</li>
+						<li T="Exotic">2</li>
+					</Type>
+				</Like>
+				<Money Min="0.7" Max="1.3">16000</Money>
+				<ToleranceOfRemainPercent>0.6</ToleranceOfRemainPercent>
+				<SchoolPrefix>SchoolPrefix.txt</SchoolPrefix>
+				<SchoolSuffix>SchoolSuffix.txt</SchoolSuffix>
+				<Talk>
+					<Bid Rate="0.3">
+						<li>一定要拿下</li>
+					</Bid>
+					<Exceed Rate="0.3">
+						<li>可恶！</li>
+					</Exceed>
+					<Like>
+						<li>不行不行，这个无论如何也要买！</li>
+						<li>这个太诱人了！对不住了！</li>
+					</Like>
+					<Buy>
+						<li>哈哈，他们得不到了！</li>
+					</Buy>
+					<Last>
+						<li>就是这个！</li>
+					</Last>
+					<DontKnow>
+						<li>这...这是啥啊？</li>
+					</DontKnow>
+					<Chat>
+						<li>这次要压压他们的威风。</li>
+					</Chat>
+				</Talk>
+			</li>
+		</Npc>
+	</Def>
+</List></Defs>

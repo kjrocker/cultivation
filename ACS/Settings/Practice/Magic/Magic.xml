@@ -1,0 +1,758 @@
+<Magics><List>
+	<Magic Name="SYS_LOST">
+		<DisplayName>模组丢失</DisplayName>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）。</Desc>
+		<Icon>res/Sprs/ui/icon_del</Icon>
+		<CostLing>9999999999999</CostLing>
+	    <IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="RebornSelf">
+		<DisplayName>玄牝重生</DisplayName>
+		<Desc>太一门独门秘法，以玄牝珠为引，自毁修为，燃尽金丹，逆转造化，重回凡胎。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>0</CostLing>
+		<CMD>RebornSelf</CMD>
+		<SelectType>RebornSelf</SelectType>
+	</Magic>
+	
+	<Magic Name="JieHuiDaoPowerUp">
+		<DisplayName>道淬之法</DisplayName>
+		<Desc>对一个物品使用，消耗劫灰一个，有几率提高物品阶级1阶。</Desc>
+		<Icon>res/Sprs/ui/icon_daocui01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>30000</CostLing>
+		<CMD>DaoCuiPowerUp</CMD>
+		<SelectType>DaoCuiPowerUp</SelectType>
+	</Magic>
+	
+	<Magic Name="SoulCrystalYouPowerUp">
+		<DisplayName>幽淬之法</DisplayName>
+		<Desc>对一个物品使用，消耗幽珀一个，有几率提高物品阶级1阶。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>30000</CostLing>
+		<CMD>SoulCrystalYouPowerUp</CMD>
+		<SelectType>SoulCrystalYouPowerUp</SelectType>
+	</Magic>
+	
+	<Magic Name="SoulCrystalLingPowerUp">
+		<DisplayName>灵淬之法</DisplayName>
+		<Desc>对一个物品使用，消耗灵珀一个，有几率提高物品的灵气容纳率（如果是法宝则会提高其灵气容量）。</Desc>
+		<Icon>res\Sprs\ui\icon_lingcui01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>30000</CostLing>
+		<CMD>SoulCrystalLingPowerUp</CMD>
+		<SelectType>SoulCrystalLingPowerUp</SelectType>
+	</Magic>
+	
+	<Magic Name="MakeSoulCrystal">
+		<DisplayName>凝珀诀</DisplayName>
+		<Desc>对无修为的角色，弥留中的角色或精怪使用，收取其珀。对同一个单位只能使用一次。</Desc>
+		<Icon>res\Sprs\ui\icon_ningpo01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>10</Param1><!--所需时间-->
+		<Penalty>1</Penalty>
+		<ScoreBase>-20</ScoreBase>
+		<ScoreBad>20</ScoreBad>
+		<CostLing>1000</CostLing>
+		<CMD>MakeSoulCrystal</CMD>
+		<SelectType>MakeSoulCrystal</SelectType>
+	</Magic>
+
+	<Magic Name="MakePuppet">
+		<DisplayName>御灵术</DisplayName>
+		<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。\n[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
+		<Icon>res\Sprs\ui\icon_yushi01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>1000</CostLing>
+		<Penalty>1</Penalty>
+		<CMD>MakePuppet</CMD>
+		<SelectType>MakePuppet</SelectType>
+	</Magic>
+	
+	<Magic Name="BuidPuppet">
+		<DisplayName>赋灵术</DisplayName>
+		<Desc>对傀儡释放，赋予其灵性。赋灵的傀儡可以承担一些简单的苦力劳动，其素质与傀儡制作的品阶有关。\n[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
+		<Icon>res\Sprs\ui\icon_kuilei01</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>1000</CostLing>
+		<CMD>BuildPuppet</CMD>
+		<SelectType>BuildPuppet</SelectType>
+	</Magic>
+	
+	<Magic Name="SeachSoul">
+		<DisplayName>搜魂大法</DisplayName>
+		<Desc>对弥留中的角色使用，有一定的概率得到他的功法秘籍或者其他知识。在凶煞之地施展会提高获取信息的概率。</Desc>
+		<Icon>res\Sprs\ui\icon_souhun01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>1000</CostLing>
+		<Penalty>1</Penalty>
+		<ScoreBase>-20</ScoreBase>
+		<ScoreBad>20</ScoreBad>
+		<CheckFlag>FLAG_SeachSoul</CheckFlag>
+		<CMD>SeachSoul</CMD>
+		<SelectType>DieStay</SelectType>
+	</Magic>
+	
+	<Magic Name="ClosedDoor">
+		<DisplayName>入定</DisplayName>
+		<Desc>进入定境之中修炼，会快速消耗寿命和精元。可以快速获得修为，并提升灵气最大值。</Desc>
+		<Icon>res\Sprs\ui\icon_ruding01</Icon>
+		<Param1>4</Param1><!--修炼速度加成-->
+		<Param2>0.001</Param2><!--寿命消耗/秒-->
+		<Param3>4</Param3><!--精元消耗倍率-->
+		<CostLing>0</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<ScoreBase>0</ScoreBase>
+		<ScoreGood>0</ScoreGood>
+		<ScoreBad>0</ScoreBad>
+		<CMD>ClosedDoor</CMD>
+		<SelectType>CloseDoor</SelectType>
+	</Magic>
+	
+	<Magic Name="ClosedDoor_Gong1">
+		<DisplayName>水镜观心定</DisplayName>
+		<Desc>太和十六洞天所记载的入定秘法，在元神定境中观想水镜，进入定中之定，快速消耗寿元炼化精元。在这一状态下，修行者元神进入空无之境，思虑静止，因此修为不会提升。</Desc>
+		<Icon>res\Sprs\ui\icon_ruding01</Icon>
+		<Param1>0</Param1><!--修炼速度加成-->
+		<Param2>0.005</Param2><!--寿命消耗/秒-->
+		<Param3>12</Param3><!--精元消耗倍率-->
+		<CostLing>0</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<ScoreBase>0</ScoreBase>
+		<ScoreGood>0</ScoreGood>
+		<ScoreBad>0</ScoreBad>
+		<CMD>ClosedDoor</CMD>
+		<SelectType>CloseDoor</SelectType>
+	</Magic>
+	
+	<Magic Name="ClosedDoor_Gong4">
+		<DisplayName>玉清定境</DisplayName>
+		<Desc>玉清仙法所记载的入定秘法，可以以元神遨游天地初开的元始之境，相比世传入定之法而言效率更高，消耗寿元更少。</Desc>
+		<Icon>res\Sprs\ui\icon_ruding01</Icon>
+		<Param1>8</Param1><!--修炼速度加成-->
+		<Param2>0.0015</Param2><!--寿命消耗/秒-->
+		<Param3>8</Param3><!--精元消耗倍率-->
+		<CostLing>0</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<ScoreBase>0</ScoreBase>
+		<ScoreGood>0</ScoreGood>
+		<ScoreBad>0</ScoreBad>
+		<CMD>ClosedDoor</CMD>
+		<SelectType>CloseDoor</SelectType>
+	</Magic>
+	<Magic Name="AbsorbLing_Aoe">
+		<DisplayName>灵息诀</DisplayName>
+		<Desc>前往指定地点吸收环境中的灵气</Desc>
+		<Icon>res\Sprs\ui\icon_lingxi01</Icon>
+		<CostLing>0</CostLing>
+		<CostAge>0</CostAge>
+		<Param1>20</Param1><!--提高吸灵速度N倍-->
+		<CMD>AbsorbLing</CMD>
+		<SelectType>AbsorbLing</SelectType>
+	</Magic>
+	<Magic Name="AbsorbLing_Live">
+		<DisplayName>冥灵真法</DisplayName>
+		<Desc>对无修为的活物释放，消耗目标的寿命，补充自己的灵气。</Desc>
+		<Icon>res\Sprs\ui\icon_mingling01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>0.1</Param1><!--天谴值/秒-->
+		<ScoreBase>-100</ScoreBase>
+		<ScoreBad>100</ScoreBad>
+		<CMD>AbsorbLing_Live</CMD>
+		<SelectType>AbsorbLing_Live</SelectType>
+	</Magic>
+	<Magic Name="AbsorbLing_Body">
+		<DisplayName>天妖化血术</DisplayName>
+		<Desc>炼化一个尸体，将其血肉炼化，补充自己的灵气。</Desc>
+		<Icon>res\Sprs\ui\icon_tianyao01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>5</Param1><!--施法时间-->
+		<Penalty>2</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>10</ScoreBad>
+		<CMD>AbsorbLing_Body</CMD>
+		<SelectType>AbsorbLing_Body</SelectType>
+	</Magic>
+	<Magic Name="AbsorbLing_Thing">
+		<DisplayName>托体同山诀</DisplayName>
+		<Desc>对场景中的建筑、植物、矿物释放，可以吸取其中的灵气。目标灵气越多，自身灵气上限越多，吸收速度越快。</Desc>
+		<Icon>res\Sprs\ui\icon_tuoshan01</Icon>
+		<CMD>AbsorbLing_Thing</CMD>
+		<SelectType>AbsorbLing_Thing</SelectType>
+	</Magic>
+	<Magic Name="AbsorbLing_Item">
+		<DisplayName>吸星掌</DisplayName>
+		<Desc>对一个物品施放，吸取它的灵气为己用。</Desc>
+		<Icon>res\Sprs\ui\icon_xixing01</Icon>
+		<CMD>AbsorbLing_Item</CMD>
+		<SelectType>AbsorbLing_Item</SelectType>
+	</Magic>
+	<Magic Name="Healing_Damage">
+		<DisplayName>化伤术</DisplayName>
+		<Desc>运功替一个目标治疗其受到的内门伤害。疗效和施术者灵气多少有关。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<Kind>Good</Kind>
+		<CostLing>10</CostLing>
+		<Penalty>0</Penalty>
+		<CMD>Healing_Damage</CMD>
+		<CastFavour>ThankTreat</CastFavour>
+		<SelectType>NpcWithSelf</SelectType>
+	</Magic>
+	<Magic Name="BuildBody">
+		<DisplayName>再造术</DisplayName>
+		<Desc>对一个目标进行断肢再生,重铸他失去的所有部位。</Desc>
+		<Icon>res\Sprs\ui\icon_zaizao01</Icon>
+		<Kind>Good</Kind>
+		<TargetMood>BuildBody</TargetMood>
+		<CastFavour>ThankTreat</CastFavour>
+		<Param1>30</Param1><!--施法时间-->
+		<CostLing>30000</CostLing>
+		<Penalty>0</Penalty>
+		<CMD>BuildBody</CMD>
+		<SelectType>Npc</SelectType>
+	</Magic>
+	<Magic Name="RobBodyLow">
+		<DisplayName>阴神夺舍</DisplayName>
+		<Desc>低端夺舍方式，夺取一个无修为活物的身体。但会损失许多苦修，并因此魂魄不和。</Desc>
+		<Icon>res\Sprs\ui\icon_yinshen01</Icon>
+		<Penalty>5</Penalty>
+		<CMD>RobBodyLow</CMD>
+		<SelectType>RobBodyLow</SelectType>
+	</Magic>
+	<Magic Name="RobBodyHigh">
+		<DisplayName>阳神夺舍</DisplayName>
+		<Desc>高级夺舍方式，完全夺取一个无修为活物的身体，但会损失许多苦修。</Desc>
+		<Icon>res\Sprs\ui\icon_yangshen01</Icon>
+		<Penalty>5</Penalty>
+		<CMD>RobBodyHigh</CMD>
+		<SelectType>RobBodyHigh</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_1">
+		<DisplayName>鼎炉吸真术</DisplayName>
+		<Desc>吸取一个无修为活物的寿命，并增加自身修为，并同时获取参悟。目标体质越高，效果越强。</Desc>
+		<Icon>res\Sprs\ui\icon_dinglu01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>0.1</Param1><!--天谴值/秒-->
+		<Param2>0.00008</Param2><!--同类系数 目标体质 * 0.008% * 当前境界所需修为 / 秒-->
+		<Param3>0.00003</Param3><!--不同类系数 目标体质 * 0.004% * 当前境界所需修为 / 秒-->
+		<Param4>20</Param4><!--同类系数 参悟获取速度 体质*X / 秒-->
+		<Param5>2</Param5><!--不同类系数  参悟获取速度 体质*X / 秒-->
+		<ScoreBase>-50</ScoreBase>
+		<ScoreBad>50</ScoreBad>
+		<CMD>AbsorbGong_1</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	
+	<Magic Name="AbsorbGong_1_Gong9">
+		<DisplayName>元央归息法</DisplayName>
+		<Desc>利用轮回之力催动鼎炉吸真的法诀，可以更高效的吸取一个无修为活物的寿命，并增加自身修为，并同时获取参悟。目标体质越高，效果越强。</Desc>
+		<Icon>res\Sprs\ui\icon_dinglu01</Icon>
+		<Kind>Bad</Kind>
+		<Param1>0.1</Param1><!--天谴值/秒-->
+		<Param2>0.00012</Param2><!--同类系数 目标体质 * 0.008% * 当前境界所需修为 / 秒-->
+		<Param3>0.00005</Param3><!--不同类系数 目标体质 * 0.004% * 当前境界所需修为 / 秒-->
+		<Param4>30</Param4><!--同类系数 参悟获取速度 体质*X / 秒-->
+		<Param5>3</Param5><!--不同类系数  参悟获取速度 体质*X / 秒-->
+		<ScoreBase>-50</ScoreBase>
+		<ScoreBad>50</ScoreBad>
+		<CMD>AbsorbGong_1</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	
+	<Magic Name="AbsorbGong_2">
+		<DisplayName>风月幻境</DisplayName>
+		<Desc>利用幻境迷惑一个无修为的人形异性，在幻境中夺取其寿命，增加自身修为，并同时获取参悟。目标魅力越高，效果越强。</Desc>
+		<Icon>res\Sprs\ui\icon_fengyue01</Icon>
+		<TargetMood>NiceThing1_1</TargetMood>
+		<Kind>Good</Kind>
+		<Param1>0.1</Param1><!--天谴值/秒-->
+		<Param2>0.0001</Param2> <!--系数目标体质 * 0.01% * 当前境界所需修为 / 秒-->
+		<Param3>20</Param3><!--参悟获取速度 体质*X / 秒-->
+		<CostLing>2000</CostLing>
+		<CMD>AbsorbGong_2</CMD>
+		<SelectType>NormalRaceSexNpc</SelectType>
+	</Magic>
+	
+	<Magic Name="AbsorbGong_2_Gong7">
+		<DisplayName>如意幻境</DisplayName>
+		<Desc>利用幻境迷惑一个无修为的人形异性，在幻境中夺取其寿命，增加自身修为，并同时获取参悟。目标魅力越高，效果越强。</Desc>
+		<Icon>res\Sprs\ui\icon_fengyue01</Icon>
+		<TargetMood>NiceThing1_1</TargetMood>
+		<Kind>Good</Kind>
+		<Param1>0.1</Param1><!--天谴值/秒-->
+		<Param2>0.00015</Param2> <!--系数目标体质 * 0.01% * 当前境界所需修为 / 秒-->
+		<Param3>30</Param3><!--参悟获取速度 体质*X / 秒-->
+		<CostLing>2000</CostLing>
+		<CMD>AbsorbGong_2</CMD>
+		<SelectType>NormalRaceSexNpc</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_3">
+		<DisplayName>摄神御鬼大法</DisplayName>
+		<Desc>夺取一个无修为活物的魂魄，将其炼化来增加自身修为，并同时获取参悟。目标悟性越高，效果越强。。</Desc>
+		<Icon>res\Sprs\ui\icon_sheshen01</Icon>
+		<Kind>VeryBad</Kind>
+		<Ani>shentong6</Ani>
+		<Param1>2.333</Param1><!--施法时间-->
+		<Param2>0.003</Param2><!--修为 目标悟性 *  0.3%  * 当前境界所需修为-->
+		<Param3>1000</Param3><!--参悟获取 悟性*X-->
+		<CostLing>5000</CostLing>
+		<Penalty>2</Penalty>
+		<ScoreBase>-50</ScoreBase>
+		<ScoreBad>50</ScoreBad>
+		<CMD>AbsorbGong_3</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_3_Gong11">
+		<DisplayName>九幽炼神</DisplayName>
+		<Desc>以九幽之力炼化一个无修为生物的魂魄，以此增加自身修为，并同时获取参悟。目标悟性越高，效果越强。</Desc>
+		<Icon>res\Sprs\ui\icon_sheshen01</Icon>
+		<Kind>VeryBad</Kind>
+		<Ani>shentong6</Ani>
+		<Param1>2.333</Param1><!--施法时间-->
+		<Param2>0.005</Param2><!--修为 目标悟性 *  0.3%  * 当前境界所需修为-->
+		<Param3>1500</Param3><!--参悟获取 悟性*X-->
+		<CostLing>50000</CostLing>
+		<Penalty>2</Penalty>
+		<ScoreBase>-50</ScoreBase>
+		<ScoreBad>50</ScoreBad>
+		<CMD>AbsorbGong_3</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_4">
+		<DisplayName>炼魂</DisplayName>
+		<Desc>对一个无修为的人形活物施展炼魂酷刑，使其感受巨大痛苦。并从中获得乐趣。</Desc>
+		<Icon>res\Sprs\ui\icon_lianhun01</Icon>
+		<Kind>VeryBad</Kind>
+		<Param1>10</Param1><!--作用间隔-->
+		<Penalty>2</Penalty>
+		<ScoreBad>10</ScoreBad>
+		<ScoreBase>-10</ScoreBase>
+		<CMD>AbsorbGong_4</CMD>
+		<SelectType>NormalNpcRace</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_5">
+		<DisplayName>他化自在大法</DisplayName>
+		<Desc>对一个无修为的人形活物施法，当目标处在极端情绪时（160以上或40以下），就可以从中获得参悟与修为。神通一旦释放就会持续作用，目标的情绪越极端，神通的效果就越强。\n每对一个目标施展，自身心情与心境的基础值就会降低一些，目标则会因此变得更容易激动易怒。对已经释放的目标再次释放，可以收回神通。</Desc>
+		<Icon>res\Sprs\ui\icon_tahuazizai01</Icon>
+		<Ani>shentong2</Ani>
+		<Param1>4.2</Param1><!--施法时间   提供修为的速度 = 目标魅力  *  |140 -目标情绪| *  0.005/ 秒    提供参悟的速度 = 目标魅力  *  |140 -目标情绪| *  0.005/ 秒-->
+		<Param2>0.005</Param2>	
+		<CostLing>0</CostLing>
+		<CostAge>0</CostAge>
+		<!--<CheckFlag>FLAG_AbsorbGong_5</CheckFlag>-->
+		<CMD>AbsorbGong_5</CMD>
+		<SelectType>NormalNpcRace</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_6">
+		<DisplayName>魂体寄生</DisplayName>
+		<Desc>习得神通：魂体寄生\n对一个无修为的人形活物施法，将自身一缕元神寄生于其上，每天0点将寄生对象的筑基值全数转化为自身的等值的修为与参悟。\n每寄生一个单位，自身会因为分魂而损害神智，目标则会因被寄生而虚弱。对已经释放的目标再次释放，可以收回神通。</Desc>
+		<Icon>res\Sprs\ui\icon_hunti01</Icon>
+		<Ani>shentong2</Ani>
+		<Param1>4.2</Param1><!--施法时间-->
+		<CostLing>0</CostLing>
+	<!--	<CheckFlag>FLAG_AbsorbGong_6</CheckFlag>-->
+		<CMD>AbsorbGong_6</CMD>
+		<SelectType>NormalNpcRace</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_7">
+		<DisplayName>献祭</DisplayName>
+		<Desc>将一名无修为的人形活物献祭给魔魂，魔魂会随机夺取祭品若干个器官，并反馈给你大量修为与参悟。目标的五维属性越强，献祭的效果就越强。</Desc>
+		<Icon>res\Sprs\ui\icon_xianji01</Icon>
+		<Kind>Bad</Kind>
+		<Ani>shentong2</Ani>
+		<Param1>4.2</Param1><!--施法时间-->
+		<Param2>0.0008</Param2><!--获得修为系数 获得的修为值 = （目标体质 + 目标悟性 + 目标魅力） * X * 魔神享用内脏数* 当前境界所需修为-->
+		<Param3>80</Param3><!--获得参悟系数 获得的修为值 = （目标体质 + 目标悟性 + 目标魅力） * X * 魔神享用内脏数-->
+		<CostLing>2000</CostLing>
+		<Penalty>2</Penalty>
+		<ScoreBase>-50</ScoreBase>
+		<ScoreBad>50</ScoreBad>
+		<CMD>AbsorbGong_7</CMD>
+		<SelectType>NormalNpcRace</SelectType>
+	</Magic>
+	<Magic Name="AbsorbGong_8">
+		<DisplayName>清心咒</DisplayName>
+		<Desc>施展法术，给一名无修为的人形活物增加一个好心情。</Desc>
+		<Icon>res\Sprs\ui\icon_zhufu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong3</Ani>
+		<Param1>1.5</Param1><!--施法时间-->
+		<CostLing>500</CostLing>
+		<CMD>AbsorbGong_8</CMD>
+		<SelectType>NormalNpcRace</SelectType>
+	</Magic>
+	<Magic Name="PlantGrowUp">
+		<DisplayName>御木诀</DisplayName>
+		<Desc>将自身元气凝聚，灌注到目标植物中，将其生长速度大幅提高，持续1天。目标植物品阶越高，效果越差。此法极伤元气，慎用。</Desc>
+		<Icon>res\Sprs\ui\icon_yumu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong3</Ani>
+		<Param1>1.5</Param1><!--施法时间-->
+		<Param2>100</Param2><!--生长倍速-->
+		<Param3>600</Param3><!--作用时长-->
+		<CostLing>500</CostLing>
+		<CostAge>5</CostAge>
+		<CMD>PlantGrowUp</CMD>
+		<SelectType>Plant</SelectType>
+	</Magic>
+	
+	<Magic Name="PlantGrowUp_Gong1">
+		<DisplayName>天霖诀</DisplayName>
+		<Desc>引动天地生发之气，灌注到目标植物中，将其生长速度少量提高，持续7天。目标植物品阶越高，效果越差。</Desc>
+		<Icon>res\Sprs\ui\icon_yumu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong3</Ani>
+		<Param1>1.5</Param1><!--施法时间-->
+		<Param2>40</Param2><!--生长倍速-->
+		<Param3>4200</Param3><!--作用时长-->
+		<CostLing>30000</CostLing>
+		<CMD>PlantGrowUp</CMD>
+		<SelectType>Plant</SelectType>
+	</Magic>
+	
+	<Magic Name="PlantGrowUp_Gong9">
+		<DisplayName>万木回春</DisplayName>
+		<Desc>以精纯的木属性灵气激发植株全部的生机，可以在一天内大幅提高其生长速度。目标植物品阶越高，效果越差。</Desc>
+		<Icon>res\Sprs\ui\icon_yumu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong3</Ani>
+		<Param1>1.5</Param1><!--施法时间-->
+		<Param2>500</Param2><!--生长倍速-->
+		<Param3>600</Param3><!--作用时长-->
+		<CostLing>30000</CostLing>
+		<CMD>PlantGrowUp</CMD>
+		<SelectType>Plant</SelectType>
+	</Magic>
+	
+	<Magic Name="AbsorbGong_9_1">
+		<DisplayName>天心正法</DisplayName>
+		<Desc>消耗十年寿命，短时间提高自身能力且恢复灵气值。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<Ani>shentong6</Ani>
+		<Param1>0</Param1><!--施法时间-->
+		<CostAge>10</CostAge>
+		<EnableFlag>FLAG_AbsorbGong_9</EnableFlag>
+		<CMD>AbsorbGong_9</CMD>
+	</Magic>
+	<Magic Name="AbsorbGong_9_2">
+		<DisplayName>天魔解体大法</DisplayName>
+		<Desc>消耗十年寿命，短时间提高自身能力且恢复灵气值。</Desc>
+		<Icon>res\Sprs\ui\icon_tianmo01</Icon>
+		<Param1>0</Param1><!--施法时间-->
+		<CostAge>10</CostAge>
+		<EnableFlag>FLAG_AbsorbGong_9</EnableFlag>
+		<CMD>AbsorbGong_9</CMD>
+	</Magic>
+	
+	<Magic Name="AbsorbGong_9_3">
+		<DisplayName>爆发之力</DisplayName>
+		<Desc>消耗十年寿命，短时间提高自身能力且恢复灵气值。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<Ani>shentong6</Ani>
+		<Param1>0</Param1><!--施法时间-->
+		<CostAge>10</CostAge>
+		<EnableFlag>FLAG_AbsorbGong_9</EnableFlag>
+		<CMD>AbsorbGong_9</CMD>
+	</Magic>
+	<Magic Name="AbsorbGong_10">
+		<DisplayName>慧剑斩念</DisplayName>
+		<Desc>对一名无修为的生物施展法术，移除目标全部的短期情绪。</Desc>
+		<Icon>res\Sprs\ui\icon_huanjian01</Icon>
+		<Ani>shentong3</Ani>
+		<Param1>1.5</Param1><!--施法时间-->
+		<CostLing>500</CostLing>
+		<CostGong>200</CostGong>
+		<CMD>AbsorbGong_10</CMD>
+		<SelectType>Npc</SelectType>
+	</Magic>
+	<Magic Name="LingStoneMake">
+		<DisplayName>炼制灵石</DisplayName>
+		<Desc>将灵气凝结为灵石，每5000灵气一个。该行为会一直执行，直到停止或者灵气不足。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>20</Param1><!--施法时间-->
+		<CostLing>5000</CostLing>
+		<CostAge>0</CostAge>
+		<CMD>AbsorbGong_11</CMD>
+	</Magic>
+	<Magic Name="LingCrystalMake">
+		<DisplayName>炼制灵晶</DisplayName>
+		<Icon>res\Sprs\ui\icon_lingjing01</Icon>
+		<Desc>将灵气凝结为灵晶。</Desc>
+		<Param1>200</Param1><!--施法时间-->
+		<CostLing>200000</CostLing>
+		<CostAge>0</CostAge>
+		<CMD>AbsorbGong_12</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForRain">
+		<DisplayName>求雨术</DisplayName>
+		<Desc>利用神通求得一场雨，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_qiuyu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>LightRain,HeavyRain</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>3000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>5</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForSun">
+		<DisplayName>驱云诀</DisplayName>
+		<Desc>利用神通使天放晴，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_quyun01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>SunnyDay</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>3000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>5</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	
+	<Magic Name="PrayForRain_FeiHorse">
+		<DisplayName>求雨术（蜚）</DisplayName>
+		<Desc>催发蜚的天赋，求得一场雨。</Desc>
+		<Icon>res\Sprs\ui\icon_qiuyu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>LightRain,HeavyRain</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>3000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>0</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForSun_LuShuHorse">
+		<DisplayName>驱云诀（鹿蜀）</DisplayName>
+		<Desc>催发鹿蜀的天赋，使天放晴。</Desc>
+		<Icon>res\Sprs\ui\icon_quyun01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>SunnyDay</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>3000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>0</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForRainstorm">
+		<DisplayName>暴雨术</DisplayName>
+		<Desc>在冬季夏季，利用神通求得一场暴雨，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_qiuyu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>Rainstorm</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>30000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>20</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	
+	<Magic Name="PrayForZhenShuiJieJie_Gong1">
+		<DisplayName>九阴真水界</DisplayName>
+		<Desc>以大法力在此方区域布下真水结界，使场景温度大幅下降，所有我方角色自然恢复力，灵气恢复速度大幅提高。同一时间只能存在一个结界。</Desc>
+		<Icon>res\Sprs\ui\icon_qiuyu01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>Weather_Magic_ZhenShuiJieJie</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>640000</CostLing>
+		<CostAge>64</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForFohn">
+		<DisplayName>焚风术</DisplayName>
+		<Desc>在夏季秋季，利用神通召唤焚风降临，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_chifeng01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>FohnNoFeng</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>20000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>20</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	
+	<Magic Name="PrayForZhenHuoJieJie_Gong10">
+		<DisplayName>九阳神火界</DisplayName>
+		<Desc>以大法力在此方区域布下九阳神火之界，使场景温度大幅上升，所有我方角色法术威力大幅提高。同一时间只能存在一个结界。</Desc>
+		<Icon>res\Sprs\ui\icon_chifeng01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>Weather_Magic_ZhenHuoJieJie</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>640000</CostLing>
+		<CostAge>64</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForDustStorm">
+		<DisplayName>尘暴术</DisplayName>
+		<Desc>在冬季春季，利用神通求得一场沙暴，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_feisha01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>DustStorm</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>20000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>20</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	<Magic Name="PrayForMiasma">
+		<DisplayName>毒瘴术</DisplayName>
+		<Desc>在春季夏季，利用神通求得一片瘴气，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_qizhang01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>Miasma</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>20000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>20</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	<Magic Name="PrayForLightningStorm">
+		<DisplayName>雷暴术</DisplayName>
+		<Desc>在夏季秋季，利用神通求得一场雷暴，但是此举有干天数，会折损寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_zhaolei01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>LightningStormNoLong</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>20000</CostLing>
+		<CostGong>0</CostGong>
+		<CostAge>20</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="PrayForBeiDouJianJie_Gong8">
+		<DisplayName>北斗剑界</DisplayName>
+		<Desc>以大法力在此方区域布下北斗剑界，使场景中所有我方角色法宝威力大幅提高。同一时间只能存在一个结界。</Desc>
+		<Icon>res\Sprs\ui\icon_zhaolei01</Icon>
+		<Kind>Good</Kind>
+		<Ani>shentong1</Ani>
+		<Param1>5.334</Param1><!--施法时间-->
+		<sParam1>Weather_Magic_BeiDouJianJie</sParam1><!--天气名称，可以用逗号隔开-->
+		<CostLing>640000</CostLing>
+		<CostAge>64</CostAge>
+		<CMD>AbsorbGong_15</CMD>
+	</Magic>
+	
+	<Magic Name="Healing_Physique">
+		<DisplayName>伐毛洗髓</DisplayName>
+		<Desc>消耗一甲子寿元与大量灵气，为一名无修为的生物伐毛洗髓，使他的根骨得到增加，初始值越低效果就越好，最少会提高2成根骨。目标一生只能被施展一次。</Desc>
+		<Icon>res\Sprs\ui\icon_xisui01</Icon>
+		<Kind>Good</Kind>
+		<Param1>120</Param1><!--所需时间-->
+		<CostLing>150000</CostLing>
+		<CostAge>60</CostAge>
+		<Penalty>0</Penalty>
+		<CheckFlag>FLAG_Healing_Physique</CheckFlag>
+		<CMD>Healing_Physique</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	<Magic Name="Healing_Intelligence">
+		<DisplayName>醍醐灌顶</DisplayName>
+		<Desc>消耗一甲子寿元与大量灵气，为一名无修为的生物醍醐灌顶，使他的悟性得到增加，初始值越低效果就越好，最少会提高2成悟性。目标一生只能被施展一次。</Desc>
+		<Icon>res\Sprs\ui\icon_tihu01</Icon>
+		<Kind>Good</Kind>
+		<Param1>120</Param1><!--所需时间-->
+		<CostLing>150000</CostLing>
+		<CostAge>60</CostAge>
+		<Penalty>0</Penalty>
+		<CheckFlag>FLAG_Healing_Intelligence</CheckFlag>
+		<CMD>Healing_Intelligence</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	<Magic Name="Healing_Charisma">
+		<DisplayName>再造形神</DisplayName>
+		<Desc>消耗一甲子寿元与大量灵气，为一名无修为的生物再造形神，使他的魅力得到增加，初始值越低效果就越好，最少会提高2成魅力。目标一生只能被施展一次。</Desc>
+		<Icon>res\Sprs\ui\icon_zaizaoxingshen01</Icon>
+		<Kind>Good</Kind>
+		<Param1>120</Param1><!--所需时间-->
+		<CostLing>150000</CostLing>
+		<CostAge>60</CostAge>
+		<Penalty>0</Penalty>
+		<CheckFlag>FLAG_Healing_Charisma</CheckFlag>
+		<CMD>Healing_Charisma</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	<Magic Name="Healing_Perception">
+		<DisplayName>开天眼</DisplayName>
+		<Desc>消耗一甲子寿元与大量灵气，为一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好，最少会提高2成神识。目标一生只能被施展一次。</Desc>
+		<Icon>res\Sprs\ui\icon_tianyan01</Icon>
+		<Kind>Good</Kind>
+		<Param1>120</Param1><!--所需时间-->
+		<CostLing>150000</CostLing>
+		<CostAge>60</CostAge>
+		<Penalty>0</Penalty>
+		<CheckFlag>FLAG_Healing_Perception</CheckFlag>
+		<CMD>Healing_Perception</CMD>
+		<SelectType>NormalNpc</SelectType>
+	</Magic>
+	
+	<Magic Name="Magic_Plant_Pee">
+		<DisplayName>浇灌术</DisplayName>
+		<Desc>浇灌植物使其飞速生长至成熟。无法手动使用，只能通过灵宠行为释放。</Desc>
+		<Icon>res\Sprs\ui\icon_yumu01</Icon>
+		<Kind>Good</Kind>
+		<CostLing>10000000000</CostLing>
+		<Ani>shentong3</Ani>
+		<Param1>10</Param1><!--施法时间-->
+		<Param2>500</Param2><!--生长倍速-->
+		<Param3>600</Param3><!--作用时长-->
+		<CMD>PlantGrowUp</CMD>
+		<SelectType>Plant</SelectType>
+	</Magic>
+	<Magic Name="Magic_Healing_LingShou">
+		<DisplayName>化伤术</DisplayName>
+		<Desc>治疗一名弟子的内门伤害。无法手动使用，只能通过灵宠行为释放。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<Kind>Good</Kind>
+		<CostLing>10000000000</CostLing>
+		<Penalty>0</Penalty>
+		<CMD>Healing_Damage</CMD>
+		<SelectType>NpcWithSelf</SelectType>
+	</Magic>
+	<Magic Name="Magic_Healing_Hot">
+		<DisplayName>凉风术</DisplayName>
+		<Desc>治疗一名弟子的中暑。无法手动使用，只能通过灵宠行为释放。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<Kind>Good</Kind>
+		<CostLing>10000000000</CostLing>
+		<Penalty>0</Penalty>
+		<CMD>Healing_Damage</CMD>
+		<CastFavour>ThankTreat</CastFavour>
+		<SelectType>NpcWithSelf</SelectType>
+	</Magic>
+	<Magic Name="Magic_Healing_Freeze">
+		<DisplayName>炉温术</DisplayName>
+		<Desc>治疗一名弟子的冻伤。无法手动使用，只能通过灵宠行为释放。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<Kind>Good</Kind>
+		<CostLing>10000000000</CostLing>
+		<Penalty>0</Penalty>
+		<CMD>Healing_Damage</CMD>
+		<CastFavour>ThankTreat</CastFavour>
+		<SelectType>NpcWithSelf</SelectType>
+	</Magic>
+</List></Magics>

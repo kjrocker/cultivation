@@ -1,0 +1,605 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="DanFang_1">
+		<DisplayName>真丹要略</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n筑基丹\n黄庭丹\n黄芽丹\n理气丹\n五方化伤丹\n归源散\n血竭散\n万灵散</EffectDesc>
+		<Dans>
+			<li>BasePracticeDrug</li>
+			<li>Dan_PracticeRate</li>
+			<li>Dan_PracticeSpeed</li>
+			<li>Dan_DredgeQi</li>
+			<li>Dan_CureFiveElementDamage</li>
+			<li>Dan_Restore</li>
+			<li>Dan_JingYuan3</li>
+			<li>Dan_Ling3</li>
+		</Dans>
+	</Esoterica> 
+	<Esoterica Name="DanFang_2">
+		<DisplayName>俗世仙方</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>广为流传的丹方，记录了几种炼制简单，药效实用的丹药炼法。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n极乐丹\n辟谷丹\n饮气丹\n清心丹\n塑身丹\n壮体丹</EffectDesc>
+		<Dans>
+			<li>Dan_Happiness</li>
+			<li>Dan_NoHunger</li>
+			<li>Dan_NoHunger2</li>
+			<li>Dan_CalmDown</li>
+			<li>Dan_Thin</li>
+			<li>Dan_Fat</li>
+		</Dans>
+	</Esoterica> 
+	
+	<Esoterica Name="DanFang_3">
+		<DisplayName>五帝药典</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>上古仙人对五圣药的药性研究而诞生的丹方。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n庚金万化丹\n碧春丹\n天一承气散\n火真丹\n定坤丹\n五极灵丹\n碧血丹青</EffectDesc>
+		<Dans>
+			<li>Dan_CureJinDamage</li>
+			<li>Dan_CureMuDamage</li>
+			<li>Dan_CureShuiDamage</li>
+			<li>Dan_CureHuoDamage</li>
+			<li>Dan_CureTuDamage</li>
+			<li>Dan_IncreaseLife3</li>
+			<li>Dan_IncreaseNeckCountdown2</li>
+		</Dans>
+	</Esoterica> 
+	<Esoterica Name="DanFang_4">
+		<DisplayName>太上丹经（残篇）</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>传承自太上的丹经，记录了数种珍贵丹药的炼制方法。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n紫阳丹\n黄庭丹\n黄芽丹\n血竭散</EffectDesc>
+		<Dans>
+			<li>Dan_Ling2</li>
+			<li>Dan_PracticeRate</li>
+			<li>Dan_PracticeSpeed</li>
+			<li>Dan_JingYuan3</li>
+		</Dans>
+	</Esoterica> 
+	<Esoterica Name="DanFang_5">
+		<DisplayName>造化灵感方</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>医仙绝笔，据说他在完成此方时，当即遭天谴而亡。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n造化神丹\n再造金丹</EffectDesc>
+		<Dans>
+			<li>Dan_ExtremeLofty</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+	</Esoterica>
+	<Esoterica Name="DanFang_6">
+		<DisplayName>金古命集注</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>汇总五种延寿续命丹方的秘册。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n长生丹\n玄牝续命散\n五极灵丹\n再造金丹\n未来星宿化劫丹</EffectDesc>
+		<Dans>
+			<li>Dan_IncreaseLife1</li>
+			<li>Dan_IncreaseLife2</li>
+			<li>Dan_IncreaseLife3</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife5</li>
+		</Dans>
+	</Esoterica> 
+	
+	<Esoterica Name="DanFang_7">
+		<DisplayName>避劫仙方</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>月轮山仙人洞府内不知名散仙留下的丹方。书中扉页上写了他费劲千辛万苦找到丹方，却未能练成，最终寿元将至，只能强行渡劫，最终陨落之事。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n长生丹\n乾元避劫丹\n真罡丹</EffectDesc>
+		<Dans>
+			<li>Dan_IncreaseLife1</li>
+			<li>Dan_Defense</li>
+			<li>Dan_IncreaseNeckCountdown1</li>
+		</Dans>
+	</Esoterica> 
+	
+	<Esoterica Name="DanFang_8">
+		<DisplayName>夺天书</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>失传已久的奇书，其中记载几种以命夺天机的奇药。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n通天丸\n纳地丸\n逸仙丸\n明通丸\n神佑丸\n五毒五蕴五炁神丹</EffectDesc>
+		<Dans>
+			<li>Dan_FiveBase1</li>
+			<li>Dan_FiveBase2</li>
+			<li>Dan_FiveBase3</li>
+			<li>Dan_FiveBase4</li>
+			<li>Dan_FiveBase5</li>
+			<li>Dan_FiveBaseFromLife</li>
+		</Dans>
+	</Esoterica> 
+	
+	<Esoterica Name="DanFang_9">
+		<DisplayName>通幽秘传</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>记录了以灵珀幽珀宁珀为药引，炼制丹药的秘传。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 丹方：\n神泣丹\n通玄丹\n凝珀丹\n燃魂丹[/color][/size]</EffectDesc>
+		<Dans>
+			<li>Dan_Soul1</li>
+			<li>Dan_Soul2</li>
+			<li>Dan_Soul3</li>
+			<li>Dan_Soul4</li>
+		</Dans>
+	</Esoterica> 
+	
+	
+	<!--<Esoterica Name="YouJi_1_1">
+		<DisplayName>神州志：城郭篇</DisplayName>
+		<Desc>凡间流传的地理图志。本册记录了天下有名的大型城郭的信息。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n大凉城\n丰城\n盘蛇寨\n观海城\n河阴城</EffectDesc>
+		<Places>
+			<li>Place_DaLiangCity</li>
+			<li>Place_ShanCity</li>
+			<li>Place_PanSheCity</li>
+			<li>Place_HuCity</li>
+			<li>Place_HeYinCity</li>
+		</Places>
+	</Esoterica>-->
+	
+	<Esoterica Name="YouJi_1_2">
+		<DisplayName>神州志：中原篇</DisplayName>
+		<Desc>凡间流传的地理图志。本册记录了中原之地的信息。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n中原-五华村\n中原-芦墟村\n中原-平顶山\n中原-炼丹峰\n中原-云台山</EffectDesc>
+		<Places>
+			<li>Place_CentralPlains1</li>
+			<li>Place_CentralPlains2</li>
+			<li>Place_CentralPlains3</li>
+			<li>Place_CentralPlains4</li>
+			<li>Place_CentralPlains5</li>
+		</Places>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_1_3">
+		<DisplayName>神州志：江岸篇</DisplayName>
+		<Desc>凡间流传的地理图志。本册记录了大江沃野的信息。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n江岸沃野-卢山\n江岸沃野-桂山\n江岸沃野-寒山镇\n江岸沃野-稻香村\n江岸沃野-落霞镇</EffectDesc>
+		<Places>
+			<li>Place_FertileField1</li>
+			<li>Place_FertileField2</li>
+			<li>Place_FertileField3</li>
+			<li>Place_FertileField4</li>
+			<li>Place_FertileField5</li>
+		</Places>
+	</Esoterica>
+	
+<!--	<Esoterica Name="YouJi_1_4">
+		<DisplayName>神州志：四海篇</DisplayName>
+		<Desc>凡间流传的地理图志。本册记录了大洋之外的信息。</Desc>
+		<Element>None</Element>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n南海-船墓\n东海-定海峰\n北海-惊波洋</EffectDesc>
+		<Places>
+			<li>Place_NorthSea</li>
+			<li>Place_NorthSea2</li>
+			<li>Place_EastSea</li>
+			<li>Place_EastSea2</li>
+			<li>Place_SouthSea</li>
+			<li>Place_SouthSea2</li>
+		</Places>
+	</Esoterica>
+	-->
+	<Esoterica Name="YouJi_2_1">
+		<DisplayName>御风子游记：卷一</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第一卷记载了中原腹地的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n中原-云台山\n中原-平顶山\n中原-炼丹峰\n龙虎山-飞流瀑\n龙虎山-神木林\n五莲山-天池</EffectDesc>
+		<Places>
+			<li>Place_CentralPlains1</li>
+			<li>Place_CentralPlains2</li>
+			<li>Place_CentralPlains3</li>
+			<li>Place_LongHu1</li>
+			<li>Place_LongHu2</li>
+			<li>Place_WuLian1</li>
+		</Places>
+		<Secrets>
+			<li>25</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_2_2">
+		<DisplayName>御风子游记：卷二</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第二卷记载了神州西北的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n大漠-幻沙原\n天极峰-飞云涧\n天极峰-绝天关\n黑山-千棘林</EffectDesc>
+		<Places>
+			<li>Place_Desert2</li>
+			<li>Place_TianJi1</li>
+			<li>Place_TianJi2</li>
+			<li>Place_Hei4</li>
+		</Places>
+		<Secrets>
+			<li>28</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_2_3">
+		<DisplayName>御风子游记：卷三</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第三卷记载了西极群山的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n昆仑山-龙脉洞窟\n昆仑山-登仙台\n陷空山-无底洞\n百蛮山-万蛇坑\n百蛮山-千尸洞</EffectDesc>
+		<Places>
+			<li>Place_KunLun1</li>
+			<li>Place_KunLun2</li>
+			<li>Place_XianKong1</li>
+			<li>Place_BaiMan1</li>
+			<li>Place_BaiMan2</li>
+		</Places>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_2_4">
+		<DisplayName>御风子游记：卷四</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第四卷记载了蜀山的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n蜀山-凝碧崖\n蜀山-飞雷洞\n蜀山-玉泉洞\n蜀山-剑冢\n蜀山-餐霞洞</EffectDesc>
+		<Places>
+			<li>Place_Shu1</li>
+			<li>Place_Shu2</li>
+			<li>Place_Shu3</li>
+			<li>Place_Shu4</li>
+			<li>Place_Shu5</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="YouJi_2_5">
+		<DisplayName>御风子游记：卷五</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第五卷记载了九华山的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n九华山-九华村\n九华山-潜龙渊\n九华山-凤栖崖</EffectDesc>
+		<Places>
+			<li>Place_JiuHua1</li>
+			<li>Place_JiuHua2</li>
+			<li>Place_JiuHua3</li>
+		</Places>
+	</Esoterica>
+		<Esoterica Name="YouJi_2_6">
+		<DisplayName>御风子游记：卷六</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第六卷记载了南荒丛林的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n南荒丛林-虫谷\n南荒丛林-万古桃花瘴</EffectDesc>
+		<Places>
+			<li>Place_SouthForest1</li>
+			<li>Place_SouthForest3</li>
+		</Places>
+		<Secrets>
+			<li>23</li>
+		</Secrets>
+	</Esoterica>
+		<Esoterica Name="YouJi_2_7">
+		<DisplayName>御风子游记：卷七</DisplayName>
+		<Desc>散仙御风子喜好游览名山大川，此书乃是其亲笔所写之游记。第七卷记载了海外的历程。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n合欢岛-离恨海\n合欢岛-毒龙潭</EffectDesc>
+		<Places>
+			<!--<li>Place_SouthSea</li>
+			<li>Place_EastSea</li>
+			<li>Place_NorthSea</li>-->
+			<li>Place_HeHuan1</li>
+			<li>Place_HeHuan2</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="YouJi_3">
+		<DisplayName>山图海志</DisplayName>
+		<Desc>著名的志怪文集，汇总记录了许多凡人遇见仙人的故事，在凡间十分流行。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n昆仑山-登仙台\n五莲山-木白雨林</EffectDesc>
+		<Places>
+			<li>Place_KunLun1</li>
+			<li>Place_WuLian2</li>
+		</Places>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_4_1">
+		<DisplayName>拾遗录：上册</DisplayName>
+		<Desc>传说一位修行界的前辈仙人所著，记录了一些鲜为人知的秘闻要地。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n丹霞山-丹霞绝壁\n丹霞山-五龙池\n五莲山-天池</EffectDesc>
+		<Places>
+			<li>Place_DanXia2</li>
+			<li>Place_DanXia3</li>
+			<li>Place_WuLian1</li>
+		</Places>
+		<Secrets>
+			<li>27</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_4_2">
+		<DisplayName>拾遗录：中册</DisplayName>
+		<Desc>传说一位修行界的前辈仙人所著，记录了一些鲜为人知的秘闻要地。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n蜀山-飞雷洞\n蜀山-餐霞洞\n蜀山-玉泉洞</EffectDesc>
+		<Places>
+			<li>Place_Shu2</li>
+			<li>Place_Shu3</li>
+			<li>Place_Shu4</li>
+		</Places>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_4_3">
+		<DisplayName>拾遗录：下册</DisplayName>
+		<Desc>传说一位修行界的前辈仙人所著，记录了一些鲜为人知的秘闻要地。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n九华山-凤栖崖\n九华山-潜龙渊\n合欢岛-毒龙潭</EffectDesc>
+		<Places>
+			<li>Place_JiuHua2</li>
+			<li>Place_JiuHua3</li>
+			<li>Place_HeHuan2</li>
+		</Places>
+		<Secrets>
+			<li>24</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="YouJi_5">
+		<DisplayName>游仙录</DisplayName>
+		<Desc>上古流传的神秘图册，记录了一些在仙人眼里都只能称得上传说的上古秘闻，是真是假早已不可考据。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n秘境-龙台\n秘境-异界裂缝\n秘境-圣殿遗迹</EffectDesc>
+		<Places>
+			<li>Place_LongTai</li>
+			<li>Place_YiJieLieFeng</li>
+			<li>Place_ShengDianYiJi</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="YouJi_6_1">
+		<DisplayName>云笈秘录：边荒篇</DisplayName>
+		<Desc>道门前辈仙人从各种典籍中找寻奇闻异事，将之摘录编撰而成的书册。本卷记载了邪帝陵，大江发源等几处传说。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n南荒丛林-邪帝陵\n秘境-大江之源</EffectDesc>
+		<Places>
+			<li>Place_SouthForest</li>
+			<li>Place_SouthForest2</li>
+			<li>Place_JiangYuanMiJing</li>
+		</Places>
+	</Esoterica>
+	<!--<Esoterica Name="YouJi_6_2">
+		<DisplayName>云笈秘录：卷二</DisplayName>
+		<Desc>道门前辈仙人从各种典籍中找寻奇闻异事，将之摘录编撰而成的书册。本卷记载了海外的奇闻。</Desc>
+		<Element>None</Element>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n南海-紫云宫\n南海-玄龟岛\n东海-海眼</EffectDesc>
+		<Places>
+			<li>Place_SouthSea</li>
+			<li>Place_SouthSea1</li>
+			<li>Place_SouthSea3</li>
+			<li>Place_EastSea</li>
+			<li>Place_EastSea3</li>
+		</Places>
+	</Esoterica>-->
+	<Esoterica Name="YouJi_6_3">
+		<DisplayName>云笈秘录：雪原篇</DisplayName>
+		<Desc>道门前辈仙人从各种典籍中找寻奇闻异事，将之摘录编撰而成的书册。本卷记载了极北之地大雪原的传说。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n大雪原-天螺峪\n大雪原-雪风原</EffectDesc>
+		<Places>
+			<li>Place_Snowfield</li>
+			<li>Place_Snowfield1</li>
+			<li>Place_Snowfield3</li><!--
+			<li>Place_NorthSea</li>
+			<li>Place_NorthSea1</li>-->
+		</Places>
+	</Esoterica>
+	<Esoterica Name="YouJi_6_4">
+		<DisplayName>云笈秘录：大漠篇</DisplayName>
+		<Desc>道门前辈仙人从各种典籍中找寻奇闻异事，将之摘录编撰而成的书册。本卷记载了大漠深处的秘事。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n西荒大漠-万妖殿\n西荒大漠-火穴</EffectDesc>
+		<Places>
+			<li>Place_Desert</li>
+			<li>Place_Desert3</li>
+			<li>Place_Desert1</li>
+		</Places>
+		<Secrets>
+			<li>26</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="YaoGuai_Bible">
+		<DisplayName>万兽通心诀</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>百蛮山驯养凶兽的秘法，上面记载了一些独门的开启野兽灵智的丹药。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：\n启智丹\n春灵丹\n夏灵丹\n秋灵丹\n冬灵丹\n土灵丹\n神通：造化气息</EffectDesc>
+		<Dans>
+			<li>Dan_QiZhi</li>
+			<li>Dan_Spring_LingZhi</li>
+			<li>Dan_Summer_LingZhi</li>
+			<li>Dan_Fall_LingZhi</li>
+			<li>Dan_Winter_LingZhi</li>
+			<li>Dan_Earth_LingZhi</li>
+		</Dans>
+		<Magics>
+			<li>DianHua</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Emotion_Bible">
+		<DisplayName>万象通心诀</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>某位仙人将其修行途中各种情绪的情景记载于其中，可让不同的动物身临其境。</Desc>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 神通：\n通心：愤恨\n通心：喜乐\n通心：思念\n通心：惧怖\n通心：忧虑</EffectDesc>
+		<Magics>
+			<li>Magic_Angry</li>
+			<li>Magic_Happy</li>
+			<li>Magic_Miss</li>
+			<li>Magic_Afraid</li>
+			<li>Magic_Worry</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="NanGongYiCe">
+		<DisplayName>群仙录：卷一</DisplayName>
+		<Desc>记载前古诸位仙人事迹的书册，已经失踪千年。本册记录的乃是古仙南宫红与古仙袁若雪两位仙人的传奇。\n传说南宫红乃是气运所钟的命运之子。其传承千年来吸引无数修行人前赴后继，趋之若鹜。\n古仙袁若雪则是以下品之姿逆天改命，最终成丹一品飞升成仙的传奇仙人。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n秘境-琼楼南宫别府\n秘境-玄空洞琳琅仙府</EffectDesc>
+		<Places>
+			<li>Place_ChiLianYuan</li>
+			<li>Place_XuanKongDong</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="QunXianLu_2">
+		<DisplayName>群仙录：卷二</DisplayName>
+		<Desc>记载前古诸位仙人事迹的书册，已经失踪千年。本册记录的乃是青莲仙人年轻时游历的事迹。\n传闻青莲仙人乃是天上太白星转生，天生乃庚金之体。成道之前曾于南海隐居数年，而后回归蜀山，于飞雷洞飞升。其最终隐居之所数千年来都无人寻到。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n秘境-南海青莲山</EffectDesc>
+		<Places>
+			<li>Place_QingLianShan</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="QunXianLu_3">
+		<DisplayName>群仙录：卷三</DisplayName>
+		<Desc>记载前古诸位仙人事迹的书册。本册记录的乃是天极老祖建立极天宫后游历人间的趣事。\n传闻天极老祖于北疆造化万里极天宫仙境，留下极天宫道统后便化形游历人间，并暗自庇护极天宫游历弟子，留下许多传说。后天极老祖销声匿迹，再不见仙踪。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得秘闻：\n古天极符</EffectDesc>
+		<Secrets>
+			<li>50</li>
+		</Secrets>
+	</Esoterica>
+	
+	<Esoterica Name="ShangGuYiWen_1">
+		<DisplayName>上古秘闻：卷一</DisplayName>
+		<Desc>记录上古传闻的秘册，本册记录的乃是上古龙族禁地龙台的秘闻。\n传闻昔日龙族在龙台藏有万千宝藏，并施加无数禁制封印。如今岁月流逝，再加上千年灵潮的冲击，这些禁制大多失效，不乏有人冒险入龙台求取机缘。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n秘境-龙台</EffectDesc>
+		<Places>
+			<li>Place_LongTai</li>
+		</Places>
+	</Esoterica>
+	<Esoterica Name="ShangGuYiWen_2">
+		<DisplayName>上古秘闻：卷二</DisplayName>
+		<Desc>记录上古传闻的秘册，本册记录的乃是上古仙魔战场的秘闻。\n上古时代末期，修行界渐渐诞生正邪之分。随着争端愈演越烈，古修士于南荒之地爆发决战。此战持续月余，打的天崩地裂，生灵涂炭。天地间阴阳之道于此崩裂，竟然于人间显化出烛龙之真形。烛龙一怒，陆沉海升，九州崩裂，终结了仙魔第一次大战。这也是如今南荒之地的由来。</Desc>
+		<Hide>1</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>获得地点信息：\n秘境-仙魔战场</EffectDesc>
+		<Places>
+			<li>Place_GuZhanChang</li>
+		</Places>
+	</Esoterica>
+</List></Esotericas>

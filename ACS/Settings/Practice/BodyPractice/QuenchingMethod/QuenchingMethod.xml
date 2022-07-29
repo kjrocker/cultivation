@@ -1,0 +1,227 @@
+<BPQuenchingMethods><List>
+
+
+	<Def Name="BPQuenchingMethods_test1"><!--淬炼之法-->
+		<DisplayName>测试绿</DisplayName>
+		<Desc>炼体者最基础的淬体之法。每次运转此法会对目标部位进行1次标准的淬炼。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>-0.99</CycleScaleAddtion>
+		<LabelMoreCount>10</LabelMoreCount>
+		<CostScaleAddtion>-1</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache2" Value="99999999"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+
+	<Def Name="BPQuenchingMethods_test2"><!--淬炼之法-->
+		<DisplayName>测试紫</DisplayName>
+		<Desc>炼体者最基础的淬体之法。每次运转此法会对目标部位进行1次标准的淬炼。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>-0.99</CycleScaleAddtion>
+		<LabelMoreCount>10</LabelMoreCount>
+		<CostScaleAddtion>-1</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache3" Value="99999999"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+
+	<Def Name="BPQuenchingMethods_test3"><!--淬炼之法-->
+		<DisplayName>测试橙</DisplayName>
+		<Desc>炼体者最基础的淬体之法。每次运转此法会对目标部位进行1次标准的淬炼。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>-0.99</CycleScaleAddtion>
+		<LabelMoreCount>10</LabelMoreCount>
+		<CostScaleAddtion>-1</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache4" Value="99999999"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_1"><!--淬炼之法-->
+		<DisplayName>无极炼体</DisplayName>
+		<Desc>炼体者最基础的淬体之法。每次运转此法会对目标部位进行1次标准的淬炼。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>3</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="300"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_1_1"><!--淬炼之法-->
+		<DisplayName>八极炼体</DisplayName>
+		<Desc>炼体者最基础的淬体之法，相当于连续使用无极炼体淬炼8次。每次运转此法会对目标部位进行8次标准的淬炼，且最后一次淬炼必定会出现稀有的进化方向。</Desc> 
+		<RollCount>8</RollCount> 
+		<CycleScaleAddtion>7</CycleScaleAddtion>
+		<LabelMoreCount>3</LabelMoreCount>
+		<CostScaleAddtion>7</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="300"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag>NEEDCACHE_Cache1</SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_2">
+		<DisplayName>蛮极淬身法</DisplayName>
+		<Desc>蛮荒妖族淬炼身体的方法，消耗更多的精华刺激肉身，以促使肉体产生更多的进化方向。每次运转此法会对目标部位进行1次产生更多进化方向的淬炼。</Desc>
+		<RollCount>1</RollCount>
+		<LabelMoreCount>7</LabelMoreCount>
+		<CostScaleAddtion>1</CostScaleAddtion>
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="300"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	
+	<Def Name="BPQuenchingMethods_3">
+		<DisplayName>六合炼体术</DisplayName>
+		<Desc>以六合之势运转精华，虽然弱化了精华的特性，但胜在效率较高。每次运转此法会对目标部位进行6次基础性的淬炼。</Desc>
+		<RollCount>6</RollCount>
+		<LabelMoreCount>1</LabelMoreCount>
+		<CostScaleAddtion>3</CostScaleAddtion>
+		<CycleScaleAddtion>3</CycleScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="2500"/>
+			<li Name="Cache2" Value="500"/>
+			<li Name="Cache3" Value="250"/>
+			<li Name="Cache4" Value="50"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_4">
+		<DisplayName>五帝玄淬法</DisplayName>
+		<Desc>上古五帝共创的炼体之术，消耗大量精华充分发挥精华之效，以刺激肉体向更稀有的方向进化。每次运转此法会对目标部位进行1次更容易产生高级进化的淬炼。</Desc>
+		<RollCount>1</RollCount>
+		<LabelMoreCount>3</LabelMoreCount>
+		<CostScaleAddtion>2</CostScaleAddtion>
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="5000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="3000"/>
+			<li Name="Cache4" Value="1000"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	
+	<Def Name="BPQuenchingMethods_5"><!--淬炼之法-->
+		<DisplayName>九阴炼体术</DisplayName>
+		<Desc>以大衍之术对身躯进行淬炼，每次运转此法会对目标部位进行9次标准的淬炼，且最后一次淬炼必定会出现罕见的进化方向。</Desc> 
+		<RollCount>9</RollCount> 
+		<LabelMoreCount>3</LabelMoreCount>
+		<CostScaleAddtion>10</CostScaleAddtion>
+		<CycleScaleAddtion>10</CycleScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="300"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag>NEEDCACHE_Cache2</SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_6"><!--淬炼之法-->
+		<DisplayName>紫微淬体术</DisplayName>
+		<Desc>效法紫微斗数之玄妙对身躯进行淬炼，每次运转此法会对目标部位进行14次标准的淬炼，且最后一次淬炼必定会出现超凡的进化方向。</Desc> 
+		<RollCount>14</RollCount> 
+		<LabelMoreCount>1</LabelMoreCount>
+		<CostScaleAddtion>16</CostScaleAddtion>
+		<CycleScaleAddtion>16</CycleScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="300"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag>NEEDCACHE_Cache3</SpecialFlag>
+	</Def>
+	
+	
+	
+	
+	<Def Name="BPQuenchingMethods_Sp1"><!--淬炼之法-->
+		<DisplayName>九烈淬体法</DisplayName>
+		<Desc>以九烈神血催动精华淬体，虽然每次淬炼发生进化的可能性数量会很少，但是有更高的几率淬炼出更高级的进化结果。若是以此淬炼脊柱，有较低概率使脊柱发生异变，进一步开发出全身骨骼的进化潜力。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>1</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="7000"/>
+			<li Name="Cache3" Value="3000"/>
+			<li Name="Cache4" Value="1000"/>
+			<li Name="Cache5" Value="500"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	
+	<Def Name="BPQuenchingMethods_Sp2"><!--淬炼之法-->
+		<DisplayName>太虚妖识</DisplayName>
+		<Desc>以太虚妖识催动精华淬体，虽然每次淬炼发生进化的可能性数量会很少，但是有更高的几率淬炼出更高级的进化结果。若是以此淬炼大脑，有较低概率使大脑发生异变，进一步开发出全身器官的进化潜力。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>1</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="7000"/>
+			<li Name="Cache3" Value="3000"/>
+			<li Name="Cache4" Value="1000"/>
+			<li Name="Cache6" Value="500"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	
+	<Def Name="BPQuenchingMethods_Sp3"><!--淬炼之法-->
+		<DisplayName>斥异淬体法</DisplayName>
+		<Desc>以超越之心催动斥异之力催动精华淬体，虽然每次淬炼发生进化的可能性数量会很少，但是有更高的几率淬炼出更高级的进化结果。若是以此淬炼心脏，有较低概率使心脏发生异变，进一步开发出全身血肉的进化潜力。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>0</CycleScaleAddtion>
+		<LabelMoreCount>1</LabelMoreCount>
+		<CostScaleAddtion>0</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="7000"/>
+			<li Name="Cache3" Value="3000"/>
+			<li Name="Cache4" Value="1000"/>
+			<li Name="Cache7" Value="500"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag></SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_ReQuenching"><!--洗点之法-->
+		<DisplayName>毁炼之法</DisplayName>
+		<Desc>借助灵气产物与炼体者之躯相斥的特性，以仙道精华将某个部位炼体之功化散，使之回归到凡胎之体的状态。</Desc>
+		<RollCount>1</RollCount>
+		<ItemNeed>Item_BodyPractice_XianDaoJingHua</ItemNeed>
+		<LabelMoreCount>-1</LabelMoreCount>
+		<CostScaleAddtion>1</CostScaleAddtion>
+		<CantLoop>1</CantLoop>
+		<SpecialFlag>RESET</SpecialFlag>
+	</Def>
+	
+	
+</List></BPQuenchingMethods>

@@ -1,0 +1,122 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobCloseTo">
+			<DisplayName>Approach</DisplayName>
+		</Text>
+		<Text Name="JobMoveToBed">
+			<DisplayName>Rest</DisplayName>
+		</Text>
+		<Text Name="JobDemonLoseSoul">
+			<DisplayName>Seal Five Senses</DisplayName>
+		</Text>
+		<Text Name="JobDemonClaustrophobia">
+			<DisplayName>Confine</DisplayName>
+		</Text>
+		<Text Name="JobDemonWail">
+			<DisplayName>Wail</DisplayName>
+		</Text>
+		<Text Name="JobDemonBlank">
+			<DisplayName>In Trance</DisplayName>
+		</Text>
+		<Text Name="JobObtainThing">
+			<DisplayName>Obtain</DisplayName>
+		</Text>
+		<Text Name="JobEatItem">
+			<DisplayName>Eat</DisplayName>
+		</Text>
+		<Text Name="JobEquipItem">
+			<DisplayName>Equip</DisplayName>
+		</Text>
+		<Text Name="JobFaceIdle">
+			<DisplayName>Interact</DisplayName>
+		</Text>
+		<Text Name="JobFighting">
+			<DisplayName>In Battle</DisplayName>
+		</Text>
+		<Text Name="JobFight">
+			<DisplayName>Battle</DisplayName>
+		</Text>
+		<Text Name="JobFightDriver">
+			<DisplayName>In Battle</DisplayName>
+		</Text>
+		<Text Name="JobZhenFighting">
+			<DisplayName>In Battle</DisplayName>
+		</Text>
+		<Text Name="JobBodyFighting">
+			<DisplayName>In Battle</DisplayName>
+		</Text>
+		<Text Name="JobLeaveMap">
+			<DisplayName>Leave</DisplayName>
+		</Text>
+		<Text Name="JobWaitHelp">
+			<DisplayName>Passerby</DisplayName>
+		</Text>
+		<Text Name="JobTalk">
+			<DisplayName>Socialize</DisplayName>
+		</Text>
+		<Text Name="JobSimpleAction">
+			<DisplayName>Act</DisplayName>
+		</Text>
+		<Text Name="JobWalkerHelp">
+			<DisplayName>Help</DisplayName>
+		</Text>
+		<Text Name="JobAlarmbell">
+			<DisplayName>Warn</DisplayName>
+		</Text>
+		<Text Name="JobMoveTo">
+			<DisplayName>Move To</DisplayName>
+		</Text>
+		<Text Name="JobMoveThingTo">
+			<DisplayName>Haul</DisplayName>
+		</Text>
+		<Text Name="JobYSSleep">
+			<DisplayName>Slumber</DisplayName>
+		</Text>
+		<Text Name="JobWaitCMD">
+			<DisplayName>Wait For Orders</DisplayName>
+		</Text>
+		<Text Name="JobRobItem">
+			<DisplayName>Take By Force</DisplayName>
+		</Text>
+		<Text Name="JobZhenStart">
+			<DisplayName>Form Formation</DisplayName>
+		</Text>
+		<Text Name="JobStayInZhen">
+			<DisplayName>Operate Formation</DisplayName>
+		</Text>
+		<Text Name="JobRebuildZhen">
+			<DisplayName>Change Formation</DisplayName>
+		</Text>
+		<Text Name="JobPerformWithBuilding">
+			<DisplayName>Work</DisplayName>
+		</Text>
+		<Text Name="JobPerformFree">
+			<DisplayName>Wander</DisplayName>
+		</Text>
+		<Text Name="JobTryTalk">
+			<DisplayName>Talk</DisplayName>
+		</Text>
+		<Text Name="JobGotoAndStay">
+			<DisplayName>Go to</DisplayName>
+			<Desc>Go to</Desc>
+		</Text>
+		<Text Name="JobJGTunShi">
+			<DisplayName>Devour</DisplayName>
+		</Text>
+		<Text Name="JobJGRevival">
+			<DisplayName>Revive</DisplayName>
+		</Text>
+		<Text Name="JobYsThink">
+			<DisplayName>Think</DisplayName>
+		</Text>
+		<Text Name="JobStudyThing">
+			<DisplayName>Observe</DisplayName>
+		</Text>
+		<Text Name="JobYsToHuman">
+			<DisplayName>Awaken Intelligence</DisplayName>
+		</Text>
+		<Text Name="JobGoFishing">
+			<DisplayName>Fish</DisplayName>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,265 @@
+<Defs><List>
+	<Def Name="r1">
+		<Tendency>
+			<li Min="1" Max="10">
+				<T>Build</T>
+			</li>
+			<li Min="1" Max="10">
+				<T>Expand</T>
+			</li>
+			<li Min="1" Max="10">
+				<T>Rest</T>
+				<BanSchool>
+					<li>12</li>
+				</BanSchool>
+			</li>
+			<li Min="1" Max="10">
+				<T>War</T>
+			</li>
+		</Tendency>
+		
+		<NormalAuction>Classic</NormalAuction>
+		<Second>Base</Second>
+		<Fifth>Unsure</Fifth>
+		<Eighth>Base</Eighth>
+		<Eleventh>Exotic</Eleventh>
+		
+		<Task>
+			<TaskExpireDay>15</TaskExpireDay>
+			<TaskIntervalDay>15</TaskIntervalDay>
+			<RandomTaskIntervalDay>15</RandomTaskIntervalDay>
+			<Event Id="20022">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20023">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20024">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20025">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20026">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20027">
+				<Pack Weight="1" Both="0">
+					<From>
+						
+					</From>
+					<To>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</To>
+				</Pack>
+			</Event>
+			
+			<Event Id="20062">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest3" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20063">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest4" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20066">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20067">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest1" Weight="1" />
+						<li TaskName="Rest2" Weight="1" />
+						<li TaskName="Rest3" Weight="1" />
+						<li TaskName="Rest4" Weight="1" />
+						<li TaskName="Rest5" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20068">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20069">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="War1" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			<Event Id="20071">
+				<Pack Weight="1" Both="0">
+					<From>
+						<li TaskName="Rest6" Weight="1" />
+						<li TaskName="Rest7" Weight="1" />
+						<li TaskName="Rest8" Weight="1" />
+						<li TaskName="Rest9" Weight="1" />
+						<li TaskName="Rest10" Weight="1" />
+					</From>
+					<To>
+						
+					</To>
+				</Pack>
+			</Event>
+			
+			<TimeRandomTask>
+				<li TaskName="War1" Weight="20" Tendency="War" />
+				<li TaskName="War2" Weight="20" Tendency="War" />
+				<li TaskName="War3" Weight="20" Tendency="War" />
+				<li TaskName="Rest1" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest2" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest3" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest4" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest5" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest6" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest7" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest8" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest9" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest10" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest11" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest12" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest13" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest14" Weight="20" Tendency="Rest" />
+				<li TaskName="Rest15" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest16" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest17" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest18" Weight="5" Tendency="Rest" />
+				<li TaskName="Rest19" Weight="5" Tendency="Rest" />
+				<li TaskName="Build1" Weight="5" Tendency="Build" />
+				<li TaskName="Build2" Weight="5" Tendency="Build" />
+				<li TaskName="Build3" Weight="20" Tendency="Build" />
+				<li TaskName="Build4" Weight="20" Tendency="Build" />
+				<li TaskName="Build5" Weight="20" Tendency="Build" />
+				<li TaskName="Build6" Weight="20" Tendency="Build" />
+				<li TaskName="Build7" Weight="20" Tendency="Build" />
+				<li TaskName="Build8" Weight="20" Tendency="Build" />
+				<li TaskName="Build9" Weight="5" Tendency="Build" />
+				<li TaskName="Build10" Weight="5" Tendency="Build" />
+				<li TaskName="Build11" Weight="20" Tendency="Build" />
+				<li TaskName="Build12" Weight="20" Tendency="Build" />
+				<li TaskName="Build13" Weight="20" Tendency="Build" />
+				<li TaskName="Build14" Weight="20" Tendency="Build" />
+				<li TaskName="Build15" Weight="20" Tendency="Build" />
+			</TimeRandomTask>
+		</Task>
+		
+	</Def>
+</List></Defs>

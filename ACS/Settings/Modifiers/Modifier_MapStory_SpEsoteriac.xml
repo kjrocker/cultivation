@@ -1,0 +1,259 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Esoterica_LunHui1" Type="Normal">
+		<DisplayName>Esoterica_LunHui1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,1,1</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Esoterica_LunHui2" Type="Normal">
+		<DisplayName>Esoterica_LunHui2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,1,0</BaseFive>
+		<Hair>1</Hair>
+	</Modifier> 
+	
+	<Modifier Name="Esoterica_LunHui4" Type="Normal">
+		<DisplayName>Esoterica_LunHui3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Other_Esoterica_DanXia1" Type="Normal">
+		<DisplayName>Other_Esoterica_DanXia1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="10"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_DanXia2" Type="Normal">
+		<DisplayName>Other_Esoterica_DanXia2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="360"/>
+			<li Name="MindStateBaseValue" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_DengXian1" Type="Normal">
+		<DisplayName>Other_Esoterica_DengXian1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="10"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_JiuHua" Type="Normal">
+		<DisplayName>Other_Esoterica_JiuHua</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,1,1,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="60"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Other_Esoterica_LongHu1" Type="Normal">
+		<DisplayName>Other_Esoterica_LongHu1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_LongHu2" Type="Normal">
+		<DisplayName>Other_Esoterica_LongHu2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="6"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_ChiLianYuan" Type="Normal">
+		<DisplayName>Other_Esoterica_ChiLianYuan</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.6"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Other_Esoterica_ChiLianYuan1" Type="Normal">
+		<DisplayName>Other_Esoterica_ChiLianYuan1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Other_Esoterica_XuanKong" Type="Normal">
+		<DisplayName>Other_Esoterica_XuanKong</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,2</BaseFive>
+	</Modifier> 
+	
+	
+	<Modifier Name="Other_Esoterica_YanHuangTongShi" Type="Normal">
+		<DisplayName>Other_Esoterica_YanHuangTongShi</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,2,0</BaseFive>
+		<Skills>
+			<li Name="Qi" Level="5"/>
+		</Skills>
+	</Modifier> 
+	<!--灵植秘籍-->
+	
+	<Modifier Name="Lingzhi_Esoterica_JinLing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_MuLing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+			<li Name="AgeCostSpeed" AddP="-0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_ShuiLing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+			<li Name="NutritionToJingYuanK" AddV="0.025"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_HuoLing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="FightSkill" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_TuLing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-20"/>
+			<li Name="NutritionWaterAutoRecover" AddV="3"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Lingzhi_Esoterica_JinSha" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>10,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="200"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="4"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_MuSha" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,10,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Manual" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="200"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_ShuiSha" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,10,0,0</BaseFive>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="200"/>
+			<li Name="NutritionConsumeConstant" AddP="8"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_HuoSha" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,10,0</BaseFive>
+		<Skills>
+			<li Name="Medicine" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="200"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Lingzhi_Esoterica_TuSha" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,10</BaseFive>
+		<Skills>
+			<li Name="Barrier" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="200"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<!--三兽真灵法-->
+	
+	
+	<Modifier Name="Esoterica_Boss_Long1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.25"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Esoterica_Boss_Feng1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.25"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Esoterica_Boss_ZhuLong1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.3"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

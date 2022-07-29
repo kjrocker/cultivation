@@ -1,0 +1,42 @@
+<FightDriverDefs><List>
+	<Driver Name="XiongFeng">
+		<EnterSkill>xiongfeng_chuchang</EnterSkill><!--出场skill-->
+		<DieSkill>xiongfeng_siwang</DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li>
+				<Skills>		
+					<li Type="Normal" Name="xiongfeng_neidan" Rate="0" CoolDown="-1"/>		<!--放内丹-->
+					
+					<li Type="Check"	Name="xiongfeng_huoyu_cast"  sParam1="ModifierStack"  sParam2="Boss_Xiongfeng_huoling" fParam1="100" fParam2="100"  Rate="0" CoolDown="0"/><!--100层火灵变2形态-->			
+					<li Type="Event"	Name="xiongfeng_fennu"  sParam1="WeatherShowAdd" sParam2="Rain" Rate="0" CoolDown="0"/><!--下雨触发愤怒-->		
+					<li Type="Event"	Name="xiongfeng_tunhuo"  sParam1="CastSkill" sParam2="xiongfeng_fennu" Rate="0" CoolDown="0"/><!--愤怒后吞火-->		
+					<li Type="Event"	Name="xiongfeng_lieyangshu"  sParam1="WeatherShowAdd" sParam2="Rain" Wait="30" Rate="0" CoolDown="0"/><!--下雨30s后触发烈阳术-->		
+					<li Type="Event"	Name="xiongfeng_zuozhitong"  sParam1="BodyPartBroken" sParam2="" Rate="0" CoolDown="0"/><!--部位破坏 灼之瞳-->		
+			
+					<li Type="Normal" Name="xiongfeng_move" Rate="0.2" CoolDown="30"  ProtectTime="60"/><!--移动-->
+					<li Type="Normal" Name="xiongfeng_shiwei" Rate="0.2" CoolDown="120" ProtectTime="60"/><!--示威 流程比较长-->
+					<li Type="Normal" Name="xiongfeng_penhuo" Rate="0.5" CoolDown="0"/><!--单体喷火-->
+					<li Type="Normal" Name="xiongfeng_rongjin" Rate="0.5" CoolDown="60"/><!--融断-->
+					<li Type="Normal" Name="xiongfeng_tunhuo" Rate="1" CoolDown="30"/><!--吞火-->					
+					
+				</Skills>
+			</li>
+			<li>
+				<Skills>	
+					<li Type="Event"	Name="xiongfeng_huoyu_recall"  sParam1="ModifierRemove" sParam2="Boss_Xiongfeng_Huofeng" Rate="0" CoolDown="0"/><!--火凤BUFF消失时 变回1形态-->	
+					<li Type="Event"	Name="xiongfeng_fennu"  sParam1="WeatherShowAdd" sParam2="Rain" Rate="0" CoolDown="0"/><!--下雨触发愤怒-->		
+					<li Type="Event"	Name="xiongfeng_tunhuo"  sParam1="CastSkill" sParam2="xiongfeng_fennu" Rate="0" CoolDown="0"/><!--愤怒后吞火-->	
+					<li Type="Event"	Name="xiongfeng_lieyangshu"  sParam1="WeatherShowAdd" sParam2="Rain" Wait="30" Rate="0" CoolDown="0"/><!--下雨30s后触发烈阳术-->		
+					<li Type="Event"	Name="xiongfeng_zuozhitong"  sParam1="BodyPartBroken" sParam2="" Rate="0" CoolDown="0"/><!--部位破坏 灼之瞳-->		
+					
+					<li Type="Normal" Name="xiongfeng_lieyanmove" Rate="0.2" CoolDown="30"/><!--烈焰移动-->					
+					<li Type="Normal" Name="xiongfeng_tunhuo" Rate="1" CoolDown="30"/><!--吞火-->
+					<li Type="Normal" Name="xiongfeng_penhuoaoe" Rate="0.5" CoolDown="0"/><!--AOE喷火-->
+					<li Type="Normal" Name="xiongfeng_rongjinaoe" Rate="0.3" CoolDown="60"/><!--AOE熔断-->
+					<li Type="Normal" Name="xiongfeng_taiyang" Rate="0.2" CoolDown="300" FightPart="suneye"/><!--太阳之眼 suneye部位存在才能释放-->
+					
+				</Skills>
+			</li>
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

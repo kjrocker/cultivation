@@ -1,0 +1,1254 @@
+﻿<SkillTree><List>	
+	<Node Name="Gong_13_Yang_a0" Gong="Gong_13_None">
+		<Esoterica>Magic_AbsorbGong_8_1</Esoterica>
+		<DisplayName>清心术</DisplayName>
+		<Level>Qi</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_a3" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_1</Esoterica>
+		<DisplayName>升清观</DisplayName>
+		<Level>Qi</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,1,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>--> 
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_a4" Gong="Gong_13_None">
+		<Level>Qi</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong_13_Yang_a6" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_11</Esoterica>
+		<DisplayName>穹天吐纳</DisplayName>
+		<Level>Qi</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_a7" Gong="Gong_13_None">
+		<Level>Qi</Level>
+		<Index>7</Index>
+		<Line>0,2,0,1,0,0,0,0</Line>	
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_a8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_13</Esoterica>
+		<DisplayName>玄极经</DisplayName>
+		<Level>Qi</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_a6</li>
+			<li>Gong_13_Yin_a10</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_b0" Gong="Gong_13_None">
+		<Esoterica>Magic_BuildMine_KaiHu</Esoterica>
+		<DisplayName>开湖术</DisplayName>
+		<Level>Dan1</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_b3" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_4</Esoterica>
+		<DisplayName>阳火诀</DisplayName>
+		<Level>Dan1</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,1,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yang_b4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_3</Esoterica>
+		<DisplayName>内景开辟</DisplayName>
+		<Level>Dan1</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_a3</li>
+			<li>Gong_13_Yin_a5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_b8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_14</Esoterica>
+		<DisplayName>纯阳真罡</DisplayName>
+		<Level>Dan1</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_b8_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_b8_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_16</Esoterica>
+		<DisplayName>周流御气</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_b8</li>
+			<li>Gong_13_Yin_b8</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_c0" Gong="Gong_13_None">
+		<Esoterica>Magic_ClosedDoor_1</Esoterica>
+		<DisplayName>入定之术</DisplayName>
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yang_c1" Gong="Gong_13_None">
+		<Esoterica>Magic_Prophesy_1</Esoterica>
+		<DisplayName>周天神算</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yang_c3" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_7</Esoterica>
+		<DisplayName>六阳真形</DisplayName>
+		<Level>Dan2</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,1,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_c4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_6</Esoterica>
+		<DisplayName>无极妙录</DisplayName>
+		<Level>Dan2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_b3</li>
+			<li>Gong_13_Yin_b5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yang_c7" Gong="Gong_13_None">
+		<Level>Dan2</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>	
+	</Node>
+	<Node Name="Gong_13_Yang_c8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_17</Esoterica>
+		<DisplayName>万妙一谛</DisplayName>
+		<Level>Dan2</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,1,1,2,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_c9" Gong="Gong_13_None">
+		<Level>Dan2</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong_13_Yang_c10" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_27</Esoterica>
+		<DisplayName>登霄六步</DisplayName>
+		<Level>Dan2</Level>
+		<Index>10</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_c10_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_c10_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_29</Esoterica>
+		<DisplayName>阴阳化御神遁</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_c10</li>
+			<li>Gong_13_Yin_c10</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_d0" Gong="Gong_13_None">
+		<Esoterica>Magic_JieHuiDaoPowerUp</Esoterica>
+		<DisplayName>道淬之法</DisplayName>
+		<Level>God</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_10</Esoterica>
+		<DisplayName>玄天阴阳元神</DisplayName>
+		<Level>God</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_9</Esoterica>
+		<DisplayName>六九两仪仙体</DisplayName>
+		<Level>God</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_c3</li>
+			<li>Gong_13_Yin_c5</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_d4_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d4_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Fabao2</Esoterica>
+		<DisplayName>紫霄万道书</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_d4</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d7" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_18</Esoterica>
+		<DisplayName>虚极剑</DisplayName>
+		<Level>God</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_c8</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_d7_1</li>
+			<li>Gong_13_Yang_d7_2</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d7_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_20</Esoterica>
+		<DisplayName>归道剑</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_d7</li>
+			<li>Gong_13_Yin_d7</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_d7_2" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Fabao1</Esoterica>
+		<DisplayName>真武剑册</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_d7_1</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_21</Esoterica>
+		<DisplayName>为剑</DisplayName>
+		<Level>God</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_c8</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_d8_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d8_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_23</Esoterica>
+		<DisplayName>为道</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_d8</li>
+			<li>Gong_13_Yin_d8</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yang_d9" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_24</Esoterica>
+		<DisplayName>观复诀</DisplayName>
+		<Level>God</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_c8</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yang_d9_1</li>
+			<li>Gong_13_Yang_d9_2</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d9_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_26</Esoterica>
+		<DisplayName>无离真法</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yang_d9</li>
+			<li>Gong_13_Yin_d9</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_d9_2" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Dan</Esoterica>
+		<DisplayName>北斗真丹</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_d9_1</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_a0" Gong="Gong_13_None">
+		<Esoterica>Magic_Healing_Damage_1</Esoterica>
+		<DisplayName>化伤术</DisplayName>
+		<Level>Qi</Level>
+		<Index>0</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_a4" Gong="Gong_13_None">
+		<Level>Qi</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>	
+		<Depth>1</Depth>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_a5" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_2</Esoterica>
+		<DisplayName>凝浊法</DisplayName>
+		<Level>Qi</Level>
+		<Index>5</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,0,0,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	
+	<Node Name="Gong_13_Yin_a8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_13</Esoterica>
+		<DisplayName>玄极经</DisplayName>
+		<Level>Qi</Level>
+		<Index>8</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_a6</li>
+			<li>Gong_13_Yin_a10</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_a10" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_12</Esoterica>
+		<DisplayName>元胎呼吸</DisplayName>
+		<Level>Qi</Level>
+		<Index>10</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_a9" Gong="Gong_13_None">
+		<Level>Qi</Level>
+		<Index>9</Index>
+		<Depth>1</Depth>
+		<Line>0,1,0,2,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong_13_Yin_b0" Gong="Gong_13_None">
+		<Esoterica>Magic_BuildMine_ZaoLu</Esoterica>
+		<DisplayName>造陆术</DisplayName>
+		<Level>Dan1</Level>
+		<Index>0</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	
+	<Node Name="Gong_13_Yin_b4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_3</Esoterica>
+		<DisplayName>内景开辟</DisplayName>
+		<Level>Dan1</Level>
+		<Index>4</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,1,2,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_a3</li>
+			<li>Gong_13_Yin_a5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_b5" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_5</Esoterica>
+		<DisplayName>阴符书</DisplayName>
+		<Level>Dan1</Level>
+		<Index>5</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,0,0,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_b8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_15</Esoterica>
+		<DisplayName>太阴心流</DisplayName>
+		<Level>Dan1</Level>
+		<Index>8</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_b8_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_b8_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_16</Esoterica>
+		<DisplayName>周流御气</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_b8</li>
+			<li>Gong_13_Yin_b8</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_c0" Gong="Gong_13_None">
+		<Esoterica>Magic_ClosedDoor_1</Esoterica>
+		<DisplayName>入定之术</DisplayName>
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_c1" Gong="Gong_13_None">
+		<Esoterica>Magic_Prophesy_MapStory_1</Esoterica>
+		<DisplayName>大衍神算</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_c4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_6</Esoterica>
+		<DisplayName>无极妙录</DisplayName>
+		<Level>Dan2</Level>
+		<Index>4</Index><Depth>1</Depth>
+		<Line>0,0,0,0,0,1,2,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_b3</li>
+			<li>Gong_13_Yin_b5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_c5" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_8</Esoterica>
+		<DisplayName>九阴玄脉</DisplayName>
+		<Level>Dan2</Level>
+		<Index>5</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,0,0,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_c7" Gong="Gong_13_None">
+		<Level>Dan2</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>	
+		<Depth>1</Depth>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_c8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_17</Esoterica>
+		<DisplayName>万妙一谛</DisplayName>
+		<Level>Dan2</Level>
+		<Index>8</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,1,1,2,1</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_c9" Gong="Gong_13_None">
+		<Level>Dan2</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+		<Depth>1</Depth>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_c10" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_28</Esoterica>
+		<DisplayName>潜云无形</DisplayName>
+		<Level>Dan2</Level>
+		<Index>10</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_c10_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_c10_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_29</Esoterica>
+		<DisplayName>阴阳化御神遁</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_c10</li>
+			<li>Gong_13_Yin_c10</li>
+		</PreUnit>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_d0" Gong="Gong_13_None">
+		<Esoterica>Magic_JieHuiDaoPowerUp</Esoterica>
+		<DisplayName>道淬之法</DisplayName>
+		<Level>God</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_10</Esoterica>
+		<DisplayName>玄天阴阳元神</DisplayName>
+		<Level>God</Level>
+		<Index>1</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d4" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_9</Esoterica>
+		<DisplayName>六九两仪仙体</DisplayName>
+		<Level>God</Level>
+		<Index>4</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong_13_Yang_c3</li>
+			<li>Gong_13_Yin_c5</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_d4_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_d4_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Fabao2</Esoterica>
+		<DisplayName>紫霄万道书</DisplayName>
+		<Level>None</Level>
+		<PreUnit>
+			<li>Gong_13_Yin_d4</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d7" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_19</Esoterica>
+		<DisplayName>帝象剑</DisplayName>
+		<Level>God</Level>
+		<Index>7</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_d7_1</li>
+			<li>Gong_13_Yin_d7_2</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d7_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_20</Esoterica>
+		<DisplayName>归道剑</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_d7</li>
+			<li>Gong_13_Yin_d7</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d7_2" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Fabao1</Esoterica>
+		<DisplayName>真武剑册</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yin_d7_1</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d8" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_22</Esoterica>
+		<DisplayName>为法</DisplayName>
+		<Level>God</Level>
+		<Index>8</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_d8_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d8_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_23</Esoterica>
+		<DisplayName>为道</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_d8</li>
+			<li>Gong_13_Yin_d8</li>
+		</PreUnit>
+	</Node>
+	
+	
+	<Node Name="Gong_13_Yin_d9" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_25</Esoterica>
+		<DisplayName>抱一法</DisplayName>
+		<Level>God</Level>
+		<Index>9</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<Layers>
+			<li>Gong_13_Yin_d9_1</li>
+			<li>Gong_13_Yin_d9_2</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_d9_1" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_26</Esoterica>
+		<DisplayName>无离真法</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yang_d9</li>
+			<li>Gong_13_Yin_d9</li>
+		</PreUnit>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_d9_2" Gong="Gong_13_None">
+		<Esoterica>Gong13_Esoterica_Dan</Esoterica>
+		<DisplayName>北斗真丹</DisplayName>
+		<Level>None</Level>
+		<Depth>1</Depth>
+		<PreUnit>
+			<li>Gong_13_Yin_d9_1</li>
+		</PreUnit>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_e4" Gong="Gong_13_None">
+		<Esoterica>God2_Dan</Esoterica>
+		<DisplayName>天道神丹</DisplayName>
+		<Level>God2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>	
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yang_e8" Gong="Gong_13_None">
+		<Esoterica>God2_Fabao</Esoterica>
+		<DisplayName>天道神器</DisplayName>
+		<Level>God2</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	
+	<Node Name="Gong_13_Yin_e4" Gong="Gong_13_None">
+		<Esoterica>God2_Dan</Esoterica>
+		<DisplayName>天道神丹</DisplayName>
+		<Level>God2</Level>
+		<Index>4</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong_13_Yin_e8" Gong="Gong_13_None">
+		<Esoterica>God2_Fabao</Esoterica>
+		<DisplayName>天道神器</DisplayName>
+		<Level>God2</Level>
+		<Index>8</Index>
+		<Depth>1</Depth>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+</List></SkillTree> 

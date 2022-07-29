@@ -1,0 +1,113 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_7_Huo">
+		<DisplayName>太上忘情道</DisplayName>
+		<Desc>极天宫所传秘法，修行此法必须容貌俊美，魅力惊人之辈才能入门。修行者入门之后需入红尘历练，先有情，再忘情，苦海之中了悟本心真我，飞升成仙。因此法修行方式特殊，常常惹得缘分纠葛，情孽缠身。</Desc>
+		<SelectDesc>此功法擅长剑术与操弄人心之术，只是突破需要频繁历练。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>5,-1,9,5,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Huo</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>jiangdao</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>养吾</DisplayName>
+				<Desc></Desc>
+				<Value>800</Value>
+				<Necks>
+					<Neck Location="1" Kind="Explore">
+						<DisplayName>灵犀</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>1</ExploreValue>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>破妄</DisplayName>
+				<Desc></Desc>
+				<Value>3600</Value>
+				<Necks>
+					<Neck Location="0.9" Kind="Explore">
+						<DisplayName>水火</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>2</ExploreValue>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>真丹</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>极情</DisplayName>
+				<Desc></Desc>
+				<Value>150000</Value>
+				<Necks>
+					<Neck Location="0.95" Kind="Chance">
+						<DisplayName>大欲</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈魅力越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Charisma_1_1_10</SuccessChange>
+						<FailedChangeAdd>Charisma_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Explore">
+						<DisplayName>新生</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>3</ExploreValue>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage4" Level="10">
+				<DisplayName>得真</DisplayName>
+				<Desc></Desc>
+				<Value>2550000</Value>
+				<Necks>
+					
+					<Neck Location="0.95" Kind="Chance">
+						<DisplayName>五蕴</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈魅力越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Charisma_1_1_10</SuccessChange>
+						<FailedChangeAdd>Charisma_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Explore">
+						<DisplayName>劫空</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>太上</DisplayName>
+				<Desc></Desc>
+				<Value>4500000</Value>
+				<Necks>
+					
+					<Neck Location="0.9" Kind="Chance">
+						<DisplayName>斩念</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>1200</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>忘情</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>580000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

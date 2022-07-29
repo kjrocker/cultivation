@@ -1,0 +1,52 @@
+<Defs><List>
+	<Def Name="OurPlace_1">
+		<li>Item_IronRock</li>
+	</Def>
+	<Def Name="OurPlace_2">
+		<li>Item_StoneEssence</li>
+	</Def>
+	<Def Name="OurPlace_3">
+		<li>Item_RedGinseng</li>
+	</Def>
+	
+	<Def Name="ZhongYuan_2">
+		<li>Item_Cinnabar</li>
+	</Def>
+	<Def Name="ZhongYuan_3">
+		<li>Item_SkyStone</li>
+	</Def>
+	
+	<Def Name="JiangAn_1">
+		<li>Item_PurpleGanodermaLucidum</li>
+	</Def>
+	<Def Name="JiangAn_2">
+		<li>Item_SilverRock</li>
+	</Def>
+	<Def Name="JiangAn_3">
+		<li>Item_JadeEssence</li>
+	</Def>
+	
+	<Def Name="DaMo_1">
+		<li>Item_EarthEssence1</li>
+	</Def>
+	<Def Name="DaMo_2">
+		<li>Item_MonsterBlood</li>
+	</Def>
+	<Def Name="DaMo_3">
+		<li>Item_CopperRock</li>
+	</Def>
+	
+	<Def Name="DaXueYuan_1">
+		<li>Item_RedGinseng</li>
+	</Def>
+	<Def Name="DaXueYuan_2">
+		<li>Item_SilverRock</li>
+	</Def>
+	
+	<Def Name="NanHuang_1">
+		<li>Item_PurpleGanodermaLucidum</li>
+	</Def>
+	<Def Name="NanHuang_2">
+		<li>Item_LingWood</li>
+	</Def>
+</List></Defs>

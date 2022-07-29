@@ -1,0 +1,43 @@
+系统Tag:
+
+_Rate 记录了物品品阶
+_LableXXXXX 记录了物品的Lable类型
+_StoneBox 石匣子 系统特殊道具
+_LittleRock 小岩快 特殊标记
+_SysWater 水 不参与统计
+_FaBao 法宝标记
+_Dan 丹药标记
+_SHIT 屎标记
+_FIRECRACKER 烟花
+_INCENSE 香火
+_YITUI 遗蜕
+_WONDER 奇观
+
+定义Tag:
+
+建筑：
+Apprentice 用于收徒
+ItemShelf 置物台 特殊
+Bury 可用于埋葬
+RefiningDan 可用于炼丹
+Refining 可用于炼宝
+TheGate 可用于拜山门
+ForFun 可用于娱乐
+BasePractice 可用于筑基
+Sleep 可用于睡眠
+Practice 可用于修炼
+Sitable 可用于坐下
+AtkPractice 可以作为攻击的练习对象
+Zhen 阵法 可以收容法宝
+Puppet 可用于炼制傀儡
+WriteTxt 可以撰写内容
+Zhong 警钟
+物品:
+Water 可用于饮用(口渴) 
+Food 可用于食用(饥饿)
+PracticeFood 可用于食用(精元)
+Drug 可用于普通治疗
+BowlFood 端着碗吃的食物(表现用)
+CarryHold 搬运的时候抱着走(表现用)
+DiscipleFood 内门食物优先级
+BookShelf 书架 特殊

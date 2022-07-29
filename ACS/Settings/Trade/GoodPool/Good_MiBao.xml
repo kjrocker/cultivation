@@ -1,0 +1,287 @@
+<Defs><List>	
+	<Def Name="BaiManMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_BoarMeat</oitemname>
+				<ostuffname>Item_BoarMeat</ostuffname>
+				<DisplayName>元阳蒲</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="HitCountCostSkill" nParam1="10"  sParam1="DamageSkill_4" Desc="每10次攻击会对目标敌人发动一次法术"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="TianJiMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_Dice</oitemname>
+				<ostuffname>Item_HardWoodBlock</ostuffname>
+				<DisplayName>神木骰</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_Longxinyinyanggui" Desc="护体技能提高8"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="HeiShanMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WeaponLance</oitemname>
+				<ostuffname>Item_SilverBlock</ostuffname>
+				<DisplayName>吸星枪</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="HitAddRecovery" fParam1="0.08"  Desc="造成伤害的8%会补充为法宝自身的灵气。"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+		</Fabao>
+	</Def>
+	
+	<Def Name="ZhengYiMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_SpellPaperLv2</oitemname>
+				<ostuffname>Item_RoughWoodBlock</ostuffname>
+				<DisplayName>五符临门</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="HitCountAddSubColdDown" nParam1="5" fParam1="1" Desc="每5次攻击会减少1秒技能CD。"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="JiuHuaMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_SummerClothes</oitemname>
+				<ostuffname>Item_DarksteelBlock</ostuffname>
+				<DisplayName>黑金幡</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.8" fParam2="1" nParam1="0" sParam1="Mu" Desc="对木属性目标伤害加深80%"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="WuLianMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_SilkClothes</oitemname>
+				<ostuffname>Item_ParasolWood</ostuffname>
+				<DisplayName>黄木幡</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.8" fParam2="1" nParam1="0" sParam1="Tu" Desc="对土属性目标伤害加深80%"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="ShuShanMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_SilkTrousers</oitemname>
+				<ostuffname>Item_SoulPearl</ostuffname>
+				<DisplayName>紫水幡</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.8" fParam2="1" nParam1="0" sParam1="Huo" Desc="对火属性目标伤害加深80%"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="KunLunMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WinterTrousers</oitemname>
+				<ostuffname>Item_Marble</ostuffname>
+				<DisplayName>红土幡</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.8" fParam2="1" nParam1="0" sParam1="Shui" Desc="对水属性目标伤害加深80%"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="XianKongMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WinterTrousers</oitemname>
+				<ostuffname>Item_MonsterBlood</ostuffname>
+				<DisplayName>绿火幡</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.8" fParam2="1" nParam1="0" sParam1="Jin" Desc="对金属性目标伤害加深80%"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="DanXiaMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WeaponSword</oitemname>
+				<ostuffname>Item_CopperBlock1</ostuffname>
+				<DisplayName>伴神剑</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.25" nParam1="2" Desc="与法宝拼斗时，造成1.25倍伤害。"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+	
+	<Def Name="HeHuanMibao">
+		<Fabao Weight="1" CountName="Mibao">
+			<FabaoData>
+				<Q>3</Q>
+				<Rate>9</Rate>
+				<oitemname>Item_WeaponAxeRing</oitemname>
+				<ostuffname>Item_ShuiEssence</ostuffname>
+				<DisplayName>聚念环</DisplayName>
+				<SpecialAbility>
+					<Ability Kind="CantAttack" Desc="环绕周身不会主动进攻，专注防御。"/>
+				</SpecialAbility>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+				<RentDay>10</RentDay>
+			</FabaoData>
+			<InitTradeCount>
+				<Count Min="1" Max="1"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+		</Fabao>
+	</Def>
+</List></Defs>

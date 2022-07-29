@@ -1,0 +1,650 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_WuDang_HuangJing" Parent="DrugBase">
+	<TexPath>res\Sprs\object_WuDangDLC\object_huangjing01</TexPath>	
+	<ThingName>黄精</ThingName>
+	<Desc>一种灵药，口感甘甜爽口，服用既可充饥，又可补益身体。仙家以为芝草之类，以其得坤土之精粹，故谓之黄精。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>10</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		<FabaoSuffix>果,珠,丸,球</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>60</Nutrition>
+			<FunAddion>25</FunAddion>
+		</Food>
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	</ThingDef>
+
+	
+	<ThingDef Type="Item" Name="Item_WuDang_HuangJingFen" Parent="DrugBase">
+
+	<ThingName>黄精粉</ThingName>
+	<TexPath>res\Sprs\object_WuDangDLC\object_huangjingfen01</TexPath>	
+	<Desc>黄精晒干后磨制成粉，本身也有一定药性，但更多用来制作丹药。</Desc>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>4</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Color>D3F4FFFF</Color>
+	<Tags>
+		<Tag Name="Item_WuDang_HuangJingFen" Level="1"/>
+	</Tags>
+	<IllustratedHandLabel>WOther</IllustratedHandLabel>
+	<Item Lable="Drug">
+		<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<CostItems>
+				<Item name = "Item_WuDang_HuangJing" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<DevourDatas>
+		</DevourDatas>
+	</Item>
+	<ProduceMode>
+		<ProduceBuildings>
+		  <li>
+			<Building>MedicineTable</Building>
+			<Count>10</Count>
+		  </li>
+		</ProduceBuildings>
+	</ProduceMode>
+	<Element>
+		<Kind>Mu</Kind>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>7</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WeaponFuChen" Parent="WeaponBase">
+	<ThingName>拂尘</ThingName>
+	<TexPath>res\Sprs\object_WuDangDLC\object_fuchen01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一柄拂尘，仙风道骨。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>柔,拂</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Cotton" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+	<!--	<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>1.1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralRupture" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_fuchen01</ModPath>
+		</Equip>
+	</Item>
+	<ProduceMode>
+		<ProduceBuildings>
+		  <li>
+			<Building>WeaponMaker</Building>
+			<Count>1</Count>
+		  </li>
+		</ProduceBuildings>
+	</ProduceMode>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WeaponDaoSword" Parent="WeaponBase">
+	<ThingName>道剑</ThingName>
+	<TexPath>res\Sprs\object_WuDangDLC\object_taijijian01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一柄专门用来作法的剑，对法力有良好的相性。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>剑</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>GreatThing_Attack</li>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "1"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<!--<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>12</Damage>
+			<AttackSpeed>1.5</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.4"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_taijijian01</ModPath>
+		</Equip>
+	</Item>
+	<ProduceMode>
+		<ProduceBuildings>
+		  <li>
+			<Building>WeaponMaker</Building>
+			<Count>1</Count>
+		  </li>
+		</ProduceBuildings>
+	</ProduceMode>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XuanTianShangDiPai" Parent="ToolBase">
+	<ThingName>玄天上帝圣牌</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object_WuDangDLC\object_xuantianshangdishengpai01</TexPath>
+	<Desc>铭刻有玄天上帝圣号的挂牌，佩戴可以获得玄天上帝的庇佑，提高机缘与心境。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Frags>			
+		<li Frag="Wander" />
+	</Frags>		
+
+	<Item Kind="Equipment">
+		<FabaoSuffix>牌</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>1800</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_Cinnabar" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun6</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_WuQiNoHunger2" Parent="DanBase">
+		<ThingName>五气辟谷丹</ThingName>
+		<TexPath>res\Sprs\object_WuDangDLC\object_wuqipiguwan01</TexPath>
+		<Desc>武当山秘传的辟谷丹药。相比普通的辟谷丹，药效更长，足有三十日之多。</Desc>	
+		<Tags>
+			<Tag Name="Food" Level="3"/>
+			<Tag Name="DiscipleFood" Level="3"/>
+			<Tag Name="Item_Dan_WuQiNoHunger2" Level="1"/>
+		</Tags>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="25"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="50" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>50</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_NoHunger3</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "30"/>
+					<Item name = "Item_Mint" count = "5"/>
+					<Item name = "Item_RedGinseng" count = "5"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "5"/>
+					<Item name = "Item_WuDang_HuangJing" count = "5"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_SanHuaHuangJing" Parent="DanBase">
+		<ThingName>三花黄精丸</ThingName>
+		<TexPath>res\Sprs\object_WuDangDLC\object_sanhuahuangjingwan01</TexPath>
+		<Desc>武当山秘传的丹药。服用可固定提高灵气上限。此药虽然对修为高深的修士而言比较鸡肋，但十分适合为刚入门的弟子打基础。多次服用，药效会大大降低。</Desc>	
+		<Tags>
+			<Tag Name="Item_Dan_SanHuaHuangJing" Level="1"/>
+		</Tags>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="75"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="250" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Modifier_Item_SanHuaHuangJing</Modifier>
+				<Fesistance>0.1</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_WuDang_HuangJingFen" count = "30"/>
+					<Item name = "Item_CopperGrit" count = "9"/>
+					<Item name = "Item_SilverGrit" count = "9"/>
+					<Item name = "Item_EarthEssence" count = "3"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>7</Value>   
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_MiBao_ZhenWuDangMoShenJian" Parent="MiBaoBase">
+	<ThingName>真武荡魔神剑</ThingName>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>	
+	<FabaoTexPath>res\Sprs\object_WuDangDLC\object_zhenwudangmoshenjian01</FabaoTexPath>	
+	<Desc>真武大帝又称荡魔天尊，此剑正是其持以扫除群魔的至宝。剑长二尺七寸，剑身为玉石淬炼而成，又在其中炼入荡魔真法，因此剑身散发浩然之光。一旦御出便会化为丈长的雷霆霹雳，无物不催。</Desc>
+	<ElementKind>Mu</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Hard2</li>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_ExtremeJade" count = "6"/>
+				<Item name = "Item_JadeEssence" count = "36"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此物并击杀元神妖蛇1只" needcount = "1" lParam = "God" oParam = "JYSnake"/>
+			    <Condition eventid = "KillCount" des = "携带此物并击杀元神妖狼1只" needcount = "1" lParam = "God" oParam = "JYWolf"/>
+			    <Condition eventid = "KillCount" des = "携带此物并击杀元神妖熊1只" needcount = "1" lParam = "God" oParam = "JYBear"/>
+			    <Condition eventid = "KillCount" des = "携带此物并击杀元神妖龟1只" needcount = "1" lParam = "God" oParam = "JYTurtle"/>
+			    <Condition eventid = "KillCount" des = "携带此物并击杀元神妖猪1只" needcount = "1" lParam = "God" oParam = "JYBoar"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			    <Ability Kind="NotRaceDamageUp" sParam1="Human" fParam1="2" Desc="攻击异族（非人族）可以造成3倍伤害。"/>
+			    <Ability Kind="RaceEquipDamageUp" sParam1="Human" fParam1="2" Desc="人族装备可以造成3倍伤害。"/>
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_MiBao_ZiXiaoChi" Parent="MiBaoBase">
+	<ThingName>紫霄尺</ThingName>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTchi01</TexPath>	
+	<FabaoTexPath>res\Sprs\object_WuDangDLC\object_zixiaochi01</FabaoTexPath>	
+	<Desc>武当派所传秘宝，以完整的天柱石雕刻尺身，又将7枚天劫之息以北斗之势炼为尺上云纹刻度，再经7次天劫磨炼而成。一旦练成便可借天道之力丈量众生功业。</Desc>
+	<ElementKind>Mu</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_SkyStone" count = "1"/>
+				<Item name = "Item_ThunderAir" count = "7"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "BrokenNeck" des = "携带宝物度过7次飞升天劫" needcount = "7" lParam = "God2" />
+			</ActiveCondition>
+			<SpecialAbility>
+			    <Ability Kind="DaohangDamageUp" fParam1="0.01" Desc="每次攻击基于双方道行的差造成伤害。每1点道行差提高1%的伤害。 "/>
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Fish_SkySnake" Parent="MeatBase">
+		<ThingName>云鳝</ThingName>
+		<Desc>在云海中特有的鳝鱼。肉质轻盈，好似空气一般，其实是因为其体内充满灵气。</Desc>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_yuD12</TexPath>
+		<MaxStack>500</MaxStack>
+		<MaxHitPoints>300</MaxHitPoints>
+		<TexScale>0.5</TexScale>
+		<Flammability>
+			<Flammability>0.1</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>0</BurningPoint>
+		</Flammability>
+		<Color>#4169E1FF</Color>
+		<Tags>
+			<Tag Name="FishFish"/>
+		</Tags>
+		
+		<Item label="Meat">
+			<Fish>
+				<BaseWeight>0.5</BaseWeight>
+				<LevelAmp>0</LevelAmp>
+				<Weight>3</Weight>
+				<Season>None</Season>
+				<RodElement>None</RodElement>
+				<NeedWeather></NeedWeather>
+				<WaterName>
+					<li>DepthWater</li>
+					<li>DepthDepthWater</li>
+					<li>ShallowWater</li>
+					<li>YunHai</li>
+				</WaterName>
+				<MapName>
+					<li>Place_WuDang_Taizipo</li>
+					<li>Place_WuDang_NanYanGong</li>
+					<li>Place_WuDang_JinDing</li>
+				</MapName>
+			 </Fish>
+			 <NotRandom>1</NotRandom>
+			 <PhysicalLables>
+				<li>Light1</li>
+				<li>LowDensity1</li>
+				<li>Blunt</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>0</EatDirectable>
+				<Nutrition>30</Nutrition>
+				<FunAddion>5</FunAddion>
+			</Food>
+			<Rot>
+				<RotSpeed>0.003</RotSpeed>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<NotRandom>1</NotRandom>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>25</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>糜,鱼,刺</FabaoSuffix>
+			<Elixir>
+				<Ling>500</Ling>
+			</Elixir>
+		</Item>
+		<Rate>3</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<IllustratedHandLabel>Fish</IllustratedHandLabel>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Fish_SkyFish" Parent="Fish_SkySnake">
+		<ThingName>夜鲤</ThingName>
+		<Desc>在云里生活的鲤鱼，只有晚上才会出没。</Desc>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_yuB08</TexPath>
+		<Color>#483D8BC6</Color>
+		<Item label="Meat">
+			<Fish>
+				<BaseWeight>5</BaseWeight>
+				<LevelAmp>0.1</LevelAmp>
+				<Weight>1.5</Weight>
+				<Season>None</Season>
+				<RodElement>None</RodElement>
+				<NeedWeather></NeedWeather>
+				<FishTimes>
+					<li>19-24</li>
+					<li>0-5</li>
+				</FishTimes>
+				<WaterName>
+					<li>DepthWater</li>
+					<li>DepthDepthWater</li>
+					<li>ShallowWater</li>
+					<li>YunHai</li>
+				</WaterName>
+				<MapName>
+					<li>Place_WuDang_Taizipo</li>
+					<li>Place_WuDang_NanYanGong</li>
+					<li>Place_WuDang_JinDing</li>
+				</MapName>
+			 </Fish>
+			 <NotRandom>1</NotRandom>
+			 <PhysicalLables>
+				<li>Hard1</li>
+				<li>LowDensity1</li>
+				<li>Blunt</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>1000</Ling>
+			</Elixir>
+		</Item>
+		<ElementKind>None</ElementKind>
+		<Rate>6</Rate>
+		<Beauty>10</Beauty>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Fish_SkyCrab" Parent="Fish_SkySnake">
+		<ThingName>金螯</ThingName>
+		<Desc>在云海生活的螃蟹，其身体坚硬无比，据说它们以云中的闪电为食。</Desc>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_pangxie03</TexPath>
+		<Color>#FFD700FF</Color>
+		<Item label="Meat">
+			<Fish>
+				<BaseWeight>10</BaseWeight>
+				<LevelAmp>0.1</LevelAmp>
+				<Weight>0.1</Weight>
+				<RodElement>Jin</RodElement>
+				<Season>Summer</Season>
+				<NeedWeather></NeedWeather>
+				<WaterName>
+					<li>DepthWater</li>
+					<li>DepthDepthWater</li>
+					<li>ShallowWater</li>
+					<li>YunHai</li>
+				</WaterName>
+				<MapName>
+					<li>Place_WuDang_Taizipo</li>
+					<li>Place_WuDang_NanYanGong</li>
+					<li>Place_WuDang_JinDing</li>
+				</MapName>
+				<Precious>1</Precious>
+			 </Fish>
+			 <NotRandom>1</NotRandom>
+			 <PhysicalLables>
+				<li>Hard2</li>
+				<li>LowDensity1</li>
+				<li>Blunt</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>10000</Ling>
+				<Modifier>Modifier_JinFish</Modifier>
+			</Elixir>
+		</Item>
+		<Rate>9</Rate>
+		<Beauty>15</Beauty>
+		<ElementKind>Jin</ElementKind>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XuanWuEgg" Parent="Item_BossFeng_FengYin">
+		<ThingName>玄武灵玉</ThingName>
+		<ElementKind>None</ElementKind>
+		<StoryBnts>
+			<li Name="查看" Desc="查看玄武灵玉。" Appoint="2" Story="Ls_CallXuanWu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Desc>武当派赠送的灵玉，似乎是一套物品中的一件。</Desc>
+		<TexPath>res\Sprs\object_WuDangDLC\object_xuanwuneidan03</TexPath>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Wonder_ZhenWuShenNian" Parent="MiBaoBase">
+	<ThingName>真武灵引</ThingName>
+	<TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>	
+	<Desc>真武大帝一丝灵引，可以据此建造真武大帝雕像。</Desc>
+	<Beauty>15</Beauty>
+	<Rate>12</Rate>
+	<ElementKind>None</ElementKind>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item Lable="Other">
+		<!-- <DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="9" Rate="1"/>
+		</DevourDatas>  -->
+	</Item>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

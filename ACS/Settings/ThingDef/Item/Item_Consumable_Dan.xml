@@ -1,0 +1,3916 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="DanBase" Parent="DrugBase">
+		<MaxStack>100</MaxStack>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>Desc.</Desc>	
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>6</Rate>
+		<Beauty>8</Beauty>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="300" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>珠,丸,球</FabaoSuffix>
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+			</DevourDatas> 	
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>5</Value>         
+			<Radius>2</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Light>
+			<Value>15</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>1</Radius>
+			<Color>62F8FFFF</Color>
+		</Light>	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BasePracticeDrug" Parent="DanBase">
+		<ThingName>筑基丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>仙家修行者炼制的丹药，可调节体内五气，激活身体潜力，在二十四个时辰内暂时提高神识，根骨，悟性各3成。外门弟子服用则可以极大的促进筑基进度。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<ZhuJi>25000</ZhuJi>
+				<Modifier>Dan_BasePracticeDrug</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "5"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_JingYuan" Parent="DanBase">
+		<ThingName>精元丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>在7天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>	
+		<Tags>
+			<Tag Name="PracticeFood" Level="2"/>
+		</Tags>
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="75"/>
+					<SalePrice Value="15" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="25" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Modifier_Dan_JingYuan</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "25"/>
+					<Item name = "Item_LingStone" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_JingYuan2" Parent="DanBase">
+		<ThingName>参芝九窍丸</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao01</TexPath>
+		<Desc>在14天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>	
+		<Tags>
+			<Tag Name="PracticeFood" Level="3"/>
+		</Tags>
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="100"/>
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="150" />
+					<SalePrice Value="30" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Modifier_Dan_JingYuan2</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Ginseng" count = "25"/>
+					<Item name = "Item_GanodermaLucidum" count = "25"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_JingYuan3" Parent="DanBase">
+		<ThingName>血竭散</ThingName>
+		<TexPath>res\Sprs\object\object_HemostaticDrug04</TexPath>
+		<Desc>在28天之内提高身体产生精元的能力，增加饱食度消耗速度，提高精元转化率。</Desc>	
+		<Tags>
+			<Tag Name="PracticeFood" Level="4"/>
+		</Tags>
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Modifier_Dan_JingYuan3</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MonsterBlood" count = "7"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Ling" Parent="DanBase">
+		<ThingName>聚灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>富含灵气的丹药，服用可以恢复3000灵气，并在6个时辰内加速灵气恢复。一般结丹期以上才能服用，否则可能会承受不住药性受伤，甚至死亡。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>25</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Ling1</Modifier>
+				<Ling>3000</Ling>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "30"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Ling2" Parent="DanBase">
+		<ThingName>紫阳丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao06</TexPath>
+		<Desc>通体深紫的丹丸，服用可恢复大量灵气，并提升灵气上限。多次服用下，提升灵气上限的效果会慢慢降低。金丹期以上才能服用，否则可能会承受不住药性受伤，甚至死亡。</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>200000</Ling>
+				<Modifier>Dan_Ling2</Modifier>
+				<Fesistance>0.75</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Item_EarthEssence" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>8</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_PracticeRate" Parent="DanBase">
+		<ThingName>黄庭丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao04</TexPath>
+		<Desc>以琅琊果，清心草练成的丹药，能使人神思如电，此时瓶颈突破概率提高一倍，持续二十四个时辰。多次服用下，其药效会慢慢降低。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_PracticeRate</Modifier>
+				<Fesistance>0.95</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_Mint" count = "60"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>5</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_PracticeSpeed" Parent="DanBase">
+		<ThingName>黄芽丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao02</TexPath>
+		<Desc>以朱果炼制的丹药，可以提高修炼速度三成，持续十二个时辰.</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_PracticeSpeed</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_HuoEssence" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>5</Value>   
+		</Element>
+		<Tags>
+			<Tag Name="Dan_PracticeSpeed" Level="1"/>
+		</Tags>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CalmDown" Parent="DanBase">
+		<ThingName>清心丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao07</TexPath>
+		<Desc>以清心草，寒晶砂炼成的丹药，能稳定心境。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>25</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_CalmDown</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SilverGrit" count = "3"/>
+					<Item name = "Item_Mint" count = "25"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+		<Tags>
+			<Tag Name="Dan_CalmDown" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Happiness" Parent="DanBase">
+		<ThingName>极乐丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao06</TexPath>
+		<Desc>可以在两天内感到快乐的丹药，但是吃了之后会做事效率会降低五成。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_Happiness</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "15"/>
+					<Item name = "Item_Mint" count = "15"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+		<Tags>
+			<Tag Name="Dan_Happiness" Level="1"/>
+		</Tags>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_NoHunger" Parent="DanBase">
+		<ThingName>饮气丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>食用饮气丹，在两天之内获得饮气能力，自动回复饮食度。</Desc>	
+		<Tags>
+			<Tag Name="Food" Level="3"/>
+			<Tag Name="DiscipleFood" Level="20"/>
+		</Tags>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>50</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_NoHunger</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "25"/>
+					<Item name = "Item_LingStone" count = "15"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_NoHunger2" Parent="DanBase">
+		<ThingName>辟谷丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao01</TexPath>
+		<Desc>食用辟谷丹，在两天之内不会饥饿。</Desc>	
+		<Tags>
+			<Tag Name="Food" Level="3"/>
+			<Tag Name="DiscipleFood" Level="3"/>
+		</Tags>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>50</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_NoHunger2</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "15"/>
+					<Item name = "Item_Ginseng" count = "3"/>
+					<Item name = "Item_GanodermaLucidum" count = "3"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_NoHunger1" Parent="DanBase">
+		<ThingName>兵粮丸</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>服用后可以补充营养，并降低饥饿速度和疲劳速度，持续两天。</Desc>	
+		<Tags>
+			<Tag Name="Food" Level="3"/>
+			<Tag Name="DiscipleFood" Level="3"/>
+		</Tags>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>50</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_NoHunger1</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Fruit" count = "3"/>
+					<Item name = "Item_Ginkgo" count = "9"/>
+					<Item name = "Item_Healroot" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_LostSoul" Parent="DanBase">
+		<ThingName>摄神丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao04</TexPath>
+		<Desc>很基础的金石丹方，服用后会抑制大脑活性，使之陷入昏迷之中三天三夜。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_LostSoul</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SilverGrit" count = "9"/>
+					<Item name = "Item_CopperGrit" count = "9"/>
+					<Item name = "Item_Cinnabar" count = "9"/>
+					<Item name = "Item_MagicHerb" count = "27"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_DredgeQi1" Parent="DanBase">
+		<ThingName>通脉散</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao05</TexPath>
+		<Desc>以人参芝草调配的药粉，可通经活脉，治愈标有“灵”类型的伤。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Ling</li>
+				</RecoveryLable>
+				<RecoveryValue>1</RecoveryValue>
+				<RecoveryDuration>4</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Ginseng" count = "7"/>
+					<Item name = "Item_GanodermaLucidum" count = "7"/>
+					<Item name = "Item_Mint" count = "7"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			</DevourDatas> 	
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>6</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_DredgeQi" Parent="DanBase">
+		<ThingName>理气丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao02</TexPath>
+		<Desc>可以理顺体内杂乱之气的丹药，可有效治愈标有“灵”类型的伤。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Ling</li>
+				</RecoveryLable>
+				<RecoveryValue>2</RecoveryValue>
+				<RecoveryDuration>2</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_StoneEssence" count = "2"/>
+					<Item name = "Item_MagicHerb" count = "6"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			</DevourDatas> 	
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>6</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_WuLingSan" Parent="DanBase">
+		<ThingName>五灵散</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao01</TexPath>
+		<Desc>可以化解标有“金”“木”“水”“火”“土”类型的内门伤势，但是效果较慢。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Jin</li>
+					<li>Mu</li>
+					<li>Shui</li>
+					<li>Huo</li>
+					<li>Tu</li>
+				</RecoveryLable>
+				<RecoveryValue>0.5</RecoveryValue>
+				<RecoveryDuration>4</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MagicHerb" count = "5"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			</DevourDatas> 	
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureJinDamage" Parent="DanBase">
+		<ThingName>庚金万化丸</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>瞬间化解标有“木”类型的内门伤害。</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Mu</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 	
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>12</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureMuDamage" Parent="DanBase">
+		<ThingName>碧春丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao07</TexPath>
+		<Desc>瞬间化解标有“土”类型的内门伤害。</Desc>		
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Tu</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>12</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureShuiDamage" Parent="DanBase">
+		<ThingName>天一承气散</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao03</TexPath>
+		<Desc>瞬间化解标有“火”类型的内门伤害。</Desc>		
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Huo</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>12</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureHuoDamage" Parent="DanBase">
+		<ThingName>火真丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>瞬间化解标有“金”类型的内门伤害。</Desc>			
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Jin</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>12</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureTuDamage" Parent="DanBase">
+		<ThingName>定坤丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao02</TexPath>
+		<Desc>瞬间化解标有“水”类型的内门伤害。</Desc>			
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Shui</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_TuEssence" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>12</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_CureFiveElementDamage" Parent="DanBase">
+		<ThingName>五方化伤丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao03</TexPath>
+		<Desc>可以化解标有“金”“木”“水”“火”“土”类型的内门伤势，疗效较快。</Desc>		
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Jin</li>
+					<li>Mu</li>
+					<li>Shui</li>
+					<li>Huo</li>
+					<li>Tu</li>
+				</RecoveryLable>
+				<RecoveryValue>2</RecoveryValue>
+				<RecoveryDuration>2</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_RedGinseng" count = "3"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "3"/>
+					<Item name = "Item_MagicHerb" count = "60"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Restore" Parent="DanBase">
+		<ThingName>归源散</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao02</TexPath>
+		<Desc>激发身体的潜能，可以修复大部分肌体残留的老旧伤痕。.</Desc>		
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>10</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>OldScar</li>
+				</RecoveryLable>
+				<RecoveryValue>2</RecoveryValue>
+				<RecoveryDuration>2</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_RedGinseng" count = "3"/>
+					<Item name = "Item_MagicHerb" count = "75"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>6</Value> 
+		</Element>
+	</ThingDef>
+	<!--<ThingDef Type="Item" Name="Item_Dan_Insect" Parent="DrugBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>灭蛊丹</ThingName>
+		<TexPath>res\Sprs\object\object_plaster</TexPath>
+		<Desc>驱除因蛊虫入体而造成的伤害.</Desc>	
+		<Rate>10</Rate>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Poison</li>
+				</RecoveryLable>
+				<RecoveryValue>2</RecoveryValue>
+				<RecoveryDuration>2</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_CopperGrit" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "2"/>
+					<Item name = "Item_MagicHerb" count = "5"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+	</ThingDef>-->
+	<ThingDef Type="Item" Name="Item_Dan_ExtremeLofty" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>造化神丹</ThingName>
+		<TexPath>res\Sprs\object\object_HULUdanyao01</TexPath>
+		<Desc>夺天地造化的神丹，只要还有一口气在，就可以从阎王手中拉回来。（弥留不可用）</Desc>	
+		<Rate>10</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="600" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="600" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<RecoveryLable>
+					<li>Dfood</li>
+					<li>None</li>
+					<li>OldScar</li>
+					<li>Jin</li>
+					<li>Mu</li>
+					<li>Shui</li>
+					<li>Huo</li>
+					<li>Tu</li>
+					<li>Ling</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>1000</WorkToMake>
+				<CostItems>
+					<Item name = "Item_EarthEssence" count = "3"/>
+					<Item name = "Item_ExtremeJade" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "150"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Ling>
+			<AddionLing>90</AddionLing>
+		</Ling>
+		<Light>
+			<Value>10</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>3</Radius>
+			<Color>FFAE00FF</Color>
+		</Light>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>8</Value> 
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_HundredRefine" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>九转金丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao04</TexPath>
+		<Desc>道门的无上神丹，只有初次服用有效，可以让修为大进，但是要金丹期才能服用，否则会承受不住药效而受伤甚至死亡。</Desc>		
+		<Rate>10</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="600" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="600" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>10000</Ling>
+				<Modifier>Dan_HundredRefine</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>1000</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "9"/>
+					<Item name = "Item_Cinnabar" count = "9"/>
+					<Item name = "Item_ExtremeJade" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "150"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Ling>
+			<AddionLing>90</AddionLing>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>8</Value> 
+		</Element>
+		<Light>
+			<Value>10</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>F1FF00FF</Color>
+		</Light>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>长生丹</ThingName>
+		<TexPath>res\Sprs\object\object_HULUdanyao03</TexPath>
+		<Desc>可以延寿三甲子的丹药，只有第一次服用有全效，之后药效会大打折扣。</Desc>	
+		<Rate>7</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseLife1</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "9"/>
+					<Item name = "Item_MagicHerb" count = "125"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>6</Value> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife2" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>玄牝续命散</ThingName>
+		<TexPath>res\Sprs\object\object_guanyinsoil02</TexPath>
+		<Desc>可以延寿两百年的丹药，只有第一次服用有全效，之后药效会大打折扣。</Desc>	
+		<Rate>8</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseLife2</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "1"/>
+					<Item name = "Item_MonsterBlood" count = "7"/>
+					<Item name = "Item_RedGinseng" count = "12"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "12"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>8</Value> 
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife3" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>五极灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_HULUdanyao04</TexPath>
+		<Desc>服用可延寿五百年，并提升五维1成。只有第一次服用有全效，之后药效会大打折扣。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseLife3</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>3</Radius>
+			<Color>FFFFFFFF</Color>
+		</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife4" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>再造金丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao01</TexPath>
+		<Desc>可以延寿二百五十六年的丹药，只有第一次服用有全效，之后药效会大打折扣。</Desc>
+		<Rate>8</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="100" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseLife4</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_ExtremeJade" count = "1"/>
+					<Item name = "Item_MagicHerb" count = "150"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>8</Value> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife5" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>未来星宿化劫丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao03</TexPath>
+		<Desc>可以延寿四百九十年的丹药，并能将天劫天召推迟四十九天。只有第一次服用有全效，之后药效会大打折扣。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseLife5</Modifier>
+				<Fesistance>0.2</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_StarEssence" count = "1"/>
+					<Item name = "Item_SilverGrit" count = "8"/>
+					<Item name = "Item_CopperGrit" count = "8"/>
+					<Item name = "Item_LingCrystal" count = "12"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value> 
+		</Element>
+		<Light>
+			<Value>20</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>006BFFFF</Color>
+		</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseNeckCountdown1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>乾元避劫丹</ThingName>
+		<TexPath>res\Sprs\object\object_HULUdanyao02</TexPath>
+		<Desc>能将天劫天召推迟一百零八天的丹药。只有第一次服用有全效，之后效果会渐渐降低。</Desc>	
+		<Rate>8</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseNeckCountdown1</Modifier>
+				<Fesistance>0.75</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "108"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseNeckCountdown2" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>碧血丹青</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao07</TexPath>
+		<Desc>以九颗玄牝珠中的妖兽魂灵为掩护，遮蔽天机，可将天劫天召推迟二十七天。可多次服用。</Desc>	
+		<Rate>7</Rate>	
+		<Beauty>8</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>4</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_IncreaseNeckCountdown2</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "9"/>
+					<Item name = "Item_MonsterBlood" count = "36"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "81"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value> 
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_SwordBall" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>剑丸</ThingName>
+		<TexPath>res\Sprs\object\object_jianwan01</TexPath>
+		<Desc>七杀剑诀记载的丹丸，可在丹炉以五金之精凝练而成。绝对不可以吞服。</Desc>	
+		<Rate>7</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard2</li>
+				<li>HighDensity2</li>
+				<li>Heavy2</li>
+				<li>GreatThing_Attack</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Damages>
+					<li PartName="TheWholeBody" Name="SwordBallDamage" Rate="1"/>
+				</Damages>
+			</Food>
+			<BeMade>
+				<WorkToMake>1200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_IronRock" count = "99"/>
+					<Item name = "Item_CopperRock" count = "99"/>
+					<Item name = "Item_SilverRock" count = "99"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>12</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>18</Value>         
+			<Radius>2</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Light>
+			<Value>50</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>3</Radius>
+			<Color>255</Color>
+		</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Defense" Parent="DanBase">
+		<ThingName>真罡丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao02</TexPath>
+		<Desc>服用后可在十二个时辰内增强护体真气的强度。</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="30" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_Defense</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JadeEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "36"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Ling3" Parent="DanBase">
+		<ThingName>万灵散</ThingName>
+		<TexPath>res\Sprs\object\object_FENdanyao04</TexPath>
+		<Desc>服用后可恢复300000点灵气，并在二十四个时辰内增强灵气最大值100000点。如果服用者修为太低，可能导致气海爆裂而死亡。</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Modifier>Dan_Ling3</Modifier>
+				<Ling>300000</Ling>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Item_MonsterBlood" count = "5"/>
+					<Item name = "Item_MagicHerb" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_FiveBase1" Parent="DanBase">
+		<ThingName>通天丸</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>服用后激活元气，可在二十四个时辰内增强神识3成。但也会因此折寿3年。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBase1</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "3"/>
+					<Item name = "Item_SilverGrit" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_FiveBase2" Parent="DanBase">
+		<ThingName>纳地丸</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>服用后激活元气，可在二十四个时辰内增强根骨3成。但也会因此折寿3年。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBase2</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "3"/>
+					<Item name = "Item_MagicHerb" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_FiveBase3" Parent="DanBase">
+		<ThingName>逸仙丸</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>服用后激活元气，可在二十四个时辰内增强魅力3成。但也会因此折寿3年。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBase3</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "3"/>
+					<Item name = "Item_CopperGrit" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_FiveBase4" Parent="DanBase">
+		<ThingName>明通丸</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>服用后激活元气，可在二十四个时辰内增强悟性3成。但也会因此折寿3年。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBase4</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "3"/>
+					<Item name = "Item_Mint" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_FiveBase5" Parent="DanBase">
+		<ThingName>神佑丸</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao04</TexPath>
+		<Desc>服用后激活元气，可在二十四个时辰内增强机缘3成。但也会因此折寿3年。</Desc>	
+		<Rate>7</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBase5</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LifeStream" count = "1"/>
+					<Item name = "Item_Cinnabar" count = "3"/>
+					<Item name = "Item_GanodermaLucidum" count = "125"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FiveBaseFromLife" Parent="DanBase">
+		<ThingName>五毒五炁元神丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao06</TexPath>
+		<Desc>服用后激发元气，五维属性提高1成。但也会因此折寿一甲子。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Nutrition>0</Nutrition>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_FiveBaseFromLife</Modifier>
+				<Fesistance>0.5</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "1"/>
+					<Item name = "Item_MonsterBlood" count = "3"/>
+					<Item name = "Item_RedGinseng" count = "27"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "27"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>1</Radius>
+			<Color>FF00EDFF</Color>
+		</Light>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_Fail1" Parent="DanBase">
+		<ThingName>炼毁的丹药</ThingName>
+		<TexPath>res\Sprs\object\object_plaster03</TexPath>
+		<Desc>炼制失败的丹药残渣，其中有奇特的力量在涌动，吃下去不知道会发生什么事。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>4</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="750" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Fail1</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Fail2" Parent="DanBase">
+		<ThingName>炼毁的丹药</ThingName>
+		<TexPath>res\Sprs\object\object_plaster03</TexPath>
+		<Desc>炼制失败的丹药残渣，其中有奇特的力量在涌动，吃下去不知道会发生什么事。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>4</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="750" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Fail2</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Fail3" Parent="DanBase">
+		<ThingName>炼毁的丹药</ThingName>
+		<TexPath>res\Sprs\object\object_plaster03</TexPath>
+		<Desc>炼制失败的丹药残渣，其中有奇特的力量在涌动，吃下去不知道会发生什么事。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>4</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="750" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Fail3</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Fail4" Parent="DanBase">
+		<ThingName>炼毁的丹药</ThingName>
+		<TexPath>res\Sprs\object\object_plaster03</TexPath>
+		<Desc>炼制失败的丹药，似乎过分吸收了丹炉中的真火之力，可以让食用者五内俱焚，而且会有损寿元。但如若从这种伤势中活下来，也许会获得一些好处。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>4</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Fail4</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Fail5" Parent="DanBase">
+		<ThingName>炼毁的丹药</ThingName>
+		<TexPath>res\Sprs\object\object_plaster03</TexPath>
+		<Desc>炼制失败的丹药残渣，其中有奇特的力量在涌动，吃下去不知道会发生什么事。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>4</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="750" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Fail5</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_TreeEXP" Parent="DanBase">
+		<ThingName>天道神丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>蕴含诸天造化的神丹，服用可感受大道运转并从中获得参悟。获得参悟的多少根据服用者悟性与服用时的心境决定。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<NoElementKind>1</NoElementKind>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>LowDensity1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<TreeExp>150000</TreeExp>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ThunderAir" count = "1"/>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Thin" Parent="DanBase">
+		<ThingName>塑身丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以让角色体型变瘦。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<BodyType>-1</BodyType>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SilverGrit" count = "1"/>
+					<Item name = "Item_LingStone" count = "9"/>
+					<Item name = "Item_Mint" count = "49"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FaceLock" Parent="DanBase">
+		<ThingName>定颜丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以让角色的当前容颜锁定。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<ZhuYan>1</ZhuYan>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cinnabar" count = "1"/>
+					<Item name = "Item_LingStone" count = "9"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_FaceUnLock" Parent="DanBase">
+		<ThingName>真容丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以让角色的容貌回归真实。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<ZhuYan>2</ZhuYan>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cinnabar" count = "1"/>
+					<Item name = "Item_LingStone" count = "9"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FaceLock1" Parent="Item_Dan_FaceLock">
+		<ThingName>童颜丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以将容貌塑造为童子时天真无邪的样子。</Desc>	
+		<Item Lable="Dan">
+			<Elixir>
+				<ZhuYan>10</ZhuYan>
+			</Elixir>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_FaceLock2" Parent="Item_Dan_FaceLock">
+		<ThingName>盛颜丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以将容貌塑造为成年时意气风发的样子。</Desc>	
+		<Item Lable="Dan">
+			<Elixir>
+				<ZhuYan>12</ZhuYan>
+			</Elixir>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_FaceLock3" Parent="Item_Dan_FaceLock">
+		<ThingName>苍颜丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以将容貌塑造为老年时沧桑深邃的样子。</Desc>	
+		<Item Lable="Dan">
+			<Elixir>
+				<ZhuYan>13</ZhuYan>
+			</Elixir>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Fat" Parent="DanBase">
+		<ThingName>壮体丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>仙家修行者炼制的丹药，服用可以让角色体型变胖。</Desc>	
+		<Rate>6</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<BodyType>1</BodyType>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_CopperGrit" count = "1"/>
+					<Item name = "Item_LingStone" count = "9"/>
+					<Item name = "Item_MagicHerb" count = "49"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_Soul1" Parent="DanBase">
+		<ThingName>神泣丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>以幽珀为引炼制的丹药，服用可以获得参悟，但其药性阴寒，会损9年寿元。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<TreeExp>10000</TreeExp>
+				<Modifier>Dan_Soul1</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulCrystalYou" count = "1"/>
+					<Item name = "Item_LingStone" count = "81"/>
+					<Item name = "Item_MagicHerb" count = "81"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Soul2" Parent="DanBase">
+		<ThingName>通玄丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>以灵珀为引炼制的丹药，服用可以获得参悟，但其药性猛烈，服用会有损气海，从根本上降低10点灵气值。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<TreeExp>10000</TreeExp>
+				<Modifier>Dan_Soul2</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulCrystalLing" count = "1"/>
+					<Item name = "Item_LingStone" count = "81"/>
+					<Item name = "Item_Mint" count = "81"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Soul3" Parent="DanBase">
+		<ThingName>凝珀丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>以宁珀为引凝练成的丹药，服用可以获得参悟。随着服用次数增多，药效会逐渐增强。然而服用者会因被残余的混乱神识冲击，损伤大脑。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>25</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<TreeExp>3000</TreeExp>
+				<Modifier>Dan_Soul3</Modifier>
+				<Fesistance>1.5</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulCrystalNing" count = "9"/>
+					<Item name = "Item_LingStone" count = "81"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Dan_Soul4" Parent="DanBase">
+		<ThingName>燃魂丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao05</TexPath>
+		<Desc>以宁珀为引练成的丹药，服用可以燃烧百年寿命，在一个时辰内获取超凡的智慧，极大的提高参悟获取效率。但在药效后会严重伤害神智，永久降低2成悟性。此丹药效会随服用次数而逐渐降低。</Desc>	
+		<Rate>9</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="300" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Dan_Soul4</Modifier>
+				<Fesistance>0.75</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>270</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulCrystalNing" count = "49"/>
+					<Item name = "Item_LingCrystal" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_LunHui1" Parent="DanBase">
+		<ThingName>封印的记忆：星途闪耀</ThingName>
+		<TexPath>res\Sprs\object\object_youpo</TexPath>
+		<Desc>服用后可以从这段记忆中获取参悟值，并被其感动。\n[color=#D06508]以此感谢逍遥散人《星途闪耀》系列视频给与我欢乐和力量！[/color]</Desc>	
+		<HideInOtherWorld>1</HideInOtherWorld>
+		<Rate>9</Rate>
+		<Beauty>8</Beauty>
+		<ElementKind>Shui</ElementKind>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>6</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="100"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<TreeExp>2000</TreeExp>
+				<Modifier>Dan_LunHui1</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_ReBorn" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>玄牝重生丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>以珀为引，借玄牝珠之神效炼成的丹药。服用后可以重归凡人之身，再造身躯。哪怕弥留之际，也能救回一条性命。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>10</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<Reborn>1</Reborn>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "1"/>
+					<Item name = "Item_SoulCrystalLing" count = "3"/>
+					<Item name = "Item_SoulCrystalYou" count = "3"/>
+					<Item name = "Item_SoulCrystalNing" count = "9"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="3" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="5" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>9</Value> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_ReBorn_4" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>六道轮回丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>以轮回之力炼制的神丹，服用可以重回凡人之身，再造身躯，并保留全部参悟。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<Reborn>4</Reborn>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>2400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "9"/>
+					<Item name = "Item_SoulCrystalLing" count = "25"/>
+					<Item name = "Item_SoulCrystalYou" count = "25"/>
+					<Item name = "Item_SoulCrystalNing" count = "49"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="3" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="5" Rate="0.25"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>9</Value> 
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_LingYuanZhong" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>灵源种</ThingName>
+		<TexPath>res\Sprs\object\object_lingyuanzhong01</TexPath>
+		<Desc>以秘法将五行神药与造化玉籽合练而成的至宝，妙用无穷。埋在地下中可自动化作灵脉延展，缓慢将周围地块造化为灵土或灵水。佩戴则可以寒暑不侵，遮蔽天道，降低道行。服用可以大幅从根本上提高灵气最大值。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingYuanZhong</Modifier>
+			</Elixir>
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ZaoHuaYuZi" count = "1"/>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<!-- 
+			<LingPlantName>TreePear</LingPlantName>
+			-->
+		</Item>
+		<StoryBnts>
+			<li Name="埋下" Desc="将此物埋在地下。" Script="world:CastMagic(bind,'Other_BuryObject','res/Sprs/ui/icon_hand')" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_LingYuanSha" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>造化玉砂</ThingName>
+		<TexPath>res\Sprs\object\object_HemostaticDrug05</TexPath>
+		<Desc>以秘法将造化玉籽炼化为砂。虽然其灵效减少，但却可以之为媒介多次施展神通，造化沃土。</Desc>	
+		<Rate>11</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>沙,砂,尘,粉,瘴</FabaoSuffix>
+			<PhysicalLables>
+				<li>Gravel</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>1000000</Ling>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ZaoHuaYuZi" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="3" Rate="0.5"/>
+				<li Name="Item_BodyPractice_XianDaoJingHua" Count="5" Rate="0.25"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.05"/>
+			</DevourDatas> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_LongDan1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>龙魂真灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_longhunzhenlingdan01</TexPath>
+		<Desc>以真龙元神炼制而出的灵丹，服用可将其炼化为一道分神，额外驾驭一件法宝。只有第一次服用有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<GodSoulCount>1</GodSoulCount>
+				<Modifier>Modifier_Item_Dan_FabaoNumAdd</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>5400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_BossLong_NiLin" count = "1"/>
+					<Item name = "Item_BossLong_Jiao" count = "1"/>
+					<Item name = "Item_BossLong_Jing" count = "1"/>
+					<Item name = "Item_BossLong_Zhua" count = "4"/>
+					<Item name = "Item_BossLong_Lin" count = "36"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FengDan1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>凤魂真灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_fenghunzhenlingdan01</TexPath>
+		<Desc>以凶凤元神炼制而成的灵丹，服用可将其炼化为一道分神，额外驾驭一件法宝。只有第一次服用有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<GodSoulCount>1</GodSoulCount>
+				<Modifier>Modifier_Item_Dan_FabaoNumAdd</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>5400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_BossFeng_HongYu" count = "1"/>
+					<Item name = "Item_BossFeng_WeiYu" count = "1"/>
+					<Item name = "Item_BossFeng_TouYu" count = "1"/>
+					<Item name = "Item_BossFeng_Gu" count = "2"/>
+					<Item name = "Item_BossFeng_GangYu" count = "36"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_ZhuLongDan1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>阴阳真灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_yinyangzhenlingdan01</TexPath>
+		<Desc>以烛龙元神炼制而成的灵丹，服用可将其炼化为一道分神，额外驾驭一件法宝。只有第一次服用有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="5"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<GodSoulCount>1</GodSoulCount>
+				<Modifier>Modifier_Item_Dan_FabaoNumAdd</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>5400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_BossZhuLong_LongYu" count = "1"/>
+					<Item name = "Item_BossZhuLong_TianLin" count = "1"/>
+					<Item name = "Item_BossZhuLong_Eye" count = "2"/>
+					<Item name = "Item_BossZhuLong_HeiLin" count = "27"/>
+					<Item name = "Item_BossZhuLong_BaiLin" count = "27"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FenShen1" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>盘古元神丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>太古时代的神丹，据说是以开天辟地一缕先天清浊之气炼制，其炼制方法早已失传。服用此丹可于元神中重演开天辟地，以获得两道元神分神。此丹一生只能服用一次，只有元神期修为服用才有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<GodSoulCount>2</GodSoulCount>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>2400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_FenShen2" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>造化同心丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>太古时代的神丹，炼制方法早已失传。服用此丹可于元神中明晰另外一个自己，以生成一道元神分神。此丹一生只能服用一次，只有元神期修为服用才有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<GodSoulCount>1</GodSoulCount>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>2400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_FenShen3" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>裂神丹</ThingName>
+		<TexPath>res\Sprs\object\object_DAdanyao05</TexPath>
+		<Desc>太古时代的神丹，炼制方法早已失传。服用此丹可借助此丹霸道的药性，强行生成一道元神分神，但是此丹会永久严重损害修行者心境。只有元神期修为服用才有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<GodSoulCount>1</GodSoulCount>
+				<Modifier>Modifier_Dan_LieShenDan</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>2400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_SoulPearl" count = "9"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_TiShen" Parent="DanBase">
+		<MaxStack>1</MaxStack>
+		<ThingName>替身丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao02</TexPath>
+		<Desc>服用后可以使用替身参与拍卖会，万一灵石不够可以立即逃脱。</Desc>	
+		<Rate>8</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="40" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="60" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Modifier_Dan_TiShen</Modifier>
+			</Elixir>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_QiZhi" Parent="DanBase">
+		<ThingName>启智丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao02</TexPath>
+		<Desc>可以给野兽服用，使其感受到灵智，进入开智期。</Desc>	
+		<Rate>4</Rate>	
+		<Beauty>8</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Ginseng" count = "9"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_QiZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Fall_LingZhi" Parent="DanBase">
+		<ThingName>秋灵丹</ThingName>
+		<TexPath>res\Sprs\object\object_PINGdanyao02</TexPath>
+		<Desc>改良了金属性的灵气，使动物也能获得对秋季的深层次认知，从而感受到对应的思绪。</Desc>	
+		<Rate>8</Rate>	
+		<Beauty>12</Beauty>
+		<Frags>		
+			<li Frag="Autumn" />
+		</Frags>	
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Autumn" />
+						</Frags>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_Fall_LingZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Jin</Kind>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Winter_LingZhi" Parent="Item_Fall_LingZhi">
+		<ThingName>冬灵丹</ThingName>
+		<Desc>改良了水属性的灵气，使动物也能获得对冬季的深层次认知，从而感受到对应的思绪。</Desc>	
+		<Frags>		
+			<li Frag="Winter" />
+		</Frags>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Winter" />
+						</Frags>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_Winter_LingZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Spring_LingZhi" Parent="Item_Fall_LingZhi">
+		<ThingName>春灵丹</ThingName>
+		<Desc>改良了木属性的灵气，使动物也能获得对春季的深层次认知，从而感受到对应的思绪。</Desc>
+		<Frags>		
+			<li Frag="Spring" />
+		</Frags>	
+
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Spring" />
+						</Frags>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_Spring_LingZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Mu</Kind>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Summer_LingZhi" Parent="Item_Fall_LingZhi">
+		<ThingName>夏灵丹</ThingName>
+		<Desc>改良了火属性的灵气，使动物也能获得对夏季的深层次认知，从而感受到对应的思绪。</Desc>	
+		<Frags>
+			<li Frag="Summer" />
+		</Frags>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Summer" />
+						</Frags>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_Summer_LingZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Huo</Kind>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Earth_LingZhi" Parent="Item_Fall_LingZhi">
+		<ThingName>土灵丹</ThingName>
+		<Desc>改良了土属性的灵气，使动物也能获得对大地的深层次认知，从而感受到对应的思绪。</Desc>	
+		<Frags>
+			<li Frag="Earth" />
+		</Frags>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="200"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="300" />
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<UnLockThink>
+					<li>
+						<OpenMind>1</OpenMind>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Earth" />
+						</Frags>
+					</li>
+				</UnLockThink>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_TuEssence" count = "1"/>
+					<Item name = "Item_LingStone" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Tags>
+			<Tag Name="Item_Earth_LingZhi" Level="1"/>
+		</Tags>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+	</ThingDef>
+</List></ThingDefs>

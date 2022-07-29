@@ -1,0 +1,143 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Ling_Jin">
+		<DisplayName>本源真法-琅琊典</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之灵性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行\n领悟御剑真意，突破御剑技能极限5级。[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_JinLing</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Ling_Mu">
+		<DisplayName>本源真法-枯荣经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之灵性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行\n大幅降低寿元流逝速度[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_MuLing</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Ling_Shui">
+		<DisplayName>本源真法-青莲书</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之灵性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行\n大幅提高精元转化率[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_ShuiLing</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Ling_Huo">
+		<DisplayName>本源真法-明夷录</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之灵性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行\n领悟术法真意，突破术法技能极限5级。[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_HuoLing</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Ling_Tu">
+		<DisplayName>本源真法-蕴龙诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之灵性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅降低道行\n大幅提高饮气效率[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_TuLing</Modifier>	
+	</Esoterica>
+	
+	
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Sha_Jin">
+		<DisplayName>逆源真法-无妄心魔咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之煞性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高天谴\n大幅提高潜力\n神识提高1倍[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_JinSha</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Sha_Mu">
+		<DisplayName>逆源真法-大过经</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之煞性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高天谴\n领悟炼器真意，突破炼器技能极限5级。\n根骨提高1倍[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_MuSha</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Sha_Shui">
+		<DisplayName>逆源真法-未济七绝体</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之煞性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高天谴\n大幅提高食物消耗速度\n魅力提高1倍[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_ShuiSha</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Sha_Huo">
+		<DisplayName>逆源真法-革天录</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之煞性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高天谴\n领悟炼丹真意，突破炼丹技能极限5级。\n悟性提高到1倍[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_HuoSha</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Esoterica_LingZhi_MiFa_Sha_Tu">
+		<DisplayName>逆源真法-否极无咎书</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Hide>2</Hide>
+		<Difficulty>999</Difficulty>
+		<Desc>以天地灵根之煞性为媒介，窥视五行大道而领悟的秘典。所谓道可道，非常道，此乃修行者本尊直面大道而产生的感悟，故很难传授他人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]大幅提高天谴\n领悟护体真意，突破护体技能极限5级。\n机缘提高1倍[/color][/size]</EffectDesc>
+		<Modifier>Lingzhi_Esoterica_TuSha</Modifier>	
+	</Esoterica>
+</List></Esotericas>

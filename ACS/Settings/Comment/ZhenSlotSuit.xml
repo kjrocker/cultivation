@@ -1,0 +1,404 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_1</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 剑之意</Title>
+            <Desc>阵法真意 - 剑之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_2</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 法之意</Title>
+            <Desc>阵法真意 - 法之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_3</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 罡之意</Title>
+            <Desc>阵法真意 - 罡之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_4</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 韧之意</Title>
+            <Desc>阵法真意 - 韧之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_5</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 衡之意</Title>
+            <Desc>阵法真意 - 衡之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_6</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 乾天之境</Title>
+            <Desc>阵法真意 - 乾天之境</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_7</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 坤地之意</Title>
+            <Desc>阵法真意 - 坤地之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_8</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 震雷之意</Title>
+            <Desc>阵法真意 - 震雷之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_9</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 巽风之意</Title>
+            <Desc>阵法真意 - 巽风之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_10</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 坎水之意</Title>
+            <Desc>阵法真意 - 坎水之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_11</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 离火之意</Title>
+            <Desc>阵法真意 - 离火之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_12</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 艮山之意</Title>
+            <Desc>阵法真意 - 艮山之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_13</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 兑泽之意</Title>
+            <Desc>阵法真意 - 兑泽之意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_14</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 衍化先天</Title>
+            <Desc>阵法真意 - 衍化先天</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_15</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 月隐风雷</Title>
+            <Desc>阵法真意 - 月隐风雷</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_16</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 日耀天火</Title>
+            <Desc>阵法真意 - 日耀天火</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_17</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 山水晴空</Title>
+            <Desc>阵法真意 - 山水晴空</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_18</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 雷泽密云</Title>
+            <Desc>阵法真意 - 雷泽密云</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_19</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 山岳无疆</Title>
+            <Desc>阵法真意 - 山岳无疆</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_20</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 流水不息</Title>
+            <Desc>阵法真意 - 流水不息</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_21</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 天地伊始</Title>
+            <Desc>阵法真意 - 天地伊始</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_22</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 山泽归终</Title>
+            <Desc>阵法真意 - 山泽归终</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_23</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 万物萌生</Title>
+            <Desc>阵法真意 - 万物萌生</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_24</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 水火湮灭</Title>
+            <Desc>阵法真意 - 水火湮灭</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_25</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 雷锻火炼</Title>
+            <Desc>阵法真意 - 雷锻火炼</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_26</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 水烙风蚀</Title>
+            <Desc>阵法真意 - 水烙风蚀</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_27</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 太初</Title>
+            <Desc>阵法真意 - 太初</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_28</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 鸿蒙</Title>
+            <Desc>阵法真意 - 鸿蒙</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_1</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 诛仙阵意</Title>
+            <Desc>阵法真意 - 诛仙阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_2</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 七星荡魔阵意</Title>
+            <Desc>阵法真意 - 七星荡魔阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_3</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 天地五方阵意</Title>
+            <Desc>阵法真意 - 天地五方阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_4</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 六御仪轨阵意</Title>
+            <Desc>阵法真意 - 六御仪轨阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_5</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 真龙阵意</Title>
+            <Desc>阵法真意 - 真龙阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_6</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 真凤阵意</Title>
+            <Desc>阵法真意 - 真凤阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_7</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 阴阳阵意</Title>
+            <Desc>阵法真意 - 阴阳阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_8</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 玄阴阵意</Title>
+            <Desc>阵法真意 - 玄阴阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_9</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 玄金天劫阵意</Title>
+            <Desc>阵法真意 - 玄金天劫阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_10</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 先天甲乙木阵意</Title>
+            <Desc>阵法真意 - 先天甲乙木阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_SpZhen_11</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 归墟阵意</Title>
+            <Desc>阵法真意 - 归墟阵意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_1</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 丹霞意</Title>
+            <Desc>阵法真意 - 丹霞意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_2</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 昆仑意</Title>
+            <Desc>阵法真意 - 昆仑意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_3</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 极天意</Title>
+            <Desc>阵法真意 - 极天意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_4</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 紫霄意</Title>
+            <Desc>阵法真意 - 紫霄意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_5</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 正一意</Title>
+            <Desc>阵法真意 - 正一意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_6</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 青莲意</Title>
+            <Desc>阵法真意 - 青莲意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_7</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 栖霞意</Title>
+            <Desc>阵法真意 - </Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_8</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 百蛮意</Title>
+            <Desc>阵法真意 - 百蛮意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_9</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 七千意</Title>
+            <Desc>阵法真意 - 七千意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_10</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 七杀意</Title>
+            <Desc>阵法真意 - 七杀意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>ZhenSlotSuitSlotSuit_School_11</Name>
+            <Notes></Notes>
+            <Title>阵法真意 - 合欢意</Title>
+            <Desc>阵法真意 - 合欢意</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

@@ -1,0 +1,479 @@
+﻿<ThingDefs><List>
+
+<ThingDef Type="Item" Name="RockBlockBase" Parent="MaterialBase">
+	
+	
+	
+	<TexPath>Item/Blocks</TexPath>
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>600</MaxHitPoints>
+	<Rate>1</Rate>
+	<ElementKind>Tu</ElementKind>
+	<Flammability>
+		<Flammability>0.1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="RockBlock">
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>石,印,碑,珏,圭,阙,镇</FabaoSuffix>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Rough2</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<BuildingTileIDWhenBeMain>-11</BuildingTileIDWhenBeMain>
+			
+			<RateWhenBeMain>2</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>-0.1</AttackSpeedWhenBeMain>
+
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.2</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.2</WorktoMakeRate>
+			<WorktoBuildRate>1.4</WorktoBuildRate>
+		</BeMaterial>
+		
+		<BeMade>
+			<WorkToMake>60</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!-- 
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			
+			<StuffCategories>
+				<Stuff name = "Rock"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+			-->
+		</BeMade> 
+		<!--<Rot>
+			<RotSpeed>0.00005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_BrownRockBlock" Parent="RockBlockBase">
+	<ThingName>棕石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick</TexPath>
+	<Desc>棕石切割成的砖块，十分常见，可以更有效的用来进行制作，只是美观度很差。</Desc>
+	<Color>8C6F14FF</Color>
+	<Item>
+		<BeMaterial>
+			<NamePrefix>棕石</NamePrefix>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			
+			<ColorWhenBeMain>8C6F14FF</ColorWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_BrownRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_GrayRockBlock" Parent="RockBlockBase">
+	<ThingName>灰石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick</TexPath>	
+	<Desc>灰石切割成的砖块，可以更有效的用来进行制作，美观度很一般。</Desc>
+	<Color>34332EFF</Color>
+	<Item>
+		<BeMaterial>
+			<NamePrefix>灰石</NamePrefix>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			
+			<ColorWhenBeMain>5E5A51FF</ColorWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_GrayRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MarbleBlock" Parent="RockBlockBase">
+	<ThingName>大理石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick</TexPath>	
+	<Desc>大理石切割成的砖块，可以更有效的用来进行制作。纹理比较美观。</Desc>
+	<Color>5F6D7BFF</Color>
+	<Beauty>4</Beauty>
+	<Rate>2</Rate>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>大理石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>30</MaxHitPointsPerNum>
+			<ColorWhenBeMain>6B727AFF</ColorWhenBeMain>
+			
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Marble" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_JadeBlock" Parent="RockBlockBase">
+	<ThingName>玉石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick02</TexPath>	
+	<Desc>玉石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<!--<Color>25CDF9E6</Color>-->
+	<Rate>4</Rate>
+	<Beauty>4</Beauty>
+	<Item>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Heavy1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>玉石</NamePrefix>
+			
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<RateWhenBeMain>4</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+			
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<ColorWhenBeMain>7CC5B2FF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			<PracticeEffectivenessWhenBeMain>0.8</PracticeEffectivenessWhenBeMain>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Jade" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>16</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SkyStoneBlock" Parent="RockBlockBase">
+	<ThingName>天柱石砖</ThingName>
+	<TexPath>res\Sprs\object\object_tianzhuzhuan</TexPath>	
+	<Desc>天柱石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<!--<Color>25CDF9E6</Color>-->
+	<Rate>8</Rate>
+	<Beauty>18</Beauty>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="150"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="200" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>天柱石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_xianzhu</StuffTexPath>
+			
+			<MaxHitPointsPerNum>120</MaxHitPointsPerNum>
+			<RateWhenBeMain>7</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2.5</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>CABD8FFF</ColorWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<PracticeEffectivenessWhenBeMain>1.2</PracticeEffectivenessWhenBeMain>
+			
+			<BeautyWhenBeMain>18</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_SkyStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>8</Value>         
+		<Radius>4</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LingStoneBlock" Parent="RockBlockBase">
+	<ThingName>灵石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>	
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<!--<Color>5F6D7BFF</Color>-->
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>50</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>6879BAFF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>40</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingCrystalBlock" Parent="RockBlockBase">
+	<ThingName>灵晶砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick04</TexPath>	
+	<Desc>灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<!--<Color>5F6D7BFF</Color>-->
+	<Rate>7</Rate>
+	<Beauty>12</Beauty>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>15</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="100"/>
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="200" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>灵晶</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>619FA1FF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>70</MaxHitPointsPerNum>
+			<BeautyWhenBeMain>12</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	<Light>
+		<Value>70</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>4</Radius>
+		<Color>0082ACFF</Color>
+	</Light>
+	</ThingDef>
+</List></ThingDefs>

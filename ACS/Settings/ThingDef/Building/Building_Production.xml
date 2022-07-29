@@ -1,0 +1,1733 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="ProductionBase" Parent="BuildingBase">
+		<TexPath></TexPath>
+		<ThingName></ThingName>
+		<Desc>ProductionBase</Desc>
+		
+		<BlockLight>1</BlockLight>
+		<Beauty>2</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>500</MaxHitPoints>
+		<VisionRadius>10</VisionRadius>
+		
+		<ShadowSize>
+			<x>1</x>
+			<y>0.8</y>
+		</ShadowSize>
+		<Building>
+			<RoomKind>WorkRoom</RoomKind>
+			<BePackage>0</BePackage>
+			<ShowFree>1</ShowFree>
+			<SelectProduceStuff>1</SelectProduceStuff>
+			<WorkAnimation>assemble</WorkAnimation>
+			<!--
+			<Drive>
+				<StuffCategories>
+					<Stuff name = "Wood"/>
+					<Stuff name = "Plant"/>
+				</StuffCategories>
+				<CostStuffCount>10</CostStuffCount>
+				<Duration>0.05</Duration>
+				<DriveJustProdece>0</DriveJustProdece>
+				<RateMin>0</RateMin>
+				<RateMax>1</RateMax>
+			</Drive>
+			
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+				<Condition>
+						<Skills>
+							<Skill name = "sss" level="1"/>
+						</Skills>
+						<Researchs>
+							<Research name = "sss" level="1"/>
+						</Researchs>
+				</Condition>
+				<StuffCategories>
+					<Stuff name = "Metal"/>
+					<Stuff name = "Wood"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+				<CostItems>
+					<Item name = "wheat" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<Produces>
+				<Produce>
+					<ThingDef>Item_HomeFood</ThingDef>
+					<Display>家常的食物</Display>
+					<Count>1</Count>
+				</Produce>
+			</Produces>
+			-->
+		</Building>
+		<!--
+		<Heat>
+			<Value>0</Value>
+			<Radius>0</Radius>
+			<Failing>0</Failing>
+			<FailRadius>0</FailRadius>
+		</Heat>
+		
+		<Light>
+			<Value>0</Value>
+			<Radius>0</Radius>
+			<Failing>0</Failing>
+			<FailRadius>0</FailRadius>
+		</Light>
+		-->
+<!--	<Element>
+		<Kind>None</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>-->
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="WorkPlace"  Parent="ProductionBase">	
+	<ThingName>手工点</ThingName>
+	<Desc>不需要什么制作材料，只是在地上画出一个区域，可以进行一些简单工具的制作。</Desc>
+	<TileID>271</TileID>
+	<BlockMissile>0</BlockMissile>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<ColliderKind>Across</ColliderKind>
+	<VisionRadius>0</VisionRadius>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>400</BurningPoint>
+	</Flammability>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+		
+		<ShowFree>0</ShowFree>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_WeaponWoodBow</ThingDef>
+				<Display>木弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAxe</ThingDef>
+				<Display>伐木斧</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysPickaxe</ThingDef>
+				<Display>矿镐</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysSickle</ThingDef>
+				<Display>农具</Display>
+				<Count>1</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="MaterialWorkPlace"  Parent="ProductionBase">	
+	<ThingName>材料加工点</ThingName>
+	<Desc>不需要什么制作材料，只是在地上画出一个区域，可以对一些材料进行简单加工。</Desc>
+	<TileID>271</TileID>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<ColliderKind>Across</ColliderKind>
+	<VisionRadius>0</VisionRadius>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>400</BurningPoint>
+	</Flammability>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+		
+		<ShowFree>0</ShowFree>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<Quality>0</Quality>
+			<WorkToMake>0</WorkToMake>
+		</BeMade>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_RoughWoodBlock</ThingDef>
+				<Display>木料</Display>
+				<Count>3</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BrownRockBlock</ThingDef>
+				<Display>棕石砖</Display>
+				<Count>3</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GrayRockBlock</ThingDef>
+				<Display>灰石砖</Display>
+				<Count>3</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MarbleBlock</ThingDef>
+				<Display>大理石砖</Display>
+				<Count>3</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>		
+	
+	<ThingDef Type="Building" Name="Bonfire" Parent="ProductionBase">
+	<ThingName>篝火</ThingName>	
+	<Desc>将木头堆起来形成的简单火源，可以为周围带来光和热。利用它可以进行一些简单的烹饪。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_bonfire1b</TexPath>
+	<TexScale>0.8</TexScale>
+	<Frags>		
+		<li Frag="SmellFire" />
+	</Frags>	
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>5</Beauty>
+	<BlockLight>0</BlockLight>
+	<ElementKind>Huo</ElementKind>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Flammability>
+		<Flammability>-1</Flammability>
+	</Flammability>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,0],
+		[4,3,4],
+		[0,4,0],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="-0.05" Y="-0.16" Ang="180"/>
+			<li Index="1"  X="0.2" Y="0" Ang="90"/>
+			<li Index="2"  X="-0.2" Y="0" Ang="-90"/>
+			<li Index="3"  X="0" Y="0.45" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+
+	<Heat>
+		<Value>10</Value>
+		<Radius>5</Radius>
+		<RoomValue>120</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>0</FailRadius>
+	</Heat>
+	<Light>
+		<Value>110</Value>
+		<Failing>0.5</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>10</Radius>
+		<Color>FFDEBCFF</Color>
+	</Light>
+	<Building>
+		<RoomKind>None</RoomKind>
+		<ShowFree>0</ShowFree>
+		<Perfab>Building/Prefabs/Bonfire</Perfab>
+		<HelperClass>BuildingHelperBonfire</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>shaokao1,shaokao2,shaokao3</WorkAnimation>
+		<BeMade>
+			<WorkToMake>15</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>3</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "Plant"/>
+			</StuffCategories>
+			<DrivingTexPath>res/Sprs/buildingnew/building_bonfire1a</DrivingTexPath>
+			<CostStuffCount>1</CostStuffCount>
+			<Duration>0.5</Duration>
+			<DriveJustProdece>0</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<ProduceKind>Cooking</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_Jerky</ThingDef>
+				<Display>肉干</Display>
+				<Count>5</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Kitchen" Parent="ProductionBase">
+	<ThingName>炉灶</ThingName>	
+	<Desc>用来烹饪食物的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_cooktop1a</TexPath>
+	<!--<TexScale>0.65</TexScale>-->
+	<SelectAble>1</SelectAble>	
+	<TexScale>1.1</TexScale>
+	<CastShadow>1</CastShadow>
+	<Beauty>1</Beauty>
+	<Frags>		
+		<li Frag="SmellMeal" />
+	</Frags>	
+
+	<BlockLight>1</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[7,1],
+		</Data>
+<!--		<Offset>
+			<x>-0.52</x>
+			<y>0.54</y>
+		</Offset>-->
+		<OffsetGroup>
+			<li><x>-0.45</x><y>-0.15</y></li><!--上-->
+			<li><x>-0.45</x><y>0.9</y></li><!--右-->
+			<li><x>0.45</x><y>1.1</y></li><!--下-->
+			<li><x>0.45</x><y>-0.1</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.8" Y="-0.07" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.12" Y="-0.35" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.82" Y="-0.2" Ang="1" Dir="Up"/>
+			<li Index="0" X="0" Y="0.82" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+
+	<Heat>
+		<Value>8</Value>
+		<Radius>4</Radius>
+		<RoomValue>95</RoomValue>
+		<Failing>0.3</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Building>
+		<BePackage>1</BePackage>
+		<RoomKind>Kitchen</RoomKind>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>cook</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_cooktop1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.9</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>			
+			<Duration>0.05</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Cooking</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_Cake</ThingDef>
+				<Display>饼</Display>
+				<Count>8</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Jerky</ThingDef>
+				<Display>肉干</Display>
+				<Count>8</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PreservedFruit</ThingDef>
+				<Display>李氏龙涎果脯</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HomeFood</ThingDef>
+				<Display>家常菜</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DeliciousFood</ThingDef>
+				<Display>佳肴</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DelicacyFood</ThingDef>
+				<Display>珍馐</Display>
+				<Count>4</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>4</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="StoneMaker"  Parent="ProductionBase">	
+	<ThingName>石匠台</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>	
+
+	<Desc>用来将粗糙的石块打磨切割为石砖的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_stonestation1a</TexPath>
+	<TexScale>0.8</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<BlockLight>1</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.2</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[7,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.57</x><y>-0.46</y></li><!--后-->
+			<li><x>-0.28</x><y>0.77</y></li><!--右-->
+			<li><x>0.61</x><y>1.05</y></li><!--前-->
+			<li><x>0.3</x><y>-0.27</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.96" Y="0" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.24" Y="-0.36" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.96" Y="0.2" Ang="1" Dir="Up"/>
+			<li Index="0" X="0.2" Y="0.7" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>CutStone</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.95</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<ProduceKind>StoneWork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_BrownRockBlock</ThingDef>
+				<Display>棕石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GrayRockBlock</ThingDef>
+				<Display>灰石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MarbleBlock</ThingDef>
+				<Display>大理石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JadeBlock</ThingDef>
+				<Display>玉石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SkyStoneBlock</ThingDef>
+				<Display>天柱石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingStoneBlock</ThingDef>
+				<Display>灵石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingCrystalBlock</ThingDef>
+				<Display>灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="WeaponMaker" Parent="ProductionBase">	
+	<ThingName>锻铁台</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>用来将金属锭锻造为各种金属器具的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_Smithstation1a</TexPath>
+	<TexScale>0.7</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[1,7],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.5</x><y>-0.3</y></li>
+			<li><x>-0.42</x><y>-0.24</y></li>
+			<li><x>-0.46</x><y>1.17</y></li>
+			<li><x>0.41</x><y>0.71</y></li>
+		</OffsetGroup>
+		
+		<WorkOffset>
+			<li Index="0" X="0" Y="0" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.28" Y="0.4" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.34" Y="0.1" Ang="1" Dir="Up"/>
+			<li Index="0" X="0.3" Y="-0.56" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>iron</WorkAnimation>
+		<BeMade>
+			<WorkToMake>250</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "12"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.03</x>
+			<y>4.04</y>
+			<z>1</z>
+		</SnowRenderData>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<DrivingTexPath>res/Sprs/buildingnew/building_Smithstation1b</DrivingTexPath>
+			<CostStuffCount>15</CostStuffCount>
+			<Duration>0.05</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Smithing</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>SP_Bow1</ThingDef>
+				<Display>捕兽弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponBow</ThingDef>
+				<Display>弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponKnife</ThingDef>
+				<Display>刀</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponLance</ThingDef>
+				<Display>枪</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Display>剑</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponHalbert</ThingDef>
+				<Display>锤</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponAxeRing</ThingDef>
+				<Display>环</Display>
+				<Count>1</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Furnace" Parent="ProductionBase">	
+	<ThingName>熔炉</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>用来将金属矿物熔炼为金属锭的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_forge1a</TexPath>
+	<TexScale>1</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,1],
+			[1,3],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.5</x><y>-0.21</y></li>
+			<li><x>-0.5</x><y>-0.22</y></li>
+			<li><x>-0.5</x><y>0.78</y></li>
+			<li><x>0.5</x><y>0.84</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.5" Y="0.5" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.34" Y="-1" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.5" Y="-0.7" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.34" Y="0.2" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<BeMade>
+			<WorkToMake>250</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>4.15</y>
+			<z>1</z>
+		</SnowRenderData>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<DrivingTexPath>res/Sprs/buildingnew/building_forge1b</DrivingTexPath>
+			<CostStuffCount>15</CostStuffCount>
+			<Duration>0.05</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<ProduceKind>Smithing</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_IronBlock</ThingDef>
+				<Display>铁锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperBlock</ThingDef>
+				<Display>火铜锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverBlock</ThingDef>
+				<Display>寒晶锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DarksteelBlock</ThingDef>
+				<Display>玄铁锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperBlock1</ThingDef>
+				<Display>火精锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverBlock1</ThingDef>
+				<Display>寒精锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StarEssenceBlock</ThingDef>
+				<Display>星髓锭</Display>
+				<Count>4</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="TextileTable" Parent="ProductionBase">	
+	<ThingName>纺织机</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>用来将纤维纺织成布匹毛料的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_spinplace1a</TexPath>
+	<TexScale>0.75</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,1],
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>-0.14</y></li>
+			<li><x>-0.5</x><y>0.91</y></li>
+			<li><x>0.52</x><y>0.91</y></li>
+			<li><x>0.59</x><y>0</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.5" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="-0.7" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.5" Y="-0.6" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.3" Y="0.55" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>weave</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>12</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_RoughWoodBlock" count = "14"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.91</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>Sew</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_CottonCloth</ThingDef>
+				<Display>布（花）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DeepBlueCloth</ThingDef>
+				<Display>布（靛蓝）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PurpleCloth</ThingDef>
+				<Display>布（紫）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_YellowCloth</ThingDef>
+				<Display>布（黄）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BlueCloth</ThingDef>
+				<Display>布（蓝）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_RedCloth</ThingDef>
+				<Display>布（红）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WhiteCloth</ThingDef>
+				<Display>布（白）</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BlackCloth</ThingDef>
+				<Display>布（黑）</Display>
+				<Count>20</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="TailorTable" Parent="ProductionBase">	
+	<ThingName>缝纫桌</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>用来制作衣物的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_tailorplace1a</TexPath>
+	<TexScale>0.67</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,3],
+			[0,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.45</x><y>0.55</y></li>
+			<li><x>0.33</x><y>-0.17</y></li>
+			<li><x>-0.52</x><y>0.68</y></li>
+			<li><x>-0.31</x><y>0.85</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="-0.55" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="0.4" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.5" Y="-0.55" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.25" Y="-0.55" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_tailorplace1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "12"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.74</x>
+			<y>3.87</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Sew</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_WinterClothes</ThingDef>
+				<Display>厚衣</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WinterTrousers</ThingDef>
+				<Display>厚制长裤</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SummerClothes</ThingDef>
+				<Display>薄衣</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SummerTrousers</ThingDef>
+				<Display>薄裤</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilkClothes</ThingDef>
+				<Display>丝绸衣衫</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilkTrousers</ThingDef>
+				<Display>丝绸长裤</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PracticeClothes</ThingDef>
+				<Display>修行衣衫</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PracticeTrousers</ThingDef>
+				<Display>修行下裳</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_FormalClothes</ThingDef>
+				<Display>礼制衣衫</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_FormalTrousers</ThingDef>
+				<Display>礼制下裳</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Nomal1</ThingDef>
+				<Display>火纹披风</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Nomal2</ThingDef>
+				<Display>云纹披风</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Nomal3</ThingDef>
+				<Display>幽纹披风</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Nomal4</ThingDef>
+				<Display>明纹披风</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Sp2</ThingDef>
+				<Display>天火烬灭</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Sp3</ThingDef>
+				<Display>寒云荡雪</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Sp8</ThingDef>
+				<Display>幽蚩化影</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cape_Sp9</ThingDef>
+				<Display>明羽含光</Display>
+				<Count>1</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WoodShed" Parent="ProductionBase">	
+	<ThingName>砍柴处</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>将原木加工为木料，能极大的提高木材的利用效率。</Desc>
+	<TexScale>0.75</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_firewoodplace1a</TexPath>
+	<BlockLight>0</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.38</x><y>0.4</y></li>
+			<li><x>0.59</x><y>0.48</y></li>
+			<li><x>0.5</x><y>0.5</y></li>
+			<li><x>-0.58</x><y>-0.42</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.114" Y="0.535" Ang="25" Dir="Down"/>
+			<li Index="0" X="0.215" Y="-0.68" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.36" Y="-0.54" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.22" Y="0.3" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>firewood2</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_firewoodplace1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.05</x>
+			<y>3.76</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>CutWood</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_RoughWoodBlock</ThingDef>
+				<Display>木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HardWoodBlock</ThingDef>
+				<Display>金丝木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ParasolWoodBlock</ThingDef>
+				<Display>梧桐木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWoodBlock</ThingDef>
+				<Display>灵木料</Display>
+				<Count>5</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="MillStone" Parent="ProductionBase">	
+	<ThingName>磨坊</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>将粮食加工为粉状，使其更好储存，并能提高食物的利用效率。</Desc>
+	<TexScale>1</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_millstone1a</TexPath>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[3,1],
+		[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>-0.35</y></li>
+			<li><x>-0.45</x><y>0.69</y></li>
+			<li><x>0.5</x><y>0.67</y></li>
+			<li><x>0.48</x><y>-0.35</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.5" Y="0.5" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="-0.9" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.5" Y="-0.7" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.34" Y="0.25" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_millstone1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "20"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>4.13</y> 
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_Flour</ThingDef>
+				<Display>面粉</Display>
+				<Count>20</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="HandWorkTable" Parent="ProductionBase">	
+	<ThingName>手工桌</ThingName>	
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>进行简单的手工用品制造的工作台。</Desc>
+	<TexScale>0.7</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_ManufacturingStation1a</TexPath>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.75</y></li>
+			<li><x>0.35</x><y>0.81</y></li>
+			<li><x>0.5</x><y>0.75</y></li>
+			<li><x>-0.3</x><y>-0.04</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.55" Y="0.76" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.67" Y="-0.6" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.46" Y="-0.4" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.5" Y="0.4" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_ManufacturingStation1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.13</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+<!--		<Produce>
+				<ThingDef>Item_WoodPike</ThingDef>
+				<Display>木矛</Display>
+				<Count>1</Count>
+			</Produce>-->
+			<Produce>
+				<ThingDef>Item_WeaponWoodBow</ThingDef>
+				<Display>木弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Other_PuppetTest</ThingDef>
+				<Display>傀儡</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Umbrella</ThingDef>
+				<Display>伞</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Dice</ThingDef>
+				<Display>骰子</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SmallBell</ThingDef>
+				<Display>铃铛</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Bracelet</ThingDef>
+				<Display>手镯</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Handkerchief</ThingDef>
+				<Display>手帕</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PerfumeBag</ThingDef>
+				<Display>香囊</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAxe</ThingDef>
+				<Display>斧</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysPickaxe</ThingDef>
+				<Display>镐</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysSickle</ThingDef>
+				<Display>农具</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAcupuncture</ThingDef>
+				<Display>针灸</Display>
+				<Count>1</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_WoodLeftover</ThingDef>
+				<Display>木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HardWoodLeftover</ThingDef>
+				<Display>金丝木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ParasolWoodLeftover</ThingDef>
+				<Display>梧桐木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWoodLeftover</ThingDef>
+				<Display>灵木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BrownRockLeftover</ThingDef>
+				<Display>棕石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GrayRockLeftover</ThingDef>
+				<Display>灰石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MarbleLeftover</ThingDef>
+				<Display>大理石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JadeLeftover</ThingDef>
+				<Display>玉石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SkyStoneLeftover</ThingDef>
+				<Display>天柱石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingStoneLeftover</ThingDef>
+				<Display>灵石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingCrystalLeftover</ThingDef>
+				<Display>灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_IronRockLeftover</ThingDef>
+				<Display>铁矿角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperRockLeftover</ThingDef>
+				<Display>火铜角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverRockLeftover</ThingDef>
+				<Display>寒晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DarksteelRockLeftover</ThingDef>
+				<Display>玄铁角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StarEssenceLeftover</ThingDef>
+				<Display>星髓角料</Display>
+				<Count>100</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Well" Parent="ProductionBase">
+	<ThingName>水井</ThingName>	
+	<Desc>可以从中打水。水井中的水相比野外的水更卫生，因此不易生病。</Desc>
+	<Tags>
+		<Tag Name="Water" Level="1"/>
+	</Tags>
+
+	<TexPath>res/Sprs/buildingnew/building_well1a</TexPath>
+	<BlockLight>1</BlockLight>
+	<TexScale>1.1</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>5</Beauty>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,1,1,4],
+		[0,3,1,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>-0.1</y></li>
+			<li><x>-0.2</x><y>.8</y></li>
+			<li><x>0.5</x><y>0.9</y></li>
+			<li><x>0.3</x><y>-0.2</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="-0.25" Y="-0.3" Ang="-90" Dir="Down"/>
+			<li Index="1"  X="-0.25" Y="0.3" Ang="-90" Dir="Down"/>
+			<li Index="0"  X="0.25" Y="0.3" Ang="-90" Dir="Left"/>
+			<li Index="1"  X="-0.25" Y="0.3" Ang="-90" Dir="Left"/>
+			<li Index="0"  X="0.25" Y="-0.3" Ang="-90" Dir="Up"/>
+			<li Index="1"  X="0.25" Y="0.3" Ang="-90" Dir="Up"/>
+			<li Index="0"  X="0.25" Y="-0.3" Ang="-90" Dir="Right"/>
+			<li Index="1"  X="-0.25" Y="-0.3" Ang="-90" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_well1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<RoomKind>None</RoomKind>
+		<ShowFree>0</ShowFree>
+		<MaxWorker>3</MaxWorker>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>6</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.25</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>0.5</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>	
+
+	<ThingDef Type="Building" Name="MedicineTable" Parent="ProductionBase">	
+	<ThingName>制药桌</ThingName>	
+	<Frags>		
+		<li Frag="HearHeartBeat" />
+	</Frags>
+	<Desc>进行药物制造的工作台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_PharmacyPlace1a</TexPath>
+	<TexScale>0.65</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,3],
+			[4,0]
+		</Data>
+		<OffsetGroup>
+			<li><x>0.47</x><y>0.56</y></li>
+			<li><x>0.38</x><y>-0.36</y></li>
+			<li><x>-0.5</x><y>0.5</y></li>
+			<li><x>-0.41</x><y>0.65</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.45" Y="0.54" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.2" Y="-0.8" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.54" Y="-0.5" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.3" Y="0.4" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<WorkToMake>120</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.68</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>DrugProduct</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_Sys_RanSeYu</ThingDef>
+				<Display>染色玉</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Hemostatics</ThingDef>
+				<Display>金疮药</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SmallCycle</ThingDef>
+				<Display>小还丹</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Plaster</ThingDef>
+				<Display>接骨膏</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Anodyne</ThingDef>
+				<Display>止痛散</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StoneEssenceDrug</ThingDef>
+				<Display>石髓散</Display>
+				<Count>5</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_SilverGrit</ThingDef>
+				<Display>寒晶砂</Display>
+				<Count>10</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperGrit</ThingDef>
+				<Display>火铜砂</Display>
+				<Count>10</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_Laxative</ThingDef>
+				<Display>通泻散</Display>
+				<Count>3</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_YiTui" Parent="ProductionBase">
+	<ThingName>仙人遗蜕</ThingName>	
+	<Tags>
+		<Tag Name="_YITUI" Level="1"/>
+	</Tags>
+	<TexPath>res\Sprs\buildingnew\building_YTdizuo01</TexPath>
+	<Desc>仙人飞升后留下的遗蜕。</Desc>
+	<TexScale>1</TexScale>
+	<Rate>12</Rate>
+	<Beauty>25</Beauty>
+	<ColliderKind>Slow</ColliderKind>
+	<BlockLight>0</BlockLight>
+	<CastShadow>0</CastShadow>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		[4],
+		</Data>
+		<Offset>
+			<y>0.03</y>
+		</Offset>
+	</Collider>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>5000</BurningPoint>
+	</Flammability>
+	
+	<NotDoTongLing>1</NotDoTongLing>	
+	<Building>
+		<NotRandom>1</NotRandom>
+
+		<RoomKind>AncestorRoom</RoomKind>
+		<NoFengshui>0</NoFengshui>
+		<Perfab>Building/Prefabs/YiTui</Perfab>
+		<BePackage>1</BePackage>
+		<HelperClass>BuildingHelperYiTui</HelperClass>
+		<ProduceKind>Sacrifice</ProduceKind>
+		<WorkAnimation>ketou</WorkAnimation>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_XiangHuo1</ThingDef>
+				<Display>三才祭</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XiangHuo2</ThingDef>
+				<Display>五行祭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XiangHuo3</ThingDef>
+				<Display>七星祭</Display>
+				<Count>9</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Harvest>
+		<DropItems>
+			<li>
+				<ThingDef>Item_XianBone</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</DropItems>
+	</Harvest>
+	<Element>
+		<Kind>None</Kind>
+		<Value>9</Value>         
+		<Radius>8</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>50</AddionLing>
+		<AddionRadius>9</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Building_YiTui1" Parent="Building_YiTui">
+		<ThingName>神灵遗蜕</ThingName>	
+		<Tags>
+			<Tag Name="_YITUI" Level="1"/>
+		</Tags>
+		<TexPath>res\Sprs\buildingnew\building_YTdizuo01</TexPath>
+		<Desc>神灵飞升后留下的遗蜕。</Desc>
+		<Building>
+			<Produces>
+				<Produce>
+					<ThingDef>Item_XiangHuo4</ThingDef>
+					<Display>灵神祭</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_XiangHuo5</ThingDef>
+					<Display>天神祭</Display>
+					<Count>4</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_XiangHuo6</ThingDef>
+					<Display>尊神祭</Display>
+					<Count>9</Count>
+				</Produce>
+			</Produces>
+		</Building>
+		<Harvest>
+			<DropItems>
+				<li>
+					<ThingDef>Item_XianBoneBall</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</Harvest>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+</List></ThingDefs>

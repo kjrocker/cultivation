@@ -1,0 +1,202 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="Item_SoulCrystalBase"  Parent="ItemBase">
+		
+	<MaxStack>100</MaxStack>
+	<TexPath>res\Sprs\object\object_lingjing01</TexPath>	
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>8</Rate>
+	<Beauty>0</Beauty>
+	<ElementKind>None</ElementKind>
+	
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="SoulCrystal" Kind="Practice">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="75" />
+				<SalePrice Value="35" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>珀</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0</LingNumberRate>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_WuXing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SoulCrystalYou" Parent="Item_SoulCrystalBase">
+		<ThingName>幽珀</ThingName>
+		<TexPath>res\Sprs\object\object_youpo</TexPath>	
+		<Desc>幽暗的魂魄结晶，其中蕴含有一些残留痛苦记忆。</Desc>
+		<Rate>8</Rate>
+		<Frags>	
+			<li Frag="Regret" />
+		</Frags>
+		<Item>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SoulCrystalNing" Parent="Item_SoulCrystalBase">
+		<ThingName>宁珀</ThingName>
+		<TexPath>res\Sprs\object\object_ningpo</TexPath>	
+		<Desc>平静的魂魄结晶，其中蕴含有一些残留的记忆。</Desc>
+		<Rate>8</Rate>
+		<Frags>	
+			<li Frag="Peace" />
+		</Frags>
+		<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>25</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="20"/>
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="30" />
+					<SalePrice Value="2" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>GreatThing_Knock</li>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SoulCrystalLing" Parent="Item_SoulCrystalBase">
+		<ThingName>灵珀</ThingName>
+		<TexPath>res\Sprs\object\object_lingpo</TexPath>	
+		<Desc>剔透的魂魄结晶，其中蕴含有一些残留的幸福记忆。</Desc>
+		<Rate>8</Rate>
+		<Frags>	
+			<li Frag="Eruption" />
+		</Frags>
+		<Item>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+		</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SoulCrystalYuanLing" Parent="Item_SoulCrystalBase">
+		<ThingName>元灵之珀</ThingName>
+		<TexPath>res\Sprs\object\object_youpo</TexPath>	
+		<Desc>精怪产生意识乃天道之漏，元灵之珀便是自精怪中凝练出的天道遗漏的一丝玄妙。</Desc>
+		<Rate>9</Rate>
+		<Item>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>5</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000"/>
+					<SalePrice Value="2500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="7500" />
+					<SalePrice Value="3500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Yao_CatSoul" Parent="Item_SoulCrystalBase">
+		<ThingName>猫妖之珀</ThingName>
+		<TexPath>res\Sprs\object_yaozujueqi\object_maoyaozhipo01</TexPath>
+		<Desc>猫妖魂魄残片，也许与猫有九命的传言有关，其中蕴含有一些玄妙的力量，服用可以增加一条分神。此物一生只可服用一次，只有元神期的修行者服用才有效。</Desc>
+		<Rate>8</Rate>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>Light2</li>
+				<li>Soft1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<GodSoulCount>1</GodSoulCount>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000" FriendPoint="1"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2000" />
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		</Item>
+	</ThingDef>
+</List></ThingDefs>

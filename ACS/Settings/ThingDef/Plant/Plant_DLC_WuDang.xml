@@ -1,0 +1,40 @@
+<ThingDefs><List>
+
+<ThingDef Type="Plant" Name="DLC_Plant_HuangJing" Parent="FarmBase">
+	<ThingName>黄精</ThingName>
+	<TexScale>0.65</TexScale>
+	<TexPath>res\Sprs\scene_TemperateForest_WuDang\scene_huangjing01_a</TexPath>
+	<Desc>生长在武当山的一种灵药。性喜荫蔽，种植对土壤肥力要求较高。</Desc>
+	<Rate>6</Rate>	
+	<Plant>	
+		
+		<RipedTexPath>res\Sprs\scene_TemperateForest_WuDang\scene_huangjing01_b</RipedTexPath>
+		<HarvestedTexPath>res\Sprs\scene_TemperateForest_WuDang\scene_huangjing01_c</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<GrowDays>56</GrowDays>
+		<HarvestDays>14</HarvestDays>
+		<LingMin>0</LingMin>
+		<LingMax>500</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>80</GrowGlowMax>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_WuDang_HuangJing</ThingDef>
+				<Count>5</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+</ThingDef>
+
+</List></ThingDefs>

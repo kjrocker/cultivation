@@ -1,0 +1,25 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="_OnTheWay">
+			<DisplayName>On the Way</DisplayName>
+		</Text>
+		<Text Name="_GodOnTheWay">
+			<DisplayName>God On the Way</DisplayName>
+		</Text>
+		<Text Name="_InMap">
+			<DisplayName>Area</DisplayName>
+		</Text>
+		<Text Name="_StayFree">
+			<DisplayName>Wandering around on adventures.</DisplayName>
+		</Text>
+		<Text Name="Place_OldSchool">
+			<DisplayName>Ancient Sect</DisplayName>
+		</Text>
+		<Text Name="_TestMap">
+			<DisplayName>On the Way</DisplayName>
+		</Text>
+		<Text Name="_LOSTPALCE">
+			<DisplayName>Lost Land (Empty)</DisplayName>
+		</Text>
+	</List>
+</Texts>

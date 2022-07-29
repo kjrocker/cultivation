@@ -1,0 +1,239 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="FarmBase" Parent="PlantBase">
+	
+	<MaxStack>1</MaxStack>
+	<TexPath>Plant/plant/GrassA</TexPath>
+	<Desc>Desc.</Desc>
+	<FilthLeaving></FilthLeaving>
+	<Beauty>2</Beauty>
+	<Rate>3</Rate>	
+	<UseHitPoints>1</UseHitPoints> 
+	<MaxHitPoints>200</MaxHitPoints>
+	
+	<Plant>
+		<WildClusterSizeRangemin>5</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>15</WildClusterSizeRangemax>
+		<WildClusterRadius>5</WildClusterRadius>
+	
+	
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>	
+		
+		<SowWork>35</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag></SowPlaceTag>
+		<SowRenderTags>Plant</SowRenderTags>
+		
+		<LifespanFraction>112</LifespanFraction>
+		<GrowDays>0</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		
+		<WitherAble>0</WitherAble>
+		<WitherDestroy>1</WitherDestroy>
+		
+		<TempMin>10</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>500</LingMax>
+		<FertilityMin>0.6</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+		<SnowRenderData>
+			<x>2.2</x>
+			<y>3.6</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>45</HarvestWork> 
+		<DropWork>45</DropWork>   		
+		<HarvestValueMin>0.6</HarvestValueMin>  
+		<HarvestFailable>0</HarvestFailable> 
+		
+		<HarvestTag>
+			<li>Harvest</li>
+		</HarvestTag> 
+		<HarvestItems>
+			<!--<li>
+				<ThingDef>Wheat</ThingDef>
+				<Count>50</Count>
+				
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+			</li>-->
+		</HarvestItems>
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.5</Accommodate>
+	</Ling>
+</ThingDef>
+
+
+<ThingDef Type="Plant" Name="Wheat" Parent="FarmBase">
+	<ThingName>小麦</ThingName>
+	<TexPath>res\Sprs\scene_TemperateForest_plant\scene_maizi001_a;
+			 res\Sprs\scene_TemperateForest_plant\scene_maizi001_b</TexPath>
+	<Desc>主要的食物来源，虽然生长周期较长，但其适应性强，在[temperature]0[/temperature]-[temperature]40[/temperature]的范围内都可以生长。且产量较大。</Desc>
+	<Frags>	
+		<li Frag="Farm" />
+	</Frags>	
+
+	<Plant>	
+		<RipedTexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_maizi002_a;
+		res\Sprs\scene_TemperateForest_plant\scene_maizi002_b
+		</RipedTexPath>
+		<HarvestedTexPath>
+		res\Sprs\scene_TemperateForest_plant\scene_maizi003_a;
+		res\Sprs\scene_TemperateForest_plant\scene_maizi003_b
+		</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<GrowDays>19</GrowDays>
+		<HarvestDays>6</HarvestDays>
+		
+		
+		<TempMin>0</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>500</LingMax>
+		<FertilityMin>0.6</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>40</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+	</Plant>
+	<Harvest>		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Wheat</ThingDef>
+				<Count>9</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Healroot" Parent="FarmBase">
+	<ThingName>药草</ThingName>
+	<TexPath>res\Sprs\scene_TemperateForest_plant\scene_caoyao001</TexPath>
+	<Desc>最常用的基础药物，可以加工炼制成其他各类药品。只能在[temperature]10[/temperature]-[temperature]40[/temperature]的范围内生长。</Desc>
+	<Plant>	
+		<WildClusterSizeRangemin>5</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>10</WildClusterSizeRangemax>
+		<WildClusterRadius>3</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res\Sprs\scene_TemperateForest_plant\scene_caoyao003</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<GrowDays>32</GrowDays>
+		<HarvestDays>14</HarvestDays>
+		
+	</Plant>
+	<Harvest>
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Healroot</ThingDef>
+				<Count>3</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Cotton" Parent="FarmBase">
+	<ThingName>棉花</ThingName>
+	<TexPath>res\Sprs\scene_TemperateForest_plant\scene_cotton1_a</TexPath>
+	<Desc>生产布料的主要来源，适宜温度在[temperature]5[/temperature]-[temperature]35[/temperature]。也可通过历练前往小凉山获取。</Desc>
+	<Plant>	
+		
+		<RipedTexPath>res\Sprs\scene_TemperateForest_plant\scene_cotton1_b</RipedTexPath>
+		<HarvestedTexPath>res\Sprs\scene_TemperateForest_plant\scene_cotton1_c</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<GrowDays>17</GrowDays>
+		<HarvestDays>5</HarvestDays>
+		
+		<TempMin>5</TempMin>
+		<TempMax>35</TempMax>
+	</Plant>
+	<Harvest>
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Count>5</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Mushroom" Parent="FarmBase">
+	<ThingName>香菇</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\scene_TemperateForest_plant\scene_mogu001</TexPath>
+	<Desc>常见的菌类食物，通常生长在[temperature]18[/temperature]-[temperature]23[/temperature]的环境中，只能在阴暗的环境中生长。</Desc>
+	<Plant>	
+		<WindEffect>0</WindEffect>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.6</VisualSizeMin>
+		<VisualSizeMax>2</VisualSizeMax>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<SowWork>75</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag>WetLand</SowPlaceTag>  <!--地板，蘑菇床的设定 -->
+		<SowRenderTags>Plant</SowRenderTags>
+		
+		<GrowDays>5</GrowDays>
+		<HarvestDays>2</HarvestDays>
+		
+		
+		<TempMin>18</TempMin>
+		<TempMax>23</TempMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>40</GrowGlowMax>	
+	</Plant>
+	<Harvest>
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Mushroom</ThingDef>
+				<Count>2</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+</ThingDef>
+</List></ThingDefs>

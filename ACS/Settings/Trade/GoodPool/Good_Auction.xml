@@ -1,0 +1,190 @@
+<Defs><List>
+	<Def Name="AuctionFinalItem">
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossFeng_TouYu</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossFeng_WeiYu</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossFeng_HongYu</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossLong_Jiao</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossLong_NiLin</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossLong_Jing</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossZhuLong_Eye</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossZhuLong_LongYu</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_BossZhuLong_TianLin</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_Dan_FenShen1</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_Dan_FenShen2</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_Dan_FenShen3</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_Yao_CatSoul</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremeRare">
+			<ItemName>Item_WhiteHair</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="AuctionHorse">
+		<Item Weight="3" CountName="ExtremeRare">
+			<ItemName>Item_HorseFromFei</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="3" CountName="ExtremeRare">
+			<ItemName>Item_HorseFromLuShu</ItemName>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="AuctionItem">
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossFeng_HuoYu</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossFeng_GangYu</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossFeng_Gu</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_DragonScale</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossLong_Zhua</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossLong_Lin</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossZhuLong_BaiLin</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossZhuLong_HeiLin</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Fall_LingZhi</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Winter_LingZhi</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Spring_LingZhi</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Summer_LingZhi</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Earth_LingZhi</ItemName>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="AuctionTrashItem">
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossFeng_Meat</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossLong_Meat</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_BossZhuLong_Meat</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Restore</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_SwordBall</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Ling3</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Thin</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_FaceLock</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_FaceUnLock</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Soul1</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Soul2</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Soul3</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_Dan_Soul4</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="Normal">
+			<ItemName>Item_QiZhi</ItemName>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+</List></Defs>

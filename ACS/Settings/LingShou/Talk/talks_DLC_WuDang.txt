@@ -1,0 +1,13 @@
+talk	notarget	int	string	float	thing
+NotEat_Item_WuDang_HuangJingFen	我不会吃黄精粉				
+NotEat_Item_Dan_WuQiNoHunger2	我不会吃五气辟谷丹				
+NotEat_Item_Dan_SanHuaHuangJing	我不会吃三花黄精丸				
+WannaEat_Item_WuDang_HuangJingFen	我很想吃黄精粉				
+WannaEat_Item_Dan_WuQiNoHunger2	我很想吃五气辟谷丹				
+WannaEat_Item_Dan_SanHuaHuangJing	我很想吃三花黄精丸				
+DoTalkEat_Item_WuDang_HuangJingFen					我正在吃黄精粉
+DoTalkEat_Item_Dan_WuQiNoHunger2					我正在吃五气辟谷丹
+DoTalkEat_Item_Dan_SanHuaHuangJing					我正在吃三花黄精丸
+CantEat_Item_WuDang_HuangJingFen	我找不到黄精粉可吃				
+CantEat_Item_Dan_WuQiNoHunger2	我找不到五气辟谷丹可吃				
+CantEat_Item_Dan_SanHuaHuangJing	我找不到三花黄精丸可吃				

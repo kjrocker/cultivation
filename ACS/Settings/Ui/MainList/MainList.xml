@@ -1,0 +1,356 @@
+<MainList><List>
+
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="Wall"/>                            <!--墙-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="Barrier"/>                         <!--栅栏-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="Barrier2"/>                         <!--栅栏-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="Door"/>                            <!--门（墙）-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="WoodRoof"/>                      <!--屋顶-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="StoneRoof"/>                      <!--屋顶-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="Door_WanYao"/>                    <!--门-->
+	<Data Kind="Builds" Unlock="1" Type="结构"  CMDType="Build" Name="YaoRoof"/>                      <!--屋顶-->
+	<Data Kind="Builds" Unlock="0" Type="结构"  CMDType="Build" Name="WoodRoof_SpringFestival"/>
+	<Data Kind="Builds" Unlock="0" Type="结构"  CMDType="Build" Name="StoneRoof_SpringFestival"/>
+
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="Bed"/>                            <!--床-->
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="Table"/>                         <!--桌-->
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="SmallTable"/> 	               <!--小方桌-->
+	<Data Kind="Builds" Unlock="3" Type="生活"  CMDType="Build" Name="DoubleBed"/>                     <!--双人床-->
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="WaterTank"/>                     <!--水缸-->
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="Building_Tomb"/>                      <!--坟墓-->
+	<Data Kind="Builds" Unlock="4" Type="生活"  CMDType="Build" Name="Building_BigTomb"/>                   <!--陵墓-->
+	<Data Kind="Builds" Unlock="3" Type="生活"  CMDType="Build" Name="Building_ItemShelf"/>                 <!--置物台-->
+	<Data Kind="Builds" Unlock="3" Type="生活"  CMDType="Build" Name="Building_ShuZhuangTai"/>            <!--梳妆台-->
+
+
+
+	<Data Kind="Builds" Unlock="1" Type="工作"   	CMDType="Build" Name="MaterialWorkPlace"/>                       <!--材料加工点-->
+	<Data Kind="Builds" Unlock="1" Type="工作"   	CMDType="Build" Name="WorkPlace"/>                       <!--手工点-->
+	<Data Kind="Builds" Unlock="4" Type="工作"      CMDType="Build" Name="PuppetPlace"/>                <!--傀儡停放点-->
+	<Data Kind="Builds" Unlock="0" Type="工作"  	CMDType="Build" Name="Bonfire"/>                         <!--篝火-->
+	<Data Kind="Builds" Unlock="1" Type="工作"  	CMDType="Build" Name="Well"/>                            <!--水井-->
+	<Data Kind="Builds" Unlock="1" Type="工作"  	CMDType="Build" Name="Kitchen"/>                         <!--炉灶-->
+	<Data Kind="Builds" Unlock="1" Type="工作"   	CMDType="Build" Name="HandWorkTable"/>                   <!--手工桌-->
+	<Data Kind="Builds" Unlock="1" Type="工作"  	CMDType="Build" Name="WoodShed"/>                        <!--柴房-->
+	<Data Kind="Builds" Unlock="1" Type="工作"   	CMDType="Build" Name="StoneMaker"/>	                     <!--切石桌-->
+
+	<Data Kind="Builds" Unlock="3" Type="工作"   	CMDType="Build" Name="MedicineTable"/>                   <!--制药桌-->
+	<Data Kind="Builds" Unlock="3" Type="工作"   	CMDType="Build" Name="WeaponMaker"/>                     <!--锻铁台-->
+	<Data Kind="Builds" Unlock="3" Type="工作"  	CMDType="Build" Name="Furnace"/>                         <!--熔炉-->
+	<Data Kind="Builds" Unlock="3" Type="工作"  	CMDType="Build" Name="MillStone"/>                       <!--磨坊-->
+	<Data Kind="Builds" Unlock="3" Type="工作"   	CMDType="Build" Name="TailorTable"/>                     <!--缝纫台-->
+	<Data Kind="Builds" Unlock="3" Type="工作"   	CMDType="Build" Name="TextileTable"/>                    <!--纺织机-->
+	<Data Kind="Builds" Unlock="4" Type="工作"      CMDType="Build" Name="CalligraphyTable"/>                <!--画符桌-->
+
+	<Data Kind="Builds" Unlock="1" Type="门派"  CMDType="Build" Name="BasePracticePlace"/>             		 <!--练功点-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="ExploreBackPlace"/>             		 <!--历练归来点-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="TrainingDummy"/>                		 <!--假人桩-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_BookShelf_CangJing"/>                		 <!--藏经阁书架-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="FengShui"/>                        <!--观星台-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="RefiningCushion"/>                     <!--炼宝台-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="DanStove"/>                            <!--丹炉-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_XiaoDanLu1"/>                        <!--小丹炉-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_XiaoDanLu2"/>                        <!--小丹炉-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Cushion"/>                             <!--蒲团-->
+	<Data Kind="Builds" Unlock="5" Type="门派"  CMDType="Build" Name="Building_MagicCushion"/>               <!--法座-->
+	<Data Kind="Builds" Unlock="4" Type="门派"   CMDType="Build" Name="TheGate"/>                            <!--门派石碑-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_SacrificialTable"/>           <!--祖师牌位-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_Zhong" ExName="Building_Zhong1"/>   <!--钟-->
+	<Data Kind="Builds" Unlock="5" Type="门派"   CMDType="Build" Name="Build_TheBigGate"/>                   <!--门派山门-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Build_KunLunFang"/>                           <!--昆仑坊-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Build_BaiManFang"/>                           <!--百蛮坊-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Build_WanYaoMen"/>                           <!--万妖坊-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_Spring2021_1"/>                           <!--灯楼坊-->
+	<Data Kind="Builds" Unlock="5" Type="门派"  CMDType="Build" Name="Building_BigSwordPillar"/>             <!--剑柱-->
+	<Data Kind="Builds" Unlock="5" Type="门派"  CMDType="Build" Name="SmallPool"/>
+	<Data Kind="Builds" Unlock="0" Type="门派"  CMDType="Build" Name="Building_RPG_YingTianTai"/>             <!--应天台-->
+
+
+
+
+<!-- 	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_BaBaoGongDe"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_WanDaoZunFaZuo"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_QiQingQingTongShu"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_ZhouTianXingDouPan"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_WuLongXuanJinTa"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_ShuShanJianChi"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_LingYuFeng"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_WanGuXieFaTan"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_XuanCiTianKeng"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_QiShaShenBei"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇观"  CMDType="Build" Name="Building_XuanYinShengQuan"/>        -->
+
+	<Data Kind="Builds" Unlock="1" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Candlestick"/>                   <!--烛台-->
+	<Data Kind="Builds" Unlock="1" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern1" ExName="Lantern2"/>      <!--灯笼-->
+	<Data Kind="Builds" Unlock="1" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern"/>                       <!--灯笼-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern3"/>                       <!--灯笼-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern4"/>                       <!--灯笼-->
+	<Data Kind="Builds" Unlock="0" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern5"/>                       <!--灯笼-->
+	<Data Kind="Builds" Unlock="0" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern6"/>                       <!--灯笼-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="StreetLight"/>                  	  <!--灯柱-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="StreetLight1"/>                  	  <!--灯柱-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="StreetLight2"/>                  	  <!--灯柱-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern_S1"/>                  	  <!--鹤灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_DiMuJiDeng"/>            <!--地母祭灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_QingShaDeng"/>            <!--轻纱灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_HuangLongDengTai"/>            <!--黄龙灯台-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_LianHuaDengTai"/>            <!--莲心灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_XieXiDeng"/>            <!--邪骨堆-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_KuLouDeng"/>            <!--幽冥灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_XiongKuiDeng"/>          <!--凶傀灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_YaoHuoPen"/>          <!--异首兽型炉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_ChangMingDeng"/>          <!--长明兽神灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_2"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_3"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_4"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_5"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_6"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_7"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_8"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_9"/>          <!--春节灯-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Building_Spring2021_10"/>          <!--春节灯-->
+
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BigTripod"/>                        <!--鼎-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_SmallTripod"/>                        <!--鼎-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BigCenser"/>                        <!--香炉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_SmallCenser"/>                        <!--香炉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BigVase"/>                        <!--花瓶-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_SmallVase"/>                        <!--花瓶-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_MoWenHuaPing"/>                        <!--邪派花瓶-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_Screen1"/>                        <!--屏风-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_XiePingFeng"/>                        <!--邪派屏风-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BookShelf"/>                        <!--书架-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_ShaZhang1"/>                         <!--纱帐-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_ShaZhang2"/>                         <!--纱帐-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_JuXingXiangLu"/>                     <!--巨型香炉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_HuoDing"/>                           <!--火鼎-->
+
+
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_JiaShan1"/>                     	   <!--假山1-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_JiaShan2"/>                     	   <!--假山2-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_PenZai1"/>                     	   <!--盆栽1-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_PenZai2" ExName="Building_PenZai3"/>  <!--盆栽2-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_KuLouHuaPing"/>                       <!--邪派盆栽-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi1"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi2"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi3"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi4"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi5"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_QiShi6"/>                             <!--奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi1"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi2"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi3"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi4"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi5"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShuiZhongQiShi6"/>                   <!--水中奇石-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuShouHai1"/>                   <!--上古残骸-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuShouHai2"/>                   <!--上古残骸-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuShouHai3"/>                   <!--上古残骸-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuShouHai4"/>                   <!--上古残骸-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuCanJi1"/>                   <!--上古残迹-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuCanJi2"/>                   <!--上古残迹-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuCanJi3"/>                   <!--上古残迹-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuCanJi4"/>                   <!--上古残迹-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_ShangGuCanJi5"/>                   <!--上古残迹-->
+
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu1"/>                        <!--奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu2"/>                        <!--奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu3"/>                        <!--奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu4"/>                        <!--水生奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu5"/>                        <!--水生奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LingShu6"/>                        <!--水生奇木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ZiXiaoJuShu"/>                        <!--紫霄巨树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShaShenMu1"/>                        <!--煞神木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShaShenMu2"/>                        <!--煞神木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShaShenMu3"/>                        <!--煞神木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShaShenMu4"/>                        <!--煞神木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShuiShenHuaShu1"/>                        <!--水中花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShuiShenHuaShu2"/>                        <!--水中花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShuiShenHuaShu3"/>                        <!--水中花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_TaoShu1"/>                        <!--桃花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_TaoShu2"/>                        <!--桃花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_TaoShu3"/>                        <!--桃花树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu1"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu2"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu3"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu4"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu5"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_YuShu6"/>                        <!--玉树-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu1"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu2"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu3"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu4"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu5"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_GuMu6"/>                        <!--古木-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShiCheJu1"/>                        <!--矢车菊-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShiCheJu2"/>                        <!--矢车菊-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_ShiCheJu3"/>                        <!--矢车菊-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_LuoTuoCao"/>                        <!--骆驼刺-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_CongRong1"/>                        <!--苁蓉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="奇木"  CMDType="Build" Name="Building_CongRong2"/>                        <!--苁蓉-->
+
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Flag1"/>                        <!--旗帜-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Flag2"/>                        <!--旗帜-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Flag3"/>                        <!--旗帜-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Gu" ExName="Building_Gu1"/>          <!--鼓-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_ShiBei" ExName="Building_ShiBei1"/>  <!--石碑-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Tower2" ExName="Building_Tower1"/>   <!--塔-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Tower"/>                             <!--塔-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_LingDiShuiChi"/>                     <!--灵地水池-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_LianFaTan"/>                         <!--炼法坛-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_TaiXuanBingZhu"/>                    <!--太玄冰柱-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YanDiTai"/>                          <!--衍地台-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_TengLongZhu"/>                       <!--腾龙柱-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_JianYiFuDiao"/>                      <!--剑意浮雕-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_ShuiLianTai"/>                       <!--天水莲台-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_DiMuMiXue"/>                         <!--地母秘穴-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_QiShaJianZhu"/>                      <!--七杀剑柱-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_QingTongFanQi"/>                     <!--青铜祭旗-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_DiMuJiQi"/>                          <!--地母祭旗-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_MoMenJiQi"/>                        <!--魔门旗帜-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_MoMenJiQi1"/>                        <!--魔门旗帜-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YuHeQingLian1"/>                     <!--剑心玉莲-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YuHeQingLian2"/>                     <!--剑心玉莲-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YuHeQingLian3"/>                     <!--剑心玉莲-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_TianSheQi"/>                     <!--天蛇妖旗-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_JuXingShouGu"/>                     <!--巨兽骨雕-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_LongXingYuanPan"/>                     <!--盘龙座-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YaoShouDing"/>                     <!--妖王鼎-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_YaoZuXingJia"/>                     <!--妖刑架-->
+
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_StoneMan"/>                        <!--雕像-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_StoneLion"/>                     <!--狮子-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_StoneLion2"/>                    <!--狮子2-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_StoneLion3"/>                    <!--狮子3-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_Statue1"/>                              <!--太清-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_Statue2"/>                              <!--玉清-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_Statue3"/>                              <!--上清-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_BingFengDiaoSu"/>                        <!--冰凤雕像-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_QingTongLong"/>                        <!--青铜龙像-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_QingTongShouXiangLu"/>               <!--青铜蛮兽香炉-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_XieLongDiaoXiang"/>                        <!--邪龙雕像-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_MoZhuaDiaoSu"/>                        <!--邪爪雕像-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_DiMuKuiShou"/>                        <!--地母魁首-->
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="雕像"  CMDType="Build" Name="Building_YaoZuDiaoXiang"/>                        <!--凶蛮雕像-->
+
+
+
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_SleeveSpace"/>                        <!--小乾坤界-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_SleeveSpace1"/>                        <!--小乾坤界门户-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_BaBaoGongDe_Our"/>                        <!--八宝功德池-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_WanDaoZunFaZuo_Our"/>                        <!--万道尊法座-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_QiQingQingTongShu_Our"/>                        <!--七情树-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_ZhouTianXingDouPan_Our"/>                        <!--周天星斗盘-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_WuLongXuanJinTa_Our"/>                        <!--五龙塔-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_ShuShanJianChi_Our"/>                        <!--剑池-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_LingYuFeng_Our"/>                        <!--灵玉峰-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_WanGuXieFaTan_Our"/>                        <!--万骨邪法坛-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_XuanCiTianKeng_Our"/>                        <!--玄磁天坑-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_QiShaShenBei_Our"/>                        <!--七杀神碑-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_XuanYinShengQuan_Our"/>                        <!--玄阴圣泉-->
+	<Data Kind="Builds" Unlock="4" Type="奇观"   CMDType="Build" Name="Building_YaoZuYiHai_Our"/>                        <!--妖祖遗骸-->
+
+	<Data Kind="Builds" Unlock="1" Type="娱乐"  CMDType="Build" Name="TicTacToe"/>                       <!--井字棋-->
+	<Data Kind="Builds" Unlock="3" Type="娱乐"  CMDType="Build" Name="CageShelf"/>	                     <!--虫鸟架-->
+	<Data Kind="Builds" Unlock="4" Type="娱乐"  CMDType="Build" Name="GoTable"/>                       <!--围棋桌-->
+	<Data Kind="Builds" Unlock="4" Type="娱乐"  CMDType="Build" Name="GuzhengTable"/>                  <!--琴台-->
+	<Data Kind="Builds" Unlock="0" Type="娱乐"  CMDType="Build" Name="Firecracker"/>                  <!--烟花-->
+
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Command" Display="拆除地板" Icon="res/Sprs/ui/icon_dismantle1a" Name="RemoveFloor" Desc="[color=#0000FF]拆除地板[/color]([keycode]RemoveFloor[/keycode])\n拆除人造地板。\n工作类型:筑工"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Carpet1"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor30"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor31"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor32"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor33"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor1"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor2"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor3"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor4"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor5"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor6"/>
+	<Data Kind="Builds" Unlock="1" Type="地板"  CMDType="Build" Name="Floor7"/>
+	
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor8"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor9"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor10"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor11"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor12"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor13"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor14"/>
+	<Data Kind="Builds" Unlock="3" Type="地板"  CMDType="Build" Name="Floor15"/>
+	
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor16"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor17"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor18"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor19"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor20"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor21"/>
+	<Data Kind="Builds" Unlock="4" Type="地板"  CMDType="Build" Name="Floor22"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor23"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor24"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor25"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor26"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor27"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor28"/>
+	<Data Kind="Builds" Unlock="5" Type="地板"  CMDType="Build" Name="Floor29"/>
+	
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsDogHouse"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsDog_Carve"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsFox_Carve"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsDragon_Carve"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsPhoenix_Carve"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LingShouShitPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSEnemyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSVistorCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSEnemyBodyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSWaiBodyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSVistorBodyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSNeiBodyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSMortalBodyCarryPlace"/>
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LSMortalCarryPlace"/>
+
+
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_storagearea" Unlock="1" CMDType="Area" Display="仓库" Name="AreaStorage" Desc="拖拽以划分一个仓库，角色会将物品搬运到区域中存放。\n工作类型:苦工"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_plantarea1" Unlock="1" CMDType="Area" Display="农田" Name="AreaPlant" Desc="拖拽以划分一个农田，角色会在此种植对应的作物。\n工作类型:农人"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_plantarea2" Unlock="4" CMDType="Area" Display="药田" Name="DiscipleAreaPlant" Desc="拖拽以划分一个药田，角色会在此种植对应的仙草灵药。\n工作类型:农人"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_yangzhi1" Unlock="1" CMDType="Area" Display="养殖区" Name="AreaBreeding" Desc="拖拽以划分一个养殖区，已驯养的动物的活动范围可以安排至此"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_storagearea" Unlock="4" CMDType="Area" Display="交易区" Name="AreaTrade" Desc="拖拽以划分一个交易区"/>
+
+
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_storagearea_del" Unlock="1" CMDType="Command" Display="移除仓库" Name="RemoveStorageArea" Desc="移除仓库。"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_plantarea1_del" Unlock="1" CMDType="Command" Display="移除农田" Name="RemovePlantArea" Desc="移除农田。"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_plantarea2_del" Unlock="4" CMDType="Command" Display="移除药田" Name="RemoveDiscipleAreaPlant" Desc="拆除药田。"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_yangzhi2" Unlock="1" CMDType="Command" Display="移除养殖区" Name="RemoveAreaBreeding" Desc="拆除养殖区。"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_storagearea_del" Unlock="4" CMDType="Command" Display="移除交易区" Name="RemoveAreaTrade" Desc="拆除交易区。"/>
+
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_fentang01" Unlock="6" CMDType="Area" Display="分堂" Name="AreaTang" Desc="拖拽以划分一个分堂区域，角色所属的分堂区域将有额外加成效果。"/>
+	<Data Kind="Builds" Type="区域" Icon="res/Sprs/ui/icon_fentang02" Unlock="6" CMDType="Command" Display="移除分堂" Name="RemoveTangArea" Desc="移除分堂区域"/>
+	<Data Kind="Builds" Type="区域" Unlock="3"  CMDType="Build" Name="FillSoil"/>
+	<Data Kind="Builds" Type="区域" Unlock="3"  CMDType="Build" Name="FillShallowWater"/>
+	<Data Kind="Builds" Type="区域" Unlock="3"  CMDType="Build" Name="FillFertileSoil"/>
+
+	<Data Kind="Builds" Type="蓝图" Label="全部" Icon="res/Sprs/ui/icon_storagearea" Unlock="1"  CMDType="Command" Display="导出蓝图" Name="BlueprintCreat" Desc="导出建筑蓝图"/>
+	<Data Kind="Builds" Type="蓝图" Label="我的蓝图" Icon="res/Sprs/ui/icon_storagearea" Unlock="1"  CMDType="Command" Display="导出蓝图" Name="MyBlueprintCreat" Desc="导出建筑蓝图"/>
+	<Data Kind="Builds" Type="蓝图" Label="万界天宫" Icon="res/Sprs/ui/icon_storagearea" Unlock="1"  CMDType="Command" Display="导出蓝图" Name="WBlueprintCreat" Desc="导出建筑蓝图"/>
+
+	<Data Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="收获" Icon="res/Sprs/ui/icon_crop1a" Name="Harvest" Desc="[color=#0000FF]收获植物[/color]([keycode]Harvest[/keycode])\n收获植物，以获得其果实产物。\n工作类型:农人"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="-1" Display="砍伐" Icon="res/Sprs/ui/icon_fell1a" Name="Log" Desc="[color=#0000FF]砍伐树木[/color]([keycode]Log[/keycode])\n砍伐树木，以获得原木。\n工作类型:木客"/>
+	<Data Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="开采" Icon="res/Sprs/ui/icon_dig1a" Name="Mine" Desc="[color=#0000FF]开采矿藏[/color]([keycode]Mine[/keycode])\n开采山体矿脉，以获得石头或金属。\n工作类型:石工"/>
+	<Data Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="清除" Icon="res/Sprs/ui/icon_remove1a" Name="Cutoff" Desc="[color=#0000FF]清除区域[/color]([keycode]Cutoff[/keycode])\n清除区域内的所有植被等物。\n工作类型:木客"/>
+	<Data Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="拆除" Icon="res/Sprs/ui/icon_dismantle1a" Name="Dismantle" Desc="[color=#0000FF]拆除建筑[/color]([keycode]Dismantle[/keycode])\n拆除区域内的所有建筑。\n工作类型:筑工"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="-1" Display="探索" Icon="res/Sprs/ui/icon_flag" Name="Explore" Desc="[color=#0000FF]探索区域[/color]([keycode]Explore[/keycode])\n探索一个被迷雾覆盖的区域。角色在探索过程中会消耗更多精力。\n工作类型:猎户"/>
+<!--	<Data Kind="Commands" Unlock="1" CMDType="Command" Display="灭火" Icon="res/Sprs/ui/icon_outfire" Name="OutFire" Desc="[color=#0000FF]扑灭火焰[/color](Ctrl+Y)\n扑灭区域内失控的火焰。"/>-->
+	<Data Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="狩猎" Icon="res/Sprs/ui/icon_hunter" Name="Hunting" Desc="[color=#0000FF]狩猎动物[/color]([keycode]Hunting[/keycode])\n击杀并屠宰野生动物。\n工作类型:猎户"/>
+	<Data Kind="Commands" Unlock="4" CMDType="Command" BuildMode="-1" Display="熔炼" Icon="res/Sprs/ui/icon_ronglian" Name="Melting" Desc="[color=#0000FF]熔炼物品[/color]([keycode]Melting[/keycode])\n内门弟子将会尝试将物品熔炼为灵石。\n每5000灵气可以熔炼为一个灵石。 如果是法宝，则法宝的品阶越高，熔炼出的灵石越多。"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="-1" Display="取消" Icon="res/Sprs/ui/icon_ban" Name="CancelCMD"  Desc="[color=#0000FF]取消命令[/color]([keycode]CancelCMD[/keycode])\n取消掉范围内的已经发布的命令。"/>
+
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="1" Display="植物" Icon="res/Sprs/ui/icon_crop1a" 	Name="ClearPlant" Desc="[color=#0000FF]清除植物[/color]\n清除区域内的所有植物。"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="1" Display="矿石" Icon="res/Sprs/ui/icon_dig1a" 		Name="ClearMine " Desc="[color=#0000FF]清除矿石[/color]\n清除区域内的所有矿石。"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="1" Display="建筑" Icon="res/Sprs/ui/icon_dismantle1a" Name="ClearBuilding" Desc="[color=#0000FF]清除建筑[/color]\n清除区域内的所有建筑。"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="1" Display="地板" Icon="res/Sprs/ui/icon_dig1a" Name="ClearFloor" Desc="[color=#0000FF]清除地板[/color]\n清除区域内的人造地板。"/>
+	<Data Kind="Commands" Unlock="0" CMDType="Command" BuildMode="1" Display="物品" Icon="res/Sprs/ui/icon_ban" 		 Name="ClearItem"  Desc="[color=#0000FF]清除物品[/color]\n清除区域内的所有物品。"/>
+
+
+	<Data Parent="Dismantle" Kind="Commands" Unlock="1" CMDType="Command" BuildMode="-1" Display="重建" Icon="res/Sprs/ui/icon_building01" Name="Dismantle2" DataName="Dismantle" Desc="[color=#0000FF]重建建筑[/color]([keycode]Dismantle[/keycode])\n重建区域内的所有废墟。\n工作类型:筑工"/>
+	<Data Parent="CancelCMD" Kind="Commands" Unlock="0" CMDType="Command" BuildMode="-1" Display="禁用" Icon="res/Sprs/ui/icon_ban2" Name="CancelCMD2" DataName="CancelCMD"  Desc="[color=#0000FF]物品禁用[/color]([keycode]CancelCMD[/keycode])\n取消/激活物品的禁用状态，以框选的起点物品状态为准。"/>
+
+</List></MainList>

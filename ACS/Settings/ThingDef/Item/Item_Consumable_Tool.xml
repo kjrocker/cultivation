@@ -1,0 +1,1154 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="ToolBase" Parent="ItemBase">
+	
+	
+	<ThingName></ThingName>
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+
+	<Beauty>2</Beauty>
+	<Rate>1</Rate>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>150</BurningPoint>
+	</Flammability>
+	
+	<Item  Lable="Tool">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="2" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FuelMultiplier>1</FuelMultiplier>
+		<!-- 
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Metallic"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		
+		-->
+		<BeMaterial>
+			<NamePrefix></NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>1.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dice" Parent="ToolBase">
+	
+	<ThingName>骰子</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_dice</TexPath>
+	<Desc>一对骰子，带在身上可以没事的时候用来解解闷，提高心情，但是会影响工作效率。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>骰</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SmallBell" Parent="ToolBase">
+	
+	<ThingName>铃铛</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_lingdang01</TexPath>
+	<Desc>一只铃铛，带着身上可以让心情变好，也能吸引旁人的注意，使他们乐于与你交流。</Desc>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Frags>			
+		<li Frag="LickSelf" />
+	</Frags>
+	<Item Kind="Equipment">
+		<FabaoSuffix>铃</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun2</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Bracelet" Parent="ToolBase">
+	
+	<ThingName>手镯</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_jinzhuozi01</TexPath>
+	<Desc>一对手镯，带在身上让你变得更有魅力。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Frags>		
+		<li Frag="Ring" />
+	</Frags>	
+
+	<Item Kind="Equipment">
+		<FabaoSuffix>镯,琢</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun3</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Handkerchief" Parent="ToolBase">
+	
+	<ThingName>手帕</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_shoujuan01</TexPath>
+	<Desc>一张手帕，随身携带可以让你在别人眼中成为很讲究的人。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>帕,绢,帛</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+				<Stuff name = "Leather"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun4</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PerfumeBag" Parent="ToolBase">
+	
+	<ThingName>香囊</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xiangnang01</TexPath>
+	<Desc>一个香囊，内门弟子佩戴可以提高心境。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Frags>			
+		<li Frag="Wander" />
+	</Frags>		
+
+	<Item Kind="Equipment">
+		<FabaoSuffix>囊</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+				<Stuff name = "Leather"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_Mint" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun5</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_WhiteHair" Parent="ToolBase">
+	<ThingName>悲伤诗集</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_beishangshiji</TexPath>
+	<Desc>一本诗集，寄托了浓厚的悲伤气息，佩戴者会被愁思所染而一头白发，散发出忧郁的气息，让人觉得很有魅力。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="698"/>
+				<SalePrice Value="2500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="698" />
+				<SalePrice Value="3000" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="698" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>	
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>册,书,简,卷</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft1</li>
+			<li>GreatThing_Attack</li>
+		</PhysicalLables>	
+		<FuelMultiplier>1</FuelMultiplier>
+		<Equip>
+			<ToolModifier>SysTool_WhiteHair</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LunHui_PerfectWorld" Parent="ToolBase">
+	
+	<ThingName>美好世界</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>8</Rate>
+	<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+	<Desc>一个来自异世界的盒子，以神念沉浸其中可以游玩一个有趣而感人的游戏。</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>6</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>匣</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>SysTool_LunHui1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LunHui_QiYuanZhiXin" Parent="ToolBase">
+	
+	<ThingName>祈愿之心</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>8</Rate>
+	<TexPath>res\Sprs\object\object_youpo</TexPath>
+	<Desc>完全凡人对喜乐之祈愿凝聚而成的宝物。</Desc>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>6</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>心</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>SysTool_LunHui_QiYuan1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LunHui_DongFangHeShenZhen" Parent="ToolBase">
+	<ThingName>东方赫神针</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>1</Rate>
+	<TexPath>res/Sprs/object/object_zhenjiu01</TexPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Desc>此物原本是一位剑仙的本命法宝，虽然在随其主人轮回的过程中神威尽失，但依然保留其非凡的本质。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>6</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>针</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Light2</li>
+			<li>Smooth2</li>
+			<li>SmallThing</li>
+			<li>PhysicalLables_LunHui_DongFangHeShenZhen</li>
+		</PhysicalLables>	
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MuBai_BaiYuShi" Parent="ToolBase">
+	
+	<ThingName>白玉石</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>6</Rate>
+	<TexPath>res\Sprs\object\object_shisui01</TexPath>
+	<Desc>木白仙人留下的白玉石，看上去平平无奇，但却能极大的提高佩戴者的自然恢复力。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>6</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>石</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<BeMade>
+			<Quality>100</Quality>
+		</BeMade> 
+		<Equip>
+			<ToolModifier>SysTool_SP_BaiYuShi</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_QingLianShan_SiXiang" Parent="ToolBase">
+	
+	<ThingName>四象遮天图</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>12</Rate>
+	<TexPath>res\Sprs\object\object_shuahua01</TexPath>
+	<Desc>青莲仙人以大法力留下的神秘阵图，佩戴者可以借助本地气脉，加以大千世界四季流转之力，遮蔽自身天机九年，不受天劫困扰。如在此过程中如果卸下图卷，则天劫会瞬间降临。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50000" FriendPoint="99"/>
+				<SalePrice Value="50000" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="500000" />
+				<SalePrice Value="50000" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>图</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<BeMade>
+			<Quality>100</Quality>
+		</BeMade> 
+		<Equip>
+			<ToolModifier>SysTool_QingLianShan_SiXiang</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Other_PuppetTest" Parent="ToolBase">
+	<ThingName>傀儡</ThingName>
+	<TexScale>0.75</TexScale>
+	<TexPath>res\Sprs\object\object_6d6j001;res\Sprs\object\object_6d6j002</TexPath>
+	<Desc>一具傀儡。传闻《太和十六洞天》中记载有赋予傀儡灵性的秘法。</Desc>	
+	<Tags>
+		<Tag Name="Puppet" Level = "1"/>
+	</Tags>
+	<Rate>0</Rate>
+	<ElementKind>None</ElementKind>
+	<Frags>			
+		<li Frag="Human" />
+	</Frags>		
+
+	<IllustratedHandLabel>DOther</IllustratedHandLabel>
+	<Item>
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="100" />
+				<SalePrice Value="45" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<FabaoSuffix>傀儡</FabaoSuffix>	
+		<BeMade>
+			<WorkToMake>1800</WorkToMake>
+			<Quality>1</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>150</CostStuffCount>
+		</BeMade> 
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>Heavy2</li>
+		</PhysicalLables>	
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Yao_RabbitLuck" Parent="ToolBase">
+	<ThingName>兔妖的脚</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	<TexPath>res\Sprs\object\object_lucktujiao01</TexPath>
+	<Desc>传说可以带来好运。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_RabbitLuck</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_TaiYin" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_WolfAtk" Parent="ToolBase">
+	<ThingName>妖狼的尖牙</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Jin</ElementKind>
+	<TexPath>res\Sprs\object\object_yaolangjianya01</TexPath>
+	<Desc>完整的妖狼尖牙，煞气十足，佩戴可以从根本上提高角色的法宝伤害。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>SmallThing</li>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_WolfAtk</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_SnakeHanLin" Parent="ToolBase">
+	<ThingName>妖蛇的寒鳞</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Shui</ElementKind>
+	<TexPath>res\Sprs\object\object_sheyaohanlin01</TexPath>
+	<Desc>妖蛇身上凝聚全部阴气的鳞片，可以让人不惧高温，心境清明。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>SmallThing</li>
+			<li>Smooth2</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_SnakeHanLin</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_BearPiMao" Parent="ToolBase">
+	<ThingName>熊妖的脖颈毛</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	<TexPath>res\Sprs\object\object_xiongyaoxiongjingmao01</TexPath>
+	<Desc>熊妖脖颈处最精华的毛发，蕴含磅礴的阳刚之气。佩戴可以让人不惧低温，提高修炼速度。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Soft2</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_BearPiMao</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_TurtleKe" Parent="ToolBase">
+	<ThingName>巨龟的坚甲</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	<TexPath>res\Sprs\object\object_juguijia01</TexPath>
+	<Desc>巨龟的坚硬甲壳，佩戴可以极大的提高对灵气伤害的抵抗。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Hard2</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_TurtleKe</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_TigerZhui" Parent="ToolBase">
+	<ThingName>虎王骨</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_huwanggu01</TexPath>
+	<Desc>虎妖充满威严气息的骨片，佩戴可以增加魅力与道行。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_TigerZhui</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_CattleJiao" Parent="ToolBase">
+	<ThingName>妖牛角</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Tu</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_yaoniujiao01</TexPath>
+	<Desc>妖牛百炼之坚角，佩戴可以提高一些根骨。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>Heavy2</li>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_CattleJiao</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_ChickenGuan" Parent="ToolBase">
+	<ThingName>金阳冠</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>15</Beauty>
+	<Rate>9</Rate>
+	<ElementKind>Huo</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_jinjibaoguan01</TexPath>
+	<Desc>鸡精头顶凝聚太阳精华而成的宝冠，佩戴可以使人神识清明，悟性提高。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="300" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>Heavy2</li>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>Modifier_Item_Yao_ChickenGuan</ToolModifier>
+		</Equip>
+		
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_TaiYang" Count="1" Rate="0.05"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+	
+	<!--征伐新增-->
+	<ThingDef Type="Item" Name="Item_StoneCutter" Parent="ToolBase">
+	<ThingName>糊泥刀</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>5</Beauty>
+	<Rate>5</Rate>
+	<ElementKind>Jin</ElementKind>
+	<TexPath>res/Sprs/object_yaozujueqi/object_hunidao01</TexPath>
+	<Desc>非常钝，本来是用来采玉的，因为是钝器，用来建筑也很快。</Desc>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>SysTool_StoneCutter</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SewingDefender" Parent="ToolBase">
+	<ThingName>缝纫护腕</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>5</Beauty>
+	<Rate>5</Rate>
+	<ElementKind>Mu</ElementKind>
+	<TexPath>res\Sprs\object\object_jinzhuozi01</TexPath>
+	<Desc>看起来是个护腕，实则可借助肘部力量加快缝纫速度。</Desc>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>SysTool_SewingDefender</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MillVell" Parent="ToolBase">
+	<ThingName>磨面之遮</ThingName>
+	<MaxStack>1</MaxStack>
+	<Beauty>5</Beauty>
+	<Rate>5</Rate>
+	<ElementKind>Mu</ElementKind>
+	<TexPath>res\Sprs\object\object_shoujuan01</TexPath>
+	<Desc>遮住了脸，由于不会有人认出你来，可以肆无忌惮地磨面了，甚至其他手工工作也变快了，反正做得好坏别人也不知道是你做的。</Desc>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<Equip>
+			<ToolModifier>SysTool_MillVell</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_Sys_RanSeYu" Parent="RockBase">
+		<ThingName>染色玉</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yusui01</TexPath>
+		<Frags>	
+			<li Frag="Fog" />
+		</Frags>	
+
+		<Desc>一种奇特的玉石，以法术激发可以化为烟雾，附着在某人身上，完全无法被察觉。然而施术者却可以感受此物的行踪气息。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+	
+		<IllustratedHandLabel>DOther</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<UseLua>GameMain:GetMod('_FabaoHelper'):TrackNpc()</UseLua>
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>玉</FabaoSuffix>	
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JadeEssence" count = "1"/>
+					<Item name = "Item_MonsterBlood" count = "3"/>
+					<Item name = "Item_Cinnabar" count = "15"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+	</ThingDef>
+</List></ThingDefs>

@@ -1,0 +1,43 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="NpcDiscipleOfJinDan">
+			<Notes>Comment Panel of Xiandao Cultivator</Notes>
+			<Title>Xiandao Cultivator</Title>
+			<Desc>A cultivator who train with the Law of Golden Core in pursuit of the ways of immortals. Although the Xiandao Cultivators have chosen a difficult Law, it is a Law of greatness that truly gives you comprehensive understandings of the world that leads to the ultimate liberation. Although their individual strength is limited, they can fight in formations to engage enemy with the combined strength of masses. On top of that, they excel at alchemy and talisman drawing, transforming nature with various miraculous techniques. They are undoubtedly the mainstream of the cultivation world.</Desc>
+		</Text>
+		<Text Name="NpcDiscipleOfGod">
+			<Notes>Comment Panel of Shendao Cultivator</Notes>
+			<Title>Shendao Cultivator</Title>
+			<Desc>Cultivators that gather the power of belief from the masses in pursuit of the ways of gods. Although they are very powerful, as they can obtain power indefinitely from the infinite beliefs, they will irreversibly lose their identities in the process due to being dominated by beliefs, and become pure gods eventually.</Desc>
+		</Text>
+		<Text Name="NpcDiscipleOfBody">
+			<Notes>Comment Panel of Physical Cultivator</Notes>
+			<Title>Physical Cultivator</Title>
+			<Desc>Law of cultivation that dates back to ancient times. Harness essence between heaven and earth to refine your mortal body into that of an immortal. Physical Cultivators are good at fighting, they emphasize on the usage of force in cultivation. Even beginners, once finishing the introductory courses, can quickly become powerful in combat. However, the way of body refining is solely focused on one's body itself, it keeps absorbing energies from between the heaven and earth yet giving little in return. As a result, it is difficult for their numbers to grow. As time gone by, eventually it was proved too difficult for them to compete with the rising Xiandao cultivators, thus they gradually went into decline.</Desc>
+		</Text>
+		<Text Name="NpcWaiMen">
+			<Notes>Comment Panel of Outer Disciple</Notes>
+			<Title>Mortal</Title>
+			<Desc>Those who have never set foot on the Law of cultivation are like mere leaves to be swept away in these troubled times.</Desc>
+		</Text>
+		<Text Name="NpcDaNeng">
+			<Notes>Comment Panel of Master</Notes>
+			<Title>Ancient Cultivator</Title>
+			<Desc>Cultivators who went into a slumber due to the Qi drought in ancient times have now awakened and returned. They are very powerful.</Desc>
+		</Text>
+		<Text Name="NpcPuppet">
+			<Notes>Comment Panel of Vessel</Notes>
+			<Title>Vessel</Title>
+			<Desc>A humanoid object manipulated by magic, can perform simple manual labor.</Desc>
+		</Text>
+		<Text Name="NpcZombie">
+			<Notes>Comment Panel of Zombie</Notes>
+			<Title>Zombie</Title>
+			<Desc>Due to bad Feng Shui, some of the deceased mutated into mindless beings hungry for blood.</Desc>
+		</Text>
+		<Text Name="NpcTeacher">
+			<Notes>Comment Panel of Mysterious Cultivator</Notes>
+			<Title>Mysterious Cultivator</Title>
+		</Text>
+	</List>
+</Texts>

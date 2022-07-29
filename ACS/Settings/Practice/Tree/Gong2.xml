@@ -1,0 +1,521 @@
+﻿<SkillTree><List>	
+	<Node Name="Gong2_a5" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_1</Esoterica>
+		<DisplayName>百炼诀</DisplayName>
+		<Level>Qi</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,1,1,2,0</Line>
+		<Layers>
+			<li>Gong2_a5_1</li>
+			<li>Gong2_a5_2</li>
+			<li>Gong2_a5_4</li>
+		</Layers>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_a5_1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_1</Esoterica>
+		<DisplayName>百炼诀</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_a5_2" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_2</Esoterica>
+		<DisplayName>百炼诀</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_a5_4" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_4</Esoterica>
+		<DisplayName>百炼诀</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_a6" Gong="Gong_2_Mu">
+		<Level>Qi</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,1,0,1</Line>	
+	</Node>
+	
+	<Node Name="Gong2_a7" Gong="Gong_2_Mu">
+		<Level>Qi</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,1,1</Line>	
+	</Node>
+	
+	<Node Name="Gong2_a9" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_7</Esoterica>
+		<DisplayName>博物志</DisplayName>
+		<Level>Qi</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_b1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_6</Esoterica>
+		<DisplayName>上清真气</DisplayName>
+		<Level>Dan1</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,1,1,2,0</Line>
+		<Layers>
+			<li>Gong2_b1_1</li>
+		</Layers>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_b1_1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_5</Esoterica>
+		<DisplayName>上清真气</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	
+	<Node Name="Gong2_b2" Gong="Gong_2_Mu">
+		<Level>Dan1</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong2_b4" Gong="Gong_2_Mu">
+		<Level>Dan1</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>	
+	</Node>
+	
+	<Node Name="Gong2_b5" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_2</Esoterica>
+		<DisplayName>灵淬法</DisplayName>
+		<Level>Dan1</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,1,0,1,1</Line>
+		<PreUnit>
+			<li>Gong2_a5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_b7" Gong="Gong_2_Mu">
+		<Level>Dan1</Level>
+		<Index>7</Index>
+		<Line>1,0,1,0,1,0,1,0</Line>	
+	</Node>
+	
+	<Node Name="Gong2_b9" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_8</Esoterica>
+		<DisplayName>炼器十要</DisplayName>
+		<Level>Dan1</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong2_a9</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_b10" Gong="Gong_2_Mu">
+		<Level>Dan1</Level>
+		<Index>10</Index>
+		<Line>0,2,0,1,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong2_b11" Gong="Gong_2_Mu">
+		<Esoterica>Magic_LingStoneMake_1</Esoterica>
+		<DisplayName>灵石炼制</DisplayName>
+		<Level>Dan1</Level>
+		<Index>11</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_b9</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_c0" Gong="Gong_2_Mu">
+		<Esoterica>Magic_ClosedDoor_1</Esoterica>
+		<DisplayName>入定之术</DisplayName>
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_c1" Gong="Gong_2_Mu">
+		<Esoterica>Magic_PlantGrowUp_1</Esoterica>
+		<DisplayName>御木诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_b1</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_c2" Gong="Gong_2_Mu">
+		<Esoterica>Magic_Healing_Damage_1</Esoterica>
+		<DisplayName>化伤术</DisplayName>
+		<Level>Dan2</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_b1</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_c4" Gong="Gong_2_Mu">
+		<Esoterica>Magic_AbsorbLing_Thing_1</Esoterica>
+		<DisplayName>托体同山</DisplayName>
+		<Level>Dan2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,1,2,0</Line>
+		<PreUnit>
+			<li>Gong2_b5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="Gong2_c5" Gong="Gong_2_Mu">
+		<Level>Dan2</Level>
+		<Index>5</Index>
+		<Line>1,0,1,0,1,1,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong2_c6" Gong="Gong_2_Mu">
+		<Level>Dan2</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,0,2,1</Line>	
+	</Node>
+	
+	<Node Name="Gong2_c7" Gong="Gong_2_Mu">
+		<Level>Dan2</Level>
+		<Index>7</Index>
+		<Line>1,0,1,0,1,0,2,0</Line>	
+	</Node>
+	
+	<Node Name="Gong2_c9" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_9</Esoterica>
+		<DisplayName>琢玉册</DisplayName>
+		<Level>Dan2</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>Gong2_b9</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_d4" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_3</Esoterica>
+		<DisplayName>丙丁雷火</DisplayName>
+		<Level>God</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong2_d4_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong2_b5</li>
+		</PreUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_d4_1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_6</Esoterica>
+		<DisplayName>神火合一</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_d5" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_4</Esoterica>
+		<DisplayName>上清真焰</DisplayName>
+		<Level>God</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong2_d5_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong2_b5</li>
+		</PreUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_d5_1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_7</Esoterica>
+		<DisplayName>神火合一</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_d6" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_5</Esoterica>
+		<DisplayName>心焰</DisplayName>
+		<Level>God</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>Gong2_d6_1</li>
+		</Layers>
+		<PreUnit>
+			<li>Gong2_b5</li>
+		</PreUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_d6_1" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_LvUpEsoterica_8</Esoterica>
+		<DisplayName>神火合一</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_d7" Gong="Gong_2_Mu">
+		<Esoterica>Magic_Healing_Physique_1</Esoterica>
+		<DisplayName>伐毛洗髓</DisplayName>
+		<Level>God</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_a5</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_d9" Gong="Gong_2_Mu">
+		<Esoterica>Gong2_Esoterica_10</Esoterica>
+		<DisplayName>造化真解</DisplayName>
+		<Level>God</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_c9</li>
+		</PreUnit>
+		<Layers>
+			<li>Gong2_d9_1</li>
+		</Layers>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	
+	<Node Name="Gong2_d9_1" Gong="Gong_2_Mu">
+		<Esoterica>Magic_YuanLing</Esoterica>
+		<DisplayName>元灵补天诀</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+	<Node Name="Gong2_d10" Gong="Gong_2_Mu">
+		<Level>God</Level>
+		<Index>10</Index>
+		<Line>0,2,0,1,0,0,0,0</Line>	
+	</Node>
+	
+	<Node Name="Gong2_d11" Gong="Gong_2_Mu">
+		<Esoterica>Magic_LingCrystalMake_1</Esoterica>
+		<DisplayName>灵晶炼制</DisplayName>
+		<Level>God</Level>
+		<Index>11</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>Gong2_d9</li>
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<!--<li Name="" Level="1"/>-->
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_e4" Gong="Gong_2_Mu">
+		<Esoterica>God2_Dan</Esoterica>
+		<DisplayName>天道神丹</DisplayName>
+		<Level>God2</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="Gong2_e8" Gong="Gong_2_Mu">
+		<Esoterica>God2_Fabao</Esoterica>
+		<DisplayName>天道神器</DisplayName>
+		<Level>God2</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		<!--	<li></li>-->
+		</PreUnit>
+		<MutexUnit>
+		<!--	<li></li>-->
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+</List></SkillTree> 

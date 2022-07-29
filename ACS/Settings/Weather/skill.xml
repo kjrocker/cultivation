@@ -1,0 +1,87 @@
+<Weathers><List>
+	<Weather Name="jiaolong_baoyu"><!--蛟龙天气-->
+		<DisplayName>暴雨(蛟龙)</DisplayName>
+		<StoryDesc>暴雨如瀑中</StoryDesc>
+		<Icon>res/Sprs/ui/icon_baoyu01</Icon>
+		<Kind>Type1</Kind>
+		<Modifier>Weather_Rainstorm</Modifier>
+		<DurationMin>9999999</DurationMin>
+		<DurationMax>9999999</DurationMax>
+		<Thunder>0.6</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.6</ShowWeight>
+		<IgnoreDispel>
+			<li>MuYu_LightRain</li>
+		</IgnoreDispel>
+	</Weather>
+	<Weather Name="xiongfeng_lieyang"><!--蛟龙天气-->
+		<DisplayName>烈阳术(凶凤)</DisplayName>
+		<StoryDesc>艳阳高照,不能被其他天气替换</StoryDesc>
+		<Icon>res/Sprs/ui/icon_lieyangshu01</Icon>
+		<Kind>Type1</Kind>
+		<SunColor>D8BF6FFF</SunColor>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>0.2</DurationMin>
+		<DurationMax>0.2</DurationMax>
+		<LockHour>12</LockHour>		
+	</Weather>
+	<Weather Name="xiongfeng_suneye"><!--太阳之眼 提示用-->
+		<DisplayName>太阳之眼</DisplayName>
+		<StoryDesc>地图温度将会不断上升</StoryDesc>
+		<Icon>res/Sprs/ui/icon_taiyangzhiyan01</Icon>
+		<SunColor>FFDD6FFF</SunColor>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>9999999</DurationMin>
+		<DurationMax>9999999</DurationMax>
+		<LockHour>12</LockHour>
+		<CantDispel>1</CantDispel>
+	</Weather>
+	<Weather Name="zhulong_day"><!--烛龙_白天-->
+		<DisplayName>阳之永昼</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/icon_qingtian01</Icon>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>9999999</DurationMin>
+		<DurationMax>9999999</DurationMax>
+		<LockHour>12</LockHour>
+		<CantDispel>1</CantDispel>
+	</Weather>
+	<Weather Name="zhulong_night"><!--烛龙_晚上-->
+		<DisplayName>阴之永夜</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/icon_yinzhiyongye01</Icon>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>9999999</DurationMin>
+		<DurationMax>9999999</DurationMax>
+		<LockHour>23</LockHour>
+		<CantDispel>1</CantDispel>
+	</Weather>
+	<Weather Name="zhulong_day_begin"><!--烛龙_前奏-->
+		<DisplayName>阳之永昼</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/icon_qingtian01</Icon>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>5</DurationMin>
+		<DurationMax>5</DurationMax>
+		<LockHour>12</LockHour>
+		<CantDispel>1</CantDispel>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Weather>
+	<Weather Name="zhulong_night_begin"><!--烛龙_前奏-->
+		<DisplayName>阴之永夜</DisplayName>
+		<StoryDesc></StoryDesc>
+		<Icon>res/Sprs/ui/icon_yinzhiyongye01</Icon>
+		<CantOver>1</CantOver>
+		<Modifier></Modifier>
+		<DurationMin>5</DurationMin>
+		<DurationMax>5</DurationMax>
+		<LockHour>23</LockHour>
+		<CantDispel>1</CantDispel>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Weather>
+</List></Weathers>

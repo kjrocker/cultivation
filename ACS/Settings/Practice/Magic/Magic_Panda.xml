@@ -1,0 +1,64 @@
+<Magics><List>
+	<Magic Name="LcSchoolPanda" Type="Class">
+		<DisplayName>仙界大使</DisplayName>
+		<Desc>派其前往一个门派，改善对方与我派的关系。</Desc>
+		<Icon>res\Sprs\ui\icon_qizhang01</Icon>
+		<SelectMode>None</SelectMode>
+		<Ani>xinzhai</Ani>
+		<ClassName>Magic_lingshou_school</ClassName>
+		<Param1>10</Param1>
+		<Param2>400007</Param2>
+		<sParam1>Ls_School_Panda</sParam1>
+		<sParam2>貊</sParam2>
+		<CostFaith>0</CostFaith>
+		<LuaGetCost>
+		rs:Add("LcGrowth",20);
+		rs:Add("LcNeiDanNu",100);
+		rs:Add("LcShuFaNu",100);
+		rs:Add("LcQiGanNu",100);
+		rs:Add("LcHuTiNu",100);
+		rs:Add("LcLingZhiNu",100);
+		rs:Add("LcNeiDan",15);
+		rs:Add("LcShuFa",15);
+		rs:Add("LcQiGan",15);
+		rs:Add("LcHuTi",15);
+		rs:Add("LcLingZhi",15);
+		</LuaGetCost>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="PandaLingXi" Type="Class">
+		<DisplayName>自然之友</DisplayName>
+		<Desc>驯化一只野兽。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_LingXiAnimal</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个非友方动物</TargetDesc>
+		<CostLing>0</CostLing>
+		<LuaGetCost>
+		rs:Add("LcGrowth",20);
+		rs:Add("LcLingZhi",20);
+		</LuaGetCost>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="Magic_YG_RealYinYang" Type="Class">
+		<DisplayName>原身真力（混）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高御器威力，秘体威力，灵气护盾和秘体坚韧。再次释放技能会停止此效果。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>3</Param1><!--施法时间-->
+		<sParam1>Modifier_YG_YinYangForce</sParam1><!--modifier-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_ModifierAddNormal</ClassName>
+		<TargetDesc></TargetDesc>
+		<Ani>shentong3</Ani>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+</List></Magics>

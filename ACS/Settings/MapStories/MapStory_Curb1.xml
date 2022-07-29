@@ -1,0 +1,62 @@
+<Stories><List>	
+	<Story Name="BuildCurb1"  Parent="BaseFillingStory">
+		<DisplayName>阻碍</DisplayName>
+		<Desc>建设奇观的过程中，突然有几个人出来闹事，他们说什么这里风水不对。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>拿棍子打死他们</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("他们被吓跑了，奇观建设继续进行。"));
+				</OKResult>
+			</li>
+			<li>
+				<Display>与他们争论风水</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("辩论旷日持久，最终也没有个结果，奇观建设被耽误了。"));
+					story.target.waitingBuild:ExtendWaitTime(300);
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="BuildCurb2"  Parent="BaseFillingStory">
+		<DisplayName>阻碍</DisplayName>
+		<Desc>建设奇观的过程中，突然有些人过来询问在干什么。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>不予理会</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("他们骂了几句就走了，奇观建设继续进行。"));
+				</OKResult>
+			</li>
+			<li>
+				<Display>讲解</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("来的人越来越多，很多人甚至还对建筑设计评头论足，奇观建设被耽误了。"));
+					story.target.waitingBuild:ExtendWaitTime(300);
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="BuildCurb3"  Parent="BaseFillingStory">
+		<DisplayName>阻碍</DisplayName>
+		<Desc>建设奇观的过程中，有一群人想要给我们发奖励。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>让他们明天再来</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("他们居然还责备我们不领情，奇观建设继续进行。估计他们明天也不会来了。"));
+				</OKResult>
+			</li>
+			<li>
+				<Display>领取奖励</Display>
+				<OKResult>
+					WorldLua:AddMsg(XT("他们说了好半天话，最终给了我们一朵纸做的红花，奇观建设被耽误了。"));
+					story.target.waitingBuild:ExtendWaitTime(300)
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

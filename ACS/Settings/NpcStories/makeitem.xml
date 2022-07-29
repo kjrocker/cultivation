@@ -1,0 +1,217 @@
+﻿<NpcStories><List>	
+	<Story Name="Cooking"><!--烹饪中-->
+		<Rate>0.02</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的烹饪[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人烹饪[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在烹饪[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，烹饪[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="CookingFailed"><!--烹饪失败-->		
+		<Rate>0.01</Rate>
+		<Events>
+			 <li Rate="0.2" MapStory="HotStory_Make_LingWu_CookingFailed" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]尝了一口自己做的[obj]，差点吐出来。真的太难吃了！"/>	
+			 <li Rate="0.2" Story="[name]做[obj]时，不小心把一盒盐全倒了进去，真刺激。"/>	
+			 <li Rate="0.2" Story="[name]做[obj]时，发了发呆，等回过神来，食物已经变成了一坨漆黑。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，果然把[obj]做砸了。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，烹饪[obj]时都忍不住哼着小曲儿，结果得意忘形，把[obj]做砸了。"/>
+		</Events>
+	</Story>	
+	<Story Name="CookingSucceed"><!--烹饪成功-->
+		<Rate>0.005</Rate>
+		<Events>			
+			 <li Rate="0.2" MapStory="HotStory_Make_LingWu_CookingSucceed" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]看着自己做出来的[obj]，十分满意。"/>	
+			 <li Rate="0.2" Story="[name]看着自己做出来的[obj]，忍不住先尝了两口，真好吃！"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但他还是把[obj]做的十分美味。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，烹饪[obj]时都忍不住哼着小曲儿，果然把[obj]做的更好吃了。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="DrugProduct"><!--制药中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的制作[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人制作[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，制作[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="DrugProductFailed"><!--制药失败-->		
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="DrugProductSucceed"><!--制药成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="Handwork"><!--手工制作中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.2" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 <li Rate="0.5" MapStory="HotStory_Make_LingGan" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的制作[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人制作[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在制作[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，制作[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="HandworkFailed"><!--手工制作失败-->	
+		<Rate>0</Rate>	
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="HandworkSucceed"><!--手工制作成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+
+	<Story Name="Smithing"><!--锻造中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.2" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 <li Rate="0.5" MapStory="HotStory_Make_LingGan" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的锻造[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人锻造[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在锻造[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，锻造[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="SmithingFailed"><!--锻造失败-->		
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="SmithingSucceed"><!--锻造成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+
+	<Story Name="StoneWork"><!--切石中-->
+		<Rate>0.02</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的打磨[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人打磨[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在打磨[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，打磨[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="StoneWorkFailed"><!--切石失败-->		
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="StoneWorkSucceed"><!--切石成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+
+	<Story Name="Sew"><!--裁缝中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.2" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 <li Rate="0.5" MapStory="HotStory_Make_LingGan" JustHot="1"/>
+		
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]静静的缝制[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]一个人缝制[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_weather]，[name]在缝制[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]虽然被[obj_badmood]的情绪困扰，但还是认真的做完[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，缝制[obj]时都忍不住哼着小曲儿。"/>
+		</Events>
+	</Story>
+	<Story Name="SewFailed"><!--裁缝失败-->		
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="SewSucceed"><!--裁缝成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="CutWood"><!--砍柴制作中-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	<Story Name="CutWoodFailed"><!--砍柴制作失败-->	
+		<Rate>0</Rate>	
+		<Events>
+		</Events>
+	</Story>	
+	<Story Name="CutWoodSucceed"><!--砍柴制作成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+</List></NpcStories>

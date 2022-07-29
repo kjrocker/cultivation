@@ -1,0 +1,16 @@
+<GodCityBuildingDefs><List>
+	<Def Name="GodCityBuilding_SYSLOST">
+		<Hide>1</Hide>
+		<DisplayName>模组丢失</DisplayName>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）。</Desc>
+		<Mod>Mod/GodPractice/Buildings/Housing</Mod>
+		<Modifier></Modifier>
+		<Size>1</Size>
+		<Levels>
+			<li>
+				<Population>0</Population>
+			</li>			
+		</Levels>
+	</Def>
+	
+</List></GodCityBuildingDefs>

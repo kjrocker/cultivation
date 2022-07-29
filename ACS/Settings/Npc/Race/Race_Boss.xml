@@ -1,0 +1,656 @@
+<RaceDefs><List>
+
+<RaceDef Name="Boss_Long">
+	<DisplayName>蛟龙</DisplayName>
+	<Desc>上古之兽：蛟龙</Desc>
+	<Mod>Mod/Npc/BossLong/Base</Mod>
+	<RaceType>Boss</RaceType>
+	<Revive>0</Revive>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Rabbit_NormalAttack</NormalAttack>
+	<IllustratedHandLabel>Boss</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_qinglong01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_qinglong01</Rolepaint>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>1</StrikeBack>
+	<FightDriver>Jiaolong</FightDriver>
+	<HitBip>biped_bone53</HitBip>
+	<PartBrokenEffect>Effect/gsq/Prefab/long/fx_long002_diaoluo</PartBrokenEffect>
+	<Modifier>Boss_Jiaolong</Modifier>
+	<FightModifier>Boss_JiaolongFight</FightModifier>
+	<ImmortalScaleModifier>JiaoLongFightPowerUp</ImmortalScaleModifier>
+	<FightParts>
+		<li Name="root"><!--root会自动判断为身体本身-->
+			<Local>biped_bone53</Local>
+			<DisplayName>身体</DisplayName>
+		</li>
+		<li Name="longwei">
+			<Local>biped_bone196</Local>
+			<DisplayName>龙尾</DisplayName>
+			<Ling>10000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp3</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jing</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>4</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="longjiao">
+			<Local>biped Head</Local>
+			<DisplayName>龙角</DisplayName>
+			<Ling>15000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp4</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jiao</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="longzhua1">
+			<Local>biped L Forearm</Local>
+			<DisplayName>龙左前爪</DisplayName>
+			<Ling>5000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp2</ImmortalScaleModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="longzhua2">
+			<Local>biped_bone24</Local>
+			<DisplayName>龙右前爪</DisplayName>
+			<Ling>5000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp2</ImmortalScaleModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="longzhua3">
+			<Local>biped_bone55</Local>
+			<DisplayName>龙左后爪</DisplayName>
+			<Ling>5000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp2</ImmortalScaleModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="longzhua4">
+			<Local>biped_bone74</Local>
+			<DisplayName>龙右后爪</DisplayName>
+			<Ling>5000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp2</ImmortalScaleModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="nilin">
+			<Local>biped_bone126</Local>
+			<DisplayName>逆鳞</DisplayName>
+			<Ling>10000</Ling>
+			<Modifier>Boss_Jiaolong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>JiaoLongFightPowerUp3</ImmortalScaleModifier>
+			<Condtions>
+				<li Name="LongNuCount" Min="3" Max="99999"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_NiLin</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+	</FightParts>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/> 
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<Preloading>
+		<li>Effect/gsq/Prefab/long/fx_long002_potu01 -</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_shuilei_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zhenshui01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_longxishu  biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zeguo_xuli</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan02   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan01   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou  biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLeyes biped Head</li>
+	</Preloading>
+</RaceDef>
+
+<RaceDef Name="Boss_Feng">
+	<DisplayName>凶凤</DisplayName>
+	<Desc>上古之兽：凶凤</Desc>
+	<Mod>Mod/Npc/BossFeng/Base</Mod>
+	<Modifier>Boss_Xiongfeng</Modifier>
+	<FightModifier>Boss_XiongfengFight</FightModifier>
+	<IllustratedHandLabel>Boss</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_yaofeng01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_yaofeng01</Rolepaint>
+	<RaceType>Boss</RaceType>
+	<Revive>0</Revive>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Rabbit_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<LeaveBody>0</LeaveBody>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>1</StrikeBack>
+	<FightDriver>XiongFeng</FightDriver>
+	<HitBip>Bip001 R Clavicle</HitBip>
+	<PartBrokenEffect>Effect/gsq/Prefab/long/fx_long002_diaoluo</PartBrokenEffect>
+	<ImmortalScaleModifier>XiongFengFightPowerUp</ImmortalScaleModifier>
+	<FightParts>
+		<li Name="root"><!--root会自动判断为身体本身-->
+			<Local>Bip001 R Clavicle</Local>
+			<DisplayName>身体</DisplayName>
+		</li>
+		<li Name="tou">
+			<Local>Bone198</Local>
+			<DisplayName>头羽</DisplayName>
+			<Ling>35000</Ling>
+			<ImmortalScaleModifier>XiongFengFightPowerUp2</ImmortalScaleModifier>
+			<Modifier>Boss_Xiongfeng_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossFeng_TouYu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="Lcibang">
+			<Local>Bone019</Local>
+			<DisplayName>左翅</DisplayName>
+			<Ling>40000</Ling>
+			<Condtions>
+				<li Name="_Stage" Min="1" Max="1"/>
+			</Condtions>
+			<Modifier>Boss_Xiongfeng_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>XiongFengFightPowerUp2</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossFeng_Gu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>2</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="Rcibang">
+			<Local>Bone019(mirrored)</Local>
+			<DisplayName>右翅</DisplayName>
+			<Ling>40000</Ling>
+			<Condtions>
+				<li Name="_Stage" Min="1" Max="1"/>
+			</Condtions>
+			<Modifier>Boss_Xiongfeng_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>XiongFengFightPowerUp2</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossFeng_Gu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>2</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="wei">
+			<Local>Bone134</Local>
+			<DisplayName>尾羽</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_Xiongfeng_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>XiongFengFightPowerUp3</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossFeng_WeiYu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>4</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossFeng_GangYu</ThingDef>
+					<Count>3</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="suneye">
+			<Local>BoneSunEye</Local>
+			<DisplayName>太阳之眼</DisplayName>
+			<Ling>35000</Ling>
+			<Condtions>
+				<li Name="SunEyeShow" Min="1" Max="9999"/>
+			</Condtions>
+			<Modifier>Boss_Xiongfeng_taiyangzhiyan</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>XiongFengFightPowerUp2</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossFeng_HongYu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+	</FightParts>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<Preloading>
+		<li>Effect/gsq/Prefab/feng/fx_fenghuang_lyzy01</li>
+		<li>Effect/gsq/Prefab/feng/fx_fenghuang_lyzy02-2  Bip001 Pelvis","Bip001 Pelvis</li>
+		<li>Mod/Prop/Other/SunEye</li>
+		<li>Mod/Prop/Other/SunEyeBroken</li>
+		<li>Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018 1</li>
+		<li>Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018(mirrored) 1</li>
+		<li>Effect/gsq/Prefab/feng/fx_fenghuang_lyzy02-2  Bip001 Pelvis</li>
+		<li>Effect/gsq/Prefab/feng/fx_bossfenghuang_huofeng02 Bip001 Spine</li>
+		<li>Effect/gsq/Prefab/feng/fx_huofeng01  Bone026</li>
+		<li>Effect/gsq/Prefab/feng/fx_huofeng01  Bone026(mirrored)</li>
+		<li>Effect/gsq/Prefab/feng/fx_bossfenghuang_eyes</li>
+	</Preloading>
+</RaceDef>
+<RaceDef Name="Boss_Zhulong">
+	<DisplayName>烛龙</DisplayName>
+	<Desc>上古之兽：蛟龙</Desc>
+	<Mod>Mod/Npc/BossZhulong/Base</Mod>
+	<Modifier>Boss_Zhulong</Modifier>
+	<FightModifier>Boss_ZhulongFight</FightModifier>
+	<IllustratedHandLabel>Boss</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_zhulong01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_zhulong01</Rolepaint>
+	<RaceType>Boss</RaceType>
+	<Revive>0</Revive>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Rabbit_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<LeaveBody>0</LeaveBody>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>1</StrikeBack>
+	<FightDriver>ZhuLong</FightDriver>
+	<HitBip>Bip001 Spine2</HitBip>
+	<PartBrokenEffect>Effect/gsq/Prefab/long/fx_long002_diaoluo</PartBrokenEffect>
+	<ImmortalScaleModifier>ZhulongFightPowerUp</ImmortalScaleModifier>
+	<FightParts>
+		<li Name="root"><!--root会自动判断为身体本身-->
+			<Local>Bip001 Spine2</Local>
+			<DisplayName>身体</DisplayName>
+		</li>		
+		<li Name="tianlin"><!--愤怒两次-->
+			<Local>BipTianlin</Local>
+			<DisplayName>天鳞</DisplayName>
+			<Ling>60000</Ling>
+			<Condtions>
+				<li Name="Fennu" Min="2" Max="9999"/>
+			</Condtions>
+			<Modifier>Boss_ZhuLong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>ZhulongFightPowerUp4</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossZhuLong_TianLin</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>	
+		<li Name="longyu"><!--另外三个部件被破坏才出现-->
+			<Local>BipTianlin</Local>
+			<DisplayName>龙玉</DisplayName>
+			<Ling>90000</Ling>
+			<Condtions>
+				<li Name="tianlin_Broken" Min="1" Max="9999"/>
+				<li Name="lefteye_Broken" Min="1" Max="9999"/>
+				<li Name="righteye_Broken" Min="1" Max="9999"/>
+			</Condtions>
+			<Modifier>Boss_ZhuLong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>ZhulongFightPowerUp3</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossZhuLong_LongYu</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="lefteye">
+			<Local>Bip001 Leye UI</Local>
+			<DisplayName>左眼</DisplayName>
+			<Ling>20000</Ling>
+			<Modifier>Boss_ZhuLong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>ZhulongFightPowerUp2</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossZhuLong_Eye</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="righteye">
+			<Local>Bip001 Reye UI</Local>
+			<DisplayName>右眼</DisplayName>
+			<Ling>20000</Ling>
+			<Modifier>Boss_ZhuLong_Part</Modifier>
+			<FightModifier>Boss_PartFight</FightModifier>
+			<ImmortalScaleModifier>ZhulongFightPowerUp2</ImmortalScaleModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossZhuLong_Eye</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+	</FightParts>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<Preloading>
+		<li>Mod/Npc/BossZhulong/Shadow</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_fennu01 Bone035</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_xinmo_01</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_tuxi01  Bone035</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_yeli01  Bip001 R ForeTwist2  Bip001 L ForeTwist2</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_yeli02</li>
+		<li>Effect/gsq/Prefab/zhulong/fx_zhulong_yeli02</li>
+	</Preloading>
+</RaceDef>
+</List></RaceDefs>

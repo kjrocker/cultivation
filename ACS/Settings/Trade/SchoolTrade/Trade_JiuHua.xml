@@ -1,0 +1,59 @@
+<Defs><List>
+	<Def Name="4" Price="Price_JiuHua" Talk="Talk_JiuHua">
+		<AllRandomCount>3</AllRandomCount>
+		<LikeFriendPoint>1</LikeFriendPoint>
+		<LikeRelation>200</LikeRelation>
+		<SaleOnly>
+			<li ItemName="Item_LingStone">
+				<ItemName>Item_LingStone</ItemName>
+			</li>
+		</SaleOnly>	
+		<Goods> 
+			<Pool V="JiuHuaN" Count="2"/>
+			<Pool V="JiuHuaR" Count="2"/>
+			<Pool V="JiuHuaSR" Count="1"/>
+			<Pool V="JiuHuaSSR" Count="2"/>
+			<Pool V="JiuHuaEso" Count="1"/>
+			<Pool V="JiuHuaMibao" Count="1"/>
+			<Pool V="JiuHuaA" Count="1"/>
+			<Pool V="JiuHuaAL" Count="2"/>
+		</Goods>
+
+		<Rent>
+			<li GLevel="7" Scale="1">
+				<InitTradeCount>
+					<Count Min="5" Max="10"/>
+					<CountLimit>100</CountLimit>
+					<ExchangeLimit>20</ExchangeLimit>
+				</InitTradeCount>
+				<Condition>
+					<NeedRank>Friendly</NeedRank>
+				</Condition>
+				<BuyPrice Value="1000"/>
+				<RentDay>3</RentDay>
+				<LostFriendPoint>5</LostFriendPoint>
+				<LostRelation>200</LostRelation>
+			</li>
+		</Rent>
+		
+		<Gong>
+			<Count>3</Count>
+			<ResetDay>10</ResetDay>
+			<BuyPrice Value="1000" FriendPoint="1"/>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+		</Gong>
+		
+		<StayPermission>
+			<Condition>
+				<NeedRank>Neutral</NeedRank>
+			</Condition>
+			
+			<BuyPrice Value="200"/>
+			<BuyPriceNeutral Value="200"/>
+			<BuyPriceFriendly Value="50"/>
+			<BuyPriceRespect Value="5"/>
+		</StayPermission>
+	</Def>
+</List></Defs>

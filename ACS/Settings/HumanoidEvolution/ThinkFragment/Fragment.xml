@@ -1,0 +1,52 @@
+<Defs><List>
+	<Def Name="FirstFrag_Target">
+		<NotRandom>1</NotRandom>
+		<Type>Target</Type>
+		<Tag>Trash</Tag>
+		<Level>1</Level>
+		<DisplayName>模组丢失</DisplayName>
+		
+		<FeatureTag>Rationality</FeatureTag>
+		<FeatureValue>50</FeatureValue>
+	</Def>
+	<Def Name="InitalFrag">
+		<NotRandom>1</NotRandom>
+		<Type>Target</Type>
+		<Tag>Trash</Tag>
+		<Level>1</Level>
+		<DisplayName>模组丢失</DisplayName>
+
+		<FeatureTag>Rationality</FeatureTag>
+		<FeatureValue>50</FeatureValue>
+	</Def>
+	<Def Name="Emotion_Template">
+		<NotRandom>1</NotRandom>
+		<Type>Emotion</Type>
+		<Tag>Trash</Tag>
+		<Level>1</Level>
+		<DisplayName>模板</DisplayName>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+	</Def>
+	<Def Name="Target_Template">
+		<NotRandom>1</NotRandom>
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Trash</Tag>
+		<Level>1</Level>
+		<DisplayName>模板</DisplayName>
+		
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+	</Def>
+	<Def Name="Scene_Template">
+		<NotRandom>1</NotRandom>
+		<Type>Scene</Type>
+		<Tag>Trash</Tag>
+		<Level>1</Level>
+		<DisplayName>模板</DisplayName>
+
+		<FeatureTag>Rationality</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+	</Def>
+</List></Defs>

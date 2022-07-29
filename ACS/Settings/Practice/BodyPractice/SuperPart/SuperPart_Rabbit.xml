@@ -1,0 +1,131 @@
+<BPSuperPartDefs><List>
+	
+	<Def Name="SuperPart_Rabbit_1"><!--测试秘体-->
+		<Prefix>赤玉</Prefix>
+		<Suffix>瞳</Suffix>
+		<Desc>兔妖之天赋秘体，以真火淬炼双目，再以木生火，藉肝之木气催发，使之有通妙精玄之功。修至精深甚至可查天地元气细微之变。</Desc>
+		<DefaultBody>YGAnimal_RabbitBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+	<!-- 	<DamagePack>
+			<li Name="Fracture4" Rate="0.25" DescTags="抓1"/>
+			<li Name="Fabao_CutOff" Rate="0.25" DescTags="抓2"/>
+		</DamagePack> -->
+		
+		<Parts>
+			<!-- <li Name="LeftEye" Core="true" Change="Type">
+				<Labels>
+					<li Name="BQLabel_Test1" Levels="0,0,0"/>
+				</Labels>
+			</li>	 -->	
+			<li Name="LeftEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Huo" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXHuo" Levels="0,1,3"/>
+				</Labels>
+			</li>	
+			<li Name="RightEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Huo" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXHuo" Levels="0,1,3"/>
+				</Labels>
+			</li>	
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,4,9"/>
+				</Labels>
+			</li>	
+			<li Name="Liver">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Mu" Levels="1,4,9"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXMu" Levels="0,1,3"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高炼体者所有秘体攻击命中率\n少量提高炼体者所有秘体防御成功率</Desc>
+				<Modifier>Modifier_SuperPart_BaseOn_1_LV1</Modifier>
+				<SuperPartProperties>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>少量提高炼体者所有秘体法宝镇压几率\n少量提高炼体者所有秘体灵气护盾穿透率</Desc>
+				<Modifier>Modifier_SuperPart_BaseOn_1_LV2</Modifier>
+				<SuperPartProperties>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>少量提高炼体者吐纳效率</Desc>
+				<Modifier>Modifier_SuperPart_BaseOn_1_LV3</Modifier>
+				<SuperPartProperties>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Rabbit_2"><!--测试秘体-->
+		<Prefix>登云</Prefix>
+		<Suffix>腿</Suffix>
+		<Desc>兔妖的天赋秘体，以秘法淬炼耳朵与双腿，使之产生冥冥之中的联系。一旦察觉危机，便能迅捷逃脱。</Desc>
+		<DefaultBody>YGAnimal_RabbitBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXshangjiquan</AtkAni>
+		<DefAni>TXlianhuantui</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuizhiti01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>
+			<li Name="LeftEar">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Ear" Levels="49"/>
+					<li Name="QuenchingLabel_Lv2_O01_Xia" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="RightEar">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Ear" Levels="49"/>
+					<li Name="QuenchingLabel_Lv2_O01_Xia" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="LeftThigh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="9"/>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="LeftCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="9"/>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="RightThigh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="9"/>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="4"/>
+				</Labels>
+			</li>	
+			<li Name="RightCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_Xia" Levels="9"/>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者全局躲闪率</Desc>
+				<Modifier>Modifier_SuperPart_Rabbit_2</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

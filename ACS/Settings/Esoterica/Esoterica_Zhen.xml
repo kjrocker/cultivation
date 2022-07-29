@@ -1,0 +1,735 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="Esoterica_ZhenFa_1">
+		<DisplayName>太一阵法纪要</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>太一门所传专为初学者所用的阵法入门。其中记录了常见的阵枢阵眼的原型，可以供初学者练习阵法布置衍变。\n原型阵法乃所有阵法之根基，所以可以和任意其他高阶阵法拼接。虽然以元阵眼作为连接会无法享受额外的加成效果，但至少可以保证阵法完整可运转。</Desc>
+		<EffectDesc>少量提高阵法负荷能力\n解锁 阵枢：\n元阵枢-间\n元阵枢-索\n元阵枢-缺\n元阵枢-全\n\n解锁 阵眼：\n元阵眼-结\n元阵眼-对\n元阵眼-隔\n元阵眼-并\n元阵眼-断\n元阵眼-错\n元阵眼-落\n元阵眼-临</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv0_3_1</li>
+			<li>ZhenMainNode_Lv0_4_1</li>
+			<li>ZhenMainNode_Lv0_5_1</li>
+			<li>ZhenMainNode_Lv0_6_1</li>
+			<li>ZhenNode_Lv0_1_1</li>
+			<li>ZhenNode_Lv0_2_1</li>
+			<li>ZhenNode_Lv0_2_2</li>
+			<li>ZhenNode_Lv0_2_3</li>
+			<li>ZhenNode_Lv0_3_1</li>
+			<li>ZhenNode_Lv0_3_2</li>
+			<li>ZhenNode_Lv0_3_3</li>
+			<li>ZhenNode_Lv0_3_4</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower1</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_2">
+		<DisplayName>太一四御阵法图录</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>太一门所传阵法秘册，其中阵枢阵眼皆取自修行界广为流传的经典之例。其结阵思路讲究均衡，适应性极强。</Desc>
+		<EffectDesc>少量提高阵法负荷能力\n解锁 阵枢：\n玄罡藏锋\n辟法隐咒\n御合剑意\n蕴中法印\n凝化真罡\n辟转玄韧\n诸域常衡\n\n解锁 阵眼：\n剑\n法\n罡\n韧\n冲煞\n交应\n罡剑\n韧剑\n罡法\n韧法\n藏锋\n隐咒</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv1_3_1</li>
+			<li>ZhenMainNode_Lv1_3_2</li>
+			<li>ZhenMainNode_Lv1_3_13</li>
+			<li>ZhenMainNode_Lv1_3_14</li>
+			<li>ZhenMainNode_Lv1_3_15</li>
+			<li>ZhenMainNode_Lv1_3_16</li>
+			<li>ZhenMainNode_Lv1_4_1</li>
+			<li>ZhenNode_Lv1_1_1</li>
+			<li>ZhenNode_Lv1_1_2</li>
+			<li>ZhenNode_Lv1_1_3</li>
+			<li>ZhenNode_Lv1_1_4</li>
+			<li>ZhenNode_Lv1_2_1</li>
+			<li>ZhenNode_Lv1_2_2</li>
+			<li>ZhenNode_Lv1_2_3</li>
+			<li>ZhenNode_Lv1_2_4</li>
+			<li>ZhenNode_Lv1_2_5</li>
+			<li>ZhenNode_Lv1_2_6</li>
+			<li>ZhenNode_Lv1_3_1</li>
+			<li>ZhenNode_Lv1_3_2</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower1</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_3">
+		<DisplayName>万兽归灵型阵图册</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>上古流传至今的阵法秘籍，取意自万兽之灵型而成阵，别具玄妙。</Desc>
+		<EffectDesc>少量提高阵法负荷能力\n解锁 阵枢：\n蝎尾覆甲\n蛇息披鳞\n龟尾附剑\n龟形映咒\n龟甲结岩\n凤吟鹤唳\n雷云穿龙\n玄海腾蛟\n\n解锁 阵眼：\n剑\n法\n罡\n韧\n蝎尾\n蛇息\n鳄吻\n龙歌\n龟形\n鹤剑\n蜃法</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv1_3_3</li>
+			<li>ZhenMainNode_Lv1_3_4</li>
+			<li>ZhenMainNode_Lv1_3_5</li>
+			<li>ZhenMainNode_Lv1_3_6</li>
+			<li>ZhenMainNode_Lv1_3_7</li>
+			<li>ZhenMainNode_Lv1_4_2</li>
+			<li>ZhenMainNode_Lv1_4_3</li>
+			<li>ZhenMainNode_Lv1_4_4</li>
+			<li>ZhenNode_Lv1_1_1</li>
+			<li>ZhenNode_Lv1_1_2</li>
+			<li>ZhenNode_Lv1_1_3</li>
+			<li>ZhenNode_Lv1_1_4</li>
+			<li>ZhenNode_Lv1_3_3</li>
+			<li>ZhenNode_Lv1_3_4</li>
+			<li>ZhenNode_Lv1_3_5</li>
+			<li>ZhenNode_Lv1_3_6</li>
+			<li>ZhenNode_Lv1_3_7</li>
+			<li>ZhenNode_Lv1_3_8</li>
+			<li>ZhenNode_Lv1_3_9</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower1</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_4">
+		<DisplayName>中元山纯极阵图</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>中古时期有名的阵法门派中元山所传。中元山修行理念讲究极致之道，其派中阵法也贯彻这一思路，一贯到底。</Desc>
+		<EffectDesc>少量提高阵法负荷能力\n解锁 阵枢：\n御合剑意\n蕴中法印\n凝化真罡\n辟转玄韧\n诸剑之枢\n万法之枢\n真罡之枢\n玄韧之枢\n\n解锁 阵眼：\n剑\n法\n罡\n韧\n砺剑\n凝法\n重罡\n合韧\n剑意\n法印\n真罡\n玄韧</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv1_3_13</li>
+			<li>ZhenMainNode_Lv1_3_14</li>
+			<li>ZhenMainNode_Lv1_3_15</li>
+			<li>ZhenMainNode_Lv1_3_16</li>
+			<li>ZhenMainNode_Lv1_4_9</li>
+			<li>ZhenMainNode_Lv1_4_10</li>
+			<li>ZhenMainNode_Lv1_4_11</li>
+			<li>ZhenMainNode_Lv1_4_12</li>
+			<li>ZhenNode_Lv1_1_1</li>
+			<li>ZhenNode_Lv1_1_2</li>
+			<li>ZhenNode_Lv1_1_3</li>
+			<li>ZhenNode_Lv1_1_4</li>
+			<li>ZhenNode_Lv1_2_7</li>
+			<li>ZhenNode_Lv1_2_8</li>
+			<li>ZhenNode_Lv1_2_9</li>
+			<li>ZhenNode_Lv1_2_10</li>
+			<li>ZhenNode_Lv1_3_13</li>
+			<li>ZhenNode_Lv1_3_14</li>
+			<li>ZhenNode_Lv1_3_15</li>
+			<li>ZhenNode_Lv1_3_16</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower1</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_5">
+		<DisplayName>法天效地归元阵法秘录</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>效法自然而成的阵法之道，此册自上古而生，来历不可考据，在修行界少有传承，玄妙非常。</Desc>
+		<EffectDesc>少量提高阵法负荷能力\n解锁 阵枢：\n刃雨松针\n咒纹松风\n古木隐刺\n枯枝藏灵\n老松擒岩\n波涛定锋\n风云恒法\n神锋彻地\n圣咒飞沙\n\n解锁 阵眼：\n剑\n法\n罡\n韧\n松针\n古纹\n藤甲</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv1_3_8</li>
+			<li>ZhenMainNode_Lv1_3_9</li>
+			<li>ZhenMainNode_Lv1_3_10</li>
+			<li>ZhenMainNode_Lv1_3_11</li>
+			<li>ZhenMainNode_Lv1_3_12</li>
+			<li>ZhenMainNode_Lv1_4_5</li>
+			<li>ZhenMainNode_Lv1_4_6</li>
+			<li>ZhenMainNode_Lv1_4_7</li>
+			<li>ZhenMainNode_Lv1_4_8</li>
+			<li>ZhenNode_Lv1_1_1</li>
+			<li>ZhenNode_Lv1_1_2</li>
+			<li>ZhenNode_Lv1_1_3</li>
+			<li>ZhenNode_Lv1_1_4</li>
+			<li>ZhenNode_Lv1_3_10</li>
+			<li>ZhenNode_Lv1_3_11</li>
+			<li>ZhenNode_Lv1_3_12</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower1</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_6">
+		<DisplayName>河洛先天神阵：总纲篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵枢：\n天地和合\n风雷应中\n阴极生阳\n阳极化阴\n玄阴之道\n至阳之道\n\n解锁 阵眼：\n天\n地\n水\n火\n雷\n风\n山\n泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv2_4_1</li>
+			<li>ZhenMainNode_Lv2_4_2</li>
+			<li>ZhenMainNode_Lv2_4_3</li>
+			<li>ZhenMainNode_Lv2_4_4</li>
+			<li>ZhenMainNode_Lv2_4_5</li>
+			<li>ZhenMainNode_Lv2_4_6</li>
+			<li>ZhenNode_Lv2_1_1</li>
+			<li>ZhenNode_Lv2_1_2</li>
+			<li>ZhenNode_Lv2_1_3</li>
+			<li>ZhenNode_Lv2_1_4</li>
+			<li>ZhenNode_Lv2_1_5</li>
+			<li>ZhenNode_Lv2_1_6</li>
+			<li>ZhenNode_Lv2_1_7</li>
+			<li>ZhenNode_Lv2_1_8</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_7">
+		<DisplayName>河洛先天神阵：乾天篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n乾\n泰\n大壮\n大畜\n大有\n需\n夬\n小畜</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_9</li>
+			<li>ZhenNode_Lv2_2_17</li>
+			<li>ZhenNode_Lv2_2_18</li>
+			<li>ZhenNode_Lv2_2_19</li>
+			<li>ZhenNode_Lv2_2_20</li>
+			<li>ZhenNode_Lv2_2_21</li>
+			<li>ZhenNode_Lv2_2_22</li>
+			<li>ZhenNode_Lv2_2_23</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_8">
+		<DisplayName>河洛先天神阵：坤地篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n否\n坤\n豫\n剥\n晋\n比\n萃\n观</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_10</li>
+			<li>ZhenNode_Lv2_2_24</li>
+			<li>ZhenNode_Lv2_2_25</li>
+			<li>ZhenNode_Lv2_2_26</li>
+			<li>ZhenNode_Lv2_2_27</li>
+			<li>ZhenNode_Lv2_2_28</li>
+			<li>ZhenNode_Lv2_2_29</li>
+			<li>ZhenNode_Lv2_2_30</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_9">
+		<DisplayName>河洛先天神阵：震雷篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n无妄\n复\n震\n颐\n噬嗑\n屯\n随\n益</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_13</li>
+			<li>ZhenNode_Lv2_2_31</li>
+			<li>ZhenNode_Lv2_2_32</li>
+			<li>ZhenNode_Lv2_2_33</li>
+			<li>ZhenNode_Lv2_2_34</li>
+			<li>ZhenNode_Lv2_2_35</li>
+			<li>ZhenNode_Lv2_2_36</li>
+			<li>ZhenNode_Lv2_2_37</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_10">
+		<DisplayName>河洛先天神阵：巽风篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n姤\n升\n恒\n蛊\n鼎\n井\n大过\n巽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_14</li>
+			<li>ZhenNode_Lv2_2_66</li>
+			<li>ZhenNode_Lv2_2_67</li>
+			<li>ZhenNode_Lv2_2_68</li>
+			<li>ZhenNode_Lv2_2_69</li>
+			<li>ZhenNode_Lv2_2_70</li>
+			<li>ZhenNode_Lv2_2_71</li>
+			<li>ZhenNode_Lv2_2_72</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_11">
+		<DisplayName>河洛先天神阵：坎水篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n讼\n师\n解\n蒙\n未济\n坎\n困\n涣</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_11</li>
+			<li>ZhenNode_Lv2_2_52</li>
+			<li>ZhenNode_Lv2_2_53</li>
+			<li>ZhenNode_Lv2_2_54</li>
+			<li>ZhenNode_Lv2_2_55</li>
+			<li>ZhenNode_Lv2_2_56</li>
+			<li>ZhenNode_Lv2_2_57</li>
+			<li>ZhenNode_Lv2_2_58</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_12">
+		<DisplayName>河洛先天神阵：离火篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n同人\n明夷\n丰\n贲\n离\n既济\n革\n家人</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_12</li>
+			<li>ZhenNode_Lv2_2_45</li>
+			<li>ZhenNode_Lv2_2_46</li>
+			<li>ZhenNode_Lv2_2_47</li>
+			<li>ZhenNode_Lv2_2_48</li>
+			<li>ZhenNode_Lv2_2_49</li>
+			<li>ZhenNode_Lv2_2_50</li>
+			<li>ZhenNode_Lv2_2_51</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_13">
+		<DisplayName>河洛先天神阵：艮山篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n遁\n谦\n小过\n艮\n旅\n蹇\n咸\n渐</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_15</li>
+			<li>ZhenNode_Lv2_2_38</li>
+			<li>ZhenNode_Lv2_2_39</li>
+			<li>ZhenNode_Lv2_2_40</li>
+			<li>ZhenNode_Lv2_2_41</li>
+			<li>ZhenNode_Lv2_2_42</li>
+			<li>ZhenNode_Lv2_2_43</li>
+			<li>ZhenNode_Lv2_2_44</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_14">
+		<DisplayName>河洛先天神阵：兑泽篇</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>取八卦之玄机以布阵，效法先天河洛之道，当代早已失传。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 阵眼：\n履\n临\n归妹\n损\n睽\n节\n兑\n中孚</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_2_16</li>
+			<li>ZhenNode_Lv2_2_59</li>
+			<li>ZhenNode_Lv2_2_60</li>
+			<li>ZhenNode_Lv2_2_61</li>
+			<li>ZhenNode_Lv2_2_62</li>
+			<li>ZhenNode_Lv2_2_63</li>
+			<li>ZhenNode_Lv2_2_64</li>
+			<li>ZhenNode_Lv2_2_65</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_15">
+		<DisplayName>河洛先天神阵：魔帝真解</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>魔帝付辟空以绝代天资重编先天河洛之阵，创出其变阵阵眼，极大的扩展了阵法之道的应用。乃承上启下的绝代之作。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n提高阵法规模\n解锁 阵眼：\n二十四道先天神阵变阵阵眼</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenNode_Lv2_3_1</li>
+			<li>ZhenNode_Lv2_3_2</li>
+			<li>ZhenNode_Lv2_3_3</li>
+			<li>ZhenNode_Lv2_3_4</li>
+			<li>ZhenNode_Lv2_3_5</li>
+			<li>ZhenNode_Lv2_3_6</li>
+			<li>ZhenNode_Lv2_3_7</li>
+			<li>ZhenNode_Lv2_3_8</li>
+			<li>ZhenNode_Lv2_3_9</li>
+			<li>ZhenNode_Lv2_3_10</li>
+			<li>ZhenNode_Lv2_3_11</li>
+			<li>ZhenNode_Lv2_3_12</li>
+			<li>ZhenNode_Lv2_3_13</li>
+			<li>ZhenNode_Lv2_3_14</li>
+			<li>ZhenNode_Lv2_3_15</li>
+			<li>ZhenNode_Lv2_3_16</li>
+			<li>ZhenNode_Lv2_3_17</li>
+			<li>ZhenNode_Lv2_3_18</li>
+			<li>ZhenNode_Lv2_3_19</li>
+			<li>ZhenNode_Lv2_3_20</li>
+			<li>ZhenNode_Lv2_3_21</li>
+			<li>ZhenNode_Lv2_3_22</li>
+			<li>ZhenNode_Lv2_3_23</li>
+			<li>ZhenNode_Lv2_3_24</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower4</Modifier>	
+	</Esoterica> 
+	
+	
+	<Esoterica Name="Esoterica_ZhenFa_16">
+		<DisplayName>天道化阵：日月之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n日月盈缺\n\n解锁 阵眼：\n日中天\n日中雷\n日中水\n日中山\n月中地\n月中风\n月中火\n月中泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_1</li>
+			<li>ZhenNode_Lv3_3_1</li>
+			<li>ZhenNode_Lv3_3_2</li>
+			<li>ZhenNode_Lv3_3_3</li>
+			<li>ZhenNode_Lv3_3_4</li>
+			<li>ZhenNode_Lv3_3_5</li>
+			<li>ZhenNode_Lv3_3_6</li>
+			<li>ZhenNode_Lv3_3_7</li>
+			<li>ZhenNode_Lv3_3_8</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_17">
+		<DisplayName>天道化阵：阴阳之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n阴阳消涨\n\n解锁 阵眼：\n阳生天\n阳生雷\n阳生水\n阳生山\n阴生地\n阴生风\n阴生火\n阴生泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_2</li>
+			<li>ZhenNode_Lv3_3_9</li>
+			<li>ZhenNode_Lv3_3_10</li>
+			<li>ZhenNode_Lv3_3_11</li>
+			<li>ZhenNode_Lv3_3_12</li>
+			<li>ZhenNode_Lv3_3_13</li>
+			<li>ZhenNode_Lv3_3_14</li>
+			<li>ZhenNode_Lv3_3_15</li>
+			<li>ZhenNode_Lv3_3_16</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_18">
+		<DisplayName>天道化阵：宇宙之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n宇宙开辟\n\n解锁 阵眼：\n宇化天\n宇化雷\n宇化水\n宇化山\n宙化地\n宙化风\n宙化火\n宙化泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_3</li>
+			<li>ZhenNode_Lv3_3_17</li>
+			<li>ZhenNode_Lv3_3_18</li>
+			<li>ZhenNode_Lv3_3_19</li>
+			<li>ZhenNode_Lv3_3_20</li>
+			<li>ZhenNode_Lv3_3_21</li>
+			<li>ZhenNode_Lv3_3_22</li>
+			<li>ZhenNode_Lv3_3_23</li>
+			<li>ZhenNode_Lv3_3_24</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_19">
+		<DisplayName>天道化阵：始终之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n始终轮转\n\n解锁 阵眼：\n始于天\n始于雷\n始于水\n始于山\n终于地\n终于风\n终于火\n终于泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_4</li>
+			<li>ZhenNode_Lv3_3_25</li>
+			<li>ZhenNode_Lv3_3_26</li>
+			<li>ZhenNode_Lv3_3_27</li>
+			<li>ZhenNode_Lv3_3_28</li>
+			<li>ZhenNode_Lv3_3_29</li>
+			<li>ZhenNode_Lv3_3_30</li>
+			<li>ZhenNode_Lv3_3_31</li>
+			<li>ZhenNode_Lv3_3_32</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_20">
+		<DisplayName>天道化阵：生灭之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n生灭万物\n\n解锁 阵眼：\n生同天\n生同雷\n生同水\n生同山\n灭同地\n灭同风\n灭同火\n灭同泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_5</li>
+			<li>ZhenNode_Lv3_3_33</li>
+			<li>ZhenNode_Lv3_3_34</li>
+			<li>ZhenNode_Lv3_3_35</li>
+			<li>ZhenNode_Lv3_3_36</li>
+			<li>ZhenNode_Lv3_3_37</li>
+			<li>ZhenNode_Lv3_3_38</li>
+			<li>ZhenNode_Lv3_3_39</li>
+			<li>ZhenNode_Lv3_3_40</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_21">
+		<DisplayName>天道化阵：造化之道</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n造化玄机\n\n解锁 阵眼：\n造为天\n造为雷\n造为水\n造为山\n化为地\n化为风\n化为火\n化为泽</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv3_2_6</li>
+			<li>ZhenNode_Lv3_3_41</li>
+			<li>ZhenNode_Lv3_3_42</li>
+			<li>ZhenNode_Lv3_3_43</li>
+			<li>ZhenNode_Lv3_3_44</li>
+			<li>ZhenNode_Lv3_3_45</li>
+			<li>ZhenNode_Lv3_3_46</li>
+			<li>ZhenNode_Lv3_3_47</li>
+			<li>ZhenNode_Lv3_3_48</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_22">
+		<DisplayName>鸿蒙之阵：天地开辟</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n天地开辟</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_1</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_23">
+		<DisplayName>鸿蒙之阵：时空衍生</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n时空衍生</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_2</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_24">
+		<DisplayName>鸿蒙之阵：万灵生发</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n万灵生发</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_3</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_25">
+		<DisplayName>鸿蒙之阵：天地归寂</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n天地归寂</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_4</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_26">
+		<DisplayName>鸿蒙之阵：时空尽衰</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n时空尽衰</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_5</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	<Esoterica Name="Esoterica_ZhenFa_27">
+		<DisplayName>鸿蒙之阵：万物陨灭</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>自天地之道中领悟的阵法奥义。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n解锁 阵枢：\n鸿蒙\n\n解锁 阵眼：\n万物陨灭</EffectDesc>
+		<ZhenNodes>
+			<li>ZhenMainNode_Lv4_2_1</li>
+			<li>ZhenNode_Lv4_5_6</li>
+		</ZhenNodes>
+		<Modifier>Zhen_ZhenEnginePower3</Modifier>	
+	</Esoterica> 
+	
+	
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit1">
+		<DisplayName>诛仙剑阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载诛仙剑阵的阵图秘谱，传闻此阵乃上古第一杀阵，无物不灭，无坚不摧。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n提高阵法规模\n解锁 上古阵图：\n诛仙剑阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="诛仙剑阵"> 
+				<ShapeInfo>9|8|0|zhuxian_0|10|9|2|zhuxian_3|10|8|0|zhuxian_4|8|8|5|zhuxian_1|8|7|0|zhuxian_2</ShapeInfo>
+				<Descript>宇宙开辟以来第一杀阵，阵图铺开便化作四幢旗门，旗门之上各悬一剑，将中央团团围住。元灵催动之下，四剑齐齐一震，阵中便剑气纵横，便是万劫真仙也难存。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower4</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit2">
+		<DisplayName>北斗真武戮魔大阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载北斗真武戮魔阵的阵图秘谱，传闻此阵可引北斗破妄神光，拥有洞彻一切的灭魔之力。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n提高阵法规模\n解锁 上古阵图：\n北斗真武戮魔大阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="北斗真武戮魔大阵"> 
+				<ShapeInfo>10|9|5|qixing_0|11|9|2|qixing_3|12|10|3|qixing_2|12|11|3|qixing_1|9|8|4|qixing_4|8|7|5|qixing_5|8|6|0|qixing_6</ShapeInfo>
+				<Descript>传闻乃九重天仙境真武荡魔大帝所传仙阵，此阵可引七星星宿之力凝聚北斗破妄神光，戮魔屠妖，万邪辟易。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower4</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit3">
+		<DisplayName>天地五方不灭阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载天地五方不灭阵的阵图秘谱，传闻此阵可以天地五方旗布下不灭结界，护御周天万界。</Desc>
+		<EffectDesc>大量提高阵法负荷能力\n提高阵法规模\n解锁 上古阵图：\n天地五方不灭阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="天地五方不灭阵"> 
+				<ShapeInfo>10|9|0|wufang_0|10|10|0|wufang_5|11|10|3|wufang_2|11|9|4|wufang_4|9|8|0|wufang_1|9|9|1|wufang_3</ShapeInfo>
+				<Descript>以开天辟地诞生的五方旗为根脚所布置的大阵，其北曰真武皂雕，其南曰离地焰光，其中曰戊己杏黄，其西曰素色云界，其东曰青莲宝色。五行汇聚可布天地五方不灭界，万法辟易，无物可侵。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower4</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit4">
+		<DisplayName>诸天六御行法仪轨</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载诸天六御仪轨总图的阵图秘谱，传闻此阵乃天庭六御庭宫灵氛之阵，布下可以化人间如仙境，使人神思清明无忧。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n诸天六御行法仪轨</EffectDesc>
+		<ZhenShapes>
+			<li Name="诸天六御行法仪轨"> 
+				<ShapeInfo>10|10|0|liuyu_0|11|10|1|liuyu_1|11|9|2|liuyu_2|10|8|3|liuyu_5|9|8|4|liuyu_4|9|9|5|liuyu_3</ShapeInfo>
+				<Descript>天庭六御行法之仪轨，布下此阵可展开诸天六御清灵胜境，化凡间为仙境，使人神思清明无忧。。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit5">
+		<DisplayName>九御赋龙形阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载九御赋龙形阵的阵图秘谱，传闻此阵乃御龙之阵，布下可借助龙魂施展一些威力强大的阵法神通。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n九御赋龙形阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="九御赋龙形阵"> 
+				<ShapeInfo>10|9|5|longxing_0|11|10|5|longxing_4|11|11|5|longxing_3|12|12|5|longxing_2|12|13|3|longxing_1|10|8|5|longxing_5|9|7|5|longxing_6|9|6|5|longxing_7|8|5|1|longxing_8</ShapeInfo>
+				<Descript>以蛟龙之躯为根脚布置而出的奇阵，传闻此阵乃御龙之阵，布下可借助龙魂施展一些威力强大的阵法神通。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit6">
+		<DisplayName>真凰羽剑阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载真凰羽剑阵的阵图秘谱，传闻此阵乃御凤之阵，布下可借助凤魂施展一些威力强大的阵法神通。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n真凰羽剑阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="真凰羽剑阵"> 
+				<ShapeInfo>10|9|0|fengjian_0|10|10|3|fengjian_1|10|8|0|fengjian_2|9|9|0|fengjian_3|11|10|3|fengjian_6|12|10|5|fengjian_4|13|11|4|fengjian_5|8|8|5|fengjian_7|7|8|2|fengjian_8</ShapeInfo>
+				<Descript>以凶凤之躯为根脚布置而出的奇阵，传闻此阵乃御凤之阵，布下可借助凤魂施展一些威力强大的阵法神通。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit7">
+		<DisplayName>阴阳二行神阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载阴阳二行神阵的阵图秘谱，传闻此阵驾驭阴阳之道而布置，阴阳相化，极其灵活。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n阴阳二行神阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="阴阳二行神阵"> 
+				<ShapeInfo>10|9|0|yinyang_0|10|10|3|yinyang_1|10|8|0|yinyang_2</ShapeInfo>
+				<Descript>自天地阴阳流转中总结而出的阵法，传闻此阵驾驭阴阳之道而布置，阴阳相化，极其灵活。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit8">
+		<DisplayName>三阴三绝阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载三阴三绝阵的阵图秘谱，传闻此阵聚纯阴之力而成，以此御法，威力大增。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n三阴三绝阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="三阴三绝阵"> 
+				<ShapeInfo>10|10|3|sanyin_0|9|9|1|sanyin_1|10|9|5|sanyin_2</ShapeInfo>
+				<Descript>借助天地人三才纯阴之意布置的阵法，传闻此阵可聚天下纯阴之力，以此御法，威力大增。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit9">
+		<DisplayName>八门玄金天劫剑阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载八门天劫剑阵的阵图秘谱，传闻此阵以八门之理成阵，进可杀伐，退可护身，非常玄妙。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n八门玄金天劫剑阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="八门玄金天劫剑阵"> 
+				<ShapeInfo>10|8|0|bamen_0|10|9|0|bamen_5|10|10|0|bamen_4|10|11|3|bamen_3|9|7|1|bamen_7|11|8|5|bamen_6|10|7|0|bamen_1|10|6|0|bamen_2</ShapeInfo>
+				<Descript>传闻此阵以八门之理成阵，进可杀伐，退可护身，非常玄妙。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit10">
+		<DisplayName>先天甲乙木神阵</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载先天甲乙木神阵的阵图秘谱，传闻此阵以可唤醒天地间生发之气，复苏万物。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n先天甲乙木神阵</EffectDesc>
+		<ZhenShapes>
+			<li Name="先天甲乙木神阵"> 
+				<ShapeInfo>10|9|0|jiayimuzhen_0|10|10|0|jiayimuzhen_1|9|9|1|jiayimuzhen_2|11|10|4|jiayimuzhen_3|10|8|0|jiayimuzhen_4</ShapeInfo>
+				<Descript>聚集先天甲乙木之元精成阵，传闻此阵以可唤醒天地间生发之气，复苏万物。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+	
+	<Esoterica Name="Esoterica_ZhenFa_Suit11">
+		<DisplayName>五峰镇归墟</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>记载五峰镇归墟的阵图秘谱，传闻此阵布下可以五峰之形镇护一方，牢不可摧。</Desc>
+		<EffectDesc>提高阵法负荷能力\n解锁 上古阵图：\n五峰镇归墟</EffectDesc>
+		<ZhenShapes>
+			<li Name="五峰镇归墟"> 
+				<ShapeInfo>10|9|0|wushan_0|9|9|5|wushan_1|9|8|0|wushan_2|11|10|2|wushan_3|11|9|0|wushan_4</ShapeInfo>
+				<Descript>以归墟五神峰之神髓成阵，传闻此阵布下可以五峰之形镇护一方，牢不可摧。</Descript>
+			</li>
+		</ZhenShapes>
+		<Modifier>Zhen_ZhenEnginePower2</Modifier>	
+	</Esoterica> 
+</List></Esotericas>

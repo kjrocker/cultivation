@@ -1,0 +1,790 @@
+<ModifierDefs><List>
+	<Modifier Name="SysTool_Fun1" Type="Normal">
+		<DisplayName>骰子</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="-0.1"/>
+			<li Name="BaseEmotionAddV" AddV="15"/>
+		</Properties>
+		<Moods>
+			 <li>Mood_Equipment_Fun</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Fun2" Type="Normal">
+		<DisplayName>铃铛</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+		<Properties>
+			<li Name="SocialInclination" AddV="0.2"/>
+			<li Name="BaseEmotionAddV" AddV="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Fun3" Type="Normal">
+		<DisplayName>手镯</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0.3,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Fun4" Type="Normal">
+		<DisplayName>手帕</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="SocialContactLevelAddValue" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Fun5" Type="Normal">
+		<DisplayName>香囊</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Fun6" Type="Normal">
+		<DisplayName>玄天上帝圣牌</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0.5</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_WhiteHair" Type="Normal">
+		<DisplayName>白发诗集</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0.3,0,0</BaseFive>
+		<SpecialFlags>
+			<li>FLAG_WHITEHAIR</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_Axe" Type="Normal">
+		<DisplayName>斧头</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="CuttingSpeed" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="SysTool_Pickaxe" Type="Normal">
+		<DisplayName>镐子</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MiningSpeed" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="SysTool_Sickle" Type="Normal">
+		<DisplayName>农具</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="PlantWorkSpeed" AddP="2"/>
+			<li Name="PlantHarvestSpeed" AddP="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="SysTool_Acupuncture" Type="Normal">
+		<DisplayName>针灸</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="TreatSuccessChance" AddP="1"/>
+			<li Name="TreatmentExpectQuality" AddP="1"/>
+			<li Name="TreatmentRealQualityPercentMin" AddP="1"/>
+			<li Name="TreatmentRealQualityPercentMax" AddP="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="SysTool_Umbrella" Type="Normal">
+		<DisplayName>伞</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_HAVEUMBRELLA</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="SysTool_LunHui1" Type="Normal">
+		<DisplayName>美好世界</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Moods>
+			<li>Tool_PerfectWorld</li>
+		</Moods>
+	</Modifier> 
+	
+	
+	<Modifier Name="SysTool_LunHui_QiYuan1" Type="Normal">
+		<DisplayName>祈愿之心</DisplayName>
+		<Desc>持有祈愿之心，周围的人感到平安喜乐。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<GlobleModifiers>
+			<li>SysTool_LunHui_QiYuan2</li>
+		</GlobleModifiers>
+	</Modifier> 
+	
+	
+	<Modifier Name="SysTool_LunHui_QiYuan2" Type="Normal">
+		<DisplayName>祈愿之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Moods>
+			<li>Mood_Tool_LunHui_QiYuan</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_SP_BaiYuShi" Type="Normal">
+		<DisplayName>白玉石</DisplayName>
+		<Desc>受白玉石影响，自身恢复力提高1倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="RecoveryPower" AddP="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysTool_QingLianShan_SiXiang" Type="Normal">
+		<DisplayName>遮天</DisplayName>
+		<Desc>遮蔽天机，可九年之内不受天劫困扰。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="604800"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_Yao_WolfAtk" Type="Normal">
+		<DisplayName>妖狼的尖牙</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Yao_RabbitLuck" Type="Normal">
+		<DisplayName>兔妖的脚</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,1</BaseFive>
+	</Modifier> 
+
+	<Modifier Name="Modifier_Item_Yao_SnakeHanLin" Type="Normal">
+		<DisplayName>妖蛇的寒鳞</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			<li Name="ComfyTMax" AddV="300"/>
+			<li Name="ToleranceTMax" AddV="300"/>
+		</Properties>
+		
+	</Modifier> 
+
+	<Modifier Name="Modifier_Item_Yao_BearPiMao" Type="Normal">
+		<DisplayName>熊妖的脖颈毛</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+			<li Name="ComfyTMin" AddV="-180"/>
+			<li Name="ToleranceTMin" AddV="-180"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Yao_TurtleKe" Type="Normal">
+		<DisplayName>巨龟的坚壳</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_Yao_CattleJiao" Type="Normal">
+		<DisplayName>妖牛角</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,1,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Yao_TigerZhui" Type="Normal">
+		<DisplayName>虎王骨</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,2,0,0</BaseFive>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="45"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Yao_ChickenGuan" Type="Normal">
+		<DisplayName>金阳冠</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_DragonScale" Type="Normal">
+		<DisplayName>龙鳞</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_BossFeng_HuoYu" Type="Normal">
+		<DisplayName>凤羽</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="2"/>
+			<li Name="ComfyTMin" AddV="-80"/>
+			<li Name="ToleranceTMin" AddV="-80"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_BossFeng_TouYu" Type="Normal">
+		<DisplayName>凤头羽</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_BossLong_Jiao" Type="Normal">
+		<DisplayName>龙天角</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_BossZhuLong_TianLin" Type="Normal">
+		<DisplayName>烛龙天鳞</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="3"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_BossZhuLong_LongYu" Type="Normal">
+		<DisplayName>混沌龙玉</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.05"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.05"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.05"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.05"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Item_BossLong_NiLin" Type="Normal">
+		<DisplayName>蛟龙逆鳞</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_BossFeng_HongYu" Type="Normal">
+		<DisplayName>凤凰焱玉</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_Item_TaiYiMiDian" Type="Normal">
+		<DisplayName>太一秘册携带效果</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.5"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<!--征伐新增-->
+	<Modifier Name="SysTool_StoneCutter" Type="Normal">
+		<DisplayName>糊泥刀</DisplayName>
+		<Desc>某个修行者打造的建筑工具，可大大加快建筑速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="ConstructionSpeed" AddP="3"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysTool_SewingDefender" Type="Normal">
+		<DisplayName>缝纫护腕</DisplayName>
+		<Desc>看起来是个护腕，实则可借助肘部力量加快缝纫速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="TailoringSpeed" AddP="3"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysTool_MillVell" Type="Normal">
+		<DisplayName>磨面之遮</DisplayName>
+		<Desc>遮住了脸，由于不会有人认出你来，可以肆无忌惮地磨面了，甚至其他手工工作也变快了，反正做得好坏别人也不知道是你做的。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="HandworkSpeed" AddP="3"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Mibao_Yuanshenxinjian" Type="Normal">
+		<DisplayName>元神心剑</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Mibao_Wuqileifu" Type="Normal">
+		<DisplayName>五气雷符</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Mibao_Longxinyinyanggui" Type="Normal">
+		<DisplayName>龙心阴阳</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_Item_XianBoneBall" Type="Normal">
+		<DisplayName>神舍利</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPractice_GodPowerAddV" AddV="5"/>
+			<li Name="GodCity_MaxResident" AddV="10000"/>
+			<li Name="MindStateBaseValue" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Mibao_GodFabaoYuQi" Type="Normal">
+		<DisplayName>圣物御器</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Mibao_GodFabaoShuFa" Type="Normal">
+		<DisplayName>圣物术法</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="3"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Mibao_GodFabaoHuTi" Type="Normal">
+		<DisplayName>圣物护体</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="3"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes1" Type="Normal">
+		<DisplayName>法衣1</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes2" Type="Normal">
+		<DisplayName>法衣2</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes3" Type="Normal">
+		<DisplayName>法衣3</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes4" Type="Normal">
+		<DisplayName>法衣4</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-8"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes5" Type="Normal">
+		<DisplayName>法衣5</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes6" Type="Normal">
+		<DisplayName>法衣6</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes7" Type="Normal">
+		<DisplayName>法衣7</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes8" Type="Normal">
+		<DisplayName>法衣8</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-8"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes9" Type="Normal">
+		<DisplayName>法衣9</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Clothes10" Type="Normal">
+		<DisplayName>法衣10</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_Item_SP_Trousers1" Type="Normal">
+		<DisplayName>法裤1</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers2" Type="Normal">
+		<DisplayName>法裤2</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers3" Type="Normal">
+		<DisplayName>法裤3</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers4" Type="Normal">
+		<DisplayName>法裤4</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-8"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers5" Type="Normal">
+		<DisplayName>法裤5</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers6" Type="Normal">
+		<DisplayName>法裤6</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers7" Type="Normal">
+		<DisplayName>法裤7</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers8" Type="Normal">
+		<DisplayName>法裤8</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-8"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers9" Type="Normal">
+		<DisplayName>法裤9</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_SP_Trousers10" Type="Normal">
+		<DisplayName>法裤10</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

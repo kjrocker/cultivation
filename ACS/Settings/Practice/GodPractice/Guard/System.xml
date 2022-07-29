@@ -1,0 +1,7 @@
+<GodGuardDefs><List>
+	<Def Name="GodGuard_SYSLOST">
+		<DisplayName>模组丢失</DisplayName>
+		<Icon>Res/Sprs/ui/icon_del</Icon>		
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）。</Desc>
+	</Def>	
+</List></GodGuardDefs>

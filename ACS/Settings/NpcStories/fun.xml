@@ -1,0 +1,171 @@
+﻿<NpcStories><List>
+
+	<Story Name="NormalFun"><!--娱乐通用： 发呆 看日出 看日落 看月亮 看星星 看云彩 看天 看雨 看雪 读书 描述在obj里-->
+		<Rate>0.05</Rate>
+		<Events>			
+			<!--
+			 <li Rate="0.2" MapStory="TestStory1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，思绪万千。" JustHot="1"/>	
+			-->
+			 <li Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 <li Rate="0.15" MapStory="HotStory_Fun_LingWu_DuShu" JustHot="1"/>
+			
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然发出一声长叹。"/>		
+		</Events>
+	</Story>	
+	
+	<Story Name="Fun_Dance"><!--跳舞-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，不小心踢到了旁边的[obj_nearthing]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，不小心扭了一下脚。"/>		
+		</Events>
+	</Story>
+	
+	
+	<Story Name="Fun_Music"><!--奏乐-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，忍不住轻声和唱了起来。"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="Fun_PlayBird"><!--逗鸟虫-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，忍不住学着笼中的小鸟叫了两声。"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="Fun_Calligraphy"><!--书画-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，不小心碰翻了墨。"/>		
+		</Events>
+	</Story>
+	
+	<Story Name="Fun_PlayChess"><!--下棋-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然发现之前有一步下错了，气得拍了一下大腿。"/>		
+		</Events>
+	</Story>
+	
+	<Story Name="Fun_PlayTicTacToe"><!--下井字棋-->
+		<Rate>0.05</Rate>
+		<Events>			
+			 <li  Rate="0.15" MapStory="HotStory_Fun_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]静静的[obj]，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]一个人[obj]，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然觉得很气闷。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，只能[obj]来放空心灵。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，忍不住来[obj]抒怀。"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj]时，突然被一阵风迷了眼睛"/>
+		</Events>
+	</Story>
+
+	
+</List></NpcStories>

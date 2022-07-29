@@ -1,0 +1,132 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_11_Tu">   <!-- 护盾强-->  
+		<DisplayName>葵花炼神大法</DisplayName>
+		<Desc>太一门镇派五行真诀之一，只有女性才能修炼。借厚土至阴之力成就纯阴元神以脱离凡胎飞升成仙。如果男性强行修炼，性别会发生逆转。</Desc>
+		<SelectDesc>此功法适合女性修炼，如果男性强行修炼，性别会发生逆转。此功法擅长御器之术，只是在成丹时会承受初劫洗礼。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>6, -1, 6, 6, -1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Tu</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>少阴之体</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>婴宁</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+					</Neck>
+		
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>交感</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>入体</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>中阴成丹</DisplayName>
+				<Desc></Desc>
+				<Value>4000</Value>
+				<Necks>
+					
+					<Neck Location="0.2" Kind="Chance">
+						<DisplayName>通衢</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+					</Neck>
+				
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>百汇</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Perception_1_5_25</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_3</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>成丹</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>太阴元神</DisplayName>
+				<Desc></Desc>
+				<Value>250000</Value>
+				<Necks>
+					<Neck Location="0.01" Kind="Thunder">
+						<DisplayName>忘我</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>8000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="0.6" Kind="Explore">
+						<DisplayName>从真</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+					</Neck>
+					<Neck Location="1" Kind="Explore">
+						<DisplayName>返虚</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>2</ExploreValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>破碎虚空</DisplayName>
+				<Desc></Desc>
+				<Value>7550000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>具足</DisplayName>
+						<Desc>以妖兽成年的玄牝珠合入太阴元神，借助其中太阴之气完满具足。</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_SoulPearl"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.8" Kind="Chance">
+						<DisplayName>化神</DisplayName>
+						<Desc>以具足之元神分化万千，各悟生死，以窥天道。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>合道</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>650000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

@@ -1,0 +1,197 @@
+﻿<NpcStories><List>
+	<Story Name="Social_SayHello"><!--打招呼-->
+		<Rate>0.2</Rate>
+		<Events>	
+			<li Rate="0.1" Story="[name]看到[hename]打老远过来，就向[he]挥了挥手，打了个招呼。"/>
+			<!--
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，[hename]就急匆匆的走过。[name]看[he]似乎有急事，就点示意，仅仅打了个招呼。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看到[hename]刚好在旁边，就和[he]打了个招呼。"/>	
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]，[hename]打老远就关心的跟[name]打了个招呼。"/>				
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]看[name][desc_badmood]，就过来关心的跟[name]打了个招呼。"/>			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，看[name][desc_badmood]，[hename]就过来拍了拍[it]，以示安慰。"/>	
+					
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]跟[hename]偶遇，两人互相点了点头打了个招呼。"/>					
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]正在[obj_action]。看[hename]从旁边经过，就抬手打了个招呼。"/>
+			<li Rate="0.1" Story="[set=1,obj_food][rand_lable=desc_time,desc_place,desc_weather]，[name]正在惬意的吃着[get=1]。看[hename]走过来，便挥了挥手中的[get=1]，顺便向他打了个招呼。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]正在盯着旁边的[obj_nearthing]发呆。[hename]好奇的伸手在[it]眼前晃了一下，跟[name]打了个招呼。"/>
+			-->
+			<!--
+			<li Rate="0.2" Story="跟[hename]打了个招呼" JustHot="1"/>	
+			<li Rate="0.2" Story="[hename=2]你好鸭"/>		
+			<li Rate="0.5" Story="见到你很高兴![hename=2]"/>			
+			-->			
+		</Events>
+	</Story>
+	
+	<Story Name="Social_Talk"><!--闲聊-->
+		<Rate>0.2</Rate>
+		<Events>
+			<!--
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]好像正无聊，就拉着[he]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]正巧闲逛路过，看到[name][desc_badmood]，就拉着[it]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]好像正无聊，就拉着[he]聊了聊关于[other=obj]的事。"/>
+			-->
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]看[hename]好像正无聊，就拉着[he]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>
+			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]看[hename]好像正无聊，就拉着[he]聊了聊关于[other=obj]的事。"/>
+			
+			<li Rate="0.4" Story="[name][rand_lable=desc_action,desc_goodmood]，看[hename]路过，就拉着[he]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>
+			
+			<li Rate="0.4" Story="[hename]闲逛路过，看到[name][desc_badmood]，就拉着[it]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>
+			
+			<li Rate="0.1" Story="[name][rand_lable=desc_action,desc_goodmood]，看[hename]好像正无聊，就拉着[he]聊了聊关于[other=obj]的事。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Social_DeepTalk"><!--谈心-->
+		<Rate>0.5</Rate>
+		<Events>			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]刚好在旁边，就拉着[he]一起聊天。聊到[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的时候，两人竟然颇有共鸣，越谈越深。"/>
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]看到[name][desc_badmood]，就来关心了一下。[name]大受感动，当下便与[hename]聊了起来。俩人聊到[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的时候，然颇有共鸣，感觉互相关系又进了一步。"/>
+			
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]刚好在旁边，就拉着[he]一起聊天。聊到[other=obj]这个话题的时候，两人竟然颇有共鸣，越谈越深。"/>
+			
+			<li Rate="0.1" Story="最近[obj_weather]触动了[name]的回忆。[it]找了个机会，拉着[hename]一起谈了谈心许久，俩人觉得关系更近了一步。"/>
+			<li Rate="0.1" Story="[name]在[obj_action]时突然觉得很哀伤。[it]看[hename]刚巧无事，便拉着[he]一起谈了谈心。聊到深处，俩人觉得关系更近了一步。"/>
+			<li Rate="0.1" Story="[name]正沉浸在[obj_goodmood]的喜悦中。[it]忍不住拉着[hename]好好的聊了聊，向[he]分享这份心情。此次谈心，俩人觉得关系更近了一步。"/>
+			<li Rate="0.1" Story="[name]正被[obj_badmood]的情绪折磨。[it]忍不住拉着[hename]倾诉，向[he]吐露了自己的内心。此次谈心，俩人觉得关系更近了一步。"/>
+			<li Rate="0.1" Story="[set=1,obj_relation][name]突然想起了[it]的[get=1]。[it]找了个时间拉着[hename]好好地聊了聊过去和[get=1]的事。聊到深处，俩人觉得关系更近了一步。"/>
+			<li Rate="0.1" Story="[set=1,obj_fabao][name]一直都对派中法宝[get=1]莫名的感兴趣。[it]有一次和[hename]聊天时说起[get=1]的事，没想到得到了[his]热烈回应，两人竟隐隐有引为知己之感。"/>
+			<li Rate="0.1" Story="[set=1,obj_dan][name]有一次和[hename]聊天时说起[get=1]，[it]觉得[get=1]的味道比[obj_food]好吃，没想到[hename]也有同感，两人谈兴大起，越聊越深，最后竟隐隐有引为知己之感。"/>
+			<li Rate="0.1" Story="[set=1,obj_dan][name]一直很怀疑[get=1]的效果，有一次和[hename]聊天时说起这件事，竟然发现[he]也对此抱有怀疑，俩人越聊越开心，竟然谈了许久。"/>
+			<li Rate="0.1" Story="[set=1,obj_food][name]特别喜欢[get=1]，有一次和[hename]聊天时，竟然从[he]那里听说了[get=1]的[rand_string=三,四,五,六,七,八,九,十二,十五]种做法！[name]一时间对[hename]惊为天人，引为知己。"/>
+			<li Rate="0.1" Story="[set=1,obj_friend][name]在和[hename]聊天时说起了[get=1]，竟然发现[he]对[get=1]相当了解！[name]一时间大感兴趣，从[hename]那里打听了许多[get=1]的八卦。"/>
+			<li Rate="0.1" Story="[set=1,obj_nearthing][name]在[obj_action]时，突然对旁边的[get=1]产生浓烈的兴趣。[it]拉住身边的[hename]聊起了这件事，没想到[hename]也早就注意到了[get=1]，俩人一拍即合，竟聊了很久。"/>
+			<li Rate="0.1" Story="[set=1,obj_equip][name]在和[hename]聊天时，[hename]突然发现了[name]身上的[get=1]。[name]与是向[he]聊起了[get=1]的来历，[hename]听后啧啧称奇。"/>
+			<li Rate="0.1" Story="[set=1,rand_lable=obj_gong,obj_esoterica][name]最近修行[get=1]有所困扰，忍不住和[hename]聊起了此事。[hename]深有同感，两人话起投机，一聊就是许久，十分畅快。"/>
+			<li Rate="0.1" Story="[set=1,obj_neck][name]最近很担心下一个瓶颈[get=1]的突破，在和[hename]聊天时说起了这个担忧。[hename]想尽办法开导[name]，终于让[name]定下神来。"/>
+			<li Rate="0.1" Story="[set=1,obj_damage][name]最近受了伤，[hename]特意来问了问[get=1]恢复的怎么样。[name]大受感动，与[he]聊了许久。"/>
+			<li Rate="0.1" Story="[set=1,obj_secret][name]在和[hename]聊天时，聊到了最近听说[get=1]的秘闻。俩人对[get=1]的猜测十分相近，忍不住聊了许久。"/>
+			<li Rate="0.1" Story="[set=1,obj_unlockmapplace][name]在和[hename]聊天时，聊到了[get=1]的见闻。这引起了[hename]的兴趣，俩人谈了许久[get=1]的风土人情，聊得十分过瘾。"/>
+			<li Rate="0.1" Story="[set=1,obj_lockmapplace][name]偶然间听说有[get=1]这么一个地方。在跟[hename]聊天时提起这件事，[hename]表示自己也没听过，对此十分感兴趣。二人对[get=1]尽情畅想，觉得十分投机。"/>
+			<li Rate="0.1" Story="[set=1,obj_goodschool][name]在跟[hename]聊天时听说了[get=1]的一些趣事。[hename]表示有机会可以相约去[get=1]游览一番，[name]对此大表赞同。"/>
+			<li Rate="0.1" Story="[set=1,obj_badschool][name]在跟[hename]聊天时聊到了[get=1]与我派交恶一事。俩人对此十分愤怒，争相说了很多[get=1]的不是，竟然觉得与对方十分投机。"/>
+		</Events>
+	</Story>	
+	<Story Name="Social_Neglect"><!--怠慢-->
+		<Rate>0.2</Rate>
+		<Events>			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看到[hename]打老远过来，就向[he]挥了挥手。没想到[hename]对此视而不见，这让[name]感到被怠慢，十分不舒服。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，[hename]就急匆匆的走过。[name]向[he]打了个招呼，却被[hename]面无表情瞟了一眼。这让[name]十分不快。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看到[hename]刚好在旁边，就和[he]打了个招呼。但没想到[hename]却并不想理[it]，这让[name]觉得很尴尬。"/>	
+			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]，[hename]打老远就来跟[name]打了个招呼。但[name]并不想理[he]。"/>				
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]看[name][desc_badmood]，就过来跟[name]打了个招呼。但[name]并不想理[he]。"/>			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，看[name][desc_badmood]，[hename]就过来拍了拍[it]，以示安慰。但[name]并不想理[he]。"/>	
+			
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]跟[hename]偶遇，俩人互相无视，冷漠的错身而过。"/>					
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]正在[obj_action]。看[hename]从旁边经过，就抬手打了个招呼。但[hename]面无表情的看了一眼，并没有回应，这让[name]心里一堵。"/>
+			<li Rate="0.1" Story="[set=1,obj_food][rand_lable=desc_time,desc_place,desc_weather]，[name]正在惬意的吃着[get=1]。看[hename]走过来，便挥了挥手中的[get=1]，顺便向他打了个招呼。但[hename]却嫌弃的看了[it]一眼，快速离开了。这让[name]一愣，有点不高兴。"/>
+			<li Rate="0.1" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]正在盯着旁边的[obj_nearthing]发呆。[hename]好奇的伸手在[it]眼前晃了一下，跟[name]打了个招呼。[name]却因为被吓了一跳，不满的哼了一声。"/>
+		</Events>
+	</Story>	
+	<Story Name="Social_Quarrel"><!--争吵-->
+		<Rate>0.25</Rate>
+		<Events>			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]刚好在旁边，就拉着[he]一起聊天。聊到[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的时候，两人意见却发生了分歧，竟然吵了起来。"/>
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]看到[name][desc_badmood]，就来关心了一下。[name]大受感动，当下便与[hename]聊了起来。但俩人聊到[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的时候，[hename]却提出了截然相反的意见，两人互不相让，竟然吵了一架。"/>
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，看[hename]刚好在旁边，就拉着[he]一起聊天。但是聊到[other=obj]这个话题的时候，[hename]却提出了截然相反的意见，两人互不相让，最后吵了一架。"/>
+			
+			<li Rate="0.1" Story="[name]在[obj_action]时突然觉得很哀伤。看[hename]刚巧无事，便拉着[he]想倾诉一番。没想到[hename]却觉得[it]没事找事，俩人话不投机，吵了一架，不欢而散。"/>
+			<li Rate="0.1" Story="[name]正沉浸在[obj_goodmood]的喜悦中。[it]忍不住拉着[hename]想分享这份心情。没想到[hename]却嫌他小题大做，很不耐烦。这让[name]很生气，两人竟然吵了一架。"/>
+			<li Rate="0.1" Story="[name]正被[obj_badmood]的情绪折磨。[it]忍不住拉着[hename]倾诉，却被[he]心不在焉的态度激怒。两人最后吵了起来，不欢而散。"/>
+			<li Rate="0.1" Story="[set=1,obj_fabao][name]一直都对派中法宝[get=1]莫名的感兴趣。[it]有一次和[hename]聊天时说起[get=1]的事，没想到[hename]却对此十分不屑。[name]十分羞怒，与[he]大吵一架。"/>
+			<li Rate="0.1" Story="[set=1,obj_dan][name]有一次和[hename]聊天时说起[get=1]，[it]觉得[get=1]的味道比[obj_food]好吃，没想到[hename]对此发出大声的嘲笑。[name]大怒，与之吵了一架，不欢而散。"/>
+			<li Rate="0.1" Story="[set=1,obj_dan][name]一直很怀疑[get=1]的效果，有一次和[hename]聊天时说起这件事，竟然被[he]嘲讽没有常识。[name]十分气愤，与他展开争论，最后竟然吵了一架。"/>
+			<li Rate="0.1" Story="[set=1,obj_food][name]特别喜欢[get=1]，有一次和[hename]聊天时说起此事，竟然被[he]嘲讽没吃过好东西！[name]一时不忿，与他大吵一架，不欢而散。"/>
+			<li Rate="0.1" Story="[set=1,obj_equip][name]在和[hename]聊天时，向[he]聊起了自己身上[get=1]的来历，[hename]却听的很不耐烦，觉得[name]在炫耀。[name]觉得简直不可理喻，和[hename]吵了两句。"/>
+			<li Rate="0.1" Story="[set=1,obj_secret][name]在和[hename]聊天时，聊到了最近[get=1]的秘闻。俩人对[get=1]各自猜测，但却不能达成一致，最后竟然吵了起来。"/>
+			<li Rate="0.1" Story="[set=1,obj_unlockmapplace][name]在和[hename]聊天时，聊到了在[get=1]的见闻。这引起了[hename]的兴趣，然而俩人在谈[get=1]风土人情的时候却各执己见，最终竟然引发争吵，不欢而散。"/>
+			<li Rate="0.1" Story="[set=1,obj_lockmapplace][name]偶然间听说有[get=1]这么一个地方。在跟[hename]聊天时提起这件事，[hename]却一脸怀疑，说[name]胡说八道。俩人话不投机，最终争吵起来。"/>
+			<li Rate="0.1" Story="[set=1,rand_lable=obj_goodschool,obj_badschool][name]在跟[hename]聊天时提到了[get=1]的一些趣事，[hename]却觉这些东西十分无趣。[name]碰了一鼻子灰，十分不快，最终竟然和对方吵了起来。"/>
+		</Events>
+	</Story>	
+	<Story Name="Social_Insult"><!--侮辱-->
+		<Rate>0.5</Rate>
+		<Events>			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，路过的[hename]阴阳怪气的嘲讽了[name]两句，这让[name]十分不快。"/>
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，却遭到[hename]在旁边冷言嘲讽，[name]觉得十分扫兴。"/>
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]正巧闲逛路过，看到[name][desc_badmood]，就幸灾乐祸的嘲讽了两句，这让[name]的心情雪上加霜。"/>	
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]，就听到[hename]在一旁落井下石的说风凉话，这让[name]的愈发郁闷。"/>	
+		</Events>
+	</Story>	
+	<Story Name="Social_Fight"><!--打架-->
+		<Events>		
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，路过的[hename]阴阳怪气的嘲讽了[name]，两人一言不合，竟然打了起来。"/>
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，却遭到[hename]在旁边冷言嘲讽，两人一言不合，推搡之下，竟然打了起来。"/>
+			
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[hename]正巧闲逛路过，看到[name][desc_badmood]，就幸灾乐祸的嘲讽了两句，[name]大怒，忍不住对[he]动了手。"/>	
+			<li Rate="0.4" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]，就听到[hename]在一旁落井下石的说风凉话，[name]大怒，忍不住对[he]动了手。"/>	
+		</Events>
+	</Story>	
+	<Story Name="Social_DeclarationSucceed"><!--表白成功-->
+		<Events>
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然向旁边的心上人[hename]表达了爱意。[hename]十分惊讶，但最终还是羞涩的接受了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood,desc_badmood]，刚好看到心上人[hename]路过，脑袋一热就突然向[he]表白。[hename]十分惊讶，但随即羞涩的接受了[it]。"/>		
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]十分感动，接受了[it]的示爱。"/>	
+		</Events>
+	</Story>	
+	<Story Name="Social_DeclarationFailed"><!--表白失败-->
+		<Events>
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，突然向旁边的心上人[hename]表达了爱意。[hename]十分惊喜，但还是委婉的拒绝了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood,desc_badmood]，刚好看到心上人[hename]路过，脑袋一热就突然向[he]表白。[hename]毫不犹豫的拒绝了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]十分感谢[name]的喜欢，但还是拒绝了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]费尽心思，在[hename]最爱吃的[obj_food]下中藏了一封坦露心声的信笺，借此向心上人[hename]表达爱意。[hename]十分感动，然后拒绝了[it]。"/>
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]笑着说自己配不上[it]，一定有更好的人在等着[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]哈哈大笑，说别开玩笑了，然后就转身离去。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]虽然觉得[name]是个好人，但觉得还是不合适，所以最终拒绝了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]吃惊的望着[name]，然后拒绝了[it]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]郑重的感谢了[name]为[he]做的一切，然后拒绝了[it]。"/>
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]精心准备了许久，郑重的向心上人[hename]表达了爱意。[hename]回忆起过去的点点滴滴，有一点恍然大悟的感觉，随后毫不犹豫的拒绝了[it]。"/>
+		</Events>
+	</Story>
+	<Story Name="Social_Amuse"><!--逗乐-->
+		<Events>
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时灵机一动，想了个笑话，讲给[hename]听，逗得[he]哈哈大笑。"/>		
+			<li Rate="0.2" Story="[name]虽然因[obj_badmood]而情绪不佳，但看到[hename]的样子，还是觉得很温暖喜乐。"/>					
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]和[hename]依偎在一起说了会儿悄悄话。[hename]时不时被逗的笑声连连。"/>	
+			<li Rate="0.2" Story="[name]在[obj_action]间余，偷偷和[hename]拉着手说了会儿体己的话，觉得十分幸福。"/>					
+			<li Rate="0.2" Story="[name]身体虽然受[obj_damage]困扰，但依然想办法逗[hename]开心。[hename]笑中带泪，觉得十分幸福。"/>				
+		</Events>
+	</Story>	
+	<Story Name="Social_BeDeclarationSucceed"><!--被表白成功-->
+		<Events>			
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，[hename]突然向[it]表达了爱意。[name]十分惊讶，但最终还是羞涩的接受了[he]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，[hename]突然出现，向[it]表达了爱意。[name]十分惊讶，但随即羞涩的接受了[he]。"/>		
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]。[hename]走过来贴心的安慰了[it]，并委婉的表达了爱意。[name]十分感动，接受了[it]的示爱。"/>		
+		</Events>
+	</Story>	
+	<Story Name="Social_BeDeclarationFailed"><!--被表白失败-->
+		<Events>			
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在[obj_action]时，[hename]突然向[it]表达了爱意。[name]十分恼火[he]干扰自己[obj_action]，生气的拒绝了[he]。"/>	
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][rand_lable=desc_action,desc_goodmood]，[hename]突然出现，向[it]表达了爱意。[name]被吓了一跳，随后拒绝了[he]。"/>		
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name][desc_badmood]。[hename]走过来贴心的安慰了[it]，并委婉的表达了爱意。[name]十分感动，但还是拒绝了[he]。"/>		
+		</Events>
+	</Story>	
+	<Story Name="Social_Intimacy"><!--亲昵-->
+		<Events>	
+			<li Rate="0.2" Story="[name]虽然因[obj_badmood]而情绪不佳，但只要跟[hename]在一起，还是觉得很温暖喜乐。"/>					
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]和[hename]依偎在一起说了会儿悄悄话。[hename]时不时被逗的笑声连连。"/>	
+			<li Rate="0.2" Story="[name]在[obj_action]间余，偷偷和[hename]拉着手说了会儿体己的话，觉得十分幸福。"/>			
+		</Events>
+	</Story>	
+	<Story Name="Social_Tenderness"><!--温存-->
+		<Events>			
+			<li Rate="0.2" Story="[name]虽然因[obj_badmood]而情绪不佳，但只要跟[hename]在一起，还是觉得很温暖喜乐。"/>					
+			<li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]和[hename]依偎在一起说了会儿悄悄话。[hename]时不时被逗的笑声连连。"/>	
+			<li Rate="0.2" Story="[name]在[obj_action]间余，偷偷和[hename]拉着手说了会儿体己的话，觉得十分幸福。"/>			
+		</Events>
+	</Story>	
+	
+	
+</List></NpcStories>

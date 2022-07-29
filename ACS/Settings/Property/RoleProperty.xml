@@ -1,0 +1,398 @@
+<Properties><List>
+	<Property Name="TestProperty11">
+		<BaseValue>0.7</BaseValue>
+	</Property>
+	
+	<!--<Property Name="TestProperty21">
+		<BaseValueS>MoveSpeed</BaseValueS>
+		<LuckWeight>0</LuckWeight>
+		<MinValue>0</MinValue> 
+		<MaxValue>0.999</MaxValue>
+		
+		<Skills>
+			<li Name="Fight" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Qi" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.9,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+		</Skills>
+		
+		<Functions>
+			<li Name="Feeling" Weight="0.3"/>
+		</Functions>
+		
+		<FiveBase>
+			<li Name="Perception" Weight="1" Base="0.5" Addion="0.05"/>
+			<li Name="Physique" Weight="0.5">0.1,0.2,0.3,0.5,0.6,0.7,0.8,0.9,1</li>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="TestProperty11" Weight="1"/>
+		</Properties>
+		
+	</Property>-->
+	
+	<Property Name="LeadExperienceAddtion">
+		<DisplayName>经历点数加成</DisplayName>
+		<ShowInUI>0</ShowInUI>		
+		<MinValue>-999</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<Property Name="BaseWorkSpeed">
+		<DisplayName>基础工作速度</DisplayName>
+		<DisplayValue>{0}点/秒</DisplayValue>
+		<Desc>角色的基础工作速度，每秒完成多少工作量的工作。</Desc>
+		<PropertyType>Worker</PropertyType>
+		<FunctionKind>生产属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		
+		<MinValue>-999</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValueS>RaceBaseWorkSpeed</BaseValueS>
+	</Property>
+	
+	<Property Name="BaseEmotionAddV">
+		<DisplayName>心情基础值</DisplayName>
+		<DisplayValue>{0}点</DisplayValue>
+		<Desc>角色心情的基础值。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-999</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValue>40</BaseValue>
+	</Property>
+	
+	<Property Name="MaxHp">
+		<MinValue>1</MinValue> 
+		<BaseValueS>RaceMaxHp</BaseValueS>
+	</Property>
+	
+	<Property Name="MaxAge">
+		<DisplayName>寿元</DisplayName>
+		<DisplayValue>{0}年</DisplayValue>
+		<Desc>角色的可以活到的最高年龄。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-999</MinValue> 
+		<MaxValue>9999</MaxValue>
+		<BaseValueS>RaceMaxAge</BaseValueS>
+	</Property>
+	
+	<Property Name="AgeCostSpeed">
+		<DisplayName>寿元流逝速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>角色寿命自然流逝时的速度</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>0.1</MinValue> 
+		<MaxValue>10000</MaxValue>
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="VisionRadius">
+		<DisplayName>感知范围</DisplayName>
+		<DisplayValue>{0:N2}米</DisplayValue>
+		<Desc>角色的感知周围环境的范围。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>1</MinValue> 
+		<MaxValue>40</MaxValue>
+		<BaseValueS>RaceVisionRadius</BaseValueS>
+		<Functions>
+			<li Name="Feeling" Weight="1"/>
+		</Functions>
+	</Property> 
+	
+	<Property Name="MoveSpeed">
+		<DisplayName>移动速度</DisplayName>
+		<DisplayValue>{0:N2}米/秒</DisplayValue>
+		<Desc>角色的移动速度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>0</MinValue> 
+		<MaxValue>100</MaxValue>
+		<BaseValueS>RaceMoveSpeed</BaseValueS>
+		<Functions>
+			<li Name="Movement" Weight="0.5"/>
+			<li Name="Feeling" Weight="0.5"/>
+		</Functions>
+	</Property>
+	
+	<Property Name="ComfyTMin">
+		<DisplayName>最低舒适温度</DisplayName>
+		<DisplayValue>[temperature]{0}[/temperature]</DisplayValue>
+		<DisplayValueRelative>[relativetemperature]{0}[/relativetemperature]</DisplayValueRelative>
+		<Desc>角色感到舒适的最低温度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-273</MinValue> 
+		<MaxValue>9999</MaxValue>
+		<BaseValueS>RaceComfyTMin</BaseValueS>
+	</Property>	
+
+	<Property Name="ComfyTMax">
+		<DisplayName>最高舒适温度</DisplayName>
+		<DisplayValue>[temperature]{0}[/temperature]</DisplayValue>
+		<DisplayValueRelative>[relativetemperature]{0}[/relativetemperature]</DisplayValueRelative>
+		<Desc>角色感到舒适的最高温度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-273</MinValue> 
+		<MaxValue>9999</MaxValue>
+		<BaseValueS>RaceComfyTMax</BaseValueS>
+	</Property>	
+	
+	<Property Name="ToleranceTMin">
+		<DisplayName>最低极限温度</DisplayName>
+		<DisplayValue>[temperature]{0}[/temperature]</DisplayValue>
+		<DisplayValueRelative>[relativetemperature]{0}[/relativetemperature]</DisplayValueRelative>
+		<Desc>不影响角色健康的最低温度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-273</MinValue> 
+		<MaxValue>9999</MaxValue>
+		<BaseValueS>RaceToleranceTMin</BaseValueS>
+	</Property>	
+	
+	<Property Name="ToleranceTMax">
+		<DisplayName>最高极限温度</DisplayName>
+		<DisplayValue>[temperature]{0}[/temperature]</DisplayValue>
+		<DisplayValueRelative>[relativetemperature]{0}[/relativetemperature]</DisplayValueRelative>
+		<Desc>不影响角色健康的最高温度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-273</MinValue> 
+		<MaxValue>9999</MaxValue>
+		<BaseValueS>RaceToleranceTMax</BaseValueS>
+	</Property>	
+	
+	<Property Name="RecoveryPower">
+		<DisplayName>自然恢复力</DisplayName>
+		<DisplayValue>{0}％/秒</DisplayValue>
+		<Desc>角色自然恢复伤病的速度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-999</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValueS>RaceRecoveryPower</BaseValueS>
+	</Property>
+	<!--疼痛极限-->
+	<Property Name="PainTolerance">
+		<DisplayName>疼痛极限</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>角色对疼痛的忍耐程度。</Desc>
+		<FunctionKind>基础属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+		<MinValue>-999</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Intelligence" Weight="0.3" Base="0.8" Addion="0.1"/>
+			<li Name="Physique" Weight="0.7" Base="0.8" Addion="0.2"/>
+		</FiveBase>
+	</Property>
+	
+	<!--技能经验悟性系数Ik-->
+	<Property Name="IntelligenceSkillEXPConstant">
+		<DisplayName>学习速度</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>角色从实践中获取经验的速度，也影响金丹法修行者获取参悟的速度。</Desc>
+		<FunctionKind>修炼属性</FunctionKind>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		
+	
+		<MinValue>0.5</MinValue> 
+		<MaxValue>999</MaxValue>
+		<BaseValue>1</BaseValue>
+		
+		<FiveBase>
+			<li Name="Intelligence" Weight="1" Base="0.5" Addion="0.15"/>
+		</FiveBase>
+		
+		<Properties>
+			<li Name="ConsciousnessEfficiency" Weight="1"/>
+		</Properties>
+	</Property>
+	
+	<!--。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。第二批属性-->
+
+	<!--情绪放大系数-->
+	<Property Name="EmotionAmplificationFactor">
+		<DisplayName>情绪放大系数</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0.01</MinValue>
+	</Property>
+	
+	<!--好感度相关-->
+	<Property Name="FavourChangeSpeedRate">
+		<DisplayName>好感度变化速度</DisplayName>
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<Property Name="CharismaFriendshipAddValue">
+		<BaseValue>1</BaseValue>
+	</Property>
+	
+	<!--需求相关-->
+	
+	<!--噩梦发生-->
+	<Property Name="NightmareHappenPercent"> 
+		<DisplayName>噩梦发生几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>角色睡觉时噩梦发生的几率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		<MaxValue>1</MaxValue>
+		
+		<BaseValue>0.04</BaseValue>
+	</Property>
+	<!--美梦发生-->
+	<Property Name="NiceDreamHappenPercent">
+		<DisplayName>美梦发生几率</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<Desc>角色睡觉时美梦发生的几率。</Desc>
+		<ShowInUI>0</ShowInUI>	
+		<GenerateRandom>1</GenerateRandom>
+		<SupportCustom>1</SupportCustom>
+		<MaxValue>1</MaxValue>
+		
+		<BaseValue>0.04</BaseValue>
+	</Property>
+	<!--疲劳度-->
+	<Property Name="FatigueConsumeConstant">
+		<DisplayName>精力消耗加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色精力消耗的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<Property Name="FatigueRecoveryConstant">
+		<DisplayName>精力补充加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色精力补充的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<!--饥饿度-->
+	<Property Name="NutritionConsumeConstant">
+		<DisplayName>食物消耗加成</DisplayName>
+		<DisplayValue>{0:P}</DisplayValue>
+		<BaseValue>1</BaseValue>
+		<ShowInUI>1</ShowInUI>	
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色食物消耗的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<Property Name="NutritionRecoveryConstant">
+		<DisplayName>食物补充加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色食物补充的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<!--水-->
+	<Property Name="WaterConsumeConstant">
+		<DisplayName>饮水消耗加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色饮水消耗的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<Property Name="WaterRecoveryConstant">
+		<DisplayName>饮水补充加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色饮水补充的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<!--娱乐-->
+	<Property Name="HappyConsumeConstant">
+		<DisplayName>娱乐消耗加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色娱乐消耗的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<Property Name="HappyRecoveryConstant">
+		<DisplayName>娱乐补充加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色娱乐补充的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	<!--精元-->
+	<Property Name="PracticeFoodConsumeConstant">
+		<DisplayName>精元消耗加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		
+		<Desc>角色精元消耗的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	
+	<Property Name="PracticeFoodRecoveryConstant">
+		<DisplayName>精元补充加成</DisplayName>
+		<BaseValue>1</BaseValue>
+		<MinValue>0</MinValue> 
+		<FiveBase>
+			<li Name="Physique" Weight="1" Base="0.5" Addion="0.1"/>
+		</FiveBase>
+		
+		<Desc>角色精元补充的倍率。</Desc>
+		<SupportCustom>1</SupportCustom>
+	</Property>
+	
+<!--	术法伤害的回复系数提高值 Ling Jin Mu Shui Huo Tu六种类型伤势-->
+	<Property Name="MagicDamageRecoveryPowerAddV">
+		<DisplayName>内门伤自然恢复力</DisplayName>
+		<BaseValue>0</BaseValue>
+	</Property>
+	<!--<Property Name="TaoismPracticeFatigueConsumeConstant">
+		<BaseValue>1</BaseValue>
+	</Property>
+	<Property Name="TaoismPracticeFatigueRecoveryConstant">
+		<BaseValue>1</BaseValue>
+	</Property>	-->
+</List></Properties>

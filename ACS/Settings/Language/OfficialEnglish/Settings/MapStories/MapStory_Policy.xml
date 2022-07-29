@@ -1,0 +1,164 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="OutSpread_Give1">
+			<DisplayName>Charity</DisplayName>
+			<Desc>It was a fine day. [NAME] led the disciples to the street and distributed food to the passersby.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give2">
+			<DisplayName>Charity</DisplayName>
+			<Desc>It was a fine day. [NAME] led disciples to the street and started giving alms to passersby. There were many a beggar asking for money on the side of the road.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give3">
+			<DisplayName>Charity</DisplayName>
+			<Desc>It was a fine day. [NAME] led disciples to the street and started giving alms to passersby. They saw a stone bridge had collapsed, and people no longer walk through here.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give4">
+			<DisplayName>Charity</DisplayName>
+			<Desc>It was a fine day. [NAME] led disciples to the street and started giving alms to passersby. They saw two villagers arguing over a dog.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give5">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw two young gentlemen were fighting over a woman.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give6">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw two big men fighting each other. A passerby explained that it was because one man planted a tree, but its fruits ended up falling into the other guy's home and he was not willing to give them.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give7">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] was preparing to do charity work, when a woman exquisitely dressed approached [NAME]'s place crying, and said her child had gone missing.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give8">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] was preparing to do charity work, when a man rushed into the hall begging [NAME] to save his dying wife.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give9">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>[NAME] had wandered to a rather distant place. A group of bandits happened to be passing by.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give10">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>[NAME] came across the forces of [SCHOOL0], and saw that they were giving alms to passersby.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give11">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>[NAME] came across the forces of [SCHOOL0], and saw that they were preaching.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give12">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>[NAME] came across the forces of [SCHOOL0], and saw that they were holding a fasting ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give13">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They came across a broken wooden house, its owner is handicapped and unable to repair it.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give14">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw a man wearing foreign costume swindling passersby.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give15">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They passed by two taverns facing each other on opposite sides of the road, of which the waiters were arguing over business issues.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give16">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They encountered a group of refugees.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give17">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw a dying man who was severely ill on the side of the road, who pleaded to [NAME] to put him out of his misery.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Give18">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They accidentally touched an old man in the crowd, who immediately fell onto the ground and started shouting, "Ouch! Somebody broke my leg! This is the one! ".</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Sermon1">
+			<DisplayName>Preaching event</DisplayName>
+			<Desc>It was a bright day, and [NAME] was standing at the entrance to the street, preparing to preach.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Sermon2">
+			<DisplayName>Preaching event</DisplayName>
+			<Desc>It was a bright day, and [NAME] was preaching. Suddenly a big man came up and exclaimed: "What a load of nonsense! "</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Sermon3">
+			<DisplayName>Preaching event</DisplayName>
+			<Desc>It was a bright day, and [NAME] was preaching. A scholar came up and said that what [NAME] was saying was wrong... That didn't go over well.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Sermon4">
+			<DisplayName>Preaching event</DisplayName>
+			<Desc>It was a bright day, and [NAME] was preaching. A middle-aged woman kept clapping in an obnoxious way, but she is not a follower.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Secret1">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>It was a bright day, and [NAME] walked into the secret pavilion to hatch a plot.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Secret2">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] discovered that [SCHOOL0] was giving alms and decided to interfere.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Secret3">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] discovered that [SCHOOL0] was preparing to preach...an idea came to mind like a bolt of lightning.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Secret4">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] discovered that [SCHOOL0] was holding a fasting ceremony and decided to interfere.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Disp1">
+			<DisplayName>Abstinence Ceremony</DisplayName>
+			<Desc>It was a bright day, and [NAME] was in the Discipline Temple preparing for an Abstinence Ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Disp2">
+			<DisplayName>Abstinence Ceremony</DisplayName>
+			<Desc>[NAME] saw that people were all living a lavish lifestyle and decided to perform an Abstinence Ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Disp3">
+			<DisplayName>Abstinence Ceremony</DisplayName>
+			<Desc>[NAME] saw that rich people were living lavishly while the poor die on the side of the road, and decided to perform an Abstinence Ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Disp4">
+			<DisplayName>Abstinence Ceremony</DisplayName>
+			<Desc>[NAME] saw that outlaws were running the town and hatred filled the city, and decided to perform an Abstinence Ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_Disp5">
+			<DisplayName>Abstinence Ceremony</DisplayName>
+			<Desc>[NAME] saw that dishonest merchants and robbers were running the town, and decided to perform an Abstinence Ceremony.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+		<Text Name="OutSpread_God1">
+			<DisplayName>Miracle</DisplayName>
+			<Desc>Agent [NAME] decided that today was a good day to let Shendao disciples perform a miracle here.</Desc>
+			<Selections.0.Display>Check results</Selections.0.Display>
+		</Text>
+	</List>
+</Texts>

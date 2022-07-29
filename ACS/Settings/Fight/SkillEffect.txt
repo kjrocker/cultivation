@@ -1,0 +1,178 @@
+ID	Shape	Path	Feel	Element	Color	Desc
+	特效形态分类 1子弹 2单体特效  3Aoe特效 4链条	路径	感受分类 0无区别 1敌对 2友好	五行指定 0无1金2木3水4火5土	允许偏色	
+1	1	Effect/A/Prefabs/Projectiles/Arcane/ArcaneProjectileTiny		0	0	
+2	1	Effect/A/Prefabs/Projectiles/Arcane/ArcaneProjectileSmall				
+3	1	Effect/A/Prefabs/Projectiles/Earth/EarthProjectileTiny		5		
+4	1	Effect/A/Prefabs/Projectiles/Earth/EarthProjectileSmall		5		
+5	1	Effect/A/Prefabs/Projectiles/Fire/FireProjectileTiny	1	4		
+6	1	Effect/A/Prefabs/Projectiles/Fire/FireProjectileSmall	1	4		
+7	1	Effect/A/Prefabs/Projectiles/Fire/FireProjectileNormal	1	4		
+8	1	Effect/A/Prefabs/Projectiles/Frost/FrostProjectileTiny	1	3		
+9	1	Effect/A/Prefabs/Projectiles/Frost/FrostProjectileSmall	1	3		
+10	1	Effect/A/Prefabs/Projectiles/Legacy/LightningProjectileSmallOld				
+11	1	Effect/A/Prefabs/Projectiles/Legacy/LightningProjectileOld				
+12	1	Effect/A/Prefabs/Projectiles/Life/LifeProjectileTiny	2	2		
+13	1	Effect/A/Prefabs/Projectiles/Life/LifeProjectileSmall	2	2		
+14	1	Effect/A/Prefabs/Projectiles/Life/LifeProjectileNormal	2	2		
+15	1	Effect/A/Prefabs/Projectiles/Light/LightProjectileTiny		1		
+16	1	Effect/A/Prefabs/Projectiles/Light/LightProjectileSmall		1		
+17	1	Effect/A/Prefabs/Projectiles/Light/LightProjectileNormal		1		
+18	1	Effect/A/Prefabs/Projectiles/Lightning/LightningProjectileTiny				
+19	1	Effect/A/Prefabs/Projectiles/Lightning/LightningProjectileSmall				
+20	1	Effect/A/Prefabs/Projectiles/Lightning/LightningProjectileNormal2				
+21	1	Effect/A/Prefabs/Projectiles/Shadow/ShadowProjectileTiny	1			
+22	1	Effect/A/Prefabs/Projectiles/Shadow/ShadowProjectileSmall	1			
+23	1	Effect/A/Prefabs/Projectiles/Shadow/ShadowProjectileNormal	1			
+24	1	Effect/A/Prefabs/Projectiles/Storm/StormProjectileTiny				
+25	1	Effect/A/Prefabs/Projectiles/Storm/StormProjectileSmall				
+26	1	Effect/A/Prefabs/Projectiles/Storm/StormProjectileNormal				
+27	1	Effect/A/Prefabs/Projectiles/Water/WaterProjectileTiny		3		
+28	1	Effect/A/Prefabs/Projectiles/Water/WaterProjectileSmall		3		
+29	1	Effect/A/Prefabs/Projectiles/Water/WaterProjectileNormal		3		
+30	1	Effect/gsq/Prefab/Fx_FaShu_03				
+31	2	Effect/A/Prefabs/Projectiles/Arcane/ArcaneImpactTiny				
+32	2	Effect/A/Prefabs/Projectiles/Arcane/ArcaneImpactSmall				
+33	3	Effect/A/Prefabs/Projectiles/Arcane/ArcaneImpactMega				
+34	2	Effect/A/Prefabs/Projectiles/Earth/EarthImpactTiny		5		
+35	2	Effect/A/Prefabs/Projectiles/Earth/EarthImpactSmall		5		
+36	3	Effect/A/Prefabs/Projectiles/Earth/EarthImpactMega		5		
+37	2	Effect/A/Prefabs/Projectiles/Fire/FireImpactTiny	1	4		
+38	2	Effect/A/Prefabs/Projectiles/Fire/FireImpactSmall	1	4		
+39	3	Effect/A/Prefabs/Projectiles/Fire/FireImpactMega	1	4		
+40	2	Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny		3		
+41	2	Effect/A/Prefabs/Projectiles/Frost/FrostImpactSmall		3		
+42	3	Effect/A/Prefabs/Projectiles/Frost/FrostImpactMega		3		
+43	2	Effect/A/Prefabs/Projectiles/Legacy/LightningImpactSmallOld	1	2		
+44	3	Effect/A/Prefabs/Projectiles/Legacy/LightningImpactOld	1	2		
+45	2	Effect/A/Prefabs/Projectiles/Life/LifeImpactTiny		2		
+46	2	Effect/A/Prefabs/Projectiles/Life/LifeImpactSmall		2		
+47	2	Effect/A/Prefabs/Projectiles/Life/LifeImpactNormal		2		
+48	3	Effect/A/Prefabs/Projectiles/Life/LifeImpactMega		2		
+49	2	Effect/A/Prefabs/Projectiles/Light/LightImpactTiny		1		
+50	2	Effect/A/Prefabs/Projectiles/Light/LightImpactSmall		1		
+51	3	Effect/A/Prefabs/Projectiles/Light/LightImpactMega		1		
+52	4	Effect/A/Prefabs/Projectiles/Light/LightImpactNormal				
+53	2	Effect/A/Prefabs/Projectiles/Lightning/LightningImpactTiny				
+54	2	Effect/A/Prefabs/Projectiles/Lightning/LightningImpactNormal				
+55	2	Effect/A/Prefabs/Projectiles/Lightning/LightningImpactSmall				
+56	3	Effect/A/Prefabs/Projectiles/Lightning/LightningImpactMega				
+57	2	Effect/A/Prefabs/Projectiles/Shadow/ShadowImpactTiny	1			
+58	2	Effect/A/Prefabs/Projectiles/Shadow/ShadowImpactSmall	1			
+59	3	Effect/A/Prefabs/Projectiles/Shadow/ShadowImpactNormal	1			
+60	3	Effect/A/Prefabs/Projectiles/Shadow/ShadowImpactMega	1			
+61	2	Effect/A/Prefabs/Projectiles/Storm/StormImpactTiny				
+62	2	Effect/A/Prefabs/Projectiles/Storm/StormImpactSmall				
+63	3	Effect/A/Prefabs/Projectiles/Storm/StormImpactNormal				
+64	3	Effect/A/Prefabs/Projectiles/Storm/StormImpactMega				
+65	2	Effect/A/Prefabs/Projectiles/Water/WaterImpactTiny		3		
+66	2	Effect/A/Prefabs/Projectiles/Water/WaterImpactSmall		3		
+67	3	Effect/A/Prefabs/Projectiles/Water/WaterImpactNormal		3		
+68	3	Effect/A/Prefabs/Projectiles/Water/WaterImpactMega		3		
+69	2	Effect/A/Prefabs/Muzzleflash/Normal/ArcaneMuzzleNormal				
+70	2	Effect/A/Prefabs/Muzzleflash/Normal/EarthMuzzleNormal		2		
+71	2	Effect/A/Prefabs/Muzzleflash/Normal/FireMuzzleNormal		4		
+72	2	Effect/A/Prefabs/Muzzleflash/Normal/FrostMuzzleNormal		1		
+73	2	Effect/A/Prefabs/Muzzleflash/Normal/LifeMuzzleNormal		2		
+74	2	Effect/A/Prefabs/Muzzleflash/Normal/LightMuzzleNormal		1		
+75	2	Effect/A/Prefabs/Muzzleflash/Normal/LightningMuzzleNormal				
+76	2	Effect/A/Prefabs/Muzzleflash/Normal/ShadowMuzzleNormal				
+77	2	Effect/A/Prefabs/Muzzleflash/Normal/StormMuzzleNormal		3		
+78	2	Effect/A/Prefabs/Muzzleflash/Normal/WaterMuzzleNormal		3		
+79	3	Effect/A/Prefabs/Pillar Blast/ArcanePillarBlast				
+80	3	Effect/A/Prefabs/Pillar Blast/EarthPillarBlast		2		
+81	3	Effect/A/Prefabs/Pillar Blast/FirePillarBlast		4		
+82	3	Effect/A/Prefabs/Pillar Blast/FrostPillarBlast		1		
+83	3	Effect/A/Prefabs/Pillar Blast/LifePillarBlast		2		
+84	3	Effect/A/Prefabs/Pillar Blast/LightningPillarBlast		1		
+85	3	Effect/A/Prefabs/Pillar Blast/LightPillarBlast				
+86	3	Effect/A/Prefabs/Pillar Blast/ShadowPillarBlast				
+87	3	Effect/A/Prefabs/Pillar Blast/StormPillarBlast		3		
+88	3	Effect/A/Prefabs/Pillar Blast/WaterPillarBlast		3		
+89	3	Effect/A/Prefabs/Projectiles/Fire/FireProjectileMega				
+						
+						
+						
+						
+10000	0	Effect/A/Prefabs/Projectiles/Light/LightImpactTiny_up				飞剑击中特效
+10001		Effect/System/blood				击中肉体
+10002		Effect/System/boltHit				闪电击中
+10003		Effect/System/Arraw				弓箭
+10004		Effect/System/GoGod				飞升
+10005		Effect/gsq/Prefab/Soul_Win				淬炼成功
+10006		Effect/gsq/Prefab/Soul_Lose				淬炼失败
+						
+90001		Effect/System/Shield/JinShield				护盾特效 金
+90002		Effect/System/Shield/MuShield				护盾特效 木
+90003		Effect/System/Shield/ShuiShield				护盾特效 水
+90004		Effect/System/Shield/HuoShield				护盾特效 火
+90005		Effect/System/Shield/TuShield				护盾特效 土
+90006		Effect/System/Shield/ChaosShield				护盾特效 混沌
+90007		Effect/System/Shield/FrostShield				护盾特效
+90008		Effect/System/Shield/LightningShield				护盾特效
+90009		Effect/System/Shield/SmoothShield				护盾特效
+90010		Effect/System/Shield/StormShield				护盾特效
+90011		Effect/System/Shield/SmoothShield2				护盾特效 通
+90012		Effect/System/Shield/ArcaneShield				护盾特效 女
+90013		Effect/gsq/Prefab/JieDan_ing_Lv2				结丹
+90014		Effect/gsq/Prefab/JieDan_Win				结丹成功
+90015		Effect/gsq/Prefab/TuPo_ing				突破中
+90016		Effect/gsq/Prefab/TuPo_Win				突破成功
+90017		Effect/gsq/Prefab/TuPo_Lose				突破失败
+90018		Effect/System/NpcTalk				交流特效
+90019		Effect/System/NpcThink				思考特效
+90020		Effect/gsq/Prefab/Fx_FaZhen_jin				法阵
+90021		Effect/gsq/Prefab/Fx_FaZhen_mu				法阵
+90022		Effect/gsq/Prefab/Fx_FaZhen_shui				法阵
+90023		Effect/gsq/Prefab/Fx_FaZhen_huo				法阵
+90024		Effect/gsq/Prefab/Fx_FaZhen_tu				法阵
+90025		Effect/gsq/Prefab/JieDanQi				结丹期
+90026		Effect/gsq/Prefab/JinDanQi				金丹期
+90027		Effect/gsq/Prefab/N-JieXianRen_Jin				N劫
+90028		Effect/gsq/Prefab/ZaiShiXianRen_01				在世
+90029		Effect/gsq/Prefab/ZaiShiXianRen_02				在世
+90030		Effect/gsq/Prefab/ZaiShiXianRen_03				在世
+90031		Effect/gsq/Prefab/YuanShen_1				元神男
+90032		Effect/gsq/Prefab/YuanShen_2				元神女
+90033		Effect/System/NpcTask				任务图标
+90034		Effect/gsq/Prefab/YuanShen_yinyang				元神阴阳
+						
+100000		Effect/B/Prefabs/Firefly				萤火虫
+100001		Effect/System/waterwalk				水花
+100002		Effect/System/snowwalk				雪痕迹
+100003		Effect/System/TeacherEnter				老师入场
+100004		Effect/B/Prefabs/Glowing orbs(10)/Glowing Alarmbell				敲钟
+100005		Effect/gsq/Prefab/Chunjie_yanhua01				烟花
+100006		Effect/System/FengshuiItemEnable				风水镇物生效
+100007		Effect/System/FengshuiItemDisable				风水镇物失效
+		 				
+200000		Effect/gsq/Prefab/long/fx_long002_shuibao				蛟龙水爆
+200001		Effect/gsq/Prefab/long/fx_long002_shuilei_01				蛟龙水雷
+200002		Effect/gsq/Prefab/long/fx_long002_shuilei_02				蛟龙水雷爆
+200003		Effect/gsq/Prefab/zhulong/Fx_zhulong_zanian01				烛龙神念
+200004		Effect/gsq/Prefab/zhulong/Fx_zhulong_zuinie01				烛龙罪念
+200005		Effect/A/Prefabs/Projectiles/Lightning/LightningImpactMega 1				罪业吐息
+200006		Effect/gsq/Prefab/zhulong/fx_zhulong_zuiyetuxi01				心魔吐息
+200007		Effect/gsq/Prefab/zhulong/fx_zhulong_xinmotuxi01				
+						
+300000		Effect/gsq/Zhen/emptyeffect				空特效
+300001		Effect/gsq/Zhen/skill/fx_QiXingPoWang_zidan				北斗破妄子弹
+						
+						
+400000		Effect/A/Prefabs/Projectiles/Fire/FireProjectileMega				灵宠熔断
+400001		Effect/A/Prefabs/Pillar Blast/FirePillarBlast				灵宠熔断
+400002		Effect/A/Prefabs/Projectiles/Water/WaterProjectileMega				灵宠反噬
+400003		Effect/A/Prefabs/Pillar Blast/WaterPillarBlast				灵宠反噬
+400004		Effect/A/Prefabs/Projectiles/Arcane/ArcaneProjectileMega				灵宠迷惑
+400005		Effect/gsq/Prefab/fx_fz_guangzhu				灵宠光柱
+400006		Effect/gsq/Prefab/fx_fz_guangzhuHuo				灵宠光柱-火
+400007		Effect/gsq/Prefab/fx_fz_guangzhuShui				灵宠光柱-水
+400008		Effect/gsq/Prefab/fx_fz_guangzhuShui				灵宠光柱-水
+400009	2	Effect/A/Prefabs/Projectiles/Arcane/ArcaneImpactMega
+400010	1	Effect/A/Prefabs/Projectiles/Arcane/ArcaneProjectileMega
+400011	2	Effect/A/Prefabs/Projectiles/Earth/EarthImpactMega
+400012	1	Effect/A/Prefabs/Projectiles/Earth/EarthProjectileMega
+400013	1	Effect/A/Prefabs/Aura/SpinningAura/SpinningStorm
+400014	2	Effect/A/Prefabs/Shields/Shield Sphere/WaterShield
+400015	1	Effect/A/Prefabs/Projectiles/Life/LifeProjectileNormal
+400016	1	Effect/A/Prefabs/Projectiles/Life/LifeImpactNormal
+400017	1	Effect/A/Prefabs/Projectiles/Life/LifeImpactNormal

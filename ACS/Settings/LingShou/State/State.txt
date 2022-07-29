@@ -1,0 +1,3 @@
+Name	Node	Stop	CheckFunc
+State1	State1	0	CheckDeath
+AtkEnemy	AtkEnemyBreak	0	CheckCanAtkEnemy

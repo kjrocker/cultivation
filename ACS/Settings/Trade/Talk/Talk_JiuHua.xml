@@ -1,0 +1,14 @@
+<Defs><List>
+	<Def Name="Talk_JiuHua" Parent="Talk_DanXia">
+		<Submiss>
+			<li>请随意挑选，价格好商量。</li>
+		</Submiss>
+		<GiftLike>
+			<li>此物对我而言非同小可，我很喜欢。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>我不太想评论。</li>
+			<li>（看着你）这是什么？礼物吗？</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

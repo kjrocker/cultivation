@@ -1,0 +1,47 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Ls_SheildSkill">
+			<DisplayName>Spirit Shield</DisplayName>
+		</Text>
+		<Text Name="Ls_TransferQi">
+			<DisplayName>Chant of Devotion</DisplayName>
+		</Text>
+		<Text Name="Ls_FabaoSkill">
+			<DisplayName>Divine Sword</DisplayName>
+		</Text>
+		<Text Name="Ls_FoxSkillAmp">
+			<DisplayName>Blazing</DisplayName>
+		</Text>
+		<Text Name="Ls_SkillWater">
+			<DisplayName>Flood Thunder</DisplayName>
+		</Text>
+		<Text Name="Ls_SkillWater5">
+			<DisplayName>Greater Flood Thunder</DisplayName>
+		</Text>
+		<Text Name="Ls_Fanshi">
+			<DisplayName>Countercharge</DisplayName>
+			<Desc>Inflict an amount of damage relative to the Max Qi of the enemy's artifact, as well as disabling its ability to use the artifact for a period of time.</Desc>
+		</Text>
+		<Text Name="Ls_Penhuo">
+			<DisplayName>Flame Eruption</DisplayName>
+		</Text>
+		<Text Name="Ls_Ci">
+			<DisplayName>Metamagnetic Beam</DisplayName>
+		</Text>
+		<Text Name="Ls_JinThunder">
+			<DisplayName>Divine Bolt</DisplayName>
+		</Text>
+		<Text Name="Ls_AddModifier">
+			<DisplayName>Aegis</DisplayName>
+			<Desc>Greatly improves the strength of a friendly Qi Barrier and Toughness of its Secret Body.</Desc>
+		</Text>
+		<Text Name="Ls_Confuse">
+			<DisplayName>Confuse</DisplayName>
+			<Desc>Confuse an enemy so that it cannot attack or move, but will wake up if attacked.</Desc>
+		</Text>
+		<Text Name="Ls_Rongduan">
+			<DisplayName>Fuse</DisplayName>
+			<Desc>Use the power of inferno to deal distributable damage on an enemy, as well as disabling its ability to cast spells for a period of time.</Desc>
+		</Text>
+	</List>
+</Texts>

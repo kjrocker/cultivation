@@ -1,0 +1,53 @@
+<Properties><List>
+		
+	<Property Name="PuppetRaceMaxAge">
+		<BaseValue>7</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>50</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceMoveSpeed">
+		<BaseValue>0</BaseValue>
+	</Property>
+	
+	<Property Name="PuppetRaceMaxHp">
+		<BaseValue>0</BaseValue>
+		<AddValue>2000</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceComfyTMin">
+		<BaseValue>0</BaseValue>
+		<AddValue>-999</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceComfyTMax">
+		<BaseValue>0</BaseValue>
+		<AddValue>999</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceToleranceTMin">
+		<BaseValue>0</BaseValue>
+		<AddValue>-999</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceToleranceTMax">
+		<BaseValue>0</BaseValue>
+		<AddValue>999</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceVisionRadius">
+		<BaseValue>0</BaseValue>
+		<AddValue>5</AddValue>	
+	</Property>	
+	
+	<Property Name="PuppetRaceBaseWorkSpeed">
+		<BaseValue>4</BaseValue>
+	</Property>	
+	
+	<Property Name="PuppetRaceRecoveryPower">
+		<BaseValue>0</BaseValue>
+	</Property>	
+	
+</List></Properties>

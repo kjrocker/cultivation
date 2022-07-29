@@ -1,0 +1,284 @@
+<Defs><List>
+	<Def Name="MainHall_Base">
+		<Base>1</Base>
+		<DisplayName>初级主殿</DisplayName>
+		<BuildType>Region</BuildType>
+		<ProductTypes>
+			<li>Hall1</li>
+		</ProductTypes>
+		
+		<UnlockPointBuild>2</UnlockPointBuild>
+		<FaithCollectLevel>1</FaithCollectLevel>
+		<MaxFaith>5000000</MaxFaith>
+		<MaxStorageSize>10000</MaxStorageSize>
+		<BuildDay>1</BuildDay>
+		<MaxMemberCount>10</MaxMemberCount>
+		<MainLevel>1</MainLevel>
+		
+		<Stories>
+			<li>CollectFaith</li>
+		</Stories>
+		
+		<Cost>
+			<Influence>100</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="100"/>
+			</Mats>
+		</Cost>
+	</Def>
+
+	<Def Name="MainHall1" Parent="MainHall_Base">
+		<ProductTypes>
+			<li>Hall1</li>
+		</ProductTypes>
+		<UnlockPolicy>
+			<li>Policy_Give</li>
+		</UnlockPolicy>
+		<Upgrade>MainHall2</Upgrade>
+		
+		<Icon>res/Sprs/outspread/extendmap_zhudian01</Icon>
+		<Desc>主殿是我们代理势力的代表，百姓可以在此认识和了解我们。解锁布施政策，以我方所有展示仁德。</Desc>
+	</Def>
+	
+	<Def Name="MainHall2" Parent="MainHall_Base">
+		<ProductTypes>
+			<li>Hall2</li>
+		</ProductTypes>
+		<DisplayName>中级主殿</DisplayName>
+		<BuildCondition>
+			<Population>25000</Population>
+		</BuildCondition>
+		
+		<!-- <UnlockBuildGlobal></UnlockBuildGlobal>-->
+		<UnlockBuild>
+			<li>Statue</li>
+		</UnlockBuild>
+		<UnlockRegionBuild>1</UnlockRegionBuild>
+		<UnlockPointBuild>4</UnlockPointBuild>
+		<FaithCollectLevel>2</FaithCollectLevel>
+		<MaxFaith>10000000</MaxFaith>
+		<BuildDay>2</BuildDay>
+		<MaxMemberCount>20</MaxMemberCount>
+		<MaxStorageSize>15000</MaxStorageSize>
+		<MainLevel>2</MainLevel>
+		
+		<Icon>res/Sprs/outspread/extendmap_zhudian02</Icon>
+		<Desc>主殿是我们代理势力的代表，百姓可以在此认识和了解我们。解锁布施政策，以我方所有展示仁德。中级主殿拥有更大的面积，可以建设更多建筑。并可以设立神像，可直接将信仰转移给神修者。</Desc>
+		
+		<UnlockPolicy>
+			<li>Policy_Give</li>
+		</UnlockPolicy>
+		
+		<Cost>
+			<Influence>500</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="500"/>
+				<li ItemName="Item_BrownRock" Count="500"/>
+			</Mats>
+		</Cost>
+		
+		<Upgrade>MainHall4</Upgrade>
+	</Def>
+	
+	<Def Name="MainHall3" Parent="MainHall_Base">
+		<DisplayName>高级主殿</DisplayName>
+		<BuildCondition>
+			<Population>100000</Population>
+		</BuildCondition>
+		
+		<UnlockPolicy>
+			<li>Policy_Give</li>
+			<li>Policy_Submiss</li>
+		</UnlockPolicy>
+		
+		<ProductTypes>
+			<li>Hall3</li>
+		</ProductTypes>
+		<UnlockWonder>1</UnlockWonder>
+		<UnlockRegionBuild>1</UnlockRegionBuild>
+		<UnlockPointBuild>4</UnlockPointBuild>
+		<FaithCollectLevel>3</FaithCollectLevel>
+		<MaxFaith>20000000</MaxFaith>
+		<BuildDay>3</BuildDay>
+		<MaxStorageSize>20000</MaxStorageSize>
+		<MaxMemberCount>30</MaxMemberCount>
+		<MainLevel>3</MainLevel>
+		
+		<Icon>res/Sprs/outspread/extendmap_zhudian03</Icon>
+		<Desc>主殿是我们代理势力的代表，百姓可以在此认识和了解我们。解锁布施政策，以我方所有展示仁德。高级主殿扩大我们的影响，使得此地可建设民间奇观。</Desc>
+		
+		<BuildType>Region</BuildType>
+		<Cost>
+			<Influence>1000</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1000"/>
+				<li ItemName="Item_BrownRock" Count="1000"/>
+			</Mats>
+		</Cost>
+		<Upgrade>MainHall4</Upgrade>
+	</Def>
+	
+	<Def Name="MainHall4" Parent="MainHall_Base">
+		<DisplayName>高级主殿</DisplayName>
+		<BuildCondition>
+			<Population>100000</Population>
+		</BuildCondition>
+		
+		<UnlockPolicy>
+			<li>Policy_Give</li>
+			<li>Policy_Submiss</li>
+		</UnlockPolicy>
+		
+		<ProductTypes>
+			<li>Hall3</li>
+		</ProductTypes>
+		<UnlockWonder>1</UnlockWonder>
+		<UnlockRegionBuild>1</UnlockRegionBuild>
+		<UnlockPointBuild>4</UnlockPointBuild>
+		<FaithCollectLevel>3</FaithCollectLevel>
+		<MaxFaith>20000000</MaxFaith>
+		<BuildDay>3</BuildDay>
+		<MaxStorageSize>20000</MaxStorageSize>
+		<MaxMemberCount>30</MaxMemberCount>
+		<MainLevel>3</MainLevel>
+		
+		<Icon>res/Sprs/outspread/extendmap_zhudian03</Icon>
+		<Desc>主殿是我们代理势力的代表，百姓可以在此认识和了解我们。解锁布施政策，以我方所有展示仁德。高级主殿扩大我们的影响，使得此地可建设民间奇观。</Desc>
+		
+		<BuildType>Region</BuildType>
+		<Cost>
+			<Influence>1000</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="1000"/>
+				<li ItemName="Item_BrownRock" Count="1000"/>
+			</Mats>
+		</Cost>
+	</Def>
+	
+	<Def Name="MainLobby1" Parent="MainHall1">
+		<Upgrade>MainLobby2</Upgrade>
+		<UnlockPolicy>
+			<li>Policy_Missionary</li>
+		</UnlockPolicy>
+	</Def>
+	
+	<Def Name="MainLobby2" Parent="MainHall2">
+		<UnlockPolicy>
+			<li>Policy_TreasureHunt</li>
+			<li>Policy_Missionary</li>
+		</UnlockPolicy>
+		
+		<Upgrade>MainLobby4</Upgrade>
+	</Def>
+	
+	<Def Name="MainLobby3" Parent="MainHall3">
+		<UnlockPolicy>
+			<li>Policy_TreasureHunt</li>
+			<li>Policy_Missionary</li>
+			<li>Policy_Submiss</li>
+		</UnlockPolicy>
+	</Def>
+	
+	<Def Name="MainLobby4" Parent="MainHall4">
+		<UnlockPolicy>
+			<li>Policy_TreasureHunt</li>
+			<li>Policy_Missionary</li>
+			<li>Policy_Submiss</li>
+		</UnlockPolicy>
+	</Def>
+	
+	<Def Name="MainLobby_OurPlace" Parent="MainLobby1">
+		<Upgrade>MainLobby_OurPlace2</Upgrade>
+		<Cost>
+			<Influence>0</Influence>
+			<Mats>
+				<li ItemName="Item_Wood" Count="100"/>
+			</Mats>
+		</Cost>
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_ZhongYuan" Parent="MainLobby1">
+		<Upgrade>MainLobby_ZhongYuan2</Upgrade>
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaXueYuan" Parent="MainLobby1">
+		<Upgrade>MainLobby_DaXueYuan2</Upgrade>
+		<UnlockPointBuild>2</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaMo" Parent="MainLobby1">
+		<Upgrade>MainLobby_DaMo2</Upgrade>
+		<UnlockPointBuild>2</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_JiangAn" Parent="MainLobby1">
+		<Upgrade>MainLobby_JiangAn2</Upgrade>
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_NanHuang" Parent="MainLobby1">
+		<Upgrade>MainLobby_NanHuang2</Upgrade>
+		<UnlockPointBuild>1</UnlockPointBuild>
+	</Def>
+	
+	<Def Name="MainLobby_OurPlace2" Parent="MainLobby2">
+		<Upgrade>MainLobby_OurPlace4</Upgrade>
+		<UnlockPointBuild>5</UnlockPointBuild>
+		<Secret>65</Secret>
+	</Def>
+	<Def Name="MainLobby_ZhongYuan2" Parent="MainLobby2">
+		<Upgrade>MainLobby_ZhongYuan4</Upgrade>
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaXueYuan2" Parent="MainLobby2">
+		<Upgrade>MainLobby_DaXueYuan4</Upgrade>
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaMo2" Parent="MainLobby2">
+		<Upgrade>MainLobby_DaMo4</Upgrade>
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_JiangAn2" Parent="MainLobby2">
+		<Upgrade>MainLobby_JiangAn4</Upgrade>
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_NanHuang2" Parent="MainLobby2">
+		<Upgrade>MainLobby_NanHuang4</Upgrade>
+		<UnlockPointBuild>2</UnlockPointBuild>
+	</Def>
+	
+	<Def Name="MainLobby_OurPlace3" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_ZhongYuan3" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaXueYuan3" Parent="MainLobby4">
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaMo3" Parent="MainLobby4">
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_JiangAn3" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_NanHuang3" Parent="MainLobby4">
+		<UnlockPointBuild>2</UnlockPointBuild>
+	</Def>
+	
+	<Def Name="MainLobby_OurPlace4" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_ZhongYuan4" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaXueYuan4" Parent="MainLobby4">
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_DaMo4" Parent="MainLobby4">
+		<UnlockPointBuild>3</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_JiangAn4" Parent="MainLobby4">
+		<UnlockPointBuild>5</UnlockPointBuild>
+	</Def>
+	<Def Name="MainLobby_NanHuang4" Parent="MainLobby4">
+		<UnlockPointBuild>2</UnlockPointBuild>
+	</Def>
+</List></Defs>

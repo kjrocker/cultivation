@@ -1,0 +1,121 @@
+<BPSuperPartDefs><List>
+	
+	<Def Name="SuperPart_Cattle_1"><!--测试秘体-->
+		<Prefix>四象玄化</Prefix>
+		<Suffix>腹</Suffix>
+		<Desc>牛妖一族秘传之体，以金木水火四行之力淬炼胃部，使之消化力大增。</Desc>
+		<DefaultBody>YGAnimal_CattleBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXshangjiquan</AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Stomach">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_EXJin" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="Stomach1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_EXMu" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="Stomach2">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_EXShui" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="Stomach3">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_EXHuo" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者吞噬物品的最高品阶\n大量提高炼体者吞噬物品获得精华的几率\n大量提高炼体者吞噬物品获得精华的数量\n大量提高炼体者食物消耗加成\n大量提高炼体者精元获得率\n巨量提高炼体者食量</Desc>
+				<Modifier>Modifier_SuperPart_Cattle_1</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="SuperPart_Cattle_2"><!--测试秘体-->
+		<Prefix>贯星</Prefix>
+		<Suffix>角</Suffix>
+		<Desc>牛妖一族秘传之体，绝杀之秘体，修炼到极致可以引动星宿之力，无坚不摧。</Desc>
+		<DefaultBody>YGAnimal_CattleBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_yezhuya01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYniujiao01</DefEffect>
+		
+		<Parts>
+			<li Name="LeftHorn">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_GuShouGuFen" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_A03_XuanTianZiQi" Levels="0,1"/>
+				</Labels>
+			</li>	
+			<li Name="RightHorn">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_GuShouGuFen" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_A03_XuanTianZiQi" Levels="0,1"/>
+				</Labels>
+			</li>	
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>从根本上大幅提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1500"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

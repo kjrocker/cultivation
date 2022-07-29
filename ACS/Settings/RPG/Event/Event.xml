@@ -1,0 +1,56 @@
+<Defs><List>
+	<Def Name="Initialize" Type="All">
+		<DisplayName>初始化</DisplayName>
+		<Callback>function(thing) end</Callback>
+	</Def>
+	<Def Name="StayInTrap" Type="Trap">
+		<DisplayName>在Trap点中停留</DisplayName>
+		<PDisplayName>停留时间（秒）</PDisplayName>
+		<P>5</P>
+		<Callback>function(trap, npc, staysec) end</Callback>
+	</Def>
+	<Def Name="EnterTrap" Type="Trap">
+		<DisplayName>进入Trap点</DisplayName>
+		<Callback>function(trap, npc) end</Callback>
+	</Def>
+	<Def Name="LeaveTrap" Type="Trap">
+		<DisplayName>离开Trap点</DisplayName>
+		<Callback>function(trap, npc) end</Callback>
+	</Def>
+	<Def Name="BeenAttack" Type="Npc|Building">
+		<DisplayName>被攻击</DisplayName>
+		<Callback>function(beenAttack, attacker) end</Callback>
+	</Def>
+	<Def Name="BeenDestroy" Type="Npc|Building|Plant|Mine|Item">
+		<DisplayName>被毁坏</DisplayName>
+		<Callback>function(beenDestroy, destroyByWho) end</Callback>
+	</Def>
+	<Def Name="Dead" Type="Npc">
+		<DisplayName>死亡</DisplayName>
+		<Callback>function(deathnpc, killer) end</Callback>
+	</Def>
+	<Def Name="InSocial" Type="Npc">
+		<DisplayName>社交中</DisplayName>
+		<Callback>function(npc, donpc) end</Callback>
+	</Def>
+	<Def Name="LeaveSocial" Type="Npc">
+		<DisplayName>社交后</DisplayName>
+		<Callback>function(npc, donpc) end</Callback>
+	</Def>
+	<Def Name="NpcEnterWorkSpace" Type="Building">
+		<DisplayName>角色进入工作点</DisplayName>
+		<Callback>function(thing, donpc) end</Callback>
+	</Def>
+	<Def Name="NpcLeaveWorkSpace" Type="Building">
+		<DisplayName>角色离开工作点</DisplayName>
+		<Callback>function(thing, donpc) end</Callback>
+	</Def>
+	<Def Name="OnStep" Type="All">
+		<DisplayName>逻辑帧回调</DisplayName>
+		<Callback>function(thing, dt) end</Callback>
+	</Def>
+	<Def Name="OnRender" Type="All">
+		<DisplayName>渲染帧回调</DisplayName>
+		<Callback>function(thing, dt) end</Callback>
+	</Def>
+</List></Defs>

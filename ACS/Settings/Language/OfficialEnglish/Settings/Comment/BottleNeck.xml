@@ -1,0 +1,40 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="BottleNeckChance">
+			<Title>Common Limit</Title>
+			<Desc>Breakthrough of Common Limit can be initiated simply by choosing a right location, and there will be a chance to succeed.</Desc>
+		</Text>
+		<Text Name="BottleNeckExplore">
+			<Title>Adventure Limit</Title>
+			<Desc>Breakthrough of Adventure Limit requires you to send out disciples for Adventures in order to accumulate enough enlightenments.</Desc>
+		</Text>
+		<Text Name="BottleNeckWork">
+			<Title>Vacuum Limit</Title>
+			<Desc>In the Vacuum Limit, disciples will lose all of their magic powers and become mortal beings. In order to breakthrough, one needs accumulated enlightenments from everyday trivia.</Desc>
+		</Text>
+		<Text Name="BottleNeckGold">
+			<Title>Golden Core Limit</Title>
+			<Desc>Golden Core Limit is a crucial bottleneck to breakthrough. Cultivators must forge the Qi of their whole body into a Golden Core, the tier of which will determine how high a level of cultivation one may achieve in the future.</Desc>
+		</Text>
+		<Text Name="BottleNeckThunder">
+			<Title>Tribulation Limit</Title>
+			<Desc>Tribulation Limit is a great trial on the Law of cultivation. Those failed to breakthrough it will lose all their foundation at best, or be utterly obliterated at worst.</Desc>
+		</Text>
+		<Text Name="BottleNeckGod">
+			<Title>Ascend Limit</Title>
+			<Desc>Ascend Limit is the final challenge presented before cultivators, who may ascend into immortality at last upon its breakthrough.</Desc>
+		</Text>
+		<Text Name="BottleNeckGodCity">
+			<Title>Divine Realm Limit</Title>
+			<Desc>Formation of Divine Realm is the most crucial moment for Shendao cultivators. The state of the Divine Realm will determine the highest level one may achieve in the future.</Desc>
+		</Text>
+		<Text Name="BottleNeckFuPractice">
+			<Title>Natal Talisman</Title>
+			<Desc>A type of Limit unique to Talisman cultivators, the breakthrough of which requires one to consume their Qi to draw a Natal Talisman.</Desc>
+		</Text>
+		<Text Name="BottleNeckDie">
+			<Title>Desperation Limit</Title>
+			<Desc>This limit signifies that the cultivation has met a dead end.</Desc>
+		</Text>
+	</List>
+</Texts>

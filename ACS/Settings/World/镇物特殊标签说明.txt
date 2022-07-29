@@ -1,0 +1,18 @@
+﻿OwnerGongStageLevel 所有拥有者境界判定 sParam1:最小境界g_emGongStageLevel sParam2:最大境界g_emGongStageLevel
+OwnerRank			所有拥有者类型判定 sParam1:g_emNpcRank
+OwnerIsVistor		拥有者是访客
+OwnerAge			所有拥有者年龄判定 fParam1最小值 fParam2最大值
+OwnerSumAge			所有拥有者的年龄总和 fParam1最小值 fParam2最大值
+OwnerSex			拥有者的性别 fParam1 0无要求 1必须全部为男 2必须全部为女 3必须有男有女
+OwnerCount			拥有者数量 fParam1最小值 fParam2最大值
+BuildingCount		建筑数量 fParam1最小值 fParam2最大值 sParam1名字(可空) sParam2 Tag(可空)
+TerrainCount		地形数量 fParam1最小值 fParam2最大值 sParam1名字(可空) sParam2 Tag(可空)
+ElementBorn			生物品五行的建筑数量 fParam1最小值 fParam2最大值
+ElementContrary		克物品五行的建筑数量 fParam1最小值 fParam2最大值
+ElementSame			同物品五行的建筑数量 fParam1最小值 fParam2最大值
+LingValue			物品灵气 fParam1最小值 fParam2最大值
+GridLingValue		所在地块灵气 fParam1最小值 fParam2最大值
+BuildingFengshui	所有建筑风水满足 sParam1最小值  fParam2最大值 g_emFengshuiRank
+BuildingCountFengshui 满足风水的建筑数量 	fParam1最小数量 fParam2最大数量  sParam1风水 emFengshuiRank
+FengshuiItemCount	镇物数量	 fParam1最小值 fParam2最大值
+TongLingFengshuiItemCount 通灵镇物数量  fParam1最小值 fParam2最大值

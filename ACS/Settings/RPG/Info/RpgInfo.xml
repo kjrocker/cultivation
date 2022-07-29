@@ -1,0 +1,36 @@
+<Defs><List>
+	<Def Name="RpgTower">
+		<Title>界间之隙·无何有之乡</Title>
+		<Desc>深藏在异界裂缝中的神秘门户，依附于此界的虚实相交之地，千万年历史的沉淀之所。</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>1</MaxEnterNpc>
+		<NeedUnlock>1</NeedUnlock>
+		<Places>
+			<li>Place_YiJieLieFeng</li>
+		</Places>
+	</Def>
+	<Def Name="RpgQianKun">
+		<Title>乾坤界之隙·归寂之地</Title>
+		<Desc>小乾坤界之中被强大封印封锁的神秘洞天，因《太一秘典》而洞开门户，不知其中藏有什么。</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>1</MaxEnterNpc>
+		<NeedUnlock>0</NeedUnlock>
+	</Def>
+	<Def Name="RpgArena">
+		<Title>演武场</Title>
+		<Desc>门派演武之所，供门下弟子一较高下。</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>20</MaxEnterNpc>
+		<NeedUnlock>1</NeedUnlock>
+		<Places>
+			<li>Place_SouthMount</li>
+		</Places>
+	</Def>
+	<Def Name="RpgArena_YingTian">
+		<Title>应天台</Title>
+		<Desc>心相之隙，联通万界。</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>20</MaxEnterNpc>
+		<NeedUnlock>0</NeedUnlock>
+	</Def>
+</List></Defs>

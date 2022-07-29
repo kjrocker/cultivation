@@ -1,0 +1,782 @@
+<Defs><List>
+	<Def Name="Star">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>星星</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<Skills>
+			<li Name="Zhen" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>NutritionToJingYuanK</PName>
+				<Addv>0</Addv>
+				<Addp>-0.3</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起了漆黑的夜晚，{0}格外明亮</li>
+			<li>回想起在深邃的峡谷中，随时能看见{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Cloud">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>珍宝</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<Skills>
+			<li Name="Barrier" LevelOver="5"/>
+			<li Name="DanQi" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>NpcFight_BaseDodgeChance</PName>
+				<Addv>0.35</Addv>
+				<Addp>0</Addp>
+			</li>
+			<li>
+				<PName>NpcFight_BaseHitChance</PName>
+				<Addv>-0.4</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起有些{0}非常易碎</li>
+			<li>想起有些{0}会发光</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Sun">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>太阳</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<Skills>
+			<li Name="FightSkill" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>SpeedOfMindStateCoefficient</PName>
+				<Addv>0</Addv>
+				<Addp>0.3</Addp>
+			</li>
+			<li>
+				<PName>ToleranceTMin</PName>
+				<Addv>10</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起了被{0}暴晒的日子</li>
+			<li>曾经想直视{0}，但非常刺眼</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Moon">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>月亮</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<Skills>
+			<li Name="Qi" LevelOver="5"/>
+			<li Name="Art" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>IntelligenceSkillEXPConstant</PName>
+				<Addv>0</Addv>
+				<Addp>-0.2</Addp>
+			</li>
+			<li>
+				<PName>ToleranceTMax</PName>
+				<Addv>-10</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起了{0}特别明亮的夜晚</li>
+			<li>想起那个独自看{0}的夜晚</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Meteriod">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>流星</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>3</FeatureValue>
+		<Skills>
+			<li Name="Fabao" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>MaxAge</PName>
+				<Addv>-30</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起自己没见过几次{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Jade">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>宝石</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>3</FeatureValue>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddp_AtkPower</PName>
+				<Addv>0.05</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="5"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起自己没见过几次{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Sculpture">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>雕塑</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>3</FeatureValue>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddp_DefPower</PName>
+				<Addv>0.05</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起有的{0}很像自己</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Spring">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>春季</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="Barrier" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>GongMatch_TuAddV</PName>
+				<Addv>-0.4</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起{0}的花香</li>
+			<li>回想起{0}的梅雨</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Summer">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>夏季</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="FightSkill" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>GongMatch_JinAddV</PName>
+				<Addv>-0.5</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起{0}的炎热</li>
+			<li>回想起{0}的虫鸣</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Autumn">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>秋季</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="Fabao" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>GongMatch_MuAddV</PName>
+				<Addv>-0.4</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起{0}的落叶</li>
+			<li>回想起{0}的枫叶</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Winter">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>冬季</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="Zhen" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>GongMatch_HuoAddV</PName>
+				<Addv>-0.4</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起{0}的寒冷</li>
+			<li>回想起{0}的冰面</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Earth">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>大地</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="DanQi" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>GongMatch_ShuiAddV</PName>
+				<Addv>-0.4</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起{0}上的花花草草</li>
+			<li>回想起{0}有时候会开裂</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Rain">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>雨</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Properties>
+			<li>
+				<PName>NpcFight_SpellPowerAddP</PName>
+				<Addv>0.5</Addv>
+				<Addp>0</Addp>
+			</li>
+			<li>
+				<PName>ToleranceTMax</PName>
+				<Addv>-6</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回想起有次下{0}之后去山洞躲避</li>
+			<li>想起下{0}时树叶绿得更深</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Snow">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>雪</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="Qi" LevelOver="3"/>
+			<li Name="Art" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>ToleranceTMax</PName>
+				<Addv>-6</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起下{0}的时候很安静</li>
+			<li>想起下有松树的地方会下{0}</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Lake">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>1</Level>
+		<DisplayName>湖</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<BaseFive>0.2,0,0,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_CatchFabao</PName>
+				<Addv>0.05</Addv>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Art" Level="8"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起去大{0}边喝水的日子</li>
+			<li>想起大{0}里的鱼</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Wind">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>风</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Properties>
+			<li>
+				<PName>BodyPractice_AngerFireDuration</PName>
+				<Addv>10</Addv>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Farming" Level="-10"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起{0}吹在身上很舒服</li>
+			<li>回想起{0}大起来可以把自己吹跑</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Thunder">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Nature</Tag>
+		<Level>2</Level>
+		<DisplayName>雷</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Properties>
+			<li>
+				<PName>BodyPractice_AngerFireEffectAddp</PName>
+				<Addv>0.25</Addv>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="DouFa" Level="-10"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起打{0}的时候总时乌云密布</li>
+			<li>想起有时候{0}下面居然有人</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Tree">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>2</Level>
+		<DisplayName>树</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<Skills>
+			<li Name="Zhen" LevelOver="3"/>
+			<li Name="Farming" Level="12"/>
+			<li Name="Mining" Level="-10"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起{0}上总有些鸟</li>
+			<li>想起{0}上可能有果子吃</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Flower">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>花</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<Skills>
+			<li Name="Art" Level="10"/>
+			<li Name="Qi" LevelOver="2"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起各种各样颜色的{0}</li>
+			<li>想起有的{0}有独特的香味</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Human">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>人</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0,0,0,0.2</BaseFive>
+		<Properties>
+			<li>
+				<PName>BodyPractice_AngerFireEffectAddp</PName>
+				<Addv>0.12</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_SneakValue</PName>
+				<Addv>0</Addv>
+				<Addp>-0.3</Addp>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="10"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起{0}会做各种事情</li>
+			<li>回想起有的{0}会来喂自己</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Self">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>自己</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0.1,0.1,0.1,0.1,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>BodyPractice_AngerFireDuration</PName>
+				<Addv>6</Addv>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起在水中能看见{0}的倒影</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Food">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>食物</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0.2,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Cooking" Level="10"/>
+			<li Name="Medicine" LevelOver="1"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起自己最爱吃的{0}</li>
+			<li>想起人类可能把自己当{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Barrier">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>围栏</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0,0,0.2,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_AtkRate</PName>
+				<Addv>0.03</Addv>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="-10"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起{0}会把自己拦住</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Weed">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>杂草</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0.2,0,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Medicine" LevelOver="3"/>
+			<li Name="Cooking" Level="-8"/>
+			<li Name="DanQi" LevelOver="1"/>
+		</Skills>
+		<SingleFormat>
+			<li>回忆起自己曾吃过各种{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Wall">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>墙</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0.2,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Barrier" LevelOver="2"/>
+			<li Name="Building" Level="5"/>
+			<li Name="Farming" Level="5"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>NpcFight_FabaoRepelResistanceAddV</PName>
+				<Addv>0</Addv>
+				<Addp>0.06</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起{0}非常坚硬</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Coat">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>衣服</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0,0,0,0.2</BaseFive>
+		<Skills>
+			<li Name="Manual" LevelOver="6"/>
+			<li Name="Mining" Level="-8"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起有些{0}是用动物的皮制作的</li>
+			<li>想起有些{0}很难看</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Pants">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>裤子</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0,0,0,0.2</BaseFive>
+		<Skills>
+			<li Name="Manual" LevelOver="6"/>
+			<li Name="Farming" Level="-8"/>
+		</Skills>
+		<SingleFormat>
+			<li>想起有些{0}是用动物的皮制作的</li>
+			<li>想起有些{0}很难看</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Fellows">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>同伴</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0.1,0,0,0.1</BaseFive>
+		<Skills>
+			<li Name="Medicine" LevelOver="3"/>
+			<li Name="Art" Level="-8"/>
+		</Skills>
+		<SingleFormat>
+			<li>回忆起自己的{0}，他们大部分都死了</li>
+			<li>想起与{0}一起游玩的时光</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Mines">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>矿石</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<BaseFive>0,0.2,0,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_DefRate</PName>
+				<Addv>0.03</Addv>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>回忆起一些{0}会发光</li>
+			<li>想起有的{0}味道很古怪</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Weapon">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>武器</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_CatchFabao</PName>
+				<Addv>0.05</Addv>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Fight" Level="-4"/>
+		</Skills>
+		<SingleFormat>
+			<li>回忆杀死同伴的{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Nature">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>造化气息</DisplayName>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<Skills>
+			<li Name="Zhen" LevelOver="2"/>
+			<li Name="Barrier" LevelOver="2"/>
+			<li Name="FightSkill" LevelOver="2"/>
+			<li Name="Qi" LevelOver="3"/>
+			<li Name="Fabao" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>AbilityLvAddV</PName>
+				<Addv>15</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>想起冥冥中万物之间的{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Fog">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>2</Level>
+		<DisplayName>雾</DisplayName>
+		<Properties>
+			<li>
+				<PName>NpcFight_SpellPowerAddP</PName>
+				<Addp>-0.5</Addp>
+			</li>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_DefRate</PName>
+				<Addv>0.05</Addv>
+				<Addp>0</Addp>
+			</li>
+			<li>
+				<PName>ToleranceTMax</PName>
+				<Addv>-6</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<SingleFormat>
+			<li>想起{0}中什么都看不清</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="House">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>门</DisplayName>
+		<BaseFive>0,0,0.2,0,0</BaseFive>
+		<Skills>
+			<li Name="Building" Level="6"/>
+			<li Name="Manual" Level="-3"/>
+		</Skills>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_AtkRate</PName>
+				<Addv>0.05</Addv>
+			</li>
+		</Properties>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<SingleFormat>
+			<li>回忆起{0}里基本都有人</li>
+			<li>想起{0}里没有风</li>
+		</SingleFormat>
+	</Def>
+
+	<Def Name="Farm">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>农田</DisplayName>
+		<BaseFive>0,0.2,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Farming" Level="12"/>
+			<li Name="Mining" Level="-10"/>
+		</Skills>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<SingleFormat>
+			<li>想起{0}里的东西不好吃</li>
+			<li>想在{0}里拉屎</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Sharp">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>针</DisplayName>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_ArmorPenetration</PName>
+				<Addv>0.03</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Farming" Level="-5"/>
+			<li Name="Mining" Level="-5"/>
+		</Skills>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<SingleFormat>
+			<li>想起{0}很尖锐</li>
+			<li>想起被{0}戳到很疼</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Ring">
+		<Type>Target</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>1</Level>
+		<DisplayName>环</DisplayName>
+		<Properties>
+			<li>
+				<PName>BodyPractice_SuperPartAddv_CatchFabao</PName>
+				<Addv>0.03</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Manual" Level="5"/>
+		</Skills>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<SingleFormat>
+			<li>想起自己会被{0}套住</li>
+			<li>想起{0}会被戴在脖子上</li>
+		</SingleFormat>
+	</Def>
+</List></Defs>

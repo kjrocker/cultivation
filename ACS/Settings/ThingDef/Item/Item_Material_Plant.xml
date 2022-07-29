@@ -1,0 +1,86 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Grass" Parent="MaterialBase">
+	
+	
+	<ThingName>草</ThingName>
+	<TexPath>res\Sprs\object\object_drygrass</TexPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Desc>一捆干草。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>1</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>1</Rate>	
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>60</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="Plant">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>绳,索,草</FabaoSuffix>
+		<PhysicalLables>
+			<li>Soft2</li>
+			<li>Light2</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		
+		 <FuelMultiplier>0.4</FuelMultiplier>
+		 <BeMaterial>
+	
+		
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>草</NamePrefix>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>3</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>1</TemperatureMinAddWhenBeMain>
+			<!--<BuildingTileIDWhenBeMain>-8</BuildingTileIDWhenBeMain>-->
+			<MaxHitPointsPerNum>3</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>60</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.8</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+			
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

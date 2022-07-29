@@ -1,0 +1,78 @@
+<ArtItems><List>
+	<ArtItem Name="Item_WeaponKnife">
+		<List>
+		    <li Name="狂战" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_dao2"/>
+			<li Name="炎狱" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_dao3"/>
+			<li Name="斩电" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_dao4"/>
+			<li Name="青霜" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_dao5"/>
+			<li Name="星辰" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_dao6"/>
+
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponSword">
+		<List>
+			<li Name="松风" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian2"/>
+			<li Name="麒麟" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian3"/>
+			<li Name="蛇影" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian4"/>
+			<li Name="青冥" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian5"/>
+			<li Name="蔽日" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian6"/>
+			<li Name="斩罡" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian7"/>
+			<li Name="巨阙" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian8"/>
+			<li Name="百豸" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian9"/>
+			<li Name="饮血" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_jian10"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponLance">
+		<List>
+			<li Name="震山河" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang1"/>
+			<li Name="百战" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang2"/>
+			<li Name="流星" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang4"/>
+			<li Name="断狱" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang5"/>
+			<li Name="千屠" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang6"/>
+			<li Name="洞玄" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang7"/>
+			<li Name="千棘" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang8"/>
+			<li Name="辟魔刃" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang9"/>
+			<li Name="大日" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang10"/>
+			<li Name="炎煌" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang11"/>
+			<li Name="凶神" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_Chang12"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponHalbert">
+		<List>
+			<li Name="如意" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou2"/>
+			<li Name="邪爪" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou3"/>
+			<li Name="蛰魂" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou4"/>
+			<li Name="定海" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou5"/>
+			<li Name="龙雀" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou6"/>
+			<li Name="蝎" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou7"/>
+			<li Name="神临" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou8"/>
+			<li Name="镇狱" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_shuangshou9"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponAxeRing">
+		<List>
+			<li Name="分水" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_huan2"/>
+			<li Name="烈风" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_huan3"/>
+			<li Name="炼狱" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_huan4"/>
+			<li Name="追星" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_huan5"/>
+			<li Name="青空" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_huan6"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponBow">
+		<List>
+			<li Name="龙弓" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong2"/>
+			<li Name="飞星" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong3"/>
+			<li Name="凶牙" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong4"/>
+			<li Name="千刑" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong5"/>
+			<li Name="射魄" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong6"/>
+			<li Name="幽命" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong7"/>
+			<li Name="未央" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong8"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponWoodBow">
+		<List>
+			<li Name="神木弓" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong2"/>
+			<li Name="千韧弓" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_gong2"/>
+		</List>
+	</ArtItem>
+</List></ArtItems>

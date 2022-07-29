@@ -1,0 +1,34 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_LOST">   <!-- 错误的功法-->  
+		<DisplayName>错误的功法</DisplayName>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）</Desc>
+		<SelectDesc></SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Hide>3</Hide>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Stages>
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>错误</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Die">
+						<DisplayName>错误</DisplayName>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage1" Level="12">
+				<DisplayName>错误</DisplayName>
+				<Value>1</Value>
+				<Necks>
+					<Neck Location="1" Kind="Die">
+						<DisplayName>错误</DisplayName>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+		</Stages>
+	</Gong>
+</List></Gongs>

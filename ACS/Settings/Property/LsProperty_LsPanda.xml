@@ -1,0 +1,40 @@
+<Properties><List>
+	<Property Name="LsPandaFabaoPowerAddP">
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>LingShouFabaoSpecial</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>(36*LingShouNeiDan/200+36*LingShouNeiDan/200*(0-LsBadGood)/5)*x/2</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsPandaSpellPowerAddP">
+		<MinValue>0.1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>(LingShouShuFa*LingShouShuFa/50 * 1.2+LingShouShuFa*LingShouShuFa/50 * 1.2*(0-LsBadGood)/5)/2</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsPandaLingMaxValue">
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>LingShouMaxLingSpecial</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>LingShouQiGan^2*300*1.5+(20000*x)+LsFat*500000</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+</List></Properties>

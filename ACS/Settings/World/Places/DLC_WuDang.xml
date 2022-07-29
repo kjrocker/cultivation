@@ -1,0 +1,171 @@
+<Places><List>
+	<Place Name="Place_WuDang_Taizipo" Parent="Place_Level2Base">
+		<Location X="1693" Y="680"/>
+		<Scale>0.2</Scale>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>复真观</DisplayName>
+		<Desc>又名太子坡，这里曾是真武大帝凡人之身修道的地方。</Desc>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<FightMap>
+			<Name>Place_WuDang_Taizipo</Name>
+			<Class>Place_WuDang_Taizipo</Class>
+			<Biome>WudangMapBiome</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<UnLocked>0</UnLocked>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_WuDang_HuangJing</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>5</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	<Place Name="Place_WuDang_ZiXiaoGong" Parent="Place_Level2Base">
+		<Location X="1784" Y="718"/>
+		<Scale>0.2</Scale>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<DisplayName>紫霄宫</DisplayName>
+		<Desc>紫霄宫坐落在武当山的主峰—天柱峰东北的展旗峰下，其背山面水，有很多修士生活修炼，乃是风水绝佳的宝地。</Desc>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<FightMap>
+			<Name>Place_WuDang_ZiXiaoGong</Name>
+			<Class>Place_WuDang_ZiXiaoGong</Class>
+			<Biome>WudangMapBiome</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<UnLocked>0</UnLocked>
+		<Events>
+			<li Name="Find" Rate="3"/>
+			<li Name="HighFind" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_SpellPaperLv2</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_SpellPaperLv3</ThingDef>
+				<Count>1</Count>
+				<Rate>0.4</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_WuDang_NanYanGong" Parent="Place_Level2Base">
+		<Location X="1780" Y="665"/>
+		<Scale>0.5</Scale>
+		<Icon>res/Sprs/map/map_xuanai01</Icon>
+		<DisplayName>南岩宫</DisplayName>
+		<Desc>建立在武当山南岩之上，一侧便是云海深渊，地势险绝，风景秀美。其中有著名的龙头香，十分灵验。</Desc>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<FightMap>
+			<Name>Place_WuDang_NanYanGong</Name>
+			<Class>Place_WuDang_NanYanGong</Class>
+			<Biome>WudangMapBiome_Cold</Biome>
+			<Snow>1</Snow>
+			<Weather>LightSnow_Fov</Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<UnLocked>0</UnLocked>
+		<Events>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind_Tu" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_Marble</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li> 
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_WuDang_JinDing" Parent="Place_Level1Base">
+		<Location X="1736" Y="694"/>
+		<Scale>0.3</Scale>
+		<Icon>res/Sprs/map/map_wudangxianshan01</Icon>
+		<DisplayName>金顶</DisplayName>
+		<Desc>立于天柱峰之巅，乃是玄天真武大帝的道场，也是武当山根本道统所在。</Desc>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<FightMap>
+			<Name>School_WuDang</Name>
+			<Class>School_WuDang</Class>
+			<Biome>WudangMapBiome_Cold</Biome> 
+			<Snow>1</Snow>
+			<Weather>LightSnow_Fov</Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<School>13</School>
+		<UnLocked>1</UnLocked>
+		<Children>
+			<li>Place_WuDang_Taizipo</li>
+			<li>Place_WuDang_NanYanGong</li>
+			<li>Place_WuDang_ZiXiaoGong</li>
+		</Children>
+		<ExploreNum>19</ExploreNum>
+		<Events><!-- 嗯-->
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_WuDang_HuangJing</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_Dan_WuQiNoHunger2</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+</List></Places>

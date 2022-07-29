@@ -1,0 +1,103 @@
+<FightSkills><List>
+	<Skill Name="THealthSkill"><!--恢复技能基础模板 --> 
+		<DisplayName>恢复技能</DisplayName>
+		<IsTemplate>1</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>100</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Friendly</TargetCamp>
+	</Skill>
+	<Skill Name="HealthSkill_Gong1_1"><!--恢复技能基础模板 --> 
+		<DisplayName>天水化伤术</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>700</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>400</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>66</HitEffect>
+	</Skill>
+	
+	<Skill Name="HealthSkill_Gong1_2"><!--恢复技能基础模板 --> 
+		<DisplayName>天一真法</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>1200</CD>
+		<LingCost>600</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1200</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>66</HitEffect>
+	</Skill>
+	
+	<Skill Name="HealthSkill_Gong4_1"><!--恢复技能基础模板 --> 
+		<DisplayName>回春诀</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>45</CD>
+		<LingCost>500</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="HealthSkill_Gong9_1"><!--恢复技能基础模板 --> 
+		<DisplayName>轮回逆转</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>180</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>3000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	
+	<Skill Name="HealthSkill_Gong9_2"><!--恢复技能基础模板 --> 
+		<DisplayName>轮回逆转·秘</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>180</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>3000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>LowLing</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+</List></FightSkills>

@@ -1,0 +1,105 @@
+﻿<TangDefs><List>
+	<Tang Name="Tang_Dan">
+		<DisplayName>炼丹</DisplayName>
+		<Desc>专于炼丹，根据堂主能力高低以提高堂下弟子的炼丹相关的能力。</Desc>
+		<Icon>Res/Sprs/ui/xrui_bg40</Icon>
+	
+		<!--五维高于5时，每点+1，最高+5;低于5时，每点-1，最多-5。-->
+		<!--<FiveBases>
+			<li>Perception</li>
+		</FiveBases>-->		
+		
+		<Skills><!--技能高于15级时，每级+1，最高+5;低于15级时，每级-1-->
+			<li>Medicine</li>
+		</Skills>
+		
+		<GRank>-3,1,3,5,10</GRank><!--境界加值 练气,结丹,金丹,元神,仙人-->		
+		<DaoHang>50</DaoHang><!--每N点真实道行+1 -->		
+		<GongSkill>cuiti</GongSkill><!--功法拥有这个技能+5 -->
+		
+		<AreaModifierWai>Modifier_Sys_Wai_Dan</AreaModifierWai><!--外门在区域内的BUFF 每个Level获得1层 -->
+		<AreaModifierNei>Modifier_Sys_Nei_Dan</AreaModifierNei><!--内门在区域内的BUFF 每个Level获得1层-->
+		<Modifier>Modifier_Sys_All_Dan</Modifier><!--分堂BUFF 每10个Layer获得1层-->
+		
+	</Tang>
+	<Tang Name="Tang_Qi">
+		<DisplayName>炼器</DisplayName>
+		<Desc>专于炼器，根据堂主能力高低以提高堂下弟子的炼器相关的能力。</Desc>
+		<Icon>Res/Sprs/ui/xrui_bg39</Icon>
+		
+		<Skills>
+			<li>Manual</li>
+		</Skills>
+		
+		<GRank>-3,1,3,5,10</GRank>
+		<DaoHang>50</DaoHang>		
+		<GongSkill>kaiguang</GongSkill>
+		
+		<AreaModifierWai>Modifier_Sys_Wai_Qi</AreaModifierWai>
+		<AreaModifierNei>Modifier_Sys_Nei_Qi</AreaModifierNei>
+		<Modifier>Modifier_Sys_All_Qi</Modifier>
+	</Tang>
+	
+	<Tang Name="Tang_Zhan">
+		<DisplayName>战斗</DisplayName>
+		<Desc>专于战斗，根据堂主能力高低以提高堂下弟子的战斗相关的能力。</Desc>
+		<Icon>Res/Sprs/ui/xrui_bg20</Icon>
+		
+		<Skills>
+			<li>Fight</li>
+			<li>Fabao</li>
+			<li>FightSkill</li>
+			<li>Barrier</li>
+		</Skills>
+		
+		<GRank>-3,1,3,5,10</GRank>		
+		<GongSkill>chumo</GongSkill>
+		
+		<AreaModifierWai>Modifier_Sys_Wai_Zhan</AreaModifierWai>
+		<AreaModifierNei>Modifier_Sys_Nei_Zhan</AreaModifierNei>
+		<Modifier>Modifier_Sys_All_Zhan</Modifier>
+	</Tang>
+	
+	
+	<Tang Name="Tang_XiuLian">
+		<DisplayName>修炼</DisplayName>
+		<Desc>专于修炼，根据堂主能力高低以提高堂下弟子的修炼相关的能力。</Desc>
+		<Icon>Res/Sprs/ui/xrui_bg21</Icon>
+		
+		<Skills>
+			<li>Qi</li>
+		</Skills>
+		<FiveBases>
+			<li>Intelligence</li>
+		</FiveBases>
+		<GRank>-5,-3,-1,0,5</GRank>	
+		<DaoHang>25</DaoHang>
+		<GongSkill>jiangdao</GongSkill>
+		
+		<AreaModifierWai>Modifier_Sys_Wai_XiuLian</AreaModifierWai>
+		<AreaModifierNei>Modifier_Sys_Nei_XiuLian</AreaModifierNei>
+		<Modifier>Modifier_Sys_All_XiuLian</Modifier>
+	</Tang>
+	
+	
+	<Tang Name="Tang_WaiShi">
+		<DisplayName>外事</DisplayName>
+		<Desc>专于外事，根据堂主能力高低以提高堂下弟子的工作，历练等相关的能力。</Desc>
+		<Icon>Res/Sprs/ui/xrui_bg34</Icon>
+		
+		<Skills>
+			<li>SocialContact</li>
+			<li>Art</li>
+		</Skills>
+		
+		<FiveBases>
+			<li>Charisma</li>
+		</FiveBases>
+		
+		<GRank>-3,1,3,5,10</GRank>	
+		
+		<AreaModifierWai>Modifier_Sys_Wai_WaiShi</AreaModifierWai>
+		<AreaModifierNei>Modifier_Sys_Nei_WaiShi</AreaModifierNei>
+		<Modifier>Modifier_Sys_All_WaiShi</Modifier>
+	</Tang>
+</List></TangDefs>

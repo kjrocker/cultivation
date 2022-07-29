@@ -1,0 +1,89 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Boar_1"><!--测试秘体-->
+		<Prefix>血神</Prefix>
+		<Suffix>鬃</Suffix>
+		<Desc>猪妖天赋所传之秘体，以秘法淬炼脖颈处的刚鬃，一旦练成，便可以附着到自己的任何攻击上，提高所有秘体灵气护盾穿透率</Desc>
+		<DefaultBody>YGAnimal_BoarBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Bristles">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_SiHunZhiXi" Levels="4"/>
+					<li Name="QuenchingLabel_Lv4_A03_XuanTianZiQi" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者所有秘体灵气护盾穿透率</Desc>
+				<Modifier>Modifier_SuperPart_Boar_1</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="SuperPart_Boar_2"><!--测试秘体-->
+		<Prefix>洞灭之</Prefix>
+		<Suffix>牙</Suffix>
+		<Desc>猪妖天赋所传之秘体，将破灭之力附着到锐牙之上，一击之下有洞穿一切的威能。</Desc>
+		<DefaultBody>YGAnimal_BoarBody</DefaultBody>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtouchui</AtkAni>
+		<DefAni>TXtoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_yezhuya01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYniujiao01</DefEffect><Parts>
+			<li Name="BigCanineTooth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_JieMieJingHua" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F02_DaYaoYuanJing" Levels="9"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>巨量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.75"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

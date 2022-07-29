@@ -1,0 +1,134 @@
+<!--建筑附加的Modifier的MaxStack必须为0-->
+<ModifierDefs><List>
+	<!--民居1级-->
+	<Modifier Name="GodCityBuiling_Housing_lv1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="1000"/>
+		</Properties>
+	</Modifier> 
+	<!--民居2级-->
+	<Modifier Name="GodCityBuiling_Housing_lv2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="2000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="3000"/>
+		</Properties>
+	</Modifier> 	
+	<Modifier Name="GodCityBuiling_Housing_lv4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="5000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="10000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="20000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="30000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="40000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_Housing_lv9" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="50000"/>
+		</Properties>
+	</Modifier> 
+	
+	<!-- 高级神民居所 -->
+	<Modifier Name="GodCityBuiling_Housing_lv10" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxResident" AddV="250000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="GodCityBuiling_WishTree" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodPractice_GodPowerAddV" AddV="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="GodCityBuiling_HongChenKuHai" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodPractice_GodPowerAddV" AddV="-15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="GodCityBuiling_XinYangShenDian_Lv1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_PracticeEffect" AddV="0.3"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_XinYangShenDian_Lv2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_PracticeEffect" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="GodCityBuiling_XinYangShenDian_Lv3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_PracticeEffect" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="GodCityBuiling_ThunderDefend" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_ThunderAddion" AddV="-0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	
+	<Modifier Name="GodCityBuiling_CoreHousing" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<li Name="GodCity_MaxCoreBeliever" AddV="1"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

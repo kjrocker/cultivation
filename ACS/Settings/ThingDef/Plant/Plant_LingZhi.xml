@@ -1,0 +1,593 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="LingZhiBase" Parent="TreeBase">
+	<ThingName></ThingName>
+	<Desc></Desc>
+	
+	<Rate>12</Rate>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>25</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>9000</MaxHitPoints>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1],
+		[1,3,1],
+		[1,1,1],
+		</Data>
+	</Collider>
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>9999</BurningPoint>
+	</Flammability>
+	
+	<Plant Kind="HighPlant">
+		<NotRandom>1</NotRandom>
+
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<WitherAble>0</WitherAble>
+		<!-- 
+		<HarvestDays>1120</HarvestDays>
+		<GrowDays>560</GrowDays> -->
+		
+		<GrowDays>112</GrowDays>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<TempMin>-120</TempMin>
+		<TempMax>200</TempMax>
+		<FertilityMin>1.6</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>200</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+		
+		<BaseLingCost>0.004</BaseLingCost>
+		<YunYangInterval>0</YunYangInterval>
+		<LingShaSpeedCoefficient>0.2</LingShaSpeedCoefficient>
+	</Plant>
+	
+	<Harvest>
+		<HarvestWork>50</HarvestWork> 
+		<DropWork>300</DropWork>   	
+		<HarvestValueMin>1</HarvestValueMin>  
+		<LogValueMin>0</LogValueMin>
+		<HarvestFailable>0</HarvestFailable>  
+	</Harvest>
+	
+	<Fertility>
+		<Value>1</Value>
+		<Radius>5</Radius>
+		<FailRadius>1</FailRadius>
+		<Failing>0.9</Failing>
+		<SkipSelf>1</SkipSelf>
+	</Fertility>
+	
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		<SkipSelf>2</SkipSelf>
+		
+		<Attenuation>0.5</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>400</Accommodate>
+	</Ling>
+	</ThingDef>
+
+<ThingDef Type="Plant" Name="LingZhi_Huo" Parent="LingZhiBase">
+	<ThingName>火灵根-朱果树</ThingName>
+	<TonglingHair>hairzhuguo</TonglingHair>
+	<Desc>五行神药朱果的植株，需要生长在灵气浓烈，五行相应，土壤丰饶之地。因其性特异，必须在[temperature]200[/temperature]以上的环境中才能生长。</Desc>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_zhuguoLV01</TexPath>
+	<ElementKind>Huo</ElementKind>
+	<Plant> 
+		<TexLing>
+			<GrowTex1>res/Sprs/scene_TemperateForest_plant/scene_zhuguoLV02</GrowTex1>
+			<HarvestTex0>res/Sprs/scene_TemperateForest_plant/scene_zhuguoLV03</HarvestTex0>
+			<HarvestTex1>res/Sprs/scene_TemperateForest_plant/scene_zhuguoLV04</HarvestTex1>
+			<HarvestTex2>res/Sprs/scene_TemperateForest_plant/scene_zhuguoLV05</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>2.8</y>
+			<z>2</z>
+		</SnowRenderData>
+		
+		
+		<HarvestDays>90</HarvestDays>
+		
+		<TempMin>200</TempMin>
+		<TempMax>9999</TempMax>
+		<ElementRange>
+			<ElementKind>Huo</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+        <PlantSeed>Item_HuoEssence</PlantSeed>
+		<LingShaSpeed>-0.002</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Huo</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Huo</JiaoGanModifierLT0> 
+	</Plant>
+	
+	
+	<Heat>
+		<Value>200</Value>
+		<RoomValue>600</RoomValue>
+		<Radius>5</Radius>
+		<FailRadius>1</FailRadius>
+		<Failing>0.9</Failing>
+		<SkipSelf>1</SkipSelf>
+	</Heat>
+	
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>FF8383FF</Color>
+	</Light>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+</ThingDef>
+	
+<ThingDef Type="Plant" Name="LingZhi_Jin" Parent="LingZhiBase">
+	<ThingName>金灵根-琅琊神木</ThingName>
+	<Desc>五行神药琅琊果的植株，需要生长在灵气浓烈，五行相应，土壤丰饶之地。其对高温十分敏感，但相对耐寒，必须在小于[temperature]20[/temperature]的环境中才能生长。</Desc>
+	<TonglingHair>hairlangyaguo</TonglingHair>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_langyaguoLV01</TexPath>
+	<ElementKind>Jin</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>F0E168FF</Color>
+	</Light>
+	<Plant>
+		<TexLing>
+			<GrowTex1>res/Sprs/scene_TemperateForest_plant/scene_langyaguoLV02</GrowTex1>
+			<HarvestTex0>res/Sprs/scene_TemperateForest_plant/scene_langyaguoLV03</HarvestTex0>
+			<HarvestTex1>res/Sprs/scene_TemperateForest_plant/scene_langyaguoLV04</HarvestTex1>
+			<HarvestTex2>res/Sprs/scene_TemperateForest_plant/scene_langyaguoLV05</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.8</y>
+			<z>2</z>
+		</SnowRenderData>
+		
+		<HarvestDays>360</HarvestDays>
+		
+		<TempMin>-300</TempMin>
+		<TempMax>20</TempMax>
+		<ElementRange>
+			<ElementKind>Jin</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+        <PlantSeed>Item_JinEssence</PlantSeed>
+		<LingShaSpeed>-0.001</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Jin</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Jin</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>4</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.75</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>2</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Mu" Parent="LingZhiBase">
+	<ThingName>木灵根-木枯藤</ThingName>
+	<TonglingHair>hairmukuteng</TonglingHair>
+	<Desc>五行神药木枯藤的植株，需要生长在灵气浓烈，五行相应，土壤丰饶之地。其对生长对温度要求十分严苛，必须在[temperature]15[/temperature]-[temperature]35[/temperature]的范围内才能生长。</Desc>
+	
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_mukutengLV01</TexPath>
+	<ElementKind>Mu</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>80FF56C6</Color>
+	</Light>
+	<Plant>
+		<TexLing>
+			<GrowTex1>res/Sprs/scene_TemperateForest_plant/scene_mukutengLV02</GrowTex1>
+			<HarvestTex0>res/Sprs/scene_TemperateForest_plant/scene_mukutengLV03</HarvestTex0>
+			<HarvestTex1>res/Sprs/scene_TemperateForest_plant/scene_mukutengLV04</HarvestTex1>
+			<HarvestTex2>res/Sprs/scene_TemperateForest_plant/scene_mukutengLV05</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.0</y>
+			<z>1.5</z>
+		</SnowRenderData>
+		
+		<HarvestDays>240</HarvestDays>
+		
+		<TempMin>15</TempMin>
+		<TempMax>35</TempMax>
+		<ElementRange>
+			<ElementKind>Mu</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+        <PlantSeed>Item_MuEssence</PlantSeed>
+		<LingShaSpeed>0.0005</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Mu</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Mu</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.75</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Plant" Name="LingZhi_Shui" Parent="LingZhiBase">
+	<ThingName>水灵根-五色金莲</ThingName>
+	<Desc>五行神药五色金莲的植株，需要生长在灵气浓烈，五行相应，土壤丰饶的水中。其性喜低温，必须在[temperature]-120[/temperature]以下的环境中才能生长。</Desc>
+	<TonglingHair>hairwucailian</TonglingHair>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_wucailianLV02</TexPath>
+	<ElementKind>Shui</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>20B5FFC6</Color>
+	</Light>
+	<Plant>
+		<TexLing>
+			<GrowTex1>res/Sprs/scene_TemperateForest_plant/scene_wucailianLV02</GrowTex1>
+			<HarvestTex0>res/Sprs/scene_TemperateForest_plant/scene_wucailianLV03</HarvestTex0>
+			<HarvestTex1>res/Sprs/scene_TemperateForest_plant/scene_wucailianLV04</HarvestTex1>
+			<HarvestTex2>res/Sprs/scene_TemperateForest_plant/scene_wucailianLV05</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.4</x>
+			<y>4.2</y>
+			<z>1</z>
+		</SnowRenderData>
+		
+		<HarvestDays>100</HarvestDays>
+		
+		<TempMin>-300</TempMin>
+		<TempMax>-120</TempMax>
+		<ElementRange>
+			<ElementKind>Shui</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+		<SowPlaceKind>ShallowWater</SowPlaceKind>
+		
+        <PlantSeed>Item_ShuiEssence</PlantSeed>
+		<LingShaSpeed>0.001</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Shui</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Shui</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.75</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Tu" Parent="LingZhiBase">
+	<ThingName>土灵根-赭黄精</ThingName>
+	<Desc>五行神药赭黄精的植株，需要生长在灵气浓烈，五行相应，土壤丰饶之地。其生长十分忌讳低温，必须在[temperature]30[/temperature]以上的环境中才能生长。</Desc>
+	<TonglingHair>hairhuangjing</TonglingHair>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_hehuang jingLV01</TexPath>
+	<ElementKind>Tu</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>9E9E9EC6</Color>
+	</Light>
+	<Plant>
+		<TexLing>
+			<GrowTex1>res/Sprs/scene_TemperateForest_plant/scene_hehuang jingLV02</GrowTex1>
+			<HarvestTex0>res/Sprs/scene_TemperateForest_plant/scene_hehuang jingLV03</HarvestTex0>
+			<HarvestTex1>res/Sprs/scene_TemperateForest_plant/scene_hehuang jingLV04</HarvestTex1>
+			<HarvestTex2>res/Sprs/scene_TemperateForest_plant/scene_hehuang jingLV05</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>4.1</y>
+			<z>2</z>
+		</SnowRenderData>
+		
+		<HarvestDays>340</HarvestDays>
+		
+		<TempMin>30</TempMin>
+		<TempMax>9999</TempMax>
+		<ElementRange>
+			<ElementKind>Tu</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+        <PlantSeed>Item_TuEssence</PlantSeed>
+		<LingShaSpeed>0</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Tu</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Tu</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.75</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>
+	
+	<!--以下是征伐用-->
+	<ThingDef Type="Plant" Name="LingZhi_Huo_ZF" Parent="LingZhi_Huo">
+	<ThingName>火灵根-朱果树</ThingName>
+	<TonglingHair>hairzhuguo</TonglingHair>
+	<Desc>五行神药朱果的植株，传言只能生长在灵气浓烈，五行相应，土壤丰饶之地。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant> 
+		<TempMin>-9999</TempMin>
+		<TempMax>9999</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<StoryBnts>
+		<li Name="细察" Desc="尝试用神识仔细观察。" Story="Story_Plant_LingZhi_Huo" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Jin_ZF" Parent="LingZhi_Jin">
+	<ThingName>金灵根-琅琊神木</ThingName>
+	<Desc>五行神药琅琊果的植株，传言只能生长在灵气浓烈，五行相应，土壤丰饶之地。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<TonglingHair>hairlangyaguo</TonglingHair>
+	<Plant> 
+		<TempMin>-9999</TempMin>
+		<TempMax>9999</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<StoryBnts>
+		<li Name="细察" Desc="尝试用神识仔细观察。" Story="Story_Plant_LingZhi_Jin" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Mu_ZF" Parent="LingZhi_Mu">
+	<ThingName>木灵根-木枯藤</ThingName>
+	<TonglingHair>hairmukuteng</TonglingHair>
+	<Desc>五行神药木枯藤的植株，传言只能生长在灵气浓烈，五行相应，土壤丰饶之地。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant> 
+		<TempMin>-9999</TempMin>
+		<TempMax>9999</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<StoryBnts>
+		<li Name="细察" Desc="尝试用神识仔细观察。" Story="Story_Plant_LingZhi_Mu" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Shui_ZF" Parent="LingZhi_Shui">
+	<ThingName>水灵根-五色金莲</ThingName>
+	<Desc>五行神药五色金莲的植株，传言只能生长在灵气浓烈，五行相应，土壤丰饶之地。</Desc>
+	<TonglingHair>hairwucailian</TonglingHair>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant> 
+		<TempMin>-9999</TempMin>
+		<TempMax>9999</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<StoryBnts>
+		<li Name="细察" Desc="尝试用神识仔细观察。" Story="Story_Plant_LingZhi_Shui" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="LingZhi_Tu_ZF" Parent="LingZhi_Tu">
+	<ThingName>土灵根-赭黄精</ThingName>
+	<TonglingHair>hairhuangjing</TonglingHair>
+	<Desc>五行神药赭黄精的植株，传言只能生长在灵气浓烈，五行相应，土壤丰饶之地。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant> 
+		<TempMin>-9999</TempMin>
+		<TempMax>9999</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<StoryBnts>
+		<li Name="细察" Desc="尝试用神识仔细观察。" Story="Story_Plant_LingZhi_Tu" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+</List></ThingDefs>

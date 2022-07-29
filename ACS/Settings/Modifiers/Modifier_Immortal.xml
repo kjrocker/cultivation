@@ -1,0 +1,17 @@
+<ModifierDefs><List>
+	<!-- 序号必须依次往后排 除此之外不能使用FSZhenWu开头 -->
+	<Modifier Name="Feng_Immortal" Type="Normal">
+		<DisplayName>真仙提高</DisplayName>
+		<!--<ClassName>Modifier_Zhenwu</ClassName>	-->	
+		<MaxStack>99</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="NpcFight_FabaoPowerAddP" BAddV="0.01"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddV="0.01"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" BAddV="0.01"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" BAddV="0.01"/>
+		</Properties>
+	</Modifier> 
+
+</List></ModifierDefs>

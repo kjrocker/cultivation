@@ -1,0 +1,308 @@
+<Defs><List>	
+	<Def Name="BaiManSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_None</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Tu</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="TianJiSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_ZaoHuaYuZi</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_LingYuanZhong</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeiShanSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_XianBone</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Shui</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ZhengYiSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_ThunderAir</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Mu</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="JiuHuaSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_ExtremeLofty</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_ExtremeJade</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuLianSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_TreeEXP</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Jin</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ShuShanSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_LongDan1</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_FengDan1</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="KunLunSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_YanDaoGuo</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_QieDaoGuo</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="XianKongSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_ReBorn_4</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_BenYuan_Huo</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="DanXiaSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_HundredRefine</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_Dan_ZhuLongDan1</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeHuanSSR">
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_XianDaoShenNian</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_XianDaoXieNian</ItemName>
+			<InitTradeCount>
+				<Count Min="1" Max="2"/>
+			</InitTradeCount>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+		<Item Weight="1" CountName="ExtremelyRare">
+			<ItemName>Item_GodPractice_MiJuan</ItemName>
+			<Condition>
+				<NeedRank>Respect</NeedRank>
+			</Condition>
+			<AucType>Exotic</AucType>
+		</Item>
+	</Def>
+	
+</List></Defs>

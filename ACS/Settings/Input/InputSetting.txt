@@ -1,0 +1,60 @@
+﻿ID	Name	Des	InitialKey1	InitialKey2	IgnoreCombinationkeys	Lock	Type
+功能ID	功能名称	功能描述	快捷键组1	快捷键组2	忽略组合键冲突	锁定，玩家不可修改	类型
+Up	上		W	UpArrow	LeftAlt		玩家
+down	下		S	DownArrow	LeftAlt		玩家
+left	左		A	LeftArrow	LeftAlt		玩家
+right	右		D	RightArrow	LeftAlt		玩家
+SpeedP	减少游戏速度		Q				玩家
+SpeedN	增加游戏速度		E				玩家
+GamePauseOrPlay	游戏暂停/运行		Space				玩家
+Attack	攻击		BackQuote				角色
+RunAway	逃跑		LeftControl+BackQuote				角色
+Moveto	移动到		V				角色
+StopJob	打断行为	打断当前行为，部分行为无法打断。	LeftAlt+S				角色
+Work	工作界面		T				界面
+School	门派界面		G				界面
+World	天下界面		M				界面
+Help	帮助界面		F10				界面
+AttributePanel	属性面板		C				角色
+MoodPanel	心情社交面板		F				角色
+HealthPanel	健康面板		H				角色
+PracticePanel	修炼面板		X				角色
+EquipmentPanel	装备面板		Z				角色
+Interaction	角色互动1~9	F1~9				1	角色
+RotBuilding	旋转建筑		R				场景
+RepeatBuild	重复上一次的建筑		LeftControl+V				场景
+Harvest	收获植物		LeftControl+G				场景
+Log	砍伐树木		LeftControl+X				场景
+Mine	开采矿藏		LeftControl+T				场景
+Cutoff	清除区域		LeftControl+E				场景
+Dismantle	拆除建筑		LeftControl+C				场景
+RemoveFloor	移除地板		LeftControl+B				场景
+Explore	搜索区域		LeftControl+F				场景
+Melting	熔炼物品		LeftControl+Y				场景
+Hunting	狩猎动物		LeftControl+H				场景
+CancelCMD	撤销命令		LeftControl+D				场景
+BuildPanel	建筑面板		B				界面
+SearchPanel	目标面板		Y				界面
+ProducePanel	生产面板		P				界面
+SwichNpc	切换对象		Tab				玩家
+33	对象编队	LCtrl+1~9				1	玩家
+34	选择/跳到编队	1~9				1	玩家
+36	多选	LShift				1	玩家
+Story1	历练界面选项1		Alpha1				历练
+Story2	历练界面选项2		Alpha2				历练
+Story3	历练界面选项3		Alpha3				历练
+Story4	历练界面选项4		Alpha4				历练
+Story5	历练界面选项5		Alpha5				历练
+Story6	历练界面选项6		Alpha6				历练
+Story7	历练界面选项7		Alpha7				历练
+Story8	历练界面选项8		Alpha8				历练
+Story9	历练界面选项9		Alpha9				历练
+QuickSave	快速保存		F9				系统
+ShowOrHide	隐藏/显示UI		F11				系统
+37	系统菜单	Esc				1	系统
+Zhen	阵法界面		N				界面
+MinMap	小地图		Comma				界面
+ShowElement	五行图		L				界面
+Power	势力		K				界面
+Miwen	秘闻		U				界面
+IllHand	图鉴		O				界面

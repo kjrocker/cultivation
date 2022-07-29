@@ -1,0 +1,270 @@
+<ModifierDefs><List>
+<!-- 	<Modifier Name="BodyPractice_Test1" Type="Normal">
+		<DisplayName>测试</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAtk_EquptMaxCount" AddV="1"/>
+		</Properties>
+	</Modifier> -->
+
+	<Modifier Name="BodyPractice_Attitude_Atk" Type="Normal">
+		<DisplayName>攻击姿态</DisplayName>
+		<Desc>全心全意攻击敌方本体，在这种姿态下，秘体的进攻性能上升25%，防御性能下降50%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-0.5"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="0.25"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="-0.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="BodyPractice_Attitude_Normal" Type="Normal">
+		<DisplayName>普通姿态</DisplayName>
+		<Desc>以炼体者的标准战斗方式进行战斗，各方面都能均衡发挥。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+	</Modifier>
+
+
+	<Modifier Name="BodyPractice_Attitude_ManJi" Type="Normal">
+		<DisplayName>蛮极战意</DisplayName>
+		<Desc>以强烈的战斗意识支配全身行动，直接突击敌人本体，大幅提高进攻力，并保持本能的防御能力。秘体的进攻性能上升30%，防御性能下降25%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.30"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-0.25"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="0.30"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="-0.25"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="BodyPractice_Attitude_WangZhe" Type="Normal">
+		<DisplayName>王者战意</DisplayName>
+		<Desc>以王道之心面对战斗，从容不迫。秘体的进攻性能上升15%，防御性能上升15%，秘体消耗下降20%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="0.15"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="0.15"/>
+			<li Name="BodyPratice_SuperPartCostAddP" AddV="-0.2"/>
+		</Properties>
+	</Modifier>
+	<!--回气状态下的DEBUFF-->
+	<Modifier Name="BodyPractice_DefenseDebuff" Type="Normal">
+		<DisplayName>虚弱</DisplayName>
+		<Desc>真炁耗尽，炼体者陷入虚弱中，全属性下降90%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-0.95"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-0.95"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="-0.95"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="-0.95"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_BodyPractice_AngerFire" Type="Normal">
+		<DisplayName>激狂之怒</DisplayName>
+		<Desc>回忆起封存的痛苦追忆，在一定时间内全面激化身体机能。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<ModScale>1.1</ModScale>
+		<SpecialFlags>
+			<li>FLAG_BODYATTACK_ANGERFIRE</li>
+		</SpecialFlags>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/BodyAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.0025"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.0025"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Gong_Body_1" Type="Normal">
+		<DisplayName>Gong_Body_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="0.0005"/>
+			<li Name="BodyPratice_MaxZhenQi" AddV="200"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="5"/>
+
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.05"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.05"/>
+
+			<li Name="NutritionConsumeConstant" AddP="0.5"/>
+			<li Name="NutritionToJingYuanK" AddV="0.05"/>
+
+			<li Name="PainTolerance" AddV="15"/>
+
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+			<li Name="ToleranceTMax" AddV="250"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Gong_Body_2" Type="Normal">
+		<DisplayName>Gong_Body_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="0.001"/>
+			<li Name="BodyPratice_MaxZhenQi" AddV="300"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="10"/>
+
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.07"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.07"/>
+
+			<li Name="NutritionConsumeConstant" AddP="0.5"/>
+			<li Name="NutritionToJingYuanK" AddV="0.05"/>
+
+
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+			<li Name="ToleranceTMin" AddV="-55"/>
+			<li Name="ToleranceTMax" AddV="550"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Gong_Body_3" Type="Normal">
+		<DisplayName>Gong_Body_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="0.0015"/>
+			<li Name="BodyPratice_MaxZhenQi" AddV="400"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="15"/>
+
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.1"/>
+
+			<li Name="NutritionConsumeConstant" AddP="0.5"/>
+			<li Name="NutritionToJingYuanK" AddV="0.05"/>
+
+
+			<li Name="WorldMapFlySpeedAddP" AddV="4"/>
+			<li Name="ToleranceTMin" AddV="-145"/>
+			<li Name="ToleranceTMax" AddV="1450"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Gong_Body_OtherBug" Type="Normal">
+		<DisplayName>Gong_Body_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="1.5"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="1.5"/>
+
+
+			<li Name="BodyPratice_BodyStrong" AddV="4"/>
+
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="20000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="20000"/>
+
+			<li Name="NutritionConsumeConstant" AddP="3"/>
+			<li Name="NutritionToJingYuanK" AddV="0.15"/>
+
+			<li Name="PainTolerance" AddV="50"/>
+
+			<li Name="ToleranceTMin" AddV="-200"/>
+			<li Name="ToleranceTMax" AddV="2000"/>
+		</Properties>
+	</Modifier>
+
+
+
+	<Modifier Name="Modifier_BodyPractice_Magic_JingXi" Type="Normal">
+		<DisplayName>心肺过载</DisplayName>
+		<Desc>施展鲸息吐纳法后心肺过载，吐纳效率大幅度下降。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>6000</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="-100"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Modifier_BodyPractice_Magic_TunJin" Type="Normal">
+		<DisplayName>吞尽之口</DisplayName>
+		<Desc>加速生命消耗，并从虚空中取摄元气，补充自身饥饿度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="500"/>
+			<li Name="NutritionWaterAutoRecover" AddV="2"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Modifier_BodyPractice_Magic_XiuFu" Type="Normal">
+		<DisplayName>搬运气血</DisplayName>
+		<Desc>搬运周身气血，加速伤势恢复。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="0.01"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_BodyPractice_Magic_ChiYi1" Type="Normal">
+		<DisplayName>此生倏忽</DisplayName>
+		<Desc>以斥异之体所产生的真炁运转周身，大幅提高生命消耗速度，大幅提高淬体速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="500"/>
+			<li Name="BodyPratice_QuenchingSpeed" AddV="5"/>
+		</Properties>
+	</Modifier>
+
+
+	<Modifier Name="Modifier_BodyPractice_Magic_ChiYi2" Type="Normal">
+		<DisplayName>此生虚妄</DisplayName>
+		<Desc>以斥异之体所产生的真炁运转周身，大幅提高生命消耗速度，大幅提高淬体出现高级进化方案的可能性。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="500"/>
+			<li Name="BodyPractice_RollAddtion_Cache1" AddV="0.5"/>
+			<li Name="BodyPractice_RollAddtion_Cache2" AddV="2"/>
+			<li Name="BodyPractice_RollAddtion_Cache3" AddV="3"/>
+			<li Name="BodyPractice_RollAddtion_Cache4" AddV="5"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

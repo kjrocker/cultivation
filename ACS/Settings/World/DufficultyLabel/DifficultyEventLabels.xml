@@ -1,0 +1,271 @@
+<DifficultyLabel><List>
+	<Label Name="Lv4_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发奇遇事件。</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="75" Desc="保护时间75天"/>
+			<li Name="中" Value="150" Desc="保护时间150天"/>
+			<li Name="长" Value="300" Desc="保护时间300天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv4_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当奇遇事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="10" Desc="最小间隔10天"/>
+			<li Name="中" Value="20" Desc="最小间隔20天"/>
+			<li Name="长" Value="30" Desc="最小间隔30天"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv4_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当奇遇事件超过最大间隔没有发生，那么下次事件发生时必定是奇遇事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="50" Desc="最大间隔35天"/>
+			<li Name="中" Value="75" Desc="最大间隔50天"/>
+			<li Name="长" Value="100" Desc="最大间隔75天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="EnemyLv2_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发强敌事件。</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="30" Desc="保护时间30天"/>
+			<li Name="中" Value="60" Desc="保护时间60天"/>
+			<li Name="长" Value="120" Desc="保护时间120天"/>
+			<li Name="极长" Value="240" Desc="保护时间240天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="EnemyLv2_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当强敌事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="12" Desc="最小间隔12天"/>
+			<li Name="中" Value="20" Desc="最小间隔20天"/>
+			<li Name="长" Value="28" Desc="最小间隔28天"/>
+		</Values>
+	</Label>	
+	<Label Name="EnemyLv2_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当强敌事件超过最大间隔没有发生，那么下次事件发生时必定是强敌事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="30" Desc="最大间隔30天"/>
+			<li Name="中" Value="40" Desc="最大间隔40天"/>
+			<li Name="长" Value="50" Desc="最大间隔50天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="Lv3_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发稀有事件。</Desc>
+		<Default>2</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="25" Desc="保护时间25天"/>
+			<li Name="中" Value="50" Desc="保护时间50天"/>
+			<li Name="长" Value="100" Desc="保护时间100天"/>
+			<li Name="极长" Value="200" Desc="保护时间200天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv3_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当稀有事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="5" Desc="最小间隔5天"/>
+			<li Name="中" Value="20" Desc="最小间隔20天"/>
+			<li Name="长" Value="35" Desc="最小间隔35天"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv3_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当稀有事件超过最大间隔没有发生，那么下次事件发生时必定是稀有事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="40" Desc="最大间隔40天"/>
+			<li Name="中" Value="55" Desc="最大间隔55天"/>
+			<li Name="长" Value="70" Desc="最大间隔70天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="Secrets_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发秘闻事件。</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="15" Desc="保护时间15天"/>
+			<li Name="中" Value="45" Desc="保护时间45天"/>
+			<li Name="长" Value="75" Desc="保护时间75天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Secrets_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当秘闻事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="1" Desc="最小间隔1天"/>
+			<li Name="中" Value="3" Desc="最小间隔3天"/>
+			<li Name="长" Value="5" Desc="最小间隔5天"/>
+		</Values>
+	</Label>	
+	<Label Name="Secrets_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当秘闻事件超过最大间隔没有发生，那么下次事件发生时必定是秘闻事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="7" Desc="最大间隔7天"/>
+			<li Name="中" Value="9" Desc="最大间隔9天"/>
+			<li Name="长" Value="15" Desc="最大间隔15天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="Join_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发访客事件。</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="5" Desc="保护时间5天"/>
+			<li Name="中" Value="25" Desc="保护时间25天"/>
+			<li Name="长" Value="75" Desc="保护时间75天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Join_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当访客事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="1" Desc="最小间隔1天"/>
+			<li Name="中" Value="3" Desc="最小间隔3天"/>
+			<li Name="长" Value="5" Desc="最小间隔5天"/>
+		</Values>
+	</Label>	
+	<Label Name="Join_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当访客事件超过最大间隔没有发生，那么下次事件发生时必定是访客事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="6" Desc="最大间隔7天"/>
+			<li Name="中" Value="8" Desc="最大间隔9天"/>
+			<li Name="长" Value="14" Desc="最大间隔15天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="Enemy_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发敌人事件。</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="6" Desc="保护时间6天"/>
+			<li Name="中" Value="12" Desc="保护时间12天"/>
+			<li Name="长" Value="24" Desc="保护时间24天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Enemy_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当敌人事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="2" Desc="最小间隔2天"/>
+			<li Name="中" Value="5" Desc="最小间隔5天"/>
+			<li Name="长" Value="8" Desc="最小间隔8天"/>
+		</Values>
+	</Label>	
+	<Label Name="Enemy_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当敌人事件超过最大间隔没有发生，那么下次事件发生时必定是敌人事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="10" Desc="最大间隔10天"/>
+			<li Name="中" Value="17" Desc="最大间隔17天"/>
+			<li Name="长" Value="24" Desc="最大间隔24天"/>
+		</Values>
+	</Label>
+	
+	
+	<Label Name="Lv1_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发普通事件。</Desc>
+		<Default>0</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="5" Desc="保护时间5天"/>
+			<li Name="中" Value="15" Desc="保护时间15天"/>
+			<li Name="长" Value="60" Desc="保护时间60天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv1_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当普通事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="1" Desc="最小间隔1天"/>
+			<li Name="中" Value="3" Desc="最小间隔3天"/>
+			<li Name="长" Value="5" Desc="最小间隔5天"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv1_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当普通事件超过最大间隔没有发生，那么下次事件发生时必定是普通事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="6" Desc="最大间隔6天"/>
+			<li Name="中" Value="8" Desc="最大间隔8天"/>
+			<li Name="长" Value="10" Desc="最大间隔10天"/>
+		</Values>
+	</Label>
+	
+	<Label Name="Lv2_ProtectTime">
+		<DisplayName>保护时间</DisplayName>
+		<Desc>游戏开局后，保护时间内不会触发高级事件。</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="无" Value="0" Desc="无保护时间"/>
+			<li Name="短" Value="5" Desc="保护时间5天"/>
+			<li Name="中" Value="15" Desc="保护时间15天"/>
+			<li Name="长" Value="60" Desc="保护时间60天"/>
+			<li Name="无限" Value="999999" Desc="本局游戏不会发生此类事件"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv2_IntervalMin">
+		<DisplayName>最小间隔</DisplayName>
+		<Desc>当高级事件发生后，在最小间隔内不会再次发生</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="3" Desc="最小间隔3天"/>
+			<li Name="中" Value="7" Desc="最小间隔7天"/>
+			<li Name="长" Value="11" Desc="最小间隔11天"/>
+		</Values>
+	</Label>	
+	<Label Name="Lv2_IntervalMax">
+		<DisplayName>最大间隔</DisplayName>
+		<Desc>当高级事件超过最大间隔没有发生，那么下次事件发生时必定是高级事件</Desc>
+		<Default>1</Default>
+		<Values>
+			<li Name="短" Value="15" Desc="最大间隔15天"/>
+			<li Name="中" Value="20" Desc="最大间隔20天"/>
+			<li Name="长" Value="25" Desc="最大间隔25天"/>
+		</Values>
+	</Label>
+
+	
+
+</List></DifficultyLabel>

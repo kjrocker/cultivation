@@ -1,0 +1,91 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	
+	<Story Name="BuildMode_ChangeTime">
+		<DisplayName>太虚幻境</DisplayName>
+		<Desc>需要将时间调整到什么时候呢。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>早上</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(5)</OKResult>
+			</li>
+			<li>
+				<Display>正午</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(11)</OKResult>
+			</li>
+			<li>
+				<Display>黄昏</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(17)</OKResult>
+			</li>
+			<li>
+				<Display>深夜</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(1)</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+			</li>
+		</Selections>
+	</Story>	
+	<Story Name="BuildMode_ChangeSeason">
+		<DisplayName>太虚幻境</DisplayName>
+		<Desc>需要将季节调整到什么时候呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>春</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(14)</OKResult>
+			</li>
+			<li>
+				<Display>夏</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(42)</OKResult>
+			</li>
+			<li>
+				<Display>秋</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(75)</OKResult>
+			</li>
+			<li>
+				<Display>冬</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(98)</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+			</li>
+		</Selections>
+	</Story>	
+	<Story Name="BuildMode_ChangeWeather">
+		<DisplayName>太虚幻境</DisplayName>
+		<Desc>需要将天气改变成什么呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>小雨/雪</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")</OKResult>
+			</li>
+			<li>
+				<Display>大雨/雪</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")</OKResult>
+			</li>					
+			<li>
+				<Display>尘暴</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")</OKResult>
+			</li>
+			<li>
+				<Display>永夜</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("PermanentNight")</OKResult>
+			</li>
+			<li>
+				<Display>雷暴</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightningStorm")</OKResult>
+			</li>		
+			<li>
+				<Display>清除所有天气</Display>
+				<OKResult>World.Weather:ClearAllWeather();  </OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+			</li>
+		</Selections>
+	</Story>	
+
+</List></Stories>

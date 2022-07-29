@@ -1,0 +1,161 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="Boss_Xiongfeng_Test" Type="Normal">
+		<DisplayName>凶凤</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_CANTBEMAGIC</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="10000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="800"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="200"/> 
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="4"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="5"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="500"/>
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+			
+		</Properties>
+		<MapProperties>
+			<li Name="CloseFireRain" Value="1"/><!--关闭自动灭火的雨-->
+		</MapProperties>
+		<EffectBind>			
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin02 Bone026+Bone026(mirrored)" Bip="Bone026"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin02 Bone026+Bone026(mirrored)" Bip="Bone026(mirrored)"/>		
+		</EffectBind>
+	</Modifier> 
+	
+	
+
+	<Modifier Name="Boss_Xiongfeng_Huofeng_Test" Type="Normal">
+		<DisplayName>真焱形态</DisplayName>
+		<Desc>真焱形态会持续消耗火灵，结束时会回收依然存在的火羽并恢复灵气。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>		
+		<LuaClassName>modifier_fenghuang_huofeng</LuaClassName>
+		<MaterialDatas>
+			<li Name="_RimPower" Value="1.8"/>
+			<li Name="_RimFlash" Value="5"/>
+		</MaterialDatas>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="120"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="200"/> 
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="-1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="120"/>
+		</Properties>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018 1" Bip="Bone018"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_jianglin01 Bone018(mirrored) 1" Bip="Bone018(mirrored)"/>
+			
+			<li Path="Effect/gsq/Prefab/feng/fx_fenghuang_lyzy02-2  Bip001 Pelvis" Bip="Bip001 Pelvis"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_huofeng02 Bip001 Spine" Bip="Bip001 Spine"/>
+			
+			<li Path="Effect/gsq/Prefab/feng/fx_huofeng01  Bone026" Bip="Bone026"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_huofeng01  Bone026(mirrored)" Bip="Bone026(mirrored)"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_eyes" Bip="bone_eyeR"/>
+			<li Path="Effect/gsq/Prefab/feng/fx_bossfenghuang_eyes" Bip="bone_eyeL"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Boss_TestJueSe1" Type="Normal">
+		<DisplayName>角色测试</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="250000"/>
+			
+			<li Name="LingAbsorbSpeed" AddP="60"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2000"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="150"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="150"/> 
+			
+			
+			<li Name="NpcFight_SpellLingCostAddP" AddP="150"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="150"/> 
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="500"/>
+			
+			<li Name="FatigueConsumeConstant" AddP="-10"/> 
+			<li Name="NutritionConsumeConstant" AddP="-10"/> 
+			<li Name="WaterConsumeConstant" AddP="-10"/> 
+			<li Name="HappyConsumeConstant" AddP="-10"/> 
+			
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_JinGong1" Type="Normal">
+		<DisplayName>角色测试进攻</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="400000"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Boss_JinGong2" Type="Normal">
+		<DisplayName>角色测试进攻回滚</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-400000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong1" Type="Normal">
+		<DisplayName>角色标准后期数值</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="250000"/>
+			
+			<li Name="LingAbsorbSpeed" AddP="60"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="800"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="250"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="250"/> 
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="2"/> 
+			
+			<li Name="NpcFight_SpellLingCostAddP" AddP="150"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="150"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="1"/>
+			
+			<li Name="FatigueConsumeConstant" AddP="-10"/> 
+			<li Name="NutritionConsumeConstant" AddP="-10"/> 
+			<li Name="WaterConsumeConstant" AddP="-10"/> 
+			<li Name="HappyConsumeConstant" AddP="-10"/> 
+			
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

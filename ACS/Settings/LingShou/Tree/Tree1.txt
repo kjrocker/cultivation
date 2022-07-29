@@ -1,0 +1,120 @@
+[TouchNode]
+Selector
+	Sequence
+		RateCheckNode,0.33
+		Wait,不作为
+	Sequence
+		RateCheckNode,0.5
+		Wait,撒娇
+	Wait,吃了它
+
+[State1]
+Job,GotoDeath
+
+[Tree1]
+Selector
+	Sequence
+		NeedCheckNode,Rest,30
+		Job,Sleep:Event,Touch:State,State1
+	Sequence
+		NeedCheckNode,Food,30
+		Job,Eat:Event,Touch:State,State1
+	Sequence
+		Compare,1,1,0
+			RandomValue
+			FixValueNode,1,50
+		Job,Carry
+	Job,Free
+
+[TreeW]
+IfElseNode:Reset,V1
+	NeedCheckNode,Rest,50:NOT
+	Wait,不作为:W,1
+	Wait,撒娇:W,1
+
+[TreeFight]
+Wait,1
+
+[Tree2]
+T,MainTree
+
+[Tree21]
+Sequence
+	Job,SleepWithNpc_Heal:C,HasOuterDisipleToAtk,R:Load,R
+
+[Eat1]
+Wait,Eat1
+
+[Eat2]
+Wait,Eat2
+
+[EatNormal]
+Wait,EatNormal
+
+[Test,XX,YY,ZZ,AA]
+Sequence
+	Wait,XX
+	Return,1:C,ZZ,AA
+	Job,YY:Load,AA
+
+[TEat]
+Selector
+	Sequence
+		NeedCheck,Food,30
+		IfElse
+			LsPropertyCheck,LingZhi,40
+			IfElse
+				WeightRandom
+					T,Eat1:W,1:C,HasFood1
+					T,Eat2:W,1:C,HasFood2
+				Return,1
+				Sequence
+					Wait,我要吃东西
+					Return,0
+			T,EatNormal
+	Sequence
+		Return,0
+
+[Drink_Temp]
+Sequence
+	NeedCheck,Water,30
+	IfElse
+		Job,Drink:C,HasWater
+		Return,1
+		Wait,WantDrink
+
+[Sleep_Temp]
+Sequence
+	IfElse
+		LsPropertyCheck,TestSleep1,30
+		Job,SleepSuccess
+		Job,SleepFail
+	ActionWeightModify,Sleep,-10
+	NeedCheck,Rest,20:NOT
+	Job,RwarSleep:Save,js_1
+	IfElse
+		Compare,0,1,0
+			GetSave,js_1
+			FixValue,1,1
+		Job,Success
+		Job,Fail
+
+[Fun_Temp]
+Sequence
+	NeedCheck,Fun,30:NOT
+	WeightRandom
+		Job,Sun:W,1
+		Job,AtkBuild:W,1
+		Job,Free4:W,1
+		Job,Fun:W,1
+		Sequence:W,1
+			IfElse
+				Compare,1,1,0
+					RandomValue
+					Opt,+
+						FixValueNode,1,80
+						LsProperty,AtkCloth
+				Job,AtkCloth
+				Sequence
+					Wait,NotInterest
+					Return,0

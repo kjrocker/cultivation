@@ -1,0 +1,42 @@
+﻿<ThingDefs><List>
+<ThingDef Type="Item" Name="Item_BambooLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>竹角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了竹屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>8CAC6DFF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Bamboo" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>竹</NamePrefix>
+			<RateWhenBeMain>5</RateWhenBeMain>
+			<BuildingTileIDWhenBeMain>-46</BuildingTileIDWhenBeMain>
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>#8CAC6DFF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>#5B8E4EFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>5</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+	
+	<ProduceMode>
+		<ProduceBuildings>
+		  <li>
+			<Building>HandWorkTable</Building>
+			<Count>100</Count>
+		  </li>
+		</ProduceBuildings>
+	</ProduceMode>
+</ThingDef>
+</List></ThingDefs>

@@ -1,0 +1,43 @@
+<ModifierDefs><List>
+	<Modifier Name="FeatureModifierBase" Type="Normal">
+		<DisplayName>ModifierBase for Feature</DisplayName>
+		<Desc>特性生成的modifier，系统使用，不要修改</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+	</Modifier> 
+	<Modifier Name="ExperienceModifierBase" Type="Normal">
+		<DisplayName>ModifierBase for Experience</DisplayName>
+		<Desc>经历生成的modifier，系统使用，不要修改</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+	</Modifier> 
+	
+	
+	<Modifier Name="FeatureModifier_DongShiZhang1" Type="Normal">
+		<DisplayName>董事长的激励</DisplayName>
+		<Desc>在董事长的注视下，干活更有劲儿了！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<GlobleModifiers>
+			<li>FeatureModifier_DongShiZhang2</li>
+		</GlobleModifiers>
+	</Modifier> 
+	
+	<Modifier Name="FeatureModifier_DongShiZhang2" Type="Normal">
+		<DisplayName>董事长的激励</DisplayName>
+		<Desc>在董事长的注视下，干活更有劲儿了！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.2"/>
+			<li Name="MoveSpeed" AddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+</List></ModifierDefs>

@@ -1,0 +1,203 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="SystemMessage">
+			<Notes>Comment Panel of System Message</Notes>
+			<Title>System Message</Title>
+			<Desc>System Message</Desc>
+		</Text>
+		<Text Name="Architecture">
+			<Notes>Comment Panel of Building</Notes>
+			<Title>Building Page</Title>
+			<Desc>Building Page</Desc>
+		</Text>
+		<Text Name="NpcProperty">
+			<Notes>Comment Panel of Character Stats</Notes>
+			<Title>Character Stats</Title>
+			<Desc>Character Stats</Desc>
+		</Text>
+		<Text Name="NpcSociality">
+			<Notes>Comment Panel of Character Social</Notes>
+			<Title>Character Social</Title>
+			<Desc>Character Social</Desc>
+		</Text>
+		<Text Name="NpcHealth">
+			<Notes>Comment Panel of Character Health</Notes>
+			<Title>Health Panel</Title>
+			<Desc>Health Panel</Desc>
+		</Text>
+		<Text Name="NpcPractice">
+			<Notes>Comment Panel of Character Cultivation/Training</Notes>
+			<Title>Cultivation Panel</Title>
+			<Desc>Cultivation Panel</Desc>
+		</Text>
+		<Text Name="NpcZhuJi">
+			<Notes>Comment Panel of Character Foundation Training</Notes>
+			<Title>Foundation Panel</Title>
+			<Desc>Foundation Panel</Desc>
+		</Text>
+		<Text Name="NpcGnosis">
+			<Notes>Comment Panel of Character Intelligence</Notes>
+			<Title>Intelligence Panel</Title>
+			<Desc>Intelligence Panel</Desc>
+		</Text>
+		<Text Name="NpcEquipment">
+			<Notes>Comment Panel of Character Gear</Notes>
+			<Title>Gear Page</Title>
+			<Desc>Gear Page</Desc>
+		</Text>
+		<Text Name="NpcEquipmentOfBodyPractice">
+			<Notes>Comment Panel of Gear and Secret Body Configurations</Notes>
+			<Title>Gear and Secret Body Configurations Panel</Title>
+			<Desc>Gear and Secret Body Configurations Panel</Desc>
+		</Text>
+		<Text Name="NpcCombatStyle">
+			<Notes>Comment Panel of Character's Battle Tactic</Notes>
+			<Title>Battle Tactic Panel</Title>
+			<Desc>Battle Tactic Panel</Desc>
+		</Text>
+		<Text Name="NpcDetailProperty">
+			<Notes>Comment Panel of Character's Detailed Stats</Notes>
+			<Title>Detailed Stats Panel</Title>
+			<Desc>Detailed Stats Panel</Desc>
+		</Text>
+		<Text Name="NpcDrugResistance">
+			<Notes>Comment Panel of Character's Medicine Tolerance</Notes>
+			<Title>Medicine Tolerance Panel</Title>
+			<Desc>Medicine Tolerance Panel</Desc>
+		</Text>
+		<Text Name="Secret">
+			<Notes>Comment Panel of Mystery</Notes>
+			<Title>Mystery Panel</Title>
+			<Desc>Mystery Panel</Desc>
+		</Text>
+		<Text Name="Character">
+			<Notes>Comment Panel of NPC</Notes>
+			<Title>NPC Panel</Title>
+			<Desc>NPC Panel</Desc>
+		</Text>
+		<Text Name="Clue">
+			<Notes>Comment Panel of Clue</Notes>
+			<Title>Clue Panel</Title>
+			<Desc>Clue Panel</Desc>
+		</Text>
+		<Text Name="ZhenGraph">
+			<Notes>Comment Panel of Formation Diagram</Notes>
+			<Title>Formation Diagram Panel</Title>
+			<Desc>Formation Diagram Panel</Desc>
+		</Text>
+		<Text Name="ZhenEdit">
+			<Notes>Comment Panel of Formation Edit</Notes>
+			<Title>Formation Edit Panel</Title>
+			<Desc>Formation Edit Panel</Desc>
+		</Text>
+		<Text Name="ZhenEyesOverview">
+			<Notes>Comment Panel of Auxiliary Overview</Notes>
+			<Title>Auxiliary Overview Panel</Title>
+			<Desc>Auxiliary Overview Panel</Desc>
+		</Text>
+		<Text Name="WorkSchedule">
+			<Notes>Comment Panel of Work Schedule</Notes>
+			<Title>Work Schedule Panel</Title>
+			<Desc>Work Schedule Panel</Desc>
+		</Text>
+		<Text Name="SectOverview">
+			<Notes>Comment Panel of Sect Overview</Notes>
+			<Title>Sect Panel</Title>
+			<Desc>Sect Panel</Desc>
+		</Text>
+		<Text Name="SectStructure">
+			<Notes>Comment Panel of Sect Structure</Notes>
+			<Title>Sect Structure Panel</Title>
+			<Desc>Sect Structure Panel</Desc>
+		</Text>
+		<Text Name="SectFollower">
+			<Notes>Comment Panel of Sect Disciple</Notes>
+			<Title>Sect Disciple Panel</Title>
+			<Desc>Sect Disciple Panel</Desc>
+		</Text>
+		<Text Name="SectRelationship">
+			<Notes>Comment Panel of Sect Diplomacy</Notes>
+			<Title>Sect Diplomacy Panel</Title>
+			<Desc>Sect Diplomacy Panel</Desc>
+		</Text>
+		<Text Name="PowerManagement">
+			<Notes>Comment Panel of Power Management</Notes>
+			<Title>Power Management</Title>
+		</Text>
+		<Text Name="SectGift">
+			<Notes>Comment Panel of Sect Gift</Notes>
+			<Title>Gift</Title>
+			<Desc>Sect Gift</Desc>
+		</Text>
+		<Text Name="SectTransaction">
+			<Notes>Comment Panel of Sect Trade</Notes>
+			<Title>Sect Trade</Title>
+			<Desc>Sect Trade</Desc>
+		</Text>
+		<Text Name="SectMessageManagement">
+			<Notes>Comment Panel of Sect Messages</Notes>
+			<Title>Sect Messages</Title>
+			<Desc>Sect Messages</Desc>
+		</Text>
+		<Text Name="SectLaws">
+			<Notes>Comment Panel of Sect Rules</Notes>
+			<Title>Sect Rules</Title>
+			<Desc>Sect Rules</Desc>
+		</Text>
+		<Text Name="PedlarTransaction">
+			<Notes>Comment Panel of Trade</Notes>
+			<Title>Trade</Title>
+			<Desc>Trade</Desc>
+		</Text>
+		<Text Name="KeyholeReport">
+			<Notes>Comment Panel of Secret</Notes>
+			<Title>Secret</Title>
+			<Desc>Secret</Desc>
+		</Text>
+		<Text Name="RefineBody">
+			<Notes>Comment Panel of Remold</Notes>
+			<Title>Remold Panel</Title>
+			<Desc>Remold Panel</Desc>
+		</Text>
+		<Text Name="DomesticateSpiritBeast">
+			<Notes>Comment Panel of Pet Raising</Notes>
+			<Title>Pet Raising</Title>
+			<Desc>Pet Raising</Desc>
+		</Text>
+		<Text Name="TrainSpiritBeast">
+			<Notes>Comment Panel of Pet Training</Notes>
+			<Title>Pet Training</Title>
+			<Desc>Pet Training</Desc>
+		</Text>
+		<Text Name="FeedSpiritBeast">
+			<Notes>Comment Panel of Pet Food Nutrition</Notes>
+			<Title>Pet Food Nutrition</Title>
+			<Desc>Pet Food Nutrition</Desc>
+		</Text>
+		<Text Name="BehaviorRecordSpiritBeast">
+			<Notes>Comment Panel of Pet Behavior Records</Notes>
+			<Title>Pet Behavior</Title>
+			<Desc>Pet Behavior</Desc>
+		</Text>
+		<Text Name="EmotionAndThinkingOfAnimal">
+			<Notes>Comment Panel of Thought and Thinking</Notes>
+			<Title>Thought and Thinking</Title>
+			<Desc>Thought and Thinking</Desc>
+		</Text>
+		<Text Name="EmotionATarget">
+			<Notes>About Thought: Comment Panel of Realization</Notes>
+			<Title>Thought: Realization</Title>
+			<Desc>Three identical Realization Thought fragments can be combined into one Realization Thought.</Desc>
+		</Text>
+		<Text Name="EmotionAScene">
+			<Notes>About Thought: Comment Panel of Rationality</Notes>
+			<Title>Thought: Rationality</Title>
+			<Desc>Three identical Rationality Thought fragments can be combined into one Rationality Thought.</Desc>
+		</Text>
+		<Text Name="EmotionAEmotion">
+			<Notes>About Thought: Comment Panel of Perception</Notes>
+			<Title>Thought: Perception</Title>
+			<Desc>Three identical Perception Thought fragments can be combined into one Perception Thought.</Desc>
+		</Text>
+	</List>
+</Texts>

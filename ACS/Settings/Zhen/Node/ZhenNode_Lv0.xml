@@ -1,0 +1,164 @@
+<ZhenNodeDefs><List>
+	<!-- 阵枢 -->
+	<Def Name="Sys_Lost" DisplayName="模组丢失" HideInUi="1">
+		<Lv>0</Lv>
+	</Def>
+	<Def Name="ZhenMainNode_Lv0_3_1" DisplayName="元阵枢-间" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv0_3_2" DisplayName="元阵枢-折" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_Lv0_3_3" DisplayName="元阵枢-弯" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv0_3_4" DisplayName="元阵枢-连" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_Lv0_4_1" DisplayName="元阵枢-索" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	
+	<Def Name="ZhenMainNode_Lv0_4_2" DisplayName="元阵枢-尖" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv0_4_3" DisplayName="元阵枢-列" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv0_5_1" DisplayName="元阵枢-缺" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenMainNode_Lv0_6_1" DisplayName="元阵枢-全" Main="1" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="3"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<!-- 阵眼 -->
+	<Def Name="ZhenNode_Lv0_1_1" DisplayName="元阵眼-结" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv0_2_1" DisplayName="元阵眼-对" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	<Def Name="ZhenNode_Lv0_2_2" DisplayName="元阵眼-隔" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	<Def Name="ZhenNode_Lv0_2_3" DisplayName="元阵眼-并" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv0_3_1" DisplayName="元阵眼-断" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv0_3_2" DisplayName="元阵眼-错" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv0_3_3" DisplayName="元阵眼-落" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv0_3_4" DisplayName="元阵眼-临" Main="0" Base="2">
+		<Lv>0</Lv>
+		<Slot>
+			<li SlotName="Lv0_None" Pos="0"/>
+			<li SlotName="Lv0_None" Pos="1"/>
+			<li SlotName="Lv0_None" Pos="2"/>
+		</Slot>
+	</Def>
+	
+</List></ZhenNodeDefs>

@@ -1,0 +1,80 @@
+<ZhenNodeDefs><List>
+	<!-- 阵枢 -->
+	<Def Name="ZhenMainNode_Lv4_2_1" DisplayName="鸿蒙" Main="1" Base="2">
+		<Lv>4</Lv>
+		<SlotSuits>
+			<li>SlotSuit_27</li>
+			<li>SlotSuit_28</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="Lv4_Hong" Pos="0"/>
+			<li SlotName="Lv4_Meng" Pos="5"/>
+		</Slot>
+	</Def>
+	
+	<!-- 阵眼 -->
+	<Def Name="ZhenNode_Lv4_5_1" DisplayName="天地开辟" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Hong" Pos="0"/>
+			<li SlotName="Lv3_Ri" Pos="1"/>
+			<li SlotName="Lv3_Yue" Pos="2"/>
+			<li SlotName="Lv3_Yang" Pos="3"/>
+			<li SlotName="Lv3_Yin" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv4_5_2" DisplayName="时空衍生" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Hong" Pos="0"/>
+			<li SlotName="Lv3_Yu" Pos="1"/>
+			<li SlotName="Lv3_Zhou" Pos="2"/>
+			<li SlotName="Lv3_Zhong" Pos="3"/>
+			<li SlotName="Lv3_Shi" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv4_5_3" DisplayName="万灵生发" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Hong" Pos="0"/>
+			<li SlotName="Lv3_Sheng" Pos="1"/>
+			<li SlotName="Lv3_Mie" Pos="2"/>
+			<li SlotName="Lv3_Hua" Pos="3"/>
+			<li SlotName="Lv3_Zao" Pos="4"/>
+		</Slot>
+	</Def>
+	<Def Name="ZhenNode_Lv4_5_4" DisplayName="天地归寂" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Meng" Pos="0"/>
+			<li SlotName="Lv3_Ri" Pos="1"/>
+			<li SlotName="Lv3_Yue" Pos="2"/>
+			<li SlotName="Lv3_Yang" Pos="3"/>
+			<li SlotName="Lv3_Yin" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv4_5_5" DisplayName="时空尽衰" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Meng" Pos="0"/>
+			<li SlotName="Lv3_Yu" Pos="1"/>
+			<li SlotName="Lv3_Zhou" Pos="2"/>
+			<li SlotName="Lv3_Zhong" Pos="3"/>
+			<li SlotName="Lv3_Shi" Pos="4"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_Lv4_5_6" DisplayName="万物陨灭" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="Lv4_Meng" Pos="0"/>
+			<li SlotName="Lv3_Sheng" Pos="1"/>
+			<li SlotName="Lv3_Mie" Pos="2"/>
+			<li SlotName="Lv3_Hua" Pos="3"/>
+			<li SlotName="Lv3_Zao" Pos="4"/>
+		</Slot>
+	</Def>
+</List></ZhenNodeDefs>

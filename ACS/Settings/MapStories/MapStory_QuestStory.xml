@@ -1,0 +1,101 @@
+<Stories><List>	
+	<Story Name="Story_QuestStory_Item_ShangGuYiWenLu" Parent="BaseFillingStory">
+		<DisplayName>查阅密卷</DisplayName>
+		<Desc>[NAME]仔细研读密卷。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					if story:GetBindThing().def.Name == "Item_ShangGuYiWenLu1" then
+						me:AddMsg(XT("[NAME]解读密卷，发现其中记载了一名古代仙人的食谱，简直莫名其妙。"));
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu5" then
+						me:AddMsg(XT("[NAME]解读密卷，发现其中记载了上古时期人类如厕方式的衍变，简直不知所谓。"));
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu7" then
+						me:AddMsg(XT("[NAME]解读密卷，发现其中每一个字都认识，但是连起来就完全读不懂了。"));
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu15" then
+						me:AddMsg(XT("[NAME]解读密卷，发现其中记载了许多古代儿童玩具的制造方法，让人摸不着头脑。"));
+					end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>以古代秘印解密</Display>
+				<DisplayCondition><![CDATA[
+					world:GetWorldFlag(93) == 1
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+					if story:GetBindThing().def.Name == "Item_ShangGuYiWenLu1" then
+						me:AddMsg(XT("[NAME]以秘印解读后，竟然从中了解到一段古代秘辛，而随着秘闻的解读，这本秘册也化为飞灰了！"));me:AddMsg(XT("据《上古异闻·仙魔之战·卷一》记载，上古时期，三皇飞升后，只有东皇在人间留下道统，号称东皇宫。其势力横压当代，举世无敌，是不折不扣的正道魁首。在其带领下，两次仙魔大战人间界都获得胜利，其声威冠盖上古，无人不知，无人不晓。"));world:UnLockJianghuClue(40);story:RemoveBindItem();
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu5" then
+						me:AddMsg(XT("[NAME]以秘印解读后，竟然从中了解到一段古代秘辛，而随着秘闻的解读，这本秘册也化为飞灰了！"));me:AddMsg(XT("据《上古异闻·仙魔之战·卷五》记载，第二次仙魔大战开战在即，东皇宫统领人间修行者建立统一战线抵抗魔界，然而紫霄宗却依仗自己正道根脚，不服管束。关键时刻当霹雳行事，东皇掌教亲自出手杀灭紫霄宗抗命的七大长老，收束军心，最终统一战线得以建立，于第二次仙魔大战中获得惨胜。此役因紫霄宗事变产生剧烈内耗，导致修行界损失惨重，东皇宫迫紫霄宗立下誓言，为第三次仙魔大战先锋，将功赎罪。"));world:UnLockJianghuClue(38);story:RemoveBindItem();
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu7" then
+						me:AddMsg(XT("[NAME]以秘印解读后，竟然从中了解到一段古代秘辛，而随着秘闻的解读，这本秘册也化为飞灰了！"));me:AddMsg(XT("据《上古异闻·仙魔之战·卷七》记载，第二次仙魔大战，十大邪教勾结魔头，险些导致人间覆灭。东皇宫掌教以身祭天道，重现东皇法身，以雷霆手段重创十大邪教，令其几乎全部覆灭，这才终于在第二次仙魔大战中获得惨胜。"));world:UnLockJianghuClue(33);story:RemoveBindItem();
+					elseif story:GetBindThing().def.Name == "Item_ShangGuYiWenLu15" then
+						me:AddMsg(XT("[NAME]以秘印解读后，竟然从中了解到一段古代秘辛，而随着秘闻的解读，这本秘册也化为飞灰了！"));me:AddMsg(XT("据《上古异闻·仙魔之战·卷十五》所说，上古时期，人间界在东皇宫的带领下，取得两次仙魔大战的胜利。然而两次大战，修行界皆为惨胜。巨大的损失令东皇宫之中有一派人对第三次仙魔大战生出悲观态度，是以倾尽天下修行界之力打造出至宝“乾坤界”，以希望灾难来临时能遁入其开辟的小千世界中躲过灾难，为人间留下火种。"));world:UnLockJianghuClue(30);story:RemoveBindItem();
+					end
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_QuestStory_Item_TaiYiMiDian" Parent="BaseFillingStory">
+		<DisplayName>查阅书册</DisplayName>
+		<Desc>[NAME]仔细研读书册。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]阅读《太一秘典》，遍览了太一门百年前立派到如今的种种大事，在书册最后，还记载了一种奇特的名为“小乾坤界”的建筑的建造方法。[NAME]一方面感慨“小乾坤界”的精妙，一方面回想起师门种种，不禁百感交集。"));world:UnlockBuilding("Building_SleeveSpace");world:UnlockBuilding("Building_SleeveSpace1");
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>以乾坤印解密</Display>
+				<DisplayCondition><![CDATA[
+					world:GetWorldFlag(93) == 1 and world:GetWorldFlag(94) == 1
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[			me:AddMsg(XT("[NAME]琢磨传说中的古代至宝“乾坤界”和自己从太一门秘穴中获得的“小乾坤界”，觉得其中肯定有什么特殊的联系。一番思索后，[NAME]突然察觉到小乾坤界的阵法符印，似乎可以套用到古代秘印的解印法中。如果以这种方法解印《太一密典》会怎么样呢？[NAME]尝试之下，《太一秘典》上光华闪过，文字变幻，竟然展现出完全不一样的内容，揭露出一段湮没在历史中的隐秘！"));me:AddMsg(XT("据《太一秘典》记载，上古时期，人间修行界的领袖乃是三皇传承之一的东皇宫，其实力威压天下，无人不从。只是千年前一场大变故使东皇宫几乎灭派，变故之后，东皇宫成为修行界的禁忌，其资料历史尽数被销毁，至此仿佛从未存在。而百余年后，其残留一支隐秘的传承悄然出世，为避人耳目，他们另立一派，其名为：太一门！"));world:UnLockJianghuClue(32);
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_QuestStory_Item_JinChuanCanJuan" Parent="BaseFillingStory">
+		<DisplayName>查阅残卷</DisplayName>
+		<Desc>[NAME]尝试阅读金匣残卷。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查阅</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]阅读残卷，发现其上的信息牛头不对马嘴，完全不知道在说什么。"));
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>以古朴法印解密</Display>
+				<DisplayCondition><![CDATA[
+					world:GetWorldFlag(93) == 1 and world:GetWorldFlag(95) == 1
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[			 me:AddMsg(XT("[NAME]尝试将环绕在秘卷周围的法印拓下，与之前在合欢派与昆仑宫发现的残缺法印结合，果然拼成了一个完整而复杂的印记。[NAME]以此印为秘钥，运用古代秘印解印法解读残卷，只见幽深的气息流转，文字变幻之下，已然展现出一段被当今修行界列为禁忌的惊天之秘！"));me:AddMsg(XT("据《金船残卷》记载，千年之前，东皇宫突然在修行界掀起一场大乱，欲毁天下修行者根基。世传东皇宫掌门在仙魔大战中感染魔息，暗自修改东皇所传五行大法，吸纳魔息修炼，因此坠入魔道，欲颠覆人间。东皇宫掌教更是号称魔中之魔，以绝代修为睥睨天下，无人可敌。\n天下修行者为求生存，不论正邪联合起来，血战十数年，终于覆灭了东皇宫。"));world:UnLockJianghuClue(41);story:RemoveBindItem();
+				
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

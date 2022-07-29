@@ -1,0 +1,200 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Other_Portia_1">
+	<ThingName>异界之物：其一</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_other05[/img]</Desc>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_yijiezhiwu01</TexPath>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<Rate>9</Rate>
+	<TexScale>0.85</TexScale>
+	<ElementKind>None</ElementKind>
+	<Beauty>5</Beauty>
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<NotFengshuiItem>1</NotFengshuiItem>
+	</Item>
+	<StoryBnts>
+		<li Name="查看" Desc="试着查看这件奇特的物体" Story="Story_Item_Portia_YijieZhiWu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_2" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其二</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_QQBed[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_3" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其三</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_functionalFurnishing_DreamLamp[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_4" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其四</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_objects_carpet_003_2[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_5" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其五</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_Fan[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_6" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其六</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_gift_KMLamp_2[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_7" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其七</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_Station02[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_8" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其八</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_safe[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_9" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：其九</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_WinterSolstice_xueren03[/img]</Desc>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_yijiezhiwu02</TexPath>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_10" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_hoe_steel[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_11" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十一</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_Marco_Weapon_001[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_12" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十二</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_weapon_001[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_13" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十三</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_weapon_003[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_14" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十四</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_weapon_ironAxe[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_15" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十五</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_weapon_ironPickaxe[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_16" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十六</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_gift_Aadit[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_17" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十七</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_researchcd[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_18" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十八</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_bus002[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_19" Parent="Item_Other_Portia_9">
+	<ThingName>异界之物：十九</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_AlpacaSmall[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_20" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：廿</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_food_HaiTaiFengWeiJuanBing[/img]</Desc>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_yijiezhiwu03</TexPath>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_21" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿壹</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_food_04[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_22" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿二</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_small_NaiYouGuiYuTang[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_23" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿三</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_food_ShuCaiWanZiTang[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_24" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿四</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_small_JingDianRouJiangMian[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_25" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿五</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_yamtato_puree[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_26" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿六</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_food_ZhiShiXiaJuFan[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_27" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿七</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_yingyuecaozhi[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_28" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿八</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_fish[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_29" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：廿九</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_wheat_seeds[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_30" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：卅</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_small_TongTianYangNai[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_31" Parent="Item_Other_Portia_20">
+	<ThingName>异界之物：卅壹</ThingName>
+	
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_food_03[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_32" Parent="Item_Other_Portia_1">
+	<ThingName>异界之物：卅二</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_treasure_AircraftModel[/img]</Desc>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_yijiezhiwu04</TexPath>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_33" Parent="Item_Other_Portia_32">
+	<ThingName>异界之物：卅三</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_treasure_RocketModel[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_34" Parent="Item_Other_Portia_32">
+	<ThingName>异界之物：卅四</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_treasure_SailboatModel[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_35" Parent="Item_Other_Portia_32">
+	<ThingName>异界之物：卅五</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_treasure_FoldingFanOrnaments[/img]</Desc>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_Portia_36" Parent="Item_Other_Portia_32">
+	<ThingName>异界之物：卅六</ThingName>
+	<Desc>一个来自异界的封印物，此封印以特殊手法混合异界气息而成，使用暴力开启会导致此物彻底湮灭。运用神识查看，可以看到其中似乎藏有一个奇怪的物件。\n            [img]res\Sprs\object_portia\Item_treasure_Objects11[/img]</Desc>
+	</ThingDef>
+</List></ThingDefs>

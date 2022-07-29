@@ -1,0 +1,12 @@
+<Defs><List>	
+	<Def Name="LNY">
+		<Item Weight="1" CountName="Basic">
+			<ItemName>Item_BoarMeat</ItemName>
+			<ItemExtraInfo>
+				<YouPower>10</YouPower>
+				<Desc>此猪肉幽萃+10，飞一般的猪肉。</Desc>
+			</ItemExtraInfo>
+			<AucType>Trash</AucType>
+		</Item>
+	</Def>
+</List></Defs>

@@ -1,0 +1,128 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Story_PracticeSpeed1" Type="Normal">
+		<DisplayName>提高5%的修炼速度。</DisplayName>
+		<Desc>提高5%的修炼速度。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingMax1" Type="Normal">
+		<DisplayName>从根本上提高2%灵气最大值。</DisplayName>
+		<Desc>从根本上提高2%灵气最大值。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.02"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_FabaoPower1" Type="Normal">
+		<DisplayName>从根本上提高5%的法宝威力。</DisplayName>
+		<Desc>从根本上提高5%的法宝威力。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.05"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_LingAbsorbSpeed1" Type="Normal">
+		<DisplayName>从根本上提高10%的灵气吸收速度。</DisplayName>
+		<Desc>从根本上提高10%的灵气吸收速度。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" BAddP="0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_WorldMapFlySpeedAddP1" Type="Normal">
+		<DisplayName>提高50%的御剑飞行速度。</DisplayName>
+		<Desc>提高50%的御剑飞行速度。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WorldMapFlySpeedAddP" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Story_ShieldConversionRate1" Type="Normal">
+		<DisplayName>提高10%的灵气护盾效率。</DisplayName>
+		<Desc>提高10%的灵气护盾效率。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Story_DragonBlood" Type="Normal">
+		<DisplayName>龙之血脉</DisplayName>
+		<Desc>龙之血脉觉醒：根骨提高2成;神识提高2成;从根本上提高25%的灵气最大值。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>2,2,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.25"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_Story_BossLong_Wish1" Type="Normal">
+		<DisplayName>馈赠</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.3,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_Story_BossLong_Wish2" Type="Normal">
+		<DisplayName>馈赠</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.3,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_Story_BossLong_Wish3" Type="Normal">
+		<DisplayName>馈赠</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.3,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_Story_BossLong_Wish4" Type="Normal">
+		<DisplayName>馈赠</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0.3,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Modifier_GreenBrothel" Type="Normal">
+		<DisplayName>好心情</DisplayName>
+		<Desc>在绿楼坊娱乐之后，拥有持续5日的好心情。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Moods>
+			<li>Mood_GreenBrothel</li>
+		</Moods>
+	</Modifier>
+</List></ModifierDefs>

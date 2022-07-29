@@ -1,0 +1,14 @@
+<MainList><List>
+	
+	<Data Kind="Builds" Unlock="1" Type="生活"  CMDType="Build" Name="BambooBed"/>	
+
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="灯饰"  CMDType="Build" Name="BambooLight"/>
+	
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BambooScreen1"/>
+	<Data Kind="Builds" Unlock="4" Type="装饰"  Label="家具"  CMDType="Build" Name="Building_BambooScreen2"/>
+
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_WaterWheel"/>						<!--水车-->
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_BambooPavilion"/>
+	
+	<Data Kind="Builds" Unlock="0" Type="灵宠"  CMDType="Build" Name="LsPanda_Carve"/>
+</List></MainList>

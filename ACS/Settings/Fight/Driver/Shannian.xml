@@ -1,0 +1,13 @@
+<FightDriverDefs><List>
+	<Driver Name="Shannian">
+		<EnterSkill></EnterSkill><!--出场skill-->
+		<DieSkill></DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li>
+				<Skills>						
+					<li Type="Normal" Name="shannia_jiaxue" Rate="1" CoolDown="30"/><!--神念-->
+				</Skills>
+			</li>			
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

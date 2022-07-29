@@ -1,0 +1,58 @@
+<Defs><List>
+	<Def Name="Normal">
+		<BuyCount>
+			<CountLimit>500</CountLimit>
+			<ExchangeLimit>0</ExchangeLimit>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>20</AddPerDay>
+		</BuyCount>
+		<Count Min="400" Max="500"/>
+	</Def>
+	<Def Name="Eso">
+		<BuyCount>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>0.05</AddPerDay>
+		</BuyCount>
+	</Def>
+	<Def Name="Mibao">
+		<BuyCount>
+			<AddPerSec>1</AddPerSec>
+			<CountLimit>10</CountLimit>
+		</BuyCount>
+	</Def>
+	<Def Name="Basic">
+		<BuyCount>
+			<CountLimit>5000</CountLimit>
+			<CountLimit>0</CountLimit>
+			<ExchangeLimit>5000</ExchangeLimit>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>0</AddPerDay>
+		</BuyCount>
+		<Count Min="1000" Max="1500"/>
+	</Def>
+	<Def Name="Rare">
+		<BuyCount>
+			<CountLimit>10</CountLimit>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>0.1</AddPerDay>
+		</BuyCount>
+		<Count Min="3" Max="6"/>
+	</Def>
+	<Def Name="ReallyRare">
+		<BuyCount>
+			<CountLimit>5</CountLimit>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>0.05</AddPerDay>
+		</BuyCount>
+		<Count Min="1" Max="1"/>
+	</Def>
+	<Def Name="ExtremelyRare">
+		<BuyCount>
+			<CountLimit>2</CountLimit>
+			<ExchangeLimit>0</ExchangeLimit>
+			<AddPerSec>0</AddPerSec>
+			<AddPerDay>0.03</AddPerDay>
+		</BuyCount>
+		<Count Min="1" Max="1"/>
+	</Def>
+</List></Defs>

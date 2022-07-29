@@ -1,0 +1,414 @@
+<Defs><List>
+	<Def Name="SlightlyFear">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Fear1</Tag>
+		<Level>1</Level>
+		
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToShui</PName>
+				<Addv>-0.1</Addv>
+			</li>
+		</Properties>
+		<BaseFive>0,0.5,0,0,0</BaseFive>
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<DisplayName>有点恐惧</DisplayName>
+		<SingleFormat>
+			<li>对其他动物感到{0}</li>
+			<li>对新的环境感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Fear">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Fear2</Tag>
+		<Level>2</Level>
+		
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToShui</PName>
+				<Addv>-0.25</Addv>
+			</li>
+		</Properties>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<DisplayName>恐惧</DisplayName>
+		<SingleFormat>
+			<li>对周围的人类感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="GreatlyFear">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToShui</PName>
+				
+				<Addv>-0.5</Addv>
+			</li>
+		</Properties>
+		<BaseFive>0,1.5,0,0,0</BaseFive>
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<DisplayName>非常恐惧</DisplayName>
+		<SingleFormat>
+			<li>想起的天敌，感到{0}</li>
+			<li>想起惨遭杀害的同伴，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="SlightlyHappy">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Happy1</Tag>
+		<Level>1</Level>
+		
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToHuo</PName>
+				
+				<Addv>-0.1</Addv>
+			</li>
+		</Properties>
+		<BaseFive>0,0,0,0,0.5</BaseFive>
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<DisplayName>有点高兴</DisplayName>
+		<SingleFormat>
+			<li>想起了晴天，感到{0}</li>
+			<li>想起了好吃的东西，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Happy">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Happy2</Tag>
+		<Level>2</Level>
+		<BaseFive>0,0,0,0,1</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToHuo</PName>
+				
+				<Addv>-0.25</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<DisplayName>高兴</DisplayName>
+		<SingleFormat>
+			<li>对目前的环境感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="GreatlyHappy">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<BaseFive>0,0,0,0,1.5</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToHuo</PName>
+				
+				<Addv>-0.5</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<DisplayName>非常高兴</DisplayName>
+		<SingleFormat>
+			<li>想起与亲人重逢的时刻，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="SlightlyAnger">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Anger1</Tag>
+		<Level>1</Level>
+		<BaseFive>0,0,0,0.5,0</BaseFive>
+
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToMu</PName>
+				
+				<Addv>-0.1</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<DisplayName>有点愤怒</DisplayName>
+		<SingleFormat>
+			<li>对时不时路过的人感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Anger">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Anger2</Tag>
+		<Level>2</Level>
+		<BaseFive>0,0,0,1,0</BaseFive>
+
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToMu</PName>
+				
+				<Addv>-0.25</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<DisplayName>愤怒</DisplayName>
+		<SingleFormat>
+			<li>回想起只身涉险的同类，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="GreatlyAnger">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<BaseFive>0,0,0,1.5,0</BaseFive>
+
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToMu</PName>
+				
+				<Addv>-0.5</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<DisplayName>非常愤怒</DisplayName>
+		<SingleFormat>
+			<li>想起与其他动物争抢地盘的日子，感到{0}</li>
+			<li>想起以前欺负过自己的同类，感到{0}</li>
+		</SingleFormat>
+	</Def>
+
+	<Def Name="SlightlyWorry">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Worry1</Tag>
+		<Level>1</Level>
+		<BaseFive>0,0,0.5,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToJin</PName>
+				
+				<Addv>-0.1</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<DisplayName>有点担忧</DisplayName>
+		<SingleFormat>
+			<li>想起路过的陌生人，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Worry">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Worry2</Tag>
+		<Level>2</Level>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToJin</PName>
+				
+				<Addv>-0.25</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<DisplayName>担忧</DisplayName>
+		<SingleFormat>
+			<li>想起深不见底的河流，感到{0}</li>
+			<li>想起在峡谷边缘奔跑，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="GreatlyWorry">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<BaseFive>0,0,1.5,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToJin</PName>
+				
+				<Addv>-0.5</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<DisplayName>非常担忧</DisplayName>
+		<SingleFormat>
+			<li>想起生死攸关的野外生存，感到{0}</li>
+			<li>想起曾经差点被人捕杀，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="SlightlyMiss">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Miss1</Tag>
+		<Level>1</Level>
+		<BaseFive>0.5,0,0,0,0</BaseFive>
+
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToTu</PName>
+				
+				<Addv>-0.1</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>1</FeatureValue>
+		<DisplayName>有点思念</DisplayName>
+		<SingleFormat>
+			<li>突然{0}几个模糊的身影</li>
+			<li>突然{0}模糊的风景</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="Miss">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Miss2</Tag>
+		<Level>2</Level>
+		<BaseFive>1,0,0,0,0</BaseFive>
+
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToTu</PName>
+				
+				<Addv>-0.25</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>2</FeatureValue>
+		<DisplayName>思念</DisplayName>
+		
+		<SingleFormat>
+			<li>突然对在野外生活的日子感到{0}</li>
+			<li>突然对几个同伴的身影感到{0}</li>
+		</SingleFormat>
+	</Def>
+	<Def Name="GreatlyMiss">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<BaseFive>1.5,0,0,0,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToTu</PName>
+				
+				<Addv>-0.5</Addv>
+			</li>
+		</Properties>
+		
+		<FeatureTag>Perception</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+		<DisplayName>非常思念</DisplayName>
+		<SingleFormat>
+			<li>脑海中浮现出亲属的模样，感到{0}</li>
+			<li>脑海中浮现出清澈的小溪，感到{0}</li>
+		</SingleFormat>
+	</Def>
+	
+	<Def Name="Peace">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>平静</DisplayName>
+		<BaseFive>-0.1,-0.1,-0.1,-0.1,-0.1</BaseFive>
+		<SingleFormat>
+			<li>脚踩着坚实的土地，感到{0}</li>
+			<li>望着来往的生灵，感到{0}</li>
+		</SingleFormat>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToHuo</PName>
+				
+				<Addv>0.1</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToMu</PName>
+				
+				<Addv>0.1</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToJin</PName>
+				
+				<Addv>0.1</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToShui</PName>
+				
+				<Addv>0.1</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToTu</PName>
+				
+				<Addv>0.1</Addv>
+			</li>
+		</Properties>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+	</Def>
+	
+	<Def Name="Eruption">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Normal</Tag>
+		<Level>2</Level>
+		<DisplayName>躁动</DisplayName>
+		<BaseFive>0.3,0.3,0.3,0.3,0</BaseFive>
+		<Properties>
+			<li>
+				<PName>NpcFight_ShieldResistanceToHuo</PName>
+				
+				<Addv>-0.2</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToMu</PName>
+				
+				<Addv>-0.2</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToJin</PName>
+				
+				<Addv>-0.2</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToShui</PName>
+				
+				<Addv>-0.2</Addv>
+			</li>
+			<li>
+				<PName>NpcFight_ShieldResistanceToTu</PName>
+				
+				<Addv>-0.2</Addv>
+			</li>
+		</Properties>
+		<SingleFormat>
+			<li>在本能的驱使下，感到{0}</li>
+		</SingleFormat>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+	</Def>
+	
+	<Def Name="Regret">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>后悔</DisplayName>
+		<SingleFormat>
+			<li>想起{0}的事，梅花便落了下来</li>
+			<li>想起{0}的事，梅花便落满南山</li>
+		</SingleFormat>
+		<BaseFive>1,1,1,1,-2</BaseFive>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+	</Def>
+</List></Defs>

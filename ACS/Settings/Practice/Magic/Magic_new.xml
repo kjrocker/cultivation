@@ -1,0 +1,489 @@
+<Magics><List>
+	<Magic Name="BuildMine" Type="Class">
+		<DisplayName>造山术</DisplayName>
+		<Desc>消耗大量灵力，将地埋深处的矿产拔出地表。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>NoBuilding|InLight|Walkable</SelectTarget>
+		<ClassName>Magic_BuildMine</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>100000</CostLing>
+	</Magic>
+
+	<Magic Name="BuildRain" Type="Class">
+		<DisplayName>甘霖术</DisplayName>
+		<Desc>在一片区域中召唤一片甘霖，可以熄灭火焰，并稍微提高植物的生长速度。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>InLight|Walkable</SelectTarget>
+		<ClassName>Magic_BuildRain</ClassName>
+		<TargetDesc>请选择一个地点</TargetDesc>
+		<CostLing>1000</CostLing>
+	</Magic>
+
+	<Magic Name="Prophesy" Type="Class">
+		<DisplayName>周天神算</DisplayName>
+		<Desc>消耗寿命推算天机，试图在未来一个月中获得前知之力。道行，悟性，机缘越高，成功率也越高。</Desc>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<Param1>5</Param1><!--施法时间-->
+		<Param2>16800</Param2><!--持续时间-->
+		<CostAge>10</CostAge>
+		<SelectMode>None</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<ClassName>Magic_Prophesy</ClassName>
+	</Magic>
+
+	<Magic Name="Prophesy_MapStory" Type="Class">
+		<DisplayName>大衍神算</DisplayName>
+		<Desc>消耗寿命推算天机，试图获取一条秘闻。道行，悟性，机缘越高，成功率也越高。</Desc>
+		<Icon>res\Sprs\ui\icon_dayan01</Icon>
+		<Param1>5</Param1><!--施法时间-->
+		<CostAge>10</CostAge>
+		<SelectMode>None</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<ClassName>Magic_MapStory</ClassName>
+	</Magic>
+
+	<Magic Name="BuildSea" Type="Class">
+		<DisplayName>开湖术</DisplayName>
+		<Desc>施展神通，将一片区域改造为浅水。</Desc>
+		<CMD>dasda</CMD>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>ShallowWater</sParam1>
+		<Param1>65</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_BuildSea</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<MaxArea>100</MaxArea>
+		<CostLing>30000</CostLing>
+	</Magic>
+
+	<Magic Name="BuildLand" Type="Class">
+		<DisplayName>造陆术</DisplayName>
+		<Desc>施展神通，将一片区域改造为土地。</Desc>
+		<CMD>dasda</CMD>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>Soil</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_BuildSea</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<MaxArea>100</MaxArea>
+		<CostLing>30000</CostLing>
+	</Magic>
+
+	<Magic Name="BuildLing" Type="Class">
+		<DisplayName>造化灵土</DisplayName>
+		<ItemCost>
+			<li name="Item_ZaoHuaYuZi" count="1"/>
+		</ItemCost>
+		<Desc>以秘法一次性激发造化玉籽之灵效，将一片区域化为灵土。</Desc>
+		<CMD>dasda</CMD>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil</sParam1>
+		<Param1>49</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_BuildSea</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>200000</CostLing>
+	</Magic>
+
+	<Magic Name="BuildLingWater" Type="Class">
+		<DisplayName>造化灵池</DisplayName>
+		<ItemCost>
+			<li name="Item_ZaoHuaYuZi" count="1"/>
+		</ItemCost>
+		<Desc>以秘法一次性激发造化玉籽之灵效，将一片区域化为灵水。</Desc>
+		<CMD>dasda</CMD>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingWater</sParam1>
+		<Param1>65</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_BuildSea</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>200000</CostLing>
+	</Magic>
+
+	<Magic Name="BuildFertileSoil" Type="Class">
+		<DisplayName>造化沃土</DisplayName>
+		<ItemCost>
+			<li name="Item_Dan_LingYuanSha" count="1"/>
+		</ItemCost>
+		<Desc>以秘法激发一颗造化玉砂之灵效，将一片区域化为沃土。</Desc>
+		<CMD>dasda</CMD>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>FertileSoil</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_BuildSea</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>100000</CostLing>
+	</Magic>
+
+	<Magic Name="FengshuiItemOpen" Type="Class">
+		<DisplayName>风水鉴定</DisplayName>
+		<ItemCost>
+			<li name="Item_LingStone" count="9"/>
+		</ItemCost>
+		<Desc>消耗灵石，激发风水镇物，以识别其特性。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<SelectTarget>InLight|Item</SelectTarget>
+		<ClassName>Magic_FSItemOpen</ClassName>
+		<TargetDesc>请选择一个未鉴定的风水镇物</TargetDesc>
+		<CostLing>500</CostLing>
+	</Magic>
+
+	<Magic Name="FengshuiItemCreate" Type="Class">
+		<DisplayName>风水凝练</DisplayName>
+		<Desc>消耗本源精血为一件物品赋予风水镇物属性。然而未经岁月凝练，使用此法生成的镇物效果较弱，且永远不可能生成通灵镇物。\n[color=#FF0000]随着天机变动，这个神通似乎已失去了作用[/color]</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<CostAge>0</CostAge>
+		<SelectTarget>InLight|Item</SelectTarget>
+		<ClassName>Magic_FSItemCreate</ClassName>
+		<TargetDesc>请选择一个非风水镇物道具</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="LingXiZhou" Type="Class">
+		<DisplayName>灵犀咒</DisplayName>
+		<Desc>以神念交感对方神念，尝试说服对方加入我方阵营。自身道行越高，双方境界与感知差距越大，越容易成功。如果目标有修为，则目标必须处于昏迷状态。对同一个目标只能使用一次。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_LingXiZhou</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个未被使用过灵犀咒的敌人</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="XinYinJue" Type="Class">
+		<DisplayName>心印诀</DisplayName>
+		<Desc>以心相印，产生共鸣，以说服对方加入我方阵营。自身道行越高，双方境界差距越大，越容易成功。如果双方有相似的出生历世特性或亲戚关系，则大幅度提高成功率。如果目标有修为，则目标必须处于昏迷状态。此法十分凶险，一旦失败，目标死亡，自身也会受伤。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_XinYinJue</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个敌人</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="TianMoWu" Type="Class">
+		<DisplayName>天魔舞</DisplayName>
+		<Desc>施展天魔舞，将目标转化到我方阵营。随着时间流逝，目标清醒的可能性逐渐提高。双方境界与魅力差距越大，清醒的几率越低。如果目标有修为，则目标必须处于昏迷状态。此法每次施展都会损伤目标神志。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_TianMoWu</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个敌人</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="WuYinKeShen" Type="Class">
+		<DisplayName>五印刻神</DisplayName>
+		<Desc>以霸道的法术强行洗脑，将目标转化到我方阵营一段时间。双方境界与悟性差距越大，持续的时间越长。如果目标有修为，则目标必须处于昏迷状态。此法每次施展都会极大的延长持续时间，但是会对目标神识产生不可逆转的损害。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_WuYinKeShen</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个敌人</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="FenShenZhiShu" Type="Class">
+		<DisplayName>分神之术</DisplayName>
+		<Desc>运转本命元神，强行将其分裂，以获得额外一条分神。在这个过程中会损失最大灵气上限，并快速衰老。运用分神之术的次数越多，付出的代价也越大。</Desc>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<Param1>5</Param1><!--施法时间-->
+		<LuaCostAge>me:GetDivideCostAge()</LuaCostAge>
+		<LuaCostMaxLing>me:GetDivideCostMaxLing()</LuaCostMaxLing>
+		<SelectMode>None</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<ClassName>Magic_FenShenZhiShu</ClassName>
+	</Magic>
+
+	<Magic Name="LinghunKaowen" Type="Class">
+		<DisplayName>灵魂拷问</DisplayName>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Desc>可以对弥留的角色进行灵魂拷问，尝试获得对方的秘密。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<TargetDesc>请选择需要拷问的角色</TargetDesc>
+		<Param1>1</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_LinghunKaowen</ClassName>
+	</Magic>
+
+
+	<Magic Name="LiuRenShensuan">
+		<DisplayName>六壬神算</DisplayName>
+		<Desc>选择一个角色，尝试获取其行踪。道行越高，了解的信息越多，获取行踪的成功率越高。。</Desc>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<Kind>Good</Kind>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>5000</CostLing>
+		<CostAge>1</CostAge>
+		<Penalty>0</Penalty>
+		<CMD>LiuRenShensuan</CMD>
+		<SelectType>LiuRenShensuan</SelectType>
+	</Magic>
+
+	<Magic Name="Linghunwenzhong">
+		<DisplayName>神灵问踪法</DisplayName>
+		<Desc>选择一个角色，尝试获取其行踪。神民数量越多，了解的信息越多，获取行踪的成功率越高。</Desc>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<Kind>Good</Kind>
+		<Param1>10</Param1><!--所需时间-->
+		<CostLing>5000</CostLing>
+		<CostAge>1</CostAge>
+		<Penalty>0</Penalty>
+		<CMD>Linhunwenzhong</CMD>
+		<SelectType>LiuRenShensuan</SelectType>
+	</Magic>
+
+	<Magic Name="YouTongLing_Item" Type="Class">
+		<DisplayName>玄魂造命</DisplayName>
+		<Desc>消耗7枚幽珀，3枚灵魄与1枚元灵之珀，尝试为目标物品通灵。通灵结果需要一段时间才能出现。物品在通灵中时不可被再次通灵。施术者道行越高，物品被通灵次数越多，越容易通灵成功。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<SelectTarget>Item|NoTongLing</SelectTarget>
+		<ClassName>Magic_TongLing</ClassName>
+		<TargetDesc>请选择一个物品</TargetDesc>
+		<ItemCost>
+		    <li name="Item_SoulCrystalYou" count="7"/>
+		    <li name="Item_SoulCrystalLing" count="3"/>
+		    <li name="Item_SoulCrystalYuanLing" count="1"/>
+		</ItemCost>
+	</Magic>
+	
+	<Magic Name="LingTongLing_Building" Type="Class">
+		<DisplayName>命火筑灵</DisplayName>
+		<Desc>消耗十年命元与1枚元灵之珀，尝试使目标建筑通灵。通灵结果需要一段时间才能出现。建筑在通灵中时不可被再次通灵。施术者道行越高，建筑被通灵次数越多，越容易通灵成功。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<CostAge>10</CostAge>
+		<SelectTarget>Building|NoTongLing</SelectTarget>
+		<ClassName>Magic_TongLing</ClassName>
+		<TargetDesc>请选择一个建筑</TargetDesc>
+		<ItemCost>
+		    <li name="Item_SoulCrystalYuanLing" count="1"/>
+		</ItemCost>
+	</Magic>
+
+	<Magic Name="ZaoHuaSuTi" Type="Class">
+		<DisplayName>造化塑体</DisplayName>
+		<Desc>消耗一枚造化玉籽，将目标年龄重塑为14岁的状态，并恢复损失的所有身体部件。如对精怪使用，则会为其塑造一具崭新的身体。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<CostAge>5</CostAge>
+		<SelectTarget>ZaoHuaThing</SelectTarget>
+		<ClassName>Magic_ZaoHuaSuTi</ClassName>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<ItemCost>
+		    <li name="Item_ZaoHuaYuZi" count="1"/>
+		</ItemCost>
+	</Magic>
+
+	<Magic Name="DianHua" Type="Class">
+		<DisplayName>造化气息</DisplayName>
+		<Desc>施展法术模拟天道的种种变化，使动物感受到造化的玄妙，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="Nature" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_Angry" Type="Class">
+		<DisplayName>通心：愤恨</DisplayName>
+		<Desc>使用木属性灵气，使动物产生愤恨的情感，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="GreatlyAnger" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_Happy" Type="Class">
+		<DisplayName>通心：喜乐</DisplayName>
+		<Desc>使用火属性灵气，使动物产生快乐的情感，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="GreatlyHappy" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_Miss" Type="Class">
+		<DisplayName>通心：思念</DisplayName>
+		<Desc>使用土属性灵气，使动物产生思念的情感，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="GreatlyMiss" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_Afraid" Type="Class">
+		<DisplayName>通心：惧怖</DisplayName>
+		<Desc>使用水属性灵气，使动物产生恐怖的情感，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="GreatlyFear" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_Worry" Type="Class">
+		<DisplayName>通心：忧虑</DisplayName>
+		<Desc>使用金属性灵气，使动物产生忧虑的情感，促进其灵智的觉醒。此举有伤天道，消耗寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_ThinkableAnimalFrag</ClassName>
+		<MaxArea>64</MaxArea>
+		<CostAge>5</CostAge>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>0</CostLing>
+		<UnLockThink>
+			<li>
+				<OpenMind>1</OpenMind>
+			</li>
+			<li>
+				<Frags>
+					<li Frag="GreatlyWorry" />
+				</Frags>
+			</li>
+		</UnLockThink>
+	</Magic>
+	
+	<Magic Name="Magic_YuanLing" Type="Class">
+		<DisplayName>元灵补天诀</DisplayName>
+		<Desc>对秘宝胚胎使用，消耗1枚元灵之珀，使其激活条件直接满足。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Item</SelectTarget>
+		<ClassName>Magic_YuanLingBuTianJue</ClassName>
+		<TargetDesc>请选择一个法宝胚胎</TargetDesc>
+		<ItemCost>
+		    <li name="Item_SoulCrystalYuanLing" count="1"/>
+		</ItemCost>
+	</Magic>
+</List></Magics>

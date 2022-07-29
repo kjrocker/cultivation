@@ -1,0 +1,195 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="Boss_PartFight" Type="Normal">
+		<DisplayName>BOSS通用部位战斗属性</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="100"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong" Type="Normal">
+		<DisplayName>蛟龙</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_CANTBEMAGIC</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="5000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="400"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="50"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="400"/>
+		
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="5"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="15"/>
+			
+			<li Name="ToleranceTMin" AddV="-270"/>
+			<li Name="ToleranceTMax" AddV="1200"/>
+			
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.5"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="1.2"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.2"/>		
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="-0.2"/>		
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_JiaolongFight" Type="Normal">
+		<DisplayName>蛟龙战斗属性</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="15000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="600"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="600"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="600"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Boss_Jiaolong_Part" Type="Normal">
+		<DisplayName>蛟龙部位</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="75"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong_Part1" Type="Normal">
+		<DisplayName>蛟龙部位虚弱</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-50"/>
+		</Properties>
+	</Modifier> 
+
+
+	<Modifier Name="Boss_Jiaolong_JiSiGongYang" Type="Normal">
+		<DisplayName>成长</DisplayName>
+		<Desc>妖龙从祭品中获取力量，灵气变得更浑厚了。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="20"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Boss_Jiaolong_Shuiling" Type="Normal">
+		<DisplayName>水灵之力</DisplayName>
+		<Desc>凝聚水灵之力，达到100层会释放泽国。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+
+
+	<Modifier Name="Boss_Jiaolong_LongNu" Type="Normal"><!--龙怒-->
+		<DisplayName>龙怒</DisplayName>
+		<Desc>妖龙进入愤怒状态，全属性提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>60</Duration>
+		<Display>1</Display>
+		<MaterialDatas>
+			<li Name="_RimPower" Value="1.8"/>
+			<li Name="_RimFlash" Value="5"/>
+		</MaterialDatas>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="700"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="2"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="25"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="400"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong_Longxi" Type="Normal"><!--龙吸BUFF 挂在对象身上的-->
+		<DisplayName>龙吸术</DisplayName>
+		<Desc>妖龙深深地吸了一口气，角色身体内的水分正在快速流失！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<EffectBind>
+			<li Path="Effect/B/Prefabs/Magic aura(20)/Magic aura2 blue" Bip="BipGround"/>
+		</EffectBind>
+		<Properties>
+			<li Name="WaterConsumeConstant" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong_zhenlong" Type="Normal">
+		<DisplayName>真龙</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLeyes biped Head" Bip="biped Head"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou  biped Head" Bip="biped Head"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan01   biped Head" Bip="biped Head"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan02   biped Head" Bip="biped Head"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone138"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone132"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone130"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone134"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone128"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone126"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone140"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped Spine1"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone47"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone51"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone53"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone113"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone111"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone109"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone105"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone187"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone73"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone117"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone166"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone115"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone185"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone125"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone75"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone121"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone119"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone195"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone189"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone191"/>
+			<li Path="Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody" Bip="biped_bone193"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="Boss_Jiaolong_fanshi" Type="Normal"><!--龙吸BUFF 挂在对象身上的-->
+		<DisplayName>噬-蛟龙反噬</DisplayName>
+		<Desc>一段时间之后将反噬其法宝，法宝灵气削减一半，火属性的法宝效果翻倍，土属性法宝效果减半。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_jiaolong_fansi</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Aura/SpinningAura/SpinningWater" />
+		</EffectBind>
+	</Modifier> 
+	
+</List></ModifierDefs>

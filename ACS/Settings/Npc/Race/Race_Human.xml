@@ -1,0 +1,99 @@
+<RaceDefs><List>
+
+<RaceDef Name="Human">
+	<WisdomRaceKind>Human</WisdomRaceKind>	
+	<DisplayName>人族</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>普通的动物：人类</Desc>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>HumanBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<NameGeneratorPrefix>RaceName/Prefix_Human.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<EventAge>14</EventAge>
+	<YearSkillPoint>0.25</YearSkillPoint>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_renzu01</TexPath>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="6"	>1,1,3,1,3</li> 
+		<li Sex="Male" 	 AgeMin="7" 	AgeMax="16"	>2,2,3,2,3</li>
+		<li Sex="Male" 	 AgeMin="17" 	AgeMax="22" >3,3,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="23" 	AgeMax="40" >3,4,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="41" 	AgeMax="999">2,3,2,3,3</li>		
+		<li Sex="Female" AgeMin="0" 	AgeMax="6"	>1,1,3,1,3</li>
+		<li Sex="Female" AgeMin="7" 	AgeMax="16" >2,2,3,2,3</li>
+		<li Sex="Female" AgeMin="17" 	AgeMax="22" >3,3,4,3,3</li>
+		<li Sex="Female" AgeMin="23" 	AgeMax="40" >4,3,3,3,3</li>
+		<li Sex="Female" AgeMin="41" 	AgeMax="999">3,2,2,3,3</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="HumanRaceMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="HumanRaceMaxHp"/>
+		<li Name="RaceComfyTMin" Value="HumanRaceComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="HumanRaceComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="HumanRaceToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="HumanRaceToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="HumanRaceVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="HumanRaceBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="HumanRaceRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Human_JGZT">
+	<DisplayName>精怪</DisplayName>
+	<Desc>天地间的物品/建筑/植物等偶然通灵化形后的总称。</Desc>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>HumanBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<NameGeneratorPrefix>Human/Prefix.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>Human/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>Human/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<EventAge>14</EventAge>
+	<YearSkillPoint>0.25</YearSkillPoint>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_jingling01</TexPath>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="6"	>3,4,3,3,3</li> 
+		<li Sex="Male" 	 AgeMin="7" 	AgeMax="16"	>3,4,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="17" 	AgeMax="22" >3,4,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="23" 	AgeMax="40" >3,4,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="41" 	AgeMax="999">3,4,3,3,3</li>		
+		<li Sex="Female" AgeMin="0" 	AgeMax="6"	>3,4,3,3,3</li>
+		<li Sex="Female" AgeMin="7" 	AgeMax="16" >3,4,3,3,3</li>
+		<li Sex="Female" AgeMin="17" 	AgeMax="22" >3,4,3,3,3</li>
+		<li Sex="Female" AgeMin="23" 	AgeMax="40" >3,4,3,3,3</li>
+		<li Sex="Female" AgeMin="41" 	AgeMax="999">3,4,3,3,3</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="HumanRaceMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="HumanRaceMaxHp"/>
+		<li Name="RaceComfyTMin" Value="HumanRaceComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="HumanRaceComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="HumanRaceToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="HumanRaceToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="HumanRaceVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="HumanRaceBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="HumanRaceRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+</List></RaceDefs>

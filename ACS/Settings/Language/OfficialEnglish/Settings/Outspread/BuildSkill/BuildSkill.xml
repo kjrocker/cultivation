@@ -1,0 +1,8 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="zhaolan">
+			<DisplayName>Recruit</DisplayName>
+			<Desc>Recruit people in this location who believe in our religion as our disciples. Each recruitment costs 100 Influence.</Desc>
+		</Text>
+	</List>
+</Texts>

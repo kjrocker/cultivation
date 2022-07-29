@@ -1,0 +1,360 @@
+﻿<NpcStories><List>
+	<Story Name="Practice"><!--修炼中-->
+		<Rate>0.05</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，忍不住怀疑，自己到底适不适合修炼[obj_gong]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在修炼时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="Brokening"><!--突破中-->
+		<Rate>0.4</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_Brokening" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="BrokenSucceed"><!--突破成功-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_BrokenSucceed" JustHot="1"/>
+		</Events>
+	</Story>
+	<Story Name="BrokenFailed"><!--突破失败-->
+		<Rate>0.4</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_BrokenFailed" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因[rand_lable=obj_badmood,obj_goodmood]的情绪而心神失手，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因突然想起家乡而心神不宁，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因突然对旁边的[obj_nearthing]分心而功亏一篑，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因突然想吃[obj_food]而心境大乱，最终导致失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因突然想起自己的[obj_relation]而心神摇曳，最终导致失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，莫名的思绪涌动，最终导致突破失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因担心起能否突破瓶颈，而导致突破失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在突破瓶颈[obj_neck]时，因突然的自我怀疑而导致突破失败，十分遗憾。"/>	
+		</Events>
+	</Story>
+	<Story Name="Golding"><!--结丹中-->
+		<Rate>1</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_Golding" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，不由得担心起能否缔结瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在缔结金丹大道时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="GoldSucceed"><!--结丹成功-->
+		<Rate>0.5</Rate>
+		<Events>
+			 <li Rate="0.5" MapStory="HotStory_Practice_GoldSucceed" JustHot="1"/>
+		</Events>
+	</Story>
+	<Story Name="GoldFailed"><!--结丹失败-->
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>
+	<Story Name="Thundering"><!--渡劫中-->
+		<Rate>1</Rate>
+		<Events>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在渡劫时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="ThunderSucceed"><!--渡劫成功-->
+		<Rate>0.25</Rate>
+		<Events>
+			 <li Rate="1" MapStory="HotStory_Practice_ThunderSucceed" JustHot="1"/>
+		</Events>
+	</Story>
+	<Story Name="ThunderFailed"><!--渡劫失败-->
+		<Rate>0</Rate>
+		<Events>
+		</Events>
+	</Story>	
+	
+	<Story Name="RefiningDan"><!--炼丹中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="1" MapStory="HotStory_Practice_LingWu" JustHot="1"/>
+			 <li Rate="1" MapStory="HotStory_Practice_RefiningDan" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="RefiningDanFailed"><!--炼丹失败-->	
+		<Rate>0.01</Rate>	
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_RefiningDanFailed" JustHot="1"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因[rand_lable=obj_badmood,obj_goodmood]的情绪而心神失手，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因突然想起家乡而心神不宁，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因突然对旁边的[obj_nearthing]分心而功亏一篑，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因突然想吃[obj_food]而心境大乱，最终炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因突然想起自己的[obj_relation]而心神摇曳，最终炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，莫名的思绪涌动，最终导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因担心起能否突破瓶颈，而导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在炼制[obj]时，因突然的自我怀疑而导致炼制失败，十分遗憾。"/>	
+		</Events>
+	</Story>	
+	<Story Name="RefiningDanSucceed"><!--炼丹成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="Refining"><!--炼器中-->
+		<Rate>0.1</Rate>
+		<Events>
+			 <li Rate="0.5" MapStory="HotStory_Practice_LingWu" JustHot="1"/>
+			 <li Rate="1" MapStory="HotStory_Practice_Refining" JustHot="1"/>
+			 <li Rate="1" MapStory="HotStory_Practice_RefiningGod" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="RefiningFailed"><!--炼器失败-->	
+		<Rate>0.2</Rate>	
+		<Events>
+			 <li Rate="0.2" MapStory="HotStory_Practice_RefiningFailed" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因[rand_lable=obj_badmood,obj_goodmood]的情绪而心神失手，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因突然想起家乡而心神不宁，最终失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因突然对旁边的[obj_nearthing]分心而功亏一篑，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因突然想吃[obj_food]而心境大乱，最终导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因突然想起自己的[obj_relation]而心神摇曳，最终导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，莫名的思绪涌动，最终导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因担心起能否突破瓶颈，而导致炼制失败，十分遗憾。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在将[obj]炼成法宝时，因突然的自我怀疑而导致炼制失败，十分遗憾。"/>	
+		</Events>
+	</Story>	
+	<Story Name="RefiningSucceed"><!--炼器成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="PaintCharm"><!--画符中-->
+		<Rate>0.02</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Practice_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在绘制[obj]时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	<Story Name="PaintCharmSucceed"><!--画符成功-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	<Story Name="CastMagic"><!--施展神通-->
+		<Rate>0.02</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Practice_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，觉得这样的生活真好。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，觉得修行者虽好，但是真的也挺不容易。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想下山历练一番走走。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，被[rand_lable=obj_badmood,obj_goodmood]的情绪影响，有点静不下心。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，不由得担心起能否突破瓶颈[obj_neck]来。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，深深地感慨[obj_gong]真的是博大精深。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，忍不住怀疑，自己到底适不适合修炼[obj_gong]这门功法。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然怀疑[obj_esoterica]这本秘籍是不是写的有问题。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，忍不住感慨[obj_esoterica]这本秘籍确实写的精妙。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，不知怎么就想驾驭[obj_fabao]，试试手感。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，不知怎么就想吃一粒[obj_dan]，尝尝味道。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，不知怎么就想御剑刺[obj_friend]两下。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想起了[obj_goodschool]的修行室。"/>	
+			 <li Rate="0.2" Story="[rand_lable=desc_time,desc_place,desc_weather]，[name]在施展[obj]时，突然想和[obj_badschool]的人打一场。"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="BuildGodCity_1"><!--建立神国1-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="BuildGodCity_2"><!--建立神国2-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+	<Story Name="BuildGodCity_3"><!--建立神国3-->
+		<Rate>0</Rate>
+		<Events>			
+		</Events>
+	</Story>
+	
+</List></NpcStories>

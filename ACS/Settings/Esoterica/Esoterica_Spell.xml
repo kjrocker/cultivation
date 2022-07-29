@@ -1,0 +1,134 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<Esoterica Name="SpellEsoterica_1">
+		<DisplayName>三洞玉函</DisplayName>
+		<Desc>道门秘传，记载三种于修行大有益处的符箓。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n洞神符\n洞玄符\n洞真符</EffectDesc>
+		<Spells>
+			<li>Spell_MindState2</li>
+			<li>Spell_SpeedOfMindStateCoefficientByMoods</li>
+			<li>Spell_DeepPracticeSpeedSpecialCoefficient2</li>
+		</Spells>
+	</Esoterica> 
+	<Esoterica Name="SpellEsoterica_2">
+		<DisplayName>五炁神符经</DisplayName>
+		<Desc>记载五种内门符箓的秘册。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n分影遁空符\n五方灵宝符\n万化承丹符\n天心符\n宁心符</EffectDesc>
+		<Spells>
+			<li>Spell_WorldMapFlySpeed</li>
+			<li>Spell_FabaoMake_LingInheritRateAddV</li>
+			<li>Spell_DanMake_YieldAddP</li>
+			<li>Spell_MindState1</li>
+			<li>Spell_DeepPracticeSpeedSpecialCoefficient1</li>
+		</Spells>
+	</Esoterica> 
+	<Esoterica Name="SpellEsoterica_3">
+		<DisplayName>六敕五方神符金书</DisplayName>
+		<Desc>记载有六种常见且实用的符箓，对凡人有大用。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n神行符\n药师祛病符\n千里神视符\n周公涤神符\n辟谷符\n饮气符\n长乐符</EffectDesc>
+		<Spells>
+			<li>Spell_MoveSpeed2</li>
+			<li>Spell_RecoveryPower</li>
+			<li>Spell_VisionRadius</li>
+			<li>Spell_Fatigue</li>
+			<li>Spell_Nutrition</li>
+			<li>Spell_Nutrition1</li>
+			<li>Spell_Happy</li>
+		</Spells>
+	</Esoterica> 
+	<Esoterica Name="SpellEsoterica_4">
+		<DisplayName>与帝符文书</DisplayName>
+		<Desc>皇室秘传的符箓典籍，收集自历朝受封的仙家。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n太阳符\n太阴符\n文昌符\n武昌符\n神勤符\n天工符\n丰饶符\n药王符</EffectDesc>
+		<Spells>
+			<li>Spell_TempLow2</li>
+			<li>Spell_TempHigh2</li>
+			<li>Spell_Intelligence</li>
+			<li>Spell_Fight</li>
+			<li>Spell_GlobalEfficiency</li>
+			<li>Spell_MadeQualityAddValue</li>
+			<li>Spell_Yield</li>
+			<li>Spell_Treatment</li>
+		</Spells>
+	</Esoterica>
+	<Esoterica Name="SpellEsoterica_5">
+		<DisplayName>太平符箓要册</DisplayName>
+		<Desc>相对齐全的符箓合集，包含了大多数常见的符咒。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>解锁 符图：\n周公涤神符\n辟谷符\n长乐符\n太阳符\n太阴符\n神勤符\n天工符\n丰饶符\n药王符</EffectDesc>
+		<Spells>
+			<li>Spell_Fatigue</li>
+			<li>Spell_Nutrition</li>
+			<li>Spell_Nutrition1</li>
+			<li>Spell_Happy</li>
+			<li>Spell_TempLow2</li>
+			<li>Spell_TempHigh2</li>
+			<li>Spell_GlobalEfficiency</li>
+			<li>Spell_MadeQualityAddValue</li>
+			<li>Spell_Yield</li>
+			<li>Spell_Treatment</li>
+		</Spells>
+	</Esoterica> 	
+	
+	
+	<Esoterica Name="SpellEsoterica_6">
+		<DisplayName>迎春图册</DisplayName>
+		<Desc>来自异界的神秘书册，记载有许多来自一个伟大国度的风俗文化。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>解锁 符图：\n万福图\n万禄图\n万寿图\n\n解锁 建筑：\n灯笼-万化安\n灯笼-四海同\n屋顶-迎春\n屋顶-纳福\n烟花-龙歌</EffectDesc>
+		<Spells>
+			<li>Spell_Fu</li>
+			<li>Spell_Lu</li>
+			<li>Spell_Shou</li>
+		</Spells>
+		<Buildings>
+			<li>Lantern6</li>
+			<li>Lantern5</li>
+			<li>WoodRoof_SpringFestival</li>
+			<li>StoneRoof_SpringFestival</li>
+			<li>Firecracker</li>
+		</Buildings>
+	</Esoterica> 	
+</List></Esotericas>

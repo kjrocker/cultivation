@@ -1,0 +1,428 @@
+<Stories><List>	
+	
+	<!-- 		
+	local lingzhi = story.target;
+	local tJG = {};
+	
+	lingzhi:GetName();
+	lingzhi:GetLastYunYangName();
+	lingzhi:GetLingSha();
+	lingzhi:AddLingSha();
+	lingzhi:GetLing();
+	lingzhi:AddLing();
+	lingzhi:GetGrowProgress();
+	lingzhi:GetHarvestProgress();
+	
+	lingzhi:GetJiaoGanNpcList(tJG);
+	for _, v in pairs(tJG) do
+		v.npcObj:GetName()
+	end 
+	
+	-->
+
+	
+	<Story Name="Story_LingZhi_YunYangBegin"> 
+		<DisplayName>开始蕴养</DisplayName>
+		<Desc>因[NAME]受到[HENAME]蕴养之故，有什么特别的事情发生了。</Desc>
+		<Kind>None</Kind>
+		
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+					local lingzhi = story.target;
+					local tJG = {};
+					local YunYangItem = lingzhi:GetYunYangTarget();
+					lingzhi:GetJiaoGanNpcList(tJG);
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+				
+					
+					if next(tJG) ~= nil then
+						lingzhi:AddMsg(XT("[NAME]受[HENAME]蕴养，灵性忽然触动，一股玄妙之气息氤氲开来。灵性交感下，众人均大有所获！"));
+						for _, v in pairs(tJG) do
+							local nR = world:RandomInt(1,4);
+							tbTable:WuXingLingWu(v,lingzhi,1);
+							if nR == 1 then
+								v:AddTreeExp((50 + v:GetDaoHang()*50) * YunYangItem.Rate);
+							elseif nR == 2 then
+								v.npcObj.Needs:AddNeedValue("Practice", 10 * YunYangItem.Rate);
+								local jiAdd = 10 * YunYangItem.Rate
+								local objName = v.npcObj:GetName()
+								lingzhi:AddMsg(string.format(XT("%s精元提高了%s点。"), tostring(objName), tostring(jiAdd)));
+							elseif nR == 3 then
+								v.npcObj:AddModifier("Story_LingZhi_XinJing1", YunYangItem.Rate, true);
+								local xjAdd = 10 * YunYangItem.Rate
+								local objName = v.npcObj:GetName()
+								lingzhi:AddMsg(string.format(XT("%s心境短期内提高了%s点。"), tostring(objName), tostring(xjAdd)));
+							end
+						end 
+					else
+						lingzhi:AddMsg(XT("[NAME]受[HENAME]蕴养，灵性忽然触动，一股玄妙之气息氤氲开来。可惜附近并没有人修炼，无人捕捉到这一丝灵韵。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_LingZhi_YunYangEnd"> 
+		<DisplayName>完成蕴养</DisplayName>
+		<Desc>因[NAME]完成对[HENAME]的蕴养之故，有什么特别的事情发生了。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+					local lingzhi = story.target;
+					local tJG = {};
+					local YunYangItem = lingzhi:GetYunYangTarget();
+					lingzhi:GetJiaoGanNpcList(tJG);
+					lingzhi:AddMsg(XT("[NAME]受[HENAME]蕴养，竟然从枝干上凝结出了什么……"));
+					if YunYangItem.DefName == "Item_LingStone" or YunYangItem.DefName == "Item_LingCrystal" then
+						lingzhi:AddLing(YunYangItem.LingV * world:RandomFloat(0.5,0.8))
+					else
+						lingzhi:AddLing(YunYangItem.LingV * world:RandomFloat(0.05,0.15))
+					end
+					if lingzhi:GetLingSha() >= 0 then
+						if YunYangItem.DefName == "NpcBase" then
+							lingzhi:DropAwardItem("Item_SoulCrystalLing",world:RandomInt(1,2 + math.floor(YunYangItem.Rate/3)));
+							lingzhi:DropAwardItem("Item_SoulCrystalNing",world:RandomInt(1,YunYangItem.Rate));
+						elseif YunYangItem.DefName == "Item_LingWater" then
+							lingzhi:DropAwardItem("Item_EarthEssence",1);
+						elseif YunYangItem.DefName == "Item_EarthEssence" then
+							lingzhi:DropAwardItem("Item_EarthEssence_1",1);
+						elseif YunYangItem.DefName == "Item_SoulPearl" then
+							lingzhi:DropAwardItem("Item_YuanHunLu",1);
+						elseif YunYangItem.DefName == "Item_ThunderAir" then
+							lingzhi:DropAwardItem("Item_YanDaoGuo",1);
+						elseif YunYangItem.DefName == "Item_XianBone" then
+							lingzhi:DropAwardItem("Item_XianDaoShenNian",1);
+						elseif YunYangItem.DefName == "Item_ZaoHuaYuZi" then
+							lingzhi:DropAwardItem("Item_Dan_LingYuanSha",world:RandomInt(4,12));
+						elseif YunYangItem.DefName == "Item_JinEssence" then
+							if lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_Jin",1);
+							elseif lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_Shui",2);
+							elseif lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_MuEssence" then
+							if lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Mu",1);
+							elseif lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_Huo",2);
+							elseif lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_ShuiEssence" then
+							if lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_Shui",1);
+							elseif lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Mu",2);
+							elseif lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_HuoEssence" then
+							if lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_Huo",1);
+							elseif lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Tu",2);
+							elseif lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_TuEssence" then
+							if lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Tu",1);
+							elseif lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_Jin",2);
+							elseif lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						else
+							if world:RandomInt(1,YunYangItem.Rate) >= 6 then
+								lingzhi:DropAwardItem("Item_LingMuXueJie",world:RandomInt(1,YunYangItem.Rate - 6));
+							else
+								lingzhi:DropAwardItem("Item_Garbage",1);
+							end
+						end
+					elseif lingzhi:GetLingSha() < 0 then
+						if YunYangItem.DefName == "NpcBase" then
+							lingzhi:DropAwardItem("Item_SoulCrystalYou",world:RandomInt(1,2 + math.floor(YunYangItem.Rate/3)));
+							lingzhi:DropAwardItem("Item_SoulCrystalNing",world:RandomInt(1,YunYangItem.Rate));
+						elseif YunYangItem.DefName == "Item_LingWater" then
+							lingzhi:DropAwardItem("Item_EarthEssence1",1);
+						elseif YunYangItem.DefName == "Item_EarthEssence1" then
+							lingzhi:DropAwardItem("Item_EarthEssence1_1",1);
+						elseif YunYangItem.DefName == "Item_SoulPearl" then
+							lingzhi:DropAwardItem("Item_XieHunLu",1);
+						elseif YunYangItem.DefName == "Item_ThunderAir" then
+							lingzhi:DropAwardItem("Item_QieDaoGuo",1);
+						elseif YunYangItem.DefName == "Item_XianBone" then
+							lingzhi:DropAwardItem("Item_XianDaoXieNian",1);
+						elseif YunYangItem.DefName == "Item_ZaoHuaYuZi" then
+							lingzhi:DropAwardItem("Item_Dan_LingYuanSha",world:RandomInt(4,12));
+						elseif YunYangItem.DefName == "Item_JinEssence" then
+							if lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_Jin",1);
+							elseif lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_Shui",2);
+							elseif lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_MuEssence" then
+							if lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Mu",1);
+							elseif lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_Huo",2);
+							elseif lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_ShuiEssence" then
+							if lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_Shui",1);
+							elseif lingzhi:GetName() == "LingZhi_Mu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Mu",2);
+							elseif lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_HuoEssence" then
+							if lingzhi:GetName() == "LingZhi_Huo" then
+								lingzhi:DropAwardItem("Item_BenYuan_Huo",1);
+							elseif lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Tu",2);
+							elseif lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						elseif YunYangItem.DefName == "Item_TuEssence" then
+							if lingzhi:GetName() == "LingZhi_Tu" then
+								lingzhi:DropAwardItem("Item_BenYuan_Tu",1);
+							elseif lingzhi:GetName() == "LingZhi_Jin" then
+								lingzhi:DropAwardItem("Item_BenYuan_Jin",2);
+							elseif lingzhi:GetName() == "LingZhi_Shui" then
+								lingzhi:DropAwardItem("Item_BenYuan_None",1);
+							end
+						else
+							if world:RandomInt(1,YunYangItem.Rate) >= 6 then
+								lingzhi:DropAwardItem("Item_LingMuXueJie",world:RandomInt(1,YunYangItem.Rate - 6));
+							else
+								lingzhi:DropAwardItem("Item_Garbage",1);
+							end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+					
+	<Story Name="Story_LingZhi_Chance"> 
+		<DisplayName>灵性偶发</DisplayName>
+		<Desc>[NAME]生长过程中灵性突然略有触动。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+					local lingzhi = story.target;
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					
+					if lingzhi:GetHarvestProgress() == 0 and lingzhi:GetGrowProgress() > 0  and  lingzhi:GetGrowProgress() <= 50 then
+						tbTable:ChanceEventStage1(lingzhi);
+					elseif lingzhi:GetHarvestProgress() == 0 and lingzhi:GetGrowProgress() > 50  and  lingzhi:GetGrowProgress() <= 100 then
+						tbTable:ChanceEventStage2(lingzhi);
+					elseif lingzhi:GetHarvestProgress() > 0  and  lingzhi:GetHarvestProgress() <= 50 then
+						tbTable:ChanceEventStage3(lingzhi);
+					elseif lingzhi:GetHarvestProgress() > 50  and  lingzhi:GetHarvestProgress() < 100 then
+						tbTable:ChanceEventStage4(lingzhi);
+					elseif lingzhi:GetHarvestProgress() == 100 then
+						tbTable:ChanceEventStage5(lingzhi);
+					end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_LingZhi_Grow"> 
+		<DisplayName>灵植长成</DisplayName>
+		<Desc>[NAME]乃天地灵根，在其成株之时，天地气息忽动，有什么特别的事情发生了。</Desc>
+		<Kind>None</Kind>
+		
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+				local lingzhi = story.target;
+				local tJG = {};
+				lingzhi:GetJiaoGanNpcList(tJG);
+				local tbTable = GameMain:GetMod("MapStoryHelper");
+				
+				if lingzhi:GetLingSha() >= 0 then
+					if lingzhi:GetName() == "LingZhi_Jin" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间金灵之气弥漫。"));world:BeginWeather("JinLingMiMan",true);
+					elseif lingzhi:GetName() == "LingZhi_Mu" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间木灵之气弥漫。"));world:BeginWeather("MuLingMiMan",true);
+					elseif lingzhi:GetName() == "LingZhi_Shui" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间水灵之气弥漫。"));world:BeginWeather("ShuiLingMiMan",true);
+					elseif lingzhi:GetName() == "LingZhi_Huo" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间火灵之气弥漫。"));world:BeginWeather("HuoLingMiMan",true);
+					elseif lingzhi:GetName() == "LingZhi_Tu" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间土灵之气弥漫。"));world:BeginWeather("TuLingMiMan",true);
+					end
+					
+					if next(tJG) ~= nil then
+						lingzhi:AddMsg(XT("天地呼应之际，[NAME]四周自然呈现出五行本源次第衍化的玄妙。灵性交感下，众人各有所悟。"));
+						for _, v in pairs(tJG) do
+							tbTable:WuXingLingWu(v,lingzhi,2);
+							v:AddTreeExp(v:GetGLevel() * 50 * lingzhi:GetLingSha());
+						end 
+					else
+						lingzhi:AddMsg(XT("天地呼应之际，[NAME]四周自然呈现出五行本源之道次第衍化的玄妙。可惜附近并没有人修炼，无人捕捉到这一丝灵韵。"));
+					end
+				else
+					if lingzhi:GetName() == "LingZhi_Jin" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间金灵之气暴涨，电闪雷鸣中，一场雷暴已然孕育而出。"));world:BeginWeather("LightningStorm_AllSeason",true);
+					elseif lingzhi:GetName() == "LingZhi_Mu" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间木灵之气暴涨，一时间深藏地下的木气皆被引动，一场猛烈地瘴气降临了。"));world:BeginWeather("Miasma_AllSeason",true);
+					elseif lingzhi:GetName() == "LingZhi_Shui" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间水灵之气暴涨，瞬息间墨云翻卷，暴雨倾盆而下。"));world:BeginWeather("Rainstorm_AllSeason",true);
+					elseif lingzhi:GetName() == "LingZhi_Huo" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间火灵之气暴涨，热浪翻涌，一场焚风席卷而来。"));world:BeginWeather("Fohn_AllSeason",true);
+					elseif lingzhi:GetName() == "LingZhi_Tu" then
+						lingzhi:AddMsg(XT("[NAME]长成之时，天地间土灵之气暴涨，一时间天昏地暗，一场巨大的尘暴凭空而生。"));world:BeginWeather("DustStorm_AllSeason",true);
+					end
+					if next(tJG) ~= nil then
+						lingzhi:AddMsg(XT("天地呼应之际，[NAME]四周的五行本源规则瞬间暴乱。灵性交感牵连下，众人各有损伤。然而在暴乱的五行本源中参悟，却是难得的经历，众人亦大有所获。"));
+						for _, v in pairs(tJG) do
+							tbTable:WuXingLingWu(v,lingzhi,2);
+							v:AddTreeExp(1500 * lingzhi:GetLingSha());
+							v:AddDamageRandomPart(world:RandomInt(1,3) * 2, "LingSpillsInjury",world:RandomFloat(0.3,0.8),XT("五行紊乱")) 
+						end 
+					else
+						lingzhi:AddMsg(XT("天地呼应之际，[NAME]四周的五行本源规则瞬间暴乱。虽然很有风险，但暴乱的五行本源亦是参悟良机。可惜附近并没有人修炼，无人抓到这一机会。"));
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Story_LingZhi_Ripe"> 
+		<DisplayName>灵植成熟</DisplayName>
+		<Desc>[NAME]乃天地灵根，在其成熟之刻，天地顿生感应，有什么特别的事情发生了。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+				local lingzhi = story.target;
+				local tJG = {};
+				local tbTable = GameMain:GetMod("MapStoryHelper");
+				
+				lingzhi:GetJiaoGanNpcList(tJG);
+				if lingzhi:GetLingSha() >= 0 then
+					
+					if next(tJG) ~= nil then
+						lingzhi:AddMsg(XT("[NAME]成熟之际，一股澎湃的灵气汹涌而出，方圆百里如化仙境。灵性交感下，蕴含五行妙道的灵息瞬间涤荡周身，众人皆有脱胎换骨之感。"));
+						for _, v in pairs(tJG) do
+							tbTable:WuXingLingWu(v,lingzhi,15);
+							local nE = 1
+							if lingzhi:GetName() == "LingZhi_Jin" then
+								nE = 1
+							elseif lingzhi:GetName() == "LingZhi_Mu" then
+								nE = 2
+							elseif lingzhi:GetName() == "LingZhi_Shui" then
+								nE = 3
+							elseif lingzhi:GetName() == "LingZhi_Huo" then
+								nE = 4
+							elseif lingzhi:GetName() == "LingZhi_Tu" then
+								nE = 5
+							end
+							if v.npcObj.PropertyMgr:FindModifier("Story_LingZhi_RipeLing" .. nE) == nil then
+								v:AddModifier("Story_LingZhi_RipeLing" .. nE);
+							else
+								v:AddMsg(XT("[NAME]已经接受过此种灵根的涤荡。"))
+							end
+						end 
+					else
+						lingzhi:AddMsg(XT("[NAME]成熟之际，一股澎湃的灵气汹涌而出，方圆百里如化仙境。参悟这些蕴含在灵息中的五行妙道乃是不折不扣的机缘，可惜附近并没有人修炼，无人抓到这一机会。"));
+					end	
+					world:BeginWeather("LingUpWave_Big",true);
+				else
+					if next(tJG) ~= nil then
+						lingzhi:AddMsg(XT("[NAME]成熟之际，剧烈的煞气震荡九霄，天道震荡。方圆百里的灵气瞬间被抽取一空。灵性交感下，众人也被此异像所动，根基大损。虽说如此，借助天道震荡的机会修炼乃是罕见的机缘，众人亦大有所获。"));
+						for _, v in pairs(tJG) do
+							tbTable:WuXingLingWu(v,lingzhi,15);
+							v:AddModifier("Story_LingZhi_RipeSha")
+						end 
+					else
+						lingzhi:AddMsg(XT("[NAME]成熟之际，剧烈的煞气震荡九霄，天道震荡。方圆百里的灵气瞬间被抽取一空。借助天道震荡的机会修炼虽然十分危险，但亦是罕见的机缘。可惜附近并没有人修炼，无人抓到这一机会。"));
+					end	
+					world:BeginWeather("LingRarefiedWave_Big",true);
+				end
+				lingzhi:TriggerStory("Story_LingZhi_Attack");
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_LingZhi_LingSha"> 
+		<DisplayName>灵煞之极</DisplayName>
+		<Desc>[NAME]中灵煞之性酝酿到极致，有什么事情发生了。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[	
+					local lingzhi = story.target;
+					local tJG = {};
+					lingzhi:GetJiaoGanNpcList(tJG);
+					local tbTable = GameMain:GetMod("MapStoryHelper");	
+					
+					if next(tJG) ~= nil then
+						for _, v in pairs(tJG) do
+							if lingzhi:GetFlag(55) == 0 then
+								tbTable:MiFaLingWu(v,lingzhi)
+							end
+						end 
+						if lingzhi:GetFlag(55) == 0 then
+							lingzhi:AddMsg(XT("[NAME]灵煞之性已达极致，一股晦涩难明的气息浮现在四周，灵性交感之下，众人皆尝试参悟，然而虽各有所获，但却无人破解其中的玄机。"));
+							for _, v in pairs(tJG) do
+								tbTable:WuXingLingWu(v,lingzhi,5);
+								v:AddTreeExp(30000 + v:GetDaoHang()*50)
+							end 
+						end
+					else
+						lingzhi:AddMsg(XT("[NAME]灵煞之性已达极致，一股晦涩难明的气息浮现在四周，似乎蕴藏有什么奥秘。可惜附近并没有人修炼，无人抓到这一机缘。"));
+					end
+					
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_LingZhi_Attack"> 
+		<DisplayName>敌人入侵</DisplayName>
+		<Desc>天地灵根成熟，必有灾劫，请做好准备。</Desc>
+		<Kind>None</Kind>
+		
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult><![CDATA[		
+					local lingzhi = story.target;	
+					local nR = world:RandomInt(2,6)
+					lingzhi:AddMsg(string.format(XT("天地灵根成熟，天象异变。似乎有%s伙贼人闻风而动，向此处袭来。"), tostring(nR)));
+					for i = 1, nR do
+						lingzhi:AddEnemy(world:RandomInt(2,5),world:RandomFloat(0,1));
+					end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

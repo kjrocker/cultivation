@@ -1,0 +1,226 @@
+﻿<FeatureDefs><List>
+	<Feature Name="Bear_Fat" Type="Backstory">
+		<DisplayName>厚脂肪</DisplayName>
+		<Desc>天生脂肪很多，比较耐寒，同时对五行的抗性也较强。</Desc>
+
+		<ModifierDef>
+			<Properties>
+				<li Name="ToleranceTMin" AddV="-25"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Rabbit_Fast" Type="Backstory">
+		<DisplayName>迅捷</DisplayName>
+		<Desc>跑步速度很快，学习速度也很快，但心态急躁。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddV="0" AddP="0.5"/>
+				<li Name="WorldMapFlySpeedAddP" AddP="1"/>
+				<li Name="EmotionAmplificationFactor" AddP="0.1"/>
+				<li Name="IntelligenceSkillEXPConstant" BAddP="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Rabbit_Hear" Type="Backstory">
+		<DisplayName>警觉</DisplayName>
+		<Desc>听觉非常灵敏，感知很高。</Desc>
+		<ModifierDef>
+			<BaseFive>0,1,0,0,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Chicken_Sleep" Type="Backstory">
+		<DisplayName>日思夜想</DisplayName>
+		<Desc>天生睡眠很小，十分勤奋。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="FatigueRecoveryConstant" AddV="0" AddP="-0.4"/>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0" BAddP="0.1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Wolf_Calm" Type="Backstory">
+		<DisplayName>残忍冷静</DisplayName>
+		<Desc>是天生的战士，这种天赋其战斗能力突破人之极限。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="PainTolerance" AddP="1"/>
+				<li Name="NpcFight_BaseHitChance" AddV="0.15"/>
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.15"/>
+				<li Name="BasepracticeSpeedCoefficient" BAddP="0.1"/>
+			</Properties>
+			<Skills>
+				<li Name="Fight" LevelOver="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Snake_Progenitor" Type="Backstory">
+		<DisplayName>断代之族</DisplayName>
+		<Desc>远古时期，蛇妖炼体者欲淬炼身体化形为龙，遭到龙族打压，因此几乎灭绝，并没有流传下什么炼体奥义。但这也让他们先天拥有超越常人的对灵气的感知与天赋。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddP="0.3"/>
+				<li Name="NpcLingMaxValue" BAddV="100"/>
+			</Properties>
+			<Skills>
+				<li Name="Qi" LevelOver="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Frog" Type="Backstory">
+		<DisplayName>恢复力</DisplayName>
+		<Desc>身体天生拥有较强的恢复力。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="RecoveryPower" AddP="1"/>
+				<li Name="MagicDamageRecoveryPowerAddV" AddV="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Frog_Vision" Type="Backstory">
+		<DisplayName>微观</DisplayName>
+		<Desc>自身的小尺寸使青蛙对万物的细节更有了解，制作更在意细节。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="DanQi" LevelOver="3"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Boar" Type="Backstory">
+		<DisplayName>杂食</DisplayName>
+		<Desc>什么都吃，消化很好，更容易将食物转化为精元。</Desc>
+		<Properties>
+			<li Name="NutritionToJingYuanK" AddP="0.1"/>
+		</Properties>
+	</Feature>
+	
+	<Feature Name="Snake" Type="Backstory">
+		<DisplayName>灵性</DisplayName>
+		<HideInUI>1</HideInUI>
+		<Desc>天生具有很强的灵性。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,0,1,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Wolf" Type="Backstory">
+		<DisplayName>群居</DisplayName>
+		<Desc>群居和协作使得其很擅长与他人默契合作。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="SocialContact" LevelOver="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Cat_Elegant" Type="Backstory">
+		<DisplayName>优雅</DisplayName>
+		<Desc>很难抵挡此物天生的魅力。</Desc>
+		<ModifierDef>
+			<BaseFive>0,0,2,0,0</BaseFive>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Cat_Elegant" Type="Backstory">
+		<DisplayName>轻巧</DisplayName>
+		<Desc>走路几乎不会发出任何声音，擅长隐蔽。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_SneakValue" AddV="5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tor_Longevity" Type="Backstory">
+		<DisplayName>长寿</DisplayName>
+		<Desc>长寿，寿元很长。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="200"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tor_Slow" Type="Backstory">
+		<DisplayName>龟速</DisplayName>
+		<Desc>乌龟速度很慢，但心态很好，食物与饮水消耗也较慢。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="MoveSpeed" AddV="0" AddP="-0.1"/>
+				<li Name="WorldMapFlySpeedAddP" AddV="-0.3"/>
+				<li Name="SpeedOfMindStateCoefficient" AddV="0" AddP="-0.4"/>
+				<li Name="MindStateBaseValue" AddV="30"/>
+				<li Name="NutritionConsumeConstant" AddP="-0.95"/>
+				<li Name="WaterConsumeConstant" AddP="-0.95"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Tor_Def" Type="Backstory">
+		<DisplayName>龟壳</DisplayName>
+		<Desc>乌龟天生防御力极强。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="Barrier" LevelOver="4"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Tiger_Pier" Type="Backstory">
+		<DisplayName>凶猛</DisplayName>
+		<Desc>非常凶猛，擅长搏斗。其进攻性对御剑也大有帮助。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_BaseHitChance" AddV="0.15"/>
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.15"/>
+			</Properties>
+			<Skills>
+				<li Name="Fight" LevelOver="4"/>
+				<li Name="Fabao" LevelOver="4"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Cow_Farmer" Type="Backstory">
+		<DisplayName>温顺和善</DisplayName>
+		<Desc>天生擅长农作，吃苦耐劳。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddP="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+			
+	<Feature Name="Cow_Big" Type="Backstory">
+		<DisplayName>药性精通</DisplayName>
+		<Desc>拥有独特的消化系统，使其对草药之性认知远超他人。</Desc>
+		<ModifierDef>
+			<Skills>
+				<li Name="Medicine" LevelOver="5"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+			
+	<Feature Name="Cat_Pot" Type="Backstory">
+		<DisplayName>好奇</DisplayName>
+		<Desc>猫天生对未知充满好奇，这在修行中是相当重要的素质。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="PotentialOfBasepracticeAddValue" AddP="1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+			
+</List></FeatureDefs>

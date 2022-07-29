@@ -1,0 +1,115 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_13_None">    
+		<DisplayName>玄天真武两仪妙道</DisplayName>
+		<Desc>玄天真武大帝所传登仙妙法。修习此法可于内景之中开辟阴阳，结阴阳金丹，成就阴阳元神，在修炼元神分神时更有事半功倍的效果，乃是武当山玄天真武一脉的镇山法诀，玄妙非常。</Desc>
+		<YinYang>1</YinYang>
+		<SelectDesc>修习此法后，参悟玄妙所得道行亦各自归属于阴阳之下，虽然可以极大的提高了修行者的实力上限，但阴阳元神之间的道行比例也会从根本上影响修行者的修为。此法偷天地阴阳之玄妙，大遭天妒，因此天劫威力极其强大。</SelectDesc>
+		<FiveBaseNeed>6, -1, 6, -1, 6</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Hide>1</Hide>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>太易</DisplayName>
+				<Desc></Desc>
+				<Value>3000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>虚垠</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="5">
+				<DisplayName>太初</DisplayName>
+				<Desc></Desc>
+				<Value>7200</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>先天</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>Physique_1_5_25</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>元炁</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.45</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="6">
+				<DisplayName>太始</DisplayName>
+				<Desc></Desc>
+				<Value>15000</Value>
+				<Necks>
+					
+					<Neck Location="0.1" Kind="Chance">
+						<DisplayName>初形</DisplayName>
+						<Desc></Desc>
+						<CostTime>1</CostTime>
+						<SuccessChange>0.25</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>混一</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>太素</DisplayName>
+				<Desc></Desc>
+				<Value>350000</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Explore">
+						<DisplayName>化生</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>凝质</DisplayName>
+						<Desc></Desc>
+						<NeckCountdown>1800</NeckCountdown>
+						<ThunderValue>100000</ThunderValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>太极</DisplayName>
+				<Desc></Desc>
+				<Value>7550000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>阴阳</DisplayName>
+						<Desc></Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>开辟</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>1250000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

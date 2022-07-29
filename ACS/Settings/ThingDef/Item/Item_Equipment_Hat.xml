@@ -1,0 +1,99 @@
+<ThingDefs><List>
+<!--<ThingDef Type="Item" Name="HatBase" Parent="EquipmentBase">
+	
+	
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+	<Rate>0</Rate>
+	<Beauty>0</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	
+	<Item Kind="Equipment">
+
+		 <BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!{1}**<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>**{1}>
+			<StuffCategories>
+			<!{1}**<Stuff name = "Metallic"/>**{1}>
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<!{1}**<Item name = "wheat" count = "1"/>**{1}>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>	
+	<ThingDef Type="Item" Name="Item_WoodHat" Parent="HatBase">
+	<ThingName>斗笠</ThingName>
+	<TexPath>Item/Hat</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>3</Rate>		
+	<Item Lable="Hat">
+		
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<CostItems>
+					<Item name = "Item_Wood" count = "1"/>
+					<Item name = "Item_Grass" count = "10"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>0</TemperatureMaxAdd>
+			<TemperatureMinAdd>0</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>0</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Hat" Parent="HatBase">
+	<ThingName>帽子</ThingName>
+	<TexPath>Item/Hat</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>3</Rate>		
+	<Item Lable="Hat">
+		
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+				<Stuff name = "Plant"/>
+			</StuffCategories>
+			<CostStuffCount>25</CostStuffCount>
+		</BeMade> 
+
+		<Equip>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-1</TemperatureMaxAdd>
+			<TemperatureMinAdd>-3</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>0.4</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>-->
+</List></ThingDefs>

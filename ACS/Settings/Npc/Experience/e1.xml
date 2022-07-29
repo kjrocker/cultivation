@@ -1,0 +1,551 @@
+﻿<Experiences><List>
+	<Experience Name="SYS_LOST">
+		<DisplayName>模组丢失</DisplayName>
+		<Desc>失落之物，没有人认识这个。\n（模组丢失）</Desc>
+		<Point>0</Point>
+		<Hide>1</Hide>
+	</Experience>
+	<!--
+	<Experience Name="E_Item1">
+		<DisplayName>富家子弟</DisplayName>
+		<Desc>你在入门前就是富家子弟</Desc>
+		<Point>1</Point>
+		<NpcSlot>1</NpcSlot>
+		<ModifierDef>
+			<Properties>
+				<li Name="MaxAge" AddV="30"/>
+			</Properties>
+			<Skills>
+				<li Name="Qi" Level="20"/>
+			</Skills>
+		</ModifierDef>
+		<Equips>
+			<li Name= "Item_SysAxe" Stuff="Item_RoughWoodBlock"/>
+		</Equips>
+		<Items>
+			<li Name= "Item_Cake" Count="100"/>
+		</Items>		
+		<Esoterics>
+			<li>Gong1_Esoterica_2</li>
+		</Esoterics>
+	</Experience>
+	-->
+	
+	<Experience Name="LunHui_Experiences1">
+		<DisplayName>河洛大侠</DisplayName>
+		<Desc>此次穿越虽然功力尽失，但身为河洛大侠的绝招却依然没有忘记。\n\n\n[size=10]初始增加秘籍：[color=#D06508]野球拳[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Esoterics>
+			<li>Esoterica_LunHui1</li>
+		</Esoterics>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences2">
+		<DisplayName>美好世界</DisplayName>
+		<Desc>一个奇特的盒子，里面包含了无数人对美好的渴望。\n\n\n[size=10]初始增加秘宝：[color=#D06508]美好世界[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Equips>
+			<li Name= "Item_LunHui_PerfectWorld" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences3">
+		<DisplayName>异界来客</DisplayName>
+		<Desc>你来自异界，随身携带有一柄诡异的宝剑。\n\n\n[size=10]初始增加神兵：[color=#D06508]达拉崩吧[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Equips>
+			<li Name= "SP_Sword1" Stuff="Item_Other_BuZhiMing" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences4">
+		<DisplayName>未来科技之剑</DisplayName>
+		<Desc>此剑乃是未来科技掌门信物，见此剑如见老菊！\n\n\n[size=10]初始增加神兵：[color=#D06508]未来科技之剑[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Equips>
+			<li Name= "SP_Sword3" Stuff="Item_Other_BuZhiMing" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	
+	<Experience Name="LunHui_Experiences5">
+		<DisplayName>春回大地</DisplayName>
+		<Desc>一本神奇的秘籍，可以将灵气汇聚头部，让人思维灵动，提高悟性。顺便……\n\n\n[size=10]初始增加秘籍：[color=#D06508]春回大地[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Esoterics>
+			<li>Esoterica_LunHui2</li>
+		</Esoterics>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences6">
+		<DisplayName>星途闪耀</DisplayName>
+		<Desc>被封印起来的一段记忆，记录了散人在某个时空嫁女儿的珍贵回忆~\n\n\n[size=10]初始增加宝物：[color=#D06508]封印的记忆：星途闪耀[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Items>
+			<li Name= "Item_Dan_LunHui1" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences7" Group="G1">
+		<DisplayName>偷天换日</DisplayName>
+		<Desc>此人天生有偷天换日之命格，自有记忆起，脑海中就有一门诡谲的功法。\n\n\n[size=10]解锁功法：[color=#D06508]偷天诀[/color]\n需求属性：根骨极高。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Gongs>
+			<li>Gong_5_Tu</li>
+		</Gongs>
+	</Experience>
+	
+	
+	<Experience Name="LunHui_Experiences8">
+		<DisplayName>黑光剑圣</DisplayName>
+		<Desc>此人乃昔日名动天下的剑圣转世，昔日曾绝境反杀高丽毒王，华夏扬威，一战成名。\n\n\n[size=10]初始增加神兵：[color=#D06508]双龙魔影剑[/color]。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Equips>
+			<li Name= "SP_Sword4" Stuff="Item_Other_BuZhiMing" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences9">
+		<DisplayName>爆发之力</DisplayName>
+		<Desc>此人有独门绝技爆发之力，可以在关键时刻透支生命爆发出超强战斗力。\n\n\n[size=10]初始增加秘籍：[color=#D06508]爆发之力[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Esoterics>
+			<li>Esoterica_LunHui3</li>
+		</Esoterics>	
+	</Experience>
+	
+	
+	<Experience Name="LunHui_Experiences10">
+		<DisplayName>神奇符咒</DisplayName>
+		<Desc>此人随身携带有一个神奇符咒匣，其中装着三张神秘的符咒。\n\n\n[size=10]初始增加宝物：[color=#D06508]神奇符咒匣[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Items>
+			<li Name= "Item_LunHui_Box1" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences11">
+		<DisplayName>天赐神符</DisplayName>
+		<Desc>此人随身携带有一个神符匣，其中装着一张绝品符咒。\n\n\n[size=10]初始增加宝物：[color=#D06508]神符匣[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Items>
+			<li Name= "Item_LunHui_Box2" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences12">
+		<DisplayName>昆仑仙法</DisplayName>
+		<Desc>此人一生寻仙仿道，终于在昆仑山找到一本古代仙人的秘籍。\n\n\n[size=10]初始增加秘籍：[color=#D06508]昆仑仙法[/color]。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Esoterics>
+			<li>Esoterica_LunHui4</li>
+		</Esoterics>	
+	</Experience>
+	
+	
+	<Experience Name="LunHui_Experiences13">
+		<DisplayName>祈愿化身</DisplayName>
+		<Desc>此人那是众生祈愿之力的化身，天生有神异。\n\n\n[size=10]初始增加秘籍：[color=#D06508]申申符[/color]。\n初始增加宝物：[color=#D06508]祈愿之心[/color]。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Esoterics>
+			<li>Esoterica_LunHui5</li>
+		</Esoterics>	
+		<Equips>
+			<li Name= "Item_LunHui_QiYuanZhiXin" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences14">
+		<DisplayName>剑仙转世</DisplayName>
+		<Desc>此人前世乃是赫赫有名的剑仙，其本命法宝随其转世，虽然神威尽失，但依然保留其非凡的本质。\n\n\n[size=10]初始增加宝物：[color=#D06508]东方赫神针[/color]。[/size]</Desc>
+		<Point>3</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Items>
+			<li Name= "Item_LunHui_DongFangHeShenZhen" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="LunHui_Experiences15">
+		<DisplayName>多宝传承</DisplayName>
+		<Desc>你是上清传人，成年后记忆觉醒，自然获得《己寅九冲多宝真解》的传承。\n\n\n[size=10]解锁功法：[color=#D06508]《己寅九冲多宝真解》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Hide>1</Hide>
+		<Gongs>
+			<li>Gong_2_Mu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences1" Group="G1">
+		<DisplayName>太和峰弟子</DisplayName>
+		<Desc>你自入门起就想成为太一门太和峰的弟子，经过不懈努力，终于成功，获传太一门五行真法之一的《太和十六洞天》。\n\n\n[size=10]解锁功法：[color=#D06508]《太和十六洞天》[/color]\n需求属性：根骨高，魅力中，悟性中。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_1_Shui</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences2" Group="G1">
+		<DisplayName>北斗峰弟子</DisplayName>
+		<Desc>你自入门起就想成为太一门北斗峰的弟子，经过不懈努力，终于成功，获传太一门五行真法之一的《北斗洞心劫法》。\n\n\n[size=10]解锁功法：[color=#D06508]《北斗洞心劫法》[/color]\n需求属性：神识高，根骨中，悟性中。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_8_Jin</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences3" Group="G1">
+		<DisplayName>轮回峰弟子</DisplayName>
+		<Desc>你自入门起就想成为太一门轮回峰的弟子，经过不懈努力，终于成功，获传太一门五行真法之一的《长生六道轮回经》。\n\n\n[size=10]解锁功法：[color=#D06508]《长生六道轮回经》[/color]\n需求属性：根骨中，神识高，悟性高。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_9_Mu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences4" Group="G1">
+		<DisplayName>三阳峰弟子</DisplayName>
+		<Desc>你自入门起就想成为太一门三阳峰的弟子，经过不懈努力，终于成功，获传太一门五行真法之一的《三阳三昧丙丁炼火诀》。\n\n\n[size=10]解锁功法：[color=#D06508]《三阳三昧丙丁炼火诀》[/color]\n需求属性：神识中，根骨中，魅力中，悟性中，机缘中。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Recommend>1</Recommend>
+		<Gongs>
+			<li>Gong_10_Huo</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences5" Group="G1">
+		<DisplayName>葵花峰弟子</DisplayName>
+		<Desc>你自入门起就想成为太一门葵花峰的弟子，经过不懈努力，终于成功，获传太一门五行真法之一的《葵花炼神大法》。\n\n\n[size=10]解锁功法：[color=#D06508]《葵花炼神大法》[/color]\n需求属性：神识高，魅力高，悟性高。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_11_Tu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences6" Group="G1">
+		<DisplayName>随遇而安</DisplayName>
+		<Desc>你自入门起就只想打好修行的基础，对去太一门五峰中的哪个峰修炼并没有很强的目的心，随遇而安的听从命运的安排就好。\n\n\n[size=10][color=#D06508]五维[/color]提升。[/size]</Desc>
+		<Point>3</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<BaseFive>1,1,1,1,1</BaseFive>
+		</ModifierDef>
+	</Experience>
+	
+	<Experience Name="Experiences1G1_1" Group="G1">
+		<DisplayName>九转传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《九转金丹直指》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《九转金丹直指》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_6_Huo</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences1G1_2" Group="G1">
+		<DisplayName>多宝传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《己寅九冲多宝真解》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《己寅九冲多宝真解》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_2_Mu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences1G1_3" Group="G1">
+		<DisplayName>七杀传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《七杀剑诀》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《七杀剑诀》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_3_Jin</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences1G1_4" Group="G1">
+		<DisplayName>偷天传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《偷天诀》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《偷天诀》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_5_Tu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="Experiences1G1_5" Group="G1">
+		<DisplayName>太上传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《太上忘情道》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《太上忘情道》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Gong_7_Huo</li>
+		</Gongs>
+	</Experience>
+	
+	
+	
+	<Experience Name="Experiences23" Group="G2">
+		<DisplayName>抢救法宝</DisplayName>
+		<Desc>在灭门之夜，器庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几件珍贵的法宝带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶法宝[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Items>
+			<li Name= "Item_E_FaBaoBox" Count="1"/>
+		</Items>		
+	</Experience>
+	<Experience Name="Experiences24" Group="G2">
+		<DisplayName>抢救丹药</DisplayName>
+		<Desc>在灭门之夜，药庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几瓶珍贵的丹药带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶丹药[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Items>
+			<li Name= "Item_E_DanBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="Experiences25" Group="G2">
+		<DisplayName>抢救秘籍</DisplayName>
+		<Desc>在灭门之夜，藏经楼禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几册珍贵的秘籍带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶秘籍[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Items>
+			<li Name= "Item_E_MiJiBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="Experiences26" Group="G2">
+		<DisplayName>抢救符箓</DisplayName>
+		<Desc>在灭门之夜，云箓房禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几张珍贵的符箓带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶符箓[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<Items>
+			<li Name= "Item_E_FuBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="Experiences31" Group="G3">
+		<DisplayName>孤僻之人</DisplayName>
+		<Desc>你进入太一门后，完全不愿意花时间社交，只是专心修行。在灭门之夜，并没有人愿意追随你，只有你一人逃脱。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]减少2！[/size]</Desc>
+		<Point>-3</Point>
+		<RaceKind>Human</RaceKind>
+		<NpcSlot>-2</NpcSlot>
+	</Experience>
+	<Experience Name="Experiences27" Group="G3">
+		<DisplayName>不善交际</DisplayName>
+		<Desc>你进入太一门后，深知打好基础才是一切，并没有刻意结交他人。在灭门之夜，只有一名好友与你一起逃脱。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]减少1！[/size]</Desc>
+		<Point>-1</Point>
+		<RaceKind>Human</RaceKind>
+		<NpcSlot>-1</NpcSlot>
+	</Experience>
+<!--	<Experience Name="Experiences28" Group="G3">
+		<DisplayName>知己二三</DisplayName>
+		<Desc>你进入太一门后，没有花太多时间社交，而将更多时间用于其他方面，因此只结识了数名脾性相投的伙伴。在灭门之夜，他们与你一起逃出门派。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加2！[/size]</Desc>
+		<Point>2</Point>
+		<Recommend>1</Recommend>
+		<NpcSlot>2</NpcSlot>
+	</Experience>-->
+	<Experience Name="Experiences29" Group="G3">
+		<DisplayName>好友众多</DisplayName>
+		<Desc>你进入太一门后，结交了许多志同道合的道友。灭门之夜，他们与你一起逃出门派。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加1！[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<NpcSlot>1</NpcSlot>
+	</Experience>
+	<Experience Name="Experiences30" Group="G3">
+		<DisplayName>外门领袖</DisplayName>
+		<Desc>你进入太一门后，花很多时间用来团结同门，在同期外门弟子中获取了巨大的声望。灭门之夜，他们与你一起逃出门派。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加2！[/size]</Desc>
+		<Point>5</Point>
+		<RaceKind>Human</RaceKind>
+		<NpcSlot>2</NpcSlot>
+	</Experience>
+	
+	
+	
+	<Experience Name="Experiences7">
+		<DisplayName>享受生活</DisplayName>
+		<Desc>你一直认为修仙就是为了享受生活，因此在进入太一门后，你常常利用仙家弟子的身份下山逍遥享乐。\n\n\n[size=10][color=#D06508]魅力[/color]提升。\n[color=#D06508]处世[/color]技能提升。\n初始装备增添[color=#D06508]衣物饰品[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<BaseFive>0,0,2,0,0</BaseFive>
+			<Skills>
+				<li Name="SocialContact" Level="5"/>
+			</Skills>
+		</ModifierDef>
+		<Equips>
+			<li Name= "Item_FormalClothes" Stuff="Item_RabbitLeather" Quality="1"/>
+			<li Name= "Item_FormalTrousers" Stuff="Item_RabbitLeather" Quality="1"/>
+			<li Name= "Item_Dice" Stuff="Item_DarksteelRock" Quality="1"/>
+			<li Name= "Item_PerfumeBag" Stuff="Item_RabbitLeather" Quality="1"/>
+			<li Name= "Item_Bracelet" Stuff="Item_Jade" Quality="1"/>
+		</Equips>		
+	</Experience>
+	
+	
+	<Experience Name="Experiences8">
+		<DisplayName>储备粮</DisplayName>
+		<Desc>你加入太一门后，在一次历练中被阵法困了一个月。被饥饿折磨过后，你就有了随身携带足够干粮的习惯。\n\n\n[size=10][color=#D06508]根骨[/color]提升。\n初始[color=#D06508]饮食类物资[/color]大幅提升。\n初始物资增添[color=#D06508]辟谷丹[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<BaseFive>0,2,0,0,0</BaseFive>
+		</ModifierDef>
+		<Items>
+			<li Name= "Item_Cake" Count="80"/>
+			<li Name= "Item_Jerky" Count="80"/>
+			<li Name= "Item_Dan_NoHunger" Count="20"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="Experiences9">
+		<DisplayName>建设弟子</DisplayName>
+		<Desc>你加入太一门后，负责外门建设的工作。随身携带各种物资，奔波于门派之中是你每日工作的常态。\n\n\n[size=10][color=#D06508]神识[/color]提升。\n初始[color=#D06508]建设类物资[/color]大幅提升。\n初始物资增添部分[color=#D06508]稀有材料[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<BaseFive>2,0,0,0,0</BaseFive>
+		</ModifierDef>
+		<Items>
+			<li Name= "Item_RoughWoodBlock" Count="200"/>
+			<li Name= "Item_IronBlock" Count="200"/>
+			<li Name= "Item_MarbleBlock" Count="200"/>
+			<li Name= "Item_SilverBlock" Count="40"/>
+			<li Name= "Item_CopperBlock" Count="40"/>
+		</Items>		
+	</Experience>
+	
+	
+	<Experience Name="Experiences10">
+		<DisplayName>藏经阁弟子</DisplayName>
+		<Desc>你加入太一门后，负责看守藏经阁。近水楼台之下，倒也抄写记录了一些入门秘籍参阅。\n\n\n[size=10][color=#D06508]悟性[/color]提升。\n初始物资增添[color=#D06508]秘籍：《太平符箓要册》《真丹要略》[/color]。[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<BaseFive>0,0,0,2,0</BaseFive>
+		</ModifierDef>		
+		<Esoterics>
+			<li>SpellEsoterica_5</li>
+			<li>DanFang_1</li>
+		</Esoterics>
+	</Experience>
+	
+	<Experience Name="Experiences11">
+		<DisplayName>神剑择主</DisplayName>
+		<Desc>你加入太一门后，在一次下山历练中获得一柄名剑。你对它爱不释手，时刻随身佩带，希望将来能将此剑炼为法宝。为此，你常常向师兄长辈们请教御器之法的诀窍。\n\n\n[size=10][color=#D06508]御物[/color]技能提升。\n初始物资增添[color=#D06508]神兵-剑[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<Skills>
+				<li Name="Fabao" Level="5"/>
+			</Skills>
+		</ModifierDef>
+		<Equips>
+			<li Name= "Item_WeaponSword" Stuff="Item_DarksteelRock" Quality="1"/>
+		</Equips>	
+	</Experience>
+	
+	<Experience Name="Experiences12">
+		<DisplayName>灵光淬神</DisplayName>
+		<Desc>你加入太一门后，在一次借阅藏经阁术法藏书时，书中突然射出一道灵光进入你识海。从那以后，你就展示出术法方面的绝佳天赋。\n\n\n[size=10][color=#D06508]术法[/color]技能提升。\n初始[color=#D06508]术法威力[/color]增加。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<Skills>
+				<li Name="FightSkill" Level="5"/>
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_SpellPowerAddP" BAddP="0.2"/>
+			</Properties>
+		</ModifierDef>	
+	</Experience>
+	
+	<Experience Name="Experiences13">
+		<DisplayName>金刚之体</DisplayName>
+		<Desc>你加入太一门后，在一次历练中误服异果。经过师长检测，发现此果改善了你的气脉，能使你护体灵气倍增。\n\n\n[size=10][color=#D06508]护体[/color]技能提升。\n初始[color=#D06508]灵气护盾强度[/color]增加。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<Skills>
+				<li Name="Barrier" Level="5"/>
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_ShieldConversionRate" BAddP="0.2"/>
+			</Properties>
+		</ModifierDef>
+			
+	</Experience>
+	
+	<Experience Name="Experiences14">
+		<DisplayName>药庐童子</DisplayName>
+		<Desc>你加入太一门后，被分到药庐当值。你随身携带各种灵药，以便随时为炼丹的师兄长辈递送。\n\n\n[size=10][color=#D06508]岐黄[/color]技能提升。\n[color=#D06508]丹器[/color]技能提升。\n初始[color=#D06508]药材类物资[/color]大幅提升。\n初始物资增添[color=#D06508]稀有灵药[/color]。[/size]</Desc>
+		<Point>3</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<Skills>
+				<li Name="Medicine" Level="5"/>
+				<li Name="DanQi" Level="5"/>
+			</Skills>
+		</ModifierDef>
+		<Items>
+			<li Name= "Item_Healroot" Count="40"/>
+			<li Name= "Item_Mint" Count="40"/>
+			<li Name= "Item_MagicHerb" Count="100"/>
+			<li Name= "Item_RedGinseng" Count="10"/>
+			<li Name= "Item_PurpleGanodermaLucidum" Count="10"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="Experiences15">
+		<DisplayName>器庐童子</DisplayName>
+		<Desc>你加入太一门后，被分器庐当值。你随身携带各种物资，以便随时为炼器的师兄长辈递送。\n\n\n[size=10][color=#D06508]巧匠[/color]技能提升。\n[color=#D06508]丹器[/color]技能提升。\n初始[color=#D06508]材料类物资[/color]大幅提升。\n初始物资增添[color=#D06508]稀有材料[/color]。[/size]</Desc>
+		<Point>3</Point>
+		<RaceKind>Human</RaceKind>
+		<ModifierDef>
+			<Skills>
+				<li Name="Manual" Level="5"/>
+				<li Name="DanQi" Level="5"/>
+			</Skills>
+		</ModifierDef>
+		<Items>
+			<li Name= "Item_Jade" Count="20"/>
+			<li Name= "Item_HardWood" Count="20"/>
+			<li Name= "Item_CopperRock" Count="20"/>
+			<li Name= "Item_SilverRock" Count="20"/>
+			<li Name= "Item_DarksteelRock" Count="10"/>
+			<li Name= "Item_JadeEssence" Count="1"/>
+		</Items>		
+	</Experience>
+	
+</List></Experiences>

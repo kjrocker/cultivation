@@ -1,0 +1,574 @@
+<DanFormulas><List>
+	
+	<!--轮回丹-->
+	<Dan Name="Dan_ReBorn_4">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ReBorn_4</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>0.1</Count>
+	</Dan>
+	<!--重生丹-->
+	<Dan Name="Dan_ReBorn">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ReBorn</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--筑基丹-->
+	<Dan Name="BasePracticeDrug">
+		<Normal>1</Normal>
+		<ItemName>Item_BasePracticeDrug</ItemName>
+		<Level>8</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--兵粮丸-->
+	<Dan Name="Dan_NoHunger1">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_NoHunger1</ItemName>
+		<Level>5</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>9</Count>
+	</Dan>
+	<!--灵晶-->
+	<Dan Name="LingCrystal">
+		<Normal>1</Normal>
+		<ItemName>Item_LingCrystal</ItemName>
+		<Level>10</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--精元丹-->
+	<Dan Name="Dan_JingYuan">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_JingYuan</ItemName>
+		<Level>0</Level>
+		<SuccessRate>0.9</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--参芝九窍丸-->
+	<Dan Name="Dan_JingYuan2">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_JingYuan2</ItemName>
+		<Level>6</Level>
+		<SuccessRate>0.75</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--血竭散-->
+	<Dan Name="Dan_JingYuan3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_JingYuan3</ItemName>
+		<Level>12</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--聚灵丹-->
+	<Dan Name="Dan_Ling">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_Ling</ItemName>
+		<Level>4</Level>
+		<SuccessRate>0.6</SuccessRate>
+		<Count>5</Count>
+	</Dan>
+	<!--五灵散-->
+	<Dan Name="Dan_WuLingSan">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_WuLingSan</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.6</SuccessRate>
+		<Count>5</Count>
+	</Dan>
+	<!--紫阳丹-->
+	<Dan Name="Dan_Ling2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Ling2</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--黄庭丹-->
+	<Dan Name="Dan_PracticeRate">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_PracticeRate</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>5</Count>
+	</Dan>
+	<!--黄芽丹-->
+	<Dan Name="Dan_PracticeSpeed">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_PracticeSpeed</ItemName>
+		<Level>9</Level>
+		<SuccessRate>0.4</SuccessRate>
+		<Count>5</Count>
+	</Dan>
+	
+	<!--七星通脉散-->
+	<Dan Name="Dan_DredgeQi1">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_DredgeQi1</ItemName>
+		<Level>4</Level>
+		<SuccessRate>0</SuccessRate>
+		<Count>5</Count>
+	</Dan>	
+	
+	<!--理气丹-->
+	<Dan Name="Dan_DredgeQi">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_DredgeQi</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0</SuccessRate>
+		<Count>5</Count>
+	</Dan>
+	
+	<!--庚金万化丹-->
+	<Dan Name="Dan_CureJinDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureJinDamage</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--碧春丹-->
+	<Dan Name="Dan_CureMuDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureMuDamage</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--天一承气散-->
+	<Dan Name="Dan_CureShuiDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureShuiDamage</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--火真丹-->
+	<Dan Name="Dan_CureHuoDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureHuoDamage</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--定坤丹-->
+	<Dan Name="Dan_CureTuDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureTuDamage</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--疗伤丹-->
+	<Dan Name="Dan_CureFiveElementDamage">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CureFiveElementDamage</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>9</Count>
+	</Dan>
+	<!--归源丹-->
+	<Dan Name="Dan_Restore">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_Restore</ItemName>
+		<Level>8</Level>
+		<SuccessRate>0.4</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--造化神丹-->
+	<Dan Name="Dan_ExtremeLofty">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ExtremeLofty</ItemName>
+		<Level>18</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--九转金丹-->
+	<Dan Name="Dan_HundredRefine">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_HundredRefine</ItemName>
+		<Level>18</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--极乐丹-->
+	<Dan Name="Dan_Happiness">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Happiness</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>9</Count>
+	</Dan>
+	<!--饮气丹-->
+	<Dan Name="Dan_NoHunger">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_NoHunger</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>9</Count>
+	</Dan>
+	<!--辟谷丹-->
+	<Dan Name="Dan_NoHunger2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_NoHunger2</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>9</Count>
+	</Dan>
+	<!--摄神丹-->
+	<Dan Name="Dan_LostSoul">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_LostSoul</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--清心丹-->
+	<Dan Name="Dan_CalmDown">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_CalmDown</ItemName>
+		<Level>8</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	
+	<!--长生丹-->
+	<Dan Name="Dan_IncreaseLife1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife1</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--玄牝续命散-->
+	<Dan Name="Dan_IncreaseLife2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife2</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--五极灵丹-->
+	<Dan Name="Dan_IncreaseLife3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife3</ItemName>
+		<Level>16</Level>
+		<SuccessRate>-0.6</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--再造金丹-->
+	<Dan Name="Dan_IncreaseLife4">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife4</ItemName>
+		<Level>14</Level>
+		<SuccessRate>-0.4</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--未来星宿化劫丹-->
+	<Dan Name="Dan_IncreaseLife5">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife5</ItemName>
+		<Level>16</Level>
+		<SuccessRate>-0.6</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--乾元避劫丹-->
+	<Dan Name="Dan_IncreaseNeckCountdown1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseNeckCountdown1</ItemName>
+		<Level>16</Level>
+		<SuccessRate>-0.6</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--碧血丹青-->
+	<Dan Name="Dan_IncreaseNeckCountdown2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseNeckCountdown2</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.3</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--剑丸-->
+	<Dan Name="Dan_SwordBall">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_SwordBall</ItemName>
+		<Level>6</Level>
+		<SuccessRate>0.4</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--真罡丹-->
+	<Dan Name="Dan_Defense">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Defense</ItemName>
+		<Level>8</Level>
+		<SuccessRate>0</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	<!--万灵散-->
+	<Dan Name="Dan_Ling3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Ling3</ItemName>
+		<Level>15</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--通天丸-->
+	<Dan Name="Dan_FiveBase1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBase1</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--纳地丸-->
+	<Dan Name="Dan_FiveBase2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBase2</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--逸仙丸-->
+	<Dan Name="Dan_FiveBase3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBase3</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--明通丸-->
+	<Dan Name="Dan_FiveBase4">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBase4</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--神佑丸-->
+	<Dan Name="Dan_FiveBase5">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBase5</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--五毒丹-->
+	<Dan Name="Dan_FiveBaseFromLife">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FiveBaseFromLife</ItemName>
+		<Level>16</Level>
+		<SuccessRate>-0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--天道神丹-->
+	<Dan Name="Dan_TreeEXP">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_TreeEXP</ItemName>
+		<Level>16</Level>
+		<SuccessRate>-0.75</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--塑身丹-->
+	<Dan Name="Dan_Thin">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_Thin</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--壮体丹-->
+	<Dan Name="Dan_Fat">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_Fat</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--定颜丹-->
+	<Dan Name="Dan_FaceLock">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_FaceLock</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--真容丹-->
+	<Dan Name="Dan_FaceUnLock">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_FaceUnLock</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--童颜丹-->
+	<Dan Name="Dan_FaceLock1">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_FaceLock1</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--盛颜丹-->
+	<Dan Name="Dan_FaceLock2">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_FaceLock2</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--苍颜丹-->
+	<Dan Name="Dan_FaceLock3">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_FaceLock3</ItemName>
+		<Level>3</Level>
+		<SuccessRate>0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--神泣丹-->
+	<Dan Name="Dan_Soul1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Soul1</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--通玄丹-->
+	<Dan Name="Dan_Soul2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Soul2</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--凝珀丹-->
+	<Dan Name="Dan_Soul3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Soul3</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>3</Count>
+	</Dan>
+	
+	<!--燃命丹-->
+	<Dan Name="Dan_Soul4">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_Soul4</ItemName>
+		<Level>12</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<!--灵源种-->
+	<Dan Name="Dan_LingYuanZhong">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_LingYuanZhong</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1.2</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	
+	<!--灵源沙-->
+	<Dan Name="Dan_LingYuanSha">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_LingYuanSha</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	
+	
+	<!--烛龙丹-->
+	<Dan Name="Dan_ZhuLongDan1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ZhuLongDan1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1.2</SuccessRate>
+		<Count>0.1</Count>
+	</Dan>
+	<!--蛟龙丹-->
+	<Dan Name="Dan_LongDan1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_LongDan1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1.2</SuccessRate>
+		<Count>0.1</Count>
+	</Dan>
+	<!--凤凰丹-->
+	<Dan Name="Dan_FengDan1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_FengDan1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1.2</SuccessRate>
+		<Count>0.1</Count>
+	</Dan>
+	<!--启智丹-->
+	<Dan Name="Dan_QiZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_QiZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	<!--春灵丹-->
+	<Dan Name="Dan_Spring_LingZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_Spring_LingZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	<!--夏灵丹-->
+	<Dan Name="Dan_Summer_LingZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_Summer_LingZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	<!--秋灵丹-->
+	<Dan Name="Dan_Fall_LingZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_Fall_LingZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	<!--冬灵丹-->
+	<Dan Name="Dan_Winter_LingZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_Winter_LingZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+	<!--土灵丹-->
+	<Dan Name="Dan_Earth_LingZhi">
+		<Normal>0</Normal>
+		<ItemName>Item_Earth_LingZhi</ItemName>
+		<Level>2</Level>
+		<SuccessRate>0.8</SuccessRate>
+		<Count>0.2</Count>
+	</Dan>
+</List></DanFormulas>

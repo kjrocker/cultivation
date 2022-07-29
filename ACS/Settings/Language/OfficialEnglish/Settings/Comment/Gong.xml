@@ -1,0 +1,20 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="GongDengXian">
+			<Title>Ascension Law</Title>
+			<Desc>This kind of Laws connect you to the ways of immortals directly, allowing you to ascend to immortality.</Desc>
+		</Text>
+		<Text Name="GongYuanShen">
+			<Title>Primordial Spirit Law</Title>
+			<Desc>This kind of Laws allow you to eventually reach the State of Primordial Spirit.</Desc>
+		</Text>
+		<Text Name="GongJinDan">
+			<Title>Golden Core Law</Title>
+			<Desc>This kind of Laws can eventually lead to the Shaping of Golden Core.</Desc>
+		</Text>
+		<Text Name="GongFanSu">
+			<Title>Worldly Law</Title>
+			<Desc>This kind of Laws are quite ordinary, not even enough for Core Shaping.</Desc>
+		</Text>
+	</List>
+</Texts>

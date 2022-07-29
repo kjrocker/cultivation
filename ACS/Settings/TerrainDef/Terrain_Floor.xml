@@ -1,0 +1,134 @@
+﻿<TerrainDefs><List>
+	<TerrainDef Name="FloorBase" Parent="TerrainBase">
+		<DisplayName>地板</DisplayName>
+		<StoryDesc>门派中</StoryDesc>
+		<OverLayer>1</OverLayer>
+		<IsFloor>1</IsFloor>
+		<RenderLayer>0</RenderLayer>
+		<TiledID>-18</TiledID><PathCost>2</PathCost>
+		<NextBase>0</NextBase>
+		<TerrainType>Floor</TerrainType>
+		<Fertility>0</Fertility>
+		<TerrainFilthDef></TerrainFilthDef>
+		<IsSnowed>1</IsSnowed>
+		<BaseLing>0</BaseLing>
+		<Beauty>4</Beauty>
+		<PathCost>1</PathCost>
+		
+		<BasePracticeEffectiveness>1.1</BasePracticeEffectiveness>
+	</TerrainDef>
+	<TerrainDef Name="WoodFloor1" Parent="FloorBase">
+		<DisplayName>木地板</DisplayName>
+		<TiledID>269</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="WoodFloor2" Parent="FloorBase">
+		<DisplayName>木地板</DisplayName>
+		<TiledID>270</TiledID>
+	</TerrainDef>
+	
+	<TerrainDef Name="Carpet1" Parent="FloorBase">
+		<TiledID>-9</TiledID>
+		<DustPower>-1</DustPower>
+		<StoryDesc>红毯上,华丽的红毯上,柔软的红毯上</StoryDesc>
+	</TerrainDef>
+	<TerrainDef Name="Floor1" Parent="FloorBase">
+
+		<TiledID>231</TiledID>		
+	</TerrainDef>
+	<TerrainDef Name="Floor2" Parent="FloorBase">
+		<TiledID>238</TiledID>		
+	</TerrainDef>
+	<TerrainDef Name="Floor3" Parent="FloorBase">
+		<TiledID>241</TiledID>		
+	</TerrainDef>
+	<TerrainDef Name="Floor4" Parent="FloorBase">
+		<TiledID>252</TiledID>		
+	</TerrainDef>
+	<TerrainDef Name="Floor5" Parent="FloorBase">
+		<TiledID>259</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor6" Parent="FloorBase">
+		<TiledID>260</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor7" Parent="FloorBase">
+		<TiledID>261</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor8" Parent="FloorBase">
+		<TiledID>262</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor9" Parent="FloorBase">
+		<TiledID>263</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor10" Parent="FloorBase">
+		<TiledID>264</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor11" Parent="FloorBase">
+		<TiledID>265</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor12" Parent="FloorBase">
+		<TiledID>266</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor13" Parent="FloorBase">
+		<TiledID>267</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor14" Parent="FloorBase">
+		<TiledID>268</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor15" Parent="FloorBase">
+		<TiledID>-22</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor16" Parent="FloorBase">
+		<TiledID>-23</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor17" Parent="FloorBase">
+		<TiledID>-24</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor18" Parent="FloorBase">
+		<TiledID>-25</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor19" Parent="FloorBase">
+		<TiledID>-26</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor20" Parent="FloorBase">
+		<TiledID>-27</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor21" Parent="FloorBase">
+		<TiledID>-28</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor22" Parent="FloorBase">
+		<TiledID>-29</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor23" Parent="FloorBase">
+		<TiledID>-30</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor24" Parent="FloorBase">
+		<TiledID>-31</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor25" Parent="FloorBase">
+		<TiledID>-21</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor26" Parent="FloorBase">
+		<TiledID>-20</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor27" Parent="FloorBase">
+		<TiledID>-19</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor28" Parent="FloorBase">
+		<TiledID>-18</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor29" Parent="FloorBase">
+		<TiledID>-17</TiledID>
+	</TerrainDef>	
+	<TerrainDef Name="Floor30" Parent="FloorBase">
+		<TiledID>272</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor31" Parent="FloorBase">
+		<TiledID>196</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor32" Parent="FloorBase">
+		<TiledID>197</TiledID>
+	</TerrainDef>
+	<TerrainDef Name="Floor33" Parent="FloorBase">
+		<TiledID>198</TiledID>
+	</TerrainDef>
+</List></TerrainDefs>

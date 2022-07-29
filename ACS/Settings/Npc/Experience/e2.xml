@@ -1,0 +1,246 @@
+﻿<Experiences><List>
+	<Experience Name="YaoGuai_Experiences0">
+		<DisplayName>妖兽通灵</DisplayName>
+		<Desc>      你本乃太一门山中一只野兽，在洞天福地中受灵气日夜熏陶渐渐诞生思绪。在灭门之夜，生死的威胁临头，你终于自发的迈出最后一步，觉醒灵智，半化形为妖。\n      你的一生受太一门恩泽良多，此刻不禁被本能驱使，欲与入侵者拼命，然而造化使然，这本来送死之举却落入一位重伤濒死的太一门长老眼中。\n      仿佛找到什么希望，这名长老运转玄功，将许多记忆和一些原本为自己弟子逃生而准备的物资传承给你，并将逃生的念头暂时植入你脑海中。受此信念驱使，你拼命逃出了太一门。</Desc>
+		<Point>3</Point>
+		<RaceKind>YaoGuai</RaceKind>
+<!--		<ModifierDef>
+			<Properties>
+				<li Name="LeadExperienceAddtion" AddV="-3"/>
+			</Properties>
+		</ModifierDef>-->
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences1" Group="G1">
+		<DisplayName>太和传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老出身太和峰，在传给你的记忆中包含了一份太一门五行真法之一的《太和十六洞天》。\n\n\n[size=10]解锁功法：[color=#D06508]《太和十六洞天》[/color]\n需求属性：根骨高，魅力中，悟性中。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Gongs>
+			<li>Gong_1_Shui</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences2" Group="G1">
+		<DisplayName>北斗传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老出身北斗峰，在传给你的记忆中包含了一份太一门五行真法之一的《北斗洞心劫法》。\n\n\n[size=10]解锁功法：[color=#D06508]《北斗洞心劫法》[/color]\n需求属性：神识高，根骨中，悟性中。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Gongs>
+			<li>Gong_8_Jin</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences3" Group="G1">
+		<DisplayName>轮回传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老出身轮回峰，在传给你的记忆中包含了一份太一门五行真法之一的《长生六道轮回经》。\n\n\n[size=10]解锁功法：[color=#D06508]《长生六道轮回经》[/color]\n需求属性：根骨中，神识高，悟性高。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Gongs>
+			<li>Gong_9_Mu</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences4" Group="G1">
+		<DisplayName>三阳传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老出身三阳峰，在传给你的记忆中包含了一份太一门五行真法之一的《三阳三昧丙丁炼火诀》。\n\n\n[size=10]解锁功法：[color=#D06508]《三阳三昧丙丁炼火诀》[/color]\n需求属性：神识中，根骨中，魅力中，悟性中，机缘中。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Recommend>1</Recommend>
+		<Gongs>
+			<li>Gong_10_Huo</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences5" Group="G1">
+		<DisplayName>葵花传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老出身葵花峰，在传给你的记忆中包含了一份太一门五行真法之一的《葵花炼神大法》。\n\n\n[size=10]解锁功法：[color=#D06508]《葵花炼神大法》[/color]\n需求属性：神识高，魅力高，悟性高。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Gongs>
+			<li>Gong_11_Tu</li>
+		</Gongs>
+	</Experience>
+	
+	
+	<Experience Name="YaoGuai_Experiences6" Group="G1">
+		<DisplayName>炼体传承</DisplayName>
+		<Desc>那名重伤濒死的太一门长老精研古代各种传承，看到你以妖身觉醒，便在传给你的记忆中携带了一本上古时代的体修功法《太古形意六合真体》。\n\n\n[size=10]解锁功法：[color=#D06508]《太古形意六合真体》[/color]\n此功法开局极难，非常不建议初始选择。[/size]</Desc>
+		<Point>0</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Gongs>
+			<li>Body_Gong_1</li>
+		</Gongs>
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences23" Group="G2">
+		<DisplayName>器庐机缘</DisplayName>
+		<Desc>在灭门之夜，你在逃亡途中路过器庐。受被灌输的记忆影响，你本能的觉得这其中或许有什么重要的事物，便冒死潜入其中，将几件珍贵的法宝带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶法宝[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_E_FaBaoBox" Count="1"/>
+		</Items>		
+	</Experience>
+	<Experience Name="YaoGuai_Experiences24" Group="G2">
+		<DisplayName>药庐机缘</DisplayName>
+		<Desc>在灭门之夜，你在逃亡途中路过药庐。受被灌输的记忆影响，你本能的觉得这其中或许有什么重要的事物，便冒死潜入其中，将几瓶珍贵的丹药带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶丹药[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_E_DanBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences25" Group="G2">
+		<DisplayName>经楼机缘</DisplayName>
+		<Desc>在灭门之夜，你在逃亡途中路过藏经阁。受被灌输的记忆影响，你本能的觉得这其中或许有什么重要的事物，便冒死潜入其中，将几册珍贵的秘籍带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶秘籍[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_E_MiJiBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences26" Group="G2">
+		<DisplayName>符箓机缘</DisplayName>
+		<Desc>在灭门之夜，你在逃亡途中路过云箓房。受被灌输的记忆影响，你本能的觉得这其中或许有什么重要的事物，便冒死潜入其中，将几册珍贵的秘籍带走。将几张珍贵的符箓带走。\n\n\n[size=10]初始物资增添[color=#D06508]高阶符箓[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_E_FuBox" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences31" Group="G3">
+		<DisplayName>一心逃亡</DisplayName>
+		<Desc>灭门之夜，你一心一意的专注在逃亡这件事上，尽量躲开一切活着的生灵，最终孤身一人逃出太一门。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]减少2！[/size]</Desc>
+		<Point>-2</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<NpcSlot>-2</NpcSlot>
+	</Experience>
+	<Experience Name="YaoGuai_Experiences27" Group="G3">
+		<DisplayName>偶遇同袍</DisplayName>
+		<Desc>灭门之夜，接受长老记忆传承，并以太一门弟子自居的你，在逃出险地后偶然遇到一个昏倒的太一门的同袍，你决定带他一起行动。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]减少1！[/size]</Desc>
+		<Point>-1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<NpcSlot>-1</NpcSlot>
+	</Experience>
+<!--	<Experience Name="YaoGuai_Experiences28" Group="G3">
+		<DisplayName>知己二三</DisplayName>
+		<Desc>你进入太一门后，没有花太多时间社交，而将更多时间用于其他方面，因此只结识了数名脾性相投的伙伴。在灭门之夜，他们与你一起逃出门派。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加2！[/size]</Desc>
+		<Point>2</Point>
+		<Recommend>1</Recommend>
+		<NpcSlot>2</NpcSlot>
+	</Experience>-->
+	<Experience Name="YaoGuai_Experiences29" Group="G3">
+		<DisplayName>热心救人</DisplayName>
+		<Desc>灭门之夜，接受长老记忆传承，并以太一门弟子自居的你，在逃出险地后陆续找到了几名失去意识的太一门同袍，你决定带他们一起行动。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加1！[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<NpcSlot>1</NpcSlot>
+	</Experience>
+	<Experience Name="YaoGuai_Experiences30" Group="G3">
+		<DisplayName>一心救人</DisplayName>
+		<Desc>灭门之夜，接受长老记忆传承，并以太一门弟子自居的你，在逃出险地后找到了好几名失去意识的太一门同袍，你决定带他们一起行动。\n\n\n[size=10]初始[color=#D06508]弟子栏位[/color]增加2！[/size]</Desc>
+		<Point>2</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<NpcSlot>2</NpcSlot>
+	</Experience>
+	
+	
+	<Experience Name="YaoGuai_Experiences8">
+		<DisplayName>粮食储备</DisplayName>
+		<Desc>在逃亡的途中，受动物本能驱使，你沿路收集了许多各种食物作为储备，甚至为此击杀了几条蛇和一头熊。\n\n\n初始[color=#D06508]饮食类物资[/color]大幅提升[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_Fruit" Count="18"/>
+			<li Name= "Item_LingWater" Count="5"/>
+			<li Name= "Item_Ginkgo" Count="76"/>
+			<li Name= "Item_SnakeGallbladder" Count="7"/>
+			<li Name= "Item_BearGallbladder" Count="5"/>
+			<li Name= "Item_BearMeat" Count="96"/>
+			<li Name= "Item_SnakeMeat" Count="66"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences9">
+		<DisplayName>妖兽灵感</DisplayName>
+		<Desc>在逃亡的途中，野性尚存的你靠着动物敏锐的本能，收集到了一些散落在战场外围的好东西。\n\n\n初始物资增添部分[color=#D06508]宝物[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_EarthEssence" Count="1"/>
+			<li Name= "Item_BasePracticeDrug" Count="1"/>
+			<li Name= "Item_Dan_Happiness" Count="7"/>
+		</Items>		
+	</Experience>
+	
+	
+	<Experience Name="YaoGuai_Experiences11">
+		<DisplayName>灵性相投</DisplayName>
+		<Desc>在逃亡途中，也许是感知到你原始而纯洁的灵智，一颗门派中早已通灵却一直隐藏自己的造化神丹主动投到了你怀中，跟随你一起逃出绝地。\n\n\n[size=10]获得一颗[color=#D06508]通灵的造化神丹[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_Dan_ExtremeLofty" Count="1" IsJingGuai="1"/>
+		</Items>	
+	</Experience>
+	
+	
+	<Experience Name="YaoGuai_Experiences14">
+		<DisplayName>药庐遗物</DisplayName>
+		<Desc>在逃亡途中，你遇到一名逃亡出来但却不幸重伤殒命的药庐弟子。你含泪收下了他的遗物。\n\n\n[size=10]初始[color=#D06508]药材类物资[/color]大幅提升。\n初始物资增添[color=#D06508]稀有灵药[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_Healroot" Count="40"/>
+			<li Name= "Item_Mint" Count="40"/>
+			<li Name= "Item_MagicHerb" Count="100"/>
+			<li Name= "Item_RedGinseng" Count="10"/>
+			<li Name= "Item_PurpleGanodermaLucidum" Count="10"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences15">
+		<DisplayName>器庐遗物</DisplayName>
+		<Desc>在逃亡途中，你遇到一名逃亡出来但却不幸重伤殒命的器庐弟子。你含泪收下了他的遗物。\n\n\n[size=10]初始[color=#D06508]材料类物资[/color]大幅提升。\n初始物资增添[color=#D06508]稀有材料[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_Jade" Count="20"/>
+			<li Name= "Item_HardWood" Count="20"/>
+			<li Name= "Item_CopperRock" Count="20"/>
+			<li Name= "Item_SilverRock" Count="20"/>
+			<li Name= "Item_DarksteelRock" Count="10"/>
+			<li Name= "Item_JadeEssence" Count="1"/>
+		</Items>		
+	</Experience>
+	
+	<Experience Name="YaoGuai_Experiences16">
+		<DisplayName>外事遗物</DisplayName>
+		<Desc>在逃亡途中，你遇到一名逃亡出来但却不幸重伤殒命的外事堂弟子。你含泪收下了他的遗物。\n\n\n[size=10]初始[color=#D06508]建设类物资[/color]大幅提升。\n初始物资增添部分[color=#D06508]稀有材料[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Items>
+			<li Name= "Item_RoughWoodBlock" Count="200"/>
+			<li Name= "Item_IronBlock" Count="200"/>
+			<li Name= "Item_MarbleBlock" Count="200"/>
+			<li Name= "Item_SilverBlock" Count="40"/>
+			<li Name= "Item_CopperBlock" Count="40"/>
+		</Items>		
+	</Experience>
+	
+	
+	<Experience Name="YaoGuai_Experiences17">
+		<DisplayName>经楼遗物</DisplayName>
+		<Desc>在逃亡途中，你遇到一名逃亡出来但却不幸重伤殒命的藏经阁弟子。你含泪收下了他的遗物。\n\n\n[size=10]初始物资增添[color=#D06508]秘籍：《太平符箓要册》《真丹要略》[/color]。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>YaoGuai</RaceKind>
+		<Esoterics>
+			<li>SpellEsoterica_5</li>
+			<li>DanFang_1</li>
+		</Esoterics>
+	</Experience>
+</List></Experiences>

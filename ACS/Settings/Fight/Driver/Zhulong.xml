@@ -1,0 +1,39 @@
+<FightDriverDefs><List>
+	<Driver Name="ZhuLong">
+		<EnterSkill>zhulong_dengchang</EnterSkill><!--出场skill-->
+		<DieSkill>zhulong_siwang</DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li><!--晚上-->
+				<Skills>						
+					<li Type="Event"  Name="zhulong_fennu"  sParam1="Message" sParam2="LuanBroken" Rate="0" CoolDown="30"/><!--蛋被破坏时触发-->		
+					<li Type="Event"  Name="zhulong_move"  sParam1="CastSkill" sParam2="zhulong_fennu" Rate="0" CoolDown="0"/><!--愤怒完接移动-->	
+					<li Type="Event"  Name="zhulong_xinlingzezao"  sParam1="BodyPartBroken" sParam2="lefteye,righteye" Rate="0" CoolDown="0"/><!--破坏眼睛-->		
+					<li Type="Check"  Name="zhulong_xinmohuaxing"  sParam1="ModifierStack"  sParam2="Boss_Zhulong_Night" fParam1="100" fParam2="100"  Rate="0" CoolDown="0"/><!--100层暗夜心魔化形-->		
+					
+					<li Type="Normal" Name="zhulong_shiwei1" CDName="shiwei" Rate="0.5" CoolDown="15"/><!--示威12共用CD-->
+					<li Type="Normal" Name="zhulong_shiwei2" CDName="shiwei" Rate="0.5" CoolDown="15"/><!--示威12共用CD-->
+					
+					<li Type="Normal" Name="zhulong_shennianzhilei" Rate="1" CoolDown="5"/><!--神念-->
+					<li Type="Normal" Name="zhulong_xinmolongxi" Rate="1" CoolDown="40"/><!--心魔龙息-->
+					<li Type="Normal" Name="zhulong_shenanzhiyuan" Rate="1" CoolDown="20"/><!--深暗之渊-->
+					
+				</Skills>
+			</li>
+			<li><!--白天-->
+				<Skills>
+					<li Type="Event"  Name="zhulong_fennu"  sParam1="Message" sParam2="LuanBroken" Rate="0" CoolDown="30"/><!--蛋被破坏时触发-->		
+					<li Type="Event"  Name="zhulong_move"  sParam1="CastSkill" sParam2="zhulong_fennu" Rate="0" CoolDown="0"/><!--愤怒完接移动-->	
+					<li Type="Event"  Name="zhulong_yehuocanshen"  sParam1="BodyPartBroken" sParam2="lefteye,righteye" Rate="0" CoolDown="0"/><!--破坏眼睛-->		
+					<li Type="Check"  Name="zhulong_yelihuaxing"  sParam1="ModifierStack"  sParam2="Boss_Zhulong_Day" fParam1="100" fParam2="100"  Rate="0" CoolDown="0"/><!--100层白昼业力化形-->	
+					
+					<li Type="Normal" Name="zhulong_shiwei1" CDName="shiwei" Rate="0.5" CoolDown="10"/><!--示威12共用CD-->
+					<li Type="Normal" Name="zhulong_shiwei2" CDName="shiwei" Rate="0.5" CoolDown="10"/><!--示威12共用CD-->
+					
+					<li Type="Normal" Name="zhulong_zuiniezhilei" Rate="1" CoolDown="0"/><!--罪孽-->
+					<li Type="Normal" Name="zhulong_yehuolongxi" Rate="1" CoolDown="40"/><!--业火龙息-->
+					<li Type="Normal" Name="zhulong_guangzhishenpan" Rate="1" CoolDown="20"/><!--光之审判-->
+				</Skills>
+			</li>
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

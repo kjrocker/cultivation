@@ -1,0 +1,374 @@
+<ModifierDefs><List>
+	<Modifier Name="Gong9_1_1" Type="Normal">
+		<DisplayName>Gong9_1_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="NpcLingMaxValue" AddP="2.4"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1.2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1.2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1.2"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.045"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="2"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-10"/>
+			<li Name="ToleranceTMax" AddV="10"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="0.6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_1_2" Type="Normal">
+		<DisplayName>Gong9_1_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="NpcLingMaxValue" AddP="-0.8"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.4"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-0.4"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.015"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-0.5"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_1_3" Type="Normal">
+		<DisplayName>Gong9_1_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="NpcLingMaxValue" AddP="-1.6"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.8"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.8"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-0.8"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.03"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-1.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-1.5"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-0.4"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			<li Name="NutritionConsumeConstant" AddP="1"/>
+		</Properties>
+	</Modifier> 
+	
+
+	<Modifier Name="Gong9_2_1" Type="Normal">
+		<DisplayName>Gong9_2_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddP="4.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1.8"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1.8"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1.8"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.075"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="5"/>
+			
+			<li Name="ComfyTMin" AddV="-3"/>
+			<li Name="ComfyTMax" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-30"/>
+			<li Name="ToleranceTMax" AddV="30"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="1.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong9_2_2" Type="Normal">
+		<DisplayName>Gong9_2_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-1.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.6"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.6"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-0.6"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.025"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-2"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-2"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-0.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="Gong9_2_3" Type="Normal">
+		<DisplayName>Gong9_2_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-3"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-1.2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-1.2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-1.2"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-3"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-1"/>
+			
+			<li Name="NutritionConsumeConstant" AddP="3"/>
+			<li Name="NutritionWaterAutoRecover" AddV="0.4"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Gong9_3_1" Type="Normal">
+		<DisplayName>Gong9_3_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="60"/>
+			<li Name="NpcLingMaxValue" AddP="13.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.135"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="9"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="9"/>
+			
+			<li Name="ComfyTMin" AddV="-3"/>
+			<li Name="ComfyTMax" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-30"/>
+			<li Name="ToleranceTMax" AddV="30"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="3.6"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_3_2" Type="Normal">
+		<DisplayName>Gong9_3_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-4.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.045"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-3"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-1.2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_3_3" Type="Normal">
+		<DisplayName>Gong9_3_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-9"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-2"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.09"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-6"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-6"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-2.4"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_4_1" Type="Normal">
+		<DisplayName>Gong9_4_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="120"/>
+			<li Name="NpcLingMaxValue" AddP="28.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5.4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="5.4"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="5.4"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.255"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="15"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="15"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="5.4"/>
+		</Properties>
+	</Modifier> 	
+	<Modifier Name="Gong9_4_2" Type="Normal">
+		<DisplayName>Gong9_4_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-9.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-1.8"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-1.8"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-1.8"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.085"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-5"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-1.8"/>
+		</Properties>
+	</Modifier> 	
+	<Modifier Name="Gong9_4_3" Type="Normal">
+		<DisplayName>Gong9_4_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-19"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-3.6"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-3.6"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-3.6"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.17"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-10"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-10"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-3.6"/>
+			
+			<li Name="NutritionConsumeConstant" AddP="6"/>
+			<li Name="NutritionWaterAutoRecover" AddV="1.6"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Gong9_5_1" Type="Normal">
+		<DisplayName>Gong9_5_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="180"/>
+			<li Name="NpcLingMaxValue" AddP="52.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="7.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="7.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="7.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.645"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="21"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="21"/>
+			
+			<li Name="ComfyTMin" AddV="-8"/>
+			<li Name="ComfyTMax" AddV="8"/>
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="60"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="7.2"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_5_2" Type="Normal">
+		<DisplayName>Gong9_5_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-17.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-2.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-2.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-2.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.215"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-7"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-7"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-2.4"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong9_5_3" Type="Normal">
+		<DisplayName>Gong9_5_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-35"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.43"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-14"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-14"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-4.8"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong9_6_1" Type="Normal">
+		<DisplayName>Gong9_6_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="240"/>
+			<li Name="NpcLingMaxValue" AddP="94.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="22.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="22.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="22.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="1.095"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="33"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="33"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="12"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="9.6"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong9_6_2" Type="Normal">
+		<DisplayName>Gong9_6_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-31.5"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-7.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-7.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="-7.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.365"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="-11"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-11"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="-3.2"/>
+		</Properties>
+	</Modifier>
+	
+</List></ModifierDefs>

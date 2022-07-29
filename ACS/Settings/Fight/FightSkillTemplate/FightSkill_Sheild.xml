@@ -1,0 +1,73 @@
+<FightSkills><List>
+	<Skill Name="TSheildSkill"><!--护体真强基础模板 --> 
+		<DisplayName>护体增强</DisplayName>
+		<IsTemplate>1</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>400</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>0.5</Value>
+		<Value2>30</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+	</Skill>
+	
+	<Skill Name="SheildSkill_Gong5_1"><!--护体真强基础模板 --> 
+		<DisplayName>凝血神盾</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>15</CD>
+		<LingCost>100</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>1</Value>
+		<Value2>15</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>60</HitEffect>
+	</Skill>
+	
+	<Skill Name="SheildSkill_Gong4_1"><!--护体真强基础模板 --> 
+		<DisplayName>厚土之盾</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>25</CD>
+		<LingCost>330</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>0.4</Value>
+		<Value2>25</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>60</HitEffect>
+	</Skill>
+	
+	<Skill Name="SheildSkill_Gong11_1"><!--护体真强基础模板 --> 
+		<DisplayName>太虚神盾</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>45</CD>
+		<LingCost>520</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>0.8</Value>
+		<Value2>15</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>63</HitEffect>
+	</Skill>
+</List></FightSkills>

@@ -1,0 +1,171 @@
+<JobDefs><List>
+	<JobDef Name="JobMine">
+		<DriverClass>JobMine</DriverClass>
+		<DisplayName>挖矿</DisplayName>
+		<Desc>test job</Desc>
+		<Damages>
+			<li PartKind="Flesh" Name="Bruise1" Rate="0.45"/>
+			<li PartKind="Flesh" Name="Bruise2" Rate="0.15"/>
+			<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+		</Damages>
+	</JobDef>
+	<JobDef Name="JobCarry">
+		<DriverClass>JobCarry</DriverClass>
+		<DisplayName>搬运</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobBuild">
+		<DriverClass>JobBuild</DriverClass>
+		<DisplayName>建造</DisplayName>
+		<Desc>test job</Desc>
+		<Damages>
+			<li PartKind="Flesh" Name="Bruise1" Rate="0.45"/>
+			<li PartKind="Flesh" Name="Bruise2" Rate="0.15"/>
+			<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+		</Damages>
+	</JobDef>
+	<JobDef Name="JobFixBuilding">
+		<DriverClass>JobFixBuilding</DriverClass>
+		<DisplayName>修理</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMoveBuilding">
+		<DriverClass>JobMoveBuilding</DriverClass>
+		<DisplayName>移动建筑</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobSetupBuilding">
+		<DriverClass>JobMoveBuilding</DriverClass>
+		<DisplayName>安装建筑</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobGoToWalkable">
+		<DriverClass>JobGoToWalkable</DriverClass>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobPlant">
+		<DriverClass>JobPlant</DriverClass>
+		<DisplayName>种植</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobOutFire">
+		<DriverClass>JobOutFire</DriverClass>
+		<DisplayName>灭火</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobHarvest">
+		<DriverClass>JobHarvest</DriverClass>
+		<DisplayName>收获</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCutoff">
+		<DriverClass>JobCutoff</DriverClass>
+		<DisplayName>移除</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCutoffTree">
+		<DriverClass>JobCutoff</DriverClass>
+		<DisplayName>砍伐</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobSeachItem">
+		<DriverClass>JobCutoff</DriverClass>
+		<DisplayName>搜索</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobSeachNpc">
+		<DriverClass>JobSeachNpc</DriverClass>
+		<DisplayName>搜索</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCarryOut">
+		<DriverClass>JobCarryOut</DriverClass>
+		<DisplayName>搬开</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobDismantle">
+		<DriverClass>JobDismantle</DriverClass>
+		<DisplayName>拆除</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMakeItem">
+		<DriverClass>JobMakeItem</DriverClass>
+		<DisplayName>制造</DisplayName>
+		<Desc>test job</Desc>
+		<Damages>
+			<li PartKind="Flesh" Name="Bruise1" Rate="0.25"/>
+			<li PartKind="Flesh" Name="Bruise2" Rate="0.1"/>
+			<li PartKind="Flesh" Name="Scald1" Rate="0.25"/>
+			<li PartKind="Flesh" Name="Scald2" Rate="0.1"/>
+			<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+		</Damages>
+	</JobDef>
+	<JobDef Name="JobRemoveFloor">
+		<DriverClass>JobRemoveFloor</DriverClass>
+		<DisplayName>移除地板</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobTreatHim">
+		<DriverClass>JobTreatHim</DriverClass>
+		<DisplayName>治疗</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCarryToBed">
+		<DriverClass>JobCarryToBed</DriverClass>
+		<DisplayName>搬人上床</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobFeedHim">
+		<DriverClass>JobFeedHim</DriverClass>
+		<DisplayName>照顾</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCarryWater">
+		<DriverClass>JobCarryWater</DriverClass>
+		<DisplayName>挑水</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobExplore">
+		<DriverClass>JobExplore</DriverClass>
+		<DisplayName>探索</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobBuryHim">
+		<DriverClass>JobBuryHim</DriverClass>
+		<DisplayName>埋葬</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+	<JobDef Name="JobHunting">
+		<DriverClass>JobHunting</DriverClass>
+		<DisplayName>狩猎</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+	<JobDef Name="JobSlaughter">
+		<DriverClass>JobSlaughter</DriverClass>
+		<DisplayName>屠宰</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+
+	<JobDef Name="JobKill">
+		<DriverClass>JobKill</DriverClass>
+		<DisplayName>击杀</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobMoveNpc">
+		<DriverClass>JobMoveNpc</DriverClass>
+		<DisplayName>搬运</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobCleanFloor">
+		<DriverClass>JobCleanFloor</DriverClass>
+		<DisplayName>清洁</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+	<JobDef Name="JobSacrifice">
+		<DriverClass>JobSacrifice</DriverClass>
+		<DisplayName>献祭</DisplayName>
+		<Desc>test job</Desc>
+	</JobDef>
+</List></JobDefs>

@@ -1,0 +1,2 @@
+Id	YearDay	Sec	Event
+2	97	300	30018

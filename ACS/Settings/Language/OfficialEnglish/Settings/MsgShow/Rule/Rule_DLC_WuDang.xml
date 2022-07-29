@@ -1,0 +1,14 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="School_13">
+			<DisplayName>Sect Relation - WuDang Sect</DisplayName>
+			<Desc>The attitude your sect's disciples shall take when dealing with Wudang Sect.</Desc>
+			<Selection.0.DisplayName>Benevolent</Selection.0.DisplayName>
+			<Selection.0.Desc>Dealing with them with a friendly attitude.</Selection.0.Desc>
+			<Selection.1.DisplayName>Malevolent</Selection.1.DisplayName>
+			<Selection.1.Desc>Dealing with them with a hostile attitude.</Selection.1.Desc>
+			<Selection.2.DisplayName>Avoiding Trouble</Selection.2.DisplayName>
+			<Selection.2.Desc>Take the initiative to evade them when encountering their people.</Selection.2.Desc>
+		</Text>
+	</List>
+</Texts>

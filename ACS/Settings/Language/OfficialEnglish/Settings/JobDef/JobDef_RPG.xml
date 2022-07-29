@@ -1,0 +1,52 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobAIPathMove">
+			<DisplayName>Move</DisplayName>
+		</Text>
+		<Text Name="JobRPGAIFree">
+			<DisplayName>Wander</DisplayName>
+		</Text>
+		<Text Name="JobRPGAIStay">
+			<DisplayName>Stay</DisplayName>
+		</Text>
+		<Text Name="JobRPGAIRoute">
+			<DisplayName>Patrol</DisplayName>
+		</Text>
+		<Text Name="JobRPGAIPatrol">
+			<DisplayName>Roam</DisplayName>
+		</Text>
+		<Text Name="JobRPGPlayerMove">
+			<DisplayName>Move</DisplayName>
+		</Text>
+		<Text Name="JobRPGOpt">
+			<DisplayName>Move</DisplayName>
+		</Text>
+		<Text Name="JobRPGMine">
+			<DisplayName>Mine</DisplayName>
+		</Text>
+		<Text Name="JobRPGCutoff">
+			<DisplayName>Chop</DisplayName>
+		</Text>
+		<Text Name="JobRPGPickup">
+			<DisplayName>Collect</DisplayName>
+		</Text>
+		<Text Name="JobRPGEat">
+			<DisplayName>Eat</DisplayName>
+		</Text>
+		<Text Name="JobRPGDialog">
+			<DisplayName>Talk</DisplayName>
+		</Text>
+		<Text Name="JobRPGEquip">
+			<DisplayName>Equip</DisplayName>
+		</Text>
+		<Text Name="JobRPGPassiveMove">
+			<DisplayName>Move</DisplayName>
+		</Text>
+		<Text Name="JobRPGMoveTo">
+			<DisplayName>Move To</DisplayName>
+		</Text>
+		<Text Name="JobRPGSlaughter">
+			<DisplayName>Butcher</DisplayName>
+		</Text>
+	</List>
+</Texts>

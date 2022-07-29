@@ -1,0 +1,483 @@
+<Stories><List>	
+	<Story Name="Disaster_Drought"  Parent="BaseFillingStory">
+		<DisplayName>旱灾</DisplayName>
+		<Desc>此地正在发生旱灾。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>帮助赈灾</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me);
+					Out:AddDisasterAid(Out:GetRegion(story.Secret.sParam2), count, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，召唤了大雨，灾难缓解了不少。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("我方赈灾进度增加了{0}。"), count);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>加剧灾难</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me);
+					Out:SubDisasterNeed(Out:GetRegion(story.Secret.sParam2), -count, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，又减少了食物的产量，灾难加剧了。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("赈灾需求提高了{0}。"), count);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>安抚民心</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				me:IsGodPractice() == true
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local k = Out:GetRegion(story.Secret.sParam2)
+					local Pop = WorldLua:RandomInt(5000, 8000);
+					local faith = WorldLua:RandomInt(10000, 20000);
+					me:AddFaith(faith);
+					me:AddGodPopulation(Pop);
+					story:FinishSecret();
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me)/2;
+					Out:AddDisasterAid(k, count, -1)
+					WorldLua:AddMsg(XT("{1}发动神力，直达灾民心怀。我方赈灾进度增加了{0}。"), count, me.npcObj:GetName());
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Disaster_Flood"  Parent="BaseFillingStory">
+		<DisplayName>洪灾</DisplayName>
+		<Desc>此地正在发生洪灾。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>帮助赈灾</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:AddDisasterAid(Out:GetRegion(story.Secret.sParam2), k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，用土封住了洪水，灾难缓解了不少。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("我方赈灾进度增加了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>加剧灾难</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:SubDisasterNeed(Out:GetRegion(story.secret.sParam2), -k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，又招来一些洪水，灾难加剧了。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("赈灾需求提高了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>安抚民心</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				me:IsGodPractice() == true
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local k = Out:GetRegion(story.Secret.sParam2)
+					local Pop = WorldLua:RandomInt(5000, 8000);
+					local faith = WorldLua:RandomInt(10000, 20000);
+					me:AddFaith(faith);
+					me:AddGodPopulation(Pop);
+					story:FinishSecret();
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me)/2;
+					Out:AddDisasterAid(k, count, -1)
+					WorldLua:AddMsg(XT("{1}发动神力，直达灾民心怀。我方赈灾进度增加了{0}。"), count, me.npcObj:GetName());
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Disaster_Siberia"  Parent="BaseFillingStory">
+		<DisplayName>寒潮</DisplayName>
+		<Desc>此地正在发生寒潮。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>帮助赈灾</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:AddDisasterAid(Out:GetRegion(story.Secret.sParam2), k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，加热了此地的空气，灾难缓解了不少。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("我方赈灾进度增加了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>加剧灾难</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:SubDisasterNeed(Out:GetRegion(story.Secret.sParam2), -k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，又降低了温度，灾难加剧了。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("赈灾需求提高了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>安抚民心</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				me:IsGodPractice() == true
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local k = Out:GetRegion(story.Secret.sParam2)
+					local Pop = WorldLua:RandomInt(5000, 8000);
+					local faith = WorldLua:RandomInt(10000, 20000);
+					me:AddFaith(faith);
+					me:AddGodPopulation(Pop);
+					story:FinishSecret();
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me)/2;
+					Out:AddDisasterAid(k, count, -1)
+					WorldLua:AddMsg(XT("{1}发动神力，直达灾民心怀。我方赈灾进度增加了{0}。"), count, me.npcObj:GetName());
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="Disaster_EarthQuake"  Parent="BaseFillingStory">
+		<DisplayName>地震</DisplayName>
+		<Desc>此地正在发生地震。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>帮助赈灾</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:AddDisasterAid(Out:GetRegion(story.Secret.sParam2), k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，直接修复了一些人家的房屋，灾难缓解了不少。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("我方赈灾进度增加了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>加剧灾难</Display>
+				<OKResult>
+					<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local k = tbTable:InnerDisaster(me);
+					Out:SubDisasterNeed(Out:GetRegion(story.Secret.sParam2), -k, -1)
+					WorldLua:AddMsg(XT("{0}大显神通，又发动了一次小地震，灾难加剧了。"), me.npcObj:GetName());
+					WorldLua:AddMsg(XT("赈灾需求提高了{0}。"), k);
+					story:FinishSecret();
+					]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>安抚民心</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				me:IsGodPractice() == true
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					local Out = CS.XiaWorld.OutspreadMgr.Instance
+					local k = Out:GetRegion(story.Secret.sParam2)
+					local Pop = WorldLua:RandomInt(5000, 8000);
+					local faith = WorldLua:RandomInt(10000, 20000);
+					me:AddFaith(faith);
+					me:AddGodPopulation(Pop);
+					story:FinishSecret();
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local count = tbTable:InnerDisaster(me)/2;
+					Out:AddDisasterAid(k, count, -1)
+					WorldLua:AddMsg(XT("{1}发动神力，直达灾民心怀。我方赈灾进度增加了{0}。"), count, me.npcObj:GetName());
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Place_Drought"  Parent="BaseFillingStory">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下旱灾。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					if not solve or solve == enumSolve.None then
+						WorldLua:AddMsg(XT("{0}只是将部分食物分给灾民。"), pmName);
+						tbTable:SlightlyAidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then 
+						WorldLua:AddMsg(XT("{0}想要安抚难民，但危机情况下嘴皮子还是不够实在。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						WorldLua:AddMsg(XT("{0}抓了一些难民，把食物强行给他们，只有少数人拿了食物。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						WorldLua:AddMsg(XT("{0}大张旗鼓地做了很多美食，放在路边，喊道：“加我们，食物免费拿！”因为在紧要关头，群众纷纷选择拿了食物。"), pmName);
+						tbTable:IncreasePop(WorldLua, cRegion);
+						tbTable:AidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						WorldLua:AddMsg(XT("{0}想要动脑筋如何更快地赈灾，可时间不等人，白白错过了许多灾民"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						WorldLua:AddMsg(XT("众人把食物一抢而空，许多难民都拿到了食物。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						WorldLua:AddMsg(XT("{0}准备将灵石分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人知道这是什么。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						WorldLua:AddMsg(XT("{0}准备将木头分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这么大一根木棍。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						WorldLua:AddMsg(XT("{0}准备将石料分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这么大一块石头。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，让他们分头去帮助灾民。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Place_Flood"  Parent="BaseFillingStory">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下洪灾。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					if not solve or solve == enumSolve.None then
+						WorldLua:AddMsg(XT("{0}只是将部分石料分给灾民。"), pmName);
+						tbTable:SlightlyAidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then 
+						WorldLua:AddMsg(XT("{0}想要安抚难民，但危机情况下嘴皮子还是不够实在。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						WorldLua:AddMsg(XT("{0}抓了一些难民，把赈灾石料强行给他们，只有少数人拿了石料。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						WorldLua:AddMsg(XT("{0}将石料放在路边，向群众喊道：“成为我们的信徒即可免费领石料！”虽然看起来像趁火打劫，但群众也管不了那么多了。"), pmName);
+						tbTable:AidDisaster(WorldLua, cRegion);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						WorldLua:AddMsg(XT("{0}想要动脑筋如何更快地赈灾，可时间不等人，白白错过了许多灾民"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						WorldLua:AddMsg(XT("虽然有人缺食物，但修建堤坝才是要紧的事情。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						WorldLua:AddMsg(XT("{0}准备将灵石分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人知道这是什么。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						WorldLua:AddMsg(XT("{0}准备将木头分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这些木头。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						WorldLua:AddMsg(XT("{0}号召弟子将石料直接用于修建防洪工程。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，让他们分头去帮助灾民。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Place_Siberia"  Parent="BaseFillingStory">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下寒潮。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					if not solve or solve == enumSolve.None then
+						WorldLua:AddMsg(XT("{0}只是将部分赈灾木材分给灾民。"), pmName);
+						tbTable:SlightlyAidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then 
+						WorldLua:AddMsg(XT("{0}想要安抚难民，但危机情况下嘴皮子还是不够实在。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						WorldLua:AddMsg(XT("{0}抓了一些难民，把木材强行给他们，只有少数人拿了食物。"), pmName);
+						tbTable:SlightlyAidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						WorldLua:AddMsg(XT("{0}将木材摆上街头，说道：“只要加入我们，木材免费拿！”灾民实在冷得不行，拿了很多木头回家当柴了。"), pmName);
+						tbTable:AidDisaster(WorldLua, cRegion);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						WorldLua:AddMsg(XT("{0}想要动脑筋如何更快地赈灾，可时间不等人，白白错过了许多灾民"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						WorldLua:AddMsg(XT("{0}准备将食物分给灾民。但他们并不缺食物。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						WorldLua:AddMsg(XT("{0}准备将灵石分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人知道这是什么。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						WorldLua:AddMsg(XT("{0}将木材砍成柴火直接送到灾民手里。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						WorldLua:AddMsg(XT("{0}准备将石料分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要石头。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，让他们分头去帮助灾民。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Place_EarthQuake"  Parent="BaseFillingStory">
+		<DisplayName>赈灾</DisplayName>
+		<Desc>代理人[NAME]决定处理一下地震。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					if not solve or solve == enumSolve.None then
+						WorldLua:AddMsg(XT("{0}只是将部分石料分给灾民。"), pmName);
+						tbTable:SlightlyAidDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then 
+						WorldLua:AddMsg(XT("{0}想要安抚难民，但危机情况下嘴皮子还是不够实在。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						WorldLua:AddMsg(XT("{0}抓了一些难民，把赈灾石料强行给他们，只有少数人拿了石料。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						WorldLua:AddMsg(XT("{0}将石料放在路边，向群众喊道：“成为我们的信徒即可免费领石料！”虽然看起来像趁火打劫，但群众也管不了那么多了。"), pmName);
+						tbTable:AidDisaster(WorldLua, cRegion);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						WorldLua:AddMsg(XT("{0}想要动脑筋如何更快地赈灾，可时间不等人，白白错过了许多灾民"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						WorldLua:AddMsg(XT("虽然有人缺食物，但修建堤坝才是要紧的事情。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						WorldLua:AddMsg(XT("{0}准备将灵石分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人知道这是什么。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						WorldLua:AddMsg(XT("{0}准备将木头分给灾民。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这些木头。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						WorldLua:AddMsg(XT("{0}号召弟子将石料直接用于重建群众的家园。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，让他们分头去帮助灾民。"), pmName);
+						tbTable:AidHugeDisaster(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="MapStory_DroughtFinish"  Parent="BaseFillingStory">
+		<DisplayName>灾难结束</DisplayName>
+		<Desc>灾难持续了许多日，民不聊生，收成锐减，多人丧生，更多人逃离了这里。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					tbTable:HugeDecreaseStab(WorldLua, cRegion);
+					tbTable:DisasterDecreaseAllPop(WorldLua, cRegion);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="MapStory_DroughtSolve"  Parent="BaseFillingStory">
+		<DisplayName>灾难结束</DisplayName>
+		<Desc>在各方的努力下，灾情得到了有效的控制。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					tbTable:HugeIncreaseStab(WorldLua, cRegion);
+					tbTable:DisasterAffectAllPop(WorldLua, cRegion);
+					tbTable:DisasterResult(WorldLua, cRegion, story.target.disaster);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

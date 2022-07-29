@@ -1,0 +1,311 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_CapeBase" Parent="EquipmentBase">	
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_PuTongPiFeng01</TexPath>	
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>6</Beauty>
+		<Rate>6</Rate>
+		<ElementKind>Mu</ElementKind>	
+		<IllustratedHandLabel>Equip</IllustratedHandLabel>
+		<Item Lable="Cape">			
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>帛,纱,罗</FabaoSuffix>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="1" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft2</li>
+			</PhysicalLables>
+			<Equip>
+		<!--<CapeData>
+				<Mat>CapeMat/Cape2</Mat> <!{1}**指定材质球，可以为空**{1}>		
+				<MainTexture></MainTexture><!{1}**主贴图**{1}>				
+				<MaskTexture></MaskTexture><!{1}**通道贴图 可以没有 有的话就是RGB三个通道分布偏色**{1}>				
+				<ColorR></ColorR><!{1}**R通道颜色**{1}>
+				<ColorG></ColorG><!{1}**G通道颜色**{1}>
+				<ColorB></ColorB><!{1}**B通道颜色**{1}>
+				
+				<FlowTexture></FlowTexture><!{1}**流动效果贴图 可以没有**{1}>
+				<FlowColor></FlowColor><!{1}**流动效果贴图 偏色**{1}>
+				<FlowMoveX></FlowMoveX><!{1}**流动效果贴图X滚动速度**{1}>
+				<FlowMoveY></FlowMoveY><!{1}**流动效果贴图Y滚动速度**{1}>
+				<FlowRot></FlowRot><!{1}**流动效果贴图旋转速度**{1}>
+			</CapeData>-->
+			</Equip>
+		<HorseData>
+		</HorseData>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Cape_Nomal1" Parent="Item_CapeBase">	
+		<ThingName>火纹披风</ThingName>
+		<Desc>装饰用披风，是修行界广为流行的款式。</Desc>
+		<Item Lable="Cape">	
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+				<StuffCategories>
+					<Stuff name = "Cloth"/>
+				</StuffCategories>
+				<CostStuffCount>35</CostStuffCount>
+			</BeMade>
+			<Equip>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng002</Mat>
+					<FlowTexture>None</FlowTexture><!--流动效果贴图 可以没有-->
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Nomal2" Parent="Item_Cape_Nomal1">	
+		<ThingName>云纹披风</ThingName>
+		<Desc>装饰用披风，是修行界广为流行的款式。</Desc>
+		<Item Lable="Cape">	
+			<Equip>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng003</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Nomal3" Parent="Item_Cape_Nomal1">	
+		<ThingName>幽纹披风</ThingName>
+		<Desc>装饰用披风，是修行界广为流行的款式。</Desc>
+		<Item Lable="Cape">	
+			<Equip>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng008</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Nomal4" Parent="Item_Cape_Nomal1">	
+		<ThingName>明纹披风</ThingName>
+		<Desc>装饰用披风，是修行界广为流行的款式。</Desc>
+		<Item Lable="Cape">	
+			<Equip>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng009</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Cape_Sp1" Parent="Item_CapeBase">	
+		<ThingName>周流</ThingName>
+		<Desc>纹理精美的装饰用披风，是昆仑法会斗法优胜者之标志。</Desc>
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_GaoJiPiFeng01</TexPath>
+		<Beauty>15</Beauty>
+		<Rate>9</Rate>
+		<Color>#EED090FF</Color>
+		<ElementKind>Mu</ElementKind>	
+		<Item Lable="Cape">	
+			<NotRandom>1</NotRandom>
+			<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5"/>
+					<SalePrice Value="5000"/>
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10" />
+					<SalePrice Value="3000"/>
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="100"/>
+					<SalePrice Value="0"/>
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<NeedUnlock>1</NeedUnlock>
+				<WorkToMake>300</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+			</BeMade> 	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng001</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp2" Parent="Item_Cape_Sp1">	
+		<ThingName>天火烬灭</ThingName>
+		<Desc>战胜凶凤的标志。其上图案为凶凤体内精华显化的自然呈现，看上去很是玄妙。</Desc>
+		<Color>#F8AC5BFF</Color>
+		<ElementKind>Huo</ElementKind>	
+		<Item Lable="Cape">	
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cape_Nomal1" count = "1"/>
+					<Item name = "Item_BossFeng_TouYu" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<NotRandom>1</NotRandom>
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng002</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp3" Parent="Item_Cape_Sp1">	
+		<ThingName>寒云荡雪</ThingName>
+		<Desc>战胜蛟龙的标志。其上图案为蛟龙体内精华显化的自然呈现，看上去很是玄妙。</Desc>
+		<Color>#6F8AD8FF</Color>
+		<ElementKind>Shui</ElementKind>	
+		<Item Lable="Cape">	
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cape_Nomal2" count = "1"/>
+					<Item name = "Item_BossLong_NiLin" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<NotRandom>1</NotRandom>
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng003</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp4" Parent="Item_Cape_Sp1">	
+		<ThingName>造化</ThingName>
+		<Desc>纹理精美的装饰用披风，是昆仑法会炼器优胜者之标志。</Desc>
+		<Color>#C9AD51FF</Color>
+		<Item Lable="Cape">	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng004</Mat>
+				</CapeData>
+			</Equip>
+			<NotRandom>1</NotRandom>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp5" Parent="Item_Cape_Sp1">	
+		<ThingName>丹羲</ThingName>
+		<Desc>纹理精美的装饰用披风，是昆仑法会炼丹优胜者之标志。</Desc>
+		<Color>#E7DAA3FF</Color>
+		<Item Lable="Cape">	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng005</Mat>
+				</CapeData>
+			</Equip>
+			<NotRandom>1</NotRandom>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp6" Parent="Item_Cape_Sp1">	
+		<ThingName>不盈</ThingName>
+		<Desc>纹理精美的装饰用披风，是昆仑法会论剑优胜者之标志。</Desc>
+		<Color>#C2B9F0FF</Color>
+		<Item Lable="Cape">	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng006</Mat>
+				</CapeData>
+			</Equip>
+			<NotRandom>1</NotRandom>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp7" Parent="Item_Cape_Sp1">	
+		<ThingName>诸象生迹</ThingName>
+		<Desc>来自异界的装饰用披风，寓意着冬去春来，万物生发。</Desc>
+		<Color>#A3F6E4FF</Color>
+		<Item Lable="Cape">	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng007</Mat>
+				</CapeData>
+			</Equip>
+			<NotRandom>1</NotRandom>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp8" Parent="Item_Cape_Sp1">	
+		<ThingName>幽蚩化影</ThingName>
+		<Desc>战胜烛龙的标志。其上图案为烛龙体内混沌精华显化为阴的自然呈现，看上去很是玄妙。</Desc>
+		<Color>#EA4343FF</Color>
+		<Item Lable="Cape">	
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cape_Nomal3" count = "1"/>
+					<Item name = "Item_BossZhuLong_HeiLin" count = "10"/>
+					<Item name = "Item_BossZhuLong_LongYu" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<NotRandom>1</NotRandom>
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng008</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp9" Parent="Item_Cape_Sp1">	
+		<ThingName>明羽含光</ThingName>
+		<Desc>战胜烛龙的标志。其上图案为烛龙体内混沌精华显化为阳的自然呈现，看上去很是玄妙。</Desc>
+		<Color>#F2F6FFFF</Color>
+		<Item Lable="Cape">	
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Cape_Nomal3" count = "1"/>
+					<Item name = "Item_BossZhuLong_BaiLin" count = "10"/>
+					<Item name = "Item_BossZhuLong_LongYu" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<NotRandom>1</NotRandom>
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng009</Mat>
+				</CapeData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_Cape_Sp10" Parent="Item_Cape_Sp1">	
+		<ThingName>道纪</ThingName>
+		<Desc>纹理精美的装饰用披风，是昆仑法会论道优胜者之标志。所谓：执古之道，以御今之有，能知古始，是谓道纪。</Desc>
+		<Color>#BF8578FF</Color>
+		<ElementKind>None</ElementKind>	
+		<Item Lable="Cape">	
+			<Equip>		
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng010</Mat>
+				</CapeData>
+			</Equip>
+			<NotRandom>1</NotRandom>
+		</Item>	
+	</ThingDef>
+</List></ThingDefs>

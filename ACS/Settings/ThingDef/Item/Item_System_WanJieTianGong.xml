@@ -1,0 +1,478 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="WanJie_DanBase" Parent="DanBase">
+		<MaxStack>100</MaxStack>
+		<Beauty>10</Beauty>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1000"/>
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1500" />
+					<SalePrice Value="0" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Light>
+			<Value>15</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>1</Radius>
+			<Color>62F8FFFF</Color>
+		</Light>	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="WanJie_DrugBase" Parent="DrugBase">
+	<MaxStack>100</MaxStack>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="500" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+		</BeMade> 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.05</LingNumberRate>
+			
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+		</Food>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="WanJie_ClothesBase" Parent="ClothesBase">
+	
+	<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<MaxStack>1</MaxStack>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item Kind="Equipment" Lable="Clothes">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>衣,甲,御,衫</FabaoSuffix>
+		<BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Item" Name="WanJie_TrousersBase" Parent="TrousersBase">
+	
+	<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<MaxStack>1</MaxStack>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item Kind="Equipment" Lable="Trousers">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>衣,甲,御,衫</FabaoSuffix>
+		 <BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Item" Name="WanJie_BowBase" Parent="Item_WeaponBow">
+	<MaxStack>1</MaxStack>
+	<Item Lable="Weapon">
+		<FabaoSuffix>弓</FabaoSuffix>
+		<PhysicalLables>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		</BeMade> 
+		<Equip>
+			<Damage>15</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>10</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.35"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.35"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.35"/>
+			</AtkDamage>
+			<AttackSkill>NormalAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkAnis>
+				<li Name="GGpgong1" HitPoint="13" Bip="Bip001 L Hand"/>
+			</AtkAnis>
+			<ModPath>Mod/Prop/Weapon/weapon_gong2</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="WanJie_KnifeBase" Parent="Item_WeaponKnife">
+	<MaxStack>1</MaxStack>
+	<Item Lable="Weapon">
+		<FabaoSuffix>刃</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		</BeMade> 		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>1.1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_dao1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="WanJie_LanceBase" Parent="Item_WeaponLance">
+	<MaxStack>1</MaxStack>
+	<Item Lable="Weapon">
+		<FabaoSuffix>枪</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		</BeMade> 		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.9</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.15"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.5"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.45"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SSpgong1" HitPoint="11"/>
+				<li Name="SSpgong2" HitPoint="14"/>
+				<li Name="SSpgong3" HitPoint="14"/>
+				<li Name="SSpgong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Spear</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_chang3</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="WanJie_HalbertBase" Parent="Item_WeaponHalbert">
+	<MaxStack>1</MaxStack>
+	<Item Lable="Weapon">
+		<FabaoSuffix>锤</FabaoSuffix>
+		<PhysicalLables>
+			<li>Blunt</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>800</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		</BeMade> 		
+		<Equip>
+			<Damage>30</Damage>
+			<AttackSpeed>0.6</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.2"/>
+				<li PartKind="Organ" Name="VisceralRupture" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.4"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SDpugong1" HitPoint="9"/>
+				<li Name="SDpugong2" HitPoint="8"/>
+				<li Name="SDpugong3" HitPoint="13"/>
+				<li Name="SDpugong4" HitPoint="12"/>
+			</AtkAnis>
+			<WeaponKind>Double</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_shuangshou1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="WanJie_AxeRingBase" Parent="Item_WeaponAxeRing">
+	<MaxStack>1</MaxStack>
+	<Item Lable="Weapon">
+		<FabaoSuffix>环</FabaoSuffix>
+		
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		</BeMade> 		
+		<Equip>
+			<Damage>8</Damage>
+			<AttackSpeed>2</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.5"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.1"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="kszdpugong1" HitPoint="13"/>
+				<li Name="kszdpugong2" HitPoint="11"/>
+				<li Name="kszdpugong3" HitPoint="25"/>
+				<li Name="kszdpugong4" HitPoint="15"/>
+			</AtkAnis>
+			<WeaponKind>Glove</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_huan1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>	
+	
+	<ThingDef Type="Item" Name="WanJie_OtherEquipBase" Parent="ToolBase">
+	<MaxStack>1</MaxStack>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>5</Beauty>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>150</BurningPoint>
+	</Flammability>
+	
+	<Item  Lable="Tool">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

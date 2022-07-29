@@ -1,0 +1,66 @@
+﻿<Funs><List>
+	
+	<Fun Name="LookAtSky" FunType="Quiet" Class="FunLookAtSky" >
+		<Desc>发呆/看天/太阳/月亮</Desc>
+		<Duration>0.03</Duration>
+		<Efficiency>1</Efficiency>
+		<Animation>sleep001</Animation>
+	</Fun>
+	
+	<Fun Name="Dance" FunType="Dance" Class="FunDance" >
+		<Desc>跳舞</Desc>
+		<SexNeed>Female</SexNeed>
+		<Duration>0.03</Duration>
+		<Efficiency>3</Efficiency>
+		<Animation>wudao1@F</Animation>
+	</Fun>
+	
+	<Fun Name="Music" FunType="Music" Class="FunPlayWithBuilding">	
+		<Desc>奏乐</Desc>
+		<Duration>0.04</Duration>
+		<Efficiency>4.35</Efficiency>
+		<NeedBuilding>GuzhengTable</NeedBuilding>
+		<AddExpSkill>Art</AddExpSkill>
+		<Produce>Music</Produce>
+		<AddExp>20</AddExp>
+		<Animation>guzheng1</Animation>
+	</Fun>
+	<Fun Name="PlayBird" FunType="PlayBird" Class="FunPlayWithBuilding">	
+		<Desc>逗鸟虫</Desc>
+		<Duration>0.02</Duration>
+		<Efficiency>6</Efficiency>
+		<NeedBuilding>CageShelf</NeedBuilding>
+		<AddExpSkill>SocialContact</AddExpSkill>
+		<AddExp>40</AddExp>
+		<Animation>douniao1</Animation>
+	</Fun>
+	<Fun Name="Calligraphy" FunType="Calligraphy" Class="FunPlayWithBuilding">	
+		<Desc>书画</Desc>
+		<Duration>0.04</Duration>
+		<Efficiency>3.2</Efficiency>
+		<NeedBuilding>CalligraphyTable</NeedBuilding>
+		<AddExpSkill>Art</AddExpSkill>
+		<Produce>Painting</Produce>
+		<AddExp>20</AddExp>
+		<Animation>shuhua1</Animation>
+	</Fun>
+	<Fun Name="PlayChess" FunType="PlayChess" Class="FunPlayWithBuilding">	
+		<Desc>下棋</Desc>
+		<Duration>0.04</Duration>
+		<Efficiency>3.8</Efficiency>
+		<NeedBuilding>GoTable</NeedBuilding>
+		<AddExpSkill>Art</AddExpSkill>
+		<Produce>Chess</Produce>
+		<AddExp>40</AddExp>
+		<Animation>xiaqi1</Animation>
+	</Fun>
+	<Fun Name="PlayTicTacToe" FunType="PlayTicTacToe" Class="FunPlayWithBuilding">	
+		<Desc>下井字棋</Desc>
+		<Duration>0.04</Duration>
+		<Efficiency>2.5</Efficiency>
+		<NeedBuilding>TicTacToe</NeedBuilding>
+		<AddExpSkill>Art</AddExpSkill>
+		<AddExp>40</AddExp>
+		<Animation>xiaqi1</Animation>
+	</Fun>
+</List></Funs>

@@ -1,0 +1,36 @@
+<CommentUIDefs>
+    <List>
+        <CommentUIDef>
+            <Name>GongDengXian</Name>
+            <Notes></Notes>
+            <Title>登仙之法</Title>
+            <Desc>此类功法可以直通仙道，飞升成仙。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>GongYuanShen</Name>
+            <Notes></Notes>
+            <Title>元神之法</Title>
+            <Desc>此类功法最高可以修成元神境界。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>GongJinDan</Name>
+            <Notes></Notes>
+            <Title>金丹之法</Title>
+            <Desc>此类功法最高可以结成金丹。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+        <CommentUIDef>
+            <Name>GongFanSu</Name>
+            <Notes></Notes>
+            <Title>凡俗之法</Title>
+            <Desc>此类功法十分普通，连结丹都不能够。</Desc>
+            <Tips></Tips>
+            <SpecialInlet></SpecialInlet>
+        </CommentUIDef>
+    </List>
+</CommentUIDefs>

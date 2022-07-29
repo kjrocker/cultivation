@@ -1,0 +1,82 @@
+<BodyDefs><List>
+
+<BodyDef Name="SnakeBody">
+	<Groups>
+		<Group Name="RightArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftLegMovement" MaxValue="0.6"/>
+		<Group Name="RightLegMovement" MaxValue="0.6"/>
+	</Groups>
+	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="AllHead" DisplayName="头部"  Kind="Virtual" Rate="0.05">
+				<Parts>
+					<li Name="Skull" DisplayName="头骨" Kind="Bone" Rate="0.5" Deadly="1"/>
+
+					<li Name="Brain" DisplayName="脑" Kind="Organ" Rate="0.1" Deadly="1">
+<!--					<Links>
+							<li>LeftEye</li>
+						</Links>-->
+						<Function>
+							<li Kind="Consciousness" Value="0.8"/>
+						</Function>
+					</li>
+					
+					<li Name="LeftEye" DisplayName="左眼" Kind="Organ" Rate="0.1">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="RightEye" DisplayName="右眼" Kind="Organ" Rate="0.1">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="Nose" DisplayName="鼻" Kind="Organ" Rate="0.1"/>
+					<li Name="Mouth" DisplayName="口" Kind="Organ" Rate="0.1"/>
+					
+					<li Name="Throat" DisplayName="七寸" Kind="Flesh" Rate="0.2"/>
+					<li Name="Head" DisplayName="头" Kind="Organ" Rate="1" Deadly="1"/>
+
+				</Parts>
+			</li>
+			
+			<li Name="AllBody" Kind="Virtual" Rate="0.28" Deadly="1">
+				<Parts>
+					<li Name="LeftRibs1" DisplayName="第一节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="RightRibs1" DisplayName="第二节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="LeftRibs2" DisplayName="第三节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="RightRibs2" DisplayName="第四节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="LeftRibs3" DisplayName="第五节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="RightRibs3" DisplayName="第六节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="LeftRibs4" DisplayName="第七节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="RightRibs4" DisplayName="第八节骨" Kind="Bone" Rate="0.05"/>
+					<li Name="Spine" DisplayName="脊柱" Kind="Bone" Rate="0.02">
+						<Function>
+							<li Kind="Movement" Value="1"/>
+							<li Kind="Operation" Value="1"/>
+						</Function>
+					</li>
+					<li Name="Heart" DisplayName="心" Kind="Organ" Rate="0.01" Deadly="1"/>
+					<li Name="Liver" DisplayName="肝" Kind="Organ" Rate="0.01" Deadly="1"/>
+					<li Name="Spleen" DisplayName="脾" Kind="Organ" Rate="0.01" Deadly="1"/>
+					<li Name="Lung" DisplayName="肺" Kind="Organ" Rate="0.02" Deadly="1"/>
+					<li Name="Kidney" DisplayName="肾" Kind="Organ" Rate="0.02" Deadly="1"/>
+					<li Name="Stomach"  DisplayName="胃" Kind="Organ" Rate="0.01"/>
+					<li Name="Intestines" DisplayName="肠" Kind="Organ" Rate="0.01"/>
+					<li Name="Body" DisplayName="躯干" Kind="Organ" Rate="1" Deadly="1"/>
+				</Parts>
+			</li>
+			
+			
+			<li Name="TheWholeBody" DisplayName="全身" Kind="Virtual" Rate="0" Deadly="1">
+				<Function>
+					<li Kind="Consciousness" Value="1"/>
+				</Function>
+			</li>
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>

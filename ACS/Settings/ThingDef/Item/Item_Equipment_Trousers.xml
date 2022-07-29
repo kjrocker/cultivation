@@ -1,0 +1,392 @@
+<ThingDefs><List>
+<ThingDef Type="Item" Name="TrousersBase" Parent="EquipmentBase">
+	
+	<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Frags>	
+		<li Frag="Pants" />
+	</Frags>
+	
+	<Desc>Desc.</Desc>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="5" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="10" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>衣,甲,御,衫</FabaoSuffix>
+		 <BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!--<!{2}**<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>**{2}>
+			<StuffCategories>
+			<!{2}**<Stuff name = "Metallic"/>**{2}>
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<!{2}**<Item name = "wheat" count = "1"/>**{2}>
+			</CostItems>-->
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.0001</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Item" Name="Item_SummerTrousers" Parent="TrousersBase">
+	<ThingName>薄下裳</ThingName>
+	<TexPath>res/Sprs/object/object_danku01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>比较透气的衣物，也可轻微御寒。</Desc>
+	<Item Lable="Trousers">
+		
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>35</CostStuffCount>
+		</BeMade>
+		
+		<Equip>
+			<ModelID>1</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>3</TemperatureMaxAdd>
+			<TemperatureMinAdd>-2</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SilkTrousers" Parent="TrousersBase">
+	<ThingName>清凉下裳</ThingName>
+	<TexPath>res/Sprs/object/object_danku01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>清爽宽松的衣物，穿上去会觉得很凉快。</Desc>
+	<Item Lable="Trousers">
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		
+		<Equip>
+			<ModelID>2</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>6</TemperatureMaxAdd>
+			<TemperatureMinAdd>3</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PracticeTrousers" Parent="TrousersBase">
+	<ThingName>修行下裳</ThingName>
+	<TexPath>res/Sprs/object/object_mianku01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>门派制式衣物，比较保暖，但是不太透气。</Desc>
+	<Item Lable="Trousers">
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>60</CostStuffCount>
+		</BeMade>
+		
+		<Equip>
+			<ModelID>3</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-2</TemperatureMaxAdd>
+			<TemperatureMinAdd>-5</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_FormalTrousers" Parent="TrousersBase">
+	<ThingName>休闲下裳</ThingName>
+	<TexPath>res/Sprs/object/object_mianku01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>很日常的衣物，比较保暖，但是不太透气。</Desc>
+	<Item Lable="Trousers">
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>45</CostStuffCount>
+		</BeMade>
+		
+		<Equip>
+			<ModelID>4</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-3</TemperatureMaxAdd>
+			<TemperatureMinAdd>-5</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_WinterTrousers" Parent="TrousersBase">
+	<ThingName>厚制下裳</ThingName>
+	<TexPath>res/Sprs/object/object_mianku01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>做工厚实，十分保暖。</Desc>
+	<Item Lable="Trousers">
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Leather"/>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>80</CostStuffCount>
+		</BeMade>
+		
+		<Equip>
+			<ModelID>5</ModelID>
+			<ArmorLingShield>0</ArmorLingShield>
+			
+			<TemperatureMaxAdd>-5</TemperatureMaxAdd>
+			<TemperatureMinAdd>-8</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers1" Parent="TrousersBase">
+	<ThingName>龙鳞下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>以龙鳞编织的法衣，穿着可提高护体技能等级，并可使人御风而行，十分玄妙。</Desc>
+	<Rate>9</Rate>
+	<Beauty>15</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1000</BurningPoint>
+	</Flammability>
+	<Item Lable="Trousers">
+		<NotRandom>1</NotRandom>
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>100</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "SPStuffCategories"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 	
+		<Equip>
+			<NeedSex>Male</NeedSex>
+			<ModelID>6</ModelID>
+			<TemperatureMaxAdd>250</TemperatureMaxAdd>
+			<TemperatureMinAdd>-100</TemperatureMinAdd>
+			<ToolModifier>Modifier_Item_SP_Trousers1</ToolModifier>
+		</Equip> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>		
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers2" Parent="Item_SP_Trousers1">
+	<ThingName>阴寰下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>凝聚纯阴之力的法衣，穿着可提高术法技能等级，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<ModelID>7</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers2</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers3" Parent="Item_SP_Trousers1">
+	<ThingName>烬灭下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>凝聚纯阳之力的法衣，穿着可提高御器技能等级，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<ModelID>8</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers3</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers4" Parent="Item_SP_Trousers1">
+	<ThingName>蔽天下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>可以遮蔽天机的法衣，穿着可以降低道行，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<ModelID>9</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers4</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers5" Parent="Item_SP_Trousers1">
+	<ThingName>阳华下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>附有辟魔之力的法衣，穿着可以驱除心魔，提高心境，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<ModelID>10</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers5</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers6" Parent="Item_SP_Trousers1">
+	<ThingName>日炎下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>凝聚纯阳之力的法衣，穿着可提高御器技能等级，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>6</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers6</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers7" Parent="Item_SP_Trousers1">
+	<ThingName>火浣下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>以异兽火光鼠之皮缝制的法衣，穿着可提高护体技能等级，并有效降低火属性伤害，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>7</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers7</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers8" Parent="Item_SP_Trousers1">
+	<ThingName>玄海流仙裙</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>可以遮蔽天机的法衣，穿着可以降低道行，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>8</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers8</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers9" Parent="Item_SP_Trousers1">
+	<ThingName>幽玄下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>凝聚纯阴之力的法衣，穿着可提高术法技能等级，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>9</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers9</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SP_Trousers10" Parent="Item_SP_Trousers1">
+	<ThingName>青鹤下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>附有辟魔之力的法衣，穿着可以驱除心魔，提高心境，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>10</ModelID>
+			<ToolModifier>Modifier_Item_SP_Trousers10</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

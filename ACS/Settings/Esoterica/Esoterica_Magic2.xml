@@ -1,0 +1,79 @@
+﻿<Esotericas><List>
+	
+	<Esoterica Name="Magic_MakeHorse_1">
+		<DisplayName>封灵术</DisplayName>
+		<Icon>res/Sprs/ui/icon_YaoShouFengYin01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：封灵术\n对低于自己境界的昏迷或倒地的妖兽使用，将其封印为灵契。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_MakeHorse</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Magic_WanWuTongLing1">
+		<DisplayName>玄魂造命</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：玄魂造命\n消耗7枚幽珀与3枚灵珀，尝试为目标物品通灵。通灵结果需要一段时间才能出现。物品在通灵中时不可被再次通灵。施术者道行越高，物品被通灵次数越多，越容易通灵成功。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>YouTongLing_Item</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_WanWuTongLing2">
+		<DisplayName>命火筑灵</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<!--<Desc>对一名无修为的生物开天眼，使他的神识得到增加，初始值越低效果就越好。目标一生只能被施展一次。</Desc>-->
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：命火筑灵\n消耗十年命元与1枚元灵之珀，尝试使目标建筑通灵。通灵结果需要一段时间才能出现。建筑在通灵中时不可被再次通灵。施术者道行越高，建筑被通灵次数越多，越容易通灵成功。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingTongLing_Building</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_ZaoHuaSuTi">
+		<DisplayName>造化塑体</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：造化塑体\n消耗一枚造化玉籽，将目标年龄重塑为14岁的状态，并恢复损失的所有身体部件。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>ZaoHuaSuTi</li>
+		</Magics>
+	</Esoterica>
+	
+	
+	<Esoterica Name="Magic_YuanLing">
+		<DisplayName>元灵补天诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：元灵补天诀\n对秘宝胚胎使用，消耗1枚元灵之珀，使其激活条件直接满足。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_YuanLing</li>
+		</Magics>
+	</Esoterica>
+
+</List></Esotericas>

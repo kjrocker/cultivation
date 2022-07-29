@@ -1,0 +1,208 @@
+<CommandTypes><List>
+
+	<CommandType Name="RobBodyLow" Class="CommandRobBody"><!--低端夺舍-->
+	<Param>0</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="RobBodyHigh" Class="CommandRobBody"><!--高级夺舍-->
+	<Param>1</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	
+	<CommandType Name="AbsorbLing" Class="CommandAbsorbLing"><!--吸灵 环境-->
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbLing_Live" Class="CommandAbsorbLing"><!--吸灵 活物-->
+	<Param>1</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbLing_Body" Class="CommandAbsorbLing"><!--吸灵 尸体-->
+	<Param>2</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbLing_Thing" Class="CommandAbsorbLing"><!--吸灵 物体-->
+	<Param>3</Param>
+	<Single>1</Single>
+	</CommandType>
+		
+	<CommandType Name="AbsorbLing_Item" Class="CommandAbsorbLing"><!--吸灵 道具-->
+	<Param>4</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="PlantGrowUp" Class="CommandAbsorbLing"><!--植物催生-->
+	<Param>5</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="ClosedDoor" Class="CommandAbsorbLing"><!--入定-->
+	<Param>6</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="BuildPuppet" Class="CommandAbsorbLing"><!--赋灵术-->
+	<Param>7</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SoulCrystalYouPowerUp" Class="CommandAbsorbLing"><!--幽淬之法-->
+	<Param>8</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SoulCrystalLingPowerUp" Class="CommandAbsorbLing"><!--灵淬之法-->
+	<Param>9</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="RebornSelf" Class="CommandAbsorbLing"><!--玄牝重生-->
+	<Param>10</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="DaoCuiPowerUp" Class="CommandAbsorbLing"><!--道淬之法-->
+	<Param>11</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_1" Class="CommandAbsorbGong"><!--抽取元气-夺寿-->
+	<Param>1</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_2" Class="CommandAbsorbGong"><!--风月幻境-夺寿-->
+	<Param>2</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_3" Class="CommandAbsorbGong"><!--摄神御鬼-->
+	<Param>3</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_4" Class="CommandAbsorbGong"><!--魔神血脉炼魂-->
+	<Param>4</Param>
+	<Single>1</Single>
+	</CommandType>
+			
+	<CommandType Name="AbsorbGong_5" Class="CommandAbsorbGong"><!--他化自在大法-->
+	<Param>10</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_6" Class="CommandAbsorbGong"><!--魂体寄生-->
+	<Param>11</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_7" Class="CommandAbsorbGong"><!--献祭-->
+	<Param>12</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_8" Class="CommandAbsorbGong"><!--祝福-->
+	<Param>13</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_9" Class="CommandAbsorbGong"><!--燃烧精血-->
+	<Param>14</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_10" Class="CommandAbsorbGong"><!--斩念之法-->
+	<Param>15</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_11" Class="CommandAbsorbGong"><!--炼制灵石-->
+	<Param>16</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_12" Class="CommandAbsorbGong"><!--炼制灵晶-->
+	<Param>17</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_13" Class="CommandAbsorbGong"><!--预测-->
+	<Param>18</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_14" Class="CommandAbsorbGong"><!--预测历练-->
+	<Param>19</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="AbsorbGong_15" Class="CommandAbsorbGong"><!--改变天气-->
+	<Param>20</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<!--<CommandType Name="AbsorbGong_16" Class="CommandAbsorbGong"><!{1}**求晴**{1}>
+	<Param>21</Param>
+	<Single>1</Single>
+	</CommandType>	-->
+
+	
+	<CommandType Name="BuildBody" Class="CommandAbsorbGong"><!--重铸身体-->
+	<Param>22</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="SeachSoul" Class="CommandAbsorbGong"><!--搜魂-->
+	<Param>23</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+		
+	<CommandType Name="MakePuppet" Class="CommandAbsorbGong"><!--行尸大法-->
+	<Param>24</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="MakeSoulCrystal" Class="CommandAbsorbGong"><!--凝珀之术-->
+	<Param>25</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="LiuRenShensuan" Class="CommandAbsorbGong"><!--六壬神算-->
+	<Param>26</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="Linhunwenzhong" Class="CommandAbsorbGong"><!--神灵问踪法-->
+	<Param>27</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="Healing_Damage" Class="CommandAbsorbGong"><!--运功疗伤-->
+	<Param>5</Param>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="Healing_Physique" Class="CommandAbsorbGong"><!--伐毛洗髓-->
+	<Param>6</Param>
+	<Single>1</Single>
+	</CommandType>
+	<CommandType Name="Healing_Intelligence" Class="CommandAbsorbGong"><!--醍醐灌顶-->
+	<Param>7</Param>
+	<Single>1</Single>
+	</CommandType>
+	<CommandType Name="Healing_Charisma" Class="CommandAbsorbGong"><!--再造形神-->
+	<Param>8</Param>
+	<Single>1</Single>
+	</CommandType>
+	<CommandType Name="Healing_Perception" Class="CommandAbsorbGong"><!--开天眼-->
+	<Param>9</Param>
+	<Single>1</Single>
+	</CommandType>	
+
+	
+</List></CommandTypes>

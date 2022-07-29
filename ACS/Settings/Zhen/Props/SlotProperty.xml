@@ -1,0 +1,187 @@
+<Defs><List>
+	<Def Name="Sys_Lost">
+		<BaseValue>0</BaseValue>
+		<Descript>模组丢失</Descript>
+		<Tip>模组丢失</Tip>
+	</Def>
+	<Def Name="StabilityBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法稳定度基础值{1}{0}</Descript>
+		<PropVTip>Stability</PropVTip>
+	</Def>
+	<Def Name="StabilityBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法稳定度基础值{1}{0:P2}</Descript>
+		<PropVTip>Stability</PropVTip>
+	</Def>
+	<Def Name="StabilityAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法稳定度{1}{0}</Descript>
+		<PropVTip>Stability</PropVTip>
+	</Def>
+	<Def Name="StabilityAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法稳定度{1}{0:P2}</Descript>
+		<PropVTip>Stability</PropVTip>
+	</Def>
+	<Def Name="FabaoAtkPowerBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法御器能力基础值{1}{0}</Descript>
+		<PropVTip>FabaoAtkPower</PropVTip>
+	</Def>
+	<Def Name="FabaoAtkPowerBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法御器能力基础值{1}{0:P2}</Descript>
+		<PropVTip>FabaoAtkPower</PropVTip>
+	</Def>
+	<Def Name="FabaoAtkPowerAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法御器能力{1}{0}</Descript>
+		<PropVTip>FabaoAtkPower</PropVTip>
+	</Def>
+	<Def Name="FabaoAtkPowerAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法御器能力{1}{0:P2}</Descript>
+		<PropVTip>FabaoAtkPower</PropVTip>
+	</Def>
+	<Def Name="MagicPowerBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法术法能力基础值{1}{0}</Descript>
+		<PropVTip>MagicPower</PropVTip>
+	</Def>
+	<Def Name="MagicPowerBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法术法能力基础值{1}{0:P2}</Descript>
+		<PropVTip>MagicPower</PropVTip>
+	</Def>
+	<Def Name="MagicPowerAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法术法能力{1}{0}</Descript>
+		<PropVTip>MagicPower</PropVTip>
+	</Def>
+	<Def Name="MagicPowerAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法术法能力{1}{0:P2}</Descript>
+		<PropVTip>MagicPower</PropVTip>
+	</Def>
+	<Def Name="SheildBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法护御能力基础值{1}{0}</Descript>
+		<PropVTip>Sheild</PropVTip>
+	</Def>
+	<Def Name="SheildBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法护御能力基础值{1}{0:P2}</Descript>
+		<PropVTip>Sheild</PropVTip>
+	</Def>
+	<Def Name="SheildAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法护御能力{1}{0}</Descript>
+		<PropVTip>Sheild</PropVTip>
+	</Def>
+	<Def Name="SheildAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法护御能力{1}{0:P2}</Descript>
+		<PropVTip>Sheild</PropVTip>
+	</Def>
+	<Def Name="SkillCooldownBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法运转能力基础值{1}{0}</Descript>
+		<PropVTip>SkillCooldown</PropVTip>
+	</Def>
+	<Def Name="SkillCooldownBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法运转能力基础值{1}{0:P2}</Descript>
+		<PropVTip>SkillCooldown</PropVTip>
+	</Def>
+	<Def Name="SkillCooldownAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法运转能力{1}{0}</Descript>
+		<PropVTip>SkillCooldown</PropVTip>
+	</Def>
+	<Def Name="SkillCooldownAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法运转能力{1}{0:P2}</Descript>
+		<PropVTip>SkillCooldown</PropVTip>
+	</Def>
+	<Def Name="ReduceCostBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法效率基础值{1}{0}</Descript>
+		<PropVTip>ReduceCost</PropVTip>
+	</Def>
+	<Def Name="ReduceCostBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法效率基础值{1}{0:P2}</Descript>
+		<PropVTip>ReduceCost</PropVTip>
+	</Def>
+	<Def Name="ReduceCostAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法效率{1}{0}</Descript>
+	</Def>
+	<Def Name="ReduceCostAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法效率{1}{0:P2}</Descript>
+		<PropVTip>ReduceCost</PropVTip>
+	</Def>
+	<Def Name="NpcNodeCountNumPowerupBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法规模{1}{0}</Descript>
+		<PropVTip>NpcNodeCountNumPowerup</PropVTip>
+	</Def>
+	<Def Name="NpcNodeCountNumPowerupBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法规模{1}{0:P2}</Descript>
+		<PropVTip>NpcNodeCountNumPowerup</PropVTip>
+	</Def>
+	<Def Name="NpcNodeCountNumPowerupAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法规模{1}{0}</Descript>
+		<PropVTip>NpcNodeCountNumPowerup</PropVTip>
+	</Def>
+	<Def Name="NpcNodeCountNumPowerupAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法规模{1}{0:P2}</Descript>
+		<PropVTip>NpcNodeCountNumPowerup</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPressurePowerupBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法负荷{1}{0}</Descript>
+		<PropVTip>NpcZhenPressurePowerup</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPressurePowerupBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法负荷{1}{0:P2}</Descript>
+		<PropVTip>NpcZhenPressurePowerup</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPressurePowerupAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法负荷{1}{0}</Descript>
+		<PropVTip>NpcZhenPressurePowerup</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPressurePowerupAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法负荷{1}{0:P2}</Descript>
+		<PropVTip>NpcZhenPressurePowerup</PropVTip>
+	</Def>
+	
+	<Def Name="NpcZhenPointBasev">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法灵机上限基础值{1}{0}</Descript>
+		<PropVTip>NpcZhenPoint</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPointBasep">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法灵机上限基础值{1}{0:P2}</Descript>
+		<PropVTip>NpcZhenPoint</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPointAddv">
+		<BaseValue>0</BaseValue>
+		<Descript>阵法灵机上限{1}{0}</Descript>
+		<PropVTip>NpcZhenPoint</PropVTip>
+	</Def>
+	<Def Name="NpcZhenPointAddp">
+		<BaseValue>1</BaseValue>
+		<Descript>阵法灵机上限{1}{0:P2}</Descript>
+		<PropVTip>NpcZhenPoint</PropVTip>
+	</Def>
+</List></Defs>

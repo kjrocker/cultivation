@@ -1,0 +1,173 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Panda_1"><!--测试秘体-->
+		<Prefix>混元</Prefix>
+		<Suffix>体</Suffix>
+		<Desc>上古貊妖血脉中流传下的秘体，以阴阳之力淬炼身躯，统合周身真炁，合形而撞，万物皆碎。</Desc>
+		<DefaultBody>YGAnimal_PandaBody</DefaultBody>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXtieshankao</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_xiongmao_hunyuanti01</AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+				<li Name="LeftScapula">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_TaiYangJingHua" Levels="1,4"/>
+				</Labels>
+			</li>	
+			
+			<li Name="RightScapula">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_TaiYinJingHua" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_TaiYangJingHua" Levels="1,4"/>
+				</Labels>
+			</li>	
+			
+			<li Name="RightShoulder">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_TaiYinJingHua" Levels="1,4"/>
+				</Labels>
+			</li>
+			
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_F01_JiuYangZhenHua" Levels="0,1"/>
+				</Labels>
+			</li>
+			
+			<li Name="Belly">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_F01_XuanYueZhenJing" Levels="0,1"/>
+				</Labels>
+			</li>
+			
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_F01_JiuYangZhenHua" Levels="0,1"/>
+				</Labels>
+			</li>
+			
+			
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_B01_XuanYueZhenJing" Levels="0,1"/>
+					<li Name="QuenchingLabel_Lv4_A01_JieMieJingHua" Levels="0,1"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上大幅提高秘体威力\n少量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+					<li Name="ArmorPenetration" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>从根本上大幅提高秘体威力\n中量提高秘体灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1500"/>
+					<li Name="ArmorPenetration" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Panda_2"><!--测试秘体-->
+		<Prefix>阴阳</Prefix>
+		<Suffix>抱</Suffix>
+		<Desc>上古貊妖血脉中流传下的秘体，极为擅长镇压法宝。以阴之力淬炼左臂，阳之力淬炼右臂，阴阳之力运转双臂如天地磨盘绞合，将敌人化为齑粉。</Desc>
+		<DefaultBody>YGAnimal_PandaBody</DefaultBody>
+		<AtkAni>TXlianhuanzhang</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_xiongmao_yinyangbao01</AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Chest">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="0,1"/>
+				</Labels>
+			</li>	
+			<li Name="LeftRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_B01_XuanYueZhenJing" Levels="0,1"/>
+				</Labels>
+			</li>
+			<li Name="RightRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_B01_JiuYangZhenHua" Levels="0,1"/>
+				</Labels>
+			</li>
+			
+			<li Name="LeftPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="RightPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_B01_XuanYueZhenJing" Levels="0,1"/>
+				</Labels>
+			</li>
+			<li Name="RightRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B02_ZhuLongYuanJing" Levels="1,4"/>
+					<li Name="QuenchingLabel_Lv4_B01_JiuYangZhenHua" Levels="0,1"/>
+				</Labels>
+			</li>
+			
+			<li Name="LeftForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_ZhuLongYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>
+			<li Name="RightForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F02_ZhuLongYuanJing" Levels="1,4"/>
+				</Labels>
+			</li>
+					
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>从根本上大幅提高秘体威力\n大量提高秘体法宝镇压率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="800"/>
+					<li Name="CatchFabao" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>从根本上大幅提高秘体威力\n巨量提高秘体法宝镇压率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1600"/>
+					<li Name="CatchFabao" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

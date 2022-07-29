@@ -1,0 +1,179 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="IronOre" Parent="MetalBase">
+
+	
+	<ThingName>铁矿脉</ThingName>
+	<Desc>富含铁矿的山体，可以从中开采出铁矿石。</Desc>
+	<TileID>-4</TileID>	
+	<Harvest>   
+		<DropWork>90</DropWork> 			
+		<DropItems>
+			<li>
+				<ThingDef>Item_IronRock</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneBox2</ThingDef>
+				<Count>1</Count>
+				<Rate>0.003</Rate>
+			</li>
+		</DropItems>				
+	</Harvest>
+	<ElementKind>Jin</ElementKind>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.25</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>8</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="CopperOre" Parent="MetalBase">
+
+	
+	<ThingName>火铜矿脉</ThingName>
+	<Desc>富含火铜矿的山体，可以从中开采出火铜矿。</Desc>
+	<TileID>-5</TileID>
+	<ElementKind>Huo</ElementKind>
+	<Harvest>
+		<DropWork>80</DropWork>      
+		<DropItems>
+			<li>
+				<ThingDef>Item_CopperRock</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneBox2</ThingDef>
+				<Count>1</Count>
+				<Rate>0.003</Rate>
+			</li>
+		</DropItems>				
+	</Harvest>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>4</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>7.5</Value>
+		<Radius>3</Radius>
+		<RoomValue>-40</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.25</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>20</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="SilverOre" Parent="MetalBase">
+
+	
+	<ThingName>寒晶矿脉</ThingName>
+	<Desc>富含寒晶矿的山体，可以从中开采出寒晶矿。</Desc>
+	<TileID>-3</TileID>	
+	<ElementKind>Shui</ElementKind>
+	<Harvest>
+		<DropWork>140</DropWork>      
+		<DropItems>
+			<li>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneBox2</ThingDef>
+				<Count>1</Count>
+				<Rate>0.003</Rate>
+			</li>
+		</DropItems>				
+	</Harvest>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>4</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>-7.5</Value>
+		<Radius>3</Radius>
+		<RoomValue>-40</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.25</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>25</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="RockLing" Parent="MetalBase">
+	<ThingName>灵石矿脉</ThingName>
+	<Desc>含有灵石的山体，可以从中开采出灵石。</Desc>
+	<Beauty>-1</Beauty>
+	<TileID>-3</TileID>
+	<ElementKind>None</ElementKind>
+	<Harvest>
+		<DropWork>80</DropWork>
+		<DropItems>
+			<li>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LingCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.003</Rate>
+			</li>
+		</DropItems>		
+	</Harvest>
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>
+		<Radius>1</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+
+		<Attenuation>0.15</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>12</Accommodate>
+	</Ling>
+</ThingDef>
+
+</List></ThingDefs>

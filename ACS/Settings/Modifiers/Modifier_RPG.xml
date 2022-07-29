@@ -1,0 +1,12 @@
+<ModifierDefs><List>	
+	<Modifier Name="RPGSelectNpc" Type="Normal">
+		<DisplayName>普通训练特效</DisplayName>
+		<Desc>普通训练特效</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>99999</Duration>
+		<Display>0</Display>
+		<EffectBind>			
+			<li Path="Effect\gsq\Prefab\DaZuo" Bip="NpcRoot" />
+		</EffectBind>
+	</Modifier>
+</List></ModifierDefs>

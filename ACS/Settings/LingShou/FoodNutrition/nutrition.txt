@@ -1,0 +1,70 @@
+DefName	Type	Lv	NeiDan	ShuFa	QiGan	HuTi	LingZhi	Fat	Strong	HungryNeed	FoodAdd	DeclineSec	Modifier
+Item_Yao_BoarMeat	ShengRou	2	12	0	0	0	0	1	2	70	0	600	
+Item_Fruit	JiaGuo	2	0	0	0	0	12	0	0	40	0	600	
+Item_PreservedFruit	JiaGuo	2	0	0	0	0	8	0	0	40	0	600	
+Item_Ginkgo	JiaGuo	1	0	0	0	0	9	0	0	40	0	600	
+Item_Pear	JiaGuo	0	0	0	0	0	7	0	0	40	0	600	
+Item_Jerky	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_BoarMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_FrogMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_TurtleMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_BearMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_Beef	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_RabbitMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_ChickenMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_WolfMeat	ShengRou	0	8	0	0	0	0	0	1	70	0	600	
+Item_CatMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_TigerMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_FishMeat	ShengRou	1	10	0	0	0	0	0	0	70	0	600	
+Item_SnakeMeat	ShengRou	0	4	0	0	0	0	0	1	35	0	600	
+Item_ChickenEgg	ShengRou	1	5	0	0	0	0	0	0	35	0	600	
+Item_SnakeEgg	ShengRou	1	5	0	0	0	0	0	0	35	0	600	
+Item_TurtleEgg	ShengRou	1	5	0	0	0	0	0	0	35	0	600	
+Item_Wheat	Other	0	0	0	0	2	0	1	0	60	0	600	
+Item_Mushroom	XiangXun	0	0	0	3	0	0	-1	0	25	0	600	
+Item_Lotusroot	DiXian	0	0	6	0	0	0	0	-1	55	0	600	
+Item_Flour	Other	0	0	0	0	0	0	0	0	60	0	600	
+Item_Ginseng	DiXian	2	0	9	0	0	0	0	-1	55	0	600	
+Item_GanodermaLucidum	XiangXun	2	0	0	5	0	0	-1	0	25	0	600	
+Item_HomeFood	ShuShi	0	0	0	0	10	0	1	0	85	0	600	
+Item_DeliciousFood	ShuShi	1	0	0	0	12	0	1	0	85	0	600	
+Item_DelicacyFood	ShuShi	2	0	0	0	15	0	1	0	85	0	600	
+Item_ShuiEssence	Drug		0	0	50	0	-1	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_EarthEssence	Drug		3	3	3	3	3	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_JinEssence	Drug		0	0	-5	50	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_HuoEssence	Drug		0	50	0	-5	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_MuEssence	Drug		-5	0	0	0	50	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_TuEssence	Drug		50	-5	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_LifeStream	Drug		0	0	0	0	6	-10	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_RedGinseng	Drug		0	12	0	0	0	0	-5	0	9999	1800	Modifier_Dan_ColdDown
+Item_PurpleGanodermaLucidum	Drug		0	0	20	0	0	-5	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_MonsterBlood	Drug		6	6	0	0	-1	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_SnakeGallbladder	Drug		0	0	0	20	0	2	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_BearGallbladder	Drug		0	0	0	20	0	5	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_EarthEssence1	Drug		0	0	0	0	0	-10	-10	0	9999	1800	Modifier_Dan_ColdDown
+Item_HorribleMeal	Other		0	0	0	0	0	0	0	0			
+Item_Dan_NoHunger	Drug		0	0	0	0	0	0	0	0			
+Item_Dan_NoHunger2	Drug		0	0	0	0	0	0	0	0			
+Item_Dan_NoHunger1	Drug		0	0	0	0	0	0	0	0			
+Item_Cake	Other		0	0	0	0	0	0	0	0			
+Item_LongEgg	Other		0	40	0	0	-3	0	0	0			
+Item_FengEgg	Other		40	0	-3	0	0	0	0	0			
+Item_GuanyinMud	Other		0	0	0	0	0	0	0	0			
+Item_Shit	Other		0	0	0	0	0	0	0	0			
+Item_DragonShit	Other		0	0	0	0	0	0	0	0			
+Item_Jiaozi	Other		0	0	0	0	0	0	0	0			
+Item_BossFeng_Meat	Other		25	-1	0	0	0	1	2	70			
+Item_BossLong_Meat	Other		-1	25	0	0	0	1	2	70			
+Item_BossZhuLong_Meat	Other		0	0	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_SilverGrit	Drug		0	0	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_CopperGrit	Drug		0	0	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Cinnabar	Drug		0	0	0	0	0	-3	-3	0	9999	1800	Modifier_Dan_ColdDown
+Item_LingMuXueJie	Drug		30	0	-10	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_EarthEssence_1	Drug		0	0	-8	40	0	0	-3	0	9999	1800	Modifier_Dan_ColdDown
+Item_EarthEssence1_1	Drug		0	0	40	-8	0	-3	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Healroot	Drug		0	0	0	0	0	-1	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Mint	Drug		0	0	0	0	0	-1	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_MagicHerb	Drug		0	0	0	0	0	-1	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Laxative	Drug		0	0	0	0	0	0	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Dan_Thin	Drug		0	0	0	0	0	-10	0	0	9999	1800	Modifier_Dan_ColdDown
+Item_Dan_Fat	Drug		0	0	0	0	0	10	0	0	9999	1800	Modifier_Dan_ColdDown

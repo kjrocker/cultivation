@@ -1,0 +1,130 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_3_Jin">  <!--剑法强  护盾若  灵气少  回灵快-->
+		<DisplayName>七杀剑诀</DisplayName>
+		<Desc>相传是从魔界流出的专修剑术之修行秘法。有七层境界，入门艰难，进阶也极难。修此秘法战斗力极其惊人，但却因杀意过重，有三重雷劫考验，凶险万分。乃是不折不扣的杀伐之术。</Desc>
+		<SelectDesc>此功法擅长御器之术，战斗力惊人，然而因杀劫太重，要经历层层天劫。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>7,7,-1,-1,4</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Jin</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>剑心</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>剑心</DisplayName>
+						<Desc>以心证剑，寻找属于自己的剑之道。一旦失败，则需要从头再来。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_3</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Stage" value="1200"/>
+						</ResourceCost>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.1"/>
+						</Damages>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="5">
+				<DisplayName>剑气</DisplayName>
+				<Desc></Desc>
+				<Value>1800</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>剑气</DisplayName>
+						<Desc>凝聚一身精血，燃烧寿命，化为剑气，以大决心斩开玄关。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>150</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="5"/>
+						</ResourceCost>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="1"/>
+						</Damages>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="6">
+				<DisplayName>剑丸</DisplayName>
+				<Desc>神气凝结为一粒剑丸，如道家金丹，混元如一。</Desc>
+				<Value>6200</Value>
+				<Necks>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>剑丸</DisplayName>
+						<Desc></Desc>
+						<ItemCost>
+							<Item name="Item_Dan_SwordBall"/>
+						</ItemCost>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			<Stage Name="Stage4" Level="7">
+				<DisplayName>剑意</DisplayName>
+				<Desc>剑丸初成，天降神雷，借之凝聚剑之意志。</Desc>
+				<Value>60000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>剑意</DisplayName>
+						<Desc></Desc>
+						<NeckCountdown>1800</NeckCountdown>
+						<ThunderValue>10000</ThunderValue>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="9">
+				<DisplayName>剑胎</DisplayName>
+				<Desc></Desc>
+				<Value>240000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>剑胎</DisplayName>
+						<Desc>天劫淬炼，返璞归真，自剑丸中孕育剑胎。</Desc>
+						<NeckCountdown>1800</NeckCountdown>
+						<ThunderValue>35000</ThunderValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage6" Level="11">
+				<DisplayName>剑魂</DisplayName>
+				<Desc></Desc>
+				<Value>1000000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>剑魂</DisplayName>
+						<Desc>以剑意窃取雷劫中毁灭之天道，抵达剑神境界，一旦成功，天意震怒，将会直面最终天劫。</Desc>
+						<NeckCountdown>1800</NeckCountdown>
+						<ThunderValue>55000</ThunderValue>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage7" Level="12">
+				<DisplayName>剑神</DisplayName>
+				<Desc></Desc>
+				<Value>7600000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>剑神</DisplayName>
+						<Desc>以天雷淬炼剑魂，以证纯阳，飞升天衢。</Desc>
+						<NeckCountdown>3000</NeckCountdown>
+						<ThunderValue>680000</ThunderValue>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

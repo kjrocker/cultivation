@@ -1,0 +1,287 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="FloorBase">	
+	<ThingName>地板</ThingName>	
+	<Desc>各种材料铺成的好看地板。</Desc>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>2</Beauty>
+	<VisionRadius>0</VisionRadius>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1]
+		</Data>
+	</Collider>
+	<ElementKind>None</ElementKind>
+	
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+		<NoFengshui>1</NoFengshui>
+		<BuildMode>Rect</BuildMode>
+		<IsFloor>1</IsFloor>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+		<RemovePriceFactor>0.5</RemovePriceFactor>
+		<BePackage>0</BePackage>
+		<BlockLight>0</BlockLight>
+		<RestEffectiveness>1</RestEffectiveness>
+		<IsVirtualBuilding>1</IsVirtualBuilding>
+		<FloorDefName>WoodFloor</FloorDefName>
+		<BeMade>
+			<WorkToMake>5</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "LeftoverMaterial"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Building" Name="Carpet1" Parent="FloorBase">		
+	<ThingName>地毯</ThingName>
+	<Desc>各种材料铺成的好看地毯，可以清洁脚底。</Desc>
+	<Building>
+		<FloorDefName>Carpet1</FloorDefName>
+		<BeMade>
+			<WorkToMake>10</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor1" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor1</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor2" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>	
+	<Building>
+		<FloorDefName>Floor2</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor3" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor3</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor4" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor4</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor5" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor5</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor6" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor6</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor7" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>	
+	<Building>
+		<FloorDefName>Floor7</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor8" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor8</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor9" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor9</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor10" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>	
+	<Building>
+		<FloorDefName>Floor10</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor11" Parent="FloorBase">
+	<ThingName>单地板</ThingName>	
+	<Building>
+		<FloorDefName>Floor11</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor12" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>		
+	<Building>
+		<FloorDefName>Floor12</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor13" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>		
+	<Building>
+		<FloorDefName>Floor13</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor14" Parent="FloorBase">	
+	<ThingName>单地板</ThingName>		
+	<Building>
+		<FloorDefName>Floor14</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor15" Parent="FloorBase">	
+	<ThingName>复合地板(小)</ThingName>		
+	<Building>
+		<FloorDefName>Floor15</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor16" Parent="FloorBase">	
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor16</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor17" Parent="FloorBase">	
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor17</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor18" Parent="FloorBase">
+	<ThingName>复合地板(小)</ThingName>
+	<Building>
+		<FloorDefName>Floor18</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor19" Parent="FloorBase">
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor19</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor20" Parent="FloorBase">
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor20</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor21" Parent="FloorBase">
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor21</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor22" Parent="FloorBase">	
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor22</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor23" Parent="FloorBase">	
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor23</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor24" Parent="FloorBase">
+	<ThingName>复合地板(小)</ThingName>			
+	<Building>
+		<FloorDefName>Floor24</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor25" Parent="FloorBase">	
+	<ThingName>复合地板(大)</ThingName>			
+	<Building>
+		<FloorDefName>Floor25</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor26" Parent="FloorBase">	
+	<ThingName>复合地板(大)</ThingName>		
+	<Building>
+		<FloorDefName>Floor26</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor27" Parent="FloorBase">	
+	<ThingName>复合地板(大)</ThingName>		
+	<Building>
+		<FloorDefName>Floor27</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor28" Parent="FloorBase">
+	<ThingName>复合地板(大)</ThingName>		
+	<Building>
+		<FloorDefName>Floor28</FloorDefName>
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="Floor29" Parent="FloorBase">	
+	<ThingName>复合地板(大)</ThingName>		
+	<Building>
+		<FloorDefName>Floor29</FloorDefName>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor30" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor30</FloorDefName>		
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor31" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor31</FloorDefName>		
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor32" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor32</FloorDefName>		
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Floor33" Parent="FloorBase">		
+	<ThingName>单地板</ThingName>
+	<Building>
+		<FloorDefName>Floor33</FloorDefName>		
+	</Building>
+	</ThingDef>
+</List></ThingDefs>

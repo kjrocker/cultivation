@@ -1,0 +1,19 @@
+<Defs><List>
+	<Def Name="Talk_ZhengYi" Parent="Talk_DanXia">
+		<Normal>
+			<li>这里有各类物资可供挑选。</li>
+		</Normal>
+		<Like>
+			<li>你来了！想要来点什么？</li>
+		</Like>
+		<Submiss>
+			<li>稀客来了！有失远迎，还望海涵。</li>
+		</Submiss>
+		<GiftLike>
+			<li>居然送我此物？好一个有情有义的人！</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>无用之物！</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

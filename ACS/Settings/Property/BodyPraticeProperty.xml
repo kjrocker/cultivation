@@ -1,0 +1,548 @@
+<Properties><List>	
+
+<!--体修伤势恢复速度-->
+<Property Name="BodyPratice_BodyRecover">
+	<DisplayName>炼体者肉体自愈率</DisplayName>
+	<Desc>炼体者受伤后身体的自愈速度。</Desc>
+	<DisplayValue>{0:P2}/秒</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0.005</BaseValue>
+	<MaxValue>0.015</MaxValue>
+	<MinValue>0.001</MinValue> 
+</Property>
+
+<!--真炁最大值-->
+<Property Name="BodyPratice_MaxZhenQi">
+	<DisplayName>真炁最大值</DisplayName>
+	<Desc>炼体者真炁最大值。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>600</BaseValue>
+	<MaxValue>20000000</MaxValue>
+	<MinValue>500</MinValue> 
+</Property>
+
+<!--真炁恢复速度-->
+<Property Name="BodyPratice_RecoverZhenQi">
+	<DisplayName>真炁恢复速度基础值</DisplayName>
+	<Desc>炼体者基础真炁恢复速度。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>10</BaseValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+
+<!--回气状态下的回气速度%/秒-->
+<Property Name="BodyPratice_DefenseRecoverZhenQi">
+	<DisplayName>回气状态下的回气速度</DisplayName>
+	<Desc>炼体者在真炁耗空力竭状态下，真炁每秒恢复的百分比。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0.08</BaseValue>
+	<MaxValue>0.5</MaxValue> 
+	<MinValue>0.02</MinValue> 
+</Property>
+
+<!--法宝镇压系数-->
+<Property Name="BodyPratice_CatchFaboValue">
+	<DisplayName>法宝镇压真炁消耗率</DisplayName>
+	<Desc>炼体者镇压法宝时，额外消耗真炁的多少。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>5</BaseValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+<!--身体强大系数 用于计算健康度-->
+<Property Name="BodyPratice_BodyStrong">
+	<DisplayName>身体强大系数</DisplayName>
+	<Desc>炼体者身体对伤害的承受能力。身体越强大，越不容易因受伤而死亡。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+<!--淬体速度-->
+<Property Name="BodyPratice_QuenchingSpeed">
+	<DisplayName>淬体速度</DisplayName>
+	<Desc>炼体者淬炼身体的速度。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>0.01</MinValue> 
+	
+	<Skills>
+		<li Name="Medicine" Weight="1" Base="1" Addion="0.05"/>
+	</Skills>
+</Property>
+
+
+<!--秘体进攻装备栏数量-->
+<Property Name="BodyPractice_SuperPartAtk_EquptMaxCount">
+	<DisplayName>秘体进攻秘体启用栏数量</DisplayName>
+	<Desc>炼体者最多同时启用进攻秘体的数量。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>3</BaseValue>
+	<MaxValue>6</MaxValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+<!--秘体防御装备栏数量-->
+<Property Name="BodyPractice_SuperPartDef_EquptMaxCount">
+	<DisplayName>秘体防御秘体启用栏数量</DisplayName>
+	<Desc>炼体者最多同时启用防御秘体的数量。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>3</BaseValue>
+	<MaxValue>6</MaxValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+<!--秘体效果装备栏数量-->
+<Property Name="BodyPractice_SuperPartBuff_EquptMaxCount">
+	<DisplayName>秘体效果秘体启用栏数量</DisplayName>
+	<Desc>炼体者最多同时启用效果秘体的数量。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>3</BaseValue>
+	<MaxValue>6</MaxValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+
+
+<!--额外吐纳效果加成-->
+<Property Name="BodyPractice_Other_TunaAddp">
+	<DisplayName>额外吐纳效果加成</DisplayName>
+	<Desc>炼体者吐纳获得精华的效率加成。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MaxValue>2</MaxValue>
+	<MinValue>-0.45</MinValue> 
+	
+	<Skills>
+		<li Name="Manual" Weight="1" Base="0" Addion="0.02"/>
+	</Skills>
+</Property>
+
+
+
+<!--秘体消耗速度加成-->
+<Property Name="BodyPratice_SuperPartCostAddP">
+	<DisplayName>秘体真炁消耗速度加成</DisplayName>
+	<Desc>所有启用中的秘体的真炁消耗速度的加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MinValue>-1</MinValue> 
+</Property>
+<!--秘体恢复速度加成-->
+<Property Name="BodyPratice_SuperPartRecoverAddP">
+	<DisplayName>秘体真炁恢复速度加成</DisplayName>
+	<Desc>所有启用中的秘体的真炁恢复速度的加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MinValue>-1</MinValue> 
+</Property>
+
+<!--秘体伤害强度全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_AtkPower">
+	<DisplayName>秘体威力全局加成</DisplayName>
+	<Desc>所有启用中的秘体的威力加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+</Property>
+
+<!--秘体防御强度全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_DefPower">
+	<DisplayName>秘体坚韧全局加成</DisplayName>
+	<Desc>所有启用中的秘体的坚韧加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+</Property>
+
+<!--秘体进攻成功率全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_AtkRate">
+	<DisplayName>秘体攻击命中率全局加成</DisplayName>
+	<Desc>所有启用中的秘体的攻击命中率加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+</Property>
+
+<!--秘体防御成功率全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_DefRate">
+	<DisplayName>秘体防御成功率全局加成</DisplayName>
+	<Desc>所有启用中的秘体的防御成功率加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+</Property>
+
+<!--秘体护甲穿透全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_ArmorPenetration">
+	<DisplayName>秘体灵气护盾穿透全局加成</DisplayName>
+	<Desc>所有启用中的秘体的灵气护盾成功率加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+	<Skills>
+		<li Name="Qi" Weight="1" Base="0" Addion="0.01"/>
+	</Skills>
+</Property>
+
+<!--秘体夺剑概率全局加成-->
+<Property Name="BodyPractice_SuperPartAddp_CatchFabao">
+	<DisplayName>秘体法宝镇压概率全局加成</DisplayName>
+	<Desc>所有启用中的秘体的法宝镇压概率加成。</Desc>
+	<DisplayValue>{0:P}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>-1</MinValue> 
+	
+	<Skills>
+		<li Name="Qi" Weight="1" Base="0" Addion="0.01"/>
+	</Skills>
+</Property>
+
+<!--秘体伤害强度全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_AtkPower">
+	<DisplayName>秘体威力全局加值</DisplayName>
+	<Desc>所有启用中的秘体的威力加值。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>999999</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--秘体防御强度全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_DefPower">
+	<DisplayName>秘体坚韧全局加值</DisplayName>
+	<Desc>所有启用中的秘体的坚韧加值。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>999999</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--秘体进攻成功率全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_AtkRate">
+	<DisplayName>秘体攻击命中率全局加值</DisplayName>
+	<Desc>所有启用中的秘体的攻击命中率加值。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>2</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--秘体防御成功率全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_DefRate">
+	<DisplayName>秘体防御成功率全局加值</DisplayName>
+	<Desc>所有启用中的秘体的防御成功率加值。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>2</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--秘体护甲穿透全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_ArmorPenetration">
+	<DisplayName>秘体灵气护盾穿透全局加值</DisplayName>
+	<Desc>所有启用中的秘体的灵气护盾穿透率加值。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>2</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--秘体夺剑概率全局加值-->
+<Property Name="BodyPractice_SuperPartAddv_CatchFabao">
+	<DisplayName>秘体法宝镇压概率全局加值</DisplayName>
+	<Desc>所有启用中的秘体的法宝镇压概率加值。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>2</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--痛苦追忆最大数量-->
+<Property Name="BodyPractice_AngerFireNum">
+	<DisplayName>痛苦追忆最大记忆数量</DisplayName>
+	<Desc>炼体者痛苦追忆中可铭记下的最大记忆数量</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>1</MinValue> 
+	
+	<FiveBase>
+		<li Name="Intelligence" Weight="1" Base="2" Addion="0.3"/>
+	</FiveBase>
+</Property>
+
+<!--痛苦追忆释放后持续时间-->
+<Property Name="BodyPractice_AngerFireDuration">
+	<DisplayName>激狂之怒持续时间</DisplayName>
+	<Desc>炼体者催发激狂之怒的持续时间。</Desc>
+	<DisplayValue>{0:N}秒</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>30</BaseValue>
+	<MinValue>1</MinValue> 
+</Property>
+
+<!--激狂之怒倍率加值-->
+<Property Name="BodyPractice_AngerFireEffectAddp">
+	<DisplayName>激狂之怒效果倍率</DisplayName>
+	<Desc>炼体者催发激狂之怒时效果强度。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>战斗属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MaxValue>10</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<!--吞噬物品的最高品阶-->
+<Property Name="BodyPractice_EatItemMaxRate">
+	<DisplayName>吞噬物品的最高品阶</DisplayName>
+	<Desc>炼体者可吞噬物品的最高品阶。</Desc>
+	<DisplayValue>{0:N}阶</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>5</BaseValue>
+	<MaxValue>15</MaxValue>
+	<MinValue>0</MinValue> 
+	<Skills>
+		<li Name="Manual" Weight="1" Base="0.6" Addion="0.06"/>
+	</Skills>
+</Property>
+
+<!--吞噬后获得精华数量的提升比率-->
+<Property Name="BodyPractice_EatItemProduceCountAddp">
+	<DisplayName>吞噬后获得精华数量的提升比率</DisplayName>
+	<Desc>炼体者吞噬物品后获得精华数量的提升比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	<Skills>
+		<li Name="Manual" Weight="1" Base="0" Addion="0.05"/>
+	</Skills>
+</Property>
+
+<!--吞噬后得到精华的几率提升比率-->
+<Property Name="BodyPractice_EatItemProduceRateAddp">
+	<DisplayName>吞噬后得到精华的几率提升比率</DisplayName>
+	<Desc>炼体者吞噬物品获得稀有精华的可能性提升比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	<Skills>
+		<li Name="Manual" Weight="1" Base="0" Addion="0.05"/>
+	</Skills>
+</Property>
+
+<!--淬炼稀有进化方向出现概率加成-->
+<Property Name="BodyPractice_RollAddtion_Cache1">
+	<DisplayName>淬炼稀有进化方向出现概率加成</DisplayName>
+	<Desc>炼体者淬体时，出现稀有进化方向的概率提高比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	
+	<Skills>
+		<li Name="Medicine" Weight="1" Base="0" Addion="0.01"/>
+	</Skills>
+</Property>
+
+<!--淬炼罕见进化方向出现概率加成-->
+<Property Name="BodyPractice_RollAddtion_Cache2">
+	<DisplayName>淬炼罕见进化方向出现概率加成</DisplayName>
+	<Desc>炼体者淬体时，出现罕见进化方向的概率提高比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	
+	<Skills>
+		<li Name="Medicine" Weight="1" Base="0" Addion="0.02"/>
+	</Skills>
+</Property>
+
+<!--淬炼超凡进化方向出现概率加成-->
+<Property Name="BodyPractice_RollAddtion_Cache3">
+	<DisplayName>淬炼超凡进化方向出现概率加成</DisplayName>
+	<Desc>炼体者淬体时，出现超凡进化方向的概率提高比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	
+	<Skills>
+		<li Name="Medicine" Weight="1" Base="0" Addion="0.03"/>
+	</Skills>
+</Property>
+
+<!--淬炼史诗进化方向出现概率加成-->
+<Property Name="BodyPractice_RollAddtion_Cache4">
+	<DisplayName>淬炼史诗进化方向出现概率加成</DisplayName>
+	<Desc>炼体者淬体时，出现史诗进化方向的概率提高比率。</Desc>
+	<DisplayValue>{0:P2}</DisplayValue>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>修炼属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	
+	<Skills>
+		<li Name="Medicine" Weight="1" Base="0" Addion="0.04"/>
+	</Skills>
+</Property>
+
+<!--淬炼失效概率加成-->
+<Property Name="BodyPractice_RollAddtion_Null">
+	<DisplayName>淬炼失效概率加成</DisplayName>
+	<Desc></Desc>
+	<ShowInUI>0</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>1</BaseValue>
+	<MinValue>0</MinValue> 
+	
+	<Skills>
+		<li Name="Art" Weight="1" Base="0" Addion="-0.02"/>
+	</Skills>
+</Property>
+
+<!--饱食度最大值加值-->
+<Property Name="BodyPractice_MaxFoodAddtion">
+	<DisplayName>饱食度最大值加值</DisplayName>
+	<Desc>炼体者饱食度最大值的加值。</Desc>
+	<PropertyType>Body</PropertyType>
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>0</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+
+</List></Properties>

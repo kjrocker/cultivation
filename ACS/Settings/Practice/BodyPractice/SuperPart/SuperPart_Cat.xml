@@ -1,0 +1,66 @@
+<BPSuperPartDefs><List>
+	
+	<Def Name="SuperPart_Cat_1"><!--测试秘体-->
+		<Prefix>九生玄命</Prefix>
+		<Suffix>体</Suffix>
+		<Desc>猫妖天赋所传之秘体，以玄月之力淬炼心脑，练成此法可大幅提高身体强度，很难受伤致命。猫有九命也是从此而来。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_O01_XuanYueZhenJing" Levels="1"/>
+				</Labels>
+			</li>	
+			<li Name="Heart">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_O01_XuanYueZhenJing" Levels="1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大幅提高炼体者身体强度</Desc>
+				<Modifier>Modifier_SuperPart_Cat_1</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SuperPart_Cat_2"><!--测试秘体-->
+		<Prefix>九夜玄晶</Prefix>
+		<Suffix>眼</Suffix>
+		<Desc>猫妖天赋所传之秘体，以玄天紫气淬炼双眼，练成此体可洞彻一切薄弱之处，全面提高灵气护盾穿透率。</Desc>
+		<DefaultBody>YGAnimal_CTWBody</DefaultBody>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="LeftEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_XuanTianZiQi" Levels="1"/>
+				</Labels>
+			</li>
+			
+			<li Name="RightEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_XuanTianZiQi" Levels="1"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高炼体者所有秘体攻击命中率\n大量提高炼体者所有秘体防御成功率</Desc>
+				<Modifier>Modifier_SuperPart_Cat_2</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+</List></BPSuperPartDefs>

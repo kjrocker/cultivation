@@ -1,0 +1,729 @@
+﻿<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="NormalAttackBase" >
+	<ThingName>普通攻击</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>
+	<Rate>1</Rate>		
+	
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item Lable="Weapon" Kind="Equipment">	
+		<NotRandom>1</NotRandom>	
+		<Equip>
+			<AttackSpeed>-0.1</AttackSpeed>
+			<AttackRange>1</AttackRange>
+			<AtkDamage>
+			</AtkDamage>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Human_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>人类攻击</ThingName>
+	<Rate>2</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise1" Rate="0.45" DescTags="牙咬,头撞,手抓"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35" DescTags="脚踢,拳打,头撞"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="脚踢,拳打"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="kszdpugong1" HitPoint="13"/>
+				<li Name="kszdpugong2" HitPoint="11"/>
+				<li Name="kszdpugong3" HitPoint="25"/>
+				<li Name="kszdpugong4" HitPoint="17"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Zombie_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>僵尸攻击</ThingName>
+	<Rate>5</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>2</AttackRange>
+			<AtkDamage>
+				<li PartKind="Bone" Name="Fracture1" Rate="1" DescTags="头撞,脚踢"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="1" DescTags="头撞"/>
+				<li PartKind="Flesh" Name="Bruise1" Rate="1" DescTags="头撞"/>
+				<li PartKind="Flesh" Name="DiseaseBreath" Rate="1" DescTags="牙咬,手抓"/>
+				<li PartKind="Flesh" Name="Fabao_Tear" Rate="1" DescTags="牙咬,手抓"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="1" DescTags="牙咬,手抓"/>
+				<li PartKind="Flesh" Name="Cut1" Rate="1" DescTags="牙咬,手抓"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="kszdpugong1" HitPoint="13"/>
+				<li Name="kszdpugong2" HitPoint="11"/>
+				<li Name="kszdpugong3" HitPoint="25"/>
+				<li Name="kszdpugong4" HitPoint="17"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Rabbit_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>兔子攻击</ThingName>
+	<Rate>2</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬"/>
+				<li PartKind="Flesh" Name="Bruise1" Rate="0.45" DescTags="头撞"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35" DescTags="腿蹬"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="腿蹬"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="21"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Ls_Dog_NormalAttack" Parent="NormalAttackBase"><!--夜-->
+	<ThingName>神犬内丹</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Jin</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_wangneidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>3</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="14"/>
+				<li Name="Atk2" HitPoint="20"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+
+	
+	<ThingDef Type="Item" Name="Ls_Fox_NormalAttack" Parent="NormalAttackBase"><!--夜-->
+	<ThingName>灵狐内丹</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_hulineidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>3</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="14"/>
+				<li Name="Atk2" HitPoint="20"/>
+				<li Name="Atk3" HitPoint="20"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Ls_Dragon_NormalAttack" Parent="NormalAttackBase"><!--夜-->
+	<ThingName>浮龙内丹</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_longneidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYLongpuNightAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Shui_Frostbite" Rate="0.25" DescTags="癸水妖雷"/>
+				<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartKind="Flesh" Name="Shui_Frostbite" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartName="TheWholeBody" Name="Shui_ColdBlood" Rate="0.15" DescTags="癸水妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="25" Bip="bone head"/>
+				<li Name="Atk2" HitPoint="30" Bip="bone head"/>
+				<li Name="Atk3" HitPoint="25" Bip="bone head"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Ls_Phoenix_NormalAttack" Parent="NormalAttackBase"><!--夜-->
+	<ThingName>玄凤内丹</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Huo</ElementKind>
+	<TexPath>res\Sprs\object_yaozujueqi\object_fenghuangneidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>7</Damage>
+			<AttackSpeed>0.7</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYBearAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Huo_VisceralBurn" Rate="0.25" DescTags="丙火妖雷"/>
+				<li PartKind="Bone" Name="Huo_MarrowDry" Rate="0.45" DescTags="丙火妖雷"/>
+				<li PartKind="Flesh" Name="Huo_BurnOfPain" Rate="0.45" DescTags="丙火妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="19" Bip="Bip001 Head"/>
+				<li Name="Atk2" HitPoint="19" Bip="Bip001 Head"/>
+				<li Name="Atk3" HitPoint="25" Bip="Bip001 R Foot"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Chicken_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>鸡攻击</ThingName>
+	<Rate>2</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="啄"/>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="爪"/>
+				<li PartName="Face" Name="Cut1" Rate="0.15" DescTags="爪"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="8"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Wolf_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>狼攻击</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="20"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Snake_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>蛇攻击</ThingName>
+	<Rate>3</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬"/>
+				<li PartKind="Flesh" Name="Bruise1" Rate="0.45" DescTags="缠绕"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35" DescTags="缠绕"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="缠绕"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="缠绕"/>
+				<li PartName="TheWholeBody" Name="SnakeVenom" Rate="0.15" DescTags="牙咬"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="16"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Boar_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>野猪攻击</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.3</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="冲撞"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.2" DescTags="冲撞"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="17"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Bear_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>熊攻击</ThingName>
+	<Rate>7</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.4</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.45" DescTags="爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="撞击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="15"/>
+				<li Name="Atk2" HitPoint="20"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Turtle_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>龟攻击</ThingName>
+	<Rate>3</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>2</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Bone" Name="Fracture1" Rate="1" DescTags="反震"/>
+				<li PartKind="Flesh" Name="Cut1" Rate="1" DescTags="咬"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="16"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Frog_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>蛙攻击</ThingName>
+	<Rate>2</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="ForgLick" Rate="1" DescTags="舔"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="23"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="LuShu_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>鹿蜀攻击</ThingName>
+	<Rate>12</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.7</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralRupture" Rate="0.25" DescTags="重蹬"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.45" DescTags="重蹬"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.45" DescTags="重蹬"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.45" DescTags="重蹬"/>
+				<li PartName="TheWholeBody" Name="HolyJudgement" Rate="0.15" DescTags="灵力侵染"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="13"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Fei_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>蜚攻击</ThingName>
+	<Rate>12</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.9</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.2" DescTags="撞击"/>
+				<li PartName="TheWholeBody" Name="DiseaseBreath" Rate="0.15" DescTags="疫病之息"/>
+				
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="19"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Cat_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>猫攻击</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="19"/>
+				<li Name="Atk2" HitPoint="30"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Cattle_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>牛攻击</ThingName>
+	<Rate>7</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.9</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.2" DescTags="撞击"/>
+				
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="12"/>
+				<li Name="Atk2" HitPoint="20"/>
+				<li Name="Atk3" HitPoint="50"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Tiger_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>虎攻击</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="22"/>
+				<li Name="Atk2" HitPoint="17"/>
+				<li Name="Atk3" HitPoint="28"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYCat_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>喵猫爪</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="19"/>
+				<li Name="Atk2" HitPoint="30"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYCattle_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>莽利角</ThingName>
+	<Rate>7</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.9</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="撞击"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.2" DescTags="撞击"/>
+				
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="12"/>
+				<li Name="Atk2" HitPoint="20"/>
+				<li Name="Atk3" HitPoint="50"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYTiger_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>猛凶齿</ThingName>
+	<Rate>4</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="22"/>
+				<li Name="Atk2" HitPoint="17"/>
+				<li Name="Atk3" HitPoint="28"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYRabbit_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>兔毫针</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>2.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬"/>
+				<li PartKind="Flesh" Name="Bruise1" Rate="0.45" DescTags="头撞"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35" DescTags="腿蹬"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="腿蹬"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="21"/>
+				<li Name="Atk2" HitPoint="21"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYWolf_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>凶狼牙</ThingName>
+	<Rate>4</Rate>		
+	<ElementKind>Jin</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>4.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.45" DescTags="牙咬,爪击"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="牙咬,爪击"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="牙咬,爪击"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="20" Bip="Bip001 R Hand"/>
+				<li Name="Atk2" HitPoint="9" Bip="Bone001"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYSnake_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>百炼蛇鳞</ThingName>
+	<Rate>3</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYSnakeAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35" DescTags="烈毒飞鳞"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="烈毒飞鳞"/>
+				<li PartKind="Organ" Name="SnakeVenom" Rate="0.35" DescTags="烈毒飞鳞"/>
+				<li PartKind="Flesh" Name="SnakeVenom" Rate="0.35" DescTags="烈毒飞鳞"/>
+				<li PartKind="Bone" Name="SnakeVenom" Rate="0.2" DescTags="烈毒飞鳞"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="10" Bip="bipmouth"/>
+				<li Name="Atk2" HitPoint="17" Bip="bipmouth"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYBoar_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>泥石髓</ThingName>
+	<Rate>4</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.8</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYBoarAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.45" DescTags="戊土妖雷"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.2" DescTags="戊土妖雷"/>
+				<li PartKind="Organ" Name="VisceralRupture" Rate="0.2" DescTags="戊土妖雷"/>
+				<li PartKind="Flesh" Name="Tu_Petrifaction2" Rate="0.45" DescTags="戊土妖雷"/>
+				<li PartKind="Bone" Name="Tu_Weathering" Rate="0.2" DescTags="戊土妖雷"/>
+				<li PartKind="Organ" Name="Tu_Petrifaction2" Rate="0.2" DescTags="戊土妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="12" Bip="bipbizi"/>
+				<li Name="Atk2" HitPoint="12" Bip="bipbizi"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYBear_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>飞熊爪</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Huo</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>0.7</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYBearAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Huo_VisceralBurn" Rate="0.25" DescTags="丙火妖雷"/>
+				<li PartKind="Bone" Name="Huo_MarrowDry" Rate="0.45" DescTags="丙火妖雷"/>
+				<li PartKind="Flesh" Name="Huo_BurnOfPain" Rate="0.45" DescTags="丙火妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="15" Bip="Bip001 R Hand"/>
+				<li Name="Atk2" HitPoint="30" Bip="Bone001"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYFrog_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>癸水滴</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>2.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Shui_ColdPoison" Rate="0.15" DescTags="舔"/>
+				<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.15" DescTags="舔"/>
+				<li PartKind="Flesh" Name="Shui_ColdPoison" Rate="0.15" DescTags="舔"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="23"/>
+				<li Name="Atk2" HitPoint="23"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYTurtle_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>玄龟甲</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYTurtleAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Shui_Frostbite" Rate="0.25" DescTags="癸水妖雷"/>
+				<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartKind="Flesh" Name="Shui_Frostbite" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartName="TheWholeBody" Name="Shui_ColdBlood" Rate="0.15" DescTags="癸水妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="23" Bip="Bip001 R Hand"/>
+				<li Name="Atk2" HitPoint="23" Bip="Bip001 L Hand"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYLongPu_Night_NormalAttack" Parent="NormalAttackBase"><!--夜-->
+	<ThingName>龙仆牙</ThingName>
+	<Rate>2</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>1</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>20</AttackRange>
+			<AttackSkill>JYLongpuNightAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="Shui_Frostbite" Rate="0.25" DescTags="癸水妖雷"/>
+				<li PartKind="Bone" Name="Shui_ColdPoison" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartKind="Flesh" Name="Shui_Frostbite" Rate="0.45" DescTags="癸水妖雷"/>
+				<li PartName="TheWholeBody" Name="Shui_ColdBlood" Rate="0.15" DescTags="癸水妖雷"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="14" Bip="Bip01 R Hand"/>
+				<li Name="Atk2" HitPoint="14" Bip="Bip01 L Hand"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="JYLongPu_Day_NormalAttack" Parent="JYLongPu_Night_NormalAttack"><!--昼-->	
+	<Item>		
+		<Equip>			
+			<AttackSkill>JYLongpuDayAttackMissile</AttackSkill>			
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

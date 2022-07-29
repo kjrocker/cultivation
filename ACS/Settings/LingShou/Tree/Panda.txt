@@ -1,0 +1,308 @@
+[Panda2]
+Selector:Event,SleepBreak,AiDaoBreak,FreeBreak,FollowBreak,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,AtkBreak,RollBreak,ChopBreak,HappyBreak,PlayBBBreak,EatBreak,ShitBreak,HelpPlayBreak
+	T, BabySleep
+	T, BabyDrink
+	T, BabyEat
+	T, BabyFree
+
+[SleepBreak]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing2:Load,RaceNpc:Save,GotoResult
+	Wait,5
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			WeightRandom
+				Talk,BabySleep1:W,1
+				Talk,BabySleep2:W,1
+				Talk,BabySleep3:W,1
+			AddNeedNode,Rest,-100
+			Job,SleepWithNpc_Stay:Load,RaceNpc
+		Return, 1
+			
+[BabySleep]
+Sequence:Event,SleepBreak
+	NeedCheck,Rest,2
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing2:Load,RaceNpc:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			WeightRandom
+				Talk,BabySleep1:W,1
+				Talk,BabySleep2:W,1
+				Talk,BabySleep3:W,1
+			Job,SleepWithNpc_Stay:Load,RaceNpc
+		Return, 1
+
+[AiDaoBreak]
+Sequence:Event,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak
+	ReadLastAction,LsPandaXian
+	Job,GotoThing:Load,SaveTomb:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			WeightRandom
+				Talk,BabySleep1:W,1
+				Talk,BabySleep2:W,1
+				Talk,BabySleep3:W,1
+			Wait,60,AiDao
+		Return, 1
+
+[FreeBreak]
+WeightRandom:Event,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,SleepBreak
+	T,PlaySilly
+	T,FollowBreak
+	T,Sleep
+
+[FollowBreak]
+Sequence:Event,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,SleepBreak
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	WeightRandom
+		Talk,BabyFollow1:W,1
+		Talk,BabyFollow2:W,1
+	Job,Follow:Load,RaceNpc
+
+[EatBreak]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing:Load,EatThing:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			Talk,EatTogether
+			Job,FakeEatItem:Load,EatThing
+		Return,1
+
+[ShitBreak]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing:Load,ShitPlace:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			Job,ShitInFarm:Load,ShitPlace
+		Return,1
+
+[HelpPlayBreak]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing:Load,PlayMan:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			Talk,HelpPlay:Load,PlayMan
+			Job,HelpPlay:Load,PlayMan
+		Return,1
+
+[AtkBreak]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Attack:Load,SaveEnemy
+
+[BabyBreak,BreakTalk,BreakJob]
+Sequence:Event,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing2:Load,RaceNpc:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			Talk,BreakTalk
+			Job,BreakJob
+		Return,1
+
+[RollBreak]
+T,BabyBreak,Roll,Roll
+
+[ChopBreak]
+T,BabyBreak,Chop,Chop
+
+[HappyBreak]
+T,BabyBreak,Happy,Happy
+
+[PlayBBBreak]
+T,BabyBreak,PlayBB,PlayBB
+
+[PlaySilly]
+Sequence
+	ReadLastAction,LsPandaXian
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing2:Load,RaceNpc:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			WeightRandom
+				Sequence
+					Talk,Roll
+					Job,Roll
+				Sequence
+					Talk,Chop
+					Job,Chop
+				Sequence
+					Talk,PlayBB
+					Job,PlayBB
+				Sequence
+					Talk,Happy
+					Job,Happy
+		Return, 1
+
+[BabyDrink]
+Sequence:Event,SleepBreak,AiDaoBreak,FreeBreak,FollowBreak,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,AtkBreak,RollBreak,ChopBreak,HappyBreak,PlayBBBreak,EatBreak,ShitBreak,HelpPlayBreak
+	NeedCheck,Water,2
+	WeightRandom
+		Talk,DrinkTalk1:W,1
+		Talk,DrinkTalk2:W,1
+		Talk,DrinkTalk3:W,1 
+	Job,Drink
+	
+[BabyEat]
+Sequence:Event,SleepBreak,AiDaoBreak,FreeBreak,FollowBreak,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,AtkBreak,RollBreak,ChopBreak,HappyBreak,PlayBBBreak,EatBreak,ShitBreak,HelpPlayBreak
+	NeedCheck,Food,2
+	WeightRandom
+		T,EatBambooShoot
+		T,EatBamboo
+	
+[EatBambooShoot]
+Sequence
+	IfElseNode
+		Return,1:C,FindTagItem,BambooShoot,BambooShoot
+		Sequence
+			Job,Eat_Item_BambooShoot:Load,BambooShoot,BambooShoot
+		Sequence
+			Talk,Exp_CantEatShoot
+			Wait,16
+			Return,0
+
+[EatBamboo]
+Sequence
+	IfElseNode
+		Return,1:C,FindTagItem,Bamboo,Bamboo
+		Sequence
+			Job,Eat_Item_Bamboo:Load,Bamboo,Bamboo
+		Sequence
+			Talk,Exp_CantEatBamboo
+			Wait,16
+			Return,0
+
+[LittleJobExp_Train, Exp_TrainJob, EXP_TrainTalk]
+Sequence
+	Wait,1
+	Return,1:C,HasRaceLs,RaceNpc,LsPandaXian
+	Job,GotoThing2:Load,RaceNpc:Save,GotoResult
+	IfElse
+		Compare,0,1,0
+			GetSave,GotoResult
+			FixValue,1,1
+		Sequence
+			Job,Exp_TrainJob
+			Talk,BabyPandaTalk
+		Return,1
+
+[QiGanBreak]
+WeightRandom
+	T,LittleJobExp_Train, TrainQiGan, TrainTalk
+
+[NeiDanBreak]
+WeightRandom
+	T,LittleJobExp_Train, TrainNeiDan, TrainTalk
+
+[LingZhiBreak]
+WeightRandom
+	T,LittleJobExp_Train, TrainLingZhi, TrainTalk
+
+[ShuFaBreak]
+WeightRandom
+	T,LittleJobExp_Train, TrainShuFa, TrainTalk
+
+[HuTiBreak]
+WeightRandom
+	T,LittleJobExp_Train, TrainHuTi, TrainTalk
+
+[BabyFree]
+Sequence:Event,SleepBreak,AiDaoBreak,FreeBreak,FollowBreak,QiGanBreak,NeiDanBreak,HuTiBreak,LingZhiBreak,ShuFaBreak,AtkBreak,RollBreak,ChopBreak,HappyBreak,PlayBBBreak,EatBreak,ShitBreak,HelpPlayBreak
+	Wait,1
+	WeightRandom
+		Sequence:C,HasOuterDisipleToAtk,Person:W,1
+			StartFun,1
+			Job,Follow:Load,Person
+			StopFun
+		Sequence:C,HasInnerDisipleToAtk,Person:W,1
+			StartFun,1
+			Job,Follow:Load,Person
+			StopFun
+		Sequence:W,5
+			StartFun,1
+			Talk,Roll
+			Job,Roll
+			StopFun
+		Sequence:W,5
+			StartFun,1
+			Talk,Chop
+			Job,Chop
+			StopFun
+		Sequence:W,5
+			StartFun,1
+			Talk,PlayBB
+			Job,PlayBB
+			StopFun
+		Sequence:W,5
+			StartFun,1
+			Talk,Happy
+			Job,Happy
+			StopFun
+		Sequence:W,5
+			WeightRandom
+				Talk,Wonder1:W,1
+				Talk,Wonder2:W,1
+				Talk,Wonder3:W,1
+			StartFun,1
+			Job,Wonder
+			StopFun
+		T,BabyBiteOuter:C,HasOuterDisipleToAtk,Outer:W,1
+		T,BabyBiteOuter:C,HasInnerDisipleToAtk,Inner:W,1
+		T,BabyHelpPlay:LsW,HelpPlay:C,HasOuterDisipleToAtk,Outer:W,1
+		T,BabyHelpPlay:LsW,HelpPlay:C,HasInnerDisipleToAtk,Inner:W,1
+		
+[BabyBiteOuter]
+Sequence
+	Talk,DoTalkBiteOuter:Load,Outer
+	Job,BiteOuter:Load,Outer
+	
+[BabyBiteInner]
+Sequence
+	Talk,DoTalkBiteInner:Load,Inner
+	Job,BiteInner:Load,Inner
+	
+[BabyHelpPlay]
+Sequence
+	Talk,DoTalkHelpPlay:Load,Outer
+	Job,HelpPlay:Load,Outer
+	
+[BabyHelpPlay]
+Sequence
+	Talk,DoTalkHelpPlay:Load,Inner
+	Job,HelpPlay:Load,Inner

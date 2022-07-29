@@ -1,0 +1,312 @@
+<FabaoFormulas><List>
+	<!-- 五毒诛仙剑 -->
+	<Fabao Name="MiBaoFormula_WuDuZhuXianSword">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_WuDuZhuXianSword</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 百灵斩仙 -->
+	<Fabao Name="MiBaoFormula_BaiLingZhanXianSword">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_BaiLingZhanXianSword</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 十二煞神砂 -->
+	<Fabao Name="MiBaoFormula_ShiErShaShenMoLingSha">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ShiErShaShenMoLingSha</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 天魔化血刀 -->
+	<Fabao Name="MiBaoFormula_TianMoHuaXueShenDao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianMoHuaXueShenDao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 饮魂珠 -->
+	<Fabao Name="MiBaoFormula_YinHunZhu">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_YinHunZhu</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 九天元阳尺 -->
+	<Fabao Name="MiBaoFormula_JiuTianYuanYangChi">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_JiuTianYuanYangChi</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 龙心圭 -->
+	<Fabao Name="MiBaoFormula_LongXinYinYangGui">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_LongXinYinYangGui</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 代身珠 -->
+	<Fabao Name="MiBaoFormula_DaiShenZhu">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_DaiShenZhu</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七绝神针 -->
+	<Fabao Name="MiBaoFormula_QiJueShenZhen">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_QiJueShenZhen</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 吸星神索 -->
+	<Fabao Name="MiBaoFormula_XiXingShenSuo">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_XiXingShenSuo</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 太乙分光剑 -->
+	<Fabao Name="MiBaoFormula_TaiYiFenGuangJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TaiYiFenGuangJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 五气雷符 -->
+	<Fabao Name="MiBaoFormula_WuqiLeiFu">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_WuqiLeiFu</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 金旗子 -->
+	<Fabao Name="MiBaoFormula_JinFabao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_JinFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<Fabao Name="MiBaoFormula_MuFabao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_MuFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<Fabao Name="MiBaoFormula_ShuiFabao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ShuiFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<Fabao Name="MiBaoFormula_HuoFabao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_HuoFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<Fabao Name="MiBaoFormula_TuFabao">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TuFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 金莲神座 -->
+	<Fabao Name="MiBaoFormula_JinLianShenZuo">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_JinLianShenZuo</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 吞灵神剪 -->
+	<Fabao Name="MiBaoFormula_TunLingShenJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TunLingShenJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 神农鼎 -->
+	<Fabao Name="MiBaoFormula_ShenNongDing">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ShenNongDing</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 清宁羽 -->
+	<Fabao Name="MiBaoFormula_QingNingFeiYu">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_QingNingFeiYu</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 元神心剑 -->
+	<Fabao Name="MiBaoFormula_YuanShenXinJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_YuanShenXinJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 诛仙剑阵-->
+	<Fabao Name="MiBaoFormula_ZhuXianJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_ZhuXianJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 诛仙剑阵-->
+	<Fabao Name="MiBaoFormula_LuXianJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_LuXianJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 诛仙剑阵-->
+	<Fabao Name="MiBaoFormula_XianXianJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_XianXianJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 诛仙剑阵-->
+	<Fabao Name="MiBaoFormula_JueXianJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_JueXianJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 天狼钉-->
+	<Fabao Name="MiBaoFormula_TianLangDing">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianLangDing</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_TianShu">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianShu</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_TianQuan">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianQuan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_TianJi">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianJi</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_TianXuan">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_TianXuan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_YuHeng">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_YuHeng</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_KaiYang">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_KaiYang</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 七星剑阵-->
+	<Fabao Name="MiBaoFormula_YaoGuang">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_YaoGuang</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	
+	<!-- 葵花神剑-->
+	<Fabao Name="MiBaoFormula_KuiHuaShenJian">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_KuiHuaShenJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+</List></FabaoFormulas>

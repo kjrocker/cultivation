@@ -1,0 +1,882 @@
+<ModifierDefs><List>
+	<Modifier Name="Modifier_Guard_LeiBu_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="40000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="12"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="40000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="0.5"/>
+			<li Name="FightSkill" LevelOver="0.5"/>
+			<li Name="Barrier" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_LeiBu_9" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="80"/>
+			<li Name="NpcLingMaxValue" AddV="80000"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="80"/>
+			<li Name="NpcLingMaxValue" AddV="60000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="10"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="20"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-1"/>
+			
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="2.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+			<li Name="FightSkill" LevelOver="1"/>
+			<li Name="Barrier" LevelOver="1"/>
+			<li Name="Fight" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.5,0,0</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="150"/>
+			<li Name="NpcLingMaxValue" AddV="70000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_BaBuZhong_8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="100000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.05"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="5"/>
+		</Properties>
+		
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_YouMing_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="NpcLingMaxValue" AddV="20000"/>
+			
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_Other_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="-100"/>
+			<li Name="NpcLingMaxValue" AddV="40000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="9"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="9"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="9"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="-80000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="9"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="9"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="9"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="40000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="9"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="-0.8"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="9"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="9"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="4"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Qi" Level="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="80000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_9" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="6"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_10" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_11" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="60000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Guard_Other_12" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="30"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+			
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddP="1"/>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddP="1"/>
+			
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="3"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="25000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" Level="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="3"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	
+	<Modifier Name="Modifier_Guard_Base_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="40000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_8" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_9" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_10" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_11" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_12" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="6"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="6"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_13" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_14" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_15" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_16" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddP="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_17" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddP="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_18" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_19" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_20" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Fabao" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_21" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="FightSkill" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_Base_22" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Barrier" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+</List></ModifierDefs>

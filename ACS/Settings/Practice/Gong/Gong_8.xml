@@ -1,0 +1,125 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_8_Jin">   
+		<DisplayName>北斗洞心劫法</DisplayName>
+		<Desc>太一门镇派五行真诀之一，借助观想北斗星辰之形修炼的功法，北斗注死，此功法亦锋锐无匹，极擅争斗。</Desc>
+		<SelectDesc>此功法擅长剑术争斗，只是修炼较慢。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>7,4,-1,5, -1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Jin</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="2">
+				<DisplayName>天枢境</DisplayName>
+				<Desc></Desc>
+				<Value>1000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>天枢境</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="3">
+				<DisplayName>天璇境</DisplayName>
+				<Desc></Desc>
+				<Value>2400</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>天璇境</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>150</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_5_25</FailedChangeAdd>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="5">
+				<DisplayName>天玑境</DisplayName>
+				<Desc></Desc>
+				<Value>5800</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>天玑境</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>150</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>Physique_1_5_25</FailedChangeAdd>
+						<ResourceCost>
+							<Resource kind="Age" value="5"/>
+						</ResourceCost>
+					</Neck>
+				</Necks>
+			</Stage>	
+			<Stage Name="Stage4" Level="6">
+				<DisplayName>天权境</DisplayName>
+				<Desc></Desc>
+				<Value>16000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>天权境</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="9">
+				<DisplayName>玉衡境</DisplayName>
+				<Desc></Desc>
+				<Value>380000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>玉衡境</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>150</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage6" Level="10">
+				<DisplayName>开阳境</DisplayName>
+				<Desc></Desc>
+				<Value>1550000</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Explore">
+						<DisplayName>辅境</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>4</ExploreValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>开阳境</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。此瓶颈很难突破。</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage7" Level="12">
+				<DisplayName>摇光境</DisplayName>
+				<Desc></Desc>
+				<Value>4840000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>摇光境</DisplayName>
+						<Desc>褪去凡胎，飞升成仙。</Desc>
+						<ThunderValue>590000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

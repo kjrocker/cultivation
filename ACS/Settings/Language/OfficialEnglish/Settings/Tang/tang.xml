@@ -1,0 +1,24 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Tang_Dan">
+			<DisplayName>Alchemy</DisplayName>
+			<Desc>Specialized in Alchemy. Improve disciples' Alchemy-related abilities according to those of the Branch Leader.</Desc>
+		</Text>
+		<Text Name="Tang_Qi">
+			<DisplayName>Artifact Crafting</DisplayName>
+			<Desc>Specialized in Artifact Crafting. Improve disciples' Artifact Crafting-related abilities according to those of the Branch Leader.</Desc>
+		</Text>
+		<Text Name="Tang_Zhan">
+			<DisplayName>Battle</DisplayName>
+			<Desc>Specialized in Battle. Improve disciples' Battle-related abilities according to those of the Branch Leader.</Desc>
+		</Text>
+		<Text Name="Tang_XiuLian">
+			<DisplayName>Cultivate</DisplayName>
+			<Desc>Specialized in Cultivation/Training. Improve disciples' Cultivation/Training-related abilities according to those of the Branch Leader.</Desc>
+		</Text>
+		<Text Name="Tang_WaiShi">
+			<DisplayName>Foreign Affairs</DisplayName>
+			<Desc>Specialized in Foreign Affairs. Improve disciples' work and skill abilities according to those of the Branch Leader.</Desc>
+		</Text>
+	</List>
+</Texts>

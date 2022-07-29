@@ -1,0 +1,23 @@
+﻿<FeatureDefs><List>
+	<Feature Name="SYS_LOST" Type="Backstory">
+		<HideInUI>-1</HideInUI> 
+		<DisplayName>[遗失]</DisplayName>
+		<Desc>此特性已经遗失，没有人知道任何信息。(模组丢失)。</Desc>
+	</Feature> 
+	
+	<Feature Name="Sys_Disciple" Type="Normal"><!--内门弟子的系统特性-->
+		<HideInUI>2</HideInUI> 
+		<MoodBranch>
+			<li Old="Eat6" New="Eat10"/>
+			<li Old="Eat7" New="Eat11"/>
+			<li Old="FengShui1" New="BedroomFengShuiExpect5"/>
+			<li Old="FengShui2" New="BedroomFengShuiExpect4"/>
+			<li Old="FengShui5" New="BedroomFengShuiExpect1"/>
+			<li Old="FengShui3" New="BedroomFengShuiExpect2"/>
+			<li Old="FengShui4" New="BedroomFengShuiExpect3"/>
+		</MoodBranch>
+	</Feature>	
+	<Feature Name="Sys_Worker" Type="Normal"><!--外门弟子的系统特性-->
+		<HideInUI>2</HideInUI> 
+	</Feature>	
+</List></FeatureDefs>

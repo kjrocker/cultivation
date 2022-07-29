@@ -1,0 +1,81 @@
+<RelationDefs><List>
+	<Relation Name="PracticeMaster" Opposite="PracticeChild">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>师父</DisplayNameF>
+		<DisplayNameM>师父</DisplayNameM>
+		<FailInLove>1</FailInLove>
+		<Favour>Practice</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeChild"  Opposite="PracticeMaster">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>徒弟</DisplayNameF>
+		<DisplayNameM>徒弟</DisplayNameM>
+		<FailInLove>1</FailInLove>
+		<Favour>Practice</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeMasterMaster"   Opposite="PracticeChildChild">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>太师父</DisplayNameF>
+		<DisplayNameM>太师父</DisplayNameM>
+		<Favour>Practice</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeChildChild"   Opposite="PracticeMasterMaster">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>徒孙</DisplayNameF>
+		<DisplayNameM>徒孙</DisplayNameM>
+		<Favour>Practice</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeBrother">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>师姐,师妹</DisplayNameF>
+		<DisplayNameM>师兄,师弟</DisplayNameM>
+		<Practice>1</Practice>
+		<FailInLove>1</FailInLove>
+		<Favour>Practice</Favour>
+	</Relation>			
+	
+	<Relation Name="PracticeOtherBrother">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>师姐,师妹</DisplayNameF>
+		<DisplayNameM>师兄,师弟</DisplayNameM>
+		<Practice>1</Practice>
+		<FailInLove>1</FailInLove>
+		<Favour>PracticeOther</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeOtherMaster"  Opposite="PracticeOtherChild">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>小师姑,师姑</DisplayNameF>
+		<DisplayNameM>小师叔,师叔</DisplayNameM>
+		<Practice>1</Practice>
+		<FailInLove>1</FailInLove>
+		<Favour>PracticeOther</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeOtherChild"   Opposite="PracticeOtherMaster">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>师侄</DisplayNameF>
+		<DisplayNameM>师侄</DisplayNameM>
+		<FailInLove>1</FailInLove>
+		<Favour>PracticeOther</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeOtherMasterMaster"   Opposite="PracticeOtherChildChild">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>师祖</DisplayNameF>
+		<DisplayNameM>师祖</DisplayNameM>
+		<Favour>PracticeOther</Favour>
+	</Relation>	
+	
+	<Relation Name="PracticeOtherChildChild"   Opposite="PracticeOtherMasterMaster">
+		<AutoGentrate>0</AutoGentrate>
+		<DisplayNameF>徒孙</DisplayNameF>
+		<DisplayNameM>徒孙</DisplayNameM>
+		<Favour>PracticeOther</Favour>
+	</Relation>	
+	
+</List></RelationDefs>

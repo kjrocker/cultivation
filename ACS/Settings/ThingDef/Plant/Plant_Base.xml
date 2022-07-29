@@ -1,0 +1,158 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="PlantBase">
+
+	
+	
+	<MaxStack>1</MaxStack>
+	<TileID>0</TileID>
+	
+	<TexPath>Plant/GrassA</TexPath>
+	<TexOffsetX>0</TexOffsetX>
+	<TexOffsetY>0</TexOffsetY>
+	
+	<Rate>1</Rate>	
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	<GrowAble>1</GrowAble>
+	
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>120</BurningPoint>
+	</Flammability>
+	
+	
+	<Plant Kind="LowPlant">
+		<CanMakeRoom>0</CanMakeRoom>
+		<WildClusterSizeRangemin>10</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>10</WildClusterSizeRangemax>
+		<WildClusterRadius>10</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<SowWork>15</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag></SowPlaceTag>
+		<SowRenderTags></SowRenderTags>
+		
+		<LifespanFraction>0</LifespanFraction>
+		<GrowDays>1</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<RestBegin>19</RestBegin>
+		<RestEnd>4</RestEnd>
+		<WitherAble>1</WitherAble>
+		<WitherDestroy>0</WitherDestroy>
+		<WindEffect>0.06</WindEffect>
+		
+		
+		<TempMin>-10</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>500</LingMax>
+		<FertilityMin>0.6</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+	</Plant>
+	
+	<Harvest>
+		<HarvestWork>10</HarvestWork> 
+		<DropWork>10</DropWork>		
+		<HarvestValueMin>0.6</HarvestValueMin>  
+		<HarvestFailable>0</HarvestFailable> 
+		
+		<HarvestTag>
+			
+		</HarvestTag>   
+		
+		<HarvestItems>
+			<!--<li>
+				<ThingDef>Wheat</ThingDef>
+				<Count>50</Count>
+				
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+				
+			</li>-->
+		</HarvestItems>
+		
+		
+		<DropItems>
+			<!--<li>
+				<ThingDef></ThingDef>
+				<Count>0</Count>
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+			</li>-->
+		</DropItems>
+		
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="SYS_LOSTPLANT" Parent="FarmBase">
+	<ThingName>失落的植物</ThingName>
+	<Desc>失落之物，没有人认识这个。\n（模组丢失）</Desc>	
+	<TexPath>res/Sprs/ui/icon_del</TexPath>
+	<Plant>	
+		<GrowDays>99999</GrowDays>
+		<HarvestDays>9999</HarvestDays>
+		<TempMin>999</TempMin>
+		<TempMax>9999</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>500</LingMax>
+		<FertilityMin>999</FertilityMin>
+		<FertilityMax>999</FertilityMax>
+		<GrowGlowMin>40</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+	</Plant>
+	<Harvest>		
+	</Harvest>
+</ThingDef>
+</List></ThingDefs>

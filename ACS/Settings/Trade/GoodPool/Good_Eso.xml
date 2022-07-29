@@ -1,0 +1,65 @@
+<Defs><List>	
+	<Def Name="BaiManEso">
+		<Eso Weight="1" CountName="Eso">
+			<EsoData>
+				<SysEso>YaoGuai_Bible</SysEso>
+				<GLevel>Qi</GLevel>
+			</EsoData>
+			<InitTradeCount>
+				<Count Min="1" Max="4"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+		</Eso>
+	</Def> 
+	
+	<Def Name="TianJiEso">
+
+	</Def>
+	
+	<Def Name="HeiShanEso">
+		
+	</Def>
+	
+	<Def Name="ZhengYiEso">
+		
+	</Def>
+	
+	<Def Name="JiuHuaEso">
+		
+	</Def>
+	
+	<Def Name="WuLianEso">
+		
+	</Def>
+	
+	<Def Name="ShuShanEso">
+		<Eso Weight="1" CountName="Eso">
+			<EsoData>
+				<SysEso>Emotion_Bible</SysEso>
+				<GLevel>Qi</GLevel>
+			</EsoData>
+			<InitTradeCount>
+				<Count Min="1" Max="4"/>
+				<CountLimit>100</CountLimit>
+				<ExchangeLimit>20</ExchangeLimit>
+			</InitTradeCount>
+		</Eso>
+	</Def>
+	
+	<Def Name="KunLunEso">
+		
+	</Def>
+	
+	<Def Name="XianKongEso">
+		
+	</Def>
+	
+	<Def Name="DanXiaEso">
+		
+	</Def>
+	
+	<Def Name="HeHuanEso">
+		
+	</Def>
+</List></Defs>

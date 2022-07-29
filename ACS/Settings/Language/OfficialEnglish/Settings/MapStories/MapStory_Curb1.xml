@@ -1,0 +1,22 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="BuildCurb1">
+			<DisplayName>Obstruction</DisplayName>
+			<Desc>While constructing a wonder, some people started causing a fuss about the Feng Shui here.</Desc>
+			<Selections.0.Display>Beat them with a club.</Selections.0.Display>
+			<Selections.1.Display>Debate Feng Shui with them.</Selections.1.Display>
+		</Text>
+		<Text Name="BuildCurb2">
+			<DisplayName>Obstruction</DisplayName>
+			<Desc>While constructing a wonder, some people came over to ask what's going on.</Desc>
+			<Selections.0.Display>Ignore them.</Selections.0.Display>
+			<Selections.1.Display>Explain the situation.</Selections.1.Display>
+		</Text>
+		<Text Name="BuildCurb3">
+			<DisplayName>Obstruction</DisplayName>
+			<Desc>While constructing a wonder, some people wanted to give us a reward.</Desc>
+			<Selections.0.Display>Have them come back tomorrow.</Selections.0.Display>
+			<Selections.1.Display>Accept the reward.</Selections.1.Display>
+		</Text>
+	</List>
+</Texts>

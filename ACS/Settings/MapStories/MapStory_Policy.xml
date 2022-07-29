@@ -1,0 +1,2217 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	<Story Name="OutSpread_Give1" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>这天天气不错，代理人[NAME]带领众弟子走上街头，将食物分给路人。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					local pmName = unionData:GetPMName();
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}只将少量食物分给了路人，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}抓了一个路人，强行把食物送给他。那人一脸茫然，怀疑食物有毒，转了个街角就扔了。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}像小贩一样摆了摊，吆喝道：“快来快来！我们送食物了！人人有份！”"), pmName);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						tbTable:IncreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("由于时间有限，没有办法将更多的食物送给别人了。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}准备将灵石分给路人。"), pmName);
+						WorldLua:AddMsg(XT("但没人知道这是什么。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}准备将木头分给路人。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这么大一根木棍。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}准备将石料分给路人。"), pmName);
+						WorldLua:AddMsg(XT("但没人需要这么大一块石头。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give2" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>这天天气不错，代理人[NAME]带领众弟子走上街头，开始布施。见路边有很多乞丐在乞讨。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，与他们闲聊。但{0}从中悟出了一些处世道理，并收获了一些信众。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}抓了其中一个乞丐，强行把食物送给他。那人一脸茫然，非常害怕，群众用怀疑的眼光看着{0}。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}尝试使用食物引诱乞丐：“成为我们的信徒就不用再挨饿了。”乞丐当仁不让地就答应了。但群众还是觉得有点诡异。"), pmName);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想依靠知识和智慧帮助他们，但此时还是食物更加重要。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}大发善心，决定给他们每人无偿提供一顿食物。众人见了，投来赞许的目光。"), pmName);
+						tbTable:IncreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}准备将灵石给乞丐，但他们不知道这是什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}准备将木头给乞丐，但他们拿木头也只能要饭。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}准备将石头给乞丐，但他们拿石头也只能要饭。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give3" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>这天天气不错，代理人[NAME]带领众弟子走上街头，开始布施。看见一座石桥已经倒塌，人们不再路过这里。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}与群众进行讨论，安抚了一下他们。{0}悟道了一些处世之道。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}想使用蛮力处理石桥，但收效甚微。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒，我就把桥修好！”众人认为{0}在骗人，没有理他。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}动脑筋寻找搭桥的方法，但巧妇难为无米之炊。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物，但附近无人需要食物。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但附近无人认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}带了些木材，但石桥使用木头还不足以支撑。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}稍微拿了点石料，并命令弟子将桥修好。此事正好被路过的官人看见，他对{0}赞许有加。"), pmName);
+						tbTable:IncreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give4" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>这天天气不错，代理人[NAME]带领众弟子走上街头，开始布施。看见两个村民正在为一条狗而争执不休。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“那好啊，你们叫它的名字，看它答应谁？”果然，其中一人开始支支吾吾了。群众投来赞许的目光。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}朝他们喊到：“区区一条狗有什么好争的？我拿走了！”威慑力十足，其中一人被吓得直接逃跑。另一个人开始也很慌张，但还是说狗是她的。{0}将狗还给了她。群众感到此处更加安定。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}朝他们喊到：“区区一条狗有什么好争的？”并摆出吓人的架势。“你是哪里来的，这狗可是我当年的嫁妆！”其中一个人说。另一个人说：“胡说，它明明就是我4岁开始养的。”争吵继续进行，依靠{0}现在的武力无法威慑住他们。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒，我送你们一人条狗！”但他们并不相信，只想争夺眼前这条狗。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“这样，我把这条狗拿回去养，生了小狗给你们一人一条怎么样？”他们并不相信，只想争夺眼前这条狗。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物，喂给了狗。他们双方愣住了，不知道{0}在干嘛。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但附近无人认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，想要给他们两人一人一棒。他们被吓跑了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，将狗一砖打死，说：“狗肉一人一半。”他们十分害怕，再也不敢闹事了。但民众有点害怕。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give5" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见两位公子哥居然为了争夺一个女人而争执不休。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“放肆，一个女人，怎么能由你们二人决定出路？让她自己做出选择。”那名女子一个都没有选，直接逃走了。两位公子哥十分憎恨{0}，但群众还是投来了赞许的目光。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}朝他们喊到：“强抢民女，有没有王法？”威慑力十足，他们二人被吓跑了。女子感谢了{0}，群众感到此处更加安定。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("代{0}朝他们喊到：“强抢民女，有没有王法？”并摆出吓人的架势。“你是哪里来的，你可知道我是谁家的公子吗？”两人争吵继续进行，依靠{0}现在的武力无法威慑住他们。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒吧，从此再也不需要女人了。”但他们并不愿意，只想争夺这位女子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“她有什么好的？你们也太没眼光了吧。来修仙怎么样？”他们暂时对修仙并无兴趣，只想争夺这位女子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。眼下他们吵得激烈，并不想吃。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他们不认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，想要给他们两人一人一棒。他们被打跑了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向其中一位砸了过去。他们十分害怕，再也不敢闹事了。但民众有点害怕。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give6" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见两名大汉正在大打出手，问旁人说是一方种树，果子掉落到另一人家里，另一方不愿还回。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“此树有灵性，自愿长到了他家，又自愿落到他家里，此事不能强求。”他们二人觉得有些道理，不再争吵。群众投来赞许的目光。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}走到树旁，将其连根拔起，移到了不越界的位置。他们二人直接被吓傻了，不再打架。群众感到此处更加安定。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}走到树旁，准备将其拔起，然而力气不足。他们仍然在打架，没有理会{0}。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒吧，这树就放一边吧。”但他们并不愿意，还在打架。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“一棵树而已，至于吗？我那里有很多树。”但他们只想要这棵树，还在打架。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。眼下他们打得激烈，并不想吃。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他们不认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，想要给他们两人一人一棒。他们竟然一起来打{0}。{0}无奈只能逃跑。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向其中一位砸了过去。他们其中一位被打晕了，另一位也突然被吓到。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give7" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]正准备去布施，突然有一名身着华丽的女子哭着走到了[NAME]的住处，说她孩子丢了。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚她，展现了处世之道：“别慌，冷静一下。”两人细说了一番，但无法通过安抚她来找到孩子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}吼道：“哭什么哭？哭有用吗？”女子被吓到了，决定离开去找他人。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“来做我的信徒，我就帮你找孩子。”女子出于身份考虑无法同意，只能离去。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“小孩子喜欢的地方，无非是吃和玩。”最终在一个路边摊找到了。女子十分感谢{0}，原来她是路过此地的异国公主。群众投来赞许的目光。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}准备给她点食物缓一缓，但她并不想吃。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}给了点灵石，但她觉得灵石帮不上忙。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，但无法下手攻击一位女子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，但无法下手攻击一位女子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give8" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]正准备去布施，突然有一名男子冲到了殿内，求[NAME]救救她快要病死的妻子。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他，展现了处世之道：“别慌，冷静一下。”两人细说了一番，但无法通过安抚他来治好病。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}吼道：“急啥？很急吗？”男子真的很急，决定离开去找他人。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“来做我的信徒，我就帮你救妻子。”他立即决定加入。{0}去一看，发现她妻子身受属性伤害，他也毫无办法。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}决定先看一下病情，再找方法。发现她妻子受到的是属性伤害，需要内门丹药。{0}没有法力，无法为其疗伤。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}准备给他点食物缓一缓，但他并不想吃。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}带了点灵石，前往他家。发现她妻子受到的是属性伤害，需要内门丹药。随即找附近的散修买了丹药，给她服用，好了很多。卖药之人在此地有一定声望，对{0}赞许有加。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							WorldLua:AddMsg(XT("灵石-100"));
+							tbTable:AddInfluence(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}带了点灵石，前往他家。发现她妻子受到的是属性伤害，需要内门丹药。随即找附近的散修买丹药，售价100，但身上的灵石数量居然不够买。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，但无法下手攻击一位求助之人。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，但无法下手攻击一位求助之人。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give9" Parent="BaseFillingStory"> 
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]走到了稍微偏僻的地方。此时有一群匪徒路过。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他，展现了处世之道：“要不算了，何必为恶呢？”然而匪徒并不听劝，继续前进，扰乱了民生。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}带领弟子，决定与他们直接对抗。{0}武力高强，将其击退。匪徒四散而逃。群众对{0}表示感谢。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}带领弟子，决定与他们直接对抗。然而{0}武力不足，无法抗衡。匪徒击败{0}后还是入城，扰乱了民生。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“来做我的信徒吧，有很多好处的。”这群匪徒哈哈大笑，认为{0}是傻子，继续去扰乱民生。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}对匪徒说，此城夜晚无人驻守，可夜晚再来。他们趁夜色，扰乱了民生。"), pmName);
+						tbTable:DecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}准备给他点食物缓一缓，但他们并不在乎这点食物。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了点灵石，但他们并不知道灵石。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}拿了根木棍，决定攻击他们。{0}武力高强，将其击退。匪徒四散而逃。群众对{0}表示感谢。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}拿了根木棍，决定攻击他们。然而{0}武力不足，无法抗衡。匪徒击败{0}后还是入城，扰乱了民生。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}拿了块石头，与他们战斗。{0}武力高强，将其击退。匪徒四散而逃。群众对{0}表示感谢。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}拿了块石头，与他们战斗。然而{0}武力不足，无法抗衡。匪徒击败{0}后还是入城，扰乱了民生。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give10" Parent="BaseFillingStory"> 
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]路过[SCHOOL0]的势力，发现他们在进行布施。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("布施顺利进行。"));
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}直接走上去，与对方打了起来，但被信众阻止了。群众用异样的眼神看着{0}。布施中断了一会又顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}当着他们的面，开始大讲道法，想要吸引信众。但群众此时更需要的是布施的食物。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}决定偷偷将其布施的食物替换成腐坏的食物。群众吃了之后，当场觉得不对劲。布施中断了。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+							tbTable:DecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}决定偷偷将其布施的食物替换成腐坏的食物。但是由于不够机灵，被抓了个现行。{0}被一脚踹到了树上。布施顺利进行。"), pmName);
+							tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一些食物，也想要布施。但奈何没有充足的准备，无法与他们抗衡。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再布施怎么样？”并将灵石塞到他们手中。“看什么看？走了走了，今天到此为止。”对方当即决定回家。布施中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							WorldLua:AddMsg(XT("灵石-100"));
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方，然而他们信众众多，及时阻止了。群众看见了之后对我们表示不满，并心有不安。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give11" Parent="BaseFillingStory"> 
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]路过[SCHOOL0]的势力，发现他们在进行传道。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("传道顺利进行。"));
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}直接走上去，大喊：“你们讲得毫无道理。简直像是在放屁！”他们派出了一名弟子与{0}决斗。{0}身强体壮，将其制服。对方颜面扫地。传道中断了，人们看了决斗也觉得心有不安。"), pmName);
+							tbTable:DecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}直接走上去，大喊：“你们讲得毫无道理。简直像是在放屁！”他们派出了一名弟子与{0}决斗。{0}竟被其一掌击退到了路中间，只能灰溜溜地离开，然而他们的传道也不尽如意。"), pmName);
+							tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						if unionData.Charm > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，同样也开始传道。他展现了十足的魅力，群众纷纷决定成为我们的信徒。"), pmName);
+							tbTable:DirectlyGrabOtherPopSlightly(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，同样也开始传道。但可惜魅力不足，群众看都不看他一眼。传道顺利进行。"), pmName);
+							tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，决定与他们辩论一番。相互之间说了很多群众根本无法听懂的话，争得面红耳赤。争论结果已经不重要，群众早已觉得厌烦并离开。传道中断了。"), pmName);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，决定与他们辩论一番。然而由于{0}知识尚浅，三言两语就被驳了回来。传道顺利进行。"), pmName);
+							tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面。大家不知道他在干什么。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再传教怎么样？”并将灵石塞到他们{0}手中。“啊，今天我身体不适，改日再讲。”对方当即决定回家。传道中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+							WorldLua:AddMsg(XT("灵石-100"));
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方，然而他们信众众多，及时阻止了。群众看见了之后对我们表示不满，并心有不安。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give12" Parent="BaseFillingStory"> 
+		<DisplayName>特殊事件</DisplayName>
+		<Desc>代理人[NAME]路过[SCHOOL0]的势力，发现他们在进行食戒。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("受戒顺利进行。"));
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。受戒顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}直接走上去，与对方打了起来，但被信众阻止了。群众用异样的眼神看着{0}。受戒中断了一会又顺利进行。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}当着他们的面，开始大讲道法，想要吸引信众。但受戒仪式非常严肃，没有办法依靠传道进行干扰。受戒顺利进行。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，决定就受戒的后果与他们辩论一番。对方竟然被说得哑口无言，受戒无法再进行下去。"), pmName);
+							tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，决定就受戒的后果与他们辩论一番。然而由于{0}知识尚浅，三言两语就被驳了回来。受戒顺利进行。"), pmName);
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一些食物，在他们面前吃了起来。他们的代理人看的口水直流，想必已经几天没吃过肉了。他们的信徒非常怀疑，纷纷离去。"), pmName);
+						tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:DecreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再受戒怎么样？”并将灵石塞到他们{0}手中。“长久只吃素对身体不好，有时候不必勉强自己，只要心中有数即可。”对方突然这么说，并离开了。受戒中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方。然而他们的信众太多，被阻止了。群众看见了之后对我们表示不满。受戒没有进行地很顺利。"), pmName);
+						tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。受戒没有进行地很顺利。"), pmName);
+						tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。受戒顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give13" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。路过一座破损的木房子，其主人身有残疾，无法修补。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚主人，但他也只是心里好受了一点，并无实际用处。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}嘲讽他：“这个你难道不能自己解决？”主人内心非常难受，群众也看不过去。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你来做我的信徒，我就帮你修房子。”他当然就成为了信徒，但群众认为此事很诡异。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“去我们那里吧，房子随便住。”但他只想要住自己的房子。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。他虽然也饿，但是并不解决问题。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他不认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了些多余的木材，并将他的木屋修好。群众投来赞许的目光。"), pmName);
+						tbTable:IncreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了些石料，但他的房子无法使用石料恢复。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give14" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。看见一名身着异族服饰的人在装神弄鬼。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他：“何故在此谈论是非？时候不早了，回去休息吧。”那人理都不理{0}。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}向其怒吼：“一派胡言！”他居然被吓跑了。群众觉得更加安全。"), pmName);
+							tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseAttra(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}向其怒吼：“你再不停下，小心我打你！”“就是他！他就是万恶之源！”看来{0}还不够有威慑力，群众用怀疑的眼神看着{0}。群众受到了装神弄鬼的影响。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你这么能干，不如加入我们吧。”但他并不愿意。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说走上前去，与他辩论。他与{0}说了半天，驴头不对马嘴，装神弄鬼结束了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。但他并不需要吃东西。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他不认识灵石。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，想要将其打晕。“就是他！他就是万恶之源！”群众用怀疑的眼神看着{0}，没想到他恶人先告状。群众受到了装神弄鬼的影响。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向他砸了过去。他被打晕了，群众也被吓到了。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give15" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。路过了两家对门的酒馆，两家伙计正在因为生意而争执。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“生意讲究公平竞争。你们这样打闹，怕是神仙都不敢再来了。”他们双方觉得有些道理，不再争吵。群众投来赞许的目光。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}向他们吼道：“吵什么吵？再吵生意就别做了！”然而他们人多势众，{0}说的话几乎无人在乎。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒吧，这样大家都是一家人了。”但他们并不愿意，继续争吵。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“打死他们！今天就要分个胜负！。”没想到他们真的打了起来，一片混乱。群众害怕地逃走了。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。眼下他们吵得激烈，并不想吃。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他们不认识灵石。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，想要攻击他们。然而他们人多势众。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向其中一位砸了过去。他们其中一位被打晕了，其他人也突然被吓到。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give16" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。遇到了一群逃难前来的难民。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。他们中只有少部分人在此地住了下来。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“此地还算安全，人也很多，相比荒野机会多不少，不失为好办法。”他们觉得有道理，全都在此地安家。"), pmName);
+						tbTable:IncreaseAllPop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}对他们说道：“这里太危险，快走！”他们被吓走了。"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“你们都来做我们的信徒吧，我可保你们安全。”他们不太相信，只有部分成为了信众。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“这里没什么人监管，你懂的。”难民流入后，影响了此地的稳定。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物送给他们，他们拿了食物后非常感激，几乎全部成为了信众。"), pmName);
+						tbTable:IncreaseAllPop(WorldLua, cRegion);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他们不认识灵石。他们中只有少部分人在此地住了下来。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}带了些木材，但他们不缺木材。他们中只有少部分人在此地住了下来。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}带了些石料，但他们不需要石料。他们中只有少部分人在此地住了下来。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。他们中只有少部分人在此地住了下来。"), pmName);
+						tbTable:SlightlyIncreaseAllPop(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give17" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。在路边看见了一位身患重病的将死之人，他渴求[NAME]让他解脱。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，几乎没人通过这次活动认识我们。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他，但除此之外也别无他法。他最终还是去世了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}说道：“别放弃！还有希望！快给我爬起来！”但他已没有了力气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“来加入我们吧，这样我们就能帮你。”他倒是说加入我们，但还是无法再活下去。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}尝试查明他的病因，但无奈他经脉全断，身边又无修行之人，只能离去."), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物。可他就算吃了也无济于事。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}查明了病因，并找附近的散修购买药物，并让他服用，居然很快就显效了。那位散修在周边有一定声望，对{0}大加赞许。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							WorldLua:AddMsg(XT("灵石-100"));
+							tbTable:AddInfluence(WorldLua, cRegion);
+							tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}查明了病因，并找附近的散修购买药物，售价100，但身上的灵石数量居然不够买。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，并不忍心攻击他。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向他砸了过去，让他解脱。被群众看见了，认为{0}十分残忍。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Give18" Parent="BaseFillingStory"> 
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人[NAME]带领众弟子走上街头，开始布施。人群中不小心碰到了一位老大爷，他居然当场就瘫倒在地上，大喊：“哎哟！我的腿断了！就是这个人！”。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}无动于衷，群众纷纷表示怀疑。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他们，展现了处世之道：“不好意思，是我的错，去我那里吧，我帮你。”老大爷居然站了起来，“不了不了，我才不去。”群众哈哈大笑，佩服{0}的智慧。"), pmName);
+						tbTable:AddInfluence(WorldLua, cRegion);
+						tbTable:SlightlyIncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}喊道：“敢讹人？再不起来我就打死你！”他十分害怕，连滚带爬地走了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}对众人说：“来加入我们吧，不仅能治疗好腿，还能延年益寿！”然而他并不相信，只想要赔偿。群众纷纷开始怀疑{0}。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“你恐怕不是腿断了，是头断了吧。我帮你治一治？”老大爷吓傻了，连滚带爬地走了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}带了些食物给他，他拿了食物还嫌不够，不过群众不再怀疑。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}带了些灵石，但他不认识灵石。群众纷纷开始怀疑{0}。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了根木棍，向他打了过去，他被吓跑了。群众也受到了惊吓。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了块石头，向他砸了过去，他机灵地躲开了。被群众看见了，以为{0}在欺负弱小。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Sermon1" Parent="BaseFillingStory"> 
+		<DisplayName>传道事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]站在门口的大街上，准备进行一次传道。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}啥都没说。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}想了想没有什么处世方法可用来传道。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("“信我者生，不信者死！”{0}摆出一副打人的架势，手上还拿着长剑。民众感到恐惧，走的走逃的逃。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}嗓音浑厚，像是歌唱般诉说者教义。群众听得入迷，驻足凝听，忘记了自己准备去做什么。"), pmName);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}信口开河，张口就来，说了很多诡异狡猾的方法，民众将信将疑。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Sermon2" Parent="BaseFillingStory"> 
+		<DisplayName>传道事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]正在讲经传道。突然有个大汉走上前来，大声说：“一派胡言！”</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}啥都没说。群众认为{0}是怕了。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试使用处世手段安抚他，但他看起来就是来找茬的，毫无办法。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}说：“居然敢侮辱我神，让我消灭你！”说完就与他打了起来。最后总算是战胜了他。但转眼一看，大家都逃走了。"), pmName);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}摆出邀请的手势：“既然你有意见，何不上台来直抒胸臆？”那人不好意思地走了。传道进行顺利。"), pmName);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说：“你这么做很没有道理，我要和你辩一辩。”但他不理不睬，就是大喊大叫。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石站在路边。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，对着大汉说：“你再说一句？”大汉身强体壮，毫不慌张，群众倒是受到了惊吓。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，准备砸向大汉。然而大汉躲开了攻击。群众认为{0}为人不善。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Sermon3" Parent="BaseFillingStory"> 
+		<DisplayName>传道事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]正在讲经传道。突然有个人书生走上前来，说[NAME]讲的不对，总之就是有问题。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}没有阻止他。书生越来越猖狂，群众觉得很讨厌，纷纷离去了。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚他，但他看起来就是来找茬的，毫无办法。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}说：“住口！你竟敢妄议神明？来人，让他见识见识神的惩戒！”书生吓跑了，传道顺利进行。"), pmName);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}摆出邀请的手势：“既然你这么有学问，何不加入我们？”书生轻蔑地看着我们，说道：“哼，良禽择木而栖！”"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}与他不断辩论，面红耳赤，忘了传道这回事。群众觉得无聊，四散而去。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面给他吃，但他并不饿。大群众不解，大部分都离去了"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}准备送他一颗灵石，书生完全不知道这是什么。群众不解，大部分都离去了"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，对着书生说：“你再说一句？”书生吓跑了，但群众也受到了惊吓。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向书生砸了过去。书生没反应过来直接被砸晕。群众也吓跑了。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Sermon4" Parent="BaseFillingStory"> 
+		<DisplayName>传道事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]正在讲经传道。人群中有个大妈一直在拍手叫好，令人厌烦，但是她并不是信徒。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}没有阻止她。大妈声音越来越大，群众觉得很讨厌，纷纷离去了。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+						WorldLua:AddMsg(XT("{0}尝试安抚她，但他看起来就是来找茬的，毫无办法。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}说：“住口！你竟敢妄议神明？让你尝尝神的……”大妈居然没等话说完就骂了回来：“你们居然欺负一个弱女子？就这样还想让别人供奉？我呸！”群众对{0}同样表示唾弃。"), pmName);
+						tbTable:SlightlyDecreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}摆出邀请的手势：“既然你觉得好，来加入我们吧。”大妈好像没听见一样，还在叫好。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}说道：“啊，这不是翠花吗？你儿子收入多少啊？结婚了吗？生孩子了吗？为什么要来这里啊，看破红尘了吗？”大妈不堪受辱，只能离去。传道顺利进行。"), pmName);
+						tbTable:IncreasePop(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面给她，但她并不饿。群众不解，大部分都离去了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}打算送她灵石，但她不认识灵石。群众不解，大部分都离去了。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，对着大妈说：“你再说一句？”大妈摊在地上，哭喊：“救命啊，杀人啦！”{0}被群众阻止了。"), pmName);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，直接砸向大妈，她没来得及反应，被砸晕了过去。群众十分愤怒。"), pmName);
+						tbTable:DecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Secret1" Parent="BaseFillingStory"> 
+		<DisplayName>密谋事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]走上密阁，准备进行一次密谋。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，依靠处世无法密谋。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}决定派人去请匪徒来此地扰乱民生。晚上，一群匪徒袭击了这里。"), pmName);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}决定直接拉拢其他门派的信众。"), pmName);
+						local a = cRegion:GetNotSelfRegionSchool();
+						if a > 0 then
+							tbTable:DirectlyGrabOtherPop(WorldLua, cRegion, a);
+						else
+							WorldLua:AddMsg(XT("此地并无其他势力。"));
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}决定去做些坏事，降低其他势力的吸引力。"), pmName);
+						local a = cRegion:GetNotSelfRegionSchool();
+						if a > 0 then
+							tbTable:DecreaseOtherAttra(WorldLua, cRegion, a);
+						else
+							WorldLua:AddMsg(XT("此地并无其他势力。"));
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Secret2" Parent="BaseFillingStory"> 
+		<DisplayName>密谋事件</DisplayName>
+		<Desc>代理人[NAME]发现[SCHOOL0]在进行布施，决定进行干扰。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("布施顺利进行。"));
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}直接走上去，与对方打了起来，但被信众阻止了。群众用异样的眼神看着{0}。布施中断了一会又顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}当着他们的面，开始大讲道法，想要吸引信众。但群众此时更需要的是布施的食物。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}决定偷偷将其布施的食物替换成腐坏的食物。群众吃了之后，当场觉得不对劲。布施中断了。"), pmName);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+							tbTable:DecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}决定偷偷将其布施的食物替换成腐坏的食物。但是由于不够机灵，被抓了个现行。{0}被一脚踹到了树上。布施顺利进行。"), pmName);
+							tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一些食物，也想要布施。但奈何没有充足的准备，无法与他们抗衡。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再布施怎么样？”并将灵石塞到他们手中。“看什么看？走了走了，今天到此为止。”对方当即决定回家。布施中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+							WorldLua:AddMsg(XT("灵石-100"));
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方，然而他们信众众多，及时阻止了。群众看见了之后对我们表示不满，并心有不安。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。布施顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Secret3" Parent="BaseFillingStory"> 
+		<DisplayName>密谋事件</DisplayName>
+		<Desc>代理人[NAME]发现[SCHOOL0]在进行传道，眉头一皱，计上心来。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("传道顺利进行。"));
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("{0}直接走上去，大喊：“你们讲得毫无道理。简直像是在放屁！”他们派出了一名弟子与{0}决斗。{0}身强体壮，将其制服。对方颜面扫地。传道中断了，人们看了决斗也觉得心有不安。"), pmName);
+							tbTable:DecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("{0}直接走上去，大喊：“你们讲得毫无道理。简直像是在放屁！”他们派出了一名弟子与{0}决斗。{0}竟被其一掌击退到了路中间，只能灰溜溜地离开，然而他们的传道也不尽如意。"), pmName);
+							tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						if unionData.Charm > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，同样也开始传道。他展现了十足的魅力，群众纷纷决定成为我们的信徒。"), pmName);
+							tbTable:DirectlyGrabOtherPopSlightly(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，同样也开始传道。但可惜魅力不足，群众看都不看他一眼。传道顺利进行。"), pmName);
+							tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，决定与他们辩论一番。相互之间说了很多群众根本无法听懂的话，争得面红耳赤。争论结果已经不重要，群众早已觉得厌烦并离开。传道中断了。"), pmName);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，决定与他们辩论一番。然而由于{0}知识尚浅，三言两语就被驳了回来。传道顺利进行。"), pmName);
+							tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面。大家不知道他在干什么。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再传教怎么样？”并将灵石塞到他们{0}手中。“啊，今天我身体不适，改日再讲。”对方当即决定回家。传道中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方，然而他们信众众多，及时阻止了。群众看见了之后对我们表示不满，并心有不安。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+						tbTable:SlightlyDecreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。传道顺利进行。"), pmName);
+						tbTable:IncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="OutSpread_Secret4" Parent="BaseFillingStory"> 
+		<DisplayName>密谋事件</DisplayName>
+		<Desc>代理人[NAME]发现[SCHOOL0]在进行食戒，决定去干扰他们。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local School1 = story.target.schools[0];
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("受戒顺利进行。"));
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}走上前去，说道：“依我看这世道，要不还是算了吧。”对方有点恼火，说：“你是哪个派的？管得着吗？”{0}无奈只能离去。受戒顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}直接走上去，与对方打了起来，但被信众阻止了。群众用异样的眼神看着{0}。受戒中断了一会又顺利进行。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}当着他们的面，开始大讲道法，想要吸引信众。但受戒仪式非常严肃，没有办法依靠传道进行干扰。受戒顺利进行。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("{0}走上前去，决定就受戒的后果与他们辩论一番。对方竟然被说得哑口无言，受戒无法再进行下去。"), pmName);
+							tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+						else
+							WorldLua:AddMsg(XT("{0}走上前去，决定就受戒的后果与他们辩论一番。然而由于{0}知识尚浅，三言两语就被驳了回来。受戒顺利进行。"), pmName);
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一些食物，在他们面前吃了起来。他们的代理人看的口水直流，想必已经几天没吃过肉了。他们的信徒非常怀疑，纷纷离去。"), pmName);
+						tbTable:SlightlyDecreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:DecreaseOtherPop(WorldLua, cRegion, School1);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						if CS.XiaWorld.OutspreadMgr.Instance:CanCostItem("Item_LingStone", 100) then
+							WorldLua:AddMsg(XT("{0}与对方私下沟通，小声说道：“今天要么就先这样吧，下次再受戒怎么样？”并将灵石塞到他们手中。“长久只吃素对身体不好，有时候不必勉强自己，只要心中有数即可。”对方{0}突然这么说，并离开了。受戒中断了。"), pmName);
+							CS.XiaWorld.OutspreadMgr.Instance:CostItem(cRegion, "Item_LingStone", 100, nil);
+							tbTable:SlightlyDecreaseOtherPop(WorldLua, cRegion, School1);
+							WorldLua:AddMsg(XT("灵石-100"));
+						else
+							WorldLua:AddMsg(XT("{0}摸了摸口袋，并与门派沟通，发现连100灵石都没有。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，准备直接攻击对方。然而他们的信众太多，被阻止了。群众看见了之后对我们表示不满。受戒没有进行地很顺利。"), pmName);
+						tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头向对方砸了过去，但被其接住。“你们看看，这就是他们的作风！”群众对我们表示怀疑，并心有不安。受戒没有进行地很顺利。"), pmName);
+						tbTable:SlightlyIncreaseStab(WorldLua, cRegion);
+						tbTable:SlightlyIncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyDecreaseAttra(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。受戒顺利进行。"), pmName);
+						tbTable:IncreaseOtherAttra(WorldLua, cRegion, School1);
+						tbTable:SlightlyIncreaseOtherPop(WorldLua, cRegion, School1);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Disp1" Parent="BaseFillingStory"> 
+		<DisplayName>受戒事件</DisplayName>
+		<Desc>今天天气晴朗，代理人[NAME]在戒律院，准备进行一次受戒仪式。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，仅仅依靠口舌并不能挽救众生。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}说：“纵欲则糜，无欲则刚。”例行割去了受戒弟子的头发，以示众人。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Disp2" Parent="BaseFillingStory"> 
+		<DisplayName>受戒事件</DisplayName>
+		<Desc>代理人[NAME]见世人夜夜笙歌，乐此不疲，决定举行受戒仪式。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，仅仅依靠口舌并不能挽救众生。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要武力之戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}举行了色戒的仪式，号召凡人不要沉迷声色，否则等于自取灭亡。"), pmName);
+						if unionData.Charm > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("凡人都感觉内心有愧，纷纷赞同。"));
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseAttra(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("凡人并未感受到{0}的威慑力，纷纷离去。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要文思之戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要进行食戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Disp3" Parent="BaseFillingStory"> 
+		<DisplayName>受戒事件</DisplayName>
+		<Desc>代理人[NAME]见世间朱门酒肉臭，路有冻死骨，决定举行受戒仪式。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，仅仅依靠口舌并不能挽救众生。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要武力之戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要进行色戒仪式。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要文思之戒"));
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}举行了食戒仪式，号召凡人过午不食，清心寡欲。"), pmName);
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("凡人都感觉内心有愧，纷纷赞同。"));
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseAttra(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("凡人并未感受到{0}的威慑力，纷纷离去。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Disp4" Parent="BaseFillingStory"> 
+		<DisplayName>受戒事件</DisplayName>
+		<Desc>代理人[NAME]见世间绿林横行，满城戾气，决定举行受戒仪式。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，仅仅依靠口舌并不能挽救众生。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}决定采取武力之戒，劝解世人不要擅自扰乱民生。"), pmName);
+						if unionData.Fight > tbTable:SPL(1) then
+							WorldLua:AddMsg(XT("凡人都感觉内心有愧，纷纷赞同。"));
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseAttra(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("凡人并未感受到{0}的威慑力，纷纷离去。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要进行色戒仪式。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要文思之戒"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要食戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_Disp5" Parent="BaseFillingStory"> 
+		<DisplayName>受戒事件</DisplayName>
+		<Desc>代理人[NAME]见世间奸盗横行，暗生乱象，决定举行受戒仪式。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，仅仅依靠口舌并不能挽救众生。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要武力之戒。"), pmName);
+						tbTable:IncreaseStab(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要进行色戒仪式。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}决定采取文思之戒，号召世人不能以智慧作恶，否则将聪明反被聪明误。"), pmName);
+						if unionData.Intelligence > tbTable:MPL(1) then
+							WorldLua:AddMsg(XT("凡人都感觉内心有愧，纷纷赞同。"));
+							tbTable:IncreaseStab(WorldLua, cRegion);
+							tbTable:SlightlyIncreaseAttra(WorldLua, cRegion);
+						else
+							WorldLua:AddMsg(XT("凡人并未感受到{0}的威慑力，纷纷离去。"), pmName);
+							tbTable:NoEvent(WorldLua, cRegion);
+						end
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}想了想，此时不需要食戒。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}看了一眼众弟子，好像没有谁比较特别，微微叹了口气。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="OutSpread_God1" Parent="BaseFillingStory"> 
+		<DisplayName>神迹事件</DisplayName>
+		<Desc>今天代理人[NAME]认为时机成熟，让神修弟子在此展现神迹。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local pmName = unionData:GetPMName();
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+						WorldLua:AddMsg(XT("{0}想了想，好像没啥关系。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+						WorldLua:AddMsg(XT("{0}拿了一碗面。大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+						WorldLua:AddMsg(XT("{0}拿了一颗灵石，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+						WorldLua:AddMsg(XT("{0}拿了一根棍子，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+						WorldLua:AddMsg(XT("{0}拿了一块石头，大家不知道他在干什么。"), pmName);
+						tbTable:NoEvent(WorldLua, cRegion);
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+						WorldLua:AddMsg(XT("{0}让众弟子围住神像，一起参拜。其他信徒纷纷前来围观。一个时辰之后，神迹展现。"), pmName);
+						local faithNpc = cRegion.FaithNpc;
+						local us = cRegion:GetReligion(-1);
+						local ourPop = us.Population;
+						local k = 300 + math.ceil(WorldLua:RandomInt(ourPop/50*0.9, ourPop/50*1.2));
+						faithNpc.LuaHelper:AddGodPopulation(k);
+					end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

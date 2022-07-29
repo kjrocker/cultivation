@@ -1,0 +1,16 @@
+<Defs><List>
+	<Def Name="Price_KunLun" Parent="Price_Base">
+		<Tag>School</Tag>
+		<Tag2>KunLun</Tag2>
+		<FabaoSpecial>
+			<li>
+				<Q Min="0" Max="12.5" />
+				<Rate Min="1" Max="12" />
+				<oitemname>Item_Cinnabar</oitemname>
+				<ostuffname>Item_HuoEssence</ostuffname>
+				<BuyPrice Value="200" />
+				<SalePrice Value="100" />
+			</li>
+		</FabaoSpecial>
+	</Def>
+</List></Defs>

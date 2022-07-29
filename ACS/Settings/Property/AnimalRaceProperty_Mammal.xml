@@ -1,0 +1,103 @@
+<Properties><List>
+		
+	<Property Name="MammalMaxAge_15">
+		<BaseValue>15</BaseValue>	
+	</Property>	
+	<Property Name="MammalMaxAge_24">
+		<BaseValue>24</BaseValue>	
+	</Property>	
+	
+	<Property Name="MammalMaxAge_45">
+		<BaseValue>45</BaseValue>	
+	</Property>	
+	
+	<Property Name="MammalMaxAge_200">
+		<BaseValue>200</BaseValue>	
+	</Property>	
+	<Property Name="MammalMoveSpeed">
+		<BaseValue>1</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>2</AddValue>	
+	</Property>
+	
+	<Property Name="MammalMoveSpeed_Fast">
+		<BaseValue>2</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "2"  Base = "0"/>
+		</FiveBase>
+		<AddValue>4</AddValue>	
+	</Property>
+	
+	<Property Name="MammalMoveSpeed_Slow">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "0.5"  Base = "0"/>
+		</FiveBase>
+		<AddValue>1</AddValue>	
+	</Property>
+	
+	<Property Name="MammalMoveSpeed_Slow2">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "0.1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>0.2</AddValue>	
+	</Property>
+	
+	<Property Name="MammalMoveSpeed_NewYear">
+		<BaseValue>2</BaseValue>		
+	</Property>
+	'
+	<Property Name="MammalMaxHp">
+		<BaseValue>200</BaseValue>
+	</Property>	
+	
+	<Property Name="MammalComfyTMin">
+		<BaseValue>-5</BaseValue>
+
+	</Property>	
+	
+	<Property Name="MammalComfyTMax">
+		<BaseValue>20</BaseValue>
+
+	</Property>	
+	
+	<Property Name="MammalToleranceTMin">
+		<BaseValue>-5</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base = "0"/>
+		</FiveBase>
+		<AddValue>0</AddValue>	
+	</Property>	
+	
+	<Property Name="MammalToleranceTMax">
+		<BaseValue>2</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>25</AddValue>	
+	</Property>	
+	
+	<Property Name="MammalVisionRadius">
+		<BaseValue>0.5</BaseValue>
+		<FiveBase>
+			<li Name="Perception" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>5</AddValue>	
+	</Property>	
+	
+	<Property Name="MammalBaseWorkSpeed">
+		<BaseValue>4</BaseValue>
+	</Property>	
+	
+	<Property Name="MammalRecoveryPower">
+		<BaseValue>0.05</BaseValue>
+		<FiveBase>
+			<li Name="Physique" Addion = "1"  Base="0"/>
+		</FiveBase>
+		<AddValue>0.01</AddValue>	
+	</Property>	
+	
+</List></Properties>

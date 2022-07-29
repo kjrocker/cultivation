@@ -1,0 +1,182 @@
+<Magics><List>
+	<Magic Name="God_Xiuwei" Type="Class">
+		<DisplayName>天心观</DisplayName>
+		<Desc>静坐并将自身积累的信仰转化为修为。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<SelectMode>None</SelectMode>
+		<Param1>1</Param1><!--信仰转修为的比例-->
+		<Param2>500</Param2><!--最大转化速度 修为/s-->
+		<Ani>dazuo</Ani>
+		<ClassName>Magic_GodPXiuwei</ClassName>
+	</Magic>	
+
+	<Magic Name="God_Xiuwei1" Type="Class">
+		<DisplayName>神心观</DisplayName>
+		<Desc>静坐并极快速将自身积累的信仰转化为修为，但转化比率较低。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<SelectMode>None</SelectMode>
+		<Param1>0.8</Param1><!--信仰转修为的比例-->
+		<Param2>100000</Param2><!--最大转化速度 修为/s-->
+		<Ani>dazuo</Ani>
+		<ClassName>Magic_GodPXiuwei</ClassName>
+	</Magic>	
+	
+	<Magic Name="God_Xiuwei2" Type="Class">
+		<DisplayName>归一观</DisplayName>
+		<Desc>静坐并快速将自身积累的信仰转化为修为，但转化比率略低。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<SelectMode>None</SelectMode>
+		<Param1>0.9</Param1><!--信仰转修为的比例-->
+		<Param2>20000</Param2><!--最大转化速度 修为/s-->
+		<Ani>dazuo</Ani>
+		<ClassName>Magic_GodPXiuwei</ClassName>
+	</Magic>	
+	
+	
+	<Magic Name="God_XinZhai" Type="Class">
+		<DisplayName>心斋</DisplayName>
+		<Desc>进入心斋之中，逐渐降低心情对自身情绪的影响，并在完成后持续一段时间。花费多长时间心斋，心斋成功后就会持续多久。</Desc>
+		<Icon>res\Sprs\ui\icon_xixing01</Icon>
+		<SelectMode>None</SelectMode>
+		<Ani>xinzhai</Ani>
+		<ClassName>Magic_GodPXinZhai</ClassName>
+		<CostFaith>0</CostFaith>
+	</Magic>	
+	<Magic Name="God_ResurrectionA" Type="Class">
+		<DisplayName>还魂术</DisplayName>
+		<Desc>将一名弥留，死亡角色复活。自身获得10点神性。</Desc>
+		<Icon>res\Sprs\ui\icon_tongxiu01</Icon>
+		<TargetDesc>请选择已死亡或弥留的角色</TargetDesc>
+		<ItemCost>
+			<li name="Item_God_ZhiNianJieJing" count="7"/>
+		</ItemCost>		
+		<Param1>30</Param1><!--消耗时间-->
+		<Param2>10</Param2><!--获得神性-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodResurrectionA</ClassName>
+		<CostFaith>50000</CostFaith>
+	</Magic>	
+	<Magic Name="God_ResurrectionB" Type="Class">
+		<DisplayName>阴阳逆转</DisplayName>
+		<Desc>将场景中所有我方的弥留、死亡角色全部复活。自身获得100点神性。</Desc>
+		<Icon>res\Sprs\ui\icon_tongxiu01</Icon>
+		<ItemCost>
+			<li name="Item_God_ZhiNianJieJing" count="36"/>
+		</ItemCost>		
+		<Param1>60</Param1><!--消耗时间-->
+		<Param2>100</Param2><!--获得神性-->
+		<SelectMode>None</SelectMode>
+		<Ani>LJjineng10</Ani>
+		<ClassName>Magic_GodResurrectionB</ClassName>
+		<CostFaith>100000</CostFaith>
+	</Magic>
+	<Magic Name="God_DefuseZhinian" Type="Class">
+		<DisplayName>涤心</DisplayName>
+		<Desc>为角色化解一个执念。并获得一个执念结晶。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<TargetDesc>请选择已经显现执念的角色</TargetDesc>
+		<Param1>300</Param1><!--消耗时间-->
+		<sParam1>Item_God_ZhiNianJieJing</sParam1><!--掉落物品-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodDefuseZhinian</ClassName>
+		<CostFaith>9999</CostFaith>
+	</Magic>	
+	
+	<Magic Name="God_GodLike" Type="Class">
+		<DisplayName>神化</DisplayName>
+		<Desc>施法使自身神性临时提高到极致。但每次使用会永久提高1点神性。</Desc>
+		<Icon>res\Sprs\ui\icon_yangshen01</Icon>
+		<Param1>2</Param1><!--消耗时间-->
+		<SelectMode>None</SelectMode>
+		<Ani>LJjineng10</Ani>
+		<ClassName>Magic_GodGodLike</ClassName>
+		<CostFaith>9999</CostFaith>
+	</Magic>	
+	
+	<Magic Name="God_BeliveMe" Type="Class">
+		<DisplayName>劝化</DisplayName>
+		<Desc>劝化友方或者中立内门角色，尝试将其转化为核心信徒。</Desc>
+		<Icon>res\Sprs\ui\icon_tongxiu01</Icon>
+		<TargetDesc>请选择需要劝化的角色</TargetDesc>
+		<Param1>1</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodBelieveMe</ClassName>
+		<CostFaith>0</CostFaith>
+	</Magic>
+	
+	<Magic Name="God_Jingxin" Type="Class">
+		<DisplayName>静心</DisplayName>
+		<Desc>对一个非神修角色释放，使其情绪放大系数降低25%，持续7天。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<TargetDesc>请选择一个非神修角色释放</TargetDesc>
+		<Param1>30</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodJingxin</ClassName>
+		<CostFaith>1000</CostFaith>
+	</Magic>
+	
+	<Magic Name="God_ProductUp1" Type="Class">
+		<DisplayName>感召术</DisplayName>
+		<Desc>在10天内提高自己神灵附身所在区域的基础物资产出100%。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>3</Param1><!--消耗时间-->
+		<Param2>1</Param2><!-- x倍 -->
+		<Param3>6000</Param3><!-- 持续时间（秒） -->
+		<SelectMode>None</SelectMode>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_IncreateOutProduct</ClassName>
+		<CostFaith>10000</CostFaith>
+	</Magic>
+	
+	<Magic Name="God_ProductUp2" Type="Class">
+		<DisplayName>应愿术</DisplayName>
+		<Desc>在4天内提高自己神灵附身所在区域的基础物资产出200%。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>3</Param1><!--消耗时间-->
+		<Param2>2</Param2><!-- x倍 -->
+		<Param3>2400</Param3><!-- 持续时间（秒） -->
+		<SelectMode>None</SelectMode>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_IncreateOutProduct</ClassName>
+		<CostFaith>30000</CostFaith>
+	</Magic>
+	
+	<Magic Name="God_ProductUp3" Type="Class">
+		<DisplayName>唯尊法</DisplayName>
+		<Desc>在1天内提高自己神灵附身所在区域的基础物资产出500%。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>3</Param1><!--消耗时间-->
+		<Param2>5</Param2><!-- x倍 -->
+		<Param3>600</Param3><!-- 持续时间（秒） -->
+		<SelectMode>None</SelectMode>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_IncreateOutProduct</ClassName>
+		<CostFaith>50000</CostFaith>
+	</Magic>
+	
+	<Magic Name="God_TongLing_Plant" Type="Class">
+		<DisplayName>神恩赐命</DisplayName>
+		<Desc>花树有命，草木无情。欲使植物通灵，需要以神道修行者以自身1点人性为引，消耗9枚执念结晶与1枚元灵之珀尝试唤醒其灵，通灵结果需要一段时间才能出现。植物在通灵中时不可被再次通灵。施术者神性越高，植物被通灵次数越多，越容易通灵成功。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>10</Param1><!--消耗时间-->
+		<Param2>1</Param2><!--获得神性-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Plant|NoTongLing</SelectTarget>
+		<ClassName>Magic_TongLing_God</ClassName>
+		<TargetDesc>请选择一个植物</TargetDesc>
+		<TargetAni>dazuo</TargetAni>
+		<ItemCost>
+		    <li name="Item_God_ZhiNianJieJing" count="9"/>
+		    <li name="Item_SoulCrystalYuanLing" count="1"/>
+		</ItemCost>
+	</Magic>
+	
+</List></Magics>

@@ -1,0 +1,58 @@
+<CommandTypes><List>
+
+	<CommandType Name="BrokenNeck" Class="CommandBrokenNeck"><!--破瓶颈-->
+	<Single>1</Single>
+	<!--<Icon>res/Sprs/ui/icon_flag</Icon>-->
+	</CommandType>	
+	
+	
+	<CommandType Name="ReceiveApprentice" Class="CommandReceiveApprentice"><!--收徒-->
+	<Single>0</Single>
+	</CommandType>			
+	
+	<CommandType Name="RefiningFabao" Class="CommandRefiningFabao"><!--炼宝-->
+	<Single>1</Single>
+	<BuildingPermission>1</BuildingPermission>
+	</CommandType>
+	
+	<CommandType Name="PaintCharm" Class="CommandPaintCharm"><!--画符-->
+	<Single>0</Single>
+	<BuildingPermission>1</BuildingPermission>
+	</CommandType>
+	
+	<CommandType Name="TeachHim" Class="CommandTeachHim"><!--传授秘籍-->
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="GoMapExplore" Class="CommandGoMapExplore"><!--历练-->
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="Melting" Class="CommandMelting"><!--熔炼-->
+	<Icon>res/Sprs/ui/icon_ronglian01</Icon>
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="PracticeFood" Class="CommandPracticeFood"><!--修炼饮食-->
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="MagicNormal" Class="CommandMagicNormal"><!--神通通用-->
+	<Single>0</Single>
+	</CommandType>
+
+	<CommandType Name="CangJingGe" Class="CommandCangJingGe"><!--藏经阁-->
+	<Single>0</Single>
+	</CommandType>
+	
+	<CommandType Name="CangJingGeItem" Class="CommandBagCarryItem"><!--藏经阁-->
+	<Single>1</Single>
+	</CommandType>
+	
+	<CommandType Name="BodyTuna" Class="CommandTuna"><!--吐纳-->
+	<Single>1</Single>
+	<!--<Icon>res/Sprs/ui/icon_flag</Icon>-->
+	</CommandType>	
+	
+	
+</List></CommandTypes>

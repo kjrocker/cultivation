@@ -1,0 +1,62 @@
+<Defs><List>
+	<Def Name="Drought">
+		<SecretId>9006</SecretId>
+		<DisplayName>旱灾</DisplayName>
+		<SymbioticPolicy>Diaster_Drought</SymbioticPolicy>
+		<DurationDay>20</DurationDay>
+		<IntervalDay>1</IntervalDay>
+		
+		<FinishStory>MapStory_DroughtFinish</FinishStory>
+		<SolveStory>MapStory_DroughtSolve</SolveStory>
+		
+		<StartYearDay>29</StartYearDay>
+		<StopYearDay>56</StopYearDay>
+		
+		<Aid Item="Item_Wheat" Count="1000"/>
+	</Def>
+	<Def Name="Flood">
+		<DisplayName>洪水</DisplayName>
+		<SecretId>9007</SecretId>
+		<SymbioticPolicy>Diaster_Flood</SymbioticPolicy>
+		<DurationDay>20</DurationDay>
+		<IntervalDay>1</IntervalDay>
+		
+		<FinishStory>MapStory_DroughtFinish</FinishStory>
+		<SolveStory>MapStory_DroughtSolve</SolveStory>
+		
+		<StartYearDay>57</StartYearDay>
+		<StopYearDay>84</StopYearDay>
+		
+		<Aid Item="Item_BrownRock" Count="1000"/>
+	</Def>
+	<Def Name="Siberia">
+		<SecretId>9008</SecretId>
+		<DisplayName>寒潮</DisplayName>
+		<SymbioticPolicy>Diaster_Siberia</SymbioticPolicy>
+		<DurationDay>20</DurationDay>
+		<IntervalDay>1</IntervalDay>
+		
+		<FinishStory>MapStory_DroughtFinish</FinishStory>
+		<SolveStory>MapStory_DroughtSolve</SolveStory>
+		
+		<StartYearDay>85</StartYearDay>
+		<StopYearDay>10</StopYearDay>
+		
+		<Aid Item="Item_Wood" Count="1000"/>
+	</Def>
+	<Def Name="EarthQuake">
+		<SecretId>9009</SecretId>
+		<DisplayName>地震</DisplayName>
+		<SymbioticPolicy>Diaster_EarthQuake</SymbioticPolicy>
+		<DurationDay>20</DurationDay>
+		<IntervalDay>1</IntervalDay>
+		
+		<FinishStory>MapStory_DroughtFinish</FinishStory>
+		<SolveStory>MapStory_DroughtSolve</SolveStory>
+		
+		<StartYearDay>1</StartYearDay>
+		<StopYearDay>112</StopYearDay>
+		
+		<Aid Item="Item_BrownRock" Count="1000"/>
+	</Def>
+</List></Defs>

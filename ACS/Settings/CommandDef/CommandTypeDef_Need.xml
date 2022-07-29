@@ -1,0 +1,21 @@
+<CommandTypes><List>
+	<CommandType Name="EatFood" Class="CommandEatFood">
+	<Single>1</Single>
+	</CommandType>	
+	
+	<CommandType Name="DrinkWater" Class="CommandDrinkWater">
+	<Single>1</Single>
+	</CommandType>	
+	
+	<CommandType Name="TakeRest" Class="CommandTakeRest">
+	<Single>1</Single>
+	</CommandType>	
+	
+	
+	<CommandType Name="GetFun" Class="CommandGetFun">
+	<Single>1</Single>
+	</CommandType>	
+
+
+	
+</List></CommandTypes>

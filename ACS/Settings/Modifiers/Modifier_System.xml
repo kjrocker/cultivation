@@ -1,0 +1,1665 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Character_Initialization" Type="Normal">   <!--角色初始化-->
+		<DisplayName>Character_Initialization</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="1"/>   <!--初始灵气补正-->
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SysNpcPuppet" Type="Normal"><!--傀儡附带modifier-->
+		<DisplayName>傀儡</DisplayName>
+		<Desc>这是一具傀儡，它会在工作中被磨损，无法修复。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_FREEPATH</li>
+			<li>FLAG_NOLING</li>
+			<li>FLAG_NOFIGHT</li>
+		</SpecialFlags>
+<!--		<Damages>
+			<li Part="TheWholeBody" Damage="Puppet_Abrasion" Value="0.001"/>
+		</Damages>-->
+	</Modifier> 
+	
+	<Modifier Name="SysInfiPuppet" Type="Normal"><!--傀儡附带modifier-->
+		<DisplayName>六道傀儡</DisplayName>
+		<Desc>这具傀儡为特殊材料所制，不会在日常工作中磨损。但被攻击仍然会损坏。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_INFHP_PUPPET</li>
+		</SpecialFlags>
+<!--		<Damages>
+			<li Part="TheWholeBody" Damage="Puppet_Abrasion" Value="0.001"/>
+		</Damages>-->
+	</Modifier> 
+	
+	<Modifier Name="SysNewYearLink" Type="Normal">
+		<DisplayName>春节快乐</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Link</ClassName>
+		<MaxStack>1</MaxStack>	
+		<Duration>-1</Duration>
+		<Display>0</Display>		
+	</Modifier> 
+	
+	<Modifier Name="SysNewYear" Type="Normal">
+		<DisplayName>春节快乐</DisplayName>
+		<Desc>这是一只会带来一整年好运的怪物。</Desc>
+		<MaxStack>1</MaxStack>
+		<ClassName>Modifier_SysNewYear</ClassName>
+		<Modifiers>
+			<li>SysNewYearLink</li>
+		</Modifiers>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NYFOLLOW</li>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_NOLING</li>
+			<li>FLAG_NOFIGHT</li>
+		</SpecialFlags>
+<!--		<Damages>
+			<li Part="TheWholeBody" Damage="Puppet_Abrasion" Value="0.001"/>
+		</Damages>-->
+	</Modifier> 
+	
+	<Modifier Name="SysNewYear2" Type="Normal">
+		<DisplayName>春节快乐</DisplayName>
+		<Desc>这是一只会带来一整年好运的怪物。</Desc>
+		<Modifiers>
+			<li>SysNewYearLink</li>
+		</Modifiers>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddV="0.5"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_NOLING</li>
+			<li>FLAG_NOFIGHT</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	
+	<Modifier Name="SysWuDiYa" Type="Normal">
+		<DisplayName>无敌鸭</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ToleranceTMin" AddV="-99999"/>
+			<li Name="ToleranceTMax" AddV="99999"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_NOLING</li>
+			<li>FLAG_NOFIGHT</li>
+			<li>FLAG_CANTBEMAGIC</li>
+			<li>FLAG_NOCHANGECAMP</li>
+			<li>FLAG_GODMODE</li>
+			<li>FLAG_COMPULSORYCOMMUNICATION</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysExploreModifier" Type="Normal"><!--探索中的特殊buff 需要补一个隐身的状态-->
+		<DisplayName>探索中..</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddP="-0.1"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_FIGHTHIDE</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysCallUp" Type="Normal"><!--入魔CD-->
+		<DisplayName>叫醒</DisplayName>
+		<Desc>突然被叫醒，完全睡不着。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>100</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NOSLEEP</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	
+	<Modifier Name="SysDreamCantSleep" Type="Normal"><!--入魔CD-->
+		<DisplayName>睡不着</DisplayName>
+		<Desc>睡眠被某种原因中断，暂时睡不着了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>100</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NOSLEEP</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysDemonColdDown" Type="Normal"><!--入魔CD-->
+		<DisplayName>入魔CD</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>1200</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_NoDemon</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysGodPractice" Type="Normal"><!--打坐推迟天劫-->
+		<DisplayName>抵抗</DisplayName>
+		<Desc>打坐抵抗并减缓天劫的降临。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	
+	<Modifier Name="SysTeacherModifier" Type="Normal"><!--指导 结束时便会离开-->
+		<DisplayName>神秘修行者</DisplayName>
+		<Desc>暂时停留，一会便会离开。</Desc>
+		<ClassName>Modifier_Teacher</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>7200</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_ISVISTOR</li>
+			<li>FLAG_ISTEACHER</li>
+		</SpecialFlags>
+		<Damages>
+			<li Part="UpperElixirField" Damage="Damage_GongXinYin_Damage"/>
+			<li Part="RenChannel" Damage="LingSpillsInjury_Sp"/>
+			<li Part="DuChannel" Damage="LingSpillsInjury_Sp"/>
+			<li Part="BeltChannel" Damage="LingSpillsInjury_Sp"/>
+			<li Part="LowerElixirField" Damage="ElixirFieldShock"/>
+		</Damages>
+		<Properties>
+			<li Name="MaxAge" AddV="400"/>
+			<li Name="MindStateBaseValue" AddV="100"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.99"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="-0.99"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="-0.99"/>
+			
+			<li Name="PainTolerance" AddP="100"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="BaseEmotionAddV" AddV="200"/>
+			<li Name="PracticeFoodConsumeConstant" AddV="-10"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="-100"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysVistorModifier" Type="Normal"><!--访客的状态 结束时便会离开-->
+		<DisplayName>访客</DisplayName>
+		<Desc>暂时停留，一会便会离开。</Desc>
+		<ClassName>Modifier_Vistor</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_ISVISTOR</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysGodMonsterModifier" Type="Normal"><!--访客的状态 结束时便会离开-->
+		<DisplayName>降临</DisplayName>
+		<Desc>暂时停留，一会便会离开。</Desc>
+		<ClassName>Modifier_GodMonster</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	
+	<Modifier Name="SysFlyingModifier" Type="Normal"><!---->
+		<DisplayName>飞行状态..</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<!--<li Name="MoveSpeed" AddV="10"/>-->
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="SysPracticeDie" Type="Normal"><!---->
+		<DisplayName>道基已毁</DisplayName>
+		<Desc>道基已毁，无论如何修行都再无精进了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_PRACTICEDIE</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="SysExploreEatModifier" Type="Normal"><!--探索中吃东西的特殊buff-->
+		<DisplayName>享用食物</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="SysFabao_Positive" Type="Normal"><!--法宝属性相生加成-->
+		<DisplayName>法宝相生</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="0.5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" BAddP="0.5"/>
+			
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="1"/>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysFabao_Same" Type="Normal"><!--法宝属性相同加成-->
+		<DisplayName>法宝相同</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="0.2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="0.2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="0.2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="0.2"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" BAddP="0.2"/>
+			
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="0.4"/>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.4"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysFabao_Negative" Type="Normal"><!--法宝相克加成-->
+		<DisplayName>法宝相克</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="-0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="-0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" BAddP="-0.5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="-0.5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="-0.5"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" BAddP="-0.5"/>
+			
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="-1"/>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysEndureHunger" Type="Normal">
+		<DisplayName>耐饿</DisplayName>
+		<Desc>吃了干粮，更加耐饿。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-0.35"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Illusion1" Type="Normal">
+		<DisplayName>幻觉</DisplayName>
+		<Desc>吃了奇怪的蘑菇，产生了幻觉。非常热爱工作。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="HappyConsumeConstant" AddV="-10"/>
+			<li Name="FatigueConsumeConstant" AddV="-10"/>
+			<li Name="PainTolerance" AddV="999"/>
+			<li Name="GlobalEfficiency" AddP="-5"/>
+		</Properties>
+		<Moods>
+			 <li>Illusion1</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Illusion2" Type="Normal">
+		<DisplayName>幻觉</DisplayName>
+		<Desc>吃了奇怪的蘑菇，产生了幻觉。非常喜爱奔跑，需要大量娱乐。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties> 
+			<li Name="FatigueConsumeConstant" AddV="-10"/>
+			<li Name="PainTolerance" AddV="999"/>
+			<li Name="GlobalEfficiency" AddP="-5"/>
+			<li Name="MoveSpeed" AddP="4"/>
+		</Properties>
+		<Moods>
+			 <li>Illusion2</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Illusion3" Type="Normal">
+		<DisplayName>幻觉</DisplayName>
+		<Desc>吃了奇怪的蘑菇，产生了幻觉。非常喜欢睡觉。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="HappyConsumeConstant" AddV="20"/>
+			<li Name="FatigueConsumeConstant" AddV="20"/>
+			<li Name="NiceDreamHappenPercent" AddV="1"/>
+			<li Name="NightmareHappenPercent" AddV="1"/>
+			<li Name="PainTolerance" AddV="999"/>
+			<li Name="GlobalEfficiency" AddP="-5"/>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+		</Properties>
+		<Moods>
+			 <li>Illusion2</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Illusion4" Type="Normal">
+		<DisplayName>幻觉</DisplayName>
+		<Desc>吃了奇怪的蘑菇，产生了幻觉。眼前所见似同非同，好似入了幻境。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	
+	<Modifier Name="NegativeTime" Type="Normal"><!--消极怠工时获得的不满意-->
+		<DisplayName>怠工</DisplayName>
+		<Desc>这种生活真是一团糟，无心干活。[color=#D06508]（情绪45以上消失）[/color]</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NEGATIVETIME</li>
+			<li>FLAG_NEGATIVETIME</li>
+			<li>FLAG_NEGATIVETIME</li>
+		</SpecialFlags>
+		<BanJobs>
+				<li>Cooking</li>
+				<li>Hunting</li>
+				<li>Build</li>
+				<li>Plant</li>
+				<li>Mine</li>
+				<li>Cutoff</li>
+				<li>Smithing</li>
+				<li>Sew</li>
+				<li>Handwork</li>
+				<li>Carry</li>
+				<li>Clean</li>
+		</BanJobs>
+		<EndModifier>NegativeTime_Hearten</EndModifier>
+	</Modifier>
+	
+	<Modifier Name="NegativeTime_Hearten" Type="Normal"><!--怠工振奋心情-->
+		<DisplayName>振奋心情</DisplayName>
+		<Desc>生活还要继续，打起精神来吧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>0</Display>	
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_NOTNEGATIVE</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	<Modifier Name="Dissatisfaction" Type="Normal"><!--消极怠工时获得的不满意-->
+		<DisplayName>不满</DisplayName>
+		<Desc>这种生活真的是受够了…</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>6000</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Moods>
+			 <li>DiscontentMood</li>
+		</Moods>
+		<SpecialFlags>
+			<li>FLAG_DISSATISFACTION</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="SysDoBasePractice" Type="Normal"><!--习武过程中的buff-->
+		<DisplayName>习武中</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties><!--基础消耗加倍-->
+			<li Name="NutritionConsumeConstant" AddP="0.5"/>
+			<li Name="WaterConsumeConstant" AddP="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="SysTooTired" Type="Normal"><!--开局晕倒的buff-->
+		<DisplayName>劳累过度</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Damages>
+			<li Part="TheWholeBody" Damage="SysTooTired"/>
+		</Damages>
+	</Modifier>
+	
+	<Modifier Name="Sys_JieNanShenyu" Type="Normal"><!--劫难-->
+		<DisplayName>身欲劫</DisplayName>
+		<Desc>基础消耗加五倍</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Properties><!--基础消耗加倍-->
+			<li Name="NutritionConsumeConstant" AddP="5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Sys_JieNanZhenkong" Type="Normal"><!--劫难-->
+		<DisplayName>真空劫</DisplayName>
+		<Desc>失去所有神通</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2025</Duration><!--可以填属性-->
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+		</SpecialFlags>
+		<!--失去所有神通 todo-->
+		<Moods>
+			 <li>ZhenkongJie</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="Sys_JieNanHuangu" Type="Normal"><!--劫难-->
+		<ClassName>Modifier_JieNanHuangu</ClassName>
+		<DisplayName>换骨劫</DisplayName>
+		<Desc>每隔一段时间骨骼上便会产生伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Display>1</Display>
+		<!--TO DO-->
+	</Modifier>
+	
+	<Modifier Name="Sys_WorkBroken" Type="Normal"><!--参悟-->
+		<DisplayName>悟</DisplayName>
+		<Desc>失去了所有神通，在外门进行参悟，尝试突破功法瓶颈。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<!--TO DO-->
+	</Modifier>
+	
+	<Modifier Name="Sys_MasterHelp" Type="Normal"><!--护法-->
+		<DisplayName>护法</DisplayName>
+		<Desc>师父为你提供了护法，你的心境得到提高并保持稳定。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+			<li Name="SpeedOfMindStateCoefficient" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Sys_DrugTime" Type="Normal"><!--药物持续时间-->
+		<DisplayName>药物BUFF</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<!--TO DO-->
+	</Modifier>
+	
+	<Modifier Name="Sys_FabaoPowerAdd" Type="Normal"><!--法宝增强技能的对应BUFF 数值为基础数值 不同的技能会乘系数-->
+		<DisplayName>提高法宝威力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" BAddP="0.5"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" BAddP="0.5"/>			
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Sys_SkillPowerAdd" Type="Normal"><!--术法增强技能的对应BUFF 数值为基础数值 不同的技能会乘系数-->
+		<DisplayName>提高术法威力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Sys_SheildPowerAdd" Type="Normal"><!--护盾增强技能的对应BUFF 数值为基础数值 不同的技能会乘系数-->
+		<DisplayName>提高护体强度</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="SeeGod" Type="Normal"><!--目睹飞升-->
+		<DisplayName>天道洗练</DisplayName>
+		<Desc>亲眼见证飞升之事，身心为天道洗练。在这段时间内，修行会事半功倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+			<li Name="PracticeRateAddPFromDan" AddP="0.3"/>
+		</Properties>
+		<Moods>
+			 <li>SeeGod</li>
+		</Moods>
+	</Modifier>
+	
+	<Modifier Name="BasePracticeAchievements1" Type="Normal"><!--筑基小成-->
+		<DisplayName>筑基小成</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.2"/>
+			<li Name="MoveSpeed" AddP="0.3"/>
+			<li Name="RecoveryPower" AddP="0.2"/>
+			<li Name="ToleranceTMin" AddV="-4"/>
+			<li Name="ToleranceTMax" AddV="4"/>
+		</Properties>
+		
+		<Moods>
+			 <li>Mood_BasePracticeAchievements1</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="BasePracticeAchievements2" Type="Normal"><!--筑基有成-->
+		<DisplayName>筑基有成</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Sync>1</Sync>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.40"/>
+			<li Name="MoveSpeed" AddP="0.5"/>
+			<li Name="RecoveryPower" AddP="0.35"/>
+			<li Name="ComfyTMin" AddV="-3"/>
+			<li Name="ComfyTMax" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-6"/>
+			<li Name="ToleranceTMax" AddV="6"/>
+		</Properties>
+		
+		<Moods>
+			 <li>Mood_BasePracticeAchievements2</li>
+		</Moods>
+	</Modifier>
+	<Modifier Name="BasePracticeAchievements3" Type="Normal"><!--筑基成功-->
+		<DisplayName>筑基成功</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MoveSpeed" AddP="0.15"/>
+			<li Name="RecoveryPower" AddP="0.8"/>
+			<li Name="ComfyTMin" AddV="-3"/>
+			<li Name="ComfyTMax" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-6"/>
+			<li Name="ToleranceTMax" AddV="6"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="BasePracticeAchievements4" Type="Normal"><!--筑基成功-->
+		<DisplayName>筑基成功（信仰）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MoveSpeed" AddP="0.15"/>
+			<li Name="RecoveryPower" AddP="0.8"/>
+			<li Name="ComfyTMin" AddV="-3"/>
+			<li Name="ComfyTMax" AddV="3"/>
+			<li Name="ToleranceTMin" AddV="-6"/>
+			<li Name="ToleranceTMax" AddV="6"/>
+			
+			<li Name="FatigueConsumeConstant" BAddP="-0.75"/>
+			<li Name="NutritionConsumeConstant" BAddP="-0.75"/>
+			<li Name="WaterConsumeConstant" BAddP="-0.75"/>
+			<li Name="HappyConsumeConstant" BAddP="-0.75"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="BasePracticeAchievements5" Type="Normal"><!--筑基成功-->
+		<DisplayName>筑基成功（体修）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="0.0002"/>
+			<li Name="BodyPratice_MaxZhenQi" AddV="100"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="2"/>
+			<li Name="FatigueConsumeConstant" AddV="-3"/>
+			
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			
+			<li Name="NutritionConsumeConstant" AddP="0.5"/>
+			<li Name="NutritionToJingYuanK" AddV="0.02"/>
+			
+			<li Name="PainTolerance" AddV="2"/>
+			
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="ToleranceTMin" AddV="-10"/>
+			<li Name="ToleranceTMax" AddV="50"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Sys_Demon" Type="Normal"><!--入魔持续时间-->
+		<DisplayName>魔([TXT])</DisplayName>
+		<Desc>由于某种原因入魔了</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<!--TO DO-->
+	</Modifier>
+	
+	<Modifier Name="FengShui1" Type="Normal"><!--风水-->
+		<DisplayName>福地</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="5"/>
+			<li Name="NightmareHappenPercent" AddP="-0.8"/>
+			<li Name="HappyConsumeConstant" AddP="-0.2"/>
+			<li Name="FatigueRecoveryConstant" AddP="0.4"/>
+			<li Name="SocialContactLevelAddValue" AddV="2"/>
+			<li Name="SmithingInjuredChance" AddP="-0.8"/>
+			<li Name="MiningInjuredChance" AddP="-0.8"/>
+			<li Name="ConstructInjuredChance" AddP="-0.8"/>
+			<li Name="GlobalEfficiency" AddP="0.2"/>
+		</Properties>
+		<Moods>
+			 <li>FengShui1</li>
+		</Moods>
+	</Modifier>	
+	<Modifier Name="FengShui2" Type="Normal"><!--风水-->
+		<DisplayName>大吉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="3"/>
+			<li Name="NightmareHappenPercent" AddP="-0.5"/>
+			<li Name="HappyConsumeConstant" AddP="-0.1"/>
+			<li Name="FatigueRecoveryConstant" AddP="0.2"/>
+			<li Name="SocialContactLevelAddValue" AddV="1"/>
+			<li Name="SmithingInjuredChance" AddP="-0.5"/>
+			<li Name="MiningInjuredChance" AddP="-0.5"/>
+			<li Name="ConstructInjuredChance" AddP="-0.5"/>
+			<li Name="GlobalEfficiency" AddP="0.1"/>
+		</Properties>
+		<Moods>
+			 <li>FengShui2</li>
+		</Moods>
+	</Modifier>	
+	<Modifier Name="FengShui3" Type="Normal"><!--风水-->
+		<DisplayName>小吉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="1"/>
+			<li Name="NightmareHappenPercent" AddP="-0.2"/>
+			<li Name="HappyConsumeConstant" AddP="-0.05"/>
+			<li Name="FatigueRecoveryConstant" AddP="0.2"/>
+			<li Name="SocialContactLevelAddValue" AddV="0"/>
+			<li Name="SmithingInjuredChance" AddP="-0.2"/>
+			<li Name="MiningInjuredChance" AddP="-0.2"/>
+			<li Name="ConstructInjuredChance" AddP="-0.2"/>
+			<li Name="GlobalEfficiency" AddP="0.05"/>
+		</Properties>
+	</Modifier>	
+	<Modifier Name="FengShui4" Type="Normal"><!--风水-->
+		<DisplayName>小凶</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="-0.2"/>
+			<li Name="NightmareHappenPercent" AddP="1"/>
+			<li Name="HappyConsumeConstant" AddP="0.2"/>
+			<li Name="FatigueRecoveryConstant" AddP="-0.2"/>
+			<li Name="SocialContactLevelAddValue" AddV="0"/>
+			<li Name="SmithingInjuredChance" AddP="1"/>
+			<li Name="MiningInjuredChance" AddP="1"/>
+			<li Name="ConstructInjuredChance" AddP="1"/>
+			<li Name="GlobalEfficiency" AddP="-0.1"/>
+		</Properties>
+		<Moods>
+			 <li>FengShui5</li>
+		</Moods>
+	</Modifier>	
+	<Modifier Name="FengShui5" Type="Normal"><!--风水-->
+		<DisplayName>大凶</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>10</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="-0.5"/>
+			<li Name="NightmareHappenPercent" AddP="3"/>
+			<li Name="HappyConsumeConstant" AddP="0.3"/>
+			<li Name="FatigueRecoveryConstant" AddP="-0.3"/>
+			<li Name="SocialContactLevelAddValue" AddV="-1"/>
+			<li Name="SmithingInjuredChance" AddP="3"/>
+			<li Name="MiningInjuredChance" AddP="3"/>
+			<li Name="ConstructInjuredChance" AddP="3"/>
+			<li Name="GlobalEfficiency" AddP="-0.2"/>
+		</Properties>
+		<Moods>
+			 <li>FengShui3</li>
+		</Moods>
+	</Modifier>	
+	<Modifier Name="FengShui6" Type="Normal"><!--风水-->
+		<DisplayName>绝地</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddP="-0.8"/>
+			<li Name="NightmareHappenPercent" AddP="5"/>
+			<li Name="HappyConsumeConstant" AddP="0.5"/>
+			<li Name="FatigueRecoveryConstant" AddP="-0.5"/>
+			<li Name="SocialContactLevelAddValue" AddV="-2"/>
+			<li Name="SmithingInjuredChance" AddP="5"/>
+			<li Name="MiningInjuredChance" AddP="5"/>
+			<li Name="ConstructInjuredChance" AddP="5"/>
+			<li Name="GlobalEfficiency" AddP="-0.3"/>
+		</Properties>
+		<Moods>
+			 <li>FengShui4</li>
+		</Moods>
+	</Modifier>	
+	
+	<Modifier Name="Sys_AbsorbGong_5" Type="Normal"><!--他化自在大法附加效果-->
+		<DisplayName>他化自在大法</DisplayName>
+		<ClassName>Modifier_AbsorbGong_5</ClassName>
+		<Desc>该对象被施展了他化自在大法，更容易受情绪影响。当处在极端情绪时（160以上或40以下），会持续向施法者提供修为与参悟。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>	
+		<SpecialFlags>
+			<li>FLAG_AbsorbGong_5</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="SocialContactLevelAddValue" AddV="-2"/>
+			<li Name="EmotionAmplificationFactor" AddP="0.5"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Sys_AbsorbGong_6" Type="Normal"><!--魂体寄生附加效果-->
+		<DisplayName>寄生</DisplayName>
+		<ClassName>Modifier_AbsorbGong_6</ClassName>
+		<Desc>该对象被施展了魂体寄生，每天0点所有筑基值会被转化为对方的修为。同时角色因此虚弱，五维降低，全局工作效率降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>	
+		<BaseFive>-2,-2,-2,-2,-2</BaseFive>
+		<SpecialFlags>
+			<li>FLAG_AbsorbGong_6</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="-0.5"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Sys_ShenXiu_Magic_JingXin" Type="Normal"><!--神修，静心效果-->
+		<DisplayName>静心</DisplayName>
+		<Desc>此人心情平静了许多。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>4200</Duration>
+		<Display>1</Display>	
+		<Properties>
+			<li Name="EmotionAmplificationFactor" AddP="-0.25"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Sys_DaoLv" Type="Normal"><!--道侣-->
+		<DisplayName>道侣同参</DisplayName>
+		<Desc>我与道侣在一起，感觉心有灵犀，连修炼都变得十分有效。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>6</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.5"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Sys_Zombie" Type="Normal"><!--僵尸-->
+		<DisplayName>僵尸</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>	
+		<Properties>
+			<li Name="MoveSpeed" AddP="-0.5"/>
+			<li Name="RecoveryPower" AddP="5"/>
+			<li Name="PainTolerance" AddP="100"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_FREEPATH</li>
+			<li>FLAG_NOLING</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	<Modifier Name="Sys_Jianglingfenshen" Type="Normal">
+		<DisplayName>降临分身</DisplayName>
+		<Desc>一位祖师的分身，该分身只能战斗，一会便会离开。</Desc>
+		<ClassName>Modifier_Jiangling</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>	
+		<Properties>
+			<li Name="PainTolerance" AddP="100"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_PRACTICEDIE</li>
+			<li>FLAG_CANNOT_UNEQUPT</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+		</SpecialFlags>
+	</Modifier>	
+	<Modifier Name="Sys_Jianglingjiangdao" Type="Normal">
+		<DisplayName>降临分身</DisplayName>
+		<Desc>一位祖师的分身，该分身正在讲道，一会便会离开。</Desc>
+		<ClassName>Modifier_Jiangling</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>	
+		<Properties>
+			<li Name="PainTolerance" AddP="100"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_PRACTICEDIE</li>
+			<li>FLAG_CANNOT_UNEQUPT</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_NOFIGHT</li>
+			<li>FLAG_FIGHTHIDE</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_ZangMenDebuff" Type="Normal">
+		<DisplayName>杂念（掌门）</DisplayName>
+		<Desc>掌门因管理门派而产生的负担，降低心境，修炼速度，参悟获取速度，突破几率等修炼相关的属性。门派分堂开设越多，负担越大。会根据掌门的掌管能力而减免。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="ExperiencePrestigeAddP" AddV="0.1"/>
+			<li Name="MindStateBaseValue" AddV="-2"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.1"/>
+			<li Name="PracticeRateAddPFromDan" AddP="-0.02"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-0.02"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_TangZhuDebuff" Type="Normal">
+		<DisplayName>杂念（堂主）</DisplayName>
+		<Desc>堂主因管理分堂弟子而产生的负担，降低心境，修炼速度，参悟获取速度，突破几率等修炼相关的属性。分堂下属弟子越多，负担越大。会根据掌门的掌管能力而减免。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Sync>1</Sync>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="ExperiencePrestigeAddP" AddV="0.05"/>
+			<li Name="MindStateBaseValue" AddV="-1"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.05"/>
+			<li Name="PracticeRateAddPFromDan" AddP="-0.01"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_ZangMenDebuff_Old" Type="Normal">
+		<DisplayName>疲惫</DisplayName>
+		<Desc>虽然卸任掌门，但管理门派期间的沉重压力让你短时间无法解脱。降低心境，修炼速度，参悟获取速度，突破几率等修炼相关的属性。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-2"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.1"/>
+			<li Name="PracticeRateAddPFromDan" AddP="-0.02"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-0.02"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_TangZhuDebuff_Old" Type="Normal">
+		<DisplayName>疲惫</DisplayName>
+		<Desc>虽然卸任堂主，但管理分堂期间的沉重压力让你短时间无法解脱。降低心境，修炼速度，参悟获取速度，突破几率等修炼相关的属性。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-1"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-0.05"/>
+			<li Name="PracticeRateAddPFromDan" AddP="-0.01"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	<Modifier Name="Modifier_Sys_NoAreaBuff" Type="Normal">
+		<DisplayName>无区域加成</DisplayName>
+		<Desc>因堂主能力不足，该堂口弟子无法获得区域加成。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_NoAllBuff" Type="Normal">
+		<DisplayName>无常驻加成</DisplayName>
+		<Desc>因堂主能力不足，该堂口弟子无法获得常驻加成。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Nei_Dan" Type="Normal">
+		<DisplayName>炼丹专精（内门）</DisplayName>
+		<Desc>内门弟子在本堂范围内可提高炼丹速度，成功率，产量。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="DanMake_SpeedAddV" AddV="0.01"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.01"/>
+			<li Name="DanMake_YieldAddP" AddV="0.02"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Wai_Dan" Type="Normal">
+		<DisplayName>炼丹专精（外门）</DisplayName>
+		<Desc>外门弟子在本堂范围内可获得制药，治疗能力的加强。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="DrugProductSpeed" AddP="0.01"/>
+			<li Name="TreatSpeed" AddP="0.01"/>
+			<li Name="TreatmentExpectQuality" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_All_Dan" Type="Normal">
+		<DisplayName>炼丹专精（常驻）</DisplayName>
+		<Desc>提高岐黄/炼丹技能等级以及神识属性。堂主能力越强，加成越高。（常驻专精刷新周期为1天）</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Medicine" Level="2"/>
+		</Skills>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Nei_Qi" Type="Normal">
+		<DisplayName>炼器专精（内门）</DisplayName>
+		<Desc>内门弟子在本堂范围内可提高炼器速度，成功率，品阶，品质。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.01"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.01"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.05"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.005"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Wai_Qi" Type="Normal">
+		<DisplayName>炼器专精（外门）</DisplayName>
+		<Desc>外门弟子在本堂范围内可获得制作能力的加强。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="SmithingSpeed" AddP="0.02"/>
+			<li Name="HandworkSpeed" AddP="0.02"/>
+			<li Name="TailoringSpeed" AddP="0.02"/>
+			<li Name="ManufactureExpectQuality" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_All_Qi" Type="Normal">
+		<DisplayName>炼器专精（常驻）</DisplayName>
+		<Desc>提高巧匠/炼器技能等级以及根骨属性。堂主能力越强，加成越高。（常驻专精刷新周期为1天）</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Manual" Level="2"/>
+		</Skills>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Nei_Zhan" Type="Normal">
+		<DisplayName>战斗专精（内门）</DisplayName>
+		<Desc>内门弟子在本堂范围内可获得恢复力，疼痛忍耐的加强。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="RecoveryPower" AddP="0.01"/>
+			<li Name="PainTolerance" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Wai_Zhan" Type="Normal">
+		<DisplayName>战斗专精（外门）</DisplayName>
+		<Desc>外门弟子在本堂范围内可获得恢复力，疼痛忍耐的加强。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="RecoveryPower" AddP="0.01"/>
+			<li Name="PainTolerance" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_All_Zhan" Type="Normal">
+		<DisplayName>战斗专精（常驻）</DisplayName>
+		<Desc>提高战斗相关能力，战斗技能等级以及神识，根骨属性。堂主能力越强，加成越高。（常驻专精刷新周期为1天）</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>1,1,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddP="0.1"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_BaseHitChance" AddP="0.1"/>
+			<li Name="NpcFight_BaseDodgeChance" AddP="0.1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fight" Level="1"/>
+			<li Name="Fabao" Level="1"/>
+			<li Name="FightSkill" Level="1"/>
+			<li Name="Barrier" Level="1"/>
+		</Skills>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Nei_XiuLian" Type="Normal">
+		<DisplayName>修行专精（内门）</DisplayName>
+		<Desc>内门弟子在本堂范围内可提高心境，修炼速度，参悟获取，突破概率。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="1"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.05"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.02"/>
+			<li Name="PracticeRateAddPFromDan" AddP="0.01"/>
+			<li Name="InspirationCoefficient" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Wai_XiuLian" Type="Normal">
+		<DisplayName>修行专精（外门）</DisplayName>
+		<Desc>外门弟子在本堂范围内可提高筑基速度。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="BasepracticeSpeedCoefficient" AddP="0.02"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_All_XiuLian" Type="Normal">
+		<DisplayName>修行专精（常驻）</DisplayName>
+		<Desc>提高气感技能等级以及悟性属性。堂主能力越强，加成越高。（常驻专精刷新周期为1天）</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Skills>
+			<li Name="Qi" Level="2"/>
+		</Skills>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Nei_WaiShi" Type="Normal">
+		<DisplayName>外事专精（内门）</DisplayName>
+		<Desc>内门弟子在本堂范围内可获得全局效率的加成。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.015"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Wai_WaiShi" Type="Normal">
+		<DisplayName>外事专精（外门）</DisplayName>
+		<Desc>外门弟子在本堂范围内可获得全局效率的加成。堂主能力越强，加成越高。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.015"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_All_WaiShi" Type="Normal">
+		<DisplayName>外事专精（常驻）</DisplayName>
+		<Desc>提高历练速度，声望获取加成，历练瓶颈突破速度等属性，处世技能等级以及魅力，机缘属性。堂主能力越强，加成越高。（常驻专精刷新周期为1天）</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>1</Display>
+		<BaseFive>0,0,1,0,1</BaseFive>
+		
+		<Properties>
+			<li Name="ExperiencePrestigeAddP" AddV="0.02"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="0.1"/>
+			<li Name="ExperienceNeckTimeCostCoefficient" AddP="-0.015"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="2"/>
+		</Skills>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_Magic_Prophesy" Type="Normal">
+		<DisplayName>周天神算</DisplayName>
+		<Desc>当有事件发生前， 会预先给出提示。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<WorldFlags>
+			<li>Magic_Prophesy</li>
+		</WorldFlags>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_CanNotExperience" Type="Normal">
+		<DisplayName>静修</DisplayName>
+		<Desc>该弟子刚刚从长时间的历练中回山，需要一段时间静修稳固修为。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_CANTEXPLORESTAY</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_CanNotExperienceHide" Type="Normal">
+		<DisplayName>不能历练</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_CANTEXPLORESTAY</li>
+		</SpecialFlags>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_TameCD" Type="Normal">
+		<DisplayName>喂养间隔</DisplayName>
+		<Desc>该动物刚刚被喂养过。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Sys_GodMode" Type="Normal">
+		<DisplayName>无敌</DisplayName>
+		<Desc>无敌状态</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_GODMODE</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Sys_CantSelect" Type="Normal">
+		<DisplayName>不可选中</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_CANTSELECT</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="Mini_Follow" Type="Normal">
+		<DisplayName>跟宠</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddV= "5"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_GODMODE</li>
+			<li>FLAG_CANTBEMAGIC</li>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Sys_Fenshenshang" Type="Normal">
+		<DisplayName>伤神</DisplayName>
+		<Desc>施展了分神之术，一段时间内会陷入虚弱状态。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Damages>
+			<li Part="TheWholeBody" Damage="SevereInjury" Value="0.4"/>
+		</Damages>
+	</Modifier>	
+	
+	<Modifier Name="SysConcealmentModifier" Type="Normal"><!--隐匿-->
+		<DisplayName>隐匿</DisplayName>
+		<Desc>隐匿气息，降低被发现的概率。\n离开隐匿需要五秒。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ClassName>Modifier_Concealment</ClassName>
+		<Properties>
+			<li Name="MoveSpeed" AddP="-0.1"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_CONCEALMENT</li>
+		</SpecialFlags>
+		<MaterialDatas>
+			<li Name="_Dark" Value="0"/>
+		</MaterialDatas>
+		<EffectBind>			
+			<li Path="Effect/System/Concealment"/>
+		</EffectBind>
+	</Modifier> 
+	
+	<Modifier Name="SysConcealmentRobModifier" Type="Normal"><!--隐匿中盗窃-->
+		<DisplayName>盗窃</DisplayName>
+		<Desc>被发现的概率提高了</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SneakValue" AddV="-2"/> <!--降低隐匿值-->
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Modifier_Sys_WinterWarm" Type="Normal">
+		<DisplayName>冬虫</DisplayName>
+		<Desc>吃了冬虫，耐寒能力提高了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="ToleranceTMin" AddV="-20"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Sys_SummerHerb" Type="Normal">
+		<DisplayName>夏草</DisplayName>
+		<Desc>吃了夏草，耐热能力提高了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="ToleranceTMax" AddV="20"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Sys_SuppressGodCall" Type="Normal">
+		<DisplayName>压制</DisplayName>
+		<Desc>强行压制天劫</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_SUPPRESSGODCALL</li>
+		</SpecialFlags>
+		<Damages>
+			<li Part="UpperElixirField" Damage="Damage_Sys_SuppressGodCall" Value="1"/>
+		</Damages>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Sys_CangJingGe" Type="Normal">
+		<DisplayName>修行底蕴</DisplayName>
+		<Desc>得益于派中藏书量，本派弟子修炼，参悟的速度更快。</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>605</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.01"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.01"/>
+		</Properties>
+	</Modifier>	
+	
+	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_ShaLu" Type="Normal">
+		<DisplayName>杀戮之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="2"/>
+			<li Name="FightSkill" LevelOver="2"/>
+			<li Name="Barrier" Level="-5"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_ZiQi" Type="Normal">
+		<DisplayName>自弃之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="2"/>
+			<li Name="FightSkill" LevelOver="2"/>
+			<li Name="Barrier" Level="-5"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_TanLan" Type="Normal">
+		<DisplayName>贪婪之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" Level="-3"/>
+			<li Name="FightSkill" Level="-3"/>
+			<li Name="Barrier" LevelOver="4"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_XiangLe" Type="Normal">
+		<DisplayName>享乐之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" Level="-3"/>
+			<li Name="FightSkill" Level="-3"/>
+			<li Name="Barrier" LevelOver="4"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_AoMan" Type="Normal">
+		<DisplayName>傲慢之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+			<li Name="FightSkill" LevelOver="1"/>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_WeiShan" Type="Normal">
+		<DisplayName>伪善之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+			<li Name="FightSkill" LevelOver="1"/>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_JiaoLv" Type="Normal">
+		<DisplayName>焦虑之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="4"/>
+			<li Name="FightSkill" Level="-3"/>
+			<li Name="Barrier" Level="-3"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="Modifier_Sys_EnianHeart_YiYu" Type="Normal">
+		<DisplayName>抑郁之心</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" Level="-3"/>
+			<li Name="FightSkill" LevelOver="4"/>
+			<li Name="Barrier" Level="-3"/>
+		</Skills>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="-1"/>
+			<li Name="MindStateBaseValue" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="SysNewYearZhulong" Type="Normal">
+		<DisplayName>春节</DisplayName>
+		<Desc>烛龙正在审视你们，一会就会离开</Desc>
+		<MaxStack>1</MaxStack>
+		<LuaClassName>modifier_zhulongsp</LuaClassName>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<SpecialFlags>
+			<li>FLAG_NOMAGIC</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_NOCOMMUNICATE</li>
+			<li>FLAG_CANTBEMAGIC</li>
+			<li>FLAG_NOMOOD</li>
+			<li>FLAG_NOTNEGATIVE</li>
+			<li>FLAG_NOLING</li>
+			<li>FLAG_NOFIGHT</li>
+			<li>FLAG_GODMODE</li>
+			<li>FLAG_CANTSCAN</li>
+			<li>FLAG_CANTSCAN</li>
+			<li>FLAG_CANTRECOVERYLING</li>
+			<li>FLAG_COMPULSORYCOMMUNICATION</li>
+			<li>FLAG_OVERLAYFOG</li>
+		</SpecialFlags>
+		<WorldFlags>
+			<li>ZhuLongSP</li>
+		</WorldFlags>
+<!--		<Damages>
+			<li Part="TheWholeBody" Damage="Puppet_Abrasion" Value="0.001"/>
+		</Damages>-->
+	</Modifier> 
+	
+	<Modifier Name="SysJumpingModifier" Type="Normal"><!---->
+		<DisplayName>飞跃状态..</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddV="10"/>
+		</Properties>
+	</Modifier> 
+		
+	<Modifier Name="Modifier_Dan_ColdDown" Type="Normal"><!---->
+		<DisplayName>药物吸收</DisplayName>
+		<Desc>需要一定时间完全吸收各类药物拥有的营养，在此期间无法再通过食用药物获得营养。</Desc>
+		<MaxStack>1</MaxStack>
+		<Display>1</Display>
+		<Duration>1200</Duration>
+	</Modifier> 
+	
+	<Modifier Name="SysSprintModifier" Type="Normal"><!---->
+		<DisplayName>冲刺</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>0.19</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_GODMODE</li>
+			<li>FLAG_INSPRINT</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcFight_MoveSpeedAdd" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="System_CGModifier" Type="Normal">
+		<DisplayName>特殊变身</DisplayName>
+		<MaxStack>0</MaxStack>
+		<NpcModPath>Mod/Npc/Hero1/Base</NpcModPath>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync><!--跨场景时是否同步-->
+	</Modifier> 
+	
+</List></ModifierDefs>

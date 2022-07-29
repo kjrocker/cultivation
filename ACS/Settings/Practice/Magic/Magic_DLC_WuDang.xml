@@ -1,0 +1,73 @@
+<Magics><List>
+	<Magic Name="LsCalmHeart" Type="Class">
+		<DisplayName>静心纳气</DisplayName>
+		<Desc>对一个友方角色释放，使其三日内无需进食饮水，也不会疲劳，但移动变缓慢。</Desc>
+		<Icon>res\Sprs\ui\icon_qizhang01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Ani>ShiFaLoop</Ani>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_AddModifier</ClassName>
+		<sParam1>Modifier_Magic_XuanWuHeart</sParam1>
+		<LuaGetCost>
+		rs:Add("LcGrowth",5);
+		</LuaGetCost>
+		<TargetDesc>请选择一个友方角色</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="LsShapeshift" Type="Class">
+		<DisplayName>遮天道意</DisplayName>
+		<Desc>延缓一个友方角色的化形天劫，但需消耗其寿元。</Desc>
+		<Icon>res\Sprs\ui\icon_tianxin01</Icon>
+		<SelectMode>Single</SelectMode>
+		<Ani>ShiFaLoop</Ani>
+		<Kind>Good</Kind>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<Param2>5</Param2>
+		<Param3>20</Param3>
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>Magic_A2HLonger</ClassName>
+		<CostLing>0</CostLing>
+		<LuaGetCost>
+		rs:Add("LcGrowth",10);
+		rs:Add("LcLingZhi",10);
+		</LuaGetCost>
+		<TargetDesc>请选择一个带有化形天劫的友方角色</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	
+	<Magic Name="LsLingWater" Type="Class">
+		<DisplayName>先天灵土</DisplayName>
+		<Desc>以自身的成长和营养作为代价，周围的将一片区域化为灵土，但会使周围都化为普通水域。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<Ani>ShiFaLoop</Ani>
+		<sParam1>LingSoil</sParam1>
+		<Param1>49</Param1>
+		<sParam2>ShallowWater</sParam2>
+		<Param2>49</Param2>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_WuDangLing</ClassName>
+		<MaxArea>300</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<MinDis>0.5</MinDis>
+		<LuaGetCost>
+		rs:Add("LcGrowth",20);
+		rs:Add("LcNeiDanNu",100);
+		rs:Add("LcShuFaNu",100);
+		rs:Add("LcQiGanNu",100);
+		rs:Add("LcHuTiNu",100);
+		rs:Add("LcLingZhiNu",100);
+		rs:Add("LcNeiDan",15);
+		rs:Add("LcShuFa",15);
+		rs:Add("LcQiGan",15);
+		rs:Add("LcHuTi",15);
+		rs:Add("LcLingZhi",15);
+		</LuaGetCost>
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+</List></Magics>

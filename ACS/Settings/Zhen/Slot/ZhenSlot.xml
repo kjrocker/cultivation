@@ -1,0 +1,345 @@
+<ZhenSlotDefs><List>
+	<Def Name="Sys_Lost" DisplayName="失">
+		<Lv>1</Lv>
+		<SlotType>Sys_Lost</SlotType> 
+	</Def>
+	
+	<!-- lv0 -->
+	<Def Name="Lv0_None" DisplayName="无">
+		<Lv>1</Lv>
+		<SlotType>None</SlotType> 
+	</Def>
+	<!-- lv1 -->
+	<Def Name="Lv1_Jian" DisplayName="剑">
+		<Lv>1</Lv>
+		<SlotType>Lv1_Jian</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="1" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv1_Fa" DisplayName="法">
+		<Lv>1</Lv>
+		<SlotType>Lv1_Fa</SlotType> 
+		<Effect>
+			<li Type="MagicPowerBasev" Value="1" />
+		</Effect>
+		<CoreEffect>
+			<li Type="MagicPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv1_Gang" DisplayName="罡">
+		<Lv>1</Lv>
+		<SlotType>Lv1_Gang</SlotType> 
+		<Effect>
+			<li Type="SheildBasev" Value="1" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv1_Ren" DisplayName="韧">
+		<Lv>1</Lv>
+		<SlotType>Lv1_Ren</SlotType> 
+		<Effect>
+			<li Type="StabilityBasev" Value="1" />
+		</Effect>
+		<CoreEffect>
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<!-- lv2 -->
+	<Def Name="Lv2_Qian" DisplayName="乾">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Qian</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Kun" DisplayName="坤">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Kun</SlotType> 
+		<Effect>
+			<li Type="ReduceCostBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="ReduceCostAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Zhen" DisplayName="震">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Zhen</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="2" />
+			<li Type="MagicPowerBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Xun" DisplayName="巽">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Xun</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="2" />
+			<li Type="StabilityBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Kan" DisplayName="坎">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Kan</SlotType> 
+		<Effect>
+			<li Type="MagicPowerBasev" Value="2" />
+			<li Type="SheildBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv2_Li" DisplayName="离">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Li</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="2" />
+			<li Type="SheildBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Gen" DisplayName="艮">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Gen</SlotType> 
+		<Effect>
+			<li Type="SheildBasev" Value="2" />
+			<li Type="StabilityBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SheildAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv2_Dui" DisplayName="兑">
+		<Lv>2</Lv>
+		<SlotType>Lv2_Dui</SlotType> 
+		<Effect>
+			<li Type="MagicPowerBasev" Value="2" />
+			<li Type="StabilityBasev" Value="2" />
+		</Effect>
+		<CoreEffect>
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<!-- Lv3 -->
+	
+	<Def Name="Lv3_Ri" DisplayName="日">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Ri</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+			<li Type="MagicPowerBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Yue" DisplayName="月">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Yue</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+			<li Type="MagicPowerBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Yin" DisplayName="阴">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Yin</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Yang" DisplayName="阳">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Yang</SlotType> 
+		<Effect>
+			<li Type="MagicPowerBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	
+	<Def Name="Lv3_Yu" DisplayName="宇">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Yu</SlotType> 
+		<Effect>
+			<li Type="ReduceCostBasev" Value="3" />
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="ReduceCostAddp" Value="0.3" />
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Zhou" DisplayName="宙">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Zhou</SlotType> 
+		<Effect>
+			<li Type="ReduceCostBasev" Value="3" />
+			<li Type="MagicPowerBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="ReduceCostAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Shi" DisplayName="始">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Shi</SlotType> 
+		<Effect>
+			<li Type="ReduceCostBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="ReduceCostAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Zhong" DisplayName="终">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Zhong</SlotType> 
+		<Effect>
+			<li Type="ReduceCostBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="ReduceCostAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<Def Name="Lv3_Sheng" DisplayName="生">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Sheng</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="3" />
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Mie" DisplayName="灭">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Mie</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="3" />
+			<li Type="MagicPowerBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Zao" DisplayName="造">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Zao</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv3_Hua" DisplayName="化">
+		<Lv>3</Lv>
+		<SlotType>Lv3_Hua</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+	<!-- Lv4 -->
+	
+	<Def Name="Lv4_Hong" DisplayName="鸿">
+		<Lv>4</Lv>
+		<SlotType>Lv4_Hong</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="4" />
+			<li Type="ReduceCostBasev" Value="4" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="0.3" />
+			<li Type="ReduceCostAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	<Def Name="Lv4_Meng" DisplayName="蒙">
+		<Lv>4</Lv>
+		<SlotType>Lv4_Meng</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="4" />
+			<li Type="MagicPowerBasev" Value="4" />
+			<li Type="SheildBasev" Value="4" />
+			<li Type="StabilityBasev" Value="4" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	
+</List></ZhenSlotDefs>

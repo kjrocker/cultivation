@@ -1,0 +1,43 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobAnimalEatFood">
+			<DisplayName>Eat</DisplayName>
+		</Text>
+		<Text Name="JobBAnimalFree">
+			<DisplayName>Move</DisplayName>
+		</Text>
+		<Text Name="JobBAnimalGiveBirth">
+			<DisplayName>Breed</DisplayName>
+		</Text>
+		<Text Name="JobBirthIt">
+			<DisplayName>Hatch</DisplayName>
+		</Text>
+		<Text Name="JobEatFood">
+			<DisplayName>Eat</DisplayName>
+		</Text>
+		<Text Name="JobDrinkWater">
+			<DisplayName>Drink</DisplayName>
+		</Text>
+		<Text Name="JobTakeRest">
+			<DisplayName>Sleep</DisplayName>
+		</Text>
+		<Text Name="JobLookAtSky">
+			<DisplayName>Skygaze</DisplayName>
+		</Text>
+		<Text Name="JobFree">
+			<DisplayName>Wander</DisplayName>
+		</Text>
+		<Text Name="JobRunAway">
+			<DisplayName>Flee</DisplayName>
+		</Text>
+		<Text Name="JobPlayWithBuilding">
+			<DisplayName>Have Fun</DisplayName>
+		</Text>
+		<Text Name="JobBasePractice">
+			<DisplayName>Foundation Training</DisplayName>
+		</Text>
+		<Text Name="JobIdle">
+			<DisplayName>Idle</DisplayName>
+		</Text>
+	</List>
+</Texts>

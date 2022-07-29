@@ -1,0 +1,79 @@
+<Stories><List>	
+	<Story Name="Ls_School_Panda" Parent="BaseFillingStory">
+		<DisplayName>仙界大使</DisplayName>
+		<Desc>貊仙仙的努力改善了[SCHOOL]和我派的关系</Desc>
+		<Selections>
+			<li>
+				<Display>好的</Display>
+				<OKResult><![CDATA[	
+					me:AddSchoolRelation(story.target, 300);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Ls_FindPanda" Parent="BaseFillingStory">
+		<DisplayName>天貊玉佩</DisplayName>
+		<Desc>据说大竹林深处有个奇妙的玉佩，一半黑一半白，很像是传说中的天貊遗物。</Desc>
+		<Selections>
+			<li>
+				<Display>仔细搜寻</Display>
+				<OKResult><![CDATA[	
+					me:AddMsg(XT("[NAME]在大竹林深处反复搜寻，终于在某个溪流边寻得这枚黑白相间的玉佩。"));
+					me:DropAwardItem("Item_PandaJade",1);
+					story:FinishSecret();
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Ls_CallPanda" Parent="BaseFillingStory">
+		<DisplayName>破坏</DisplayName>
+		<Desc>这玉中蕴含了两种气息，一阴一阳，它们相互交织，有一丝古朴又有一丝俏皮。</Desc>
+		<Selections>
+			<li>
+				<Display>破坏</Display>
+				<OKResult><![CDATA[	
+					local npc = ThingMgr:AddNpc("LsPandaXian", Map:GetRandomWalkableInMap(), Map, g_emFightCamp.Friend)
+					me:AddMsg(XT("玉佩碎裂之后，远处有一道天貊的气息飞了过来。"));
+					MessageMgr:AddMessage(34011, {npc})
+					story:RemoveBindItem();
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HotStory_Practice_Fish"  Parent="BaseFillingStory">
+		<DisplayName>垂钓感悟</DisplayName>
+		<RuleKind>lingguangyishan</RuleKind>
+		<Desc>[NAME]灵光一闪！</Desc>
+		<Selections>
+			<li>
+				<Display>有所领悟</Display>
+				<RuleType>Any</RuleType>
+				<OKResult><![CDATA[
+				local nR = me:RandomInt(1,9);
+				local tS = {XT("岐黄"),XT("烹饪"),XT("版筑"),XT("耕作"),XT("采掘"),XT("雅艺"),XT("巧匠"),XT("处世")};
+				local tM = {"HotStory_MedicineLv","HotStory_CookingLv","HotStory_BuildingLv","HotStory_FarmingLv","HotStory_MiningLv","HotStory_ArtLv","HotStory_ManualLv","HotStory_SocialContactLv"};
+				local szS_R = tS[nR]
+				local sN  = me:ParseNpcStory(string.format(XT("[rand_lable=desc_time,desc_place,desc_weather]，[name]在垂钓时，突然心中一动，对%s一道又有感悟。"), tostring(szS_R)));
+				
+				me:AddMsg(sN);me:AddMemery(sN);
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Little_Panda"  Parent="BaseFillingStory">
+		<DisplayName>天貊修修</DisplayName>
+		<Desc>另一只天貊修修听到仙仙的呼唤，也来到了这里！</Desc>
+		<Selections>
+			<li>
+				<Display>欢迎</Display>
+				<OKResult><![CDATA[	
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

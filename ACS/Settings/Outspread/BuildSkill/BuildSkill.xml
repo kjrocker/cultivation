@@ -1,0 +1,12 @@
+<Defs><List>
+	<Def Name="zhaolan">
+		<DisplayName>招揽</DisplayName>
+		<Desc>在此地，将信奉我们教的人招揽成为我们的弟子。一次消耗100影响值。</Desc>
+		<Cost>
+			<Influence>100</Influence>
+		</Cost>
+		<CD>1</CD> <!-- 单位是天 -->
+		<Lua>GameUlt.ZhaoLan(region)</Lua> <!-- 效果就是跑个lua脚本 -->
+		<Icon>res/Sprs/ui/icon_zhufu01</Icon>
+	</Def>
+</List></Defs>

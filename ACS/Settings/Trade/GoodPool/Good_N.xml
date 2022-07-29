@@ -1,0 +1,88 @@
+<Defs><List>	
+	<Def Name="BaiManN">
+		<Item CountName="Normal">
+			<ItemName>Item_BoarMeat</ItemName>
+		</Item>
+		<Item CountName="Normal">
+			<ItemName>Item_MonsterBlood</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="TianJiN">
+		<Item CountName="Normal">
+			<ItemName>Item_GanodermaLucidum</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="HeiShanN">
+		<Item CountName="Normal">
+			<ItemName>Item_SilverRock</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="ZhengYiN">
+		<Item CountName="Normal">
+			<ItemName>Item_LingWood</ItemName>
+		</Item>
+		<Item CountName="Normal">
+			<ItemName>Item_HardWood</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="JiuHuaN">
+		<Item CountName="Normal">
+			<ItemName>Item_Marble</ItemName>
+		</Item>
+		<Item CountName="Normal">
+			<ItemName>Item_JadeEssence</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="WuLianN">
+		<Item CountName="Normal">
+			<ItemName>Item_GanodermaLucidum</ItemName>
+		</Item>
+		<Item CountName="Normal">
+			<ItemName>Item_Fruit</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="ShuShanN">
+		<Item CountName="Normal">
+			<ItemName>Item_CopperRock</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="KunLunN">
+		<Item CountName="Normal">
+			<ItemName>Item_CopperRock</ItemName>
+		</Item>
+		<Item CountName="Normal">
+			<ItemName>Item_JadeEssence</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="XianKongN">
+		<Item CountName="Normal">
+			<ItemName>Item_Ginseng</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="DanXiaN">
+		<Item CountName="Normal">
+			<ItemName>Item_Ginseng</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="HeHuanN">
+		<Item CountName="Normal">
+			<ItemName>Item_SilverRock</ItemName>
+		</Item>
+	</Def>
+	
+	<Def Name="WanYaoN">
+		<Item CountName="Normal">
+			<ItemName>Item_FishMeat</ItemName>
+		</Item>
+	</Def>
+</List></Defs>

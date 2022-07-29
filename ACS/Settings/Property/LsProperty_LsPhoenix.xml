@@ -1,0 +1,25 @@
+<Properties><List>
+	<Property Name="LsPhxFabaoPowerAddP">
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>SFabao</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>(36*LingShouNeiDan/200+36*LingShouNeiDan/200*(0-LsBadGood)/5)*(1-x)</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsPhxFabaoCoolDownAddP">
+		<MinValue>0.1</MinValue>
+		<MathProperty>
+			<Value>
+				<Expression>(0-0.06)*LingShouNeiDan/10</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+</List></Properties>

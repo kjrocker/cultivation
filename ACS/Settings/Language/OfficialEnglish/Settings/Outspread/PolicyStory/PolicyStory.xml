@@ -1,0 +1,164 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="PolicyStory_TreeEXP">
+			<DisplayName>Learn form Nature</DisplayName>
+			<Desc>You have learned enough from the Creed of Heaven, and your gains can be congealed into a pill now.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give1">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and distributed food to the passersby.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give2">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. There were many a beggar asking for money on the side of the road.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give3">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw a stone bridge had collapsed, and people no longer walk through here.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give4">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw two villagers arguing over a dog.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give5">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw two young gentlemen were fighting over a woman.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give6">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw two big men fighting each other. A passerby explained that it was because one man planted a tree, but the other man picked and ate its fruits.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give7">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] was preparing to do charity work, when a woman exquisitely dressed approached the agent's place crying, and said her child had gone missing.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give8">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] was preparing to do charity work, when a man rushed into the hall begging the agent to save his dying wife.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give9">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>[NAME] had wandered to a rather distant place and started giving alms. A group of bandits happened to be passing by.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give10">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>Agent [NAME] came across the forces of {0}, and saw that they were giving alms to passersby.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give11">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>Agent [NAME] came across the forces of {0}, and saw that they were preaching.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give12">
+			<DisplayName>Special Event</DisplayName>
+			<Desc>Agent [NAME] came across the forces of {0}, and saw that they were holding a fasting ceremony.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give13">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They came across a broken wooden house, its owner is handicapped and unable to repair it.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give14">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw a man wearing foreign costume swindling passersby.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give15">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They passed by two taverns facing each other on opposite sides of the road, of which the waiters were arguing over business issues.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give16">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They encountered a group of refugees.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give17">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They saw a dying man who was severely ill on the side of the road, who pleaded to the agent to put him out of his misery.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Give18">
+			<DisplayName>Charity</DisplayName>
+			<Desc>[NAME] led the disciples to the street and started giving alms to passersby. They accidentally touched an old man in the crowd, who immediately fell onto the ground and started shouting, "Ouch! Somebody broke my leg! This is the one! "</Desc>
+		</Text>
+		<Text Name="PolicyStory_Product1">
+			<DisplayName>Manual Labor</DisplayName>
+			<Desc>It was a fine day. [NAME] decided to supervise labor.</Desc>
+		</Text>
+		<Text Name="PolicyStory_TreasureHunt">
+			<DisplayName>Treasure Hunt</DisplayName>
+			<Desc>[NAME] made a divination and decided to take his disciples on a treasure hunt.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Sermon1">
+			<DisplayName>Preaching</DisplayName>
+			<Desc>Today, [NAME] was standing on the side of the road near their place and preparing to preach.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Sermon2">
+			<DisplayName>Preaching</DisplayName>
+			<Desc>Today, [NAME] was preaching when someone came up to them and shouted: "A load of nonsense! "</Desc>
+		</Text>
+		<Text Name="PolicyStory_Sermon3">
+			<DisplayName>Preaching</DisplayName>
+			<Desc>Today, [NAME] was preaching when a scholar came up to them and said whatever the agent said was wrong.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Sermon4">
+			<DisplayName>Preaching</DisplayName>
+			<Desc>It was a bright day, and [NAME] was preaching. A middle-aged woman kept clapping in an obnoxious way, but she is not a follower.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Secret1">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>It was a bright day, and [NAME] walked into the secret pavilion to hatch a plot.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Secret2">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] discovered that {0} was giving alms and decided to interfere.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Secret3">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] discovered that {0} was preparing to preach...an idea came to mind like a bolt of lightning.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Secret4">
+			<DisplayName>Plotting</DisplayName>
+			<Desc>[NAME] found out that {0} was holding a fasting ceremony. The agent decided to interfere with it.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Disp1">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>It was a bright day, and [NAME] was in the Discipline Temple preparing for an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Disp2">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>[NAME] saw that people were all living a lavish lifestyle and decided to perform an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Disp3">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>[NAME] saw that rich people were living lavishly while the poor die on the side of the road, and decided to perform an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Disp4">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>[NAME] saw that outlaws were running the town and hatred filled the city, and decided to perform an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Disp5">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>[NAME] saw that dishonest merchants and robbers were running the town, and decided to perform an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_OtherDisp1">
+			<DisplayName>Abstinence</DisplayName>
+			<Desc>Today, [NAME] saw that [SCHOOL{0}] was having an Abstinence.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Drought">
+			<DisplayName>Disaster Relief</DisplayName>
+			<Desc>[NAME] decided to deal with the drought.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Flood">
+			<DisplayName>Disaster Relief</DisplayName>
+			<Desc>[NAME] decided to deal with the flood.</Desc>
+		</Text>
+		<Text Name="PolicyStory_Siberia">
+			<DisplayName>Disaster Relief</DisplayName>
+			<Desc>[NAME] decided to deal with the cold wave.</Desc>
+		</Text>
+		<Text Name="PolicyStory_EarthQuake">
+			<DisplayName>Disaster Relief</DisplayName>
+			<Desc>[NAME] decided to deal with the earthquake.</Desc>
+		</Text>
+		<Text Name="PolicyStory_God1">
+			<DisplayName>Miracle Performance</DisplayName>
+			<Desc>[NAME] decided to let a Shendao disciple perform a miracle.</Desc>
+		</Text>
+	</List>
+</Texts>

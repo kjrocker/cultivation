@@ -1,0 +1,352 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_BodyPracticeBase">
+	<ThingName>基础base</ThingName>
+	<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+	<Desc>Desc.</Desc>	
+	<Rate>9</Rate>
+	<ElementKind>None</ElementKind>
+	<Item>
+		<NotRandom>1</NotRandom>
+	</Item>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_TaiXu" Parent="Item_BodyPracticeBase">
+	<ThingName>太虚精华</ThingName>
+	<Desc>天地开辟之初创世之力的衍化残留，后世已经很难收集到此种奇特的精华了。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_XuanTian" Parent="Item_BodyPracticeBase">
+	<ThingName>玄天紫气</ThingName>
+	<Desc>天地开辟之初创世之力的衍化残留，后世已经很难收集到此种奇特的精华了。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_JieMie" Parent="Item_BodyPracticeBase">
+	<ThingName>劫灭精华</ThingName>
+	<Desc>蕴含毁灭之力的精华，只有在天劫中才有收集的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_JiuYang" Parent="Item_BodyPracticeBase">
+	<ThingName>九阳真华</ThingName>
+	<Desc>烈日之中最凝练的能量，十分难收集。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_XuanYue" Parent="Item_BodyPracticeBase">
+	<ThingName>玄月真精</ThingName>
+	<Desc>凛月之中最凝练的能量，十分难收集。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_TaiYang" Parent="Item_BodyPracticeBase">
+	<ThingName>太阳精华</ThingName>
+	<Desc>日之精华，只有在正午时分才能采集。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_TaiYin" Parent="Item_BodyPracticeBase">
+	<ThingName>太阴精华</ThingName>
+	<Desc>月之精华，只有在午夜时分才能采集。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_EXJin" Parent="Item_BodyPracticeBase">
+	<ThingName>先天金精</ThingName>
+	<Desc>先天五行精华，只有在金属性异常浓烈的环境或物品中才有收集到的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_EXMu" Parent="Item_BodyPracticeBase">
+	<ThingName>先天木精</ThingName>
+	<Desc>先天五行精华，只有在木属性异常浓烈的环境或物品中才有收集到的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_EXShui" Parent="Item_BodyPracticeBase">
+	<ThingName>先天水精</ThingName>
+	<Desc>先天五行精华，只有在水属性异常浓烈的环境或物品中才有收集到的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_EXHuo" Parent="Item_BodyPracticeBase">
+	<ThingName>先天火精</ThingName>
+	<Desc>先天五行精华，只有在火属性异常浓烈的环境或物品中才有收集到的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_EXTu" Parent="Item_BodyPracticeBase">
+	<ThingName>先天土精</ThingName>
+	<Desc>先天五行精华，只有在土属性异常浓烈的环境或物品中才有收集到的可能。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>
+	<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_Jin" Parent="Item_BodyPracticeBase">
+	<ThingName>金精</ThingName>
+	<Desc>后天五行的精华，遍布在世界各处，只要有心就能收集到。</Desc>
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>	
+	<Rate>5</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Mu" Parent="Item_BodyPracticeBase">
+	<ThingName>木精</ThingName>
+	<Desc>后天五行的精华，遍布在世界各处，只要有心就能收集到。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>	
+	<Rate>5</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Shui" Parent="Item_BodyPracticeBase">
+	<ThingName>水精</ThingName>
+	<Desc>后天五行的精华，遍布在世界各处，只要有心就能收集到。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>	
+	<Rate>5</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Huo" Parent="Item_BodyPracticeBase">
+	<ThingName>火精</ThingName>
+	<Desc>后天五行的精华，遍布在世界各处，只要有心就能收集到。</Desc>
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>		
+	<Rate>5</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Tu" Parent="Item_BodyPracticeBase">
+	<ThingName>土精</ThingName>
+	<Desc>后天五行的精华，遍布在世界各处，只要有心就能收集到。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>	
+	<Rate>5</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_FengShuiLing" Parent="Item_BodyPracticeBase">
+	<ThingName>风水灵机</ThingName>
+	<Desc>只有在风水极佳的地方才能缓慢凝聚出来的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_FengShuiSha" Parent="Item_BodyPracticeBase">
+	<ThingName>风水煞力</ThingName>
+	<Desc>只有在风水极差的地方才能缓慢凝聚出来的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_Chun" Parent="Item_BodyPracticeBase">
+	<ThingName>萌发之精华</ThingName>
+	<Desc>四季流转时，天地之间自然而生的精华，对应春日万物萌发之力。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Xia" Parent="Item_BodyPracticeBase">
+	<ThingName>盛放之精华</ThingName>
+	<Desc>四季流转时，天地之间自然而生的精华，对应夏日万物盛放之力。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Qiu" Parent="Item_BodyPracticeBase">
+	<ThingName>衰亡之精华</ThingName>
+	<Desc>四季流转时，天地之间自然而生的精华，对应秋日万物衰亡之力。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_Dong" Parent="Item_BodyPracticeBase">
+	<ThingName>归藏之精华</ThingName>
+	<Desc>四季流转时，天地之间自然而生的精华，对应冬日万物沉寂之力。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_YongYe" Parent="Item_BodyPracticeBase">
+	<ThingName>永寂之精髓</ThingName>
+	<Desc>永夜之中弥漫在天地间的奇特精华，其来历成迷，似乎与本方世界格格不入。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_JiaoLongYuanJing" Parent="Item_BodyPracticeBase">
+	<ThingName>蛟龙元精</ThingName>
+	<Desc>蕴含蛟龙生命奥秘的精华，对体修之人有极佳的借鉴作用。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_XiongFengYuanJing" Parent="Item_BodyPracticeBase">
+	<ThingName>凶凤元精</ThingName>
+	<Desc>蕴含凶凤生命奥秘的精华，对体修之人有极佳的借鉴作用。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_ZhuLongYuanJing" Parent="Item_BodyPracticeBase">
+	<ThingName>烛龙元精</ThingName>
+	<Desc>蕴含烛龙生命奥秘的精华，对体修之人有极佳的借鉴作用。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_GuShouJingXue" Parent="Item_BodyPracticeBase">
+	<ThingName>古兽精血</ThingName>
+	<Desc>上古之兽的一滴精血，蕴含上古之兽躯体强大的奥秘。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_GuShouGuFen" Parent="Item_BodyPracticeBase">
+	<ThingName>古兽骨粉</ThingName>
+	<Desc>上古之兽的一些骨质粉末，蕴含上古之兽躯体强大的奥秘。</Desc>
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>		
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_DaYaoYuanJing" Parent="Item_BodyPracticeBase">
+	<ThingName>大妖元精</ThingName>
+	<Desc>修为高深的妖兽体内的精华，也许包含有妖族身体天生强健的秘密。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_ShengMingLv1" Parent="Item_BodyPracticeBase">
+	<ThingName>生机精华</ThingName>
+	<Desc>纯粹的生机精华，最能补益体魄。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dijijinghua01</TexPath>	
+	<Rate>5</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_ShengMingLv2" Parent="Item_BodyPracticeBase">
+	<ThingName>生命本源</ThingName>
+	<Desc>后天生命最初的一丝本源精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_ShengMingLv3" Parent="Item_BodyPracticeBase">
+	<ThingName>造化命元</ThingName>
+	<Desc>天地间自然蕴生的生命之息。亦是先天生命的起源。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_SiWang" Parent="Item_BodyPracticeBase">
+	<ThingName>死灵之息</ThingName>
+	<Desc>生灵消亡后，一部分生命本源归散天地，另一部分便会异变为此物。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_WuHui" Parent="Item_BodyPracticeBase">
+	<ThingName>污秽之精华</ThingName>
+	<Desc>此物虽出处晦涩，但亦为众生阴浊凝聚，隐含轮回堕变的玄妙。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_zhongjijinghua01</TexPath>	
+	<Rate>7</Rate>
+	</ThingDef>
+	
+	<!-- 
+	<ThingDef Type="Item" Name="Item_BodyPractice_DiMu" Parent="Item_BodyPracticeBase">
+	<ThingName>地母精髓</ThingName>
+	<Desc>大地深处孕育之力所凝聚的精华，只有少许能借助其他媒介泄漏到地表。</Desc>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_XieMai" Parent="Item_BodyPracticeBase">
+	<ThingName>邪脉血髓</ThingName>
+	<Desc>大地深处孕育之力遭受煞气所染而异变成的精华，只有少许能借助其他媒介泄漏到地表。</Desc>	
+	<Rate>9</Rate>
+	</ThingDef> -->
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_WuXing" Parent="Item_BodyPracticeBase">
+	<ThingName>无形之精</ThingName>
+	<Desc>一种奇特的精华，无形无体，却又真实存在，可以自无形之物中萃取。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_XianDaoJingHua" Parent="Item_BodyPracticeBase">
+	<ThingName>仙道精华</ThingName>
+	<Desc>金丹法修行者以灵气加工天地间各种精华所生产物的总称，由于受到灵气所染，这些精华对体修而言无法生效。如果强行以此物淬炼躯体，则会因灵气排斥效应化散该部位的炼体之功，使之返归为最初的状态。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_gaojijinghua01</TexPath>	
+	<Rate>9</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_XianSui" Parent="Item_BodyPracticeBase">
+	<ThingName>仙髓</ThingName>
+	<Desc>金丹法修行者所凝聚仙体的精华。此物极其强烈的效果会对炼体者产生强烈的刺激，以此物淬炼不知道会发生什么事。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_BodyPractice_ShenSui" Parent="Item_BodyPracticeBase">
+	<ThingName>神髓</ThingName>
+	<Desc>神道修行者所凝聚神体的精华。此物极其强烈的效果会对炼体者产生强烈的刺激，以此物淬炼不知道会发生什么事。.</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_BaBao" Parent="Item_BodyPracticeBase">
+	<ThingName>宇宙之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃宇宙之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_WanDao" Parent="Item_BodyPracticeBase">
+	<ThingName>天地开辟之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃天地开辟之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_QiQing" Parent="Item_BodyPracticeBase">
+	<ThingName>阴阳之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃阴阳之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_ZhouTian" Parent="Item_BodyPracticeBase">
+	<ThingName>时空衍生之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃时空衍生之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_XuanYang" Parent="Item_BodyPracticeBase">
+	<ThingName>始终之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃始终之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_Jian" Parent="Item_BodyPracticeBase">
+	<ThingName>生灭之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃生灭之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_LingYu" Parent="Item_BodyPracticeBase">
+	<ThingName>万灵生发之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃万灵生发之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_WanGu" Parent="Item_BodyPracticeBase">
+	<ThingName>时空尽衰之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃时空尽衰之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_XuanCi" Parent="Item_BodyPracticeBase">
+	<ThingName>天地归寂之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃天地归寂之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_QiSha" Parent="Item_BodyPracticeBase">
+	<ThingName>万物陨灭之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃万物陨灭之道衍化而具现出的精华。</Desc>
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>		
+	<Rate>12</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BodyPractice_XuanYin" Parent="Item_BodyPracticeBase">
+	<ThingName>造化之精华</ThingName>
+	<Desc>天地开辟之初，万道衍化。此乃造化之道衍化而具现出的精华。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>	
+	<Rate>12</Rate>
+	</ThingDef>
+</List></ThingDefs>

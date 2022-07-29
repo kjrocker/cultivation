@@ -1,0 +1,270 @@
+<RaceDefs><List>
+
+<RaceDef Name="LsDog">
+	<DisplayName>神犬花卷</DisplayName>
+	<Desc>神犬花卷乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+	<Mod>Mod/Npc/LsDog/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<AnimalType>2</AnimalType>
+	<Revive>1</Revive>
+	<NormalAttack>Ls_Dog_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<LingShouMove>1</LingShouMove>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0.2</StrikeBack>
+	<TalkBefore>汪汪，</TalkBefore>
+	<TalkAfter>，汪!</TalkAfter>
+	<LcHand>Bone005</LcHand>
+	<!-- 
+	<Products>
+		<li>
+			<ProductTime>17</ProductTime>			
+			<ProductItems>
+				<li>
+					<ThingDef>Item_WolfLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	-->
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+	</BaseFive>
+	
+	<ReplaceAni>
+		<li Name="EatSmall" Value="Eat" />
+		<li Name="assemble" Value="Atk2" />
+		<li Name="PlayItem" Value="Atk2" />
+		<li Name="PlayBuild" Value="Free2" />
+		<li Name="Pee" Value="Free2" />
+		<li Name="PlayNpc" Value="Atk2" />
+		<li Name="Lay" Value="Free" />
+		<li Name="kszdpugong4" Value="Atk2" />
+		<li Name="TrainLingZhi" Value="weiqu01" />
+		<li Name="TrainHuTi" Value="weiqu01" />
+		<li Name="TrainQiGan" Value="weiqu01" />
+		<li Name="TrainNeiDan" Value="Atk1" />
+		<li Name="TrainShuFa" Value="Atk2" />
+		<li Name="Drink" Value="Eat" />
+		<li Name="gain" Value="Eat" />
+		<li Name="slaughter" Value="Eat" />
+	</ReplaceAni>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="LsMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+
+	<ReplaceP>
+		<li Name="NpcLingMaxValue" Value="LsLingMaxValue"/>
+		<li Name="NpcFight_FabaoPowerAddP" Value="LsFabaoPowerAddP"/>
+		<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+		<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+		<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+		<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+		<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+		<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+		<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+		<li Name="NpcFight_ShieldConversionRateAddP" Value="LsDogShieldConversionRateAddP"/>
+		<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+	</ReplaceP>
+	<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_lingchongwang01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lingchongwang01</Rolepaint>
+</RaceDef>
+
+<RaceDef Name="LsFox" Parent="LsDog">
+	<Mod>Mod/Npc/LsFox/Base</Mod>
+	<DisplayName>灵狐秦暮雪</DisplayName>
+	<AnimalType>2</AnimalType>
+	<Desc>灵狐秦暮雪乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+	<LingShouMove>1</LingShouMove>
+	<NormalAttack>Ls_Fox_NormalAttack</NormalAttack>
+	<TalkBefore>呜呜，</TalkBefore>
+	<TalkAfter>，呜!</TalkAfter>
+	<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_lingchonghuli01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lingchonghuli01</Rolepaint>
+	<LcHand>Bip001 Head</LcHand>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="LsFoxMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<ReplaceAni>
+		<li Name="EatSmall" Value="Eat" />
+		<li Name="assemble" Value="Atk2" />
+		<li Name="PlayItem" Value="Atk2" />
+		<li Name="PlayBuild" Value="Atk2" />
+		<li Name="PlayNpc" Value="Atk2" />
+		<li Name="Lay" Value="Free" />
+		<li Name="kszdpugong4" Value="Atk2" />
+		<li Name="TrainLingZhi" Value="weiqu01" />
+		<li Name="TrainHuTi" Value="Lay" />
+		<li Name="TrainQiGan" Value="Lay" />
+		<li Name="TrainNeiDan" Value="Atk3" />
+		<li Name="TrainShuFa" Value="ShiFaLoop" />
+		<li Name="Drink" Value="Eat" />
+		<li Name="gain" Value="Eat" />
+		<li Name="slaughter" Value="Eat" />
+	</ReplaceAni>
+
+	<ReplaceP>
+		<li Name="NpcLingMaxValue" Value="LsLingMaxValue"/>
+		<li Name="NpcFight_FabaoPowerAddP" Value="LsFoxFabaoPowerAddP"/>
+		<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+		<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+		<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+		<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+		<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+		<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+		<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+		<li Name="NpcFight_ShieldConversionRateAddP" Value="LsShieldConversionRateAddP"/>
+		<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+	</ReplaceP>
+</RaceDef>
+<RaceDef Name="LsDragon" Parent="LsDog">
+	<DisplayName>浮龙长海</DisplayName>
+	<Desc>浮龙长海乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+	<AnimalType>2</AnimalType>
+	<Mod>Mod/Npc/LsDragon/Base</Mod>
+	<LingShouMove>2</LingShouMove>
+	<NormalAttack>Ls_Dragon_NormalAttack</NormalAttack>
+	<TalkBefore>吼吼，</TalkBefore>
+	<TalkAfter>，吼!</TalkAfter>
+	<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_lingchonglong01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lingchonglong01</Rolepaint>
+	<LcHand>Bone032</LcHand>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="LsMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	
+	<ReplaceAni>
+		<li Name="EatSmall" Value="Eat" />
+		<li Name="assemble" Value="Atk2" />
+		<li Name="PlayItem" Value="Atk2" />
+		<li Name="PlayBuild" Value="Atk2" />
+		<li Name="PlayNpc" Value="Atk2" />
+		<li Name="Lay" Value="Free" />
+		<li Name="kszdpugong4" Value="Atk3" />
+		<li Name="TrainLingZhi" Value="ShiFaLoop" />
+		<li Name="TrainHuTi" Value="ShiFaLoop" />
+		<li Name="TrainQiGan" Value="ShiFaLoop" />
+		<li Name="TrainNeiDan" Value="Atk3" />
+		<li Name="TrainShuFa" Value="Free2" />
+		<li Name="Drink" Value="Eat" />
+		<li Name="gain" Value="Eat" />
+		<li Name="slaughter" Value="Eat" />
+	</ReplaceAni>
+
+	<ReplaceP>
+		<li Name="NpcLingMaxValue" Value="LsLingMaxValue"/>
+		<li Name="NpcFight_FabaoPowerAddP" Value="LsFabaoPowerAddP"/>
+		<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+		<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+		<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+		<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+		<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+		<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+		<li Name="NpcFight_SpellPowerAddP" Value="LsDrgSpellPowerAddP"/>
+		<li Name="NpcFight_ShieldConversionRateAddP" Value="LsShieldConversionRateAddP"/>
+		<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+	</ReplaceP>
+</RaceDef>
+<RaceDef Name="LsPhoenix" Parent="LsDog">
+	<DisplayName>玄凤亦鸣</DisplayName>
+	<Desc>玄凤亦鸣乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+	<AnimalType>2</AnimalType>
+	<LingShouMove>2</LingShouMove>
+	<Mod>Mod/Npc/LsPhoenix/Base</Mod>
+	<NormalAttack>Ls_Phoenix_NormalAttack</NormalAttack>
+	<TalkBefore>叽叽，</TalkBefore>
+	<TalkAfter>，叽!</TalkAfter>
+	<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_lingchongfeng01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lingchongfeng01</Rolepaint>
+	<LcHand>Bone001</LcHand>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="LsMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<ReplaceAni>
+		<li Name="EatSmall" Value="Eat" />
+		<li Name="assemble" Value="Atk2" />
+		<li Name="PlayItem" Value="Atk2" />
+		<li Name="PlayBuild" Value="Atk2" />
+		<li Name="PlayNpc" Value="Atk2" />
+		<li Name="Lay" Value="Idle" />
+		<li Name="kszdpugong4" Value="Atk3" />
+		<li Name="TrainLingZhi" Value="ShiFaLoop" />
+		<li Name="TrainHuTi" Value="ShiFaLoop" />
+		<li Name="TrainQiGan" Value="ShiFaLoop" />
+		<li Name="TrainNeiDan" Value="Atk2" />
+		<li Name="TrainShuFa" Value="Free" />
+		<li Name="Drink" Value="Eat" />
+		<li Name="gain" Value="Eat" />
+		<li Name="slaughter" Value="Eat" />
+	</ReplaceAni>
+
+	<ReplaceP>
+		<li Name="NpcLingMaxValue" Value="LsLingMaxValue"/>
+		<li Name="NpcFight_FabaoPowerAddP" Value="LsPhxFabaoPowerAddP"/>
+		<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+		<li Name="NpcFight_FabaoCoolDownAddP" Value="LsPhxFabaoCoolDownAddP"/>
+		<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+		<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+		<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+		<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+		<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+		<li Name="NpcFight_ShieldConversionRateAddP" Value="LsShieldConversionRateAddP"/>
+		<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+	</ReplaceP>
+</RaceDef>
+</List></RaceDefs>

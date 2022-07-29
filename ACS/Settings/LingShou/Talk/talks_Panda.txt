@@ -1,0 +1,22 @@
+talk	notarget	int	string	float	thing
+BabySleep1	修修想睡觉				
+BabySleep2	修修困了				
+BabySleep3	修修要睡觉了				
+BabyPandaTalk	修修又进步了				
+BabySilly	修修想和仙仙玩				
+BabyFollow1	跟着仙仙				
+BabyFollow2	去仙仙那里				
+Roll	滚啊滚				
+Chop	锻炼一下				
+Happy	真开心				
+PlayBB	看我多厉害				
+NotEat_Item_Bamboo	我不会吃竹竿				我不会吃竹竿
+NotEat_Item_BambooShoot	我不会吃竹笋				我不会吃竹笋
+WannaEat_Item_Bamboo	我好想吃竹竿啊				我好想吃竹竿啊
+WannaEat_Item_BambooShoot	我好想吃竹笋啊				我好想吃竹笋啊
+DoTalkEat_Item_Bamboo	我正在吃竹竿				我正在吃竹竿
+DoTalkEat_Item_BambooShoot	我正在吃竹笋				我正在吃竹笋
+CantEat_Item_Bamboo	我没有竹竿可以吃				我没有竹竿可以吃
+CantEat_Item_BambooShoot	我没有竹笋可以吃				我没有竹笋可以吃
+EatTogether	和仙仙一起吃
+BabyHelpPlay	陪他们玩				陪{0}一起玩

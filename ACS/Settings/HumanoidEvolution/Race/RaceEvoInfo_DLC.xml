@@ -1,0 +1,32 @@
+<Defs><List>
+	<Def Name="Panda" Parent="All">
+		<Type>Both</Type> <!-- Meat, Veg, Both -->
+		<Size>Big</Size> <!-- Small, Mid, Big -->
+		<RaceRule>Default</RaceRule>
+		<QiZhiVFullNeed>3000</QiZhiVFullNeed>
+		<NaiveTalk>嘤嘤嘤，嘤嘤！</NaiveTalk>
+		<PeferEnvironment>
+			<PlantDesc>喜欢有竹子在附近</PlantDesc>
+			<LightDesc>喜欢室外</LightDesc>
+			<LiveDesc>只喜欢同类</LiveDesc>
+			<Desc>喜欢同类。喜欢室外。\n喜欢有竹子在附近。</Desc>
+			<Light><!-- Dark, Light, InRoom, OutRoom -->
+				<li>OutRoom</li>
+			</Light>
+			<Plant>
+				<li>Plant_Bamboo</li>
+			</Plant>
+			
+			<MinLiveCount>2</MinLiveCount>
+			<MaxLiveCount>50</MaxLiveCount>			
+			<!-- race存在取race，否则取type+size -->
+			<LiveType>
+			</LiveType>
+			<LiveSize>
+			</LiveSize>
+			<LiveRace>
+				<li>Panda</li>
+			</LiveRace>
+		</PeferEnvironment>
+	</Def>
+</List></Defs>

@@ -1,0 +1,79 @@
+<Defs><List>
+	<Def Name="Price_Walk" Parent="Price_Base">
+		<Tag>Trade</Tag>
+		
+		<AnimalPrice>
+			<li AnimalFlag="ExoticAnimal">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li AnimalFlag="NormalAnimal">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="SpecialAnimal">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="BodyAnimal">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="RandomAnimal">
+				<BuyPrice Value="200" />
+				<SalePrice Value="50" />
+			</li>
+		</AnimalPrice>
+		
+		<ItemCommon>
+			<li Rate="1">
+				<BuyPrice Value="1" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="2">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="3">
+				<BuyPrice Value="3" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="4">
+				<BuyPrice Value="4" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="5">
+				<BuyPrice Value="5" />
+				<SalePrice Value="0" />
+			</li>
+			<li Rate="6">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="7">
+				<BuyPrice Value="50" />
+				<SalePrice Value="5" />
+			</li>
+			<li Rate="8">
+				<BuyPrice Value="100" />
+				<SalePrice Value="10" />
+			</li>
+			<li Rate="9">
+				<BuyPrice Value="500"/>
+				<SalePrice Value="50" />
+			</li>
+			<li Rate="10">
+				<BuyPrice Value="2000"/>
+				<SalePrice Value="200" />
+			</li>
+			<li Rate="11">
+				<BuyPrice Value="5000"/>
+				<SalePrice Value="500" />
+			</li>
+			<li Rate="12">
+				<BuyPrice Value="10000"/>
+				<SalePrice Value="2000" />
+			</li>
+		</ItemCommon>
+	</Def>
+</List></Defs>

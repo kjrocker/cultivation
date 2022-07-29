@@ -1,0 +1,30 @@
+<Defs><List>
+	<Def Name="Talk_HeHuan" Parent="Talk_BaiMan">
+		<Hate>
+			<li>怎么又是你？</li>
+			<li>别跟我说话，我有洁癖。</li>
+			<li>快点，再多看你一眼我就瞎了。</li>
+		</Hate>
+		<Normal>
+			<li>哦，你好。你要干啥？</li>
+			<li>快点，一会我还要去洗澡。</li>
+		</Normal>
+		<Like>
+			<li>来，随便逛，看中了哪个弟子跟我说一下。</li>
+			<li>哎呀，什么风把你吹来了啊？</li>
+		</Like>
+		<Submiss>
+			<li>哎呀，仙人你来了啊，是要买东西？送东西？还是...？</li>
+			<li>哎呦，看看谁来了，姑娘们，出来接客！</li>
+		</Submiss>
+		<GiftLike>
+			<li>居然知道我喜欢这个，看来我们是有缘人啊。</li>
+			<li>突然有点心动，这个...我拿走了啊。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>那个谁？快把这个拿走，别让我再看见了。</li>
+			<li>真是低俗的礼物。</li>
+			<li>这东西真是玷污了本派的仪容。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

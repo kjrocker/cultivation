@@ -1,0 +1,31 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="JobFreePatrol">
+			<DisplayName>Patrol</DisplayName>
+		</Text>
+		<Text Name="JobFreeFollow">
+			<DisplayName>Follow</DisplayName>
+		</Text>
+		<Text Name="JobFollow">
+			<DisplayName>Follow</DisplayName>
+		</Text>
+		<Text Name="JobGoOutspread">
+			<DisplayName>Go As Abbot</DisplayName>
+		</Text>
+		<Text Name="JobLeaveOutspread">
+			<DisplayName>Retire</DisplayName>
+		</Text>
+		<Text Name="JobGoOutsMember">
+			<DisplayName>Become Disciple</DisplayName>
+		</Text>
+		<Text Name="JobSpringXiaoYao">
+			<DisplayName>Demons Run Wild</DisplayName>
+		</Text>
+		<Text Name="JobSpringXiaoYaoEscape">
+			<DisplayName>Flee in Shock</DisplayName>
+		</Text>
+		<Text Name="JobDiMuWish">
+			<DisplayName>Wish</DisplayName>
+		</Text>
+	</List>
+</Texts>

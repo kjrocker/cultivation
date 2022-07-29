@@ -1,0 +1,371 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature> 
+	-->
+
+	
+	<Feature Name="Pessimism" Type="Normal">
+		<DisplayName>悲观</DisplayName>
+		<Desc>这个人很悲观，总是想着不好的事情。</Desc>
+		<Mutex>
+			<li>Optimistic</li>
+		</Mutex>
+		<ModifierDef>
+			<Moods>
+				<li>Pessimism</li>
+			</Moods>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Optimistic" Type="Normal">
+		<DisplayName>乐观</DisplayName>
+		<Desc>这个人很乐观，能自己逗自己开心。</Desc>
+		<Mutex>
+			<li>Pessimism</li>
+		</Mutex>
+		<ModifierDef>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+		</ModifierDef>
+	</Feature>
+	
+	
+	<Feature Name="Numbness" Type="Normal">
+		<DisplayName>麻木</DisplayName>
+		<Desc>奔波于生活让这个人的精神已经麻木，[IT]不会思考，也不会因为情绪过低而怠工。</Desc>
+		<Mutex>
+			<li>Sensitive</li>
+		</Mutex>
+		<MoodBranch>
+			<li Old="Entertainment6" New="Entertainment3"/>
+			<li Old="Entertainment5" New="Entertainment3"/>
+			<li Old="Entertainment4" New="Entertainment3"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,-5,0</BaseFive>
+			<SpecialFlags>
+				<li>FLAG_NOTNEGATIVE</li>
+			</SpecialFlags>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddV="0" AddP="-0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Sensitive" Type="Normal">
+		<DisplayName>敏感</DisplayName>
+		<Desc>[IT]对世界充满好奇，对乏味的生活尤其不能容忍。</Desc>
+		<Mutex>
+			<li>Numbness</li>
+		</Mutex>
+		
+		<MoodBranch>
+			<li Old="Entertainment2" New="Entertainment1"/>
+			<li Old="Entertainment3" New="Entertainment1"/>
+		</MoodBranch>
+		<ModifierDef>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddV="0" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Enthusiasm" Type="Normal">
+		<DisplayName>热情</DisplayName>
+		<Desc>[IT]对所有人都很热情。</Desc>
+		<Mutex>
+			<li>Distrust</li>
+		</Mutex>
+		<ModifierDef>
+			<GetFavours>
+				<li>Enthusiasm</li>
+			</GetFavours>
+			
+			<Properties>
+				<li Name="FavourChangeSpeedRate" AddV="0" AddP="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	
+	<Feature Name="Distrust" Type="Normal">
+		<DisplayName>冷漠</DisplayName>
+		<Desc>[IT]不相信人和人之间有真感情，对谁都不信任。</Desc>
+		<Mutex>
+			<li>Enthusiasm</li>
+		</Mutex>
+		<ModifierDef>
+			<GetFavours>
+				<li>Distrust</li>
+			</GetFavours>
+			
+			<Properties>
+				<li Name="FavourChangeSpeedRate" AddV="0" AddP="-0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Strong" Type="Normal">
+		<DisplayName>坚强</DisplayName>
+		<Desc>[IT]的意志十分坚定，更能忍耐痛苦。</Desc>
+		<Mutex>
+			<li>Weak</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="PainTolerance" AddV="0.5" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Weak" Type="Normal">
+		<DisplayName>柔弱</DisplayName>
+		<Desc>[IT]从没吃过什么苦，轻微的疼痛都让[IT]无法忍受。</Desc>
+		<Mutex>
+			<li>Strong</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="PainTolerance" AddV="-0.5" AddP="0"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="BadMentality" Type="Normal">
+		<DisplayName>心浮气躁</DisplayName>
+		<Desc>[IT]总是心浮气躁，静不下心做事。</Desc>
+		<Mutex>
+			<li>GoodMentality</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddP="0.3"/>
+				<li Name="MindStateBaseValue" AddV="-5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="GoodMentality" Type="Normal">
+		<DisplayName>心如止水</DisplayName>
+		<Desc>[IT]的心态十分好，不以物喜不以己悲。</Desc>
+		<Mutex>
+			<li>BadMentality</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="EmotionAmplificationFactor" AddP="-0.3"/>
+				<li Name="MindStateBaseValue" AddV="5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Rugged" Type="Normal">
+		<DisplayName>粗心</DisplayName>
+		<Desc>[IT]做事大大咧咧，总是很快做完，不求细节。</Desc>
+		<Mutex>
+			<li>Careful</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="-0.3"/>
+				<li Name="TreatSuccessChance" AddP="-0.3"/>
+				<li Name="CookingSuccessChance" AddP="-0.3"/>
+				<li Name="ConstructSuccessChance" AddP="-0.3"/>
+				<li Name="MadeQualityAddValue" AddP="-0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="-0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="-0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Careful" Type="Normal">
+		<DisplayName>细心</DisplayName>
+		<Desc>[IT]做事十分细心，而且很谨慎，做的慢，但是做得好。</Desc>
+		<Mutex>
+			<li>Rugged</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+				<li Name="TreatmentExpectQuality" AddP="0.3"/>
+				<li Name="TreatSuccessChance" AddP="0.3"/>
+				<li Name="CookingSuccessChance" AddP="0.3"/>
+				<li Name="ConstructSuccessChance" AddP="0.3"/>
+				<li Name="MadeQualityAddValue" AddP="0.3"/>
+				<li Name="ManufactureExpectQuality" AddP="0.3"/>
+				<li Name="DisasterFightingSuccessChance" AddP="0.3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Lazy" Type="Normal">
+		<DisplayName>懒惰</DisplayName>
+		<Desc>[IT]很懒，不想干活。</Desc>
+		<Mutex>
+			<li>Industrious</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="-0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Industrious" Type="Normal">
+		<DisplayName>勤快</DisplayName>
+		<Desc>[IT]很勤快，做事很有效率。</Desc>
+		<Mutex>
+			<li>Lazy</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="GlobalEfficiency" AddP="0.2"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+
+	<Feature Name="Feminization" Type="Normal">
+		<DisplayName>娘炮</DisplayName>
+		<Desc>[IT]虽然是男子，但是做事说话却很娘娘腔。</Desc>
+		
+		<SexNeed>Male</SexNeed>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_OPPOSITESEXANI_M</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Masculinity" Type="Normal">
+		<DisplayName>女汉子</DisplayName>
+		<Desc>[IT]虽然是女子，但是却有着男子的性格做派。</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<SpecialFlags>
+				<li>FLAG_OPPOSITESEXANI_F</li>
+			</SpecialFlags>
+		</ModifierDef>
+	</Feature>
+	
+	
+	<Feature Name="Affinity" Type="Normal">
+		<DisplayName>亲和</DisplayName>
+		<Desc>此人有一种让人与之亲近的魅力。</Desc>
+		<ModifierDef>
+			<GiveFavours>
+				<li>Affinity</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="Cruel" Type="Normal">
+		<DisplayName>残酷</DisplayName>
+		<Desc>此人为人苛刻，让人很不舒服。</Desc>
+		<ModifierDef>
+			<GiveFavours>
+				<li>Cruel</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	
+	
+	<Feature Name="HeartKnot" Type="Backstory">
+		<DisplayName>心结</DisplayName>
+		<Desc>此人有很重的心结，终日郁郁，睡眠不好，被噩梦困扰。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="FatigueRecoveryConstant" AddV="0" AddP="-0.4"/>
+				<li Name="NightmareHappenPercent" AddV="0" AddP="30"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	
+	
+	<Feature Name="Depressed" Type="Backstory">
+		<DisplayName>消沉</DisplayName>
+		<Desc>经历了重大的情感打击，这个人常年限于消沉之中，无法解脱。</Desc>
+		<BanRelations>
+			<li>Spouse</li>
+		</BanRelations>
+		<ModifierDef>
+			<Moods>
+				<li>Depressed</li>
+			</Moods>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Anatman" Type="Backstory">
+		<DisplayName>天人合一</DisplayName>
+		<Desc>此人的心境修为已经到达无我之境。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="MindStateBaseValue" AddV="10"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="FearFlame" Type="Backstory">
+		<DisplayName>畏火</DisplayName>
+		<Desc>此人特别害怕火焰，无法从事与火打交道的工作。</Desc>
+		<ModifierDef>
+			<BanJobs>
+				<li>Cooking</li>
+				<li>Smithing</li>
+				<li>OutFire</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature> 
+</List></FeatureDefs>

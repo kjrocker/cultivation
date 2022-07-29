@@ -1,0 +1,104 @@
+<ModifierDefs><List>	
+	<Modifier Name="Modifier_Horse_All_0" Type="Normal">
+		<DisplayName>基础历练速度加成</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+			<li Name="WorldMapFlySpeedAddP" AddV="1.5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_All_7" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>灵气加成</DisplayName>
+		<Properties>  
+			<li Name="NpcLingMaxValue" AddP="5"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Rabbit_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>兔</DisplayName>
+		<Properties>  
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Chicken_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>鸡</DisplayName>
+		<BaseFive>1,0,0,0,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Wolf_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>狼</DisplayName>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Snake_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>蛇</DisplayName>
+		<Skills>
+			<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Boar_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>豕</DisplayName>
+		<BaseFive>0,1,0,0,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Bear_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>熊</DisplayName>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Frog_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>蛙</DisplayName>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Turtle_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>龟</DisplayName>
+		<Skills>
+			<li Name="Barrier" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Cat_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>猫</DisplayName>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Skills>
+			<li Name="Art" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Cattle_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>牛</DisplayName>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Medicine" LevelOver="1"/>
+			<li Name="Manual" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Tiger_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>虎</DisplayName>
+		<Skills>
+			<li Name="Fight" LevelOver="1"/>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Panda_10" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>貊</DisplayName>
+		<BaseFive>0,0,0,0,1</BaseFive>
+		<Properties>  
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_LuShu_0" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>鹿蜀</DisplayName>
+		<UnLockMagic>
+			<li>PrayForSun_LuShuHorse</li>
+		</UnLockMagic>
+	</Modifier> 
+	<Modifier Name="Modifier_Horse_Fei_0" Type="Normal" Parent="Modifier_Horse_All_0">
+		<DisplayName>蜚</DisplayName>
+		<UnLockMagic>
+			<li>PrayForRain_FeiHorse</li>
+		</UnLockMagic>
+	</Modifier> 
+</List></ModifierDefs>

@@ -1,0 +1,386 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="WallBase" Parent="BuildingBase">
+		<TexPath></TexPath>
+		<ThingName></ThingName>
+		<Desc>WallBase</Desc>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>1</BlockLight>
+		<Beauty>1</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>30</MaxHitPoints>
+		<VisionRadius>10</VisionRadius>
+		<Flammability>
+			<Flammability>0.2</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<ElementKind>None</ElementKind>
+		
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[3]
+			</Data>
+		</Collider>
+		
+		<Building>
+			<NoFengshui>1</NoFengshui>
+			<BuildMode>Line</BuildMode>
+			<CanMakeRoom>1</CanMakeRoom>
+		    <IsWall>1</IsWall>
+			<BeMade>
+				<InheritStuffTileID>1</InheritStuffTileID>
+				<WorkToMake>14</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+		</Building>
+
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="DoorBase" Parent="BuildingBase">
+		<TexPath></TexPath>
+		<TileID>0</TileID>
+		<ThingName></ThingName>
+		<Desc>DoorBase</Desc>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>1</BlockLight>
+		<Beauty>1</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>200</MaxHitPoints>
+		<ElementKind>None</ElementKind>
+		
+		<Flammability>
+			<Flammability>0.2</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<ColliderKind>Slow</ColliderKind><!--解释一下，这么配置是让穿过门的时候有减速效果-->
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[6]
+			</Data>
+			<Offset>
+				<y>0.62</y>
+			</Offset>
+		</Collider>
+		
+		<Building>
+			<NoFengshui>1</NoFengshui>
+			<IsDoor>1</IsDoor>
+			<HelperClass>BuildingHelperDoor</HelperClass>
+			<CanMakeRoom>1</CanMakeRoom>
+			<BeMade>
+				<WorkToMake>30</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "BambooBlock"/>
+				</StuffCategories>
+				<CostStuffCount>2</CostStuffCount>
+			</BeMade>
+		</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Building" Name="Wall" Parent="WallBase">
+		<TileID>-11</TileID>
+		<ThingName>墙</ThingName>
+		<Frags>	
+			<li Frag="Wall" />
+		</Frags>	
+
+		<Desc>基本的建筑结构，可以和山体一起围成封闭的房屋。房间最小需要3格，最大不能超过400格。</Desc>	
+		<Building>
+			<BeMade>
+				<InheritStuffTileID>1</InheritStuffTileID>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Barrier2" Parent="WallBase">
+		<TileID>-8</TileID>
+		<ThingName>栅栏</ThingName>
+		<Desc>用来分割区域的简易石头或者金属栏杆，无法围成房间。</Desc>	
+		<Frags>	
+			<li Frag="Barrier" />
+		</Frags>	
+
+		<BlockLight>0</BlockLight>
+		<CastShadow>0</CastShadow>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1]
+			</Data>
+		</Collider>
+		<ColliderKind>ThrowOver</ColliderKind>
+		<Building>
+			<NoColor>0</NoColor>
+			<CanMakeRoom>0</CanMakeRoom>
+			<BeMade>
+				<InheritStuffTileID>0</InheritStuffTileID>
+				<WorkToMake>25</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Barrier" Parent="WallBase">
+		<TileID>-12</TileID>
+		<ThingName>栅栏</ThingName>
+		<Frags>	
+			<li Frag="Barrier" />
+		</Frags>	
+		<Desc>用来分割区域的简易木制栏杆，无法围成房间。</Desc>	
+		<BlockLight>0</BlockLight>
+		<CastShadow>0</CastShadow>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1]
+			</Data>
+		</Collider>
+		<ColliderKind>ThrowOver</ColliderKind>
+		<Building>
+			<NoColor>1</NoColor>
+			<CanMakeRoom>0</CanMakeRoom>
+			<BeMade>
+				<InheritStuffTileID>0</InheritStuffTileID>
+				<WorkToMake>25</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "WoodBlock"/>	
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Door" Parent="DoorBase">		
+		<TexPath>res/Sprs/buildingnew/building_door</TexPath>
+		<ThingName>门</ThingName>
+		<Frags>	
+			<li Frag="House" />
+		</Frags>	
+		<Desc>基本的结构建筑，可供人进出房间。\n(同方向且连在一起的门视为一个门)</Desc>	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Building" Name="Door_SpringFestival" Parent="DoorBase">		
+		<TexPath>res/Sprs/buildingnew/building_door01</TexPath>
+		<Frags>	
+			<li Frag="House" />
+		</Frags>	
+		<ThingName>门</ThingName>
+		<Desc>基本的结构建筑，可供人进出房间。张贴了福字，增添了喜庆气息。\n(同方向且连在一起的门视为一个门)</Desc>	
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Door_WanYao" Parent="DoorBase">		
+		<TexPath>res/Sprs/building_yaozujueqi/building_yaozudoor</TexPath>
+		<ThingName>门</ThingName>
+		<Frags>	
+			<li Frag="House" />
+		</Frags>	
+		<Desc>基本的结构建筑，可供人进出房间。雕刻有异兽头颅，增添了凶煞之气。\n(同方向且连在一起的门视为一个门)</Desc>	
+		<Building>
+			<AutoUnLock>0</AutoUnLock>
+		</Building>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Building" Name="Door_Fight" Parent="Door">		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Collider>
+			<Data>
+			[0,4,0],
+			[4,7,4],
+			[0,4,0]
+			</Data>
+		</Collider>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Door_SpringFestival_Fight" Parent="Door_SpringFestival">		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Collider>
+			<Data>
+			[0,4,0],
+			[4,7,4],
+			[0,4,0]
+			</Data>
+		</Collider>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Door_WanYao_Fight" Parent="Door_WanYao">	
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>	
+		<Collider>
+			<Data>
+			[0,4,0],
+			[4,7,4],
+			[0,4,0]
+			</Data>
+		</Collider>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Firecracker" Parent="WallBase">
+		<ThingName>烟花-龙歌</ThingName>
+		<TexPath>res/Sprs/buildingnew/building_Dch01</TexPath>
+		<Desc>充满喜庆的烟花，点燃后会引燃周围三格最近的烟花。据说当同时有9个烟花在夜空下燃放时，可能会有神奇的事情发生。</Desc>	
+		<Tags>
+			<Tag Name="_FIRECRACKER" Level="1"/>
+		</Tags>
+		<BlockLight>0</BlockLight>
+		<ColliderKind>ThrowOver</ColliderKind>
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>
+		<BlockMissile>0</BlockMissile>
+		<Heat>
+			<Value>5</Value>
+			<Radius>3</Radius>
+			<RoomValue>5</RoomValue>
+			<Failing>0.4</Failing>
+			<FailRadius>0</FailRadius>
+		</Heat>
+		<Light>
+			<Value>5</Value>
+			<Failing>0.5</Failing>
+			<FailRadius>2</FailRadius>
+			<Radius>2</Radius>
+			<Color>F9FDCFFF</Color>
+		</Light>
+		<Building>
+			<Perfab>Building/Prefabs/Firecracker</Perfab>
+			<HelperClass>BuildingHelperFirecracker</HelperClass>
+			<NoFengshui>1</NoFengshui>
+			<BuildMode>Single</BuildMode>
+			<CanMakeRoom>0</CanMakeRoom>	
+			<AutoUnLock>0</AutoUnLock>			
+			<BeMade>
+				<InheritStuffTileID>0</InheritStuffTileID>
+				<WorkToMake>10</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "LeftoverMaterial"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="HideDoor"><!--隐形的门 不能围成房间-->
+		<TexPath></TexPath>
+		<TileID>0</TileID>
+		<ThingName>入口</ThingName>	
+		<Desc>仅在编辑模式下可见</Desc>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>0</BlockLight>
+		<Beauty>0</Beauty>
+		<VisualAble>0</VisualAble>
+		<UseHitPoints>0</UseHitPoints>
+		<MaxHitPoints>200</MaxHitPoints>
+		<ElementKind>None</ElementKind>		
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<ColliderKind>Across</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[2]
+			</Data>
+		</Collider>		
+		
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>	
+		<Building>
+			<NotRandom>1</NotRandom>
+			
+			<HelperClass>BuildingHelperDoor</HelperClass>
+			<NoFengshui>1</NoFengshui>
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<IsDoor>1</IsDoor>		
+			<CanMakeRoom>0</CanMakeRoom>
+			<BeMade>
+				<WorkToMake>0</WorkToMake>
+				<Quality>0</Quality>
+				<CostStuffCount>0</CostStuffCount>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="AirWall" Parent="WallBase">
+		<TileID>-11</TileID>
+		<VisualAble>0</VisualAble>
+		<SelectAble>0</SelectAble>	
+		<BlockLight>0</BlockLight>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Beauty>0</Beauty>
+		<CastShadow>0</CastShadow>
+		<VisualAble>0</VisualAble>
+		<UseHitPoints>0</UseHitPoints>
+		<MaxHitPoints>200</MaxHitPoints>
+		<ElementKind>None</ElementKind>		
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<ThingName>空气墙</ThingName>
+		<Desc>仅在编辑模式下可见</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Frags>	
+			<li Frag="Wall" />
+		</Frags>	
+		<Building>
+			<NoFight>1</NoFight>
+			<NotRandom>1</NotRandom>
+			<NoFengshui>1</NoFengshui>
+			<CanMakeRoom>0</CanMakeRoom>
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<BeMade>
+				<InheritStuffTileID>1</InheritStuffTileID>
+			</BeMade>
+		</Building>
+	</ThingDef>	
+</List></ThingDefs>

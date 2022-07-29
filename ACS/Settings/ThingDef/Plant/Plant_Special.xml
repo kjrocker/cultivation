@@ -1,0 +1,475 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="Ginseng" Parent="PlantBase">
+	
+	<ThingName>人参</ThingName>
+	<MaxStack>1</MaxStack>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_ginseng1_a
+	</TexPath>
+	
+	<Desc>珍惜的药材，极有药用价值，能大补元气，可以在[temperature]-30[/temperature]到[temperature]40[/temperature]的范围内生长。需要生长在有一定的灵气地方。</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>3</Beauty>
+	<Rate>6</Rate>	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	
+	<Plant>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_ginseng1_b</RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_ginseng1_c</HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>
+		
+		<SowWork>60</SowWork>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>6000</LifespanFraction>
+		<GrowDays>24</GrowDays>
+		<HarvestDays>48</HarvestDays>
+		<RestBegin>19</RestBegin>
+		<RestEnd>4</RestEnd>
+		<WitherAble>0</WitherAble>
+		
+		
+		<TempMin>-30</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>25</LingMin>
+		<LingMax>400</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>80</GrowGlowMax>	
+		
+		
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>3.6</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>100</HarvestWork>    
+		<DropWork>50</DropWork>      		
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>Harvest</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Count>1</Count>
+				<Rate>0.04</Rate>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0.7</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="GanodermaLucidum" Parent="PlantBase">
+	
+	<ThingName>芝草</ThingName>
+	<MaxStack>1</MaxStack>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_zhicao01a
+	</TexPath>
+	
+	<Desc>珍惜的药材，极有药用价值，能大补元气，可以在[temperature]10[/temperature]到[temperature]40[/temperature]的范围内生长。需要生长在有一定的灵气地方。</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>3</Beauty>
+	<Rate>6</Rate>	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	
+	<Plant>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_zhicao01b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>	
+		
+		<SowWork>60</SowWork>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>6000</LifespanFraction>
+		<GrowDays>36</GrowDays>
+		<HarvestDays>22</HarvestDays>
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<WitherAble>0</WitherAble>
+		
+		<WindEffect>0</WindEffect>
+		
+		<TempMin>10</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>25</LingMin>
+		<LingMax>400</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>40</GrowGlowMax>
+		
+		<SnowRenderData>
+			<x>1.95</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>100</HarvestWork>    
+		<DropWork>50</DropWork>      		
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>Harvest</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_GanodermaLucidum</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PurpleGanodermaLucidum</ThingDef>
+				<Count>1</Count>
+				<Rate>0.04</Rate>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Mint" Parent="PlantBase">
+	
+	<ThingName>清心草</ThingName>
+	<MaxStack>1</MaxStack>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_qingxincao01a
+	</TexPath>
+	
+	<Desc>常见的药材，药性清凉，可以让人安神宁气，可以在[temperature]-30[/temperature]到[temperature]40[/temperature]的范围内生长。需要生长在有一定的灵气地方。</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>7</Beauty>
+	<Rate>6</Rate>	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	
+	<Plant>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_qingxincao01b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>	
+		
+		<SowWork>60</SowWork>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>6000</LifespanFraction>
+		<GrowDays>44</GrowDays>
+		<HarvestDays>12</HarvestDays>
+		<RestBegin>19</RestBegin>
+		<RestEnd>4</RestEnd>
+		<WitherAble>0</WitherAble>
+		
+		<TempMin>-30</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>25</LingMin>
+		<LingMax>400</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>80</GrowGlowMax>	
+		<SnowRenderData>
+			<x>1.7</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>100</HarvestWork>    
+		<DropWork>50</DropWork>      		
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>Harvest</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Mint</ThingDef>
+				<Count>2</Count>
+				<!--
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				-->
+				<Rate>1</Rate>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="MagicHerb" Parent="PlantBase">
+	
+	<ThingName>灵仙草</ThingName>
+	<MaxStack>1</MaxStack>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_lingxiancao01a
+	</TexPath>
+	
+	<Desc>富含灵力的药草，本来十分罕见，可以在[temperature]-30[/temperature]到[temperature]40[/temperature]的范围内生长。需要生长在有一定的灵气地方。中原炼丹峰医仙洞府外，有漫山遍野的灵仙草生长。</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>7</Beauty>
+	<Rate>6</Rate>	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	
+	<Plant>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_lingxiancao01b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>	
+		
+		<SowWork>60</SowWork>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>6000</LifespanFraction>
+		<GrowDays>40</GrowDays>
+		<HarvestDays>17</HarvestDays>
+		<RestBegin>19</RestBegin>
+		<RestEnd>4</RestEnd>
+		<WitherAble>0</WitherAble>
+		
+		<TempMin>-30</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>50</LingMin>
+		<LingMax>400</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>80</GrowGlowMax>	
+		<SnowRenderData>
+			<x>1.7</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>100</HarvestWork>    
+		<DropWork>50</DropWork>      		
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>Harvest</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_MagicHerb</ThingDef>
+				<Count>2</Count>
+				<!--
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				-->
+				<Rate>1</Rate>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+		<Radius>1</Radius>
+		<Color>62F8FFFF</Color>
+	</Light>	
+</ThingDef>
+
+<ThingDef Type="Plant" Name="WarmHerb" Parent="PlantBase">
+	
+	<ThingName>冬虫夏草</ThingName>
+	<MaxStack>1</MaxStack>
+	
+	<TexPath>
+	res/Sprs/scene_TemperateForest_plant/scene_lingxiancao01a
+	</TexPath>
+	
+	<Desc>形态多变的草，只在冬夏能成熟，也被世人称为百变草。服用后能暂时提高极端环境适应能力。</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<Beauty>7</Beauty>
+	<Rate>6</Rate>	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	<StoryBnts>
+		<li Name="采摘" Desc="尝试用法力采摘。" Story="Story_Plant_WinterSummer" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_lingxiancao01b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>	
+		
+		<SowWork>60</SowWork>
+		<SowRenderTags>plant</SowRenderTags>
+		<LifespanFraction>6000</LifespanFraction>
+		<GrowDays>40</GrowDays>
+		<HarvestDays>17</HarvestDays>
+		<RestBegin>19</RestBegin>
+		<RestEnd>4</RestEnd>
+		<WitherAble>0</WitherAble>
+		
+		<TempMin>-30</TempMin>
+		<TempMax>40</TempMax>
+		<LingMin>50</LingMin>
+		<LingMax>400</LingMax>
+		<FertilityMin>1</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>80</GrowGlowMax>	
+		<SnowRenderData>
+			<x>1.7</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Plant>
+
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>2</Radius>
+		<Failing>0.7</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.9</Failing>
+		<FailRadius>0</FailRadius>
+		<Radius>1</Radius>
+		<Color>B823B5FF</Color>
+	</Light>
+		
+</ThingDef>
+</List></ThingDefs>

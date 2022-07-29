@@ -1,0 +1,53 @@
+<SpecialNames><List>
+	<SpecialItem Name="Item_FunPainting">
+		<None>
+			<li Name="宫乐图" Desc=""/>
+			<li Name="溪山行旅图" Desc=""/>
+			<li Name="早春图" Desc=""/>
+			<li Name="山鹧棘雀图" Desc=""/>
+			<li Name="双喜图" Desc=""/>
+			<li Name="万壑松风" Desc=""/>
+			<li Name="双松图" Desc=""/>
+		</None>	
+	</SpecialItem>
+	
+	<SpecialItem Name="Item_FunMusic">
+		<None>
+			<li Name="高山流水" Desc=""/>
+			<li Name="广陵散" Desc=""/>
+			<li Name="渔樵问答" Desc=""/>
+			<li Name="胡笳十八拍" Desc=""/>
+			<li Name="阳春白雪" Desc=""/>
+			<li Name="平沙落雁" Desc=""/>
+			<li Name="夕阳箫鼓" Desc=""/>
+			<li Name="十面埋伏" Desc=""/>
+			<li Name="汉宫秋月" Desc=""/>
+			<li Name="梅花三弄" Desc=""/>
+		</None>	
+	</SpecialItem>
+	
+	<SpecialItem Name="Item_FunChess">
+		<None>
+			<li Name="呕血谱" Desc=""/>
+			<li Name="邓艾开蜀" Desc=""/>
+			<li Name="镇神头" Desc=""/>
+			<li Name="云起成霞阁" Desc=""/>
+			<li Name="洞庭秋月" Desc=""/>
+			<li Name="步月势" Desc=""/>
+			<li Name="三星入云" Desc=""/>
+			<li Name="千层宝阁" Desc=""/>
+			<li Name="白龙出水" Desc=""/>
+			<li Name="八圣擒妖" Desc=""/>
+			<li Name="万寿图" Desc=""/>
+			<li Name="长生图" Desc=""/>
+			<li Name="金明图" Desc=""/>
+			<li Name="佑神图" Desc=""/>
+			<li Name="上清图" Desc=""/>
+			<li Name="天清图" Desc=""/>
+			<li Name="琼林图" Desc=""/>
+			<li Name="醴泉图" Desc=""/>
+			<li Name="保真图" Desc=""/>
+			<li Name="遇仙图" Desc=""/>
+		</None>	
+	</SpecialItem>
+</List></SpecialNames>

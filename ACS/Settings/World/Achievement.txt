@@ -1,0 +1,414 @@
+ID	Name	Event	Hide	HardCore	fParam	sParam	Desc	Icon	SteamID	Dlc
+ID	成就名字	事件	是否隐藏	硬核解锁	参数	参数	介绍	图标		
+1	得道飞升	God_Count		1	1		累计1人飞升	res/Sprs/Achievement/icon_001	NEW_ACHIEVEMENT_8_13	
+2	飞升达人	God_Count		1	3		累计3人飞升	res/Sprs/Achievement/icon_002	NEW_ACHIEVEMENT_8_14	
+3	仙界熟客	God_Count		1	5		累计5人飞升	res/Sprs/Achievement/icon_003	NEW_ACHIEVEMENT_8_15	
+4	仙名远扬	God_Count		1	10		累计10人飞升	res/Sprs/Achievement/icon_004	NEW_ACHIEVEMENT_1_0	
+5	初出茅庐	Explore_Count		1	1		累计历练1次	res/Sprs/Achievement/icon_005	NEW_ACHIEVEMENT_8_16	
+6	混迹红尘	Explore_Count		1	100		累计历练100次	res/Sprs/Achievement/icon_006	NEW_ACHIEVEMENT_8_17	
+7	行遍千山	Explore_Count		1	500		累计历练500次	res/Sprs/Achievement/icon_007	NEW_ACHIEVEMENT_8_18	
+8	驰骋天下	Explore_Count		1	1000		累计历练1000次	res/Sprs/Achievement/icon_008	NEW_ACHIEVEMENT_6_12	
+9	初试炼丹	Dan_Count		1	1		累计炼丹1次	res/Sprs/Achievement/icon_009	NEW_ACHIEVEMENT_8_19	
+10	炼丹熟手	Dan_Count		1	50		累计炼丹50次	res/Sprs/Achievement/icon_010	NEW_ACHIEVEMENT_8_20	
+11	丹门高人	Dan_Count		1	100		累计炼丹100次	res/Sprs/Achievement/icon_011	NEW_ACHIEVEMENT_8_21	
+12	大丹师	Dan_Count		1	500		累计炼丹500次	res/Sprs/Achievement/icon_012	NEW_ACHIEVEMENT_6_13	
+13	初试炼宝	Refining_Count		1	1		累计炼宝1次	res/Sprs/Achievement/icon_013	NEW_ACHIEVEMENT_8_22	
+14	炼宝熟手	Refining_Count		1	50		累计炼宝50次	res/Sprs/Achievement/icon_014	NEW_ACHIEVEMENT_8_23	
+15	炼宝高手	Refining_Count		1	100		累计炼宝100次	res/Sprs/Achievement/icon_015	NEW_ACHIEVEMENT_8_24	
+16	宝尊者	Refining_Count		1	500		累计炼宝500次	res/Sprs/Achievement/icon_016	NEW_ACHIEVEMENT_6_14	
+17	初试画符	Fu_Count		1	1		累计画符1次	res/Sprs/Achievement/icon_017	NEW_ACHIEVEMENT_8_25	
+18	画符熟手	Fu_Count		1	50		累计画符50次	res/Sprs/Achievement/icon_018	NEW_ACHIEVEMENT_8_26	
+19	画符高手	Fu_Count		1	100		累计画符100次	res/Sprs/Achievement/icon_019	NEW_ACHIEVEMENT_8_27	
+20	符圣手	Fu_Count		1	500		累计画符500次	res/Sprs/Achievement/icon_020	NEW_ACHIEVEMENT_6_15	
+21	杀念初生	Kill_Count		1	1		累计击杀1名生灵	res/Sprs/Achievement/icon_065	NEW_ACHIEVEMENT_8_28	
+22	杀意凛然	Kill_Count		1	100		累计击杀100名生灵	res/Sprs/Achievement/icon_066	NEW_ACHIEVEMENT_8_29	
+23	杀气纵横	Kill_Count		1	500		累计击杀500名生灵	res/Sprs/Achievement/icon_067	NEW_ACHIEVEMENT_8_30	
+24	杀神	Kill_Count		1	1000		累计击杀1000名生灵	res/Sprs/Achievement/icon_068	NEW_ACHIEVEMENT_6_16	
+25	修真杀手	KillDisciple_Count		1	1		累计击杀修行者1人	res/Sprs/Achievement/icon_069	NEW_ACHIEVEMENT_8_31	
+26	修真克星	KillDisciple_Count		1	100		累计击杀修行者100人	res/Sprs/Achievement/icon_070	NEW_ACHIEVEMENT_9_0	
+27	修真屠夫	KillDisciple_Count		1	500		累计击杀修行者500人	res/Sprs/Achievement/icon_071	NEW_ACHIEVEMENT_9_1	
+28	弑仙者	KillDisciple_Count		1	1000		累计击杀修行者1000人	res/Sprs/Achievement/icon_072	NEW_ACHIEVEMENT_6_17	
+29	初试搜魂	SeachSoul_Count		1	1		累计搜魂1人	res/Sprs/Achievement/icon_073	NEW_ACHIEVEMENT_9_2	
+30	搜魂熟手	SeachSoul_Count		1	10		累计搜魂10人	res/Sprs/Achievement/icon_074	NEW_ACHIEVEMENT_9_3	
+31	搜魂高人	SeachSoul_Count		1	50		累计搜魂50人	res/Sprs/Achievement/icon_075	NEW_ACHIEVEMENT_9_4	
+32	魂宗	SeachSoul_Count		1	100		累计搜魂100人	res/Sprs/Achievement/icon_076	NEW_ACHIEVEMENT_6_18	
+33	厨师	Food_Count		1	10		累计做出10种食物	res/Sprs/Achievement/icon_080	NEW_ACHIEVEMENT_9_5	
+34	大厨	Food_Count		1	20		累计做出20种食物	res/Sprs/Achievement/icon_081	NEW_ACHIEVEMENT_9_6	
+35	食神	Food_Count		1	50		累计做出50种食物	res/Sprs/Achievement/icon_082	NEW_ACHIEVEMENT_6_19	
+36	灵犀一闪	ArtItem_Count		1	1		累计做出7阶的艺术品1个	res/Sprs/Achievement/icon_088	NEW_ACHIEVEMENT_9_7	
+37	灵思泉涌	ArtItem_Count		1	10		累计做出7阶的艺术品10个	res/Sprs/Achievement/icon_089	NEW_ACHIEVEMENT_9_8	
+38	艺术家	ArtItem_Count		1	50		累计做出7阶的艺术品50个	res/Sprs/Achievement/icon_090	NEW_ACHIEVEMENT_6_20	
+39	喜加一	Persuade_Count		1	1		累计说服1名旅人加入	res/Sprs/Achievement/icon_091	NEW_ACHIEVEMENT_9_9	
+40	喜加五	Persuade_Count		1	5		累计说服5名旅人加入	res/Sprs/Achievement/icon_092	NEW_ACHIEVEMENT_9_10	
+41	喜加十	Persuade_Count		1	10		累计说服10名旅人加入	res/Sprs/Achievement/icon_093	NEW_ACHIEVEMENT_9_11	
+42	了解一下	Persuade_Count		1	20		累计说服20名旅人加入	res/Sprs/Achievement/icon_094	NEW_ACHIEVEMENT_6_21	
+43	初学秘册	Esoterica_Count		1	1		累计通过书册学会1本秘籍	res/Sprs/Achievement/icon_099	NEW_ACHIEVEMENT_9_12	
+44	博览群书	Esoterica_Count		1	10		累计通过书册学会10本秘籍	res/Sprs/Achievement/icon_100	NEW_ACHIEVEMENT_9_13	
+45	学富五车	Esoterica_Count		1	50		累计通过书册学会50本秘籍	res/Sprs/Achievement/icon_101	NEW_ACHIEVEMENT_9_14	
+46	百晓生	Esoterica_Count		1	100		累计通过书册学会100本秘籍	res/Sprs/Achievement/icon_102	NEW_ACHIEVEMENT_9_15	
+47	不幸殒命	Die_Count		1	1		累计弟子死亡1人	res/Sprs/Achievement/icon_122	NEW_ACHIEVEMENT_9_16	
+48	祸不单行	Die_Count		1	5		累计弟子死亡5人	res/Sprs/Achievement/icon_123	NEW_ACHIEVEMENT_9_17	
+49	仙途多舛	Die_Count		1	10		累计弟子死亡10人	res/Sprs/Achievement/icon_124	NEW_ACHIEVEMENT_9_18	
+50	生死无常	Die_Count		1	50		累计弟子死亡50人	res/Sprs/Achievement/icon_125	NEW_ACHIEVEMENT_6_23	
+51	痛失爱徒	DiscipleDie_Count		1	1		累计内门弟子死亡1人	res/Sprs/Achievement/icon_126	NEW_ACHIEVEMENT_9_19	
+52	痛上加痛	DiscipleDie_Count		1	5		累计内门弟子死亡5人	res/Sprs/Achievement/icon_127	NEW_ACHIEVEMENT_9_20	
+53	痛彻心扉	DiscipleDie_Count		1	10		累计内门弟子死亡10人	res/Sprs/Achievement/icon_128	NEW_ACHIEVEMENT_9_21	
+54	心碎	DiscipleDie_Count		1	20		累计内门弟子死亡20人	res/Sprs/Achievement/icon_129	NEW_ACHIEVEMENT_6_24	
+55	我就是你	RobBody_Count		1	1		累计夺舍1人	res/Sprs/Achievement/icon_140	NEW_ACHIEVEMENT_9_22	
+56	我也是他	RobBody_Count		1	5		累计夺舍5人	res/Sprs/Achievement/icon_141	NEW_ACHIEVEMENT_9_23	
+57	众生皆我	RobBody_Count		1	10		累计夺舍10人	res/Sprs/Achievement/icon_142	NEW_ACHIEVEMENT_9_24	
+58	马甲王	RobBody_Count		1	20		累计夺舍20人	res/Sprs/Achievement/icon_143	NEW_ACHIEVEMENT_6_25	
+59	一瞬百年	ClosedDoor_Count		1	100		累计入定100年	res/Sprs/Achievement/icon_144	NEW_ACHIEVEMENT_9_25	
+60	定中岁月	ClosedDoor_Count		1	500		累计入定500年	res/Sprs/Achievement/icon_145	NEW_ACHIEVEMENT_9_26	
+61	不知春秋	ClosedDoor_Count		1	1000		累计入定1000年	res/Sprs/Achievement/icon_146	NEW_ACHIEVEMENT_9_27	
+62	遗世者	ClosedDoor_Count		1	5000		累计入定5000年	res/Sprs/Achievement/icon_147	NEW_ACHIEVEMENT_6_26	
+63	拿命来	RobAge_Count		1	10		累计吸别人寿命10年	res/Sprs/Achievement/icon_148	NEW_ACHIEVEMENT_9_28	
+64	我还要	RobAge_Count		1	50		累计吸别人寿命50年	res/Sprs/Achievement/icon_149	NEW_ACHIEVEMENT_9_29	
+65	命里有时	RobAge_Count		1	500		累计吸别人寿命500年	res/Sprs/Achievement/icon_150	NEW_ACHIEVEMENT_9_30	
+66	冥灵	RobAge_Count		1	1000		累计吸别人寿命1000年	res/Sprs/Achievement/icon_151	NEW_ACHIEVEMENT_9_31	
+67	痛不欲生	RefiningSoul_Count		1	1		累计炼魂1次	res/Sprs/Achievement/icon_152	NEW_ACHIEVEMENT_10_0	
+68	哀嚎遍野	RefiningSoul_Count		1	10		累计炼魂10次	res/Sprs/Achievement/icon_153	NEW_ACHIEVEMENT_10_1	
+69	苦痛之源	RefiningSoul_Count		1	50		累计炼魂50次	res/Sprs/Achievement/icon_154	NEW_ACHIEVEMENT_10_2	
+70	魔人	RefiningSoul_Count		1	100		累计炼魂100次	res/Sprs/Achievement/icon_155	NEW_ACHIEVEMENT_10_3	
+71	摄神御鬼	Ghost_Count		1	1		累计摄神御鬼1次	res/Sprs/Achievement/icon_156	NEW_ACHIEVEMENT_10_4	
+72	鲜活之魂	Ghost_Count		1	10		累计摄神御鬼10次	res/Sprs/Achievement/icon_157	NEW_ACHIEVEMENT_10_5	
+73	魂为吾用	Ghost_Count		1	50		累计摄神御鬼50次	res/Sprs/Achievement/icon_158	NEW_ACHIEVEMENT_10_6	
+74	魂帝	Ghost_Count		1	100		累计摄神御鬼100次	res/Sprs/Achievement/icon_159	NEW_ACHIEVEMENT_10_7	
+75	天妖化血	RefiningBody_Count		1	1		累计天妖化血1次	res/Sprs/Achievement/icon_160	NEW_ACHIEVEMENT_10_8	
+76	生死无间	RefiningBody_Count		1	10		累计天妖化血10次	res/Sprs/Achievement/icon_161	NEW_ACHIEVEMENT_10_9	
+77	阴阳之道	RefiningBody_Count		1	50		累计天妖化血50次	res/Sprs/Achievement/icon_162	NEW_ACHIEVEMENT_10_10	
+78	死之王	RefiningBody_Count		1	100		累计天妖化血100次	res/Sprs/Achievement/icon_163	NEW_ACHIEVEMENT_10_11	
+79	沟通邪神	Sacrifice_Count		1	1		累计献祭1次	res/Sprs/Achievement/icon_164	NEW_ACHIEVEMENT_10_12	
+80	邪之信徒	Sacrifice_Count		1	10		累计献祭10次	res/Sprs/Achievement/icon_165	NEW_ACHIEVEMENT_10_13	
+81	邪之使者	Sacrifice_Count		1	50		累计献祭50次	res/Sprs/Achievement/icon_166	NEW_ACHIEVEMENT_10_14	
+82	邪选者	Sacrifice_Count		1	100		累计献祭100次	res/Sprs/Achievement/icon_167	NEW_ACHIEVEMENT_10_15	
+83	为吾之种	Parasitic_Count		1	1		累计魂体寄生1人	res/Sprs/Achievement/icon_168	NEW_ACHIEVEMENT_10_16	
+84	生生不息	Parasitic_Count		1	10		累计魂体寄生10人	res/Sprs/Achievement/icon_169	NEW_ACHIEVEMENT_10_17	
+85	遍种天下	Parasitic_Count		1	50		累计魂体寄生50人	res/Sprs/Achievement/icon_170	NEW_ACHIEVEMENT_10_18	
+86	窃道者	Parasitic_Count		1	100		累计魂体寄生100人	res/Sprs/Achievement/icon_171	NEW_ACHIEVEMENT_10_19	
+87	盟友	SchoolFabao_Count		1	1		累计获得镇派法宝1件	res/Sprs/Achievement/icon_035	NEW_ACHIEVEMENT_10_20	
+88	建交天下	SchoolFabao_Count		1	10		累计获得镇派法宝10件	res/Sprs/Achievement/icon_036	NEW_ACHIEVEMENT_7_1	
+89	旅人	FindPlace_Count		1	5		在历练中亲自发现5个新地点（通过书籍获得的地点不算在内）	res/Sprs/Achievement/icon_219	NEW_ACHIEVEMENT_10_21	
+90	探索者	FindPlace_Count		1	25		在历练中亲自发现25个新地点（通过书籍获得的地点不算在内）	res/Sprs/Achievement/icon_220	NEW_ACHIEVEMENT_10_22	
+91	天下行走	FindPlace_Count		1	50		在历练中亲自发现50个新地点（通过书籍获得的地点不算在内）	res/Sprs/Achievement/icon_221	NEW_ACHIEVEMENT_7_2	
+										
+1002	神丹九转	MakeItem		1		Item_Dan_HundredRefine	练出九转金丹	res/Sprs/Achievement/icon_023	NEW_ACHIEVEMENT_10_23	
+1003	丹凝五极	MakeItem		1		Item_Dan_IncreaseLife3	练出五极灵丹	res/Sprs/Achievement/icon_024	NEW_ACHIEVEMENT_10_24	
+1004	我命由我	GoldDan		1	0		结成金丹	res/Sprs/Achievement/icon_037	NEW_ACHIEVEMENT_4_30	
+1005	丹成一品	GoldDan		1	1		结成一品金丹	res/Sprs/Achievement/icon_038	NEW_ACHIEVEMENT_4_31	
+1006	太和门下	SelectGong		1		Gong_1_Shui	修炼《太和十六洞天》	res/Sprs/Achievement/icon_172	NEW_ACHIEVEMENT_10_25	
+1007	真传：太和	SelectGong		1	1.5	Gong_1_Shui	以150%以上的匹配度修炼《太和十六洞天》	res/Sprs/Achievement/icon_173	NEW_ACHIEVEMENT_10_26	
+1008	一品：太和	GoldDan		1	1	Gong_1_Shui	以《太和十六洞天》功法结成一品金丹	res/Sprs/Achievement/icon_174	NEW_ACHIEVEMENT_5_2	
+1009	得道：太和	God		1		Gong_1_Shui	以《太和十六洞天》功法飞升	res/Sprs/Achievement/icon_175	NEW_ACHIEVEMENT_5_3	
+1010	多宝门下	SelectGong		1		Gong_2_Mu	修炼《己寅九冲多宝真解》	res/Sprs/Achievement/icon_176	NEW_ACHIEVEMENT_10_27	
+1011	真传：多宝	SelectGong		1	1.5	Gong_2_Mu	以150%以上的匹配度修炼《己寅九冲多宝真解》	res/Sprs/Achievement/icon_177	NEW_ACHIEVEMENT_10_28	
+1012	一品：多宝	GoldDan		1	1	Gong_2_Mu	以《己寅九冲多宝真解》功法结成一品金丹	res/Sprs/Achievement/icon_178	NEW_ACHIEVEMENT_5_6	
+1013	得道：多宝	God		1		Gong_2_Mu	以《己寅九冲多宝真解》功法飞升	res/Sprs/Achievement/icon_179	NEW_ACHIEVEMENT_5_7	
+1014	七杀门下	SelectGong		1		Gong_3_Jin	修炼《七杀剑诀》	res/Sprs/Achievement/icon_180	NEW_ACHIEVEMENT_10_29	
+1015	真传：七杀	SelectGong		1	1.5	Gong_3_Jin	以150%以上的匹配度修炼《七杀剑诀》	res/Sprs/Achievement/icon_181	NEW_ACHIEVEMENT_10_30	
+1016	一品：七杀	GoldDan		1	1	Gong_3_Jin	以《七杀剑诀》功法结成一品金丹	res/Sprs/Achievement/icon_182	NEW_ACHIEVEMENT_5_10	
+1017	得道：七杀	God		1		Gong_3_Jin	以《七杀剑诀》功法飞升	res/Sprs/Achievement/icon_183	NEW_ACHIEVEMENT_5_11	
+1018	玉清门下	SelectGong		1		Gong_4_None	修炼《玉清仙法》	res/Sprs/Achievement/icon_184	NEW_ACHIEVEMENT_10_31	
+1019	真传：玉清	SelectGong		1	1.5	Gong_4_None	以150%以上的匹配度修炼《玉清仙法》	res/Sprs/Achievement/icon_185	NEW_ACHIEVEMENT_11_0	
+1020	一品：玉清	GoldDan		1	1	Gong_4_None	以《玉清仙法》功法结成一品金丹	res/Sprs/Achievement/icon_186	NEW_ACHIEVEMENT_5_14	
+1021	得道：玉清	God		1		Gong_4_None	以《玉清仙法》功法飞升	res/Sprs/Achievement/icon_187	NEW_ACHIEVEMENT_5_15	
+1022	偷天门下	SelectGong		1		Gong_5_Tu	修炼《偷天诀》	res/Sprs/Achievement/icon_188	NEW_ACHIEVEMENT_11_1	
+1023	真传：偷天	SelectGong		1	1.5	Gong_5_Tu	以150%以上的匹配度修炼《偷天诀》	res/Sprs/Achievement/icon_189	NEW_ACHIEVEMENT_11_2	
+1024	一品：偷天	GoldDan		1	1	Gong_5_Tu	以《偷天诀》功法结成一品金丹	res/Sprs/Achievement/icon_190	NEW_ACHIEVEMENT_5_18	
+1025	得道：偷天	God		1		Gong_5_Tu	以《偷天诀》功法飞升	res/Sprs/Achievement/icon_191	NEW_ACHIEVEMENT_5_19	
+1026	九转门下	SelectGong		1		Gong_6_Huo	修炼《九转金丹直指》	res/Sprs/Achievement/icon_192	NEW_ACHIEVEMENT_11_3	
+1027	真传：九转	SelectGong		1	1.5	Gong_6_Huo	以150%以上的匹配度修炼《九转金丹直指》	res/Sprs/Achievement/icon_193	NEW_ACHIEVEMENT_11_4	
+1028	一品：九转	GoldDan		1	1	Gong_6_Huo	以《九转金丹直指》功法结成一品金丹	res/Sprs/Achievement/icon_194	NEW_ACHIEVEMENT_5_22	
+1029	得道：九转	God		1		Gong_6_Huo	以《九转金丹直指》功法飞升	res/Sprs/Achievement/icon_195	NEW_ACHIEVEMENT_5_23	
+1030	北斗门下	SelectGong		1		Gong_8_Jin	修炼《北斗洞心劫法》	res/Sprs/Achievement/icon_200	NEW_ACHIEVEMENT_11_5	
+1031	真传：北斗	SelectGong		1	1.5	Gong_8_Jin	以150%以上的匹配度修炼《北斗洞心劫法》	res/Sprs/Achievement/icon_201	NEW_ACHIEVEMENT_11_6	
+1032	一品：北斗	GoldDan		1	1	Gong_8_Jin	以《北斗洞心劫法》功法结成一品金丹	res/Sprs/Achievement/icon_202	NEW_ACHIEVEMENT_5_26	
+1033	得道：北斗	God		1		Gong_8_Jin	以《北斗洞心劫法》功法飞升	res/Sprs/Achievement/icon_203	NEW_ACHIEVEMENT_5_27	
+1034	轮回门下	SelectGong		1		Gong_9_Mu	修炼《长生六道轮回经》	res/Sprs/Achievement/icon_204	NEW_ACHIEVEMENT_11_7	
+1035	真传：轮回	SelectGong		1	1.5	Gong_9_Mu	以150%以上的匹配度修炼《长生六道轮回经》	res/Sprs/Achievement/icon_205	NEW_ACHIEVEMENT_11_8	
+1036	一品：轮回	GoldDan		1	1	Gong_9_Mu	以《长生六道轮回经》功法结成一品金丹	res/Sprs/Achievement/icon_206	NEW_ACHIEVEMENT_5_30	
+1037	得道：轮回	God		1		Gong_9_Mu	以《长生六道轮回经》功法飞升	res/Sprs/Achievement/icon_207	NEW_ACHIEVEMENT_5_31	
+1038	三阳门下	SelectGong		1		Gong_10_Huo	修炼《三阳三昧丙丁炼火诀》	res/Sprs/Achievement/icon_208	NEW_ACHIEVEMENT_11_9	
+1039	真传：三阳	SelectGong		1	1.5	Gong_10_Huo	以150%以上的匹配度修炼《三阳三昧丙丁炼火诀》	res/Sprs/Achievement/icon_209	NEW_ACHIEVEMENT_11_10	
+1040	一品：三阳	GoldDan		1	1	Gong_10_Huo	以《三阳三昧丙丁炼火诀》功法结成一品金丹	res/Sprs/Achievement/icon_210	NEW_ACHIEVEMENT_6_2	
+1041	得道：三阳	God		1		Gong_10_Huo	以《三阳三昧丙丁炼火诀》功法飞升	res/Sprs/Achievement/icon_211	NEW_ACHIEVEMENT_6_3	
+1042	葵花门下	SelectGong		1		Gong_11_Tu	修炼《葵花炼神大法》	res/Sprs/Achievement/icon_212	NEW_ACHIEVEMENT_11_11	
+1043	真传：葵花	SelectGong		1	1.5	Gong_11_Tu	以150%以上的匹配度修炼《葵花炼神大法》	res/Sprs/Achievement/icon_213	NEW_ACHIEVEMENT_11_12	
+1044	一品：葵花	GoldDan		1	1	Gong_11_Tu	以《葵花炼神大法》功法结成一品金丹	res/Sprs/Achievement/icon_214	NEW_ACHIEVEMENT_6_6	
+1045	得道：葵花	God		1		Gong_11_Tu	以《葵花炼神大法》功法飞升	res/Sprs/Achievement/icon_215	NEW_ACHIEVEMENT_6_7	
+1046	忘情门下	SelectGong		1		Gong_7_Huo	修炼《太上忘情道》	res/Sprs/Achievement/icon_196	NEW_ACHIEVEMENT_11_13	
+1047	真传：忘情	SelectGong		1	1.5	Gong_7_Huo	以150%以上的匹配度修炼《太上忘情道》	res/Sprs/Achievement/icon_197	NEW_ACHIEVEMENT_11_14	
+1048	一品：忘情	GoldDan		1	1	Gong_7_Huo	以《太上忘情道》功法结成一品金丹	res/Sprs/Achievement/icon_198	NEW_ACHIEVEMENT_6_10	
+1049	得道：忘情	God		1		Gong_7_Huo	以《太上忘情道》功法飞升	res/Sprs/Achievement/icon_199	NEW_ACHIEVEMENT_6_11	
+1050	素门凡流	SchoolScore		1	400		门派声望达到400：素门凡流	res/Sprs/Achievement/icon_046	NEW_ACHIEVEMENT_11_15	
+1051	初见江湖	SchoolScore		1	1000		门派声望达到1000：初见江湖	res/Sprs/Achievement/icon_047	NEW_ACHIEVEMENT_11_16	
+1052	闻名遐迩	SchoolScore		1	5000		门派声望达到5000：闻名遐迩	res/Sprs/Achievement/icon_048	NEW_ACHIEVEMENT_11_17	
+1053	声震寰宇	SchoolScore		1	10000		门派声望达到10000：声震寰宇	res/Sprs/Achievement/icon_049	NEW_ACHIEVEMENT_11_18	
+1054	万载留名	SchoolScore		1	40000		门派声望达到40000：万载留名	res/Sprs/Achievement/icon_050	NEW_ACHIEVEMENT_7_3	
+1055	名门正派	SchoolRank		1		Rank11	门派成为:名门正派	res/Sprs/Achievement/icon_051	NEW_ACHIEVEMENT_11_19	
+1056	正道中流	SchoolRank		1		Rank12	门派成为:正道中流	res/Sprs/Achievement/icon_052	NEW_ACHIEVEMENT_11_20	
+1057	正道魁首	SchoolRank		1		Rank13	门派成为:正道魁首	res/Sprs/Achievement/icon_053	NEW_ACHIEVEMENT_7_4	
+1058	邪门歪道	SchoolRank		1		Rank21	门派成为:邪门歪道	res/Sprs/Achievement/icon_054	NEW_ACHIEVEMENT_11_21	
+1059	邪道砥柱	SchoolRank		1		Rank22	门派成为:邪道砥柱	res/Sprs/Achievement/icon_055	NEW_ACHIEVEMENT_11_22	
+1060	魔门巨擘	SchoolRank		1		Rank23	门派成为:魔门巨擘	res/Sprs/Achievement/icon_056	NEW_ACHIEVEMENT_7_5	
+1061	渐有人气	GameSchoolOwn		1	5		门派拥有5人	res/Sprs/Achievement/icon_057	NEW_ACHIEVEMENT_11_23	
+1062	初具规模	GameSchoolOwn		1	10		门派拥有10人	res/Sprs/Achievement/icon_058	NEW_ACHIEVEMENT_11_24	
+1063	门生兴旺	GameSchoolOwn		1	18		门派拥有18人	res/Sprs/Achievement/icon_059	NEW_ACHIEVEMENT_7_6	
+1064	踏上仙途	GameSchoolDiscipleOwn		1	1		门派拥有1位内门弟子	res/Sprs/Achievement/icon_060	NEW_ACHIEVEMENT_11_25	
+1065	广收门徒	GameSchoolDiscipleOwn		1	4		门派拥有4位内门弟子	res/Sprs/Achievement/icon_061	NEW_ACHIEVEMENT_11_26	
+1066	人才济济	GameSchoolDiscipleOwn		1	8		门派拥有8位内门弟子	res/Sprs/Achievement/icon_062	NEW_ACHIEVEMENT_7_7	
+1067	天灾：寒流	WeatherEnd		1		ColdWave	度过寒流	res/Sprs/Achievement/icon_077	NEW_ACHIEVEMENT_11_27	
+1068	天灾：热浪	WeatherEnd		1		HeatWave	度过热浪	res/Sprs/Achievement/icon_078	NEW_ACHIEVEMENT_11_28	
+1069	天灾：永夜	WeatherEnd		1		PermanentNight	度过永夜	res/Sprs/Achievement/icon_079	NEW_ACHIEVEMENT_11_29	
+1070	万剑归宗	DSkillLevel		1	20	Fabao	御物技能达到20级	res/Sprs/Achievement/icon_083	NEW_ACHIEVEMENT_7_8	
+1071	法有元神	DSkillLevel		1	20	FightSkill	术法技能达到20级	res/Sprs/Achievement/icon_084	NEW_ACHIEVEMENT_7_9	
+1072	金刚不坏	DSkillLevel		1	20	Barrier	护体技能达到20级	res/Sprs/Achievement/icon_085	NEW_ACHIEVEMENT_7_10	
+1073	医仙	DSkillLevel		1	20	Medicine	炼丹技能达到20级	res/Sprs/Achievement/icon_086	NEW_ACHIEVEMENT_7_11	
+1074	器宗	DSkillLevel		1	20	Manual	炼器技能达到20级	res/Sprs/Achievement/icon_087	NEW_ACHIEVEMENT_7_12	
+1075	秋去冬来	YearChange		1	1		游戏中度过第1年	res/Sprs/Achievement/icon_103	NEW_ACHIEVEMENT_11_30	
+1076	时光飞逝	YearChange		1	5		游戏中度过第5年	res/Sprs/Achievement/icon_104	NEW_ACHIEVEMENT_11_31	
+1077	匆匆那年	YearChange		1	10		游戏中度过第10年	res/Sprs/Achievement/icon_105	NEW_ACHIEVEMENT_7_13	
+1078	醍醐灌顶	UseMagic		1		Healing_Intelligence	第一次施展神通：醍醐灌顶	res/Sprs/Achievement/icon_115	NEW_ACHIEVEMENT_12_0	
+1079	再造形神	UseMagic		1		Healing_Charisma	第一次施展神通：再造形神	res/Sprs/Achievement/icon_116	NEW_ACHIEVEMENT_12_1	
+1080	天眼洞开	UseMagic		1		Healing_Perception	第一次施展神通：开天眼	res/Sprs/Achievement/icon_117	NEW_ACHIEVEMENT_12_2	
+1081	伐毛洗髓	UseMagic		1		Healing_Physique	第一次施展神通：伐毛洗髓	res/Sprs/Achievement/icon_118	NEW_ACHIEVEMENT_12_3	
+1082	肉身再造	UseMagic		1		BuildBody	第一次施展神通：再造术	res/Sprs/Achievement/icon_119	NEW_ACHIEVEMENT_12_4	
+1083	呼风唤雨	UseMagic		1		PrayForRain	第一次施展神通：求雨术	res/Sprs/Achievement/icon_120	NEW_ACHIEVEMENT_12_5	
+1084	驱云散雾	UseMagic		1		PrayForSun	第一次施展神通：驱云术	res/Sprs/Achievement/icon_121	NEW_ACHIEVEMENT_12_6	
+1085	脑洞大开	PartBroken		1		Skull	天灵盖损坏	res/Sprs/Achievement/icon_130	NEW_ACHIEVEMENT_7_14	
+1086	爆头！	PartBroken		1		Head	头部损坏	res/Sprs/Achievement/icon_131	NEW_ACHIEVEMENT_7_15	
+1087	僵尸警告	PartBroken		1		Brain	大脑损坏	res/Sprs/Achievement/icon_132	NEW_ACHIEVEMENT_7_18	
+1088	爆肝！	PartBroken		1		Liver	肝脏损坏	res/Sprs/Achievement/icon_217	NEW_ACHIEVEMENT_7_16	
+1089	无欲无求	PartBroken		1		Genitals	净身	res/Sprs/Achievement/icon_216	NEW_ACHIEVEMENT_7_17	
+1090	我心永恒	PartBroken		1		Heart	心脏损坏	res/Sprs/Achievement/icon_135	NEW_ACHIEVEMENT_7_19	
+1091	修行宝地	SchoolFengshui		1		VeryGood	门派风水变成修行宝地	res/Sprs/Achievement/icon_136	NEW_ACHIEVEMENT_12_7	
+1092	仙家洞天	SchoolFengshui		1		Best	门派风水变成仙家洞天	res/Sprs/Achievement/icon_137	NEW_ACHIEVEMENT_7_20	
+1093	吉宅	RoomFengshui		1		VeryGood	使一间房间风水变成吉	res/Sprs/Achievement/icon_138	NEW_ACHIEVEMENT_12_8	
+1094	风水宝地	RoomFengshui		1		Best	使一间房间风水变成大吉	res/Sprs/Achievement/icon_139	NEW_ACHIEVEMENT_7_21	
+1095	一劫天仙	GroundGod		1	1		派中有一名仙人滞留世间，度过一次天仙劫	res/Sprs/Achievement/icon_222	NEW_ACHIEVEMENT_12_9	
+1096	三劫天仙	GroundGod		1	3		派中有一名仙人滞留世间，度过三次天仙劫	res/Sprs/Achievement/icon_223	NEW_ACHIEVEMENT_12_10	
+1097	五劫天仙	GroundGod		1	5		派中有一名仙人滞留世间，度过五次天仙劫	res/Sprs/Achievement/icon_224	NEW_ACHIEVEMENT_12_11	
+1098	九劫天仙	GroundGod		1	9		派中有一名仙人滞留世间，度过九次天仙劫	res/Sprs/Achievement/icon_225	NEW_ACHIEVEMENT_7_22	
+1099	历劫灵宝	FabaoGod		1	1		获得一件经历1次天仙劫洗练的法宝	res/Sprs/Achievement/icon_226	NEW_ACHIEVEMENT_12_12	
+1100	久经劫炼	FabaoGod		1	5		获得一件经历5次天仙劫洗练的法宝	res/Sprs/Achievement/icon_227	NEW_ACHIEVEMENT_12_13	
+1101	镇派神器	FabaoGod		1	10		获得一件经历10次天仙劫洗练的法宝	res/Sprs/Achievement/icon_228	NEW_ACHIEVEMENT_12_14	
+1102	传世之器	FabaoGod		1	20		获得一件经历20次天仙劫洗练的法宝	res/Sprs/Achievement/icon_229	NEW_ACHIEVEMENT_7_23	
+										
+2000	精雕细琢			1			练出100品质的法宝	res/Sprs/Achievement/icon_025	NEW_ACHIEVEMENT_7_24	
+2001	神器宗匠			1			练出12阶的法宝	res/Sprs/Achievement/icon_026	NEW_ACHIEVEMENT_7_25	
+2002	神笔			1			画出品质95以上的符咒	res/Sprs/Achievement/icon_027	NEW_ACHIEVEMENT_7_26	
+2003	财大气粗			1			熔炼12阶的法宝	res/Sprs/Achievement/icon_028	NEW_ACHIEVEMENT_7_27	
+2004	向天问道			1			渡劫成功	res/Sprs/Achievement/icon_039	NEW_ACHIEVEMENT_7_28	
+2005	天威浩荡			1			渡劫失败死亡	res/Sprs/Achievement/icon_040	NEW_ACHIEVEMENT_7_29	
+2006	道基尽毁			1			渡劫失败幸存	res/Sprs/Achievement/icon_041	NEW_ACHIEVEMENT_7_30	
+2007	勇猛精进			1			第一次突破瓶颈成功	res/Sprs/Achievement/icon_042	NEW_ACHIEVEMENT_7_31	
+2008	建立门派			1			建立一个门派	res/Sprs/Achievement/icon_043	NEW_ACHIEVEMENT_8_0	
+2009	根基壮大			1			门派扩张为派	res/Sprs/Achievement/icon_044	NEW_ACHIEVEMENT_12_15	
+2010	大派崛起			1			门派扩张为洞天	res/Sprs/Achievement/icon_045	NEW_ACHIEVEMENT_8_1	
+2011	一日为师			1			第一次拜师	res/Sprs/Achievement/icon_063	NEW_ACHIEVEMENT_8_2	
+2012	青出于蓝			1			第一次传授	res/Sprs/Achievement/icon_064	NEW_ACHIEVEMENT_12_16	
+2013	爱			1			第一次恋爱	res/Sprs/Achievement/icon_106	NEW_ACHIEVEMENT_8_3	
+2014	第一步			1			第一次表白	res/Sprs/Achievement/icon_107	NEW_ACHIEVEMENT_12_17	
+2015	心跳回忆			1			第一次表白成功	res/Sprs/Achievement/icon_108	NEW_ACHIEVEMENT_8_4	
+2016	你是好人			1			第一次表白失败	res/Sprs/Achievement/icon_109	NEW_ACHIEVEMENT_8_5	
+2017	心魔始动			1			第一次入魔	res/Sprs/Achievement/icon_110	NEW_ACHIEVEMENT_8_6	
+2018	拜拜了您勒			1			第一次驱逐弟子	res/Sprs/Achievement/icon_111	NEW_ACHIEVEMENT_8_7	
+2019	单抽出奇迹			1			第一次挖出古旧石匣	res/Sprs/Achievement/icon_112	NEW_ACHIEVEMENT_8_8	
+2020	警署有规定			1			第一次吃屎	res/Sprs/Achievement/icon_113	NEW_ACHIEVEMENT_8_9	
+2021	真香			1			第一次吃土	res/Sprs/Achievement/icon_114	NEW_ACHIEVEMENT_8_10	
+2022	我不做人啦			1			夺舍了一只动物	res/Sprs/Achievement/icon_218	NEW_ACHIEVEMENT_8_11	
+2023	别修仙了！		1				客户端开启超过4小时，且当前时间在0点-5点之间。	res/Sprs/Achievement/icon_230	NEW_ACHIEVEMENT_8_12	
+2024	龙陨			1			击杀蛟龙	res/Sprs/Achievement/icon_231	NEW_ACHIEVEMENT_12_24	
+2025	凤眠			1			击杀凶凤	res/Sprs/Achievement/icon_238	NEW_ACHIEVEMENT_12_25	
+2026	阴阳之道			1			击杀烛龙	res/Sprs/Achievement/icon_245	NEW_ACHIEVEMENT_12_26	
+2027	急不可耐			1			在60秒内使蛟龙进入真龙形态	res/Sprs/Achievement/icon_232	NEW_ACHIEVEMENT_12_27	
+2028	头上有犄角			1			破坏龙角后击杀蛟龙	res/Sprs/Achievement/icon_233	NEW_ACHIEVEMENT_12_28	
+2029	身后有尾巴			1			破坏龙尾后击杀蛟龙	res/Sprs/Achievement/icon_234	NEW_ACHIEVEMENT_12_29	
+2030	无能狂怒			1			破坏逆鳞后击杀蛟龙	res/Sprs/Achievement/icon_235	NEW_ACHIEVEMENT_12_30	
+2031	有气难出			1			蛟龙未曾发动龙怒就被击杀	res/Sprs/Achievement/icon_236	NEW_ACHIEVEMENT_12_31	
+2032	我需要水			1			蛟龙未曾发动泽国就被击杀	res/Sprs/Achievement/icon_237	NEW_ACHIEVEMENT_13_0	
+2033	天火天火			1			以5个人分摊下凤凰的熔断，并且无人受伤	res/Sprs/Achievement/icon_239	NEW_ACHIEVEMENT_13_1	
+2034	再看我我就把你			1			承受灼之瞳孔20秒且不受伤	res/Sprs/Achievement/icon_240	NEW_ACHIEVEMENT_13_2	
+2035	欢迎来到重庆			1			凶凤完整的释放太阳之晶后击杀凶凤	res/Sprs/Achievement/icon_241	NEW_ACHIEVEMENT_13_3	
+2036	别打脸			1			破坏凶凤头羽后击杀凶凤	res/Sprs/Achievement/icon_242	NEW_ACHIEVEMENT_13_4	
+2037	宁为鸡头			1			破坏凶凤尾羽后击杀凶凤	res/Sprs/Achievement/icon_243	NEW_ACHIEVEMENT_13_5	
+2038	超级聚灵器			1			维持凤凰蛋在不孵化也不死亡的状态36天以上	res/Sprs/Achievement/icon_244	NEW_ACHIEVEMENT_13_6	
+2039	一网打尽			1			击败烛龙时，有9个以上的蛋被镇压	res/Sprs/Achievement/icon_246	NEW_ACHIEVEMENT_13_7	
+2040	天道有损			1			破坏烛龙的天鳞后击败烛龙	res/Sprs/Achievement/icon_247	NEW_ACHIEVEMENT_13_8	
+2041	混沌之力			1			破坏烛龙的龙玉后击败烛龙	res/Sprs/Achievement/icon_248	NEW_ACHIEVEMENT_13_9	
+2042	阴阳何以			1			同一个角色具备心灵遮罩和业火缠身后击败烛龙	res/Sprs/Achievement/icon_249	NEW_ACHIEVEMENT_13_10	
+2043	完全镇压			1			没有一个卵孵化的情况下击败烛龙	res/Sprs/Achievement/icon_250	NEW_ACHIEVEMENT_13_11	
+2044	龙息，快躲！			1			无人被龙息命中的情况下击败烛龙	res/Sprs/Achievement/icon_251	NEW_ACHIEVEMENT_13_12	
+2045	天地灵根			1			第一次种植灵根	res/Sprs/Achievement/icon_252	NEW_ACHIEVEMENT_13_13	
+2046	灵根收获			1			收获一次五行灵根	res/Sprs/Achievement/icon_253	NEW_ACHIEVEMENT_13_14	
+2047	灵煞之极			1			五行灵根灵煞值达成一次极限	res/Sprs/Achievement/icon_254	NEW_ACHIEVEMENT_13_15	
+2048	本源真法			1			第一次领悟本源真法	res/Sprs/Achievement/icon_255	NEW_ACHIEVEMENT_13_16	
+2049	逆源真法			1			第一次领悟逆源真法	res/Sprs/Achievement/icon_256	NEW_ACHIEVEMENT_13_17	
+2050	您老安息			1			击杀一次古代大能	res/Sprs/Achievement/icon_257	NEW_ACHIEVEMENT_13_18	
+2051	跟我混			1			第一次驯养动物	res/Sprs/Achievement/icon_258	NEW_ACHIEVEMENT_13_19	
+2052	永不为奴！			1			动物第一次变成妖兽	res/Sprs/Achievement/icon_259	NEW_ACHIEVEMENT_13_20	
+										
+10000	虫谷秘闻			1			完成特殊历练：虫谷秘闻	res/Sprs/Achievement/icon_029	NEW_ACHIEVEMENT_12_18	
+10001	毒龙秘宝			1			完成特殊历练：毒龙秘宝	res/Sprs/Achievement/icon_030	NEW_ACHIEVEMENT_12_19	
+10002	医仙内府			1			完成特殊历练：医仙内府	res/Sprs/Achievement/icon_031	NEW_ACHIEVEMENT_12_20	
+10003	火穴探宝			1			完成特殊历练：火穴探宝	res/Sprs/Achievement/icon_032	NEW_ACHIEVEMENT_12_21	
+10004	天池宝藏			1			完成特殊历练：天池宝藏	res/Sprs/Achievement/icon_033	NEW_ACHIEVEMENT_12_22	
+10005	天魔封印			1			完成特殊历练：天魔封印	res/Sprs/Achievement/icon_034	NEW_ACHIEVEMENT_12_23	
+10006	乾坤之外			1			了解世界的最终真相	res/Sprs/Achievement/icon_423	NEW_ACHIEVEMENT_18_15	
+										
+3000	教育为先			1			第一次建造藏经阁	res/Sprs/Achievement/icon_260	NEW_ACHIEVEMENT_13_21	
+3001	知识在于分享			1			第一次在藏经阁中录入	res/Sprs/Achievement/icon_261	NEW_ACHIEVEMENT_13_22	
+3002	好好学习			1			第一次通过藏经阁学习	res/Sprs/Achievement/icon_262	NEW_ACHIEVEMENT_13_23	
+3003	书盈四壁	CangJingGeMemory		1	500		藏经阁藏书道行达到500点	res/Sprs/Achievement/icon_263	NEW_ACHIEVEMENT_13_24	
+3004	汗牛充栋	CangJingGeMemory		1	2000		藏经阁藏书道行达到2000点	res/Sprs/Achievement/icon_264	NEW_ACHIEVEMENT_13_25	
+3005	浩如烟海	CangJingGeMemory		1	5000		藏经阁藏书道行达到5000点	res/Sprs/Achievement/icon_265	NEW_ACHIEVEMENT_13_26	
+3006	琅嬛之藏	CangJingGeMemory		1	10000		藏经阁藏书道行达到10000点	res/Sprs/Achievement/icon_266	NEW_ACHIEVEMENT_13_27	
+3007	珍宝重光			1			第一次炼制秘宝	res/Sprs/Achievement/icon_267	NEW_ACHIEVEMENT_13_28	
+3008	滴血认主			1			第一次激活秘宝	res/Sprs/Achievement/icon_268	NEW_ACHIEVEMENT_13_29	
+3009	初试秘宝	MiBao_Count		1	1		累积激活1个不同的秘宝	res/Sprs/Achievement/icon_269	NEW_ACHIEVEMENT_13_30	
+3010	秘宝熟手	MiBao_Count		1	5		累积激活5个不同的秘宝	res/Sprs/Achievement/icon_270	NEW_ACHIEVEMENT_13_31	
+3011	秘宝高手	MiBao_Count		1	10		累积激活10个不同的秘宝	res/Sprs/Achievement/icon_271	NEW_ACHIEVEMENT_14_0	
+3012	神匠	MiBao_Count		1	20		累积激活20个不同的秘宝	res/Sprs/Achievement/icon_272	NEW_ACHIEVEMENT_14_1	
+3013	你醒啦？			1			主动点化一个精怪	res/Sprs/Achievement/icon_273	NEW_ACHIEVEMENT_14_2	
+3014	安静了！			1			以凝珀诀抹杀一个精怪	res/Sprs/Achievement/icon_274	NEW_ACHIEVEMENT_14_3	
+3015	聆听玄妙			1			受角色感召而自然产生精怪	res/Sprs/Achievement/icon_275	NEW_ACHIEVEMENT_14_4	
+3016	自感成灵			1			见证自然环境下诞生精怪	res/Sprs/Achievement/icon_276	NEW_ACHIEVEMENT_14_5	
+3017	你是什么东西？			1			第一次遇到野生精怪	res/Sprs/Achievement/icon_277	NEW_ACHIEVEMENT_14_6	
+3018	修行界：变人	JGZaoHuaSuTi		1		0	为一个精怪塑体	res/Sprs/Achievement/icon_278	NEW_ACHIEVEMENT_14_7	
+3019	营养均衡	JGZaoHuaSuTi		1		1	为一个五行均衡的精怪塑体	res/Sprs/Achievement/icon_279	NEW_ACHIEVEMENT_14_8	
+3020	因材施教	JGZaoHuaSuTi		1		2	为一个五行纯粹（某一项100%）的精怪塑体，并为其选择匹配的仙道功法，使其进入内门	res/Sprs/Achievement/icon_280	NEW_ACHIEVEMENT_14_9	
+3021	人多饭管够			1			艰难逃离全部激活情况下无人死亡渡过两年	res/Sprs/Achievement/icon_281	NEW_ACHIEVEMENT_14_10	
+3022	风雨无阻			1			恶劣环境全部激活情况下无人死亡渡过一年	res/Sprs/Achievement/icon_282	NEW_ACHIEVEMENT_14_11	
+3023	大威天龙			1			初始有4个妖兽情况下第一年内击杀地图上所有妖兽	res/Sprs/Achievement/icon_283	NEW_ACHIEVEMENT_14_12	
+3024	精密建筑			1			艰难建设全部激活情况下一年内建造小乾坤界	res/Sprs/Achievement/icon_284	NEW_ACHIEVEMENT_14_13	
+3025	自行摸索			1			失传全部激活情况下第一年内门派规模达到洞天	res/Sprs/Achievement/icon_285	NEW_ACHIEVEMENT_14_14	
+3026	精打细算			1			物资短缺全部激活情况下第一年内建造小乾坤界	res/Sprs/Achievement/icon_286	NEW_ACHIEVEMENT_14_15	
+3027	精挑细选			1			道衰之世全部激活情况下将一名基础属性均超过5的角色收入门派	res/Sprs/Achievement/icon_287	NEW_ACHIEVEMENT_14_16	
+3028	讨价还价			1			生意难做全部激活情况下第一年内通过行商购买一件10阶以上的物品	res/Sprs/Achievement/icon_288	NEW_ACHIEVEMENT_14_17	
+3029	顺势而为			1			天道紊乱全部激活条件下第一年让一名角色达到元神期或对应境界	res/Sprs/Achievement/icon_289	NEW_ACHIEVEMENT_14_18	
+3030	你看汪汪多能干			1			羸弱灵宠全部激活条件下第一年内让灵宠单独击杀一个金丹期或以上妖兽	res/Sprs/Achievement/icon_290	NEW_ACHIEVEMENT_14_19	
+3031	关系户			1			冰冷人间全部激活条件下与所有门派掌门好感度达到100	res/Sprs/Achievement/icon_291	NEW_ACHIEVEMENT_14_20	
+3032	降妖除魔			1			在群妖80天来袭的情况下将其击杀	res/Sprs/Achievement/icon_292	NEW_ACHIEVEMENT_14_21	
+3033	修真杀手杀手			1			在修真杀手150天来袭的情况下将其击杀	res/Sprs/Achievement/icon_293	NEW_ACHIEVEMENT_14_22	
+3034	避而不见			1			在神秘洞穴30天出现后200天内不让蛟龙出现，随后将其击杀	res/Sprs/Achievement/icon_294	NEW_ACHIEVEMENT_14_23	
+3035	农夫与龙的故事			1			在上古严威全部激活的情况下神秘洞穴出现后200天内不让龙出现，随后将其击杀	res/Sprs/Achievement/icon_295	NEW_ACHIEVEMENT_14_24	
+3036	高级等于威严			1			凡间琐事全部激活条件下三年之内将所有地区和城市的主殿升到3级	res/Sprs/Achievement/icon_296	NEW_ACHIEVEMENT_14_25	
+3037	仙人不相信眼泪			1			仙家无情全部激活条件下第一年内从一个门派购买一件12阶的物品	res/Sprs/Achievement/icon_297	NEW_ACHIEVEMENT_14_26	
+3038	斩灭群仙			1			在最高门派实力情况下让所有门派臣服	res/Sprs/Achievement/icon_298	NEW_ACHIEVEMENT_14_27	
+3039	斩灭真阴			1			击杀最高实力下的蛟龙	res/Sprs/Achievement/icon_299	NEW_ACHIEVEMENT_14_28	
+3040	斩灭真阳			1			击杀最高实力下的凶凤	res/Sprs/Achievement/icon_300	NEW_ACHIEVEMENT_14_29	
+3041	斩灭天道			1			击杀最高实力下的烛龙	res/Sprs/Achievement/icon_301	NEW_ACHIEVEMENT_14_30	
+3042	终焉之战			1			在日渐艰难激活的情况下，击败第1000天前来的敌人	res/Sprs/Achievement/icon_302	NEW_ACHIEVEMENT_14_31	
+3043	飞升·初入真仙			1			在一劫或以上真仙难度下让一名子弟飞升	res/Sprs/Achievement/icon_303	NEW_ACHIEVEMENT_15_0	
+3046	飞升·娴熟真仙			1			在四劫或以上真仙难度下让一名子弟飞升	res/Sprs/Achievement/icon_306	NEW_ACHIEVEMENT_15_3	
+3049	飞升·绝顶真仙			1			在七劫或以上真仙难度下让一名子弟飞升	res/Sprs/Achievement/icon_309	NEW_ACHIEVEMENT_15_6	
+3052	征伐·初入真仙			1			在一劫或以上真仙难度下征伐所有门派	res/Sprs/Achievement/icon_312	NEW_ACHIEVEMENT_15_9	
+3055	征伐·娴熟真仙			1			在四劫或以上真仙难度下征伐所有门派	res/Sprs/Achievement/icon_315	NEW_ACHIEVEMENT_15_12	
+3058	征伐·绝顶真仙			1			在七劫或以上真仙难度下征伐所有门派	res/Sprs/Achievement/icon_318	NEW_ACHIEVEMENT_15_15	
+3061	阵法之道			1			第一次学习阵法秘籍	res/Sprs/Achievement/icon_321	NEW_ACHIEVEMENT_15_18	
+3062	上古阵法			1			第一次习得上古阵图	res/Sprs/Achievement/icon_322	NEW_ACHIEVEMENT_15_19	
+3063	合众为一			1			第一次结成阵法	res/Sprs/Achievement/icon_323	NEW_ACHIEVEMENT_15_20	
+3064	传说再现			1			第一次结成上古阵法	res/Sprs/Achievement/icon_324	NEW_ACHIEVEMENT_15_21	
+3065	凡间代理			1			第一次入驻凡间代理点	res/Sprs/Achievement/icon_325	NEW_ACHIEVEMENT_15_22	
+3066	心系天下			1			入驻所有城市和地区	res/Sprs/Achievement/icon_326	NEW_ACHIEVEMENT_15_23	
+3067	人间奇观			1			建造一个奇观	res/Sprs/Achievement/icon_327	NEW_ACHIEVEMENT_15_24	
+3068	奇观误国			1			建造过所有奇观	res/Sprs/Achievement/icon_328	NEW_ACHIEVEMENT_15_25	
+3069	得民心者	PolicyAddBeliever		1	20000	-1	从一次政策事件中获得超过20000信徒	res/Sprs/Achievement/icon_329	NEW_ACHIEVEMENT_15_26	
+3070	众生之信			1			在一个城市或地区拥有超过40%信徒	res/Sprs/Achievement/icon_330	NEW_ACHIEVEMENT_15_27	
+3071	传道天下			1			在所有城市和地区拥有超过40%的信徒数量	res/Sprs/Achievement/icon_331	NEW_ACHIEVEMENT_15_28	
+3072	瞧一瞧看一看			1			第一次拍卖	res/Sprs/Achievement/icon_332	NEW_ACHIEVEMENT_15_29	
+3073	小孩子才做选择			1			一次拍卖买完东西	res/Sprs/Achievement/icon_333	NEW_ACHIEVEMENT_15_30	
+3074	单车变摩托			1			一次拍卖买下神秘物品	res/Sprs/Achievement/icon_334	NEW_ACHIEVEMENT_15_31	
+3075	捡漏一时爽			1			低于市场价拍下物品	res/Sprs/Achievement/icon_335	NEW_ACHIEVEMENT_16_0	
+3076	我赚了吗？	AuctionBuyScale		1	10		以10倍以上市场价拍下一件物品	res/Sprs/Achievement/icon_336	NEW_ACHIEVEMENT_16_1	
+3077	互通有无			1			第一次与行商交易	res/Sprs/Achievement/icon_337	NEW_ACHIEVEMENT_16_2	
+3078	一滴都不剩了			1			获取行商全部灵石	res/Sprs/Achievement/icon_338	NEW_ACHIEVEMENT_16_3	
+3079	竭泽而渔			1			杀死行商	res/Sprs/Achievement/icon_339	NEW_ACHIEVEMENT_16_4	
+3080	雪中送炭	SchoolLikePoint		1	1		让一个门派欠你1点人情	res/Sprs/Achievement/icon_340	NEW_ACHIEVEMENT_16_5	
+3081	金牌盟友	SchoolLikePoint		1	10		让一个门派欠你10点人情	res/Sprs/Achievement/icon_341	NEW_ACHIEVEMENT_16_6	
+3082	救！！！			1			第一次租借弟子	res/Sprs/Achievement/icon_342	NEW_ACHIEVEMENT_16_7	
+3083	人人都献出一点爱	RentSchoolMember		1	4		同时租借4个其他门派的弟子	res/Sprs/Achievement/icon_343	NEW_ACHIEVEMENT_16_8	
+3084	投其所好			1			拜山时赠送掌门的心仪之物	res/Sprs/Achievement/icon_344	NEW_ACHIEVEMENT_16_9	
+3085	世界很大			1			第一次进入野外地图	res/Sprs/Achievement/icon_345	NEW_ACHIEVEMENT_16_10	
+3086	我就看看			1			第一次进入门派地图	res/Sprs/Achievement/icon_346	NEW_ACHIEVEMENT_16_11	
+3087	都是我的	TakeInConcelme		1			第一次在野外地图拾取物品	res/Sprs/Achievement/icon_347	NEW_ACHIEVEMENT_16_12	
+3088	来都来了	SchoolTakeInConcelme		1	6		在门派地图以隐匿状态拿取宝物	res/Sprs/Achievement/icon_348	NEW_ACHIEVEMENT_16_13	
+3089	征伐：丹霞洞天	SchoolSubmiss		1		1	征伐丹霞洞天成功	res/Sprs/Achievement/icon_349	NEW_ACHIEVEMENT_16_14	
+3090	征伐：昆仑宫	SchoolSubmiss		1		2	征伐昆仑宫成功	res/Sprs/Achievement/icon_350	NEW_ACHIEVEMENT_16_15	
+3091	征伐：极天宫	SchoolSubmiss		1		3	征伐极天宫成功	res/Sprs/Achievement/icon_351	NEW_ACHIEVEMENT_16_16	
+3092	征伐：紫霄宗	SchoolSubmiss		1		4	征伐紫霄宗成功	res/Sprs/Achievement/icon_352	NEW_ACHIEVEMENT_16_17	
+3093	征伐：玄一道	SchoolSubmiss		1		5	征伐玄一道成功	res/Sprs/Achievement/icon_353	NEW_ACHIEVEMENT_16_18	
+3094	征伐：青莲剑宗	SchoolSubmiss		1		6	征伐青莲剑宗成功	res/Sprs/Achievement/icon_354	NEW_ACHIEVEMENT_16_19	
+3095	征伐：栖霞洞天	SchoolSubmiss		1		7	征伐栖霞洞天成功	res/Sprs/Achievement/icon_355	NEW_ACHIEVEMENT_16_20	
+3096	征伐：百蛮山	SchoolSubmiss		1		8	征伐百蛮山成功	res/Sprs/Achievement/icon_356	NEW_ACHIEVEMENT_16_21	
+3097	征伐：七仟坞	SchoolSubmiss		1		9	征伐七仟坞成功	res/Sprs/Achievement/icon_357	NEW_ACHIEVEMENT_16_22	
+3098	征伐：七杀魔宫	SchoolSubmiss		1		10	征伐七杀魔宫成功	res/Sprs/Achievement/icon_358	NEW_ACHIEVEMENT_16_23	
+3099	征伐：合欢派	SchoolSubmiss		1		11	征伐合欢派成功	res/Sprs/Achievement/icon_359	NEW_ACHIEVEMENT_16_24	
+3100	征伐：万妖殿	SchoolSubmiss		1		12	征伐万妖殿成功	res/Sprs/Achievement/icon_360	NEW_ACHIEVEMENT_16_25	
+3101	征伐天下			1			征伐全部门派	res/Sprs/Achievement/icon_361	NEW_ACHIEVEMENT_16_26	
+3102	人界至尊			1			征伐所有门派并在所有城市和地区拥有超过40%的信徒数量	res/Sprs/Achievement/icon_362	NEW_ACHIEVEMENT_16_27	
+3103	朋友留步			1			第一次与人社交	res/Sprs/Achievement/icon_363	NEW_ACHIEVEMENT_16_28	
+3104	都不容易			1			第一次了解到一个人的执念	res/Sprs/Achievement/icon_364	NEW_ACHIEVEMENT_16_29	
+3105	玩心么			1			第一次破开心防	res/Sprs/Achievement/icon_365	NEW_ACHIEVEMENT_16_30	
+3106	道友这边请			1			第一次邀请他人来我门派	res/Sprs/Achievement/icon_366	NEW_ACHIEVEMENT_16_31	
+3107	真相浮现			1			破解一项隐秘	res/Sprs/Achievement/icon_367	NEW_ACHIEVEMENT_17_0	
+3108	灵宠：神犬	OwnLingChong		1	1	LsDog	获得神犬	res/Sprs/Achievement/icon_368	NEW_ACHIEVEMENT_17_1	
+3109	灵宠：灵狐	OwnLingChong		1	1	LsFox	获得灵狐	res/Sprs/Achievement/icon_369	NEW_ACHIEVEMENT_17_2	
+3110	灵宠：浮龙	OwnLingChong		1	1	LsDragon	获得浮龙	res/Sprs/Achievement/icon_370	NEW_ACHIEVEMENT_17_3	
+3111	灵宠：玄凤	OwnLingChong		1	1	LsPhoenix	获得玄凤	res/Sprs/Achievement/icon_371	NEW_ACHIEVEMENT_17_4	
+3112	长大啦！			1			将任意一个灵宠培养到完全体	res/Sprs/Achievement/icon_372	NEW_ACHIEVEMENT_17_5	
+3113	给我变！			1			给一个野兽开智	res/Sprs/Achievement/icon_373	NEW_ACHIEVEMENT_17_6	
+3114	化形：五智	ThinkAggYaoToHuman		1	6		让一个拥有5个以上灵智碎片的妖族度过化形天劫	res/Sprs/Achievement/icon_374	NEW_ACHIEVEMENT_17_7	
+3115	化形：七智	ThinkAggYaoToHuman		1	8		让一个拥有7个以上灵智碎片的妖族度过化形天劫	res/Sprs/Achievement/icon_375	NEW_ACHIEVEMENT_17_8	
+3116	化形：九智	ThinkAggYaoToHuman		1	10		让一个拥有9个以上灵智碎片的妖族度过化形天劫	res/Sprs/Achievement/icon_376	NEW_ACHIEVEMENT_17_9	
+3117	通晓天道	DaoHangJie		1	5		度过5次道行之劫	res/Sprs/Achievement/icon_378	NEW_ACHIEVEMENT_17_10	
+3118	寿与天齐	AgeJie		1	5		度过5次寿命之劫	res/Sprs/Achievement/icon_377	NEW_ACHIEVEMENT_17_11	
+3119	立吾香火			1			在一座城市设立信仰雕像并与一个神修关联	res/Sprs/Achievement/icon_379	NEW_ACHIEVEMENT_17_12	
+3120	封吾护法			1			设立一个护法	res/Sprs/Achievement/icon_380	NEW_ACHIEVEMENT_17_13	
+3121	从吾大道	CoreBeliever		1	1		收到一个核心信徒	res/Sprs/Achievement/icon_381	NEW_ACHIEVEMENT_17_14	
+3122	佑吾信众	WishLevel		1	4		在聆听愿望时满足一个信徒的橙色愿望	res/Sprs/Achievement/icon_382	NEW_ACHIEVEMENT_17_15	
+3123	塑吾圣器	GodFabaoRate		1	15		将一个信仰圣物升到15阶	res/Sprs/Achievement/icon_383	NEW_ACHIEVEMENT_17_16	
+3124	辟吾神国	BreakFaithJie		1	1		利用斩念劫扩张1次神国	res/Sprs/Achievement/icon_384	NEW_ACHIEVEMENT_17_17	
+3125	灵吾心境			1			神修心境达到最高境界	res/Sprs/Achievement/icon_385	NEW_ACHIEVEMENT_17_18	
+3126	发愿：九天	SelectGong		1		God_Gong_1	习得《九天应元雷声普化玉书》	res/Sprs/Achievement/icon_386	NEW_ACHIEVEMENT_17_19	
+3127	开辟：九天	BuildGodCityArea		1	0	God_Gong_1	以《九天应元雷声普化玉书》开辟神国	res/Sprs/Achievement/icon_387	NEW_ACHIEVEMENT_17_20	
+3128	圆满：九天	BuildGodCityArea		1	48	God_Gong_1	以《九天应元雷声普化玉书》开辟神国时就达到48圆满	res/Sprs/Achievement/icon_388	NEW_ACHIEVEMENT_17_21	
+3129	成就：九天	God		1		God_Gong_1	以《九天应元雷声普化玉书》飞升	res/Sprs/Achievement/icon_389	NEW_ACHIEVEMENT_17_22	
+3130	发愿：八部	SelectGong		1		God_Gong_2	习得《诸天八部成就法》	res/Sprs/Achievement/icon_390	NEW_ACHIEVEMENT_17_23	
+3131	开辟：八部	BuildGodCityArea		1	0	God_Gong_2	以《诸天八部成就法》开辟神国	res/Sprs/Achievement/icon_391	NEW_ACHIEVEMENT_17_24	
+3132	圆满：八部	BuildGodCityArea		1	48	God_Gong_2	以《诸天八部成就法》开辟神国时就达到48圆满	res/Sprs/Achievement/icon_392	NEW_ACHIEVEMENT_17_25	
+3133	成就：八部	God		1		God_Gong_2	以《诸天八部成就法》飞升	res/Sprs/Achievement/icon_393	NEW_ACHIEVEMENT_17_26	
+3134	发愿：幽冥	SelectGong		1		God_Gong_3	习得《幽冥十方太乙救苦经》	res/Sprs/Achievement/icon_394	NEW_ACHIEVEMENT_17_27	
+3135	开辟：幽冥	BuildGodCityArea		1	0	God_Gong_3	以《幽冥十方太乙救苦经》开辟神国	res/Sprs/Achievement/icon_395	NEW_ACHIEVEMENT_17_28	
+3136	圆满：幽冥	BuildGodCityArea		1	48	God_Gong_3	以《幽冥十方太乙救苦经》开辟神国时就达到48圆满	res/Sprs/Achievement/icon_396	NEW_ACHIEVEMENT_17_29	
+3137	成就：幽冥	God		1		God_Gong_3	以《幽冥十方太乙救苦经》飞升	res/Sprs/Achievement/icon_397	NEW_ACHIEVEMENT_18_13	
+3138	天地精华：太虚精华	QuenchingMaterial		1		Item_BodyPractice_TaiXu	通过吐纳获得太虚精华	res/Sprs/Achievement/icon_398	NEW_ACHIEVEMENT_17_31	
+3139	天地精华：玄天紫气	QuenchingMaterial		1		Item_BodyPractice_XuanTian	通过吐纳获得玄天紫气	res/Sprs/Achievement/icon_399	NEW_ACHIEVEMENT_18_0	
+3140	天地精华：九阳真华	QuenchingMaterial		1		Item_BodyPractice_JiuYang	通过吐纳获得九阳真华	res/Sprs/Achievement/icon_400	NEW_ACHIEVEMENT_18_1	
+3141	天地精华：玄月真精	QuenchingMaterial		1		Item_BodyPractice_XuanYue	通过吐纳获得玄月真精	res/Sprs/Achievement/icon_401	NEW_ACHIEVEMENT_18_2	
+3142	升华之体	EquptSuperPart		1			第一次激活秘体	res/Sprs/Achievement/icon_424	NEW_ACHIEVEMENT_18_3	
+3143	千锤百炼	QuenchingLevel		1	100		百炼达到100层	res/Sprs/Achievement/icon_402	NEW_ACHIEVEMENT_18_4	
+3144	以力入道：形意	SelectGong		1		Body_Gong_1	习得《太古形意六合真体》	res/Sprs/Achievement/icon_403	NEW_ACHIEVEMENT_18_5	
+3145	破碎虚空：形意	God		1		Body_Gong_1	以《太古形意六合真体》飞升	res/Sprs/Achievement/icon_404	NEW_ACHIEVEMENT_18_6	
+3146	以力入道：蛮极	SelectGong		1		Body_Gong_2	习得《蛮极金身》	res/Sprs/Achievement/icon_405	NEW_ACHIEVEMENT_18_7	
+3147	破碎虚空：蛮极	God		1		Body_Gong_2	以《蛮极金身》飞升	res/Sprs/Achievement/icon_406	NEW_ACHIEVEMENT_18_8	
+3148	以力入道：妖祖	SelectGong		1		Body_Gong_3	习得《妖祖圣体》	res/Sprs/Achievement/icon_407	NEW_ACHIEVEMENT_18_9	
+3149	破碎虚空：妖祖	God		1		Body_Gong_3	以《妖祖圣体》飞升	res/Sprs/Achievement/icon_408	NEW_ACHIEVEMENT_18_10	
+3150	以力入道：败灭	SelectGong		1		Body_Gong_5	习得《败灭邪体》	res/Sprs/Achievement/icon_409	NEW_ACHIEVEMENT_18_11	
+3151	破碎虚空：败灭	God		1		Body_Gong_5	以《败灭邪体》飞升	res/Sprs/Achievement/icon_410	NEW_ACHIEVEMENT_18_12	
+3152	一起来修仙吧！	OwnLingChong		1	1	LsPandaXian	获得灵宠修修与仙仙	res/Sprs/Achievement/icon_411	NEW_ACHIEVEMENT_18_16	Panda
+3153	真仙滚滚			1			让一只貊化形为人，并让其成功飞升	res/Sprs/Achievement/icon_412	NEW_ACHIEVEMENT_18_17	Panda
+3154	一条鱼	Fish_Count		1	1		钓上来1条鱼	res/Sprs/Achievement/icon_413	NEW_ACHIEVEMENT_18_18	Panda
+3155	百条鱼	Fish_Count		1	100		钓上来100条鱼	res/Sprs/Achievement/icon_415	NEW_ACHIEVEMENT_18_19	Panda
+3156	千条鱼	Fish_Count		1	1000		钓上来1000条鱼	res/Sprs/Achievement/icon_416	NEW_ACHIEVEMENT_18_20	Panda
+3157	万条鱼	Fish_Count		1	10000		钓上来10000条鱼	res/Sprs/Achievement/icon_417	NEW_ACHIEVEMENT_18_21	Panda
+3158	愿者上钩			1			钓上来一个动物	res/Sprs/Achievement/icon_418	NEW_ACHIEVEMENT_18_22	Panda
+3159	就决定是你了！			1			钓上来一个妖兽	res/Sprs/Achievement/icon_419	NEW_ACHIEVEMENT_18_23	Panda
+3160	亮晶晶			1			钓到一颗灵石	res/Sprs/Achievement/icon_420	NEW_ACHIEVEMENT_18_24	Panda
+3161	捕鱼达人			1			钓上来所有种类的鱼	res/Sprs/Achievement/icon_421	NEW_ACHIEVEMENT_18_25	Panda
+3162	钓鲲者			1			钓上来一条重达25斤的鱼	res/Sprs/Achievement/icon_422	NEW_ACHIEVEMENT_18_26	Panda
+3163	真武玄机			1			在紫霄宫中获得所有碑文秘藏。	res/Sprs/Achievement/icon_425	NEW_ACHIEVEMENT_18_27	WuDang
+3164	阴阳相合	OwnLingChong		1		LsXuanWu	获得灵宠玄武苗苗。	res/Sprs/Achievement/icon_426	NEW_ACHIEVEMENT_18_28	WuDang
+3165	真传：玄天	SelectGong		1	1.5	Gong_13_None	以150%以上的匹配度修炼《玄天真武两仪妙道》	res/Sprs/Achievement/icon_427	NEW_ACHIEVEMENT_18_29	WuDang
+3166	一品：玄天	GoldDan		1	1	Gong_13_None	以《玄天真武两仪妙道》功法结成一品金丹	res/Sprs/Achievement/icon_428	NEW_ACHIEVEMENT_18_30	WuDang
+3167	得道：玄天	God		1		Gong_13_None	以《玄天真武两仪妙道》功法飞升	res/Sprs/Achievement/icon_429	NEW_ACHIEVEMENT_18_31	WuDang

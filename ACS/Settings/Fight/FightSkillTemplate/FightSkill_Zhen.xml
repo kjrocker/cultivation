@@ -1,0 +1,546 @@
+<FightSkills><List>
+	<Skill Name="ChangeZhen">
+		<DisplayName>变阵</DisplayName>
+		<Tip>变动阵法，掩盖被暴露的阵眼</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>bianzhen</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5</Value>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<Shape>Single</Shape>
+		<SelectType>NpcInZhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="CancelZhen">
+		<DisplayName>取消阵法</DisplayName>
+		<Tip>取消阵法，取消阵法以后一段时间内不能结阵</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>cancelzhen</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng9</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_zhenfa01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="JointJian">
+		<DisplayName>法宝合击</DisplayName>
+		<Tip>众人消耗灵气合力操纵主阵人的法宝，为其重新灌注灵气，大幅提高法宝威力，提升幅度与阵法的御剑威力加成有关。注入灵气时由阵法所有人均摊。</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>jointjian</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="JointSkill">
+		<DisplayName>法术合击</DisplayName>
+		<Tip>众人消耗灵气，合力帮助主阵人释放下一个法术，增强其威力。提升幅度与阵法的法术威力加成有关。消耗灵气时由阵法所有人均摊。</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>jointskill</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong6</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="ZhenTempAura">
+		<DisplayName>加热</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>dazuo</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>Tempture</SValue>
+		<SValue2>100|5|1|5</SValue2>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_makeaura</ClassName>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+	<Skill Name="ZhenModifyArea">
+		<DisplayName>变大</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>dazuo</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>Dan_Fail2|2</SValue>
+		<SValue2>5</SValue2>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_makemodifier</ClassName>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+	<Skill Name="ZhenShield">
+		<DisplayName>开盾</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>dazuo</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>30</SValue>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_makesheild</ClassName>
+		<TargetCamp>None</TargetCamp>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+
+	<Skill Name="TransLing">
+		<DisplayName>灵气转移</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_lingqizhuru</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1000</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+	<Skill Name="Reducetability">
+		<DisplayName>降低稳定度</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_reducestability</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1000</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Zhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="RevealZhen">
+		<DisplayName>暴露阵眼</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_revealzhen</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1000</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Zhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+
+	<Skill Name="FightSkill_Zhen_RevealZhen1">
+		<DisplayName>衍化先天</DisplayName>
+		<HeadMsg>请选择一个敌方阵眼</HeadMsg>
+		<Tip>利用八门变化的规律攻击目标阵法弱点，使其稳定度下降，并根据其阵法稳定度有几率暴露其阵眼</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_yhxt</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Zhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_RevealZhen2">
+		<DisplayName>北斗破妄</DisplayName>
+		<Tip>对目标敌人造成巨量灵气伤害</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_bdpw</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<CastTime>5.4</CastTime>
+		<CastEndTime>3.6</CastEndTime>
+		<LingCost>0</LingCost>
+		<SingAni>shentong3</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>10000000</Value>
+		<Value2>10</Value2>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<Shape>Single</Shape>
+		<SelectType>SelectThing</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+
+	<Skill Name="FightSkill_Zhen_ZhenShield1">
+		<DisplayName>五峰御界</DisplayName>
+		<Tip>在目标点展开一个半径5米的结界，以阵法灵气防御攻击</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>LJjineng10</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>5</SValue>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_makesheild</ClassName>
+		<TargetCamp>Friendly</TargetCamp>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_ZhenShield2">
+		<DisplayName>天地五方不灭界</DisplayName>
+		<Tip>在目标点展开一个半径12米的结界，以阵法灵气防御攻击</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>LJjineng10</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>12</SValue>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_tiandiwufang</ClassName>
+		<TargetCamp>None</TargetCamp>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_ZhenArea1">
+		<DisplayName>先天木灵界</DisplayName>
+		<Tip>在目标点展开一个半径8米的结界，增加结界内的土壤肥力，并提高友方角色的自然恢复力</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>LJjineng10</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_xtmlj</ClassName>
+		<TargetCamp>Friendly</TargetCamp>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_hudunzengqiang01</Icon>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_ZhenArea2">
+		<DisplayName>诸天六御清灵胜境</DisplayName>
+		<Tip>在目标点展开一个半径8米的结界，提高结界内友方角色的心境、心情、修炼速度</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CastAni>LJjineng10</CastAni>
+		<CastTime>99999</CastTime>
+		<CanBreakCast>1</CanBreakCast>
+		<Value>100</Value>
+		<SValue>Zhen_ZTLYQLSJ|1</SValue>
+		<SValue2>8</SValue2>
+		<SelectType>SelectPoint</SelectType>
+		<AttackRange>-0.25</AttackRange>
+		<Shape>Single</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<ClassName>zhen_makemodifier</ClassName>
+		<TargetCamp>Friendly</TargetCamp>
+		<Radius>0</Radius>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+	</Skill>
+
+
+	<Skill Name="FightSkill_Zhen_JointJian1">
+		<DisplayName>凤御神剑</DisplayName>
+		<Tip>众人消耗灵气合力操纵主阵人的法宝，为其重新灌注灵气，大幅提高法宝威力，提升幅度与阵法的御剑威力加成有关。注入灵气时由阵法所有人均摊。</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>jointjian</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1.1</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value2>3</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="FightSkill_Zhen_JointSkill1">
+		<DisplayName>龙吟神咒</DisplayName>
+		<Tip>众人消耗灵气，合力帮助主阵人释放下一个法术，增强其威力。提升幅度与阵法的法术威力加成有关。消耗灵气时由阵法所有人均摊。</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>jointskill</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value2>3</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+
+		<Icon>res/Sprs/ui/icon_huifuzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_Stability1">
+		<DisplayName>龙魂神裂法</DisplayName>
+		<HeadMsg>请选择一个敌方阵眼</HeadMsg>
+		<Tip>对敌方阵法造成大量稳定度伤害</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_reducestability</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1.1</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5</Value>
+		<Value2>15</Value2>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_huifuzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Zhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<Skill Name="FightSkill_Zhen_Stability2">
+		<DisplayName>涅槃</DisplayName>
+		<Tip>恢复阵法的稳定度</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_addstability_r</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1.1</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5</Value>
+		<Value2>15</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		<Icon>res/Sprs/ui/icon_fashuzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+
+	<Skill Name="FightSkill_Zhen_ZhuXian">
+		<DisplayName>诛仙</DisplayName>
+		<Tip>在短暂延迟以后，对目标点半径12米以内敌人造成巨量灵气伤害</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_zhuxian</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1.1</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastTime>2.9</CastTime>
+		<CastEndTime>3.1</CastEndTime>
+		<CastAni>LJjineng7</CastAni>
+		<Value>1</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_feijianzengqiang01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>SelectPoint</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+	<Skill Name="FightSkill_Zhen_BDPW_MissileBase">
+		<DisplayName>北斗破妄子弹</DisplayName>
+		<FixedDamage>1</FixedDamage>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>10000000</Value>
+		<ClassName>zhen_bdpw_zd</ClassName>
+		<!--<TargetCamp>Enemy</TargetCamp>		-->
+		<SelectType>SelectThing</SelectType>
+		<Shape>Missile</Shape>
+		<MissileEffect>300001</MissileEffect>
+		<Speed>100</Speed>
+		<HitEffect>56</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Shake>2</Shake>
+			<HitTime>1.5</HitTime>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="FightSkill_Zhen_ZhuXian_MissileBase">
+		<DisplayName>诛仙子技能</DisplayName>
+		<FixedDamage>1</FixedDamage>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Shui</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>10000</Value>
+		<!--<TargetCamp>Enemy</TargetCamp>		-->
+		<SelectType>SelectPoint</SelectType>
+		<Shape>Missile</Shape>
+		<MissileEffect>300000</MissileEffect>
+		<BombEffect>300000</BombEffect>
+		<Speed>0</Speed>
+		<HitEffect>56</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Shake>2</Shake>
+			<BombRadius>12</BombRadius>
+		</Missile>
+	</Skill>
+	<Skill Name="FightSkill_Zhen_ZhuXian_Missile1" Parent="FightSkill_Zhen_ZhuXian_MissileBase">
+		<Value>10000000</Value>
+		<FixedDamage>1</FixedDamage>
+		<Missile>
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Shake>2</Shake>
+			<BombRadius>12</BombRadius>
+			<HitTime>0.1</HitTime>
+		</Missile>
+	</Skill>
+	<Skill Name="FightSkill_Zhen_ZhuXian_Missile2" Parent="FightSkill_Zhen_ZhuXian_MissileBase">
+		<FixedDamage>1</FixedDamage>
+		<Value>20000000</Value>
+		<Missile>
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Shake>2</Shake>
+			<BombRadius>12</BombRadius>
+			<HitTime>2.1</HitTime>
+		</Missile>
+	</Skill>
+	<Skill Name="FightSkill_Zhen_ZhuXian_Missile3" Parent="FightSkill_Zhen_ZhuXian_MissileBase">
+		<FixedDamage>1</FixedDamage>
+		<Value>20000000</Value>
+		<Missile>
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Shake>2</Shake>
+			<BombRadius>12</BombRadius>
+			<HitTime>3.0</HitTime>
+		</Missile>
+	</Skill>
+</List></FightSkills>

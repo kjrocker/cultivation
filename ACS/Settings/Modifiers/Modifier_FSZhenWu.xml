@@ -1,0 +1,991 @@
+<ModifierDefs><List>
+	<!-- 序号必须依次往后排 除此之外不能使用FSZhenWu开头 -->
+	<Modifier Name="NI_FSZhenWu" Type="Normal">
+		<DisplayName>逆-镇物通灵</DisplayName>
+		<Desc>房内风水镇物犯冲，角色受其影响，能力获得削弱。</Desc>
+		<!--<ClassName>Modifier_Zhenwu</ClassName>	-->	
+		<MaxStack>99</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	
+	<Modifier Name="SHUN_FSZhenWu" Type="Normal">
+		<DisplayName>顺-镇物通灵</DisplayName>
+		<Desc>房内风水镇物生效，角色受其影响，能力获得增强。</Desc>
+		<!--<ClassName>Modifier_Zhenwu</ClassName>	-->	
+		<MaxStack>99</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_1" Type="New">
+		<DisplayName>全局工作速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>		
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_2" Type="New">
+		<DisplayName>治疗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DrugProductSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_3" Type="New">
+		<DisplayName>治疗效果加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="TreatmentExpectQuality" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_4" Type="New">
+		<DisplayName>烹饪速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="CookingSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_5" Type="New">
+		<DisplayName>屠宰速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ButcherSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_6" Type="New">
+		<DisplayName>屠宰产量加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ButcherYieldEfficiency" AddP="0.05"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="FSZhenWu_7" Type="New">
+		<DisplayName>石料加工速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="StoneWorkSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_8" Type="New">
+		<DisplayName>建筑速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ConstructionSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_9" Type="New">
+		<DisplayName>种植速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PlantWorkSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_10" Type="New">
+		<DisplayName>收获速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PlantHarvestSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="FSZhenWu_11" Type="New">
+		<DisplayName>收获产量加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PlantHarvestYieldEfficiency" AddP="0.05"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_12" Type="New">
+		<DisplayName>采掘速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MiningSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_13" Type="New">
+		<DisplayName>采掘产量加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MiningYieldEfficiency" AddP="0.05"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_14" Type="New">
+		<DisplayName>制作品质加值加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MadeQualityAddValue" AddV="0.025"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_15" Type="New">
+		<DisplayName>锻造速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="SmithingSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_16" Type="New">
+		<DisplayName>手工速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="HandworkSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="FSZhenWu_17" Type="New">
+		<DisplayName>缝纫速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="TailoringSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_18" Type="New">
+		<DisplayName>割除速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="CuttingSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_19" Type="New">
+		<DisplayName>救灾速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DisasterFightingSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_20" Type="New">
+		<DisplayName>清洁速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="CleanSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="FSZhenWu_21" Type="New">
+		<DisplayName>心情基础值加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_22" Type="New">
+		<DisplayName>移动速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MoveSpeed" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_23" Type="New">
+		<DisplayName>最低极限温度加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ToleranceTMin" AddV="5"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_24" Type="New">
+		<DisplayName>最高极限温度加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="ToleranceTMax" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_25" Type="New">
+		<DisplayName>自然恢复力加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="RecoveryPower" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_26" Type="New">
+		<DisplayName>疼痛极限加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PainTolerance" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="FSZhenWu_27" Type="New">
+		<DisplayName>学习速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_28" Type="New">
+		<DisplayName>噩梦发生几率加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NightmareHappenPercent" AddV="0.02"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_29" Type="New">
+		<DisplayName>美梦发生几率加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NiceDreamHappenPercent" AddV="0.02"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_30" Type="New">
+		<DisplayName>精力消耗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FatigueConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="FSZhenWu_31" Type="New">
+		<DisplayName>精力补充加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FatigueRecoveryConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_32" Type="New">
+		<DisplayName>食物消耗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_33" Type="New">
+		<DisplayName>食物消耗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_34" Type="New">
+		<DisplayName>食物补充加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NutritionRecoveryConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_35" Type="New">
+		<DisplayName>饮水消耗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WaterConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_36" Type="New">
+		<DisplayName>饮水补充加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="WaterRecoveryConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="FSZhenWu_37" Type="New">
+		<DisplayName>娱乐消耗速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="HappyConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_38" Type="New">
+		<DisplayName>娱乐补充加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="HappyRecoveryConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_39" Type="New">
+		<DisplayName>精元炼化速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PracticeFoodConsumeConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_40" Type="New">
+		<DisplayName></DisplayName>
+		<Desc>精元补充加成</Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PracticeFoodRecoveryConstant" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="FSZhenWu_41" Type="New">
+		<DisplayName>潜力加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_42" Type="New">
+		<DisplayName>修炼速度加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.15"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_43" Type="New">
+		<DisplayName>心境加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="5"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_44" Type="New">
+		<DisplayName>领悟发生几率加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="InspirationCoefficient" AddP="0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_45" Type="New">
+		<DisplayName>法宝炼制速度加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_46" Type="New">
+		<DisplayName>法宝炼制成功率加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="FSZhenWu_47" Type="New">
+		<DisplayName>法宝炼制品阶加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_48" Type="New">
+		<DisplayName>法宝炼制品质加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_QualityAddV" AddV="0.025"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_49" Type="New">
+		<DisplayName>神器炼成几率加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_TwelveRateChance" AddV="0.02"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_50" Type="New">
+		<DisplayName>丹药炼制速度加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SpeedAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_51" Type="New">
+		<DisplayName>丹药炼制成功率加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_52" Type="New">
+		<DisplayName>丹药炼制产量加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_YieldAddP" AddV="0.075"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_53" Type="New">
+		<DisplayName>瓶颈突破概率加成</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PracticeRateAddPFromDan" AddP="0.1"/>
+		</Properties>
+	</Modifier>  
+	
+	<Modifier Name="FSZhenWu_54" Type="New">
+		<DisplayName>道行加值</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_55" Type="New">
+		<DisplayName>战斗命中</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_BaseHitChance" AddP="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_56" Type="New">
+		<DisplayName>战斗闪避</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_57" Type="New">
+		<DisplayName>神识</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_58" Type="New">
+		<DisplayName>根骨</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="FSZhenWu_59" Type="New">
+		<DisplayName>魅力</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_60" Type="New">
+		<DisplayName>悟性</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+	</Modifier> 
+	<Modifier Name="FSZhenWu_61" Type="New">
+		<DisplayName>机缘</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,1</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="FSZhenWu_62" Type="New">
+		<DisplayName>五维</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+	</Modifier> 
+	
+	
+	<Modifier Name="SP_FSZhenWu_1a" Type="New">
+		<DisplayName>道德印</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="-25"/>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="SP_FSZhenWu_1b" Type="New">
+		<DisplayName>元始印</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="-25"/>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="SP_FSZhenWu_1c" Type="New">
+		<DisplayName>灵宝印</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="-25"/>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_2" Type="New">
+		<DisplayName>天工塔</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GlobalEfficiency" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_3" Type="New">
+		<DisplayName>万灵塔</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="999"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_4" Type="New">
+		<DisplayName>汇阴瓶</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-25"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_5" Type="New">
+		<DisplayName>十州鼎</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_6" Type="New">
+		<DisplayName>无字灵碑</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.3"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_7" Type="New">
+		<DisplayName>辟邪狮子</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FatigueRecoveryConstant" AddP="0.5"/>
+			<li Name="BaseEmotionAddV" AddV="20"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_8" Type="New">
+		<DisplayName>不周元石</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_9" Type="New">
+		<DisplayName>三才阴阳榜</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="45"/>
+			<li Name="MindStateBaseValue" AddV="-15"/>
+			<li Name="PracticeFoodConsumeConstant" AddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_10" Type="New">
+		<DisplayName>群鲜录</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="CookingSpeed" AddP="0.8"/>
+			<li Name="CookingSuccessChance" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_11" Type="New">
+		<DisplayName>仙机谱</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-0.5"/>
+			<li Name="WaterConsumeConstant" AddP="-0.5"/>
+			<li Name="FatigueConsumeConstant" AddP="-0.5"/>
+			<li Name="HappyConsumeConstant" AddP="-0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_12" Type="New">
+		<DisplayName>锁阴符</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AgeCostSpeed" AddP="-0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_13" Type="New">
+		<DisplayName>灵宝剑</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.25"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.25"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.25"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.25"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="0.03"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_14" Type="New">
+		<DisplayName>兜率葫芦</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_SpeedAddV" AddV="0.25"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="0.25"/>
+			<li Name="DanMake_YieldAddP" AddV="0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_15" Type="New">
+		<DisplayName>赤龙之根</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,2,0,0</BaseFive>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="SP_FSZhenWu_16" Type="New">
+		<DisplayName>慧光</DisplayName>
+		<Desc></Desc>
+		<ClassName>Modifier_Zhenwu</ClassName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Hair>-1</Hair>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.15"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="0.15"/>
+			<li Name="MindStateBaseValue" AddV="15"/>
+			<li Name="GodCity_MaxResident" AddV="100000"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

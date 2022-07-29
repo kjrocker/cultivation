@@ -1,0 +1,71 @@
+<Defs><List>
+	<Def Name="DisaterBase">
+		<Base>0</Base>
+		<IntervalDay>10</IntervalDay> <!-- k是数量，外部传入 -->
+		<Focus>
+			<IntervalDay>5</IntervalDay>
+			<CostScale>2</CostScale>
+		</Focus>
+		<DEffect>
+			<DisasterAid>20</DisasterAid>
+		</DEffect>
+	</Def>
+	
+	<Def Name="Diaster_Drought" Parent="DisaterBase">
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wheat" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Drought" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		<DisplayName>赈灾</DisplayName>
+		<Desc>发生旱灾，需要食物支援百姓，以弥补收成不足。</Desc>
+	</Def>
+	<Def Name="Diaster_Flood" Parent="DisaterBase">
+		<Base>0</Base>
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_BrownRock" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Flood" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		<DisplayName>赈灾</DisplayName>
+		<Desc>发生洪水，需要石料支援百姓，以建设防洪。</Desc>
+	</Def>
+	<Def Name="Diaster_Siberia" Parent="DisaterBase">
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wood" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Siberia" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		<DisplayName>赈灾</DisplayName>
+		<Desc>发生寒潮，需要原木支援百姓，以供取暖。</Desc>
+	</Def>
+	<Def Name="Diaster_EarthQuake" Parent="DisaterBase">
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_BrownRock" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_EarthQuake" WaitSec="120" />
+			</Stories>
+		</LevelStories>
+		<DisplayName>赈灾</DisplayName>
+		<Desc>发生地震，需要石料支援百姓，以重建家园。</Desc>
+	</Def>
+</List></Defs>

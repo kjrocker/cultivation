@@ -1,0 +1,100 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Cotton" Parent="MaterialBase">
+	
+	
+	<ThingName>棉花</ThingName>
+	<TexPath>res\Sprs\object\object_SomeCotton</TexPath>
+	<Desc>一筐棉花，是纺织布匹的主要材料。除了可以通过种植棉花获得外，还可以通过历练前往小凉山收集。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>0</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Rate>1</Rate>	
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>60</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="PlantProduct">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>丝,绳,索,绫,线</FabaoSuffix>
+		<PhysicalLables>
+			<li>Soft2</li>
+			<li>Light2</li>
+			<li>LowDensity2</li>
+		</PhysicalLables>
+		
+		 <FuelMultiplier>0.6</FuelMultiplier>
+		 <BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			<!--<NamePrefix>棉制</NamePrefix>-->
+			
+			<SharpDamageMultiplier>0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0</BluntDamageMultiplier>
+			<LingDamageMultiplier>0</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>5</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<BurningPointWhenBeMain>60</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.8</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+			
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

@@ -1,0 +1,328 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	<Story Name="System_FightMap_RedWall">
+		<DisplayName>观摩</DisplayName>
+		<Desc>[NAME]尝试了解该建筑的建造方法。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>观摩</Display>
+				<OKResult>
+				<![CDATA[	
+				local storybindthingthingname = story:GetBindThing().def.ThingName
+				if world:IsBuildingUnlocked(story:GetBindThing().def.Name) == false then
+					me:AddMsg(XT("[NAME]仔细观摩了此建筑的模样。"));me:AddMsg(string.format(XT("解锁：武当红墙。")));
+					world:UnlockBuilding("RedWallDownLeft");   
+					world:UnlockBuilding("RedWallUpLeft");     
+					world:UnlockBuilding("RedWallMidUp");      
+					world:UnlockBuilding("RedWallMidRight");   
+					world:UnlockBuilding("RedWallVertical");     
+					world:UnlockBuilding("RedWallVerticalHalf"); 
+					world:UnlockBuilding("RedWallHorizontal"); 
+					world:UnlockBuilding("RedWallDownLeftTiny");
+					world:UnlockBuilding("RedWallUpLeftTiny");
+					world:UnlockBuilding("RedWallDownLeftS");   
+					world:UnlockBuilding("RedWallUpLeftS");     
+					world:UnlockBuilding("RedWallMidUpS");      
+					world:UnlockBuilding("RedWallMidRightS");   
+					world:UnlockBuilding("RedWallVerticalS");     
+					world:UnlockBuilding("RedWallVerticalHalfS"); 
+					world:UnlockBuilding("RedWallHorizontalS"); 
+					world:UnlockBuilding("RedWallDownLeftTinyS");
+					world:UnlockBuilding("RedWallUpLeftTinyS");
+				else                                              
+					me:AddMsg(XT("我们已经知晓了此物如何建造。"));
+				end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="System_FightMap_DragonIncense">
+		<DisplayName>观摩</DisplayName>
+		<Desc>[NAME]尝试了解该建筑的建造方法。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>观摩</Display>
+				<OKResult>
+				<![CDATA[	
+				local storybindthingthingname = story:GetBindThing().def.ThingName
+				if world:IsBuildingUnlocked(story:GetBindThing().def.Name) == false then
+					me:AddMsg(XT("[NAME]仔细观摩了此建筑的模样。"));me:AddMsg(string.format(XT("解锁：%s"), tostring(storybindthingthingname)));
+					world:UnlockBuilding("DragonIncense");
+					world:UnlockBuilding("DragonIncense2");
+				else
+					me:AddMsg(XT("我们已经知晓了此物如何建造。"));
+				end
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="System_FightMap_DragonIncense">
+		<DisplayName>许愿</DisplayName>
+		<Desc>[NAME]尝试向龙头香许愿。</Desc>		
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>许愿心境澄澈</Display>
+				<OKResult>
+				<![CDATA[
+				local tMap = WorldLua:GetFightMapHelper();
+				if World.YearDayCount == 0 and tMap:GetFlag(1) ~= world.DayCount then
+					me:AddMsg(XT("[NAME]心灵虔诚地拜了拜，感受到了祝福。"));
+					me:AddModifier("Modifier_LongTou1");
+					tMap:SetFlag(1, world.DayCount);
+				else
+					me:AddMsg(XT("一年一度的龙头香祭拜已经结束，请明年首日再来"));
+				end
+				]]></OKResult>
+			</li>
+			<li>
+				<Display>许愿更上一层</Display>
+				<OKResult>
+				<![CDATA[
+				local tMap = WorldLua:GetFightMapHelper();
+				if World.YearDayCount == 0 and tMap:GetFlag(1) ~= world.DayCount then
+					me:AddMsg(XT("[NAME]心灵虔诚地拜了拜，感受到了祝福。"));
+					me:AddModifier("Modifier_LongTou2");
+					tMap:SetFlag(1, world.DayCount);
+				else
+					me:AddMsg(XT("一年一度的龙头香祭拜已经结束，请明年首日再来"));
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>许愿逢凶化吉</Display>
+				<OKResult>
+				<![CDATA[	
+				local tMap = WorldLua:GetFightMapHelper();
+				if World.YearDayCount == 0 and tMap:GetFlag(1) ~= world.DayCount then
+					me:AddMsg(XT("[NAME]心灵虔诚地拜了拜，感受到了祝福。"));
+					me:AddModifier("Modifier_LongTou3");
+					tMap:SetFlag(1, world.DayCount);
+				else
+					me:AddMsg(XT("一年一度的龙头香祭拜已经结束，请明年首日再来"));
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>许愿参透大道</Display>
+				<OKResult>
+				<![CDATA[	
+				local tMap = WorldLua:GetFightMapHelper();
+				if World.YearDayCount == 0 and tMap:GetFlag(1) ~= world.DayCount then
+					me:AddMsg(XT("[NAME]心灵虔诚地拜了拜，感受到了祝福。"));
+					me:AddTreeExp(100000);
+					tMap:SetFlag(1, world.DayCount);
+				else
+					me:AddMsg(XT("一年一度的龙头香祭拜已经结束，请明年首日再来"));
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>我全都要</Display>
+				<OKResult>
+				<![CDATA[
+				local tMap = WorldLua:GetFightMapHelper();
+				if World.YearDayCount == 0 and tMap:GetFlag(1) ~= world.DayCount then
+					me:AddMsg(XT("[NAME]贪婪地拜了拜，感受到了不祥的气息。"));
+					me:AddTreeExp(100000);
+					me:AddModifier("Modifier_LongTou5");
+					tMap:SetFlag(1, world.DayCount);
+					me:AddMsg(XT("[NAME]的五维大幅降低了。"));
+				else
+					me:AddMsg(XT("一年一度的龙头香祭拜已经结束，请明年首日再来"));
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是算了。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Building_TaiZiDian" Parent="BaseFillingStory">
+		<DisplayName>接触</DisplayName>
+		<Desc>[NAME]在桌子旁坐下，尝试使用神识与之交流。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>接触</Display>
+				<OKResult>
+				<![CDATA[
+					local tMap = WorldLua:GetFightMapHelper();
+					if tMap:GetFlag(1) == 0 then
+						me:AddMsg(XT("[NAME]脑海中出现了真武大帝年幼时参悟大道的景象。恍惚之间，身边多了一张神符，应该是真武神念所化。"));
+						local item = CS.XiaWorld.ItemRandomMachine.RandomFu("Spell_DeepPracticeSpeedSpecialCoefficient2", 1)
+						Map:DropItem(item, 14983)
+						tMap:SetFlag(1, 1);
+					else
+						me:AddMsg(XT("其中已没有了回应。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是算了。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Building_ZiXiaoJianZhen" Parent="BaseFillingStory">
+		<DisplayName>接触</DisplayName>
+		<Desc>[NAME]在剑阵旁坐下，尝试使用神识与之交流。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>接触</Display>
+				<OKResult>
+				<![CDATA[
+					local tMap = WorldLua:GetFightMapHelper();
+					if tMap:GetFlag(1) == 0 then
+						me:AddMsg(XT("[NAME]脑海中出现了真武大帝练习御剑的景象。恍惚之间，身边多了一柄飞剑，应该是真武神念所化。"));
+						me:DropFabao(0, "Item_WeaponSword", "Item_CopperBlock1", XT("玄天"), XT("剑气锐利无比，神魔都无法抵挡。"), 12, 12);
+						tMap:SetFlag(1, 1);
+					else
+						me:AddMsg(XT("其中已没有了回应。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是算了。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Building_ZiXiaoDanLu" Parent="BaseFillingStory">
+		<DisplayName>接触</DisplayName>
+		<Desc>[NAME]在丹炉旁坐下，尝试使用神识与之交流。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>接触</Display>
+				<OKResult>
+				<![CDATA[
+					local tMap = WorldLua:GetFightMapHelper();
+					if tMap:GetFlag(2) == 0 then
+						me:AddMsg(XT("[NAME]脑海中出现了真武大帝炼丹的景象。恍惚之间，身边多了一颗丹药，应该是真武神念所化。"));
+						me:DropAwardItem("Item_Dan_ExtremeLofty", 1);
+						tMap:SetFlag(2, 1);
+					else
+						me:AddMsg(XT("其中已没有了回应。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是算了。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Ls_CallXuanWu" Parent="BaseFillingStory">
+		<DisplayName>抚摸</DisplayName>
+		<Desc>这灵玉中闪烁着两种光泽，颇有玄武的气息。</Desc>
+		<Selections>
+			<li>
+				<Display>抚摸</Display>
+				<OKResult><![CDATA[	
+					local npc = ThingMgr:AddNpc("LsXuanWu", Map:GetRandomWalkableInMap(), Map, g_emFightCamp.Friend)
+					me:AddMsg(XT("灵玉吸收了一些灵气，忽然化作一道青光飞向附近，一只玄武身形显露了出来。"));
+					MessageMgr:AddMessage(32004, {npc})
+					story:RemoveBindItem();
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Building_ZiXiaoShiBei" Parent="BaseFillingStory">
+		<DisplayName>触碰</DisplayName>
+		<Desc>[NAME]用手触碰碑上的文字。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>触碰</Display>
+				<OKResult>
+				<![CDATA[
+					local tMap = WorldLua:GetFightMapHelper();
+					local bdThingID = story:GetBindThing().Key;
+					local k, last = tMap:CheckJumpMap("MAX", bdThingID);
+					if k == true then
+						if last ~= nil then
+							if last == "First" then
+								if (tMap:GetFlag(3) ~= 1) then
+									tMap:SetFlag(3, 1);
+									me:AddMsg(XT("冥冥之中有一人对[NAME]说到：原来你就是有缘人！我的遗骨赐予你，希望你好好利用。"));
+									me:DropAwardItem("Item_XianBone", 1);
+								else
+									me:AddMsg(XT("其中没有任何回应。"));
+								end
+							elseif last == "Second" then
+								if (tMap:GetFlag(4) ~= 1) then
+									tMap:SetFlag(4, 1);
+									me:AddMsg(XT("冥冥之中有一人对[NAME]说到：故有宜果，其味如蜜。晾之檐上，以待佳期。此物味道甚好，分你一些。"));
+									me:DropAwardItem("Item_PreservedFruit", 100);
+								else
+									me:AddMsg(XT("其中没有任何回应。"));
+								end
+							elseif last == "Third" then
+								if (tMap:GetFlag(5) ~= 1) then
+									tMap:SetFlag(5, 1);
+									me:AddMsg(XT("冥冥之中有一人对[NAME]说到：以静制动，以柔克刚。你看起来有点悟性，这枚天道神丹助你修行。"));
+									me:DropAwardItem("Item_Dan_TreeEXP", 1);
+								else
+									me:AddMsg(XT("其中没有任何回应。"));
+								end
+							end
+							tMap:ClearJump("MAX");
+							tMap:StartBuild("MAX");
+							if tMap:GetFlag(3) == 1 and tMap:GetFlag(4) == 1 and tMap:GetFlag(5) == 1 then
+								WorldLua:UnLockAchievement(3163)
+							end
+						else
+							me:AddMsg(XT("冥冥之中有一丝回应，似乎想让[NAME]继续。"));
+						end
+					else
+						me:AddMsg(XT("其中没有任何回应。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+				<OKResult>
+				<![CDATA[	
+					me:AddMsg(XT("[NAME]想了想，还是算了。"));
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

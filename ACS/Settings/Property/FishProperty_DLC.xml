@@ -1,0 +1,19 @@
+<Properties><List>	
+	<!--基础命中-->
+	<Property Name="FishTimes">
+		<DisplayName>垂钓数量</DisplayName>
+		<DisplayValue>{0}条</DisplayValue>
+		<Desc>修行者钓上鱼的数量。</Desc>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	</Property>	
+	
+	<Property Name="HeaviestFish">
+		<DisplayName>最重鱼重量</DisplayName>
+		<DisplayValue>{0:f1}斤</DisplayValue>
+		<Desc>修行者所钓鱼最重的重量。</Desc>
+		<ShowInUI>1</ShowInUI>	
+		<GenerateRandom>0</GenerateRandom>	
+	</Property>
+
+</List></Properties>

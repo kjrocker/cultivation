@@ -1,0 +1,259 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="IngredientBase" Parent="MaterialBase">
+	
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+		<Tag Name="Tame" Level="20"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	
+	<MaxStack>500</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+	<ElementKind>Tu</ElementKind>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>1</Rate>
+	<Beauty>1</Beauty>
+	
+	<Flammability>
+		<Flammability>0.3</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Ingredient">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		 
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>
+				<Stuff name = "Woody"/>
+				<Stuff name = "Stony"/>-->
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.3</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Flour" Parent="IngredientBase">
+	<TexPath>res\Sprs\object\object_flour</TexPath>
+	<ThingName>面粉</ThingName>
+	<Desc>一袋面粉，烹饪材料。</Desc>
+	<MaxStack>500</MaxStack>
+	<Rate>1</Rate>
+	<Item>
+		<FabaoSuffix>粉,散,袋</FabaoSuffix>
+		<PhysicalLables>
+			<li>Gravel</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>250</WorkToMake>
+			<CostItems>
+				<Item name = "Item_Wheat" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_Pear" Parent="IngredientBase">
+	<TexPath>res\Sprs\object\object_pear</TexPath>
+	<ThingName>梨</ThingName>
+	<Desc>一筐梨。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+	</Tags>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+		<FabaoSuffix>果,珠,丸,球,罩</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>2</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>
+			<FunAddion>5</FunAddion>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+	</Element>
+	</ThingDef>
+	
+
+	<ThingDef Type="Item" Name="Item_Wheat" Parent="IngredientBase">
+	<TexPath>res\Sprs\object\object_wheat</TexPath>	
+	<ThingName>小麦</ThingName>
+	<Desc>一捆小麦。</Desc>
+	
+	<Item>
+		<FabaoSuffix>索,丝</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>25</Nutrition>
+		</Food>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Mushroom" Parent="IngredientBase">
+	<TexPath>res\Sprs\object\object_fungus</TexPath>	
+	<ThingName>香菇</ThingName>
+	<Desc>一篮香菇。</Desc>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+		<FabaoSuffix>篮,菇</FabaoSuffix>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>25</Nutrition>
+		</Food>
+	</Item>
+	
+	<Element>
+		<Kind>Mu</Kind>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Lotusroot" Parent="IngredientBase">
+	<TexPath>res\Sprs\object\object_LotusRoot</TexPath>	
+	<ThingName>莲藕</ThingName>
+	<Desc>一截莲藕。</Desc>
+	<Frags>		
+		<li Frag="Lake" />
+	</Frags>
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+	</Tags>
+	<MaxStack>100</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+		<FabaoSuffix>藕</FabaoSuffix>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>55</Nutrition>
+		</Food>
+	</Item>
+	
+	<Element>
+		<Kind>Shui</Kind>
+	</Element>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

@@ -1,0 +1,39 @@
+﻿<Texts Type="Story">
+	<List>
+		<Text Name="Story_LingZhi_YunYangBegin">
+			<DisplayName>Nurture</DisplayName>
+			<Desc>As [NAME] was nurtured by [HENAME] something special happened.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_YunYangEnd">
+			<DisplayName>Finish Nurturing</DisplayName>
+			<Desc>As [NAME] finished nurturing [HENAME] something special happened.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_Chance">
+			<DisplayName>Fortuitous Blessing</DisplayName>
+			<Desc>There was a slight change in intelligence while [NAME] was growing.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_Grow">
+			<DisplayName>Spiritual Plant Maturing</DisplayName>
+			<Desc>As the Spirit Root finished maturing, the Qi throughout heaven and earth suddenly changed, something special happened.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_Ripe">
+			<DisplayName>Spiritual Plant Ripening</DisplayName>
+			<Desc>There was some sort of sudden reaction on heaven and earth as the Spirit Root ripened, something special happened.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_LingSha">
+			<DisplayName>Extremity</DisplayName>
+			<Desc>[NAME]'s evil spirit reached an extreme stage and then something happened.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+		<Text Name="Story_LingZhi_Attack">
+			<DisplayName>Invasion of Enemies</DisplayName>
+			<Desc>The Spirit Root was ripe, something big must be about to happen, get ready.</Desc>
+			<Selections.0.Display>Inspect</Selections.0.Display>
+		</Text>
+	</List>
+</Texts>

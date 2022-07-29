@@ -1,0 +1,78 @@
+<ThingDefs><List>
+	<ThingDef Type="Npc" Name="NpcBase">
+		<MaxStack>1</MaxStack>
+		<Beauty>0</Beauty>
+		<MaxHitPoints>100</MaxHitPoints>
+		<UseHitPoints>1</UseHitPoints>
+		<Ling>
+			<LingThroughCost>0.01</LingThroughCost>
+			<LingNum>1</LingNum>
+			<LvUpNeedLing>1800</LvUpNeedLing>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+		</Ling>
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="BodyPart"  Parent="NpcBase">
+		<SelectAble>1</SelectAble>
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="Npc_Fei"  Parent="NpcBase">
+		<BindWeather>Fei_HeavyRain</BindWeather>
+		<Light>
+			<Value>20</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>8</Radius>
+			<Color>A600BFFF</Color>
+		</Light>
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="Npc_Lushu"  Parent="NpcBase">
+		<BindWeather>LuShu_SunnyDay</BindWeather>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>8</Radius>
+			<Color>FBB600FF</Color>
+		</Light>
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="Npc_Puppet"  Parent="NpcBase">
+		<BindModifier>SysNpcPuppet</BindModifier>
+		<Desc>一个傀儡</Desc>
+	</ThingDef>
+
+	<ThingDef Type="Npc" Name="Npc_NY_Zhuyao"  Parent="NpcBase">
+		<BindWeather>SpringFestival</BindWeather>
+		<BindModifier>SysNewYear</BindModifier>
+		<SelectAble>0</SelectAble>
+		<Beauty>10</Beauty>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>8</Radius>
+			<Color>FBB600FF</Color>
+		</Light>
+	</ThingDef>		
+	
+	<ThingDef Type="Npc" Name="Npc_NY_Jingguai"  Parent="NpcBase">
+		<BindModifier>SysNewYear2</BindModifier>
+		<SelectAble>0</SelectAble>
+		<Beauty>5</Beauty>	
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="Npc_NY_Jingguai2"  Parent="NpcBase">
+		<BindModifier>Modifier_SpringBox</BindModifier>
+		<SelectAble>0</SelectAble>
+		<Beauty>5</Beauty>	
+	</ThingDef>	
+	
+	<ThingDef Type="Npc" Name="Npc_WuDang_WuDiYa"  Parent="NpcBase">
+		<BindModifier>SysWuDiYa</BindModifier>
+		<SelectAble>1</SelectAble>
+		<Beauty>5</Beauty>	
+	</ThingDef>	
+</List></ThingDefs>

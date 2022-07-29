@@ -1,0 +1,397 @@
+<ModifierDefs><List>	
+	<Modifier Name="MakeMapYaoShou" Type="Normal">
+		<DisplayName>初始驻扎妖兽</DisplayName>
+		<Desc>初始驻扎妖兽-进攻用</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<LuaClassName>modifier_makemap_yaoshou</LuaClassName>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv_Upgrade" Type="Normal">
+		<ClassName>Modifier_YaoShouUpgrade</ClassName>
+	</Modifier>
+
+	<Modifier Name="Modifier_Yaoshou_Glv1" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>2400</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="0.3"/>
+			<li Name="YaoShou_BaseAttack" AddP="2"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.2"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv2" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>3600</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="1"/>
+			<li Name="YaoShou_BaseAttack" AddP="5"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv3" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>6000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="2"/>
+			<li Name="YaoShou_BaseAttack" AddP="10"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv4" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>12000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="5"/>
+			<li Name="YaoShou_BaseAttack" AddP="17"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1.7"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1.7"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1.7"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv5" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>18000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="11"/>
+			<li Name="YaoShou_BaseAttack" AddP="27"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2.7"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="2.7"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="2.7"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv6" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>24000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="21"/>
+			<li Name="YaoShou_BaseAttack" AddP="40"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="4"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv7" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>36000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="23"/>
+			<li Name="YaoShou_BaseAttack" AddP="55"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="5.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="5.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv8" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>48000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="27"/>
+			<li Name="YaoShou_BaseAttack" AddP="70"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="7.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="7.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="7.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv9" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>54000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="34"/>
+			<li Name="YaoShou_BaseAttack" AddP="100"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="10.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="10.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="10.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv10" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>60000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="52"/>
+			<li Name="YaoShou_BaseAttack" AddP="160"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="16.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="16.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="16.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv11" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>72000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="77"/>
+			<li Name="YaoShou_BaseAttack" AddP="240"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="24.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="24.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="24.5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Yaoshou_Glv12" Type="Normal" Parent="Modifier_Yaoshou_Glv_Upgrade">
+		<MaxStack>1</MaxStack>
+		<Duration>84000</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="YaoShou_BaseLing" AddP="117"/>
+			<li Name="YaoShou_BaseAttack" AddP="350"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="36.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="36.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="36.5"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.5"/>
+			
+			<li Name="YaoShou_BaseFabaoNum" AddP="1"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Modifier_Yaoshou_FixGlv1" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv2" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv3" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv4" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="3"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv5" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="3"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv6" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="3"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv7" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="4"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv8" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="4"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv9" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<DisplayName>9</DisplayName>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="4"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv10" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="2"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="2"/>
+			
+			<li Name="YaoShou_BaseFabaoNum" AddP="0.5"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv11" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="2"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="3"/>
+			
+			<li Name="YaoShou_BaseFabaoNum" AddP="1"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+	<Modifier Name="Modifier_Yaoshou_FixGlv12" Type="Normal">
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>  
+			<li Name="LingAbsorbSpeed" AddP="2"/>
+			
+			<li Name="NutritionWaterAutoRecover" AddV="0.2"/>
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="5"/>
+			
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="2"/>
+			
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="4"/>
+			
+			<li Name="YaoShou_BaseFabaoNum" AddP="1.5"/>
+			
+			<li Name="ToleranceTMin" AddV="-60"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+		</Properties>
+	</Modifier>  
+</List></ModifierDefs>

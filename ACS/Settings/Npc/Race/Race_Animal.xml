@@ -1,0 +1,1194 @@
+<RaceDefs><List>
+
+<RaceDef Name="Rabbit">
+	<DisplayName>兔子</DisplayName>
+	<Desc>普通的动物：兔子</Desc>
+	
+	<Mod>Mod/Npc/Rabbit/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Revive>1</Revive>
+	<TexPath>tex://res/Sprs/tujian/TJ_tuzi01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_tuzi01</Rolepaint>
+	
+	<TalkBefore>咕咕，</TalkBefore>
+	<TalkAfter>，咕呜!</TalkAfter>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Rabbit_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0.2</StrikeBack>
+	<WinterHide>1</WinterHide>
+	<YGRace>YGRabbit</YGRace>
+	<JYRace>JYRabbit</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Rabbit/Base</Mod>
+		<RideBip>Bip001 Spine</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.03</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<!-- 
+	<Products>
+		<li>
+			<ProductTime>17</ProductTime>			
+			<ProductItems>
+				<li>
+					<ThingDef>Item_WolfLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	-->
+	<RacePregnant>
+		<PregnantTime>7200</PregnantTime>
+		<PregnantInterval>9600</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>2</MinBirthCount>
+		<MaxBirthCount>4</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_RabbitLeather</ThingDef>
+			<Count>24</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_RabbitMeat</ThingDef>
+			<Count>14</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Chicken">
+	<DisplayName>鸡</DisplayName>
+	<Desc>普通的动物：鸡</Desc>
+	
+	<Mod>Mod/Npc/Chicken/Base</Mod>
+	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<TexPath>tex://res/Sprs/tujian/TJ_ji01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_ji01</Rolepaint>
+	
+	<TalkBefore>咯咯哒，</TalkBefore>
+	<TalkAfter>，咯咯!</TalkAfter>
+	<NormalAttack>Chicken_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<FreeLength>4</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0.2</StrikeBack>
+	<WinterHide>1</WinterHide>
+	<YGRace>YGChicken</YGRace>
+	<JYRace>JYChicken</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Chicken/Base</Mod>
+		<RideBip>Bip001 Spine</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.04</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData> 
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<Products>
+		<li>
+			<ProductTime>600</ProductTime>	
+			<Sex>Female</Sex>		
+			<ProductItems>
+				<li>
+					<ThingDef>Item_ChickenEgg</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	<RacePregnant>
+		<PregnantTime>6000</PregnantTime>
+		<PregnantInterval>16800</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>3</MinBirthCount>
+		<MaxBirthCount>5</MaxBirthCount>
+		<PregnantItem>Item_ChickenEgg</PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_ChickenMeat</ThingDef>
+			<Count>24</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>2,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Wolf">
+	<DisplayName>狼</DisplayName>
+	
+	<Desc>普通的动物：狼</Desc>
+	<Mod>Mod/Npc/Wolf/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_lang01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lang01</Rolepaint>
+	
+	<TalkBefore>嗷呜，</TalkBefore>
+	<TalkAfter>，嗷呜嗷呜!</TalkAfter>
+	<Revive>1</Revive>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Wolf_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>1.8</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>4</WarningRange>
+	<YGRace>YGWolf</YGRace>
+	<JYRace>JYWolf</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Wolf/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.04</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<BreedingLikeTame>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	
+	<RacePregnant>
+		<PregnantTime>15000</PregnantTime>
+		<PregnantInterval>52200</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>2</MinBirthCount>
+		<MaxBirthCount>4</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_WolfLeather</ThingDef>
+			<Count>40</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_WolfMeat</ThingDef>
+			<Count>28</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="Snake">
+	<DisplayName>蛇</DisplayName>
+	
+	<Desc>普通的动物：蛇</Desc>
+	<Mod>Mod/Npc/Snake/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_she01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_she01</Rolepaint>
+	
+	<TalkBefore>嘶嘶，</TalkBefore>
+	<TalkAfter>，嘶嘶!</TalkAfter>
+	<Revive>1</Revive>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>Snake_NormalAttack</NormalAttack>
+	<Body>SnakeBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>45</GenerateMaxAge>
+	<AdultAge>40</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<WinterHide>1</WinterHide>
+	<YGRace>YGSnake</YGRace>
+	<JYRace>JYSnake</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Snake/Base</Mod>
+		<Scale>2</Scale>
+		<RideBip>Bone008</RideBip>
+		<OffsetX>0</OffsetX>
+		<OffsetY>0.075</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<BreedingLikeTame>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<Products>
+		<li>
+			<ProductTime>15000</ProductTime>	
+			<Sex>Female</Sex>				
+			<ProductItems>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>10</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>4</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>6</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>4</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_SnakeEgg</ThingDef>
+					<Count>6</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	<RacePregnant>
+		<PregnantTime>28000</PregnantTime>
+		<PregnantInterval>32000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>3</MinBirthCount>
+		<MaxBirthCount>5</MaxBirthCount>
+		<PregnantItem>Item_SnakeEgg</PregnantItem>
+	</RacePregnant>
+	
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_SnakeMeat</ThingDef>
+			<Count>60</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_SnakeGallbladder</ThingDef>
+			<Count>1</Count>
+			<Rate>0.5</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Male" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,4,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>3,4,1,2,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="30"	>4,4,1,3,3</li> 
+		<li Sex="Female" 	 AgeMin="31" 	AgeMax="50"	>6,4,1,5,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PoikilothermMaxAge_50"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+
+<RaceDef Name="Boar">
+	<DisplayName>野猪</DisplayName>
+	
+	<Desc>普通的动物：野猪</Desc>
+	<Mod>Mod/Npc/Boar/Base</Mod>
+	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<TexPath>tex://res/Sprs/tujian/TJ_yezhu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_yezhu01</Rolepaint>
+	
+	<TalkBefore>哼哼，</TalkBefore>
+	<TalkAfter>，哼!</TalkAfter>
+	<NormalAttack>Boar_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>1.8</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>6</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<YGRace>YGBoar</YGRace>
+	<JYRace>JYBoar</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Boar/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.15</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<RacePregnant>
+		<PregnantTime>22000</PregnantTime>
+		<PregnantInterval>40000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>2</MinBirthCount>
+		<MaxBirthCount>5</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_BoarLeather</ThingDef>
+			<Count>40</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_BoarMeat</ThingDef>
+			<Count>60</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="15"	>4,6,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="16" 	AgeMax="20"	>3,4,1,2,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,2,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="15"	>4,6,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="16" 	AgeMax="20"	>3,4,1,2,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Bear">
+	<DisplayName>熊</DisplayName>
+	
+	<Desc>普通的动物：熊</Desc>
+	<Mod>Mod/Npc/Bear/Base</Mod>
+	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_xiong01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_xiong01</Rolepaint>
+	
+	<TalkBefore>嚎嚎，</TalkBefore>
+	<TalkAfter>，嚎!</TalkAfter>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Bear_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>5.667</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>3</GenerateMinAge>
+	<GenerateMaxAge>35</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>4</WarningRange>
+	<YGRace>YGBear</YGRace>
+	<JYRace>JYBear</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Bear/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.3</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<RacePregnant>
+		<PregnantTime>45000</PregnantTime>
+		<PregnantInterval>30000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>3</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_BearLeather</ThingDef>
+			<Count>80</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_BearMeat</ThingDef>
+			<Count>148</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+		<ThingDef>Item_BearGallbladder</ThingDef>
+			<Count>1</Count>
+			<Rate>0.5</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="5" 	AgeMax="20"	>7,9,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="21" 	AgeMax="42"	>6,7,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>2,4,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="5" 	AgeMax="20"	>7,9,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="21" 	AgeMax="42"	>6,7,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Turtle">
+	<DisplayName>龟</DisplayName>
+	
+	<Desc>普通的动物：龟</Desc>
+	<Mod>Mod/Npc/Turtle/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Revive>1</Revive>
+	<TexPath>tex://res/Sprs/tujian/TJ_gui01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_gui01</Rolepaint>
+	
+	<TalkBefore>卡拉，</TalkBefore>
+	<TalkAfter>，卡拉!</TalkAfter>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>Turtle_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+<!--	<FreeLength>1.8</FreeLength>-->
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>3</GenerateMinAge>
+	<GenerateMaxAge>200</GenerateMaxAge>
+	<AdultAge>10</AdultAge>
+	<StrikeBack>0.3</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<YGRace>YGTurtle</YGRace>
+	<JYRace>JYTurtle</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Turtle/Base</Mod>
+		<RideBip>Bone013</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>0.09</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<Products>
+		<li>
+			<ProductTime>15000</ProductTime>	
+			<Sex>Female</Sex>				
+			<ProductItems>
+				<li>
+					<ThingDef>Item_TurtleEgg</ThingDef>
+					<Count>8</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_TurtleEgg</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_TurtleEgg</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_TurtleEgg</ThingDef>
+					<Count>3</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	<RacePregnant>
+		<PregnantTime>18000</PregnantTime>
+		<PregnantInterval>45000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>5</MinBirthCount>
+		<MaxBirthCount>14</MaxBirthCount>
+		<PregnantItem>Item_TurtleEgg</PregnantItem>
+	</RacePregnant>
+	
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_TurtleMeat</ThingDef>
+			<Count>26</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="10"	>2,2,1,2,6</li> 
+		<li Sex="Male" 	 AgeMin="11" 	AgeMax="80"	>2,4,1,3,6</li> 
+		<li Sex="Male" 	 AgeMin="81" 	AgeMax="200"	>2,3,1,7,6</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="10"	>2,2,1,2,6</li> 
+		<li Sex="Female" 	 AgeMin="11" 	AgeMax="80"	>2,4,1,3,6</li> 
+		<li Sex="Female" 	 AgeMin="81" 	AgeMax="200"	>2,3,1,7,6</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_200"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow2"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="Frog">
+	<DisplayName>青蛙</DisplayName>
+	
+	<Desc>普通的动物：青蛙</Desc>
+	<Mod>Mod/Npc/Frog/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Revive>1</Revive>
+	<TexPath>tex://res/Sprs/tujian/TJ_wa01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_wa01</Rolepaint>
+	
+	<TalkBefore>呱呱，</TalkBefore>
+	<TalkAfter>，呱!</TalkAfter>
+	<MaleName>雄</MaleName>
+	<FemaleName>雌</FemaleName>
+	<NormalAttack>Frog_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>2.833</FreeLength>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>1</GenerateMinAge>
+	<GenerateMaxAge>14</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<StrikeBack>0.5</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<YGRace>YGFrog</YGRace>
+	<JYRace>JYFrog</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Frog/Base</Mod>
+		<RideBip>Bip01 Spine</RideBip>
+		<Scale>4</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.005</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_FrogMeat</ThingDef>
+			<Count>12</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="3"	>1,1,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="4" 	AgeMax="9"	>1,1,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="15"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="3"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="4" 	AgeMax="9"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="15"	>1,1,1,1,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="Fei">
+	<DisplayName>蜚</DisplayName>
+	<Desc>普通的异兽：蜚</Desc>
+	<Mod>Mod/Npc/Fei/Base</Mod>
+	<Template>Npc_Fei</Template>
+	<RaceType>Animal</RaceType>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Fei_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>2.667</FreeLength>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>4</WarningRange>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_fei01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_fei01</Rolepaint>
+	<HorseData>
+		<Mod>Mod/Npc/Fei/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.1</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<Products>
+		<li>
+			<ProductTime>33600</ProductTime>			
+			<ProductItems>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>0.2</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	<RacePregnant>
+		<PregnantTime>67200</PregnantTime>
+		<PregnantInterval>134400</PregnantInterval>
+		<PregnantRate>0.005</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>1</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_SoulPearl</ThingDef>
+			<Count>1</Count>
+			<Rate>0.5</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_MonsterBlood</ThingDef>
+			<Count>11</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_FeiLeather</ThingDef>
+			<Count>94</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,2,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>5,6,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>4,9,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,2,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>5,63,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>4,9,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+<RaceDef Name="Lushu">
+	<DisplayName>鹿蜀</DisplayName>
+	<Desc>普通的异兽：鹿蜀</Desc>
+	<Mod>Mod/Npc/Lushu/Base</Mod>
+	<Template>Npc_Lushu</Template>
+	<RaceType>Animal</RaceType>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>LuShu_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeLength>2.733</FreeLength>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_lushu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_lushu01</Rolepaint>
+	<HorseData>
+		<Mod>Mod/Npc/Lushu/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>1</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.1</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<Products>
+		<li>
+			<ProductTime>33600</ProductTime>			
+			<ProductItems>
+				<li>
+					<ThingDef>Item_SoulPearl</ThingDef>
+					<Count>1</Count>
+					<Rate>0.2</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	<RacePregnant>
+		<PregnantTime>67200</PregnantTime>
+		<PregnantInterval>134400</PregnantInterval>
+		<PregnantRate>0.005</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>1</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_SoulPearl</ThingDef>
+			<Count>1</Count>
+			<Rate>0.5</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_MonsterBlood</ThingDef>
+			<Count>19</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_LuShuLeather</ThingDef>
+			<Count>72</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,6,6,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>5,7,4,3,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>8,8,4,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,6,6,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>5,7,4,3,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>8,8,4,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="Cat">
+	<DisplayName>猫</DisplayName>
+	
+	<Desc>普通的动物：猫</Desc>
+	<Mod>Mod/Npc/Cat/Base</Mod>	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_mao01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_mao01</Rolepaint>
+	<HorseData>
+		<Mod>Mod/Npc/Cat/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.04</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<TalkBefore>喵，</TalkBefore>
+	<TalkAfter>，喵!</TalkAfter>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Cat_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="1.733"/>
+		<li Name="Free2" Length="9.833"/>
+		<li Name="Free3" Length="4.867"/>
+	</FreeAnis>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>16</GenerateMaxAge>
+	<AdultAge>2</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>`
+	<YGRace>YGCat</YGRace>
+	<JYRace>JYCat</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<RacePregnant>
+		<PregnantTime>14400</PregnantTime>
+		<PregnantInterval>18000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>3</MinBirthCount>
+		<MaxBirthCount>6</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_CatMeat</ThingDef>
+			<Count>12</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,8,1,4</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="8"	>4,3,6,5,4</li> 
+		<li Sex="Male" 	 AgeMin="9" 	AgeMax="20"	>3,2,4,6,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,8,1,4</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="8"	>4,3,6,5,4</li> 
+		<li Sex="Female" 	 AgeMin="9" 	AgeMax="20"	>3,2,4,6,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="Cattle">
+	<DisplayName>牛</DisplayName>
+	<Desc>普通的动物：牛</Desc>
+	
+	<Mod>Mod/Npc/Cattle/Base</Mod>	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_niu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_niu01</Rolepaint>
+	
+	<TalkBefore>哞哞，</TalkBefore>
+	<TalkAfter>，哞哞!</TalkAfter>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Cattle_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="4.4"/>
+		<li Name="Free2" Length="6.333"/>
+	</FreeAnis>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>35</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<YGRace>YGCattle</YGRace>
+	<JYRace>JYCattle</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Cattle/Base</Mod>
+		<RideBip>Bip001 Spine2</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.175</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameVeg</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	<RacePregnant>
+		<PregnantTime>48000</PregnantTime>
+		<PregnantInterval>40000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>1</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_CattleLeather</ThingDef>
+			<Count>40</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_Beef</ThingDef>
+			<Count>120</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="4"	>1,4,1,1,1</li> 
+		<li Sex="Male" 	 AgeMin="5" 	AgeMax="25"	>4,7,1,3,1</li> 
+		<li Sex="Male" 	 AgeMin="25" 	AgeMax="35"	>3,6,1,3,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="4"	>1,4,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="5" 	AgeMax="25"	>4,7,1,3,1</li> 
+		<li Sex="Female" 	 AgeMin="25" 	AgeMax="35"	>3,6,1,3,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_45"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="Tiger">
+	<DisplayName>老虎</DisplayName>
+	
+	<Desc>普通的动物：老虎</Desc>
+	<Mod>Mod/Npc/Tiger/Base</Mod>	<Revive>1</Revive>
+	<RaceType>Animal</RaceType>
+	<TexPath>tex://res/Sprs/tujian/TJ_laohu01</TexPath>
+	<Rolepaint>res/Sprs/tujian/TJ_laohu01</Rolepaint>
+	
+	<TalkBefore>吼吼，</TalkBefore>
+	<TalkAfter>，吼!</TalkAfter>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>Tiger_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="4.467"/>
+		<li Name="Free2" Length="2.833"/>
+	</FreeAnis>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>25</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>1</WarningRange>
+	<YGRace>YGTiger</YGRace>
+	<JYRace>JYTiger</JYRace>
+	<IllustratedHandLabel>Animal</IllustratedHandLabel>
+	<HorseData>
+		<Mod>Mod/Npc/Tiger/Base</Mod>
+		<RideBip>Bip001 Spine1</RideBip>
+		<Scale>2</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.05</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>
+	<BreedingLikeTame>
+		<li>TameMeat</li>
+		<li>TameLing</li>
+	</BreedingLikeTame>
+	
+	<RacePregnant>
+		<PregnantTime>20000</PregnantTime>
+		<PregnantInterval>50000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>3</MaxBirthCount>
+		<PregnantItem></PregnantItem>
+	</RacePregnant>
+	
+	<SlaughterItems>
+		<li>
+			<ThingDef>Item_TigerLeather</ThingDef>
+			<Count>40</Count>
+			<Rate>1</Rate>
+		</li>
+		<li>
+			<ThingDef>Item_TigerMeat</ThingDef>
+			<Count>80</Count>
+			<Rate>1</Rate>
+		</li>
+	</SlaughterItems>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="3"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="4" 	AgeMax="18"	>6,6,1,4,2</li> 
+		<li Sex="Male" 	 AgeMin="19" 	AgeMax="25"	>5,5,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="3"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="4" 	AgeMax="18"	>6,6,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="19" 	AgeMax="25"	>5,5,1,3,2</li> 
+	</BaseFive>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+</List></RaceDefs>

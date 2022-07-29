@@ -1,0 +1,592 @@
+﻿<ThingDefs><List>
+
+<ThingDef Type="Item" Name="LeftoverMaterialBase" Parent="MaterialBase">
+
+	
+	<TexPath>res\Sprs\object\object_jiaoliao01</TexPath>
+	<Desc>用来铺地板或砌屋檐的细碎材料。</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>0</Beauty>
+	<Rate>1</Rate>
+	<MaxHitPoints>300</MaxHitPoints>
+	<ElementKind>None</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="LeftoverMaterial">
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<FabaoSuffix>钉,镖,碎</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>0.8</WorkSpeedCoefficientWhenBeMain>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.1</Absorption>
+		<Accommodate>0.1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+
+
+	
+<ThingDef Type="Item" Name="Item_WoodLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>木角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>513D25FF</Color>
+	
+	<Flammability>
+		<BurningPoint>140</BurningPoint>
+	</Flammability>
+	
+	<Item>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Wood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>木</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood</StuffTexPath>
+			<ColorWhenBeFloor>513D25FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>9E7149FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>140</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_HardWoodLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>金丝木角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎金丝木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>A59268FF</Color>
+	<Flammability>
+		<BurningPoint>240</BurningPoint>
+	</Flammability>
+	<Item>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_HardWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>金丝木</NamePrefix>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood1</StuffTexPath>
+			<ColorWhenBeFloor>7E4E33FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>D2824DFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>240</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_ParasolWoodLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>梧桐木角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎梧桐木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>A57251FF</Color>
+	<Flammability>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_ParasolWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>梧桐木</NamePrefix>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<ColorWhenBeFloor>A57251FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>EEA243FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_LingWoodLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>灵木角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎灵木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>6FE1D8FF</Color>
+	<Flammability>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>灵木</NamePrefix>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<ColorWhenBeFloor>6DC2CAFF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>5AF8FFFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_BrownRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>棕石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎棕石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>524D37FF</Color>		
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_BrownRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>棕石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>524D37FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>968048FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_GrayRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>灰石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎灰石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>494844FF</Color>		
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_GrayRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>灰石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>494844FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>919C9BFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_MarbleLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>大理石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎大理石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>4C555CFF</Color>		
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Marble" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>大理石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			
+			<ColorWhenBeFloor>4C555CFF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>2F4C5AFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_JadeLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>玉石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎玉的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>63A796FF</Color>
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Jade" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>玉石</NamePrefix>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>63A796FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>4A9F94FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_SkyStoneLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>天柱石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了天柱石碎片的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>CABD8FFF</Color>
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_SkyStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>天柱石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_xianzhu</StuffTexPath>
+			<RateWhenBeMain>7</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>DFCDA6FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>F0D998FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_LingStoneLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>灵石角料</ThingName>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Desc>混杂了碎灵石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>7C8DC9FF</Color>
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>灵石</NamePrefix>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>7C8DC9FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>5E77BFFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_LingCrystalLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>灵晶角料</ThingName>
+	<NoElementKind>1</NoElementKind>
+	<ElementKind>None</ElementKind>
+	<Desc>混杂了碎灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>518789FF</Color>
+	<Flammability>
+		<BurningPoint>800</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>灵晶</NamePrefix>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>518789FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>6CB1BCFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_IronRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>铁矿角料</ThingName>
+	<ElementKind>Jin</ElementKind>
+	<Desc>混杂了碎铁屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>4D463CFF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_IronRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>铁制</NamePrefix>
+			<RateWhenBeMain>0</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>4D463CFF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>856458FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_CopperRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>火铜角料</ThingName>
+	<ElementKind>Huo</ElementKind>
+	<Desc>混杂了火铜屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>524030FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_CopperRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>火铜</NamePrefix>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_copper</StuffTexPath>
+			
+			<ColorWhenBeFloor>A59268FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>874345FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_SilverRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>寒晶角料</ThingName>
+	<ElementKind>Shui</ElementKind>
+	<Desc>混杂了寒晶矿屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>5D6D70FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_SilverRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>寒晶</NamePrefix>
+			<RateWhenBeMain>2</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>5D6D70FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>446E98FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>-0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_DarksteelRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>玄铁角料</ThingName>
+	<ElementKind>Jin</ElementKind>
+	<Desc>混杂了玄铁矿屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>2E4244FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_DarksteelRock" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>玄铁</NamePrefix>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+			<ColorWhenBeFloor>456163FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>476D5FFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>3</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+<ThingDef Type="Item" Name="Item_StarEssenceLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>星髓角料</ThingName>
+	<ElementKind>Jin</ElementKind>
+	<Desc>混杂了星髓屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>545285FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_StarEssence" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>星髓</NamePrefix>
+			<RateWhenBeMain>5</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>545285FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>746494FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>5</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+</List></ThingDefs>

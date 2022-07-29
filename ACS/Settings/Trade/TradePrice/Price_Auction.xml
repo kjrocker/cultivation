@@ -1,0 +1,184 @@
+<Defs><List>
+	<Def Name="Price_Auction">
+		<Tag>Auction</Tag>
+	
+		<AnimalPrice>
+			<li AnimalFlag="ExoticAnimal">
+				<BuyPrice Value="3000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li AnimalFlag="NormalAnimal">
+				<BuyPrice Value="800" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="SpecialAnimal">
+				<BuyPrice Value="800" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="BodyAnimal">
+				<BuyPrice Value="800" />
+				<SalePrice Value="100" />
+			</li>
+			<li AnimalFlag="RandomAnimal">
+				<BuyPrice Value="200" />
+				<SalePrice Value="50" />
+			</li>
+		</AnimalPrice>
+	
+		<ItemCommon>
+			<li Rate="1">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="2">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="3">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="4">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="5">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="6">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="7">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="8">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="9">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="10">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="11">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="12">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+		</ItemCommon>
+	
+		<ItemSpecial>
+			<li ItemName="Item_LingStone">
+				<BuyPrice Value="1" />
+				<SalePrice Value="1" />
+			</li>
+		</ItemSpecial>
+	
+	
+		<EsotericaCommon>
+			<li GLevel="None">
+				<BuyPrice Value="1000" />
+			</li>
+			<li GLevel="Qi">
+				<BuyPrice Value="1000" />
+			</li>
+			<li GLevel="Dan1">
+				<BuyPrice Value="1000" />
+			</li>
+			<li GLevel="Dan2">
+				<BuyPrice Value="1000" />
+			</li>
+			<li GLevel="God">
+				<BuyPrice Value="1000" />
+			</li>
+			<li GLevel="God2">
+				<BuyPrice Value="1000" />
+			</li>
+		</EsotericaCommon>
+		
+		<EsotericaSpecial>
+			<li>
+				<SysEso>Esoterica_LunHui4</SysEso>
+				<BuyPrice Value="2000" />
+			</li>
+			
+			<li>
+				<EsotericaType>Barrier</EsotericaType>
+				<ValueCoe Min="0.1" Max="3.0" />
+				<GLevel Min="Qi" Max="God2" />
+				<BuyPrice Value="2000" />
+			</li>
+		</EsotericaSpecial>
+	
+		<FabaoCommon>
+			<li Rate="1">
+				<BuyPrice Value="100" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="2">
+				<BuyPrice Value="300" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="3">
+				<BuyPrice Value="500" />
+				<SalePrice Value="1" />
+			</li>
+			<li Rate="4">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="10" />
+			</li>
+			<li Rate="5">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="100" />
+			</li>
+			<li Rate="6">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="200" />
+			</li>
+			<li Rate="7">
+				<BuyPrice Value="3000" />
+				<SalePrice Value="300" />
+			</li>
+			<li Rate="8">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="500" />
+			</li>
+			<li Rate="9">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="1000" />
+			</li>
+			<li Rate="10">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="2000" />
+			</li>
+			<li Rate="11">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="2000" />
+			</li>
+			<li Rate="12">
+				<BuyPrice Value="3000" />
+				<SalePrice Value="3000" />
+			</li>
+		</FabaoCommon>
+		
+		<FabaoSpecial>
+			<li>
+				<Q Min="0" Max="12.5" />
+				<Rate Min="1" Max="12" />
+				<oitemname>Item_Cinnabar</oitemname>
+				<ostuffname>Item_HuoEssence</ostuffname>
+				<BuyPrice Value="1000" />
+				<SalePrice Value="500" />
+			</li>
+		</FabaoSpecial>
+	</Def>
+</List></Defs>

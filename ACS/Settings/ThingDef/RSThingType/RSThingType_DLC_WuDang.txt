@@ -1,0 +1,3 @@
+ItemName	Type
+Item_WuDang_HuangJing	药草
+Item_WuDang_HuangJingFen	药草

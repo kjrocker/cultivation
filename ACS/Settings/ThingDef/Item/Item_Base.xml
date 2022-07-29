@@ -1,0 +1,277 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="ItemBase">
+	
+	
+	
+	<MaxStack>1</MaxStack>
+	<TileID>0</TileID>
+	<TexPath></TexPath>
+	<TexScale>0.8</TexScale>
+	
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>100</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<Rate>0</Rate>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1000</BurningPoint>
+	</Flammability>
+	<ColliderKind>Slow</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<FabaoSuffix>灵宝</FabaoSuffix>
+		<FuelMultiplier>1</FuelMultiplier>
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<SharpDamageMultiplier>0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			<FlammabilityWhenBeMain>1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		 <!-- 
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Metallic"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>1</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>1</FunAddion>
+		</Food>
+		-->
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<DestroyThing>Item_Garbage</DestroyThing>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<Prices>
+			<TalkType>6</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="99999"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="99999" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="99999" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+	</Item>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="MaterialBase" Parent="ItemBase">
+	
+	
+	
+	<MaxStack>60</MaxStack>
+	<TexPath></TexPath>
+	
+	
+	<Desc>Desc.</Desc>
+	
+	<FilthLeaving></FilthLeaving>
+	<Beauty>-1</Beauty>
+	<MaxHitPoints>100</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<Rate>0</Rate>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Material"> 
+		 
+		
+		<BeMaterial>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix></NamePrefix>
+			
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+			
+			<LingShieldWhenBeMain>0</LingShieldWhenBeMain>
+			
+			<TemperatureMaxAddWhenBeMain>0</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>0</TemperatureMinAddWhenBeMain>
+			
+			<MaxHitPointsPerNum>10</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="EquipmentBase" Parent="ItemBase">
+	
+	
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+
+	<Rate>0</Rate>
+	<Beauty>0</Beauty>
+	<MaxHitPoints>100</MaxHitPoints>
+	
+	<Item Kind="Equipment">
+
+		 
+		 <BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>-->
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		 
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="ConsumableBase" Parent="ItemBase">
+	
+	
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+	
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>0</Rate>	
+	
+	<Item>
+
+		 
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>
+				<Stuff name = "Woody"/>
+				<Stuff name = "Stony"/>-->
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+</List></ThingDefs>

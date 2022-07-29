@@ -1,0 +1,63 @@
+<ModifierDefs><List>
+	<Modifier Name="YinYangErosion" Type="Normal">
+		<DisplayName>阴阳侵蚀</DisplayName>
+		<Desc>使用阴阳之力降低敌人的防御。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>  
+			<li Name="NpcFight_ShieldConversionRateAddP" BAddV="-0.5"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="-40"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="BambooBedFeel" Type="Normal">
+		<DisplayName>凉意</DisplayName>
+		<Desc>竹床带来了阵阵凉意</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="ComfyTMin" AddV="10"/>
+			<li Name="ComfyTMax" AddV="10"/>
+			<li Name="ToleranceTMin" AddV="10"/>
+			<li Name="ToleranceTMax" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_YG_YinYangForce" Type="Normal">
+		<DisplayName>原身真力（混）</DisplayName>
+		<Desc>急剧燃烧生命本源，催发妖族原身的力量，大幅提高御器威力，秘体威力，灵气护盾和秘体坚韧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<ModScale>0.35</ModScale>
+		<ModScale>0.35</ModScale>
+		<Sync>1</Sync>
+		<AnimalBodyOnly>1</AnimalBodyOnly>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/YaoAngerFire"/>
+		</EffectBind>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="1000"/>
+		    <li Name="NpcFight_ShieldConversionRate" BAddP="0.25"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.25"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="0.25"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.25"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Fish_EndureHunger" Type="Normal">
+		<DisplayName>耐饿</DisplayName>
+		<Desc>吃了金黄短鲷，更加耐饿。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-0.35"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

@@ -1,0 +1,133 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="LeadExperienceAddtion">
+			<DisplayName>Background Bonus</DisplayName>
+		</Text>
+		<Text Name="BaseWorkSpeed">
+			<DisplayName>Basic Work Efficiency</DisplayName>
+			<DisplayValue>{0}/sec</DisplayValue>
+			<Desc>The basic working speed of a character. Indicates the amount of work they can complete per second.</Desc>
+			<FunctionKind>Produce Stats</FunctionKind>
+		</Text>
+		<Text Name="BaseEmotionAddV">
+			<DisplayName>Base Mood Value</DisplayName>
+			<DisplayValue>{0}</DisplayValue>
+			<Desc>The basic mood value of the character.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="MaxAge">
+			<DisplayName>Lifespan</DisplayName>
+			<DisplayValue>{0}</DisplayValue>
+			<Desc>The highest age the character can live to.</Desc>
+		</Text>
+		<Text Name="AgeCostSpeed">
+			<DisplayName>Lifespan Diminish Rate</DisplayName>
+			<Desc>The speed at which the character's life passes by.</Desc>
+		</Text>
+		<Text Name="VisionRadius">
+			<DisplayName>Perception Radius</DisplayName>
+			<DisplayValue>{0:N2}m</DisplayValue>
+			<Desc>Maximum distance at which the character is able to perceive their surroundings.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="MoveSpeed">
+			<DisplayName>Move Speed</DisplayName>
+			<DisplayValue>{0:N2}m/sec</DisplayValue>
+			<Desc>The character's move speed.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="ComfyTMin">
+			<DisplayName>Lowest Ideal Temperature</DisplayName>
+			<Desc>Lowest temperature in which the character feels comfortable.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="ComfyTMax">
+			<DisplayName>Highest Ideal Temperature</DisplayName>
+			<Desc>Highest temperature in which the character feels comfortable.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="ToleranceTMin">
+			<DisplayName>Lowest Temperature Tolerance</DisplayName>
+			<Desc>Lowest temperature that do not affect the character's health.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="ToleranceTMax">
+			<DisplayName>Highest Temperature Tolerance</DisplayName>
+			<Desc>Highest temperature that do not affect the character's health.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="RecoveryPower">
+			<DisplayName>Natural Resilience</DisplayName>
+			<DisplayValue>{0}%/sec</DisplayValue>
+			<Desc>The character's natural rate of recovery from diseases and injuries.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="PainTolerance">
+			<DisplayName>Pain Tolerance</DisplayName>
+			<Desc>The maximum level of pain the character is able to tolerate.</Desc>
+			<FunctionKind>Base Stats</FunctionKind>
+		</Text>
+		<Text Name="IntelligenceSkillEXPConstant">
+			<DisplayName>Learning Speed</DisplayName>
+			<Desc>The amount of experience the character gains from pratice. Also affects the speed at which Golden Core Cultivators gain inspiration.</Desc>
+			<FunctionKind>Cultivation Stats</FunctionKind>
+		</Text>
+		<Text Name="EmotionAmplificationFactor">
+			<DisplayName>Mood Multiplier</DisplayName>
+		</Text>
+		<Text Name="FavourChangeSpeedRate">
+			<DisplayName>Favor Changing Rate</DisplayName>
+		</Text>
+		<Text Name="NightmareHappenPercent">
+			<DisplayName>Nightmare Occurring Chance</DisplayName>
+			<Desc>The character's chance of having a nightmare.</Desc>
+		</Text>
+		<Text Name="NiceDreamHappenPercent">
+			<DisplayName>Sweetdream Occurring Chance</DisplayName>
+			<Desc>The character's chance of having a sweet dream.</Desc>
+		</Text>
+		<Text Name="FatigueConsumeConstant">
+			<DisplayName>Energy Consumption Bonus</DisplayName>
+			<Desc>The character's energy consumption bonus.</Desc>
+		</Text>
+		<Text Name="FatigueRecoveryConstant">
+			<DisplayName>Energy Replenishment Bonus</DisplayName>
+			<Desc>The character's energy replenishment bonus.</Desc>
+		</Text>
+		<Text Name="NutritionConsumeConstant">
+			<DisplayName>Food Consumption Bonus</DisplayName>
+			<Desc>The character's food consumption speed bonus.</Desc>
+		</Text>
+		<Text Name="NutritionRecoveryConstant">
+			<DisplayName>Food Replenishment Bonus</DisplayName>
+			<Desc>The character's food replenishment bonus.</Desc>
+		</Text>
+		<Text Name="WaterConsumeConstant">
+			<DisplayName>Water Consumption Bonus</DisplayName>
+			<Desc>The character's water consumption bonus.</Desc>
+		</Text>
+		<Text Name="WaterRecoveryConstant">
+			<DisplayName>Water Replenishment Bonus</DisplayName>
+			<Desc>The character's water replenishment bonus.</Desc>
+		</Text>
+		<Text Name="HappyConsumeConstant">
+			<DisplayName>Recreation Consumption Bonus</DisplayName>
+			<Desc>The character's recreation consumption bonus.</Desc>
+		</Text>
+		<Text Name="HappyRecoveryConstant">
+			<DisplayName>Recreation Replenishment Bonus</DisplayName>
+			<Desc>The character's recreation replenishment bonus.</Desc>
+		</Text>
+		<Text Name="PracticeFoodConsumeConstant">
+			<DisplayName>Essence Consumption Bonus</DisplayName>
+			<Desc>The character's essence consumption bonus.</Desc>
+		</Text>
+		<Text Name="PracticeFoodRecoveryConstant">
+			<DisplayName>Stamina Replenishment Bonus</DisplayName>
+			<Desc>The character's essence replenishment bonus.</Desc>
+		</Text>
+		<Text Name="MagicDamageRecoveryPowerAddV">
+			<DisplayName>Natural Resilience for Inner Injuries</DisplayName>
+		</Text>
+	</List>
+</Texts>

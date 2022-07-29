@@ -1,0 +1,20 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="HeYin">
+			<DisplayName>Riverback City</DisplayName>
+			<Desc>It is a city, where various kinds of political buildings can be built and disciples can be recruited.</Desc>
+		</Text>
+		<Text Name="GuanHai">
+			<DisplayName>Seascape</DisplayName>
+		</Text>
+		<Text Name="PanShe">
+			<DisplayName>Snaketail Village</DisplayName>
+		</Text>
+		<Text Name="Feng">
+			<DisplayName>City of Abundance</DisplayName>
+		</Text>
+		<Text Name="DaLiang">
+			<DisplayName>City of Desolation</DisplayName>
+		</Text>
+	</List>
+</Texts>

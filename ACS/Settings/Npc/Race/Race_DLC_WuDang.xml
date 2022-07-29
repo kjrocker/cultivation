@@ -1,0 +1,137 @@
+<RaceDefs><List>
+	<RaceDef Name="LsXuanWu">
+		<DisplayName>玄武苗苗</DisplayName>
+		<Desc>玄武苗苗乃天地间自然蕴生的奇异物种，是某种规则的具象。</Desc>
+		<Mod>Mod/Npc/LsXuanWu/Base</Mod>
+		<RaceType>Animal</RaceType>
+		<AnimalType>2</AnimalType>
+		<Revive>1</Revive>
+		<NormalAttack>XuanWu_NormalAttack</NormalAttack>
+		<Body>QuadrupedBody</Body>
+		<HasGenders>0</HasGenders>
+		<HasEquip>0</HasEquip>
+		<LingShouMove>1</LingShouMove>
+		<GenerateMinAge>0.5</GenerateMinAge>
+		<GenerateMaxAge>12</GenerateMaxAge>
+		<AdultAge>3</AdultAge>
+		<FreeLength>2.7</FreeLength>
+		<WarningRange>0</WarningRange>
+		<StrikeBack>0.2</StrikeBack>
+		<TalkBefore>咔啦，</TalkBefore>
+		<TalkAfter>，咔啦!</TalkAfter>
+		<LcHand>Bone019</LcHand>
+		<LsExtraFabao>
+			<li>XuanWu_NormalAttack2</li>
+		</LsExtraFabao>
+		<!-- 
+		<Products>
+			<li>
+				<ProductTime>17</ProductTime>			
+				<ProductItems>
+					<li>
+						<ThingDef>Item_WolfLeather</ThingDef>
+						<Count>40</Count>
+						<Rate>1</Rate>
+					</li>
+				</ProductItems>
+			</li>
+		</Products> 
+		-->
+		<BaseFive>
+			<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+			<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+		</BaseFive>
+		
+		<ReplaceAni>
+			<li Name="EatSmall" Value="Eat" />
+			<li Name="assemble" Value="Atk3" />
+			<li Name="PlayItem" Value="Atk3" />
+			<li Name="PlayBuild" Value="Atk3" />
+			<li Name="PlayNpc" Value="Atk2" />
+			<li Name="Lay" Value="Free" />
+			<li Name="kszdpugong4" Value="Atk2" />
+			<li Name="TrainLingZhi" Value="weiqu01" />
+			<li Name="TrainHuTi" Value="weiqu01" />
+			<li Name="TrainQiGan" Value="weiqu01" />
+			<li Name="TrainNeiDan" Value="Atk" />
+			<li Name="TrainShuFa" Value="ShiFaLoop" />
+			<li Name="Drink" Value="Eat" />
+			<li Name="gain" Value="Eat" />
+			<li Name="slaughter" Value="Eat" />
+		</ReplaceAni>
+		
+		<BaseP>
+			<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+			<li Name="RaceMoveSpeed" Value="LsXuanWuMoveSpeed"/>
+			<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+			<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+			<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+			<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+			<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+			<li Name="RaceVisionRadius" Value="LingShouVisionRadius"/>
+			<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+			<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+		</BaseP>
+
+		<ReplaceP>
+			<li Name="NpcLingMaxValue" Value="LsXuanWuLingMaxValue"/>
+			<li Name="NpcFight_FabaoPowerAddP" Value="LsXuanWuFabaoPowerAddP"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+			<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+			<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" Value="LsXuanWuShieldConversionRateAddP"/>
+			<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+		</ReplaceP>
+		<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+		<TexPath>tex://res/Sprs/tujian/TJ_lingchongxuanwu01</TexPath>
+	</RaceDef>
+	
+	
+<RaceDef Name="WuDang_WuDiYa">
+	<DisplayName>武当鸭</DisplayName>
+	<Desc>来自武当山的神奇的鸭子！</Desc>
+	<Mod>Mod/Npc/Wudangya/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Template>Npc_WuDang_WuDiYa</Template>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>WuDangYa_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>10</AdultAge>
+	<GenerateMinAge>10</GenerateMinAge>
+	<GenerateMaxAge>30</GenerateMaxAge>
+	<SelectAble>0</SelectAble>
+	<FreeLength>1</FreeLength>
+	<Rolepaint>res/Sprs/rolepainting/monster_wudangya1</Rolepaint>
+	<FreeAni>
+		<li>Free</li>
+	</FreeAni>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">1,1,1,1,1</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">1,1,1,1,1</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+</List></RaceDefs>

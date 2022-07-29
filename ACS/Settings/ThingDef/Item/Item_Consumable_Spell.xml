@@ -1,0 +1,318 @@
+﻿<ThingDefs><List>
+	<!--<ThingDef Type="Item" Name="SpellBase" Parent="ConsumableBase">
+	
+	
+	
+	<MaxStack>20</MaxStack>
+	<TexPath></TexPath>
+
+	<Desc>Desc.</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>5</Rate>
+	<Item Lable="Spell">
+				 
+		<PhysicalLables>
+			<li>Soft1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+		</BeMade> 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>25</DaysToRotStart>
+			<TempMin>30</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	-->
+	
+	<ThingDef Type="Item" Name="Item_SpellPaper">
+	<ThingName>符纸</ThingName>
+		
+	<MaxStack>100</MaxStack>
+	<TexPath>res\Sprs\object\object_fuzhou01a</TexPath>	
+	<Desc>特殊制作的纸张，用神念将纸上的朱砂拖曳出特定的符号即可形成符咒。</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>2</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="SpellPaper" Kind="Practice">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>符,咒,禁</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_Cinnabar" count = "2"/>
+				<Item name = "Item_Water" count = "2"/>
+				<Item name = "Item_Wood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_SpellPaperLv2" Parent="Item_SpellPaper">
+	<ThingName>灵血符</ThingName>
+	<TexPath>res\Sprs\object\object_fuzhou02a</TexPath>	
+	<Desc>以妖灵血制作的纸张，用神念将纸上的朱砂拖曳出特定的符号即可形成符咒。</Desc>
+	<Rate>4</Rate>
+	<Item Lable="SpellPaper" Kind="Practice">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>15</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="20"/>
+				<SalePrice Value="5" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="30" />
+				<SalePrice Value="10" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<CostItems>
+				<Item name = "Item_Cinnabar" count = "2"/>
+				<Item name = "Item_MonsterBlood" count = "2"/>
+				<Item name = "Item_HardWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.3</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>2</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SpellPaperLv3" Parent="Item_SpellPaper">
+	<ThingName>神珀符</ThingName>
+	<TexPath>res\Sprs\object\object_fuzhou03a</TexPath>	
+	<Desc>以宁珀绘制的符咒，用神念将纸上的朱砂拖曳出特定的符号即可形成符咒。</Desc>
+	<Rate>6</Rate>
+	<Item Lable="SpellPaper" Kind="Practice">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="25" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="100" />
+				<SalePrice Value="50" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>250</WorkToMake>
+			<CostItems>
+				<Item name = "Item_Cinnabar" count = "2"/>
+				<Item name = "Item_SoulCrystalNing" count = "1"/>
+				<Item name = "Item_HardWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Spell">
+	<ThingName>符咒</ThingName>
+		
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_fuzhou01b</TexPath>	
+	<Desc>绘制成功的符咒，佩戴在身上可以拥有一定的能力加成。</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>2</Rate>
+	
+	<Beauty>2</Beauty>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<Flammability>0.8</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Lable="Spell" Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="2" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>1</NotRandom>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>符,咒,禁</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft1</li>
+		</PhysicalLables>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>4</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SpellLv2" Parent="Item_Spell">
+	<ThingName>符咒</ThingName>
+		
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_fuzhou02b</TexPath>	
+	<Desc>绘制成功的符咒，佩戴在身上可以拥有一定的能力加成。</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>5</Rate>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>7</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_SpellLv3" Parent="Item_Spell">
+	<ThingName>符咒</ThingName>
+		
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_fuzhou03b</TexPath>	
+	<Desc>绘制成功的符咒，佩戴在身上可以拥有一定的能力加成。</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>8</Rate>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>9</Accommodate>
+	</Ling>
+	</ThingDef>
+</List></ThingDefs>

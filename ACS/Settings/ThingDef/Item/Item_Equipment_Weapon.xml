@@ -1,0 +1,632 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="WeaponBase" Parent="EquipmentBase">
+	
+	
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	
+	<Frags>	
+		<li Frag="Weapon" />
+	</Frags>	
+	
+	<Desc>Desc.</Desc>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	
+	<Flammability>
+		<Flammability>-0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="5" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="10" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		 <BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!--<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>-->
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>-->
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>2</AttackRange>
+		</Equip>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	<!--<ThingDef Type="Item" Name="Item_TestKnife" Parent="WeaponBase">
+	<ThingName>测试弓箭</ThingName>
+	<TexPath>Item/TestWeapon</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>3</Rate>		
+	<Item Lable="Weapon">
+		
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_IronBlock" count = "1"/>
+					<Item name = "Item_Wood" count = "1"/>
+					<Item name = "Item_Water" count = "10"/>
+			</CostItems>
+		</BeMade> 		
+		<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>10</AttackRange>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise1" Rate="0.45"/>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.35"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2"/>
+			</AtkDamage>
+			<AttackSkill>NormalAttackMissile</AttackSkill>
+			<AtkAnis>
+				<li Name="GGpgong1" HitPoint="13"/>
+			</AtkAnis>
+			<ModPath>Mod/Prop/Weapon/weapon_gong2</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>-->
+	
+	<ThingDef Type="Item" Name="Item_WeaponBow" Parent="WeaponBase">
+	<ThingName>弓</ThingName>
+	<TexPath>res\Sprs\object\object_weapongong01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一把弓，可以用来狩猎远处的目标。</Desc>
+	<Frags>			
+		<li Frag="Betouch" />
+	</Frags>
+	<Item Lable="Weapon">
+		<FabaoSuffix>弓</FabaoSuffix>
+		<PhysicalLables>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade> 
+		<Equip>
+			<Damage>15</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>10</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.35"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.35"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.35"/>
+			</AtkDamage>
+			<AttackSkill>NormalAttackMissile</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkAnis>
+				<li Name="GGpgong1" HitPoint="13" Bip="Bip001 L Hand"/>
+			</AtkAnis>
+			<ModPath>Mod/Prop/Weapon/weapon_gong2</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WeaponWoodBow" Parent="WeaponBase">
+	<ThingName>弓</ThingName><!--木弓-->
+	<TexPath>res\Sprs\object\object_weapongong01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Frags>			
+		<li Frag="Betouch" />
+	</Frags>
+	<Desc>一把弓，可以用来狩猎远处的目标。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>弓</FabaoSuffix>
+		<PhysicalLables>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade> 	
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>10</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.35"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.35"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.5"/>
+			</AtkDamage>
+			<AttackSkill>NormalAttackMissile</AttackSkill>
+			<AtkAnis>
+				<li Name="GGpgong1" HitPoint="13" Bip="Bip001 L Hand"/>
+			</AtkAnis>
+			<WeaponKind>Bow</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_gong1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WeaponKnife" Parent="WeaponBase">
+	<ThingName>刀</ThingName>
+	<TexPath>res\Sprs\object\object_weapondao01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一把刀，擅长劈砍。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>刀</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "1"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+	<!--	<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>1.1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_dao1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_WeaponLance" Parent="WeaponBase">
+	<ThingName>长枪</ThingName>
+	<TexPath>res\Sprs\object\object_weaponqiang01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一柄长枪，可以有效的对内脏造成穿刺伤。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>枪</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Elastic</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_IronBlock" count = "2"/>
+					<Item name = "Item_RoughWoodBlock" count = "3"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<!--<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>20</Damage>
+			<AttackSpeed>0.9</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.15"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.5"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.45"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SSpgong1" HitPoint="11"/>
+				<li Name="SSpgong2" HitPoint="14"/>
+				<li Name="SSpgong3" HitPoint="14"/>
+				<li Name="SSpgong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Spear</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_chang3</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_WeaponSword" Parent="WeaponBase">
+	<ThingName>剑</ThingName>
+	<TexPath>res\Sprs\object\object_weaponjian01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一柄剑，轻盈而敏捷。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>剑</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "1"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<!--<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>12</Damage>
+			<AttackSpeed>1.5</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.4"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_jian1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_WeaponHalbert" Parent="WeaponBase">
+	<ThingName>锤</ThingName>
+	<TexPath>res\Sprs\object\object_weaponchui01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>一柄重锤，沉重的分量可以让他的敌人筋断骨折。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>锤</FabaoSuffix>
+		<PhysicalLables>
+			<li>Blunt</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>800</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "1"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+	<!--	<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>30</Damage>
+			<AttackSpeed>0.6</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Bruise2" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.2"/>
+				<li PartKind="Organ" Name="VisceralRupture" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.4"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SDpugong1" HitPoint="9"/>
+				<li Name="SDpugong2" HitPoint="8"/>
+				<li Name="SDpugong3" HitPoint="13"/>
+				<li Name="SDpugong4" HitPoint="12"/>
+			</AtkAnis>
+			<WeaponKind>Double</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_shuangshou1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_WeaponAxeRing" Parent="WeaponBase">
+	<ThingName>环</ThingName>
+	<TexPath>res\Sprs\object\object_weaponhuan01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>奇门兵器，套在拳套上，可以敏捷而快速的给对手身上造成大量伤口。</Desc>
+	<Item Lable="Weapon">
+		<FabaoSuffix>环</FabaoSuffix>
+		
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>500</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "2"/>
+					<Item name = "Item_Water" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<!--<Rot>
+			<RotSpeed>0.0005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		<Equip>
+			<Damage>8</Damage>
+			<AttackSpeed>2</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.5"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.1"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.1"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="kszdpugong1" HitPoint="13"/>
+				<li Name="kszdpugong2" HitPoint="11"/>
+				<li Name="kszdpugong3" HitPoint="25"/>
+				<li Name="kszdpugong4" HitPoint="15"/>
+			</AtkAnis>
+			<WeaponKind>Glove</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_huan1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Item"  Name="SP_Sword1" Parent="Item_WeaponSword">
+	<ThingName>达拉崩吧</ThingName>
+	<Desc>传说在遥远的西方，有位叫达拉崩吧的勇士曾使用这把宝剑斩杀过被称为“龙”的强大生物，通体鲜红的剑身仿佛在龙血中沐浴过一般。此剑命中有几率使敌人受焚心之伤。</Desc>
+	<Rate>7</Rate>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+				<li PartName="Heart" Name="Huo_HeartBurn" Rate="0.3"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_jian10</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item"  Name="SP_Sword2" Parent="Item_WeaponSword">
+	<ThingName>木雨剑</ThingName>
+	<Desc>木白仙人留下的普通木剑，看上去平平无奇，但却有呼风唤雨的神妙。</Desc>
+	<Rate>8</Rate>
+	<Frags>	
+		<li Frag="SmellRain" />
+	</Frags>	
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<BindWeather>MuYu_LightRain</BindWeather>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_jian1</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item"  Name="SP_Sword3" Parent="Item_WeaponSword">
+	<ThingName>未来科技之剑</ThingName>
+	<Desc>此剑乃是未来科技掌门信物，见此剑如见老菊。持有者可以提高全体员工的劳动积极性。</Desc>
+	<Rate>7</Rate>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ToolModifier>FeatureModifier_DongShiZhang1</ToolModifier>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_jian11</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item"  Name="SP_Sword4" Parent="Item_WeaponSword">
+	<ThingName>双龙魔影剑</ThingName>
+	<Desc>此剑乃昔日黑光剑圣之佩剑，威力绝伦。</Desc>
+	<Rate>7</Rate>
+	<HideInOtherWorld>1</HideInOtherWorld>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_jian6</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item"  Name="SP_Bow1" Parent="Item_WeaponBow">
+	<ThingName>捕兽弓</ThingName>
+	<Desc>专门用来捕兽的弓，采用涂有麻药的无法深入肌肤特制箭支，所以一般不会造成致命伤害。</Desc>
+	<Rate>3</Rate>
+	<Item>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Healroot" count = "25"/>
+			</CostItems>
+		</BeMade> 
+		
+		<Equip>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.15"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.15"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.1"/>
+				<li PartName="Brain" Name="Anaesthesia" Rate="0.6"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_gong4</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<!--<ThingDef Type="Item"  Name="Art_Sword1" Parent="Item_WeaponSword">
+	<ThingName>狂战</ThingName>
+	<Desc>巧夺天工的神兵，融合制作者的心血与灵感而成。</Desc>
+	<Rate>4</Rate>
+	<Item>
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="SwordBallDamage" Rate="1"/>
+			</AtkDamage>
+			<ModPath>Mod/Prop/Weapon/weapon_dao2</ModPath>
+		</Equip>
+	</Item>
+	</ThingDef>-->
+</List></ThingDefs>

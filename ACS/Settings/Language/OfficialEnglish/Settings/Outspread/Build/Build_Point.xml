@@ -1,0 +1,28 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Farm">
+			<DisplayName>Field</DisplayName>
+			<Desc>Farmlands in the mortal realm. Produces wheat.</Desc>
+		</Text>
+		<Text Name="Mine">
+			<DisplayName>Mine</DisplayName>
+			<Desc>Mines in the mortal realm. Produces brownstone.</Desc>
+		</Text>
+		<Text Name="Lumber">
+			<DisplayName>Logging Camp</DisplayName>
+			<Desc>Logging camps in the mortal realm. Produces wood.</Desc>
+		</Text>
+		<Text Name="LingMine">
+			<DisplayName>Spirit Stone Mine</DisplayName>
+			<Desc>Spirit stone mines in the mortal realm. Produces spirit stones.</Desc>
+		</Text>
+		<Text Name="Statue">
+			<DisplayName>Statue</DisplayName>
+			<Desc>The statue of a deity. Once constructed, if a Shendao disciple built the Temple of Miracles in the Divine Realm, you can appoint the disciple to be possessed here.</Desc>
+		</Text>
+		<Text Name="Arena">
+			<DisplayName>Dojo</DisplayName>
+			<Desc>Dojo. Once constructed, this place can be used for practice by disciples garrisoned here.</Desc>
+		</Text>
+	</List>
+</Texts>

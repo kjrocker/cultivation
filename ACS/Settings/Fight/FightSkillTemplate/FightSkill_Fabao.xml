@@ -1,0 +1,55 @@
+<FightSkills><List>
+	<Skill Name="TFabaoSkill"><!--飞行法宝增强技能基础模板 --> 
+		<DisplayName>法宝增强</DisplayName>
+		<IsTemplate>1</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>120</CD>
+		<LingCost>100</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng8</CastAni>
+		<Value>0.25</Value>
+		<Value2>60</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+	</Skill>
+	
+	<Skill Name="FabaoSkill_Gong3_1">
+		<DisplayName>神剑共鸣</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>30</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng8</CastAni>
+		<Value>0.4</Value>
+		<Value2>30</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>54</HitEffect>
+	</Skill>
+	
+	<Skill Name="FabaoSkill_Gong8_1">
+		<DisplayName>北极剑煞</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>60</CD>
+		<LingCost>500</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng8</CastAni>
+		<Value>2</Value>
+		<Value2>15</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>54</HitEffect>
+	</Skill>
+	
+</List></FightSkills>

@@ -1,0 +1,45 @@
+ID	Type	Kind	Name	Value	IsAddV	GLevel	Desc	MidName
+ID	秘籍类型 1御器 2术法 3护体 4丹药 5炼宝 6功法 7调心	属性类型 1属性 2技能经验 3Flag 4五维 5获得技能 6图纸	参数名字	参数值	是不是addv 默认是addp	强制功法等级 0无 1练气 2结丹 3金丹 4元神	描述	中间词缀 参与名字随机
+1	1	1	NpcFight_FabaoPowerAddP	0.2|0.5|1|2	1		提高法宝威力	破灭
+2	1	1	NpcFight_FabaoLingRecoverAddP	0.2|0.5|1|2	1		提高法宝回气能力	蓄神
+3	1	1	NpcFight_FabaoCoolDownAddP	-0.001|-0.005|-0.01|-0.05	1		减少法宝攻击间隔	迅击
+4	1	1	NpcFight_FabaoMaxLingAddP	0.2|0.5|1|2	1		提高法宝灵气最大值	混元
+5	1	1	NpcFight_FabaoRepelDistanceAddV	0.3|0.5|0.7|1	1		提高法宝冲击力	千钧
+6	1	1	NpcFight_FabaoFlySpeedAddP	0.1|0.2|0.3|0.5	1		提高法宝速度	迅影
+7	1	1	NpcFight_FabaoTurnSpeedAddP	0.1|0.2|0.3|0.5	1		提高法宝灵活度	圆转
+8	1	1	NpcFight_FabaoRepelResistanceAddV	0.3|0.5|0.7|1	1		提高法宝抗冲击力	坤元
+9	1	1	NpcFight_FabaoTrailingLengthAddP	0.5|1|1.5|2	1		提高法宝拖尾长度	曳影
+								
+2000	2	1	NpcFight_SpellLingCostAddP	-0.1|-0.3|-0.6|-1			减少术法法力消耗	归藏
+2001	2	1	NpcFight_SpellCastTimeAddP	-0.05|-0.1|-0.15|-0.2			减少术法释放时间	急诵
+2002	2	1	NpcFight_SpellPowerAddP	0.5|1|2|4			提高术法威力	崩天
+2003	2	1	NpcFight_SpellLingCostAddP	-0.1|-0.3|-0.6|-1			减少术法法力消耗	归藏
+2004	2	5					习得战斗技能	法咒
+								
+3001	3	1	NpcFight_ShieldConversionRate	0.01|0.02|0.03|0.04	1		提高护盾基础值	奠基
+3002	3	1	NpcFight_ShieldConversionRateAddP	0.06|0.08|0.1|0.12	1		提高护盾防御力	金刚
+								
+4001	4	1	DanMake_SpeedAddV	0.1|0.2|0.3|0.4	1		提高丹药炼制速度	妙手
+4002	4	1	DanMake_SuccessRateAddV	0.1|0.3|0.5|0.7	1		提高丹药炼制成功率	神农
+4003	4	1	DanMake_YieldAddP	0.1|0.15|0.2|0.25	1		提高丹药炼制产量	沃野
+								
+5001	5	1	FabaoMake_SpeedAddV	0.1|0.2|0.3|0.4	1		提高法宝炼制速度	鬼手
+5002	5	1	FabaoMake_SuccessRateAddV	0.3|0.5|0.7|1	1		提高法宝炼制成功率	多宝
+5003	5	1	FabaoMake_LingInheritRateAddV	0.3|0.5|0.7|1	1		提高法宝炼制时的品阶	琢玉
+5004	5	1	FabaoMake_QualityAddV	0.03|0.05|0.07|0.1	1		提高法宝炼制时的品质	百炼
+								
+6001	6	4	Perception	0.3|0.5|0.7|0.9			提高神识	神视
+6002	6	4	Physique	0.3|0.5|0.7|0.9			提高根骨	归祖
+6003	6	1	NutritionWaterAutoRecover	0.04|0.08|0.12|0.2	1		提高饮气效果	辟谷
+6004	6	1	NutritionToJingYuanK	0.001|0.002|0.003|0.004	1		提高精元获得率	饕餮
+6005	6	1	FatigueConsumeConstant	-0.1|-0.15|-0.2|-0.25	1		减少疲劳消耗	气摄
+6006	6	1	FatigueRecoveryConstant	0.1|0.15|0.2|0.25	1		提高疲劳恢复	鲸吞
+6007	6	1	MaxAge	50|100|200|400	1		提高寿命	神龟,万古,长青
+6008	6	1	PainTolerance	0.2|0.25|0.3|0.35	1		提高疼痛忍耐	决意
+6009	6	1	EmotionAmplificationFactor	-0.05|-0.1|-0.15|-0.2			提升心态	清心
+								
+7001	7	4	Intelligence	0.3|0.5|0.7|0.9			提高悟性	通慧
+7002	7	4	Charisma	0.3|0.5|0.7|0.9			提高魅力	摄神
+7003	7	4	Luck	0.3|0.5|0.7|0.9			提高机缘	神佑
+7004	7	1	HappyConsumeConstant	-0.2|-0.25|-0.3|-0.35	1		减少娱乐消耗	佛心
+7005	7	1	HappyRecoveryConstant	0.2|0.3|0.4|0.5	1		提高娱乐获取	合一

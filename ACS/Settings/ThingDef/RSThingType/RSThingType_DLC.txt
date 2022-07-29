@@ -1,0 +1,4 @@
+ItemName	Type
+Item_BambooShoot	食材
+Item_Bamboo	材料
+Item_BambooLeftover	材料

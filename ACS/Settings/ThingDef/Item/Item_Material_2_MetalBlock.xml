@@ -1,0 +1,632 @@
+﻿<ThingDefs><List>
+<ThingDef Type="Item" Name="MetalBlockBase" Parent="MaterialBase">
+	
+	
+	
+	<TexPath>Item/Blocks</TexPath>
+	<TexScale>0.8</TexScale>	
+	<Desc>Desc.</Desc>
+	<MaxStack>500</MaxStack>
+	<Rate>1</Rate>
+	<Beauty>-5</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>
+	<ElementKind>Jin</ElementKind>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>3000</BurningPoint>
+	</Flammability>
+	
+	<Item Lable="MetalBlock">
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>20</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>金,印,碑,珏,圭,阙,镇</FabaoSuffix>
+		
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>Smooth1</li>
+		</PhysicalLables>
+		
+		<BeMade>
+			<WorkToMake>90</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<!-- 
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			
+			<StuffCategories>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+			-->
+		</BeMade> 
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			<BuildingTileIDWhenBeMain>-11</BuildingTileIDWhenBeMain>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>1</BeautyWhenBeMain>
+			
+			<PracticeEffectivenessWhenBeMain>0.2</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.4</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		
+		<!--<Rot>
+			<RotSpeed>0.00005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>-->
+		
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_IronBlock" Parent="MetalBlockBase">
+	<ThingName>铁锭</ThingName>
+	<TexPath>res\Sprs\object\object_ironingot</TexPath>
+	<Desc>铁矿熔炼的金属锭，可以用来进行进一步的制作。</Desc>	
+	<Rate>2</Rate>
+	<Beauty>2</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item>
+		
+		<BeMaterial>
+			<NamePrefix>铁</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_ironstone</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>2</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>-0.1</AttackSpeedWhenBeMain>
+			
+			<ColorWhenBeMain>573B00FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>60</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>2</ElementPowerWhenBeMain>
+			
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_IronRock" count = "1"/>
+				<Item name = "Item_Water" count = "2"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>8</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>2</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CopperBlock" Parent="MetalBlockBase">
+	<ThingName>火铜锭</ThingName>
+	<TexPath>res\Sprs\object\object_copperingot</TexPath>
+	<Desc>火铜矿熔炼的金属锭，可以用来进行进一步的制作。</Desc>
+	<Rate>5</Rate>
+	<Beauty>4</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Frags>			
+		<li Frag="Sweat" />
+	</Frags>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>20</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Smooth1</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<NamePrefix>火铜</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_copper</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>4</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.15</AttackSpeedWhenBeMain>
+			
+			<ColorWhenBeMain>9E5100FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>35</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.7</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_CopperRock" count = "1"/>
+				<Item name = "Item_Water" count = "2"/>
+			</CostItems>
+		</BeMade> 
+	</Item>	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>20</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>15</Value>
+		<Radius>3</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SilverBlock" Parent="MetalBlockBase">
+	<ThingName>寒晶锭</ThingName>
+	<TexPath>res\Sprs\object\object_Silveringot</TexPath>
+	<Desc>寒晶矿熔炼的金属锭，可以用来进行进一步的制作。</Desc>	
+	<Rate>5</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Frags>			
+		<li Frag="Sneeze" />
+	</Frags>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>20</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="15" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		
+		<BeMaterial>
+			<NamePrefix>寒晶</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffColorWeight>0</StuffColorWeight>
+			
+			<RateWhenBeMain>4</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.3</AttackSpeedWhenBeMain>
+			
+			<ColorWhenBeMain>D3F4FFFF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>55</MaxHitPointsPerNum>
+			<LingNumberRate>0.6</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>-0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.7</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_SilverRock" count = "1"/>
+				<Item name = "Item_Water" count = "2"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>25</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>-15</Value>
+		<Radius>3</Radius>
+		<RoomValue>-30</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CopperBlock1" Parent="MetalBlockBase">
+	<ThingName>火精锭</ThingName>
+	<TexPath>res\Sprs\object\object_huojingingot</TexPath>
+	<Desc>大量火铜矿以妖灵血熔炼成金属锭，每一块都需要消耗大量时间冶炼制作。</Desc>
+	<Rate>8</Rate>
+	<Beauty>12</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+			<li>Smooth1</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<NamePrefix>火精</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_copper</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.6</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.15</AttackSpeedWhenBeMain>
+			
+			<ColorWhenBeMain>A33428FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>70</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.7</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>1200</WorkToMake>
+			<CostItems>
+				<Item name = "Item_CopperRock" count = "99"/>
+				<Item name = "Item_MonsterBlood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>	
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>4</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>30</Value>
+		<Radius>3</Radius>
+		<RoomValue>60</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SilverBlock1" Parent="MetalBlockBase">
+	<ThingName>寒精锭</ThingName>
+	<TexPath>res\Sprs\object\object_hanjingingot</TexPath>
+	<Desc>大量寒晶矿以妖灵血熔炼成金属锭，每一块都需要消耗大量时间冶炼制作。</Desc>	
+	<Rate>8</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1500" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMaterial>
+			<NamePrefix>寒精</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffColorWeight>0</StuffColorWeight>
+			
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.6</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.3</AttackSpeedWhenBeMain>
+			
+			<ColorWhenBeMain>92CBDAFF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>90</MaxHitPointsPerNum>
+			<LingNumberRate>0.6</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>-0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.7</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>1200</WorkToMake>
+			<CostItems>
+				<Item name = "Item_SilverRock" count = "99"/>
+				<Item name = "Item_MonsterBlood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.95</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.6</Absorption>
+		<Accommodate>50</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>4</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>-30</Value>
+		<Radius>3</Radius>
+		<RoomValue>-60</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DarksteelBlock" Parent="MetalBlockBase">
+	<ThingName>玄铁锭</ThingName>
+	<TexPath>res\Sprs\object\object_blackironingot</TexPath>	
+	<Desc>玄铁矿熔炼的金属锭，可以用来进行进一步的制作。</Desc>
+	<Rate>6</Rate>
+	<Beauty>4</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="75"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="100" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<NamePrefix>玄铁</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>-0.15</AttackSpeedWhenBeMain>
+
+			
+			<ColorWhenBeMain>446E83FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>100</MaxHitPointsPerNum>
+			<LingNumberRate>0.8</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>4</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>8</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_DarksteelRock" count = "1"/>
+				<Item name = "Item_Water" count = "5"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>38</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_StarEssenceBlock" Parent="MetalBlockBase">
+	<ThingName>星髓锭</ThingName>
+	<TexPath>res\Sprs\object\object_stariron</TexPath>	
+	<Desc>星髓熔炼的金属锭，可以用来进行进一步的制作。</Desc>
+	<Rate>9</Rate>
+	<Beauty>5</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="150"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="200" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotRandom>2</NotRandom>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		
+		<BeMaterial>
+			<NamePrefix>星髓</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>7</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+
+			
+			<ColorWhenBeMain>7A68A7FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>200</MaxHitPointsPerNum>
+			<LingNumberRate>0.8</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>5</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_StarEssence" count = "1"/>
+				<Item name = "Item_MonsterBlood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>30</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.6</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>75</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>9</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+</List></ThingDefs>

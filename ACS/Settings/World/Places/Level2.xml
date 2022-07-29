@@ -1,0 +1,1498 @@
+<Places><List>
+	<Place Name="Place_Level2Base">
+		<Desc>2级地点模板</Desc>
+		<Level>2</Level>
+		<Scale>0.5</Scale>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<ExploreNum>0</ExploreNum>
+		<FightMap>
+			<NormalTalk>System_FightMap_NormalTalk</NormalTalk>
+			<DiscipleTalk>System_FightMap_DiscipleTalk</DiscipleTalk>
+		</FightMap>
+	</Place>
+	
+	<Place Name="Place_DanXia1" Parent="Place_Level2Base">  <!--隐居的高人-->
+		<Location X="980" Y="263"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shandong03</Icon>
+		<DisplayName>上清洞</DisplayName>
+		<Desc>丹霞山下的一处天然溶洞，其中曲径幽折，奇景叠参，洞穴深处供奉有上清灵宝天尊的雕像。是闭关修炼的好去处。</Desc>
+		<FightMap>
+			<Name>Place_DanXia1_Cave_ShangQing</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_XiuLian_Shui" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_DanXia2" Parent="Place_Level2Base"> 
+		<Location X="1093" Y="212"/>
+		<Icon>res/Sprs/map/map_xuanai01</Icon>
+		<DisplayName>丹霞绝壁</DisplayName>
+		<Flipping>1</Flipping>
+		<Desc>丹霞山顶的一处绝壁，落日时分霞光映照之下绮丽壮美，堪称人间绝景。</Desc>
+		<FightMap>
+			<Name>Place_DanXia2_Cliff_DanXia</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>10</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="LingWu_DanXia" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_DanXia3" Parent="Place_Level2Base">  
+		<Location X="1029" Y="200"/>
+		<Scale>0.45</Scale>
+		<Icon>res/Sprs/map/map_tanshui01</Icon>
+		<DisplayName>五龙池</DisplayName>
+		<Desc>丹霞山深处的一方灵池，池中遍生莲花，其深不见底，直通地壳水脉，据说丹霞洞天的天地灵根五色金莲就种植于此。</Desc>
+		<FightMap>
+			<Name>Place_DanXia3_Pond_WuLong</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiBeg" Rate="1"/>
+		</Events>
+		
+		<Produce>
+			<li>
+				<ThingDef>Item_Lotusroot</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_KunLun1" Parent="Place_Level2Base">  
+		<Location X="374" Y="335"/>
+		<Icon>res/Sprs/map/map_xuanai01</Icon>
+		<Flipping>1</Flipping>
+		<DisplayName>登仙台</DisplayName>
+		<Desc>昆仑山南麓的一座石台，其上铭刻许多意义不明的纹理。据说上古时期东王公于此分封群仙，飞升仙境，并于此留下道统以待有缘人。</Desc>
+		<FightMap>
+			<Name>Place_KunLun1_Platform_DengXian</Name>
+			<Class>Place_KunLun1_Platform_DengXian</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="BaoZang_DengXian" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_KunLun2" Parent="Place_Level2Base">    <!--剧情线-龙脉危机-->
+		<Location X="303" Y="326"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shandong06</Icon>
+		<DisplayName>龙脉洞窟</DisplayName>
+		<Desc>昆仑山深处一座深不见底的洞窟，千沟万壑复杂非常。传说此洞穴直通大地龙脉，受龙脉之气滋养，昆仑宫在此地种植天地灵根赭黄精。</Desc>
+		<FightMap>
+			<Name>Place_KunLun2_Cave_LongMai</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>19</PowerLevel>
+		</FightMap>
+		<ExploreNum>20</ExploreNum>
+		<Events>
+			<li Name="Story_LingZhiBeg" Rate="1"/>
+		</Events>
+		<Children>
+			<li>Place_KunLun2_1</li>
+		</Children>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>2</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_KunLun2_1" Parent="Place_Level2Base">    <!--剧情线-龙脉危机-->
+		<Location X="270" Y="336"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>奇特空洞</DisplayName>
+		<Desc>这是一处在龙脉洞窟中到处可见的空洞，虽然看上去平平无奇，但却有一种奇特的违和感。如果不是对龙脉洞窟十分了解的人绝对察觉不出来。这处空洞入口有一些似乎是天然的纹理，看上去十分奇特。</Desc>
+		<FightMap>
+			<Name>Place_KunLun2_1_Cave_Strange</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>0</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_TianJi" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_TianJi1" Parent="Place_Level2Base"> 
+		<Location X="481" Y="26"/>
+		<Icon>res/Sprs/map/map_xuanai03</Icon>
+		<DisplayName>飞云涧</DisplayName>
+		<Desc>天极峰万仞绝壁之间的一道深涧，其间庞大的灵气漩涡终日旋转不休，飞鸟难度。传闻极天宫就将天地灵根琅琊果种植于飞云涧绝壁之上。</Desc>
+		<FightMap>
+			<Name>Place_TianJi1_Rift_FeiYun</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>20</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiBeg" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Mint</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_TianJi2" Parent="Place_Level2Base">   <!--秘籍-->
+		<Location X="553" Y="57"/>
+		<Icon>res/Sprs/map/map_shangu06</Icon>
+		<DisplayName>绝天关</DisplayName>
+		<Desc>天极峰登山路途上的一道狭缝，狭缝两侧上长满清心草，靠近之人会觉得身心清凉，远离尘世，故称此地为绝天关。穿越之后便是天极峰绝顶，极天宫宗门所在。</Desc>
+		<FightMap>
+			<Name>Place_TianJi2_Rift_JueTian</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>12</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Mint</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	<Place Name="Place_JiuHua1" Parent="Place_Level2Base">  
+		<Location X="1424" Y="555"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>九华村</DisplayName>
+		<Desc>九华山下的一座村落，因受紫霄宗庇护，村里人丁兴旺，安居乐业。附近有一座庞大的玉石矿脉，是以此地村民以采集玉石，贩卖给紫霄宗为生。</Desc>
+		<FightMap>
+			<Name>Place_JiuHua1_Villa_JiuHua</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>4</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="5"/>
+			<li Name="HighFind" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.4</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Count>5</Count>
+				<Rate>0.4</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_JiuHua2" Parent="Place_Level2Base">  <!--联合领悟1-->
+		<Location X="1375" Y="461"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>潜龙渊</DisplayName>
+		<Desc>九华山名胜，站在潜龙渊畔可见云海翻腾，景色奇丽。传说上古时，有大能牧龙于此。</Desc>
+		<FightMap>
+			<Name>Place_JiuHua2_Abyss_QianLong</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="LingWu_JiuHua1" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_JiuHua3" Parent="Place_Level2Base">   <!--联合领悟1-->
+		<Location X="1489" Y="481"/>
+		<Icon>res/Sprs/map/map_xuanai02</Icon>
+		<Flipping>1</Flipping>
+		<DisplayName>凤栖崖</DisplayName>
+		<Desc>九华山名胜，至今有两株梧桐巨木的残骸留存。传说上古时，此地栖息有一只凤凰。</Desc>
+		<FightMap>
+			<Name>Place_JiuHua3_Cliff_FengQi</Name>
+			<Class></Class>
+			<Biome>Hot</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="LingWu_JiuHua2" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_LongHu1" Parent="Place_Level2Base">   
+		<Location X="771" Y="421"/>
+		<Icon>res/Sprs/map/map_pubu01</Icon>
+		<DisplayName>飞流瀑</DisplayName>
+		<Desc>龙虎山一道绝景，万丈飞流自云端而下，如玉龙经天，轰鸣声震百里。</Desc>
+		<FightMap>
+			<Name>Place_LongHu1_Fall_FeiLiu</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="LingWu_LongHu" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_LongHu2" Parent="Place_Level2Base">   
+		<Location X="831" Y="502"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>神木林</DisplayName>
+		<Desc>龙虎山山脚的一片茂密的树林，其中生长有许多百年老树，甚至有传言其中有梧桐神木存在。因其木气充沛，龙虎山将天地灵根种植于此。</Desc>
+		<FightMap>
+			<Name>Place_LongHu2_Forest_ShenMu</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>12</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiBeg" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HardWood</ThingDef>
+				<Count>10</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ParasolWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_Shu1" Parent="Place_Level2Base">  
+		<Location X="946" Y="845"/>
+		<Icon>res/Sprs/map/map_xuanai01</Icon>
+		<DisplayName>凝碧崖</DisplayName>
+		<Desc>位于蜀山西峰，景色秀美，灵兽仙禽出没不绝。此地乃是地脉宣泄之地，山体之中多生火铜矿等珍稀矿脉，因火气浓郁，青莲仙人将神药朱果种植于此。</Desc>
+		<FightMap>
+			<Name>Place_Shu1_Cliff_NingBi</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiBeg" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_CopperRock</ThingDef>
+				<Count>20</Count>
+				<Rate>4</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Shu2" Parent="Place_Level2Base">   <!--法宝-->
+		<Location X="1089" Y="876"/>
+		<Icon>res/Sprs/map/map_shandong02</Icon>
+		<DisplayName>飞雷洞</DisplayName>
+		<Desc>蜀山十二洞之一，也是青莲剑宗开派祖师闭关飞升之所，传说青莲仙人飞升前于此留下一个天大的秘密，可惜千百年来无人找到。</Desc>
+		<FightMap>
+			<Name>Place_Shu2_Cave_FeiLei</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>8</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="BaoZang_FeiLei" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Shu3" Parent="Place_Level2Base">  
+		<Location X="1040" Y="805"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shandong04</Icon>
+		<DisplayName>餐霞洞</DisplayName>
+		<Desc>蜀山十二洞之一，位于蜀山北峰之上。洞内多生露天火铜，千万年来火气于洞内凝聚不散，仿佛云霞蒸腾。故称餐霞洞，是修炼的好去处。</Desc>
+		<FightMap>
+			<Name>Place_Shu3_Cave_CanXia</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>9</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_XiuLian_Huo" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Shu4" Parent="Place_Level2Base">  
+		<Location X="1056" Y="905"/>
+		<Icon>res/Sprs/map/map_shandong02</Icon>
+		<DisplayName>玉泉洞</DisplayName>
+		<Desc>蜀山十二洞之一。传说更有一口地母灵液的泉眼深藏洞中，非有缘人不可得。</Desc>
+		<FightMap>
+			<Name>Place_Shu4_Cave_YuQuan</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind_Tu" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_EarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Shu5" Parent="Place_Level2Base">  <!--艺术品剑，神秘人-->
+		<Location X="940" Y="909"/>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<DisplayName>剑冢</DisplayName>
+		<Desc>蜀山山中一座幽深的洞穴，其中收藏有历代青莲剑宗剑仙的佩剑。</Desc>
+		<FightMap>
+			<BGM>
+				<li>bgm12</li>
+			</BGM>
+			<Name>Place_Shu5_Cave_Cemetery</Name>
+			<Class>Place_Shu5_Cave_Cemetery</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>10</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_JianZhong" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_WuLian1" Parent="Place_Level2Base">    <!--故事线11111-->
+		<Location X="1011" Y="692"/>
+		<Scale>1</Scale>
+		<Icon>res/Sprs/map/map_hushui01</Icon>
+		<DisplayName>天池</DisplayName>
+		<Desc>五莲山山巅的圣地，本是一座火山口，时常喷发。五莲真人施展偷天换地的神通将火山封印，并于此立派。传说天池之中有一脉长生泉，非有缘人不可得。</Desc>
+		<FightMap>
+			<Name>Place_WuLian1_Pond_TianChi</Name>
+			<Class></Class>
+			<Biome>Cold</Biome>
+			<Snow>0.5</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind_Shui" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_LifeStream</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_WuLian2" Parent="Place_Level2Base">   
+		<Location X="948" Y="558"/>
+		<Scale>1</Scale>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>木白雨林</DisplayName>
+		<Desc>五莲山后山的神秘树林，雨落时云气蒸腾，如烟如雾，恍如仙境。曾有重疾儒生入而复返，说林中有一仙人，左手持一木剑可呼风唤雨，右手托一白玉石可愈百病，自号木白仙人。木白雨林便成此林之名。</Desc>
+		<FightMap>
+			<BGM>
+				<li>bgm4</li>
+			</BGM>
+			<Name>Place_WuLian2_Forest_BaiMu</Name>
+			<Class>Place_WuLian2_Forest_BaiMu</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>ForestRain</Weather>
+			<PowerLevel>12</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_MuBai" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_BaiMan1" Parent="Place_Level2Base"> <!--救人-->
+		<Location X="118" Y="588"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shandong05</Icon>
+		<DisplayName>千尸洞</DisplayName>
+		<Desc>百蛮山的弟子猎杀妖兽后，会将尸体运往千尸洞封存，妖兽尸体在尸气的转化下成为傀儡，镇守百蛮山。若有刚运入其中的尸首还未来得及转化，或可将其玄牝珠取出。</Desc>
+		<FightMap>
+			<Name>Place_BaiMan1_Cave_QianShi</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind_Shui" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_BaiMan2" Parent="Place_Level2Base">
+		<Location X="206" Y="615"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shangu05</Icon>
+		<DisplayName>万蛇坑</DisplayName>
+		<Desc>百蛮山豢养妖蛇之地，坑中一旦出现初成气候的妖蛇就会被抓出采，集妖灵血供百蛮山弟子修炼。</Desc>
+		<FightMap>
+			<Name>Place_BaiMan2_Abyss_WanShe</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_BaiMan3" Parent="Place_Level2Base">
+		<Location X="166" Y="552"/>
+		<Scale>0.35</Scale>
+		<Icon>res/Sprs/map/map_shangu05</Icon>
+		<DisplayName>百兽窟</DisplayName>
+		<Desc>百蛮山豢养妖兽之地，后生异变，渐渐废弃，已经无人可以进入。</Desc>
+		<FightMap>
+			<Name>Place_BaiMan3_Cave_Beast</Name>
+			<Class>Place_BaiMan3_Cave_Beast</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+	</Place>
+	
+	<Place Name="Place_XianKong1" Parent="Place_Level2Base">  <!--故事线2222222-->
+		<Location X="69" Y="430"/>
+		<Icon>res/Sprs/map/map_shandong01</Icon>
+		<DisplayName>无底洞</DisplayName>
+		<Desc>陷空山中的一座无底大坑，因泄露出元磁之气，故而常有陨星坠落于此。传闻有修行者在此寻得星髓。不过宝物有灵，大多数人还是空手而归。</Desc>
+		<FightMap>
+			<Name>Place_XianKong1_Cave_Endless</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind_Jin" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_StarEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<!--  
+	<Place Name="Place_Hei1" Parent="Place_Level2Base">    
+		<Location X="665" Y="112"/>
+		<Icon>res/Sprs/map/map_shandong02</Icon>
+		<DisplayName>炼魔洞</DisplayName>
+		<Desc>黑山三柱顶峰之一，被七杀大阵环绕，无人能进。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="Story_QiSha" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Hei2" Parent="Place_Level2Base">  
+		<Location X="747" Y="92"/>
+		<Icon>res/Sprs/map/map_shandong03</Icon>
+		<DisplayName>接天洞</DisplayName>
+		<Desc>黑山三柱顶峰之一，被七杀大阵环绕，无人能进。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="Story_QiSha" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Hei3" Parent="Place_Level2Base">  
+		<Location X="810" Y="96"/>
+		<Icon>res/Sprs/map/map_shandong04</Icon>
+		<DisplayName>凌霄洞</DisplayName>
+		<Desc>黑山三柱顶峰之一，被七杀大阵环绕，无人能进。</Desc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Events>
+			<li Name="Story_QiSha" Rate="1"/>
+		</Events>
+	</Place>
+	-->
+	
+	<Place Name="Place_Hei4" Parent="Place_Level2Base">  
+		<Location X="785" Y="189"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>千棘林</DisplayName>
+		<Desc>黑山脚下的一座丛林，林中遍布荆棘，人兽难行，自古以来便罕有人迹。亦因此，林中千年古木随处可见，木属性灵气异常充沛，是修炼的好去处。</Desc>
+		<FightMap>
+			<Name>Place_Hei4_Forest_QianJi</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>13</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_XiuLian_Mu" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_HeHuan1" Parent="Place_Level2Base"> 
+		<Location X="1587" Y="363"/>
+		<Icon>res/Sprs/map/map_xuanwo01</Icon>
+		<DisplayName>离恨海</DisplayName>
+		<Desc>合欢岛附近有一座大岛屿，岛中有一湖，终年迷雾笼罩，称为离恨海。若进入其中则可见万般爱恨演绎，稍不留神就会沉溺其中。</Desc>
+		<FightMap>
+			<BGM>
+				<li>bgm12</li>
+			</BGM>
+			<Name>Place_HeHuan1_Island_LiHen</Name>
+			<Class>Place_HeHuan1_Island_LiHen</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="BaoZang_LiHenHai" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_HeHuan2" Parent="Place_Level2Base">
+		<Location X="1754" Y="470"/>
+		<Icon>res/Sprs/map/map_hushui02</Icon>
+		<DisplayName>毒龙潭</DisplayName>
+		<Desc>合欢岛上的一片深潭，传说此潭深处有一窝毒龙盘踞，经常袭击附近的修行者。又有传言此潭深处有一口地母灵液，毒龙出没的传闻只是合欢岛放出的烟雾弹。</Desc>
+		<FightMap>
+			<Name>Place_HeHuan2_Pond_DuLong</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind_Huo" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_EarthEssence1</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_Desert1" Parent="Place_Level2Base">
+		<Location X="480" Y="577"/>
+		<Icon>res/Sprs/map/map_xiepai01</Icon>
+		<DisplayName>万妖殿</DisplayName>
+		<Desc>深藏在大漠深处的邪教大派，其隐世千年，行事作风低调，罕为人知。直到最近妖族圣地龙崖石刻重新现世，才再现世间。</Desc>
+		<School>12</School>
+		<UnLocked>0</UnLocked>
+		<FightMap>
+			<BGM>
+				<li>bgm8</li>
+			</BGM>
+			<Name>School_WanYao</Name>
+			<Class>School_WanYao</Class>
+			<Biome>sandFightMapBiome</Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>16</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="BadFight" Rate="1.5"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Desert2" Parent="Place_Level2Base">
+		<Location X="485" Y="481"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>幻沙原</DisplayName>
+		<Desc>大漠深处的一片生灵绝地，终日狂沙飞舞。过于浓烈的土属性灵气充斥着这里的天空。如果能忍受这里恶劣的环境，倒是一个修炼的好去处。</Desc>
+		<FightMap>
+			<Name>Place_Desert2_Plain_HuanSha</Name>
+			<Class></Class>
+			<Biome>Hot</Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>12</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_XiuLian_Tu" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_Desert3" Parent="Place_Level2Base">
+		<Location X="292" Y="507"/>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<DisplayName>火穴</DisplayName>	
+		<Desc>大漠深处的一片奇异洞穴，其中炙热非常，据说拥有先天火德之宝。</Desc>
+		<FightMap>
+			<Name>Place_Desert3_Cave_Ember</Name>
+			<Class></Class>
+			<Biome>Hot</Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>20</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiGet" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_CopperRock</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Desert4" Parent="Place_Level2Base">
+		<Location X="528" Y="432"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>鸣沙村</DisplayName>
+		<Desc>大漠边缘的一座小村庄，村中多魔族血脉，好斗不畏死，以猎杀沙漠中的妖兽为生。</Desc>
+		<FightMap>
+			<Name>Place_Desert4_Villa_MingSha</Name>
+			<Class>Place_Desert4_Villa_MingSha</Class>
+			<Biome>Hot</Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>5</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="HighFind" Rate="1"/>
+		</Events>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Count>2</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Count>3</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Count>5</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<!--
+	<Place Name="Place_SouthSea1" Parent="Place_Level2Base">
+		<Location X="803" Y="997"/>
+		<DisplayName>紫云宫</DisplayName>
+	</Place>
+	<Place Name="Place_SouthSea2" Parent="Place_Level2Base">
+		<Location X="883" Y="981"/>
+		<DisplayName>船墓</DisplayName>
+	</Place>
+	<Place Name="Place_SouthSea3" Parent="Place_Level2Base">
+		<Location X="867" Y="878"/>
+		<DisplayName>玄龟岛</DisplayName>
+	</Place>
+	
+	<Place Name="Place_EastSea1" Parent="Place_Level2Base">
+		<Location X="1009" Y="701"/>
+		<DisplayName>大裂口</DisplayName>
+	</Place>
+	<Place Name="Place_EastSea2" Parent="Place_Level2Base">
+		<Location X="953" Y="624"/>
+		<DisplayName>定海峰</DisplayName>
+	</Place>
+	<Place Name="Place_EastSea3" Parent="Place_Level2Base">
+		<Location X="995" Y="549"/>
+		<DisplayName>海眼</DisplayName>
+	</Place>
+	
+	<Place Name="Place_NorthSea1" Parent="Place_Level2Base">
+		<Location X="882" Y="184"/>
+		<DisplayName>玄阴凹</DisplayName>
+	</Place>
+	<Place Name="Place_NorthSea2" Parent="Place_Level2Base">
+		<Location X="994" Y="261"/>
+		<DisplayName>惊波洋</DisplayName>
+	</Place>
+	-->
+	
+	<Place Name="Place_SouthForest1" Parent="Place_Level2Base">
+		<Location X="67" Y="1041"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>万古桃花瘴</DisplayName>
+		<Desc>南荒穷山恶水中本有一片数百里的桃林，因人迹罕至，桃子成熟无人采摘落地腐烂，千万年来逐渐累积成这一片桃花瘴气，终年不散。</Desc>
+		<FightMap>
+			<Name>Place_SouthForest1_Forest_ElderPeach</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>ForestRain</Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="BaoZang_TaoHuaZhang" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_SouthForest2" Parent="Place_Level2Base">
+		<Location X="262" Y="1003"/>
+		<Icon>res/Sprs/map/map_yiji02</Icon>
+		<DisplayName>邪帝陵</DisplayName>
+		<UnLocked>1</UnLocked>
+		<Desc>南方魔教教祖邪帝之陵寝，寝宫为一整块天星陨铁炼铸，深埋地下。整座陵墓被九天十地灭神煞紧紧环绕，如果没有秘法开路，不论多高的修为，触之立毙。</Desc>
+		<FightMap>
+			<Name>Place_SouthForest2_Grave_XieDi</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>12</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="BaoZang_XieDiLing" Rate="1"/>
+		</Events>
+	</Place>
+	
+	<Place Name="Place_SouthForest3" Parent="Place_Level2Base">
+		<Location X="37" Y="878"/>
+		<Icon>res/Sprs/map/map_shangu05</Icon>
+		<DisplayName>虫谷</DisplayName>
+		<Desc>南荒深处的一块盆地，密林遍布多生虫豸，环境非常险恶。但此处湿热之环境特别适合神药木枯藤生长，因此常见修行者深入其中寻觅仙缘。</Desc>
+		<FightMap>
+			<Name>Place_SouthForest3_Valley_Pest</Name>
+			<Class>Place_SouthForest3_Valley_Pest</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>20</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiGet" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_HardWood</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_Snowfield1" Parent="Place_Level2Base">
+		<Location X="981" Y="73"/>
+		<Icon>res/Sprs/map/map_shangu03</Icon>
+		<DisplayName>天螺峪</DisplayName>
+		<Desc>大雪原之中的一座山谷，灵气浓郁，人迹罕至。谷中多生百年老参。</Desc>
+		<FightMap>
+			<Name>Place_Snowfield1_Valley_TianLuo</Name>
+			<Class></Class>
+			<Biome>Cold</Biome>
+			<Snow>1</Snow>
+			<Weather>EverSnow</Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find_Cold" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_Snowfield2" Parent="Place_Level2Base">
+		<Location X="784" Y="40"/>
+		<Scale>0.75</Scale>
+		<Icon>res/Sprs/map/map_tanshui01</Icon>
+		<DisplayName>玉晶潭</DisplayName>
+		<Desc>大雪原深处的一口永不结冰的神泉，据说其中有一朵五色金莲生存，非有缘人难觅其踪。其泉眼直通地壳深处元磁之心，一旦陷入就永无出头之日。昔日一统修行界的绝世霸主魔帝付辟空遭天谴之前，将全部身家藏于金匣沉入潭中，金匣被元磁之心捕获，再无人可以取出。</Desc>
+		<FightMap>
+			<Name>Place_Snowfield2_Pond_YuJing</Name>
+			<Class></Class>
+			<Biome>Cold</Biome>
+			<Snow>1</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>21</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiGet" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_Snowfield3" Parent="Place_Level2Base">
+		<Location X="928" Y="74"/>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>雪风原</DisplayName>
+		<Desc>一望无际的大雪原，寒风终日不息。盛产寒晶矿。</Desc>
+		<FightMap>
+			<Name>Place_Snowfield3_Plain_XueFeng</Name>
+			<Class></Class>
+			<Biome>Cold</Biome>
+			<Snow>1</Snow>
+			<Weather>EverSnow</Weather>
+			<PowerLevel>11</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find_Cold" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Count>40</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	<Place Name="Place_FertileField1" Parent="Place_Level2Base">
+		<Location X="1627" Y="123"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>寒山镇</DisplayName>
+		<Desc>大河北部的一座小镇</Desc>
+		<FightMap>
+			<Name>Place_FertileField1_Villa_HanShan</Name>
+			<Class></Class>
+			<Biome>Cold</Biome>
+			<Snow>1</Snow>
+			<Weather>EverSnow</Weather>
+			<PowerLevel>5</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_FertileField2" Parent="Place_Level2Base">
+		<Location X="1558" Y="135"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>落霞镇</DisplayName>
+		<Desc>江北平原的一座小镇，民风淳朴，与世无争。村民多以开采周围的玉石矿为生。</Desc>
+		<FightMap>
+			<Name>Place_FertileField2_Villa_LuoXia</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>4</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="5"/>
+			<li Name="HighFind" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Jade</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.4</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Count>5</Count>
+				<Rate>0.4</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_FertileField3" Parent="Place_Level2Base">
+		<Location X="1753" Y="161"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>稻香村</DisplayName>
+		<Desc>临湖而建的村落，村人以务农捕鱼为生。</Desc>
+		<FightMap>
+			<Name>Place_FertileField3_Villa_DaoXiang</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>5</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_FishMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Wheat</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_FertileField4" Parent="Place_Level2Base">
+		<Location X="1717" Y="262"/>
+		<Icon>res/Sprs/map/map_shan01</Icon>
+		<DisplayName>桂山</DisplayName>
+		<Desc>江南名山，山中景色秀美，气候温和，盛产灵芝。</Desc>
+		<FightMap>
+			<Name>Place_FertileField4_Mount_Gui</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>8</PowerLevel>
+		</FightMap>-
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_GanodermaLucidum</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PurpleGanodermaLucidum</ThingDef>
+				<Count>4</Count>
+				<Rate>0.2</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_FertileField5" Parent="Place_Level2Base">
+		<Location X="1826" Y="203"/>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<DisplayName>卢山</DisplayName>
+		<Desc>江南名山，山势幽深多变，猿猱难登。山中有零星的露天灵石矿藏，虽然没有大规模的开采价值，但也常有散修入山寻觅自用。据说有修行者于此感应到强烈的金属性灵气，似乎有天地灵根琅琊果藏于山中。</Desc>
+		<FightMap>
+			<Name>Place_FertileField5_Mount_Lu</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiGet" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Count>5</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	
+	<Place Name="Place_CentralPlains1" Parent="Place_Level2Base">
+		<Location X="702" Y="256"/>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<DisplayName>云台山</DisplayName>
+		<Desc>中原腹地的名山，以山中云层厚重而得名。山上多产朱砂，常有方士修行者来此收采。</Desc>
+		<FightMap>
+			<Name>Place_CentralPlains1_Mount_Yun</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>8</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Cinnabar</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_CentralPlains2" Parent="Place_Level2Base">
+		<Location X="923" Y="396"/>
+		<Icon>res/Sprs/map/map_shan01</Icon>
+		<DisplayName>炼丹峰</DisplayName>
+		<UnLocked>1</UnLocked>
+		<Desc>昔日医仙于此炼丹，至今只留下一座废弃的洞府，空空如也。山上药田中种植的仙草多已枯死，只有易于生长的灵仙草漫山遍野的繁衍开来。据说昔日医仙曾于此培植天地灵根赭黄精，早已通灵，非有缘人不得见。</Desc>
+		<FightMap>
+			<Name>Place_CentralPlains2_Peak_LianDan</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>17</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_LingZhiGet" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_MagicHerb</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+		<HighProduce>
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li> 
+		</HighProduce>
+	</Place>
+	<Place Name="Place_CentralPlains3" Parent="Place_Level2Base">
+		<Location X="624" Y="301"/>
+		<Bang>1</Bang>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<DisplayName>平顶山</DisplayName>
+		<Desc>中原腹地的一座奇山，山顶平坦如野，造化天成。山巅有一三才榜，记录有天地间奇人之名讳。受此影响，此地金属性灵气特别浓郁，是个修炼的好去处。</Desc>
+		<FightMap>
+			<Name>Place_CentralPlains3_Mount_PingDing</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>10</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Story_XiuLian_Jin" Rate="1"/>
+		</Events>
+	</Place>
+	<Place Name="Place_CentralPlains4" Parent="Place_Level2Base">
+		<Location X="922" Y="332"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>五华村</DisplayName>
+		<Desc>中原腹地依山而建的一座村落。村人世代行医，以附近山中开垦药田为生。</Desc>
+		<FightMap>
+			<Name>Place_CentralPlains4_Villa_WuHua</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>4</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Count>4</Count>
+				<Rate>0.2</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_CentralPlains5" Parent="Place_Level2Base">
+		<Location X="752" Y="334"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>芦墟村</DisplayName>
+		<Desc>中原腹地的一座村落，以纺织闻名天下。</Desc>
+		<FightMap>
+			<Name>Place_CentralPlains5_Villa_LuXu</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>4</PowerLevel>
+		</FightMap>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_CottonCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_DeepBlueCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PurpleCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_YellowCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_BlueCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_RedCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_WhiteCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_BlackCloth</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	
+	
+	<Place Name="Place_BirthPlace11" Parent="Place_Level2Base">
+		<Location X="1218" Y="661"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>南屏村</DisplayName>
+		<Desc>一座小型村落，村中居民多为农夫猎户，以种植打猎为生。</Desc>
+		<FightMap>
+			<Name>Place_BirthPlace11_Villa_NanPing</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>3</PowerLevel>
+		</FightMap>
+		<UnLocked>1</UnLocked>
+		<!--<Links>
+			<li>Place_BirthPlace14</li>
+			<li>Place_ShanCity</li>
+		</Links>-->
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_BoarMeat</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Beef</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_BirthPlace12" Parent="Place_Level2Base">
+		<Location X="1404" Y="768"/>
+		<Icon>res/Sprs/map/map_shan01</Icon>
+		<DisplayName>月轮山</DisplayName>
+		<Desc>南方边境的一座小山，山林覆盖，植被茂密，常有采药人进山采药为生。</Desc>
+		<FightMap>
+			<Name>Place_BirthPlace12_Mount_YueLun</Name>
+			<Class>Place_BirthPlace12_Mount_YueLun</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>3</PowerLevel>
+		</FightMap>
+		<UnLocked>1</UnLocked>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Healroot</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_BirthPlace13" Parent="Place_Level2Base">
+		<Location X="1325" Y="673"/>
+		<Icon>res/Sprs/map/map_shan01</Icon>
+		<DisplayName>小凉山</DisplayName>
+		<Desc>一座棕石山，原本有一座朝廷的采石场，后因战乱而被废弃。如今山下有不少居民以种植棉花为生。</Desc>
+		<FightMap>
+			<Name>Place_BirthPlace13_Mount_Liang</Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>3</PowerLevel>
+		</FightMap>
+		<UnLocked>1</UnLocked>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>			
+		</Produce>
+	</Place>
+	<Place Name="Place_BirthPlace14" Parent="Place_Level2Base">
+		<Location X="1314" Y="865"/>
+		<Icon>res/Sprs/map/map_shan02</Icon>
+		<DisplayName>铜陵山</DisplayName>
+		<Desc>一座石山，山中多金属矿藏，罕有人迹。</Desc>
+		<FightMap>
+			<Name>Place_BirthPlace14_Mount_TongLing</Name>
+			<Class>Place_BirthPlace14_Mount_TongLing</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>3</PowerLevel>
+		</FightMap>
+		<UnLocked>1</UnLocked>
+		<Events>
+			<li Name="Find" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_IronRock</ThingDef>
+				<Count>20</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="Place_BirthPlace15" Parent="Place_Level2Base">
+		<Location X="1405" Y="798"/>
+		<Scale>0.3</Scale>
+		<Icon>res/Sprs/map/map_zhengpai01</Icon>
+		<DisplayName>太一遗迹</DisplayName>
+		<Desc>太一门的遗迹。</Desc>
+		<FightMap>
+			<Name>Place_BirthPlace15_Remains_TaiYi</Name>
+			<Class>Place_BirthPlace15_Remains_TaiYi</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>0</PowerLevel>
+		</FightMap>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+	</Place>
+	<Place Name="Place_BirthPlace16" Parent="Place_Level2Base">
+		<Location X="1560" Y="745"/>
+		<Scale>0.5</Scale>
+		<Icon>res/Sprs/map/map_yiji01</Icon>
+		<DisplayName>黑沙滩</DisplayName>
+		<Desc>这里的沙像墨水一样黑。岸边有个通往地下赌场的神秘入口，只有有缘人才能找到。</Desc>
+		<!--<Links>
+			<li>Place_BirthPlace11</li>
+		</Links>-->
+		<FightMap>
+			<Name></Name>
+			<Class></Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather></Weather>
+			<PowerLevel>0</PowerLevel>
+		</FightMap>
+	</Place>
+</List></Places>

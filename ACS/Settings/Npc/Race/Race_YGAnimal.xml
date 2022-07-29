@@ -1,0 +1,770 @@
+<RaceDefs><List>
+
+<RaceDef Name="YGRabbit">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Rabbit</FromRace>
+	<RebornRace>YGRabbit</RebornRace>
+	<FromRace>Rabbit</FromRace>
+	<DisplayName>兔妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：兔妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Rabbit.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_RabbitBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>3</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_tuyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealRecover</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Rabbit_1</li>
+		<li>SuperPart_Rabbit_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="YGChicken">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Chicken</FromRace>
+	<RebornRace>YGChicken</RebornRace>
+	<FromRace>Chicken</FromRace>
+	<DisplayName>鸡妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：鸡妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Chicken.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_ChickenBody</Body>
+	<HasGenders>1</HasGenders>
+	<TalkBefore>叽，</TalkBefore>
+	<TalkAfter>叽!</TalkAfter>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_jiyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealRecover</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Chicken_1</li>
+		<li>SuperPart_Chicken_2</li>
+		<li>SuperPart_Chicken_3</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,1,1,1,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="YGWolf">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Wolf</FromRace>
+	<RebornRace>YGWolf</RebornRace>
+	<FromRace>Wolf</FromRace>
+	<DisplayName>狼妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：狼妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<TalkBefore>嗷，</TalkBefore>
+	<TalkAfter>呜!</TalkAfter>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Wolf.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_CTWBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_langyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealPower</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Wolf_1</li>
+		<li>SuperPart_Wolf_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>5,3,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>5,3,1,3,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="YGSnake">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Snake</FromRace>
+	<RebornRace>YGSnake</RebornRace>
+	<FromRace>Snake</FromRace>
+	<DisplayName>蛇妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：蛇妖</Desc>
+	<TalkBefore>嘶，</TalkBefore>
+	<TalkAfter>嘶</TalkAfter>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Snake.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_SnakeBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_sheyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealWisdom</li>
+	</BornMagic>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>6,4,1,5,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>6,4,1,5,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="PoikilothermMoveSpeed_Snake"/>
+		<li Name="RaceMaxHp" Value="PoikilothermMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PoikilothermComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PoikilothermComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PoikilothermToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PoikilothermToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PoikilothermVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PoikilothermBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PoikilothermRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+
+<RaceDef Name="YGBoar">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Boar</FromRace>
+	<RebornRace>YGBoar</RebornRace>
+	<FromRace>Boar</FromRace>
+	<DisplayName>猪妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：猪妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<TalkBefore>哼，</TalkBefore>
+	<TalkAfter>哼</TalkAfter>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Boar.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_BoarBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_zhuyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealPower</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Boar_1</li>
+		<li>SuperPart_Boar_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,6,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,6,1,3,2</li> 
+	</BaseFive>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="YGBear">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Bear</FromRace>
+	<RebornRace>YGBear</RebornRace>
+	<FromRace>Bear</FromRace>
+	<DisplayName>熊妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：熊妖</Desc>
+	<TalkBefore>嗷，</TalkBefore>
+	<TalkAfter>嗷</TalkAfter>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Bear.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_BearBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_xiongyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealPower</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Bear_1</li>
+		<li>SuperPart_Bear_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>7,9,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>7,9,1,3,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+<RaceDef Name="YGTurtle">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Turtle</FromRace>
+	<RebornRace>YGTurtle</RebornRace>
+	<FromRace>Turtle</FromRace>
+	<DisplayName>龟妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：龟妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Turtle.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_TurtleBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<MonsterRun>1</MonsterRun>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_guiyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealShield</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Turtle_1</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>2,3,1,7,6</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>2,3,1,7,6</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow2"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="YGFrog">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Frog</FromRace>
+	<RebornRace>YGFrog</RebornRace>
+	<FromRace>Frog</FromRace>
+	<DisplayName>蛙妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：蛙妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<TalkBefore>呱，</TalkBefore>
+	<TalkAfter>呱</TalkAfter>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Frog.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_FrogBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>2</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_wayao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealWisdom</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Forg_1</li>
+		<li>SuperPart_Forg_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>1,1,1,1,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>1,1,1,1,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="YGCat">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Cat</FromRace>
+	<RebornRace>YGCat</RebornRace>
+	<FromRace>Cat</FromRace>
+	<DisplayName>猫妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：猫妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<TalkBefore>喵，</TalkBefore>
+	<TalkAfter>喵</TalkAfter>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Cat.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_CTWBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_maoyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealWisdom</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Cat_1</li>
+		<li>SuperPart_Cat_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,3,6,5,4</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,3,6,5,4</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="YGCattle">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Cattle</FromRace>
+	<RebornRace>YGCattle</RebornRace>
+	<FromRace>Cattle</FromRace>
+	<DisplayName>牛妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：牛妖</Desc>
+	<RaceType>Wisdom</RaceType>
+	<TalkBefore>哞，</TalkBefore>
+	<TalkAfter>哞!</TalkAfter>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Cattle.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_CattleBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_niuyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealShield</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Cattle_1</li>
+		<li>SuperPart_Cattle_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>4,7,1,3,1</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>4,7,1,3,1</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+
+
+<RaceDef Name="YGTiger">
+	<WisdomRaceKind>YaoGuai</WisdomRaceKind>
+	<FromRace>Tiger</FromRace>
+	<RebornRace>YGTiger</RebornRace>
+	<FromRace>Tiger</FromRace>
+	<DisplayName>虎妖</DisplayName>
+	<GentrateNpc>1</GentrateNpc>
+	<Desc>觉醒灵智而化形为妖：虎妖</Desc>
+	<TalkBefore>嗷~</TalkBefore>
+	<TalkAfter>嗷!</TalkAfter>
+	<RaceType>Wisdom</RaceType>
+	<MaleName>男</MaleName>
+	<FemaleName>女</FemaleName>
+	<NameGeneratorPrefix>RaceName/Prefix_Tiger.txt</NameGeneratorPrefix>
+	<NameGeneratorMaleSuffix>RaceName/MSuffix.txt</NameGeneratorMaleSuffix>
+	<NameGeneratorFemaleSuffix>RaceName/FSuffix.txt</NameGeneratorFemaleSuffix>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>YGAnimal_CTWBody</Body>
+	<HasGenders>1</HasGenders>
+	<HasEquip>1</HasEquip>
+	<GenerateMinAge>14</GenerateMinAge>
+	<GenerateMaxAge>60</GenerateMaxAge>
+	<ChildhoodAge>6</ChildhoodAge>
+	<AdultAge>16</AdultAge>
+	<EventAge>1</EventAge>
+	<YearSkillPoint>0.15</YearSkillPoint>
+	<MonsterRun>1</MonsterRun>
+	<IllustratedHandLabel>YsAnimal</IllustratedHandLabel>
+	<TexPath>tex://res/Sprs/tujian/TJ_laohuyao01</TexPath>
+	
+	<BornMagic>
+		<li>Magic_YG_RealPower</li>
+	</BornMagic>
+	
+	<RaceSuperPart>
+		<li>SuperPart_Tiger_1</li>
+		<li>SuperPart_Tiger_2</li>
+	</RaceSuperPart>
+	
+	<AnimalModifier>
+		<li>Modifier_YG_NormalPower</li>
+	</AnimalModifier>
+	
+	<AnimalModifierRemove>
+		<li>Modifier_YG_NormalPower</li>
+		<li>Modifier_YG_RealPower</li>
+		<li>Modifier_YG_RealRecover</li>
+		<li>Modifier_YG_RealWisdom</li>
+		<li>Modifier_YG_RealShield</li>
+		<li>Modifier_YG_YinYangForce</li>
+	</AnimalModifierRemove>
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999"	>6,6,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="999"	>6,6,1,4,2</li> 
+	</BaseFive>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+</RaceDef>
+</List></RaceDefs>

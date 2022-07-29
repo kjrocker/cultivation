@@ -1,0 +1,14 @@
+<Defs><List>
+	<Def Name="Forest">
+		<DisplayName>丛林</DisplayName>
+	</Def>
+	<Def Name="Plain">
+		<DisplayName>平原</DisplayName>
+	</Def>
+	<Def Name="Mountain">
+		<DisplayName>山脉</DisplayName>
+	</Def>
+	<Def Name="Aqua">
+		<DisplayName>水系</DisplayName>
+	</Def>
+</List></Defs>

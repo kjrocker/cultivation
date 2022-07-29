@@ -1,0 +1,85 @@
+<SpecialNames><List>
+	<SpecialItem Name="Item_HomeFood">
+		<Fish_SkyCrab>
+			<li Name="清蒸螃蟹" Desc=""/>
+			<li Name="螃蟹汤" Desc=""/>
+			<li Name="家常炒螃蟹" Desc=""/>
+			<li Name="蟹肉粥" Desc=""/>
+			<li Name="豆腐炖蟹" Desc=""/>
+			<li Name="辣卤蟹" Desc=""/>
+			<li Name="香卤蟹" Desc=""/>
+			<li Name="蟹肉炒饭" Desc=""/>
+		</Fish_SkyCrab>
+		<Fish_SkySnake>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_SkySnake>
+		<Fish_SkyFish>
+			<li Name="鱼肉烩饭" Desc=""/>
+			<li Name="鱼肉饼" Desc=""/>
+			<li Name="鱼肉卷" Desc=""/>
+			<li Name="烤鱼" Desc=""/>
+			<li Name="干炸鱼" Desc=""/>
+			<li Name="清水鱼" Desc=""/>
+			<li Name="清蒸鱼" Desc=""/>
+			<li Name="红烧鱼" Desc=""/>
+		</Fish_SkyFish>
+	</SpecialItem>
+	<SpecialItem Name="Item_DeliciousFood">
+		<Fish_SkyCrab>
+			<li Name="蟹肉煲" Desc=""/>
+			<li Name="香辣蟹" Desc=""/>
+			<li Name="清蒸蟹腿" Desc=""/>
+			<li Name="蟹黄粉丝煲" Desc=""/>
+			<li Name="醉蟹" Desc=""/>
+			<li Name="蟹粉豆腐" Desc=""/>
+			<li Name="酱爆秋蟹" Desc=""/>
+		</Fish_SkyCrab>
+		<Fish_SkySnake>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_SkySnake>
+		<Fish_SkyFish>
+			<li Name="火爆长鱼片" Desc=""/>
+			<li Name="长鱼煲仔饭" Desc=""/>
+			<li Name="水煮鱼" Desc=""/>
+			<li Name="鱼肉丸子" Desc=""/>
+			<li Name="鱼糕" Desc=""/>
+			<li Name="三鱼锅" Desc=""/>
+			<li Name="酸汤鱼" Desc=""/>
+			<li Name="酒酿鱼" Desc=""/>
+			<li Name="香煎鱼片" Desc=""/>
+			<li Name="高汤焖鱼" Desc=""/>
+			<li Name="剁椒鱼头" Desc=""/>
+		</Fish_SkyFish>
+	</SpecialItem>
+	<SpecialItem Name="Item_DelicacyFood">
+		<Fish_SkyCrab>
+			<li Name="龙袍汤包" Desc="将新鲜的蟹黄与肉混合，再用薄薄的面皮包裹做成小笼包的样子，蒸煮后整个包子内都被金黄的蟹油填满，有传言皇帝连龙袍有不要也要吸上一口。"/>
+			<li Name="黄酒蒸蟹" Desc="使用上好的黄酒蒸煮晚秋的螃蟹，黄酒可去除蟹肉中的阴寒，补充阳气。蟹肉鲜甜的口感和黄酒的甘醇完美融合，乃人间绝配。"/>
+		</Fish_SkyCrab>
+		<Fish_SkySnake>
+			<li Name="响油长鱼丝" Desc="将新鲜的鳝鱼划成细丝，与佐料混炒而成，对刀工的精度和速度都有极高的要求。"/>
+			<li Name="洋葱长鱼背" Desc="将新鲜的鳝鱼烧熟，与洋葱混炒去除腥味，实为滋补与口味并存的美食。"/>
+		</Fish_SkySnake>
+		<Fish_SkyFish>	
+			<li Name="化龙汤" Desc="取鱼跃化龙之意，此汤秘诀在复杂的烹饪顺序和香料使用上，其味道鲜香远超普通的鱼肉料理。"/>
+			<li Name="羊方藏鱼" Desc="将鱼置于割开的大块羊肉中，加上调料同烹，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。"/>
+		</Fish_SkyFish>
+	</SpecialItem>
+</List></SpecialNames>

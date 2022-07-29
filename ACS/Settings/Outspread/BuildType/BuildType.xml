@@ -1,0 +1,18 @@
+<Defs><List>
+	<Def Name="Point">
+		<Type>Point</Type>
+		<RegionLimit>1</RegionLimit>
+	</Def>
+	<Def Name="Pro">
+		<Type>Point</Type>
+		<RegionLimit>10</RegionLimit>
+	</Def>
+	<Def Name="Wonder">
+		<Type>Wonder</Type>
+		<GlobalLimit>1</GlobalLimit>
+	</Def>
+	<Def Name="Region">
+		<Type>Region</Type>
+		<RegionLimit>1</RegionLimit>
+	</Def>
+</List></Defs>

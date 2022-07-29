@@ -1,0 +1,12 @@
+﻿<BodyDefs><List>
+
+<BodyDef Name="BodyPart">	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="TheWholeBody" Kind="Organ" Rate="0" Deadly="1">				
+			</li> 
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>

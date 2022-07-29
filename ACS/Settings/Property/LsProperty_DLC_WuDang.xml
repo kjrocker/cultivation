@@ -1,0 +1,47 @@
+<Properties><List>
+	<Property Name="LsXuanWuLingMaxValue">
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>LingShouMaxLingSpecial</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>LingShouQiGan^2*300*1.5+(20000*x)+LsFat*500000</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsXuanWuShieldConversionRateAddP">
+		<MathProperty>
+			<Value>
+				<Expression>LingShouHuTi*0.7+0.2+LingShouHuTi*0.7*LsBadGood/5</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsXuanWuMoveSpeed">
+		<MathProperty>
+			<Value>
+				<Expression>0.72+GrowProperty*0.33</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+	<Property Name="LsXuanWuFabaoPowerAddP">
+		<MinValue>1</MinValue>
+		<MathProperty>
+			<VarDef>
+				<li>
+					<Variable>x</Variable>
+					<Value>
+						<SpecialValue>SFabao</SpecialValue>
+					</Value>
+				</li>
+			</VarDef>
+			<Value>
+				<Expression>(30*LingShouNeiDan/200+30*LingShouNeiDan/200*(0-LsBadGood)/5)*(1-x)/2</Expression>
+			</Value>
+		</MathProperty>
+	</Property>
+</List></Properties>

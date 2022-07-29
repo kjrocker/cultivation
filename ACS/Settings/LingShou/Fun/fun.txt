@@ -1,0 +1,10 @@
+FunType	Ani	Duration	Desc	JobType
+Lay	Lay	20	休息休息
+Wonder	Run	20	到处走走	RandomMove
+BiuBiu	ShiFaLoop	20	练习打架
+Chop	Atk3	20	练习打架
+PlayBB	Free	20	玩竹子
+Roll	Free2	20	打滚
+Happy	kaixin01	20	玩耍
+Stretch	Free2	20	锻炼头部
+Spin	kaixin01	20	转圈圈

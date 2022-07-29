@@ -1,0 +1,23 @@
+<Properties><List>
+		
+	<Property Name="BossMaxAge">
+		<BaseValue>100000</BaseValue>	
+	</Property>	
+	
+	<Property Name="BossComfyTMin">
+		<BaseValue>-99999</BaseValue>	
+	</Property>	
+	
+	<Property Name="BossComfyTMax">
+		<BaseValue>99999</BaseValue>	
+	</Property>	
+	
+	<Property Name="BossToleranceTMin">
+		<BaseValue>-99999</BaseValue>	
+	</Property>	
+	
+	<Property Name="BossToleranceTMax">
+		<BaseValue>99999</BaseValue>	
+	</Property>	
+		
+</List></Properties>

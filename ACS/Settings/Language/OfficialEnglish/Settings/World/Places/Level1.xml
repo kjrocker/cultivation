@@ -1,0 +1,95 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Place_Level1Base">
+			<Desc>Lv.1 Location Templates</Desc>
+		</Text>
+		<Text Name="Place_DanXia">
+			<DisplayName>Mt. Sunshade</DisplayName>
+			<Desc>A world-renowned mountain that gives sanctuary to the Sunshade Abode, the third biggest Taoist Heavenly Abode. The towering mountain is full of majesty and grandeur, and most famous for the breath-taking scenery of its overlooking cliffs at sunset. Mt. Sunshade is rich in old ginseng. It is said that there is a miraculous place called the Five Dragons Pond where the Prism Lotus—the Spirit Root of the Sunshade Abode is planted.</Desc>
+		</Text>
+		<Text Name="Place_KunLun">
+			<DisplayName>Mt. Kunlun</DisplayName>
+			<Desc>The most sacred, spiritual mountains in the world, the source of the Dragon's Vein, and home to the greatest Taoist Heavenly Abode of all— Jade Void Abode of the Kunlun Palace. The mountains are rich in various stones, most notably for its Holy Stones. There is one cave connecting directly to the Dragon's Vein where the Kunlun Palace cultivates its Spirit Root—the Ocher Essence.</Desc>
+		</Text>
+		<Text Name="Place_TianJi">
+			<DisplayName>Heavenstep Peak</DisplayName>
+			<Desc>The Heavenstep Peak is a thousands-of-miles-high, isolated peak that reaches into the clouds, the top of which lies the mysterious and secluded Skydome Palace. The Skydome Palace walks a thin line between good and evil. Its disciples are all attractive young men and women that have many admirers among fellow cultivators. The Heavenstep Peak abounds with Purity Leaf, and the magnificent Nimbus Ravine is at the top of the peak. It is told that the Skydome Palace has the Spirit Root—Sage Fruit planted on the cliff of the ravine.</Desc>
+		</Text>
+		<Text Name="Place_JiuHua">
+			<DisplayName>Mt. Lucian</DisplayName>
+			<Desc>Mt. Lucian has nine high peaks with winding Laws and deep gorges, where the Purple Cloud Temple—one of the top ten largest Taoist Heavenly Abodes resides. Legend has it that an ancient immortal used to ascend from here, riding dragons and phoenix. The mountain is rich in premium stone materials. It became a famous anecdote that someone even unearthed Prismatic Jade here.</Desc>
+		</Text>
+		<Text Name="Place_LongHu">
+			<DisplayName>Mt. Tiger Paw</DisplayName>
+			<Desc>A world-renowned Taoist mountain in the Central Plains that has been visited by numerous poets and scholars ever since the ancient times, and the respected sect—Mystic Unity Sect also resides here. Legend has it that there is a patch of spiritual wood hidden deep in the mountain, where many rare woods can be found and the Spirit Root—Gnarled Vine is planted by the sect.</Desc>
+		</Text>
+		<Text Name="Place_Shu">
+			<DisplayName>Mt. Shu</DisplayName>
+			<Desc>The most bizarre and mythical mountain of all, famous for its dangerous, meandering Laws, even animals as agile as monkeys cannot climb over it. One of the ten biggest Taoist Heavenly Abodes—Caerulea Abode dwells in the clouds at the top of the mountain. Mt. Shu has always been a danger zone abundant with beasts like dragons and snakes, but it is also rich in fine ores and well-known springs which are often used to forge the rarest sword. Legend has it that the immortal from the Blue Lotus Temple once obtained the sacred seed of Crimson Fruit—one of the five magical medicines and planted it on the Jadestone Cliff, the spiritual vein of Mt. Shu.</Desc>
+		</Text>
+		<Text Name="Place_WuLian">
+			<DisplayName>Mt. Nelumbo</DisplayName>
+			<Desc>On the western borderland lies the Mt. Nelumbo with five peaks shaped like a nelumbo lotus as a whole, thus the name Mt. Nelumbo. The Evenfall Abode—one of the ten biggest Taoist Heavenly Abodes was established here. Notable for its sacred lake—the Celestial Pool, the mountain is rich in spiritual streams and medicinal grasses. The Evenfall Abode uses this to its advantage and becomes world-renowned for its practice in alchemy.</Desc>
+		</Text>
+		<Text Name="Place_BaiMan">
+			<DisplayName>Mt. Hundred Insects</DisplayName>
+			<Desc>The practicing site for the demonic cult of the west, which is a giant and barren stone mountain covered in Blood Thistles, an extremely poisonous plant of which the stench can spread for over ten miles. The mountain is home to many species of venomous insects and snakes, especially suitable to cultivate along the Law of Toxin of the demonic cult of the west.</Desc>
+		</Text>
+		<Text Name="Place_XianKong">
+			<DisplayName>Mt. Pitfall</DisplayName>
+			<Desc>A farland mountain on the border of the country with a bottomless hole inside it, connecting directly to the earth's crust. It is believed to be a shortcut to the Earthmother's embrace, so an evil sect called Pit of Doom that worships the Earthmother took over it as its temple. The low and flat Mt. Pitfall emits a magnetic field due to the bottomless pit, which oftentimes attracts meteors here.</Desc>
+		</Text>
+		<Text Name="Place_Hei">
+			<DisplayName>Mt. Blackstone</DisplayName>
+			<Desc>It is where the demonic cult of the north—Seven-Slaughtering Sect resides. Known as the most infamous cult, the Seven-Slaughtering Sect practices the Seven-Slaughtering Sword that grants them an unmatchable killing power. Mt. Blackstone has three peaks standing next to each other, representing the three forces of Heaven, Earth and Man. The Seven-Slaughtering Sect used it to form a magic Formation that is completely impregnable. For years, good and evil have fought many gruesome battles against each other on the Mt. Blackstone. Bones and skulls of dead soldiers have remained at the Seven-Slaughtering Formation.</Desc>
+		</Text>
+		<Text Name="Place_HeHuan">
+			<DisplayName>Exultant Isle</DisplayName>
+			<Desc>Home to the demonic cult of the east. A beautiful wonderland on the East Sea, rich in Qi. The Exultant Sect has been painstakingly managed for a hundred years, with a formation of desires built around a 50-mile-radius of the island. Ordinary fishermen that mistakenly step inside the circle will be enchanted and turned into a cauldron for their practice. Most disciples of the Exultant Sect stay forever young, which is speculated to be because there is a holy spring of the Earth Flux on the island.</Desc>
+		</Text>
+		<Text Name="Place_Desert">
+			<DisplayName>Great Desert</DisplayName>
+			<Desc>A boundless great desert with numerous myths and ruins hidden under the vast yellow sand. Legend has it that the mythical Daemonia Temple is deep in the great western desert.</Desc>
+		</Text>
+		<Text Name="Place_SouthForest">
+			<DisplayName>Wild South</DisplayName>
+			<Desc>An untamed wilderness on the south of the country, permeated by poisonous fog and infested with venomous snakes and insects. Legend has it that the mystical Wormwrought Valley is in the Wild South. Filled with poisonous fog and insects, the Valley is extremely dangerous. However, due to its humidity and warmth, it is especially suitable for the growth of the magical medicine—Gnarled Vine. It is also said that the Demon Emperor, the founder of the southern demonic cult, was buried a thousand years ago deep in the Wild South.</Desc>
+		</Text>
+		<Text Name="Place_Snowfield">
+			<DisplayName>The Great Snowland</DisplayName>
+			<Desc>A snow-covered northern land that stretches to the horizon, with untrodden hills and large patches of pine trees amidst the snow and ice. It is rich in ginseng and jade stones that are difficult to extricate. It is said that deep in the snow, there is a mythical Lake Jadestone that will never freeze, where the Spirit Root—Prism Lotus grows.</Desc>
+		</Text>
+		<Text Name="Place_FertileField">
+			<DisplayName>Riverbank Plains</DisplayName>
+			<Desc>Fertile plains along the riverbanks, highly populated and abundant in food. East of the plains stands a mountain called Mt. Rue. Rumor has it that the Spirit Root—Sage Fruit grows on its cliff.</Desc>
+		</Text>
+		<Text Name="Place_CentralPlains">
+			<DisplayName>Central Plain</DisplayName>
+			<Desc>The highly populated central highland, abundant in various kinds of crops. There are many well-known mountains and sacred sites, one of which is called Alchemist's Peak, the place where the genius doctor used to cultivate the Spirit Root—Ocher Essence.</Desc>
+		</Text>
+		<Text Name="Place_SouthMount">
+			<DisplayName>Mt. South</DisplayName>
+			<Desc>Mt. South is located in the South, sparsely populated but with many untapped resources. The original Taiyi Sect was built here, where most people believed in them.</Desc>
+		</Text>
+		<Text Name="Place_HeYinCity">
+			<DisplayName>Riverback City</DisplayName>
+			<Desc>A huge city built along the river. Due to its abundance in natural products, residents here don't have to worry about food or clothes, therefore the city is imbued with culture. People living in the city are usually creative and often think out of the box.</Desc>
+		</Text>
+		<Text Name="Place_HuCity">
+			<DisplayName>Seascape</DisplayName>
+			<Desc>A city built by the East Sea, easily accessible, and highly populated with thriving businesses. Most people in the city are merchants, and their experience has taught them how to read people and provided them with excellent perception.</Desc>
+		</Text>
+		<Text Name="Place_PanSheCity">
+			<DisplayName>Snaketail Village</DisplayName>
+			<Desc>The gateway toward the Southern Jungles and the largest city in the Wild South. The village values their tradition of respecting nature and heaven's rules, which may or may not have resulted in its residents' better luck than others.</Desc>
+		</Text>
+		<Text Name="Place_ShanCity">
+			<DisplayName>City of Abundance</DisplayName>
+			<Desc>A large city in the middle south, built beside the mountains at the vital junction of transportation that prospers on transport services. People in the city are frank and open toward people, easily able to gain favor from others with their unique charisma.</Desc>
+		</Text>
+		<Text Name="Place_DaLiangCity">
+			<DisplayName>City of Desolation</DisplayName>
+			<Desc>A large city on the western borderland, built on the barren land between the Central Plains and the Great Desert. The city is rich in ores and stones. Its terrain contributes to the fierceness of its residents, who are usually very fit and strong.</Desc>
+		</Text>
+	</List>
+</Texts>

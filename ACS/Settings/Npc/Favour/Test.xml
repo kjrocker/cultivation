@@ -1,0 +1,724 @@
+<FavourDefs><List>
+	<Favour Name="SYS_LOST" Type="Normal">
+		<DisplayName>[遗失]</DisplayName>
+		<Desc>这是一个已遗失的好感标签，没有人知道任何信息。(模组丢失)。</Desc>
+		<HideInUI>1</HideInUI>
+		<Value>0</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+	</Favour>
+	
+	<Favour Name="Opinion" Type="Opinion">
+		<DisplayName>看法</DisplayName>
+		<Desc>这是一个特殊的好感标签，用来处理各种看法</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>0</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+	</Favour>
+	<Favour Name="Distrust" Type="Normal">
+		<DisplayName>冷漠</DisplayName>
+		<Desc>这个世界上都是利益，我对谁也不信任</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	<Favour Name="Enthusiasm" Type="Normal">
+		<DisplayName>热情</DisplayName>
+		<Desc>大家相逢就是有缘，都是朋友！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="BeReceived" Type="Normal">
+		<DisplayName>受欢迎</DisplayName>
+		<Desc>[HENAME]很有魅力，天生受人欢迎</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>30</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="BeTrueMan" Type="Normal">
+		<DisplayName>真实之人</DisplayName>
+		<Desc>[HENAME]此人的真实经历令其他人刮目相看。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>20</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="Loyal" Type="Normal">
+		<DisplayName>仗义</DisplayName>
+		<Desc>[HENAME]很仗义，值得深交。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="BeiGuoXia" Type="Normal">
+		<DisplayName>背锅侠</DisplayName>
+		<Desc>[HENAME]经常背锅，深的周围人的喜爱。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="DongShiZhang" Type="Normal">
+		<DisplayName>董事长</DisplayName>
+		<Desc>[HENAME]是我们的董事长！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>25</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="HaoShuang" Type="Normal">
+		<DisplayName>豪爽</DisplayName>
+		<Desc>[HENAME]侠义心肠，为人豪爽，让人生出结交之心！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>20</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="BeginTogether" Type="Normal">
+		<DisplayName>闯荡江湖</DisplayName>
+		<Desc>[HENAME]和我一起闯荡江湖</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>20</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>2</Opinions>
+	</Favour> 
+
+	<Favour Name="Charisma0" Type="Trigger">
+		<Desc>魅力好感0</Desc>
+		<Trigger>him:GetCharisma()>=0 and him:GetCharisma() &lt; 2</Trigger>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>粗鄙之人</DisplayName>
+				<Desc>世界上怎么会有[HENAME]这样的人……</Desc>
+				<Opinions>-1</Opinions>
+				<Value>-20</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="30">
+				<DisplayName>不通人情</DisplayName>
+				<Desc>和[HENAME]相处可真难受。</Desc>
+				<Opinions>0</Opinions>
+				<Value>-10</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>不善交际</DisplayName>
+				<Desc>[HENAME]虽然不善与人相处，但其实是个很好的人。</Desc>
+				<Opinions>1</Opinions>
+				<Value>5</Value>
+			</li>
+		</Layers>
+	</Favour>
+	<Favour Name="Charisma1" Type="Trigger">
+		<Desc>魅力好感1</Desc>
+		<Trigger>him:GetCharisma()>=5 and him:GetCharisma() &lt; 8</Trigger>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>伪君子</DisplayName>
+				<Desc>[HENAME]真会装，道貌岸然的伪君子。</Desc>
+				<Opinions>0</Opinions>
+				<Value>-15</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="30">
+				<DisplayName>有修养</DisplayName>
+				<Desc>[HENAME]看上去是个不错的人。</Desc>
+				<Opinions>1</Opinions>
+				<Value>10</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>善解人意</DisplayName>
+				<Desc>[HENAME]很善解人意，和他相处很愉快</Desc>
+				<Opinions>1</Opinions>
+				<Value>20</Value>
+			</li>
+		</Layers>
+	</Favour>
+	
+	<Favour Name="Charisma2" Type="Trigger">
+		<Desc>魅力好感2</Desc>
+		<Trigger>him:GetCharisma()>=8 and him:GetCharisma() &lt; 10</Trigger>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>君子</DisplayName>
+				<Desc>我虽然很讨厌[HENAME]，但他是一个真君子。</Desc>
+				<Opinions>1</Opinions>
+				<Value>15</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="30">
+				<DisplayName>风度翩翩</DisplayName>
+				<Desc>[HENAME]看上去风度翩翩，很有气质和修养。</Desc>
+				<Opinions>1</Opinions>
+				<Value>20</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>如沐春风</DisplayName>
+				<Desc>和[HENAME]相处真的太愉快了，如沐春风，有这样的朋友很开心。</Desc>
+				<Opinions>2</Opinions>
+				<Value>35</Value>
+			</li>
+		</Layers>
+	</Favour>
+	
+	<Favour Name="Relative" Type="Normal"><!--亲戚关系-->
+		<DisplayName>[TXT]</DisplayName>
+		<Desc>[HENAME]是我的[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>2</Opinions>
+	</Favour> 
+		
+	<Favour Name="Practice" Type="Normal"><!--直系师徒关系-->
+		<DisplayName>[TXT]</DisplayName>
+		<Desc>[HENAME]是我的[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>20</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>2</Opinions>
+	</Favour> 
+	
+			
+	<Favour Name="PracticeOther" Type="Normal"><!--非直系师徒关系-->
+		<DisplayName>[TXT]</DisplayName>
+		<Desc>[HENAME]是我的[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>1</Opinions>
+	</Favour> 
+	
+	<Favour Name="Family" Type="Normal"><!--家人关系-->
+		<DisplayName>[TXT]</DisplayName>
+		<Desc>[HENAME]是我的[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>25</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>3</Opinions>
+	</Favour> 
+	
+	<Favour Name="Friend" Type="Normal">
+		<Desc>朋友好感2</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>朋友</DisplayName>
+				<Desc>[HENAME]是我的朋友，但最近我们之间出了点问题</Desc>
+				<Opinions>1</Opinions>
+				<Value>1</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="80">
+				<DisplayName>朋友</DisplayName>
+				<Desc>[HENAME]是我的好友</Desc>
+				<Opinions>1</Opinions>
+				<Value>10</Value>
+			</li>
+			<li RangeMin="80" RangeMax="100">
+				<DisplayName>挚友</DisplayName>
+				<Desc>[HENAME]是我的挚友。</Desc>
+				<Opinions>2</Opinions>
+				<Value>20</Value>
+			</li>
+		</Layers>
+	</Favour>
+
+	
+	<Favour Name="Scar" Type="Normal">
+		<DisplayName>疤痕</DisplayName>
+		<Desc>[HENAME]脸上有难看的疤痕</Desc>
+		<MutexFeatures>
+			<li>Blind</li>
+		</MutexFeatures>
+		<HideInUI>0</HideInUI>
+		<Value>-5</Value>
+		<MaxStack>5</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="Fancy" Type="Normal">
+		<DisplayName>爱慕</DisplayName>
+		<Desc>爱慕</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-50">
+				<DisplayName>爱慕</DisplayName>
+				<Desc>[HENAME]..哎.</Desc>
+				<Opinions>2</Opinions>
+				<Value>5</Value>
+			</li>
+			<li RangeMin="-50" RangeMax="100">
+				<DisplayName>爱慕</DisplayName>
+				<Desc>[HENAME]！[HENAME]！[HENAME]！</Desc>
+				<Opinions>3</Opinions>
+				<Value>25</Value>
+			</li>
+		</Layers>
+	</Favour> 
+	
+	<Favour Name="Lover" Type="Normal">
+		<DisplayName>恋人</DisplayName>
+		<Desc>[HENAME]是我的恋人</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>25</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>3</Opinions>
+	</Favour> 
+
+	<Favour Name="VisceralScar" Type="Normal">
+		<DisplayName>恐怖的疤痕</DisplayName>
+		<Desc>[HENAME]身上有让人无法直视的恐怖疤痕</Desc>
+		<MutexFeatures>
+			<li>Blind</li>
+		</MutexFeatures>
+		<HideInUI>0</HideInUI>
+		<Value>-10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	<Favour Name="Evilfaced" Type="Normal">
+		<DisplayName>面相丑陋</DisplayName>
+		<Desc>[HENAME]长得很丑，让人看了就不舒服</Desc>
+		<MutexFeatures>
+			<li>Blind</li>
+		</MutexFeatures>
+		<HideInUI>0</HideInUI>
+		<Value>-10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="BeautifulFace" Type="Normal">
+		<DisplayName>容貌俊美</DisplayName>
+		<Desc>[HENAME]长的十分美丽，让人看了心生好感。</Desc>
+		<MutexFeatures>
+			<li>Blind</li>
+		</MutexFeatures>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="Cruel" Type="Normal">
+		<DisplayName>待人严苛</DisplayName>
+		<Desc>[HENAME]对人态度极差，让人讨厌。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="Affinity" Type="Normal">
+		<DisplayName>待人亲和</DisplayName>
+		<Desc>[HENAME]对人友善热情，让人亲近。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour> 
+	
+	<Favour Name="SayHi" Type="Normal">
+		<DisplayName>打招呼</DisplayName>
+		<Desc>我跟[HENAME]互相打了个招呼。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>2</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>0.5</Duration>
+	</Favour>
+	<Favour Name="AfterTalk" Type="Normal">
+		<DisplayName>闲聊</DisplayName>
+		<Desc>我跟[HENAME]聊了聊天，这真的很不错。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>4</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>0.5</Duration>
+	</Favour>
+	<Favour Name="DeepTalk" Type="Normal">
+		<DisplayName>谈心</DisplayName>
+		<Desc>我跟[HENAME]谈了谈心事，这让我们互相了解，我觉得我们的关系进了一大步。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>8</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>2</Duration>
+	</Favour>
+	<Favour Name="Neglect" Type="Normal">
+		<DisplayName>怠慢</DisplayName>
+		<Desc>我和[HENAME]说两句话，[HE]似乎懒得理我，刚好我也懒得理[HE]。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-5</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>0.5</Duration>
+	</Favour>
+	<Favour Name="Quarrel" Type="Normal">
+		<DisplayName>发生口角</DisplayName>
+		<Desc>我跟[HENAME]发生了口角，这个人真是不讲道理，很讨厌。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-10</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>1</Duration>
+	</Favour>
+	<Favour Name="Insult" Type="Normal">
+		<DisplayName>侮辱</DisplayName>
+		<Desc>我和[HENAME]互相侮辱了对方，我真的看不惯这个混蛋。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-18</Value>
+		<MaxStack>6</MaxStack>
+		<Duration>2</Duration>
+	</Favour>
+	
+	<Favour Name="SayHiFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[HENAME]寒暄了一下，但是不知道为什么双方都莫名动了火气，结果打了一架，真是糟糕。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>
+	<Favour Name="AfterTalkFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[HENAME]聊了聊天，但是不知道为什么双方都莫名动了火气，结果打了一架，真是糟糕。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-18</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>
+	<Favour Name="DeepTalkFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[HENAME]谈了谈心里话，但是我们却发生了激烈的分歧，最终甚至动了手。这真的很伤感情。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-20</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>
+	<Favour Name="NeglectFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我和[HENAME]说两句话，但是我们轻慢的态度惹火了对方，忍不住动手打了一架。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-18</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>
+	<Favour Name="QuarrelFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我跟[HENAME]发生了口角，既然话不投机，只能动手解决问题了。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>
+	<Favour Name="InsultFight" Type="Normal">
+		<DisplayName>打架</DisplayName>
+		<Desc>我和[HENAME]互相侮辱了对方，这种没教养的家伙只能用拳头教育。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-8</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>4</Duration>
+	</Favour>	
+	
+	<Favour Name="WithYoung" Type="Trigger">
+		<Desc>对小辈的态度</Desc>
+		<Trigger>me:GetAge()-him:GetAge()>20 and him:GetAge() &lt; 18</Trigger>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>目无尊长</DisplayName>
+				<Desc>我认为[HENAME]是个小混蛋</Desc>
+				<Opinions>-1</Opinions>
+				<Value>-10</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="30">
+				<DisplayName>疼爱</DisplayName>
+				<Desc>我觉得[HENAME]还是个孩子</Desc>
+				<Opinions>1</Opinions>
+				<Value>10</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>年少有为</DisplayName>
+				<Desc>我觉得[HENAME]年少有为</Desc>
+				<Opinions>1</Opinions>
+				<Value>15</Value>
+			</li>
+		</Layers>
+	</Favour>
+	
+	<Favour Name="WithElder" Type="Trigger">
+		<Desc>对长辈的态度</Desc>
+		<Trigger>him:GetAge()-me:GetAge()>20 and me:GetAge() &lt; 30 and him:GetAge()>40</Trigger>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="-30">
+				<DisplayName>叛逆</DisplayName>
+				<Desc>我在[HENAME]面前觉得别扭</Desc>
+				<Opinions>-1</Opinions>
+				<Value>-10</Value>
+			</li>
+			<li RangeMin="-30" RangeMax="30">
+				<DisplayName>尊老</DisplayName>
+				<Desc>我觉得[HENAME]年龄大应该尊敬</Desc>
+				<Opinions>1</Opinions>
+				<Value>10</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>崇敬</DisplayName>
+				<Desc>我很崇敬[HENAME]</Desc>
+				<Opinions>1</Opinions>
+				<Value>15</Value>
+			</li>
+		</Layers>
+	</Favour>
+	
+	<Favour Name="RivalInlove" Type="Normal">
+		<Desc>情敌</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Layers>
+		<li RangeMin="-100" RangeMax="30">
+				<DisplayName>憎恶</DisplayName>
+				<Desc>我恨不得一刀捅死[HENAME]</Desc>
+				<Opinions>-2</Opinions>
+				<Value>-10</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>同情</DisplayName>
+				<Desc>我觉得[HENAME]跟自己挺像的</Desc>
+				<Opinions>1</Opinions>
+				<Value>2</Value>
+			</li> 			
+		</Layers>
+	</Favour>	
+	<Favour Name="PersonalEnemyBegin" Type="Normal">
+		<DisplayName>仇恨</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Value>-50</Value>
+		<Desc>我与[HENAME]势不两立</Desc>		
+	</Favour>	
+	
+	<Favour Name="FeatureOpposition" Type="Normal">
+		<DisplayName>特性对立</DisplayName>
+		<Desc>我讨厌[HE]，[HE]居然是这种人。([TXT])</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-4</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="FeatureClose" Type="Normal">
+		<DisplayName>特性亲近</DisplayName>
+		<Desc>我喜欢[HE]这种人，我们有相同的特质。([TXT])</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>4</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="SameBackstory" Type="Normal">
+		<DisplayName>相同的经历</DisplayName>
+		<Desc>我们的经历是如此的相似([TXT])</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>4</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="FeedGood" Type="Normal">
+		<DisplayName>照顾</DisplayName>
+		<Desc>谢谢你的照顾</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>5</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>1</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="FeedBad" Type="Normal">
+		<DisplayName>这是什么</DisplayName>
+		<Desc>你给我吃了什么？</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-5</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>2</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="ThankTreat" Type="Normal">
+		<DisplayName>治疗</DisplayName>
+		<Desc>谢谢你的治疗</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>2</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="ThankHufa" Type="Normal">
+		<DisplayName>护法</DisplayName>
+		<Desc>谢谢师父</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	<Favour Name="BeAttack" Type="Normal">
+		<DisplayName>被攻击</DisplayName>
+		<Desc>你想杀我？</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-20</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>2</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="BeMagicBood" Type="Normal">
+		<DisplayName>感激</DisplayName>
+		<Desc>谢谢你对我做的一切</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>5</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="BeMagicBad" Type="Normal">
+		<DisplayName>伤害</DisplayName>
+		<Desc>你对我做了什么？</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-35</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>10</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="AmuseME" Type="Normal">
+		<DisplayName>逗乐</DisplayName>
+		<Desc>[HENAME]真是个有趣的人</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>5</Value>
+		<MaxStack>3</MaxStack>
+		<Duration>1</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="PersonalEnemy" Type="Normal">
+		<DisplayName>仇恨</DisplayName>
+		<Desc>[HENAME]杀害了[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-70</Value>
+		<MaxStack>5</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="MagicBad" Type="Normal">
+		<DisplayName>伤害</DisplayName>
+		<Desc>目睹[HENAME]伤害了[TXT]</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-20</Value>
+		<MaxStack>5</MaxStack>
+		<Duration>10</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="MagicGood" Type="Normal">
+		<DisplayName>感激</DisplayName>
+		<Desc>目睹[HENAME]对[TXT]施展了仙术</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>5</MaxStack>
+		<Duration>3</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="BeDeclaration" Type="Normal">
+		<MaxStack>3</MaxStack>
+		<Duration>2</Duration>
+		<Layers>
+			<li RangeMin="-100" RangeMax="30">
+				<DisplayName>表白</DisplayName>
+				<Desc>居然被[HENAME]表白，呵呵</Desc>
+				<Opinions>0</Opinions>
+				<Value>-3</Value>
+			</li>
+			<li RangeMin="30" RangeMax="100">
+				<DisplayName>表白</DisplayName>
+				<Desc>[HENAME]对我表白了，心跳好快</Desc>
+				<Opinions>1</Opinions>
+				<Value>5</Value>
+			</li>
+		</Layers>
+	</Favour> 
+	
+	
+	
+	<Favour Name="Favour_School_FiveTangZhu" Type="Normal">
+		<DisplayName>鄙视</DisplayName>
+		<Desc>[HENAME]这水平都能当堂主？</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>-25</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>605</Duration>
+	</Favour>
+	
+	
+	<Favour Name="Favour_School_ZhangMen" Type="Normal">
+		<DisplayName>掌门</DisplayName>
+		<Desc>[HENAME]是我们的掌门。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>15</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+	</Favour>
+	
+	<Favour Name="Favour_School_TangZhu" Type="Normal">
+		<DisplayName>堂主</DisplayName>
+		<Desc>[HENAME]是我们的堂主。</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>10</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>605</Duration>
+	</Favour>
+</List></FavourDefs>

@@ -1,0 +1,2 @@
+ID	Sex	Path	Part	Appearance
+	性别	路径	部位	容貌等级 0标准 1丑陋

@@ -1,0 +1,164 @@
+<Defs><List>
+	<Def Name="HeHuanA">
+		<Item Weight="1" CountName="ExtremelyRare">	
+			<Animal>
+				<Box>Item_BodyAnimalBox</Box>
+				<AnimalFlag>SpecialAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，门派的定向培养使其拥有气感相关的思绪。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Memories>
+					<li Frag="Moon"/>
+					<li Frag="Moon"/>
+					<li Frag="Snow"/>
+					<li Frag="Snow"/>
+				</Memories>
+			</Animal>
+			<AucType>Nature</AucType>
+		</Item> 
+	</Def>
+	<Def Name="HeHuanAL">
+		<Item Weight="1" CountName="ReallyRare">	
+			<Animal>
+				<Box>Item_NormalAnimalBox</Box>
+				<AnimalFlag>RandomAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>简陋的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，拥有关于恐惧的灵智。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Frag="GreatlyFear" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Fear" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="ReallyRare">	
+			<Animal>
+				<Box>Item_NormalAnimalBox</Box>
+				<AnimalFlag>RandomAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>简陋的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，拥有关于思念的灵智。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Frag="GreatlyMiss" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Miss" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="ReallyRare">	
+			<Animal>
+				<Box>Item_NormalAnimalBox</Box>
+				<AnimalFlag>RandomAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>简陋的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，拥有关于高兴的灵智。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Frag="GreatlyHappy" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Happy" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="ReallyRare">	
+			<Animal>
+				<Box>Item_NormalAnimalBox</Box>
+				<AnimalFlag>RandomAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>简陋的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，拥有关于愤怒的灵智。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Frag="GreatlyAnger" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Anger" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item Weight="1" CountName="ReallyRare">	
+			<Animal>
+				<Box>Item_NormalAnimalBox</Box>
+				<AnimalFlag>RandomAnimal</AnimalFlag>
+				<Race>Snake</Race>
+				<DisplayName>简陋的蛇笼</DisplayName>
+				<Tip>里面装了一只开智期的蛇，拥有关于担忧的灵智。</Tip>
+				<fivebase>10,10,10,10,10</fivebase>
+				<MemoryStay>10</MemoryStay>
+				<Finals>
+					<li>
+						<Frags>
+							<li Frag="GreatlyWorry" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+					<li>
+						<Frags>
+							<li Frag="Worry" />
+							<li Type="Scene" Level="1" Levelp="1" />
+							<li Type="Target" Level="1" Levelp="1" />
+						</Frags>
+					</li>
+				</Finals>
+			</Animal>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+</List></Defs>

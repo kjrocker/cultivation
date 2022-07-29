@@ -1,0 +1,77 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="All">
+			<PeferEnvironment.Desc>Like</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Snake">
+			<NaiveTalk>Hiss, hissss!</NaiveTalk>
+			<PeferEnvironment.LightDesc>Prefers rooms.</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Prefers small animals.</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers small animals.\nPrefers rooms. \n</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Bear">
+			<NaiveTalk>Grrrrr, grrrrrrr!</NaiveTalk>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Prefers herbivores nearby</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers herbivores nearby.\nLikes being outdoors. \n</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Rabbit">
+			<NaiveTalk>Cluck, cluck, chirp!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Prefers Wild grass nearby</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Prefers same species</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers Wild grass nearby.Likes being outdoors.\nPrefers Same species.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Chicken">
+			<NaiveTalk>Cluck, cluck!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Prefers Wheat nearby</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Dislikes carnivores</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers Wheat nearby. Likes being outdoors.\nDislikes carnivores.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Wolf">
+			<NaiveTalk>Rawr, rawr!</NaiveTalk>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Prefers same species</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers Same species.\nLikes being outdoors.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Boar">
+			<NaiveTalk>Oink, oink!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Prefers Mushrooms nearby</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.Desc>Prefers Mushrooms nearby. Likes being outdoors. \n</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Frog">
+			<NaiveTalk>Ribbit, ribbit!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Prefers Lotus Flowers nearby.</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Dislikes carnivores</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Prefers Lotus Flowers nearby. Likes being outdoors.\nDoesn't like carnivores. \n</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Turtle">
+			<NaiveTalk>Caw, caw!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Prefers Reeds nearby</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being indoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.Desc>Prefers Reeds nearby. Likes being indoors.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Cat">
+			<NaiveTalk>Meow, meow!</NaiveTalk>
+			<PeferEnvironment.LightDesc>Likes being indoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Dislikes other animals</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Likes being indoors. Dislikes other animals.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Tiger">
+			<NaiveTalk>Roar, roar!</NaiveTalk>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Dislikes other animals</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Likes being outdoors. Dislikes other animals.</PeferEnvironment.Desc>
+		</Text>
+		<Text Name="Cattle">
+			<NaiveTalk>Moo, moo!</NaiveTalk>
+			<PeferEnvironment.PlantDesc>Likes tall grass nearby</PeferEnvironment.PlantDesc>
+			<PeferEnvironment.LightDesc>Likes being outdoors</PeferEnvironment.LightDesc>
+			<PeferEnvironment.LiveDesc>Dislikes carnivores</PeferEnvironment.LiveDesc>
+			<PeferEnvironment.Desc>Likes tall grass nearby. Likes being outdoors.\nDislikes carnivores. \n</PeferEnvironment.Desc>
+		</Text>
+	</List>
+</Texts>

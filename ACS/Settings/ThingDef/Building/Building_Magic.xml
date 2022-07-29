@@ -1,0 +1,1048 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="FengShui" Parent="FurnitureBase">
+	<ThingName>观星台</ThingName>
+	<Desc>用于观察五行风水和灵气分布的建筑。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_rimian01</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[1,3],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.5</x><y>0</y></li>
+			<li><x>-0.5</x><y>-0.2</y></li>
+			<li><x>-0.5</x><y>0.75</y></li>
+			<li><x>0.5</x><y>0.8</y></li>
+		</OffsetGroup>
+	</Collider>
+	<Frags>
+		<li Frag="Star" />
+	</Frags>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<HelperClass>BuildingHelperFengshui</HelperClass>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>2.86</y>
+			<z>0.5</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="TheGate" Parent="FurnitureBase">
+	<ThingName>门派石碑</ThingName>
+	<Desc>门派的标志石碑。</Desc>
+	<Tags>
+		<Tag Name="TheGate" Level="1"/>
+	</Tags>
+	<Frags>
+		<li Frag="SeeStone" />
+	</Frags>
+	<TexPath>res/Sprs/buildingnew/building_menpaishibei01</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[1,3],
+		[4,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.5</x><y>-0.1</y></li>
+			<li><x>-0.5</x><y>-0.25</y></li>
+			<li><x>-0.5</x><y>0.68</y></li>
+			<li><x>0.5</x><y>0.75</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+			<li Index="1"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<HelperClass>BuildingHelperGate</HelperClass>
+		<Perfab>Building/Prefabs/TheGate</Perfab>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.75</x>
+			<y>3.6</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Build_TheBigGate" Parent="FurnitureBase">
+	<ThingName>门派山门</ThingName>
+	<Frags>
+		<li Frag="Memory" />
+	</Frags>
+
+	<Desc>门派的标志大门，气派而庄严。</Desc>
+	<Tags>
+		<Tag Name="TheGate" Level="1"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_paifang01</TexPath>
+	<TexScale>1</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,0,1,1,0,0,1,1,0,0],
+		[0,0,1,1,2,0,1,1,0,0],
+		[4,4,4,4,0,0,4,4,4,4],
+		[4,4,4,4,0,0,4,4,4,4],
+		[4,4,4,4,0,0,4,4,4,4],
+		[4,4,4,4,0,0,4,4,4,4],
+		[4,4,4,4,0,0,4,4,4,4],
+		[4,4,4,4,0,0,4,4,4,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.86</y></li>
+			<li><x>-0.51</x><y>1.65</y></li>
+			<li><x>0.5</x><y>1.88</y></li>
+			<li><x>0.44</x><y>0.65</y></li>
+		</OffsetGroup>
+
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+			<li Index="1"  X="0" Y="0" Ang="1"/>
+			<li Index="2"  X="0" Y="0" Ang="1"/>
+			<li Index="3"  X="0" Y="0" Ang="1"/>
+			<li Index="4"  X="0" Y="0" Ang="1"/>
+			<li Index="5"  X="0" Y="0" Ang="1"/>
+			<li Index="6"  X="0" Y="0" Ang="1"/>
+			<li Index="7"  X="0" Y="0" Ang="1"/>
+			<li Index="8"  X="0" Y="0" Ang="1"/>
+			<li Index="9"  X="0" Y="0" Ang="1"/>
+			<li Index="10"  X="0" Y="0" Ang="1"/>
+			<li Index="11"  X="0" Y="0" Ang="1"/>
+			<li Index="12"  X="0" Y="0" Ang="1"/>
+			<li Index="13"  X="0" Y="0" Ang="1"/>
+			<li Index="14"  X="0" Y="0" Ang="1"/>
+			<li Index="15"  X="0" Y="0" Ang="1"/>
+			<li Index="16"  X="0" Y="0" Ang="1"/>
+			<li Index="17"  X="0" Y="0" Ang="1"/>
+			<li Index="18"  X="0" Y="0" Ang="1"/>
+			<li Index="19"  X="0" Y="0" Ang="1"/>
+			<li Index="20"  X="0" Y="0" Ang="1"/>
+			<li Index="21"  X="0" Y="0" Ang="1"/>
+			<li Index="22"  X="0" Y="0" Ang="1"/>
+			<li Index="23"  X="0" Y="0" Ang="1"/>
+			<li Index="24"  X="0" Y="0" Ang="1"/>
+			<li Index="25"  X="0" Y="0" Ang="1"/>
+			<li Index="26"  X="0" Y="0" Ang="1"/>
+			<li Index="27"  X="0" Y="0" Ang="1"/>
+			<li Index="28"  X="0" Y="0" Ang="1"/>
+			<li Index="29"  X="0" Y="0" Ang="1"/>
+			<li Index="30"  X="0" Y="0" Ang="1"/>
+			<li Index="31"  X="0" Y="0" Ang="1"/>
+			<li Index="32"  X="0" Y="0" Ang="1"/>
+			<li Index="33"  X="0" Y="0" Ang="1"/>
+			<li Index="34"  X="0" Y="0" Ang="1"/>
+			<li Index="35"  X="0" Y="0" Ang="1"/>
+			<li Index="36"  X="0" Y="0" Ang="1"/>
+			<li Index="37"  X="0" Y="0" Ang="1"/>
+			<li Index="38"  X="0" Y="0" Ang="1"/>
+			<li Index="39"  X="0" Y="0" Ang="1"/>
+			<li Index="40"  X="0" Y="0" Ang="1"/>
+			<li Index="41"  X="0" Y="0" Ang="1"/>
+			<li Index="42"  X="0" Y="0" Ang="1"/>
+			<li Index="43"  X="0" Y="0" Ang="1"/>
+			<li Index="44"  X="0" Y="0" Ang="1"/>
+			<li Index="45"  X="0" Y="0" Ang="1"/>
+			<li Index="46"  X="0" Y="0" Ang="1"/>
+			<li Index="47"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<Orientation>F,R</Orientation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>60</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.88</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Cushion" Parent="FurnitureBase">
+	<ThingName>蒲团</ThingName>
+	<Desc>一张柔软的坐垫。</Desc>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="15"/>
+	</Tags>
+		<Frags>
+			<li Frag="SeeTrain" />
+		</Frags>
+
+	<TexScale>0.9</TexScale>
+	<NoElementKind>1</NoElementKind>
+	<TexPath>res/Sprs/buildingnew/building_putuan1a</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="181"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<OwnerCount>1</OwnerCount>
+		<NoFengshui>1</NoFengshui>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_putuan1a</WorkTexPath>
+
+		<PracticeEffectiveness>0.5</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.5</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_MagicCushion" Parent="FurnitureBase">
+	<ThingName>法座</ThingName>
+	<Desc>修炼专用的法座，能聚集灵气。</Desc>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="15"/>
+	</Tags>
+		<Frags>
+			<li Frag="SeeTrain" />
+		</Frags>
+	<TexScale>0.9</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="181"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<OwnerCount>1</OwnerCount>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
+
+		<PracticeEffectiveness>1</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "25"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>3.55</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Ling>
+		<AddionLing>60</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="BasePracticePlace" Parent="FurnitureBase">
+	<ThingName>练功点</ThingName>
+	<Desc>不需要什么制作材料，只是指定一个地点，供外门弟子练习拳脚。</Desc>
+	<Tags>
+		<Tag Name="BasePractice" Level="10"/>
+	</Tags>
+	<TileID>271</TileID>
+	<Color>655E00FF</Color>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<VisionRadius>0</VisionRadius>
+	<BlockMissile>0</BlockMissile>
+
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0" Ang="180"/>
+		</WorkOffset>
+	</Collider>
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+
+		<AutoUnLock>1</AutoUnLock>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<HelperClass>BuildingHelperBasePractice</HelperClass>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<BasePracticeEffectiveness>1.2</BasePracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+			<CostStuffCount>0</CostStuffCount>
+		</BeMade>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="PuppetPlace" Parent="FurnitureBase">
+	<ThingName>傀儡停放点</ThingName>
+	<Desc>傀儡在无工作时会回到这里等待。</Desc>
+	<Tags>
+		<Tag Name="PuppetPlace" Level="1"/>
+	</Tags>
+	<TileID>271</TileID>
+	<Color>655E00FF</Color>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<VisionRadius>0</VisionRadius>
+	<BlockMissile>0</BlockMissile>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0" Ang="180"/>
+		</WorkOffset>
+	</Collider>
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+		<AutoUnLock>1</AutoUnLock>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<BasePracticeEffectiveness>1.2</BasePracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+			<CostStuffCount>0</CostStuffCount>
+		</BeMade>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="TrainingDummy" Parent="FurnitureBase">
+	<ThingName>假人桩</ThingName>
+	<Desc>供外门弟子磨练拳脚筑基的器械。</Desc>
+	<Tags>
+		<Tag Name="BasePractice" Level="10"/>
+		<Tag Name="AtkPractice" Level="1"/>
+	</Tags>
+	<Frags>
+		<li Frag="HearStep" />
+	</Frags>
+
+	<TexPath>res/Sprs/buildingnew/building_murenzhuang01</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,0],
+		[4,3,4],
+		[0,4,0],
+		</Data>
+		<Offset>
+			<y>0.35</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<AutoUnLock>1</AutoUnLock>
+		<MaxWorker>2</MaxWorker>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_murenzhuang01</WorkTexPath>
+		<WorkAnimation>kszdpugong1,kszdpugong2,kszdpugong3,kszdpugong4</WorkAnimation>
+		<BasePracticeEffectiveness>1.5</BasePracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.95</x>
+			<y>3.45</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="ExploreBackPlace"  Parent="OrnamentBase">
+	<ThingName>历练归来点</ThingName>
+	<Desc>内门弟子在历练归来后会优先将收获放在这附近。</Desc>
+	<TileID>271</TileID>
+	<Color>FFD038FF</Color>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<BlockLight>0</BlockLight>
+	<BlockMissile>0</BlockMissile>
+	<MaxHitPoints>1</MaxHitPoints>
+	<ColliderKind>Across</ColliderKind>
+	<VisionRadius>0</VisionRadius>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[2],
+		</Data>
+	</Collider>
+
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+
+
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<NotDoTongLing>1</NotDoTongLing>
+	<Building>
+		<NotRandom>1</NotRandom>
+
+		<ShowFree>0</ShowFree>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<BePackage>0</BePackage>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade>
+	</Building>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="Building_Statue1" Parent="FurnitureBase">
+	<TexPath>res\Sprs\buildingnew\building_taiqing01</TexPath>
+	<TexScale>1.3</TexScale>
+	<ThingName>道德天尊雕像</ThingName>
+	<Desc>道德天尊的巨大塑像。</Desc>
+	<Frags>
+		<li Frag="SeeTheSky" />
+	</Frags>
+
+	<Tags>
+		<Tag Name="DiaoXiang_FSZW" Level="1"/>
+	</Tags>
+	<Beauty>40</Beauty>
+	<BlockLight>1</BlockLight>
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.3</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3,1],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>1.1</y></li>
+			<li><x>0.5</x><y>1.4</y></li>
+			<li><x>0.5</x><y>0.6</y></li>
+			<li><x>-0.5</x><y>0.4</y></li>
+		</OffsetGroup>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<NoFengshui>1</NoFengshui>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>12000</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>180</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.22</x>
+			<y>3.1</y>
+			<z>0.4</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_Statue2" Parent="Building_Statue1">
+	<TexPath>res\Sprs\buildingnew\building_yuqing01</TexPath>
+	<TexScale>1.3</TexScale>
+	<ThingName>元始天尊雕像</ThingName>
+	<Frags>
+		<li Frag="HearEarthQuake" />
+	</Frags>
+	<Desc>元始天尊的巨大塑像。</Desc>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3,1],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>1.1</y></li>
+			<li><x>0.5</x><y>1.4</y></li>
+			<li><x>0.5</x><y>0.6</y></li>
+			<li><x>-0.5</x><y>0.4</y></li>
+		</OffsetGroup>
+	</Collider>
+
+	<Building>
+		<SnowRenderData>
+			<x>2.5</x>
+			<y>3.22</y>
+			<z>0.4</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_Statue3" Parent="Building_Statue1">
+	<TexPath>res\Sprs\buildingnew\building_shangqing01</TexPath>
+	<TexScale>1.3</TexScale>
+	<ThingName>灵宝天尊雕像</ThingName>
+	<Frags>
+		<li Frag="HearFarThunder" />
+	</Frags>
+
+	<Desc>灵宝天尊的巨大塑像。</Desc>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3,1],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>1.1</y></li>
+			<li><x>0.5</x><y>1.4</y></li>
+			<li><x>0.5</x><y>0.6</y></li>
+			<li><x>-0.5</x><y>0.4</y></li>
+		</OffsetGroup>
+	</Collider>
+
+	<Building>
+		<SnowRenderData>
+			<x>2.2</x>
+			<y>3.24</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_SacrificialTable" Parent="FurnitureBase">
+	<TexPath>res\Sprs\buildingnew\building_zushipaiwei01a</TexPath>
+	<TexScale>0.75</TexScale>
+	<ThingName>祖师牌位</ThingName>
+	<Desc>祭祀祖师的牌位。</Desc>
+	<Tags>
+		<Tag Name="Apprentice" Level="1"/>
+	</Tags>
+	<Frags>
+		<li Frag="SmellAround" />
+	</Frags>
+
+	<Beauty>3</Beauty>
+	<BlockLight>1</BlockLight>
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.3</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1],
+		[1,3,1],
+		[4,4,4],
+		[4,4,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0.25</y></li>
+			<li><x>-0.04</x><y>0.32</y></li>
+			<li><x>0</x><y>1.44</y></li>
+			<li><x>0.08</x><y>0.41</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+			<li Index="1"  X="0" Y="0" Ang="1"/>
+			<li Index="2"  X="0" Y="0" Ang="1"/>
+			<li Index="3"  X="0" Y="0" Ang="1"/>
+			<li Index="4"  X="0" Y="0" Ang="1"/>
+			<li Index="5"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<RoomKind>AncestorRoom</RoomKind>
+		<BePackage>1</BePackage>
+		<HelperClass>BuildingHelperSacrificialTable</HelperClass>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.1</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Building>
+
+	<Light>
+		<Value>50</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>2</FailRadius>
+		<Radius>4</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="DanStove" Parent="ProductionBase">
+	<ThingName>丹炉</ThingName>
+	<Desc>炼制丹药的最佳环境</Desc>
+	<Tags>
+		<Tag Name="RefiningDan" Level="10"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_liandanlu01a</TexPath>
+	<TexScale>0.92</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,0,0,1],
+		[0,3,1,0],
+		[1,4,4,1],
+		</Data>
+		<Offset>
+			<y>0.3</y>
+			<x>0.5</x>
+		</Offset>
+		<WorkOffset>
+			<li Index="0" X="0.5" Y="0" Ang="1"/>
+			<li Index="1" X="-0.5" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+	<Flammability>
+		<Flammability>-0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Building>
+		<RoomKind>DanRoom</RoomKind>
+		<Perfab>Building/Prefabs/DanStove</Perfab>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<!--<DrivingTexPath>res/Sprs/buildingnew/building_liandanlu01b</DrivingTexPath>-->
+			<CostStuffCount>3</CostStuffCount>
+			<Duration>0.5</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_liandanlu01b</WorkTexPath>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.7</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>RefiningDan</ProduceKind>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="DanStove_Part">
+		<ThingName>丹炉部件 系统用</ThingName>
+		<TexPath>res/Sprs/buildingnew/building_liandanlu02a</TexPath>
+
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+		<Building>
+			<Perfab>Building/Prefabs/DanStove_Part</Perfab>
+			<WorkTexPath>res/Sprs/buildingnew/building_liandanlu02b</WorkTexPath>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>3.8</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="RefiningCushion" Parent="ProductionBase">
+	<ThingName>炼宝台</ThingName>
+	<Desc>炼制法宝的最佳环境</Desc>
+	<Frags>
+		<li Frag="Cloud" />
+	</Frags>
+	<Tags>
+		<Tag Name="Refining" Level="10"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_lianbaotai01a</TexPath>
+	<TexScale>0.8</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1,1],
+		[1,3,1],
+		[1,5,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0.15</y></li>
+			<li><x>0</x><y>0.45</y></li>
+			<li><x>0</x><y>0.65</y></li>
+			<li><x>0</x><y>0.45</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.18" Y="0" Ang="1" Dir="Left"/>
+			<li Index="0" X="0" Y="-0.45" Z="-0.35" Ang="1" Dir="Up"/>
+			<li Index="0" X="0.18" Y="0" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Flammability>
+		<Flammability>-0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Building>
+		<RoomKind>BaoRoom</RoomKind>
+		<Perfab>Building/Prefabs/RefiningCushion</Perfab>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_lianbaotai01b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.7</x>
+			<y>3.48</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>Refining</ProduceKind>
+	</Building>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="Building_SleeveSpace" Parent="MiracleBase">
+	<TexPath>res\Sprs\building_hongchenzhongsheng\building_xiaoqiankun01</TexPath>
+	<TexScale>1</TexScale>
+	<Tags>
+		<Tag Name="_WONDER" Level="1"/>
+		<Tag Name="SleeveSpace" Level="1"/>
+	</Tags>
+	<ThingName>小乾坤界</ThingName>
+	<Desc>以乾坤灵晶的空间之力为引，辅以五行宝材开辟出的不稳定小千世界，可以储存物品在其中。但是由于其空间并不稳定，只能存放一些性质平稳的普通之物。否则可能会导致其内空间崩塌。</Desc>
+	<ElementKind>None</ElementKind>
+	<BlockLight>0</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,3,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li>  <!-- 后 -->
+			<li><x>0</x><y>0</y></li>     <!-- 右 -->
+			<li><x>-0.5</x><y>1.3</y></li>     <!-- 前 -->
+			<li><x>0</x><y>0</y></li>     <!-- 左 -->
+		</OffsetGroup>
+	</Collider>
+	<Building>
+		<NotRandom>1</NotRandom>
+		<Perfab>Building/Prefabs/xiaoqiankunjie</Perfab>
+		<SnowRenderData>
+			<x>1.5</x>
+			<y>1.5</y>
+			<z>1</z>
+		</SnowRenderData>
+		<BeMade>
+			<WorkToMake>18000</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_Wonder_QianKunLingJing" count = "1" noscale = "1"/>
+				<Item name = "Item_StarEssence" count = "1"/>
+				<Item name = "Item_ParasolWood" count = "1"/>
+				<Item name = "Item_SilverBlock1" count = "1"/>
+				<Item name = "Item_CopperBlock1" count = "1"/>
+				<Item name = "Item_SkyStoneBlock" count = "1"/>
+				<Item name = "Item_LingStone" count = "500"/>
+			</CostItems>
+		</BeMade>
+	</Building>
+	<Harvest>
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wonder_QianKunLingJing</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>
+	</Harvest>
+	<StoryBnts>
+			<li Name="收集" Desc="将地图上的所有不在迷雾中且非禁用的可以收入小乾坤界的物品收入其中。" Script="Map:CollectToRemoteStorage(bind.Key)" Icon="res/Sprs/ui/icon_hand"/>
+			<li Name="探查" Desc="运用神念查探小乾坤界的玄妙。" Cost="1" Appoint="2" Scope="0"  Story="System_EnterQianKunJie" WorldFlag="FinaleActive" Ani="dazuo" Icon="res/Sprs/ui/icon_gsq"/>
+	</StoryBnts>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+	</Ling>
+	<Light>
+		<Value>200</Value>
+		<Failing>1</Failing>
+		<FailRadius>4</FailRadius>
+		<Radius>4</Radius>
+		<Color>FDAD00C6</Color>
+	</Light>
+	</ThingDef>
+
+
+	<ThingDef Type="Building" Name="Building_SleeveSpace1" Parent="BuildingBase">
+	<TexPath>res\Sprs\building_hongchenzhongsheng\building_xiaoqiankun02</TexPath>
+	<TexScale>1</TexScale>
+	<Tags>
+		<Tag Name="SleeveSpace" Level="1"/>
+	</Tags>
+	<ThingName>小乾坤界-门户</ThingName>
+	<Desc>小乾坤界的一个小门户，可以通过此物直接沟通小乾坤界，拿取事物。</Desc>
+	<Rate>12</Rate>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<Beauty>25</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>3000</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<VisionRadius>10</VisionRadius>
+	<ElementKind>None</ElementKind>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1],
+		[1,3],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li>  <!-- 后 -->
+			<li><x>0</x><y>0</y></li>     <!-- 右 -->
+			<li><x>-0.5</x><y>1.3</y></li>     <!-- 前 -->
+			<li><x>0</x><y>0</y></li>     <!-- 左 -->
+		</OffsetGroup>
+	</Collider>
+	<Building>
+		<NotRandom>1</NotRandom>
+
+		<AutoUnLock>0</AutoUnLock>
+		<NoFengshui>1</NoFengshui>
+		<BuildMode>Single</BuildMode>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<IsVirtualBuilding>0</IsVirtualBuilding>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+		<BeMade>
+			<WorkToMake>1200</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_StarEssence" count = "1"/>
+				<Item name = "Item_ParasolWood" count = "1"/>
+				<Item name = "Item_SilverBlock1" count = "1"/>
+				<Item name = "Item_CopperBlock1" count = "1"/>
+				<Item name = "Item_SkyStoneBlock" count = "1"/>
+				<Item name = "Item_LingStone" count = "50"/>
+			</CostItems>
+		</BeMade>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>
+		<Radius>1</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>
+</List></ThingDefs>

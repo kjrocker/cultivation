@@ -1,0 +1,314 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="SimpleFoodBase" Parent="ConsumableBase">
+	
+	<Tags>
+		<Tag Name="Food" Level="1"/>
+		<Tag Name="DiscipleFood" Level="1"/>
+	</Tags>
+	<Frags>	
+		<li Frag="Food" />
+	</Frags>	
+
+	<MaxStack>20</MaxStack>
+	<TexPath></TexPath>
+	
+	<Desc>Desc.</Desc>
+	<MaxHitPoints>100</MaxHitPoints>
+	<Rate>1</Rate>
+	<Beauty>3</Beauty>
+	
+	<ElementKind>Tu</ElementKind>
+	
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Food">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>25</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="10" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>灵宝</FabaoSuffix>
+		<PhysicalLables>
+			<li>LowDensity2</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		 
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+			<!--<Stuff name = "Metallic"/>
+				<Stuff name = "Woody"/>
+				<Stuff name = "Stony"/>-->
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<!--<Item name = "wheat" count = "1"/>-->
+			</CostItems>
+		</BeMade> 
+		
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<MaxHitPointsPerNum>0</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			
+			<FlammabilityWhenBeMain>0.3</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>0</Nutrition>
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>0</FunAddion>
+		</Food>	
+		<Rot>
+			<RotSpeed>0.03</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Cake" Parent="SimpleFoodBase">
+	<ThingName>面饼</ThingName>
+	<TexPath>res\Sprs\object\object_cake</TexPath>	
+	<Desc>简单的干粮，可以充饥。</Desc>
+	<Frags>			
+		<li Frag="Moon" />
+	</Frags>		
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="Tame" Level="15"/>
+		<Tag Name="TameVeg" Level="1"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+		<Tag Name="Item_Cake" Level="4"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<FabaoSuffix>饼</FabaoSuffix>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>85</Nutrition>
+			<Moods>
+				<li>Eat6</li>
+			</Moods>
+			<Modifier>SysEndureHunger</Modifier>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories></StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Flour" count = "5"/>
+					<Item name = "Item_Water" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>50</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Jerky" Parent="SimpleFoodBase">
+	<ThingName>肉干</ThingName>
+	<TexPath>res\Sprs\object\object_Jerkymeat</TexPath>	
+	<Desc>简单的干粮，可以充饥。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+		<Tag Name="Tame" Level="12"/>
+		<Tag Name="TameMeat" Level="1"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<FabaoSuffix>干</FabaoSuffix>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>35</Nutrition>
+			<Moods>
+				<li>Eat6</li>
+			</Moods>
+			<Modifier>SysEndureHunger</Modifier>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>50</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_PreservedFruit" Parent="SimpleFoodBase">
+	<ThingName>李氏龙涎果脯</ThingName>
+	<TexPath>res\Sprs\object\object_BerryStem1a</TexPath>	
+	<Desc>[color=#FFA500]故有果兮，其味如蜜。\n晾之檐上，以待佳期。\n今有人兮，美目如蜜。\n何故盼兮，佳期已逝？\n[/color]龙涎果难以储存，唯有金陵李氏独门秘方可以将其制成果脯而药性不失。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<FabaoSuffix>果</FabaoSuffix>
+		<Elixir>
+			<Modifier>Modifier_Item_LongXianGuo</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>
+			<FunAddion>10</FunAddion>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories></StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Fruit" count = "5"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>50</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Yao_BoarMeat" Parent="SimpleFoodBase">
+	<ThingName>猪妖的精肉</ThingName>
+	<TexPath>res\Sprs\object\object_wildboar</TexPath>	
+	<Desc>猪妖的精华肉，无法用凡火烹制。直接服用可以大补精元。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="100"/>
+		<Tag Name="TameMeat" Level="1"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>10</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="50"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="75" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>干</FabaoSuffix>
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>70</Nutrition>
+			<PracticeNutrition>100</PracticeNutrition>		
+		</Food>
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+			<li Name="Item_BodyPractice_DaYaoYuanJing" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

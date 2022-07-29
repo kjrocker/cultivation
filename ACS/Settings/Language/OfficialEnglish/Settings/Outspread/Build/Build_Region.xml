@@ -1,0 +1,22 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="MainHall_Base">
+			<DisplayName>Basic Main Hall</DisplayName>
+		</Text>
+		<Text Name="MainHall1">
+			<Desc>A main hall represents our power; this is also where the people learns about us. Unlocks Charity policies. Show our kindness by giving alms.</Desc>
+		</Text>
+		<Text Name="MainHall2">
+			<DisplayName>Intermediate Main Hall</DisplayName>
+			<Desc>A main hall represents our power; this is also where the people learns about us. Unlocks Charity policies. Show our kindness by giving alms. An intermediate main hall is larger and enables us to host more buildings. A statue can be placed inside to directly transfer belief to a divine cultivator.</Desc>
+		</Text>
+		<Text Name="MainHall3">
+			<DisplayName>Advanced Main Hall</DisplayName>
+			<Desc>A main hall represents our power; this is also where the people learns about us. Unlocks Charity policies. Show our kindness by giving alms. An advanced main hall expands our influence and allows wonders to be built at this location.</Desc>
+		</Text>
+		<Text Name="MainHall4">
+			<DisplayName>Advanced Main Hall</DisplayName>
+			<Desc>A main hall represents our power; this is also where the people learns about us. Unlocks Charity policies. Show our kindness by giving alms. An advanced main hall expands our influence and allows wonders to be built at this location.</Desc>
+		</Text>
+	</List>
+</Texts>

@@ -1,0 +1,401 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="Building_Geothermy" Parent="Build_VirtualDoor">
+		<ThingName>地肺之口</ThingName>	
+		<ClassName>Building_Geothermy</ClassName>
+		<Desc>一道直通地肺的裂隙，有炽热的气息散发出来。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<Heat>
+			<Value>350</Value>
+			<Radius>5</Radius>
+			<RoomValue>1000</RoomValue>
+			<Failing>0.5</Failing>
+			<FailRadius>2</FailRadius>
+		</Heat>
+		<ElementKind>Huo</ElementKind>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<TexPath>res\Sprs\building_TLOU\building_direliefeng01</TexPath>
+		<TexScale>1</TexScale>
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>	
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Building>
+			<Orientation>F,R</Orientation>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>2.8</y>
+				<z>1</z>
+			</SnowRenderData>	
+		</Building>
+		
+		<Ling>
+			<AddionLing>45</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>2</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Rate>9</Rate>
+		<Beauty>10</Beauty>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_ColdHole" Parent="Build_VirtualDoor">
+		<ThingName>玄冰丹炉</ThingName>	
+		<ClassName>Building_ColdHole</ClassName>
+		<Desc>上古大能炼制逆天丹药，遭遇天劫而毁丹。丹火之力逆转化为寒冰，千万年不朽。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<Heat>
+			<Value>-200</Value>
+			<Radius>5</Radius>
+			<RoomValue>-800</RoomValue>
+			<Failing>0.5</Failing>
+			<FailRadius>2</FailRadius>
+		</Heat>
+		<ElementKind>Shui</ElementKind>
+		<TexPath>res\Sprs\building_TLOU\building_xuanbingxianglu01</TexPath>
+		<TexScale>1</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>5</y>
+		</ShadowSize>
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>	
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>1.45</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>2.5</x>
+				<y>3.5</y>
+				<z>1</z>
+			</SnowRenderData>	
+		</Building>
+		
+		<Ling>
+			<AddionLing>45</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>2</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Rate>9</Rate>
+		<Beauty>10</Beauty>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_OuterWorld" Parent="Build_VirtualDoor">
+		<ThingName>异界裂缝</ThingName>
+		<Desc>因大能斗法而破碎的空间，渐渐化为一道稳定的异界裂缝，不定期会有物品或修行者穿越而来。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<ClassName>Building_OuterWorld</ClassName>
+		<TexPath>res\Sprs\building_hongchenzhongsheng\building_yijieliefeng01_F</TexPath>
+		<TexScale>1</TexScale>	
+		<ElementKind>Jin</ElementKind>
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>	
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>2.7</y>
+				<z>1</z>
+			</SnowRenderData>	
+		</Building>
+		
+		<Ling>
+			<AddionLing>45</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>2</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_YinYang" Parent="Build_VirtualDoor">
+		<ThingName>阴阳奇石</ThingName>
+		<Desc>天地间阴阳流转而诞生的奇石，其中蕴含阴阳玄妙，弟子境界越高领悟越深。但每次参悟石碑，都会引起天象异常。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<ClassName>Building_YinYang</ClassName>
+		<TexPath>res\Sprs\building_TLOU\building_yinyangqishi01</TexPath>
+		<TexScale>1</TexScale>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.5</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Rate>9</Rate>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_DiMu" Parent="Build_VirtualDoor">
+		<ThingName>地母石碑</ThingName>
+		<Desc>上古地母神教所残留的祭祀碑，向其献祭灵石，则可沟通地母残灵许愿，只是会带来一些额外的灾害。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<ClassName>Building_DiMu</ClassName>
+		<TexPath>res\Sprs\building_TLOU\building_dimushibei01</TexPath>
+		<TexScale>1</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<ElementKind>Tu</ElementKind>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,3,1,1],
+			[1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0.5</x><y>1.45</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		
+		<Building>
+			<Orientation>F,R</Orientation>
+			<SnowRenderData>
+				<x>2.5</x>
+				<y>3.58</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Rate>9</Rate>
+		<Beauty>10</Beauty>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="LingShu" Parent="Build_VirtualDoor">
+		<ThingName>蕴灵树</ThingName>
+		<Desc>奇特的植物，可将周围的土地都化为灵土。但飘散的花粉有可能让人经脉滞塞，灵气运转不畅。</Desc>
+		<IllustratedHandLabel>NaturalWonders</IllustratedHandLabel>
+		<ClassName>LingTao</ClassName>
+		
+		<TexPath>Res\Sprs\scene_TemperateForest_plant\scene_lingshu01</TexPath>
+		<TexScale>0.9</TexScale>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<ElementKind>Mu</ElementKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1,1],
+			[1,3,1,1],
+			[1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0.8</x><y>2</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Ling>
+			<AddionLing>45</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>2</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Building>
+			<SnowRenderData>
+				<x>2.2</x>
+				<y>2.9</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		
+		<StoryBnts>
+			<li Name="感受" Desc="感受蕴灵树中的灵气" Icon="res/Sprs/ui/icon_chuanshou01" Cost="10" Appoint="2" Story="FeelQi"/>
+		</StoryBnts>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>12</Value>         
+			<Radius>5</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		
+		<Light>
+			<Value>110</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>3</FailRadius>
+			<Radius>12</Radius>
+			<Color>87CEFAFF</Color>
+		</Light>
+		<Rate>9</Rate>
+		<Beauty>15</Beauty>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Build_VirtualDoor" Parent="BuildingBase">
+		<TexPath></TexPath>
+		<ThingName></ThingName>
+		<Desc>EnvBase</Desc>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>0</BlockLight>
+		<Beauty>1</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>300</MaxHitPoints>
+		<GrowAble>0</GrowAble>
+		<VisionRadius>10</VisionRadius>
+		<ElementKind>None</ElementKind>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Flammability>
+			<Flammability>-0.5</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+
+		<!--
+		<Collider>
+			(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace
+			<Data>
+			[3]
+			</Data>
+		</Collider>
+		-->
+		<Building>
+			<NotDemolished>1</NotDemolished>
+			<NoFight>1</NoFight>
+			<BeMade>
+				<WorkToMake>800</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>44</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.9</x>
+				<y>3.95</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>	
+	<!--	<Element>
+				<Kind>None</Kind>
+				<Value>3</Value>         
+				<Radius>2</Radius>
+				<Failing>1</Failing>
+				<FailRadius>0</FailRadius>
+		</Element>-->
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>
+</List></ThingDefs>

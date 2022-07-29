@@ -1,0 +1,331 @@
+<Defs><List>	
+	<Def Name="BaiManR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseNeckCountdown2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_CopperBlock1</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Trash</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureJinDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="TianJiR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CalmDown</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_PurpleGanodermaLucidum</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureShuiDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_Happiness</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeiShanR">
+		<Item CountName="Rare">
+			<ItemName>Item_BasePracticeDrug</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_LingMuXueJie</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_Ling2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_SoulCrystalYou</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ZhengYiR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_PracticeRate</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseLife1</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseLife2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_SoulCrystalNing</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="JiuHuaR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseLife5</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseNeckCountdown1</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_SoulCrystalLing</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WuLianR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_Defense</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureFiveElementDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureJinDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="ShuShanR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_PracticeSpeed</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureHuoDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureTuDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="KunLunR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseLife3</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_IncreaseLife4</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_Ling2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="XianKongR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBase2</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBase1</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBase3</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBase4</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBase5</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="DanXiaR">
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_DredgeQi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_CureMuDamage</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_RedGinseng</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="HeHuanR">
+		<Item CountName="Rare">
+			<ItemName>Item_EarthEssence_1</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+		<Item CountName="Rare">
+			<ItemName>Item_Dan_FiveBaseFromLife</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>XiaoDan</AucType>
+		</Item>
+	</Def>
+	
+	<Def Name="WanYaoR">
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Fall_LingZhi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Winter_LingZhi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Spring_LingZhi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Summer_LingZhi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+		<Item Weight="1" CountName="Rare">
+			<ItemName>Item_Earth_LingZhi</ItemName>
+			<Condition>
+				<NeedRank>Friendly</NeedRank>
+			</Condition>
+			<AucType>Nature</AucType>
+		</Item>
+	</Def>
+</List></Defs>

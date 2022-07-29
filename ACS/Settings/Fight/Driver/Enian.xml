@@ -1,0 +1,13 @@
+<FightDriverDefs><List>
+	<Driver Name="Enian">
+		<EnterSkill></EnterSkill><!--出场skill-->
+		<DieSkill></DieSkill><!--死亡 BOSS死亡时会执行完这个skill-->
+		<Stages>
+			<li>
+				<Skills>						
+					<li Type="Normal" Name="enian_fabao" Rate="1" CoolDown="0"/>					
+				</Skills>
+			</li>			
+		</Stages>
+	</Driver>
+</List></FightDriverDefs>

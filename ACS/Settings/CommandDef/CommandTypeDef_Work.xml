@@ -1,0 +1,167 @@
+<CommandTypes><List>
+
+	<CommandType Name="Carry" Class="CommandCarry">
+	<Kind>Carry</Kind>
+	<Single>0</Single>
+	</CommandType>
+
+	<CommandType Name="TradeCarry" Class="CommandTradeCarry">
+	<Kind>Carry</Kind>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="ZhenCarry" Class="CommandCarry">
+	<Kind>Carry</Kind>
+	<Single>0</Single>
+	<Icon>res/Sprs/ui/icon_lianbao01</Icon>
+	</CommandType>
+
+	<CommandType Name="PutCarry" Class="CommandCarry">
+	<Kind>Carry</Kind>
+	<Single>0</Single>
+	</CommandType>
+
+	<CommandType Name="Mine" Class="CommandMine">
+	<Kind>Mine</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_dig1a</Icon>
+	</CommandType>
+
+
+	<CommandType Name="Build" Class="CommandBuild">
+	<Kind>Build</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="Dismantle" Class="CommandDismantle">
+	<Kind>Build</Kind>
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	<Icon>res/Sprs/ui/icon_dismantle1a</Icon>
+	</CommandType>
+
+	<CommandType Name="MoveBuilding" Class="CommandMoveBuilding">
+	<Kind>Build</Kind>
+	<Single>1</Single>
+	<SingleInKind>1</SingleInKind>
+	<Icon>res/Sprs/ui/icon_dismantle1a</Icon>
+	</CommandType>
+
+	<CommandType Name="FixBuilding" Class="CommandFixBuilding">
+	<Kind>Build</Kind>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="Plant" Class="CommandPlant">
+	<Kind>Plant</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="OutFire" Class="CommandOutFire">
+	<Kind>OutFire</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_outfire</Icon>
+	</CommandType>
+
+	<CommandType Name="Harvest" Class="CommandHarvest">
+	<Kind>Cutoff</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_crop1a</Icon>
+	</CommandType>
+
+	<CommandType Name="Cutoff" Class="CommandCutoff">
+	<Kind>Cutoff</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_remove1a</Icon>
+	</CommandType>
+
+	<CommandType Name="Seach" Class="CommandCutoff">
+	<Kind>Cutoff</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_hand</Icon>
+	</CommandType>
+
+	<CommandType Name="Log" Class="CommandCutoff">
+	<Kind>Cutoff</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_fell1a</Icon>
+	</CommandType>
+
+	<CommandType Name="BagBegItem" Class="CommandBagBegItem">
+	<Single>0</Single>
+	</CommandType>
+
+	<CommandType Name="BagCarryItem" Class="CommandBagCarryItem">
+	<Single>0</Single>
+	</CommandType>
+
+	<CommandType Name="MakeItem" Class="CommandMakeItem">
+	<Single>1</Single>
+	<BuildingPermission>1</BuildingPermission>
+	</CommandType>
+
+	<CommandType Name="RemoveFloor" Class="CommandRemoveFloor">
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_dismantle1a</Icon>
+	</CommandType>
+
+	<CommandType Name="TreatHim" Class="CommandTreatHim">
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="CarryWater" Class="CommandCarryWater">
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="Explore" Class="CommandExplore">
+	<Icon>res/Sprs/ui/icon_flag</Icon>
+	<IconScale>2.5</IconScale>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="Hunting" Class="CommandHunting">
+	<Kind>Hunting</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Single>1</Single>
+	<Icon>res/Sprs/ui/icon_hunt</Icon>
+	</CommandType>
+
+	<CommandType Name="Slaughter" Class="CommandSlaughter">
+	<Kind>Hunting</Kind>
+	<SingleInKind>1</SingleInKind>
+	<Icon>res/Sprs/ui/icon_butcher1a</Icon>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="MoveNpc" Class="CommandMoveNpc">
+	<Kind>Carry</Kind>
+	<Single>1</Single>
+	</CommandType>
+
+
+	<CommandType Name="NeedClean" Class="CommandClean">
+	<Kind>Clean</Kind>
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="Sacrifice" Class="CommandSacrifice">
+	<Icon>res/Sprs/ui/icon_lingxi01</Icon>
+	</CommandType>
+
+	<CommandType Name="GoFishing" Class="CommandGoFishing">
+	<Single>1</Single>
+	</CommandType>
+
+	<CommandType Name="GoFishingSpace" Class="CommandGoFishing">
+	<Single>1</Single>
+	</CommandType>
+
+</List></CommandTypes>

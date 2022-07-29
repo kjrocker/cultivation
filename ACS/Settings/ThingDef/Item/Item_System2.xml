@@ -1,0 +1,139 @@
+<ThingDefs><List>
+	<!--system下的item名称不能随意更改-->
+	<ThingDef Type="Item" Name="Item_ShangGuYiWenLu1" Parent="MaterialBase">
+		<ThingName>《上古异闻·仙魔之战·卷一》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>记载上古异闻关于仙魔之战的密卷，上面的文字看上去莫名其妙，似乎被施加了某种密咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅秘闻" Story="Story_QuestStory_Item_ShangGuYiWenLu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_ShangGuYiWenLu5" Parent="MaterialBase">
+		<ThingName>《上古异闻·仙魔之战·卷五》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>记载上古异闻关于仙魔之战的密卷，上面的文字看上去莫名其妙，似乎被施加了某种密咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅秘闻" Story="Story_QuestStory_Item_ShangGuYiWenLu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_ShangGuYiWenLu7" Parent="MaterialBase">
+		<ThingName>《上古异闻·仙魔之战·卷七》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>记载上古异闻关于仙魔之战的密卷，上面的文字看上去莫名其妙，似乎被施加了某种密咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅秘闻" Story="Story_QuestStory_Item_ShangGuYiWenLu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_ShangGuYiWenLu15" Parent="MaterialBase">
+		<ThingName>《上古异闻·仙魔之战·卷十五》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>记载上古异闻关于仙魔之战的密卷，上面的文字看上去莫名其妙，似乎被施加了某种密咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅秘闻" Story="Story_QuestStory_Item_ShangGuYiWenLu" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_TaiYiMiDian" Parent="MaterialBase">
+		<ThingName>《太一秘典》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>一本记录太一门历史的书册，其中记载了太一门百年前立派到如今的种种大事，十分有纪念意义。但仔细研究就可以发现，此书以五种天材地宝凝练的丝线织成，有万法不侵之妙，光是带在身上都能提高灵气护盾效果，减缓五行伤害的妙用，真不敢相信太一门这样一个小门派用这种东西记录门派历史，简直奢侈的不像话。</Desc>	
+		<Beauty>25</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>		
+		
+			<Equip>
+				<ToolModifier>Modifier_Item_TaiYiMiDian</ToolModifier>
+			</Equip>		
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅书册" Story="Story_QuestStory_Item_TaiYiMiDian" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_JinXiaCanJuan" Parent="MaterialBase">
+		<ThingName>《金匣残卷》</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>一本从玉晶潭金匣中飞出的卷轴，本来灵气波动微弱，毫不起眼。但包裹其上的奇特法印引起你的注意，这个法印与你探索“灭门之谜”的过程中见过的古朴残缺法印似乎是一脉相承。你有一种直觉，此物必然和你调查的事情大有关联。</Desc>	
+		<Beauty>25</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		
+		<IllustratedHandLabel>Curiosity</IllustratedHandLabel>
+		<Item Lable="Treasure">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>		
+		
+			<Equip>
+				<ToolModifier>Modifier_Item_TaiYiMiDian</ToolModifier>
+			</Equip>		
+		</Item>
+		<StoryBnts>
+			<li Name="查阅" Desc="查阅书册" Story="Story_QuestStory_Item_JinChuanCanJuan" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+</List></ThingDefs>

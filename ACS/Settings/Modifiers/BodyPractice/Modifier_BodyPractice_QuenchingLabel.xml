@@ -1,0 +1,483 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Modifier_QuenchingLabel_ChiYi" Type="Normal">
+		<DisplayName>斥异</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NeckCountdownAddV" AddV="3000"/>
+		</Properties>
+	</Modifier>
+	
+
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Base_Organ" Type="Normal">
+		<DisplayName>基础百炼器官</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="0.01"/>
+			<li Name="BodyPratice_BodyStrong" AddV="0.001"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Base_Bone" Type="Normal">
+		<DisplayName>基础百炼骨骼</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="0.01"/>
+			<li Name="BodyPratice_BodyStrong" AddV="0.002"/>
+			<li Name="MaxAge" AddV="0.1"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Base_Flesh" Type="Normal">
+		<DisplayName>基础百炼血肉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="0.01"/>
+			<li Name="BodyPratice_BodyStrong" AddV="0.001"/>
+			<li Name="MaxAge" AddV="0.1"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv1_O01_All" Type="Normal">
+		<DisplayName>机能活化</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O01_All" Type="Normal">
+		<DisplayName>绝境潜能</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O02_All" Type="Normal">
+		<DisplayName>先天返照</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_O01_All" Type="Normal">
+		<DisplayName>原祖化（脏器）</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="100"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_O01_Xia" Type="Normal">
+		<DisplayName>机能激化</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.02"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_O01_DaYaoYuanJing" Type="Normal">
+		<DisplayName>妖蚀脏器</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="-4"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O01_SiHunZhiXi" Type="Normal">
+		<DisplayName>潜默冥息</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="4"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_B01_WuHuiJingHua" Type="Normal">
+		<DisplayName>邪生骨纹</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireDuration" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_O01_WuHuiJingHua" Type="Normal">
+		<DisplayName>内体激变</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O01_WuXingZhiJing" Type="Normal">
+		<DisplayName>空化之力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.005"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O01_ZhuLongYuanJing" Type="Normal">
+		<DisplayName>幽明轮转</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="10"/>
+			<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="-0.01"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_TaiYangJingHua" Type="Normal">
+		<DisplayName>太阳精华系列</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.025"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_TaiYinJingHua" Type="Normal">
+		<DisplayName>太阴精华系列</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.005"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A03_JieMieJingHua" Type="Normal">
+		<DisplayName>天地之光尘</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A01_TaiXuJingHua" Type="Normal">
+		<DisplayName>太虚神元</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A02_TaiXuJingHua" Type="Normal">
+		<DisplayName>八极真力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A03_TaiXuJingHua" Type="Normal">
+		<DisplayName>五行万化</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A01_XuanTianZiQi" Type="Normal">
+		<DisplayName>周天星辉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A02_XuanTianZiQi" Type="Normal">
+		<DisplayName>三垣尊力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv4_A03_XuanTianZiQi" Type="Normal">
+		<DisplayName>五德辟劫</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.05"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_F01_Dong" Type="Normal">
+		<DisplayName>沉眠之血</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.01"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_B01_Dong" Type="Normal">
+		<DisplayName>封绝之骨</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.01"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv2_O01_Dong" Type="Normal">
+		<DisplayName>机能归藏</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.01"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv3_O01_TaiYangJingHua" Type="Normal">
+		<DisplayName>太阳之息</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.025"/>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.075"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Brain" Type="Normal">
+		<DisplayName>百炼脑</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireNum" AddV="0.03"/>
+			<li Name="BodyPractice_AngerFireDuration" AddV="0.2"/>
+			<li Name="PainTolerance" AddV="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Eye" Type="Normal">
+		<DisplayName>百炼眼</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.0004"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.0002"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.0002"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.0002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Ear" Type="Normal">
+		<DisplayName>百炼耳</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.0004"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.0002"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.0002"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.0002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Nose" Type="Normal">
+		<DisplayName>百炼鼻</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="0.1"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Mouth" Type="Normal">
+		<DisplayName>百炼嘴</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemMaxRate" AddV="0.02"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="0.005"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Throat" Type="Normal">
+		<DisplayName>百炼喉</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="0.1"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Heart" Type="Normal">
+		<DisplayName>百炼心</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.01"/>
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.005"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Liver" Type="Normal">
+		<DisplayName>百炼肝</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.003"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.002"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Spleen" Type="Normal">
+		<DisplayName>百炼脾</DisplayName><!-- 未完成 -->
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_BodyRecover" AddV="0.0001"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Lung" Type="Normal">
+		<DisplayName>百炼肺</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="0.4"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.005"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Kidney" Type="Normal">
+		<DisplayName>百炼肾</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="2"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="0.2"/>
+			<li Name="NutritionToJingYuanK" AddV="0.0005"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Stomach" Type="Normal">
+		<DisplayName>百炼胃</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemMaxRate" AddV="0.04"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="0.01"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.005"/>
+			<li Name="NutritionConsumeConstant" AddV="0.01"/>
+			<li Name="NutritionToJingYuanK" AddV="0.0005"/>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Intestines" Type="Normal">
+		<DisplayName>百炼肠</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPractice_EatItemMaxRate" AddV="0.02"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="0.005"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.002"/>
+			<li Name="NutritionConsumeConstant" AddV="0.01"/>
+			<li Name="NutritionToJingYuanK" AddV="0.0005"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_Lv0_Genitals" Type="Normal">
+		<DisplayName>百炼阳根</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BaseEmotionAddV" AddV="0.4"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

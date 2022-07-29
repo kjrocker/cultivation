@@ -1,0 +1,283 @@
+<ThingDefs><List>
+
+<ThingDef Type="Plant" Name="RockBase">
+	
+	<TonglingHair>hairwupin</TonglingHair>
+	<MaxStack>1</MaxStack>
+	<TileID>0</TileID>
+	
+	<TexPath></TexPath>
+	<TexOffsetX>0</TexOffsetX>
+	<TexOffsetY>0</TexOffsetY>
+	
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>1</CastShadow>
+	<Beauty>-1</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>3000</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<BlockLight>1</BlockLight>
+	<BlockMissile>1</BlockMissile>
+	<ColliderKind>NoPass</ColliderKind>
+	<ElementKind>Tu</ElementKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	
+	<Plant  Kind="Mine">
+		<WindEffect>0</WindEffect>
+		<CanMakeRoom>1</CanMakeRoom>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>1</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<SowWork>0</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag></SowPlaceTag>
+		<SowRenderTags></SowRenderTags>
+		
+		<LifespanFraction>999999</LifespanFraction>
+		<GrowDays>0</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<WitherAble>0</WitherAble>
+		<WitherDestroy>0</WitherDestroy>
+		
+		<TempMin>-300</TempMin>
+		<TempMax>1200</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>99999</LingMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>10</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	
+	<Harvest>
+		<HarvestWork>0</HarvestWork>    
+		<DropWork>600</DropWork>			
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable> 
+		
+		<HarvestTag>
+			<li>Dig</li>
+		</HarvestTag>		
+		<!--
+		<HarvestItems>
+			<li>
+				<ThingDef></ThingDef>
+				<Count>0</Count>
+				
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+				
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef></ThingDef>
+				<Count>0</Count>
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+			</li>
+		</DropItems>
+		-->
+	</Harvest>
+	
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>2</Value>         
+		<Radius>1</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>3</Accommodate>
+	</Ling>
+</ThingDef>
+
+
+<ThingDef Type="Plant" Name="MetalBase">
+	<TonglingHair>hairwupin</TonglingHair>
+	<MaxStack>1</MaxStack>
+	<TileID>0</TileID>
+	
+	<TexPath></TexPath>
+	<TexOffsetX>0</TexOffsetX>
+	<TexOffsetY>0</TexOffsetY>
+	
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>1</CastShadow>
+	<Beauty>-1</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>4500</MaxHitPoints>
+	<BlockLight>1</BlockLight>
+	<BlockMissile>1</BlockMissile>
+	<ColliderKind>NoPass</ColliderKind>
+	<GrowAble>0</GrowAble>
+	<ElementKind>None</ElementKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Plant  Kind="Mine">
+		<WindEffect>0</WindEffect>
+		<CanMakeRoom>1</CanMakeRoom>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>1</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<SowWork>0</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag></SowPlaceTag>
+		<SowRenderTags></SowRenderTags>
+		
+		<LifespanFraction>999999</LifespanFraction>
+		<GrowDays>0</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<WitherAble>0</WitherAble>
+		<WitherDestroy>0</WitherDestroy>
+		
+		<TempMin>-300</TempMin>
+		<TempMax>1200</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>99999</LingMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>10</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	
+	<Harvest>
+		<HarvestWork>0</HarvestWork>  
+		<DropWork>600</DropWork>	
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable> 
+		
+		<HarvestTag>
+			<li>Dig</li>
+		</HarvestTag>		
+		<!--
+		<HarvestItems>
+			<li>
+				<ThingDef></ThingDef>
+				<Count>0</Count>
+				
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+				
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef></ThingDef>
+				<Count>0</Count>
+				<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+				</Condition>
+				<Rate>0.6</Rate>
+			</li>
+		</DropItems>
+		-->
+	</Harvest>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>         
+		<Radius>3</Radius>
+		<Failing>0.5</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.2</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>6</Accommodate>
+	</Ling>
+</ThingDef> 
+</List></ThingDefs>

@@ -1,0 +1,31 @@
+﻿<Texts Type="Other">
+	<List>
+		<Text Name="Region_Base">
+			<Desc>It is an area, where various kinds of production buildings can be built.</Desc>
+		</Text>
+		<Text Name="zhongyuan">
+			<DisplayName>Central Plains</DisplayName>
+			<Desc>Produces: brownstones (plenty); wood and wheat (few).</Desc>
+		</Text>
+		<Text Name="JiangAnWoYe">
+			<DisplayName>Riverbank Plains</DisplayName>
+			<Desc>Produces: wheat (plenty); brownstones (few).</Desc>
+		</Text>
+		<Text Name="DaXueYuan">
+			<DisplayName>The Great Snowland</DisplayName>
+			<Desc>Produces: spirit stones (plenty); wood (few).</Desc>
+		</Text>
+		<Text Name="DaMo">
+			<DisplayName>Great Desert</DisplayName>
+			<Desc>Produces: spirit stones (plenty); stones (few).</Desc>
+		</Text>
+		<Text Name="NanHuang">
+			<DisplayName>Wild South</DisplayName>
+			<Desc>Produces: wood (plenty).</Desc>
+		</Text>
+		<Text Name="OurPlace">
+			<DisplayName>Mt. South</DisplayName>
+			<Desc>Produces: wood, stones and wheat.</Desc>
+		</Text>
+	</List>
+</Texts>

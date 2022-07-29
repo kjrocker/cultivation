@@ -1,0 +1,6 @@
+Type	Desc	DisplayName
+JiaGuo	具有促进灵智成长的效果	佳果
+ShuShi	具有促进护体成长的效果	熟食
+XiangXun	具有促进灵气成长的效果	香蕈
+DiXian	具有促进术法成长的效果	地鲜
+ShengRou	具有促进御丹成长的效果	肉类

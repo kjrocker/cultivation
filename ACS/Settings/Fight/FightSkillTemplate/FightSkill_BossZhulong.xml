@@ -1,0 +1,179 @@
+<FightSkills><List>	
+	<Skill Name="Zhulong_fennu"><!--AOE-->
+		<DisplayName>愤怒</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<ClassName>zhulong_fennu</ClassName>
+		<Value>150</Value>
+		<!--<TargetCamp>Enemy</TargetCamp>		-->
+		<SelectType>Random</SelectType>
+		<Shape>Aoe</Shape>
+		<Radius>5</Radius>
+		<BombEffect>200000</BombEffect>
+		<HitEffect>56</HitEffect>
+	</Skill>
+	<Skill Name="Zhulong_shennian">
+		<DisplayName>神念之雷</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>30</Value>
+		<SelectType>AllNpc</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>3</SelectCount>
+		<MissileEffect>200003</MissileEffect>
+		<BombEffect>56</BombEffect>
+		<HitEffect>56</HitEffect>
+		<SelectFight>1</SelectFight>
+		<ClassName>zhulong_shennian</ClassName>
+		<Radius>0</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>-5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>40</Speed>
+			<Shake>3</Shake>
+		</Missile>
+	</Skill>
+	<Skill Name="Zhulong_zuinie">
+		<DisplayName>罪孽之雷</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>30</Value>
+		<SelectType>AllNpc</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>3</SelectCount>
+		<MissileEffect>200004</MissileEffect>
+		<BombEffect>56</BombEffect>
+		<HitEffect>56</HitEffect>
+		<SelectFight>1</SelectFight>
+		<ClassName>zhulong_zuinie</ClassName>
+		<Radius>0</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>-5</p3>
+			<p4>0</p4>
+			<Speed>40</Speed>
+			<Shake>3</Shake>
+		</Missile>
+	</Skill>
+	<Skill Name="Zhulong_yehuotuxi">
+		<DisplayName>业火吐息</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>100</Value>
+		<SelectType>SelectPoint</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200006</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<SelectFight>1</SelectFight>
+		<ClassName>Zhulong_yehuotuxi</ClassName>
+		<Radius>0</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>16</Speed>
+			<FlyCheck>1</FlyCheck>
+			<CheckRadius>3</CheckRadius>
+		</Missile>
+	</Skill>
+	<Skill Name="Zhulong_xinmotuxi">
+		<DisplayName>心魔吐息</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Tu</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>100</Value>
+		<SelectType>SelectPoint</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<MissileEffect>200007</MissileEffect>
+		<BombEffect>0</BombEffect>
+		<HitEffect>52</HitEffect>
+		<SelectFight>1</SelectFight>
+		<ClassName>Zhulong_xinmotuxi</ClassName>
+		<Radius>0</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>16</Speed>
+			<FlyCheck>1</FlyCheck>
+			<CheckRadius>3</CheckRadius>
+		</Missile>
+	</Skill>
+	<Skill Name="Zhulong_guangzhishenpan"><!--光之审判-->
+		<DisplayName>光之审判</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Tu</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>50</Value>
+		<SelectType>SelectThing</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>50</HitEffect>		
+	</Skill>
+	<Skill Name="Zhulong_shenanzhiyuan"><!--深暗之渊-->
+		<DisplayName>深暗之渊</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Tu</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<Value>50</Value>
+		<SelectType>SelectThing</SelectType>
+		<Shape>Single</Shape>	
+		<HitEffect>59</HitEffect>		
+	</Skill>
+	
+	<Skill Name="Zhulong_shenanzhiyuan_bomb"><!--深暗之渊 爆炸-->
+		<DisplayName>深暗之渊</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Tu</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<ClassName>other_broken</ClassName>
+		<Value>150</Value>
+		<Radius>3</Radius>
+		<SelectType>SelectPoint</SelectType>
+		<Shape>Aoe</Shape>	
+		<BombEffect>60</BombEffect>
+	</Skill>
+	
+	<Skill Name="Zhulong_guangzhishenpan_bomb"><!--光之审判  爆炸-->
+		<DisplayName>光之审判</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Element>Tu</Element>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<ClassName>other_broken</ClassName>
+		<Value>150</Value>
+		<Radius>3</Radius>
+		<SelectType>SelectPoint</SelectType>
+		<Shape>Aoe</Shape>	
+		<BombEffect>52</BombEffect>
+	</Skill>
+	
+</List></FightSkills>

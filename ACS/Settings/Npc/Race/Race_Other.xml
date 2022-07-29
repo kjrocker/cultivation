@@ -1,0 +1,427 @@
+﻿<RaceDefs><List>
+
+<RaceDef Name="SYS_LOST">
+	<DisplayName>模组丢失</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/Puppet/Base</Mod>
+	<RaceType>Puppet</RaceType>
+	<Template>Npc_Puppet</Template>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>PuppetBody</Body>
+	<Revive>0</Revive>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>1</AdultAge>
+	<GenerateMinAge>1</GenerateMinAge>
+	<GenerateMaxAge>10</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">10,10,10,10,10</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PuppetRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="PuppetRaceMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="PuppetRaceMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PuppetRaceComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PuppetRaceComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PuppetRaceToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PuppetRaceToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PuppetRaceVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PuppetRaceBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PuppetRaceRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="Puppet">
+	<DisplayName>傀儡</DisplayName>
+	<Desc>人形的人造工具，可被法力驱动。</Desc>
+	<Mod>Mod/Npc/Puppet/Base</Mod>
+	<RaceType>Puppet</RaceType>
+	<Template>Npc_Puppet</Template>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>PuppetBody</Body>
+	<Revive>0</Revive>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>1</AdultAge>
+	<GenerateMinAge>1</GenerateMinAge>
+	<GenerateMaxAge>10</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">10,10,10,10,10</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="PuppetRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="PuppetRaceMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="PuppetRaceMaxHp"/>
+		<li Name="RaceComfyTMin" Value="PuppetRaceComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="PuppetRaceComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="PuppetRaceToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="PuppetRaceToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="PuppetRaceVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="PuppetRaceBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="PuppetRaceRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="NY_Zhuyao">
+	<DisplayName>春节猪妖</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/NY_Zhuyao/Base</Mod>
+	<RaceType>Special</RaceType>
+	<Template>Npc_NY_Zhuyao</Template>
+	<Flag>Zhuyao</Flag>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<AutoAniSpeed>0</AutoAniSpeed>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>10</AdultAge>
+	<GenerateMinAge>10</GenerateMinAge>
+	<GenerateMaxAge>30</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">1,1,1,1,1</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">1,1,1,1,1</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="NY_Shuyao">
+	<DisplayName>春节鼠妖</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/NY_Laoshu/Base</Mod>
+	<RaceType>Special</RaceType>
+	<Template>Npc_NY_Zhuyao</Template>
+	<Flag>Zhuyao</Flag>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<AutoAniSpeed>0</AutoAniSpeed>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>10</AdultAge>
+	<GenerateMinAge>10</GenerateMinAge>
+	<GenerateMaxAge>30</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">1,1,1,1,1</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">1,1,1,1,1</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="NY_Jingguai">
+	<DisplayName>春节小妖</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/NY_Jingguai/Base</Mod>
+	<RaceType>Special</RaceType>
+	<Template>Npc_NY_Jingguai</Template>
+	<Flag>Jingguai</Flag>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>10</AdultAge>
+	<GenerateMinAge>10</GenerateMinAge>
+	<GenerateMaxAge>30</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">1,1,1,1,1</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">1,1,1,1,1</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="NY_Jingguai2">
+	<DisplayName>春节小妖</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/NY_Jingguai/Base</Mod>
+	<RaceType>Special</RaceType>
+	<Template>Npc_NY_Jingguai2</Template>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>10</AdultAge>
+	<GenerateMinAge>10</GenerateMinAge>
+	<GenerateMaxAge>30</GenerateMaxAge>
+	<SelectAble>0</SelectAble>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">1,1,1,1,1</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">1,1,1,1,1</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_24"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="BodyPart">
+	<DisplayName>身体部件</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/BodyPart/Base</Mod>
+	<RaceType>Special</RaceType>	
+	<Flag>BodyPart</Flag>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<HasLing>1</HasLing>
+	<Body>BodyPart</Body>
+	<Revive>0</Revive>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>1</AdultAge>
+	<GenerateMinAge>1</GenerateMinAge>
+	<GenerateMaxAge>1</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999">0,0,0,0,0</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999">0,0,0,0,0</li>
+	</BaseFive>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="MiniLong">
+	<DisplayName>幼龙</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/YouLong/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<AnimalType>1</AnimalType>
+	<ToLs>LsDragon</ToLs>
+	<Flag>MiniLong</Flag>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>SnakeBody</Body>
+	<Revive>0</Revive>
+	<Modifier>Mini_Follow</Modifier>
+	<AutoAniSpeed>0</AutoAniSpeed>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>5000</AdultAge>
+	<GenerateMinAge>0</GenerateMinAge>
+	<GenerateMaxAge>1</GenerateMaxAge>
+	<FreeLength>6.9</FreeLength>
+	<RacePregnant>
+		<PregnantTime>36000</PregnantTime>
+		<PregnantInterval>45000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>1</MaxBirthCount>
+		<PregnantItem>Item_LongEgg</PregnantItem>
+	</RacePregnant>
+	<FreeAni>
+		<li>Free</li>
+	</FreeAni>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999999">10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999999">10,10,10,10,10</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+
+<RaceDef Name="MiniFeng">
+	<DisplayName>幼凤</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/YouFeng/Base</Mod>
+	<RaceType>Animal</RaceType>
+	<Flag>MiniFeng</Flag>
+	<AnimalType>1</AnimalType>
+	<ToLs>LsPhoenix</ToLs>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<Revive>0</Revive>
+	<Modifier>Mini_Follow</Modifier>
+	<AutoAniSpeed>0</AutoAniSpeed>
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<AdultAge>5000</AdultAge>
+	<GenerateMinAge>0</GenerateMinAge>
+	<GenerateMaxAge>1</GenerateMaxAge>
+	<FreeLength>0.7</FreeLength>
+	<RacePregnant>
+		<PregnantTime>36000</PregnantTime>
+		<PregnantInterval>45000</PregnantInterval>
+		<PregnantRate>0.01</PregnantRate>
+		<MinBirthCount>1</MinBirthCount>
+		<MaxBirthCount>1</MaxBirthCount>
+		<PregnantItem>Item_FengEgg</PregnantItem>
+	</RacePregnant>
+	<FreeAni>
+		<li>Free</li>
+	</FreeAni>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="999999">10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="999999">10,10,10,10,10</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_NewYear"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+<RaceDef Name="SP_Zhulong">
+	<DisplayName>春节烛龙</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/BossZhulongChunjie/Base</Mod>
+	<Rolepaint>res/Sprs/rolepainting/monster_zhulong</Rolepaint>
+	<RaceType>Special</RaceType>
+	<Revive>0</Revive>	
+	<NoFight>1</NoFight>
+	<FightDriver>ZhuLongSP</FightDriver>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<Modifier>SysNewYearZhulong</Modifier>
+	<Flag>Zhulong</Flag>
+	<NormalAttack>Rabbit_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<LeaveBody>0</LeaveBody>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0</StrikeBack>
+	<HitBip>Bip001 Spine2</HitBip>	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+</RaceDef>
+<RaceDef Name="Hero1">
+	<DisplayName>英雄</DisplayName>
+	<Desc></Desc>
+	<Mod>Mod/Npc/Hero1/Base</Mod>
+	<RaceType>Special</RaceType>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>Human</Body>
+	<Revive>0</Revive>
+	<HasGenders>0</HasGenders>
+	<HasEquip>1</HasEquip>
+	<AdultAge>1</AdultAge>
+	<GenerateMinAge>26</GenerateMinAge>
+	<GenerateMaxAge>26</GenerateMaxAge>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="6"	>1,1,3,1,3</li> 
+		<li Sex="Male" 	 AgeMin="7" 	AgeMax="16"	>2,2,3,2,3</li>
+		<li Sex="Male" 	 AgeMin="17" 	AgeMax="22" >3,3,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="23" 	AgeMax="40" >3,4,3,3,3</li>
+		<li Sex="Male" 	 AgeMin="41" 	AgeMax="999">2,3,2,3,3</li>		
+		<li Sex="Female" AgeMin="0" 	AgeMax="6"	>1,1,3,1,3</li>
+		<li Sex="Female" AgeMin="7" 	AgeMax="16" >2,2,3,2,3</li>
+		<li Sex="Female" AgeMin="17" 	AgeMax="22" >3,3,4,3,3</li>
+		<li Sex="Female" AgeMin="23" 	AgeMax="40" >4,3,3,3,3</li>
+		<li Sex="Female" AgeMin="41" 	AgeMax="999">3,2,2,3,3</li>
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="HumanRaceMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="HumanRaceMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="HumanRaceMaxHp"/>
+		<li Name="RaceComfyTMin" Value="HumanRaceComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="HumanRaceComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="HumanRaceToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="HumanRaceToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="HumanRaceVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="HumanRaceBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="HumanRaceRecoveryPower"/>
+	</BaseP>	
+</RaceDef>
+
+</List></RaceDefs>

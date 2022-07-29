@@ -1,0 +1,12 @@
+<ArtItems><List>
+	<ArtItem Name="Item_WeaponDaoSword">
+		<List>
+		    <li Name="太极" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_taijijian01"/>
+		</List>
+	</ArtItem>
+	<ArtItem Name="Item_WeaponFuChen">
+		<List>
+			<li Name="云行" Desc="巧夺天工的神兵，融合制作者的心血与灵感而成。" Mod="Mod/Prop/Weapon/weapon_fuchen01"/>
+		</List>
+	</ArtItem>
+</List></ArtItems>

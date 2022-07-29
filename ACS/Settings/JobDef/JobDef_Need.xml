@@ -1,0 +1,65 @@
+<JobDefs><List>
+
+	<JobDef Name="JobAnimalEatFood">
+		<DriverClass>JobAnimalEatFood</DriverClass>
+		<DisplayName>吃东西</DisplayName>
+	</JobDef>
+	<JobDef Name="JobBAnimalFree">
+		<DriverClass>JobBAnimalFree</DriverClass>
+		<DisplayName>移动</DisplayName>
+	</JobDef>
+	<JobDef Name="JobBAnimalGiveBirth">
+		<DriverClass>JobBAnimalGiveBirth</DriverClass>
+		<DisplayName>生育</DisplayName>
+	</JobDef>
+	<JobDef Name="JobBirthIt">
+		<DriverClass>JobBirthIt</DriverClass>
+		<DisplayName>孵蛋</DisplayName>
+	</JobDef>
+	<JobDef Name="JobEatFood">
+		<DriverClass>JobEatFood</DriverClass>
+		<DisplayName>吃东西</DisplayName>
+	</JobDef>
+	<JobDef Name="JobDrinkWater">
+		<DriverClass>JobDrinkWater</DriverClass>
+		<DisplayName>喝水</DisplayName>
+	</JobDef>
+	<JobDef Name="JobTakeRest">
+		<DriverClass>JobTakeRest</DriverClass>
+		<DisplayName>睡觉</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobLookAtSky">
+		<DriverClass>JobLookAtSky</DriverClass>
+		<DisplayName>看天</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobFree">
+		<DriverClass>JobFree</DriverClass>
+		<DisplayName>闲逛</DisplayName>
+		<CheckStay>1</CheckStay>
+		<LowOrder>9</LowOrder>
+	</JobDef>	
+	<JobDef Name="JobRunAway">
+		<DriverClass>JobFree</DriverClass>
+		<DisplayName>逃跑</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>	
+	<JobDef Name="JobPlayWithBuilding">
+		<DriverClass>JobPlayWithBuilding</DriverClass>
+		<DisplayName>娱乐</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobBasePractice">
+		<DriverClass>JobBasePractice</DriverClass>
+		<DisplayName>筑基</DisplayName>
+		<CheckStay>1</CheckStay>
+	</JobDef>
+	<JobDef Name="JobIdle">
+		<DriverClass>JobIdle</DriverClass>
+		<CheckStay>1</CheckStay>
+		<DisplayName>发呆</DisplayName>
+		<LowOrder>9</LowOrder>
+		<Desc>test job</Desc>
+	</JobDef>
+</List></JobDefs>

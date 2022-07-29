@@ -1,0 +1,118 @@
+ID	Type	Desc	Addtion	Kind	RoomKind	fParam1	fParam2	sParam1	sParam2
+	分类 如果为NotRandom则不参与随机	描述	加成系数	判定类型	RoomKind限制	数值参数1	数值参数2	字符参数1	字符参数2
+1	A	房间拥有者均为凡人	1	OwnerGongStageLevel	BedRoom			None	None
+2	A	房间拥有者均为练气	1	OwnerGongStageLevel	BedRoom			Qi	Qi
+3	A	房间拥有者均为结丹	1	OwnerGongStageLevel	BedRoom			Dan1	Dan1
+4	A	房间拥有者均为金丹	1	OwnerGongStageLevel	BedRoom			Dan2	Dan2
+5	A	房间拥有者均为元神	1	OwnerGongStageLevel	BedRoom			God	God
+6	A	房间拥有者均为在世真仙	4	OwnerGongStageLevel	BedRoom			God2	God2
+7	B	房间拥有者均为内门弟子	1	OwnerRank	BedRoom			Disciple	
+8	B	房间拥有者均为外门弟子	1	OwnerRank	BedRoom			Worker	
+9	C	房间拥有者均为访客	1	OwnerIsVistor	BedRoom				
+10	D	房间拥有者均为30岁以上	0.5	OwnerAge	BedRoom	30	99999		
+11	D	房间拥有者均为90岁以上	1	OwnerAge	BedRoom	90	99999		
+12	D	房间拥有者均为270岁以上	1	OwnerAge	BedRoom	270	99999		
+13	D	房间拥有者均为810岁以上	4	OwnerAge	BedRoom	810	99999		
+14	D	房间拥有者均为2430岁以上	8	OwnerAge	BedRoom	2430	99999		
+15	D	房间拥有者均为30岁以下	2	OwnerAge	BedRoom	0	30		
+16	D	房间拥有者均为90岁以下	1	OwnerAge	BedRoom	0	90		
+17	D	房间拥有者均为270岁以下	1	OwnerAge	BedRoom	0	270		
+18	D	房间拥有者均为810岁以下	0.5	OwnerAge	BedRoom	0	810		
+19	D	房间拥有者均为2430岁以下	0.5	OwnerAge	BedRoom	0	2430		
+20	D	房间拥有者总年龄小于100岁	2	OwnerSumAge	BedRoom	0	100		
+21	D	房间拥有者总年龄小于200岁	1	OwnerSumAge	BedRoom	0	200		
+22	D	房间拥有者总年龄小于500岁	1	OwnerSumAge	BedRoom	0	500		
+23	D	房间拥有者总年龄小于1000岁	0.5	OwnerSumAge	BedRoom	0	1000		
+24	D	房间拥有者总年龄大于500岁	1	OwnerSumAge	BedRoom	500	99999		
+25	D	房间拥有者总年龄大于1000岁	1	OwnerSumAge	BedRoom	1000	99999		
+26	D	房间拥有者总年龄大于2000岁	2	OwnerSumAge	BedRoom	2000	99999		
+27	D	房间拥有者总年龄大于4000岁	4	OwnerSumAge	BedRoom	4000	99999		
+28	E	房间拥有者均为男子	1	OwnerSex	BedRoom	1			
+29	E	房间拥有者均为女子	1	OwnerSex	BedRoom	2			
+30	E	房间拥有者男女皆有	2	OwnerSex	BedRoom	3			
+31	F	房间归属于1人	1	OwnerCount	BedRoom	1	1		
+32	F	房间归属于2人	1	OwnerCount	BedRoom	2	2		
+33	F	房间归属于3人	1	OwnerCount	BedRoom	3	3		
+34	F	房间归属者不小于3人	1	OwnerCount	BedRoom	3	99999		
+35	F	房间归属者不小于5人	2	OwnerCount	BedRoom	5	99999		
+36	F	房间归属者不超过3人	1	OwnerCount	BedRoom	0	3		
+37	F	房间归属者不超过5人	1	OwnerCount	BedRoom	0	5		
+38	G1	房间内至少有1张床	1	BuildingCount	BedRoom	1	99999		Sleep
+39	G1	房间内至少有2张床	1	BuildingCount	BedRoom	2	99999		Sleep
+40	G1	房间内至少有3张床	1	BuildingCount	BedRoom	3	99999		Sleep
+41	G1	房间内最多有1张床	1	BuildingCount	BedRoom	0	1		Sleep
+42	G1	房间内最多有2张床	1	BuildingCount	BedRoom	0	2		Sleep
+43	G1	房间内最多有3张床	1	BuildingCount	BedRoom	0	3		Sleep
+44	G1	房间内至少有1张双人床	1	BuildingCount	BedRoom	1	99999	DoubleBed	
+45	G2	房间内至少有1个照明设施	0.5	BuildingCount		1	99999		Light_FSZW
+46	G2	房间内至少有2个照明设施	1	BuildingCount		2	99999		Light_FSZW
+47	G2	房间内至少有3个照明设施	2	BuildingCount		3	99999		Light_FSZW
+48	G2	房间内最多有1个照明设施	2	BuildingCount		0	1		Light_FSZW
+49	G2	房间内最多有2个照明设施	1	BuildingCount		0	2		Light_FSZW
+50	G2	房间内最多有3个照明设施	0.5	BuildingCount		0	3		Light_FSZW
+51	G3	房间内至少有1个水缸	1	BuildingCount		1	99999	WaterTank	
+52	G3	房间内至少有1扇屏风	1	BuildingCount		1	99999	Building_Screen1	
+53	G3	房间内至少有1座雕像	1	BuildingCount		1	99999		DiaoXiang_FSZW
+54	G3	房间内至少有1尊鼎	1	BuildingCount		1	99999		Ding_FSZW
+55	G3	房间内至少有1座香炉	1	BuildingCount		1	99999		XiangLu_FSZW
+56	G3	房间内至少有1个盆栽	1	BuildingCount		1	99999		PenZai_FSZW
+57	G3	房间内至少有1面旗帜	1	BuildingCount		1	99999		QiZhi_FSZW
+58	G3	房间内至少有1个书架	1	BuildingCount		1	99999	Building_BookShelf	
+59	G3	房间内至少有1座坟墓	1	BuildingCount		1	99999		FenMu_FSZW
+60	G3	房间内至少有2个水缸	2	BuildingCount		2	99999	WaterTank	
+61	G3	房间内至少有2扇屏风	2	BuildingCount		2	99999	Building_Screen1	
+62	G3	房间内至少有2座雕像	2	BuildingCount		2	99999		DiaoXiang_FSZW
+63	G3	房间内至少有2尊鼎	2	BuildingCount		2	99999		Ding_FSZW
+64	G3	房间内至少有2座香炉	2	BuildingCount		2	99999		XiangLu_FSZW
+65	G3	房间内至少有2个盆栽	2	BuildingCount		2	99999		PenZai_FSZW
+66	G3	房间内至少有2面旗帜	2	BuildingCount		2	99999		QiZhi_FSZW
+67	G3	房间内至少有2个书架	2	BuildingCount		2	99999	Building_BookShelf	
+68	H	房间内不能有水域	1	TerrainCount		0	0		Water_FSZW
+69	H	房间内至少有1片水域	2	TerrainCount		1	9999		Water_FSZW
+70	H	房间内至少有1片灵地	4	TerrainCount		1	9999		LingDi_FSZW
+71	H	房间内不能有陆地	4	TerrainCount		0	0		Land_FSZW
+72	I	房间内至少有1个建筑对镇物五行相生	1	ElementBorn		1	9999		
+73	I	房间内至少有2个建筑对镇物五行相生	2	ElementBorn		2	9999		
+74	I	房间内至少有3个建筑对镇物五行相生	4	ElementBorn		3	9999		
+75	I	房间内没有建筑对镇物五行相克	2	ElementContrary		0	0		
+76	I	房间内最多有1个建筑对镇物五行相克	2	ElementContrary		0	1		
+77	I	房间内最多有2个建筑对镇物五行相克	1	ElementContrary		0	2		
+78	I	房间内最多有3个建筑对镇物五行相克	0.5	ElementContrary		0	3		
+79	I	房间内至少有1个建筑与镇物五行相同	1	ElementSame		1	9999		
+80	I	房间内至少有2个建筑与镇物五行相同	2	ElementSame		2	9999		
+81	I	房间内至少有3个建筑与镇物五行相同	4	ElementSame		3	9999		
+82	J	镇物灵气值不低于1000	0.5	LingValue		1000	99999999		
+83	J	镇物灵气值不低于5000	1	LingValue		5000	99999999		
+84	J	镇物灵气值不低于10000	2	LingValue		10000	99999999		
+85	J	镇物灵气值不低于30000	4	LingValue		30000	99999999		
+86	J	镇物灵气值不高于1000	2	LingValue		0	1000		
+87	J	镇物灵气值不高于5000	1	LingValue		0	5000		
+88	J	镇物灵气值不高于10000	1	LingValue		0	10000		
+89	J	镇物灵气值不高于30000	0.5	LingValue		0	30000		
+90	K	镇物所在地块灵气浓郁	2	GridLingValue		300	99999999		
+91	L	房间内所有建筑风水都为凶煞（小凶/凶/大凶）	8	BuildingFengshui				Bad	Worst
+92	L	房间内所有建筑风水都为吉祥（小吉/吉/大吉）	2	BuildingFengshui				Best	Good
+93	L	房间内没有大吉建筑	4	BuildingCountFengshui		0	0	Best	
+94	L	房间内大吉建筑有且只有一个	2	BuildingCountFengshui		1	1	Best	
+95	L	房间内大吉建筑最多有1个	2	BuildingCountFengshui		0	1	Best	
+96	L	房间内大吉建筑最多有2个	1	BuildingCountFengshui		0	2	Best	
+97	L	房间内大凶建筑至少有1个	2	BuildingCountFengshui		1	9999	Worst	
+98	L	房间内大凶建筑至少有2个	4	BuildingCountFengshui		2	9999	Worst	
+99	M	房间内只有1个风水镇物	4	FengshuiItemCount		1	1		
+100	M	房间内只有1个风水镇物	2	FengshuiItemCount		1	1		
+101	M	房间内只有1个风水镇物	1	FengshuiItemCount		1	1		
+102	M	房间内只有1个风水镇物	2	FengshuiItemCount		1	1		
+103	M	房间内只有1个风水镇物	1	FengshuiItemCount		1	1		
+10001	NotRandom	镇物灵气值不低于100000	4	LingValue		100000	99999999		
+10002	NotRandom	房间内大凶建筑至少有5个	4	BuildingCountFengshui		5	9999	Worst	
+10003	NotRandom	房间内有且只有1个风水镇物	1	FengshuiItemCount		1	1		
+10004	NotRandom	房间内有且只有8个照明设施	2	BuildingCount		8	8		Light_FSZW
+10005	NotRandom	房间内至少有3个炉灶	1	BuildingCount		3	99999	Kitchen	
+10006	NotRandom	房间内有且只有7个照明设施	2	BuildingCount		7	7		Light_FSZW
+10007	NotRandom	房间内有且只有5个坟墓	2	BuildingCount		5	5		FenMu_FSZW
+10008	NotRandom	房间内有且只有2个香炉	2	BuildingCount		2	2		XiangLu_FSZW
+10009	NotRandom	房间内有且只有2面旗帜	2	BuildingCount		2	2		QiZhi_FSZW
+10010	NotRandom	房间内有且只有1张床	2	BuildingCount		1	1		Sleep
+10011	NotRandom	房间内不能有蒲团法座	2	BuildingCount		0	0		ZuoDian_FSZW
+									
+20000	NotRandom	房间内只有一个通灵镇物	0	TongLingFengshuiItemCount		1	1		

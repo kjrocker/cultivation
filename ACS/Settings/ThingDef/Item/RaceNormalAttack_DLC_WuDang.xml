@@ -1,0 +1,80 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="XuanWu_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>玄武阴丹</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Shui</ElementKind>
+	<TexPath>res\Sprs\object_WuDangDLC\object_xuanwuneidan01</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>7</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>500</AttackRange>
+			<AttackSkill>LsXuanWuNormal</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="癸水元龙"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.45" DescTags="癸水元龙"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="癸水元龙"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="癸水元龙"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk2" HitPoint="17" Bip="Bip001 Neck2"/>  <!--下面的头 -->
+				<li Name="Atk4" HitPoint="20" Bip="Bone019"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="XuanWu_NormalAttack2" Parent="XuanWu_NormalAttack">
+	<ThingName>玄武阳丹</ThingName>
+	<Rate>7</Rate>		
+	<ElementKind>Huo</ElementKind>
+	<TexPath>res\Sprs\object_WuDangDLC\object_xuanwuneidan02</TexPath>
+	<Item>		
+		<Equip>
+			<Damage>7</Damage>
+			<AttackSpeed>0.5</AttackSpeed>
+			<AttackRange>500</AttackRange>
+			<AttackSkill>LsXuanWuNormal</AttackSkill>
+			<WeaponKind>Bow</WeaponKind>
+			<AtkDamage>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="丙火元龙"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.45" DescTags="丙火元龙"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.45" DescTags="丙火元龙"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2" DescTags="丙火元龙"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk2" HitPoint="17" Bip="Bip001 Neck2"/>
+				<li Name="Atk4" HitPoint="20" Bip="Bone019"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="WuDangYa_NormalAttack" Parent="NormalAttackBase">
+	<ThingName>武当鸭攻击</ThingName>
+	<Rate>2</Rate>		
+	<Item>		
+		<Equip>
+			<Damage>10</Damage>
+			<AttackSpeed>1</AttackSpeed>
+			<AttackRange>1.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.35" DescTags="无极剑式"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.2" DescTags="先天少阳剑气"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="无极剑式"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.25" DescTags="先天少阳剑气"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.2" DescTags="紫阳正气拳"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.2" DescTags="太极拳"/>
+				<li PartKind="Bone" Name="Fracture3" Rate="0.25" DescTags="玄空神拂"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.25" DescTags="紫阳正气拳"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.25" DescTags="太极拳"/>
+				<li PartKind="Flesh" Name="Bruise3" Rate="0.25" DescTags="玄空神拂"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="21"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

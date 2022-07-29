@@ -1,0 +1,245 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="BoxBase">
+	
+	
+	<MaxStack>1</MaxStack>
+	<TileID>0</TileID>
+	
+	<TexPath></TexPath>
+	<TexOffsetX>0</TexOffsetX>
+	<TexOffsetY>0</TexOffsetY>
+	
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>0</CastShadow>
+	<Beauty>-1</Beauty>
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>1200</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<BlockLight>0</BlockLight>
+	<BlockMissile>0</BlockMissile>
+	
+	<ElementKind>None</ElementKind>
+	
+	
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant  Kind="Object">
+		<WindEffect>0</WindEffect>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>1</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<SowWork>0</SowWork>
+		<SowPlaceKind>Ground</SowPlaceKind>
+		<SowPlaceTag></SowPlaceTag>
+		<SowRenderTags></SowRenderTags>
+		
+		<LifespanFraction>999999</LifespanFraction>
+		<GrowDays>0</GrowDays>
+		<HarvestDays>0</HarvestDays>
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		<WitherAble>0</WitherAble>
+		<WitherDestroy>0</WitherDestroy>
+		
+		<TempMin>-300</TempMin>
+		<TempMax>1200</TempMax>
+		<LingMin>0</LingMin>
+		<LingMax>99999</LingMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>10</FertilityMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+		
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	<Harvest>
+		<HarvestWork>20</HarvestWork>    
+		<DropWork>20</DropWork>			
+		<HarvestValueMin>1</HarvestValueMin>  
+		<HarvestFailable>1</HarvestFailable> 
+		
+<!--		<HarvestTag>
+			<li>Open</li>
+		</HarvestTag>	-->	
+	</Harvest>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+</ThingDef>
+
+
+<ThingDef Type="Plant" Name="Box_Cargo" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_huoxiang01</TexPath>
+	<ThingName>陈旧的货箱</ThingName>
+	<Desc>一个保存还算完好的货箱，似乎是逃避战乱的人慌乱中遗失的。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	
+	<Plant>
+		<SnowRenderData>
+			<x>2.7</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="搜索" Desc="搜索这个箱子" Story="Story_BoxFind1" Cost="15" Scope="2"/>
+	</StoryBnts>
+<!--	<Harvest>
+		<LinkStory>Story_BoxFind1</LinkStory>
+	</Harvest>-->
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Box_Corpse" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_canhai01</TexPath>
+	<ThingName>腐坏的残骸</ThingName>
+	<Desc>一具早已腐朽的尸体，不知道为何死在这里。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	<Plant>
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="搜索" Desc="搜索这个尸体" Story="Story_BoxFind2" Cost="15" Scope="2"/>
+	</StoryBnts>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Box_Corpse_OldMan1" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_canhai01</TexPath>
+	<ThingName>腐坏的残骸</ThingName>
+	<Desc>一具早已腐朽的尸体，不知道为何死在这里。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	<Plant>
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="搜索" Desc="搜索这个尸体" Story="Story_BoxFind3" Cost="15" Scope="2"/>
+	</StoryBnts>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Box_Corpse_OldMan2" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_canhai01</TexPath>
+	<ThingName>腐坏的残骸</ThingName>
+	<Desc>一具早已腐朽的尸体，不知道为何死在这里。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	<Plant>
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="搜索" Desc="搜索这个尸体" Story="Story_BoxFind4" Cost="15" Scope="2"/>
+	</StoryBnts>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Box_Corpse_BeastMan" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_canhai01</TexPath>
+	<ThingName>半腐坏的残骸</ThingName>
+	<Desc>一具腐坏一半的尸体，不知道为何野兽并不吃他。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	<Plant>
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="接触" Desc="尝试用神识与其阴魂接触。" Story="Story_Plant_ShouZhiBeiQian" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+</ThingDef>
+
+<ThingDef Type="Plant" Name="Box_Corpse_ShiXiong" Parent="BoxBase">
+	
+	
+	<TexPath>res/Sprs/object/object_canhai01</TexPath>
+	<ThingName>新鲜的尸体</ThingName>
+	<Desc>一刚死不久的尸体，不知道为何在此处。</Desc>
+	
+	<Beauty>0</Beauty>
+	
+	<ElementKind>None</ElementKind>
+	<Plant>		
+		<NotRandom>1</NotRandom>
+		<SnowRenderData>
+			<x>2.1</x>
+			<y>2.8</y>
+			<z>1</z>
+		</SnowRenderData>	
+	</Plant>
+	
+	<StoryBnts>
+		<li Name="搜索" Desc="搜索这个尸体。" Story="Story_Plant_ShiXiong" Appoint="3" Scope = "2" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+</ThingDef>
+</List></ThingDefs>

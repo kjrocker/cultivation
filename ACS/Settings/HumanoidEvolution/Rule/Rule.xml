@@ -1,0 +1,69 @@
+<Defs><List>
+	<Def Name="Default">
+		<Fragment>
+			<Random>
+				<li>
+					<W>6</W>
+					<Format>
+						<li>在{0}的时候，略有所悟。</li>
+						<li>在{0}时，有所感悟。</li>
+						<li>在{0}时，陷入沉思。</li>
+					</Format>
+					<R>
+						<li>Scene</li>
+					</R>
+				</li>
+				<li>
+					<W>6</W>
+					<Format>
+						<li>回忆起了{0}</li>
+					</Format>
+					<R>
+						<li>Target</li>
+					</R>
+				</li>
+				<li>
+					<W>4</W>
+					<Format>
+						<li>冥冥中感受到了{0}</li>
+					</Format>
+					<R>
+						<li>Emotion</li>
+					</R>
+				</li>
+			</Random>
+		</Fragment>
+		
+		<Aggregate>
+			<Type>
+				<li>
+					<Name>ATarget</Name>
+				</li>
+				<li>
+					<Name>AScene</Name>
+				</li>
+				<li>
+					<Name>AEmotion</Name>
+				</li>
+			</Type>
+		</Aggregate>
+		
+		<FinalNode>
+			<Min>3</Min>
+			<Max>10</Max>
+			<ThunderValue>50000,50000,50000,50000,50000,50000,50000,50000</ThunderValue>
+			<ThunderCountdown>1000,500,250,100,50,25,10,5</ThunderCountdown>
+			<Type>
+				<li>
+					<Name>FNode</Name>
+				</li>
+			</Type>
+		</FinalNode>
+		
+		<Color>
+			<li Type="Target" Color="009900" />
+			<li Type="Scene" Color="990000" />
+			<li Type="Emotion" Color="0474B0" />
+		</Color>
+	</Def>
+</List></Defs>

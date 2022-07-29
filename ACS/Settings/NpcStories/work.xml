@@ -1,0 +1,259 @@
+﻿<NpcStories><List>
+
+	<Story Name="OutFire"><!--救火中-->
+		<Rate>0.1</Rate>
+		<Events>		
+			 <li Rate="0.2" Story="[name]在救火时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在救火时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在救火时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在救火时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]在救火时，突然想起天边的晚霞。"/>	
+		</Events>
+	</Story>	
+	
+	<Story Name="Treat"><!--治疗中-->
+		<Rate>0.04</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，努力治疗着[obj]。"/>	
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，在治疗[obj]时总是把握不好分寸，让[hename]发出一声声惨叫。"/>	
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，在治疗[obj]时故意用猛力，让[hename]发出一声声惨叫。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，治疗[obj]时都忍不住哼着小曲儿，让[hename]十分无语。"/>
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，治疗[obj]时都忍不住哼着小曲儿，[hename]的心情也看上去变好了。"/>
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，治疗[obj]时都忍不住哼着小曲儿，这让[hename]的脸色一黑。"/>
+			 
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，突然用力过猛。[hename]发出一声惨叫。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，觉得[hename]真的太惨了，心中恻然。"/>	
+			 <li Rate="0.2" Story="[name]在治疗[obj]时，顺便和[hename]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>	
+		</Events>
+	</Story>	
+	
+	<Story Name="Feed"><!--喂食中(照顾)-->
+		<Rate>0.04</Rate>
+		<Events>			 
+			 <li Rate="0.15" MapStory="HotStory_Work_LingWu_Feed" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的照顾[hename]。"/>	
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，在给[hename]喂[obj]时没把握好温度，[hename]被烫的发出一声惨叫。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在给[hename]喂[obj]时都忍不住哼着小曲儿，让[hename]十分无语。"/>
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在给[hename]喂[obj]时都忍不住哼着小曲儿，[hename]的心情也看上去变好了。"/>
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在给[hename]喂[obj]时都忍不住哼着小曲儿，这让[hename]的脸色一黑。"/>
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在给[hename]喂[obj]时都忍不住哼着小曲儿，这让[hename]十分烦躁。"/>
+			 
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然走神。把[obj]喂到了[hename]脸上。"/>	
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，突然也想尝尝[obj]的味道。"/>	
+			 
+			 <li Rate="0.2" Story="[name]在给[hename]喂[obj]时，顺便和[hename]聊了聊关于[rand_lable=obj_weather,obj_action,obj_goodmood,obj_badmood,obj_fabao,obj_relation,obj_dan,obj_food,obj_friend,obj_npc,obj_place,obj_nearthing,obj_equip,obj_gong,obj_esoterica,obj_damage,obj_secret,obj_unlockmapplace,obj_lockmapplace,obj_goodschool,obj_badschool]的事。"/>	
+		</Events>
+	</Story>		
+	
+	<Story Name="Hunting"><!--狩猎-->
+		<Rate>0.06</Rate>
+		<Events>		
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的狩猎[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在狩猎[obj]时都忍不住哼着小曲儿。"/>
+			 
+			 <li Rate="0.2" Story="[name]在狩猎[obj]时，不知怎么突然对这只[obj]起了惺惺相惜的情感。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Build"><!--建造-->
+		<Rate>0.02</Rate>
+		<Events>
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在建造[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的建造[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在建造[obj]时都忍不住哼着小曲儿。"/>
+			 
+			 <li Rate="0.2" Story="[name]建造[obj]时倾注了心血，[it]真的很喜欢这座[obj]。"/>				
+		</Events>
+	</Story>
+	
+	<Story Name="Plant"><!--种植-->
+		<Rate>0.02</Rate>
+		<Events>			 
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在种[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的种[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在种[obj]时都忍不住哼着小曲儿。"/>
+			 
+			 <li Rate="0.2" Story="[name]在种[obj]时充满了期待：真希望这期能有个好收成。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Mine"><!--采矿-->
+		<Rate>0.02</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在挖[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的挖[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在挖[obj]时都忍不住哼着小曲儿。"/>
+			 
+			 <li Rate="0.2" Story="[name]在挖[obj]时充满了期待，要是能挖到什么前古洞府就好了……"/>
+			 <li Rate="0.2" Story="[name]在挖[obj]时突然觉得好累，什么时候才能晋升内门呢……"/>
+			 <li Rate="0.2" Story="[name]在挖[obj]时满怀动力，[it]觉得这也是修行的一环。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="CutOff"><!--割除-->
+		<Rate>0.03</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在割除[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，但还是强打精神，专心的割除[obj]。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，在割除[obj]时都忍不住哼着小曲儿。"/>
+			 
+			 <li Rate="0.2" Story="[name]在割除[obj]时满怀动力，[it]觉得这也是修行的一环。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Eat"><!--吃东西-->
+		<Rate>0.01</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在吃[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]被[obj_badmood]的情绪困扰，这让他吃[obj]时都觉得味同嚼蜡。"/>	
+			 <li Rate="0.2" Story="[name]因[obj_goodmood]心情不错，嘴里的[obj]似乎都更美味了。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Drink"><!--喝东西-->
+		<Rate>0.01</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Make_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然想喝[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在喝[obj]时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+		</Events>
+	</Story>
+	
+	<Story Name="Fighting"><!--战斗中-->
+		<Rate>0.2</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Work_LingWu" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在战斗时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在战斗时，突然想吃[obj_food]。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然想起自己的[obj_relation]。"/>
+			 <li Rate="0.2" Story="[name]在战斗时，突然思绪万千。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然流下眼泪。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然觉得莫名烦躁。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然想去[rand_lable=obj_unlockmapplace,obj_goodschool,obj_badschool]看看。"/>	
+			 
+			 <li Rate="0.2" Story="[name]在战斗时，突然想等这场打完，就回老家看看。"/>	
+			 <li Rate="0.2" Story="[name]在战斗时，突然想等这场打完，就好好谈个恋爱。"/>
+			 <li Rate="0.2" Story="[name]在战斗时，突然想等这场打完，就约朋友好好喝一顿。"/>
+		</Events>
+	</Story>
+	
+	<Story Name="Fishing"><!--钓鱼-->
+		<Rate>0.2</Rate>
+		<Events>			
+			 <li Rate="0.15" MapStory="HotStory_Practice_Fish" JustHot="1"/>
+			 
+			 <li Rate="0.2" Story="[name]在钓鱼时，突然很想家。"/>	
+			 <li Rate="0.2" Story="[name]在钓鱼时，脑海中突然浮现[obj_friend]的模样。"/>	
+			 <li Rate="0.2" Story="[name]在钓鱼时，突然觉得旁边的[obj_nearthing]很有意思……"/>
+			 <li Rate="0.2" Story="[name]在钓鱼时，突然想吃[obj_food]。"/>	
+		</Events>
+	</Story>
+	
+</List></NpcStories>

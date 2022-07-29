@@ -1,0 +1,20 @@
+<Defs><List>
+	<Def Name="Talk_XianKong" Parent="Talk_BaiMan">
+		<Hate>
+			<li>看到你，感觉一天的修行都白费了。</li>
+			<li>你怎么还是这个境界？突破又失败了？</li>
+		</Hate>
+		<Submiss>
+			<li>（一挥手）来，最好的都拿上来。</li>
+			<li>来啊来啊，这里的宝物随便挑。</li>
+		</Submiss>
+		<GiftLike>
+			<li>哇，不错不错。你是寄生虫吗？这都知道。</li>
+			<li>今天本来还挺抑郁的，这个让我精神振奋啊。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>这个拿来点烟不错。</li>
+			<li>你是认真的吗？一般来说我是不会要的。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

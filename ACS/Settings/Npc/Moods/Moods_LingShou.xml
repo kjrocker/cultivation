@@ -1,0 +1,55 @@
+<MoodDefs><List>
+	<Mood Name="LsHelpPlayHappy" Group="LsHelpPlay">
+		<DisplayName>非常开心</DisplayName>
+		<Desc>与灵宠玩乐，一整天都有好心情。</Desc>
+		<StoryDesc>正高兴的哼着曲儿</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0</HappenChance>
+	</Mood>
+	<Mood Name="BiteHappy" Group="LsBite">
+		<DisplayName>高兴</DisplayName>
+		<Desc>被灵兽轻轻咬了一口，有种被宠爱的感觉。</Desc>
+		<StoryDesc>不怎么痛，有点痒</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>8</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0</HappenChance>
+	</Mood>
+	<Mood Name="BiteSad" Group="LsBite">
+		<DisplayName>不高兴</DisplayName>
+		<Desc>被灵兽狠狠地打了一下，很痛，它看起来不怎么喜欢我。</Desc>
+		<StoryDesc>不开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-15</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0</HappenChance>
+	</Mood>
+	
+	<Mood Name="PetHeal" Group="LsBite">
+		<DisplayName>灵宠陪伴</DisplayName>
+		<Desc>灵宠陪伴，心情好了很多。</Desc>
+		<StoryDesc>不开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>20</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0</HappenChance>
+	</Mood>
+	
+	<Mood Name="PetStay" Group="LsBite">
+		<DisplayName>灵宠陪伴</DisplayName>
+		<Desc>灵宠陪伴，心情好了很多。</Desc>
+		<StoryDesc>不开心</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>20</Value>
+		<Duration>0.5</Duration>
+		<HappenChance>0</HappenChance>
+	</Mood>
+	
+</List></MoodDefs>

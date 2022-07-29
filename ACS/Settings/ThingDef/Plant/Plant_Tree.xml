@@ -1,0 +1,532 @@
+<ThingDefs><List>
+	<ThingDef Type="Plant" Name="TreeBase" Parent="PlantBase">
+	<Frags>	
+		<li Frag="Tree" />
+	</Frags>	
+
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu001</TexPath>
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<FilthLeaving></FilthLeaving>
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>0.5</x>
+		<y>3</y>
+	</ShadowSize>
+	<Beauty>4</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>300</MaxHitPoints>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Rate>3</Rate>	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+	<ElementKind>Mu</ElementKind>
+	
+	<Flammability>
+		<BurningPoint>240</BurningPoint>
+	</Flammability>
+	<Plant Kind="HighPlant">
+		<WildClusterSizeRangemin>8</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>24</WildClusterSizeRangemax>
+		<WildClusterRadius>6</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu004</LeaflessTexPath>   
+		<VisualSizeMin>0.1</VisualSizeMin>
+		<VisualSizeMax>0.65</VisualSizeMax>	
+		
+		<SowWork>50</SowWork>
+		<SowRenderTags>Tree</SowRenderTags>
+		
+		<LifespanFraction>5000</LifespanFraction>
+		<GrowDays>130</GrowDays>
+		<ReproduceRadius>15</ReproduceRadius>
+		
+		<WitherAble>1</WitherAble>
+		
+		<TempMin>0</TempMin>
+		<TempMax>50</TempMax>
+		<FertilityMin>0.6</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>	
+	</Plant>
+	<Harvest>
+		<HarvestWork>50</HarvestWork> 
+		<DropWork>300</DropWork>   	
+		<HarvestValueMin>0.8</HarvestValueMin>  
+		<LogValueMin>0.6</LogValueMin>
+		<HarvestFailable>1</HarvestFailable>  
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>4</Count>
+			</li>
+		</DropItems>  
+		
+		<HighDropItems>
+			<li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>1</Count>
+			</li>
+			<li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</HighDropItems>  
+	</Harvest>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>4</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Plant" Name="TreePoplar" Parent="TreeBase">
+	<ThingName>杨树</ThingName>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu001</TexPath>
+	<Desc>生长迅速的树木，其木质细腻稳定，是优质的木材来源。</Desc>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_yangshu004</LeaflessTexPath>   
+		<GlowTexPath>res/Sprs/scene_sp/scene_yangshu001_sp</GlowTexPath>
+		<SnowRenderData>
+			<x>3.52</x>
+			<y>4.22</y>
+			<z>2</z>
+		</SnowRenderData>		
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+	</Harvest>
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Plant" Name="TreePine" Parent="TreeBase">
+	<ThingName>松树</ThingName>
+	<Beauty>8</Beauty>
+	<Frags>			
+		<li Frag="Snow" />
+	</Frags>		
+
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu001</TexPath>
+	<Desc>生长缓慢的树木，其外形挺拔，木质坚硬。</Desc>
+	<Plant>
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<WildClusterSizeRangemin>30</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>60</WildClusterSizeRangemax>
+		<WildClusterRadius>14</WildClusterRadius>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu004</LeaflessTexPath>   
+		<GlowTexPath>res/Sprs/scene_sp/scene_songshu_sp</GlowTexPath>
+		<SnowedTexPath></SnowedTexPath>	
+		<WitherAble>0</WitherAble>
+		<SnowRenderData>
+			<x>3.5</x>
+			<y>4.2</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>6</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreePine_Big" Parent="TreePine">
+	<ThingName>巨松树</ThingName>
+	<MaxHitPoints>1500</MaxHitPoints>
+	<Beauty>12</Beauty>
+	<Rate>6</Rate>	
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu001</TexPath>
+	<Desc>年份极高的松树。</Desc>
+	<Plant>
+		<DeciduousLeafInAutumn>0</DeciduousLeafInAutumn>
+		<VisualSizeMin>0.4</VisualSizeMin>
+		<VisualSizeMax>1.2</VisualSizeMax>
+		
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_songshu004</LeaflessTexPath>   
+		<GlowTexPath>res/Sprs/scene_sp/scene_songshu_sp</GlowTexPath>
+		<SnowedTexPath></SnowedTexPath>	
+		<WitherAble>0</WitherAble>
+		<SnowRenderData>
+			<x>3.5</x>
+			<y>4.2</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>12</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>5</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreePear" Parent="TreeBase">
+	<ThingName>梨树</ThingName>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_lishu001a</TexPath>
+	<Desc>常见的果树，其木质细腻但不耐腐蚀，且产量很小。</Desc>
+	<Plant>
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_lishu002</RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_lishu003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_lishu004</LeaflessTexPath>  
+		<GlowTexPath>res/Sprs/scene_sp/scene_lishu_sp</GlowTexPath>
+		<SnowedTexPath></SnowedTexPath>
+		<HarvestDays>15</HarvestDays>
+		<GrowDays>100</GrowDays>
+		<SnowRenderData>
+			<x>2.95</x>
+			<y>4.05</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		     
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Pear</ThingDef>
+				<Count>6</Count>
+			</li>
+		</HarvestItems>
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>
+	</Harvest>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreeGinkgo" Parent="TreeBase">
+	<ThingName>银杏树</ThingName>
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_yinxing001</TexPath>
+	<Desc>一种生长缓慢的乔木，具有灵性，其果实可充饥，且具有不菲的药用价值。</Desc>
+	<Beauty>7</Beauty>
+	<Rate>5</Rate>	
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/Sprs/scene_TemperateForest_plant/scene_yinxing003</HarvestedTexPath>
+		<LeaflessTexPath>res/Sprs/scene_TemperateForest_plant/scene_yinxing004</LeaflessTexPath>   
+		<GlowTexPath>res/Sprs/scene_sp/scene_yinxing_sp</GlowTexPath>	
+		<SnowedTexPath></SnowedTexPath>
+		<LifespanFraction>20000</LifespanFraction>
+		<GrowDays>180</GrowDays>
+		<HarvestDays>15</HarvestDays>		
+		<LingMin>3</LingMin>
+		<LingMax>500</LingMax>
+		<SnowRenderData>
+			<x>2.6</x>
+			<y>4.1</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	
+	<Harvest>  
+	   
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Ginkgo</ThingDef>
+				<Count>4</Count>
+			</li>
+		</HarvestItems>
+	</Harvest>
+	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>8</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>6</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>3</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreeGinkgo_Big" Parent="TreeGinkgo">
+	<ThingName>巨银杏</ThingName>
+	<TexPath>res/special/scene_juyinxing001</TexPath>
+	<Desc>上了年份的老银杏，巨大而充满灵气。</Desc>
+	<Beauty>36</Beauty>
+	<Rate>9</Rate>	
+	<MaxHitPoints>2100</MaxHitPoints>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath>res/special/scene_juyinxing003</HarvestedTexPath>
+		<LeaflessTexPath>res/special/scene_juyinxing004</LeaflessTexPath> 
+		<GlowTexPath></GlowTexPath>	 
+		<SnowedTexPath></SnowedTexPath>
+		<VisualSizeMin>0.8</VisualSizeMin>
+		<VisualSizeMax>1.2</VisualSizeMax>
+		<LifespanFraction>20000</LifespanFraction>
+		<GrowDays>180</GrowDays>
+		<HarvestDays>15</HarvestDays>
+		
+		<LingMin>3</LingMin>
+		<LingMax>500</LingMax>
+		
+		<SnowRenderData>
+			<x>2.16</x>
+			<y>3.95</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	
+	<Harvest>  
+		<HarvestWork>120</HarvestWork> 
+		<DropWork>650</DropWork>   	
+		
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Ginkgo</ThingDef>
+				<Count>80</Count>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>64</Count>
+			</li>
+		</DropItems> 
+	</Harvest>
+	<Ling>
+		<AddionLing>45</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.05</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Plant" Name="TreeGinkgo_Dead" Parent="TreeGinkgo_Big">
+	<ThingName>枯梧桐</ThingName>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<TexPath>res/special/scene_juyinxing001_Trunk</TexPath>
+	<Desc>已经枯死的梧桐树，依然异常高大。</Desc>
+
+	</ThingDef>	
+	
+	
+	<!-- 只用于拼图 -->
+	
+	
+	<ThingDef Type="Plant" Name="PintuBase" Parent="TreeBase">
+	<ThingName>拼图专用</ThingName>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<GlowTexPath></GlowTexPath>
+		<WitherAble>0</WitherAble>
+		<SnowRenderData>
+			<x>3.52</x>
+			<y>4.22</y>
+			<z>2</z>
+		</SnowRenderData>		
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+	</Harvest>
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreePeach" Parent="PintuBase">
+	<ThingName>桃树</ThingName>
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_huashu001;
+	res\Sprs\scene_TemperateForest_plant\scene_huashu002;
+	res\Sprs\scene_TemperateForest_plant\scene_huashu003
+	</TexPath>
+	<Desc>桃花树。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>4</y>
+			<z>2</z>
+		</SnowRenderData>		
+	</Plant>
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+	</Harvest>
+	<StoryBnts>
+		<li Name="采样" Desc="尝试采集该景物的样本" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockPlant"/>
+	</StoryBnts>	
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Plant" Name="TreeJade" Parent="PintuBase">
+	<ThingName>玉树</ThingName>
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu001;
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu002;
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu003;
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu004;
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu005;
+	res\Sprs\scene_TemperateForest_plant\scene_ yushu006
+	</TexPath>
+	<Desc>玉树。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<SnowRenderData>
+			<x>2.2</x>
+			<y>2.92</y>
+			<z>2</z>
+		</SnowRenderData>	
+
+		<TempMin>-300</TempMin>
+		<TempMax>600</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>			
+	</Plant>
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+	</Harvest>
+	<StoryBnts>
+		<li Name="采样" Desc="尝试采集该景物的样本" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockPlant"/>
+	</StoryBnts>	
+	</ThingDef>	
+	
+	<ThingDef Type="Plant" Name="TreeBone" Parent="PintuBase">
+	<ThingName>煞神木</ThingName>
+	<TexPath>
+	res\Sprs\scene_TemperateForest_plant\scene_kuloushu01;
+	res\Sprs\scene_TemperateForest_plant\scene_kuloushu02;
+	res\Sprs\scene_TemperateForest_plant\scene_kuloushu03;
+	res\Sprs\scene_TemperateForest_plant\scene_kuloushu04
+	</TexPath>
+	<Desc>煞神木。</Desc>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Plant>
+		<RipedTexPath></RipedTexPath>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.95</y>
+			<z>2</z>
+		</SnowRenderData>	
+		
+		<TempMin>-300</TempMin>
+		<TempMax>600</TempMax>
+		<FertilityMin>0</FertilityMin>
+		<FertilityMax>2</FertilityMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>200</GrowGlowMax>		
+	</Plant>
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+		</HarvestTag> 
+	</Harvest>
+	<StoryBnts>
+		<li Name="采样" Desc="尝试采集该景物的样本" Cost="10" Appoint="2" Scope="1"  Story="System_FightMap_UnlockPlant"/>
+	</StoryBnts>	
+	</ThingDef>	
+</List></ThingDefs>

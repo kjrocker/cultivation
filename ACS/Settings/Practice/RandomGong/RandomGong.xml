@@ -1,0 +1,462 @@
+<Defs><List>
+	<Def Name="r0">
+		<Lv>
+			<li Lv="1" Max="6" MaxEsoLevel="Dan1" Weight="500"/>
+			<li Lv="2" Max="9" MaxEsoLevel="Dan2" Weight="100"/>
+			<li Lv="3" Max="12" MaxEsoLevel="God" Weight="25"/>
+			<li Lv="4" Max="-1" MaxEsoLevel="God2" Weight="1"/>
+		</Lv>
+		<ElementKind>
+			<li T="Jin" Weight="19"/>
+			<li T="Mu" Weight="19"/>
+			<li T="Shui" Weight="19"/>
+			<li T="Huo" Weight="19"/>
+			<li T="Tu" Weight="19"/>
+			<li T="None" Weight="5"/>
+		</ElementKind>
+		<FiveNeed>
+			<li Lv="1">
+				<PropertyList>
+					<li>Perception</li>
+					<li>Physique</li>
+					<li>Charisma</li>
+					<li>Intelligence</li>
+					<li>Luck</li>
+				</PropertyList>
+				<Need MinCount="1" MaxCount="2" MinNeed="2" MaxNeed="5"/>
+				<Need MinCount="1" MaxCount="2" MinNeed="1" MaxNeed="3"/>
+			</li>
+			<li Lv="2">
+				<PropertyList>
+					<li>Perception</li>
+					<li>Physique</li>
+					<li>Charisma</li>
+					<li>Intelligence</li>
+					<li>Luck</li>
+				</PropertyList>
+				<Need MinCount="1" MaxCount="2" MinNeed="4" MaxNeed="7"/>
+				<Need MinCount="1" MaxCount="2" MinNeed="3" MaxNeed="5"/>
+			</li>
+			<li Lv="3">
+				<PropertyList>
+					<li>Perception</li>
+					<li>Physique</li>
+					<li>Charisma</li>
+					<li>Intelligence</li>
+					<li>Luck</li>
+				</PropertyList>
+				<Need MinCount="1" MaxCount="2" MinNeed="4" MaxNeed="7"/>
+				<Need MinCount="1" MaxCount="2" MinNeed="3" MaxNeed="5"/>
+			</li>
+			<li Lv="4">
+				<PropertyList>
+					<li>Perception</li>
+					<li>Physique</li>
+					<li>Charisma</li>
+					<li>Intelligence</li>
+					<li>Luck</li>
+				</PropertyList>
+				<Need MinCount="1" MaxCount="2" MinNeed="6" MaxNeed="9"/>
+				<Need MinCount="1" MaxCount="2" MinNeed="5" MaxNeed="7"/>
+			</li>			
+		</FiveNeed>
+		<NameInfo>
+			<NeckName>Settings/Display/RandomGong/RGNeckName.txt</NeckName>
+			<Part1Name>Settings/Display/RandomGong/RGPart1Name.txt</Part1Name>
+			<Part2Name>Settings/Display/RandomGong/RGPart2Name.txt</Part2Name>
+			<Part3Name>Settings/Display/RandomGong/RGPart3Name.txt</Part3Name>
+			<Part4LvName>Settings/Display/RandomGong/RGPart4LvName.txt</Part4LvName>
+			
+			<Part2ElementRate>0.33</Part2ElementRate>
+			<Part2NormalRate>0.33</Part2NormalRate>
+			<Part3ElementRate>0.33</Part3ElementRate>
+			<Part3NormalRate>0.33</Part3NormalRate>
+		</NameInfo>
+		
+		<StageInfo>
+			<Stage Value="2500" RMin="0.7" RMax="1.3">
+				<li Lv="1" Rate="0.5" Name="Stage1" DisplayName="锻体" Weight="2"/>
+				<li Lv="2" Rate="0.5" Name="Stage2" DisplayName="凝神" Weight="3"/>
+				<li Lv="3" Rate="1" Name="Stage3" DisplayName="练气" Weight="4"/>
+			</Stage>
+			<Stage Value="5000" RMin="0.7" RMax="1.3">
+				<li Lv="4" Rate="0.5" Name="Stage4" DisplayName="玄关" Weight="2"/>
+				<li Lv="5" Rate="0.5" Name="Stage5" DisplayName="鼎炉" Weight="3"/>
+				<li Lv="6" Rate="1" Name="Stage6" DisplayName="结丹" Weight="4"/>
+			</Stage>
+			<Stage Value="300000" RMin="0.7" RMax="1.3">
+				<li Lv="7" Rate="1" Name="Stage7" DisplayName="金丹" Weight="2"/>
+				<li Lv="8" Rate="0.5" Name="Stage8" DisplayName="九转" Weight="3"/>
+				<li Lv="9" Rate="1" Name="Stage9" DisplayName="胎动" Weight="4"/>
+			</Stage>
+			<Stage Value="7000000" RMin="0.7" RMax="1.3">
+				<li Lv="10" Rate="0.5" Name="Stage10" DisplayName="元婴" Weight="2"/>
+				<li Lv="11" Rate="0.5" Name="Stage11" DisplayName="出窍" Weight="3"/>
+				<li Lv="12" Rate="1" Name="Stage12" DisplayName="元神" Weight="4"/>
+			</Stage>
+		</StageInfo>
+		
+		<NeckInfo>
+			<NeckCount>
+				<li Count="1" Weight="50"/>
+				<li Count="2" Weight="30"/>
+				<li Count="3" Weight="15"/>
+				<li Count="4" Weight="5"/>
+			</NeckCount>
+			
+			<NeckType>
+				<li Type="Chance" Weight="30" MinStage="0"/>
+				<li Type="Explore" Weight="10" MinStage="0"/>
+				<li Type="Work" Weight="5" MinStage="7"/>
+				<li Type="Thunder" Weight="5" MinStage="7"/>
+			</NeckType>
+			
+			<SpecialNeckType>
+				<li Stage="6" Type="Gold"/>
+				<li Stage="12" Type="God"/>
+			</SpecialNeckType>
+			
+			<NeckModifier>
+				<li Stage="3" AddModifier="Gong_Qi"/>
+				<li Stage="6" AddModifier="Gong_Gold"/>
+				<li Stage="7" AddModifier="Gong_Thunder1"/>
+				<li Stage="9" AddModifier="Gong_Thunder2"/>
+				<li Stage="12" AddModifier="Gong_Thunder3"/>
+			</NeckModifier>
+			
+			<NeckBroken>
+				<li Type="Explore">
+					<ExploreValueMin>0.5</ExploreValueMin>
+					<ExploreValueMax>2</ExploreValueMax>
+				</li>
+				<li Type="Thunder" Stage="7">
+					<ThunderValueMin>10000</ThunderValueMin>
+					<ThunderValueMax>15000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Thunder" Stage="8">
+					<ThunderValueMin>20000</ThunderValueMin>
+					<ThunderValueMax>25000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Thunder" Stage="9">
+					<ThunderValueMin>30000</ThunderValueMin>
+					<ThunderValueMax>40000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Thunder" Stage="10">
+					<ThunderValueMin>45000</ThunderValueMin>
+					<ThunderValueMax>60000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Thunder" Stage="11">
+					<ThunderValueMin>80000</ThunderValueMin>
+					<ThunderValueMax>100000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Thunder" Stage="12">
+					<ThunderValueMin>120000</ThunderValueMin>
+					<ThunderValueMax>150000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="God">
+					<ThunderValueMin>400000</ThunderValueMin>
+					<ThunderValueMax>1000000</ThunderValueMax>
+					<NeckCountdownMin>2500</NeckCountdownMin>
+					<NeckCountdownMax>8100</NeckCountdownMax>
+				</li>
+				<li Type="Chance">
+					<ItemNeed Rate="0.2" MaxItemRateLvScale="3">
+						<Label Weight="8">
+							<li>Bone</li>
+							<li>Dan</li>
+							<li>Drug</li>
+							<li>MetalBlock</li>
+							<li>RockBlock</li>
+							<li>WoodBlock</li>
+							<li>Metal</li>
+							<li>Rock</li>
+							<li>Wood</li>
+						</Label>
+						<Label Weight="2">
+							<li>Wood</li>
+							<li>WoodBlock</li>
+							<li>Rock</li>
+							<li>RockBlock</li>
+							<li>Metal</li>
+							<li>Plant</li>
+							<li>PlantProduct</li>
+							<li>Ingredient</li>
+							<li>Meat</li>
+							<li>Leather</li>
+							<li>Cloth</li>
+							<li>Bone</li>
+							<li>Weapon</li>
+							<li>Hat</li>
+							<li>Clothes</li>
+							<li>Trousers</li>
+							<li>Food</li>
+							<li>Drug</li>
+							<li>Dan</li>
+							<li>Spell</li>
+							<li>Tool</li>
+							<li>MetalBlock</li>
+							<li>Esoterica</li>
+							<li>LeftoverMaterial</li>
+							<li>SpellPaper</li>
+							<li>LingStone</li>
+							<li>Garbage</li>
+							<li>SoulCrystal</li>
+							<li>Other</li>
+						</Label>
+					</ItemNeed>
+					
+					<Chance>
+						<MinCostTimeLvScale>50</MinCostTimeLvScale>
+						<MaxCostTimeLvScale>200</MaxCostTimeLvScale>
+						<FixRate>0.5</FixRate>
+						<FixChanceMin>0.1</FixChanceMin>
+						<FixChanceMax>.05</FixChanceMax>
+						<DamageRate>0.8</DamageRate>
+						<Damage>GongBroken</Damage>
+						<FailedChangeAdd>
+							<li Weight="5" Add="0"/>
+							<li Weight="2" Add="0.05"/>
+							<li Weight="2" Add="0.1"/>
+							<li Weight="1" Add="0.25"/>
+						</FailedChangeAdd>					
+						<RandomProperty>
+							<li>Perception_1_1_3</li>
+							<li>Perception_1_1_10</li>
+							<li>Perception_1_5_25</li>
+							<li>Perception_1_5_75</li>
+							<li>Perception_2_3_1</li>
+							<li>Perception_2_10_1</li>
+							<li>Perception_2_25_5</li>
+							<li>Physique_1_1_3</li>
+							<li>Physique_1_1_10</li>
+							<li>Physique_1_5_25</li>
+							<li>Physique_2_3_1</li>
+							<li>Physique_2_10_1</li>
+							<li>Physique_2_25_5</li>
+							<li>Charisma_1_1_3</li>
+							<li>Charisma_1_1_10</li>
+							<li>Charisma_1_5_25</li>
+							<li>Charisma_2_3_1</li>
+							<li>Charisma_2_10_1</li>
+							<li>Charisma_2_25_5</li>
+							<li>Intelligence_1_1_3</li>
+							<li>Intelligence_1_1_10</li>
+							<li>Intelligence_1_5_25</li>
+							<li>Intelligence_2_3_1</li>
+							<li>Intelligence_2_10_1</li>
+							<li>Intelligence_2_25_5</li>
+							<li>Luck_1_1_3</li>
+							<li>Luck_1_1_10</li>
+							<li>Luck_1_5_25</li>
+							<li>Luck_2_3_1</li>
+							<li>Luck_2_10_1</li>
+							<li>Luck_2_25_5</li>
+							<li>Qi_1_5_25</li>
+						</RandomProperty>
+					</Chance>
+					
+				</li>
+			</NeckBroken>
+		</NeckInfo>
+		
+		<SkillTree>
+			<Tree MinIndex="0" MaxIndex="2" MinLevel="Qi" MaxLevel="God">
+				<EsotericaCount>
+					<Min_LvScale>0</Min_LvScale>
+					<Min_Add>1</Min_Add>
+					<Max_LvScale>1</Max_LvScale>
+					<Max_Add>1</Max_Add>
+				</EsotericaCount>
+				<EsotericaListFile>Esoterica_Magic.xml</EsotericaListFile>
+			</Tree>
+			
+			<Tree MinIndex="3" MaxIndex="7" MinLevel="Qi" MaxLevel="God" LinkUp="1">
+				<SkillCount>
+					<Min_LvScale>0</Min_LvScale>
+					<Min_Add>1</Min_Add>
+					<Max_LvScale>1</Max_LvScale>
+					<Max_Add>0</Max_Add>
+				</SkillCount>
+				<RandomNode>				
+					<Type Weight="1" EsotericaTypeDesc="御器">
+						<EsoType Weight="1">Fabao</EsoType>
+						<FightSkillKind>Fabao</FightSkillKind>
+						<FightSkillKind>Sheild</FightSkillKind>
+					</Type>
+					<Type Weight="1" EsotericaTypeDesc="术法">
+						<EsoType Weight="1">Skill</EsoType>
+						<FightSkillKind>Damage</FightSkillKind>
+						<FightSkillKind>Health</FightSkillKind>
+						<FightSkillKind>Skill</FightSkillKind>
+						<FightSkillKind>Sheild</FightSkillKind>
+					</Type>
+					<Type Weight="1" EsotericaTypeDesc="护御">
+						<EsoType Weight="1">Barrier</EsoType>
+						<FightSkillKind>Sheild</FightSkillKind>
+						<FightSkillKind>Health</FightSkillKind>
+					</Type>
+					
+					<NodeInfo>
+						<li Level="Qi" GongLv="1" MinCount="1" MaxCount="2" ValueCoe="0.1" DaoHang="1.4" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="微量的"/>
+						<li Level="Dan1" GongLv="1" MinCount="0" MaxCount="2" ValueCoe="0.25" DaoHang="2" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Qi" GongLv="2" MinCount="2" MaxCount="3" ValueCoe="0.15" DaoHang="1.6" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="微量的"/>
+						<li Level="Dan1" GongLv="2" MinCount="1" MaxCount="3" ValueCoe="0.66" DaoHang="3.64" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="2" MinCount="0" MaxCount="3" ValueCoe="0.75" DaoHang="4" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Qi" GongLv="3" MinCount="3" MaxCount="4" ValueCoe="0.2" DaoHang="1.8" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Dan1" GongLv="3" MinCount="2" MaxCount="4" ValueCoe="0.5" DaoHang="3" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="3" MinCount="1" MaxCount="4" ValueCoe="1" DaoHang="5" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="大量的"/>
+						<li Level="God" GongLv="3" MinCount="0" MaxCount="4" ValueCoe="2" DaoHang="9" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="海量的"/>
+						<li Level="Qi" GongLv="4" MinCount="4" MaxCount="5" ValueCoe="0.25" DaoHang="2" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Dan1" GongLv="4" MinCount="3" MaxCount="5" ValueCoe="0.625" DaoHang="3.5" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="4" MinCount="2" MaxCount="5" ValueCoe="1.25" DaoHang="6" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="大量的"/>
+						<li Level="God" GongLv="4" MinCount="1" MaxCount="5" ValueCoe="2.5" DaoHang="11" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="海量的"/>
+					</NodeInfo>
+				</RandomNode>
+			</Tree>
+			
+			<Tree MinIndex="8" MaxIndex="11" MinLevel="Qi" MaxLevel="God">
+				<RandomNode>					
+					<Type Weight="40">
+						<EsoType Weight="3">Dan</EsoType>
+						<EsoType Weight="24">Refining</EsoType>
+						<EsoType Weight="9">Gong</EsoType>
+						<EsoType Weight="5">Art</EsoType>						
+					</Type>
+					<Type Weight="40">
+						<EsoType Weight="3">Dan</EsoType>
+						<EsoType Weight="4">Refining</EsoType>
+						<EsoType Weight="29">Gong</EsoType>
+						<EsoType Weight="5">Art</EsoType>						
+					</Type>
+					<Type Weight="20">
+						<EsoType Weight="3">Dan</EsoType>
+						<EsoType Weight="4">Refining</EsoType>
+						<EsoType Weight="9">Gong</EsoType>
+						<EsoType Weight="25">Art</EsoType>						
+					</Type>
+					<Type Weight="1">
+						<EsoType Weight="1">Barrier</EsoType>
+						<EsoType Weight="1">Skill</EsoType>
+						<EsoType Weight="1">Fabao</EsoType>				
+					</Type>
+					
+					<NodeInfo>
+						<li Level="Qi" GongLv="1" MinCount="1" MaxCount="1" ValueCoe="0.1" DaoHang="1.4" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="微量的"/>
+						<li Level="Dan1" GongLv="1" MinCount="1" MaxCount="1" ValueCoe="0.25" DaoHang="2" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Qi" GongLv="2" MinCount="1" MaxCount="2" ValueCoe="0.15" DaoHang="1.6" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="微量的"/>
+						<li Level="Dan1" GongLv="2" MinCount="1" MaxCount="2" ValueCoe="0.66" DaoHang="3.64" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="2" MinCount="1" MaxCount="2" ValueCoe="0.75" DaoHang="4" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Qi" GongLv="3" MinCount="1" MaxCount="3" ValueCoe="0.2" DaoHang="1.8" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Dan1" GongLv="3" MinCount="1" MaxCount="3" ValueCoe="0.5" DaoHang="3" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="3" MinCount="1" MaxCount="3" ValueCoe="1" DaoHang="5" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="大量的"/>
+						<li Level="God" GongLv="3" MinCount="1" MaxCount="3" ValueCoe="2" DaoHang="9" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="海量的"/>
+						<li Level="Qi" GongLv="4" MinCount="1" MaxCount="4" ValueCoe="0.25" DaoHang="2" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="少量的"/>
+						<li Level="Dan1" GongLv="4" MinCount="1" MaxCount="4" ValueCoe="0.625" DaoHang="3.5" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="中量的"/>
+						<li Level="Dan2" GongLv="4" MinCount="1" MaxCount="4" ValueCoe="1.25" DaoHang="6" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="大量的"/>
+						<li Level="God" GongLv="4" MinCount="1" MaxCount="4" ValueCoe="2.5" DaoHang="11" MinValueCoeScale="0.9" MaxValueCoeScale="1.1" MaxDaoHangSub="1" MaxDaoHangAdd="1" ValueDesc="海量的"/>
+					</NodeInfo>
+				</RandomNode>
+			</Tree>
+			
+			<FightSkillEsoID>_2004</FightSkillEsoID>
+			
+			<TreeEmpty>
+				<Chance_LvScale>0.01</Chance_LvScale>
+				<MinLevel>Qi</MinLevel>
+				<MaxLevel>God</MaxLevel>
+				<MinIndex>0</MinIndex>
+				<MaxIndex>11</MaxIndex>
+			</TreeEmpty>
+			
+			<FixNodes>
+				<Node>
+					<Esoterica>God2_Dan</Esoterica>
+					<DisplayName>天道神丹</DisplayName>
+					<Level>God2</Level>
+					<Index>4</Index>
+					<Line>0,0,0,0,0,0,0,0</Line>
+					<PreUnit>
+					<!--	<li></li>-->
+					</PreUnit>
+					<MutexUnit>
+					<!--	<li></li>-->
+					</MutexUnit>
+					<FiveBase>0,0,0,0,0</FiveBase>
+					<Skills>
+						<li Name="Medicine" Level="20"/>
+					</Skills>
+					<LingMax>0</LingMax>
+					<GoldLevel>0</GoldLevel>
+					<GodCount>0</GodCount>
+				</Node>				
+				<Node>
+					<Esoterica>God2_Fabao</Esoterica>
+					<DisplayName>天道神器</DisplayName>
+					<Level>God2</Level>
+					<Index>8</Index>
+					<Line>0,0,0,0,0,0,0,0</Line>
+					<PreUnit>
+					<!--	<li></li>-->
+					</PreUnit>
+					<MutexUnit>
+					<!--	<li></li>-->
+					</MutexUnit>
+					<FiveBase>0,0,0,0,0</FiveBase>
+					<Skills>
+						<li Name="Manual" Level="20"/>
+					</Skills>
+					<LingMax>0</LingMax>
+					<GoldLevel>0</GoldLevel>
+					<GodCount>0</GodCount>
+				</Node>
+			</FixNodes>
+		
+		</SkillTree>
+	
+		<Desc>
+			<Format>
+				<li Level="1" Format="一门粗劣不堪的功法，乃是{0}中的粗浅之作。此法引{1}之妙，另出机杼，在{2}之道上有许多想法，此法虽然粗浅，但或许也会有闪光之处。" />
+				<li Level="2" Format="一门平平无奇的功法，乃是{0}中的中庸之作。此法引{1}之妙，另出机杼，在{2}之道上有许多想法，此法虽然只能成丹，但亦可能有某些想法可供借鉴。" />
+				<li Level="3" Format="一门颇有玄机的功法，乃是{0}中的经典之作。此法引{1}之妙，另出机杼，在{2}之道上有许多想法，此法虽不能成仙，但其中集合有许多玄妙的秘法，十分珍贵。" />
+				<li Level="4" Format="一门玄妙万分的功法，乃是{0}中的玄妙之作。此法引{1}之妙，另出机杼，在{2}之道上有许多想法，此法可直通仙道，其中必有玄妙之处供人参阅借鉴。" />
+			</Format>
+			
+			<ElementKind>
+				<li T="Jin" Desc="金行"/>
+				<li T="Mu" Desc="木行"/>
+				<li T="Shui" Desc="水行"/>
+				<li T="Huo" Desc="火行"/>
+				<li T="Tu" Desc="土行"/>
+				<li T="None" Desc="无极"/>
+			</ElementKind>
+			
+			<School>
+				<li Id="0" Name="流传在修行界诸多失落传承" />
+				<li Id="1"	Name="丹霞洞天传承" />
+				<li Id="2"	Name="昆仑宫传承" />
+				<li Id="3"	Name="极天宫传承" />
+				<li Id="4"	Name="紫霄宗传承" />
+				<li Id="5"	Name="玄一道传承" />
+				<li Id="6"	Name="青莲剑宗传承" />
+				<li Id="7"	Name="栖霞洞天传承" />
+				<li Id="8"	Name="百蛮山传承" />
+				<li Id="9"	Name="七仟坞传承" />
+				<li Id="10"	Name="七杀魔宫传承" />
+				<li Id="11"	Name="合欢派传承" />
+				<li Id="12"	Name="万妖殿传承" />
+			</School>
+		</Desc>
+	</Def>
+</List></Defs>

@@ -1,0 +1,23 @@
+<Defs><List>
+	<Def Name="Talk_ShuShan" Parent="Talk_DanXia">
+		<Hate>
+			<li>你来干什么？</li>
+		</Hate>
+		<Normal>
+			<li>你好，你想要交易吗？</li>
+			<li>要买点什么？</li>
+		</Normal>
+		<Like>
+			<li>说说你的要求吧，我在听。</li>
+		</Like>
+		<Submiss>
+			<li>看看有没有需要的物品？这是我们所有的珍藏。</li>
+		</Submiss>
+		<GiftLike>
+			<li>此非等闲之物，我很喜欢。</li>
+		</GiftLike>
+		<LowValueGift>
+			<li>这已经是你们唯一能拿得出手的东西了吗？真是寒碜啊。</li>
+		</LowValueGift>
+	</Def>
+</List></Defs>

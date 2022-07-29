@@ -1,0 +1,99 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature> 
+	-->
+	<Feature Name="BanSpouse" Type="Backstory">
+		<DisplayName>无配偶</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<BanRelations>
+			<li>Spouse</li>
+		</BanRelations>
+		<ModifierDef>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanParents" Type="Backstory">
+		<DisplayName>无父母</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<BanRelations>
+			<li>Parent</li>
+		</BanRelations>
+		<ModifierDef>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BanChild" Type="Backstory">
+		<DisplayName>无子女</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<BanRelations>
+			<li>Child</li>
+		</BanRelations>
+		<ModifierDef>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="BanLove" Type="Backstory">
+		<DisplayName>专情</DisplayName>
+		<Desc></Desc>
+		<HideInUI>1</HideInUI>
+		<BanRelations>
+			<li>Spouse</li>
+			<li>Fancy</li>
+			<li>Lover</li>
+		</BanRelations>
+		<ModifierDef>
+		</ModifierDef>
+	</Feature> 
+</List></FeatureDefs>

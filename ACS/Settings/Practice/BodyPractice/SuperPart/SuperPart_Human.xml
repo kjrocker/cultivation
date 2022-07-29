@@ -1,0 +1,31 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Human_1"><!--测试秘体-->
+		<Prefix>五行</Prefix>
+		<Suffix>大擒拿</Suffix>
+		<Desc></Desc>
+		<AtkAni>TXshangjiquan</AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>
+			<li Name="LeftEye">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Huo" Levels="1,9,25,25,25"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXHuo" Levels="0,0,0,1,3"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>全局提高秘体命中率</Desc>
+				<Modifier>BasePracticeAchievements1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.01"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+</List></BPSuperPartDefs>

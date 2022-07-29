@@ -1,0 +1,43 @@
+<Stories><List>	
+<!--系统使用，不能修改-->
+	<Story Name="OutSpread_TreeEXP" Parent="BaseFillingStory"> 
+		<DisplayName>收集天道事件</DisplayName>
+		<Desc>天道收集已满，可凝结成丹。</Desc>
+		<Selections>
+			<li>
+				<Display>查看结果</Display>  
+				<OKResult><![CDATA[
+					local tbTable = GameMain:GetMod("MapStoryHelper");
+					local cRegion = story.target.region;
+					local unionData = cRegion.UnionData;
+					local solve = cRegion.RegionPolicy.Way;
+					local enumSolve = CS.XiaWorld.OutspreadMgr.Region.SolveWay;
+					tbTable:DefuseSubmiss(WorldLua, cRegion);
+					if not solve or solve == enumSolve.None then
+						tbTable:PrintSolution(cRegion, WorldLua, "None");
+					elseif solve == enumSolve.Social then
+						tbTable:PrintSolution(cRegion, WorldLua, "Social");
+					elseif solve == enumSolve.Fight then
+						tbTable:PrintSolution(cRegion, WorldLua, "Fight");
+					elseif solve == enumSolve.Charm then
+						tbTable:PrintSolution(cRegion, WorldLua, "Charm");
+					elseif solve == enumSolve.Intelligence then
+						tbTable:PrintSolution(cRegion, WorldLua, "Intelligence");
+					elseif solve == enumSolve.Food then
+						tbTable:PrintSolution(cRegion, WorldLua, "Food");
+					elseif solve == enumSolve.LingStone then
+						tbTable:PrintSolution(cRegion, WorldLua, "LingStone");
+					elseif solve == enumSolve.Wood then
+						tbTable:PrintSolution(cRegion, WorldLua, "Wood");
+					elseif solve == enumSolve.Rock then
+						tbTable:PrintSolution(cRegion, WorldLua, "Rock");
+					elseif solve == enumSolve.Member then
+						tbTable:PrintSolution(cRegion, WorldLua, "Member");
+					end
+					WorldLua:AddMsg(XT("收集到了一颗天道神丹，直接放回了门派。"));
+					CS.XiaWorld.OutspreadMgr.Instance:AddItem2Map4Lua("Item_Dan_TreeEXP", 1);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

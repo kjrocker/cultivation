@@ -1,0 +1,36 @@
+<Magics><List>
+	<Magic Name="ZhenSheild" Type="Class">
+		<DisplayName>护盾</DisplayName>
+		<Icon>res\Sprs\ui\icon_tianyao01</Icon>
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Building</SelectTarget>
+		<ClassName>Magic_MakeSheild</ClassName>
+		<Param1>10</Param1>
+		<TargetDesc>请选择一个建筑或者道具</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	<Magic Name="ZhenAddModifier" Type="Class">
+		<DisplayName>加modifier</DisplayName>
+		<Icon>res\Sprs\ui\icon_tianyao01</Icon>
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Building</SelectTarget>
+		<ClassName>Magic_MakeModifier</ClassName>
+		<sParam1>Dan_Fail2</sParam1>
+		<Param1>1</Param1>
+		<Param2>10</Param2>
+		<TargetDesc>请选择一个建筑或者道具</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+	<Magic Name="ZhenAura" Type="Class">
+		<DisplayName>人造光环</DisplayName>
+		<Icon>res\Sprs\ui\icon_tianyao01</Icon>
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Building</SelectTarget>
+		<ClassName>Magic_MakeAura</ClassName>
+		<sParam1>LingAddion</sParam1>
+		<Param1>1000</Param1>
+		<Param2>10</Param2>
+		<TargetDesc>请选择一个建筑或者道具</TargetDesc>
+		<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	</Magic>
+</List></Magics>

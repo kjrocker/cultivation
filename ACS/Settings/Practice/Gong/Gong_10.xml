@@ -1,0 +1,113 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_10_Huo">   <!--  法术攻击强-->
+		<DisplayName>三阳三昧丙丁炼火诀</DisplayName>
+		<Desc>太一门镇派五行真诀之一，借少阳，阳明，太阳三阳经略，凝结天地人三才之火，无物不燃，极具破坏力。但是修炼过程十分危险，一旦疏忽，真火反噬，甚至会神形俱灭。</Desc>
+		<SelectDesc>此功法擅长术法攻击，但突破瓶颈时需要冒较大风险。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>5, 5, 5, 5, 5</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Huo</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>jiangdao</li>
+			<li>ciqi</li>
+			<li>guanding</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>人火之境</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>火种</DisplayName>
+						<Desc>感悟身体先天火种，并将其引燃，此乃修炼之始。[color=#D06508]\n一旦失败可致经脉受创。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.5</SuccessChange>
+						<Damages>
+							<li PartKind="Meridian" Name="LingSpillsInjury" Rate="1"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>人火</DisplayName>
+						<Desc>以真火凝聚玄关，点亮顶上之火，沟通天地。[color=#D06508]\n一旦失败真火溢出可致全身血肉灼痛，苦不堪言。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>0.5</SuccessChange>
+						<Damages>
+							<li Part="TheWholeBody" Name="Huo_BurnOfPain" Rate="1"/>
+						</Damages>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>地火之境</DisplayName>
+				<Desc></Desc>
+				<Value>4000</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>橐龠</DisplayName>
+						<Desc>运用真火锻烧全身骨骼，以身为橐龠，鼓动神风，为凝练地火真丹做准备。[color=#D06508]\n一旦失败真火侵入骨骸，将受枯髓之刑，突破时需慎重。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.3</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Bone" Name="Huo_MarrowDry" Rate="1"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>地火</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>天火之境</DisplayName>
+				<Desc></Desc>
+				<Value>360000</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>燃灯</DisplayName>
+						<Desc>运用全身真元凝聚于心脏，点燃心火。[color=#D06508]\n一旦失败则会真气爆散，受焚心之刑。突破之时务必做好准备。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.3</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<Damages>
+							<li Part="Heart"  Name="Huo_HeartBurn" Rate="1"/>
+						</Damages>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Explore">
+						<DisplayName>天火</DisplayName>
+						<Desc></Desc>
+						<ExploreValue>12</ExploreValue>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>神火之境</DisplayName>
+				<Desc></Desc>
+				<Value>6400000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>窥天</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>飞升</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>550000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

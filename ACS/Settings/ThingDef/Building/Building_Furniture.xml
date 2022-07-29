@@ -1,0 +1,1516 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="FurnitureBase" Parent="BuildingBase">
+	<TexPath></TexPath>
+	<ThingName></ThingName>
+	<Desc>FurnitureBase</Desc>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>0</BlockLight>
+	<Beauty>1</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>300</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<VisionRadius>10</VisionRadius>
+	<ElementKind>None</ElementKind>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<!--
+	<Collider>
+		(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace
+		<Data>
+		[3]
+		</Data>
+	</Collider>
+	-->
+	<Building>
+		<BuildMode>Single</BuildMode>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+
+		<BePackage>0</BePackage>
+		
+		<IsVirtualBuilding>0</IsVirtualBuilding>
+
+		<RestEffectiveness>0</RestEffectiveness>
+		
+		<!--
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+		</BeMade>
+		-->
+	</Building>	
+<!--	<Element>
+			<Kind>None</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>0</FailRadius>
+	</Element>-->
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Building" Name="Bed" Parent="FurnitureBase">
+	<TexPath>res\Sprs\buildingnew\building_1Rbed</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>床</ThingName>
+		<Frags>	
+			<li Frag="Sleep" />
+		</Frags>	
+
+	<Desc>一张可以供单人使用的床，可以让你睡个好觉。</Desc>
+	<Tags>
+		<Tag Name="Sleep" Level="1"/>
+		<Tag Name="Practice" Level="1"/>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.3</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[7],
+		[1],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0.75</y></li><!--后-->
+			<li><x>0.5</x><y>0.2</y></li><!--右-->
+			<li><x>0</x><y>-0.4</y></li><!--前-->
+			<li><x>-0.5</x><y>0.2</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0" Y="-0.3" Ang="179" Dir="Down"/>
+			<li Index="0" X="-0.5" Y="0.3" Z="-0.3" Ang="1" Dir="Left"/>
+			<li Index="0" X="0" Y="0.85" Z="-1.15" Ang="179" Dir="Up"/>
+			<li Index="0" X="0.5" Y="0.3" Z="-0.3" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<RoomKind>BedRoom</RoomKind>
+		<IsBed>1</IsBed>
+		<OwnerCount>1</OwnerCount>
+		<HelperClass>BuildingHelperBed</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<RestEffectiveness>1</RestEffectiveness>
+		<RoomKind>BedRoom</RoomKind>
+		<PracticeEffectiveness>0.2</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Bed2" Parent="Bed">
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Building" Name="DoubleBed" Parent="FurnitureBase">
+	<TexPath>res\Sprs\buildingnew\building_2Rbed</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>双人床</ThingName>	
+	<Desc>一张适合两个有需要的人使用的大床。</Desc>
+		<Frags>	
+			<li Frag="Dream" />
+		</Frags>	
+	<Tags>
+		<Tag Name="Sleep" Level="1"/>
+		<Tag Name="Practice" Level="1"/>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.3</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[7,5],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.7</y></li><!--后-->
+			<li><x>0.5</x><y>0.6</y></li><!--右-->
+			<li><x>0.5</x><y>-0.3</y></li><!--前-->
+			<li><x>-0.5</x><y>-0.4</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.14" Y="-0.15" Z="-0.15" Ang="179" Dir="Down"/>
+			<li Index="1" X="-0.14" Y="-0.15" Z="-0.15" Ang="179" Dir="Down"/>
+			<li Index="0" X="-0.6" Y="0.12" Ang="1" Dir="Left"/>
+			<li Index="1" X="-0.6" Y="0.5" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.14" Y="0.8" Z="-1.15" Ang="179" Dir="Up"/>
+			<li Index="1" X="-0.14" Y="0.8" Z="-1.15" Ang="179" Dir="Up"/>
+			<li Index="0" X="0.6" Y="0" Z="-0.95" Ang="1" Dir="Right"/>
+			<li Index="1" X="0.6" Y="0.46" Z="-0.55" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<RoomKind>BedRoom</RoomKind>
+		<IsBed>1</IsBed>
+		<OwnerCount>2</OwnerCount>
+		<HelperClass>BuildingHelperBed</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<RestEffectiveness>1.1</RestEffectiveness>
+		
+		<PracticeEffectiveness>0.2</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>15</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.7</y>
+			<z>1.5</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="DoubleBed2" Parent="DoubleBed">
+	<TexPath>res\Sprs\buildingnew\building_2Rbed</TexPath>
+	<IllustratedHandLabel>Dele</IllustratedHandLabel>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[5,1],
+		[7,1],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0.46" Y="0" Z="-0.5" Ang="-267"/>
+			<li Index="1"  X="0.48" Y="0.25" Z="-0.5" Ang="113"/>
+		</WorkOffset>
+	</Collider>
+	<NotDoTongLing>1</NotDoTongLing>
+	</ThingDef>
+
+	
+	<ThingDef Type="Building" Name="SmallTable" Parent="FurnitureBase">	
+	<ThingName>桌子</ThingName>
+	<Desc>简易的桌子，可供人们在上面吃饭。</Desc>
+	<Tags>
+		<Tag Name="PutThing" Level="1"/>
+	</Tags>
+	<Frags>	
+		<li Frag="HearChat" />
+	</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_table1</TexPath>
+	<TexScale>0.58</TexScale>
+	<BlockLight>0</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	
+	<ShadowSize>
+		<x>1</x>
+		<y>0.5</y>
+	</ShadowSize>
+	<Color>FFFFFFFF</Color>
+	
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,4,0],
+		[4,3,1,4],
+		[0,4,4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li><!--上-->
+			<li><x>0</x><y>0.48</y></li><!--右-->
+			<li><x>0.5</x><y>0.1</y></li><!--下-->
+			<li><x>0</x><y>-0.52</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="-0.4" Ang="-165" Dir="Down"/>
+			<li Index="1"  X="0" Y="-0.4" Ang="-165" Dir="Down"/>
+			<li Index="2"  X="0.180" Y="0" Ang="-250" Dir="Down"/>
+			<li Index="3"  X="-0.185" Y="0" Ang="-80" Dir="Down"/>
+			<li Index="4"  X="0" Y="0.44" Ang="10" Dir="Down"/>
+			<li Index="5"  X="0" Y="0.44" Ang="10" Dir="Down"/>
+			
+			
+			<li Index="0"  X="0" Y="-0.4" Ang="-250" Dir="Left"/>
+			<li Index="1"  X="0.180" Y="0" Ang="10" Dir="Left"/>
+			<li Index="2"  X="-0.185" Y="0" Ang="-165" Dir="Left"/>
+			<li Index="3"  X="0.180" Y="0" Ang="10" Dir="Left"/>
+			<li Index="4"  X="-0.185" Y="0" Ang="-165" Dir="Left"/>
+			<li Index="5"  X="0" Y="0.44" Ang="-80" Dir="Left"/>
+			
+			
+			<li Index="0"  X="0" Y="-0.4" Ang="10" Dir="Up"/>
+			<li Index="1"  X="0" Y="-0.4" Ang="10" Dir="Up"/>
+			<li Index="2"  X="0.180" Y="0" Ang="-80" Dir="Up"/>
+			<li Index="3"  X="-0.185" Y="0" Ang="-250" Dir="Up"/>
+			<li Index="4"  X="0" Y="0.44" Ang="-165" Dir="Up"/>
+			<li Index="5"  X="0" Y="0.44" Ang="-165" Dir="Up"/>
+			
+			
+			<li Index="0"  X="0" Y="-0.4" Ang="-80" Dir="Right"/>
+			<li Index="1"  X="0.180" Y="0" Ang="-165" Dir="Right"/>
+			<li Index="2"  X="-0.185" Y="0" Ang="10" Dir="Right"/>
+			<li Index="3"  X="0.180" Y="0" Ang="-165" Dir="Right"/>
+			<li Index="4"  X="-0.185" Y="0" Ang="10" Dir="Right"/>
+			<li Index="5"  X="0" Y="0.44" Ang="-250" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,R</Orientation>
+		<BePackage>1</BePackage>
+		<MaxWorker>6</MaxWorker>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>6</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.35</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Table" Parent="FurnitureBase">	
+	<ThingName>小方桌</ThingName>
+	<TexScale>0.54</TexScale>
+	<Desc>传统的方桌，可供人们在上面吃饭。</Desc>
+	<Tags>
+		<Tag Name="PutThing" Level="1"/>
+	</Tags>
+	<Frags>	
+		<li Frag="HearChat" />
+	</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_table2</TexPath>
+	<BlockLight>0</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>1.3</x>
+		<y>0.5</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,0],
+		[4,3,4],
+		[0,4,0],
+		</Data>
+		
+		<WorkOffset>
+			<li Index="0"  X="0" Y="-0.4" Ang="-165"/>
+			<li Index="1"  X="0.180" Y="0" Ang="-250"/>
+			<li Index="2"  X="-0.185" Y="0" Ang="-80"/>
+			<li Index="3"  X="0" Y="0.44" Ang="10"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<MaxWorker>4</MaxWorker>
+		<BeMade>
+			<WorkToMake>40</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.33</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Building" Name="WaterTank" Parent="FurnitureBase">
+	<ThingName>水缸</ThingName>	
+	<Desc>一口可以用来装水的容器，可以净化水质，放在需要频繁用水的场合可以提供极大地方便。</Desc>
+	<Tags>
+		<Tag Name="Water" Level="3"/>
+	</Tags>
+		<Frags>	
+			<li Frag="Self" />
+		</Frags>
+	<TexPath>res/Sprs/buildingnew/building_WaterTank1a</TexPath>
+	<TexScale>0.8</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>0</BlockLight>
+	<ShadowSize>
+		<x>0.7</x>
+		<y>0.8</y>
+	</ShadowSize>
+	
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,4,0],
+		[4,3,4],
+		[0,4,0],
+		</Data>
+		<Offset>
+			<y>0.3</y>
+		</Offset>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="-0.4" Ang="-165"/>
+			<li Index="1"  X="0.180" Y="0" Ang="-250"/>
+			<li Index="2"  X="-0.185" Y="0" Ang="-80"/>
+			<li Index="3"  X="0" Y="0.44" Ang="10"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<HelperClass>BuildingHelperWaterTank</HelperClass>
+		<BePackage>1</BePackage>
+		<BagDrop>0</BagDrop>
+		<MaxWorker>4</MaxWorker>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.62</x>
+			<y>3.94</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="SmallPool" Parent="FurnitureBase">
+	<ThingName>造化灵池</ThingName>
+	<TexScale>1.6</TexScale>
+	<Desc>以火铜寒晶打造的灵池，核心融入一枚造化玉籽。其灵效可缓慢改善周围土质。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_SmallPond1a</TexPath>
+	<ClassName>LingPool</ClassName>
+	<SelectAble>1</SelectAble>		
+	<CastShadow>1</CastShadow>
+	<ElementKind>Shui</ElementKind>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.3</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<Beauty>26</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[3,1],
+		</Data>
+	</Collider>
+
+	<Building>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<AutoUnLock>0</AutoUnLock>		
+		<RemovePriceFactor>0</RemovePriceFactor>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+			</StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_CopperBlock" count = "36"/>
+				<Item name = "Item_SilverBlock" count = "36"/>
+				<Item name = "Item_ZaoHuaYuZi" count = "1"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>1.58</x>
+			<y>3.26</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="StreetLight" Parent="FurnitureBase">
+	<ThingName>灯柱</ThingName>	
+	<Desc>精美的照明建筑，会在夜晚点亮，照亮周围。</Desc>
+	<Tags>
+		<Tag Name="Light_FSZW" Level="1"/>
+	</Tags>
+		<Frags>	
+			<li Frag="SeeAround" />
+		</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_streetlight001a</TexPath>
+	<TexScale>0.8</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	
+	<ShadowSize>
+		<x>0.7</x>
+		<y>1.1</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.25</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>110</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>12</Radius>
+		<Color>FFDF58FF</Color>
+	</Light>
+	
+	<Building>
+		<NoFengshui>1</NoFengshui>
+		<HelperClass>BuildingHelperAutoLight</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>0</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_streetlight001b</WorkTexPath>
+		<BeMade>
+			<WorkToMake>75</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.78</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="StreetLight1" Parent="StreetLight">
+	<ThingName>灯柱</ThingName>	
+	<Desc>精美的照明建筑，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern6b</TexPath>
+	<TexScale>0.8</TexScale>
+	
+	<ShadowSize>
+		<x>0.7</x>
+		<y>1.8</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.55</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>110</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>12</Radius>
+		<Color>FFDF58FF</Color>
+	</Light>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern6a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>4.1</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="StreetLight2" Parent="StreetLight">
+	<ThingName>灯柱</ThingName>	
+	<Desc>精美的照明建筑，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern7b</TexPath>
+	<TexScale>0.8</TexScale>
+	
+	<ShadowSize>
+		<x>0.7</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.25</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>110</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>12</Radius>
+		<Color>FFDF58FF</Color>
+	</Light>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern7a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Lantern" Parent="FurnitureBase">
+	<ThingName>灯笼</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<Tags>
+		<Tag Name="Light_FSZW" Level="1"/>
+	</Tags>
+		<Frags>	
+			<li Frag="SeeAround" />
+		</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_lantern1b</TexPath>
+	<TexScale>0.9</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>0.2</x>
+		<y>1.8</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0.75</y></li>
+			<li><x>0</x><y>0.75</y></li>
+			<li><x>0</x><y>0.75</y></li>
+			<li><x>0</x><y>0.75</y></li>
+		</OffsetGroup>
+	</Collider>
+	
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	
+	<Building>
+		<Orientation>R</Orientation>
+		<BePackage>1</BePackage>
+		<NoFengshui>1</NoFengshui>
+		<HelperClass>BuildingHelperAutoLight</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern1a</WorkTexPath>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.25</x>
+			<y>4.17</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Lantern1" Parent="Lantern">
+	<ThingName>灯笼</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern2b</TexPath>
+	<TexScale>0.9</TexScale>
+	<ShadowSize>
+		<x>0.2</x>
+		<y>1.8</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	<Building>
+		<Orientation></Orientation>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern2a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.15</x>
+			<y>4.17</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Lantern2" Parent="Lantern1">
+	<ThingName>灯笼-照影</ThingName>	
+	<TexPath>res/Sprs/buildingnew/building_lantern3b</TexPath>
+	<TexScale>0.9</TexScale>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern3a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Lantern3" Parent="Lantern">
+	<ThingName>灯笼</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern4b</TexPath>
+	<TexScale>0.9</TexScale>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	<Building>
+		<Orientation></Orientation>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern4a</WorkTexPath>
+		<SnowRenderData>
+			<x>3</x>
+			<y>4.05</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	
+	
+	<ThingDef Type="Building" Name="Lantern4" Parent="Lantern">
+	<ThingName>灯笼</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern5b</TexPath>
+	<TexScale>0.9</TexScale>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	<Building>
+		<Orientation></Orientation>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern5a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Lantern5" Parent="Lantern">
+	<ThingName>灯笼-万化安</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern8a</TexPath>
+	<TexScale>0.9</TexScale>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	<Building>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<Orientation></Orientation>
+		<AutoUnLock>0</AutoUnLock>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern8a</WorkTexPath>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Lantern6" Parent="Lantern">
+	<ThingName>灯笼-四海同</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_lantern8b</TexPath>
+	<TexScale>0.9</TexScale>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<x>0</x>
+			<y>0.7</y>
+		</Offset>
+	</Collider>
+	<Light>
+		<Value>75</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>3</FailRadius>
+		<Radius>8</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	<Building>
+		<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+		<Orientation></Orientation>
+		<AutoUnLock>0</AutoUnLock>
+		<WorkTexPath>res/Sprs/buildingnew/building_lantern8b</WorkTexPath>
+		<SnowRenderData>
+			<x>3.3</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Lantern_S1" Parent="Lantern">
+	<ThingName>神鹤灯</ThingName>	
+	<Desc>照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_xianhedeng01a</TexPath>
+	<TexScale>1</TexScale>
+	<Beauty>5</Beauty>
+	<ShadowSize>
+		<x>0.2</x>
+		<y>1.8</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.03</x><y>0.7</y></li>
+			<li><x>0.1</x><y>0.8</y></li>
+			<li><x>-0.05</x><y>0.95</y></li>
+			<li><x>-0.1</x><y>0.8</y></li>
+		</OffsetGroup>
+	</Collider>
+	
+	<Light>
+		<Value>85</Value>
+		<Failing>0.9</Failing>
+		<FailRadius>7</FailRadius>
+		<Radius>16</Radius>
+		<Color>FDCB64FF</Color>
+	</Light>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_xianhedeng01b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<NoFengshui>1</NoFengshui>
+		<HelperClass>BuildingHelperAutoLight</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>15</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.9</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Candlestick" Parent="FurnitureBase">
+	<ThingName>油灯</ThingName>	
+	<Desc>室内常用的照明设施，会在夜晚点亮，照亮周围。</Desc>
+	<Tags>
+		<Tag Name="Light_FSZW" Level="1"/>
+	</Tags>
+	<Frags>	
+		<li Frag="SeeAround" />
+	</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_candlestick2a</TexPath>
+	<TexScale>0.7</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>0.4</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.4</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Light>
+		<Value>60</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>5</Radius>
+		<Color>C37500FF</Color>
+	</Light>
+	
+	<Building>
+		<NoFengshui>1</NoFengshui>
+		<HelperClass>BuildingHelperAutoLight</HelperClass>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_candlestick2b</WorkTexPath>
+		<BeMade>
+			<WorkToMake>25</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.25</x>
+			<y>4.02</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+<ThingDef Type="Building" Name="TicTacToe"  Parent="FurnitureBase">	
+	<ThingName>井字棋</ThingName>
+	<Desc>不需要什么制作材料，只是在地上划出一块空地，在上面下井字棋。</Desc>
+	<Tags>
+		<Tag Name="ForFun" Level="1"/>
+	</Tags>
+	<Frags>		
+		<li Frag="PlaySelf" />
+	</Frags>
+	<TexPath>res/Sprs/buildingnew/building_jingziqi01</TexPath>
+	<TexScale>1</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<VisionRadius>0</VisionRadius>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[4,3,4],
+		</Data>
+		<Offset>
+			<x>0</x>
+		</Offset>
+		<WorkOffset>
+			<li Index="0"  X="0.22" Y="0.21" Ang="92"/>
+			<li Index="1"  X="-0.26" Y="0.2"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	
+	<Building>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<MaxWorker>2</MaxWorker>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade>
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="GoTable" Parent="FurnitureBase">
+	<ThingName>围棋桌</ThingName>	
+	<Desc>一张下棋用的矮桌，桌面刻有十九路棋盘，可供两人对弈，产出名局。</Desc>
+	<Tags>
+		<Tag Name="ForFun" Level="1"/>
+	</Tags>
+	<Frags>
+		<li Frag="SeePlay" />
+	</Frags>
+	<TexPath>res/Sprs/buildingnew/building_GoTable1a</TexPath>
+	<TexScale>0.75</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>0.8</x>
+		<y>0.4</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[4,3,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li>
+			<li><x>0</x><y>0</y></li>
+			<li><x>0</x><y>0</y></li>
+			<li><x>0</x><y>0</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="0.44" Y="0" Ang="92" Dir="Down"/>
+			<li Index="1"  X="-0.44" Y="0" Ang="-88" Dir="Down"/>
+			<li Index="0"  X="-0.15" Y="-0.55" Ang="92" Dir="Left"/>
+			<li Index="1"  X="-0.15" Y="0.4" Ang="-88" Dir="Left"/>
+			<li Index="0"  X="0.44" Y="-0.2" Ang="-88" Dir="Up"/>
+			<li Index="1"  X="-0.44" Y="-0.2" Ang="92" Dir="Up"/>
+			<li Index="0"  X="0.15" Y="-0.55"  Ang="-88" Dir="Right"/>
+			<li Index="1"  X="0.15" Y="0.4"  Ang="92" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BasePracticeEffectiveness>1.5</BasePracticeEffectiveness>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_GoTable1b</WorkTexPath>
+		
+		<MaxWorker>2</MaxWorker>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.38</x>
+			<y>3.88</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="GuzhengTable" Parent="FurnitureBase">
+	<ThingName>琴台</ThingName>	
+	<Desc>摆放古筝的台子，可以供一个人抚琴，谱写琴曲。</Desc>
+	<Tags>
+		<Tag Name="ForFun" Level="1"/>
+	</Tags>
+	<Frags>		
+		<li Frag="HearAround" />
+	</Frags>	
+
+	<TexPath>res/Sprs/buildingnew/building_ZitherPlace1a</TexPath>
+	<TexScale>0.6</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.2</y>
+	</ShadowSize>
+	<BlockLight>0</BlockLight>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,7],		
+		</Data>
+		<OffsetGroup>
+			<li><x>0.55</x><y>0</y></li>
+			<li><x>-0.15</x><y>-0.5</y></li>
+			<li><x>-0.55</x><y>0.15</y></li>
+			<li><x>0.15</x><y>0.5</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="-0.45" Y="-0.4" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.3" Y="0.4" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.4" Y="0.1" Z="-0.6" Ang="1" Dir="Up"/>
+			<li Index="0" X="0.17" Y="-0.5" Z="-0.6" Ang="1" Dir="Right"/>
+		</WorkOffset>		
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_ZitherPlace1a</WorkTexPath>
+		
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.25</x>
+			<y>3.95</y>
+			<z>1.5</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="CalligraphyTable" Parent="FurnitureBase">
+	<ThingName>画符桌</ThingName>	
+	<Desc>一张放置笔墨纸砚的桌几案，可以在上面制作符咒。除此之外，也可以闲暇之时供人娱乐。</Desc>
+	<Tags>
+		<Tag Name="ForFun" Level="1"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_paintPlace1a</TexPath>
+	<TexScale>0.7</TexScale>
+	<BlockLight>1</BlockLight>	
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>0</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.7</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,3],
+		[0,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.59</x><y>0.48</y></li><!--后-->
+			<li><x>0.16</x><y>-0.28</y></li><!--右-->
+			<li><x>-0.55</x><y>0.65</y></li><!--前-->
+			<li><x>-0.2</x><y>0.7</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="-0.5" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="0.4" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.5" Y="-0.5" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.3" Y="-0.65" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<RoomKind>WorkRoom</RoomKind>
+		<WorkAnimation>shuhua1</WorkAnimation>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>120</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.35</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>Handwork</ProduceKind>
+		<ProducePriority>2</ProducePriority>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_SpellPaper</ThingDef>
+				<Display>符纸</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SpellPaperLv2</ThingDef>
+				<Display>灵血符</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SpellPaperLv3</ThingDef>
+				<Display>神珀符</Display>
+				<Count>1</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="CageShelf" Parent="FurnitureBase">
+	<ThingName>虫鸟架</ThingName>	
+	<Desc>一个供人养鸟逗虫的娱乐设施，构造精巧而美观。</Desc>
+	<Tags>
+		<Tag Name="ForFun" Level="1"/>
+	</Tags>
+	<Frags>
+		<li Frag="HearWormBeep" />
+	</Frags>	
+
+	<TexPath>res/Sprs/buildingnew/building_birdcage1a</TexPath>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.8</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,3],
+		[4,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.5</x><y>1</y></li>
+			<li><x>0.47</x><y>0.05</y></li>
+			<li><x>-0.5</x><y>1.15</y></li>
+			<li><x>-0.51</x><y>1.03</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0" Y="0.5" Ang="30" Dir="Down"/>
+			<li Index="1" X="0" Y="0.5" Ang="-30" Dir="Down"/>
+			<li Index="0" X="0.35" Y="0" Ang="30" Dir="Left"/>
+			<li Index="1" X="0.35" Y="0" Ang="-30" Dir="Left"/>
+			<li Index="0" X="0" Y="-0.4" Ang="-30" Dir="Up"/>
+			<li Index="1" X="0" Y="-0.4" Ang="30" Dir="Up"/>
+			<li Index="0" X="-0.35" Y="0" Ang="-30" Dir="Right"/>
+			<li Index="1" X="-0.35" Y="0" Ang="30" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<Orientation>F,B,R</Orientation>
+		<MaxWorker>2</MaxWorker>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>12</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.15</x>
+			<y>4.15</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	
+	
+	<ThingDef Type="Building" Name="Building_Tomb" Parent="FurnitureBase">
+	<ThingName>坟墓</ThingName>	
+	<Desc>用来埋葬死者的简陋墓穴。</Desc>
+	<Tags>
+		<Tag Name="Bury" Level="1"/>
+		<Tag Name="FenMu_FSZW" Level="1"/>
+	</Tags>
+	<Frags>		
+		<li Frag="Memory" />
+	</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_kongfen02</TexPath>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.6</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[7,1],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.8</y></li>
+			<li><x>0</x><y>0</y></li>
+			<li><x>0</x><y>0</y></li>
+			<li><x>0</x><y>0</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="0.5" Y="0" Ang="0"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>0</BePackage>
+		<Perfab>Building/Prefabs/Tomb</Perfab>
+		<OwnerCount>1</OwnerCount>
+		<WorkTexPath>res/Sprs/buildingnew/building_putongfen01</WorkTexPath>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<HelperClass>BuildingHelperTomb</HelperClass>
+		<BePackage>0</BePackage>
+		<BagDrop>0</BagDrop>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.6</x>
+			<y>3.64</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>		
+	<ThingDef Type="Building" Name="Building_BigTomb" Parent="FurnitureBase">
+	<ThingName>陵墓</ThingName>	
+	<Desc>用来埋葬死者的墓穴。</Desc>
+	<Tags>
+		<Tag Name="Bury" Level="1"/>
+		<Tag Name="FenMu_FSZW" Level="1"/>
+	</Tags>
+	<Frags>		
+		<li Frag="Memory" />
+	</Frags>	
+	<TexPath>res/Sprs/buildingnew/building_kongfen03</TexPath>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.6</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[7,1],
+		[1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.95</y></li>
+			<li><x>0.5</x><y>0.72</y></li>
+			<li><x>0</x><y>0</y></li>
+			<li><x>-0.5</x><y>-0.28</y></li>
+		</OffsetGroup>
+		<WorkOffset> 
+			<li Index="0"  X="-0.8" Y="0" Ang="0"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>0</BePackage>
+		<Perfab>Building/Prefabs/BigTomb</Perfab>
+		<OwnerCount>1</OwnerCount>
+		<WorkTexPath>res/Sprs/buildingnew/building_gaojifen01</WorkTexPath>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<HelperClass>BuildingHelperTomb</HelperClass>
+		<BePackage>0</BePackage>
+		<BagDrop>0</BagDrop>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.65</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>		
+	
+</List></ThingDefs>
