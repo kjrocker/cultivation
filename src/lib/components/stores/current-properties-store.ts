@@ -4,7 +4,7 @@ import { last, map, mapObjIndexed } from 'ramda';
 import { derived, type Readable } from 'svelte/store';
 import { completeSecretBodiesStore } from './complete-secret-bodies-store';
 import { partLabelCountStore, type PartLabelCount } from './part-label-count-store';
-import { currentSecretBodyStore } from './secret-bodies-store';
+import { selectedSecretBody } from './selected-store';
 
 export type SecretBodyPropertyStore = Readable<PartProperty[]>;
 export type PartPropertyStore = Readable<Record<string, PartProperty[]>>;
@@ -28,7 +28,7 @@ export const partPropertyStore: PartPropertyStore = derived(
 );
 
 export const secretBodyPropertyStore: SecretBodyPropertyStore = derived(
-	[currentSecretBodyStore, completeSecretBodiesStore],
+	[selectedSecretBody, completeSecretBodiesStore],
 	([body, completeSecretBodies]) => {
 		if (completeSecretBodies[body?.Name ?? '']) return [];
 		return last(body?.Levels ?? [])?.SuperPartProperties ?? [];

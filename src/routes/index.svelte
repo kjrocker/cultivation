@@ -20,18 +20,22 @@
 	let exportSlider = false;
 </script>
 
-<Button
-	on:click={() => {
-		importSlider = true;
-	}}>Import</Button
->
-<Button
-	on:click={() => {
-		exportSlider = true;
-	}}>Export</Button
->
 <div class="flex">
-	<OptionsForm />
+	<div class="flex w-full justify-center mb-4 mt-2">
+		<OptionsForm />
+		<Button
+			class="h-12 ml-4 mr-2 mt-4"
+			on:click={() => {
+				importSlider = true;
+			}}>Import</Button
+		>
+		<Button
+			class="h-12 ml-2 mt-4"
+			on:click={() => {
+				exportSlider = true;
+			}}>Export</Button
+		>
+	</div>
 </div>
 <SecretBodies />
 <div class="flex">

@@ -1,13 +1,11 @@
 <script lang="ts">
 	import { secretBodyStore, type SecretBody } from '$lib/data/get-secret-bodies';
 	import type { DataView } from '$lib/util/create-data-table';
-	import { selectedStore } from './stores/selected-store';
-	import { currentSecretBodyStore } from './stores/secret-bodies-store';
-	import { bodyOptionsStore } from './forms/options-store';
+	import { selectedLawStore, selectedStore } from './stores/selected-store';
 
 	$: bodies = $secretBodyStore as DataView<SecretBody>;
 	$: bodyNames =
-		bodies && bodies.keys.filter((name) => $bodyOptionsStore.law?.SuperParts.includes(name));
+		bodies && bodies.keys.filter((name) => $selectedLawStore.SuperParts.includes(name));
 </script>
 
 <div>
@@ -18,11 +16,11 @@
 				{#each bodyNames as name}
 					<span
 						on:click={() => {
-							currentSecretBodyStore.toggle(bodies?.map[name]);
+							selectedStore.toggleSecretBody(bodies?.map[name].Name);
 							selectedStore.update((v) => ({ ...v, bodyPart: bodies?.map[name].Parts[0].Name }));
 						}}
 						class={`w-1/4 py-4 px-1 text-center border-2 font-medium text-md cursor-pointer ${
-							$currentSecretBodyStore?.Name === name
+							$selectedStore.secretBody === name
 								? 'border-indigo-500 text-indigo-600'
 								: 'border-transparent text-gray-900 hover:bg-gray-50 hover:border-gray-300'
 						}`}

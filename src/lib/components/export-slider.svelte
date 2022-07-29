@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { mapObjIndexed, pickBy, pipe } from 'ramda';
+	import { mapObjIndexed, pickBy } from 'ramda';
 	import Button from './base/button.svelte';
-
 	import Slider from './base/slider.svelte';
 	import { bodyOptionsStore, type BodyOptions } from './forms/options-store';
 	import type { MinifiedOptions } from './stores/minified-cultivator';
@@ -10,21 +9,22 @@
 	export let open: boolean;
 
 	const minifyOptions = (options: BodyOptions, labels: PartLabelCountStore): MinifiedOptions => {
-		const minifyParts = pipe(pickBy((val) => Array.isArray(val) && val.length > 0));
+		const trimmedParts: PartLabelCountStore = pickBy(
+			(val) => Array.isArray(val) && val.length > 0,
+			labels
+		);
+		const shrinkParts: Record<string, [string, number][]> = mapObjIndexed(
+			(val) => val.map((p) => [p.Name, p.Level]),
+			trimmedParts
+		);
 		return {
 			options: options,
-			labels: minifyParts(labels)
+			labels: shrinkParts
 		};
 	};
 
 	$: minified = minifyOptions($bodyOptionsStore, $partLabelCountStore);
 	$: options = window.btoa(JSON.stringify(minified));
-
-	$: {
-		if (true) {
-			console.log(minified);
-		}
-	}
 </script>
 
 <Slider title="Export Cultivator" bind:open>

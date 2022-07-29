@@ -5,7 +5,7 @@ import { bodyOptionsStore } from '../forms/options-store';
 export const currentSpeciesPartsStore = derived(
 	[bodyOptionsStore, bodyPartsStore],
 	([options, parts]) => {
-		const partsList = parts.species[options.species.key];
+		const partsList = parts.species[options.species];
 		return partsList;
 	}
 );

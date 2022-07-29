@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PartProperty } from '$lib/util/part-properties';
 
-	import { min, sum } from 'ramda';
+	import { min } from 'ramda';
 	import Tooltip from './base/tooltip.svelte';
 
 	export let name: string;

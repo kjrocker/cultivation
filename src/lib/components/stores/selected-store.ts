@@ -1,6 +1,9 @@
+import { bodyLawStore, type BodyLaw } from '$lib/data/get-body-laws';
 import { bodyPartsStore } from '$lib/data/get-body-parts';
 import { secretBodyStore } from '$lib/data/get-secret-bodies';
-import { derived, writable } from 'svelte/store';
+import { SPECIES_CONFIG, type SpeciesOption } from '$lib/data/species';
+import { derived, writable, type Readable } from 'svelte/store';
+import { bodyOptionsStore } from '../forms/options-store';
 
 export type SelectedStore = { bodyPart?: string; secretBody?: string };
 
@@ -29,6 +32,19 @@ const createSelectedStore = () => {
 };
 
 export const selectedStore = createSelectedStore();
+
+export const selectedLawStore: Readable<BodyLaw> = derived(
+	[bodyOptionsStore, bodyLawStore],
+	([options, laws]) => laws.map[options.law]
+);
+
+export const selectedSpeciesStore: Readable<SpeciesOption> = derived(
+	[bodyOptionsStore],
+	([options]) => ({
+		...SPECIES_CONFIG[options.species],
+		key: options.species
+	})
+);
 
 export const selectedBodyPart = derived([selectedStore, bodyPartsStore], ([selected, parts]) =>
 	selected.bodyPart ? parts.map[selected.bodyPart] : undefined

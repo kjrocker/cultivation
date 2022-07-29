@@ -6,7 +6,7 @@
 	import BonusListItem from './property-bonus-list-item.svelte';
 	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
 	import { partPropertyStore, secretBodyPropertyStore } from './stores/current-properties-store';
-	import { currentSecretBodyStore } from './stores/secret-bodies-store';
+	import { selectedSecretBody } from './stores/selected-store';
 
 	const getPropertyGroups = (
 		body: SecretBody,
@@ -32,8 +32,8 @@
 	};
 
 	$: propertyGroups =
-		$currentSecretBodyStore && $completeSecretBodiesStore[$currentSecretBodyStore.Name]
-			? getPropertyGroups($currentSecretBodyStore, $secretBodyPropertyStore, $partPropertyStore)
+		$selectedSecretBody && $completeSecretBodiesStore[$selectedSecretBody.Name]
+			? getPropertyGroups($selectedSecretBody, $secretBodyPropertyStore, $partPropertyStore)
 			: {};
 </script>
 

@@ -4,5 +4,5 @@ import type { PartLabelCount } from './part-label-count-store';
 
 export type MinifiedOptions = {
 	options: BodyOptions;
-	labels: Record<string, PartLabelCount[]>;
+	labels: Record<string, [string, number][]>;
 };

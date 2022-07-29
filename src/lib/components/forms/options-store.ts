@@ -1,6 +1,5 @@
+import type { SpeciesKeys } from '$lib/data/species';
 import { writable } from 'svelte/store';
-import type { BodyLaw } from '$lib/data/get-body-laws';
-import { SPECIES_OPTIONS, type SpeciesOption } from '$lib/data/species';
 
 export type BodyOptions = {
 	temperedHeart: boolean;
@@ -9,8 +8,9 @@ export type BodyOptions = {
 	fireSpine: boolean;
 	illusionBrain: boolean;
 	transcendantHeart: boolean;
-	law?: BodyLaw;
-	species: SpeciesOption;
+	law: string;
+	species: SpeciesKeys;
+	name: string;
 };
 
 const DefaultOptions: BodyOptions = {
@@ -20,8 +20,9 @@ const DefaultOptions: BodyOptions = {
 	illusionBrain: false,
 	fireSpine: false,
 	transcendantHeart: false,
-	species: SPECIES_OPTIONS[0],
-	law: undefined
+	species: 'human',
+	law: 'Body_Gong_1',
+	name: ''
 };
 
 export const bodyOptionsStore = writable(DefaultOptions);

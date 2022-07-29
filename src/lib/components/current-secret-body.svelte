@@ -2,15 +2,12 @@
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { labelStore } from '$lib/data/get-labels';
 	import { isBodyComplete } from '$lib/util/is-body-complete';
-	import { includes } from 'ramda';
 	import Button from './base/button.svelte';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelCountStore } from './stores/part-label-count-store';
 	import { partLabelStore } from './stores/part-label-store';
-
-	import { currentSecretBodyStore } from './stores/secret-bodies-store';
-	import { selectedStore } from './stores/selected-store';
+	import { selectedSecretBody, selectedStore } from './stores/selected-store';
 
 	$: allParts = $bodyPartsStore!;
 
@@ -24,10 +21,8 @@
 		});
 	};
 
-	$: secretBodyParts = $currentSecretBodyStore?.Parts;
-	$: completion = $currentSecretBodyStore
-		? isBodyComplete($currentSecretBodyStore, $partLabelStore)
-		: {};
+	$: secretBodyParts = $selectedSecretBody?.Parts;
+	$: completion = $selectedSecretBody ? isBodyComplete($selectedSecretBody, $partLabelStore) : {};
 </script>
 
 {#if secretBodyParts}

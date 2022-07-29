@@ -4,8 +4,7 @@
 	import BodyPartItem from './body-part-item.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelStore } from './stores/part-label-store';
-	import { currentSecretBodyStore } from './stores/secret-bodies-store';
-	import { selectedStore } from './stores/selected-store';
+	import { selectedSecretBody, selectedStore } from './stores/selected-store';
 
 	let allParts = $bodyPartsStore!;
 
@@ -17,7 +16,7 @@
 	};
 
 	$: parts = $currentSpeciesPartsStore.map((name) => allParts.map[name]);
-	$: currentBodyNames = $currentSecretBodyStore?.Parts.map((p) => p.Name);
+	$: currentBodyNames = $selectedSecretBody?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined
 			? parts
