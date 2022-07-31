@@ -15,9 +15,18 @@
 	function mouseLeave() {
 		isHovered = false;
 	}
+
+	let className: string = '';
+	export { className as class };
 </script>
 
-<div on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove}>
+<div
+	on:mouseover={mouseOver}
+	on:mouseleave={mouseLeave}
+	on:mousemove={mouseMove}
+	on:click
+	class={className}
+>
 	<slot />
 </div>
 

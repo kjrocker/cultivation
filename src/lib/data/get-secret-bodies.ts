@@ -69,7 +69,17 @@ export const getSecretBodies = async () => {
 					Levels: translated.Levels.li.map((level: any) => ({
 						...level,
 						SuperPartProperties:
-							level.SuperPartProperties?.li?.map((part: any) => stripAttributePrefix(part)) ?? []
+							level.SuperPartProperties?.li?.map((part: any) => {
+								const stripped = stripAttributePrefix(part);
+								if (stripped.BAddV) {
+									stripped.BAddV = Number.parseFloat(stripped.BAddV as string);
+								} else if (stripped.AddP) {
+									stripped.AddP = Number.parseFloat(stripped.AddP as string);
+								} else if (stripped.AddV) {
+									stripped.AddV = Number.parseFloat(stripped.AddV as string);
+								}
+								return stripped;
+							}) ?? []
 					}))
 				};
 			});

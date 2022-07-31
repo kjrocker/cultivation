@@ -18,6 +18,15 @@
 
 	let importSlider = false;
 	let exportSlider = false;
+
+	$: {
+		if ($selectedBodyPart) {
+			console.log({
+				part: $selectedBodyPart.Name,
+				labels: $partLabelStore[$selectedBodyPart.Name]
+			});
+		}
+	}
 </script>
 
 <div class="flex">

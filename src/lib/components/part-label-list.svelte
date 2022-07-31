@@ -7,8 +7,6 @@
 	import { partLabelCountStore } from './stores/part-label-count-store';
 	import { partLabelStore } from './stores/part-label-store';
 
-	let labels = $labelStore!;
-
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
 	export let bodyPart: BodyPart;
 
@@ -40,7 +38,7 @@
 	$: filteredLabels = sortBy(
 		(view) =>
 			selected.find((l) => l.Name === view.Name) ? view.MaxLevel * -1000 : view.MaxLevel * -1,
-		labels?.list?.filter((label) => filterLabelByPart(bodyPart, label)) ?? []
+		$labelStore.list?.filter((label) => filterLabelByPart(bodyPart, label)) ?? []
 	);
 </script>
 
