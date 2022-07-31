@@ -48,7 +48,7 @@ export const TemperedLabelConfig: Record<string, { inherits: string[] }> = {
 
 export const TemperedPartConfig: Record<string, { include: string[]; exclude: string[] }> = {
 	Brain: {
-		include: ['QuenchingLabel_Lv0_Brain'],
+		include: ['QuenchingLabel_Lv0_Brain', 'QuenchingLabel_Special2'],
 		exclude: ['QuenchingLabel_Lv0_Base_Organ']
 	},
 	LeftEye: {
@@ -80,7 +80,7 @@ export const TemperedPartConfig: Record<string, { include: string[]; exclude: st
 		exclude: ['QuenchingLabel_Lv0_Base_Organ']
 	},
 	Heart: {
-		include: ['QuenchingLabel_Lv0_Heart'],
+		include: ['QuenchingLabel_Lv0_Heart', 'QuenchingLabel_Special3'],
 		exclude: ['QuenchingLabel_Lv0_Base_Organ']
 	},
 	Liver: {
@@ -112,7 +112,7 @@ export const TemperedPartConfig: Record<string, { include: string[]; exclude: st
 		exclude: ['QuenchingLabel_Lv0_Base_Organ']
 	},
 	Spine: {
-		include: ['QuenchingLabel_Lv0_Spine'],
+		include: ['QuenchingLabel_Lv0_Spine', 'QuenchingLabel_Special1'],
 		exclude: ['QuenchingLabel_Lv0_Base_Bone']
 	}
 };

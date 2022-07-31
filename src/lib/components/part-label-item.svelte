@@ -3,6 +3,8 @@
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import { CheckCircle } from '@steeze-ui/iconic-free';
+	import Tooltip from './base/tooltip.svelte';
+	import PropertyTooltip from './property-tooltip.svelte';
 
 	export let onClick: (e: MouseEvent, label: LabelView) => void;
 	export let label: LabelView;
@@ -17,9 +19,17 @@
 
 	// @ts-expect-error
 	$: color = levelColors[label.MaxLevel] ?? 'text-gray-900';
+	$: properties = label.SuperPartProperties?.map((v) => v.Name).join(', ') ?? '';
 </script>
 
-<li class="p-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
+<Tooltip class="p-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
+	<svelte:fragment slot="tooltip">
+		<PropertyTooltip
+			properties={label.SuperPartProperties}
+			modifiers={label.Modifier}
+			level={label.MaxLevel}
+		/>
+	</svelte:fragment>
 	<BodyTypeIcon className="h-10 w-10" type={label.BodyPart} />
 	<div class="ml-3 mr-5 w-full">
 		<div class="flex justify-between">
@@ -30,6 +40,6 @@
 				<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
 			{/if}
 		</div>
-		<!-- <p class="text-sm text-gray-500">{label.LinkItem}</p> -->
+		<p class="text-sm text-gray-500 max-w-xs overflow-ellipsis">{label.LinkItem}</p>
 	</div>
-</li>
+</Tooltip>

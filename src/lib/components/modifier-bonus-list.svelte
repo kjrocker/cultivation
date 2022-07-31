@@ -1,33 +1,7 @@
 <script lang="ts">
-	import type { Modifier, ModifierProperty } from '$lib/data/get-modifiers';
-	import { undefinedSum } from '$lib/util/undefined-sum';
-	import { concat, groupBy, mapObjIndexed, pipe } from 'ramda';
+	import { getAllModifierGroups } from '$lib/util/get-all-modifier-groups';
 	import PropertyBonusListItem from './property-bonus-list-item.svelte';
 	import { partModifierStore, secretBodyModifierStore } from './stores/current-modifiers-store';
-
-	const getAllModifierGroups = (
-		bodyProps: Modifier[],
-		partProps: Record<string, Modifier[]>
-	): Record<string, ModifierProperty> => {
-		const partProperties = Object.values(partProps).reduce(concat, []);
-		const allProperties = [...partProperties, ...bodyProps]
-			.filter((v) => v && v.Properties && Array.isArray(v.Properties))
-			.flatMap((v) => v.Properties);
-		return pipe(
-			groupBy<ModifierProperty, string>((v) => v.Name),
-			mapObjIndexed(
-				(list: ModifierProperty[]): ModifierProperty =>
-					list.reduce((acc, next) => {
-						return {
-							...acc,
-							BAddV: undefinedSum(acc.BAddV, next.BAddV),
-							AddP: undefinedSum(acc.AddP, next.AddP),
-							AddV: undefinedSum(acc.AddV, next.AddV)
-						};
-					})
-			)
-		)(allProperties);
-	};
 
 	const MODIFIER_CONFIG = {
 		BodyPractice_SuperPartAddp_CatchFabao: { percentage: true },

@@ -8,7 +8,7 @@ const getXml = (fileName: string): Promise<string> => {
 		.then((blob) => blob.text());
 };
 
-const prefix = './cultivation/ACS/Settings';
+const prefix = '/cultivation/ACS/Settings';
 
 const getSettingsFile = async (file: SettingsEnum) => {
 	const fileName = `${prefix}/${file}.xml`;

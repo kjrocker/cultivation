@@ -9,20 +9,17 @@
 	export let max: number = Infinity;
 	export let percentage: boolean = false;
 	export let rate: boolean = false;
+	export let base: number = 0;
 
 	export let bonuses: PartProperty | undefined;
 
-	const calculateTotal = (
-		bonuses: PartProperty | undefined,
-		key: 'AddV' | 'BAddV' | 'AddP',
-		percentage: boolean = false
-	) => {
+	const calculateTotal = (bonuses: PartProperty | undefined, key: 'AddV' | 'BAddV' | 'AddP') => {
 		if (!bonuses) return 0;
 		const value = bonuses[key] ?? 0;
-		return percentage ? value * 100 : value;
+		return value;
 	};
 
-	$: baseValue = calculateTotal(bonuses, 'BAddV');
+	$: baseValue = base + calculateTotal(bonuses, 'BAddV');
 	$: basePercent = 1 + calculateTotal(bonuses, 'AddP');
 	$: bonusValue = calculateTotal(bonuses, 'AddV');
 	$: total = min(baseValue * basePercent + bonusValue, max);
