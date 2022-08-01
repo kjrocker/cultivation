@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { modifierStore } from '$lib/data/get-modifiers';
-	import { PropertyConfiguration, type PropertyConfig } from '$lib/data/property-config';
-	import { formatNumber } from '$lib/util/format-number';
+	import { PropertyConfiguration } from '$lib/data/property-config';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
 	import type { PartProperty } from '$lib/util/part-properties';
 	import { propertyToString } from '$lib/util/property-to-tooltip-string';

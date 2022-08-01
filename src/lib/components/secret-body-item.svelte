@@ -2,9 +2,8 @@
 	import { secretBodyStore } from '$lib/data/get-secret-bodies';
 	import { CheckCircle } from '@steeze-ui/iconic-free';
 	import { Icon } from '@steeze-ui/svelte-icon';
-	import { difference, intersection, union } from 'ramda';
+	import { intersection } from 'ramda';
 	import Tooltip from './base/tooltip.svelte';
-	import { bodyOptionsStore } from './forms/options-store';
 	import PropertyTooltip from './property-tooltip.svelte';
 	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
@@ -38,6 +37,6 @@
 	<span class="w-full h-full">
 		{body.DisplayName}
 	</span>{#if $completeSecretBodiesStore[body.Name]}
-		<Icon class="absolute top-0 left-0 inline h-5 w-5 text-green-400" src={CheckCircle} />
+		<Icon class="absolute bottom-1 right-1 inline h-5 w-5 text-green-400" src={CheckCircle} />
 	{/if}
 </Tooltip>

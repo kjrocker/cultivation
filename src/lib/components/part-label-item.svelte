@@ -25,9 +25,8 @@
 		return essenceNames.length !== 0 ? essenceNames.join(', ') : 'All';
 	};
 
-	// @ts-expect-error
+	// @ts-expect-error index mismatch is what the default is there for
 	$: color = levelColors[label.MaxLevel] ?? 'text-gray-900';
-	$: properties = label.SuperPartProperties?.map((v) => v.Name).join(', ') ?? '';
 	$: items = label.LinkItem ? getEssences(label.LinkItem, $essenceStore.map) : 'All';
 </script>
 

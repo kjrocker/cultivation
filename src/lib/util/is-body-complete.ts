@@ -6,7 +6,7 @@ export const isBodyComplete = (
 	body: SecretBody,
 	parts: PartLabelStore
 ): Record<string, boolean> => {
-	let secretBodyParts = body.Parts;
+	const secretBodyParts = body.Parts;
 	return secretBodyParts?.reduce((acc, part) => {
 		const needed = part.Labels.map((l) => l.Name);
 		const current = parts[part.Name]?.map((l) => l.Name) ?? [];

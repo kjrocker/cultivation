@@ -11,7 +11,7 @@
 	import { partLabelStore } from './stores/part-label-store';
 	import { selectedSecretBody, selectedStore } from './stores/selected-store';
 
-	$: allParts = $bodyPartsStore!;
+	$: allParts = $bodyPartsStore;
 
 	const getTemperedLabelForPart = (name: string) => {
 		const { Name, Kind } = $bodyPartsStore.map[name];

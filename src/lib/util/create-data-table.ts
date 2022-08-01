@@ -6,7 +6,7 @@ export interface DataView<T> {
 	map: Record<string, T>;
 }
 
-export const createDataView = <T extends any>(data: T[], key: keyof T): DataView<T> => ({
+export const createDataView = <T>(data: T[], key: keyof T): DataView<T> => ({
 	keys: data.map((d) => d[key] as unknown as string),
 	list: data,
 	map: indexBy((d: T) => {

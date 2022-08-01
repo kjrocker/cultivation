@@ -7,11 +7,11 @@
 
 	export let name: string;
 	export let displayName: string;
-	export let max: number = Infinity;
-	export let min: number = -Infinity;
-	export let percentage: boolean = false;
-	export let rate: boolean = false;
-	export let base: number = 0;
+	export let max = Infinity;
+	export let min = -Infinity;
+	export let percentage = false;
+	export let rate = false;
+	export let base = 0;
 
 	export let bonuses: PartProperty | undefined;
 

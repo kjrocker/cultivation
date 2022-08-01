@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
-	import { isEmpty, mapObjIndexed } from 'ramda';
+	import { mapObjIndexed } from 'ramda';
 	import Button from './base/button.svelte';
 	import Slider from './base/slider.svelte';
 	import { bodyOptionsStore } from './forms/options-store';

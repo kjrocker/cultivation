@@ -4,7 +4,7 @@
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import { getRemoldCount } from '../util/get-remold-count';
 	import { partLabelStore } from './stores/part-label-store';
-import { bodyOptionsStore } from './forms/options-store';
+	import { bodyOptionsStore } from './forms/options-store';
 
 	export let selected: boolean;
 	export let labelCount: number;

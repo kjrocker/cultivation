@@ -11,7 +11,9 @@
 	{#each Object.keys(groups) as name}
 		<PropertyBonusListItem
 			{name}
-			displayName={`${groups[name].DisplayName ?? PropertyConfiguration[name]?.DisplayName ?? name}`}
+			displayName={`${
+				groups[name].DisplayName ?? PropertyConfiguration[name]?.DisplayName ?? name
+			}`}
 			bonuses={groups[name]}
 			percentage={!!PropertyConfiguration[name]?.percentage}
 			rate={!!PropertyConfiguration[name]?.rate}
