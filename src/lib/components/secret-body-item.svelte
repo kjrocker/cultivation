@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { secretBodyStore } from '$lib/data/get-secret-bodies';
-	import { last } from 'ramda';
+	import { CheckCircle } from '@steeze-ui/iconic-free';
+	import { Icon } from '@steeze-ui/svelte-icon';
+	import { difference, intersection, union } from 'ramda';
 	import Tooltip from './base/tooltip.svelte';
+	import { bodyOptionsStore } from './forms/options-store';
 	import PropertyTooltip from './property-tooltip.svelte';
+	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
+	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { selectedStore } from './stores/selected-store';
 
 	export let name: string;
@@ -10,14 +15,18 @@
 	$: body = $secretBodyStore.map[name];
 	$: properties = body.Levels.flatMap((v) => v.SuperPartProperties);
 	$: modifiers = body.Levels.map((v) => v.Modifier).filter((mod) => mod && mod !== '');
+	$: overlappingNames = intersection(
+		$currentSpeciesPartsStore,
+		body.Parts.map((p) => p.Name)
+	);
 </script>
 
 <Tooltip
 	on:click={() => {
 		selectedStore.toggleSecretBody(body.Name);
-		selectedStore.update((v) => ({ ...v, bodyPart: body.Parts[0].Name }));
+		selectedStore.update((v) => ({ ...v, bodyPart: overlappingNames[0] ?? undefined }));
 	}}
-	class={`py-4 px-1 text-center border-2 font-medium text-md cursor-pointer ${
+	class={`py-4 relative px-1 text-center border-2 font-medium text-md cursor-pointer ${
 		$selectedStore.secretBody === name
 			? 'border-indigo-500 text-indigo-600'
 			: 'border-transparent text-gray-900 hover:bg-gray-50 hover:border-gray-300'
@@ -28,5 +37,7 @@
 	</svelte:fragment>
 	<span class="w-full h-full">
 		{body.DisplayName}
-	</span>
+	</span>{#if $completeSecretBodiesStore[body.Name]}
+		<Icon class="absolute top-0 left-0 inline h-5 w-5 text-green-400" src={CheckCircle} />
+	{/if}
 </Tooltip>

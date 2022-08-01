@@ -5,6 +5,8 @@
 	import { CheckCircle } from '@steeze-ui/iconic-free';
 	import Tooltip from './base/tooltip.svelte';
 	import PropertyTooltip from './property-tooltip.svelte';
+	import { essenceStore, type EssenceName } from './stores/essence-names-store';
+	import { identity } from 'ramda';
 
 	export let onClick: (e: MouseEvent, label: LabelView) => void;
 	export let label: LabelView;
@@ -17,9 +19,16 @@
 		16: 'text-green-600'
 	};
 
+	const getEssences = (linkItem: string, essences: Record<string, EssenceName>): string => {
+		const names = linkItem.split('|');
+		const essenceNames = names.map((name) => essences[name].ThingName).filter(identity);
+		return essenceNames.length !== 0 ? essenceNames.join(', ') : 'All';
+	};
+
 	// @ts-expect-error
 	$: color = levelColors[label.MaxLevel] ?? 'text-gray-900';
 	$: properties = label.SuperPartProperties?.map((v) => v.Name).join(', ') ?? '';
+	$: items = label.LinkItem ? getEssences(label.LinkItem, $essenceStore.map) : 'All';
 </script>
 
 <Tooltip class="p-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
@@ -40,6 +49,8 @@
 				<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
 			{/if}
 		</div>
-		<p class="text-sm text-gray-500 max-w-xs overflow-ellipsis">{label.LinkItem}</p>
+		<p class="text-sm text-gray-500 max-w-xs overflow-ellipsis">
+			{items}
+		</p>
 	</div>
 </Tooltip>

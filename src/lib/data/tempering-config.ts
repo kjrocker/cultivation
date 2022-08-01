@@ -121,4 +121,7 @@ export const TemperedPartConfig: Record<string, { include: string[]; exclude: st
 
 // Help determining which tempered label goes with a part
 // Derived from the above, but may drift so we won't use the above config directly
-export const PartToTemperedMap = mapObjIndexed((value) => head(value.include), TemperedPartConfig);
+export const PartToTemperedMap = mapObjIndexed(
+	(value) => head(value.include) as string,
+	TemperedPartConfig
+);
