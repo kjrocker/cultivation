@@ -1,3 +1,5 @@
+import { head, mapObjIndexed } from 'ramda';
+
 export const TemperedLabelConfig: Record<string, { inherits: string[] }> = {
 	QuenchingLabel_Lv0_Brain: {
 		inherits: ['QuenchingLabel_Lv0_Base_Organ']
@@ -116,3 +118,7 @@ export const TemperedPartConfig: Record<string, { include: string[]; exclude: st
 		exclude: ['QuenchingLabel_Lv0_Base_Bone']
 	}
 };
+
+// Help determining which tempered label goes with a part
+// Derived from the above, but may drift so we won't use the above config directly
+export const PartToTemperedMap = mapObjIndexed((value) => head(value.include), TemperedPartConfig);

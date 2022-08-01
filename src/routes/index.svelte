@@ -2,9 +2,10 @@
 	import Button from '$lib/components/base/button.svelte';
 	import BodyPartList from '$lib/components/body-part-list.svelte';
 	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
+	import ExportSlider from '$lib/components/export-slider.svelte';
 	import OptionsForm from '$lib/components/forms/options-form.svelte';
 	import { bodyOptionsStore } from '$lib/components/forms/options-store';
-	import ImportExportSlider from '$lib/components/export-slider.svelte';
+	import ImportSlider from '$lib/components/import-slider.svelte';
 	import ModifierBonusList from '$lib/components/modifier-bonus-list.svelte';
 	import PartLabelList from '$lib/components/part-label-list.svelte';
 	import PropertyBonusList from '$lib/components/property-bonus-list.svelte';
@@ -13,20 +14,14 @@
 	import { partLabelStore } from '$lib/components/stores/part-label-store';
 	import { selectedBodyPart } from '$lib/components/stores/selected-store';
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
-	import ImportSlider from '$lib/components/import-slider.svelte';
-	import ExportSlider from '$lib/components/export-slider.svelte';
+	import { onMount } from 'svelte';
 
 	let importSlider = false;
 	let exportSlider = false;
 
-	$: {
-		if ($selectedBodyPart) {
-			console.log({
-				part: $selectedBodyPart.Name,
-				labels: $partLabelStore[$selectedBodyPart.Name]
-			});
-		}
-	}
+	onMount(() => {
+		partLabelCountStore.init($bodyPartsStore.species[$bodyOptionsStore.species]);
+	});
 </script>
 
 <div class="flex">
