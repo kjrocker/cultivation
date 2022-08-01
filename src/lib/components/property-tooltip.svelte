@@ -4,37 +4,13 @@
 	import { formatNumber } from '$lib/util/format-number';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
 	import type { PartProperty } from '$lib/util/part-properties';
+	import { propertyToString } from '$lib/util/property-to-tooltip-string';
 	import { values } from 'ramda';
 
 	export let properties: PartProperty[] | undefined = [];
 	let modifierNames: string[] | undefined;
 	export let level: number;
 	export { modifierNames as modifiers };
-
-	const propertyToString = <T extends PartProperty>(
-		prop: T,
-		level: number = 1,
-		config: Partial<{ percentage: boolean; rate: boolean }>
-	): string => {
-		if (prop.BAddV) {
-			return `Base ${formatNumber(prop.BAddV * level, {
-				...config,
-				precision: 2,
-				plusSign: true
-			})}`;
-		} else if (prop.AddP) {
-			return formatNumber(prop.AddP * level, {
-				percentage: true,
-				rate: false,
-				precision: 2,
-				plusSign: true
-			});
-		} else if (prop.AddV) {
-			return formatNumber(prop.AddV * level, { ...config, precision: 2, plusSign: true });
-		} else {
-			return `No bonus detected, how did that happen?`;
-		}
-	};
 
 	$: modifiers = modifierNames
 		? modifierNames.map((name) => $modifierStore.map[name]).filter((v) => v)
