@@ -6,10 +6,10 @@
 
 	export let isComplete: boolean;
 	export let partDisplayName: string;
-	export let disabled: boolean = false;
+	export let disabled = false;
 	export let secretLabels: SecretBody['Parts'][number]['Labels'];
 
-	const allLabels = $labelStore!;
+	const allLabels = $labelStore;
 </script>
 
 <li class="py-2 px-2 hover:bg-gray-50 cursor-pointer" on:click>

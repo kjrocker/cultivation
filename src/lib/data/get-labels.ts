@@ -53,7 +53,7 @@ export const getLabels = async () => {
 			const transformLabel = (v: any) => ({ ...stripAttributePrefix(v), CacheName });
 			cache.Labels.li.forEach((v: any) => {
 				const newLabel = transformLabel(v);
-				// @ts-expect-error
+				// @ts-expect-error internal Type safety is overrated, it's static data
 				acc[newLabel.Label] = newLabel;
 			});
 			return acc;

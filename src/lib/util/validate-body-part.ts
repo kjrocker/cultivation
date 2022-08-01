@@ -1,6 +1,6 @@
 import type { PartLabelStore } from '$lib/components/stores/part-label-store';
 import type { LabelView } from '$lib/data/get-labels';
-import { countBy, isEmpty, maxBy, omit, pipe, reduce, toPairs, uniq } from 'ramda';
+import { countBy, isEmpty, maxBy, omit, pipe, toPairs } from 'ramda';
 
 const reduceLabelsToGroups = pipe(
 	countBy((l: LabelView) => l.Group),
@@ -14,15 +14,17 @@ const reduceLabelsToGroups = pipe(
 
 const getMutuallyExclusiveErrorMessage = (labels: LabelView[]): string | undefined => {
 	const [largestGroup, count] = reduceLabelsToGroups(labels);
+	let badLabels: string[];
 	switch (count) {
 		case -Infinity:
 		case 0:
 		case 1:
 			return undefined;
 		case 2:
-			const badLabels = labels
-				.filter((v) => v.Group === largestGroup)
-				.map((v) => v.DisplayName) as [string, string];
+			badLabels = labels.filter((v) => v.Group === largestGroup).map((v) => v.DisplayName) as [
+				string,
+				string
+			];
 			return `${badLabels[0]} and ${badLabels[1]} are contradictory.`;
 		default:
 			return 'Some labels are mutually exclusive';

@@ -1,4 +1,4 @@
-import { curry, multiply, pipe, when, clamp } from 'ramda';
+import { curry, multiply, pipe, when } from 'ramda';
 
 const roundTo = curry(function roundTo(precision: number, num: number) {
 	// @ts-expect-error this is some type coercion magic

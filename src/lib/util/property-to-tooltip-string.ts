@@ -3,7 +3,7 @@ import type { PartProperty } from './part-properties';
 
 export const propertyToString = <T extends PartProperty>(
 	prop: T,
-	level: number = 1,
+	level = 1,
 	config: Partial<{ percentage: boolean; rate: boolean }>
 ): string => {
 	if (prop.BAddV) {

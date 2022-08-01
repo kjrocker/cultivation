@@ -49,7 +49,7 @@
 				selected={!!selected.find((l) => l.Name === label.Name)}
 				{label}
 				onClick={(e, label) => {
-					return !!selected.find((l) => l.Name === label.Name)
+					return selected.find((l) => l.Name === label.Name)
 						? handleRemove(e, label)
 						: handleAdd(e, label);
 				}}
