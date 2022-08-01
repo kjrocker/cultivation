@@ -28,6 +28,7 @@ jobs:
       - name: Install and Build
         run: |
           yarn install
+          yarn test:ci
           yarn build
 
       - name: Deploy to GitHub Pages

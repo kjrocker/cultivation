@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { formatNumber } from '$lib/util/format-number';
 	import type { PartProperty } from '$lib/util/part-properties';
 
 	import { min } from 'ramda';
@@ -28,20 +29,16 @@
 <Tooltip>
 	<svelte:fragment slot="tooltip">
 		<p>{displayName}</p>
-		<p>Base Value: {Math.round(percentage ? baseValue * 100 : baseValue)}</p>
-		<p>Percentage: {Math.round(basePercent * 100)}%</p>
-		<p>Bonus: {Math.round(percentage ? bonusValue * 100 : bonusValue)}</p>
+		<p>Base Value: {formatNumber(baseValue, { percentage, rate })}</p>
+		<p>Percentage: {formatNumber(basePercent, { percentage: true, rate })}</p>
+		<p>Bonus: {formatNumber(bonusValue, { percentage, rate })}</p>
 	</svelte:fragment>
 	<div class="mx-2 py-1">
 		<span>
 			{displayName}:
 		</span>
 		<span>
-			{percentage
-				? `${Math.round(total * 100)}%`
-				: rate
-				? `${Math.round(total)}/s`
-				: `${Math.round(total)}`}
+			{formatNumber(total, { percentage, rate })}
 		</span>
 	</div>
 </Tooltip>
