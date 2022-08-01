@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { essenceStore } from '$lib/components/stores/essence-names-store';
+
 	import { bodyLawStore } from '$lib/data/get-body-laws';
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { labelStore } from '$lib/data/get-labels';
@@ -7,7 +9,7 @@
 
 	import JSONTree from 'svelte-json-tree';
 
-	$: value = $secretBodyStore;
+	$: value = $essenceStore;
 </script>
 
 <JSONTree {value} defaultExpandedLevel={2} />

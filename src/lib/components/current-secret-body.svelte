@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { labelStore } from '$lib/data/get-labels';
+	import { PartToTemperedMap } from '$lib/data/tempering-config';
 	import { isBodyComplete } from '$lib/util/is-body-complete';
+	import { uniqBy } from 'ramda';
 	import Button from './base/button.svelte';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
@@ -11,12 +13,31 @@
 
 	$: allParts = $bodyPartsStore!;
 
+	const getTemperedLabelForPart = (name: string) => {
+		const { Name, Kind } = $bodyPartsStore.map[name];
+		let temperedName;
+		if (PartToTemperedMap[Name]) {
+			temperedName = PartToTemperedMap[Name];
+		} else {
+			temperedName = {
+				Organ: 'QuenchingLabel_Lv0_Base_Organ',
+				Bone: 'QuenchingLabel_Lv0_Base_Bone',
+				Flesh: 'QuenchingLabel_Lv0_Base_Flesh'
+			}[Kind];
+		}
+		return $labelStore.map[temperedName];
+	};
+
 	const completeBody = async () => {
 		const labels = $labelStore!;
 		secretBodyParts?.forEach(({ Name, Labels }) => {
 			if ($currentSpeciesPartsStore.includes(Name)) {
 				const myLabels = Labels.map(({ Name }) => labels.map[Name]);
-				partLabelCountStore.append(Name, myLabels);
+				const temperedLabel = getTemperedLabelForPart(Name);
+				partLabelCountStore.append(
+					Name,
+					uniqBy((v) => v.Name, [...myLabels, temperedLabel])
+				);
 			}
 		});
 	};

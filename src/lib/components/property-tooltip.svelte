@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { modifierStore } from '$lib/data/get-modifiers';
-	import { PropertyConfiguration } from '$lib/data/property-config';
+	import { PropertyConfiguration, type PropertyConfig } from '$lib/data/property-config';
+	import { formatNumber } from '$lib/util/format-number';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
 	import type { PartProperty } from '$lib/util/part-properties';
 	import { values } from 'ramda';
@@ -13,14 +14,23 @@
 	const propertyToString = <T extends PartProperty>(
 		prop: T,
 		level: number = 1,
-		percentage: boolean = false
+		config: Partial<{ percentage: boolean; rate: boolean }>
 	): string => {
 		if (prop.BAddV) {
-			return `Base ${prop.BAddV < 0 ? '' : '+'}${prop.BAddV * level * (percentage ? 100 : 1)}`;
+			return `Base ${formatNumber(prop.BAddV * level, {
+				...config,
+				precision: 2,
+				plusSign: true
+			})}`;
 		} else if (prop.AddP) {
-			return `${prop.AddP < 0 ? '' : '+'}${prop.AddP * level * 100}%`;
+			return formatNumber(prop.AddP * level, {
+				percentage: true,
+				rate: false,
+				precision: 2,
+				plusSign: true
+			});
 		} else if (prop.AddV) {
-			return `${prop.AddV < 0 ? '' : '+'}${prop.AddV * level * (percentage ? 100 : 1)}`;
+			return formatNumber(prop.AddV * level, { ...config, precision: 2, plusSign: true });
 		} else {
 			return `No bonus detected, how did that happen?`;
 		}
@@ -36,9 +46,9 @@
 {#each regularProps as prop}
 	<p>
 		{PropertyConfiguration[prop.Name].DisplayName ?? prop.Name}
-		{propertyToString(prop, level, PropertyConfiguration[prop.Name].percentage ?? false)}
+		{propertyToString(prop, level, PropertyConfiguration[prop.Name])}
 	</p>
 {/each}
 {#each modifierProps as prop}
-	<p>{prop.DisplayName} {propertyToString(prop, level)}</p>
+	<p>{prop.DisplayName} {propertyToString(prop, level, PropertyConfiguration[prop.Name])}</p>
 {/each}

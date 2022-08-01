@@ -12,9 +12,16 @@ export const formatNumber = (
 		rate: boolean;
 		precision: number;
 		locale: boolean;
+		plusSign: boolean;
 	}> = {}
 ): string => {
-	const { percentage = false, rate = false, precision = 0, locale = true } = config;
+	const {
+		percentage = false,
+		rate = false,
+		precision = 0,
+		locale = true,
+		plusSign = false
+	} = config;
 	return pipe(
 		when(() => percentage, multiply(100)),
 		roundTo(precision),
@@ -26,6 +33,10 @@ export const formatNumber = (
 		when(
 			() => rate,
 			(v: string) => `${v}/sec`
+		),
+		when(
+			(v) => Number.parseFloat(v) > 0 && plusSign,
+			(v: string) => `+${v}`
 		)
 	)(num);
 };

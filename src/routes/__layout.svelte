@@ -5,13 +5,15 @@
 	import { bodyLawStore } from '$lib/data/get-body-laws';
 	import { labelStore } from '$lib/data/get-labels';
 	import { modifierStore } from '$lib/data/get-modifiers';
+	import { essenceStore } from '$lib/components/stores/essence-names-store';
 
 	const preloadPromises = [
 		bodyPartsStore.init(),
 		secretBodyStore.init(),
 		bodyLawStore.init(),
 		labelStore.init(),
-		modifierStore.init()
+		modifierStore.init(),
+		essenceStore.init()
 	];
 
 	const preload = Promise.all(preloadPromises);
@@ -20,14 +22,12 @@
 {#await preload}
 	Loading...
 {:then}
-	<div class="mx-8 my-2">
+	<div class="body mx-8 my-2">
 		<slot />
 	</div>
 {/await}
 
 <style>
 	.body {
-		margin-right: 10px;
-		margin-left: 10px;
 	}
 </style>

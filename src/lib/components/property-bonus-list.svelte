@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { SecretBody } from '$lib/data/get-secret-bodies';
+	import { PropertyConfiguration, SecretBodyProperties } from '$lib/data/property-config';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
 	import type { PartProperty } from '$lib/util/part-properties';
 	import BonusListItem from './property-bonus-list-item.svelte';
@@ -24,74 +25,15 @@
 </script>
 
 <div class="border rounded-md my-2">
-	<BonusListItem name="AtkPower" displayName="Attack" bonuses={propertyGroups['AtkPower']} />
-	<BonusListItem name="DefPower" displayName="Defense" bonuses={propertyGroups['DefPower']} />
-	<BonusListItem
-		name="AtkRate"
-		displayName="Attack Rate"
-		bonuses={propertyGroups['AtkRate']}
-		max={0.95}
-		percentage
-	/>
-	<BonusListItem
-		name="DefRate"
-		displayName="Defense Rate"
-		bonuses={propertyGroups['DefRate']}
-		max={0.95}
-		percentage
-	/>
-	<hr />
-	<BonusListItem
-		name="ArmorPenetration"
-		displayName="Armor Penetration"
-		bonuses={propertyGroups['ArmorPenetration']}
-	/>
-	<BonusListItem
-		name="CatchFabao"
-		displayName="Artifact Suppression"
-		bonuses={propertyGroups['CatchFabao']}
-	/>
-	<BonusListItem
-		name="FightCost"
-		displayName="Qi Consumption"
-		bonuses={propertyGroups['FightCost']}
-		rate
-	/>
-	<BonusListItem
-		name="RecoverQi"
-		displayName="Qi Recovery"
-		bonuses={propertyGroups['RecoverQi']}
-		rate
-	/>
-	<hr />
-	<BonusListItem
-		name="ResistanceJin"
-		displayName="Metal Resist"
-		bonuses={propertyGroups['ResistanceJin']}
-		percentage
-	/>
-	<BonusListItem
-		name="ResistanceTu"
-		displayName="Earth Resist"
-		bonuses={propertyGroups['ResistanceTu']}
-		percentage
-	/>
-	<BonusListItem
-		name="ResistanceShui"
-		displayName="Water Resist"
-		bonuses={propertyGroups['ResistanceShui']}
-		percentage
-	/>
-	<BonusListItem
-		name="ResistanceMu"
-		displayName="Wood Resist"
-		bonuses={propertyGroups['ResistanceMu']}
-		percentage
-	/>
-	<BonusListItem
-		name="ResistanceHuo"
-		displayName="Fire Resist"
-		bonuses={propertyGroups['ResistanceHuo']}
-		percentage
-	/>
+	{#each SecretBodyProperties as name}
+		<BonusListItem
+			{name}
+			displayName={PropertyConfiguration[name].DisplayName ?? name}
+			bonuses={propertyGroups[name]}
+			{...PropertyConfiguration[name] ?? {}}
+		/>
+		{#if name === 'DefRate' || name === 'RecoverQi'}
+			<hr />
+		{/if}
+	{/each}
 </div>

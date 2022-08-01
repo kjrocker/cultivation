@@ -42,5 +42,6 @@
 		border-radius: 4px;
 		padding: 4px;
 		position: absolute;
+		z-index: 10000;
 	}
 </style>
