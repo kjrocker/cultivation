@@ -1,8 +1,7 @@
-import { getLanguage } from '$lib/api/get-data';
-
-import { createStaticAsyncStore } from '$lib/data/async-readable-store';
-import { createDataView } from '$lib/util/create-data-table';
-import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
+import { getLanguage } from './api/get-data';
+import { createStaticAsyncStore } from './util/async-readable-store';
+import { createDataView } from './util/create-data-table';
+import { stripAttributePrefix } from './util/strip-attribute-keys';
 
 export type EssenceName = { ThingName: string; Desc: string; Name: string };
 

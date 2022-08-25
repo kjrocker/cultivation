@@ -1,11 +1,11 @@
-import { getSettings, getLanguage } from '$lib/api/get-data';
-import { A_PREFIX } from '$lib/api/parser';
-import { createDataView } from '$lib/util/create-data-table';
+import { getSettings, getLanguage } from './api/get-data';
+import { A_PREFIX } from './api/parser';
+import { createDataView } from './util/create-data-table';
 import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
-import { renameKey } from '$lib/util/rename-key';
-import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
+import { renameKey } from './util/rename-key';
+import { stripAttributePrefix } from './util/strip-attribute-keys';
 import { indexBy, isEmpty, prop } from 'ramda';
-import { createStaticAsyncStore } from './async-readable-store';
+import { createStaticAsyncStore } from './util/async-readable-store';
 import { TemperedLabelConfig } from './tempering-config';
 
 export type LabelView = {

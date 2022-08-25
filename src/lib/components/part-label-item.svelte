@@ -5,7 +5,7 @@
 	import { CheckCircle } from '@steeze-ui/iconic-free';
 	import Tooltip from './base/tooltip.svelte';
 	import PropertyTooltip from './property-tooltip.svelte';
-	import { essenceStore, type EssenceName } from './stores/essence-names-store';
+	import { essenceStore, type EssenceName } from '../data/get-essence-names';
 	import { identity } from 'ramda';
 
 	export let onClick: (e: MouseEvent, label: LabelView) => void;

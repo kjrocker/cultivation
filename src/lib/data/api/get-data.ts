@@ -1,14 +1,21 @@
 import type { LanguageEnum } from 'src/types/language';
 import type { SettingsEnum } from 'src/types/settings';
+import axios from 'axios';
+import fs from 'fs/promises';
 import { parse } from './parser';
 
-const getXml = (fileName: string): Promise<string> => {
-	return fetch(fileName)
-		.then((val) => val.blob())
-		.then((blob) => blob.text());
+const isNode = (): boolean => {
+	return typeof module === 'object' && typeof module.exports === 'object';
 };
 
-const prefix = '/cultivation/ACS/Settings';
+const getXml = (fileName: string): Promise<string> => {
+	if (isNode()) {
+		return fs.readFile(`./static/${fileName}`).then((buffer) => buffer.toString());
+	}
+	return axios.get(`/cultivation/${fileName}`).then((response) => response.data);
+};
+
+const prefix = 'ACS/Settings';
 
 const getSettingsFile = async (file: SettingsEnum) => {
 	const fileName = `${prefix}/${file}.xml`;

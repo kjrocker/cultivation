@@ -9,5 +9,10 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true
+	},
+	"ts-node": {
+		"compilerOptions": {
+		  "module": "CommonJS"
+		}
 	}
 }
