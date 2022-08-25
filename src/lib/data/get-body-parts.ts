@@ -1,10 +1,10 @@
-import { getLanguage, getSettings } from '$lib/api/get-data';
-import { A_PREFIX } from '$lib/api/parser';
-import { createDataView } from '$lib/util/create-data-table';
-import { joinEnglishPaths } from '$lib/util/join-english-paths';
-import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
+import { getLanguage, getSettings } from './api/get-data';
+import { A_PREFIX } from './api/parser';
+import { createDataView } from './util/create-data-table';
+import { joinEnglishPaths } from './util/join-english-paths';
+import { stripAttributePrefix } from './util/strip-attribute-keys';
 import { isEmpty, omit, uniqBy } from 'ramda';
-import { createStaticAsyncStore } from './async-readable-store';
+import { createStaticAsyncStore } from './util/async-readable-store';
 import { SPECIES_OPTIONS, type SpeciesKeys } from './species';
 
 const modifyTranslationPaths = (val: string | number) => {

@@ -1,10 +1,10 @@
-import { getLanguage, getSettings } from '$lib/api/get-data';
-import { A_PREFIX } from '$lib/api/parser';
-import { createDataView } from '$lib/util/create-data-table';
+import { getLanguage, getSettings } from './api/get-data';
+import { A_PREFIX } from './api/parser';
+import { createDataView } from './util/create-data-table';
 import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
-import { stripAttributePrefix } from '$lib/util/strip-attribute-keys';
+import { stripAttributePrefix } from './util/strip-attribute-keys';
 import { indexBy } from 'ramda';
-import { createStaticAsyncStore } from './async-readable-store';
+import { createStaticAsyncStore } from './util/async-readable-store';
 
 export type ModifierProperty = PartProperty &
 	Partial<{ DisplayName: string; Desc: string; FunctionKind: string }>;

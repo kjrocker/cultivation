@@ -5,7 +5,7 @@
 	import { bodyLawStore } from '$lib/data/get-body-laws';
 	import { labelStore } from '$lib/data/get-labels';
 	import { modifierStore } from '$lib/data/get-modifiers';
-	import { essenceStore } from '$lib/components/stores/essence-names-store';
+	import { essenceStore } from '$lib/data/get-essence-names';
 
 	const preloadPromises = [
 		bodyPartsStore.init(),
