@@ -4,7 +4,7 @@
 	import { SPECIES_OPTIONS } from '$lib/data/species';
 	import { partLabelCountStore } from '../stores/part-label-count-store';
 	import { selectedStore } from '../stores/selected-store';
-	import { bodyOptionsStore as options } from './options-store';
+	import { bodyOptionsStore as options } from '../stores/options-store';
 
 	const resetPartLabels = () => {
 		partLabelCountStore.setParts($bodyPartsStore.species[$options.species]);

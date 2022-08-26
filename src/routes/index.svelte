@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Button from '$lib/components/base/button.svelte';
+	import Slider from '$lib/components/base/slider.svelte';
 	import BodyPartList from '$lib/components/body-part-list.svelte';
 	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
-	import ExportSlider from '$lib/components/export-slider.svelte';
+	import EquipSecretBodiesForm from '$lib/components/equip-secret-bodies-form.svelte';
+	import ExportForm from '$lib/components/export-form.svelte';
 	import OptionsForm from '$lib/components/forms/options-form.svelte';
-	import { bodyOptionsStore } from '$lib/components/forms/options-store';
-	import ImportSlider from '$lib/components/import-slider.svelte';
+	import { bodyOptionsStore } from '$lib/components/stores/options-store';
+	import ImportForm from '$lib/components/import-form.svelte';
 	import ModifierBonusList from '$lib/components/modifier-bonus-list.svelte';
 	import PartLabelList from '$lib/components/part-label-list.svelte';
 	import PropertyBonusList from '$lib/components/property-bonus-list.svelte';
@@ -18,6 +20,7 @@
 
 	let importSlider = false;
 	let exportSlider = false;
+	let equipSlider = false;
 
 	onMount(() => {
 		partLabelCountStore.init($bodyPartsStore.species[$bodyOptionsStore.species]);
@@ -30,15 +33,24 @@
 		<Button
 			class="h-12 ml-4 mr-2 mt-4"
 			on:click={() => {
-				importSlider = true;
-			}}>Import</Button
+				equipSlider = true;
+			}}>Equip</Button
 		>
 		<Button
 			class="h-12 ml-2 mt-4"
 			on:click={() => {
 				exportSlider = true;
-			}}>Export</Button
+			}}>Backup</Button
 		>
+		<Button
+			class="h-12 ml-4 mr-2 mt-4"
+			on:click={() => {
+				importSlider = true;
+			}}>Restore</Button
+		>
+		<Slider title="Equip Secret Bodies" bind:open={equipSlider}><EquipSecretBodiesForm /></Slider>
+		<Slider title="Restore Cultivator" bind:open={importSlider}><ImportForm /></Slider>
+		<Slider title="Backup Cultivator" bind:open={exportSlider}><ExportForm /></Slider>
 	</div>
 </div>
 <SecretBodies />
@@ -56,5 +68,3 @@
 		<PropertyBonusList /><ModifierBonusList />
 	</div>
 </div>
-<ImportSlider bind:open={importSlider} />
-<ExportSlider bind:open={exportSlider} />

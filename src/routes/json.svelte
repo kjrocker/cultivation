@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { essenceStore } from '$lib/data/get-essence-names';
-
 	import { bodyLawStore } from '$lib/data/get-body-laws';
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { labelStore } from '$lib/data/get-labels';

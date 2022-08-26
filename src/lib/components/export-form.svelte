@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { mapObjIndexed, pickBy } from 'ramda';
 	import Button from './base/button.svelte';
-	import { bodyOptionsStore, type BodyOptions } from './forms/options-store';
+	import { bodyOptionsStore, type BodyOptions } from './stores/options-store';
 	import type { MinifiedOptions } from './stores/minified-cultivator';
 	import { partLabelCountStore, type PartLabelCountStore } from './stores/part-label-count-store';
 

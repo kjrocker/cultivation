@@ -1,6 +1,6 @@
 import { bodyPartsStore } from '$lib/data/get-body-parts';
 import { derived } from 'svelte/store';
-import { bodyOptionsStore } from '../forms/options-store';
+import { bodyOptionsStore } from './options-store';
 
 export const currentSpeciesPartsStore = derived(
 	[bodyOptionsStore, bodyPartsStore],

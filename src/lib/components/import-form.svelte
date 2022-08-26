@@ -2,7 +2,7 @@
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { mapObjIndexed } from 'ramda';
 	import Button from './base/button.svelte';
-	import { bodyOptionsStore } from './forms/options-store';
+	import { bodyOptionsStore } from './stores/options-store';
 	import type { MinifiedOptions } from './stores/minified-cultivator';
 	import { partLabelCountStore } from './stores/part-label-count-store';
 	import { selectedStore } from './stores/selected-store';

@@ -3,7 +3,7 @@ import { bodyPartsStore } from '$lib/data/get-body-parts';
 import { secretBodyStore } from '$lib/data/get-secret-bodies';
 import { SPECIES_CONFIG, type SpeciesOption } from '$lib/data/species';
 import { derived, writable, type Readable } from 'svelte/store';
-import { bodyOptionsStore } from '../forms/options-store';
+import { bodyOptionsStore } from './options-store';
 
 export type SelectedStore = { bodyPart?: string; secretBody?: string };
 
