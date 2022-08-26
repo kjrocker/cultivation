@@ -1,4 +1,5 @@
 import type { Modifier, ModifierProperty } from '$lib/data/get-modifiers';
+import type { SecretBody } from '$lib/data/get-secret-bodies';
 import { concat, pipe, groupBy, mapObjIndexed } from 'ramda';
 import type { PartProperty } from './part-properties';
 import { undefinedSum } from './undefined-sum';
@@ -23,6 +24,30 @@ export const sumAndGroupProperties = <T extends PartProperty>(
 				)
 		)
 	)(list) as unknown as Record<string, Required<T>>;
+};
+
+export const getSecretBodyPropertyGroups = (
+	body: SecretBody,
+	partProps: Record<string, PartProperty[]>
+): Record<string, PartProperty> => {
+	const partProperties = body.Parts.flatMap((part) => partProps[part.Name]);
+	const bodyPropsNew = body.Levels.flatMap((lvl) => lvl.SuperPartProperties);
+	const allProperties = [...partProperties, ...bodyPropsNew].filter((v) => v);
+	return sumAndGroupProperties(allProperties);
+};
+
+export const getSecretBodiesPropertyGroups = (
+	bodies: SecretBody[],
+	partProps: Record<string, PartProperty[]>
+): Record<string, PartProperty> => {
+	const partProperties = bodies.flatMap((body) =>
+		body.Parts.flatMap((part) => partProps[part.Name])
+	);
+	const bodyPropsNew = bodies.flatMap((body) =>
+		body.Levels.flatMap((lvl) => lvl.SuperPartProperties)
+	);
+	const allProperties = [...partProperties, ...bodyPropsNew].filter((v) => v);
+	return sumAndGroupProperties(allProperties);
 };
 
 export const getAllModifierGroups = (
