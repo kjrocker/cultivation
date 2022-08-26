@@ -1,4 +1,4 @@
-import type { BodyOptions } from '$lib/components/forms/options-store';
+import type { BodyOptions } from '$lib/components/stores/options-store';
 
 export const getRemoldCount = (kind: 'Flesh' | 'Bone' | 'Organ', options: BodyOptions) => {
 	switch (kind) {

@@ -1,12 +1,18 @@
+import { bodyLawStore } from '$lib/data/get-body-laws';
 import { secretBodyStore } from '$lib/data/get-secret-bodies';
 import { isWholeBodyComplete } from '$lib/util/is-body-complete';
 import { mapObjIndexed } from 'ramda';
 import { derived } from 'svelte/store';
+import { bodyOptionsStore } from './options-store';
 import { partLabelStore } from './part-label-store';
 
 export const completeSecretBodiesStore = derived(
-	[secretBodyStore, partLabelStore],
-	([secretBodies, partLabels]) => {
-		return mapObjIndexed((body) => isWholeBodyComplete(body, partLabels), secretBodies.map);
+	[secretBodyStore, partLabelStore, bodyLawStore, bodyOptionsStore],
+	([secretBodies, partLabels, laws, options]) => {
+		const bodies = laws.map[options.law].SuperParts;
+		return mapObjIndexed(
+			(body) => bodies.includes(body.Name) && isWholeBodyComplete(body, partLabels),
+			secretBodies.map
+		);
 	}
 );

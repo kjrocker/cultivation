@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let value: svelte.JSX.HTMLAttributes<HTMLInputElement>['value'];
+	export let group: svelte.JSX.HTMLAttributes<HTMLInputElement>['group'];
 	export let name: string;
 	export const type: string = '';
 </script>
@@ -15,6 +16,7 @@
 			on:change
 			on:input
 			bind:value
+			bind:group
 		/>
 	</div>
 </div>

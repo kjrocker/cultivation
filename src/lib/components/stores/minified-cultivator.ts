@@ -1,4 +1,4 @@
-import type { BodyOptions } from '../forms/options-store';
+import type { BodyOptions } from './options-store';
 
 export type MinifiedOptions = {
 	options: BodyOptions;
