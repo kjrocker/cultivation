@@ -17,6 +17,7 @@
 	import { selectedBodyPart } from '$lib/components/stores/selected-store';
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { onMount } from 'svelte';
+	import QiRecovery from '$lib/components/qi-recovery.svelte';
 
 	let importSlider = false;
 	let exportSlider = false;
@@ -65,6 +66,6 @@
 		{/if}
 	</div>
 	<div class="w-1/4 min-w-fit ml-1">
-		<PropertyBonusList /><ModifierBonusList />
+		<PropertyBonusList /><ModifierBonusList /><QiRecovery />
 	</div>
 </div>
