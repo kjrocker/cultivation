@@ -2,6 +2,7 @@
 	let isHovered = false;
 	let x: number;
 	let y: number;
+	export let disabled = false;
 
 	function mouseOver(event: any) {
 		isHovered = true;
@@ -30,7 +31,7 @@
 	<slot />
 </div>
 
-{#if isHovered}
+{#if isHovered && !disabled}
 	<div style="top: {y}px; left: {x}px;" class="tooltip"><slot name="tooltip" /></div>
 {/if}
 

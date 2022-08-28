@@ -18,6 +18,7 @@
 	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { onMount } from 'svelte';
 	import QiRecovery from '$lib/components/qi-recovery.svelte';
+	import BattleModifierList from '$lib/components/battle-modifier-list.svelte';
 
 	let importSlider = false;
 	let exportSlider = false;
@@ -66,6 +67,6 @@
 		{/if}
 	</div>
 	<div class="w-1/4 min-w-fit ml-1">
-		<PropertyBonusList /><ModifierBonusList /><QiRecovery />
+		<PropertyBonusList /><BattleModifierList /><ModifierBonusList />
 	</div>
 </div>
