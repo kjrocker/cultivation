@@ -2,6 +2,7 @@
 	import { bodyPartsStore } from '$lib/data/stores';
 	import type { BodyPart } from '$lib/data/types';
 	import Error from './base/error.svelte';
+	import Panel from './base/panel.svelte';
 	import BodyPartItem from './body-part-item.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelStore } from './stores/part-label-store';
@@ -27,7 +28,7 @@
 					.length;
 </script>
 
-<div class="my-2">
+<Panel>
 	{#if missing}
 		<Error class="w-full mb-2">
 			{!currentBodyParts.length
@@ -35,7 +36,9 @@
 				: `There are ${missing} body part(s) missing!`}
 		</Error>
 	{/if}
-	<ul class="divide-y divide-gray-200 border rounded-md">
+	<div
+		class="overflow-scroll overflow-x-hidden max-h-[75vh] divide-y divide-gray-200 rounded-md border-transparent border"
+	>
 		{#each currentBodyParts as part, i}
 			<BodyPartItem
 				selected={!!$selectedStore.bodyPart && part.Name === $selectedStore.bodyPart}
@@ -44,5 +47,5 @@
 				{part}
 			/>
 		{/each}
-	</ul>
-</div>
+	</div>
+</Panel>

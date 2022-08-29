@@ -30,6 +30,4 @@
 {/await}
 
 <style>
-	.body {
-	}
 </style>

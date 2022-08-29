@@ -12,7 +12,7 @@
 	const allLabels = $labelStore;
 </script>
 
-<li class="py-2 px-2 hover:bg-gray-50 cursor-pointer" on:click>
+<li class="py-2 px-2 hover:bg-gray-100 cursor-pointer" on:click>
 	<div class={`flex justify-between ${disabled ? 'line-through' : ''}`}>
 		<span>{partDisplayName}</span>
 		<span class="mr-2">

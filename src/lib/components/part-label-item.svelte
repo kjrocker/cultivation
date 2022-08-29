@@ -30,7 +30,7 @@
 	$: items = label.LinkItem ? getEssences(label.LinkItem, $essenceStore.map) : 'All';
 </script>
 
-<Tooltip class="p-2 flex hover:bg-gray-50" on:click={(e) => onClick(e, label)}>
+<Tooltip class="p-2 flex hover:bg-gray-100" on:click={(e) => onClick(e, label)}>
 	<svelte:fragment slot="tooltip">
 		<PropertyTooltip
 			properties={label.SuperPartProperties}
