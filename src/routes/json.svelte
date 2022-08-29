@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { essenceStore } from '$lib/data/get-essence-names';
-	import { bodyLawStore } from '$lib/data/get-body-laws';
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { bodyLawStore, essenceStore, bodyPartsStore } from '$lib/data/stores';
 	import { labelStore } from '$lib/data/get-labels';
 	import { modifierStore } from '$lib/data/get-modifiers';
 	import { secretBodyStore } from '$lib/data/get-secret-bodies';

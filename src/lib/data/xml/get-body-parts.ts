@@ -1,11 +1,12 @@
-import { getLanguage, getSettings } from './api/get-data';
-import { A_PREFIX } from './api/parser';
-import { createDataView } from './util/create-data-table';
-import { joinEnglishPaths } from './util/join-english-paths';
-import { stripAttributePrefix } from './util/strip-attribute-keys';
+import { getLanguage, getSettings } from '../api/get-data';
+import { A_PREFIX } from '../api/parser';
+import { createDataView } from '../util/create-data-table';
+import { joinEnglishPaths } from '../util/join-english-paths';
+import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { isEmpty, omit, uniqBy } from 'ramda';
-import { createStaticAsyncStore } from './util/async-readable-store';
-import { SPECIES_OPTIONS, type SpeciesKeys } from './species';
+import { SPECIES_OPTIONS, type SpeciesKeys } from '../species';
+import type { BodyPart } from '../types';
+import { createDataReader } from '../util/write-json';
 
 const modifyTranslationPaths = (val: string | number) => {
 	if (typeof val === 'number') {
@@ -15,16 +16,6 @@ const modifyTranslationPaths = (val: string | number) => {
 	} else {
 		return val;
 	}
-};
-
-export type BodyPart = {
-	Name: string;
-	DisplayName: string;
-	Kind: 'Flesh' | 'Bone' | 'Organ';
-	PartGroup: string;
-	ParentName: string;
-	ParentDisplayName: string;
-	BPQLabelBaseCache?: string;
 };
 
 type PartsList = BodyPart & {
@@ -91,4 +82,4 @@ export const getBodyParts = async () => {
 	return { species: speciesNameList, ...createDataView(allParts, 'Name') };
 };
 
-export const bodyPartsStore = createStaticAsyncStore(getBodyParts);
+export const bodyPartsReader = createDataReader('BodyParts', getBodyParts);

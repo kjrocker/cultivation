@@ -1,9 +1,10 @@
-import { bodyLawStore, type BodyLaw } from '$lib/data/get-body-laws';
-import { bodyPartsStore } from '$lib/data/get-body-parts';
+import { bodyLawStore } from '$lib/data/stores';
+import { bodyPartsStore } from '$lib/data/stores';
 import { secretBodyStore } from '$lib/data/get-secret-bodies';
 import { SPECIES_CONFIG, type SpeciesOption } from '$lib/data/species';
 import { derived, writable, type Readable } from 'svelte/store';
 import { bodyOptionsStore } from './options-store';
+import type { BodyLaw } from '$lib/data/types';
 
 export type SelectedStore = { bodyPart?: string; secretBody?: string };
 

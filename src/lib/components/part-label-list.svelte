@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { BodyPart } from '$lib/data/get-body-parts';
+	import type { BodyPart } from '$lib/data/types';
 	import { labelStore, type LabelView } from '$lib/data/get-labels';
 	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
 	import { sortBy, uniqBy } from 'ramda';

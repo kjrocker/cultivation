@@ -15,9 +15,8 @@
 	import { partLabelCountStore } from '$lib/components/stores/part-label-count-store';
 	import { partLabelStore } from '$lib/components/stores/part-label-store';
 	import { selectedBodyPart } from '$lib/components/stores/selected-store';
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { bodyPartsStore } from '$lib/data/stores';
 	import { onMount } from 'svelte';
-	import QiRecovery from '$lib/components/qi-recovery.svelte';
 	import BattleModifierList from '$lib/components/battle-modifier-list.svelte';
 
 	let importSlider = false;

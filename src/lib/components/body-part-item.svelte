@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { BodyPart } from '$lib/data/get-body-parts';
+	import type { BodyPart } from '$lib/data/types';
 	import { validateBodyPart } from '$lib/util/validate-body-part';
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import { getRemoldCount } from '../util/get-remold-count';

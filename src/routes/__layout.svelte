@@ -1,11 +1,9 @@
 <script>
 	import '../app.css';
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
 	import { secretBodyStore } from '$lib/data/get-secret-bodies';
-	import { bodyLawStore } from '$lib/data/get-body-laws';
+	import { bodyLawStore, essenceStore, bodyPartsStore } from '$lib/data/stores';
 	import { labelStore } from '$lib/data/get-labels';
 	import { modifierStore } from '$lib/data/get-modifiers';
-	import { essenceStore } from '$lib/data/get-essence-names';
 
 	const preloadPromises = [
 		bodyPartsStore.init(),
