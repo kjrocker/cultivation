@@ -55,6 +55,7 @@
 		"felte": "^1.2.2",
 		"fsp-xml-parser": "^1.0.0",
 		"ramda": "^0.28.0",
+		"ramda-adjunct": "^3.2.0",
 		"svelte-json-tree": "^1.0.0"
 	}
 }
