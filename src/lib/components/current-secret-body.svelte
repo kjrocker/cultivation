@@ -4,6 +4,7 @@
 	import { isBodyComplete } from '$lib/util/is-body-complete';
 	import { uniqBy } from 'ramda';
 	import Button from './base/button.svelte';
+	import Panel from './base/panel.svelte';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelCountStore } from './stores/part-label-count-store';
@@ -46,21 +47,23 @@
 </script>
 
 {#if secretBodyParts}
-	<ul class="divide-y divide-gray-200 overflow-x-hidden my-2 border rounded-md">
-		{#each secretBodyParts as { Name, Labels }}
-			<CurrentSecretBodyPart
-				on:click={() => {
-					if ($currentSpeciesPartsStore.includes(Name)) {
-						$selectedStore.bodyPart = Name;
-					}
-				}}
-				partDisplayName={allParts.map[Name]?.DisplayName}
-				disabled={!$currentSpeciesPartsStore.includes(Name)}
-				isComplete={completion[Name]}
-				secretLabels={Labels}
-			/>
-		{/each}
-	</ul>
+	<Panel>
+		<ul class="divide-y divide-gray-200 overflow-x-hidden border border-transparent rounded-md">
+			{#each secretBodyParts as { Name, Labels }}
+				<CurrentSecretBodyPart
+					on:click={() => {
+						if ($currentSpeciesPartsStore.includes(Name)) {
+							$selectedStore.bodyPart = Name;
+						}
+					}}
+					partDisplayName={allParts.map[Name]?.DisplayName}
+					disabled={!$currentSpeciesPartsStore.includes(Name)}
+					isComplete={completion[Name]}
+					secretLabels={Labels}
+				/>
+			{/each}
+		</ul>
+	</Panel>
 	<Button
 		class="w-full"
 		on:click={() => {

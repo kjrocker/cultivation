@@ -25,10 +25,10 @@
 		selectedStore.toggleSecretBody(body.Name);
 		selectedStore.update((v) => ({ ...v, bodyPart: overlappingNames[0] ?? undefined }));
 	}}
-	class={`py-4 relative px-1 text-center border-2 font-medium text-md cursor-pointer ${
+	class={`py-2 relative px-1 text-center border-2 font-medium text-md cursor-pointer rounded-md hover:bg-gray-100 ${
 		$selectedStore.secretBody === name
-			? 'border-indigo-500 text-indigo-600'
-			: 'border-transparent text-gray-900 hover:bg-gray-50 hover:border-gray-300'
+			? 'border-[#406aaa] text-[#406aaa]'
+			: 'border-transparent text-gray-900'
 	}`}
 >
 	<svelte:fragment slot="tooltip">

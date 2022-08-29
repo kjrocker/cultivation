@@ -6,6 +6,7 @@
 	import PartLabelItem from './part-label-item.svelte';
 	import { partLabelCountStore } from './stores/part-label-count-store';
 	import { partLabelStore } from './stores/part-label-store';
+	import Panel from './base/panel.svelte';
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
 	export let bodyPart: BodyPart;
@@ -42,8 +43,10 @@
 	);
 </script>
 
-<div class="my-2">
-	<ul class="divide-y divide-gray-200 overflow-x-hidden border rounded-md">
+<Panel class="my-2">
+	<ul
+		class="overflow-scroll overflow-x-hidden max-h-[75vh] divide-y divide-gray-200 border border-transparent rounded-md"
+	>
 		{#each filteredLabels as label, i}
 			<PartLabelItem
 				selected={!!selected.find((l) => l.Name === label.Name)}
@@ -56,4 +59,4 @@
 			/>
 		{/each}
 	</ul>
-</div>
+</Panel>

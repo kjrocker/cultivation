@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { PropertyConfiguration } from '$lib/data/property-config';
-
 	import { getAllModifierGroups } from '$lib/util/get-all-modifier-groups';
-
 	import Collapse from './base/collapse.svelte';
 	import Panel from './base/panel.svelte';
 	import PropertyBonusListItem from './property-bonus-list-item.svelte';
@@ -32,6 +30,6 @@
 				tooltip={false}
 			/>
 		{/each}
-		<QiRecovery class="mx-2 py-1 cursor-default" />
+		<QiRecovery class="mx-2 py-1" />
 	</Collapse>
 </Panel>

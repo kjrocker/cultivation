@@ -57,10 +57,10 @@
 <SecretBodies />
 <div class="flex">
 	<div class="w-1/6 min-w-[10rem] mr-1"><CurrentSecretBody /></div>
-	<div class="w-1/5 min-w-[12rem] mx-1 max-h-[75vh] overflow-y-scroll">
+	<div class="w-1/5 min-w-[12rem] mx-1">
 		<BodyPartList />
 	</div>
-	<div class="w-1/4 min-w-[14rem] mx-1 max-h-[75vh] overflow-y-scroll">
+	<div class="w-1/4 min-w-[14rem] mx-1 ">
 		{#if $selectedBodyPart && Array.isArray($partLabelStore[$selectedBodyPart.Name])}
 			<PartLabelList bodyPart={$selectedBodyPart} />
 		{/if}
