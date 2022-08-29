@@ -1,5 +1,5 @@
 import type { PartLabelStore } from '$lib/components/stores/part-label-store';
-import type { SecretBody } from '$lib/data/get-secret-bodies';
+import type { SecretBody } from '$lib/data/types';
 import { difference, values } from 'ramda';
 
 export const isBodyComplete = (

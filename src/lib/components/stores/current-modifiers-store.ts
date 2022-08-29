@@ -1,6 +1,5 @@
-import { labelStore } from '$lib/data/get-labels';
-import { modifierStore, type Modifier, type ModifierProperty } from '$lib/data/get-modifiers';
-import { secretBodyStore, type SecretBody } from '$lib/data/get-secret-bodies';
+import { labelStore, modifierStore, secretBodyStore } from '$lib/data/stores';
+import type { Modifier, SecretBody, ModifierProperty } from '$lib/data/types';
 import { filter, isEmpty, last, map, mapObjIndexed } from 'ramda';
 import { derived, type Readable } from 'svelte/store';
 import { completeSecretBodiesStore } from './complete-secret-bodies-store';

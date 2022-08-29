@@ -1,4 +1,4 @@
-import type { PartProperty } from './part-properties';
+import type { PartProperty } from '../data/types';
 import { propertyToString } from './property-to-tooltip-string';
 
 describe('propertyToString', () => {

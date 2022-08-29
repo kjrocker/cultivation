@@ -1,4 +1,4 @@
-import type { LabelView } from '$lib/data/get-labels';
+import type { LabelView } from '$lib/data/types';
 import { pickBy, uniqBy } from 'ramda';
 import { writable } from 'svelte/store';
 

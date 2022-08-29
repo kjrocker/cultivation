@@ -15,7 +15,7 @@
 	};
 
 	$: parts = $currentSpeciesPartsStore.map((name: any) => $bodyPartsStore.map[name]);
-	$: currentBodyNames = $selectedSecretBody?.Parts.map((p) => p.Name);
+	$: currentBodyNames = $selectedSecretBody?.Parts.map((p: any) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined
 			? parts
@@ -23,7 +23,8 @@
 	$: missing =
 		currentBodyNames === undefined
 			? false
-			: currentBodyNames?.filter((name) => !parts.map((v: any) => v.Name).includes(name)).length;
+			: currentBodyNames?.filter((name: any) => !parts.map((v: any) => v.Name).includes(name))
+					.length;
 </script>
 
 <div class="my-2">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { secretBodyStore } from '$lib/data/get-secret-bodies';
+	import { secretBodyStore } from '$lib/data/stores';
 	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
 	import {
 		equippedSecretBodyStore,

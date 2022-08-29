@@ -1,5 +1,5 @@
-import { labelStore, type LabelView } from '$lib/data/get-labels';
-import type { PartProperty } from '$lib/util/part-properties';
+import { labelStore } from '$lib/data/stores';
+import type { PartProperty, LabelView } from '$lib/data/types';
 import { last, map, mapObjIndexed } from 'ramda';
 import { derived, type Readable } from 'svelte/store';
 import { completeSecretBodiesStore } from './complete-secret-bodies-store';

@@ -1,19 +1,10 @@
-import { getLanguage, getSettings } from './api/get-data';
-import { createDataView } from './util/create-data-table';
-import { joinEnglishPaths } from './util/join-english-paths';
-import type { PartProperty } from '$lib/util/part-properties';
-import { stripAttributePrefix } from './util/strip-attribute-keys';
+import { getLanguage, getSettings } from '../api/get-data';
+import { createDataView } from '../util/create-data-table';
+import { joinEnglishPaths } from '../util/join-english-paths';
+import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { omit } from 'ramda';
-import { createStaticAsyncStore } from './util/async-readable-store';
-
-export type SecretBody = {
-	Name: string;
-	DisplayName: string;
-	Desc: string;
-	EqupAdvise: string;
-	Parts: { Name: string; Labels: { Name: string; Levels: number[] }[] }[];
-	Levels: { Title: string; Desc: string; Modifier: string; SuperPartProperties: PartProperty[] }[];
-};
+import type { SecretBody } from '../types';
+import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';
 
 export const getSecretBodies = async () => {
 	const $bodies = await Promise.all([
@@ -88,4 +79,9 @@ export const getSecretBodies = async () => {
 	return createDataView(bodies, 'Name');
 };
 
-export const secretBodyStore = createStaticAsyncStore(getSecretBodies);
+export const secretBodyReader = createDataReader(
+	'SecretBodies',
+	getSecretBodies,
+	dataViewShrink,
+	dataViewExpand
+);

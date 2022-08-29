@@ -1,23 +1,11 @@
-import { getLanguage, getSettings } from './api/get-data';
-import { A_PREFIX } from './api/parser';
-import { createDataView } from './util/create-data-table';
-import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
-import { stripAttributePrefix } from './util/strip-attribute-keys';
-import { indexBy } from 'ramda';
-import { createStaticAsyncStore } from './util/async-readable-store';
-
-export type ModifierProperty = PartProperty &
-	Partial<{ DisplayName: string; Desc: string; FunctionKind: string }>;
-
-export type Modifier = {
-	Name: string;
-	DisplayName: string;
-	Desc: '';
-	MaxStack: 0;
-	Duration: -1;
-	Properties: ModifierProperty[];
-	Type: 'Normal';
-};
+import { getLanguage, getSettings } from '../api/get-data';
+import { A_PREFIX } from '../api/parser';
+import { createDataView } from '../util/create-data-table';
+import { parsePartProperties } from '../util/part-properties';
+import { stripAttributePrefix } from '../util/strip-attribute-keys';
+import { indexBy } from 'ramda'
+import type { Modifier } from '../types';
+import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';
 
 export const getModifiers = async () => {
 	const $settings = await Promise.all([
@@ -61,4 +49,9 @@ export const getModifiers = async () => {
 	return createDataView(settings as Modifier[], 'Name');
 };
 
-export const modifierStore = createStaticAsyncStore(getModifiers);
+export const modifierReader = createDataReader(
+	'Modifiers',
+	getModifiers,
+	dataViewShrink,
+	dataViewExpand
+);

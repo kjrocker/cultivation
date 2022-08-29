@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { secretBodyStore } from '$lib/data/get-secret-bodies';
+	import { secretBodyStore } from '$lib/data/stores';
 	import SecretBodyItem from './secret-body-item.svelte';
 	import { selectedLawStore } from './stores/selected-store';
 

@@ -1,4 +1,5 @@
-import { labelStore, type LabelView } from '$lib/data/get-labels';
+import { labelStore } from '$lib/data/stores';
+import type { LabelView } from '$lib/data/types';
 import { mapObjIndexed } from 'ramda';
 import { derived, type Readable } from 'svelte/store';
 import { partLabelCountStore } from './part-label-count-store';

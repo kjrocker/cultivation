@@ -1,4 +1,4 @@
-export type PartProperty = { Name: string; AddP?: number; AddV?: number; BAddV?: number };
+import type { PartProperty } from '../types';
 
 export const parsePartProperties = ({ Name, ...rest }: any): PartProperty => {
 	if (rest.AddV) {

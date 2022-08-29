@@ -1,14 +1,12 @@
 <script lang="ts">
-	import type { LabelView } from '$lib/data/get-labels';
-	import { Icon } from '@steeze-ui/svelte-icon';
-	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
-	import { CheckCircle } from '@steeze-ui/iconic-free';
-	import Tooltip from './base/tooltip.svelte';
-	import PropertyTooltip from './property-tooltip.svelte';
-
-	import { identity } from 'ramda';
 	import { essenceStore } from '$lib/data/stores';
-	import type { EssenceName } from '$lib/data/types';
+	import type { EssenceName, LabelView } from '$lib/data/types';
+	import { CheckCircle } from '@steeze-ui/iconic-free';
+	import { Icon } from '@steeze-ui/svelte-icon';
+	import { identity } from 'ramda';
+	import Tooltip from './base/tooltip.svelte';
+	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
+	import PropertyTooltip from './property-tooltip.svelte';
 
 	export let onClick: (e: MouseEvent, label: LabelView) => void;
 	export let label: LabelView;

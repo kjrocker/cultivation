@@ -1,32 +1,14 @@
-import { getSettings, getLanguage } from './api/get-data';
-import { A_PREFIX } from './api/parser';
-import { createDataView } from './util/create-data-table';
-import { parsePartProperties, type PartProperty } from '$lib/util/part-properties';
-import { renameKey } from './util/rename-key';
-import { stripAttributePrefix } from './util/strip-attribute-keys';
+import { getSettings, getLanguage } from '../api/get-data';
+import { A_PREFIX } from '../api/parser';
+import { createDataView } from '../util/create-data-table';
+import { parsePartProperties } from '../util/part-properties';
+import { renameKey } from '../util/rename-key';
+import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { indexBy, isEmpty, prop } from 'ramda';
-import { createStaticAsyncStore } from './util/async-readable-store';
-import { TemperedLabelConfig } from './tempering-config';
-
-export type LabelView = {
-	Label: string;
-	BodyPart: string;
-	CacheName: string;
-	Lv: string;
-	Weight?: string | undefined;
-	LinkItem?: string | undefined;
-	Name: string;
-	DisplayName: string;
-	Desc: string;
-	Group: string;
-	MaxLevel: number;
-	Rate: number;
-	Modifier: string[];
-	SuperPartProperties?: PartProperty[] | undefined;
-	LabelNumAddBone?: number | undefined;
-	LabelNumAddOrgan?: number | undefined;
-	LabelNumAddFlesh?: number | undefined;
-};
+import { createStaticAsyncStore } from '../util/async-readable-store';
+import { TemperedLabelConfig } from '../tempering-config';
+import type { LabelView, PartProperty } from '../types';
+import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';
 
 const LabelNameBlockList = ['BQLabel_LOST'];
 
@@ -112,4 +94,4 @@ export const getLabels = async () => {
 	return createDataView(extendedViews, 'Name');
 };
 
-export const labelStore = createStaticAsyncStore(getLabels);
+export const labelReader = createDataReader('Labels', getLabels, dataViewShrink, dataViewExpand);
