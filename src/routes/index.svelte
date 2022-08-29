@@ -4,10 +4,10 @@
 	import BodyPartList from '$lib/components/body-part-list.svelte';
 	import CurrentSecretBody from '$lib/components/current-secret-body.svelte';
 	import EquipSecretBodiesForm from '$lib/components/equip-secret-bodies-form.svelte';
-	import ExportForm from '$lib/components/export-form.svelte';
+	import ExportForm from '$lib/components/backup-restore/export-form.svelte';
 	import OptionsForm from '$lib/components/forms/options-form.svelte';
 	import { bodyOptionsStore } from '$lib/components/stores/options-store';
-	import ImportForm from '$lib/components/import-form.svelte';
+	import ImportForm from '$lib/components/backup-restore/import-form.svelte';
 	import ModifierBonusList from '$lib/components/modifier-bonus-list.svelte';
 	import PartLabelList from '$lib/components/part-label-list.svelte';
 	import PropertyBonusList from '$lib/components/property-bonus-list.svelte';
