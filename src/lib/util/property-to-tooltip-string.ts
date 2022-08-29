@@ -1,10 +1,10 @@
 import { formatNumber } from './format-number';
-import type { PartProperty } from './part-properties';
+import type { PartProperty } from '../data/types';
 
 export const propertyToString = <T extends PartProperty>(
 	prop: T,
 	level = 1,
-	config: Partial<{ percentage: boolean; rate: boolean }>
+	config?: Partial<{ percentage: boolean; rate: boolean }>
 ): string => {
 	if (prop.BAddV) {
 		return `Base ${formatNumber(prop.BAddV * level, {

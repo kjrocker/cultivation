@@ -4,7 +4,7 @@ import { createDataView } from '../util/create-data-table';
 import { joinEnglishPaths } from '../util/join-english-paths';
 import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { omit } from 'ramda';
-import { createDataReader } from '../util/write-json';
+import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';
 import type { BodyLaw } from '../types';
 
 const transformBody = (body: any, english: any) => {
@@ -74,4 +74,9 @@ export const getBodyLaws = async () => {
 	return createDataView(bodies as BodyLaw[], 'Name');
 };
 
-export const bodyLawReader = createDataReader('BodyLaws', getBodyLaws);
+export const bodyLawReader = createDataReader(
+	'BodyLaws',
+	getBodyLaws,
+	dataViewShrink,
+	dataViewExpand
+);

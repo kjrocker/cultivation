@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { BodyPart } from '$lib/data/types';
-	import { labelStore, type LabelView } from '$lib/data/get-labels';
+	import type { BodyPart, LabelView } from '$lib/data/types';
+	import { labelStore } from '$lib/data/stores';
 	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
 	import { sortBy, uniqBy } from 'ramda';
 	import PartLabelItem from './part-label-item.svelte';

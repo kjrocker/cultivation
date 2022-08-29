@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { secretBodyStore } from '$lib/data/get-secret-bodies';
+	import { secretBodyStore } from '$lib/data/stores';
 	import { CheckCircle } from '@steeze-ui/iconic-free';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import { intersection } from 'ramda';

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { modifierStore } from '$lib/data/get-modifiers';
+	import { modifierStore } from '$lib/data/stores';
 	import { PropertyConfiguration } from '$lib/data/property-config';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
-	import type { PartProperty } from '$lib/util/part-properties';
+	import type { PartProperty } from '$lib/data/types';
 	import { propertyToString } from '$lib/util/property-to-tooltip-string';
 	import { values } from 'ramda';
 

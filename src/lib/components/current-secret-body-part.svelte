@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { labelStore } from '$lib/data/get-labels';
+	import { labelStore } from '$lib/data/stores';
 	import { Icon } from '@steeze-ui/svelte-icon';
 	import { CheckCircle, MinusCircle } from '@steeze-ui/iconic-free';
-	import type { SecretBody } from '$lib/data/get-secret-bodies';
+	import type { SecretBody } from '$lib/data/types';
 
 	export let isComplete: boolean;
 	export let partDisplayName: string;

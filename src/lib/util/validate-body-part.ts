@@ -1,5 +1,5 @@
 import type { PartLabelStore } from '$lib/components/stores/part-label-store';
-import type { LabelView } from '$lib/data/get-labels';
+import type { LabelView } from '$lib/data/types';
 import { countBy, isEmpty, maxBy, omit, pipe, toPairs } from 'ramda';
 
 const reduceLabelsToGroups = pipe(

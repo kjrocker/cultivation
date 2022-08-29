@@ -1,4 +1,4 @@
-import { secretBodyStore } from '$lib/data/get-secret-bodies';
+import { secretBodyStore } from '$lib/data/stores';
 import {
 	getAllModifierGroups,
 	getSecretBodiesPropertyGroups

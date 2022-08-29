@@ -1,5 +1,5 @@
 import { sumAndGroupProperties } from './get-all-modifier-groups';
-import type { PartProperty } from './part-properties';
+import type { PartProperty } from '../data/types';
 
 describe('sumAndGroupProperties', () => {
 	it('returns expected results for the normal case', () => {

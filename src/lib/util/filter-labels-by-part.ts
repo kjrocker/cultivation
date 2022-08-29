@@ -1,6 +1,5 @@
 import { TemperedPartConfig } from '$lib/data/tempering-config';
-import type { BodyPart } from '../data/types';
-import type { LabelView } from '../data/get-labels';
+import type { BodyPart, LabelView } from '../data/types';
 
 const labelBlacklist = ['QuenchingLabel_Lv0_Base'];
 

@@ -1,5 +1,5 @@
 import { clamp } from 'ramda';
-import type { PartProperty } from './part-properties';
+import type { PartProperty } from '../data/types';
 import { undefinedSum } from './undefined-sum';
 
 interface PropertyConfig {

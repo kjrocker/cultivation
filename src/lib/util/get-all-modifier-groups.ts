@@ -1,7 +1,5 @@
-import type { Modifier, ModifierProperty } from '$lib/data/get-modifiers';
-import type { SecretBody } from '$lib/data/get-secret-bodies';
 import { concat, pipe, groupBy, mapObjIndexed } from 'ramda';
-import type { PartProperty } from './part-properties';
+import type { PartProperty, Modifier, ModifierProperty, SecretBody } from '../data/types';
 import { undefinedSum } from './undefined-sum';
 
 export const sumAndGroupProperties = <T extends PartProperty>(

@@ -1,30 +1,12 @@
-import { secretBodyStore } from '$lib/data/get-secret-bodies';
-import {
-	getAllModifierGroups,
-	getSecretBodiesPropertyGroups
-} from '$lib/util/get-all-modifier-groups';
+import { getAllModifierGroups } from '$lib/util/get-all-modifier-groups';
 import { calculatePropertyItem } from '$lib/util/total-property-item';
 import { derived } from 'svelte/store';
 import { partModifierStore, secretBodyModifierStore } from './current-modifiers-store';
-import { partPropertyStore } from './current-properties-store';
-import { equippedSecretBodyStore } from './equipped-secret-bodies-store';
 
 export const globalPercentageBonusStore = derived(
-	[
-		secretBodyModifierStore,
-		partModifierStore
-		// secretBodyStore,
-		// equippedSecretBodyStore,
-		// partPropertyStore
-	],
+	[secretBodyModifierStore, partModifierStore],
 	([bodyModifiers, partModifiers]) => {
 		const modifiers = getAllModifierGroups(bodyModifiers, partModifiers);
-		// const bodies = [
-		// 	...equippedBodies.offensive,
-		// 	...equippedBodies.defensive,
-		// 	...equippedBodies.effective
-		// ].map((bodyName) => secretBodies.map[bodyName]);
-		// const properties = getSecretBodiesPropertyGroups(bodies, partProperties);
 		return {
 			AtkPower: calculatePropertyItem(modifiers['BodyPractice_SuperPartAddp_AtkPower']),
 			DefPower: calculatePropertyItem(modifiers['BodyPractice_SuperPartAddp_DefPower']),

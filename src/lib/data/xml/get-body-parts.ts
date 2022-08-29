@@ -3,7 +3,7 @@ import { A_PREFIX } from '../api/parser';
 import { createDataView } from '../util/create-data-table';
 import { joinEnglishPaths } from '../util/join-english-paths';
 import { stripAttributePrefix } from '../util/strip-attribute-keys';
-import { isEmpty, omit, uniqBy } from 'ramda';
+import { isEmpty, keys, mapObjIndexed, omit, uniqBy } from 'ramda';
 import { SPECIES_OPTIONS, type SpeciesKeys } from '../species';
 import type { BodyPart } from '../types';
 import { createDataReader } from '../util/write-json';
@@ -82,4 +82,23 @@ export const getBodyParts = async () => {
 	return { species: speciesNameList, ...createDataView(allParts, 'Name') };
 };
 
-export const bodyPartsReader = createDataReader('BodyParts', getBodyParts);
+export const bodyPartsReader = createDataReader(
+	'BodyParts',
+	getBodyParts,
+	(parts) => {
+		const newSpecies = mapObjIndexed(
+			(value, key) => value.map((s) => parts.keys.indexOf(s)),
+			parts.species
+		);
+		return { keys: parts.keys, map: parts.map, species: newSpecies };
+	},
+	(parts) => {
+		const newSpecies = mapObjIndexed((value) => value.map((v) => parts.keys[v]), parts.species);
+		return {
+			keys: parts.keys,
+			map: parts.map,
+			species: newSpecies,
+			list: parts.keys.map((k) => parts.map[k])
+		};
+	}
+);

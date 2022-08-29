@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { bodyPartsStore } from '$lib/data/stores';
-	import { labelStore } from '$lib/data/get-labels';
+	import { bodyPartsStore, labelStore } from '$lib/data/stores';
 	import { PartToTemperedMap } from '$lib/data/tempering-config';
 	import { isBodyComplete } from '$lib/util/is-body-complete';
 	import { uniqBy } from 'ramda';
@@ -30,9 +29,9 @@
 
 	const completeBody = async () => {
 		const labels = $labelStore!;
-		secretBodyParts?.forEach(({ Name, Labels }) => {
+		secretBodyParts?.forEach(({ Name, Labels }: any) => {
 			if ($currentSpeciesPartsStore.includes(Name)) {
-				const myLabels = Labels.map(({ Name }) => labels.map[Name]);
+				const myLabels = Labels.map(({ Name }: any) => labels.map[Name]);
 				const temperedLabel = getTemperedLabelForPart(Name);
 				partLabelCountStore.append(
 					Name,

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { formatNumber } from '$lib/util/format-number';
-	import type { PartProperty } from '$lib/util/part-properties';
+	import type { PartProperty } from '$lib/data/util/part-properties';
 	import { calculatePropertyItem } from '$lib/util/total-property-item';
 	import Tooltip from './base/tooltip.svelte';
 	import {
