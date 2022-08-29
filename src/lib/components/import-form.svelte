@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { bodyPartsStore } from '$lib/data/stores';
 	import { mapObjIndexed } from 'ramda';
 	import Button from './base/button.svelte';
 	import { bodyOptionsStore } from './stores/options-store';

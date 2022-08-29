@@ -1,4 +1,7 @@
-import { getBodyLaws } from './get-body-laws';
-import { writeJsonData } from './util/write-json';
+import { bodyLawReader } from './xml/get-body-laws';
+import { bodyPartsReader } from './xml/get-body-parts';
+import { essenceReader } from './xml/get-essence-names';
 
-writeJsonData('BodyLaws', getBodyLaws);
+bodyLawReader.write();
+essenceReader.write();
+bodyPartsReader.write();

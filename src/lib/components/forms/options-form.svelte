@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { bodyLawStore } from '$lib/data/get-body-laws';
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { bodyLawStore } from '$lib/data/stores';
+	import { bodyPartsStore } from '$lib/data/stores';
 	import { SPECIES_OPTIONS } from '$lib/data/species';
 	import { partLabelCountStore } from '../stores/part-label-count-store';
 	import { selectedStore } from '../stores/selected-store';

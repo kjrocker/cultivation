@@ -1,10 +1,11 @@
-import { getLanguage, getSettings } from './api/get-data';
-import { A_PREFIX } from './api/parser';
-import { createDataView } from './util/create-data-table';
-import { joinEnglishPaths } from './util/join-english-paths';
-import { stripAttributePrefix } from './util/strip-attribute-keys';
+import { getLanguage, getSettings } from '../api/get-data';
+import { A_PREFIX } from '../api/parser';
+import { createDataView } from '../util/create-data-table';
+import { joinEnglishPaths } from '../util/join-english-paths';
+import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { omit } from 'ramda';
-import { createStaticAsyncStore } from './util/async-readable-store';
+import { createDataReader } from '../util/write-json';
+import type { BodyLaw } from '../types';
 
 const transformBody = (body: any, english: any) => {
 	const value = joinEnglishPaths(english, body.Gongs.List.Gong, (str) =>
@@ -41,14 +42,6 @@ const transformBody = (body: any, english: any) => {
 	});
 };
 
-export type BodyLaw = {
-	Name: string;
-	DisplayName: string;
-	Desc: string;
-	SuperParts: string[];
-	QuenchingMethods: string[];
-};
-
 export const getBodyLaws = async () => {
 	const $bodies = await Promise.all([
 		getSettings('Practice/Gong/Body/Body_Gong_1'),
@@ -81,4 +74,4 @@ export const getBodyLaws = async () => {
 	return createDataView(bodies as BodyLaw[], 'Name');
 };
 
-export const bodyLawStore = createStaticAsyncStore(getBodyLaws);
+export const bodyLawReader = createDataReader('BodyLaws', getBodyLaws);

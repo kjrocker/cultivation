@@ -1,4 +1,4 @@
-import { bodyLawStore } from '$lib/data/get-body-laws';
+import { bodyLawStore } from '$lib/data/stores';
 import { secretBodyStore } from '$lib/data/get-secret-bodies';
 import { isWholeBodyComplete } from '$lib/util/is-body-complete';
 import { mapObjIndexed } from 'ramda';

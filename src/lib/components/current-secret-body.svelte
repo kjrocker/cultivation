@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { bodyPartsStore } from '$lib/data/get-body-parts';
+	import { bodyPartsStore } from '$lib/data/stores';
 	import { labelStore } from '$lib/data/get-labels';
 	import { PartToTemperedMap } from '$lib/data/tempering-config';
 	import { isBodyComplete } from '$lib/util/is-body-complete';

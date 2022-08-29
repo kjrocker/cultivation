@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { bodyPartsStore, type BodyPart } from '$lib/data/get-body-parts';
+	import { bodyPartsStore } from '$lib/data/stores';
+	import type { BodyPart } from '$lib/data/types';
 	import Error from './base/error.svelte';
 	import BodyPartItem from './body-part-item.svelte';
 	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
 	import { partLabelStore } from './stores/part-label-store';
 	import { selectedSecretBody, selectedStore } from './stores/selected-store';
-
-	let allParts = $bodyPartsStore!;
 
 	export let onChange: (e: MouseEvent, part: BodyPart) => void = () => undefined;
 
@@ -15,16 +14,16 @@
 		onChange(e, part);
 	};
 
-	$: parts = $currentSpeciesPartsStore.map((name) => allParts.map[name]);
+	$: parts = $currentSpeciesPartsStore.map((name: any) => $bodyPartsStore.map[name]);
 	$: currentBodyNames = $selectedSecretBody?.Parts.map((p) => p.Name);
 	$: currentBodyParts =
 		currentBodyNames === undefined
 			? parts
-			: parts.filter((part) => currentBodyNames?.includes(part.Name));
+			: parts.filter((part: any) => currentBodyNames?.includes(part.Name));
 	$: missing =
 		currentBodyNames === undefined
 			? false
-			: currentBodyNames?.filter((name) => !parts.map((v) => v.Name).includes(name)).length;
+			: currentBodyNames?.filter((name) => !parts.map((v: any) => v.Name).includes(name)).length;
 </script>
 
 <div class="my-2">

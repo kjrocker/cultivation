@@ -1,4 +1,4 @@
-import { bodyPartsStore } from '$lib/data/get-body-parts';
+import { bodyPartsStore } from '$lib/data/stores';
 import { derived } from 'svelte/store';
 import { bodyOptionsStore } from './options-store';
 
