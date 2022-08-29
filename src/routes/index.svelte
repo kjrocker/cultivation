@@ -18,6 +18,7 @@
 	import { bodyPartsStore } from '$lib/data/stores';
 	import { onMount } from 'svelte';
 	import BattleModifierList from '$lib/components/battle-modifier-list.svelte';
+	import IconLink from '$lib/components/base/icon-link.svelte';
 
 	let importSlider = false;
 	let exportSlider = false;
@@ -49,6 +50,7 @@
 				importSlider = true;
 			}}>Restore</Button
 		>
+		<IconLink class="w-12 h-12 ml-4 mr-2 mt-4" href="https://github.com/kjrocker/cultivation" />
 		<Slider title="Equip Secret Bodies" bind:open={equipSlider}><EquipSecretBodiesForm /></Slider>
 		<Slider title="Restore Cultivator" bind:open={importSlider}><ImportForm /></Slider>
 		<Slider title="Backup Cultivator" bind:open={exportSlider}><ExportForm /></Slider>
@@ -68,4 +70,5 @@
 	<div class="w-1/4 min-w-fit ml-1">
 		<PropertyBonusList /><BattleModifierList /><ModifierBonusList />
 	</div>
+	<div class="flex h-full align-bottom" />
 </div>
