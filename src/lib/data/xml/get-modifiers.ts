@@ -3,7 +3,7 @@ import { A_PREFIX } from '../api/parser';
 import { createDataView } from '../util/create-data-table';
 import { parsePartProperties } from '../util/part-properties';
 import { stripAttributePrefix } from '../util/strip-attribute-keys';
-import { indexBy } from 'ramda'
+import { indexBy } from 'ramda';
 import type { Modifier } from '../types';
 import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';
 

@@ -19,11 +19,15 @@
 </script>
 
 {#each regularProps as prop}
-	<p>
-		{PropertyConfiguration[prop.Name].DisplayName ?? prop.Name}
-		{propertyToString(prop, level, PropertyConfiguration[prop.Name])}
-	</p>
+	{#each propertyToString(prop, level, PropertyConfiguration[prop.Name]) as formattedNumber}
+		<p>
+			{PropertyConfiguration[prop.Name].DisplayName ?? prop.Name}
+			{formattedNumber}
+		</p>
+	{/each}
 {/each}
 {#each modifierProps as prop}
-	<p>{prop.DisplayName} {propertyToString(prop, level, PropertyConfiguration[prop.Name])}</p>
+	{#each propertyToString(prop, level, PropertyConfiguration[prop.Name]) as formattedNumber}
+		<p>{prop.DisplayName} {formattedNumber}</p>
+	{/each}
 {/each}
