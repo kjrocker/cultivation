@@ -3,7 +3,7 @@
 	export let defaultOpen = false;
 	let isOpen = defaultOpen;
 	const toggle = () => (isOpen = !isOpen);
-	export let buttonClasses: string = '';
+	export let buttonClasses = '';
 </script>
 
 <button class={buttonClasses} on:click={toggle} aria-expanded={isOpen}>

@@ -13,7 +13,7 @@ export const createPropertyToString =
 		level = 1,
 		config?: Partial<{ percentage: boolean; rate: boolean }>
 	): string[] => {
-		let result: string[] = [];
+		const result: string[] = [];
 		if (prop.BAddV && !blacklist[prop.Name]?.BAddV) {
 			result.push(
 				`Base ${formatNumber(prop.BAddV * level, {

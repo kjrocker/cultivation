@@ -20,9 +20,9 @@
 
 	export let bonuses: PartProperty | undefined;
 
-	// @ts-expect-error
+	// @ts-expect-error Blah blah blah
 	$: globalPercentBonus = $globalPercentageBonusStore[name];
-	// @ts-expect-error
+	// @ts-expect-error Blah blah blah the second
 	$: globalValueBonus = $globalValueBonusStore[name];
 	$: totals = calculatePropertyItem(bonuses, {
 		max,
