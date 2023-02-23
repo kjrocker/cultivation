@@ -45,7 +45,7 @@ export const shrinkPartLabels = (
 	bodyParts: DataView<BodyPart>
 ): MinifiedOptionsV2['l'] => {
 	return pipe(
-		// @ts-expect-error
+		// @ts-expect-error I ain't gotta explain shit
 		omitBy((v) => !isNonEmptyArray(v)),
 		mapObjIndexed((plabels: PartLabelCount[], k) =>
 			plabels.map((l) => labels.keys.indexOf(l.Name))

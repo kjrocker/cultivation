@@ -7,6 +7,4 @@ describe('parsePartProperies', () => {
 			BAddV: 1
 		});
 	});
-
-	it('handles multiple properties', () => {});
 });

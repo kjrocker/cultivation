@@ -2,7 +2,7 @@
 	export let name: string;
 	export let checked: boolean;
 	export let value: any;
-	export let disabled: boolean = false;
+	export let disabled = false;
 	export let text: string;
 </script>
 

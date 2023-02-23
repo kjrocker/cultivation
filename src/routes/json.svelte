@@ -1,12 +1,5 @@
 <script lang="ts">
-	import {
-		bodyLawStore,
-		essenceStore,
-		bodyPartsStore,
-		labelStore,
-		secretBodyStore,
-		modifierStore
-	} from '$lib/data/stores';
+	import { essenceStore } from '$lib/data/stores';
 
 	import JSONTree from 'svelte-json-tree';
 
