@@ -23,6 +23,13 @@ export const SecretBodyProperties = [
 	'ResistanceHuo'
 ] as const;
 
+export const PropertyBlacklist: Record<
+	string,
+	Partial<{ BAddV: boolean; AddP: boolean; AddV: true }>
+> = {
+	RecoverQi: { AddP: true }
+};
+
 export const PropertyConfiguration = {
 	AtkPower: { DisplayName: 'Attack' },
 	DefPower: { DisplayName: 'Defense' },
