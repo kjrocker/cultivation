@@ -24,7 +24,7 @@
 {#await preload}
 	Loading...
 {:then}
-	<div class="body mx-8 my-2">
+	<div class="body mx-4 my-2">
 		<slot />
 	</div>
 {/await}
