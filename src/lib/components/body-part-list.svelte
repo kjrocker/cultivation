@@ -39,7 +39,7 @@
 	<div
 		class="overflow-scroll overflow-x-hidden max-h-[75vh] divide-y divide-gray-200 rounded-md border-transparent border"
 	>
-		{#each currentBodyParts as part, i}
+		{#each currentBodyParts as part}
 			<BodyPartItem
 				selected={!!$selectedStore.bodyPart && part.Name === $selectedStore.bodyPart}
 				labelCount={$partLabelStore[part.Name]?.length ?? 0}

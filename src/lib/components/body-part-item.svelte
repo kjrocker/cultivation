@@ -15,7 +15,11 @@
 	$: error = validateBodyPart(part.Name, $partLabelStore, remoldCount);
 </script>
 
-<li class="py-2 px-2 flex hover:bg-gray-100" on:click={(e) => onClick(e, part)}>
+<li
+	class="py-2 px-2 flex hover:bg-gray-100 cursor-pointer"
+	class:selected
+	on:click={(e) => onClick(e, part)}
+>
 	<BodyTypeIcon className="h-10 w-10" type={part.Kind} />
 	<div class="ml-3 mr-5 w-full">
 		<div class="flex justify-between">
@@ -31,9 +35,20 @@
 			</span>
 		</div>
 		{#if error}
-			<p class="text-sm text-red-400">
+			<p class="text-sm text-red-400 ">
 				{error}
 			</p>
 		{/if}
 	</div>
 </li>
+
+<style>
+	.selected {
+		/* slate-200 */
+		background-color: rgb(226 232 240);
+	}
+	.selected:hover {
+		/* slate-200 */
+		background-color: rgb(203 213 225);
+	}
+</style>

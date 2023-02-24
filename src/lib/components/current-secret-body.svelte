@@ -42,7 +42,9 @@
 		});
 	};
 
-	$: secretBodyParts = $selectedSecretBody?.Parts;
+	$: secretBodyParts = $selectedSecretBody?.Parts?.sort(
+		(a, b) => $bodyPartsStore.keys.indexOf(a.Name) - $bodyPartsStore.keys.indexOf(b.Name)
+	);
 	$: completion = $selectedSecretBody ? isBodyComplete($selectedSecretBody, $partLabelStore) : {};
 </script>
 
@@ -59,6 +61,7 @@
 					partDisplayName={allParts.map[Name]?.DisplayName}
 					disabled={!$currentSpeciesPartsStore.includes(Name)}
 					isComplete={completion[Name]}
+					selected={$selectedStore.bodyPart === Name}
 					secretLabels={Labels}
 				/>
 			{/each}

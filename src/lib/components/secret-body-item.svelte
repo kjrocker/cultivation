@@ -18,25 +18,46 @@
 		$currentSpeciesPartsStore,
 		body.Parts.map((p) => p.Name)
 	);
+	$: selected = $selectedStore.secretBody === name;
+	$: completed = !!$completeSecretBodiesStore[body.Name];
 </script>
 
-<Tooltip
+<div
+	class="py-2 px-1 border-y-8 cursor-pointer hover:bg-gray-100 h-full"
+	class:selected
+	class:completed
 	on:click={() => {
 		selectedStore.toggleSecretBody(body.Name);
 		selectedStore.update((v) => ({ ...v, bodyPart: overlappingNames[0] ?? undefined }));
 	}}
-	class={`py-2 relative px-1 text-center border-2 font-medium text-md cursor-pointer rounded-md hover:bg-gray-100 ${
-		$selectedStore.secretBody === name
-			? 'border-[#406aaa] text-[#406aaa]'
-			: 'border-transparent text-gray-900'
-	}`}
 >
-	<svelte:fragment slot="tooltip">
-		<PropertyTooltip {properties} {modifiers} level={1} />
-	</svelte:fragment>
-	<span class="w-full h-full">
-		{body.DisplayName}
-	</span>{#if $completeSecretBodiesStore[body.Name]}
-		<Icon class="absolute bottom-1 right-1 inline h-5 w-5 text-green-400" src={CheckCircle} />
-	{/if}
-</Tooltip>
+	<Tooltip class="h-full w-full">
+		<svelte:fragment slot="tooltip">
+			<PropertyTooltip {properties} {modifiers} level={1} />
+		</svelte:fragment>
+		<span class="w-full h-full">
+			{body.DisplayName}
+		</span>
+	</Tooltip>
+</div>
+
+<style>
+	.selected {
+		/* slate-200 */
+		background-color: rgb(226 232 240);
+		border-bottom-color: rgb(51 65 85);
+		border-top-color: rgb(51 65 85);
+	}
+	.selected:hover {
+		/* slate-200 */
+		background-color: rgb(203 213 225);
+	}
+	.completed {
+		border-bottom-color: rgb(74 222 128);
+		border-top-color: rgb(74 222 128);
+	}
+	.completed.selected {
+		border-bottom-color: darkgreen;
+		border-top-color: darkgreen;
+	}
+</style>

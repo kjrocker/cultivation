@@ -21,21 +21,9 @@ export const globalPercentageBonusStore = derived(
 );
 
 export const globalValueBonusStore = derived(
-	[
-		secretBodyModifierStore,
-		partModifierStore
-		// secretBodyStore,
-		// equippedSecretBodyStore,
-		// partPropertyStore
-	],
+	[secretBodyModifierStore, partModifierStore],
 	([bodyModifiers, partModifiers]) => {
 		const modifiers = getAllModifierGroups(bodyModifiers, partModifiers);
-		// const bodies = [
-		// 	...equippedBodies.offensive,
-		// 	...equippedBodies.defensive,
-		// 	...equippedBodies.effective
-		// ].map((bodyName) => secretBodies.map[bodyName]);
-		// const properties = getSecretBodiesPropertyGroups(bodies, partProperties);
 		return {
 			AtkPower: calculatePropertyItem(modifiers['BodyPractice_SuperPartAddv_AtkPower']),
 			DefPower: calculatePropertyItem(modifiers['BodyPractice_SuperPartAddv_DefPower']),
