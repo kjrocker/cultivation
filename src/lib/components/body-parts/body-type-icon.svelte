@@ -4,7 +4,7 @@
 	import bone from './bone.png';
 	import organ from './organ.png';
 	import flesh from './flesh.png';
-	import any from './any.png';
+	import any from './yin-yang.png';
 </script>
 
 {#if type === 'Organ'}

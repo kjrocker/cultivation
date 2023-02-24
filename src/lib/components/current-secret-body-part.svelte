@@ -7,12 +7,13 @@
 	export let isComplete: boolean;
 	export let partDisplayName: string;
 	export let disabled = false;
+	export let selected = false;
 	export let secretLabels: SecretBody['Parts'][number]['Labels'];
 
 	const allLabels = $labelStore;
 </script>
 
-<li class="py-2 px-2 hover:bg-gray-100 cursor-pointer" on:click>
+<li class="py-2 px-2 hover:bg-gray-100 cursor-pointer" class:selected on:click>
 	<div class={`flex justify-between ${disabled ? 'line-through' : ''}`}>
 		<span>{partDisplayName}</span>
 		<span class="mr-2">
@@ -27,3 +28,14 @@
 		<p class="text-sm text-gray-500">{allLabels.map[label.Name].DisplayName}</p>
 	{/each}
 </li>
+
+<style>
+	.selected {
+		/* slate-200 */
+		background-color: rgb(226 232 240);
+	}
+	.selected:hover {
+		/* slate-200 */
+		background-color: rgb(203 213 225);
+	}
+</style>
