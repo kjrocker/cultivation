@@ -30,34 +30,36 @@
 </script>
 
 <div class="flex">
-	<div class="flex w-full justify-center mb-4 mt-2">
+	<div class="flex w-full mb-4 mt-2">
 		<OptionsForm />
-		<Button
-			class="h-12 ml-4 mr-2 mt-4"
-			on:click={() => {
-				equipSlider = true;
-			}}>Equip</Button
-		>
-		<Button
-			class="h-12 ml-2 mt-4"
-			on:click={() => {
-				exportSlider = true;
-			}}>Backup</Button
-		>
-		<Button
-			class="h-12 ml-4 mr-2 mt-4"
-			on:click={() => {
-				importSlider = true;
-			}}>Restore</Button
-		>
-		<IconLink class="w-12 h-12 ml-4 mr-2 mt-4" href="https://github.com/kjrocker/cultivation" />
+		<div class="flex flex-wrap">
+			<Button
+				class="m-1"
+				on:click={() => {
+					equipSlider = true;
+				}}>Equip</Button
+			>
+			<Button
+				class="m-1"
+				on:click={() => {
+					exportSlider = true;
+				}}>Backup</Button
+			>
+			<Button
+				class="m-1"
+				on:click={() => {
+					importSlider = true;
+				}}>Restore</Button
+			>
+		</div>
+
 		<Slider title="Equip Secret Bodies" bind:open={equipSlider}><EquipSecretBodiesForm /></Slider>
 		<Slider title="Restore Cultivator" bind:open={importSlider}><ImportForm /></Slider>
 		<Slider title="Backup Cultivator" bind:open={exportSlider}><ExportForm /></Slider>
 	</div>
 </div>
 <SecretBodies />
-<div class="flex">
+<div class="flex w-full overflow-x-scroll">
 	<div class="w-1/6 min-w-[10rem] mr-1"><CurrentSecretBody /></div>
 	<div class="w-1/5 min-w-[12rem] mx-1">
 		<BodyPartList />

@@ -8,7 +8,7 @@
 		$secretBodyStore.keys.filter((name) => $selectedLawStore.SuperParts.includes(name));
 </script>
 
-<div>
+<div class="w-full overflow-x-scroll">
 	<div class="block">
 		<div class="border-b-2 border-stone-400">
 			<nav class="-mb-px flex" aria-label="Tabs">

@@ -36,44 +36,46 @@
 	}
 </script>
 
-<div class="mr-2">
-	<label for="name" class={classes.label}>Name</label>
-	<input type="text" name="name" id="name" class={classes.select} bind:value={$options.name} />
-</div>
-<div class="mx-2 min-w-[110px]">
-	<label for="species" class={classes.label}>Species</label>
-	<select
-		name="species"
-		class={classes.select}
-		bind:value={$options.species}
-		on:change={() => {
-			resetPartLabels();
-		}}
-	>
-		{#each SPECIES_OPTIONS as spec}
-			<option value={spec.key}>{spec.name}</option>
-		{/each}
-	</select>
-</div>
-<div class="mx-2 min-w-[200px]">
-	<label for="law" class={classes.label}>Law</label>
-	<select
-		name="law"
-		class={classes.select}
-		bind:value={$options.law}
-		on:change={() => {
-			selectedStore.clear();
-		}}
-	>
-		{#each $bodyLawStore.list as law}
-			<option value={law.Name}>{law.DisplayName.replaceAll('Body', '').trim()}</option>
-		{/each}
-	</select>
+<div class="flex flex-wrap">
+	<div class="mx-2 min-w-[200px]">
+		<label for="name" class={classes.label}>Name</label>
+		<input type="text" name="name" id="name" class={classes.select} bind:value={$options.name} />
+	</div>
+	<div class="mx-2 min-w-[110px]">
+		<label for="species" class={classes.label}>Species</label>
+		<select
+			name="species"
+			class={classes.select}
+			bind:value={$options.species}
+			on:change={() => {
+				resetPartLabels();
+			}}
+		>
+			{#each SPECIES_OPTIONS as spec}
+				<option value={spec.key}>{spec.name}</option>
+			{/each}
+		</select>
+	</div>
+	<div class="mx-2 min-w-[200px]">
+		<label for="law" class={classes.label}>Law</label>
+		<select
+			name="law"
+			class={classes.select}
+			bind:value={$options.law}
+			on:change={() => {
+				selectedStore.clear();
+			}}
+		>
+			{#each $bodyLawStore.list as law}
+				<option value={law.Name}>{law.DisplayName.replaceAll('Body', '').trim()}</option>
+			{/each}
+		</select>
+	</div>
 </div>
 <div>
 	<div>
 		<h2 class={classes.label}>Label Count</h2>
-		<label htmlfor="temperedHeart" class={classes.checkboxLabel}>
+		<label class={classes.checkboxLabel}>
 			<input
 				name="temperedHeart"
 				bind:checked={$options.temperedHeart}
@@ -82,7 +84,7 @@
 			/>
 			Tempered Heart
 		</label>
-		<label htmlfor="temperedBrain" class={classes.checkboxLabel}>
+		<label class={classes.checkboxLabel}>
 			<input
 				name="temperedBrain"
 				bind:checked={$options.temperedBrain}
@@ -91,7 +93,7 @@
 			/>
 			Tempered Brain
 		</label>
-		<label htmlfor="temperedSpine" class={classes.checkboxLabel}>
+		<label class={classes.checkboxLabel}>
 			<input
 				name="temperedSpine"
 				bind:checked={$options.temperedSpine}
@@ -103,7 +105,6 @@
 	</div>
 	<div>
 		<label
-			htmlfor="fireSpine"
 			class={`${classes.checkboxLabel} ${
 				$options.law !== 'Body_Gong_2' ? 'line-through cursor-not-allowed' : ''
 			}`}
@@ -120,7 +121,6 @@
 			Firestruck Spine
 		</label>
 		<label
-			htmlfor="illusionBrain"
 			class={`${classes.checkboxLabel} ${
 				$options.law !== 'Body_Gong_3' ? 'line-through cursor-not-allowed' : ''
 			}`}
@@ -137,7 +137,6 @@
 			Illusionary Brain
 		</label>
 		<label
-			htmlfor="transcendantHeart"
 			class={`${classes.checkboxLabel} ${
 				$options.law !== 'Body_Gong_5' ? 'line-through cursor-not-allowed' : ''
 			}`}

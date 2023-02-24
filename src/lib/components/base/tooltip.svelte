@@ -4,7 +4,7 @@
 	let y: number;
 	export let disabled = false;
 
-	function mouseOver(event: any) {
+	function mouseOver(event: MouseEvent) {
 		isHovered = true;
 		x = event.pageX + 5;
 		y = event.pageY + 5;
