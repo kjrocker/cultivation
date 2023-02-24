@@ -24,3 +24,31 @@ export type MinifiedOptionsV2 = {
 	l: Record<number, number[]>;
 	e: { o: number[]; d: number[]; e: number[] };
 };
+
+export type MinifiedOptionsV3 = {
+	v: 3;
+	o: {
+		// Tempered Heart
+		h: boolean;
+		// Tempered Spine
+		s: boolean;
+		// Tempered Brain
+		b: boolean;
+		// Firestruck Spine
+		f: boolean;
+		// Illusion
+		i: boolean;
+		// Transcendent
+		t: boolean;
+		// Law
+		l: number;
+		// Species
+		sp: SpeciesKeys;
+		// Name
+		n: string;
+	};
+	// Part Labels: Record<partId, (labelId | [labelId, labelCount])[]>
+	l: Record<number, (number | [number, number])[]>;
+	// Equipped Secret Bodies, offensiveId[], defensiveId[], effectiveId[]
+	e: { o: number[]; d: number[]; e: number[] };
+};
