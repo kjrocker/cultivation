@@ -17,8 +17,7 @@
 		Object.keys(build).includes('options');
 
 	const isVersion2 = (build: MinifiedOptions): build is MinifiedOptionsV2 =>
-		// @ts-expect-error Still not explaining shit
-		build.v && build.v === 2;
+		!isVersion1(build) && build.v === 2;
 
 	const loadVersion1 = (build: MinifiedOptionsV1): void => {
 		$selectedStore.secretBody = undefined;
