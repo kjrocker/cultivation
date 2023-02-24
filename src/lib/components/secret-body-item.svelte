@@ -23,7 +23,7 @@
 </script>
 
 <div
-	class="py-2 px-1 border-y-8 cursor-pointer hover:bg-gray-100 h-full"
+	class="py-2 px-1 border-y-8 cursor-pointer hover:bg-gray-100 "
 	class:selected
 	class:completed
 	on:click={() => {
@@ -31,11 +31,11 @@
 		selectedStore.update((v) => ({ ...v, bodyPart: overlappingNames[0] ?? undefined }));
 	}}
 >
-	<Tooltip class="h-full w-full">
+	<Tooltip class=" w-full">
 		<svelte:fragment slot="tooltip">
 			<PropertyTooltip {properties} {modifiers} level={1} />
 		</svelte:fragment>
-		<span class="w-full h-full">
+		<span class="w-full ">
 			{body.DisplayName}
 		</span>
 	</Tooltip>
