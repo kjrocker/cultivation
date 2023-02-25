@@ -15,6 +15,7 @@
 		<div class="fixed inset-0" />
 
 		<div class="fixed inset-0 overflow-hidden">
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div
 				transition:fade={{ duration: 500 }}
 				on:click|self={disable}
@@ -35,17 +36,19 @@
 						transition:fly={{ x: 200, duration: 500 }}
 						class="pointer-events-auto w-screen max-w-2xl"
 					>
-						<div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+						<div
+							class="flex h-full flex-col overflow-y-scroll bg-slate-100 dark:bg-slate-900 py-6 shadow-xl"
+						>
 							<div class="px-4 sm:px-6">
 								<div class="flex items-start justify-between">
-									<h2 class="text-lg font-medium text-gray-900" id="slide-over-title">
+									<h2 class="text-lg font-medium" id="slide-over-title">
 										{title}
 									</h2>
 									<div class="ml-3 flex h-7 items-center">
 										<button
 											type="button"
 											on:click={disable}
-											class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+											class="rounded-md bg-white text-gray-900 dark:text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
 										>
 											<span class="sr-only">Close panel</span>
 											<!-- Heroicon name: outline/x -->

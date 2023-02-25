@@ -13,10 +13,10 @@
 	export let selected: boolean;
 
 	const levelColors = {
-		1: 'text-orange-600',
+		1: 'text-orange-600 dark:test-orange-400',
 		4: 'text-pink-500',
-		9: 'text-blue-600',
-		16: 'text-green-600'
+		9: 'text-blue-600 dark:text-blue-400',
+		16: 'text-green-600 dark:text-green-400'
 	};
 
 	const getEssences = (linkItem: string, essences: Record<string, EssenceName>): string => {
@@ -26,12 +26,13 @@
 	};
 
 	// @ts-expect-error index mismatch is what the default is there for
-	$: color = levelColors[label.MaxLevel] ?? 'text-gray-900';
+	$: color = levelColors[label.MaxLevel] ?? '';
 	$: items = label.LinkItem ? getEssences(label.LinkItem, $essenceStore.map) : 'All';
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="p-2 flex hover:bg-gray-100 cursor-pointer"
+	class="p-2 flex hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
 	class:selected
 	on:click={(e) => onClick(e, label)}
 >
@@ -53,20 +54,15 @@
 					<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
 				{/if}
 			</div>
-			<p class="text-sm text-gray-500 max-w-xs overflow-ellipsis">
+			<p class="text-sm text-gray-700 dark:text-gray-400 max-w-xs overflow-ellipsis">
 				{items}
 			</p>
 		</div>
 	</Tooltip>
 </div>
 
-<style>
+<style lang="postcss">
 	.selected {
-		--tw-text-opacity: 1;
-		border-left: 8px solid rgb(74 222 128) !important;
-		/* background-color: rgb(240, 250, 240); */
-	}
-	.selected:hover {
-		/* background-color: rgb(220, 220, 230); */
+		border-left: 8px solid theme(colors.green.500) !important;
 	}
 </style>

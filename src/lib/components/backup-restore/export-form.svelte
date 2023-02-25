@@ -51,5 +51,11 @@
 	$: options = window.btoa(JSON.stringify(minified));
 </script>
 
-<textarea class="w-full" name="cultivator" bind:value={options} rows="25" readonly />
+<textarea
+	class="w-full bg-slate-100 dark:bg-slate-700"
+	name="cultivator"
+	bind:value={options}
+	rows="25"
+	readonly
+/>
 <Button on:click={() => navigator.clipboard.writeText(options)}>Copy to Clipboard</Button>

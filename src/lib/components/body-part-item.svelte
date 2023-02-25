@@ -15,40 +15,46 @@
 	$: error = validateBodyPart(part.Name, $partLabelStore, remoldCount);
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <li
-	class="py-2 px-2 flex hover:bg-gray-100 cursor-pointer"
+	class="py-2 px-2 flex hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
 	class:selected
 	on:click={(e) => onClick(e, part)}
 >
 	<BodyTypeIcon className="h-10 w-10" type={part.Kind} />
 	<div class="ml-3 mr-5 w-full">
 		<div class="flex justify-between">
-			<span
-				class={`text-sm ${selected ? 'font-extrabold' : 'font-medium'} ${
-					!error ? 'text-gray-900' : 'text-red-400'
-				}`}
-			>
+			<span class={`text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
 				{part.DisplayName}
 			</span>
-			<span class={`"text-sm font-medium ${!error ? 'text-gray-900' : 'text-red-400'}`}>
+			<span class={`"text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
 				{labelCount}/{remoldCount}
 			</span>
 		</div>
 		{#if error}
-			<p class="text-sm text-red-400 ">
+			<p class="text-sm text-red-600 dark:text-red-400">
 				{error}
 			</p>
 		{/if}
 	</div>
 </li>
 
-<style>
+<style lang="postcss">
 	.selected {
-		/* slate-200 */
-		background-color: rgb(226 232 240);
+		font-weight: 500;
+		background-color: theme(colors.slate.200);
 	}
 	.selected:hover {
-		/* slate-200 */
-		background-color: rgb(203 213 225);
+		background-color: theme(colors.slate.300);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.selected {
+			font-weight: 500;
+			background-color: theme(colors.slate.800);
+		}
+		.selected:hover {
+			background-color: theme(colors.slate.700);
+		}
 	}
 </style>

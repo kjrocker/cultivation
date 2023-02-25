@@ -43,10 +43,8 @@
 	);
 </script>
 
-<Panel class="my-2">
-	<ul
-		class="overflow-scroll overflow-x-hidden max-h-[75vh] divide-y divide-gray-200 border border-transparent rounded-md"
-	>
+<Panel class="">
+	<ul class="overflow-y-scroll max-h-[75vh] divide-y divide-slate-200 border rounded-md">
 		{#each filteredLabels as label, i}
 			<PartLabelItem
 				selected={!!selected.find((l) => l.Name === label.Name)}
