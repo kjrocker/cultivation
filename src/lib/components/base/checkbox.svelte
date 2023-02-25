@@ -6,7 +6,7 @@
 	export let text: string;
 </script>
 
-<label class={`block`}>
+<label class={`block cursor-pointer`}>
 	<input
 		type="checkbox"
 		class="disabled:bg-gray-500"

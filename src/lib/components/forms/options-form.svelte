@@ -11,11 +11,11 @@
 	};
 
 	const classes = {
-		label: 'block text-md font-medium text-gray-700',
+		label: 'block text-md font-medium',
 		checkbox: 'h-4 w-4 mb-1',
 		checkboxLabel: 'min-w-[150px] inline-block',
 		select:
-			'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full text-md border-gray-800 rounded-md h-8 px-1 py-0 mt-1'
+			'shadow-sm focus:ring-indigo-500 text-gray-900 focus:border-indigo-500 block w-full text-md border-gray-800 rounded-md h-8 px-1 py-0 mt-1'
 	};
 
 	$: {

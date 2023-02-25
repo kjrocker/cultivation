@@ -24,10 +24,19 @@
 {#await preload}
 	Loading...
 {:then}
-	<div class="body mx-4 my-2">
+	<div class="body px-4 py-2">
 		<slot />
 	</div>
 {/await}
 
 <style>
+	.body {
+		background-color: #f2f2f2;
+	}
+	@media (prefers-color-scheme: dark) {
+		.body {
+			color: #c9d1d9;
+			background: #0d1117;
+		}
+	}
 </style>

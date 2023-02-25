@@ -45,4 +45,10 @@
 		position: absolute;
 		z-index: 10000;
 	}
+	@media (prefers-color-scheme: dark) {
+		.tooltip {
+			color: #c9d1d9;
+			background: #0d1117;
+		}
+	}
 </style>

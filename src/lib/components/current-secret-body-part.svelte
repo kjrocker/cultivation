@@ -13,7 +13,12 @@
 	const allLabels = $labelStore;
 </script>
 
-<li class="py-2 px-2 hover:bg-gray-100 cursor-pointer" class:selected on:click>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<li
+	class="py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-sm"
+	class:selected
+	on:click
+>
 	<div class={`flex justify-between ${disabled ? 'line-through' : ''}`}>
 		<span>{partDisplayName}</span>
 		<span class="mr-2">
@@ -25,17 +30,26 @@
 		</span>
 	</div>
 	{#each secretLabels as label}
-		<p class="text-sm text-gray-500">{allLabels.map[label.Name].DisplayName}</p>
+		<p class="text-sm text-gray-700 dark:text-gray-400">{allLabels.map[label.Name].DisplayName}</p>
 	{/each}
 </li>
 
-<style>
+<style lang="postcss">
 	.selected {
-		/* slate-200 */
-		background-color: rgb(226 232 240);
+		font-weight: 500;
+		background-color: theme(colors.slate.200);
 	}
 	.selected:hover {
-		/* slate-200 */
-		background-color: rgb(203 213 225);
+		background-color: theme(colors.slate.300);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.selected {
+			font-weight: 500;
+			background-color: theme(colors.slate.800);
+		}
+		.selected:hover {
+			background-color: theme(colors.slate.700);
+		}
 	}
 </style>

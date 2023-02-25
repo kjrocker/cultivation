@@ -22,8 +22,9 @@
 	$: completed = !!$completeSecretBodiesStore[body.Name];
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="py-2 px-1 border-y-8 cursor-pointer hover:bg-gray-100 "
+	class="py-2 px-1 border-y-8 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800"
 	class:selected
 	class:completed
 	on:click={() => {
@@ -41,23 +42,23 @@
 	</Tooltip>
 </div>
 
-<style>
+<style lang="postcss">
 	.selected {
-		/* slate-200 */
-		background-color: rgb(226 232 240);
-		border-bottom-color: rgb(51 65 85);
-		border-top-color: rgb(51 65 85);
+		background-color: theme(colors.slate.200);
+		border-bottom-color: theme(colors.slate.800);
+		border-top-color: theme(colors.slate.800);
 	}
-	.selected:hover {
-		/* slate-200 */
-		background-color: rgb(203 213 225);
+	@media (prefers-color-scheme: dark) {
+		.selected {
+			background-color: theme(colors.slate.900);
+		}
 	}
 	.completed {
-		border-bottom-color: rgb(74 222 128);
-		border-top-color: rgb(74 222 128);
+		border-bottom-color: theme(colors.green.500);
+		border-top-color: theme(colors.green.500);
 	}
 	.completed.selected {
-		border-bottom-color: darkgreen;
-		border-top-color: darkgreen;
+		border-bottom-color: theme(colors.green.800);
+		border-top-color: theme(colors.green.800);
 	}
 </style>

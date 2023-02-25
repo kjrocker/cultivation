@@ -8,10 +8,9 @@
 		$secretBodyStore.keys.filter((name) => $selectedLawStore.SuperParts.includes(name));
 </script>
 
-<div class="w-full overflow-x-scroll">
+<div class="overflow-x-scroll">
 	<div class="block">
 		<nav class="flex divide-x border-b-2 border-stone-400" aria-label="Tabs">
-			<!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
 			{#each bodyNames as name}
 				<SecretBodyItem {name} />
 			{/each}

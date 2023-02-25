@@ -29,34 +29,31 @@
 	});
 </script>
 
-<div class="flex">
-	<div class="flex w-full mb-4 mt-2">
-		<OptionsForm />
-		<div class="flex flex-wrap">
-			<Button
-				class="m-1"
-				on:click={() => {
-					equipSlider = true;
-				}}>Equip</Button
-			>
-			<Button
-				class="m-1"
-				on:click={() => {
-					exportSlider = true;
-				}}>Backup</Button
-			>
-			<Button
-				class="m-1"
-				on:click={() => {
-					importSlider = true;
-				}}>Restore</Button
-			>
-		</div>
-
-		<Slider title="Equip Secret Bodies" bind:open={equipSlider}><EquipSecretBodiesForm /></Slider>
-		<Slider title="Restore Cultivator" bind:open={importSlider}><ImportForm /></Slider>
-		<Slider title="Backup Cultivator" bind:open={exportSlider}><ExportForm /></Slider>
+<div class="flex w-full mb-4 mt-2">
+	<OptionsForm />
+	<div class="flex flex-wrap">
+		<Button
+			class="m-1"
+			on:click={() => {
+				equipSlider = true;
+			}}>Equip</Button
+		>
+		<Button
+			class="m-1"
+			on:click={() => {
+				exportSlider = true;
+			}}>Backup</Button
+		>
+		<Button
+			class="m-1"
+			on:click={() => {
+				importSlider = true;
+			}}>Restore</Button
+		>
 	</div>
+	<Slider title="Equip Secret Bodies" bind:open={equipSlider}><EquipSecretBodiesForm /></Slider>
+	<Slider title="Restore Cultivator" bind:open={importSlider}><ImportForm /></Slider>
+	<Slider title="Backup Cultivator" bind:open={exportSlider}><ExportForm /></Slider>
 </div>
 <SecretBodies />
 <div class="flex w-full overflow-x-scroll">
@@ -72,5 +69,4 @@
 	<div class="w-1/4 min-w-fit ml-1">
 		<PropertyBonusList /><BattleModifierList /><ModifierBonusList />
 	</div>
-	<div class="flex h-full align-bottom" />
 </div>
