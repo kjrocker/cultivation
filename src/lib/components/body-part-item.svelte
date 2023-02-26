@@ -21,7 +21,7 @@
 	class:selected
 	on:click={(e) => onClick(e, part)}
 >
-	<BodyTypeIcon className="h-10 w-10" type={part.Kind} />
+	<BodyTypeIcon className="h-8 w-8 dark:invert" type={part.Kind} />
 	<div class="ml-3 mr-5 w-full">
 		<div class="flex justify-between">
 			<span class={`text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>

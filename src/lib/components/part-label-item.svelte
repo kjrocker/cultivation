@@ -44,7 +44,7 @@
 				level={label.MaxLevel}
 			/>
 		</svelte:fragment>
-		<BodyTypeIcon className="h-10 w-10" type={label.BodyPart} />
+		<BodyTypeIcon className="h-8 w-8 dark:invert" type={label.BodyPart} />
 		<div class="ml-2 mr-2 w-full">
 			<div class="flex justify-between">
 				<span class={`text-sm ${selected ? 'font-extrabold' : 'font-medium'} ${color}`}>
