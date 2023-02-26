@@ -1,5 +1,5 @@
 <script lang="ts">
-	const className: string = '';
+	const className = '';
 	export { className as class };
 </script>
 
