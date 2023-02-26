@@ -10,7 +10,7 @@
 
 <div class="overflow-x-scroll">
 	<div class="block">
-		<nav class="flex divide-x border-b-2 border-stone-400" aria-label="Tabs">
+		<nav class="flex divide-x" aria-label="Tabs">
 			{#each bodyNames as name}
 				<SecretBodyItem {name} />
 			{/each}
