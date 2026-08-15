@@ -105,11 +105,14 @@ The root URL redirects to `/cultivation` under `yarn dev` but **not** under
 ## Test
 
 ```bash
-yarn vitest --run   # 5 files, 20 tests, ~1s
+yarn test:ci        # what CI runs: lint + 5 files, 20 tests, ~1s
+yarn vitest --run   # unit tests alone, skipping the lint gate
 yarn e2e            # builds, previews on :4173, 4 playwright tests, ~4s
 ```
 
-Use `yarn vitest --run`, not `yarn test:ci` — see Gotchas.
+`yarn test:ci` exits 0. Its eslint half prints **60 warnings, 0 errors** —
+mostly `no-explicit-any` in the XML readers, which are deliberately untyped.
+That is the expected baseline, not a regression.
 
 ## Gotchas
 
@@ -122,11 +125,12 @@ Use `yarn vitest --run`, not `yarn test:ci` — see Gotchas.
 - **`import 'playwright'` fails.** `@playwright/test@1.28` installs
   `playwright-core` only; `playwright` is not in `node_modules`. Import
   `playwright-core`.
-- **`yarn test:ci` fails on files that aren't the project's.** Its `yarn lint`
-  half runs prettier over the whole tree and dies with `EACCES: permission
-  denied, open '.mcp.json'` — the agent sandbox masks some dotfiles as
-  unreadable char devices. `/.claude` is in `.prettierignore` / `.eslintignore`
-  for the same reason. Run `yarn vitest --run` to test without the lint gate.
+- **Don't remove `/.claude` or `/.mcp.json` from `.prettierignore`.** The agent
+  sandbox replaces those paths with unreadable char devices (`crw-rw-rw- nobody
+  nobody 1, 3`), so prettier walking the tree dies with `EACCES: permission
+  denied, open '.mcp.json'` and takes `yarn test:ci` down with it. They are
+  invisible to GitHub Actions, so this breaks agents only — and silently, since
+  the file exists in `ls` but reads as `/dev/null`.
 - **Quench labels are unsemantic `div`s.** The tempering list items have no
   `role`, no `li`, no button — just `div.cursor-pointer`. `li:has-text("Steel
   Bone")` matches nothing. Click them with `text=Steel Bone`.

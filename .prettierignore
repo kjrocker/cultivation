@@ -15,3 +15,4 @@ yarn.lock
 
 # Agent tooling — Claude Code writes here; some entries are unreadable to prettier
 /.claude
+/.mcp.json
