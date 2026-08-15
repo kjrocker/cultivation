@@ -3,10 +3,7 @@
 	import type { PartProperty } from '$lib/data/util/part-properties';
 	import { calculatePropertyItem } from '$lib/util/total-property-item';
 	import Tooltip from './base/tooltip.svelte';
-	import {
-		globalPercentageBonusStore,
-		globalValueBonusStore
-	} from './stores/global-body-bonuses-store';
+	import { globalPercentageBonusStore, globalValueBonusStore } from '$lib/stores';
 
 	export let name: string;
 	export let displayName: string;

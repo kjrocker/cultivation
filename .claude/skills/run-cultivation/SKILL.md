@@ -128,16 +128,26 @@ That is the expected baseline, not a regression.
   denied, open '.mcp.json'` and takes `yarn test:ci` down with it. They are
   invisible to GitHub Actions, so this breaks agents only — and silently, since
   the file exists in `ls` but reads as `/dev/null`.
-- **Quench labels are unsemantic `div`s.** The tempering list items have no
-  `role`, no `li`, no button — just `div.cursor-pointer`. `li:has-text("Steel
-  Bone")` matches nothing. Click them with `text=Steel Bone`.
+- **Every clickable row is `li > button` (secret-body tabs are `div > button`).**
+  Quench labels carry `aria-pressed`, body-part / secret-body-part rows and the
+  tabs carry `aria-current`, so `button[aria-pressed=true]` and
+  `button[aria-current=true]` read the app's state straight out of the DOM.
+  `li:has-text("Steel Bone")` and `text=Steel Bone` both work. Body-part rows are
+  `li` too, so a bare `li` locator spans both lists — filter by unique text.
+- **`press` selectors can't contain spaces.** The driver splits its line on
+  whitespace, so `press li:has-text("Steel Bone") Enter` mangles the selector.
+  Use a space-free one: `press ul[class*=overflow-y-scroll]>li:nth-child(2)>div>button Enter`
+  (the label `li` wraps a Tooltip `div` around the button). Enter/Space activate
+  the real button, so this is the way to test keyboard access.
 - **One label click can bump the count by more than one.** Clicking `Steel Bone`
   takes Skull from `0/8` to `2/8` — `tempering-config.ts` inheritance pulls in
   the prerequisite `Tempered Bone` too. Assert the resulting count, not `+1`.
-- **Hover tooltips overlay the next target.** After clicking a label the mouse
-  stays there and a tooltip (`Attack +320%`) covers the row below, so a
-  follow-up click can silently hit the tooltip. Move on to a different region
-  or re-`click` by text rather than position.
+- **Tooltips overlay the next target.** After clicking a label the mouse stays
+  there and a tooltip (`Attack +320%`) covers the row below, so a follow-up
+  click can silently hit the tooltip. Move on to a different region or re-`click`
+  by text rather than position. Tooltips also open on keyboard focus (anchored
+  under the focused element) and are the only `[role=tooltip]` in the page, so
+  `eval document.querySelector('[role=tooltip]').innerText` reads the live one.
 - **Screenshots catch the slide-over mid-fade.** Backup/Restore panels animate
   in; a raw `page.screenshot` right after the click shows a half-transparent
   panel. The driver passes `animations: 'disabled'` — keep it if you edit.

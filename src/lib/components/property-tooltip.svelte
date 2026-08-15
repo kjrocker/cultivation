@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { modifierStore } from '$lib/data/stores';
+	import { modifierStore } from '$lib/stores';
 	import { PropertyConfiguration } from '$lib/data/property-config';
 	import { sumAndGroupProperties } from '$lib/util/get-all-modifier-groups';
 	import type { PartProperty } from '$lib/data/types';

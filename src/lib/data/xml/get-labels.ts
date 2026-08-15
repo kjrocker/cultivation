@@ -5,7 +5,6 @@ import { parsePartProperties } from '../util/part-properties';
 import { renameKey } from '../util/rename-key';
 import { stripAttributePrefix } from '../util/strip-attribute-keys';
 import { indexBy, isEmpty, prop } from 'ramda';
-import { createStaticAsyncStore } from '../util/async-readable-store';
 import { TemperedLabelConfig } from '../tempering-config';
 import type { LabelView, PartProperty } from '../types';
 import { createDataReader, dataViewExpand, dataViewShrink } from '../util/write-json';

@@ -4,7 +4,7 @@
 	import Collapse from './base/collapse.svelte';
 	import Panel from './base/panel.svelte';
 	import PropertyBonusListItem from './property-bonus-list-item.svelte';
-	import { partModifierStore, secretBodyModifierStore } from './stores/current-modifiers-store';
+	import { partModifierStore, secretBodyModifierStore } from '$lib/stores';
 
 	$: groups = getAllModifierGroups($secretBodyModifierStore, $partModifierStore);
 </script>

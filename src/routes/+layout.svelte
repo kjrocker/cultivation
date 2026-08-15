@@ -1,24 +1,10 @@
 <script>
 	import '../app.css';
-	import {
-		bodyLawStore,
-		essenceStore,
-		bodyPartsStore,
-		secretBodyStore,
-		labelStore,
-		modifierStore
-	} from '$lib/data/stores';
+	import { loadGameData } from '$lib/stores';
 
-	const preloadPromises = [
-		bodyPartsStore.init(),
-		secretBodyStore.init(),
-		bodyLawStore.init(),
-		labelStore.init(),
-		modifierStore.init(),
-		essenceStore.init()
-	];
-
-	const preload = Promise.all(preloadPromises);
+	// Nothing below renders — and so nothing subscribes to a derived store — until
+	// every JSON file under static/Data has landed in `gameData`.
+	const preload = loadGameData();
 </script>
 
 {#await preload}

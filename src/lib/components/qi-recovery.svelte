@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { formatNumber } from '$lib/util/format-number';
-	import { qiRecoveryStore } from './stores/qi-recovery-balance-store';
+	import { qiRecoveryStore } from '$lib/stores';
 
 	let className: string;
 	export { className as class };

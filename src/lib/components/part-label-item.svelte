@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { essenceStore } from '$lib/data/stores';
+	import { essenceStore } from '$lib/stores';
 	import type { EssenceName, LabelView } from '$lib/data/types';
 	import { CheckCircle } from '@steeze-ui/iconic-free';
 	import { Icon } from '@steeze-ui/svelte-icon';
@@ -30,13 +30,8 @@
 	$: items = label.LinkItem ? getEssences(label.LinkItem, $essenceStore.map) : 'All';
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div
-	class="p-2 flex hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-	class:selected
-	on:click={(e) => onClick(e, label)}
->
-	<Tooltip class="flex w-full">
+<li class:selected>
+	<Tooltip class="flex w-full" let:describedBy>
 		<svelte:fragment slot="tooltip">
 			<PropertyTooltip
 				properties={label.SuperPartProperties}
@@ -44,22 +39,30 @@
 				level={label.MaxLevel}
 			/>
 		</svelte:fragment>
-		<BodyTypeIcon className="h-8 w-8 dark:invert" type={label.BodyPart} />
-		<div class="ml-2 mr-2 w-full">
-			<div class="flex justify-between">
-				<span class={`text-sm ${selected ? 'font-extrabold' : 'font-medium'} ${color}`}>
-					{label.DisplayName}
-				</span>
-				{#if selected}
-					<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
-				{/if}
+		<button
+			type="button"
+			aria-pressed={selected}
+			aria-describedby={describedBy}
+			class="p-2 flex w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+			on:click={(e) => onClick(e, label)}
+		>
+			<BodyTypeIcon className="h-8 w-8 dark:invert" type={label.BodyPart} />
+			<div class="ml-2 mr-2 w-full">
+				<div class="flex justify-between">
+					<span class={`text-sm ${selected ? 'font-extrabold' : 'font-medium'} ${color}`}>
+						{label.DisplayName}
+					</span>
+					{#if selected}
+						<Icon class="w-5 h-5 text-green-400" src={CheckCircle} />
+					{/if}
+				</div>
+				<p class="text-sm text-gray-700 dark:text-gray-400 max-w-xs overflow-ellipsis">
+					{items}
+				</p>
 			</div>
-			<p class="text-sm text-gray-700 dark:text-gray-400 max-w-xs overflow-ellipsis">
-				{items}
-			</p>
-		</div>
+		</button>
 	</Tooltip>
-</div>
+</li>
 
 <style lang="postcss">
 	.selected {

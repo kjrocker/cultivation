@@ -1,4 +1,4 @@
-import type { PartLabelStore } from '$lib/components/stores/part-label-store';
+import type { PartLabels } from '$lib/core/types';
 import type { LabelView } from '$lib/data/types';
 import { countBy, isEmpty, maxBy, omit, pipe, toPairs } from 'ramda';
 
@@ -33,7 +33,7 @@ const getMutuallyExclusiveErrorMessage = (labels: LabelView[]): string | undefin
 
 export const validateBodyPart = (
 	part: string,
-	partLabels: PartLabelStore,
+	partLabels: PartLabels,
 	maxLabels: number
 ): string | undefined => {
 	const labels = partLabels[part];

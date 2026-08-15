@@ -1,11 +1,8 @@
-import type { PartLabelStore } from '$lib/components/stores/part-label-store';
+import type { PartLabels } from '$lib/core/types';
 import type { SecretBody } from '$lib/data/types';
 import { difference, values } from 'ramda';
 
-export const isBodyComplete = (
-	body: SecretBody,
-	parts: PartLabelStore
-): Record<string, boolean> => {
+export const isBodyComplete = (body: SecretBody, parts: PartLabels): Record<string, boolean> => {
 	const secretBodyParts = body.Parts;
 	return secretBodyParts?.reduce((acc, part) => {
 		const needed = part.Labels.map((l) => l.Name);
@@ -15,6 +12,6 @@ export const isBodyComplete = (
 	}, {} as Record<string, boolean>);
 };
 
-export const isWholeBodyComplete = (body: SecretBody, parts: PartLabelStore): boolean => {
+export const isWholeBodyComplete = (body: SecretBody, parts: PartLabels): boolean => {
 	return values(isBodyComplete(body, parts)).every((v) => v);
 };

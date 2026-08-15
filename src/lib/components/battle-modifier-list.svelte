@@ -5,7 +5,7 @@
 	import Panel from './base/panel.svelte';
 	import PropertyBonusListItem from './property-bonus-list-item.svelte';
 	import QiRecovery from './qi-recovery.svelte';
-	import { partModifierStore, secretBodyModifierStore } from './stores/current-modifiers-store';
+	import { partModifierStore, secretBodyModifierStore } from '$lib/stores';
 
 	const groupList = {
 		BodyPratice_MaxZhenQi: 'Max True Qi',

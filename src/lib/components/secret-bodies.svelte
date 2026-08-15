@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { secretBodyStore } from '$lib/data/stores';
+	import { secretBodyStore, selectedLawStore } from '$lib/stores';
 	import SecretBodyItem from './secret-body-item.svelte';
-	import { selectedLawStore } from './stores/selected-store';
 
 	$: bodyNames =
 		$secretBodyStore &&

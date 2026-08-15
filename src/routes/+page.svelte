@@ -6,16 +6,18 @@
 	import EquipSecretBodiesForm from '$lib/components/equip-secret-bodies-form.svelte';
 	import ExportForm from '$lib/components/backup-restore/export-form.svelte';
 	import OptionsForm from '$lib/components/forms/options-form.svelte';
-	import { bodyOptionsStore } from '$lib/components/stores/options-store';
 	import ImportForm from '$lib/components/backup-restore/import-form.svelte';
 	import ModifierBonusList from '$lib/components/modifier-bonus-list.svelte';
 	import PartLabelList from '$lib/components/part-label-list.svelte';
 	import PropertyBonusList from '$lib/components/property-bonus-list.svelte';
 	import SecretBodies from '$lib/components/secret-bodies.svelte';
-	import { partLabelCountStore } from '$lib/components/stores/part-label-count-store';
-	import { partLabelStore } from '$lib/components/stores/part-label-store';
-	import { selectedBodyPart } from '$lib/components/stores/selected-store';
-	import { bodyPartsStore } from '$lib/data/stores';
+	import {
+		actions,
+		bodyOptionsStore,
+		bodyPartsStore,
+		partLabelStore,
+		selectedBodyPart
+	} from '$lib/stores';
 	import { onMount } from 'svelte';
 	import BattleModifierList from '$lib/components/battle-modifier-list.svelte';
 	import IconLink from '$lib/components/base/icon-link.svelte';
@@ -25,7 +27,7 @@
 	let equipSlider = false;
 
 	onMount(() => {
-		partLabelCountStore.init($bodyPartsStore.species[$bodyOptionsStore.species]);
+		actions.initParts($bodyPartsStore.species[$bodyOptionsStore.species]);
 	});
 </script>
 

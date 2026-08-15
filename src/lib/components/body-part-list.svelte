@@ -1,17 +1,21 @@
 <script lang="ts">
-	import { bodyPartsStore } from '$lib/data/stores';
 	import type { BodyPart } from '$lib/data/types';
+	import {
+		actions,
+		bodyPartsStore,
+		currentSpeciesPartsStore,
+		partLabelStore,
+		selectedSecretBody,
+		selectedStore
+	} from '$lib/stores';
 	import Error from './base/error.svelte';
 	import Panel from './base/panel.svelte';
 	import BodyPartItem from './body-part-item.svelte';
-	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
-	import { partLabelStore } from './stores/part-label-store';
-	import { selectedSecretBody, selectedStore } from './stores/selected-store';
 
 	export let onChange: (e: MouseEvent, part: BodyPart) => void = () => undefined;
 
 	let handleClick = (e: MouseEvent, part: BodyPart): void => {
-		$selectedStore.bodyPart = part.Name;
+		actions.selectBodyPart(part.Name);
 		onChange(e, part);
 	};
 
@@ -36,7 +40,7 @@
 				: `There are ${missing} body part(s) missing!`}
 		</Error>
 	{/if}
-	<div
+	<ul
 		class="overflow-scroll overflow-x-hidden max-h-[75vh] divide-y divide-gray-200 rounded-md border-transparent border"
 	>
 		{#each currentBodyParts as part}
@@ -47,5 +51,5 @@
 				{part}
 			/>
 		{/each}
-	</div>
+	</ul>
 </Panel>

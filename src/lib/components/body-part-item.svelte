@@ -3,8 +3,7 @@
 	import { validateBodyPart } from '$lib/util/validate-body-part';
 	import BodyTypeIcon from './body-parts/body-type-icon.svelte';
 	import { getRemoldCount } from '../util/get-remold-count';
-	import { partLabelStore } from './stores/part-label-store';
-	import { bodyOptionsStore } from './stores/options-store';
+	import { bodyOptionsStore, partLabelStore } from '$lib/stores';
 
 	export let selected: boolean;
 	export let labelCount: number;
@@ -15,28 +14,30 @@
 	$: error = validateBodyPart(part.Name, $partLabelStore, remoldCount);
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<li
-	class="py-2 px-2 flex hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-	class:selected
-	on:click={(e) => onClick(e, part)}
->
-	<BodyTypeIcon className="h-8 w-8 dark:invert" type={part.Kind} />
-	<div class="ml-3 mr-5 w-full">
-		<div class="flex justify-between">
-			<span class={`text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
-				{part.DisplayName}
-			</span>
-			<span class={`"text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
-				{labelCount}/{remoldCount}
-			</span>
+<li class:selected>
+	<button
+		type="button"
+		aria-current={selected}
+		class="py-2 px-2 flex w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+		on:click={(e) => onClick(e, part)}
+	>
+		<BodyTypeIcon className="h-8 w-8 dark:invert" type={part.Kind} />
+		<div class="ml-3 mr-5 w-full">
+			<div class="flex justify-between">
+				<span class={`text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
+					{part.DisplayName}
+				</span>
+				<span class={`"text-sm ${!error ? '' : 'text-red-600 dark:text-red-400'}`}>
+					{labelCount}/{remoldCount}
+				</span>
+			</div>
+			{#if error}
+				<p class="text-sm text-red-600 dark:text-red-400">
+					{error}
+				</p>
+			{/if}
 		</div>
-		{#if error}
-			<p class="text-sm text-red-600 dark:text-red-400">
-				{error}
-			</p>
-		{/if}
-	</div>
+	</button>
 </li>
 
 <style lang="postcss">

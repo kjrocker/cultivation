@@ -7,6 +7,6 @@
 	export { className as class };
 </script>
 
-<a {href} class={className} target="_blank" on:click>
+<a {href} class={className} target="_blank" rel="noreferrer" on:click>
 	<Icon src={GithubLogo} />
 </a>

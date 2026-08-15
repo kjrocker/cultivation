@@ -1,13 +1,10 @@
 <script lang="ts">
-	import { bodyLawStore } from '$lib/data/stores';
-	import { bodyPartsStore } from '$lib/data/stores';
+	import { isTemperingAllowed } from '$lib/core/defaults';
 	import { SPECIES_OPTIONS } from '$lib/data/species';
-	import { partLabelCountStore } from '../stores/part-label-count-store';
-	import { selectedStore } from '../stores/selected-store';
-	import { bodyOptionsStore as options } from '../stores/options-store';
+	import { actions, bodyLawStore, bodyPartsStore, bodyOptionsStore as options } from '$lib/stores';
 
 	const resetPartLabels = () => {
-		partLabelCountStore.setParts($bodyPartsStore.species[$options.species]);
+		actions.setParts($bodyPartsStore.species[$options.species]);
 	};
 
 	const classes = {
@@ -18,22 +15,11 @@
 			'shadow-sm focus:ring-indigo-500 text-gray-900 focus:border-indigo-500 block w-full text-md border-gray-800 rounded-md h-8 px-1 py-0 mt-1'
 	};
 
-	$: {
-		if ($options.law === 'Body_Gong_2') {
-			$options.illusionBrain = false;
-			$options.transcendantHeart = false;
-		} else if ($options.law === 'Body_Gong_3') {
-			$options.fireSpine = false;
-			$options.transcendantHeart = false;
-		} else if ($options.law === 'Body_Gong_5') {
-			$options.fireSpine = false;
-			$options.illusionBrain = false;
-		} else if ($options.law === 'Body_Gong_1') {
-			$options.fireSpine = false;
-			$options.illusionBrain = false;
-			$options.transcendantHeart = false;
-		}
-	}
+	// Which extra tempering the current law unlocks; the other two are cleared on
+	// every write by `normalizeOptions` in the core.
+	$: allowsFireSpine = isTemperingAllowed($options.law, 'fireSpine');
+	$: allowsIllusionBrain = isTemperingAllowed($options.law, 'illusionBrain');
+	$: allowsTranscendantHeart = isTemperingAllowed($options.law, 'transcendantHeart');
 </script>
 
 <div class="flex flex-wrap">
@@ -63,7 +49,7 @@
 			class={classes.select}
 			bind:value={$options.law}
 			on:change={() => {
-				selectedStore.clear();
+				actions.clearSelection();
 			}}
 		>
 			{#each $bodyLawStore.list as law}
@@ -106,23 +92,21 @@
 	<div>
 		<label
 			class={`${classes.checkboxLabel} ${
-				$options.law !== 'Body_Gong_2' ? 'line-through cursor-not-allowed' : ''
+				!allowsFireSpine ? 'line-through cursor-not-allowed' : ''
 			}`}
 		>
 			<input
 				name="fireSpine"
 				bind:checked={$options.fireSpine}
 				type="checkbox"
-				class={`${classes.checkbox} ${
-					$options.law !== 'Body_Gong_2' ? 'bg-gray-500 cursor-not-allowed' : ''
-				}`}
-				disabled={$options.law !== 'Body_Gong_2'}
+				class={`${classes.checkbox} ${!allowsFireSpine ? 'bg-gray-500 cursor-not-allowed' : ''}`}
+				disabled={!allowsFireSpine}
 			/>
 			Firestruck Spine
 		</label>
 		<label
 			class={`${classes.checkboxLabel} ${
-				$options.law !== 'Body_Gong_3' ? 'line-through cursor-not-allowed' : ''
+				!allowsIllusionBrain ? 'line-through cursor-not-allowed' : ''
 			}`}
 		>
 			<input
@@ -130,15 +114,15 @@
 				bind:checked={$options.illusionBrain}
 				type="checkbox"
 				class={`${classes.checkbox} ${
-					$options.law !== 'Body_Gong_3' ? 'bg-gray-500 cursor-not-allowed' : ''
+					!allowsIllusionBrain ? 'bg-gray-500 cursor-not-allowed' : ''
 				}`}
-				disabled={$options.law !== 'Body_Gong_3'}
+				disabled={!allowsIllusionBrain}
 			/>
 			Illusionary Brain
 		</label>
 		<label
 			class={`${classes.checkboxLabel} ${
-				$options.law !== 'Body_Gong_5' ? 'line-through cursor-not-allowed' : ''
+				!allowsTranscendantHeart ? 'line-through cursor-not-allowed' : ''
 			}`}
 		>
 			<input
@@ -146,9 +130,9 @@
 				bind:checked={$options.transcendantHeart}
 				type="checkbox"
 				class={`${classes.checkbox} ${
-					$options.law !== 'Body_Gong_5' ? 'bg-gray-500 cursor-not-allowed' : ''
+					!allowsTranscendantHeart ? 'bg-gray-500 cursor-not-allowed' : ''
 				}`}
-				disabled={$options.law !== 'Body_Gong_5'}
+				disabled={!allowsTranscendantHeart}
 			/>
 			Transcendant Heart
 		</label>

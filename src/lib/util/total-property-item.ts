@@ -18,10 +18,17 @@ const DefaultConfig: Required<PropertyConfig> = {
 	gAddV: 0
 };
 
+export type PropertyItem = {
+	baseValue: number;
+	percentBonus: number;
+	bonusValue: number;
+	total: number;
+};
+
 export const calculatePropertyItem = <Config extends PropertyConfig>(
 	prop?: PartProperty,
 	partialConfig?: Config
-) => {
+): PropertyItem => {
 	const config: Required<PropertyConfig> = { ...DefaultConfig, ...partialConfig };
 	const baseValue = undefinedSum(config.base, prop?.BAddV);
 	const percentBonus = undefinedSum(1, prop?.AddP);

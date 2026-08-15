@@ -1,15 +1,19 @@
 <script lang="ts">
-	import { bodyPartsStore, labelStore } from '$lib/data/stores';
+	import {
+		actions,
+		bodyPartsStore,
+		currentSpeciesPartsStore,
+		labelStore,
+		partLabelStore,
+		selectedSecretBody,
+		selectedStore
+	} from '$lib/stores';
 	import { PartToTemperedMap } from '$lib/data/tempering-config';
 	import { isBodyComplete } from '$lib/util/is-body-complete';
 	import { uniqBy } from 'ramda';
 	import Button from './base/button.svelte';
 	import Panel from './base/panel.svelte';
 	import CurrentSecretBodyPart from './current-secret-body-part.svelte';
-	import { currentSpeciesPartsStore } from './stores/current-species-parts-store';
-	import { partLabelCountStore } from './stores/part-label-count-store';
-	import { partLabelStore } from './stores/part-label-store';
-	import { selectedSecretBody, selectedStore } from './stores/selected-store';
 
 	$: allParts = $bodyPartsStore;
 
@@ -34,7 +38,7 @@
 			if ($currentSpeciesPartsStore.includes(Name)) {
 				const myLabels = Labels.map(({ Name }: any) => labels.map[Name]);
 				const temperedLabel = getTemperedLabelForPart(Name);
-				partLabelCountStore.append(
+				actions.appendPartLabels(
 					Name,
 					uniqBy((v) => v.Name, [...myLabels, temperedLabel])
 				);
@@ -55,7 +59,7 @@
 				<CurrentSecretBodyPart
 					on:click={() => {
 						if ($currentSpeciesPartsStore.includes(Name)) {
-							$selectedStore.bodyPart = Name;
+							actions.selectBodyPart(Name);
 						}
 					}}
 					partDisplayName={allParts.map[Name]?.DisplayName}

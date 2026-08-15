@@ -1,11 +1,9 @@
 <script lang="ts">
 	import type { BodyPart, LabelView } from '$lib/data/types';
-	import { labelStore } from '$lib/data/stores';
+	import { actions, labelStore, partLabelStore } from '$lib/stores';
 	import { filterLabelByPart } from '$lib/util/filter-labels-by-part';
 	import { sortBy, uniqBy } from 'ramda';
 	import PartLabelItem from './part-label-item.svelte';
-	import { partLabelCountStore } from './stores/part-label-count-store';
-	import { partLabelStore } from './stores/part-label-store';
 	import Panel from './base/panel.svelte';
 
 	export let onChange: (e: MouseEvent, label: LabelView[]) => void = () => undefined;
@@ -15,13 +13,13 @@
 
 	const handleAdd = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered([...selected, label]);
-		partLabelCountStore.update(bodyPart.Name, newValue);
+		actions.setPartLabels(bodyPart.Name, newValue);
 		onChange(e, newValue);
 	};
 
 	const handleRemove = (e: MouseEvent, label: LabelView) => {
 		const newValue = ensureTempered(selected.filter((l) => l.Name !== label.Name));
-		partLabelCountStore.update(bodyPart.Name, newValue);
+		actions.setPartLabels(bodyPart.Name, newValue);
 		onChange(e, newValue);
 	};
 

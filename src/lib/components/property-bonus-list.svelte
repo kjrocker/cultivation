@@ -1,17 +1,11 @@
 <script lang="ts">
 	import { PropertyConfiguration, SecretBodyProperties } from '$lib/data/property-config';
-	import { getSecretBodyPropertyGroups } from '$lib/util/get-all-modifier-groups';
+	import { selectedBodyPropertyGroupsStore } from '$lib/stores';
 	import Collapse from './base/collapse.svelte';
 	import Panel from './base/panel.svelte';
 	import BonusListItem from './property-bonus-list-item.svelte';
-	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
-	import { partPropertyStore } from './stores/current-properties-store';
-	import { selectedSecretBody } from './stores/selected-store';
 
-	$: propertyGroups =
-		$selectedSecretBody && $completeSecretBodiesStore[$selectedSecretBody.Name]
-			? getSecretBodyPropertyGroups($selectedSecretBody, $partPropertyStore)
-			: {};
+	$: propertyGroups = $selectedBodyPropertyGroupsStore;
 </script>
 
 <Panel>

@@ -1,19 +1,20 @@
 <script lang="ts">
-	import { secretBodyStore } from '$lib/data/stores';
-	import { completeSecretBodiesStore } from './stores/complete-secret-bodies-store';
+	import type { EquippedSecretBodies } from '$lib/core/types';
 	import {
+		actions,
+		completeSecretBodiesStore,
 		equippedSecretBodyStore,
-		type EquippedSecretBodyStore
-	} from './stores/equipped-secret-bodies-store';
+		secretBodyStore
+	} from '$lib/stores';
 	import Checkbox from './base/checkbox.svelte';
 
-	const createChangeHandler = (type: keyof EquippedSecretBodyStore) => {
+	const createChangeHandler = (type: keyof EquippedSecretBodies) => {
 		return ({ target }: any) => {
 			const { value, checked } = target;
 			if (checked) {
-				equippedSecretBodyStore.add(type, value);
+				actions.equipBody(type, value);
 			} else {
-				equippedSecretBodyStore.remove(type, value);
+				actions.unequipBody(type, value);
 			}
 		};
 	};
