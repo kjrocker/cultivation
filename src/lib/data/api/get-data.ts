@@ -1,19 +1,13 @@
 import type { LanguageEnum } from 'src/types/language';
 import type { SettingsEnum } from 'src/types/settings';
-import axios from 'axios';
 import fs from 'fs/promises';
 import { parse } from './parser';
 
-const isNode = (): boolean => {
-	return typeof module === 'object' && typeof module.exports === 'object';
-};
-
-const getXml = (fileName: string): Promise<string> => {
-	if (isNode()) {
-		return fs.readFile(`./static/${fileName}`).then((buffer) => buffer.toString());
-	}
-	return axios.get(`/cultivation/${fileName}`).then((response) => response.data);
-};
+// The XML lives outside static/ so it is not copied into the build — it is an
+// input to `yarn json`, not something the site serves. That makes this a
+// node-only reader: the browser gets static/Data/*.json via createDataReader.
+const getXml = (fileName: string): Promise<string> =>
+	fs.readFile(`./${fileName}`).then((buffer) => buffer.toString());
 
 const prefix = 'ACS/Settings';
 
