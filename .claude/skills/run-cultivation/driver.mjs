@@ -33,7 +33,7 @@ const ROOT = new URL('../../../', import.meta.url).pathname;
 // server. Run `yarn build` first — preview does not build.
 const MODE = process.env.SERVE === 'preview' ? 'preview' : 'dev';
 const PORT = process.env.PORT ?? (MODE === 'preview' ? '4173' : '5173');
-const BASE = process.env.APP_URL ?? `http://localhost:${PORT}/cultivation`;
+const BASE = process.env.APP_URL ?? `http://localhost:${PORT}`;
 // TMPDIR, not /tmp — a sandboxed agent shell usually cannot write /tmp directly.
 const SHOTS = process.env.SHOT_DIR ?? `${process.env.TMPDIR ?? '/tmp'}/cultivation-shots`;
 // +layout.svelte renders "Loading..." until all six static stores resolve, so
@@ -92,7 +92,7 @@ let shotN = 0;
 const loc = (sel) => page.locator(sel);
 
 const commands = {
-	// nav [path-or-url] — defaults to the app root under the /cultivation base path
+	// nav [path-or-url] — defaults to the app root
 	async nav(rest) {
 		const target = !rest ? BASE : /^https?:/.test(rest) ? rest : `${BASE}${rest}`;
 		await page.goto(target, { waitUntil: 'domcontentloaded' });

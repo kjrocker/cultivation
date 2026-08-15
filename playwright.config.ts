@@ -8,7 +8,6 @@ const config: PlaywrightTestConfig = {
 		port: PORT,
 		reuseExistingServer: !process.env.CI
 	},
-	// Tests navigate to `paths.base` from svelte.config.js, not to the server root.
 	use: { baseURL: `http://localhost:${PORT}` },
 	testDir: 'tests'
 };

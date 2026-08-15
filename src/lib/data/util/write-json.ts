@@ -22,9 +22,7 @@ export const createDataReader = <In, Out>(
 			await fs.writeFile(`./static/Data/${name}.json`, JSON.stringify(shrink(data)));
 		},
 		read: async (): Promise<In> => {
-			const data = (await axios
-				.get(`/cultivation/Data/${name}.json`)
-				.then((response) => response.data)) as Out;
+			const data = (await axios.get(`/Data/${name}.json`).then((response) => response.data)) as Out;
 			return expand(data);
 		}
 	};

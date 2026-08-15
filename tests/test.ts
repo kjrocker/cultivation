@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 
-// The app is served under svelte.config.js's `paths.base`.
-const APP = '/cultivation';
+// The app is served at the root of playwright.config.ts's `baseURL`.
+const APP = '/';
 
 const bodyPart = (page: Page, name: string) => page.locator('li').filter({ hasText: name });
 

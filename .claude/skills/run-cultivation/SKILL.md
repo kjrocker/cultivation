@@ -3,8 +3,8 @@ name: run-cultivation
 description: Build, run, and drive the cultivation body-planner SPA. Use when asked to start the app, screenshot its UI, check a change in the running app, drive the planner headlessly, or run its unit/e2e tests.
 ---
 
-A client-side SvelteKit SPA (no backend, no SSR) served under the `/cultivation`
-base path. Drive it with **`.claude/skills/run-cultivation/driver.mjs`** — a
+A client-side SvelteKit SPA (no backend, no SSR) served at the server root.
+Drive it with **`.claude/skills/run-cultivation/driver.mjs`** — a
 headless-Chromium REPL that reads one command per line from stdin. The driver
 **starts and stops its own vite server**, so a single `node …/driver.mjs <<EOF`
 block is the whole run. There is no `chromium-cli` here; the driver is it.
@@ -62,7 +62,7 @@ half-rendered page is the normal failure mode, not an error message.
 
 | command | what it does |
 |---|---|
-| `nav [path]` | goto `http://localhost:5173/cultivation` + optional path |
+| `nav [path]` | goto `http://localhost:5173` + optional path |
 | `ready` | wait for the planner (data JSON resolved) — do this after every `nav` |
 | `wait-for <sel>` | wait for first match to be visible (30s) |
 | `click <sel>` / `fill <sel> <v>` / `select <sel> <v>` / `press <sel> <key>` | act |
@@ -96,11 +96,8 @@ stdout stays clean).
 ## Run (human path)
 
 ```bash
-yarn dev     # → http://localhost:5173/cultivation, Ctrl-C to stop
+yarn dev     # → http://localhost:5173, Ctrl-C to stop
 ```
-
-The root URL redirects to `/cultivation` under `yarn dev` but **not** under
-`yarn preview` — hit the full path there.
 
 ## Test
 
@@ -162,7 +159,7 @@ That is the expected baseline, not a regression.
   `SHOT_DIR=…` if you need somewhere else.
 - **`ERR ready … locator.waitFor: Timeout 30000ms exceeded`**: the page is stuck
   on `Loading...` because one of the six data stores never resolved. Run
-  `console` — a 404 on `/cultivation/Data/*.json` means the JSON is missing.
+  `console` — a 404 on `/Data/*.json` means the JSON is missing.
 - **`ERR click … Timeout 30000ms exceeded` with `count <sel> => 0`**: the
   selector matched nothing. Use `eval` to inspect the real markup, e.g.
   `eval [...document.querySelectorAll('*')].filter(e=>e.textContent.trim().startsWith('Steel Bone')&&e.children.length<3).map(e=>e.tagName+'.'+e.className).slice(0,6)`

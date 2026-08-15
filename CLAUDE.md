@@ -34,9 +34,9 @@ yarn json                # regenerate static/Data/*.json from ACS/ XML — see b
 
 ## Architecture
 
-### The base path is load-bearing
+### Pure client-side SPA served at the root
 
-`svelte.config.js` sets `paths.base = '/cultivation'`, and that prefix is **hard-coded** in the one runtime fetcher, `src/lib/data/util/write-json.ts` (`read()` fetches `/cultivation/Data/*.json`). `src/hooks.ts` disables SSR entirely and `adapter-static` uses `fallback: 'index.html'`, so this is a pure client-side SPA. Anything touching URLs must keep those three in sync.
+`src/hooks.ts` disables SSR entirely and `adapter-static` uses `fallback: 'index.html'`, so this is a pure client-side SPA. There is no `paths.base` — the app is served at the server root, and the one runtime fetcher, `src/lib/data/util/write-json.ts`, hard-codes root-absolute URLs (`read()` fetches `/Data/*.json`) rather than going through `$app/paths`. Anything reintroducing a base path has to fix that fetcher too.
 
 ### Data pipeline: XML → JSON → stores
 

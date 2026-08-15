@@ -17,12 +17,8 @@ Requires Node and [yarn](https://yarnpkg.com/).
 
 ```bash
 yarn install
-yarn dev          # http://localhost:5173/cultivation
+yarn dev          # http://localhost:5173
 ```
-
-The app is served under the `/cultivation` base path because it is deployed to GitHub Pages. The
-dev server redirects the root there; `yarn preview` does not, so use the full path against a
-preview build.
 
 ### Checks
 
